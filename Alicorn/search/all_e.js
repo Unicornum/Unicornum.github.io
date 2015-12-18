@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['patterns',['Patterns',['../group__g_patterns_classes.html',1,'']]],
+  ['platform',['Platform',['../group__g_platform_classes.html',1,'']]],
+  ['parse',['Parse',['../classalicorn_1_1document_1_1xml_1_1_i_xml.html#aa52838badaaabba0c6220233207c10f3',1,'alicorn::document::xml::IXml::Parse(const Path_t &amp;_PathToFile)=0'],['../classalicorn_1_1document_1_1xml_1_1_i_xml.html#a377aa37cbe981975abb22d8d47253d77',1,'alicorn::document::xml::IXml::Parse(const Data_t &amp;_Data)=0'],['../classalicorn_1_1document_1_1xml_1_1_rapid_xml.html#a673e6055c6662c15c81931ae71ac7f28',1,'alicorn::document::xml::RapidXml::Parse(const Path_t &amp;_PathToFile) override'],['../classalicorn_1_1document_1_1xml_1_1_rapid_xml.html#a1d4d777da0008cf9e57707f89ed12486',1,'alicorn::document::xml::RapidXml::Parse(const Data_t &amp;_Data) override']]],
+  ['pathtologdirectory',['PathToLogDirectory',['../classalicorn_1_1logger_1_1_path_to_log_directory.html',1,'alicorn::logger']]],
+  ['patterns_2ehpp',['patterns.hpp',['../_patterns_8hpp.html',1,'']]],
+  ['platform_2ehpp',['platform.hpp',['../platform_8hpp.html',1,'']]],
+  ['process',['Process',['../classalicorn_1_1system_1_1_process.html',1,'alicorn::system']]],
+  ['process',['Process',['../classalicorn_1_1system_1_1_process.html#a9427a926dfcfa3c666bc44d446853854',1,'alicorn::system::Process']]],
+  ['programname',['ProgramName',['../classalicorn_1_1logger_1_1_program_name.html',1,'alicorn::logger']]],
+  ['programversion',['ProgramVersion',['../classalicorn_1_1logger_1_1_program_version.html',1,'alicorn::logger']]],
+  ['proxy',['Proxy',['../classalicorn_1_1extension_1_1std_1_1exception_1_1_proxy.html',1,'alicorn::extension::std::exception']]],
+  ['proxy',['Proxy',['../classalicorn_1_1logger_1_1_proxy.html',1,'alicorn::logger']]],
+  ['proxy',['Proxy',['../classalicorn_1_1testing_1_1_proxy.html',1,'alicorn::testing']]],
+  ['proxy_3c_20currentmoduleproxy_20_3e',['Proxy&lt; CurrentModuleProxy &gt;',['../classalicorn_1_1testing_1_1_proxy.html',1,'alicorn::testing']]],
+  ['proxy_3c_20loggerproxy_20_3e',['Proxy&lt; LoggerProxy &gt;',['../classalicorn_1_1testing_1_1_proxy.html',1,'alicorn::testing']]],
+  ['proxy_3c_20processproxy_20_3e',['Proxy&lt; ProcessProxy &gt;',['../classalicorn_1_1testing_1_1_proxy.html',1,'alicorn::testing']]],
+  ['proxy_3c_20rapidxmlproxy_20_3e',['Proxy&lt; RapidXmlProxy &gt;',['../classalicorn_1_1testing_1_1_proxy.html',1,'alicorn::testing']]],
+  ['proxy_3c_20sectionimplproxy_20_3e',['Proxy&lt; SectionImplProxy &gt;',['../classalicorn_1_1testing_1_1_proxy.html',1,'alicorn::testing']]],
+  ['proxydebug',['ProxyDebug',['../classalicorn_1_1logger_1_1_proxy_debug.html',1,'alicorn::logger']]],
+  ['ptr',['Ptr',['../classalicorn_1_1system_1_1dll_1_1_ptr.html#a85a101c3ca8e8fbb7cc8ca71bc08fb52',1,'alicorn::system::dll::Ptr']]],
+  ['ptr',['Ptr',['../classalicorn_1_1system_1_1dll_1_1_ptr.html',1,'alicorn::system::dll']]],
+  ['ptrobject',['PtrObject',['../classalicorn_1_1system_1_1dll_1_1_ptr_object.html#acd781dd50b7eb7368848018c052c136f',1,'alicorn::system::dll::PtrObject']]],
+  ['ptrobject',['PtrObject',['../classalicorn_1_1system_1_1dll_1_1_ptr_object.html',1,'alicorn::system::dll']]]
+];
