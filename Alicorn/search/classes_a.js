@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['node',['Node',['../classalicorn_1_1document_1_1xml_1_1_node.html',1,'alicorn::document::xml']]]
+  ['node',['Node',['../a00117.html',1,'alicorn::document::xml']]],
+  ['node_5fiterator',['node_iterator',['../a00118.html',1,'rapidxml']]]
 ];

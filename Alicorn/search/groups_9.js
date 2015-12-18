@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['report',['Report',['../group__g_logger_report_classes.html',1,'']]],
-  ['regex',['Regex',['../group__g_regex_classes.html',1,'']]]
+  ['report',['Report',['../a00510.html',1,'']]],
+  ['regex',['Regex',['../a00503.html',1,'']]]
 ];

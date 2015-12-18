@@ -1,8 +1,8 @@
 var index =
 [
-    [ "Libs", "_solution_page.html", "_solution_page" ],
-    [ "История изменений", "_history_page.html", [
-      [ "История изменений", "_history_page.html#sHistory", null ]
+    [ "Libs", "a00010.html", "a00010" ],
+    [ "История изменений", "a00006.html", [
+      [ "История изменений", "a00006.html#sHistory", null ]
     ] ],
-    [ "Сборка скриптом BuildAll", "_build_all_page.html", null ]
+    [ "Сборка скриптом BuildAll", "a00008.html", null ]
 ];

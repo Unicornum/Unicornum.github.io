@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['patterns_2ehpp',['patterns.hpp',['../_patterns_8hpp.html',1,'']]],
-  ['platform_2ehpp',['platform.hpp',['../platform_8hpp.html',1,'']]]
+  ['patterns_2ehpp',['patterns.hpp',['../a00335.html',1,'']]],
+  ['platform_2ehpp',['platform.hpp',['../a00396.html',1,'']]]
 ];

@@ -1,0 +1,27 @@
+var a00155 =
+[
+    [ "xml_node", "a00155.html#a8bd9019960b90605a45998b661fb1b0e", null ],
+    [ "append_attribute", "a00155.html#a33ce3386f8c42dd4db658b75cbb6e6c4", null ],
+    [ "append_node", "a00155.html#a8696d098ecc9c4d2a646b43e91d58e31", null ],
+    [ "document", "a00155.html#adb6ad21a4590cf13d4a6a5036e3cdbbc", null ],
+    [ "first_attribute", "a00155.html#ae426802be58114ffc41bf30ac6b8c37d", null ],
+    [ "first_node", "a00155.html#a2dedeb4e04bb35e06a9a7bddf6ba652d", null ],
+    [ "insert_attribute", "a00155.html#a9fe659cdf4a5b3bbf5e8ffc98db5a84f", null ],
+    [ "insert_node", "a00155.html#a666880f42a7e486d78cc45ed51c7c46d", null ],
+    [ "last_attribute", "a00155.html#a50c03f2db3fa51f27a73d86ec29a49d3", null ],
+    [ "last_node", "a00155.html#a2ace550c18cf10da6303773972d7157f", null ],
+    [ "next_sibling", "a00155.html#ac59af4dd5f0ec715753e42467dff6aed", null ],
+    [ "prepend_attribute", "a00155.html#a8b62ee76489faf8e2d1210869d547684", null ],
+    [ "prepend_node", "a00155.html#ae86e92908c3eab40bbed8216e4f3f3cb", null ],
+    [ "previous_sibling", "a00155.html#a001ece4e227eebbd6ad0ec7dacf1c00b", null ],
+    [ "remove_all_attributes", "a00155.html#aa8d5d9484aa1eb5ff1841a073c84c1aa", null ],
+    [ "remove_all_nodes", "a00155.html#a95735358b079ae0adcfbbac69aa1fbc3", null ],
+    [ "remove_attribute", "a00155.html#a6f97b1b4f46a94a4587915df3c0c6b57", null ],
+    [ "remove_first_attribute", "a00155.html#aa95192d2a165cca16c551ed2a2a06aec", null ],
+    [ "remove_first_node", "a00155.html#a62bf7b276cf7a651a3337f5e0a0ef6ac", null ],
+    [ "remove_last_attribute", "a00155.html#a1781a2cbedc9a51d609ad5b528125635", null ],
+    [ "remove_last_node", "a00155.html#a9182512e948ec451a83f116cce7c7674", null ],
+    [ "remove_node", "a00155.html#a98289923eb9e8889418a9eb0207ea35c", null ],
+    [ "type", "a00155.html#a2c6a4315b98bcfa2e04fed3fa1b22c36", null ],
+    [ "type", "a00155.html#a499bbc9300c1b06821d5c08b24164c68", null ]
+];

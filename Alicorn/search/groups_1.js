@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boost',['Boost',['../group__g_boost_classes.html',1,'']]]
+  ['boost',['Boost',['../a00501.html',1,'']]]
 ];

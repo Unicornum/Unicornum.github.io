@@ -1,4 +1,4 @@
 var modules =
 [
-    [ "Alicorn", "group__g_alicorn_classes.html", "group__g_alicorn_classes" ]
+    [ "Alicorn", "a00498.html", "a00498" ]
 ];

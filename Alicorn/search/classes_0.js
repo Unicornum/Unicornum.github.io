@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['allowreplace',['AllowReplace',['../classalicorn_1_1logger_1_1_allow_replace.html',1,'alicorn::logger']]],
-  ['attribute',['Attribute',['../classalicorn_1_1document_1_1xml_1_1_attribute.html',1,'alicorn::document::xml']]],
-  ['attributes',['Attributes',['../classalicorn_1_1document_1_1xml_1_1_attributes.html',1,'alicorn::document::xml']]]
+  ['allowreplace',['AllowReplace',['../a00065.html',1,'alicorn::logger']]],
+  ['attribute',['Attribute',['../a00066.html',1,'alicorn::document::xml']]],
+  ['attribute_5fiterator',['attribute_iterator',['../a00067.html',1,'rapidxml']]],
+  ['attributes',['Attributes',['../a00068.html',1,'alicorn::document::xml']]]
 ];

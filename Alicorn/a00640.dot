@@ -1,0 +1,13 @@
+digraph "alicorn::logger::Filter"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  Node1 [label="{alicorn::logger::Filter\n||+ AddValue()\l+ AddValue()\l+ Filter()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node2 [label="{alicorn::logger::ConfigValue\n||+ DoComplete()\l+ DoComplete()\l# ConfigValue()\l# ~ConfigValue()\l# ToValuePtr()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00071.html",tooltip="Класс входит в Проект Logger   Базовый класс-обертка параметров для передачи их значений конфигуратор..."];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" #m_pImpl" ,arrowhead="odiamond",fontname="Verdana"];
+  Node3 [label="{alicorn::logger::ConfigValueImpl\n||+ ConfigValueImpl()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00072.html",tooltip="Класс входит в Проект Logger   Класс для передачи значения параметра конфигуратору. "];
+  Node4 -> Node3 [color="grey25",fontsize="10",style="solid",label=" +m_Name\n+m_Value" ,arrowhead="odiamond",fontname="Verdana"];
+  Node4 [label="{alicorn::extension\l::std::String\n|+ Npos\l|+ ToRawString()\l+ GetLenght()\l+ operator==()\l+ operator!=()\l+ operator==()\l+ operator!=()\l+ operator\<()\l+ operator+()\l+ operator+=()\l+ Trim()\lи 9 больше...\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00139.html",tooltip="Класс входит в Проект Std   Класс-обертка для строк из стандартной библиотеки. "];
+}

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['parse',['Parse',['../classalicorn_1_1document_1_1xml_1_1_i_xml.html#aa52838badaaabba0c6220233207c10f3',1,'alicorn::document::xml::IXml::Parse(const Path_t &amp;_PathToFile)=0'],['../classalicorn_1_1document_1_1xml_1_1_i_xml.html#a377aa37cbe981975abb22d8d47253d77',1,'alicorn::document::xml::IXml::Parse(const Data_t &amp;_Data)=0'],['../classalicorn_1_1document_1_1xml_1_1_rapid_xml.html#a673e6055c6662c15c81931ae71ac7f28',1,'alicorn::document::xml::RapidXml::Parse(const Path_t &amp;_PathToFile) override'],['../classalicorn_1_1document_1_1xml_1_1_rapid_xml.html#a1d4d777da0008cf9e57707f89ed12486',1,'alicorn::document::xml::RapidXml::Parse(const Data_t &amp;_Data) override']]],
-  ['process',['Process',['../classalicorn_1_1system_1_1_process.html#a9427a926dfcfa3c666bc44d446853854',1,'alicorn::system::Process']]],
-  ['ptr',['Ptr',['../classalicorn_1_1system_1_1dll_1_1_ptr.html#a85a101c3ca8e8fbb7cc8ca71bc08fb52',1,'alicorn::system::dll::Ptr']]],
-  ['ptrobject',['PtrObject',['../classalicorn_1_1system_1_1dll_1_1_ptr_object.html#acd781dd50b7eb7368848018c052c136f',1,'alicorn::system::dll::PtrObject']]]
+  ['name',['name',['../a00153.html#a9a09739310469995db078ebd0da3ed45',1,'rapidxml::xml_base::name() const '],['../a00153.html#ae55060ae958c6e6465d6c8db852ec6ce',1,'rapidxml::xml_base::name(const Ch *name, std::size_t size)'],['../a00153.html#a4611ddc82ac83a527c65606600eb2a0d',1,'rapidxml::xml_base::name(const Ch *name)']]],
+  ['name_5fsize',['name_size',['../a00153.html#a7e7f98b3d01e1eab8dc1ca69aad9af84',1,'rapidxml::xml_base']]],
+  ['next_5fattribute',['next_attribute',['../a00152.html#a56c08d7c96203286c889a43849328a86',1,'rapidxml::xml_attribute']]],
+  ['next_5fsibling',['next_sibling',['../a00155.html#ac59af4dd5f0ec715753e42467dff6aed',1,'rapidxml::xml_node']]]
 ];

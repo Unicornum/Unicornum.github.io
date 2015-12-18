@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settings',['Settings',['../_settings_page.html',1,'AlicornPage']]]
+  ['settings',['Settings',['../a00040.html',1,'AlicornPage']]]
 ];
