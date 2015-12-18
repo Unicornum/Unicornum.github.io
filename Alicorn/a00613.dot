@@ -1,7 +1,9 @@
-digraph "alicorn::extension::std::regex::Match"
+digraph "alicorn::logger::Core"
 {
  // INTERACTIVE_SVG=YES
   edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
   node [fontname="Verdana",fontsize="10",shape=record];
-  Node1 [label="{alicorn::extension\l::std::regex::Match\n||+ IsMatch()\l+ GetGroups()\l+ Match()\l+ Match()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 [label="{alicorn::logger::Core\n||+ Set()\l+ Set()\l+ Set()\l+ GetInstance()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [color="grey25",fontsize="10",style="solid",label=" +m_Configurator" ,arrowhead="odiamond",fontname="Verdana"];
+  Node2 [label="{alicorn::logger::Configurator\n||+ Get()\l+ GetMinMessageLevel()\l+ GetMaxLogSize()\l+ Set()\l+ Configurator()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00069.html",tooltip="Класс входит в Проект Logger   Конфигуратор. "];
 }

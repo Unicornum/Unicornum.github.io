@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boost',['Boost',['../a00501.html',1,'']]]
+  ['boost',['Boost',['../a00488.html',1,'']]]
 ];

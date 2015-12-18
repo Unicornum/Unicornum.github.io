@@ -4,127 +4,116 @@ var annotated_dup =
       [ "document", null, [
         [ "xml", null, [
           [ "Attribute", "a00066.html", "a00066" ],
-          [ "Attributes", "a00068.html", "a00068" ],
-          [ "IXml", "a00104.html", "a00104" ],
-          [ "Node", "a00117.html", "a00117" ],
-          [ "RapidXml", "a00131.html", "a00131" ],
-          [ "Value", "a00147.html", "a00147" ]
+          [ "Attributes", "a00067.html", "a00067" ],
+          [ "IXml", "a00102.html", "a00102" ],
+          [ "Node", "a00114.html", "a00114" ],
+          [ "RapidXml", "a00126.html", "a00126" ],
+          [ "Value", "a00142.html", "a00142" ]
         ] ],
-        [ "Xml", "a00151.html", "a00151" ]
+        [ "Xml", "a00146.html", "a00146" ]
       ] ],
       [ "extension", null, [
         [ "boost", null, [
-          [ "Format", "a00092.html", null ]
+          [ "Format", "a00090.html", null ]
         ] ],
         [ "std", null, [
           [ "exception", null, [
-            [ "Message", "a00112.html", null ],
-            [ "Proxy", "a00125.html", null ]
+            [ "Message", "a00109.html", null ],
+            [ "Proxy", "a00120.html", null ]
           ] ],
           [ "regex", null, [
-            [ "Match", "a00108.html", "a00108" ],
-            [ "Replace", "a00133.html", "a00133" ],
-            [ "Search", "a00136.html", "a00136" ]
+            [ "Match", "a00106.html", "a00106" ],
+            [ "Replace", "a00128.html", "a00128" ],
+            [ "Search", "a00131.html", "a00131" ]
           ] ],
-          [ "CallProxy", "a00069.html", null ],
-          [ "Locale", "a00105.html", [
-            [ "UTF8", "a00146.html", null ]
+          [ "CallProxy", "a00068.html", null ],
+          [ "Locale", "a00103.html", [
+            [ "UTF8", "a00141.html", null ]
           ] ],
-          [ "Message", "a00113.html", null ],
-          [ "String", "a00139.html", "a00139" ],
-          [ "StringCastProxy", "a00140.html", "a00140" ],
-          [ "Text", "a00143.html", "a00143" ]
+          [ "Message", "a00110.html", null ],
+          [ "String", "a00134.html", "a00134" ],
+          [ "StringCastProxy", "a00135.html", "a00135" ],
+          [ "Text", "a00139.html", "a00139" ]
         ] ]
       ] ],
       [ "logger", null, [
         [ "report", null, [
-          [ "Console", "a00073.html", "a00073" ],
-          [ "Empty", "a00084.html", "a00084" ],
-          [ "File", "a00089.html", "a00089" ],
-          [ "Html", "a00094.html", "a00094" ],
-          [ "IReport", "a00101.html", "a00101" ],
-          [ "Report", "a00134.html", null ],
-          [ "Text", "a00144.html", "a00144" ],
-          [ "VisualStudioOutput", "a00148.html", "a00148" ]
+          [ "Console", "a00072.html", "a00072" ],
+          [ "Empty", "a00083.html", "a00083" ],
+          [ "File", "a00087.html", "a00087" ],
+          [ "Html", "a00092.html", "a00092" ],
+          [ "IReport", "a00099.html", "a00099" ],
+          [ "Report", "a00129.html", null ],
+          [ "Text", "a00138.html", "a00138" ],
+          [ "VisualStudioOutput", "a00143.html", "a00143" ]
         ] ],
         [ "AllowReplace", "a00065.html", null ],
-        [ "Configurator", "a00070.html", "a00070" ],
-        [ "ConfigValue", "a00071.html", null ],
-        [ "ConfigValueImpl", "a00072.html", null ],
-        [ "Core", "a00074.html", "a00074" ],
-        [ "DateTime", "a00080.html", null ],
-        [ "Error", "a00085.html", null ],
-        [ "Fatal", "a00087.html", "a00087" ],
-        [ "Filter", "a00091.html", null ],
-        [ "Info", "a00098.html", null ],
-        [ "IntConfigValue", "a00100.html", null ],
-        [ "MaxLogFiles", "a00109.html", null ],
-        [ "MaxLogSize", "a00110.html", null ],
-        [ "Message", "a00114.html", "a00114" ],
-        [ "MessageImpl", "a00115.html", "a00115" ],
-        [ "MessagePoints", "a00116.html", "a00116" ],
-        [ "PathToLogDirectory", "a00121.html", null ],
-        [ "ProgramName", "a00123.html", null ],
-        [ "ProgramVersion", "a00124.html", null ],
-        [ "Proxy", "a00126.html", null ],
-        [ "ProxyDebug", "a00128.html", null ],
-        [ "StringConfigValue", "a00141.html", null ],
-        [ "Trace", "a00145.html", null ],
-        [ "Warning", "a00149.html", null ]
+        [ "Configurator", "a00069.html", "a00069" ],
+        [ "ConfigValue", "a00070.html", null ],
+        [ "ConfigValueImpl", "a00071.html", null ],
+        [ "Core", "a00073.html", "a00073" ],
+        [ "DateTime", "a00079.html", null ],
+        [ "Error", "a00084.html", null ],
+        [ "Fatal", "a00086.html", "a00086" ],
+        [ "Filter", "a00089.html", null ],
+        [ "Info", "a00096.html", null ],
+        [ "IntConfigValue", "a00098.html", null ],
+        [ "MaxLogFiles", "a00107.html", null ],
+        [ "MaxLogSize", "a00108.html", null ],
+        [ "Message", "a00111.html", "a00111" ],
+        [ "MessageImpl", "a00112.html", "a00112" ],
+        [ "MessagePoints", "a00113.html", "a00113" ],
+        [ "PathToLogDirectory", "a00116.html", null ],
+        [ "ProgramName", "a00118.html", null ],
+        [ "ProgramVersion", "a00119.html", null ],
+        [ "Proxy", "a00121.html", null ],
+        [ "ProxyDebug", "a00123.html", null ],
+        [ "StringConfigValue", "a00136.html", null ],
+        [ "Trace", "a00140.html", null ],
+        [ "Warning", "a00144.html", null ]
       ] ],
       [ "patterns", null, [
         [ "command", null, [
-          [ "Data", "a00078.html", null ],
-          [ "Data< Pointer * >", "a00079.html", null ],
-          [ "ICommand", "a00096.html", null ],
-          [ "IManager", "a00097.html", null ],
-          [ "IUndo", "a00103.html", null ],
-          [ "ManagerCommon", "a00106.html", null ],
-          [ "ManagerUndoRedo", "a00107.html", "a00107" ]
+          [ "Data", "a00077.html", null ],
+          [ "Data< Pointer * >", "a00078.html", null ],
+          [ "ICommand", "a00094.html", null ],
+          [ "IManager", "a00095.html", null ],
+          [ "IUndo", "a00101.html", null ],
+          [ "ManagerCommon", "a00104.html", null ],
+          [ "ManagerUndoRedo", "a00105.html", "a00105" ]
         ] ],
         [ "factory", null, [
-          [ "Factory", "a00086.html", null ],
-          [ "Registrator", "a00132.html", null ]
+          [ "Factory", "a00085.html", null ],
+          [ "Registrator", "a00127.html", null ]
         ] ]
       ] ],
       [ "settings", null, [
-        [ "File", "a00090.html", "a00090" ],
-        [ "ISection", "a00102.html", null ],
-        [ "RootSection", "a00135.html", "a00135" ],
-        [ "Section", "a00137.html", "a00137" ],
-        [ "SectionImpl", "a00138.html", "a00138" ]
+        [ "File", "a00088.html", "a00088" ],
+        [ "ISection", "a00100.html", null ],
+        [ "RootSection", "a00130.html", "a00130" ],
+        [ "Section", "a00132.html", "a00132" ],
+        [ "SectionImpl", "a00133.html", "a00133" ]
       ] ],
       [ "system", null, [
         [ "dll", null, [
-          [ "Object", "a00119.html", null ],
-          [ "Ptr", "a00129.html", "a00129" ],
-          [ "PtrObject", "a00130.html", "a00130" ]
+          [ "Object", "a00115.html", null ],
+          [ "Ptr", "a00124.html", "a00124" ],
+          [ "PtrObject", "a00125.html", "a00125" ]
         ] ],
         [ "process", null, [
-          [ "ICallBack", "a00095.html", null ]
+          [ "ICallBack", "a00093.html", null ]
         ] ],
-        [ "CurrentModule", "a00077.html", null ],
-        [ "Dump", "a00083.html", null ],
-        [ "Process", "a00122.html", "a00122" ],
-        [ "WinapiCallProxy", "a00150.html", null ]
+        [ "CurrentModule", "a00076.html", null ],
+        [ "Dump", "a00082.html", null ],
+        [ "Process", "a00117.html", "a00117" ],
+        [ "WinapiCallProxy", "a00145.html", null ]
       ] ],
       [ "testing", null, [
-        [ "Proxy", "a00127.html", null ]
+        [ "Proxy", "a00122.html", null ]
       ] ],
       [ "version", null, [
-        [ "Info", "a00099.html", "a00099" ]
+        [ "Info", "a00097.html", "a00097" ]
       ] ]
     ] ],
-    [ "rapidxml", null, [
-      [ "attribute_iterator", "a00067.html", null ],
-      [ "file", "a00088.html", "a00088" ],
-      [ "memory_pool", "a00111.html", "a00111" ],
-      [ "node_iterator", "a00118.html", null ],
-      [ "parse_error", "a00120.html", "a00120" ],
-      [ "xml_attribute", "a00152.html", "a00152" ],
-      [ "xml_base", "a00153.html", "a00153" ],
-      [ "xml_document", "a00154.html", "a00154" ],
-      [ "xml_node", "a00155.html", "a00155" ]
-    ] ],
-    [ "GTestResult", "a00093.html", null ]
+    [ "GTestResult", "a00091.html", null ]
 ];

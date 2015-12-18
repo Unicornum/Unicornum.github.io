@@ -1,9 +1,9 @@
-digraph "alicorn::settings::ISection"
+digraph "alicorn::system::WinapiCallProxy"
 {
  // INTERACTIVE_SVG=YES
   edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
   node [fontname="Verdana",fontsize="10",shape=record];
-  Node1 [label="{alicorn::settings::\lISection\n||+ GetChildSectionImpl()\l+ GetValue()\l+ SetValue()\l+ SetDefaultValue()\l+ Save()\l+ ~ISection()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
-  Node2 [label="{alicorn::settings::\lSectionImpl\n||+ GetChildSectionImpl()\l+ GetValue()\l+ SetValue()\l+ SetDefaultValue()\l+ Save()\l+ SectionImpl()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00138.html",tooltip="Класс входит в Settings   Класс реализации доступа к разделу настроек программы. "];
+  Node1 [label="{alicorn::system::WinapiCall\lProxy\n||+ IsSuccessfull()\l+ GetMessageText()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node2 [label="{alicorn::extension\l::std::CallProxy\< WinapiCall\lProxy \>\n||+ operator==()\l+ GetInstance()\l# CallProxy()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00068.html"];
 }

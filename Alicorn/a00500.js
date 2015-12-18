@@ -1,4 +1,5 @@
 var a00500 =
 [
-    [ "Xml", "a00499.html", "a00499" ]
+    [ "Factory", "a00085.html", null ],
+    [ "Registrator", "a00127.html", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Класс alicorn::extension::std::String</title>
+<title>LibsVS2013: Класс alicorn::extension::std::Text</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1238 Architecture: x86.64 Build: 20:01 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1245 Architecture: x86.64 Build: 21:11 18 Декабрь 2015</span>
    </div>
    <div id="projectbrief">Libs</div>
   </td>
@@ -111,209 +111,508 @@ $(document).ready(function(){initNavTree('a00139.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a00601.html">Полный список членов класса</a>  </div>
+<a href="a00589.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::extension::std::String<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00498.html">Alicorn</a> &raquo; <a class="el" href="a00507.html">Extension</a> &raquo; <a class="el" href="a00505.html">Std</a> &raquo; <a class="el" href="a00504.html">String</a></div></div>  </div>
+<div class="title">Класс alicorn::extension::std::Text<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00485.html">Alicorn</a> &raquo; <a class="el" href="a00494.html">Extension</a> &raquo; <a class="el" href="a00492.html">Std</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Класс входит в <a class="el" href="a00024.html">Проект Std</a> <br />
- Класс-обертка для строк из стандартной библиотеки.  
+ Класс для работы с текстом (как с набором строк).  
  <a href="a00139.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00319_source.html">string.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00317_source.html">text.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::extension::std::String:</div>
+Граф связей класса alicorn::extension::std::Text:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00602.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1_string_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1extension_1_1std_1_1_string_coll__map" id="alicorn_1_1extension_1_1std_1_1_string_coll__map">
+<div class="center"><img src="a00590.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1_text_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1extension_1_1std_1_1_text_coll__map" id="alicorn_1_1extension_1_1std_1_1_text_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a22e59a8ecbd629a830dd32f858286d02"><td class="memItemLeft" align="right" valign="top">::std::vector&lt; <a class="el" href="a00139.html">String</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a22e59a8ecbd629a830dd32f858286d02">Tokenize</a> (const <a class="el" href="a00139.html">String</a> &amp;) const </td></tr>
-<tr class="memdesc:a22e59a8ecbd629a830dd32f858286d02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для разбиения строки.  <a href="#a22e59a8ecbd629a830dd32f858286d02">Подробнее...</a><br /></td></tr>
-<tr class="separator:a22e59a8ecbd629a830dd32f858286d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fed9701da653afb67eddee3937535e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fed9701da653afb67eddee3937535e5"></a>
+Size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a7fed9701da653afb67eddee3937535e5">GetSize</a> (void) const </td></tr>
+<tr class="memdesc:a7fed9701da653afb67eddee3937535e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество строк в тексте. <br /></td></tr>
+<tr class="separator:a7fed9701da653afb67eddee3937535e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa25f800aca7cdbcf85d4bf22f3d2d4a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00134.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#aa25f800aca7cdbcf85d4bf22f3d2d4a6">operator[]</a> (Size_t) const </td></tr>
+<tr class="memdesc:aa25f800aca7cdbcf85d4bf22f3d2d4a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор получения строки текста по ее индексу.  <a href="#aa25f800aca7cdbcf85d4bf22f3d2d4a6">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa25f800aca7cdbcf85d4bf22f3d2d4a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a649cbe74977846d24db5f0141190d"><td class="memItemLeft" align="right" valign="top">Size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#ab1a649cbe74977846d24db5f0141190d">Find</a> (const <a class="el" href="a00134.html">String</a> &amp;, Size_t=0) const </td></tr>
+<tr class="memdesc:ab1a649cbe74977846d24db5f0141190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск строки, содержащей указанную подстроку.  <a href="#ab1a649cbe74977846d24db5f0141190d">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab1a649cbe74977846d24db5f0141190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9cafa06e9fa59c41c0ee1de31c7cd25"><td class="memItemLeft" align="right" valign="top">Size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#af9cafa06e9fa59c41c0ee1de31c7cd25">Find</a> (<a class="el" href="a00106.html">regex::Match</a> &amp;, Size_t=0) const </td></tr>
+<tr class="memdesc:af9cafa06e9fa59c41c0ee1de31c7cd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Поиск строки,совпадающей с указанным регулярным выражением.  <a href="#af9cafa06e9fa59c41c0ee1de31c7cd25">Подробнее...</a><br /></td></tr>
+<tr class="separator:af9cafa06e9fa59c41c0ee1de31c7cd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4889bcc9ee6867f66009d5074a406e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a4889bcc9ee6867f66009d5074a406e71">Add</a> (const <a class="el" href="a00134.html">String</a> &amp;)</td></tr>
+<tr class="memdesc:a4889bcc9ee6867f66009d5074a406e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления текста в конец существующего.  <a href="#a4889bcc9ee6867f66009d5074a406e71">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4889bcc9ee6867f66009d5074a406e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb59df6f8773ffc07d609df5f584279e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#aeb59df6f8773ffc07d609df5f584279e">Insert</a> (const <a class="el" href="a00134.html">String</a> &amp;, Size_t)</td></tr>
+<tr class="memdesc:aeb59df6f8773ffc07d609df5f584279e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вставки текста на место указанной строки.  <a href="#aeb59df6f8773ffc07d609df5f584279e">Подробнее...</a><br /></td></tr>
+<tr class="separator:aeb59df6f8773ffc07d609df5f584279e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5775f11872d97e4b59e6df3e7089bf91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a5775f11872d97e4b59e6df3e7089bf91">Remove</a> (Size_t, Size_t=1)</td></tr>
+<tr class="memdesc:a5775f11872d97e4b59e6df3e7089bf91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для удаления указанного количества строк, начиная с указанного индекса.  <a href="#a5775f11872d97e4b59e6df3e7089bf91">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5775f11872d97e4b59e6df3e7089bf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72b3e13a3ac9bd9c6c081685c2a3e4ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a72b3e13a3ac9bd9c6c081685c2a3e4ed">Clear</a> (void)</td></tr>
+<tr class="memdesc:a72b3e13a3ac9bd9c6c081685c2a3e4ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция очистки текста.  <a href="#a72b3e13a3ac9bd9c6c081685c2a3e4ed">Подробнее...</a><br /></td></tr>
+<tr class="separator:a72b3e13a3ac9bd9c6c081685c2a3e4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6f83a7ede7dba17e37c831a19fd412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a5e6f83a7ede7dba17e37c831a19fd412">Save</a> (void) const </td></tr>
+<tr class="memdesc:a5e6f83a7ede7dba17e37c831a19fd412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для сохранения текста в файл.  <a href="#a5e6f83a7ede7dba17e37c831a19fd412">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5e6f83a7ede7dba17e37c831a19fd412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8798e1cf38e34a06874b32d550ccedab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a8798e1cf38e34a06874b32d550ccedab">Save</a> (const Path_t &amp;) const </td></tr>
+<tr class="memdesc:a8798e1cf38e34a06874b32d550ccedab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для сохранения текста в указанный файл.  <a href="#a8798e1cf38e34a06874b32d550ccedab">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8798e1cf38e34a06874b32d550ccedab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d2f3a82faa059dc867f6bab7bb476e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#a95d2f3a82faa059dc867f6bab7bb476e">Text</a> (void)</td></tr>
+<tr class="memdesc:a95d2f3a82faa059dc867f6bab7bb476e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса по умолчанию.  <a href="#a95d2f3a82faa059dc867f6bab7bb476e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a95d2f3a82faa059dc867f6bab7bb476e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf7e47aaecdf9b5aef1f406e252b1ee3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00139.html#adf7e47aaecdf9b5aef1f406e252b1ee3">Text</a> (const Path_t &amp;_PathToFile)</td></tr>
+<tr class="memdesc:adf7e47aaecdf9b5aef1f406e252b1ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор для загрузки текста из файла.  <a href="#adf7e47aaecdf9b5aef1f406e252b1ee3">Подробнее...</a><br /></td></tr>
+<tr class="separator:adf7e47aaecdf9b5aef1f406e252b1ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс входит в <a class="el" href="a00024.html">Проект Std</a> <br />
- Класс-обертка для строк из стандартной библиотеки. </p>
-<p>Обеспечивает:</p><ul>
-<li>Совместимость с 'сырыми' строками, объявленными через макрос _T(), который переопределяется таким образом, чтобы соответствовать внутреннему содержимому класса (когда в Visual Studio станет доступен префикс U, следует переопределить _T(), а UsingString_t определить через std::u32string).</li>
-<li>Удобный интерфейс.</li>
-<li>Допускает предварительное объявление (использовать файл <a class="el" href="a00314.html">string.forward.hpp</a>).</li>
-</ul>
-<p>При изменении класса строки проверить работу функций/классов:</p><ul>
-<li><a class="el" href="a00504.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std   Функция преобразования строк из одной кодировки в другую. ">alicorn::extension::std::string_cast()</a>.</li>
-</ul>
+ Класс для работы с текстом (как с набором строк). </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
+ 2.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>13 Сентябрь 2015 <br />
- 16 Сентябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>13 июн 2012 <br />
+ 19 Сентябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
-<h2>Примеры использования: </h2>
-<p>Исходные данные: </p><div class="fragment"><div class="line">  <span class="keyword">using</span> String_t = <a class="code" href="a00139.html">::alicorn::extension::std::String</a>;</div>
-<div class="line">  <span class="keyword">using</span> StdString_t = String_t::String_t;</div>
-<div class="line">  <span class="keyword">using</span> Char_t = String_t::Char_t;</div>
-<div class="line">  <span class="keyword">const</span> Char_t * m_RawWString = <span class="keyword">nullptr</span>;</div>
-<div class="line">  StdString_t m_WString;</div>
-</div><!-- fragment --><div class="fragment"><div class="line">    m_RawWString = _T(<span class="stringliteral">&quot;Текст Text&quot;</span>);</div>
-<div class="line">    m_WString = m_RawWString;</div>
-</div><!-- fragment --><p> Конструирование объектов: </p><div class="fragment"><div class="line">  String_t Example1 = m_RawWString;</div>
-<div class="line">  String_t Example2(m_RawWString);</div>
-</div><!-- fragment --><div class="fragment"><div class="line">  String_t Example1 = m_WString;</div>
-<div class="line">  String_t Example2(m_WString);</div>
-</div><!-- fragment --><div class="fragment"><div class="line">  String_t Example = m_RawWString;</div>
-<div class="line"></div>
-<div class="line">  String_t Copy1 = Example;</div>
-<div class="line">  String_t Copy2(Example);</div>
-</div><!-- fragment --><p> Копирование объектов: </p><div class="fragment"><div class="line">  <span class="keyword">const</span> String_t Source = m_RawWString;</div>
-<div class="line"></div>
-<div class="line">  String_t Example;</div>
-<div class="line">  Example = Source;</div>
-</div><!-- fragment --><p> Количество символов в строке: </p><div class="fragment"><div class="line">  String_t Example1 = m_RawWString;</div>
-<div class="line">  <span class="keyword">const</span> String_t::Size_t Lenght = Example1.GetLenght();</div>
-</div><!-- fragment --><p> Сравнение строк: </p><div class="fragment"><div class="line">  String_t Example1 = m_RawWString;</div>
-<div class="line">  <span class="keyword">const</span> <span class="keywordtype">bool</span> IsEmpty = (Example1 == String_t::Empty()); <span class="comment">// false</span></div>
-</div><!-- fragment --><div class="fragment"><div class="line">  String_t Example1 = _T(<span class="stringliteral">&quot;абвгдеёжз&quot;</span>);</div>
-<div class="line">  String_t Example2 = _T(<span class="stringliteral">&quot;абв&quot;</span>);</div>
-<div class="line">  String_t Example3 = _T(<span class="stringliteral">&quot;абв&quot;</span>);</div>
-<div class="line">  <span class="keyword">auto</span> Example5 = _T(<span class="stringliteral">&quot;абвгдеёжз&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  EXPECT_TRUE(Example1 == Example1);</div>
-<div class="line">  EXPECT_FALSE(Example2 == Example1);</div>
-<div class="line">  EXPECT_FALSE(Example1 == Example2);</div>
-<div class="line">  EXPECT_TRUE(Example2 == Example2);</div>
-<div class="line">  EXPECT_TRUE(Example2 == Example3);</div>
-<div class="line">  EXPECT_TRUE(Example3 == Example2);</div>
-<div class="line">  EXPECT_TRUE(Example1 == Example5);</div>
-<div class="line">  EXPECT_FALSE(Example2 == Example5);</div>
-</div><!-- fragment --><div class="fragment"><div class="line">  String_t Example1 = _T(<span class="stringliteral">&quot;абвгдеёжз&quot;</span>);</div>
-<div class="line">  String_t Example2 = _T(<span class="stringliteral">&quot;абв&quot;</span>);</div>
-<div class="line">  String_t Example3 = _T(<span class="stringliteral">&quot;абв&quot;</span>);</div>
-<div class="line">  <span class="keyword">auto</span> Example5 = _T(<span class="stringliteral">&quot;абвгдеёжз&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  EXPECT_FALSE(Example1 != Example1);</div>
-<div class="line">  EXPECT_TRUE(Example2 != Example1);</div>
-<div class="line">  EXPECT_TRUE(Example1 != Example2);</div>
-<div class="line">  EXPECT_FALSE(Example2 != Example2);</div>
-<div class="line">  EXPECT_FALSE(Example2 != Example3);</div>
-<div class="line">  EXPECT_FALSE(Example3 != Example2);</div>
-<div class="line">  EXPECT_FALSE(Example1 != Example5);</div>
-<div class="line">  EXPECT_TRUE(Example2 != Example5);</div>
-</div><!-- fragment --><div class="fragment"><div class="line">  String_t Example1 = _T(<span class="stringliteral">&quot;АБВ&quot;</span>);</div>
-<div class="line">  String_t Example2 = _T(<span class="stringliteral">&quot;абв&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  EXPECT_TRUE(Example1 &lt; Example2);</div>
-<div class="line">  EXPECT_FALSE(Example2 &lt; Example1);</div>
-<div class="line">  EXPECT_FALSE(Example1 &lt; Example1);</div>
-<div class="line">  EXPECT_FALSE(Example2 &lt; Example2);</div>
-</div><!-- fragment --><p> Удаление пробельных символов: </p><div class="fragment"><div class="line">  String_t Source = _T(<span class="stringliteral">&quot; \t\r\n&quot;</span>) + String_t(m_RawWString) + _T(<span class="stringliteral">&quot; \t\r\n&quot;</span>);</div>
-<div class="line">  String_t TrimmedSource = Source.Trim(); <span class="comment">// m_RawWString</span></div>
-</div><!-- fragment --><p> Выделение подстроки: </p><div class="fragment"><div class="line">  String_t Source = _T(<span class="stringliteral">&quot;123&quot;</span>) + String_t(m_RawWString);</div>
-<div class="line">  String_t Result1 = Source.SubString(3, 5); <span class="comment">// &quot;Текст&quot;</span></div>
-<div class="line">  String_t Result2 = Source.SubString(3); <span class="comment">// &quot;Текст Text&quot;</span></div>
-</div><!-- fragment --><p> Сложение строк: </p><div class="fragment"><div class="line">  <span class="keyword">const</span> Char_t * Source1 = _T(<span class="stringliteral">&quot;АБВ &quot;</span>);</div>
-<div class="line">  <span class="keyword">const</span> String_t Source2 = _T(<span class="stringliteral">&quot;ГДЕ&quot;</span>);</div>
-<div class="line">  <span class="keyword">const</span> String_t Source3 = _T(<span class="stringliteral">&quot;ЁЖЗ&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  <span class="keyword">const</span> String_t Result = Source1 + Source2 + _T(<span class="stringliteral">&quot; &quot;</span>) + Source3;</div>
-</div><!-- fragment --><div class="fragment"><div class="line">  <span class="keyword">const</span> Char_t * Source1 = _T(<span class="stringliteral">&quot;АБВ &quot;</span>);</div>
-<div class="line">  <span class="keyword">const</span> String_t Source2 = _T(<span class="stringliteral">&quot;ГДЕ&quot;</span>);</div>
-<div class="line">  <span class="keyword">const</span> String_t Source3 = _T(<span class="stringliteral">&quot;ЁЖЗ&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  String_t Result;</div>
-<div class="line">  Result += Source1;</div>
-<div class="line">  Result += Source2;</div>
-<div class="line">  Result += _T(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line">  Result += Source3;</div>
-</div><!-- fragment --><p> Поиск подстроки: </p><div class="fragment"><div class="line">  String_t Source = _T(<span class="stringliteral">&quot;123&quot;</span>) + String_t(m_RawWString);</div>
-<div class="line">  String_t Text = _T(<span class="stringliteral">&quot;Текст&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  <span class="keyword">const</span> String_t::Size_t Find1 = Source.Find(_T(<span class="stringliteral">&quot;Текст&quot;</span>)); <span class="comment">// 3</span></div>
-<div class="line">  <span class="keyword">const</span> String_t::Size_t Find2 = Source.Find(Text); <span class="comment">// 3</span></div>
-<div class="line">  <span class="keyword">const</span> String_t::Size_t Find3 = Source.Find(_T(<span class="stringliteral">&quot;Текст&quot;</span>), 5); <span class="comment">// String_t::Npos</span></div>
-<div class="line">  <span class="keyword">const</span> String_t::Size_t Find4 = Source.Find(_T(<span class="stringliteral">&quot;Unknown&quot;</span>)); <span class="comment">// String_t::Npos</span></div>
-</div><!-- fragment --><p> Замена подстроки: </p><div class="fragment"><div class="line">  String_t Source = _T(<span class="stringliteral">&quot;АБВ ABC АБВ ABC АБВ&quot;</span>);</div>
-<div class="line">  <span class="keyword">auto</span> Expected = _T(<span class="stringliteral">&quot;А** ABC А** ABC А**&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  String_t Result1 = Source.Replace(_T(<span class="stringliteral">&quot;БВ&quot;</span>), _T(<span class="stringliteral">&quot;**&quot;</span>)); <span class="comment">// Expected</span></div>
-<div class="line"></div>
-<div class="line">  String_t Pattern = _T(<span class="stringliteral">&quot;БВ&quot;</span>);</div>
-<div class="line">  String_t Result2 = Source.Replace(Pattern, _T(<span class="stringliteral">&quot;**&quot;</span>)); <span class="comment">// Expected</span></div>
-<div class="line"></div>
-<div class="line">  String_t Change = _T(<span class="stringliteral">&quot;**&quot;</span>);</div>
-<div class="line">  String_t Result3 = Source.Replace(_T(<span class="stringliteral">&quot;БВ&quot;</span>), Change); <span class="comment">// Expected</span></div>
-<div class="line">  String_t Result4 = Source.Replace(Pattern, Change); <span class="comment">// Expected</span></div>
-</div><!-- fragment --><p> Приведение к нижнему регистру: </p><div class="fragment"><div class="line">  String_t Source = _T(<span class="stringliteral">&quot;АБВ ABC&quot;</span>);</div>
-<div class="line">  <span class="keyword">auto</span> Expected = _T(<span class="stringliteral">&quot;абв abc&quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  String_t Result = Source.ToLower(); <span class="comment">// Expected</span></div>
-</div><!-- fragment --><p> Разбиение на подстроки: </p><div class="fragment"><div class="line">  String_t Source = _T(<span class="stringliteral">&quot;АБВ ABC АБВ ABC АБВ &quot;</span>);</div>
-<div class="line">  <span class="keyword">auto</span> Separator = _T(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"></div>
-<div class="line">  const ::std::vector&lt;String_t&gt; Result = Source.Tokenize(Separator);</div>
-<div class="line"></div>
-<div class="line">  <span class="comment">// Result:</span></div>
-<div class="line">  <span class="comment">// &quot;АБВ&quot;</span></div>
-<div class="line">  <span class="comment">// &quot;ABC&quot;</span></div>
-<div class="line">  <span class="comment">// &quot;АБВ&quot;</span></div>
-<div class="line">  <span class="comment">// &quot;ABC&quot;</span></div>
-<div class="line">  <span class="comment">// &quot;АБВ&quot;</span></div>
-</div><!-- fragment --></div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a22e59a8ecbd629a830dd32f858286d02"></a>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2015 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a95d2f3a82faa059dc867f6bab7bb476e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt; <a class="el" href="a00139.html">String</a> &gt; String::Tokenize </td>
+          <td class="memname">alicorn::extension::std::Text::Text </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00139.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Separator</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция для разбиения строки. </p>
+<p>Конструктор класса по умолчанию. </p>
 <ul>
-<li>Разбиение производится по набору символов, точно совпадающих с указанным параметром (сама строка-разделитель в результат не попадет).</li>
+<li>Создает пустой текст. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="adf7e47aaecdf9b5aef1f406e252b1ee3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">alicorn::extension::std::Text::Text </td>
+          <td>(</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор для загрузки текста из файла. </p>
+<ul>
+<li>Загрузит текст из файла и разобьет его на отдельные строки.</li>
+<li>Разделителем считается '\r\n'.</li>
+<li>При преобразовании строк, прочитанных из файла будет использоваться локаль, установленная через setlocale() (по умолчанию это системная локаль).</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Separator</td><td>Строка-разделитель.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к файлу, который должен быть загружен.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Набор строк, на которые была разбита исходная строка. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Не удалось открыть указанный файл. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="a00508.html#_todo000002">Необходимо сделать:</a></b></dt><dd>Локаль создается для каждой строки - это очень медленно, лучше прочитать файл целиком и добавить его через функцию <a class="el" href="a00139.html#a4889bcc9ee6867f66009d5074a406e71" title="Функция добавления текста в конец существующего. ">Add()</a> </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a4889bcc9ee6867f66009d5074a406e71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alicorn::extension::std::Text::Add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00134.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Source</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция добавления текста в конец существующего. </p>
+<ul>
+<li>Указанная строка будет разбита на отдельные строки по разделителю ('\r\n'), после чего эти строки будут добавлены в конец списка строк.</li>
+<li>Для добавления пустой строки добавить _T("\\r\\n").</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Source</td><td>Добавляемая строка. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p><div class="dynheader">
-Граф вызова функции:</div>
+Граф вызовов:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00139_a22e59a8ecbd629a830dd32f858286d02_icgraph.png" border="0" usemap="#a00139_a22e59a8ecbd629a830dd32f858286d02_icgraph" alt=""/></div>
-<map name="a00139_a22e59a8ecbd629a830dd32f858286d02_icgraph" id="a00139_a22e59a8ecbd629a830dd32f858286d02_icgraph">
+<div class="center"><img src="a00139_a4889bcc9ee6867f66009d5074a406e71_cgraph.png" border="0" usemap="#a00139_a4889bcc9ee6867f66009d5074a406e71_cgraph" alt=""/></div>
+<map name="a00139_a4889bcc9ee6867f66009d5074a406e71_cgraph" id="a00139_a4889bcc9ee6867f66009d5074a406e71_cgraph">
 </map>
 </div>
 </p>
 
 </div>
 </div>
+<a class="anchor" id="a72b3e13a3ac9bd9c6c081685c2a3e4ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alicorn::extension::std::Text::Clear </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция очистки текста. </p>
+<ul>
+<li>Функция удаляет все строки текста. </li>
+</ul>
+<dl class="bug"><dt><b><a class="el" href="a00512.html#_bug000001">Ошибка:</a></b></dt><dd>Просто для того, чтобы Doxygen создавал страницу с багами. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1a649cbe74977846d24db5f0141190d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text::Size_t alicorn::extension::std::Text::Find </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00134.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Pattern</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Size_t&#160;</td>
+          <td class="paramname"><em>_BeginIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск строки, содержащей указанную подстроку. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Pattern</td><td>Искомая строка. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_BeginIndex</td><td>Индекс строки, с которой следует начать поиск.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><b>Index</b> Индекс строки, в которой найдена указанная подстрока. </dd>
+<dd>
+<b>Npos</b> Искомая строка не найдена. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af9cafa06e9fa59c41c0ee1de31c7cd25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Text::Size_t alicorn::extension::std::Text::Find </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00106.html">regex::Match</a> &amp;&#160;</td>
+          <td class="paramname"><em>_RegEx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Size_t&#160;</td>
+          <td class="paramname"><em>_BeginIndex</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Поиск строки,совпадающей с указанным регулярным выражением. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_RegEx</td><td>Регулярное выражение, совпадение с которым следует искать. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_BeginIndex</td><td>Индекс строки, с которой следует начать поиск.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><b>Index</b> Индекс строки, которая соответствует регулярному выражению. </dd>
+<dd>
+<b>Npos</b> Искомая строка не найдена. </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00139_af9cafa06e9fa59c41c0ee1de31c7cd25_cgraph.png" border="0" usemap="#a00139_af9cafa06e9fa59c41c0ee1de31c7cd25_cgraph" alt=""/></div>
+<map name="a00139_af9cafa06e9fa59c41c0ee1de31c7cd25_cgraph" id="a00139_af9cafa06e9fa59c41c0ee1de31c7cd25_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb59df6f8773ffc07d609df5f584279e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alicorn::extension::std::Text::Insert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00134.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Size_t&#160;</td>
+          <td class="paramname"><em>_Index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вставки текста на место указанной строки. </p>
+<ul>
+<li>Указанная строка будет разбита на отдельные строки по разделителю ('\r\n'), после чего эти строки будут вставлены на место указанной строки (т.е. они будут располагаться перед ней).</li>
+<li>Для вставки пустой строки добавить _T("\\r\\n").</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Source</td><td>Добавляемая строка. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Index</td><td>Индекс строки, на место которой будут добавлены строки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Индекс превышает количество строк в тексте. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00139_aeb59df6f8773ffc07d609df5f584279e_cgraph.png" border="0" usemap="#a00139_aeb59df6f8773ffc07d609df5f584279e_cgraph" alt=""/></div>
+<map name="a00139_aeb59df6f8773ffc07d609df5f584279e_cgraph" id="a00139_aeb59df6f8773ffc07d609df5f584279e_cgraph">
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa25f800aca7cdbcf85d4bf22f3d2d4a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00134.html">String</a> alicorn::extension::std::Text::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">Size_t&#160;</td>
+          <td class="paramname"><em>_Index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор получения строки текста по ее индексу. </p>
+<ul>
+<li>Функция предназначена для &lt;... подробное описание&gt;.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Index</td><td>Индекс искомой строки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Указанный индекс превышает количество строк в тексте. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5775f11872d97e4b59e6df3e7089bf91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alicorn::extension::std::Text::Remove </td>
+          <td>(</td>
+          <td class="paramtype">Size_t&#160;</td>
+          <td class="paramname"><em>_Index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Size_t&#160;</td>
+          <td class="paramname"><em>_Count</em> = <code>1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для удаления указанного количества строк, начиная с указанного индекса. </p>
+<ul>
+<li>Если количество удаляемых строк превысит количество существующих строк в тексте, будут удалены все строки до конца текста.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Index</td><td>Индекс строки, начиная с которой строки будут удалены. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Count</td><td>Количество удаляемых строк.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Индекс превышает количество строк в тексте. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5e6f83a7ede7dba17e37c831a19fd412"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alicorn::extension::std::Text::Save </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для сохранения текста в файл. </p>
+<ul>
+<li>Сохранение будет производиться в тот же файл, из которого текст был загружен в конструкторе.</li>
+</ul>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Объект класса был создан не из файла.</li>
+<li>Не удалось открыть исходный файл. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8798e1cf38e34a06874b32d550ccedab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void alicorn::extension::std::Text::Save </td>
+          <td>(</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFile</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для сохранения текста в указанный файл. </p>
+<ul>
+<li>Существующий файл будет перезаписан.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к файлу, в который будет сохранен текст.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Не удалось открыть указанный файл. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/extension/std/string/<a class="el" href="a00319_source.html">string.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/extension/std/string/string.cpp</li>
-<li>Solution/Solution/Alicorn/include/alicorn/extension/std/string/string.inl</li>
+<li>Solution/Solution/Alicorn/include/alicorn/extension/std/<a class="el" href="a00317_source.html">text.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/extension/std/text.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="a00139.html">String</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 20:01:28. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="a00139.html">Text</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 21:12:10. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

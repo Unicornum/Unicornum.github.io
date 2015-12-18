@@ -1,20 +1,26 @@
 var a00503 =
 [
-    [ "Match", "a00108.html", [
-      [ "Match", "a00108.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
-      [ "Match", "a00108.html#a6771afe48b8f1155f53536b2220e2764", null ],
-      [ "GetGroups", "a00108.html#a25a080222bf760066265b29637242692", null ],
-      [ "IsMatch", "a00108.html#abaaf6788b646b68ad35c6063693f07b3", null ]
+    [ "File", "a00088.html", [
+      [ "File", "a00088.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
+      [ "Save", "a00088.html#ae1eeefb237c2c1965a388681e993bc8b", null ]
     ] ],
-    [ "Replace", "a00133.html", [
-      [ "Replace", "a00133.html#adb87baefad52f5062b8edeba4ca08c03", null ],
-      [ "Replace", "a00133.html#a16563cd9219fb222a79395912e3dc987", null ],
-      [ "DoReplace", "a00133.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
+    [ "ISection", "a00100.html", null ],
+    [ "RootSection", "a00130.html", [
+      [ "operator[]", "a00130.html#a795f11146029e3a64b03bc19d46f5ebc", null ]
     ] ],
-    [ "Search", "a00136.html", [
-      [ "Search", "a00136.html#a845a87338ed627ba32a9893ddbdd2559", null ],
-      [ "Search", "a00136.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
-      [ "GetCoincided", "a00136.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
-      [ "IsSearch", "a00136.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
+    [ "SectionImpl", "a00133.html", [
+      [ "SectionImpl", "a00133.html#ad88d43b6da522cc7ebfd982915908ad4", null ],
+      [ "GetChildSectionImpl", "a00133.html#a3df5c9b056b01466c8a70001861867ed", null ],
+      [ "GetValue", "a00133.html#abc6514e8d3099d69d87c8a6707a1de75", null ],
+      [ "Save", "a00133.html#a7f9bc78cb9b514f69d1c915376315484", null ],
+      [ "SetDefaultValue", "a00133.html#af131fc132706112bc4eebc6293a0cb06", null ],
+      [ "SetValue", "a00133.html#a1b5bbfe503c6ec6a69c5c8bafa662095", null ]
+    ] ],
+    [ "Section", "a00132.html", [
+      [ "Get", "a00132.html#a8f0e717f7f49c0550dde81bda8990fc6", null ],
+      [ "Get", "a00132.html#a9279581b90925d60c9f1d692434a923e", null ],
+      [ "operator[]", "a00132.html#af90a8b6f0922068e49e6622168378f74", null ],
+      [ "Set", "a00132.html#a9430fdfadf92f55f59413c20c43888f3", null ],
+      [ "SetDefault", "a00132.html#a07b1bc96d6ad9dc348b161e514e4bbfe", null ]
     ] ]
 ];

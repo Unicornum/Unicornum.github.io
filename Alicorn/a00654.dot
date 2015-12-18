@@ -1,17 +1,7 @@
-digraph "alicorn::logger::Message"
+digraph "alicorn::logger::Proxy&lt; TType &gt;"
 {
  // INTERACTIVE_SVG=YES
   edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
   node [fontname="Verdana",fontsize="10",shape=record];
-  Node1 [label="{alicorn::logger::Message\n||+ AddValue()\l+ GetLevel()\l+ DoComplete()\l+ DoComplete()\l# DoSpecialAction()\l# Message()\l# ~Message()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
-  Node2 [label="{alicorn::logger::Error\n||+ Error()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00085.html",tooltip="Класс входит в Проект Logger   Класс сообщения. "];
-  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
-  Node3 [label="{alicorn::logger::Fatal\n||+ Fatal()\l# DoSpecialAction()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00087.html",tooltip="Класс входит в Проект Logger   Класс сообщения (наивысший приоритет). "];
-  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
-  Node4 [label="{alicorn::logger::Info\n||+ Info()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00098.html",tooltip="Класс входит в Проект Logger   Класс сообщения. "];
-  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
-  Node5 [label="{alicorn::logger::Trace\n||+ Trace()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00145.html",tooltip="Класс входит в Проект Logger   Класс сообщения (низший приоритет). "];
-  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
-  Node6 [label="{alicorn::logger::Warning\n||+ Warning()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00149.html",tooltip="Класс входит в Проект Logger   Класс сообщения. "];
+  Node1 [label="{alicorn::logger::Proxy\l\< TType \>\n||+ operator\<\<()\l+ operator=()\l+ Proxy()\l+ Proxy()\l+ operator\<\<()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
 }

@@ -1,6 +1,8 @@
 var a00333 =
 [
-    [ "LOGGER", "a00511.html#ga8633a5b99dd43399c58206e715e7d29f", null ],
-    [ "LOGGER_DEBUG", "a00511.html#ga87f9f935c2d2acfc81a79f73e4c2bf85", null ],
-    [ "LOGGER_MIN_LEVEL", "a00511.html#ga827550edbeb086a4fcf0c8d506614062", null ]
+    [ "__FILE_VERSION__", "a00506.html#ga85f528db31313a13c1976707ebadcf84", null ],
+    [ "__FILE_VERSION_FULL__", "a00506.html#ga0facd32184b2ec0c57501e7d76ce59ca", null ],
+    [ "__FILE_VERSION_SHORT__", "a00506.html#gaca887abf1bed0f12a99431714940c050", null ],
+    [ "__PRODUCT_VERSION__", "a00506.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09", null ],
+    [ "__PRODUCT_VERSION_FULL__", "a00506.html#ga5e07a654741079583f62167c324ce81a", null ]
 ];

@@ -1,6 +1,9 @@
 var a00133 =
 [
-    [ "Replace", "a00133.html#adb87baefad52f5062b8edeba4ca08c03", null ],
-    [ "Replace", "a00133.html#a16563cd9219fb222a79395912e3dc987", null ],
-    [ "DoReplace", "a00133.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
+    [ "SectionImpl", "a00133.html#ad88d43b6da522cc7ebfd982915908ad4", null ],
+    [ "GetChildSectionImpl", "a00133.html#a3df5c9b056b01466c8a70001861867ed", null ],
+    [ "GetValue", "a00133.html#abc6514e8d3099d69d87c8a6707a1de75", null ],
+    [ "Save", "a00133.html#a7f9bc78cb9b514f69d1c915376315484", null ],
+    [ "SetDefaultValue", "a00133.html#af131fc132706112bc4eebc6293a0cb06", null ],
+    [ "SetValue", "a00133.html#a1b5bbfe503c6ec6a69c5c8bafa662095", null ]
 ];

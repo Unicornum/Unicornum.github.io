@@ -1,8 +1,5 @@
 var a00088 =
 [
-    [ "file", "a00088.html#ae881a3cab1fe7152d45c92a8d7606cb3", null ],
-    [ "file", "a00088.html#a90707ccd991cc392dcf4bef37eed9d1f", null ],
-    [ "data", "a00088.html#af1c71d65862c7af14e4708e32a80c1de", null ],
-    [ "data", "a00088.html#aceb8f5ebd577c946a74b1ea3e2e0c576", null ],
-    [ "size", "a00088.html#a20191d167c6e00a88a44ca9a3a54e1c5", null ]
+    [ "File", "a00088.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
+    [ "Save", "a00088.html#ae1eeefb237c2c1965a388681e993bc8b", null ]
 ];

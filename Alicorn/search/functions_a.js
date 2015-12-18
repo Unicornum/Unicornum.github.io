@@ -1,13 +1,12 @@
 var searchData=
 [
-  ['parent',['parent',['../a00153.html#a7f31ae930f93852830234db1ae59c4c4',1,'rapidxml::xml_base']]],
-  ['parse',['Parse',['../a00104.html#aa52838badaaabba0c6220233207c10f3',1,'alicorn::document::xml::IXml::Parse(const Path_t &amp;_PathToFile)=0'],['../a00104.html#a377aa37cbe981975abb22d8d47253d77',1,'alicorn::document::xml::IXml::Parse(const Data_t &amp;_Data)=0'],['../a00131.html#a673e6055c6662c15c81931ae71ac7f28',1,'alicorn::document::xml::RapidXml::Parse(const Path_t &amp;_PathToFile) override'],['../a00131.html#a1d4d777da0008cf9e57707f89ed12486',1,'alicorn::document::xml::RapidXml::Parse(const Data_t &amp;_Data) override'],['../a00154.html#ac6e73ff9ac323bf5a370c38feb03a6b1',1,'rapidxml::xml_document::parse()']]],
-  ['parse_5ferror',['parse_error',['../a00120.html#aea12a301271c393fb627b368fb9f35c1',1,'rapidxml::parse_error']]],
-  ['prepend_5fattribute',['prepend_attribute',['../a00155.html#a8b62ee76489faf8e2d1210869d547684',1,'rapidxml::xml_node']]],
-  ['prepend_5fnode',['prepend_node',['../a00155.html#ae86e92908c3eab40bbed8216e4f3f3cb',1,'rapidxml::xml_node']]],
-  ['previous_5fattribute',['previous_attribute',['../a00152.html#ae3547cc30b201fd6d7b98c04dda26f89',1,'rapidxml::xml_attribute']]],
-  ['previous_5fsibling',['previous_sibling',['../a00155.html#a001ece4e227eebbd6ad0ec7dacf1c00b',1,'rapidxml::xml_node']]],
-  ['process',['Process',['../a00122.html#a9427a926dfcfa3c666bc44d446853854',1,'alicorn::system::Process']]],
-  ['ptr',['Ptr',['../a00129.html#a85a101c3ca8e8fbb7cc8ca71bc08fb52',1,'alicorn::system::dll::Ptr']]],
-  ['ptrobject',['PtrObject',['../a00130.html#acd781dd50b7eb7368848018c052c136f',1,'alicorn::system::dll::PtrObject']]]
+  ['save',['Save',['../a00102.html#a1646fc139c23eadfa1eed5ca90707945',1,'alicorn::document::xml::IXml::Save()'],['../a00126.html#ada002643ade3567c9edfc576f8beaa81',1,'alicorn::document::xml::RapidXml::Save()'],['../a00146.html#a53509551da249e09cd7ed2eb0cb45b25',1,'alicorn::document::Xml::Save()'],['../a00139.html#a5e6f83a7ede7dba17e37c831a19fd412',1,'alicorn::extension::std::Text::Save(void) const '],['../a00139.html#a8798e1cf38e34a06874b32d550ccedab',1,'alicorn::extension::std::Text::Save(const Path_t &amp;) const '],['../a00088.html#ae1eeefb237c2c1965a388681e993bc8b',1,'alicorn::settings::File::Save()'],['../a00133.html#a7f9bc78cb9b514f69d1c915376315484',1,'alicorn::settings::SectionImpl::Save()']]],
+  ['search',['Search',['../a00131.html#a845a87338ed627ba32a9893ddbdd2559',1,'alicorn::extension::std::regex::Search::Search(const String &amp;_RegEx)'],['../a00131.html#a37232739a36919ae5793fb3ac4dbdb06',1,'alicorn::extension::std::regex::Search::Search(const String &amp;_RegEx, IgnoreCase)']]],
+  ['sectionimpl',['SectionImpl',['../a00133.html#ad88d43b6da522cc7ebfd982915908ad4',1,'alicorn::settings::SectionImpl']]],
+  ['set',['Set',['../a00069.html#a6cb1518cb704c7edeee6bbe73409dfd5',1,'alicorn::logger::Configurator::Set()'],['../a00073.html#ab1361aa8875cbd9727192fa433b7fa94',1,'alicorn::logger::Core::Set(const MessageImpl &amp;)'],['../a00073.html#a47b345730a5268f6f1a8bf52dd02b12c',1,'alicorn::logger::Core::Set(const ConfigValueImpl &amp;)'],['../a00073.html#ad43ec7c95e2ade9ff45ea2687fcfcd77',1,'alicorn::logger::Core::Set(const ReportPtr_t &amp;)'],['../a00132.html#a9430fdfadf92f55f59413c20c43888f3',1,'alicorn::settings::Section::Set()']]],
+  ['setattribute',['SetAttribute',['../a00102.html#a969f1058fe4ef9b68c187be6f24a41d8',1,'alicorn::document::xml::IXml::SetAttribute()'],['../a00126.html#a8b410764c8c20de92ce18251f65ed66e',1,'alicorn::document::xml::RapidXml::SetAttribute()']]],
+  ['setdefault',['SetDefault',['../a00132.html#a07b1bc96d6ad9dc348b161e514e4bbfe',1,'alicorn::settings::Section']]],
+  ['setdefaultvalue',['SetDefaultValue',['../a00133.html#af131fc132706112bc4eebc6293a0cb06',1,'alicorn::settings::SectionImpl']]],
+  ['setvalue',['SetValue',['../a00102.html#af2fb77430c4a371281e93b1af0df4402',1,'alicorn::document::xml::IXml::SetValue()'],['../a00126.html#a587389217c21a274669d906385315ade',1,'alicorn::document::xml::RapidXml::SetValue()'],['../a00133.html#a1b5bbfe503c6ec6a69c5c8bafa662095',1,'alicorn::settings::SectionImpl::SetValue()']]],
+  ['string_5fcast',['string_cast',['../a00491.html#gafc1bb38569424983a63fbf99ce9f47c1',1,'alicorn::extension::std::string_cast(const TSource &amp;_Source)'],['../a00491.html#ga7547d6bee1244042e43ffb63d797c231',1,'alicorn::extension::std::string_cast(const TSource &amp;_Source)']]]
 ];

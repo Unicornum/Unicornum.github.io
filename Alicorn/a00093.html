@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Класс GTestResult</title>
+<title>LibsVS2013: Класс alicorn::system::process::ICallBack</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1238 Architecture: x86.64 Build: 20:01 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1245 Architecture: x86.64 Build: 21:11 18 Декабрь 2015</span>
    </div>
    <div id="projectbrief">Libs</div>
   </td>
@@ -110,49 +110,47 @@ $(document).ready(function(){initNavTree('a00093.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00565.html">Полный список членов класса</a>  </div>
+<a href="a00742.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс GTestResult</div>  </div>
+<div class="title">Класс alicorn::system::process::ICallBack<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a00485.html">Alicorn</a> &raquo; <a class="el" href="a00504.html">System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс, формирующий отчет с результатами тестирования.  
+<p>Класс входит в <a class="el" href="a00044.html">Проект System</a> <br />
+ Интерфейсный класс для объекта обратного вызова, используемого при работе класса <a class="el" href="a00117.html" title="Класс входит в Проект System   Класс для запуска других программ. ">Process</a>.  
  <a href="a00093.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00294_source.html">result.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:EmptyTestEventListener.</p>
+<p><code>#include &lt;<a class="el" href="a00415_source.html">call-back.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса GTestResult:</div>
+Граф связей класса alicorn::system::process::ICallBack:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00566.png" border="0" usemap="#_g_test_result_coll__map" alt="Collaboration graph"/></div>
-<map name="_g_test_result_coll__map" id="_g_test_result_coll__map">
+<div class="center"><img src="a00743.png" border="0" usemap="#alicorn_1_1system_1_1process_1_1_i_call_back_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1system_1_1process_1_1_i_call_back_coll__map" id="alicorn_1_1system_1_1process_1_1_i_call_back_coll__map">
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс, формирующий отчет с результатами тестирования. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00044.html">Проект System</a> <br />
+ Интерфейсный класс для объекта обратного вызова, используемого при работе класса <a class="el" href="a00117.html" title="Класс входит в Проект System   Класс для запуска других программ. ">Process</a>. </p>
 <ul>
-<li>Используется вместо формирователя отчета по умолчанию (вывод в консоль).</li>
+<li>Функция IsContinue() вызывается постоянно в процессе работы запущенной программы, она должна вернуть false, если работу программы следует прервать.</li>
+<li>Функция Received() вызывается после завершения работы запущенной программы (штатного или принудительного) для каждой отдельной строки ее консольного вывода.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 янв 2013 <br />
- 02 ноя 2014 <br />
+<dl class="section date"><dt>Дата</dt><dd>10 Сентябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2013 - 2014 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/extension/google/test/<a class="el" href="a00294_source.html">result.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/extension/google/test/result.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/system/process/<a class="el" href="a00415_source.html">call-back.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00093.html">GTestResult</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 20:01:28. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><b>process</b></li><li class="navelem"><a class="el" href="a00093.html">ICallBack</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 21:12:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

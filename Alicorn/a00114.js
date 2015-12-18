@@ -1,6 +1,9 @@
 var a00114 =
 [
-    [ "Message", "a00114.html#a3d40aeefeba1cf87f0ce3cc251f656f2", null ],
-    [ "DoSpecialAction", "a00114.html#a22780dd83eb6c92232d773cf09536961", null ],
-    [ "GetLevel", "a00114.html#a7e0aa36f88d152d1b6e99a9d1bb2da04", null ]
+    [ "operator+=", "a00114.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
+    [ "operator-=", "a00114.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
+    [ "operator[]", "a00114.html#afc41066cbf2787ffb952d199a0640273", null ],
+    [ "operator[]", "a00114.html#a4bfda637ac9887bb9676f301e40861be", null ],
+    [ "operator[]", "a00114.html#a44ae2217ccac94b6b565701bfd05774e", null ],
+    [ "operator[]", "a00114.html#a75535c69883d5768f646b92554d745d2", null ]
 ];
