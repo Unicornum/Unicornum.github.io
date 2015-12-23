@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/system/winapi-call.hpp</title>
+<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/system/winapi-call-proxy.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1245 Architecture: x86.64 Build: 22:28 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1283(0) Architecture: x86.64 Build: 15:57 23 Декабрь 2015</span>
    </div>
    <div id="projectbrief">Libs</div>
   </td>
@@ -108,22 +108,42 @@ $(document).ready(function(){initNavTree('a00420_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">winapi-call.hpp</div>  </div>
+<div class="title">winapi-call-proxy.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;winapi-call-proxy.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00504.html#gac67366a4782d98fd71f21ecc3981365b">   36</a></span>&#160;<span class="preprocessor">#define WINAPI_CALL \</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">  CALL_PROXY(::alicorn::system::WinapiCallProxy)</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Windows.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\extension\std\call-proxy.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00452.html">alicorn</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>system</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00145.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00145.html">WinapiCallProxy</a> final : </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00068.html">extension::std::CallProxy</a>&lt;WinapiCallProxy&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsSuccessfull(BOOL _IsError) {<span class="keywordflow">return</span> (_IsError != FALSE);}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> std::string <a class="code" href="a00145.html#a7023a00d30af42e21479960ad63ecc17">GetMessageText</a>(BOOL);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// namespace system</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="a00068_html"><div class="ttname"><a href="a00068.html">alicorn::extension::std::CallProxy</a></div><div class="ttdoc">Класс входит в Проект Std   Базовый класс для проверки кода ошибки. </div><div class="ttdef"><b>Definition:</b> call-proxy.hpp:81</div></div>
+<div class="ttc" id="a00452_html"><div class="ttname"><a href="a00452.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> attribute.hpp:6</div></div>
+<div class="ttc" id="a00145_html"><div class="ttname"><a href="a00145.html">alicorn::system::WinapiCallProxy</a></div><div class="ttdoc">Класс входит в Проект System   Вспомогательный класс для обеспечения логики работы макроса WINAPI_CAL...</div><div class="ttdef"><b>Definition:</b> winapi-call-proxy.hpp:27</div></div>
+<div class="ttc" id="a00145_html_a7023a00d30af42e21479960ad63ecc17"><div class="ttname"><a href="a00145.html#a7023a00d30af42e21479960ad63ecc17">alicorn::system::WinapiCallProxy::GetMessageText</a></div><div class="ttdeci">static std::string GetMessageText(BOOL)</div><div class="ttdoc">Функция для формирования текстового описания последней ошибки при вызове функции WinApi. </div><div class="ttdef"><b>Definition:</b> winapi-call-proxy.cpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_84dba80d8c4e490b971c241d56a2e320.html">system</a></li><li class="navelem"><b>winapi-call.hpp</b></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 22:29:40. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_84dba80d8c4e490b971c241d56a2e320.html">system</a></li><li class="navelem"><b>winapi-call-proxy.hpp</b></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Ср 23 Дек 2015 15:58:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

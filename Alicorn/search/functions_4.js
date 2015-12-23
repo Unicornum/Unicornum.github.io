@@ -5,6 +5,7 @@ var searchData=
   ['getattribute',['GetAttribute',['../a00102.html#a81e00328102b171e94014a28d0df1501',1,'alicorn::document::xml::IXml::GetAttribute()'],['../a00126.html#a48a0c20687fb2d813ab5df656993cc65',1,'alicorn::document::xml::RapidXml::GetAttribute()']]],
   ['getchildsectionimpl',['GetChildSectionImpl',['../a00133.html#a3df5c9b056b01466c8a70001861867ed',1,'alicorn::settings::SectionImpl']]],
   ['getcoincided',['GetCoincided',['../a00131.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4',1,'alicorn::extension::std::regex::Search']]],
+  ['getcomment',['GetComment',['../a00133.html#afeafe7852bb3b8ed88b3d7c658e50d69',1,'alicorn::settings::SectionImpl::GetComment()'],['../a00132.html#a7d01dc3f0bea6ad28a1f7542d4a7f43e',1,'alicorn::settings::Section::GetComment()']]],
   ['getcurrentnodename',['GetCurrentNodeName',['../a00102.html#a5254b3b74b7e4c713d0b149807aea8f3',1,'alicorn::document::xml::IXml::GetCurrentNodeName()'],['../a00126.html#a1aca537538e91a54b1a177b60c6e97b8',1,'alicorn::document::xml::RapidXml::GetCurrentNodeName()']]],
   ['getgroups',['GetGroups',['../a00106.html#a25a080222bf760066265b29637242692',1,'alicorn::extension::std::regex::Match']]],
   ['gethandle',['GetHandle',['../a00076.html#aa2ead7f4761316eb916b16ddcf992e24',1,'alicorn::system::CurrentModule']]],
@@ -14,8 +15,8 @@ var searchData=
   ['getname',['GetName',['../a00076.html#a8f25419e0f63ad50ffc642163819df8d',1,'alicorn::system::CurrentModule']]],
   ['getnow',['GetNow',['../a00079.html#af736a0188d5c880336c8da286cb587e2',1,'alicorn::logger::DateTime']]],
   ['getnowmks',['GetNowMks',['../a00079.html#a8d1f6abe52e706fd652a3f71369b97d2',1,'alicorn::logger::DateTime']]],
-  ['getsize',['GetSize',['../a00139.html#a7fed9701da653afb67eddee3937535e5',1,'alicorn::extension::std::Text']]],
+  ['getsize',['GetSize',['../a00138.html#a7fed9701da653afb67eddee3937535e5',1,'alicorn::extension::std::Text']]],
   ['getstringfile',['GetStringFile',['../a00097.html#aea77ed774da02bbaffc1afba165980d0',1,'alicorn::version::Info']]],
-  ['getthisdirectory',['GetThisDirectory',['../a00505.html#ga7f988e79eeac54f11e080ffbd5196129',1,'alicorn::testing']]],
+  ['getthisdirectory',['GetThisDirectory',['../a00506.html#ga7f988e79eeac54f11e080ffbd5196129',1,'alicorn::testing']]],
   ['getvalue',['GetValue',['../a00102.html#a629ed43bf59e337091b5ad833efe3828',1,'alicorn::document::xml::IXml::GetValue()'],['../a00126.html#a50dc58df3ac319bab6b646db8fec3e47',1,'alicorn::document::xml::RapidXml::GetValue()'],['../a00133.html#abc6514e8d3099d69d87c8a6707a1de75',1,'alicorn::settings::SectionImpl::GetValue()']]]
 ];

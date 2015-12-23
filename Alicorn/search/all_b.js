@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['message',['Message',['../a00496.html',1,'']]],
+  ['message',['Message',['../a00497.html',1,'']]],
   ['m_5fdatetime',['m_DateTime',['../a00112.html#afa58e26786b951a8c796f060d93c13f5',1,'alicorn::logger::MessageImpl']]],
   ['m_5ffileline',['m_FileLine',['../a00112.html#a2fcf644acdc70fc17a9ced3f7c206408',1,'alicorn::logger::MessageImpl']]],
   ['m_5ffullfileline',['m_FullFileLine',['../a00112.html#a5488596e9976dd74cd60218ace6b7bfc',1,'alicorn::logger::MessageImpl']]],
@@ -11,7 +11,7 @@ var searchData=
   ['m_5fmessage',['m_Message',['../a00112.html#a197f88a4e9bd58de9eb043ecb5c23394',1,'alicorn::logger::MessageImpl']]],
   ['m_5fstrtype',['m_StrType',['../a00112.html#ada6012e1c6046f2287c98380d019a022',1,'alicorn::logger::MessageImpl']]],
   ['m_5fthreadinfo',['m_ThreadInfo',['../a00112.html#a35d7fed271b732e9867b8c9fea6617b3',1,'alicorn::logger::MessageImpl']]],
-  ['manager',['Manager',['../a00499.html#ga8e7b735024f7c889ba90c2087f57aa22',1,'alicorn::patterns::command']]],
+  ['manager',['Manager',['../a00500.html#ga8e7b735024f7c889ba90c2087f57aa22',1,'alicorn::patterns::command']]],
   ['managercommon',['ManagerCommon',['../a00104.html',1,'alicorn::patterns::command']]],
   ['managercommon_3c_20iundo_20_3e',['ManagerCommon&lt; IUndo &gt;',['../a00104.html',1,'alicorn::patterns::command']]],
   ['managerundoredo',['ManagerUndoRedo',['../a00105.html',1,'alicorn::patterns::command']]],

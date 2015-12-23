@@ -54,7 +54,7 @@ var hierarchy =
         [ "alicorn::logger::report::Empty", "a00083.html", null ],
         [ "alicorn::logger::report::File", "a00087.html", [
           [ "alicorn::logger::report::Html", "a00092.html", null ],
-          [ "alicorn::logger::report::Text", "a00138.html", null ]
+          [ "alicorn::logger::report::Text", "a00139.html", null ]
         ] ],
         [ "alicorn::logger::report::VisualStudioOutput", "a00143.html", null ]
       ] ]
@@ -83,8 +83,8 @@ var hierarchy =
     [ "alicorn::document::xml::Node", "a00114.html", null ],
     [ "alicorn::system::dll::Object", "a00115.html", null ],
     [ "alicorn::system::Process", "a00117.html", null ],
-    [ "alicorn::extension::std::exception::Proxy< TType >", "a00120.html", null ],
-    [ "alicorn::logger::Proxy< TType >", "a00121.html", null ],
+    [ "alicorn::logger::Proxy< TType >", "a00120.html", null ],
+    [ "alicorn::extension::std::exception::Proxy< TType >", "a00121.html", null ],
     [ "alicorn::testing::Proxy< T >", "a00122.html", null ],
     [ "alicorn::testing::Proxy< CurrentModuleProxy >", "a00122.html", null ],
     [ "alicorn::testing::Proxy< LoggerProxy >", "a00122.html", null ],
@@ -103,7 +103,7 @@ var hierarchy =
     [ "alicorn::extension::std::String", "a00134.html", null ],
     [ "alicorn::extension::std::StringCastProxy", "a00135.html", null ],
     [ "alicorn::extension::std::Locale::System", "a00137.html", null ],
-    [ "alicorn::extension::std::Text", "a00139.html", null ],
+    [ "alicorn::extension::std::Text", "a00138.html", null ],
     [ "alicorn::extension::std::Locale::UTF8", "a00141.html", null ],
     [ "alicorn::document::xml::Value", "a00142.html", null ],
     [ "alicorn::document::Xml< TImpl >", "a00146.html", null ]

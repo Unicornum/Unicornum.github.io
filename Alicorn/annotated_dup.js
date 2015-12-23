@@ -19,7 +19,7 @@ var annotated_dup =
         [ "std", null, [
           [ "exception", null, [
             [ "Message", "a00109.html", null ],
-            [ "Proxy", "a00120.html", null ]
+            [ "Proxy", "a00121.html", null ]
           ] ],
           [ "regex", null, [
             [ "Match", "a00106.html", "a00106" ],
@@ -33,7 +33,7 @@ var annotated_dup =
           [ "Message", "a00110.html", null ],
           [ "String", "a00134.html", "a00134" ],
           [ "StringCastProxy", "a00135.html", "a00135" ],
-          [ "Text", "a00139.html", "a00139" ]
+          [ "Text", "a00138.html", "a00138" ]
         ] ]
       ] ],
       [ "logger", null, [
@@ -44,7 +44,7 @@ var annotated_dup =
           [ "Html", "a00092.html", "a00092" ],
           [ "IReport", "a00099.html", "a00099" ],
           [ "Report", "a00129.html", null ],
-          [ "Text", "a00138.html", "a00138" ],
+          [ "Text", "a00139.html", "a00139" ],
           [ "VisualStudioOutput", "a00143.html", "a00143" ]
         ] ],
         [ "AllowReplace", "a00065.html", null ],
@@ -66,7 +66,7 @@ var annotated_dup =
         [ "PathToLogDirectory", "a00116.html", null ],
         [ "ProgramName", "a00118.html", null ],
         [ "ProgramVersion", "a00119.html", null ],
-        [ "Proxy", "a00121.html", null ],
+        [ "Proxy", "a00120.html", null ],
         [ "ProxyDebug", "a00123.html", null ],
         [ "StringConfigValue", "a00136.html", null ],
         [ "Trace", "a00140.html", null ],

@@ -3,9 +3,9 @@ var NAVTREE =
   [ "LibsVS2013", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
     [ "Использование подставных объектов Google Mock", "a00060.html", null ],
-    [ "Список задач", "a00509.html", null ],
-    [ "Список устаревших определений и описаний", "a00511.html", null ],
-    [ "Ошибки", "a00513.html", null ],
+    [ "Список задач", "a00510.html", null ],
+    [ "Список устаревших определений и описаний", "a00512.html", null ],
+    [ "Ошибки", "a00514.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -31,9 +31,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00121.html",
-"a00327_source.html",
-"dir_f02c554f12242fc4528f0dfc4dbe1021.html"
+"a00119.html",
+"a00322_source.html",
+"dir_ca288751250a01e988964118a96c4add.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

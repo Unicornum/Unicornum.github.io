@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['report',['Report',['../a00497.html',1,'']]],
-  ['regex',['Regex',['../a00490.html',1,'']]],
+  ['report',['Report',['../a00498.html',1,'']]],
+  ['regex',['Regex',['../a00491.html',1,'']]],
   ['rapidxml',['RapidXml',['../a00126.html',1,'alicorn::document::xml']]],
   ['redo',['Redo',['../a00105.html#a2cf7a9e613cbb698cc1ca2c26e554637',1,'alicorn::patterns::command::ManagerUndoRedo']]],
   ['register',['Register',['../a00085.html#a7fa0f3418698b0f028e84791fc62c421',1,'alicorn::patterns::factory::Factory']]],
   ['registrator',['Registrator',['../a00127.html',1,'alicorn::patterns::factory']]],
-  ['remove',['Remove',['../a00139.html#a5775f11872d97e4b59e6df3e7089bf91',1,'alicorn::extension::std::Text']]],
+  ['remove',['Remove',['../a00138.html#a5775f11872d97e4b59e6df3e7089bf91',1,'alicorn::extension::std::Text']]],
   ['replace',['Replace',['../a00128.html#adb87baefad52f5062b8edeba4ca08c03',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx)'],['../a00128.html#a16563cd9219fb222a79395912e3dc987',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx, IgnoreCase)']]],
   ['replace',['Replace',['../a00128.html',1,'alicorn::extension::std::regex']]],
   ['report',['Report',['../a00129.html',1,'alicorn::logger::report']]],

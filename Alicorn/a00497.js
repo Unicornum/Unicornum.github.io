@@ -1,34 +1,27 @@
 var a00497 =
 [
-    [ "Console", "a00072.html", [
-      [ "WriteRecord", "a00072.html#aab3352a57302cff220e46d9cea1c12bb", null ],
-      [ "WriteTitle", "a00072.html#a16ff9b02d58211e7be68cc7514755e85", null ]
+    [ "MessageImpl", "a00112.html", [
+      [ "MessageImpl", "a00112.html#a905589b1e01ae683692049bbfdc35a54", null ],
+      [ "m_DateTime", "a00112.html#afa58e26786b951a8c796f060d93c13f5", null ],
+      [ "m_FileLine", "a00112.html#a2fcf644acdc70fc17a9ced3f7c206408", null ],
+      [ "m_FullFileLine", "a00112.html#a5488596e9976dd74cd60218ace6b7bfc", null ],
+      [ "m_Function", "a00112.html#acb1be41dfc2a8fb6f212b5dd7ffb5600", null ],
+      [ "m_Hash", "a00112.html#a70dde1057597afe5723ab5e9e776f027", null ],
+      [ "m_Level", "a00112.html#a6e74c8ae0d3d3f5c66a86998c6bc5a9e", null ],
+      [ "m_Message", "a00112.html#a197f88a4e9bd58de9eb043ecb5c23394", null ],
+      [ "m_StrType", "a00112.html#ada6012e1c6046f2287c98380d019a022", null ],
+      [ "m_ThreadInfo", "a00112.html#a35d7fed271b732e9867b8c9fea6617b3", null ]
     ] ],
-    [ "Empty", "a00083.html", [
-      [ "WriteRecord", "a00083.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
-      [ "WriteTitle", "a00083.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
+    [ "Message", "a00111.html", [
+      [ "Message", "a00111.html#a3d40aeefeba1cf87f0ce3cc251f656f2", null ],
+      [ "DoSpecialAction", "a00111.html#a22780dd83eb6c92232d773cf09536961", null ],
+      [ "GetLevel", "a00111.html#a7e0aa36f88d152d1b6e99a9d1bb2da04", null ]
     ] ],
-    [ "File", "a00087.html", [
-      [ "FormFileName", "a00087.html#a78253bd31454f39e16fb359f206526c1", null ],
-      [ "OpenFile", "a00087.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
-      [ "WriteRecord", "a00087.html#acb716a4ccea948033c64be86775d671d", null ],
-      [ "m_LogFile", "a00087.html#abaf06f0b024ca4033e968df2b5ee9643", null ]
-    ] ],
-    [ "Html", "a00092.html", [
-      [ "WriteRecord", "a00092.html#a7e66035d80654aefc735bc594ded20ef", null ],
-      [ "WriteTitle", "a00092.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b", null ]
-    ] ],
-    [ "IReport", "a00099.html", [
-      [ "WriteRecord", "a00099.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-      [ "WriteTitle", "a00099.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
-    ] ],
-    [ "Report", "a00129.html", null ],
-    [ "Text", "a00138.html", [
-      [ "WriteRecord", "a00138.html#a487f860fae5255eaa76c988294a764b7", null ],
-      [ "WriteTitle", "a00138.html#a16e5c27860d379682fe582396e14609d", null ]
-    ] ],
-    [ "VisualStudioOutput", "a00143.html", [
-      [ "WriteRecord", "a00143.html#a36ba11583024bbba693e2998ea4d3668", null ],
-      [ "WriteTitle", "a00143.html#a672763fba708c23851b38be162768bac", null ]
+    [ "Trace", "a00140.html", null ],
+    [ "Info", "a00096.html", null ],
+    [ "Warning", "a00144.html", null ],
+    [ "Error", "a00084.html", null ],
+    [ "Fatal", "a00086.html", [
+      [ "DoSpecialAction", "a00086.html#a526dc33d9ad165f8112898e8ec5693f8", null ]
     ] ]
 ];

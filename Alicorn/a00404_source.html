@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/system/current-module.mock.hpp</title>
+<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/system/current-module.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1245 Architecture: x86.64 Build: 22:28 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1283(0) Architecture: x86.64 Build: 15:57 23 Декабрь 2015</span>
    </div>
    <div id="projectbrief">Libs</div>
   </td>
@@ -108,71 +108,52 @@ $(document).ready(function(){initNavTree('a00404_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">current-module.mock.hpp</div>  </div>
+<div class="title">current-module.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00331.html">alicorn\testing.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00476.html">mock</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00451.html">alicorn</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>system</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>CurrentModuleProxy final :</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00122.html">::alicorn::testing::Proxy</a>&lt;CurrentModuleProxy&gt;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  MOCK_METHOD0(GetHandle, <span class="keywordtype">void</span> * (<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  MOCK_METHOD0(GetLocation, Path_t (<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  MOCK_METHOD0(GetAppDataPath, Path_t(<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>CurrentModule</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  typedef ::boost::filesystem::path Path_t;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">void</span> *                    hModule_t;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">static</span> hModule_t GetHandle(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> CurrentModuleProxy::GetInstance()-&gt;GetHandle();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  }</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> Path_t GetLocation(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> CurrentModuleProxy::GetInstance()-&gt;GetLocation();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\lib-info\system.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00270.html">alicorn\extension\boost\filesystem.forward.hpp</a>&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00452.html">alicorn</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>system</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00076.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00076.html">CurrentModule</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">using</span> hModule_t = <span class="keywordtype">void</span> *;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> hModule_t <a class="code" href="a00076.html#aa2ead7f4761316eb916b16ddcf992e24">GetHandle</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> Path_t <a class="code" href="a00076.html#a260058308984fa58b2294c9bef431cb3">GetLocation</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> Path_t <a class="code" href="a00076.html#a8f25419e0f63ad50ffc642163819df8d">GetName</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">static</span> Path_t <a class="code" href="a00076.html#ace3c6a06459c213c52260984dc69d461">GetAppDataPath</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> Path_t GetAppDataPath(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> CurrentModuleProxy::GetInstance()-&gt;GetAppDataPath();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> Path_t GetFullPath(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace system</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace system</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace alicorn</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace mock</span></div>
-<div class="ttc" id="a00122_html"><div class="ttname"><a href="a00122.html">alicorn::testing::Proxy</a></div><div class="ttdoc">Класс входит в Проект Testing   Базовый класс для построения прокси-классов для проверки вызовов функ...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:36</div></div>
-<div class="ttc" id="a00476_html"><div class="ttname"><a href="a00476.html">mock</a></div><div class="ttdef"><b>Definition:</b> rapidxml.mock.hpp:7</div></div>
-<div class="ttc" id="a00331_html"><div class="ttname"><a href="a00331.html">testing.hpp</a></div></div>
-<div class="ttc" id="a00451_html"><div class="ttname"><a href="a00451.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> attribute.hpp:6</div></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="a00076_html_a260058308984fa58b2294c9bef431cb3"><div class="ttname"><a href="a00076.html#a260058308984fa58b2294c9bef431cb3">alicorn::system::CurrentModule::GetLocation</a></div><div class="ttdeci">static Path_t GetLocation(void)</div><div class="ttdoc">Функция получения пути к папке расположения текущего модуля. </div><div class="ttdef"><b>Definition:</b> current-module.cpp:37</div></div>
+<div class="ttc" id="a00076_html"><div class="ttname"><a href="a00076.html">alicorn::system::CurrentModule</a></div><div class="ttdoc">Класс входит в Проект System   Класс получения информации о текущем модуле. </div><div class="ttdef"><b>Definition:</b> current-module.hpp:30</div></div>
+<div class="ttc" id="a00076_html_a8f25419e0f63ad50ffc642163819df8d"><div class="ttname"><a href="a00076.html#a8f25419e0f63ad50ffc642163819df8d">alicorn::system::CurrentModule::GetName</a></div><div class="ttdeci">static Path_t GetName(void)</div><div class="ttdoc">Функция получения имени текущего модуля. </div><div class="ttdef"><b>Definition:</b> current-module.cpp:51</div></div>
+<div class="ttc" id="a00270_html"><div class="ttname"><a href="a00270.html">filesystem.forward.hpp</a></div></div>
+<div class="ttc" id="a00076_html_ace3c6a06459c213c52260984dc69d461"><div class="ttname"><a href="a00076.html#ace3c6a06459c213c52260984dc69d461">alicorn::system::CurrentModule::GetAppDataPath</a></div><div class="ttdeci">static Path_t GetAppDataPath(void)</div><div class="ttdoc">Функция получения пути к папке, содержащей данные программы для текущего пользователя. </div><div class="ttdef"><b>Definition:</b> current-module.cpp:71</div></div>
+<div class="ttc" id="a00452_html"><div class="ttname"><a href="a00452.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> attribute.hpp:6</div></div>
+<div class="ttc" id="a00076_html_aa2ead7f4761316eb916b16ddcf992e24"><div class="ttname"><a href="a00076.html#aa2ead7f4761316eb916b16ddcf992e24">alicorn::system::CurrentModule::GetHandle</a></div><div class="ttdeci">static hModule_t GetHandle(void)</div><div class="ttdoc">Функция получения хэндла текущего модуля. </div><div class="ttdef"><b>Definition:</b> current-module.cpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_84dba80d8c4e490b971c241d56a2e320.html">system</a></li><li class="navelem"><b>current-module.mock.hpp</b></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 22:29:40. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_84dba80d8c4e490b971c241d56a2e320.html">system</a></li><li class="navelem"><b>current-module.hpp</b></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Ср 23 Дек 2015 15:58:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

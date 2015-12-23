@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1245 Architecture: x86.64 Build: 22:28 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1283(0) Architecture: x86.64 Build: 15:57 23 Декабрь 2015</span>
    </div>
    <div id="projectbrief">Libs</div>
   </td>
@@ -114,35 +114,34 @@ $(document).ready(function(){initNavTree('a00333_source.html','');});
 <a href="a00333.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00506.html#ga85f528db31313a13c1976707ebadcf84">   14</a></span>&#160;<span class="preprocessor">#define __FILE_VERSION__ \</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="a00507.html#ga85f528db31313a13c1976707ebadcf84">   14</a></span>&#160;<span class="preprocessor">#define __FILE_VERSION__ \</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">        VERSION,SUBVERSION,SUBSUBVERSION,REVISION_SOLUTION</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00506.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09">   22</a></span>&#160;<span class="preprocessor">#define __PRODUCT_VERSION__ \</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a00507.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09">   22</a></span>&#160;<span class="preprocessor">#define __PRODUCT_VERSION__ \</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">        VERSION.SUBVERSION.SUBSUBVERSION.YEAR</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define __PRODUCT_VERSION_STR__ \</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">        __TO_STR(__PRODUCT_VERSION__)</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00506.html#gaca887abf1bed0f12a99431714940c050">   44</a></span>&#160;<span class="preprocessor">#define __FILE_VERSION_SHORT__ \</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00507.html#gaca887abf1bed0f12a99431714940c050">   44</a></span>&#160;<span class="preprocessor">#define __FILE_VERSION_SHORT__ \</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">        __TO_STR(VERSION) &quot;.&quot; __TO_STR(SUBVERSION) &quot;.&quot; __TO_STR(SUBSUBVERSION) &quot;.&quot; \</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">  __TO_STR(REVISION_SOLUTION) &quot;(&quot; __TO_STR(REVISION_LIBS) &quot;) &quot;\</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">  __TO_STR(__ARCHITECTURE__)</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00506.html#ga0facd32184b2ec0c57501e7d76ce59ca">   54</a></span>&#160;<span class="preprocessor">#define __FILE_VERSION_FULL__ \</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">        __TO_STR(VERSION) &quot;.&quot; __TO_STR(SUBVERSION) &quot;.&quot; __TO_STR(SUBSUBVERSION) &quot; &quot; \</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  &quot;Revision: &quot; __TO_STR(REVISION_SOLUTION) &quot;(&quot; __TO_STR(REVISION_LIBS) &quot;) &quot;\</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">  &quot;Architecture: &quot; __TO_STR(__ARCHITECTURE__) &quot; &quot; \</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">  &quot;Build: &quot; TIME &quot; &quot; __TO_STR(DAY) &quot; &quot; __TO_STR(MONTH) &quot; &quot; __TO_STR(YEAR)</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="a00506.html#ga5e07a654741079583f62167c324ce81a">   65</a></span>&#160;<span class="preprocessor">#define __PRODUCT_VERSION_FULL__ \</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">        __FILE_VERSION_FULL__ </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">  __TO_STR(REVISION_SOLUTION) &quot; &quot; __TO_STR(__ARCHITECTURE__)</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00507.html#ga0facd32184b2ec0c57501e7d76ce59ca">   53</a></span>&#160;<span class="preprocessor">#define __FILE_VERSION_FULL__ \</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">        __TO_STR(VERSION) &quot;.&quot; __TO_STR(SUBVERSION) &quot;.&quot; __TO_STR(SUBSUBVERSION) &quot; &quot; \</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">  &quot;Revision: &quot; __TO_STR(REVISION_SOLUTION) &quot; &quot;\</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">  &quot;Architecture: &quot; __TO_STR(__ARCHITECTURE__) &quot; &quot; \</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">  &quot;Build: &quot; TIME &quot; &quot; __TO_STR(DAY) &quot; &quot; __TO_STR(MONTH) &quot; &quot; __TO_STR(YEAR)</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="a00507.html#ga5e07a654741079583f62167c324ce81a">   64</a></span>&#160;<span class="preprocessor">#define __PRODUCT_VERSION_FULL__ \</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">        __FILE_VERSION_FULL__ </span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_63e5757849621fd5dbcb0c24a3197f6b.html">version</a></li><li class="navelem"><a class="el" href="a00333.html">version.hpp</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 22:29:39. Создано системой
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Ср 23 Дек 2015 15:58:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

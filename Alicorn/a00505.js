@@ -1,26 +1,25 @@
 var a00505 =
 [
-    [ "Proxy", "a00122.html", null ],
-    [ "ASSERT_DIRECTORY_EQ", "a00505.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
-    [ "ASSERT_EXISTS_FILE_FALSE", "a00505.html#gaf5900286722be76eaf83b881ba160bb1", null ],
-    [ "ASSERT_EXISTS_FILE_TRUE", "a00505.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],
-    [ "ASSERT_FILES_BINARY_EQ", "a00505.html#gadedb8f379e467a385930902dddd6d157", null ],
-    [ "ASSERT_FILES_BINARY_NE", "a00505.html#ga47e03c92d053709b90f83f6b20c9b7ba", null ],
-    [ "ASSERT_FILES_STREQ", "a00505.html#ga69b3a6234d72517ef85674de2cf60d30", null ],
-    [ "ASSERT_STDEXCEPTION", "a00505.html#ga9b6950e02cf07c434b3c9ccc325b9559", null ],
-    [ "BLOCK_FILE", "a00505.html#ga19899edc3a2fc42261218d524c7364db", null ],
-    [ "EXPECT_DIRECTORY_EQ", "a00505.html#ga110902fa9f184c39fc0c095562472c69", null ],
-    [ "EXPECT_EXISTS_FILE_FALSE", "a00505.html#ga548418041138f552c93a97dfb866f9ac", null ],
-    [ "EXPECT_EXISTS_FILE_TRUE", "a00505.html#ga30aa7b117cfbd9a5a2df877a16092f5c", null ],
-    [ "EXPECT_FILES_BINARY_EQ", "a00505.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2", null ],
-    [ "EXPECT_FILES_BINARY_NE", "a00505.html#gaae14802f30c143ba014bc7980d3db7f0", null ],
-    [ "EXPECT_FILES_STREQ", "a00505.html#ga14628cf5a758a8aeec9b5bb69fed767e", null ],
-    [ "EXPECT_STDEXCEPTION", "a00505.html#gae7553b6a2b3b0c4a21e94d06217ef8f3", null ],
-    [ "FRIEND_TEST", "a00505.html#gab92570f53abf3b4fbbd13acaf4265468", null ],
-    [ "THIS_DIRECTORY", "a00505.html#gad33527f0cbd8dabe93ba131e08796e74", null ],
-    [ "GetThisDirectory", "a00505.html#ga7f988e79eeac54f11e080ffbd5196129", null ],
-    [ "IsBinaryEqual", "a00505.html#gac7d4c476b4ca78e9173fd36c42688648", null ],
-    [ "IsExists", "a00505.html#gaba7352a2eed189b48b6cdda86280e0e2", null ],
-    [ "IsMatch", "a00505.html#ga12fae53dd48adfd54cc17b98f46a3def", null ],
-    [ "IsStrEqual", "a00505.html#gac541b5429b4a879c791f2f36b2697046", null ]
+    [ "CurrentModule", "a00076.html", null ],
+    [ "Object", "a00115.html", null ],
+    [ "PtrObject", "a00125.html", [
+      [ "PtrObject", "a00125.html#acd781dd50b7eb7368848018c052c136f", null ]
+    ] ],
+    [ "Ptr", "a00124.html", [
+      [ "Ptr", "a00124.html#a85a101c3ca8e8fbb7cc8ca71bc08fb52", null ],
+      [ "operator->", "a00124.html#a2f9f74776cb12ed9037d527703094d11", null ],
+      [ "operator->", "a00124.html#a112467f369aaa88f3cf16ee0e8ac65c1", null ]
+    ] ],
+    [ "ICallBack", "a00093.html", null ],
+    [ "Process", "a00117.html", [
+      [ "Process", "a00117.html#a9427a926dfcfa3c666bc44d446853854", null ],
+      [ "RunWithoutWaitingCompletion", "a00117.html#a8829a0020c2f836c1c5efa408c261ea1", null ],
+      [ "RunWithoutWaitingCompletion", "a00117.html#a063aed97bbe1aab8e168710a235f330f", null ],
+      [ "RunWithReceiveStdout", "a00117.html#a85f1f11f01d19ce759652b29ffe2fbc1", null ],
+      [ "RunWithReceiveStdout", "a00117.html#a2971a5187f0cb4ff11e9b060a04fb9a6", null ],
+      [ "RunWithWaitingCompletion", "a00117.html#ae19ea48857085dd694fd60e0bee623ae", null ],
+      [ "RunWithWaitingCompletion", "a00117.html#a2ab8cf5ea6e95e8d68f9ab5091947a90", null ]
+    ] ],
+    [ "WinapiCallProxy", "a00145.html", null ],
+    [ "WINAPI_CALL", "a00505.html#gac67366a4782d98fd71f21ecc3981365b", null ]
 ];

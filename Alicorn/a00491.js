@@ -1,19 +1,20 @@
 var a00491 =
 [
-    [ "System", "a00137.html", null ],
-    [ "Default", "a00080.html", null ],
-    [ "CP1251", "a00074.html", null ],
-    [ "CP866", "a00075.html", null ],
-    [ "Locale", "a00103.html", [
-      [ "UTF8", "a00141.html", null ]
+    [ "Match", "a00106.html", [
+      [ "Match", "a00106.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
+      [ "Match", "a00106.html#a6771afe48b8f1155f53536b2220e2764", null ],
+      [ "GetGroups", "a00106.html#a25a080222bf760066265b29637242692", null ],
+      [ "IsMatch", "a00106.html#abaaf6788b646b68ad35c6063693f07b3", null ]
     ] ],
-    [ "StringCastProxy", "a00135.html", [
-      [ "string_cast", "a00135.html#add2a4f861ab927f202e9e49fc868699d", null ],
-      [ "string_cast", "a00135.html#a389885862267944e512ef7da9d00a39b", null ]
+    [ "Replace", "a00128.html", [
+      [ "Replace", "a00128.html#adb87baefad52f5062b8edeba4ca08c03", null ],
+      [ "Replace", "a00128.html#a16563cd9219fb222a79395912e3dc987", null ],
+      [ "DoReplace", "a00128.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
     ] ],
-    [ "String", "a00134.html", [
-      [ "Tokenize", "a00134.html#a22e59a8ecbd629a830dd32f858286d02", null ]
-    ] ],
-    [ "string_cast", "a00491.html#gafc1bb38569424983a63fbf99ce9f47c1", null ],
-    [ "string_cast", "a00491.html#ga7547d6bee1244042e43ffb63d797c231", null ]
+    [ "Search", "a00131.html", [
+      [ "Search", "a00131.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+      [ "Search", "a00131.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+      [ "GetCoincided", "a00131.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+      [ "IsSearch", "a00131.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
+    ] ]
 ];
