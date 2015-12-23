@@ -12,6 +12,5 @@ var searchData=
   ['outputhostinfo',['OutputHostInfo',['../a00308.html',1,'core::useful_commands::vs::startup']]],
   ['outputwindow',['OutputWindow',['../a00309.html',1,'wrappers::vs']]],
   ['outputwindowpane',['OutputWindowPane',['../a00310.html',1,'wrappers::vs']]],
-  ['outputwindowpanes',['OutputWindowPanes',['../a00311.html',1,'wrappers::vs']]],
-  ['ownlibs',['OwnLibs',['../a00312.html',1,'utilities::tags::vs']]]
+  ['outputwindowpanes',['OutputWindowPanes',['../a00311.html',1,'wrappers::vs']]]
 ];

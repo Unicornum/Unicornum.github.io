@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Класс utilities::dialog::progress::Percent</title>
+<title>Addins: Шаблон класса core::connection_commands::Perform&lt; TUsefulCommand, TData &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -111,46 +111,73 @@ $(document).ready(function(){initNavTree('a00317.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01640.html">Полный список членов класса</a>  </div>
+<a href="a01428.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс utilities::dialog::progress::Percent</div>  </div>
+<div class="title">Шаблон класса core::connection_commands::Perform&lt; TUsefulCommand, TData &gt;</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00082.html">Проект Dialog</a> <br />
- Класс диалогового окна, отображающего прогресс процесса в процентах.  
+<p>Класс входит в <a class="el" href="a00038.html">Проект ConnectionCommands</a> <br />
+ Класс выполнения команды, не связанной с пунктом меню.  
  <a href="a00317.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00838_source.html">ProgressPercent.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00672_source.html">Perform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса utilities::dialog::progress::Percent:</div>
+Граф наследования:core::connection_commands::Perform&lt; TUsefulCommand, TData &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01641.png" border="0" usemap="#utilities_1_1dialog_1_1progress_1_1_percent_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1dialog_1_1progress_1_1_percent_coll__map" id="utilities_1_1dialog_1_1progress_1_1_percent_coll__map">
+<div class="center"><img src="a01429.png" border="0" usemap="#core_1_1connection__commands_1_1_perform_3_01_t_useful_command_00_01_t_data_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="core_1_1connection__commands_1_1_perform_3_01_t_useful_command_00_01_t_data_01_4_inherit__map" id="core_1_1connection__commands_1_1_perform_3_01_t_useful_command_00_01_t_data_01_4_inherit__map">
+<area shape="rect" id="node2" href="a00299.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Базовый класс команды, обеспечивающих проверку неоходимост..." alt="" coords="5,6,219,98"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса core::connection_commands::Perform&lt; TUsefulCommand, TData &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01430.png" border="0" usemap="#core_1_1connection__commands_1_1_perform_3_01_t_useful_command_00_01_t_data_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="core_1_1connection__commands_1_1_perform_3_01_t_useful_command_00_01_t_data_01_4_coll__map" id="core_1_1connection__commands_1_1_perform_3_01_t_useful_command_00_01_t_data_01_4_coll__map">
+<area shape="rect" id="node2" href="a00299.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Базовый класс команды, обеспечивающих проверку неоходимост..." alt="" coords="5,6,219,98"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00082.html">Проект Dialog</a> <br />
- Класс диалогового окна, отображающего прогресс процесса в процентах. </p>
-<ul>
-<li>Подробное описание класса.</li>
+<div class="textblock"><h3>template&lt;class TUsefulCommand, class TData&gt;<br />
+class core::connection_commands::Perform&lt; TUsefulCommand, TData &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a00038.html">Проект ConnectionCommands</a> <br />
+ Класс выполнения команды, не связанной с пунктом меню. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TUsefulCommand</td><td>Класс команды, которая должна быть выполнена.<ul>
+<li>В конструкторе должна получать указатель на const <a class="el" href="a00222.html" title="Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки...">utilities::vs::Data</a>.</li>
+<li>Логика ее действий должна содержаться в функции void Execute(void). </li>
 </ul>
+</td></tr>
+    <tr><td class="paramname">TData</td><td>Класс данных, которые должны быть переданы классу исполняемой команды.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>02 Июнь 2015 <br />
-</dd></dl>
+ </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>05 Июль 2015 <br />
+ </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Utilities/Dialog/Dialog/<a class="el" href="a00838_source.html">ProgressPercent.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
+<h2>Пример использования: </h2>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <a class="code" href="a00215.html">core::useful_commands::vs::startup::CopyUsertypeFile</a> CopyUsertypeFileCommand_t;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="a00222.html">utilities::vs::Data</a> <a class="code" href="a00222.html">Data_t</a>;</div>
+<div class="line"><span class="keyword">typedef</span> <a class="code" href="a00317.html">core::connection_commands::Perform&lt;CopyUsertypeFileCommand_t, const Data_t *&gt;</a> <a class="code" href="a00317.html">CopyUsertypeFile_t</a>;</div>
+<div class="line"></div>
+<div class="line">m_CommandManager.Execute&lt;CopyUsertypeFile_t&gt;(<span class="keyword">this</span>);</div>
+</div><!-- fragment --> </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/ConnectionCommands/ConnectionCommands/<a class="el" href="a00672_source.html">Perform.hpp</a></li>
+<li>Solution/Solution/Core/ConnectionCommands/ConnectionCommands/Perform.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>dialog</b></li><li class="navelem"><b>progress</b></li><li class="navelem"><a class="el" href="a00317.html">Percent</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:21. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>connection_commands</b></li><li class="navelem"><a class="el" href="a00317.html">Perform</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:26. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

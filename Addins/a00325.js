@@ -1,7 +1,7 @@
 var a00325 =
 [
-    [ "Add", "a00325.html#a59fdfdd7d7ff5afafe5d649ecb0e9192", null ],
-    [ "operator[]", "a00325.html#a5b71846ab44f62e1ec8f435172b972c0", null ],
-    [ "operator[]", "a00325.html#a2dbc8a80d89c833cefefbcb6ef068b88", null ],
-    [ "operator[]", "a00325.html#a8d5dc2d1f8379a71ee129f897f8899e8", null ]
+    [ "Add", "a00325.html#a36221e7e62e513d7f679bb45e402de50", null ],
+    [ "GetActiveProject", "a00325.html#a3aa622ac93631a3da290e143e3f76d1e", null ],
+    [ "GetCount", "a00325.html#a925525848df48b2ee54238b191a101ed", null ],
+    [ "GetProject", "a00325.html#a7404a7dbb0a703c19129e29124d62e17", null ]
 ];

@@ -1,8 +1,7 @@
 var a00330 =
 [
-    [ "GetCount", "a00330.html#a84deda4da0dee63d4649e716530fa40a", null ],
-    [ "LoadFromFile", "a00330.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee", null ],
-    [ "operator[]", "a00330.html#ad72225ba2b4463641376cf898ed3601b", null ],
-    [ "operator[]", "a00330.html#a8ca988ed57b6e781a9ea5f82e6a00373", null ],
-    [ "Remove", "a00330.html#acf74f6d63cbd4f8cb649ebf3404117db", null ]
+    [ "GetCount", "a00330.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
+    [ "GetItem", "a00330.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
+    [ "LoadFromFile", "a00330.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
+    [ "Remove", "a00330.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
 ];

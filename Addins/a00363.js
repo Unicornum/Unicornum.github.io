@@ -1,5 +1,5 @@
 var a00363 =
 [
-    [ "SvnInfo", "a00363.html#afbe6155b781c22ca9970f58db8ba04db", null ],
-    [ "GetRevision", "a00363.html#a4f6216fcd912a1b4216ae5587ce17827", null ]
+    [ "Tag", "a00363.html#a89420a402906896b9c7fd5e52a8a6d66", null ],
+    [ "GetCaption", "a00363.html#aa6d928bf822168d41e52d6d9d4678b3e", null ]
 ];

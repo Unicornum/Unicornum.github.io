@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Utilities/EnvironmentVariables/EnvironmentVariables/Empty.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Filter/Filter/Empty.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -114,33 +114,31 @@ $(document).ready(function(){initNavTree('a00858_source.html','');});
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Main.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01245.html">utilities</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>environment_variables</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00249.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00249.html">Empty</a> : <span class="keyword">public</span> <a class="code" href="a00288.html">Main</a>&lt;int&gt;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00249.html">Empty</a>(<span class="keyword">const</span> Param_t &amp;);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01242.html">utilities</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>filter</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00250.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00250.html">Empty</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  CString operator() (<span class="keyword">const</span> CString &amp; _Text)<span class="keyword"> const </span>{<span class="keywordflow">return</span> _Text;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace filter</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace environment_variables</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace utilities</span></div>
-<div class="ttc" id="a00288_html"><div class="ttname"><a href="a00288.html">utilities::environment_variables::Main</a></div><div class="ttdoc">Класс входит в Проект EnvironmentVariables   Базовый класс классов установки значений переменных окру...</div><div class="ttdef"><b>Definition:</b> Main.hpp:34</div></div>
-<div class="ttc" id="a00249_html"><div class="ttname"><a href="a00249.html">utilities::environment_variables::Empty</a></div><div class="ttdoc">Класс входит в Проект EnvironmentVariables   Класс-заглушка для установки переменных окружения...</div><div class="ttdef"><b>Definition:</b> Empty.hpp:28</div></div>
-<div class="ttc" id="a01245_html"><div class="ttname"><a href="a01245.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace utilities</span></div>
+<div class="ttc" id="a00250_html"><div class="ttname"><a href="a00250.html">utilities::filter::Empty</a></div><div class="ttdoc">Класс входит в Проект Filter   &#39;Пустой&#39; класс фильтрации текста. </div><div class="ttdef"><b>Definition:</b> Empty.hpp:26</div></div>
+<div class="ttc" id="a01242_html"><div class="ttname"><a href="a01242.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_a1d07aa1319bc9b6347052d16aa11415.html">EnvironmentVariables</a></li><li class="navelem"><a class="el" href="dir_ec9a09254c0e3edf8308c22275b478cb.html">EnvironmentVariables</a></li><li class="navelem"><b>Empty.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:17. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_f3d00f69f972ce982277b733c2fde019.html">Filter</a></li><li class="navelem"><a class="el" href="dir_091649cd665cf5fa692d2687f0e2d150.html">Filter</a></li><li class="navelem"><b>Empty.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:21. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

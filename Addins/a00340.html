@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Класс utilities::vs::ReplaceTag</title>
+<title>Addins: Класс utilities::vs::Report</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -112,140 +112,110 @@ $(document).ready(function(){initNavTree('a00340.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01722.html">Полный список членов класса</a>  </div>
+<a href="a01720.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс utilities::vs::ReplaceTag</div>  </div>
+<div class="title">Класс utilities::vs::Report</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00080.html">Раздел Utilities</a> <br />
- Класс для замены тегов в строках, получаемых из настроек.  
+<p>Класс входит в <a class="el" href="a00102.html">Проект Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio.  
  <a href="a00340.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00932_source.html">ReplaceTag.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00888_source.html">Report.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:noncopyable.</p>
 <div class="dynheader">
-Граф связей класса utilities::vs::ReplaceTag:</div>
+Граф связей класса utilities::vs::Report:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01723.png" border="0" usemap="#utilities_1_1vs_1_1_replace_tag_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1vs_1_1_replace_tag_coll__map" id="utilities_1_1vs_1_1_replace_tag_coll__map">
+<div class="center"><img src="a01721.png" border="0" usemap="#utilities_1_1vs_1_1_report_coll__map" alt="Collaboration graph"/></div>
+<map name="utilities_1_1vs_1_1_report_coll__map" id="utilities_1_1vs_1_1_report_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a4c2cb4f471a4767da1e665977747d9a0"><td class="memItemLeft" align="right" valign="top">CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a4c2cb4f471a4767da1e665977747d9a0">GetFullPath</a> (const CString &amp;) const </td></tr>
-<tr class="memdesc:a4c2cb4f471a4767da1e665977747d9a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция замены тегов на полный путь.  <a href="#a4c2cb4f471a4767da1e665977747d9a0">Подробнее...</a><br /></td></tr>
-<tr class="separator:a4c2cb4f471a4767da1e665977747d9a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c7b426d52b978558791544a29b30af3"><td class="memItemLeft" align="right" valign="top">CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a3c7b426d52b978558791544a29b30af3">GetVSPath</a> (const CString &amp;) const </td></tr>
-<tr class="memdesc:a3c7b426d52b978558791544a29b30af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция замены тегов на макросы Visual Studio.  <a href="#a3c7b426d52b978558791544a29b30af3">Подробнее...</a><br /></td></tr>
-<tr class="separator:a3c7b426d52b978558791544a29b30af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a630cf3a9b63ec8703474773ee7a9d074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00340.html#a630cf3a9b63ec8703474773ee7a9d074">ToLog</a> (size_t _Flag, const CString &amp;_Text)</td></tr>
+<tr class="memdesc:a630cf3a9b63ec8703474773ee7a9d074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод сообщения в окно вывода.  <a href="#a630cf3a9b63ec8703474773ee7a9d074">Подробнее...</a><br /></td></tr>
+<tr class="separator:a630cf3a9b63ec8703474773ee7a9d074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00080.html">Раздел Utilities</a> <br />
- Класс для замены тегов в строках, получаемых из настроек. </p>
-<p>Поддерживаются теги:</p><ul>
-<li>&lt;SolutionPath&gt;.</li>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00102.html">Проект Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio. </p>
+<ul>
+<li>Если имя модуля не задано (параметр Name), выводится оно не будет.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 2.0.0.0 <br />
+ 2.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>26 Июль 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>? ??? 2014 <br />
+ 5 янв 2015 <br />
+ 8 фев 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a4c2cb4f471a4767da1e665977747d9a0"></a>
+<a class="anchor" id="a630cf3a9b63ec8703474773ee7a9d074"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">CString ReplaceTag::GetFullPath </td>
+          <td class="memname">void utilities::vs::Report::ToLog </td>
           <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_Source</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>_Text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция замены тегов на полный путь. </p>
+<p>Вывод сообщения в окно вывода. </p>
 <ul>
-<li>Функция предназначена для &lt;... подробное описание&gt;.</li>
+<li>Сообщение будет выведено в окно, имя которого указно в конструкторе.</li>
+<li>Флаг Clear обрабатывается в первую очередь и очищает окно вывода; может использоваться вместе с любыми другими флагами.</li>
+<li>Если установлен флаг Title, то текст будет выведен как заголовок (без указания времени и типа сообщения, а также дополнен символами '=' до длинны MaxMessageLenght), флаги [Fatal ... Debug] игнорируются.</li>
+<li>Если установлен флаг Status, то текст будет выведен в статус-бар Visual Studio.</li>
+<li>Если установлен один из флагов [Fatal ... Debug], будет выведено текущее время, тип сообщения (определяется по флагу) и само сообщение.</li>
+<li>Сообщение с флагом Debug выводится только в отладочной версии программы.</li>
+<li>Сообщение Simple будет выведено без времени и типа, просто указанная строка.</li>
+<li>При выводе сообщений с типом Fatal, Error, Warning или установленном флаге Open будет окрыто выводное окно Visual Studio. </li>
 </ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Source</td><td>Исходная строка.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p><div class="dynheader">
-Граф вызова функции:</div>
+Граф вызовов:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00340_a4c2cb4f471a4767da1e665977747d9a0_icgraph.png" border="0" usemap="#a00340_a4c2cb4f471a4767da1e665977747d9a0_icgraph" alt=""/></div>
-<map name="a00340_a4c2cb4f471a4767da1e665977747d9a0_icgraph" id="a00340_a4c2cb4f471a4767da1e665977747d9a0_icgraph">
-<area shape="rect" id="node3" href="a00347.html#a6111c3f4dd9f7f6a31071127b28002b5" title="Функция получения поного пути к файлу общей страницы свойств проектов. " alt="" coords="238,5,469,61"/>
+<div class="center"><img src="a00340_a630cf3a9b63ec8703474773ee7a9d074_cgraph.png" border="0" usemap="#a00340_a630cf3a9b63ec8703474773ee7a9d074_cgraph" alt=""/></div>
+<map name="a00340_a630cf3a9b63ec8703474773ee7a9d074_cgraph" id="a00340_a630cf3a9b63ec8703474773ee7a9d074_cgraph">
+<area shape="rect" id="node3" href="a00310.html#a7f32188bd28308199e9f40df6b04418f" title="Очистить панель вывода " alt="" coords="205,13,424,54"/>
+<area shape="rect" id="node5" href="a00186.html#ae36588f576db9d1dd86e5ae158a165c3" title="Вспомогательная функция для вызова функций Type_t. " alt="" coords="472,5,699,61"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3c7b426d52b978558791544a29b30af3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CString ReplaceTag::GetVSPath </td>
-          <td>(</td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_Source</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция замены тегов на макросы Visual Studio. </p>
-<ul>
-<li>'&lt;SolutionPath&gt;' будет заменено на ''.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Source</td><td>Исходная строка.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Utilities/Utilities/VisualStudio/<a class="el" href="a00932_source.html">ReplaceTag.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Utilities/Utilities/VisualStudio/ReplaceTag.cpp</li>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a00888_source.html">Report.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/Report.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00340.html">ReplaceTag</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:21. Создано системой
+    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00340.html">Report</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:29. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

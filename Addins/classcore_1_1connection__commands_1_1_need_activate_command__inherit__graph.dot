@@ -1,0 +1,17 @@
+digraph "core::connection_commands::NeedActivateCommand"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  Node1 [label="{core::connection_commands\l::NeedActivateCommand\n||+ IsNeedActivate()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node2 [label="{core::connection_commands\l::CreateCommands\< TMenuImpl \>\n||+ Execute()\l+ IsNeedActivate()\l+ CreateCommands()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcore_1_1connection__commands_1_1_create_commands.html",tooltip="Класс входит в Проект ConnectionCommands   Класс создания команд надстройки. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node3 [label="{core::connection_commands\l::DestroyCommands\n||+ Execute()\l+ DestroyCommands()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcore_1_1connection__commands_1_1_destroy_commands.html",tooltip="Класс входит в Проект ConnectionCommands   Класс уничтожения команд надстройки. "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node4 [label="{core::connection_commands\l::DoExecute\n||+ Execute()\l+ DoExecute()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcore_1_1connection__commands_1_1_do_execute.html",tooltip="Класс входит в Проект ConnectionCommands   Класс команды, обабатывающей выполнение команды надстройки..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node5 [label="{core::connection_commands\l::DoQueryStatus\n||+ Execute()\l+ DoQueryStatus()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcore_1_1connection__commands_1_1_do_query_status.html",tooltip="Класс входит в Проект ConnectionCommands   Класс команды, обабатывающей запрос статуса команды надстр..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node6 [label="{core::connection_commands\l::Perform\< TUsefulCommand,\l TData \>\n||+ Execute()\l+ IsNeedActivate()\l+ Perform()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcore_1_1connection__commands_1_1_perform.html",tooltip="Класс входит в Проект ConnectionCommands   Класс выполнения команды, не связанной с пунктом меню..."];
+}

@@ -1,0 +1,15 @@
+digraph "model::IModel"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  Node1 [label="{model::IModel\n||+ DoProcess()\l+ GetData()\l+ GetData()\l+ IModel()\l+ ~IModel()\l+ operator=()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node2 [label="{model::Common\n||+ DoProcess()\l+ Common()\l# DoLocalProcess()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1_common.html",tooltip="Класс входит в Проект RegexTester   Класс, содержащий общую логику обработки исходных строк..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node3 [label="{model::Match\n||+ Match()\l# DoLocalProcess()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1_match.html",tooltip="Класс входит в Проект RegexTester   Класс реализации модели для обработки совпадения строки с регуляр..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node4 [label="{model::Replace\n||+ Replace()\l# DoLocalProcess()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1_replace.html",tooltip="Класс входит в Проект RegexTester   Класс реализации модели для замены в строке с помощью регулярного..."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node5 [label="{model::Search\n||+ Search()\l# DoLocalProcess()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classmodel_1_1_search.html",tooltip="Класс входит в Проект RegexTester   Класс реализации модели для поиска в строке совпадения с регулярн..."];
+}

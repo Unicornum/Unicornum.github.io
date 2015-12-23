@@ -1,5 +1,4 @@
 var a00360 =
 [
-    [ "Advise", "a00360.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
-    [ "Unadvise", "a00360.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
+    [ "Export", "a00360.html#afa2e65f599adc03536740b78ccd9c07b", null ]
 ];

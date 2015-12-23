@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration.inside.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/Configuration.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -109,20 +109,69 @@ $(document).ready(function(){initNavTree('a01050_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Configuration.inside.hpp</div>  </div>
+<div class="title">Configuration.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a01050.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Configuration\Configurations.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01257.html">wrappers</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>IPropertySheets;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>PropertySheets;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00210.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00210.html">Configuration</a> : <span class="keyword">public</span> <a class="code" href="a00186.html">Base</a>&lt;IDispatch&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00329.html">wrappers::vs::PropertySheets</a>                 <a class="code" href="a00329.html">PropertySheets_t</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">typedef</span> boost::shared_ptr&lt;IPropertySheets&gt;           PropertySheetsPtr_t;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">typedef</span> VCProjectEngineLibrary::VCConfiguration      ConfigVS2008_t;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">typedef</span> VCProjectEngineLibrary2012::VCConfiguration  ConfigVS2012_t;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">class </span>Type</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">enum</span> Value</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      Unknown = 0,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      Exe,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      Dll,</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      Lib,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      Generic,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  };</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <a class="code" href="a00210.html#a1a8fca27d2b23413c1e2530f0a1e4acf">PROPERTY_GET</a>(PropertySheets_t, <a class="code" href="a00329.html">PropertySheets</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  CString <a class="code" href="a00210.html#ada1d4821134087994c4b47174d4a0dc8">GetName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Type::Value <a class="code" href="a00210.html#a8fd684f3e8da5bc5268d5843d120de76">GetType</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="a00210.html">Configuration</a>(<span class="keyword">const</span> ComPtr_t &amp; _pPointer);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ~<a class="code" href="a00210.html">Configuration</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace vs</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;} <span class="comment">// namespace wrappers</span></div>
+<div class="ttc" id="a00210_html"><div class="ttname"><a href="a00210.html">wrappers::vs::Configuration</a></div><div class="ttdoc">Класс входит в Проект Configuration   Класс для работы с конфигурацией проекта. </div><div class="ttdef"><b>Definition:</b> Configuration.hpp:27</div></div>
+<div class="ttc" id="a00210_html_a8fd684f3e8da5bc5268d5843d120de76"><div class="ttname"><a href="a00210.html#a8fd684f3e8da5bc5268d5843d120de76">wrappers::vs::Configuration::GetType</a></div><div class="ttdeci">Type::Value GetType(void) const </div><div class="ttdoc">Тип проекта. </div><div class="ttdef"><b>Definition:</b> Configuration.cpp:44</div></div>
+<div class="ttc" id="a00329_html"><div class="ttname"><a href="a00329.html">wrappers::vs::PropertySheets</a></div><div class="ttdoc">Класс входит в Проект Configuration   Класс-обертка для работы с коллекцией станиц свойств...</div><div class="ttdef"><b>Definition:</b> PropertySheets.hpp:32</div></div>
+<div class="ttc" id="a00210_html_a1a8fca27d2b23413c1e2530f0a1e4acf"><div class="ttname"><a href="a00210.html#a1a8fca27d2b23413c1e2530f0a1e4acf">wrappers::vs::Configuration::PROPERTY_GET</a></div><div class="ttdeci">PROPERTY_GET(PropertySheets_t, PropertySheets)</div><div class="ttdoc">Объект коллекции страниц свойств для текущей конфигурации. </div></div>
+<div class="ttc" id="a00210_html_ada1d4821134087994c4b47174d4a0dc8"><div class="ttname"><a href="a00210.html#ada1d4821134087994c4b47174d4a0dc8">wrappers::vs::Configuration::GetName</a></div><div class="ttdeci">CString GetName(void) const </div><div class="ttdoc">Имя конфигурации. </div><div class="ttdef"><b>Definition:</b> Configuration.cpp:38</div></div>
+<div class="ttc" id="a00186_html"><div class="ttname"><a href="a00186.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Проект Common   Базовый класс для оберток объектов надстройки. </div><div class="ttdef"><b>Definition:</b> Base.hpp:34</div></div>
+<div class="ttc" id="a01257_html"><div class="ttname"><a href="a01257.html">wrappers</a></div><div class="ttdef"><b>Definition:</b> IDocument.hpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6286ca65141999c3454cfc128243a7c6.html">Configuration</a></li><li class="navelem"><a class="el" href="a01050.html">Configuration.inside.hpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:18. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6286ca65141999c3454cfc128243a7c6.html">Configuration</a></li><li class="navelem"><a class="el" href="dir_f6358a5537d15380207bce6b41615bce.html">Configuration</a></li><li class="navelem"><b>Configuration.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

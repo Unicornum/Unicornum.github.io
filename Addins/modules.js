@@ -1,4 +1,4 @@
 var modules =
 [
-    [ "RegexTester", "a01267.html", "a01267" ]
+    [ "RegexTester", "a01264.html", "a01264" ]
 ];

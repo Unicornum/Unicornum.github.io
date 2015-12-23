@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Events/Events.inside.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Events/Events/Events.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -109,20 +109,53 @@ $(document).ready(function(){initNavTree('a01093_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Events.inside.hpp</div>  </div>
+<div class="title">Events.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a01093.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Events\Events.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01257.html">wrappers</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span><a class="code" href="a00350.html">SolutionEvents</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="a00191.html">BuildEvents</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a00251.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00251.html">Events</a> : <span class="keyword">public</span> <a class="code" href="a00186.html">Base</a>&lt;EnvDTE::Events&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00349.html">wrappers::vs::SolutionEvents</a>  <a class="code" href="a00349.html">SolutionEvents_t</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00190.html">wrappers::vs::BuildEvents</a>     <a class="code" href="a00190.html">BuildEvents_t</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="a00251.html#ab62aa25710c94c033d348b03e7844263">PROPERTY_GET</a>(SolutionEvents_t, <a class="code" href="a00349.html">SolutionEvents</a>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="a00251.html#ab62aa25710c94c033d348b03e7844263">PROPERTY_GET</a>(BuildEvents_t, <a class="code" href="a00190.html">BuildEvents</a>);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <a class="code" href="a00251.html">Events</a>(<span class="keyword">const</span> ComPtr_t &amp;);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ~<a class="code" href="a00251.html">Events</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace vs</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace wrappers</span></div>
+<div class="ttc" id="a00191_html"><div class="ttname"><a href="a00191.html">BuildEvents</a></div><div class="ttdoc">Класс входит в Проект Version   Класс, содержащий функции, которые будут вызываться при возникновении...</div><div class="ttdef"><b>Definition:</b> BuildEvents.hpp:25</div></div>
+<div class="ttc" id="a00251_html_ab62aa25710c94c033d348b03e7844263"><div class="ttname"><a href="a00251.html#ab62aa25710c94c033d348b03e7844263">wrappers::vs::Events::PROPERTY_GET</a></div><div class="ttdeci">PROPERTY_GET(SolutionEvents_t, SolutionEvents)</div><div class="ttdoc">Объект доступа к событиям решения. </div></div>
+<div class="ttc" id="a00350_html"><div class="ttname"><a href="a00350.html">SolutionEvents</a></div><div class="ttdoc">Класс входит в Проект Properties   Класс, содержащий функции, которые будут вызываться при возникнове...</div><div class="ttdef"><b>Definition:</b> SolutionEvents.hpp:25</div></div>
+<div class="ttc" id="a00190_html"><div class="ttname"><a href="a00190.html">wrappers::vs::BuildEvents</a></div><div class="ttdoc">Класс входит в Проект Events   Класс доступа к событиям построения. </div><div class="ttdef"><b>Definition:</b> BuildEvents.hpp:25</div></div>
+<div class="ttc" id="a00349_html"><div class="ttname"><a href="a00349.html">wrappers::vs::SolutionEvents</a></div><div class="ttdoc">Класс входит в Проект Events   Класс доступа к событиям решения. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.hpp:27</div></div>
+<div class="ttc" id="a00186_html"><div class="ttname"><a href="a00186.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Проект Common   Базовый класс для оберток объектов надстройки. </div><div class="ttdef"><b>Definition:</b> Base.hpp:34</div></div>
+<div class="ttc" id="a01257_html"><div class="ttname"><a href="a01257.html">wrappers</a></div><div class="ttdef"><b>Definition:</b> IDocument.hpp:4</div></div>
+<div class="ttc" id="a00251_html"><div class="ttname"><a href="a00251.html">wrappers::vs::Events</a></div><div class="ttdoc">Класс входит в Проект Events   Класс, предоставляющий доступ к событиям Visual Studio. </div><div class="ttdef"><b>Definition:</b> Events.hpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_03982c9addd929f8ee127dc3c352715a.html">Events</a></li><li class="navelem"><a class="el" href="a01093.html">Events.inside.hpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:18. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_03982c9addd929f8ee127dc3c352715a.html">Events</a></li><li class="navelem"><a class="el" href="dir_5a233b64067363de5d02621e92bbbff5.html">Events</a></li><li class="navelem"><b>Events.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

@@ -1,0 +1,21 @@
+digraph "CConnect"
+{
+ // INTERACTIVE_SVG=YES
+  edge [fontname="Verdana",fontsize="10",labelfontname="Verdana",labelfontsize="10"];
+  node [fontname="Verdana",fontsize="10",shape=record];
+  Node1 [label="{CConnect\n||+ FinalConstruct()\l+ OnConnection()\l+ OnDisconnection()\l+ OnAddInsUpdate()\l+ OnStartupComplete()\l+ OnBeginShutdown()\l+ CConnect()\l+ FinalConstruct()\l+ FinalRelease()\l+ OnConnection()\lи 14 больше...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node2 [label="{utilities::vs::Data\n||+ GetDTE()\l+ Data()\l+ Data()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classutilities_1_1vs_1_1_data.html",tooltip="Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки..."];
+  Node3 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +m_Settings" ,arrowhead="odiamond",fontname="Verdana"];
+  Node3 [label="{settings::Settings\n||+ Load()\l+ operator[]()\l+ Settings()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classsettings_1_1_settings.html",tooltip="Класс входит в Settings   Класс доступа к надстройкам системы. "];
+  Node4 -> Node2 [color="grey25",fontsize="10",style="solid",label=" +m_DteHost" ,arrowhead="odiamond",fontname="Verdana"];
+  Node4 [label="{wrappers::vs::DTE\n||+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\l+ PROPERTY_GET()\lи 11 больше...\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrappers_1_1vs_1_1_d_t_e.html",tooltip="Класс входит в Проект Ide   Класс-обертка для EnvDTE80::DTE2. "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node5 [label="{wrappers::vs::Base\l\< EnvDTE80::DTE2 \>\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classwrappers_1_1vs_1_1_base.html"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node6 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+  Node6 [label="{core::connection_commands\l::Data\n|+ m_Menus\l|+ ~Data()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcore_1_1connection__commands_1_1_data.html",tooltip="Класс входит в Проект ConnectionCommands   Класс, содержащий набор данных для работы классов проекта ..."];
+  Node7 -> Node6 [color="grey25",fontsize="10",style="solid",label=" +m_Commands" ,arrowhead="odiamond",fontname="Verdana"];
+  Node7 [label="{useful_commands::Commands\n||+ GetSize()\l+ Add()\l+ operator[]()\l+ Clear()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classuseful__commands_1_1_commands.html",tooltip="Класс входит в Проект UsefulCommands   Класс, содержащий список всех созданных объектов команд..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Verdana"];
+}

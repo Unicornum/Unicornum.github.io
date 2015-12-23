@@ -16,8 +16,8 @@ var NAVTREE =
     [ "Раздел Utilities", "a00080.html", "a00080" ],
     [ "Проект RegexTester", "a00124.html", "a00124" ],
     [ "Проект Helper", "a00130.html", "a00130" ],
-    [ "Список задач", "a01275.html", null ],
-    [ "Ошибки", "a01277.html", null ],
+    [ "Список задач", "a01272.html", null ],
+    [ "Ошибки", "a01274.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Пространства имен", null, [
       [ "Пространства имен", "namespaces.html", "namespaces" ]
@@ -47,11 +47,10 @@ var NAVTREEINDEX =
 ".html",
 "a00136.html",
 "a00246.html#aa39f9e3f733c851d0fc727367ad097c1",
-"a00335.html",
-"a00546_source.html",
-"a00845_source.html",
-"a01162_source.html",
-"modules.html"
+"a00336.html",
+"a00547_source.html",
+"a00846_source.html",
+"a01161.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

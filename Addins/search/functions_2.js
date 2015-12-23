@@ -9,5 +9,5 @@ var searchData=
   ['commands',['Commands',['../a00207.html#a8273ee6ce9732a442b06ed151fca79f0',1,'wrappers::vs::Commands']]],
   ['consoleprogram',['ConsoleProgram',['../a00213.html#a185799525e1b524c0fe1333af3543883',1,'utilities::progress::ConsoleProgram']]],
   ['cppcheck',['CppCheck',['../a00217.html#a134da6a575e7d70f51d2de7332b461fe',1,'utilities::execute::CppCheck']]],
-  ['create',['Create',['../a00366.html#aba8ac09b2b6bde64167dabb5616984d1',1,'useful_commands::vs::testing::TestClassBlank::Create()'],['../a00367.html#a71546748829accc60c80109f29182dad',1,'useful_commands::vs::testing::TestClassProject::Create()'],['../a00375.html#afcbc901d373f948e1bd4ba2753e7d2aa',1,'useful_commands::vs::Unknown::Create()']]]
+  ['create',['Create',['../a00365.html#aba8ac09b2b6bde64167dabb5616984d1',1,'useful_commands::vs::testing::TestClassBlank::Create()'],['../a00366.html#a71546748829accc60c80109f29182dad',1,'useful_commands::vs::testing::TestClassProject::Create()'],['../a00375.html#afcbc901d373f948e1bd4ba2753e7d2aa',1,'useful_commands::vs::Unknown::Create()']]]
 ];

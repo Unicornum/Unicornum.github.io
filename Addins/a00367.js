@@ -1,4 +1,4 @@
 var a00367 =
 [
-    [ "Create", "a00367.html#a71546748829accc60c80109f29182dad", null ]
+    [ "GetValue", "a00367.html#a22cda577ef2d3e86d9e70b9d21ab201d", null ]
 ];

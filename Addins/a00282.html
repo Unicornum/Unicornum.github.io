@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('a00282.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01930.html">Полный список членов класса</a>  </div>
+<a href="a01926.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс wrappers::vs::selection::Line</div>  </div>
 </div><!--header-->
@@ -122,11 +122,11 @@ $(document).ready(function(){initNavTree('a00282.html','');});
  Класс-обертка для EnvDTE::TextSelection.  
  <a href="a00282.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01085_source.html">Line.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01082_source.html">Line.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф наследования:wrappers::vs::selection::Line:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01931.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_inherit__map" alt="Inheritance graph"/></div>
+<div class="center"><img src="a01927.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_inherit__map" alt="Inheritance graph"/></div>
 <map name="wrappers_1_1vs_1_1selection_1_1_line_inherit__map" id="wrappers_1_1vs_1_1selection_1_1_line_inherit__map">
 <area shape="rect" id="node2" href="a00186.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::TextSelection \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="5,6,208,186"/>
 </map>
@@ -134,7 +134,7 @@ $(document).ready(function(){initNavTree('a00282.html','');});
 <div class="dynheader">
 Граф связей класса wrappers::vs::selection::Line:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01932.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01928.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_coll__map" alt="Collaboration graph"/></div>
 <map name="wrappers_1_1vs_1_1selection_1_1_line_coll__map" id="wrappers_1_1vs_1_1selection_1_1_line_coll__map">
 <area shape="rect" id="node2" href="a00186.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::TextSelection \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="5,6,208,186"/>
 </map>
@@ -202,7 +202,7 @@ static <a class="el" href="a00291.html">Service::MakeProxy</a>&lt; TReturn, TSou
 <h2>Пример использования: </h2>
 <p>Удаление строки, на которой стоит курсор: </p><div class="fragment"><div class="line">GetDTE().Documents[Active].Lines[Current] = _T(<span class="stringliteral">&quot;&quot;</span>);</div>
 </div><!-- fragment --> <h2>Пример использования: </h2>
-<p>Проход по строкам, которые содержат "nullptr": </p><div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="a01263.html">wrappers::vs</a>;</div>
+<p>Проход по строкам, которые содержат "nullptr": </p><div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="a01260.html">wrappers::vs</a>;</div>
 <div class="line"><a class="code" href="a00229.html">Document</a> Example = GetDTE().Documents[Active];</div>
 <div class="line"><a class="code" href="a00282.html">selection::Line</a> FindedLine = Example.Lines[-1];</div>
 <div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>)</div>
@@ -304,7 +304,7 @@ static <a class="el" href="a00291.html">Service::MakeProxy</a>&lt; TReturn, TSou
   </table>
   </dd>
 </dl>
-<dl class="bug"><dt><b><a class="el" href="a01276.html#_bug000003">Ошибка:</a></b></dt><dd>Неверно работает для последней строки, не содержащей переноса </dd></dl>
+<dl class="bug"><dt><b><a class="el" href="a01273.html#_bug000003">Ошибка:</a></b></dt><dd>Неверно работает для последней строки, не содержащей переноса </dd></dl>
 
 <p><div class="dynheader">
 Граф вызова функции:</div>
@@ -390,7 +390,7 @@ static <a class="el" href="a00291.html">Service::MakeProxy</a>&lt; TReturn, TSou
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Document/Document/<a class="el" href="a01085_source.html">Line.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Document/Document/<a class="el" href="a01082_source.html">Line.hpp</a></li>
 <li>Solution/Solution/Wrappers/VisualStudio/Document/Document/Line.cpp</li>
 </ul>
 </div><!-- contents -->
@@ -398,8 +398,8 @@ static <a class="el" href="a00291.html">Service::MakeProxy</a>&lt; TReturn, TSou
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a01260.html">wrappers</a></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>selection</b></li><li class="navelem"><a class="el" href="a00282.html">Line</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:22. Создано системой
+    <li class="navelem"><a class="el" href="a01257.html">wrappers</a></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>selection</b></li><li class="navelem"><a class="el" href="a00282.html">Line</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:30. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

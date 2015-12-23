@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/PanelView.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/TextCtrlReplaceSpace.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -109,73 +109,42 @@ $(document).ready(function(){initNavTree('a00984_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PanelView.hpp</div>  </div>
+<div class="title">TextCtrlReplaceSpace.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;..\IView.hpp&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Generated.hpp&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01266.html">wx</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01263.html">wx</a></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TPanel&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00316.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00316.html">PanelView</a> :</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00279.html">view::IView</a>,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">public</span> TPanel</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> Strings_t = ::std::vector&lt;String_t&gt;;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">using</span> Data_t = ::std::vector&lt;::support::Data&gt;;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// Интерфейс view::IRead:</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  String_t <a class="code" href="a00316.html#a395f8efbd68ec8dc4f882ef201ba7d0c">GetRegexString</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  String_t <a class="code" href="a00316.html#ab265e215ef659098f37618b48281f08e">GetReplaceString</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Strings_t <a class="code" href="a00316.html#ad970eca2f3eaf29ccb5ae4a4fe320fad">GetSourseStrings</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// Интерфейс view::IWrite:</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00316.html#a53e9b7ec5a5357405275d2478965dca1">SetRegexString</a>(<span class="keyword">const</span> String_t &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00316.html#a315df15379a49155b32aa8526047ed7b">SetSourceStrings</a>(<span class="keyword">const</span> Strings_t &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// События TPanel:</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> OnActive(wxPaintEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> OnRegexChanged(wxKeyEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> OnRMouseUp(wxMouseEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> OnSourceStringsChanged(wxCommandEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="comment">// События MenuPanel</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">void</span> Copy(wxCommandEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> Paste(wxCommandEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> CopyToCpp(wxCommandEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> PasteFromCpp(wxCommandEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> SelectAll(wxCommandEvent &amp;) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="a00316.html">PanelView</a>(wxWindow *, wxWindowID, <span class="keyword">const</span> wxPoint &amp;, <span class="keyword">const</span> wxSize &amp;, <span class="keywordtype">long</span>);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace wx</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#include &quot;PanelView.inl&quot;</span></div>
-<div class="ttc" id="a00316_html_a53e9b7ec5a5357405275d2478965dca1"><div class="ttname"><a href="a00316.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView::SetRegexString</a></div><div class="ttdeci">void SetRegexString(const String_t &amp;) override final</div><div class="ttdoc">Функция передачи объекту представления регулярного выражения. </div><div class="ttdef"><b>Definition:</b> PanelView.inl:53</div></div>
-<div class="ttc" id="a00316_html_a395f8efbd68ec8dc4f882ef201ba7d0c"><div class="ttname"><a href="a00316.html#a395f8efbd68ec8dc4f882ef201ba7d0c">wx::PanelView::GetRegexString</a></div><div class="ttdeci">String_t GetRegexString(void) const  override final</div><div class="ttdoc">Функция получения введенного регулярного выражения (для всех трех типов обработки). </div><div class="ttdef"><b>Definition:</b> PanelView.inl:21</div></div>
-<div class="ttc" id="a00279_html"><div class="ttname"><a href="a00279.html">view::IView</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Интерфейсный класс представления. </div><div class="ttdef"><b>Definition:</b> IView.hpp:24</div></div>
-<div class="ttc" id="a00316_html_a315df15379a49155b32aa8526047ed7b"><div class="ttname"><a href="a00316.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView::SetSourceStrings</a></div><div class="ttdeci">void SetSourceStrings(const Strings_t &amp;) override final</div><div class="ttdoc">Функция передачи объекту представления списка обрабатываемых строк. </div><div class="ttdef"><b>Definition:</b> PanelView.inl:60</div></div>
-<div class="ttc" id="a00316_html_ab265e215ef659098f37618b48281f08e"><div class="ttname"><a href="a00316.html#ab265e215ef659098f37618b48281f08e">wx::PanelView::GetReplaceString</a></div><div class="ttdeci">String_t GetReplaceString(void) const  override</div><div class="ttdoc">Функция получения введенной строки на замену (для замены). </div><div class="ttdef"><b>Definition:</b> PanelView.inl:28</div></div>
-<div class="ttc" id="a01266_html"><div class="ttname"><a href="a01266.html">wx</a></div><div class="ttdef"><b>Definition:</b> AppFrame.hpp:12</div></div>
-<div class="ttc" id="a00316_html_ad970eca2f3eaf29ccb5ae4a4fe320fad"><div class="ttname"><a href="a00316.html#ad970eca2f3eaf29ccb5ae4a4fe320fad">wx::PanelView::GetSourseStrings</a></div><div class="ttdeci">Strings_t GetSourseStrings(void) const  override final</div><div class="ttdoc">Функция получения списка строк, которые будут обрабатываться. </div><div class="ttdef"><b>Definition:</b> PanelView.inl:34</div></div>
-<div class="ttc" id="a00316_html"><div class="ttname"><a href="a00316.html">wx::PanelView</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Базовый класс панелей главного tabctrl&#39;a окна программы...</div><div class="ttdef"><b>Definition:</b> PanelView.hpp:36</div></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>TextCtrlReplaceSpace final :</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">public</span> wxTextCtrl</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  wxString GetValue(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> ChangeValue(<span class="keyword">const</span> wxString &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  wxString GetStringSelection(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keywordtype">void</span> OnTextChanged(wxCommandEvent &amp;);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  TextCtrlReplaceSpace(wxWindow *, wxWindowID, <span class="keyword">const</span> wxString &amp;, <span class="keyword">const</span> wxPoint &amp;, </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">const</span> wxSize &amp;, <span class="keywordtype">long</span> = 0);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  ~TextCtrlReplaceSpace(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace wx</span></div>
+<div class="ttc" id="a01263_html"><div class="ttname"><a href="a01263.html">wx</a></div><div class="ttdef"><b>Definition:</b> AppFrame.hpp:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_89a023a0cdd7056365d23f3f97bddae3.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_4d0571eb7ed137673ab07aff89e47909.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_35e469d4030ab18f4e85f94a313f50f6.html">View</a></li><li class="navelem"><a class="el" href="dir_dc658f9dce0a311db84303db44147e8d.html">wxWidgets</a></li><li class="navelem"><b>PanelView.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:17. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_89a023a0cdd7056365d23f3f97bddae3.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_4d0571eb7ed137673ab07aff89e47909.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_35e469d4030ab18f4e85f94a313f50f6.html">View</a></li><li class="navelem"><a class="el" href="dir_dc658f9dce0a311db84303db44147e8d.html">wxWidgets</a></li><li class="navelem"><b>TextCtrlReplaceSpace.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

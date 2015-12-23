@@ -1,8 +1,7 @@
 var a00324 =
 [
-    [ "GetFileExtension", "a00324.html#a127950d2de408c414bc3d1c26beafae0", null ],
-    [ "GetName", "a00324.html#a95f8b407591fa1b776eeb019e13a9e6a", null ],
-    [ "GetPathToMainProjectDirectory", "a00324.html#a0be3886803f1fa836faea2906e93001d", null ],
-    [ "GetPathToTestProjectDirectory", "a00324.html#aca1be907095d923ccff307562b57e07e", null ],
-    [ "GetTestProjectName", "a00324.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
+    [ "Add", "a00324.html#a59fdfdd7d7ff5afafe5d649ecb0e9192", null ],
+    [ "operator[]", "a00324.html#a5b71846ab44f62e1ec8f435172b972c0", null ],
+    [ "operator[]", "a00324.html#a2dbc8a80d89c833cefefbcb6ef068b88", null ],
+    [ "operator[]", "a00324.html#a8d5dc2d1f8379a71ee129f897f8899e8", null ]
 ];

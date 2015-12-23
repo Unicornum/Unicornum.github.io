@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/ConnectionPoints/VisualStudio/Version/Version/BuildEvents.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Events/Events/BuildEvents.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
@@ -114,63 +114,34 @@ $(document).ready(function(){initNavTree('a00656_source.html','');});
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;CommandManager.hpp&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Subscriber.hpp&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="a00191.html">BuildEvents</a>;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">typedef</span> IDispEventImpl&lt;1, <a class="code" href="a00191.html">BuildEvents</a>, &amp;__uuidof(EnvDTE::_dispBuildEvents), </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &amp;EnvDTE::LIBID_EnvDTE, 8, 0&gt; BuildEventsImpl_t;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00191.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00191.html">BuildEvents</a> : <span class="keyword">public</span> BuildEventsImpl_t</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01257.html">wrappers</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>vs</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00190.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00190.html">BuildEvents</a> : <span class="keyword">public</span> <a class="code" href="a00359.html">Subscriber</a>&lt;EnvDTE::_BuildEvents&gt;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00222.html">utilities::vs::Data</a>                               <a class="code" href="a00222.html">Data_t</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00190.html">wrappers::vs::BuildEvents</a>                         <a class="code" href="a00190.html">BuildEvents_t</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">typedef</span> boost::shared_ptr&lt;connection_points::GlobalMutex&gt; Mutex_t;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        BEGIN_SINK_MAP(<a class="code" href="a00191.html">BuildEvents</a>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispBuildEvents), 3, <a class="code" href="a00191.html#a87a0f9f968a5cd336184ccd19f62a42f">BeforeBuildStart</a>)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispBuildEvents), 4, <a class="code" href="a00191.html#a35ef35f1dee5b99d678e43c82c0f3d07">AfterBuildFinish</a>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispBuildEvents), 5, <a class="code" href="a00191.html#ab82624b7458a674601e2b57760df4c5d">BeforeProjConfBuildStart</a>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispBuildEvents), 6, <a class="code" href="a00191.html#a5069d384f3d39de2e57e3f6cb2f3005b">BuildProjConfFinish</a>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        END_SINK_MAP()</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Интерфейс BuildEvents:</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00191.html#a87a0f9f968a5cd336184ccd19f62a42f">BeforeBuildStart</a>(EnvDTE::vsBuildScope, EnvDTE::vsBuildAction);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00191.html#a35ef35f1dee5b99d678e43c82c0f3d07">AfterBuildFinish</a>(EnvDTE::vsBuildScope, EnvDTE::vsBuildAction);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00191.html#ab82624b7458a674601e2b57760df4c5d">BeforeProjConfBuildStart</a>(BSTR, BSTR, BSTR, BSTR);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00191.html#a5069d384f3d39de2e57e3f6cb2f3005b">BuildProjConfFinish</a>(BSTR, BSTR, BSTR, BSTR, <span class="keywordtype">bool</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> IsIgnoreAction(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  Data_t                 * m_pData;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a00205.html">CommandManager</a>           m_CommandManager;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  BuildEvents_t            m_BuildEvents;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  Mutex_t                  m_pMutex;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  EnvDTE::vsBuildAction    m_BuildAction;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="a00191.html">BuildEvents</a>(Data_t * _pData);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  ~<a class="code" href="a00191.html">BuildEvents</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
-<div class="ttc" id="a00222_html"><div class="ttname"><a href="a00222.html">utilities::vs::Data</a></div><div class="ttdoc">Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки...</div><div class="ttdef"><b>Definition:</b> Data.hpp:24</div></div>
-<div class="ttc" id="a00191_html"><div class="ttname"><a href="a00191.html">BuildEvents</a></div><div class="ttdoc">Класс входит в Проект Version   Класс, содержащий функции, которые будут вызываться при возникновении...</div><div class="ttdef"><b>Definition:</b> BuildEvents.hpp:25</div></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <a class="code" href="a00190.html">BuildEvents</a>(<span class="keyword">const</span> ComPtr_t &amp;);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  ~<a class="code" href="a00190.html">BuildEvents</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace vs</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace wrappers</span></div>
+<div class="ttc" id="a00359_html"><div class="ttname"><a href="a00359.html">wrappers::vs::Subscriber</a></div><div class="ttdoc">Класс входит в Проект Events   Класс доступа к событиям построения. </div><div class="ttdef"><b>Definition:</b> Subscriber.hpp:25</div></div>
 <div class="ttc" id="a00190_html"><div class="ttname"><a href="a00190.html">wrappers::vs::BuildEvents</a></div><div class="ttdoc">Класс входит в Проект Events   Класс доступа к событиям построения. </div><div class="ttdef"><b>Definition:</b> BuildEvents.hpp:25</div></div>
-<div class="ttc" id="a00191_html_a87a0f9f968a5cd336184ccd19f62a42f"><div class="ttname"><a href="a00191.html#a87a0f9f968a5cd336184ccd19f62a42f">BuildEvents::BeforeBuildStart</a></div><div class="ttdeci">void __stdcall BeforeBuildStart(EnvDTE::vsBuildScope, EnvDTE::vsBuildAction)</div><div class="ttdoc">Функция вызывается один раз в начале построения группы проектов. </div><div class="ttdef"><b>Definition:</b> BuildEvents.cpp:28</div></div>
-<div class="ttc" id="a00205_html"><div class="ttname"><a href="a00205.html">CommandManager</a></div><div class="ttdoc">Класс входит в Проект UnicornumCodeAssistant   Класс для исполнения команд, управляющих работой надст...</div><div class="ttdef"><b>Definition:</b> CommandManager.hpp:21</div></div>
-<div class="ttc" id="a00191_html_a5069d384f3d39de2e57e3f6cb2f3005b"><div class="ttname"><a href="a00191.html#a5069d384f3d39de2e57e3f6cb2f3005b">BuildEvents::BuildProjConfFinish</a></div><div class="ttdeci">void __stdcall BuildProjConfFinish(BSTR, BSTR, BSTR, BSTR, bool)</div><div class="ttdoc">Функция вызывается после завершения построения каждого проекта. </div><div class="ttdef"><b>Definition:</b> BuildEvents.cpp:77</div></div>
-<div class="ttc" id="a00191_html_ab82624b7458a674601e2b57760df4c5d"><div class="ttname"><a href="a00191.html#ab82624b7458a674601e2b57760df4c5d">BuildEvents::BeforeProjConfBuildStart</a></div><div class="ttdeci">void __stdcall BeforeProjConfBuildStart(BSTR, BSTR, BSTR, BSTR)</div><div class="ttdoc">Функция вызывается перед построением каждого проекта. </div><div class="ttdef"><b>Definition:</b> BuildEvents.cpp:59</div></div>
-<div class="ttc" id="a00191_html_a35ef35f1dee5b99d678e43c82c0f3d07"><div class="ttname"><a href="a00191.html#a35ef35f1dee5b99d678e43c82c0f3d07">BuildEvents::AfterBuildFinish</a></div><div class="ttdeci">void __stdcall AfterBuildFinish(EnvDTE::vsBuildScope, EnvDTE::vsBuildAction)</div><div class="ttdoc">Функция вызывается один раз в конце построения группы проектов. </div><div class="ttdef"><b>Definition:</b> BuildEvents.cpp:89</div></div>
+<div class="ttc" id="a01257_html"><div class="ttname"><a href="a01257.html">wrappers</a></div><div class="ttdef"><b>Definition:</b> IDocument.hpp:4</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_507a45db08fa34c6d3b352cda19bee73.html">ConnectionPoints</a></li><li class="navelem"><a class="el" href="dir_a7c7e64e0e812907f1fa8bc7c1d66110.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_251c72bc4a8c881a79b562191833b097.html">Version</a></li><li class="navelem"><a class="el" href="dir_25c3eb3d0c4b96817afc118aeb707ad1.html">Version</a></li><li class="navelem"><b>BuildEvents.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:16. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_03982c9addd929f8ee127dc3c352715a.html">Events</a></li><li class="navelem"><a class="el" href="dir_5a233b64067363de5d02621e92bbbff5.html">Events</a></li><li class="navelem"><b>BuildEvents.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
   </ul>

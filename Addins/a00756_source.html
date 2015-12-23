@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/UsefulCommands/VisualStudio/VSUnknown.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen_1.8.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Addins
+   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   </div>
+   <div id="projectbrief">Addins</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00756_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">VSUnknown.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;..\IMenuCommand.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Data.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01242.html">utilities</a> { <span class="keyword">class </span>HotKey; }</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01234.html">useful_commands</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>vs</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a00375.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00375.html">Unknown</a> : </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00261.html">IMenuCommand</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">public</span> Data</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00202.html">Popup_t</a> = <a class="code" href="a00202.html">wrappers::vs::CommandBarPopup</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00198.html">Command_t</a> = <a class="code" href="a00198.html">wrappers::vs::Command</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00200.html">Control_t</a> = <a class="code" href="a00200.html">wrappers::vs::CommandBarControl</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00255.html">HotKey_t</a> = <a class="code" href="a00255.html">utilities::HotKey</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00375.html#afcbc901d373f948e1bd4ba2753e7d2aa">Create</a>(<span class="keyword">const</span> <a class="code" href="a00222.html">Data_t</a> *, <span class="keyword">const</span> <a class="code" href="a00202.html">Popup_t</a> &amp;, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="comment">// Интерфейс Command:</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  LONG <a class="code" href="a00375.html#aa7682ab37570416f232f0c58fc7e9173">GetStatus</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00375.html#a050ba115ee42a07bc3e462454000cb72">Delete</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="comment">// Функция получения идентификатора иконки команды.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="a00375.html#a51a7658aad22021173e5841aed662009">GetPictureId</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="comment">// Функция получения &#39;горячей&#39; клавиши для команды.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="a00255.html">HotKey_t</a> <a class="code" href="a00375.html#ae905f15d887fff37f5b3af415c111082">GetHotKey</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  VIRTUAL_MOCK <span class="keywordtype">void</span> ReplaceTag(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  VIRTUAL_MOCK <span class="keywordtype">void</span> Enable(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="a00198.html">Command_t</a> m_Command;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="a00200.html">Control_t</a> m_Control;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordtype">bool</span>      m_IsEnabled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00375.html">Unknown</a>(<span class="keyword">const</span> <a class="code" href="a00222.html">Data_t</a> * = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_Constructor);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_Enable_Enabled);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_Enable_Disabled);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_Enable_Exception);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_Delete);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_Create);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_ReplaceTagEmpty);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_ReplaceTag);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_ReplaceTagException);  </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  FRIEND_TEST(VSUnknown_test, <span class="comment">/*DISABLED_*/</span>Test_GetStatus);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  FRIEND_TEST(VersionAddins_test, <span class="comment">/*DISABLED_*/</span>Test_GetCaption);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace vs</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <span class="comment">// useful_commands</span></div>
+<div class="ttc" id="a00222_html"><div class="ttname"><a href="a00222.html">utilities::vs::Data</a></div><div class="ttdoc">Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки...</div><div class="ttdef"><b>Definition:</b> Data.hpp:24</div></div>
+<div class="ttc" id="a01242_html"><div class="ttname"><a href="a01242.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
+<div class="ttc" id="a00255_html"><div class="ttname"><a href="a00255.html">utilities::HotKey</a></div><div class="ttdoc">Класс входит в Проект UtilitiesProject   Класс для работы с &#39;горячими&#39; клавишами. ...</div><div class="ttdef"><b>Definition:</b> HotKey.hpp:35</div></div>
+<div class="ttc" id="a00375_html"><div class="ttname"><a href="a00375.html">useful_commands::vs::Unknown</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс команд, которые будут выполняться в VisualStudio...</div><div class="ttdef"><b>Definition:</b> VSUnknown.hpp:39</div></div>
+<div class="ttc" id="a00261_html"><div class="ttname"><a href="a00261.html">useful_commands::IMenuCommand</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс всех команд, которые будут исполнятся при выборе...</div><div class="ttdef"><b>Definition:</b> IMenuCommand.hpp:26</div></div>
+<div class="ttc" id="a00375_html_a51a7658aad22021173e5841aed662009"><div class="ttname"><a href="a00375.html#a51a7658aad22021173e5841aed662009">useful_commands::vs::Unknown::GetPictureId</a></div><div class="ttdeci">virtual int GetPictureId(void) const </div><div class="ttdoc">Функция получения идентификатора иконки команды. </div><div class="ttdef"><b>Definition:</b> VSUnknown.cpp:84</div></div>
+<div class="ttc" id="a00375_html_a050ba115ee42a07bc3e462454000cb72"><div class="ttname"><a href="a00375.html#a050ba115ee42a07bc3e462454000cb72">useful_commands::vs::Unknown::Delete</a></div><div class="ttdeci">void Delete(void) override final</div><div class="ttdoc">Удалить текущую команду. </div><div class="ttdef"><b>Definition:</b> VSUnknown.cpp:69</div></div>
+<div class="ttc" id="a00200_html"><div class="ttname"><a href="a00200.html">wrappers::vs::CommandBarControl</a></div><div class="ttdoc">Класс входит в Проект Command   Класс-обертка для MSVSCB::CommandBarControl. </div><div class="ttdef"><b>Definition:</b> CommandBarControl.hpp:27</div></div>
+<div class="ttc" id="a00375_html_ae905f15d887fff37f5b3af415c111082"><div class="ttname"><a href="a00375.html#ae905f15d887fff37f5b3af415c111082">useful_commands::vs::Unknown::GetHotKey</a></div><div class="ttdeci">virtual HotKey_t GetHotKey(void) const </div><div class="ttdoc">Функция получения &#39;горячей&#39; клавиши для команды. </div><div class="ttdef"><b>Definition:</b> VSUnknown.cpp:98</div></div>
+<div class="ttc" id="a00375_html_afcbc901d373f948e1bd4ba2753e7d2aa"><div class="ttname"><a href="a00375.html#afcbc901d373f948e1bd4ba2753e7d2aa">useful_commands::vs::Unknown::Create</a></div><div class="ttdeci">void Create(const Data_t *, const Popup_t &amp;, bool)</div><div class="ttdoc">Функция создания объекта команды. </div><div class="ttdef"><b>Definition:</b> VSUnknown.cpp:29</div></div>
+<div class="ttc" id="a01234_html"><div class="ttname"><a href="a01234.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
+<div class="ttc" id="a00198_html"><div class="ttname"><a href="a00198.html">wrappers::vs::Command</a></div><div class="ttdoc">Класс входит в Проект Command   Класс-обертка для EnvDTE::Command. </div><div class="ttdef"><b>Definition:</b> Command.hpp:28</div></div>
+<div class="ttc" id="a00202_html"><div class="ttname"><a href="a00202.html">wrappers::vs::CommandBarPopup</a></div><div class="ttdoc">Класс входит в Проект Command   Класс-обертка для MSVSCB::CommandBarPopup. </div><div class="ttdef"><b>Definition:</b> CommandBarPopup.hpp:31</div></div>
+<div class="ttc" id="a00375_html_aa7682ab37570416f232f0c58fc7e9173"><div class="ttname"><a href="a00375.html#aa7682ab37570416f232f0c58fc7e9173">useful_commands::vs::Unknown::GetStatus</a></div><div class="ttdeci">LONG GetStatus(void) override final</div><div class="ttdoc">Функция получения статуса команды. </div><div class="ttdef"><b>Definition:</b> VSUnknown.cpp:57</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_db050b1b4ff1e0e195a3127d01d2a2fd.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_2be67a721dc39d35775b988a1bdcfc68.html">VisualStudio</a></li><li class="navelem"><b>VSUnknown.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:21. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+  </ul>
+</div>
+</body>
+</html>
