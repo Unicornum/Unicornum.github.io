@@ -1,6 +1,5 @@
 var a00066 =
 [
-    [ "Attribute", "a00066.html#accacf35e6d74d8200551c88e5ae0dc74", null ],
-    [ "operator=", "a00066.html#aa1d1cd6c6dafe897c02f3e390e321921", null ],
-    [ "To", "a00066.html#a2d469bdba6260a64336e3f17c0ff170c", null ]
+    [ "WriteRecord", "a00066.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
+    [ "WriteTitle", "a00066.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
 ];

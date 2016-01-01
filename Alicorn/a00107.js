@@ -1,7 +1,10 @@
 var a00107 =
 [
-    [ "IsAllowedRedo", "a00107.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
-    [ "IsAllowedUndo", "a00107.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
-    [ "Redo", "a00107.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
-    [ "Undo", "a00107.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
+    [ "Process", "a00107.html#a9427a926dfcfa3c666bc44d446853854", null ],
+    [ "RunWithoutWaitingCompletion", "a00107.html#a8829a0020c2f836c1c5efa408c261ea1", null ],
+    [ "RunWithoutWaitingCompletion", "a00107.html#a063aed97bbe1aab8e168710a235f330f", null ],
+    [ "RunWithReceiveStdout", "a00107.html#a85f1f11f01d19ce759652b29ffe2fbc1", null ],
+    [ "RunWithReceiveStdout", "a00107.html#a2971a5187f0cb4ff11e9b060a04fb9a6", null ],
+    [ "RunWithWaitingCompletion", "a00107.html#ae19ea48857085dd694fd60e0bee623ae", null ],
+    [ "RunWithWaitingCompletion", "a00107.html#a2ab8cf5ea6e95e8d68f9ab5091947a90", null ]
 ];

@@ -1,6 +1,5 @@
 var a00129 =
 [
-    [ "Ptr", "a00129.html#a85a101c3ca8e8fbb7cc8ca71bc08fb52", null ],
-    [ "operator->", "a00129.html#a2f9f74776cb12ed9037d527703094d11", null ],
-    [ "operator->", "a00129.html#a112467f369aaa88f3cf16ee0e8ac65c1", null ]
+    [ "string_cast", "a00129.html#add2a4f861ab927f202e9e49fc868699d", null ],
+    [ "string_cast", "a00129.html#a389885862267944e512ef7da9d00a39b", null ]
 ];

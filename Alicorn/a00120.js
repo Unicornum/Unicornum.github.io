@@ -1,6 +1,7 @@
 var a00120 =
 [
-    [ "parse_error", "a00120.html#aea12a301271c393fb627b368fb9f35c1", null ],
-    [ "what", "a00120.html#a7665c88639e7466ee1de388a4f85e6fe", null ],
-    [ "where", "a00120.html#a3a0ab9e586c1d2b437c340f6622fbec6", null ]
+    [ "Search", "a00120.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+    [ "Search", "a00120.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+    [ "GetCoincided", "a00120.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+    [ "IsSearch", "a00120.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
 ];

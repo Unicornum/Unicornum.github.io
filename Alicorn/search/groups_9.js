@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['report',['Report',['../a00498.html',1,'']]],
-  ['regex',['Regex',['../a00491.html',1,'']]]
+  ['patterns',['Patterns',['../a00561.html',1,'']]],
+  ['platform',['Platform',['../a00562.html',1,'']]]
 ];

@@ -1,5 +1,4 @@
 var a00069 =
 [
-    [ "Get", "a00069.html#a53722275ba36d7028901a5d30e4b9c10", null ],
-    [ "Set", "a00069.html#a6cb1518cb704c7edeee6bbe73409dfd5", null ]
+    [ "DoSpecialAction", "a00069.html#a526dc33d9ad165f8112898e8ec5693f8", null ]
 ];

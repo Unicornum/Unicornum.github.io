@@ -1,8 +1,5 @@
 var a00048 =
 [
-    [ "Введение", "a00048.html#sTestingBrief", [
-      [ "Список макросов", "a00048.html#ssTestingClasses", null ],
-      [ "Список задач проекта", "a00048.html#ssTestingTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00050.html", null ]
+    [ "Get", "a00048.html#a53722275ba36d7028901a5d30e4b9c10", null ],
+    [ "Set", "a00048.html#a6cb1518cb704c7edeee6bbe73409dfd5", null ]
 ];

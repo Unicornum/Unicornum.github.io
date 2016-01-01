@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/system/process/call-back.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/patterns/command/Manager.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,16 +33,16 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1283(0) Architecture: x86.64 Build: 16:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1419 Architecture: x86.32 Build: 01:25 02 Январь 2016</span>
    </div>
-   <div id="projectbrief">Libs</div>
+   <div id="projectbrief">LibsVS2013</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -51,6 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li class="current"><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -108,46 +109,21 @@ $(document).ready(function(){initNavTree('a00416_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">call-back.hpp</div>  </div>
+<div class="title">Manager.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00452.html">alicorn</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>system</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>process</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00093.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00093.html">ICallBack</a></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsContinue(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Received(<span class="keyword">const</span> std::string &amp;) = 0;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a00093.html">ICallBack</a>(<span class="keywordtype">void</span>) {}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace process</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace system</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace alicorn</span></div>
-<div class="ttc" id="a00093_html"><div class="ttname"><a href="a00093.html">alicorn::system::process::ICallBack</a></div><div class="ttdoc">Класс входит в Проект System   Интерфейсный класс для объекта обратного вызова, используемого при раб...</div><div class="ttdef"><b>Definition:</b> call-back.hpp:36</div></div>
-<div class="ttc" id="a00452_html"><div class="ttname"><a href="a00452.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> attribute.hpp:6</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ManagerCommon.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;ICommand.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00496.html">alicorn</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>patterns</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>command</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00558.html#ga8e7b735024f7c889ba90c2087f57aa22">   32</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="a00093.html">ManagerCommon&lt;ICommand&gt;</a> <a class="code" href="a00558.html#ga8e7b735024f7c889ba90c2087f57aa22">Manager</a>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace command</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace patterns</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a00093_html"><div class="ttname"><a href="a00093.html">alicorn::patterns::command::ManagerCommon</a></div><div class="ttdoc">Класс входит в Проект Patterns   Базовый класс менеджеров, управляющих выполнением команд...</div><div class="ttdef"><b>Definition:</b> ManagerCommon.hpp:52</div></div>
+<div class="ttc" id="a00558_html_ga8e7b735024f7c889ba90c2087f57aa22"><div class="ttname"><a href="a00558.html#ga8e7b735024f7c889ba90c2087f57aa22">alicorn::patterns::command::Manager</a></div><div class="ttdeci">ManagerCommon&lt; ICommand &gt; Manager</div><div class="ttdoc">Класс входит в Проект Patterns   Класс, управляющий выполнением команд. </div><div class="ttdef"><b>Definition:</b> Manager.hpp:32</div></div>
+<div class="ttc" id="a00496_html"><div class="ttname"><a href="a00496.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> Model.hpp:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_84dba80d8c4e490b971c241d56a2e320.html">system</a></li><li class="navelem"><a class="el" href="dir_9e2c187a27f6434b836cb6c6c542da32.html">process</a></li><li class="navelem"><b>call-back.hpp</b></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Ср 23 Дек 2015 16:29:38. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_45b4c2f261ab8f95481e28e0bd86e7bc.html">patterns</a></li><li class="navelem"><a class="el" href="dir_c4dae853dda624cc2da20ad57e555d43.html">command</a></li><li class="navelem"><b>Manager.hpp</b></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 2 Янв 2016 01:26:37. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

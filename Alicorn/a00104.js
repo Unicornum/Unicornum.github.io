@@ -1,18 +1,11 @@
 var a00104 =
 [
-    [ "AddChildNode", "a00104.html#aa087f11a1e9bb932053234a3766ae561", null ],
-    [ "DeleteChildNode", "a00104.html#a62b67c917e698db793c197eae8115a86", null ],
-    [ "GetAttribute", "a00104.html#a81e00328102b171e94014a28d0df1501", null ],
-    [ "GetCurrentNodeName", "a00104.html#a5254b3b74b7e4c713d0b149807aea8f3", null ],
-    [ "GetValue", "a00104.html#a629ed43bf59e337091b5ad833efe3828", null ],
-    [ "MoveToChildNode", "a00104.html#a92be4896f9248f6ffbf3c3d1eab619eb", null ],
-    [ "MoveToFirstChildNode", "a00104.html#a0e52b7246a1ebdb8fb326b009adf49b9", null ],
-    [ "MoveToNextNode", "a00104.html#a2fdec796a96ca25e13bafb2787db59e3", null ],
-    [ "MoveToParentNode", "a00104.html#a50c6a5adf8ec04d3a4c984c371809e1e", null ],
-    [ "MoveToRootNode", "a00104.html#afb470afc227c1d972195d61ce6edde68", null ],
-    [ "Parse", "a00104.html#aa52838badaaabba0c6220233207c10f3", null ],
-    [ "Parse", "a00104.html#a377aa37cbe981975abb22d8d47253d77", null ],
-    [ "Save", "a00104.html#a1646fc139c23eadfa1eed5ca90707945", null ],
-    [ "SetAttribute", "a00104.html#a969f1058fe4ef9b68c187be6f24a41d8", null ],
-    [ "SetValue", "a00104.html#af2fb77430c4a371281e93b1af0df4402", null ]
+    [ "operator+=", "a00104.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
+    [ "operator-=", "a00104.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
+    [ "operator[]", "a00104.html#aab381d95bc38753a42ebc7c60fb2ce9a", null ],
+    [ "operator[]", "a00104.html#afc41066cbf2787ffb952d199a0640273", null ],
+    [ "operator[]", "a00104.html#a2f8e7fe05286832a146e97352345506e", null ],
+    [ "operator[]", "a00104.html#a4bfda637ac9887bb9676f301e40861be", null ],
+    [ "operator[]", "a00104.html#a44ae2217ccac94b6b565701bfd05774e", null ],
+    [ "operator[]", "a00104.html#a75535c69883d5768f646b92554d745d2", null ]
 ];

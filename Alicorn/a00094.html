@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Класс alicorn::patterns::command::ICommand</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>LibsVS2013: Класс alicorn::patterns::command::ManagerUndoRedo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,16 +33,16 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1283(0) Architecture: x86.64 Build: 16:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1419 Architecture: x86.32 Build: 01:25 02 Январь 2016</span>
    </div>
-   <div id="projectbrief">Libs</div>
+   <div id="projectbrief">LibsVS2013</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -51,6 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -110,53 +111,82 @@ $(document).ready(function(){initNavTree('a00094.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00697.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a00761.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::patterns::command::ICommand<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a00486.html">Alicorn</a> &raquo; <a class="el" href="a00502.html">Patterns</a> &raquo; <a class="el" href="a00500.html">Command</a></div></div>  </div>
+<div class="title">Класс alicorn::patterns::command::ManagerUndoRedo<div class="ingroups"><a class="el" href="a00538.html">Alicorn</a> &raquo; <a class="el" href="a00561.html">Patterns</a> &raquo; <a class="el" href="a00558.html">Command</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00036.html">Проект Patterns</a> <br />
- Интерфейсный класс для команд.  
+<p>Класс входит в <a class="el" href="a00022.html">Проект Patterns</a> <br />
+ Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд.  
  <a href="a00094.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00374_source.html">ICommand.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00420_source.html">ManagerUndoRedo.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:alicorn::patterns::command::ICommand:</div>
+Граф наследования:alicorn::patterns::command::ManagerUndoRedo:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00698.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_i_command_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_i_command_inherit__map" id="alicorn_1_1patterns_1_1command_1_1_i_command_inherit__map">
-<area shape="rect" id="node3" href="a00101.html" title="Класс входит в Проект Patterns &#160;&#160;Интерфейсный класс для команд, поддерживающих отмену последнего дейс..." alt="" coords="14,177,159,269"/>
+<div class="center"><img src="a00762.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_inherit__map" id="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_inherit__map">
+<area shape="rect" id="node2" href="a00093.html" title="{alicorn::patterns::\lcommand::ManagerCommon\l\&lt; IUndo \&gt;\n||+ Execute()\l# DoExecute()\l}" alt="" coords="13,177,219,298"/>
+<area shape="rect" id="node4" href="a00079.html" title="{alicorn::patterns::\lcommand::IManager\&lt; IUndo \&gt;\n||+ ~IManager()\l# DoExecute()\l# DoException()\l}" alt="" coords="5,6,227,127"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса alicorn::patterns::command::ICommand:</div>
+Граф связей класса alicorn::patterns::command::ManagerUndoRedo:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00699.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_i_command_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a00763.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_coll__map" id="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_coll__map">
+<area shape="rect" id="node2" href="a00093.html" title="{alicorn::patterns::\lcommand::ManagerCommon\l\&lt; IUndo \&gt;\n||+ Execute()\l# DoExecute()\l}" alt="" coords="13,177,219,298"/>
+<area shape="rect" id="node4" href="a00079.html" title="{alicorn::patterns::\lcommand::IManager\&lt; IUndo \&gt;\n||+ ~IManager()\l# DoExecute()\l# DoException()\l}" alt="" coords="5,6,227,127"/>
+</map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a1ae8ad925f254d16cb178839a01bbae5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ae8ad925f254d16cb178839a01bbae5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a1ae8ad925f254d16cb178839a01bbae5">IsAllowedUndo</a> (void) const </td></tr>
+<tr class="memdesc:a1ae8ad925f254d16cb178839a01bbae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка существования команд, которые можно отменить. <br /></td></tr>
+<tr class="separator:a1ae8ad925f254d16cb178839a01bbae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af563bcd50a28b5fa540ca16cd77921d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af563bcd50a28b5fa540ca16cd77921d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#af563bcd50a28b5fa540ca16cd77921d7">Undo</a> (void)</td></tr>
+<tr class="memdesc:af563bcd50a28b5fa540ca16cd77921d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отменить последнюю выполненную команду. <br /></td></tr>
+<tr class="separator:af563bcd50a28b5fa540ca16cd77921d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba31de05f232e77cb07f3ff595fdf19d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba31de05f232e77cb07f3ff595fdf19d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#aba31de05f232e77cb07f3ff595fdf19d">IsAllowedRedo</a> (void) const </td></tr>
+<tr class="memdesc:aba31de05f232e77cb07f3ff595fdf19d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка существования команд, которые можно повторить. <br /></td></tr>
+<tr class="separator:aba31de05f232e77cb07f3ff595fdf19d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf7a9e613cbb698cc1ca2c26e554637"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cf7a9e613cbb698cc1ca2c26e554637"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00094.html#a2cf7a9e613cbb698cc1ca2c26e554637">Redo</a> (void)</td></tr>
+<tr class="memdesc:a2cf7a9e613cbb698cc1ca2c26e554637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повторить последнюю отмененную команду. <br /></td></tr>
+<tr class="separator:a2cf7a9e613cbb698cc1ca2c26e554637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00036.html">Проект Patterns</a> <br />
- Интерфейсный класс для команд. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00022.html">Проект Patterns</a> <br />
+ Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд. </p>
+<ul>
+<li>Исполняемые команды должны быть унаследованы от интерфейса <a class="el" href="a00087.html" title="Класс входит в Проект Patterns   Интерфейсный класс для команд, поддерживающих отмену последнего дейс...">IUndo</a>.</li>
+<li>Если команда не выполнена до конца (например, бросила исключение в процессе выполнения), отменить ее невозможно.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
- 06 Сентябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00374_source.html">ICommand.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00420_source.html">ManagerUndoRedo.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/ManagerUndoRedo.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00094.html">ICommand</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Ср 23 Дек 2015 16:29:40. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00094.html">ManagerUndoRedo</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 2 Янв 2016 01:26:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

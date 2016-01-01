@@ -1,10 +1,12 @@
 var a00122 =
 [
-    [ "Process", "a00122.html#a9427a926dfcfa3c666bc44d446853854", null ],
-    [ "RunWithoutWaitingCompletion", "a00122.html#a8829a0020c2f836c1c5efa408c261ea1", null ],
-    [ "RunWithoutWaitingCompletion", "a00122.html#a063aed97bbe1aab8e168710a235f330f", null ],
-    [ "RunWithReceiveStdout", "a00122.html#a85f1f11f01d19ce759652b29ffe2fbc1", null ],
-    [ "RunWithReceiveStdout", "a00122.html#a2971a5187f0cb4ff11e9b060a04fb9a6", null ],
-    [ "RunWithWaitingCompletion", "a00122.html#ae19ea48857085dd694fd60e0bee623ae", null ],
-    [ "RunWithWaitingCompletion", "a00122.html#a2ab8cf5ea6e95e8d68f9ab5091947a90", null ]
+    [ "SectionFullAccess", "a00122.html#a559559549868bf00850723837cce477d", null ],
+    [ "SectionFullAccess", "a00122.html#a36af9981933fcf7ed983197a12b33faf", null ],
+    [ "Get", "a00122.html#ad4abd7c2d4a27b75c47e915d51254360", null ],
+    [ "GetChildSectionNames", "a00122.html#a0dfa6380c7daee4f01be778650e54ea0", null ],
+    [ "GetComment", "a00122.html#aa145a5857bfe91b0338ed5a8dff9557d", null ],
+    [ "GetParameterNames", "a00122.html#a9ab6fd548602a005d21b1ffa927f01da", null ],
+    [ "operator[]", "a00122.html#aec59b411a094c25e4ebdd314d882dbe0", null ],
+    [ "Set", "a00122.html#a7f4ca4c0296175034a60c9c608480168", null ],
+    [ "SetComment", "a00122.html#a6c17f7e6bedce23523c3326c535761a2", null ]
 ];
