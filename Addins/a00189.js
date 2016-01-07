@@ -1,4 +1,5 @@
 var a00189 =
 [
-    [ "operator()", "a00189.html#aa9d7a4160ad52d6148570afad770cf9c", null ]
+    [ "GetCaption", "a00189.html#aa4d68c3eba391092459a641de35dd809", null ],
+    [ "IsEnabled", "a00189.html#ae54ee3f0147cf847ed373c7ca2544273", null ]
 ];

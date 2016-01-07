@@ -1,7 +1,7 @@
 var a00016 =
 [
-    [ "Введение", "a00016.html#sCommonBrief", [
-      [ "Список задач проекта", "a00016.html#ssCommonTasks", null ]
+    [ "Введение", "a00016.html#sUnicornumCodeAssistantBrief", [
+      [ "Список задач проекта", "a00016.html#ssUnicornumCodeAssistantTasks", null ]
     ] ],
-    [ "Список задач проекта", "a00018.html", null ]
+    [ "Список задач проекта", "a00017.html", null ]
 ];

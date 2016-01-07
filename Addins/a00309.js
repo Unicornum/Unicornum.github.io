@@ -1,4 +1,5 @@
 var a00309 =
 [
-    [ "PROPERTY_GET", "a00309.html#a3d2ba4cd56a5fc12421717f46f543fd6", null ]
+    [ "VersionResource", "a00309.html#a4f80a6608fed4a60903a4196431c632a", null ],
+    [ "Generate", "a00309.html#a6d209b353d950ff590eadd3fc4f28c35", null ]
 ];

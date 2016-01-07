@@ -1,8 +1,8 @@
 var a00197 =
 [
-    [ "GetCount", "a00197.html#abbc95386bcc2e25287929c3aeb044c81", null ],
-    [ "GetItem", "a00197.html#a212a9fd442dace44367a7d6dcfa3a9f8", null ],
-    [ "IsExist", "a00197.html#a373c590faedafe634836c26ad9419161", null ],
-    [ "operator[]", "a00197.html#afafc3273142ce39cc288fcfa61ddf4d5", null ],
-    [ "operator[]", "a00197.html#a5d2215c2dc29590520d9ede5f171613d", null ]
+    [ "GetRegexString", "a00197.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
+    [ "GetReplaceString", "a00197.html#a81029770ef4725794abaa505ad34fc55", null ],
+    [ "GetSourseStrings", "a00197.html#a53b21f1290abceb1fda90789c42f82ee", null ],
+    [ "SetProcessedData", "a00197.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
+    [ "DoProcess", "a00197.html#a5491cd61ba8f067527535004e251f81a", null ]
 ];

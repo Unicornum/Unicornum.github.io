@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Проект Common</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Проект UnicornumCodeAssistant</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -103,23 +103,33 @@ $(document).ready(function(){initNavTree('a00016.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Проект Common </div>  </div>
+<div class="title">Проект UnicornumCodeAssistant </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sCommonBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sUnicornumCodeAssistantBrief"></a>
 Введение</h1>
-<p>Проект содержит классы, общие для всех точек подключения и не зависящие от конкретного типа IDE.</p>
-<h2><a class="anchor" id="ssCommonTasks"></a>
+<p>Проект точки подключения к Visual Studio, обеспечивающей работу команд, доступных из меню.</p>
+<p>Проект выполняет следующие действия:</p><ul>
+<li>Загрузку параметров надстройки для текущей используемой версии Visual Studio.</li>
+<li>Создание меню и их команд при старте надстройки.</li>
+<li>Уничтожение меню и команд при выгрузке надстройки.</li>
+<li>Запрос и установку текущего статуса команд.</li>
+<li>Выполнение команд, соответствующих выбранной строке меню.</li>
+<li>Удаление команд, оставшихся от предыдущего запуска надстройки (возможно в случае аварийного завершения работы Visual Studio).</li>
+<li>Копирование файла usertype.dat в папку Visual Studio при запуске надстройки.</li>
+</ul>
+<h2><a class="anchor" id="ssUnicornumCodeAssistantTasks"></a>
 Список задач проекта</h2>
-<p><a class="el" href="a00018.html">Список задач проекта</a> </p>
+<p><a class="el" href="a00017.html">Список задач проекта</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:24. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00009.html">ConnectionPoints</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:33. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

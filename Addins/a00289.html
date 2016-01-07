@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Шаблон класса utilities::execute::Main&lt; TEnvVars, TProgress &gt;</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Класс utilities::Text</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -112,82 +112,57 @@ $(document).ready(function(){initNavTree('a00289.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Открытые статические члены</a> &#124;
-<a href="a01661.html">Полный список членов класса</a>  </div>
+<a href="a01564.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса utilities::execute::Main&lt; TEnvVars, TProgress &gt;</div>  </div>
+<div class="title">Класс utilities::Text</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00094.html">Проект Execute</a> <br />
- Базовый класс для классов исполнения программы.  
+<p>Класс входит в <a class="el" href="a00059.html">Проект UtilitiesProject</a> <br />
+ Класс, содержащий вспомогательные функции для работы с текстом.  
  <a href="a00289.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00861_source.html">Main.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00853_source.html">Text.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса utilities::execute::Main&lt; TEnvVars, TProgress &gt;:</div>
+Граф связей класса utilities::Text:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01662.png" border="0" usemap="#utilities_1_1execute_1_1_main_3_01_t_env_vars_00_01_t_progress_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1execute_1_1_main_3_01_t_env_vars_00_01_t_progress_01_4_coll__map" id="utilities_1_1execute_1_1_main_3_01_t_env_vars_00_01_t_progress_01_4_coll__map">
+<div class="center"><img src="a01565.png" border="0" usemap="#utilities_1_1_text_coll__map" alt="Collaboration graph"/></div>
+<map name="utilities_1_1_text_coll__map" id="utilities_1_1_text_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Открытые статические члены</h2></td></tr>
-<tr class="memitem:af0ca77a1d9565a186951875818893777"><td class="memItemLeft" align="right" valign="top">static CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00289.html#af0ca77a1d9565a186951875818893777">Run</a> (const Param_t &amp;, const CString &amp;, const CString &amp;)</td></tr>
-<tr class="memdesc:af0ca77a1d9565a186951875818893777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для запуска и отслеживания исполнения программы.  <a href="#af0ca77a1d9565a186951875818893777">Подробнее...</a><br /></td></tr>
-<tr class="separator:af0ca77a1d9565a186951875818893777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a934d058e1cac7b3bff5d1397d8833cb6"><td class="memItemLeft" align="right" valign="top">static CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00289.html#a934d058e1cac7b3bff5d1397d8833cb6">GetClassName</a> (const CString &amp;_Text)</td></tr>
+<tr class="memdesc:a934d058e1cac7b3bff5d1397d8833cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для извлечения имени класса из текста.  <a href="#a934d058e1cac7b3bff5d1397d8833cb6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a934d058e1cac7b3bff5d1397d8833cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234214865069a4f448fedbded2323085"><td class="memItemLeft" align="right" valign="top">static CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00289.html#a234214865069a4f448fedbded2323085">GetFunctionName</a> (const CString &amp;_Text)</td></tr>
+<tr class="memdesc:a234214865069a4f448fedbded2323085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для извлечения имени функции из текста.  <a href="#a234214865069a4f448fedbded2323085">Подробнее...</a><br /></td></tr>
+<tr class="separator:a234214865069a4f448fedbded2323085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TEnvVars, class TProgress&gt;<br />
-class utilities::execute::Main&lt; TEnvVars, TProgress &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00094.html">Проект Execute</a> <br />
- Базовый класс для классов исполнения программы. </p>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TEnvVars</td><td>Класс, устанавливающий переменные окружения для исполняемой программы (см. проект Utilities::EnvironmentVariables). </td></tr>
-    <tr><td class="paramname">TProgress</td><td>Класс, отслеживающий результат работы исполняемой программы (см. проект Utilities::Progress).</td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00059.html">Проект UtilitiesProject</a> <br />
+ Класс, содержащий вспомогательные функции для работы с текстом. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>22 Июнь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>28 Май 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="af0ca77a1d9565a186951875818893777"></a>
+<a class="anchor" id="a934d058e1cac7b3bff5d1397d8833cb6"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class TEnvVars , class TProgress &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CString <a class="el" href="a00289.html">utilities::execute::Main</a>&lt; TEnvVars, TProgress &gt;::Run </td>
+          <td class="memname">CString Text::GetClassName </td>
           <td>(</td>
-          <td class="paramtype">const Param_t &amp;&#160;</td>
-          <td class="paramname"><em>_Param</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_PathToProgram</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_CurrentDirectory</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -197,32 +172,113 @@ template&lt;class TEnvVars , class TProgress &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Функция для запуска и отслеживания исполнения программы. </p>
+<p>Функция для извлечения имени класса из текста. </p>
+<ul>
+<li>Для текста 'class ClassName : public Base' функция вернет 'ClassName'.</li>
+<li>Предварительное объявление класса ('class ClassName;') не считается валидным исходным текстом.</li>
+</ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Param</td><td>Параметр, передаваемый конструктору объекта класса TEnvVars. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToProgram</td><td>Путь к файлу запускаемой программы. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_CurrentDirectory</td><td>Путь к рабочей папке.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текст.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Лог выполнения программы. </dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Строка не содержит объявления класса.</li>
+<li>Строка содержит предварительное объявление класса. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00289_a934d058e1cac7b3bff5d1397d8833cb6_icgraph.png" border="0" usemap="#a00289_a934d058e1cac7b3bff5d1397d8833cb6_icgraph" alt=""/></div>
+<map name="a00289_a934d058e1cac7b3bff5d1397d8833cb6_icgraph" id="a00289_a934d058e1cac7b3bff5d1397d8833cb6_icgraph">
+<area shape="rect" id="node3" href="a00111.html#afa328cb75664988c7842dd17379f3210" title="Доступ к информации о проекте документа. " alt="" coords="303,5,468,61"/>
+<area shape="rect" id="node9" href="a00288.html#a22cda577ef2d3e86d9e70b9d21ab201d" title="Функция получения значения тега. " alt="" coords="317,86,454,127"/>
+<area shape="rect" id="node11" href="a00152.html#a1914cae82f2e56d5c0c1483a05d854c0" title="Функция проверки существования тестового проекта для класса, на объявлении которого стоит курсор..." alt="" coords="269,152,501,208"/>
+<area shape="rect" id="node5" href="a00111.html#a0aca6c5fe8f9ff81d50cefbd4042244a" title="Имя класса из строки под курсором. " alt="" coords="549,5,715,61"/>
+<area shape="rect" id="node7" href="a00092.html#a793539ff864ab00599f8448d3aadd3a3" title="Описание см. ICommand::Execute() " alt="" coords="763,5,944,61"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a234214865069a4f448fedbded2323085"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CString Text::GetFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для извлечения имени функции из текста. </p>
+<ul>
+<li>Имя функции извлекается из заголовка реализации функции класса.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текст.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Строка не содержит заголовок реализации функции.</li>
+<li>Строка содержит объявление функции.</li>
+<li>Строка содержит заголовок реализации функции, не принадлежащей классу. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00289_a234214865069a4f448fedbded2323085_icgraph.png" border="0" usemap="#a00289_a234214865069a4f448fedbded2323085_icgraph" alt=""/></div>
+<map name="a00289_a234214865069a4f448fedbded2323085_icgraph" id="a00289_a234214865069a4f448fedbded2323085_icgraph">
+<area shape="rect" id="node3" href="a00288.html#a22cda577ef2d3e86d9e70b9d21ab201d" title="Функция получения значения тега. " alt="" coords="294,5,431,46"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a00861_source.html">Main.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/Main.inl</li>
+<li>Solution/Solution/Core/Utilities/Utilities/Utilities/<a class="el" href="a00853_source.html">Text.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Utilities/Utilities/Text.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00289.html">Main</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:28. Создано системой
+    <li class="navelem"><b>utilities</b></li><li class="navelem"><a class="el" href="a00289.html">Text</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:36. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

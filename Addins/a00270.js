@@ -1,6 +1,8 @@
 var a00270 =
 [
-    [ "GetCaption", "a00270.html#a3f840e8e0fdb677f60df2a0feed3f9dc", null ],
-    [ "GetHotKey", "a00270.html#a95e2230fbf4faf2694b3b3f52e81e715", null ],
-    [ "IsEnabled", "a00270.html#a3db378e345242423e2e518555c1987da", null ]
+    [ "AfterClosing", "a00270.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
+    [ "BeforeClosing", "a00270.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
+    [ "Opened", "a00270.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
+    [ "ProjectAdded", "a00270.html#a1729654adb306bca37aa34a328e3ebdd", null ],
+    [ "ProjectRemoved", "a00270.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
 ];

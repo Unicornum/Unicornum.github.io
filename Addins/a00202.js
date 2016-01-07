@@ -1,9 +1,6 @@
 var a00202 =
 [
-    [ "Delete", "a00202.html#a8bbb63f588b2f90e3c9f517a44a7ed4b", null ],
-    [ "PROPERTY_GET", "a00202.html#ad3bebadeb0077f2d5cec751995aedc37", null ],
-    [ "PROPERTY_GET", "a00202.html#a3adfcc08dd94c2d6fc801967cd6fae57", null ],
-    [ "SetBeginGroup", "a00202.html#a7bd14f74efb1ff877f410c1af87eae37", null ],
-    [ "SetCaption", "a00202.html#a1a240117271fd1d6c6a444db3b60a747", null ],
-    [ "SetVisible", "a00202.html#a5fc0a8ec29327acc66d1f63bfdaf2337", null ]
+    [ "SetRegexString", "a00202.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
+    [ "SetSourceStrings", "a00202.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
+    [ "UpdateView", "a00202.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
 ];

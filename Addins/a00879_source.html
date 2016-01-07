@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Execute/Execute/SvnInfo.mock.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Tools/RegexTester/RegexTester/Model/IModel.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,63 +109,24 @@ $(document).ready(function(){initNavTree('a00879_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SvnInfo.mock.hpp</div>  </div>
+<div class="title">IModel.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01213.html">mock</a></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01242.html">utilities</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>execute</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>SvnInfoProxy : <span class="keyword">public</span> ::alicorn::testing::Proxy&lt;SvnInfoProxy&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  MOCK_METHOD1(Constructor, <span class="keywordtype">size_t</span> (CString));</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  MOCK_METHOD1(GetRevision, CString (<span class="keywordtype">size_t</span>));</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>SvnInfo</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  CString GetRevision(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">  </span>{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> SvnInfoProxy::GetInstance()-&gt;GetRevision(m_Id);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">bool</span> operator== (<span class="keyword">const</span> SvnInfo &amp; _Info)<span class="keyword"> const </span>{<span class="keywordflow">return</span> (m_Id == _Info.m_Id);}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">size_t</span> m_Id;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">explicit</span> SvnInfo(<span class="keyword">const</span> CString &amp; _Path) :</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    m_Id(SvnInfoProxy::GetInstance()-&gt;Constructor(_Path))</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace execute</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace utilities</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace mock</span></div>
-<div class="ttc" id="a01242_html"><div class="ttname"><a href="a01242.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
-<div class="ttc" id="a01213_html"><div class="ttname"><a href="a01213.html">mock</a></div><div class="ttdef"><b>Definition:</b> Prefatory.mock.hpp:4</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Data.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01163.html">model</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00184.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00184.html">IModel</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00184.html#a8e7c6c501022ada0d35d651ea474cbcc">DoProcess</a>(<span class="keywordtype">void</span>) = 0;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a00184.html#a9eb51fafa31fc823f21f8f67347165f2">   42</a></span>&#160;  <a class="code" href="a00144.html">Data</a> &amp; <a class="code" href="a00184.html#a9eb51fafa31fc823f21f8f67347165f2">GetData</a>(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> m_Data; }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a00184.html#a65322a253f89d9f7bfcc4384828d1d3c">   48</a></span>&#160;  <span class="keyword">const</span> <a class="code" href="a00144.html">Data</a> &amp; <a class="code" href="a00184.html#a65322a253f89d9f7bfcc4384828d1d3c">GetData</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Data; }</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a00144.html">Data</a> &amp; m_Data;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00184.html">IModel</a>(<a class="code" href="a00144.html">Data</a> &amp; _Data) : m_Data(_Data) {}</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a00184.html">IModel</a>(<span class="keywordtype">void</span>) {}</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="a00184.html">IModel</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a00184.html">IModel</a> &amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace model</span></div><div class="ttc" id="a00144_html"><div class="ttname"><a href="a00144.html">model::Data</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Класс данных, которые обрабатываются классом модели. </div><div class="ttdef"><b>Definition:</b> Data.hpp:24</div></div>
+<div class="ttc" id="a00184_html"><div class="ttname"><a href="a00184.html">model::IModel</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Интерфейс модели. </div><div class="ttdef"><b>Definition:</b> IModel.hpp:25</div></div>
+<div class="ttc" id="a00184_html_a65322a253f89d9f7bfcc4384828d1d3c"><div class="ttname"><a href="a00184.html#a65322a253f89d9f7bfcc4384828d1d3c">model::IModel::GetData</a></div><div class="ttdeci">const Data &amp; GetData(void) const </div><div class="ttdoc">Функция получения данных модели. </div><div class="ttdef"><b>Definition:</b> IModel.hpp:48</div></div>
+<div class="ttc" id="a00184_html_a8e7c6c501022ada0d35d651ea474cbcc"><div class="ttname"><a href="a00184.html#a8e7c6c501022ada0d35d651ea474cbcc">model::IModel::DoProcess</a></div><div class="ttdeci">virtual void DoProcess(void)=0</div><div class="ttdoc">Функция обработки данных модели. </div></div>
+<div class="ttc" id="a01163_html"><div class="ttname"><a href="a01163.html">model</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:11</div></div>
+<div class="ttc" id="a00184_html_a9eb51fafa31fc823f21f8f67347165f2"><div class="ttname"><a href="a00184.html#a9eb51fafa31fc823f21f8f67347165f2">model::IModel::GetData</a></div><div class="ttdeci">Data &amp; GetData(void)</div><div class="ttdoc">Функция получения данных модели. </div><div class="ttdef"><b>Definition:</b> IModel.hpp:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_a94cdd258badd1619b0111688b385338.html">Execute</a></li><li class="navelem"><a class="el" href="dir_4369e4cd5c6191cc3bcd9e4c2286c1c4.html">Execute</a></li><li class="navelem"><b>SvnInfo.mock.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:21. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_89a023a0cdd7056365d23f3f97bddae3.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_4d0571eb7ed137673ab07aff89e47909.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_0e067de46e59c287dab94ddf738e5965.html">Model</a></li><li class="navelem"><b>IModel.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:28. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

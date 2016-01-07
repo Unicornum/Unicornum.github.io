@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/VisualStudio.inside.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Progress/Progress/ConsoleProgram.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,23 +109,22 @@ $(document).ready(function(){initNavTree('a00827_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">VisualStudio.inside.hpp</div>  </div>
+<div class="title">ConsoleProgram.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00827.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 13 Июль 2015 16:05 (CTAPOBEP@mail.ru)</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#pragma chMSG(&quot;&quot;)</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IProgress.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01122.html">alicorn</a> { <span class="keyword">namespace </span>system { <span class="keyword">class </span>RunConsoleProgram; } }</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01175.html">utilities</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>progress</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TDialogProgress, <span class="keyword">class</span> TFilter = filter::Empty&gt;</div><div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="a00130.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00130.html">ConsoleProgram</a> : <span class="keyword">public</span> <a class="code" href="a00192.html">IProgress</a></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">typedef</span> alicorn::system::RunConsoleProgram RunConsoleProgram_t;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">enum</span> {ErrorCreateDialog = -1};</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="comment">// Интерфейс IProgress.</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> DoProcess(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsEnded(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  CString Run(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  RunConsoleProgram_t &amp; m_Program;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  CString               m_Log;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">const</span> CString         m_Title;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  TFilter               m_Filter;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="a00130.html">ConsoleProgram</a>(RunConsoleProgram_t &amp;, <span class="keyword">const</span> CString &amp;);</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  FRIEND_TEST(ConsoleProgram_test, <span class="comment">/*DISABLED_*/</span>Test_DoProcess);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  FRIEND_TEST(ConsoleProgram_test, <span class="comment">/*DISABLED_*/</span>Test_Run);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  FRIEND_TEST(Doxygen_test, <span class="comment">/*DISABLED_*/</span>Test_Inheritance);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  FRIEND_TEST(CppCheck_test, <span class="comment">/*DISABLED_*/</span>Test_Inheritance);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  FRIEND_TEST(Svn_test, <span class="comment">/*DISABLED_*/</span>Test_Inheritance);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;} <span class="comment">// namespace progress</span></div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace utilities</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#include &quot;ConsoleProgram.inl&quot;</span></div><div class="ttc" id="a00130_html"><div class="ttname"><a href="a00130.html">utilities::progress::ConsoleProgram</a></div><div class="ttdoc">Класс входит в Проект Progress   Класс-обертка для отображения прогресса процесса. </div><div class="ttdef"><b>Definition:</b> ConsoleProgram.hpp:54</div></div>
+<div class="ttc" id="a01122_html"><div class="ttname"><a href="a01122.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> ConsoleProgram.hpp:5</div></div>
+<div class="ttc" id="a01175_html"><div class="ttname"><a href="a01175.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
+<div class="ttc" id="a00192_html"><div class="ttname"><a href="a00192.html">utilities::progress::IProgress</a></div><div class="ttdoc">Класс входит в Проект Progress   Интерфейсный класс для классов-оберток, выполняющих конкретную работ...</div><div class="ttdef"><b>Definition:</b> IProgress.hpp:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="a00827.html">VisualStudio.inside.hpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:21. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_35de383959507c05de1c3878cd399045.html">Progress</a></li><li class="navelem"><a class="el" href="dir_7e6ff87c20028e30329b166581e284c4.html">Progress</a></li><li class="navelem"><b>ConsoleProgram.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:28. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

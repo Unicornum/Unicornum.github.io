@@ -1,7 +1,7 @@
 var a00130 =
 [
-    [ "Введение", "a00130.html#sHelperBrief", [
-      [ "Список задач проекта", "a00130.html#ssHelperTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00132.html", null ]
+    [ "ConsoleProgram", "a00130.html#a185799525e1b524c0fe1333af3543883", null ],
+    [ "DoProcess", "a00130.html#a65c2297134b9ab266b366f7de39d8adc", null ],
+    [ "IsEnded", "a00130.html#a4924b7572071bacf9a131ee7e97010fb", null ],
+    [ "Run", "a00130.html#a7e5dac86cc1f06a4c377c175269bb3a0", null ]
 ];

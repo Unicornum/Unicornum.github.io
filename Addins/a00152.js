@@ -1,7 +1,4 @@
 var a00152 =
 [
-    [ "Введение", "a00152.html#sEventsBrief", [
-      [ "Список задач проекта", "a00152.html#ssEventsTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00154.html", null ]
+    [ "ForClassUnderCursorExistTestProject", "a00152.html#a1914cae82f2e56d5c0c1483a05d854c0", null ]
 ];

@@ -1,4 +1,5 @@
 var a00204 =
 [
-    [ "SetCheckActivate", "a00204.html#a6a3b678c3e7328018d99bb48b944ce51", null ]
+    [ "GetCount", "a00204.html#ac8eff1a845371263bb0176e42652a1ea", null ],
+    [ "operator[]", "a00204.html#a8fd9683edcdba66018fbc2a36b976f02", null ]
 ];

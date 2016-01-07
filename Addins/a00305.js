@@ -1,4 +1,4 @@
 var a00305 =
 [
-    [ "GetCaption", "a00305.html#ae4427ca196a1735dd09b141a9d08f760", null ]
+    [ "Add", "a00305.html#ab059f2bea33c6a0f324c8a7f73f91458", null ]
 ];

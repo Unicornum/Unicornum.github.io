@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/UsefulCommands/Commands.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/VisualStudio/Documentation/Documentation/DoOpen.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,50 +109,27 @@ $(document).ready(function(){initNavTree('a00692_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Commands.hpp</div>  </div>
+<div class="title">DoOpen.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IMenuCommand.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01234.html">useful_commands</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00206.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00206.html">Commands</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">using</span> CommandPtr_t = boost::shared_ptr&lt;useful_commands::IMenuCommand&gt;;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">using</span> Commands_t = std::map&lt;CString, CommandPtr_t&gt;;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  Commands_t::size_type <a class="code" href="a00206.html#a2a85a0531e1896a6097f74726fe12666">GetSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00206.html#a89618778c2a8b30d4a8b0b743acd667d">Add</a>(<span class="keyword">const</span> CommandPtr_t &amp;);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  CommandPtr_t <a class="code" href="a00206.html#acc4485b00f993ff3ea45a6662e28c7af">operator[] </a>(<span class="keyword">const</span> CString &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00206.html#a6dc5c66f4b320ee76cb718b07697084d">Clear</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Commands_t m_Commands;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  FRIEND_TEST(Commands_test, <span class="comment">/*DISABLED_*/</span>Test_Clear);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace useful_commands</span></div>
-<div class="ttc" id="a00206_html"><div class="ttname"><a href="a00206.html">useful_commands::Commands</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Класс, содержащий список всех созданных объектов команд...</div><div class="ttdef"><b>Definition:</b> Commands.hpp:24</div></div>
-<div class="ttc" id="a00206_html_a2a85a0531e1896a6097f74726fe12666"><div class="ttname"><a href="a00206.html#a2a85a0531e1896a6097f74726fe12666">useful_commands::Commands::GetSize</a></div><div class="ttdeci">Commands_t::size_type GetSize(void) const </div><div class="ttdoc">Количество команд в списке. </div><div class="ttdef"><b>Definition:</b> Commands.cpp:11</div></div>
-<div class="ttc" id="a00206_html_a89618778c2a8b30d4a8b0b743acd667d"><div class="ttname"><a href="a00206.html#a89618778c2a8b30d4a8b0b743acd667d">useful_commands::Commands::Add</a></div><div class="ttdeci">void Add(const CommandPtr_t &amp;)</div><div class="ttdoc">Функция для добавления команды. </div><div class="ttdef"><b>Definition:</b> Commands.cpp:23</div></div>
-<div class="ttc" id="a00206_html_a6dc5c66f4b320ee76cb718b07697084d"><div class="ttname"><a href="a00206.html#a6dc5c66f4b320ee76cb718b07697084d">useful_commands::Commands::Clear</a></div><div class="ttdeci">void Clear(void)</div><div class="ttdoc">Очистить список команд. </div><div class="ttdef"><b>Definition:</b> Commands.cpp:63</div></div>
-<div class="ttc" id="a01234_html"><div class="ttname"><a href="a01234.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
-<div class="ttc" id="a00206_html_acc4485b00f993ff3ea45a6662e28c7af"><div class="ttname"><a href="a00206.html#acc4485b00f993ff3ea45a6662e28c7af">useful_commands::Commands::operator[]</a></div><div class="ttdeci">CommandPtr_t operator[](const CString &amp;) const </div><div class="ttdoc">Функция для получения команды по ее имени. </div><div class="ttdef"><b>Definition:</b> Commands.cpp:44</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01129.html">core</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01167.html">useful_commands</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>documentation</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00156.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00156.html">DoOpen</a> final :</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00180.html">::useful_commands::ICommand</a>,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00295.html">common::Unknown</a>&lt;const ::utilities::vs::Data&gt;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00264.html">Section_t</a> = <a class="code" href="a00264.html">settings::Settings::Section</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00307.html">Version_t</a> = <a class="code" href="a00307.html">utilities::Version</a>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="comment">// Интерфейс ICommand:</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> Execute(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00156.html#a6656d47586f9c496ed6d61c3173fbe71">IsEnabled</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00156.html">DoOpen</a>(<span class="keyword">const</span> <a class="code" href="a00143.html">Data_t</a> *);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace documenation</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace useful_commands</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace core</span></div><div class="ttc" id="a00156_html"><div class="ttname"><a href="a00156.html">core::useful_commands::vs::documentation::DoOpen</a></div><div class="ttdoc">Класс входит в Проект Documentation   Класс команды открытия документации решения. </div><div class="ttdef"><b>Definition:</b> DoOpen.hpp:33</div></div>
+<div class="ttc" id="a00264_html"><div class="ttname"><a href="a00264.html">settings::Settings::Section</a></div><div class="ttdoc">Класс конкретного раздела настроек. </div><div class="ttdef"><b>Definition:</b> Settings.hpp:53</div></div>
+<div class="ttc" id="a00156_html_a6656d47586f9c496ed6d61c3173fbe71"><div class="ttname"><a href="a00156.html#a6656d47586f9c496ed6d61c3173fbe71">core::useful_commands::vs::documentation::DoOpen::IsEnabled</a></div><div class="ttdeci">bool IsEnabled(void) const  override</div><div class="ttdoc">Функция проверки доступности команды. </div><div class="ttdef"><b>Definition:</b> DoOpen.cpp:27</div></div>
+<div class="ttc" id="a00143_html"><div class="ttname"><a href="a00143.html">utilities::vs::Data</a></div><div class="ttdoc">Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки...</div><div class="ttdef"><b>Definition:</b> Data.hpp:25</div></div>
+<div class="ttc" id="a01167_html"><div class="ttname"><a href="a01167.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
+<div class="ttc" id="a00295_html"><div class="ttname"><a href="a00295.html">core::useful_commands::vs::common::Unknown</a></div><div class="ttdoc">Класс входит в Проект StartUp   Базовый класс команд проекта. </div><div class="ttdef"><b>Definition:</b> Unknown.hpp:46</div></div>
+<div class="ttc" id="a01129_html"><div class="ttname"><a href="a01129.html">core</a></div><div class="ttdef"><b>Definition:</b> CreateCommands.hpp:6</div></div>
+<div class="ttc" id="a00180_html"><div class="ttname"><a href="a00180.html">useful_commands::ICommand</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс всех команд раздела. </div><div class="ttdef"><b>Definition:</b> ICommand.hpp:22</div></div>
+<div class="ttc" id="a00307_html"><div class="ttname"><a href="a00307.html">utilities::Version</a></div><div class="ttdoc">Класс входит в Раздел Utilities   Класс манипуляцией версией решения. </div><div class="ttdef"><b>Definition:</b> Version.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_db050b1b4ff1e0e195a3127d01d2a2fd.html">UsefulCommands</a></li><li class="navelem"><b>Commands.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:20. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_68c243c7ca65f1e8337d9c44e9fb488c.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_f8e07262d5f47c941c163fb0ac1216c5.html">Documentation</a></li><li class="navelem"><a class="el" href="dir_8f0bc40d9a9d49962ee5dcc890b442a2.html">Documentation</a></li><li class="navelem"><b>DoOpen.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:28. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Document/Document/Line.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Project/Project/ProjectsSolutionImpl.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,84 +109,27 @@ $(document).ready(function(){initNavTree('a01082_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Line.hpp</div>  </div>
+<div class="title">ProjectsSolutionImpl.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01257.html">wrappers</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>vs</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>selection</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="a00282.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00282.html">Line</a> : <span class="keyword">public</span> <a class="code" href="a00186.html">Base</a>&lt;EnvDTE::TextSelection&gt;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">class </span>Options</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">enum</span> Value</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      Forward = 1 &lt;&lt; 0,  </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      Backward = 1 &lt;&lt; 1, </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      Illegal = 1 &lt;&lt; 31</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  };</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="a00282.html#acb5d674808c6a4cf2abf1c2aecef1714">   75</a></span>&#160;  <span class="keyword">inline</span> <span class="keywordtype">long</span> <a class="code" href="a00282.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_Index;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="comment">// Признак того, что объект строки невалиден.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a00282.html#aa0ec1440279a455253d4c0711e40bfae">IsInvalid</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="comment">// Получение текста строки.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  CString <a class="code" href="a00282.html#a4c0f82e5f6225f0586fcbbd2ba63e040">GetText</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">// Запись текста в строку.</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <a class="code" href="a00282.html">Line</a> &amp; <a class="code" href="a00282.html#a9481d82ef511642decacba7b7eebe29d">operator= </a>(<span class="keyword">const</span> CString &amp; _Text);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">// Поиск текста.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="a00282.html">Line</a> <a class="code" href="a00282.html#aab9e83170d18f61704e2a57e9ebc6882">Find</a>(<span class="keyword">const</span> CString &amp; _Pattern, </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            Options::Value _Options = Options::Forward) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <a class="code" href="a00282.html">Line</a> &amp; <a class="code" href="a00282.html#a9481d82ef511642decacba7b7eebe29d">operator=</a>(<span class="keyword">const</span> <a class="code" href="a00282.html">Line</a> &amp; _Line);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">long</span> m_Index;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="a00282.html">Line</a>(<span class="keyword">const</span> ComPtr_t &amp; _pPointer, <span class="keywordtype">long</span> _Index = 0);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  ~<a class="code" href="a00282.html">Line</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  FRIEND_TEST(Line_test, <span class="comment">/*DISABLED_*/</span>Test_Find);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  FRIEND_TEST(Line_test, <span class="comment">/*DISABLED_*/</span>Test_OperatorAssign);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace selection</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace vs</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace wrappers</span></div>
-<div class="ttc" id="a00282_html_aa0ec1440279a455253d4c0711e40bfae"><div class="ttname"><a href="a00282.html#aa0ec1440279a455253d4c0711e40bfae">wrappers::vs::selection::Line::IsInvalid</a></div><div class="ttdeci">bool IsInvalid(void) const </div><div class="ttdoc">Функция проверки валидности объекта строки. </div><div class="ttdef"><b>Definition:</b> Line.cpp:35</div></div>
-<div class="ttc" id="a00282_html_aab9e83170d18f61704e2a57e9ebc6882"><div class="ttname"><a href="a00282.html#aab9e83170d18f61704e2a57e9ebc6882">wrappers::vs::selection::Line::Find</a></div><div class="ttdeci">Line Find(const CString &amp;_Pattern, Options::Value _Options=Options::Forward) const </div><div class="ttdoc">Поиск текста. </div><div class="ttdef"><b>Definition:</b> Line.cpp:117</div></div>
-<div class="ttc" id="a00282_html_a4c0f82e5f6225f0586fcbbd2ba63e040"><div class="ttname"><a href="a00282.html#a4c0f82e5f6225f0586fcbbd2ba63e040">wrappers::vs::selection::Line::GetText</a></div><div class="ttdeci">CString GetText(void) const </div><div class="ttdoc">Получение текста строки. </div><div class="ttdef"><b>Definition:</b> Line.cpp:50</div></div>
-<div class="ttc" id="a00282_html"><div class="ttname"><a href="a00282.html">wrappers::vs::selection::Line</a></div><div class="ttdoc">Класс входит в Проект Document   Класс-обертка для EnvDTE::TextSelection. </div><div class="ttdef"><b>Definition:</b> Line.hpp:58</div></div>
-<div class="ttc" id="a00186_html"><div class="ttname"><a href="a00186.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Проект Common   Базовый класс для оберток объектов надстройки. </div><div class="ttdef"><b>Definition:</b> Base.hpp:34</div></div>
-<div class="ttc" id="a01257_html"><div class="ttname"><a href="a01257.html">wrappers</a></div><div class="ttdef"><b>Definition:</b> IDocument.hpp:4</div></div>
-<div class="ttc" id="a00282_html_acb5d674808c6a4cf2abf1c2aecef1714"><div class="ttname"><a href="a00282.html#acb5d674808c6a4cf2abf1c2aecef1714">wrappers::vs::selection::Line::GetIndex</a></div><div class="ttdeci">long GetIndex(void) const </div><div class="ttdoc">Индекс текущей строки. </div><div class="ttdef"><b>Definition:</b> Line.hpp:75</div></div>
-<div class="ttc" id="a00282_html_a9481d82ef511642decacba7b7eebe29d"><div class="ttname"><a href="a00282.html#a9481d82ef511642decacba7b7eebe29d">wrappers::vs::selection::Line::operator=</a></div><div class="ttdeci">Line &amp; operator=(const CString &amp;_Text)</div><div class="ttdoc">Запись текста в строку. </div><div class="ttdef"><b>Definition:</b> Line.cpp:89</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IProjects.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01190.html">wrappers</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>Project;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a00248.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00248.html">ProjectsSolutionImpl</a> : </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00194.html">IProjects</a>,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00103.html">Base</a>&lt;EnvDTE::_Solution&gt;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Интерфейс IProjects:</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="a00243.html">Project</a> <a class="code" href="a00248.html#a0012b4e75c23ff1d15dd20b015c382f8">Add</a>(<span class="keyword">const</span> CString &amp;);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="a00243.html">Project</a> <a class="code" href="a00248.html#ab65c3c5fd33d48525282e5a2ee117845">GetActiveProject</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">long</span> <a class="code" href="a00248.html#ad3a9bb60ba293784d8c7babbc45aba70">GetCount</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="a00243.html">Project</a> <a class="code" href="a00248.html#a226a79cb9b399e8d95c23e8c339a979c">GetProject</a>(<span class="keywordtype">long</span> _Index) <span class="keyword">const</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">class </span>AccessSafeArrayData</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">void</span> * Get(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_pData;}</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    LONG GetSize(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">private</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    SAFEARRAY * m_pArray;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span>      * m_pData;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">explicit</span> AccessSafeArrayData(SAFEARRAY * _pArray);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ~AccessSafeArrayData(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  };</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00248.html">ProjectsSolutionImpl</a>(<span class="keyword">const</span> ComPtr_t &amp; _pPointer);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace wrappers</span></div><div class="ttc" id="a00103_html"><div class="ttname"><a href="a00103.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Проект Common   Базовый класс для оберток объектов надстройки. </div><div class="ttdef"><b>Definition:</b> Base.hpp:34</div></div>
+<div class="ttc" id="a00248_html_ab65c3c5fd33d48525282e5a2ee117845"><div class="ttname"><a href="a00248.html#ab65c3c5fd33d48525282e5a2ee117845">wrappers::vs::ProjectsSolutionImpl::GetActiveProject</a></div><div class="ttdeci">virtual Project GetActiveProject(void) const </div><div class="ttdoc">Функция для получения выделенного в дереве решения проекта. </div><div class="ttdef"><b>Definition:</b> ProjectsSolutionImpl.cpp:49</div></div>
+<div class="ttc" id="a00243_html"><div class="ttname"><a href="a00243.html">wrappers::vs::Project</a></div><div class="ttdoc">Класс входит в Проект Project   Класс-обертка для EnvDTE::Project. </div><div class="ttdef"><b>Definition:</b> Project.hpp:40</div></div>
+<div class="ttc" id="a01190_html"><div class="ttname"><a href="a01190.html">wrappers</a></div><div class="ttdef"><b>Definition:</b> IDocument.hpp:4</div></div>
+<div class="ttc" id="a00248_html_a226a79cb9b399e8d95c23e8c339a979c"><div class="ttname"><a href="a00248.html#a226a79cb9b399e8d95c23e8c339a979c">wrappers::vs::ProjectsSolutionImpl::GetProject</a></div><div class="ttdeci">virtual Project GetProject(long _Index) const </div><div class="ttdoc">Доступ к проектам коллекции по индексу. </div><div class="ttdef"><b>Definition:</b> ProjectsSolutionImpl.cpp:83</div></div>
+<div class="ttc" id="a00248_html_a0012b4e75c23ff1d15dd20b015c382f8"><div class="ttname"><a href="a00248.html#a0012b4e75c23ff1d15dd20b015c382f8">wrappers::vs::ProjectsSolutionImpl::Add</a></div><div class="ttdeci">virtual Project Add(const CString &amp;)</div><div class="ttdoc">Добавить в коллекцию существубщий проект. </div><div class="ttdef"><b>Definition:</b> ProjectsSolutionImpl.cpp:43</div></div>
+<div class="ttc" id="a00194_html"><div class="ttname"><a href="a00194.html">wrappers::vs::IProjects</a></div><div class="ttdoc">Класс входит в Проект Project   Интерфейсный класс для реализаций списка проектов. </div><div class="ttdef"><b>Definition:</b> IProjects.hpp:30</div></div>
+<div class="ttc" id="a00248_html_ad3a9bb60ba293784d8c7babbc45aba70"><div class="ttname"><a href="a00248.html#ad3a9bb60ba293784d8c7babbc45aba70">wrappers::vs::ProjectsSolutionImpl::GetCount</a></div><div class="ttdeci">virtual long GetCount(void) const </div><div class="ttdoc">Количество проектов в коллекции. </div><div class="ttdef"><b>Definition:</b> ProjectsSolutionImpl.cpp:69</div></div>
+<div class="ttc" id="a00248_html"><div class="ttname"><a href="a00248.html">wrappers::vs::ProjectsSolutionImpl</a></div><div class="ttdoc">Класс входит в Проект Project   Класс реализации работы со списком проектов решения. </div><div class="ttdef"><b>Definition:</b> ProjectsSolutionImpl.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_d157d7bfe6141e2aaab6e272ec3ed556.html">Document</a></li><li class="navelem"><a class="el" href="dir_317725232a7802027b94f1a327f4b7d3.html">Document</a></li><li class="navelem"><b>Line.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:22. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6f9ca78e581ecb75b95f03d51de1e656.html">Project</a></li><li class="navelem"><a class="el" href="dir_36fb39c20887339f0aa30dd7817622ca.html">Project</a></li><li class="navelem"><b>ProjectsSolutionImpl.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:30. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

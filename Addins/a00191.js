@@ -1,7 +1,6 @@
 var a00191 =
 [
-    [ "AfterBuildFinish", "a00191.html#a35ef35f1dee5b99d678e43c82c0f3d07", null ],
-    [ "BeforeBuildStart", "a00191.html#a87a0f9f968a5cd336184ccd19f62a42f", null ],
-    [ "BeforeProjConfBuildStart", "a00191.html#ab82624b7458a674601e2b57760df4c5d", null ],
-    [ "BuildProjConfFinish", "a00191.html#a5069d384f3d39de2e57e3f6cb2f3005b", null ]
+    [ "GetCaption", "a00191.html#a3f840e8e0fdb677f60df2a0feed3f9dc", null ],
+    [ "GetHotKey", "a00191.html#a95e2230fbf4faf2694b3b3f52e81e715", null ],
+    [ "IsEnabled", "a00191.html#a3db378e345242423e2e518555c1987da", null ]
 ];

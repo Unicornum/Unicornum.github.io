@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/ConnectionPoints/VisualStudio/UnicornumCodeAssistant/UnicornumCodeAssistant/AddInModule.h</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/UsefulCommands/VisualStudio/Macros/CommentLineBreak.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,49 +109,25 @@ $(document).ready(function(){initNavTree('a00650_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">AddInModule.h</div>  </div>
+<div class="title">CommentLineBreak.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span>DECLSPEC_UUID(&quot;9296509D-B49E-4BCC-87B0-137CDDF8438B&quot;) <a class="code" href="a01191.html">AddinsLib</a>;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>CAddInModule : <span class="keyword">public</span> ATL::CAtlDllModuleT&lt;CAddInModule&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        CAddInModule()</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                m_hInstance = NULL;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        }</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        DECLARE_LIBID(__uuidof(<a class="code" href="a01191.html">AddinsLib</a>))</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        inline HINSTANCE GetResourceInstance()</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                <span class="keywordflow">return</span> m_hInstance;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">void</span> SetResourceInstance(HINSTANCE hInstance)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                m_hInstance = hInstance;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        HINSTANCE m_hInstance;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">extern</span> CAddInModule _AtlModule;</div>
-<div class="ttc" id="a01191_html"><div class="ttname"><a href="a01191.html">AddinsLib</a></div><div class="ttdef"><b>Definition:</b> AddIn.idl:19</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;..\VSUnknown.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01167.html">useful_commands</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>macros</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="a00125.html">   31</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00125.html">CommentLineBreak</a> : <span class="keyword">public</span> <a class="code" href="a00296.html">Unknown</a></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00176.html">utilities::HotKey</a> <a class="code" href="a00176.html">HotKey_t</a>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="comment">// Интерфейс ICommand:</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Интерфейс Command:</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> CString <a class="code" href="a00125.html#a91652a0cc22bd7081948c46605230075">GetCaption</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Интерфейс Unknown:</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00125.html#a6bf0014226bbeaf650d63813b203c1e0">IsEnabled</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> HotKey_t <a class="code" href="a00125.html#a02367e73d733db8b4d8efbd70f5bed1c">GetHotKey</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namesapce macros</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace useful_commands</span></div><div class="ttc" id="a00125_html_a6bf0014226bbeaf650d63813b203c1e0"><div class="ttname"><a href="a00125.html#a6bf0014226bbeaf650d63813b203c1e0">useful_commands::vs::macros::CommentLineBreak::IsEnabled</a></div><div class="ttdeci">virtual bool IsEnabled(void) const </div><div class="ttdoc">Функция проверки доступности команды. </div><div class="ttdef"><b>Definition:</b> CommentLineBreak.cpp:91</div></div>
+<div class="ttc" id="a00176_html"><div class="ttname"><a href="a00176.html">utilities::HotKey</a></div><div class="ttdoc">Класс входит в Проект UtilitiesProject   Класс для работы с &amp;#39;горячими&amp;#39; клавишами. ...</div><div class="ttdef"><b>Definition:</b> HotKey.hpp:35</div></div>
+<div class="ttc" id="a00296_html"><div class="ttname"><a href="a00296.html">useful_commands::vs::Unknown</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс команд, которые будут выполняться в VisualStudio...</div><div class="ttdef"><b>Definition:</b> VSUnknown.hpp:39</div></div>
+<div class="ttc" id="a01167_html"><div class="ttname"><a href="a01167.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
+<div class="ttc" id="a00125_html_a91652a0cc22bd7081948c46605230075"><div class="ttname"><a href="a00125.html#a91652a0cc22bd7081948c46605230075">useful_commands::vs::macros::CommentLineBreak::GetCaption</a></div><div class="ttdeci">virtual CString GetCaption(void) const </div><div class="ttdoc">Функция получения текста, отображаемого в строке команды. </div><div class="ttdef"><b>Definition:</b> CommentLineBreak.cpp:86</div></div>
+<div class="ttc" id="a00125_html_a02367e73d733db8b4d8efbd70f5bed1c"><div class="ttname"><a href="a00125.html#a02367e73d733db8b4d8efbd70f5bed1c">useful_commands::vs::macros::CommentLineBreak::GetHotKey</a></div><div class="ttdeci">virtual HotKey_t GetHotKey(void) const </div><div class="ttdoc">Функция получения &amp;#39;горячей&amp;#39; клавиши для команды. </div><div class="ttdef"><b>Definition:</b> CommentLineBreak.cpp:96</div></div>
+<div class="ttc" id="a00125_html"><div class="ttname"><a href="a00125.html">useful_commands::vs::macros::CommentLineBreak</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Класс команды переноса строки комментария. ...</div><div class="ttdef"><b>Definition:</b> CommentLineBreak.hpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_507a45db08fa34c6d3b352cda19bee73.html">ConnectionPoints</a></li><li class="navelem"><a class="el" href="dir_a7c7e64e0e812907f1fa8bc7c1d66110.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_1caf890cd505407e62537ee96d70550e.html">UnicornumCodeAssistant</a></li><li class="navelem"><a class="el" href="dir_7e907b3b39f007d84c4954ee65a45848.html">UnicornumCodeAssistant</a></li><li class="navelem"><b>AddInModule.h</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:20. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_db050b1b4ff1e0e195a3127d01d2a2fd.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_2be67a721dc39d35775b988a1bdcfc68.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_472e56915828c86a895fbb2149ae74d0.html">Macros</a></li><li class="navelem"><b>CommentLineBreak.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:27. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,5 @@
 var a00221 =
 [
-    [ "Backspace", "a00221.html#a6cc744df765deddc7d08899f49b65649", null ],
-    [ "CharLeft", "a00221.html#a1cd808469c99b95129d677263c46fc97", null ],
-    [ "CharRight", "a00221.html#a6e582634d66528a35a34959fbb878e36", null ],
-    [ "GetCurrentColumn", "a00221.html#a8842526eca988c57d88408ee6054bc03", null ]
+    [ "None", "a00221.html#a82442d3bdcb7eeb40dc06768ddca38ea", null ],
+    [ "ShowModal", "a00221.html#ab989232c084654ae6996038a88f35025", null ]
 ];

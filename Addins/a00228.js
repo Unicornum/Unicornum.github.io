@@ -1,5 +1,5 @@
 var a00228 =
 [
-    [ "Execute", "a00228.html#a2f7deb085bf581b96b4ac04a46925aed", null ],
-    [ "IsEnabled", "a00228.html#a88291885e5b0b080e3b20483055839da", null ]
+    [ "GetCaption", "a00228.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
+    [ "IsEnabled", "a00228.html#a9b8d0a60c4eefe8c3860c560b7c62edb", null ]
 ];

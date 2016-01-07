@@ -1,5 +1,6 @@
 var a00253 =
 [
-    [ "GetCaption", "a00253.html#abe1eda02fbbb11c967bd65c668e6d2f4", null ],
-    [ "GetPictureId", "a00253.html#a6f3bcd27c84078f3d430ffb440ff52bd", null ]
+    [ "SearchForFullPath", "a00253.html#ac85a4ff36109083a4286198e318fb850", null ],
+    [ "WasFoundNext", "a00253.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
+    [ "WasNoFound", "a00253.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
 ];

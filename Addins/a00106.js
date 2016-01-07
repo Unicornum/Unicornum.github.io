@@ -1,7 +1,4 @@
 var a00106 =
 [
-    [ "Введение", "a00106.html#sProgressBrief", [
-      [ "Список задач проекта", "a00106.html#ssProgressTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00108.html", null ]
+    [ "operator()", "a00106.html#aa9d7a4160ad52d6148570afad770cf9c", null ]
 ];

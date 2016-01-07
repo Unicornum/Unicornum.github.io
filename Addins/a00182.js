@@ -1,6 +1,7 @@
 var a00182 =
 [
-    [ "Execute", "a00182.html#ab3e2ca0bf3ce12b8272a334a2f6f59b7", null ],
-    [ "GetCaption", "a00182.html#ac30fae9969ee3ce9a497d6e61fa3dd07", null ],
-    [ "IsEnabled", "a00182.html#a0cbff3479fef6664e99d9c7ef3881cff", null ]
+    [ "Delete", "a00182.html#a0df3173f1e2c3ae6040eec1f931a357f", null ],
+    [ "GetCaption", "a00182.html#aea0ec3fe92a34c4017f2542f008e9d6d", null ],
+    [ "GetStatus", "a00182.html#ada3665065b2ac835506f78583fd56105", null ],
+    [ "GetUniqueName", "a00182.html#a456bae20d033f0a537010901c6b556c1", null ]
 ];

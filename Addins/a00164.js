@@ -1,7 +1,4 @@
 var a00164 =
 [
-    [ "Введение", "a00164.html#sProjectBrief", [
-      [ "Список задач проекта", "a00164.html#ssProjectTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00166.html", null ]
+    [ "Doxygen", "a00164.html#a218059ce02f976e8c699b918e6da3534", null ]
 ];

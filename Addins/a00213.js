@@ -1,7 +1,4 @@
 var a00213 =
 [
-    [ "ConsoleProgram", "a00213.html#a185799525e1b524c0fe1333af3543883", null ],
-    [ "DoProcess", "a00213.html#a65c2297134b9ab266b366f7de39d8adc", null ],
-    [ "IsEnded", "a00213.html#a4924b7572071bacf9a131ee7e97010fb", null ],
-    [ "Run", "a00213.html#a7e5dac86cc1f06a4c377c175269bb3a0", null ]
+    [ "ShowModal", "a00213.html#a3b95c928f67e73036588749a354556ec", null ]
 ];

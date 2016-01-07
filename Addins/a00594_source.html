@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Doxygen/Doxygen/targetver.h</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/ConnectionCommands/ConnectionCommands/Perform.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,21 +109,21 @@ $(document).ready(function(){initNavTree('a00594_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">targetver.h</div>  </div>
+<div class="title">Perform.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;SDKDDKVer.h&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;NeedActivateCommand.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01129.html">core</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>connection_commands</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TUsefulCommand, <span class="keyword">class</span> TData&gt;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00239.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00239.html">Perform</a> : <span class="keyword">public</span> <a class="code" href="a00220.html">NeedActivateCommand</a></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsNeedActivate(<span class="keywordtype">void</span>) {<span class="keywordflow">return</span> <span class="keyword">false</span>;}</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  TData m_Data;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00239.html">Perform</a>(TData _Data);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace connection_commands</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace core</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#include &quot;Perform.inl&quot;</span></div><div class="ttc" id="a00239_html"><div class="ttname"><a href="a00239.html">core::connection_commands::Perform</a></div><div class="ttdoc">Класс входит в Проект ConnectionCommands   Класс выполнения команды, не связанной с пунктом меню...</div><div class="ttdef"><b>Definition:</b> Perform.hpp:44</div></div>
+<div class="ttc" id="a00220_html"><div class="ttname"><a href="a00220.html">core::connection_commands::NeedActivateCommand</a></div><div class="ttdoc">Класс входит в Проект ConnectionCommands   Базовый класс команды, обеспечивающих проверку неоходимост...</div><div class="ttdef"><b>Definition:</b> NeedActivateCommand.hpp:29</div></div>
+<div class="ttc" id="a01129_html"><div class="ttname"><a href="a01129.html">core</a></div><div class="ttdef"><b>Definition:</b> CreateCommands.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_9c16b4ec5a5ee145c5ee0fb2e2f757ae.html">Doxygen</a></li><li class="navelem"><a class="el" href="dir_1f82068710d8a50996d2ff3a91a1537a.html">Doxygen</a></li><li class="navelem"><b>targetver.h</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:20. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_d4bac49fe86bdf17f76c70784b22e76c.html">ConnectionCommands</a></li><li class="navelem"><a class="el" href="dir_88ae7e2465bd319d9043ebc46f8e59bb.html">ConnectionCommands</a></li><li class="navelem"><b>Perform.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:27. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

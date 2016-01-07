@@ -1,8 +1,5 @@
 var a00098 =
 [
-    [ "Введение", "a00098.html#sFilterBrief", null ],
-    [ "Подробное описание проекта", "a00098.html#sFilterDetails", [
-      [ "Список задач проекта", "a00098.html#ssFilterTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00100.html", null ]
+    [ "WasFoundNext", "a00098.html#abbb3a4c1bca71e9510522a27e5b86e72", null ],
+    [ "WasNoFound", "a00098.html#af6330f00eab5407344d37a1939951a5f", null ]
 ];

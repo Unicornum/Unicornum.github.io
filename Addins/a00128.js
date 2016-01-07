@@ -1,9 +1,5 @@
 var a00128 =
 [
-    [ "Введение", "a00128.html#sWrappersBrief", null ],
-    [ "Проекты раздела", "a00128.html#sWrappersDetails", [
-      [ "Раздел VisualStudio", "a00128.html#ssWrappersVisualStudio", null ],
-      [ "Проект Helper", "a00128.html#ssHelper", null ]
-    ] ],
-    [ "Раздел VisualStudio", "a00134.html", "a00134" ]
+    [ "operator[]", "a00128.html#a0036fdc937ebb1ac612c05fa377ea770", null ],
+    [ "operator[]", "a00128.html#a0f43aa74924faf56d69e04dc79ac1f4b", null ]
 ];

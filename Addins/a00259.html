@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Класс useful_commands::ICommand</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Класс core::useful_commands::vs::properties::RemoveSolutionPropsFromProject</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -111,87 +111,83 @@ $(document).ready(function(){initNavTree('a00259.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01526.html">Полный список членов класса</a>  </div>
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="a01387.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс useful_commands::ICommand</div>  </div>
+<div class="title">Класс core::useful_commands::vs::properties::RemoveSolutionPropsFromProject</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00046.html">Проект UsefulCommands</a> <br />
- Базовый класс всех команд раздела.  
+<p>Класс входит в <a class="el" href="a00014.html">Проект Properties</a> <br />
+ Класс команды удаления файла страницы свойств решения из проекта.  
  <a href="a00259.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00694_source.html">ICommand.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00707_source.html">RemoveSolutionPropsFromProject.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:useful_commands::ICommand:</div>
+Граф наследования:core::useful_commands::vs::properties::RemoveSolutionPropsFromProject:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01527.png" border="0" usemap="#useful__commands_1_1_i_command_inherit__map" alt="Inheritance graph"/></div>
-<map name="useful__commands_1_1_i_command_inherit__map" id="useful__commands_1_1_i_command_inherit__map">
-<area shape="rect" id="node3" href="a00195.html" title="Класс входит в Проект Common &#160;&#160;Класс команды очистки лога. " alt="" coords="951,146,1133,267"/>
-<area shape="rect" id="node5" href="a00304.html" title="Класс входит в Проект Common &#160;&#160;Класс команды открытия лога. " alt="" coords="1159,146,1343,267"/>
-<area shape="rect" id="node7" href="a00228.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды отбработки файла результата построения решения ск..." alt="" coords="1367,139,1548,275"/>
-<area shape="rect" id="node9" href="a00235.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды открытия документации решения. " alt="" coords="1572,139,1751,275"/>
-<area shape="rect" id="node11" href="a00236.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды предварительной обработки документации решения..." alt="" coords="1775,139,1953,275"/>
-<area shape="rect" id="node13" href="a00239.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды генерации документации решения. " alt="" coords="1977,139,2156,275"/>
-<area shape="rect" id="node15" href="a00376.html" title="Класс входит в Проект Version &#160;&#160;Класс команды обновления номеров ревизий кода в файле версии решения..." alt="" coords="2181,146,2400,267"/>
-<area shape="rect" id="node17" href="a00261.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Базовый класс всех команд, которые будут исполнятся при выборе..." alt="" coords="2425,131,2679,282"/>
-<area shape="rect" id="node19" href="a00375.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Базовый класс команд, которые будут выполняться в VisualStudio..." alt="" coords="2469,331,2635,496"/>
-<area shape="rect" id="node21" href="a00301.html" title="{useful_commands::vs\l::doxygen::OpenDoc\&lt;\l filter::SolutionPath \&gt;\n||+ Execute()\l+ IsEnabled()\l+ OpenDoc()\l}" alt="" coords="161,552,329,688"/>
-<area shape="rect" id="node25" href="a00301.html" title="{useful_commands::vs\l::doxygen::OpenDoc\&lt;\&gt;\n||+ Execute()\l+ IsEnabled()\l+ OpenDoc()\l}" alt="" coords="488,559,667,681"/>
-<area shape="rect" id="node33" href="a00372.html" title="{useful_commands::UnionCommand\l\&lt;::useful_commands::vs::Unknown \&gt;\n||+ IsEnabled()\l+ Execute()\l# Add()\l}" alt="" coords="691,559,961,681"/>
-<area shape="rect" id="node37" href="a00345.html" title="Класс входит в Проект UsefulCommands &#160;&#160;&lt; Краткое описание класса &gt; " alt="" coords="986,574,1184,666"/>
-<area shape="rect" id="node39" href="a00387.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды отображения текущей версии надстройки. " alt="" coords="1209,567,1399,673"/>
-<area shape="rect" id="node41" href="a00176.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды добавления описания функции/класса. " alt="" coords="1423,559,1621,681"/>
-<area shape="rect" id="node43" href="a00268.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Базовый класс команд увеличения номера версии класса..." alt="" coords="1647,545,1855,695"/>
-<area shape="rect" id="node51" href="a00301.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Базовый класс для классов команд открытия документации. " alt="" coords="1879,552,2048,688"/>
-<area shape="rect" id="node53" href="a00208.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды переноса строки комментария. ..." alt="" coords="2073,552,2289,688"/>
-<area shape="rect" id="node55" href="a00269.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды вставки сообщения #pragma chMSG(). " alt="" coords="2313,552,2551,688"/>
-<area shape="rect" id="node57" href="a00270.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды вставки заготовки текста. " alt="" coords="2575,552,2771,688"/>
-<area shape="rect" id="node59" href="a00364.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс для обкатки работоспособности команд. " alt="" coords="2796,552,2961,688"/>
-<area shape="rect" id="node61" href="a00175.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды добавления тестового проекта для класса..." alt="" coords="2985,552,3167,688"/>
-<area shape="rect" id="node63" href="a00179.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды добавления тестового проекта для проекта..." alt="" coords="3191,559,3385,681"/>
-<area shape="rect" id="node65" href="a00182.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды добавления общего тестового проекта всего решени..." alt="" coords="3409,559,3609,681"/>
-<area shape="rect" id="node67" href="a00183.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды добавления заготовки теста. " alt="" coords="3633,559,3841,681"/>
-<area shape="rect" id="node69" href="a00180.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды добавления выделенного текста в файл usertype..." alt="" coords="3866,552,4072,688"/>
-<area shape="rect" id="node71" href="a00185.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды обработки файла программой AStyle. " alt="" coords="4097,559,4284,681"/>
-<area shape="rect" id="node73" href="a00219.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды быстрой обработки решения при помощи CppCheck..." alt="" coords="4308,545,4519,695"/>
-<area shape="rect" id="node75" href="a00306.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды открытия окна утилиты создания регулярных выражений..." alt="" coords="4543,559,4760,681"/>
-<area shape="rect" id="node23" href="a00307.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды открытия документации решения. " alt="" coords="5,759,219,865"/>
-<area shape="rect" id="node27" href="a00302.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды открытия документации надстройки. " alt="" coords="243,759,445,865"/>
-<area shape="rect" id="node29" href="a00303.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды открытия документации Doxygen. " alt="" coords="469,759,685,865"/>
-<area shape="rect" id="node31" href="a00305.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды открытия документации внешних библиотек..." alt="" coords="710,759,924,865"/>
-<area shape="rect" id="node35" href="a00253.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды, генерирующей документацию решения. " alt="" coords="949,744,1136,880"/>
-<area shape="rect" id="node45" href="a00265.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс увеличения сладшего номера версии в описании класса..." alt="" coords="1357,766,1611,858"/>
-<area shape="rect" id="node47" href="a00266.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды увеличения номера подверсии в описании класса..." alt="" coords="1635,766,1865,858"/>
-<area shape="rect" id="node49" href="a00267.html" title="Класс входит в Проект UsefulCommands &#160;&#160;Класс команды увеличения номера версии класса. " alt="" coords="1890,766,2096,858"/>
+<div class="center"><img src="a01388.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1properties_1_1_remove_solution_props_from_project_inherit__map" alt="Inheritance graph"/></div>
+<map name="core_1_1useful__commands_1_1vs_1_1properties_1_1_remove_solution_props_from_project_inherit__map" id="core_1_1useful__commands_1_1vs_1_1properties_1_1_remove_solution_props_from_project_inherit__map">
+<area shape="rect" id="node2" href="a00295.html" title="{core::useful_commands\l::vs::common::Unknown\l\&lt; const ::utilities::vs\l::Data \&gt;\n|# m_pData\l|# GetDTE()\l# GetSettings()\l# Unknown()\l}" alt="" coords="5,6,192,157"/>
+<area shape="rect" id="node4" href="a00253.html" title="Класс входит в Проект Helper Вспомогательный класс для поиска страницы свойств у проекта. " alt="" coords="216,13,419,149"/>
+<area shape="rect" id="node6" href="a00267.html" title="Класс входит в Проект Properties &#160;&#160;Вспомогательный класс для получения обработанных параметров настро..." alt="" coords="443,28,673,135"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса useful_commands::ICommand:</div>
+Граф связей класса core::useful_commands::vs::properties::RemoveSolutionPropsFromProject:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01528.png" border="0" usemap="#useful__commands_1_1_i_command_coll__map" alt="Collaboration graph"/></div>
-<map name="useful__commands_1_1_i_command_coll__map" id="useful__commands_1_1_i_command_coll__map">
+<div class="center"><img src="a01389.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1properties_1_1_remove_solution_props_from_project_coll__map" alt="Collaboration graph"/></div>
+<map name="core_1_1useful__commands_1_1vs_1_1properties_1_1_remove_solution_props_from_project_coll__map" id="core_1_1useful__commands_1_1vs_1_1properties_1_1_remove_solution_props_from_project_coll__map">
+<area shape="rect" id="node2" href="a00295.html" title="{core::useful_commands\l::vs::common::Unknown\l\&lt; const ::utilities::vs\l::Data \&gt;\n||# GetDTE()\l# GetSettings()\l# Unknown()\l}" alt="" coords="123,873,309,1023"/>
+<area shape="rect" id="node4" href="a00143.html" title="Класс входит в Раздел Utilities &#160;&#160;Класс, содержащий данные, передаваемые командам надстройки..." alt="" coords="147,613,285,720"/>
+<area shape="rect" id="node6" href="a00266.html" title="Класс входит в Settings &#160;&#160;Класс доступа к надстройкам системы. " alt="" coords="5,296,147,403"/>
+<area shape="rect" id="node8" href="a00167.html" title="Класс входит в Проект Ide &#160;&#160;Класс&#45;обертка для EnvDTE80::DTE2. " alt="" coords="171,237,321,461"/>
+<area shape="rect" id="node10" href="a00103.html" title="{wrappers::vs::Base\l\&lt; EnvDTE80::DTE2 \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="165,6,328,186"/>
+<area shape="rect" id="node12" href="a00253.html" title="Класс входит в Проект Helper Вспомогательный класс для поиска страницы свойств у проекта. " alt="" coords="333,880,536,1016"/>
+<area shape="rect" id="node14" href="a00243.html" title="Класс входит в Проект Project &#160;&#160;Класс&#45;обертка для EnvDTE::Project. " alt="" coords="351,525,519,808"/>
+<area shape="rect" id="node16" href="a00103.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::Project \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="355,259,513,439"/>
+<area shape="rect" id="node18" href="a00267.html" title="Класс входит в Проект Properties &#160;&#160;Вспомогательный класс для получения обработанных параметров настро..." alt="" coords="561,895,791,1001"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:af79ee6b753c48ebd92a22536bb15c28c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#af79ee6b753c48ebd92a22536bb15c28c">IsEnabled</a> (void) const </td></tr>
-<tr class="memdesc:af79ee6b753c48ebd92a22536bb15c28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки доступности команды.  <a href="#af79ee6b753c48ebd92a22536bb15c28c">Подробнее...</a><br /></td></tr>
-<tr class="separator:af79ee6b753c48ebd92a22536bb15c28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a094a112ede90e57b8e3504addf0bffb4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a094a112ede90e57b8e3504addf0bffb4">WasFoundNext</a> (const <a class="el" href="a00249.html">Prop_t</a> &amp;)</td></tr>
+<tr class="memdesc:a094a112ede90e57b8e3504addf0bffb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция будет вызвана для каждой найденной страницы свойств.  <a href="#a094a112ede90e57b8e3504addf0bffb4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a094a112ede90e57b8e3504addf0bffb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91bd97971ab02faae49491dc5f0f558b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00259.html#a91bd97971ab02faae49491dc5f0f558b">WasNoFound</a> (const <a class="el" href="a00127.html">Config_t</a> &amp;)</td></tr>
+<tr class="memdesc:a91bd97971ab02faae49491dc5f0f558b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция будет вызвана для каждой конфигурации, у которой нет указанной страницы свойств.  <a href="#a91bd97971ab02faae49491dc5f0f558b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a91bd97971ab02faae49491dc5f0f558b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_a00267"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00267')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00267.html">core::useful_commands::vs::properties::SettingsValue</a></td></tr>
+<tr class="memitem:a6111c3f4dd9f7f6a31071127b28002b5 inherit pro_methods_a00267"><td class="memItemLeft" align="right" valign="top">VIRTUAL_MOCK CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00267.html#a6111c3f4dd9f7f6a31071127b28002b5">GetFullPathToPropsFile</a> (void) const </td></tr>
+<tr class="memdesc:a6111c3f4dd9f7f6a31071127b28002b5 inherit pro_methods_a00267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения поного пути к файлу общей страницы свойств проектов.  <a href="#a6111c3f4dd9f7f6a31071127b28002b5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6111c3f4dd9f7f6a31071127b28002b5 inherit pro_methods_a00267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_methods_a00253"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00253')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00253.html">wrappers::helper::vs::PropertySheetSearcher</a></td></tr>
+<tr class="memitem:ac85a4ff36109083a4286198e318fb850 inherit pub_methods_a00253"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00253.html#ac85a4ff36109083a4286198e318fb850">SearchForFullPath</a> (const CString &amp;)</td></tr>
+<tr class="memdesc:ac85a4ff36109083a4286198e318fb850 inherit pub_methods_a00253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для поиска страницы свойств по полному пити к ее файлу.  <a href="#ac85a4ff36109083a4286198e318fb850">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac85a4ff36109083a4286198e318fb850 inherit pub_methods_a00253"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_a00295"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_a00295')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="a00295.html">core::useful_commands::vs::common::Unknown&lt; const ::utilities::vs::Data &gt;</a></td></tr>
+<tr class="memitem:a6efd807d10d6bb563e18110aa8318509 inherit pro_attribs_a00295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00143.html">Data_t</a> *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00295.html#a6efd807d10d6bb563e18110aa8318509">m_pData</a></td></tr>
+<tr class="separator:a6efd807d10d6bb563e18110aa8318509 inherit pro_attribs_a00295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00046.html">Проект UsefulCommands</a> <br />
- Базовый класс всех команд раздела. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00014.html">Проект Properties</a> <br />
+ Класс команды удаления файла страницы свойств решения из проекта. </p>
+<ul>
+<li>Путь к странице свойств решения извлекается из настроек (параметр 'PathToPropsFile').</li>
+<li>Проверяются все страницы свойств указанного в конструкторе проекта и, если такая страница свойств существует, она удаляется.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>13 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>30 Июль 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="af79ee6b753c48ebd92a22536bb15c28c"></a>
+<a class="anchor" id="a094a112ede90e57b8e3504addf0bffb4"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -199,44 +195,89 @@ $(document).ready(function(){initNavTree('a00259.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool useful_commands::ICommand::IsEnabled </td>
+          <td class="memname">void RemoveSolutionPropsFromProject::WasFoundNext </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="a00249.html">Prop_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Prop</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Функция проверки доступности команды. </p>
-<ul>
-<li>По умолчанию возвращает false.</li>
-</ul>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Команда доступна (может быть выполнена). </dd>
-<dd>
-<b>false</b> Команда недоступна (будет отображаться в меню, но не может быть выполнена). </dd></dl>
+<p>Функция будет вызвана для каждой найденной страницы свойств. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Prop</td><td>Объект найденной страницы свойств. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Переопределяется в <a class="el" href="a00376.html#a836fbd01c15776ccab74202035ab6ee6">core::useful_commands::vs::version::UpdateRevision</a>, <a class="el" href="a00179.html#a104fc2e7a4ce3bfbbab80fec649b7a06">useful_commands::vs::testing::AddProjectTest</a>, <a class="el" href="a00175.html#a9e683e125c43980dc60e6b68d1cbc53d">useful_commands::vs::testing::AddClassTest</a>, <a class="el" href="a00228.html#a88291885e5b0b080e3b20483055839da">core::useful_commands::vs::documentation::DoBuildResultToHtml</a>, <a class="el" href="a00239.html#a8b789787c3ded362aef4d8132c06e222">core::useful_commands::vs::documentation::doxygen::DoRun</a>, <a class="el" href="a00301.html#accd375e37c12e0da1b7074382ab9da43">useful_commands::vs::doxygen::OpenDoc&lt; TFilter &gt;</a>, <a class="el" href="a00301.html#accd375e37c12e0da1b7074382ab9da43">useful_commands::vs::doxygen::OpenDoc&lt;&gt;</a>, <a class="el" href="a00301.html#accd375e37c12e0da1b7074382ab9da43">useful_commands::vs::doxygen::OpenDoc&lt; filter::SolutionPath &gt;</a>, <a class="el" href="a00268.html#ae54ee3f0147cf847ed373c7ca2544273">useful_commands::vs::doxygen::IncreaseVersionCommon</a>, <a class="el" href="a00269.html#ab94bb144b0af40ee319b85bdad7ac79f">useful_commands::vs::macros::InsertPragmaMessage</a>, <a class="el" href="a00176.html#ab0960d3d8b79dcc2cb5bd66e9945e3a2">useful_commands::vs::doxygen::AddDescription</a>, <a class="el" href="a00306.html#a69c63a062001fde5ccd4750985a04562">useful_commands::vs::utilities::OpenRegExWindow</a>, <a class="el" href="a00182.html#a0cbff3479fef6664e99d9c7ef3881cff">useful_commands::vs::testing::AddSolutionTest</a>, <a class="el" href="a00372.html#aca656e33a0351c20f2721990c466e972">useful_commands::UnionCommand&lt;::useful_commands::vs::Unknown &gt;</a>, <a class="el" href="a00208.html#a6bf0014226bbeaf650d63813b203c1e0">useful_commands::vs::macros::CommentLineBreak</a>, <a class="el" href="a00270.html#a3db378e345242423e2e518555c1987da">useful_commands::vs::macros::InsertTextBlank</a>, <a class="el" href="a00180.html#a13837f0889d2b0e5cd2ea2ead6950547">useful_commands::vs::utilities::AddSelectedTextToUsertypeFile</a>, <a class="el" href="a00235.html#a6656d47586f9c496ed6d61c3173fbe71">core::useful_commands::vs::documentation::DoOpen</a>, <a class="el" href="a00183.html#a97a5478d808bf5d9770779cea3b088c8">useful_commands::vs::testing::AddTemplateTest</a>, <a class="el" href="a00185.html#a0a7372c11454e339a2939adc6940e6ee">useful_commands::vs::utilities::AStyleProcess</a>, <a class="el" href="a00219.html#ade61b1735b681010daf46c2edaf89e45">useful_commands::vs::utilities::CppCheckSolutionQuickProcess</a>, <a class="el" href="a00195.html#a7c2935d63161d6979a267ab415dc5243">core::useful_commands::vs::common::ClearLog</a>, <a class="el" href="a00304.html#a0946caefb766307ee399c6b527084871">core::useful_commands::vs::common::OpenLog</a>, <a class="el" href="a00236.html#ad249d02e500b54dbb60773bc2e48d48c">core::useful_commands::vs::documentation::doxygen::DoPrefatory</a>, <a class="el" href="a00364.html#aa7deb979dd43f1023a23702f8c23d70b">useful_commands::vs::Test</a> и <a class="el" href="a00387.html#af858be330723eaadfc7a1ae10039560b">useful_commands::vs::common::VersionAddins</a>.</p>
+<p>Замещает <a class="el" href="a00253.html#a12db12b83bbbe5025b1b460ed700a6cd">wrappers::helper::vs::PropertySheetSearcher</a>.</p>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00259_a094a112ede90e57b8e3504addf0bffb4_cgraph.png" border="0" usemap="#a00259_a094a112ede90e57b8e3504addf0bffb4_cgraph" alt=""/></div>
+<map name="a00259_a094a112ede90e57b8e3504addf0bffb4_cgraph" id="a00259_a094a112ede90e57b8e3504addf0bffb4_cgraph">
+<area shape="rect" id="node3" href="a00249.html#a0e283e019a3f0e6b90548465a6c8179f" title="Описание функции см. у IPropertySheet::Remove(). " alt="" coords="301,13,517,54"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/<a class="el" href="a00694_source.html">ICommand.hpp</a></li>
+<a class="anchor" id="a91bd97971ab02faae49491dc5f0f558b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveSolutionPropsFromProject::WasNoFound </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00127.html">Config_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция будет вызвана для каждой конфигурации, у которой нет указанной страницы свойств. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Config</td><td>Объект конфигурации, у которой нет указанной страницы свойств. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a00253.html#abd666cb10b06cc5b2b844ad454ad3c61">wrappers::helper::vs::PropertySheetSearcher</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Properties/Properties/<a class="el" href="a00707_source.html">RemoveSolutionPropsFromProject.hpp</a></li>
+<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Properties/Properties/RemoveSolutionPropsFromProject.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>useful_commands</b></li><li class="navelem"><a class="el" href="a00259.html">ICommand</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:26. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>properties</b></li><li class="navelem"><a class="el" href="a00259.html">RemoveSolutionPropsFromProject</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:34. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,5 @@
 var a00118 =
 [
-    [ "Введение", "a00118.html#sSettingsBrief", [
-      [ "Список задач проекта", "a00118.html#ssSettingsTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00120.html", null ]
+    [ "AddPopup", "a00118.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
+    [ "GetCount", "a00118.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
 ];

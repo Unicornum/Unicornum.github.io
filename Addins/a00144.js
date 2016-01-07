@@ -1,7 +1,6 @@
 var a00144 =
 [
-    [ "Введение", "a00144.html#sConfigurationBrief", [
-      [ "Список задач проекта", "a00144.html#ssConfigurationTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00146.html", null ]
+    [ "RegexString", "a00144.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
+    [ "ReplaceString", "a00144.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
+    [ "SourceStrings", "a00144.html#a5b43bb718b3729c19bada2c831ca2297", null ]
 ];

@@ -1,8 +1,4 @@
 var a00276 =
 [
-    [ "GetRegexString", "a00276.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
-    [ "GetReplaceString", "a00276.html#a81029770ef4725794abaa505ad34fc55", null ],
-    [ "GetSourseStrings", "a00276.html#a53b21f1290abceb1fda90789c42f82ee", null ],
-    [ "SetProcessedData", "a00276.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
-    [ "DoProcess", "a00276.html#a5491cd61ba8f067527535004e251f81a", null ]
+    [ "DoProcess", "a00276.html#a39c8b4d05d0e99a7739912c5fe4e1656", null ]
 ];

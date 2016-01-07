@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/UsefulCommands/VisualStudio/Macros/InsertPragmaMessage.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/VisualStudio/Testing/Testing/AddSolutionTest.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,16 +33,16 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,59 +109,25 @@ $(document).ready(function(){initNavTree('a00732_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">InsertPragmaMessage.hpp</div>  </div>
+<div class="title">AddSolutionTest.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;..\VSUnknown.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01237.html">useful_commands</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>vs</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>macros</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a00269.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00269.html">InsertPragmaMessage</a> : <span class="keyword">public</span> <a class="code" href="a00375.html">Unknown</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00255.html">utilities::HotKey</a> <a class="code" href="a00255.html">HotKey_t</a>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="comment">// Интерфейс ICommand:</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">// Интерфейс Command:</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> CString <a class="code" href="a00269.html#a8d61cef9f798e35b93cad25b94bd91a6">GetCaption</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="comment">// Интерфейс Unknown:</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00269.html#ab94bb144b0af40ee319b85bdad7ac79f">IsEnabled</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> HotKey_t <a class="code" href="a00269.html#a75edaf083f3456dc2534d94ec8075ca8">GetHotKey</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace macros</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// vs</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace useful_commands</span></div>
-<div class="ttc" id="a00269_html_a8d61cef9f798e35b93cad25b94bd91a6"><div class="ttname"><a href="a00269.html#a8d61cef9f798e35b93cad25b94bd91a6">useful_commands::vs::macros::InsertPragmaMessage::GetCaption</a></div><div class="ttdeci">virtual CString GetCaption(void) const </div><div class="ttdoc">Функция получения текста, отображаемого в строке команды. </div><div class="ttdef"><b>Definition:</b> InsertPragmaMessage.cpp:42</div></div>
-<div class="ttc" id="a00255_html"><div class="ttname"><a href="a00255.html">utilities::HotKey</a></div><div class="ttdoc">Класс входит в Проект UtilitiesProject   Класс для работы с &#39;горячими&#39; клавишами. ...</div><div class="ttdef"><b>Definition:</b> HotKey.hpp:35</div></div>
-<div class="ttc" id="a00375_html"><div class="ttname"><a href="a00375.html">useful_commands::vs::Unknown</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс команд, которые будут выполняться в VisualStudio...</div><div class="ttdef"><b>Definition:</b> VSUnknown.hpp:39</div></div>
-<div class="ttc" id="a00269_html_a75edaf083f3456dc2534d94ec8075ca8"><div class="ttname"><a href="a00269.html#a75edaf083f3456dc2534d94ec8075ca8">useful_commands::vs::macros::InsertPragmaMessage::GetHotKey</a></div><div class="ttdeci">virtual HotKey_t GetHotKey(void) const </div><div class="ttdoc">Функция получения &#39;горячей&#39; клавиши для команды. </div><div class="ttdef"><b>Definition:</b> InsertPragmaMessage.cpp:52</div></div>
-<div class="ttc" id="a00269_html"><div class="ttname"><a href="a00269.html">useful_commands::vs::macros::InsertPragmaMessage</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Класс команды вставки сообщения #pragma chMSG(). </div><div class="ttdef"><b>Definition:</b> InsertPragmaMessage.hpp:34</div></div>
-<div class="ttc" id="a01237_html"><div class="ttname"><a href="a01237.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
-<div class="ttc" id="a00269_html_ab94bb144b0af40ee319b85bdad7ac79f"><div class="ttname"><a href="a00269.html#ab94bb144b0af40ee319b85bdad7ac79f">useful_commands::vs::macros::InsertPragmaMessage::IsEnabled</a></div><div class="ttdeci">virtual bool IsEnabled(void) const </div><div class="ttdoc">Функция проверки доступности команды. </div><div class="ttdef"><b>Definition:</b> InsertPragmaMessage.cpp:47</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Core\UsefulCommands\UsefulCommands\VisualStudio\VSUnknown.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01167.html">useful_commands</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>testing</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00099.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00099.html">AddSolutionTest</a> : <span class="keyword">public</span> <a class="code" href="a00296.html">Unknown</a></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00264.html">settings::Settings::Section</a> Section_t;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00099.html#ab3e2ca0bf3ce12b8272a334a2f6f59b7">Execute</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> CString <a class="code" href="a00099.html#ac30fae9969ee3ce9a497d6e61fa3dd07">GetCaption</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="a00099.html#a0cbff3479fef6664e99d9c7ef3881cff">IsEnabled</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  VIRTUAL_MOCK <span class="keywordtype">void</span> Export(<span class="keyword">const</span> CString &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  VIRTUAL_MOCK <span class="keywordtype">void</span> Connect(<span class="keyword">const</span> CString &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span>AddSolutionTest_test;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  FRIEND_TEST(AddSolutionTest_test, <span class="comment">/*DISABLED_*/</span>Test_Export);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace testing</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// vs</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// useful_commands</span></div><div class="ttc" id="a00099_html_ac30fae9969ee3ce9a497d6e61fa3dd07"><div class="ttname"><a href="a00099.html#ac30fae9969ee3ce9a497d6e61fa3dd07">useful_commands::vs::testing::AddSolutionTest::GetCaption</a></div><div class="ttdeci">virtual CString GetCaption(void) const </div><div class="ttdoc">Интерфейс Command: </div><div class="ttdef"><b>Definition:</b> AddSolutionTest.cpp:21</div></div>
+<div class="ttc" id="a00099_html_a0cbff3479fef6664e99d9c7ef3881cff"><div class="ttname"><a href="a00099.html#a0cbff3479fef6664e99d9c7ef3881cff">useful_commands::vs::testing::AddSolutionTest::IsEnabled</a></div><div class="ttdeci">virtual bool IsEnabled(void) const </div><div class="ttdoc">Интерфейс Unknown: </div><div class="ttdef"><b>Definition:</b> AddSolutionTest.cpp:26</div></div>
+<div class="ttc" id="a00264_html"><div class="ttname"><a href="a00264.html">settings::Settings::Section</a></div><div class="ttdoc">Класс конкретного раздела настроек. </div><div class="ttdef"><b>Definition:</b> Settings.hpp:53</div></div>
+<div class="ttc" id="a00099_html_ab3e2ca0bf3ce12b8272a334a2f6f59b7"><div class="ttname"><a href="a00099.html#ab3e2ca0bf3ce12b8272a334a2f6f59b7">useful_commands::vs::testing::AddSolutionTest::Execute</a></div><div class="ttdeci">virtual void Execute(void)</div><div class="ttdoc">Интерфейс ICommand: </div><div class="ttdef"><b>Definition:</b> AddSolutionTest.cpp:8</div></div>
+<div class="ttc" id="a00296_html"><div class="ttname"><a href="a00296.html">useful_commands::vs::Unknown</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс команд, которые будут выполняться в VisualStudio...</div><div class="ttdef"><b>Definition:</b> VSUnknown.hpp:39</div></div>
+<div class="ttc" id="a00099_html"><div class="ttname"><a href="a00099.html">useful_commands::vs::testing::AddSolutionTest</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Класс команды добавления общего тестового проекта всего решени...</div><div class="ttdef"><b>Definition:</b> AddSolutionTest.hpp:32</div></div>
+<div class="ttc" id="a01167_html"><div class="ttname"><a href="a01167.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_db050b1b4ff1e0e195a3127d01d2a2fd.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_2be67a721dc39d35775b988a1bdcfc68.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_472e56915828c86a895fbb2149ae74d0.html">Macros</a></li><li class="navelem"><b>InsertPragmaMessage.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:16. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_68c243c7ca65f1e8337d9c44e9fb488c.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_310766a7995957265f686259d0a620ea.html">Testing</a></li><li class="navelem"><a class="el" href="dir_ba7557d79ec4317900f9aed7e3e89d3b.html">Testing</a></li><li class="navelem"><b>AddSolutionTest.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:28. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

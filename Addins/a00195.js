@@ -1,4 +1,5 @@
 var a00195 =
 [
-    [ "IsEnabled", "a00195.html#a7c2935d63161d6979a267ab415dc5243", null ]
+    [ "GetPathToFile", "a00195.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
+    [ "Remove", "a00195.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
 ];

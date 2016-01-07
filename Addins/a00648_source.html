@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/ConnectionPoints/VisualStudio/Properties/Properties/SolutionEvents.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/UsefulCommands/VisualStudio/Doxygen/OpenSolutionDoc.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,78 +109,22 @@ $(document).ready(function(){initNavTree('a00648_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SolutionEvents.hpp</div>  </div>
+<div class="title">OpenSolutionDoc.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;CommandManager.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">class </span><a class="code" href="a00350.html">SolutionEvents</a>;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">typedef</span> IDispEventImpl&lt;1, <a class="code" href="a00350.html">SolutionEvents</a>, &amp;__uuidof(EnvDTE::_dispSolutionEvents), </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  &amp;EnvDTE::LIBID_EnvDTE, 8, 0&gt; SolutionEventsImpl_t;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00350.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00350.html">SolutionEvents</a> : <span class="keyword">public</span> SolutionEventsImpl_t</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00222.html">utilities::vs::Data</a>                                <a class="code" href="a00222.html">Data_t</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00246.html">wrappers::vs::DTE</a>                                  <a class="code" href="a00246.html">DTE_t</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00321.html">wrappers::vs::Project</a>                              <a class="code" href="a00321.html">Project_t</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00349.html">wrappers::vs::SolutionEvents</a>                       <a class="code" href="a00349.html">SolutionEvents_t</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">typedef</span> boost::shared_ptr&lt;connection_points::GlobalMutex&gt;  MutexPtr_t;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  BEGIN_SINK_MAP(<a class="code" href="a00350.html">SolutionEvents</a>)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 1, <a class="code" href="a00350.html#a37ab7699805a19a8e22a902f21d1bc10">Opened</a>)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 2, <a class="code" href="a00350.html#a21b7a290c5f3fcba26b4b07e056a7320">BeforeClosing</a>)</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 3, <a class="code" href="a00350.html#a92b82a0ee9f577e8d879eada4c611a3b">AfterClosing</a>)</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 4, QueryCloseSolution)</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 5, Renamed)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 6, <a class="code" href="a00350.html#a1729654adb306bca37aa34a328e3ebdd">ProjectAdded</a>)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 7, <a class="code" href="a00350.html#a681cdac782a42019aa3b83ab8508d4ac">ProjectRemoved</a>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//SINK_ENTRY_EX(1, __uuidof(EnvDTE::_dispSolutionEvents), 8, ProjectRenamed) // Not triggered.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  END_SINK_MAP()</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="comment">// Интерфейс SolutionEvents:</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00350.html#a37ab7699805a19a8e22a902f21d1bc10">Opened</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00350.html#a92b82a0ee9f577e8d879eada4c611a3b">AfterClosing</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00350.html#a21b7a290c5f3fcba26b4b07e056a7320">BeforeClosing</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">void</span> __stdcall <a class="code" href="a00350.html#a1729654adb306bca37aa34a328e3ebdd">ProjectAdded</a>(EnvDTE::Project *);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> __stdcall <a class="code" href="a00350.html#a681cdac782a42019aa3b83ab8508d4ac">ProjectRemoved</a>(EnvDTE::Project *);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Data_t            * m_pData;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="a00205.html">CommandManager</a>      m_CommandManager;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  SolutionEvents_t    m_SolutionEvents;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">bool</span>                m_IsOpenedSolution;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">bool</span>                m_IsExistPropsFile;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  MutexPtr_t          m_pMutex;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <a class="code" href="a00350.html">SolutionEvents</a>(Data_t * _pData);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  ~<a class="code" href="a00350.html">SolutionEvents</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
-<div class="ttc" id="a00222_html"><div class="ttname"><a href="a00222.html">utilities::vs::Data</a></div><div class="ttdoc">Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки...</div><div class="ttdef"><b>Definition:</b> Data.hpp:24</div></div>
-<div class="ttc" id="a00350_html_a1729654adb306bca37aa34a328e3ebdd"><div class="ttname"><a href="a00350.html#a1729654adb306bca37aa34a328e3ebdd">SolutionEvents::ProjectAdded</a></div><div class="ttdeci">void __stdcall ProjectAdded(EnvDTE::Project *)</div><div class="ttdoc">Функция вызывается после загрузки проекта. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.cpp:64</div></div>
-<div class="ttc" id="a00350_html"><div class="ttname"><a href="a00350.html">SolutionEvents</a></div><div class="ttdoc">Класс входит в Проект Properties   Класс, содержащий функции, которые будут вызываться при возникнове...</div><div class="ttdef"><b>Definition:</b> SolutionEvents.hpp:25</div></div>
-<div class="ttc" id="a00321_html"><div class="ttname"><a href="a00321.html">wrappers::vs::Project</a></div><div class="ttdoc">Класс входит в Проект Project   Класс-обертка для EnvDTE::Project. </div><div class="ttdef"><b>Definition:</b> Project.hpp:40</div></div>
-<div class="ttc" id="a00350_html_a37ab7699805a19a8e22a902f21d1bc10"><div class="ttname"><a href="a00350.html#a37ab7699805a19a8e22a902f21d1bc10">SolutionEvents::Opened</a></div><div class="ttdeci">void __stdcall Opened(void)</div><div class="ttdoc">Функция вызывается сразу после открытия решения. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.cpp:29</div></div>
-<div class="ttc" id="a00350_html_a21b7a290c5f3fcba26b4b07e056a7320"><div class="ttname"><a href="a00350.html#a21b7a290c5f3fcba26b4b07e056a7320">SolutionEvents::BeforeClosing</a></div><div class="ttdeci">void __stdcall BeforeClosing(void)</div><div class="ttdoc">Функция вызывается непосредственно перед закрытием решения. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.cpp:47</div></div>
-<div class="ttc" id="a00246_html"><div class="ttname"><a href="a00246.html">wrappers::vs::DTE</a></div><div class="ttdoc">Класс входит в Проект Ide   Класс-обертка для EnvDTE80::DTE2. </div><div class="ttdef"><b>Definition:</b> DTE.hpp:50</div></div>
-<div class="ttc" id="a00205_html"><div class="ttname"><a href="a00205.html">CommandManager</a></div><div class="ttdoc">Класс входит в Проект UnicornumCodeAssistant   Класс для исполнения команд, управляющих работой надст...</div><div class="ttdef"><b>Definition:</b> CommandManager.hpp:21</div></div>
-<div class="ttc" id="a00349_html"><div class="ttname"><a href="a00349.html">wrappers::vs::SolutionEvents</a></div><div class="ttdoc">Класс входит в Проект Events   Класс доступа к событиям решения. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.hpp:27</div></div>
-<div class="ttc" id="a00350_html_a92b82a0ee9f577e8d879eada4c611a3b"><div class="ttname"><a href="a00350.html#a92b82a0ee9f577e8d879eada4c611a3b">SolutionEvents::AfterClosing</a></div><div class="ttdeci">void __stdcall AfterClosing(void)</div><div class="ttdoc">Функция вызывается сразу после закрытия решения. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.cpp:38</div></div>
-<div class="ttc" id="a00350_html_a681cdac782a42019aa3b83ab8508d4ac"><div class="ttname"><a href="a00350.html#a681cdac782a42019aa3b83ab8508d4ac">SolutionEvents::ProjectRemoved</a></div><div class="ttdeci">void __stdcall ProjectRemoved(EnvDTE::Project *)</div><div class="ttdoc">Функция вызывается перед выгрузкой проекта. </div><div class="ttdef"><b>Definition:</b> SolutionEvents.cpp:104</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;OpenDoc.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Filter\SolutionPathFilter.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01167.html">useful_commands</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>doxygen</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a00229.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00229.html">OpenSolutionDoc</a> : <span class="keyword">public</span> <a class="code" href="a00222.html">OpenDoc</a>&lt;filter::SolutionPath&gt;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> CString <a class="code" href="a00229.html#a2d522b5430c2cff5e728eaaff924e589">GetCaption</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="a00229.html">OpenSolutionDoc</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace doxygen</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// vs</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// useful_commands</span></div><div class="ttc" id="a00222_html"><div class="ttname"><a href="a00222.html">useful_commands::vs::doxygen::OpenDoc</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Базовый класс для классов команд открытия документации. </div><div class="ttdef"><b>Definition:</b> OpenDoc.hpp:38</div></div>
+<div class="ttc" id="a00229_html_a2d522b5430c2cff5e728eaaff924e589"><div class="ttname"><a href="a00229.html#a2d522b5430c2cff5e728eaaff924e589">useful_commands::vs::doxygen::OpenSolutionDoc::GetCaption</a></div><div class="ttdeci">virtual CString GetCaption(void) const </div><div class="ttdoc">Интерфейс Command: </div><div class="ttdef"><b>Definition:</b> OpenSolutionDoc.cpp:12</div></div>
+<div class="ttc" id="a01167_html"><div class="ttname"><a href="a01167.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
+<div class="ttc" id="a00229_html"><div class="ttname"><a href="a00229.html">useful_commands::vs::doxygen::OpenSolutionDoc</a></div><div class="ttdoc">Класс входит в Проект UsefulCommands   Класс команды открытия документации решения. </div><div class="ttdef"><b>Definition:</b> OpenSolutionDoc.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_507a45db08fa34c6d3b352cda19bee73.html">ConnectionPoints</a></li><li class="navelem"><a class="el" href="dir_a7c7e64e0e812907f1fa8bc7c1d66110.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_9a6572b8284b34f6320f871a07aef893.html">Properties</a></li><li class="navelem"><a class="el" href="dir_75e9f55b34bb6d9e9546cbcd232443ad.html">Properties</a></li><li class="navelem"><b>SolutionEvents.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:20. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_db050b1b4ff1e0e195a3127d01d2a2fd.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_2be67a721dc39d35775b988a1bdcfc68.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_9ae3238082eefb0e205aaf06853c9b9d.html">Doxygen</a></li><li class="navelem"><b>OpenSolutionDoc.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:27. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

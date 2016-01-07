@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Класс useful_commands::Commands</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Класс utilities::vs::LoggerProxy</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -112,148 +112,56 @@ $(document).ready(function(){initNavTree('a00206.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01524.html">Полный список членов класса</a>  </div>
+<a href="a01653.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс useful_commands::Commands</div>  </div>
+<div class="title">Класс utilities::vs::LoggerProxy</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00046.html">Проект UsefulCommands</a> <br />
- Класс, содержащий список всех созданных объектов команд.  
+<p>Класс входит в <a class="el" href="a00053.html">Проект Logger</a> <br />
+ Прокси-класс для записи сообщения в выводное окно Visual Studio.  
  <a href="a00206.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00692_source.html">Commands.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00815_source.html">LoggerProxy.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса useful_commands::Commands:</div>
+Граф связей класса utilities::vs::LoggerProxy:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01525.png" border="0" usemap="#useful__commands_1_1_commands_coll__map" alt="Collaboration graph"/></div>
-<map name="useful__commands_1_1_commands_coll__map" id="useful__commands_1_1_commands_coll__map">
+<div class="center"><img src="a01654.png" border="0" usemap="#utilities_1_1vs_1_1_logger_proxy_coll__map" alt="Collaboration graph"/></div>
+<map name="utilities_1_1vs_1_1_logger_proxy_coll__map" id="utilities_1_1vs_1_1_logger_proxy_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a2a85a0531e1896a6097f74726fe12666"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a85a0531e1896a6097f74726fe12666"></a>
-Commands_t::size_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a2a85a0531e1896a6097f74726fe12666">GetSize</a> (void) const </td></tr>
-<tr class="memdesc:a2a85a0531e1896a6097f74726fe12666"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество команд в списке. <br /></td></tr>
-<tr class="separator:a2a85a0531e1896a6097f74726fe12666"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89618778c2a8b30d4a8b0b743acd667d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a89618778c2a8b30d4a8b0b743acd667d">Add</a> (const CommandPtr_t &amp;)</td></tr>
-<tr class="memdesc:a89618778c2a8b30d4a8b0b743acd667d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для добавления команды.  <a href="#a89618778c2a8b30d4a8b0b743acd667d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a89618778c2a8b30d4a8b0b743acd667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc4485b00f993ff3ea45a6662e28c7af"><td class="memItemLeft" align="right" valign="top">CommandPtr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#acc4485b00f993ff3ea45a6662e28c7af">operator[]</a> (const CString &amp;) const </td></tr>
-<tr class="memdesc:acc4485b00f993ff3ea45a6662e28c7af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для получения команды по ее имени.  <a href="#acc4485b00f993ff3ea45a6662e28c7af">Подробнее...</a><br /></td></tr>
-<tr class="separator:acc4485b00f993ff3ea45a6662e28c7af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc5c66f4b320ee76cb718b07697084d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a6dc5c66f4b320ee76cb718b07697084d">Clear</a> (void)</td></tr>
-<tr class="memdesc:a6dc5c66f4b320ee76cb718b07697084d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Очистить список команд.  <a href="#a6dc5c66f4b320ee76cb718b07697084d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a6dc5c66f4b320ee76cb718b07697084d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17780b4769971be6e974544f47de2085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17780b4769971be6e974544f47de2085"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html#a17780b4769971be6e974544f47de2085">operator=</a> (const <a class="el" href="a00217.html">Message</a> &amp;_Message)</td></tr>
+<tr class="memdesc:a17780b4769971be6e974544f47de2085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод текста сообщения в выводное окно Visual Studio. <br /></td></tr>
+<tr class="separator:a17780b4769971be6e974544f47de2085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00046.html">Проект UsefulCommands</a> <br />
- Класс, содержащий список всех созданных объектов команд. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00053.html">Проект Logger</a> <br />
+ Прокси-класс для записи сообщения в выводное окно Visual Studio. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
  1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 янв 2015 <br />
- 14 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>07 Январь 2015 <br />
+ 06 Июнь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a89618778c2a8b30d4a8b0b743acd667d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Commands::Add </td>
-          <td>(</td>
-          <td class="paramtype">const CommandPtr_t &amp;&#160;</td>
-          <td class="paramname"><em>_Command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для добавления команды. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Command</td><td>Команда. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6dc5c66f4b320ee76cb718b07697084d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Commands::Clear </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Очистить список команд. </p>
-<ul>
-<li>Все команды будут удалены. </li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="acc4485b00f993ff3ea45a6662e28c7af"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Commands::CommandPtr_t Commands::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для получения команды по ее имени. </p>
-<ul>
-<li>Имя команды может как полным ('AddinName.Connect.Name'), так и коротким ('Name').</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя команды.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Команда, соответствующая указанному имени.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Команды с указанным именем не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/<a class="el" href="a00692_source.html">Commands.hpp</a></li>
-<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/Commands.cpp</li>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a00815_source.html">LoggerProxy.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/LoggerProxy.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>useful_commands</b></li><li class="navelem"><a class="el" href="a00206.html">Commands</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:26. Создано системой
+    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00206.html">LoggerProxy</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:37. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

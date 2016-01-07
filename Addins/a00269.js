@@ -1,6 +1,6 @@
 var a00269 =
 [
-    [ "GetCaption", "a00269.html#a8d61cef9f798e35b93cad25b94bd91a6", null ],
-    [ "GetHotKey", "a00269.html#a75edaf083f3456dc2534d94ec8075ca8", null ],
-    [ "IsEnabled", "a00269.html#ab94bb144b0af40ee319b85bdad7ac79f", null ]
+    [ "GetActivePlatformName", "a00269.html#a3a5de2684219f84b149e41da839ecf2f", null ],
+    [ "GetName", "a00269.html#ae2fea29770d4277e57a24c17e8c875de", null ],
+    [ "GetPathToFile", "a00269.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
 ];

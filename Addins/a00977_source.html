@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/HtmlResultBuilder.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration.inside.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,16 +33,16 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2728(1242) Architecture: x86.32 Build: 21:36 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
    </div>
-   <div id="projectbrief">UniCA</div>
+   <div id="projectbrief">Addins</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,75 +109,18 @@ $(document).ready(function(){initNavTree('a00977_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">HtmlResultBuilder.hpp</div>  </div>
+<div class="title">Configuration.inside.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Generated.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;..\..\Support\Data.hpp&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01266.html">wx</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00258.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00258.html">HtmlResultBuilder</a></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00224.html">Data_t</a> = <a class="code" href="a00224.html">::support::Data</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">using</span> AllData_t = ::std::vector&lt;Data_t&gt;;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">using</span> Groups_t = Data_t::ProcessingInfo::Groups_t;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">using</span> String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">class </span>BgColor</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> wxString SourceString = wxT(<span class="stringliteral">&quot;#D0D0FF&quot;</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> wxString FoundString = wxT(<span class="stringliteral">&quot;#C0FFFF&quot;</span>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> wxString GroupEvenString = wxT(<span class="stringliteral">&quot;#FFFFB0&quot;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> wxString GroupOddString = wxT(<span class="stringliteral">&quot;#FFFFE0&quot;</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    BgColor &amp; operator= (<span class="keyword">const</span> BgColor &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">class </span>Color</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> wxString Success = wxT(<span class="stringliteral">&quot;green&quot;</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">const</span> wxString Error = wxT(<span class="stringliteral">&quot;red&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Color &amp; operator= (<span class="keyword">const</span> Color &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  };</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  wxString <a class="code" href="a00258.html#ad313fb0a93cbeb3b1f47e784e808a489">Build</a>(<span class="keyword">const</span> AllData_t &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00258.html#a12401305a231a61b1fbb71d8f12a8fe9">BuildSourceStringInfo</a>(<span class="keyword">const</span> <a class="code" href="a00224.html">Data_t</a> &amp; _Data, </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    wxString &amp; _HtmlResult) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a00258.html#a8c76407d4824c51715e2c59febe47552">BuildGroups</a>(<span class="keyword">const</span> Groups_t &amp;, wxString &amp;);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a00258.html#a5319859c80f0a9f8f014dd78d4207e00">BuildCell</a>(<span class="keyword">const</span> wxString &amp;, <span class="keyword">const</span> wxString &amp;, <span class="keyword">const</span> wxString &amp;, </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">const</span> String_t &amp;, wxString &amp;);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> BuildDelimiter(wxString &amp;);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">static</span> String_t ReplaceHtmlUsingChars(<span class="keyword">const</span> String_t &amp; _String);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace wx</span></div>
-<div class="ttc" id="a00224_html"><div class="ttname"><a href="a00224.html">support::Data</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Класс данных, содержащий результат обработки введенных строк...</div><div class="ttdef"><b>Definition:</b> Data.hpp:23</div></div>
-<div class="ttc" id="a00258_html_a12401305a231a61b1fbb71d8f12a8fe9"><div class="ttname"><a href="a00258.html#a12401305a231a61b1fbb71d8f12a8fe9">wx::HtmlResultBuilder::BuildSourceStringInfo</a></div><div class="ttdeci">virtual void BuildSourceStringInfo(const Data_t &amp;_Data, wxString &amp;_HtmlResult) const  =0</div><div class="ttdoc">Функция для построения результата обработки одной строки. </div></div>
-<div class="ttc" id="a00258_html_a5319859c80f0a9f8f014dd78d4207e00"><div class="ttname"><a href="a00258.html#a5319859c80f0a9f8f014dd78d4207e00">wx::HtmlResultBuilder::BuildCell</a></div><div class="ttdeci">static void BuildCell(const wxString &amp;, const wxString &amp;, const wxString &amp;, const String_t &amp;, wxString &amp;)</div><div class="ttdoc">Функция для построения одной записи. </div><div class="ttdef"><b>Definition:</b> HtmlResultBuilder.cpp:120</div></div>
-<div class="ttc" id="a00258_html_ad313fb0a93cbeb3b1f47e784e808a489"><div class="ttname"><a href="a00258.html#ad313fb0a93cbeb3b1f47e784e808a489">wx::HtmlResultBuilder::Build</a></div><div class="ttdeci">wxString Build(const AllData_t &amp;) const </div><div class="ttdoc">Функция построения результата обработки. </div><div class="ttdef"><b>Definition:</b> HtmlResultBuilder.cpp:17</div></div>
-<div class="ttc" id="a00258_html"><div class="ttname"><a href="a00258.html">wx::HtmlResultBuilder</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Класс построения результата обработки в виде html таблицы...</div><div class="ttdef"><b>Definition:</b> HtmlResultBuilder.hpp:24</div></div>
-<div class="ttc" id="a01266_html"><div class="ttname"><a href="a01266.html">wx</a></div><div class="ttdef"><b>Definition:</b> AppFrame.hpp:12</div></div>
-<div class="ttc" id="a00258_html_a8c76407d4824c51715e2c59febe47552"><div class="ttname"><a href="a00258.html#a8c76407d4824c51715e2c59febe47552">wx::HtmlResultBuilder::BuildGroups</a></div><div class="ttdeci">static void BuildGroups(const Groups_t &amp;, wxString &amp;)</div><div class="ttdoc">Функция для построения списка групп. </div><div class="ttdef"><b>Definition:</b> HtmlResultBuilder.cpp:78</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<a href="a00977.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Configuration\Configurations.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_89a023a0cdd7056365d23f3f97bddae3.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_4d0571eb7ed137673ab07aff89e47909.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_35e469d4030ab18f4e85f94a313f50f6.html">View</a></li><li class="navelem"><a class="el" href="dir_dc658f9dce0a311db84303db44147e8d.html">wxWidgets</a></li><li class="navelem"><b>HtmlResultBuilder.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 18 Дек 2015 21:37:17. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6286ca65141999c3454cfc128243a7c6.html">Configuration</a></li><li class="navelem"><a class="el" href="a00977.html">Configuration.inside.hpp</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:29. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

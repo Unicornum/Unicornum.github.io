@@ -1,6 +1,4 @@
 var a00224 =
 [
-    [ "Dump", "a00224.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
-    [ "ProcessingResults", "a00224.html#a269a4595d146ddae5e2f2d12637822a0", null ],
-    [ "String", "a00224.html#a757d3e341008a41c15c16a180ca27a0c", null ]
+    [ "GetCaption", "a00224.html#ade76701e06d95dd78419f0e23bd2ea28", null ]
 ];

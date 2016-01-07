@@ -8,9 +8,9 @@ var index =
     ] ],
     [ "Лицензия", "index.html#sLicense", null ],
     [ "Автор(ы)", "index.html#sAutor", null ],
-    [ "Addins", "a00012.html", "a00012" ],
-    [ "История изменений", "a00006.html", [
-      [ "История изменений", "a00006.html#sHistory", null ]
+    [ "Addins", "a00008.html", "a00008" ],
+    [ "История изменений", "a00005.html", [
+      [ "История изменений", "a00005.html#sHistory", null ]
     ] ],
-    [ "Сборка скриптом BuildAll", "a00008.html", null ]
+    [ "Сборка скриптом BuildAll", "a00006.html", null ]
 ];

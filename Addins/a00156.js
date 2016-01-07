@@ -1,7 +1,4 @@
 var a00156 =
 [
-    [ "Введение", "a00156.html#sIdeBrief", [
-      [ "Список задач проекта", "a00156.html#ssIdeTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00158.html", null ]
+    [ "IsEnabled", "a00156.html#a6656d47586f9c496ed6d61c3173fbe71", null ]
 ];
