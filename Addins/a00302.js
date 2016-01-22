@@ -1,4 +1,5 @@
 var a00302 =
 [
-    [ "Add", "a00302.html#af6b66136a45fa0171864fc9807d18532", null ]
+    [ "VersionResource", "a00302.html#a4f80a6608fed4a60903a4196431c632a", null ],
+    [ "Generate", "a00302.html#a6d209b353d950ff590eadd3fc4f28c35", null ]
 ];

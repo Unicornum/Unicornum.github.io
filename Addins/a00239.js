@@ -1,4 +1,5 @@
 var a00239 =
 [
-    [ "IsEnabled", "a00239.html#a8b789787c3ded362aef4d8132c06e222", null ]
+    [ "GetLogProgress", "a00239.html#aa50e884f0e0e7e87342bf791461b6291", null ],
+    [ "Process", "a00239.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
 ];

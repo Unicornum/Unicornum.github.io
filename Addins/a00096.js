@@ -1,6 +1,5 @@
 var a00096 =
 [
-    [ "Execute", "a00096.html#a2f900e841432d5a3c5042582bf62256e", null ],
-    [ "GetCaption", "a00096.html#af8871c62ee82695fb456a1ff45ae2802", null ],
-    [ "IsEnabled", "a00096.html#a104fc2e7a4ce3bfbbab80fec649b7a06", null ]
+    [ "GetCaption", "a00096.html#a8cfeb24094ec3d2936678d9fd0f81af8", null ],
+    [ "IsEnabled", "a00096.html#ab0960d3d8b79dcc2cb5bd66e9945e3a2", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settings',['Settings',['../a00061.html',1,'SolutionPage']]]
+  ['wrappers',['Wrappers',['../a00070.html',1,'SolutionPage']]]
 ];

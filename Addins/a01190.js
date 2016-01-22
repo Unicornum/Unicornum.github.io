@@ -1,81 +1,28 @@
 var a01190 =
 [
-    [ "helper", null, [
-      [ "vs", null, [
-        [ "DocumentImpl", "a00152.html", "a00152" ],
-        [ "ProjectImpl", "a00244.html", "a00244" ],
-        [ "PropertySheetSearcher", "a00253.html", "a00253" ],
-        [ "SolutionImpl", "a00275.html", null ]
-      ] ],
-      [ "IDocument", "a00181.html", null ],
-      [ "ImplPtr", "a00185.html", null ],
-      [ "IProject", "a00193.html", null ],
-      [ "ISolution", "a00198.html", null ],
-      [ "Proxy", "a00254.html", null ],
-      [ "Proxy< wrappers::vs::Document >", "a00255.html", null ],
-      [ "Proxy< wrappers::vs::Project >", "a00256.html", null ],
-      [ "Proxy< wrappers::vs::Solution >", "a00257.html", null ]
+    [ "Generated", "a01191.html", "a01191" ],
+    [ "AppFrame", "a00104.html", null ],
+    [ "HtmlAbout", "a00175.html", null ],
+    [ "HtmlHelper", "a00176.html", null ],
+    [ "HtmlResultBuilder", "a00177.html", [
+      [ "Build", "a00177.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
+      [ "BuildSourceStringInfo", "a00177.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
     ] ],
-    [ "vs", null, [
-      [ "selection", null, [
-        [ "Cursor", "a00142.html", "a00142" ],
-        [ "Line", "a00203.html", "a00203" ],
-        [ "Lines", "a00204.html", "a00204" ]
-      ] ],
-      [ "service", null, [
-        [ "MakeProxy", "a00212.html", "a00212" ]
-      ] ],
-      [ "AddIn", "a00094.html", "a00094" ],
-      [ "AddIns", "a00095.html", "a00095" ],
-      [ "Base", "a00103.html", "a00103" ],
-      [ "BuildEvents", "a00107.html", null ],
-      [ "Collection", "a00114.html", "a00114" ],
-      [ "Command", "a00115.html", "a00115" ],
-      [ "CommandBar", "a00116.html", "a00116" ],
-      [ "CommandBarControl", "a00117.html", null ],
-      [ "CommandBarControls", "a00118.html", "a00118" ],
-      [ "CommandBarPopup", "a00119.html", "a00119" ],
-      [ "CommandBars", "a00120.html", "a00120" ],
-      [ "Commands", "a00124.html", "a00124" ],
-      [ "Configuration", "a00127.html", "a00127" ],
-      [ "Configurations", "a00128.html", "a00128" ],
-      [ "Document", "a00150.html", "a00150" ],
-      [ "Documents", "a00154.html", "a00154" ],
-      [ "DTE", "a00167.html", "a00167" ],
-      [ "Events", "a00172.html", "a00172" ],
-      [ "IProjects", "a00194.html", "a00194" ],
-      [ "IPropertySheet", "a00195.html", "a00195" ],
-      [ "IPropertySheets", "a00196.html", "a00196" ],
-      [ "OutputWindow", "a00231.html", "a00231" ],
-      [ "OutputWindowPane", "a00232.html", "a00232" ],
-      [ "OutputWindowPanes", "a00233.html", "a00233" ],
-      [ "Project", "a00243.html", "a00243" ],
-      [ "Projects", "a00246.html", "a00246" ],
-      [ "ProjectsFolderImpl", "a00247.html", "a00247" ],
-      [ "ProjectsSolutionImpl", "a00248.html", "a00248" ],
-      [ "PropertySheet", "a00249.html", "a00249" ],
-      [ "PropertySheet2012", "a00250.html", "a00250" ],
-      [ "PropertySheets", "a00251.html", "a00251" ],
-      [ "PropertySheets2012", "a00252.html", "a00252" ],
-      [ "Solution", "a00269.html", "a00269" ],
-      [ "SolutionEvents", "a00271.html", null ],
-      [ "SolutionFolder", "a00272.html", null ],
-      [ "SolutionFolderHelper", "a00273.html", "a00273" ],
-      [ "SolutionFolders", "a00274.html", "a00274" ],
-      [ "StatusBar", "a00279.html", "a00279" ],
-      [ "Subscriber", "a00280.html", "a00280" ],
-      [ "TextSelection", "a00290.html", "a00290" ],
-      [ "ToolWindows", "a00291.html", "a00291" ],
-      [ "VCCollection", "a00298.html", "a00298" ],
-      [ "VCFile", "a00299.html", null ],
-      [ "VCFiles", "a00300.html", "a00300" ],
-      [ "VCFilter", "a00301.html", null ],
-      [ "VCFilterFiles", "a00302.html", "a00302" ],
-      [ "VCFilterFilters", "a00303.html", null ],
-      [ "VCFilters", "a00304.html", "a00304" ],
-      [ "VCProjectFiles", "a00305.html", "a00305" ],
-      [ "VCProjectFilters", "a00306.html", null ],
-      [ "Window", "a00311.html", "a00311" ],
-      [ "Windows", "a00312.html", null ]
+    [ "PanelMatch", "a00232.html", [
+      [ "SetProcessedData", "a00232.html#acf07909284b3dcc712fd11ecb8bc6496", null ]
+    ] ],
+    [ "PanelReplace", "a00233.html", [
+      [ "GetReplaceString", "a00233.html#a672429326859357fdab4692dbfbacbef", null ],
+      [ "SetProcessedData", "a00233.html#a133c64c63a2004726817884ea2e59ab8", null ]
+    ] ],
+    [ "PanelSearch", "a00234.html", [
+      [ "SetProcessedData", "a00234.html#a4e19adf4e3c5d667257250ebd0866583", null ]
+    ] ],
+    [ "PanelView", "a00235.html", [
+      [ "GetRegexString", "a00235.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
+      [ "GetReplaceString", "a00235.html#ab265e215ef659098f37618b48281f08e", null ],
+      [ "GetSourseStrings", "a00235.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
+      [ "SetRegexString", "a00235.html#a53e9b7ec5a5357405275d2478965dca1", null ],
+      [ "SetSourceStrings", "a00235.html#a315df15379a49155b32aa8526047ed7b", null ]
     ] ]
 ];

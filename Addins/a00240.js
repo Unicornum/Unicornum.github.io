@@ -1,5 +1,6 @@
 var a00240 =
 [
-    [ "ToCommandLine", "a00240.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
-    [ "ToLog", "a00240.html#a13578a09c2e689167fe7aa0121fbda80", null ]
+    [ "Groups", "a00240.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+    [ "IsInvalidRegex", "a00240.html#ab125412a0bd7cfe6eec463b740827942", null ],
+    [ "Result", "a00240.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
 ];

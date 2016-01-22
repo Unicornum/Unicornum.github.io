@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Раздел VisualStudio</title>
+<title>Addins: Раздел UsefulCommands</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -103,54 +103,67 @@ $(document).ready(function(){initNavTree('a00027.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Раздел VisualStudio </div>  </div>
+<div class="title">Раздел UsefulCommands </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sUC_VisualStudioBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="CoreUcBrief"></a>
 Введение</h1>
+<p>Раздел содержит классы команд, которые будут выполняться при выборе соответствующей им строки меню.</p>
+<h1><a class="anchor" id="CoreUcClasses"></a>
+Структура классов раздела</h1>
+<div class="image">
+<img src="CoreUcClasses.png" alt="CoreUcClasses.png"/>
+</div>
+<h1>Дочерние элементы </h1>
+<h2>Проект Common </h2>
+<p>Проект классов (не зависящих от используемой версии IDE), используемых всеми командами.</p>
+<p>Страница проекта: <a class="el" href="a00029.html">Проект CoreUcCommon</a></p>
+<h2>Раздел Visual Studio </h2>
 <p>Раздел команд, используемых в надстройках для Visual Studio.</p>
-<h1><a class="anchor" id="sUC_VisualStudioDetails"></a>
-Подробное описание раздела</h1>
-<h2><a class="anchor" id="ssUC_VisualStudioProjects"></a>
-Проекты раздела</h2>
-<h3><a class="anchor" id="sssStartUpProject"></a>
-Проект StartUp</h3>
-<p>Проект классов команд, выполняемых при запуске надстройки:</p><ul>
-<li>Вывод в лог информации о запускаемой надстройке.</li>
-<li>Загрузка параметров надстройки.</li>
-<li>Удаление команд, оставшихся от предыдущего запуска.</li>
-<li>Копирование файла usertype.dat.</li>
+<p>Страница раздела: <a class="el" href="a00031.html">Раздел VisualStudio</a></p>
+<h3>Общий</h3>
+<p>Содержит классы команд общего раздела надстройки:</p><ul>
+<li>Открыть документацию надстройки (OpenDocAddins).</li>
+<li>Изменить параметры надстройки (SettingsAddins).</li>
+<li>Отображение в меню текущей версии надстройки (VersionAddins).</li>
 </ul>
-<p>Страница проекта: <a class="el" href="a00034.html">Проект StartUp</a></p>
-<h3><a class="anchor" id="sssCoreUsefulCommandsVSPropertiesProject"></a>
-Проект Properties</h3>
-<p>Проект классов команд для работы со свойствами проектов.</p>
-<p>Страница проекта: <a class="el" href="a00032.html">Проект Properties</a></p>
-<h3><a class="anchor" id="sssCoreUsefulCommandsVSVersionProject"></a>
-Проект Properties</h3>
-<p>Страница проекта: <a class="el" href="a00040.html">Проект Version</a></p>
-<h3><a class="anchor" id="sssUsefulCommandsVSCommonProject"></a>
-Проект Common</h3>
-<p>Проект общих классов, используемых в разделе.</p>
-<p>Страница проекта: <a class="el" href="a00028.html">Проект Common</a></p>
-<h3><a class="anchor" id="sssUsefulCommandsVSTestingProject"></a>
-Проект Testing</h3>
-<p>Проект содержит классы команд, относящиеся к разделу 'Тестирование'.</p>
-<p>Страница проекта: <a class="el" href="a00036.html">Проект Testing</a></p>
-<h3><a class="anchor" id="sssUsefulCommandsVSDocumentationProject"></a>
-Проект Documentation</h3>
-<p>Проект классов команд для работы с документацией решения.</p>
-<p>Страница проекта: <a class="el" href="a00030.html">Проект Documentation</a></p>
-<h3><a class="anchor" id="sssUsefulCommandsVSUtilitiesProject"></a>
-Проект Documentation</h3>
-<p>Страница проекта: <a class="el" href="a00038.html">Проект Utilities</a> </p>
+<h3>Документация</h3>
+<ul>
+<li>Открытие документации внешних библиотек (OpenOwnLibsDoc).</li>
+<li>Открытие документации Doxygen (OpenDoxygenDoc).</li>
+<li>Вставка шаблона описания класса/функции (AddDescription).</li>
+<li>Увеличение номера версии класса (IncreaseVersion).</li>
+<li>Увеличение номера подверсии класса (IncreaseSubversion).</li>
+<li>Увеличение номера подподверсии класса (IncreaseSubsubversion).</li>
+<li>Генерация документации решения (GenerateSolutionDoc).</li>
+<li>Открытие документации текущего решения (OpenSolutionDoc).</li>
+</ul>
+<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000006">Необходимо сделать:</a></b></dt><dd>Создать раздел Documentation, в который переместить проект Doxygen.</dd></dl>
+<h3>Макросы</h3>
+<ul>
+<li>Вставка сообщения для документации/выводного окна Visual Studio (InsertPragmaMessage).</li>
+<li>Перевод строки комментария (CommentLineBreak).</li>
+<li>Вставка заготовки текста (InsertTextBlank).</li>
+</ul>
+<h3>Тестирование</h3>
+<ul>
+<li>Добавление заготовки теста (AddTemplateTest).</li>
+<li>Добавление тестового проекта класса (AddClassTest).</li>
+</ul>
+<h3>Утилиты</h3>
+<ul>
+<li>Обработка файла при помощи программы AStyle (AStyleProcess).</li>
+<li>Быстрая обработка решения при помощи программы CppCheck (CppCheckSolutionQuickProcess).</li>
+</ul>
+<h2>Список задач проекта </h2>
+<p><a class="el" href="a00028.html">Список задач проекта</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00020.html">Core</a></li><li class="navelem"><a class="el" href="a00025.html">Проект UsefulCommands</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:33. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00022.html">Core</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс utilities::execute::Svn</title>
+<title>Addins: Класс utilities::Text</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,86 +111,83 @@ $(document).ready(function(){initNavTree('a00282.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01602.html">Полный список членов класса</a>  </div>
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="a01562.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс utilities::execute::Svn</div>  </div>
+<div class="title">Класс utilities::Text</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00049.html">Проект Execute</a> <br />
- Класс для выполнения команд svn.  
+<p>Класс входит в <a class="el" href="a00064.html">Проект UtilitiesProject</a> <br />
+ Класс, содержащий вспомогательные функции для работы с текстом.  
  <a href="a00282.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00804_source.html">Svn.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00745_source.html">Text.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса utilities::execute::Svn:</div>
+Граф связей класса utilities::Text:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01603.png" border="0" usemap="#utilities_1_1execute_1_1_svn_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1execute_1_1_svn_coll__map" id="utilities_1_1execute_1_1_svn_coll__map">
+<div class="center"><img src="a01563.png" border="0" usemap="#utilities_1_1_text_coll__map" alt="Collaboration graph"/></div>
+<map name="utilities_1_1_text_coll__map" id="utilities_1_1_text_coll__map">
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:afa2e65f599adc03536740b78ccd9c07b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html#afa2e65f599adc03536740b78ccd9c07b">Export</a> (const CString &amp;_RepositoryUrl, const CString &amp;_DestPath)</td></tr>
-<tr class="memdesc:afa2e65f599adc03536740b78ccd9c07b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Экспорт папки из репозитория.  <a href="#afa2e65f599adc03536740b78ccd9c07b">Подробнее...</a><br /></td></tr>
-<tr class="separator:afa2e65f599adc03536740b78ccd9c07b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a934d058e1cac7b3bff5d1397d8833cb6"><td class="memItemLeft" align="right" valign="top">static CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html#a934d058e1cac7b3bff5d1397d8833cb6">GetClassName</a> (const CString &amp;_Text)</td></tr>
+<tr class="memdesc:a934d058e1cac7b3bff5d1397d8833cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для извлечения имени класса из текста.  <a href="#a934d058e1cac7b3bff5d1397d8833cb6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a934d058e1cac7b3bff5d1397d8833cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234214865069a4f448fedbded2323085"><td class="memItemLeft" align="right" valign="top">static CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html#a234214865069a4f448fedbded2323085">GetFunctionName</a> (const CString &amp;_Text)</td></tr>
+<tr class="memdesc:a234214865069a4f448fedbded2323085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для извлечения имени функции из текста.  <a href="#a234214865069a4f448fedbded2323085">Подробнее...</a><br /></td></tr>
+<tr class="separator:a234214865069a4f448fedbded2323085"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00049.html">Проект Execute</a> <br />
- Класс для выполнения команд svn. </p>
-<ul>
-<li>Для работы класса требуется установленный клиент svn.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00064.html">Проект UtilitiesProject</a> <br />
+ Класс, содержащий вспомогательные функции для работы с текстом. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
- 2.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>30 Март 2015 <br />
- 18 Июнь 2015 <br />
- 03 Октябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>28 Май 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="afa2e65f599adc03536740b78ccd9c07b"></a>
+<a class="anchor" id="a934d058e1cac7b3bff5d1397d8833cb6"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Svn::Export </td>
+          <td class="memname">CString Text::GetClassName </td>
           <td>(</td>
           <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_RepositoryUrl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_DestPath</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Экспорт папки из репозитория. </p>
+<p>Функция для извлечения имени класса из текста. </p>
+<ul>
+<li>Для текста 'class ClassName : public Base' функция вернет 'ClassName'.</li>
+<li>Предварительное объявление класса ('class ClassName;') не считается валидным исходным текстом.</li>
+</ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_RepositoryUrl</td><td>Исходный путь в репозитории, откуда будет производиться экспорт. <br />
- Должен представлять собой URL (например, '<a href="https://svn/svn/Libs/trunk/projects/gtesting/Test.ProjectName'">https://svn/svn/Libs/trunk/projects/gtesting/Test.ProjectName'</a>). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_DestPath</td><td>Полный путь к папке, в которую будет производиться экспорт (создавать несуществующие папки не требуется).</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текст.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
+<li>Строка не содержит объявления класса.</li>
+<li>Строка содержит предварительное объявление класса. </li>
 </ul>
 </td></tr>
   </table>
@@ -200,12 +197,69 @@ $(document).ready(function(){initNavTree('a00282.html','');});
 <p><div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00282_afa2e65f599adc03536740b78ccd9c07b_icgraph.png" border="0" usemap="#a00282_afa2e65f599adc03536740b78ccd9c07b_icgraph" alt=""/></div>
-<map name="a00282_afa2e65f599adc03536740b78ccd9c07b_icgraph" id="a00282_afa2e65f599adc03536740b78ccd9c07b_icgraph">
-<area shape="rect" id="node3" href="a00287.html#a71546748829accc60c80109f29182dad" title="Создание тестового проекта класса. " alt="" coords="189,5,392,61"/>
-<area shape="rect" id="node7" href="a00096.html#a104fc2e7a4ce3bfbbab80fec649b7a06" title="Интерфейс Unknown: " alt="" coords="193,85,388,141"/>
-<area shape="rect" id="node9" href="a00099.html#a0cbff3479fef6664e99d9c7ef3881cff" title="Интерфейс Unknown: " alt="" coords="191,165,391,221"/>
-<area shape="rect" id="node5" href="a00092.html#a793539ff864ab00599f8448d3aadd3a3" title="Описание см. ICommand::Execute() " alt="" coords="440,5,621,61"/>
+<div class="center"><img src="a00282_a934d058e1cac7b3bff5d1397d8833cb6_icgraph.png" border="0" usemap="#a00282_a934d058e1cac7b3bff5d1397d8833cb6_icgraph" alt=""/></div>
+<map name="a00282_a934d058e1cac7b3bff5d1397d8833cb6_icgraph" id="a00282_a934d058e1cac7b3bff5d1397d8833cb6_icgraph">
+<area shape="rect" id="node3" href="a00114.html#afa328cb75664988c7842dd17379f3210" title="Доступ к информации о проекте документа. " alt="" coords="303,5,468,61"/>
+<area shape="rect" id="node9" href="a00283.html#a4af69b0fdcde1de75ccdedcf641c99fe" title="Функция получения значения тега. " alt="" coords="284,86,487,127"/>
+<area shape="rect" id="node11" href="a00151.html#a1914cae82f2e56d5c0c1483a05d854c0" title="Функция проверки существования тестового проекта для класса, на объявлении которого стоит курсор..." alt="" coords="269,152,501,208"/>
+<area shape="rect" id="node5" href="a00114.html#a0aca6c5fe8f9ff81d50cefbd4042244a" title="Имя класса из строки под курсором. " alt="" coords="549,5,715,61"/>
+<area shape="rect" id="node7" href="a00095.html#a793539ff864ab00599f8448d3aadd3a3" title="Описание см. ICommand::Execute() " alt="" coords="763,5,944,61"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a234214865069a4f448fedbded2323085"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CString Text::GetFunctionName </td>
+          <td>(</td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для извлечения имени функции из текста. </p>
+<ul>
+<li>Имя функции извлекается из заголовка реализации функции класса.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текст.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Строка не содержит заголовок реализации функции.</li>
+<li>Строка содержит объявление функции.</li>
+<li>Строка содержит заголовок реализации функции, не принадлежащей классу. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00282_a234214865069a4f448fedbded2323085_icgraph.png" border="0" usemap="#a00282_a234214865069a4f448fedbded2323085_icgraph" alt=""/></div>
+<map name="a00282_a234214865069a4f448fedbded2323085_icgraph" id="a00282_a234214865069a4f448fedbded2323085_icgraph">
+<area shape="rect" id="node3" href="a00283.html#a4af69b0fdcde1de75ccdedcf641c99fe" title="Функция получения значения тега. " alt="" coords="293,5,496,46"/>
 </map>
 </div>
 </p>
@@ -213,16 +267,16 @@ $(document).ready(function(){initNavTree('a00282.html','');});
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a00804_source.html">Svn.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/Svn.cpp</li>
+<li>Solution/Solution/Core/Utilities/Utilities/Utilities/<a class="el" href="a00745_source.html">Text.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Utilities/Utilities/Text.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00282.html">Svn</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:37. Создано системой
+    <li class="navelem"><b>utilities</b></li><li class="navelem"><a class="el" href="a00282.html">Text</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

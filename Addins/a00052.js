@@ -1,7 +1,7 @@
 var a00052 =
 [
-    [ "Введение", "a00052.html#sUsefulCommandsVSCommonBrief", [
-      [ "Список задач проекта", "a00052.html#ssUsefulCommandsVSCommonTasks", null ]
+    [ "Введение", "a00052.html#sDoxygenBrief", [
+      [ "Список задач проекта", "a00052.html#ssDoxygenTasks", null ]
     ] ],
-    [ "Список задач проекта", "a00054.html", null ]
+    [ "Список задач проекта", "a00053.html", null ]
 ];

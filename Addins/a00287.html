@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс useful_commands::vs::testing::TestClassProject</title>
+<title>Addins: Шаблон класса useful_commands::UnionCommand&lt; TMenuCommandImpl &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,83 +112,132 @@ $(document).ready(function(){initNavTree('a00287.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01548.html">Полный список членов класса</a>  </div>
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="a01485.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс useful_commands::vs::testing::TestClassProject</div>  </div>
+<div class="title">Шаблон класса useful_commands::UnionCommand&lt; TMenuCommandImpl &gt;</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00025.html">Проект UsefulCommands</a> <br />
- Класс, обеспечивающий логику добавления тестового проекта класса.  
+<p>Класс входит в <a class="el" href="a00027.html">Раздел UsefulCommands</a> <br />
+ Класс команды, представляющей собой набор отдельных команд.  
  <a href="a00287.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00667_source.html">TestClassProject.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00624_source.html">UnionCommand.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:TMenuCommandImpl.</p>
 <div class="dynheader">
-Граф связей класса useful_commands::vs::testing::TestClassProject:</div>
+Граф связей класса useful_commands::UnionCommand&lt; TMenuCommandImpl &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01549.png" border="0" usemap="#useful__commands_1_1vs_1_1testing_1_1_test_class_project_coll__map" alt="Collaboration graph"/></div>
-<map name="useful__commands_1_1vs_1_1testing_1_1_test_class_project_coll__map" id="useful__commands_1_1vs_1_1testing_1_1_test_class_project_coll__map">
+<div class="center"><img src="a01486.png" border="0" usemap="#useful__commands_1_1_union_command_3_01_t_menu_command_impl_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="useful__commands_1_1_union_command_3_01_t_menu_command_impl_01_4_coll__map" id="useful__commands_1_1_union_command_3_01_t_menu_command_impl_01_4_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a71546748829accc60c80109f29182dad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00243.html">TestClass_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a71546748829accc60c80109f29182dad">Create</a> (const CString &amp;, const <a class="el" href="a00272.html">SolutionFolder_t</a> &amp;) const </td></tr>
-<tr class="memdesc:a71546748829accc60c80109f29182dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание тестового проекта класса.  <a href="#a71546748829accc60c80109f29182dad">Подробнее...</a><br /></td></tr>
-<tr class="separator:a71546748829accc60c80109f29182dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca656e33a0351c20f2721990c466e972"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#aca656e33a0351c20f2721990c466e972">IsEnabled</a> (void) const  final</td></tr>
+<tr class="memdesc:aca656e33a0351c20f2721990c466e972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция определения доступности команды.  <a href="#aca656e33a0351c20f2721990c466e972">Подробнее...</a><br /></td></tr>
+<tr class="separator:aca656e33a0351c20f2721990c466e972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaccf63579ff226c82bb2a680a31c8ef8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#aaccf63579ff226c82bb2a680a31c8ef8">Execute</a> (void) final</td></tr>
+<tr class="memdesc:aaccf63579ff226c82bb2a680a31c8ef8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выполнения команды.  <a href="#aaccf63579ff226c82bb2a680a31c8ef8">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaccf63579ff226c82bb2a680a31c8ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a3d437faab5339bf30aea1eb0d9b5eb98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00287.html#a3d437faab5339bf30aea1eb0d9b5eb98">Add</a> (const CommandPtr_t &amp;)</td></tr>
+<tr class="memdesc:a3d437faab5339bf30aea1eb0d9b5eb98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления команды в набор.  <a href="#a3d437faab5339bf30aea1eb0d9b5eb98">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3d437faab5339bf30aea1eb0d9b5eb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00025.html">Проект UsefulCommands</a> <br />
- Класс, обеспечивающий логику добавления тестового проекта класса. </p>
+<div class="textblock"><h3>template&lt;class TMenuCommandImpl&gt;<br />
+class useful_commands::UnionCommand&lt; TMenuCommandImpl &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a00027.html">Раздел UsefulCommands</a> <br />
+ Класс команды, представляющей собой набор отдельных команд. </p>
+<ul>
+<li>Класс 'сборной' команды должен наследоваться от этого класса и реализовывать функцию IMenuCommand::GetCaption(), а также необходимые функции класса TMenuCommandImpl.</li>
+<li>При выполнении команды выполняет все вложенные команды.</li>
+<li>Команда доступна для выполнения, если доступны все вложенные команды.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TMenuCommandImpl</td><td>Класс, унаследованный от IMenuCommand и реализовывающий логику работы команды меню для текущей IDE.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Май 2015 <br />
- 15 Май 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>13 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a71546748829accc60c80109f29182dad"></a>
+<a class="anchor" id="a3d437faab5339bf30aea1eb0d9b5eb98"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class TMenuCommandImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00243.html">TestClassProject::TestClass_t</a> TestClassProject::Create </td>
+          <td class="memname">void <a class="el" href="a00287.html">useful_commands::UnionCommand</a>&lt; TMenuCommandImpl &gt;::Add </td>
           <td>(</td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_UrlToTestDirectory</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const CommandPtr_t &amp;&#160;</td>
+          <td class="paramname"><em>_pCommand</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00272.html">SolutionFolder_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Folder</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Создание тестового проекта класса. </p>
+<p>Функция добавления команды в набор. </p>
 <ul>
-<li>Экспортирует заготовку тестового проекта класса из репозитория svn в папку тестового проекта проекта.</li>
-<li>Переименовывает файл экспортированного проекта.</li>
-<li>Подключает добавленный проект в папку 'Test.Classes' папки проекта, которому принадлежит файл класса.</li>
-<li>Меняет имя проекта на 'Test.CurrentClassName'.</li>
-<li>Делает добавленный тестовый проект запускаемым.</li>
+<li>Класс 'сборной' команды должен в конструкторе добавить составные команды.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_UrlToTestDirectory</td><td>Url к папке прототипов тестовых проектов в репозитории svn. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Folder</td><td>Родительская папка проекта, которому принадлежит класс.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pCommand</td><td>Исходное значение. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Объект созданного тестового проекта класса.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaccf63579ff226c82bb2a680a31c8ef8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMenuCommandImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00287.html">useful_commands::UnionCommand</a>&lt; TMenuCommandImpl &gt;::Execute </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция выполнения команды. </p>
+<ul>
+<li>Выполняет все вложенные команды в порядке их добавления.</li>
+</ul>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
@@ -199,40 +248,59 @@ $(document).ready(function(){initNavTree('a00287.html','');});
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00287_a71546748829accc60c80109f29182dad_cgraph.png" border="0" usemap="#a00287_a71546748829accc60c80109f29182dad_cgraph" alt=""/></div>
-<map name="a00287_a71546748829accc60c80109f29182dad_cgraph" id="a00287_a71546748829accc60c80109f29182dad_cgraph">
-<area shape="rect" id="node3" href="a00243.html#abe091468f207dd79efdff99c29364bef" title="Сделать проект проектом для запуска. " alt="" coords="256,5,424,46"/>
-<area shape="rect" id="node5" href="a00282.html#afa2e65f599adc03536740b78ccd9c07b" title="Экспорт папки из репозитория. " alt="" coords="273,70,407,111"/>
-</map>
 </div>
-</p>
+</div>
+<a class="anchor" id="aca656e33a0351c20f2721990c466e972"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TMenuCommandImpl &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00287.html">useful_commands::UnionCommand</a>&lt; TMenuCommandImpl &gt;::IsEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p><div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00287_a71546748829accc60c80109f29182dad_icgraph.png" border="0" usemap="#a00287_a71546748829accc60c80109f29182dad_icgraph" alt=""/></div>
-<map name="a00287_a71546748829accc60c80109f29182dad_icgraph" id="a00287_a71546748829accc60c80109f29182dad_icgraph">
-<area shape="rect" id="node3" href="a00092.html#a793539ff864ab00599f8448d3aadd3a3" title="Описание см. ICommand::Execute() " alt="" coords="256,5,437,61"/>
-</map>
-</div>
-</p>
+<p>Функция определения доступности команды. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Доступны все вложенные команды. </dd>
+<dd>
+<b>false</b> Недоступна хотя бы одна вложенная команда.</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/VisualStudio/Testing/<a class="el" href="a00667_source.html">TestClassProject.hpp</a></li>
-<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/VisualStudio/Testing/TestClassProject.cpp</li>
+<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/<a class="el" href="a00624_source.html">UnionCommand.hpp</a></li>
+<li>Solution/Solution/Core/UsefulCommands/UsefulCommands/UnionCommand.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>testing</b></li><li class="navelem"><a class="el" href="a00287.html">TestClassProject</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:36. Создано системой
+    <li class="navelem"><b>useful_commands</b></li><li class="navelem"><a class="el" href="a00287.html">UnionCommand</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,7 +1,5 @@
 var a00148 =
 [
-    [ "Введение", "a00148.html#sDocumentBrief", [
-      [ "Список задач проекта", "a00148.html#ssDocumentTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00150.html", null ]
+    [ "Execute", "a00148.html#a2f7deb085bf581b96b4ac04a46925aed", null ],
+    [ "IsEnabled", "a00148.html#a88291885e5b0b080e3b20483055839da", null ]
 ];

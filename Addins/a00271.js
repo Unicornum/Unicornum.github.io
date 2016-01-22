@@ -1,5 +1,4 @@
 var a00271 =
 [
-    [ "DoProcess", "a00271.html#a5d04d77bf55c572a3297c2ff67198678", null ],
-    [ "IsEnded", "a00271.html#a1650f8c64edbb695f3c3b2e55b4d53f7", null ]
+    [ "GetValue", "a00271.html#ade427871f1f9f26069f7b884fca8f0c1", null ]
 ];

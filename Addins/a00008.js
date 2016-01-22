@@ -9,16 +9,14 @@ var a00008 =
       [ "Connection Points", "a00008.html#ssConnectionPoints", null ],
       [ "Core", "a00008.html#ssCore", null ],
       [ "Wrappers", "a00008.html#ssWrappers", null ],
-      [ "Tools", "a00008.html#ssTools", null ],
-      [ "Settings", "a00008.html#ssSettings", null ]
+      [ "Tools", "a00008.html#ssTools", null ]
     ] ],
     [ "Исходные требования", "a00007.html", [
       [ "Введение", "a00007.html#sReqIntro", null ]
     ] ],
     [ "Build", "a00003.html", "a00003" ],
     [ "ConnectionPoints", "a00009.html", "a00009" ],
-    [ "Core", "a00020.html", "a00020" ],
-    [ "Wrappers", "a00067.html", "a00067" ],
-    [ "Утилиты", "a00063.html", "a00063" ],
-    [ "Settings", "a00061.html", "a00061" ]
+    [ "Core", "a00022.html", "a00022" ],
+    [ "Wrappers", "a00070.html", "a00070" ],
+    [ "Утилиты", "a00066.html", "a00066" ]
 ];

@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['wxwidgets',['wxWidgets',['../a01202.html',1,'']]],
-  ['wasfoundnext',['WasFoundNext',['../a00098.html#abbb3a4c1bca71e9510522a27e5b86e72',1,'core::useful_commands::vs::properties::AddSolutionPropsToProject::WasFoundNext()'],['../a00259.html#a094a112ede90e57b8e3504addf0bffb4',1,'core::useful_commands::vs::properties::RemoveSolutionPropsFromProject::WasFoundNext()'],['../a00253.html#a12db12b83bbbe5025b1b460ed700a6cd',1,'wrappers::helper::vs::PropertySheetSearcher::WasFoundNext()']]],
-  ['wasnofound',['WasNoFound',['../a00098.html#af6330f00eab5407344d37a1939951a5f',1,'core::useful_commands::vs::properties::AddSolutionPropsToProject::WasNoFound()'],['../a00259.html#a91bd97971ab02faae49491dc5f0f558b',1,'core::useful_commands::vs::properties::RemoveSolutionPropsFromProject::WasNoFound()'],['../a00253.html#abd666cb10b06cc5b2b844ad454ad3c61',1,'wrappers::helper::vs::PropertySheetSearcher::WasNoFound()']]],
-  ['window',['Window',['../a00311.html',1,'wrappers::vs']]],
-  ['windows',['Windows',['../a00312.html',1,'wrappers::vs']]],
-  ['wrappers',['wrappers',['../a01190.html',1,'']]],
-  ['wrappers',['Wrappers',['../a00067.html',1,'SolutionPage']]]
+  ['wxwidgets',['wxWidgets',['../a01190.html',1,'']]],
+  ['wasfoundnext',['WasFoundNext',['../a00101.html#abbb3a4c1bca71e9510522a27e5b86e72',1,'core::useful_commands::vs::properties::AddSolutionPropsToProject::WasFoundNext()'],['../a00257.html#a094a112ede90e57b8e3504addf0bffb4',1,'core::useful_commands::vs::properties::RemoveSolutionPropsFromProject::WasFoundNext()'],['../a00251.html#a12db12b83bbbe5025b1b460ed700a6cd',1,'wrappers::helper::vs::PropertySheetSearcher::WasFoundNext()']]],
+  ['wasnofound',['WasNoFound',['../a00101.html#af6330f00eab5407344d37a1939951a5f',1,'core::useful_commands::vs::properties::AddSolutionPropsToProject::WasNoFound()'],['../a00257.html#a91bd97971ab02faae49491dc5f0f558b',1,'core::useful_commands::vs::properties::RemoveSolutionPropsFromProject::WasNoFound()'],['../a00251.html#abd666cb10b06cc5b2b844ad454ad3c61',1,'wrappers::helper::vs::PropertySheetSearcher::WasNoFound()']]],
+  ['window',['Window',['../a00304.html',1,'wrappers::vs']]],
+  ['windows',['Windows',['../a00305.html',1,'wrappers::vs']]],
+  ['wrappers',['wrappers',['../a01178.html',1,'']]],
+  ['wrappers',['Wrappers',['../a00070.html',1,'SolutionPage']]]
 ];

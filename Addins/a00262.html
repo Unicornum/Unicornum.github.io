@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс utilities::vs::Report</title>
+<title>Addins: Класс core::useful_commands::vs::properties::SettingsValue</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,111 +111,99 @@ $(document).ready(function(){initNavTree('a00262.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01659.html">Полный список членов класса</a>  </div>
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="a01397.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс utilities::vs::Report</div>  </div>
+<div class="title">Класс core::useful_commands::vs::properties::SettingsValue</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00053.html">Проект Logger</a> <br />
- Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio.  
+<p>Класс входит в <a class="el" href="a00014.html">Проект Properties</a> <br />
+ Вспомогательный класс для получения обработанных параметров настроек.  
  <a href="a00262.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00819_source.html">Report.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:noncopyable.</p>
+<p><code>#include &lt;<a class="el" href="a00714_source.html">SettingsValue.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса utilities::vs::Report:</div>
+Граф наследования:core::useful_commands::vs::properties::SettingsValue:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01660.png" border="0" usemap="#utilities_1_1vs_1_1_report_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1vs_1_1_report_coll__map" id="utilities_1_1vs_1_1_report_coll__map">
+<div class="center"><img src="a01398.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1properties_1_1_settings_value_inherit__map" alt="Inheritance graph"/></div>
+<map name="core_1_1useful__commands_1_1vs_1_1properties_1_1_settings_value_inherit__map" id="core_1_1useful__commands_1_1vs_1_1properties_1_1_settings_value_inherit__map">
+<area shape="rect" id="node3" href="a00101.html" title="Класс входит в Проект Properties &#160;&#160;Класс команды подключения к проекту страницы свойств решения..." alt="" coords="5,161,232,311"/>
+<area shape="rect" id="node5" href="a00257.html" title="Класс входит в Проект Properties &#160;&#160;Класс команды удаления файла страницы свойств решения из проекта..." alt="" coords="256,161,523,311"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса core::useful_commands::vs::properties::SettingsValue:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01399.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1properties_1_1_settings_value_coll__map" alt="Collaboration graph"/></div>
+<map name="core_1_1useful__commands_1_1vs_1_1properties_1_1_settings_value_coll__map" id="core_1_1useful__commands_1_1vs_1_1properties_1_1_settings_value_coll__map">
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a630cf3a9b63ec8703474773ee7a9d074"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a630cf3a9b63ec8703474773ee7a9d074">ToLog</a> (size_t _Flag, const CString &amp;_Text)</td></tr>
-<tr class="memdesc:a630cf3a9b63ec8703474773ee7a9d074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод сообщения в окно вывода.  <a href="#a630cf3a9b63ec8703474773ee7a9d074">Подробнее...</a><br /></td></tr>
-<tr class="separator:a630cf3a9b63ec8703474773ee7a9d074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a6111c3f4dd9f7f6a31071127b28002b5"><td class="memItemLeft" align="right" valign="top">VIRTUAL_MOCK CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a6111c3f4dd9f7f6a31071127b28002b5">GetFullPathToPropsFile</a> (void) const </td></tr>
+<tr class="memdesc:a6111c3f4dd9f7f6a31071127b28002b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения поного пути к файлу общей страницы свойств проектов.  <a href="#a6111c3f4dd9f7f6a31071127b28002b5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6111c3f4dd9f7f6a31071127b28002b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00053.html">Проект Logger</a> <br />
- Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio. </p>
-<ul>
-<li>Если имя модуля не задано (параметр Name), выводится оно не будет.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00014.html">Проект Properties</a> <br />
+ Вспомогательный класс для получения обработанных параметров настроек. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 2.0.0.0 <br />
- 2.1.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>? ??? 2014 <br />
- 5 янв 2015 <br />
- 8 фев 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>30 Июль 2015 <br />
+ 14 Январь 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a630cf3a9b63ec8703474773ee7a9d074"></a>
+<a class="anchor" id="a6111c3f4dd9f7f6a31071127b28002b5"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void utilities::vs::Report::ToLog </td>
+          <td class="memname">CString SettingsValue::GetFullPathToPropsFile </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_Flag</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_Text</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Вывод сообщения в окно вывода. </p>
-<ul>
-<li>Сообщение будет выведено в окно, имя которого указно в конструкторе.</li>
-<li>Флаг Clear обрабатывается в первую очередь и очищает окно вывода; может использоваться вместе с любыми другими флагами.</li>
-<li>Если установлен флаг Title, то текст будет выведен как заголовок (без указания времени и типа сообщения, а также дополнен символами '=' до длинны MaxMessageLenght), флаги [Fatal ... Debug] игнорируются.</li>
-<li>Если установлен флаг Status, то текст будет выведен в статус-бар Visual Studio.</li>
-<li>Если установлен один из флагов [Fatal ... Debug], будет выведено текущее время, тип сообщения (определяется по флагу) и само сообщение.</li>
-<li>Сообщение с флагом Debug выводится только в отладочной версии программы.</li>
-<li>Сообщение Simple будет выведено без времени и типа, просто указанная строка.</li>
-<li>При выводе сообщений с типом Fatal, Error, Warning или установленном флаге Open будет окрыто выводное окно Visual Studio. </li>
+<p>Функция получения поного пути к файлу общей страницы свойств проектов. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
 </ul>
-
-<p><div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00262_a630cf3a9b63ec8703474773ee7a9d074_cgraph.png" border="0" usemap="#a00262_a630cf3a9b63ec8703474773ee7a9d074_cgraph" alt=""/></div>
-<map name="a00262_a630cf3a9b63ec8703474773ee7a9d074_cgraph" id="a00262_a630cf3a9b63ec8703474773ee7a9d074_cgraph">
-<area shape="rect" id="node3" href="a00114.html#a373c590faedafe634836c26ad9419161" title="Проверка того, что объект с указанным именем существует в коллекции. " alt="" coords="222,5,407,46"/>
-<area shape="rect" id="node5" href="a00233.html#a3d43f02811e8098d4aad8e43dede0917" title="Добавить окно с указанным именем. " alt="" coords="205,70,424,111"/>
-</map>
-</div>
-</p>
+</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a00819_source.html">Report.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Logger/Logger/Report.cpp</li>
+<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Properties/Properties/<a class="el" href="a00714_source.html">SettingsValue.hpp</a></li>
+<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Properties/Properties/SettingsValue.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00262.html">Report</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:37. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>properties</b></li><li class="navelem"><a class="el" href="a00262.html">SettingsValue</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

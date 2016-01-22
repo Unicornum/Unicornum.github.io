@@ -1,81 +1,14 @@
 var a01188 =
 [
-    [ "helper", null, [
-      [ "vs", null, [
-        [ "DocumentImpl", "a00152.html", "a00152" ],
-        [ "ProjectImpl", "a00243.html", "a00243" ],
-        [ "PropertySheetSearcher", "a00252.html", "a00252" ],
-        [ "SolutionImpl", "a00275.html", null ]
+    [ "Data", "a00144.html", [
+      [ "ProcessingInfo", "a00240.html", [
+        [ "Groups", "a00240.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+        [ "IsInvalidRegex", "a00240.html#ab125412a0bd7cfe6eec463b740827942", null ],
+        [ "Result", "a00240.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
       ] ],
-      [ "IDocument", "a00181.html", null ],
-      [ "ImplPtr", "a00185.html", null ],
-      [ "IProject", "a00193.html", null ],
-      [ "ISolution", "a00198.html", null ],
-      [ "Proxy", "a00253.html", null ],
-      [ "Proxy< wrappers::vs::Document >", "a00254.html", null ],
-      [ "Proxy< wrappers::vs::Project >", "a00255.html", null ],
-      [ "Proxy< wrappers::vs::Solution >", "a00256.html", null ]
+      [ "Dump", "a00144.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
+      [ "ProcessingResults", "a00144.html#a269a4595d146ddae5e2f2d12637822a0", null ],
+      [ "String", "a00144.html#a757d3e341008a41c15c16a180ca27a0c", null ]
     ] ],
-    [ "vs", null, [
-      [ "selection", null, [
-        [ "Cursor", "a00142.html", "a00142" ],
-        [ "Line", "a00203.html", "a00203" ],
-        [ "Lines", "a00204.html", "a00204" ]
-      ] ],
-      [ "service", null, [
-        [ "MakeProxy", "a00212.html", "a00212" ]
-      ] ],
-      [ "AddIn", "a00094.html", "a00094" ],
-      [ "AddIns", "a00095.html", "a00095" ],
-      [ "Base", "a00103.html", "a00103" ],
-      [ "BuildEvents", "a00107.html", null ],
-      [ "Collection", "a00114.html", "a00114" ],
-      [ "Command", "a00115.html", "a00115" ],
-      [ "CommandBar", "a00116.html", "a00116" ],
-      [ "CommandBarControl", "a00117.html", null ],
-      [ "CommandBarControls", "a00118.html", "a00118" ],
-      [ "CommandBarPopup", "a00119.html", "a00119" ],
-      [ "CommandBars", "a00120.html", "a00120" ],
-      [ "Commands", "a00124.html", "a00124" ],
-      [ "Configuration", "a00127.html", "a00127" ],
-      [ "Configurations", "a00128.html", "a00128" ],
-      [ "Document", "a00150.html", "a00150" ],
-      [ "Documents", "a00154.html", "a00154" ],
-      [ "DTE", "a00167.html", "a00167" ],
-      [ "Events", "a00172.html", "a00172" ],
-      [ "IProjects", "a00194.html", "a00194" ],
-      [ "IPropertySheet", "a00195.html", "a00195" ],
-      [ "IPropertySheets", "a00196.html", "a00196" ],
-      [ "OutputWindow", "a00230.html", "a00230" ],
-      [ "OutputWindowPane", "a00231.html", "a00231" ],
-      [ "OutputWindowPanes", "a00232.html", "a00232" ],
-      [ "Project", "a00242.html", "a00242" ],
-      [ "Projects", "a00245.html", "a00245" ],
-      [ "ProjectsFolderImpl", "a00246.html", "a00246" ],
-      [ "ProjectsSolutionImpl", "a00247.html", "a00247" ],
-      [ "PropertySheet", "a00248.html", "a00248" ],
-      [ "PropertySheet2012", "a00249.html", "a00249" ],
-      [ "PropertySheets", "a00250.html", "a00250" ],
-      [ "PropertySheets2012", "a00251.html", "a00251" ],
-      [ "Solution", "a00268.html", "a00268" ],
-      [ "SolutionEvents", "a00271.html", null ],
-      [ "SolutionFolder", "a00272.html", null ],
-      [ "SolutionFolderHelper", "a00273.html", "a00273" ],
-      [ "SolutionFolders", "a00274.html", "a00274" ],
-      [ "StatusBar", "a00279.html", "a00279" ],
-      [ "Subscriber", "a00280.html", "a00280" ],
-      [ "TextSelection", "a00290.html", "a00290" ],
-      [ "ToolWindows", "a00291.html", "a00291" ],
-      [ "VCCollection", "a00298.html", "a00298" ],
-      [ "VCFile", "a00299.html", null ],
-      [ "VCFiles", "a00300.html", "a00300" ],
-      [ "VCFilter", "a00301.html", null ],
-      [ "VCFilterFiles", "a00302.html", "a00302" ],
-      [ "VCFilterFilters", "a00303.html", null ],
-      [ "VCFilters", "a00304.html", "a00304" ],
-      [ "VCProjectFiles", "a00305.html", "a00305" ],
-      [ "VCProjectFilters", "a00306.html", null ],
-      [ "Window", "a00311.html", "a00311" ],
-      [ "Windows", "a00312.html", null ]
-    ] ]
+    [ "Main", "a00205.html", null ]
 ];

@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/VisualStudio/Properties/Properties/CheckExistencePropertiesFile.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Dialog/Dialog/ProgressMarquee.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,79 +109,23 @@ $(document).ready(function(){initNavTree('a00784_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">CheckExistencePropertiesFile.hpp</div>  </div>
+<div class="title">ProgressMarquee.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\patterns\command.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01197.html">core</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01234.html">useful_commands</a></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>vs</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>properties</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a00193.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00193.html">CheckExistencePropertiesFile</a> :</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span> ::alicorn::patterns::command::ICommand,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00374.html">common::Unknown</a>&lt;const utilities::vs::Data&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00222.html">utilities::vs::Data</a>           <a class="code" href="a00222.html">Data_t</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00342.html">settings::Settings::Section</a>   <a class="code" href="a00342.html">Section_t</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">class </span>Info</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Data_t * m_pData;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span>     m_IsExist;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  };</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Интерфейс ICommand:</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  VIRTUAL_MOCK <span class="keywordtype">bool</span> IsExist(<span class="keyword">const</span> CString &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">bool</span> &amp; m_IsExist;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00193.html">CheckExistencePropertiesFile</a>(Info &amp;);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  FRIEND_TEST(CheckExistencePropertiesFile_test, <span class="comment">/*DISABLED_*/</span>Test_GetPathToSolution);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace properties</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;} <span class="comment">// namespace vs</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;} <span class="comment">// namespace useful_commands</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <span class="comment">// namespace core</span></div>
-<div class="ttc" id="a00222_html"><div class="ttname"><a href="a00222.html">utilities::vs::Data</a></div><div class="ttdoc">Класс входит в Раздел Utilities   Класс, содержащий данные, передаваемые командам надстройки...</div><div class="ttdef"><b>Definition:</b> Data.hpp:24</div></div>
-<div class="ttc" id="a01197_html"><div class="ttname"><a href="a01197.html">core</a></div><div class="ttdef"><b>Definition:</b> CreateCommands.hpp:6</div></div>
-<div class="ttc" id="a00193_html"><div class="ttname"><a href="a00193.html">core::useful_commands::vs::properties::CheckExistencePropertiesFile</a></div><div class="ttdoc">Класс входит в Проект Properties   Класс команды проверки существования файла страницы свойств...</div><div class="ttdef"><b>Definition:</b> CheckExistencePropertiesFile.hpp:38</div></div>
-<div class="ttc" id="a00342_html"><div class="ttname"><a href="a00342.html">settings::Settings::Section</a></div><div class="ttdoc">Класс конкретного раздела настроек. </div><div class="ttdef"><b>Definition:</b> Settings.hpp:53</div></div>
-<div class="ttc" id="a01234_html"><div class="ttname"><a href="a01234.html">useful_commands</a></div><div class="ttdef"><b>Definition:</b> Commands.hpp:5</div></div>
-<div class="ttc" id="a00374_html"><div class="ttname"><a href="a00374.html">core::useful_commands::vs::common::Unknown</a></div><div class="ttdoc">Класс входит в Проект StartUp   Базовый класс команд проекта. </div><div class="ttdef"><b>Definition:</b> Unknown.hpp:42</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;ProgressMfc.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01165.html">utilities</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>dialog</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>progress</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="a00210.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00210.html">Marquee</a> : <span class="keyword">public</span> <a class="code" href="a00216.html">Mfc</a></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">typedef</span> <a class="code" href="a00190.html">utilities::progress::IProgress</a> <a class="code" href="a00190.html">IProgress_t</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="a00210.html#a3b95c928f67e73036588749a354556ec">ShowModal</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="a00210.html">Marquee</a>(IProgress_t *, <span class="keyword">const</span> CString &amp;);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace progress</span></div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace dialog</span></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace utilities</span></div><div class="ttc" id="a00210_html"><div class="ttname"><a href="a00210.html">utilities::dialog::progress::Marquee</a></div><div class="ttdoc">Класс входит в Проект Dialog   Класс диалогового окна, отображающего прогресс процесса в виде бегущей...</div><div class="ttdef"><b>Definition:</b> ProgressMarquee.hpp:28</div></div>
+<div class="ttc" id="a00210_html_a3b95c928f67e73036588749a354556ec"><div class="ttname"><a href="a00210.html#a3b95c928f67e73036588749a354556ec">utilities::dialog::progress::Marquee::ShowModal</a></div><div class="ttdeci">int ShowModal(void)</div><div class="ttdoc">Функция для отображения модального диалогового окна. </div><div class="ttdef"><b>Definition:</b> ProgressMarquee.cpp:26</div></div>
+<div class="ttc" id="a00190_html"><div class="ttname"><a href="a00190.html">utilities::progress::IProgress</a></div><div class="ttdoc">Класс входит в Проект Progress   Интерфейсный класс для классов-оберток, выполняющих конкретную работ...</div><div class="ttdef"><b>Definition:</b> IProgress.hpp:24</div></div>
+<div class="ttc" id="a00216_html"><div class="ttname"><a href="a00216.html">utilities::dialog::progress::Mfc</a></div><div class="ttdoc">Класс входит в Проект Dialog   Класс диалогового окна для отображения процесса на базе MFC...</div><div class="ttdef"><b>Definition:</b> ProgressMfc.hpp:46</div></div>
+<div class="ttc" id="a01165_html"><div class="ttname"><a href="a01165.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_68c243c7ca65f1e8337d9c44e9fb488c.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_4322bfd7043ff6fd86587e4e2f1834f9.html">Properties</a></li><li class="navelem"><a class="el" href="dir_f81ce0b37247f73a0f52d963c71a2af3.html">Properties</a></li><li class="navelem"><b>CheckExistencePropertiesFile.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:21. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_e4512f2e623aa4b17bcce94118468588.html">Dialog</a></li><li class="navelem"><a class="el" href="dir_350acbf0755c33c2fe86cdac8c460150.html">Dialog</a></li><li class="navelem"><b>ProgressMarquee.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

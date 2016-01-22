@@ -1,5 +1,6 @@
 var a00118 =
 [
-    [ "AddPopup", "a00118.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
-    [ "GetCount", "a00118.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
+    [ "AddControl", "a00118.html#a86130e59757e2c2e7976498b8ed55cbf", null ],
+    [ "Delete", "a00118.html#afa679db93d2c5c38d056d0a37256d446", null ],
+    [ "SetHotKey", "a00118.html#a400ef4a02584cd6ff91cf1e543513ac6", null ]
 ];

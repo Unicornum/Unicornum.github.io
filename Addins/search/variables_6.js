@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['sourcestrings',['SourceStrings',['../a00144.html#a5b43bb718b3729c19bada2c831ca2297',1,'model::Data']]],
-  ['string',['String',['../a00145.html#a757d3e341008a41c15c16a180ca27a0c',1,'support::Data']]]
+  ['updateview',['UpdateView',['../a00200.html#a8c80e0235b8dd5fbf242595f6d1911e5',1,'view::IWrite']]]
 ];

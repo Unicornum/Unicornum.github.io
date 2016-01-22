@@ -1,4 +1,5 @@
 var a00278 =
 [
-    [ "GetValue", "a00278.html#af6af203a515e27ba6a27d5b5a59b9ef8", null ]
+    [ "Tag", "a00278.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
+    [ "GetCaption", "a00278.html#a21ce3a76b5870765f7b503b4318f4df8", null ]
 ];

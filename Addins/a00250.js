@@ -1,6 +1,7 @@
 var a00250 =
 [
-    [ "PropertySheet2012", "a00250.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
-    [ "GetPathToFile", "a00250.html#a7930a5bc2066899ea7834758ef47556f", null ],
-    [ "Remove", "a00250.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
+    [ "GetCount", "a00250.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
+    [ "GetItem", "a00250.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
+    [ "LoadFromFile", "a00250.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
+    [ "Remove", "a00250.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс utilities::tags::vs::File</title>
+<title>Addins: Класс connection_points::GlobalMutex</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,61 +112,54 @@ $(document).ready(function(){initNavTree('a00173.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01630.html">Полный список членов класса</a>  </div>
+<a href="a01322.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс utilities::tags::vs::File</div>  </div>
+<div class="title">Класс connection_points::GlobalMutex</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00057.html">Проект Tags</a> <br />
- Класс получения значения тега имени открытого файла.  
+<p>Класс входит в <a class="el" href="a00010.html">Проект Common</a> <br />
+ Класс для проверки существования другой версии надстройки.  
  <a href="a00173.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00836_source.html">File.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00408_source.html">GlobalMutex.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:utilities::tags::vs::File:</div>
+Граф связей класса connection_points::GlobalMutex:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01631.png" border="0" usemap="#utilities_1_1tags_1_1vs_1_1_file_inherit__map" alt="Inheritance graph"/></div>
-<map name="utilities_1_1tags_1_1vs_1_1_file_inherit__map" id="utilities_1_1tags_1_1vs_1_1_file_inherit__map">
-<area shape="rect" id="node2" href="a00199.html" title="Класс входит в Проект Tags &#160;&#160;Интерфейс классов получения значения конкретного тега. " alt="" coords="5,5,141,112"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса utilities::tags::vs::File:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01632.png" border="0" usemap="#utilities_1_1tags_1_1vs_1_1_file_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1tags_1_1vs_1_1_file_coll__map" id="utilities_1_1tags_1_1vs_1_1_file_coll__map">
-<area shape="rect" id="node2" href="a00199.html" title="Класс входит в Проект Tags &#160;&#160;Интерфейс классов получения значения конкретного тега. " alt="" coords="5,5,141,112"/>
+<div class="center"><img src="a01323.png" border="0" usemap="#connection__points_1_1_global_mutex_coll__map" alt="Collaboration graph"/></div>
+<map name="connection__points_1_1_global_mutex_coll__map" id="connection__points_1_1_global_mutex_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a50cfb15d722352cc7e174a1a9210d9e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a50cfb15d722352cc7e174a1a9210d9e5"></a>
-virtual CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#a50cfb15d722352cc7e174a1a9210d9e5">GetValue</a> (const <a class="el" href="a00143.html">Data_t</a> *) const </td></tr>
-<tr class="memdesc:a50cfb15d722352cc7e174a1a9210d9e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения значения тега. <br /></td></tr>
-<tr class="separator:a50cfb15d722352cc7e174a1a9210d9e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a355c808ae26654af86b3a21150067904"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a355c808ae26654af86b3a21150067904"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#a355c808ae26654af86b3a21150067904">IsAlreadyExists</a> (void) const </td></tr>
+<tr class="memdesc:a355c808ae26654af86b3a21150067904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак того, что такой мьютекс уже существует в системе. <br /></td></tr>
+<tr class="separator:a355c808ae26654af86b3a21150067904"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00057.html">Проект Tags</a> <br />
- Класс получения значения тега имени открытого файла. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00010.html">Проект Common</a> <br />
+ Класс для проверки существования другой версии надстройки. </p>
+<ul>
+<li>Используется для исключения ситуации, при кототорой Relese и Debug версии надстроек выполняют одинаковые операции дважды.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>2 мар 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>27 Июль 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Tags/Tags/<a class="el" href="a00836_source.html">File.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Tags/Tags/File.cpp</li>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/ConnectionPoints/Common/Common/<a class="el" href="a00408_source.html">GlobalMutex.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><b>tags</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00173.html">File</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:37. Создано системой
+    <li class="navelem"><a class="el" href="a01116.html">connection_points</a></li><li class="navelem"><a class="el" href="a00173.html">GlobalMutex</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,6 +1,4 @@
 var a00151 =
 [
-    [ "AddVersionData", "a00151.html#ab3ca0f779fe4dfc4ab250a0561c72af7", null ],
-    [ "UpdateCopyrightYear", "a00151.html#af819ea33c04761393ed44c212ba0ae33", null ],
-    [ "UpdateVersion", "a00151.html#a77a1f9f9c99cda513bd1809cc83161ab", null ]
+    [ "ForClassUnderCursorExistTestProject", "a00151.html#a1914cae82f2e56d5c0c1483a05d854c0", null ]
 ];

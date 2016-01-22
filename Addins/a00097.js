@@ -1,5 +1,6 @@
 var a00097 =
 [
-    [ "GetCaption", "a00097.html#ab7226ec17cd8ade43d8b37b72bb1e76f", null ],
-    [ "IsEnabled", "a00097.html#a13837f0889d2b0e5cd2ea2ead6950547", null ]
+    [ "ExtractFrom", "a00097.html#a3e251c846958372bba1a743db8367b09", null ],
+    [ "GetConnectString", "a00097.html#a562089c22cfb703a62f7f4413e2ab89c", null ],
+    [ "GetVersion", "a00097.html#af34b5f4c11993b8b36444540ecf49dee", null ]
 ];

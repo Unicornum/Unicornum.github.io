@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::IView</title>
+<title>Addins: Класс view::IWrite</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,92 +111,178 @@ $(document).ready(function(){initNavTree('a00200.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01664.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="a01643.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::IView<div class="ingroups"><a class="el" href="a01197.html">RegexTester</a> &raquo; <a class="el" href="a01201.html">View</a></div></div>  </div>
+<div class="title">Класс view::IWrite<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01185.html">RegexTester</a> &raquo; <a class="el" href="a01189.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00064.html">Проект RegexTester</a> <br />
- Интерфейсный класс представления.  
+<p>Класс входит в <a class="el" href="a00067.html">Проект RegexTester</a> <br />
+ Интерфейс для записи данных модели в объект представления.  
  <a href="a00200.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00889_source.html">IView.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00880_source.html">IWrite.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::IView:</div>
+Граф наследования:view::IWrite:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01665.png" border="0" usemap="#view_1_1_i_view_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_view_inherit__map" id="view_1_1_i_view_inherit__map">
-<area shape="rect" id="node7" href="a00237.html" title="{wx::PanelView\&lt; BasePanel\lMatchSearch \&gt;\n||+ GetRegexString()\l+ GetReplaceString()\l+ GetSourseStrings()\l+ SetRegexString()\l+ SetSourceStrings()\l+ Copy()\l+ Paste()\l+ CopyToCpp()\l+ PasteFromCpp()\l+ SelectAll()\l+ PanelView()\l# OnActive()\l# OnRegexChanged()\l# OnRMouseUp()\l# OnSourceStringsChanged()\l}" alt="" coords="152,315,368,613"/>
-<area shape="rect" id="node13" href="a00237.html" title="{wx::PanelView\&lt; BasePanel\lReplace \&gt;\n||+ GetRegexString()\l+ GetReplaceString()\l+ GetSourseStrings()\l+ SetRegexString()\l+ SetSourceStrings()\l+ Copy()\l+ Paste()\l+ CopyToCpp()\l+ PasteFromCpp()\l+ SelectAll()\l+ PanelView()\l# OnActive()\l# OnRegexChanged()\l# OnRMouseUp()\l# OnSourceStringsChanged()\l}" alt="" coords="392,315,608,613"/>
-<area shape="rect" id="node17" href="a00237.html" title="Класс входит в Проект RegexTester &#160;&#160;Базовый класс панелей главного tabctrl&#39;a окна программы..." alt="" coords="632,323,848,605"/>
-<area shape="rect" id="node2" href="a00197.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейс для чтения введенных данным из объекта представления..." alt="" coords="321,5,489,141"/>
-<area shape="rect" id="node4" href="a00202.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейс для записи данных модели в объект представления. " alt="" coords="515,20,677,127"/>
-<area shape="rect" id="node9" href="a00234.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для совпадения..." alt="" coords="5,677,173,769"/>
-<area shape="rect" id="node11" href="a00236.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для поиска..." alt="" coords="198,677,367,769"/>
-<area shape="rect" id="node15" href="a00235.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для замены..." alt="" coords="413,662,587,783"/>
+<div class="center"><img src="a01644.png" border="0" usemap="#view_1_1_i_write_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_i_write_inherit__map" id="view_1_1_i_write_inherit__map">
+<area shape="rect" id="node3" href="a00198.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейсный класс представления. " alt="" coords="450,160,549,237"/>
+<area shape="rect" id="node5" href="a00235.html" title="{wx::PanelView\&lt; BasePanel\lMatchSearch \&gt;\n||+ GetRegexString()\l+ GetReplaceString()\l+ GetSourseStrings()\l+ SetRegexString()\l+ SetSourceStrings()\l+ Copy()\l+ Paste()\l+ CopyToCpp()\l+ PasteFromCpp()\l+ SelectAll()\l+ PanelView()\l# OnActive()\l# OnRegexChanged()\l# OnRMouseUp()\l# OnSourceStringsChanged()\l}" alt="" coords="152,286,368,583"/>
+<area shape="rect" id="node11" href="a00235.html" title="{wx::PanelView\&lt; BasePanel\lReplace \&gt;\n||+ GetRegexString()\l+ GetReplaceString()\l+ GetSourseStrings()\l+ SetRegexString()\l+ SetSourceStrings()\l+ Copy()\l+ Paste()\l+ CopyToCpp()\l+ PasteFromCpp()\l+ SelectAll()\l+ PanelView()\l# OnActive()\l# OnRegexChanged()\l# OnRMouseUp()\l# OnSourceStringsChanged()\l}" alt="" coords="392,286,608,583"/>
+<area shape="rect" id="node15" href="a00235.html" title="Класс входит в Проект RegexTester &#160;&#160;Базовый класс панелей главного tabctrl&#39;a окна программы..." alt="" coords="632,293,848,576"/>
+<area shape="rect" id="node7" href="a00232.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для совпадения..." alt="" coords="5,647,173,739"/>
+<area shape="rect" id="node9" href="a00234.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для поиска..." alt="" coords="198,647,367,739"/>
+<area shape="rect" id="node13" href="a00233.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для замены..." alt="" coords="413,633,587,754"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::IView:</div>
+Граф связей класса view::IWrite:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01666.png" border="0" usemap="#view_1_1_i_view_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_i_view_coll__map" id="view_1_1_i_view_coll__map">
-<area shape="rect" id="node2" href="a00197.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейс для чтения введенных данным из объекта представления..." alt="" coords="5,5,173,141"/>
-<area shape="rect" id="node4" href="a00202.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейс для записи данных модели в объект представления. " alt="" coords="199,20,361,127"/>
+<div class="center"><img src="a01645.png" border="0" usemap="#view_1_1_i_write_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_i_write_coll__map" id="view_1_1_i_write_coll__map">
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pub_methods_a00197"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00197')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00197.html">view::IRead</a></td></tr>
-<tr class="memitem:ac1bb5a657694266fbf218f5ca2de7310 inherit pub_methods_a00197"><td class="memItemLeft" align="right" valign="top">virtual String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00197.html#ac1bb5a657694266fbf218f5ca2de7310">GetRegexString</a> (void) const  =0</td></tr>
-<tr class="memdesc:ac1bb5a657694266fbf218f5ca2de7310 inherit pub_methods_a00197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения введенного регулярного выражения (для всех трех типов обработки).  <a href="#ac1bb5a657694266fbf218f5ca2de7310">Подробнее...</a><br /></td></tr>
-<tr class="separator:ac1bb5a657694266fbf218f5ca2de7310 inherit pub_methods_a00197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81029770ef4725794abaa505ad34fc55 inherit pub_methods_a00197"><td class="memItemLeft" align="right" valign="top">virtual String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00197.html#a81029770ef4725794abaa505ad34fc55">GetReplaceString</a> (void) const  =0</td></tr>
-<tr class="memdesc:a81029770ef4725794abaa505ad34fc55 inherit pub_methods_a00197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения введенной строки на замену (для замены).  <a href="#a81029770ef4725794abaa505ad34fc55">Подробнее...</a><br /></td></tr>
-<tr class="separator:a81029770ef4725794abaa505ad34fc55 inherit pub_methods_a00197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53b21f1290abceb1fda90789c42f82ee inherit pub_methods_a00197"><td class="memItemLeft" align="right" valign="top">virtual Strings_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00197.html#a53b21f1290abceb1fda90789c42f82ee">GetSourseStrings</a> (void) const  =0</td></tr>
-<tr class="memdesc:a53b21f1290abceb1fda90789c42f82ee inherit pub_methods_a00197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка строк, которые будут обрабатываться.  <a href="#a53b21f1290abceb1fda90789c42f82ee">Подробнее...</a><br /></td></tr>
-<tr class="separator:a53b21f1290abceb1fda90789c42f82ee inherit pub_methods_a00197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa2bc91d1e49bfdcf91024887a06b1c inherit pub_methods_a00197"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00197.html#a9aa2bc91d1e49bfdcf91024887a06b1c">SetProcessedData</a> (const Data_t &amp;)=0</td></tr>
-<tr class="memdesc:a9aa2bc91d1e49bfdcf91024887a06b1c inherit pub_methods_a00197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления обработанных данных.  <a href="#a9aa2bc91d1e49bfdcf91024887a06b1c">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9aa2bc91d1e49bfdcf91024887a06b1c inherit pub_methods_a00197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00202"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00202')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00202.html">view::IWrite</a></td></tr>
-<tr class="memitem:af5040b0aa0f465bb367c6d7b3b827132 inherit pub_methods_a00202"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#af5040b0aa0f465bb367c6d7b3b827132">SetRegexString</a> (const String_t &amp;)=0</td></tr>
-<tr class="memdesc:af5040b0aa0f465bb367c6d7b3b827132 inherit pub_methods_a00202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления регулярного выражения.  <a href="#af5040b0aa0f465bb367c6d7b3b827132">Подробнее...</a><br /></td></tr>
-<tr class="separator:af5040b0aa0f465bb367c6d7b3b827132 inherit pub_methods_a00202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40111fbde225b3bce8aa1b4ac7c7586f inherit pub_methods_a00202"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a40111fbde225b3bce8aa1b4ac7c7586f">SetSourceStrings</a> (const Strings_t &amp;)=0</td></tr>
-<tr class="memdesc:a40111fbde225b3bce8aa1b4ac7c7586f inherit pub_methods_a00202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления списка обрабатываемых строк.  <a href="#a40111fbde225b3bce8aa1b4ac7c7586f">Подробнее...</a><br /></td></tr>
-<tr class="separator:a40111fbde225b3bce8aa1b4ac7c7586f inherit pub_methods_a00202"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_a00197"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00197')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="a00197.html">view::IRead</a></td></tr>
-<tr class="memitem:a5491cd61ba8f067527535004e251f81a inherit pub_attribs_a00197"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(<a class="el" href="a00197.html">IRead</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00197.html#a5491cd61ba8f067527535004e251f81a">DoProcess</a></td></tr>
-<tr class="memdesc:a5491cd61ba8f067527535004e251f81a inherit pub_attribs_a00197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала для обработки строк.  <a href="#a5491cd61ba8f067527535004e251f81a">Подробнее...</a><br /></td></tr>
-<tr class="separator:a5491cd61ba8f067527535004e251f81a inherit pub_attribs_a00197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_a00202"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00202')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="a00202.html">view::IWrite</a></td></tr>
-<tr class="memitem:a8c80e0235b8dd5fbf242595f6d1911e5 inherit pub_attribs_a00202"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(<a class="el" href="a00202.html">IWrite</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html#a8c80e0235b8dd5fbf242595f6d1911e5">UpdateView</a></td></tr>
-<tr class="memdesc:a8c80e0235b8dd5fbf242595f6d1911e5 inherit pub_attribs_a00202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала для обновления объекта представления.  <a href="#a8c80e0235b8dd5fbf242595f6d1911e5">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8c80e0235b8dd5fbf242595f6d1911e5 inherit pub_attribs_a00202"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af5040b0aa0f465bb367c6d7b3b827132"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#af5040b0aa0f465bb367c6d7b3b827132">SetRegexString</a> (const String_t &amp;)=0</td></tr>
+<tr class="memdesc:af5040b0aa0f465bb367c6d7b3b827132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления регулярного выражения.  <a href="#af5040b0aa0f465bb367c6d7b3b827132">Подробнее...</a><br /></td></tr>
+<tr class="separator:af5040b0aa0f465bb367c6d7b3b827132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40111fbde225b3bce8aa1b4ac7c7586f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#a40111fbde225b3bce8aa1b4ac7c7586f">SetSourceStrings</a> (const Strings_t &amp;)=0</td></tr>
+<tr class="memdesc:a40111fbde225b3bce8aa1b4ac7c7586f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления списка обрабатываемых строк.  <a href="#a40111fbde225b3bce8aa1b4ac7c7586f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a40111fbde225b3bce8aa1b4ac7c7586f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a8c80e0235b8dd5fbf242595f6d1911e5"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(<a class="el" href="a00200.html">IWrite</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00200.html#a8c80e0235b8dd5fbf242595f6d1911e5">UpdateView</a></td></tr>
+<tr class="memdesc:a8c80e0235b8dd5fbf242595f6d1911e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала для обновления объекта представления.  <a href="#a8c80e0235b8dd5fbf242595f6d1911e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c80e0235b8dd5fbf242595f6d1911e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00064.html">Проект RegexTester</a> <br />
- Интерфейсный класс представления. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00067.html">Проект RegexTester</a> <br />
+ Интерфейс для записи данных модели в объект представления. </p>
+<ul>
+<li>Используется при запуске программы.</li>
+<li>Поскольку при запуске программы активны будут вкладка Match и 'Исходные строки', функции передачи других параметров не нужны.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>27 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Tools/RegexTester/RegexTester/View/<a class="el" href="a00889_source.html">IView.hpp</a></li>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="af5040b0aa0f465bb367c6d7b3b827132"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void view::IWrite::SetRegexString </td>
+          <td>(</td>
+          <td class="paramtype">const String_t &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция передачи объекту представления регулярного выражения. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="a00235.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView&lt; TPanel &gt;</a>, <a class="el" href="a00235.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView&lt; BasePanelReplace &gt;</a> и <a class="el" href="a00235.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView&lt; BasePanelMatchSearch &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40111fbde225b3bce8aa1b4ac7c7586f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void view::IWrite::SetSourceStrings </td>
+          <td>(</td>
+          <td class="paramtype">const Strings_t &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция передачи объекту представления списка обрабатываемых строк. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="a00235.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView&lt; TPanel &gt;</a>, <a class="el" href="a00235.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView&lt; BasePanelReplace &gt;</a> и <a class="el" href="a00235.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView&lt; BasePanelMatchSearch &gt;</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a8c80e0235b8dd5fbf242595f6d1911e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::signals2::signal&lt;void(<a class="el" href="a00200.html">IWrite</a> *)&gt; view::IWrite::UpdateView</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Объект сигнала для обновления объекта представления. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Tools/RegexTester/RegexTester/View/<a class="el" href="a00880_source.html">IWrite.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00200.html">IView</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:37. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00200.html">IWrite</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

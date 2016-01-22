@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс utilities::HotKey</title>
+<title>Addins: Класс wx::HtmlHelper</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2819 Architecture: x86.32 Build: 18:34 07 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,74 +111,46 @@ $(document).ready(function(){initNavTree('a00176.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01562.html">Полный список членов класса</a>  </div>
+<a href="a01857.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс utilities::HotKey</div>  </div>
+<div class="title">Класс wx::HtmlHelper<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01185.html">RegexTester</a> &raquo; <a class="el" href="a01189.html">View</a> &raquo; <a class="el" href="a01190.html">wxWidgets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00059.html">Проект UtilitiesProject</a> <br />
- Класс для работы с 'горячими' клавишами.  
+<p>Класс входит в <a class="el" href="a00067.html">Проект RegexTester</a> <br />
+ Класс отображения текста подсказки в html формате.  
  <a href="a00176.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00855_source.html">HotKey.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00891_source.html">HtmlHelper.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:wxHtmlWindow.</p>
 <div class="dynheader">
-Граф связей класса utilities::HotKey:</div>
+Граф связей класса wx::HtmlHelper:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01563.png" border="0" usemap="#utilities_1_1_hot_key_coll__map" alt="Collaboration graph"/></div>
-<map name="utilities_1_1_hot_key_coll__map" id="utilities_1_1_hot_key_coll__map">
+<div class="center"><img src="a01858.png" border="0" usemap="#wx_1_1_html_helper_coll__map" alt="Collaboration graph"/></div>
+<map name="wx_1_1_html_helper_coll__map" id="wx_1_1_html_helper_coll__map">
 </map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a8bdc01456ffd2dfae59dab106e12b12e"><td class="memItemLeft" align="right" valign="top">CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00176.html#a8bdc01456ffd2dfae59dab106e12b12e">GetText</a> (void) const </td></tr>
-<tr class="separator:a8bdc01456ffd2dfae59dab106e12b12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00059.html">Проект UtilitiesProject</a> <br />
- Класс для работы с 'горячими' клавишами. </p>
-<ul>
-<li>Предоставляет удобный и независимый от конкретной IDE интерфейс для формирования 'горячей' клавиши.</li>
-<li>В Debug версии к 'горячей' клавише добавляется Shift, чтобы не конфликтовали Debug и Release версии надстройки.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00067.html">Проект RegexTester</a> <br />
+ Класс отображения текста подсказки в html формате. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>14 Июнь 2015 <br />
- </dd></dl>
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>30 Ноябрь 2015 <br />
+</dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
-<h2>Пример использования: </h2>
-<p>Формирование 'горячей' клавиши 'Текстовый редактор::Alt+8': </p><div class="fragment"><div class="line"><span class="keyword">using</span> <a class="code" href="a00176.html">utilities::HotKey</a>;</div><div class="line">HotKey Alt_8 = HotKey::TextEditor + HotKey::Alt + <span class="charliteral">&#39;8&#39;</span>;</div></div><!-- fragment --> </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a8bdc01456ffd2dfae59dab106e12b12e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">CString HotKey::GetText </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Функция получения текстового представления 'горячей' клавиши для использования в Visual Studio. </p>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Utilities/Utilities/<a class="el" href="a00855_source.html">HotKey.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Utilities/Utilities/HotKey.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/<a class="el" href="a00891_source.html">HtmlHelper.hpp</a></li>
+<li>Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/HtmlHelper.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>utilities</b></li><li class="navelem"><a class="el" href="a00176.html">HotKey</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 7 Янв 2016 18:35:36. Создано системой
+    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00176.html">HtmlHelper</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:25. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

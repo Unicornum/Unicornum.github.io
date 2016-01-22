@@ -1,7 +1,8 @@
 var a00266 =
 [
-    [ "Section", "a00264.html", "a00264" ],
-    [ "Settings", "a00266.html#a208c74480ca165c4aaca2dbd95bfc5f5", null ],
-    [ "Load", "a00266.html#a857c203c594e96abf23c276f1dba1a77", null ],
-    [ "operator[]", "a00266.html#a7b8ed66cd28f58eba121951fb2797465", null ]
+    [ "AfterClosing", "a00266.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
+    [ "BeforeClosing", "a00266.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
+    [ "Opened", "a00266.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
+    [ "ProjectAdded", "a00266.html#a1729654adb306bca37aa34a328e3ebdd", null ],
+    [ "ProjectRemoved", "a00266.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
 ];

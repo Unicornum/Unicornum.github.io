@@ -1,5 +1,5 @@
 var namespaces =
 [
-    [ "connection_points", "a01127.html", null ],
-    [ "wrappers", "a01190.html", null ]
+    [ "connection_points", "a01116.html", null ],
+    [ "wrappers", "a01178.html", null ]
 ];

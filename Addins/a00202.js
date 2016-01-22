@@ -1,6 +1,5 @@
 var a00202 =
 [
-    [ "SetRegexString", "a00202.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
-    [ "SetSourceStrings", "a00202.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
-    [ "UpdateView", "a00202.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
+    [ "GetCount", "a00202.html#ac8eff1a845371263bb0176e42652a1ea", null ],
+    [ "operator[]", "a00202.html#a8fd9683edcdba66018fbc2a36b976f02", null ]
 ];

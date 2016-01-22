@@ -1,4 +1,5 @@
 var a00121 =
 [
-    [ "SetCheckActivate", "a00121.html#a6a3b678c3e7328018d99bb48b944ce51", null ]
+    [ "AddPopup", "a00121.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
+    [ "GetCount", "a00121.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
 ];

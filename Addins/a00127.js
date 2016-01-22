@@ -1,6 +1,6 @@
 var a00127 =
 [
-    [ "GetName", "a00127.html#ada1d4821134087994c4b47174d4a0dc8", null ],
-    [ "GetType", "a00127.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
-    [ "PROPERTY_GET", "a00127.html#a1a8fca27d2b23413c1e2530f0a1e4acf", null ]
+    [ "Commands", "a00127.html#a8273ee6ce9732a442b06ed151fca79f0", null ],
+    [ "Add", "a00127.html#a201e7ba9487eeb532555ec2c61e60edb", null ],
+    [ "GetItem", "a00127.html#a9a71fda817a3f6219f411beb7b8aa8c4", null ]
 ];

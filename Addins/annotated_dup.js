@@ -1,232 +1,221 @@
 var annotated_dup =
 [
     [ "app", null, [
-      [ "Main", "a00208.html", null ]
+      [ "Main", "a00204.html", null ]
     ] ],
-    [ "connection_points", "a01127.html", "a01127" ],
+    [ "connection_points", "a01116.html", "a01116" ],
     [ "controller", null, [
-      [ "BlockingSignal", "a00106.html", "a00106" ],
-      [ "Controller", "a00132.html", null ],
-      [ "DoProcess", "a00158.html", null ],
-      [ "DoUpdate", "a00161.html", null ]
+      [ "BlockingSignal", "a00109.html", "a00109" ],
+      [ "Controller", "a00134.html", null ],
+      [ "DoProcess", "a00157.html", null ],
+      [ "DoUpdate", "a00160.html", null ]
     ] ],
     [ "core", null, [
       [ "connection_commands", null, [
-        [ "CreateCommands", "a00138.html", null ],
-        [ "Data", "a00146.html", null ],
-        [ "DestroyCommands", "a00148.html", null ],
-        [ "DoExecute", "a00155.html", null ],
-        [ "DoQueryStatus", "a00159.html", null ],
-        [ "NeedActivateCommand", "a00220.html", null ],
-        [ "Perform", "a00239.html", null ]
+        [ "CreateCommands", "a00140.html", null ],
+        [ "Data", "a00145.html", null ],
+        [ "DestroyCommands", "a00147.html", null ],
+        [ "DoExecute", "a00154.html", null ],
+        [ "DoQueryStatus", "a00158.html", null ],
+        [ "NeedActivateCommand", "a00218.html", null ],
+        [ "Perform", "a00237.html", null ]
       ] ],
       [ "useful_commands", null, [
+        [ "common", null, [
+          [ "ICommand", "a00178.html", "a00178" ],
+          [ "IMenuCommand", "a00180.html", "a00180" ]
+        ] ],
         [ "vs", null, [
           [ "common", null, [
-            [ "ClearLog", "a00112.html", "a00112" ],
-            [ "OpenLog", "a00225.html", "a00225" ],
-            [ "Unknown", "a00295.html", "a00295" ]
+            [ "ClearLog", "a00115.html", "a00115" ],
+            [ "MenuUnknown", "a00214.html", "a00214" ],
+            [ "OpenLog", "a00223.html", "a00223" ],
+            [ "Unknown", "a00289.html", "a00289" ]
           ] ],
           [ "documentation", null, [
             [ "doxygen", null, [
-              [ "DoPrefatory", "a00157.html", "a00157" ],
-              [ "DoRun", "a00160.html", "a00160" ]
+              [ "DoPrefatory", "a00156.html", "a00156" ],
+              [ "DoRun", "a00159.html", "a00159" ]
             ] ],
-            [ "DoBuildResultToHtml", "a00149.html", "a00149" ],
-            [ "DoOpen", "a00156.html", "a00156" ],
-            [ "GenerateSolutionDoc", "a00174.html", "a00174" ]
+            [ "DoBuildResultToHtml", "a00148.html", "a00148" ],
+            [ "DoOpen", "a00155.html", "a00155" ],
+            [ "GenerateSolutionDoc", "a00172.html", null ]
           ] ],
           [ "properties", null, [
-            [ "AddSolutionPropsToProject", "a00098.html", "a00098" ],
-            [ "CheckExistencePropertiesFile", "a00110.html", null ],
-            [ "RemoveSolutionPropsFromProject", "a00259.html", "a00259" ],
-            [ "SettingsValue", "a00267.html", "a00267" ]
+            [ "AddSolutionPropsToProject", "a00101.html", "a00101" ],
+            [ "CheckExistencePropertiesFile", "a00113.html", null ],
+            [ "RemoveSolutionPropsFromProject", "a00257.html", "a00257" ],
+            [ "SettingsValue", "a00262.html", "a00262" ]
           ] ],
           [ "startup", null, [
-            [ "ConstructSettings", "a00131.html", null ],
-            [ "CopyUsertypeFile", "a00133.html", null ],
-            [ "CreateDefaultSettings", "a00139.html", "a00139" ],
-            [ "CreateExtraSettings", "a00140.html", "a00140" ],
-            [ "CreateSectionSettings", "a00141.html", "a00141" ],
-            [ "DeleteLostCommand", "a00147.html", null ],
-            [ "LoadSettings", "a00205.html", null ],
-            [ "OutputHostInfo", "a00230.html", null ]
+            [ "CopyUsertypeFile", "a00135.html", null ],
+            [ "DeleteLostCommand", "a00146.html", null ],
+            [ "OutputHostInfo", "a00228.html", null ]
+          ] ],
+          [ "tags", null, [
+            [ "DocumentProject", "a00152.html", "a00152" ],
+            [ "File", "a00171.html", "a00171" ],
+            [ "ITagValue", "a00197.html", "a00197" ],
+            [ "SelectedText", "a00261.html", "a00261" ],
+            [ "Solution", "a00263.html", "a00263" ],
+            [ "SolutionProject", "a00271.html", "a00271" ],
+            [ "Tag", "a00278.html", "a00278" ],
+            [ "Text", "a00283.html", "a00283" ]
+          ] ],
+          [ "testing", null, [
+            [ "AddSolutionTest", "a00102.html", "a00102" ]
           ] ],
           [ "utilities", null, [
-            [ "OpenSettings", "a00228.html", "a00228" ]
+            [ "OpenRegExWindow", "a00225.html", "a00225" ],
+            [ "OpenSettings", "a00226.html", "a00226" ]
           ] ],
           [ "version", null, [
-            [ "ConnectVersionResource", "a00129.html", null ],
-            [ "UpdateRevision", "a00297.html", "a00297" ]
+            [ "ConnectVersionResource", "a00132.html", null ],
+            [ "UpdateRevision", "a00290.html", "a00290" ]
           ] ]
         ] ]
       ] ]
     ] ],
     [ "EnvDTE", null, [
-      [ "DTEEmpty", "a00168.html", null ]
+      [ "DTEEmpty", "a00167.html", null ]
     ] ],
     [ "menu", null, [
-      [ "IMenuImpl", "a00183.html", "a00183" ],
-      [ "Menu", "a00215.html", "a00215" ],
-      [ "Type", "a00292.html", null ]
+      [ "IMenuImpl", "a00181.html", "a00181" ],
+      [ "Menu", "a00212.html", "a00212" ],
+      [ "Type", "a00286.html", null ]
     ] ],
     [ "mock", null, [
       [ "progress", null, [
-        [ "Doxygen", "a00163.html", null ]
+        [ "Doxygen", "a00162.html", null ]
       ] ]
     ] ],
     [ "model", null, [
-      [ "Common", "a00126.html", "a00126" ],
-      [ "Data", "a00144.html", "a00144" ],
-      [ "IModel", "a00184.html", "a00184" ],
-      [ "Match", "a00214.html", "a00214" ],
-      [ "Model", "a00219.html", null ],
-      [ "Replace", "a00260.html", "a00260" ],
-      [ "Search", "a00263.html", "a00263" ]
-    ] ],
-    [ "settings", null, [
-      [ "Settings", "a00266.html", "a00266" ]
+      [ "Common", "a00129.html", "a00129" ],
+      [ "Data", "a00143.html", "a00143" ],
+      [ "IModel", "a00182.html", "a00182" ],
+      [ "Match", "a00211.html", "a00211" ],
+      [ "Model", "a00217.html", null ],
+      [ "Replace", "a00258.html", "a00258" ],
+      [ "Search", "a00260.html", "a00260" ]
     ] ],
     [ "support", null, [
-      [ "Data", "a00145.html", "a00145" ],
-      [ "Main", "a00209.html", null ]
+      [ "Data", "a00144.html", "a00144" ],
+      [ "Main", "a00205.html", null ]
     ] ],
     [ "useful_commands", null, [
       [ "vs", null, [
         [ "common", null, [
-          [ "OpenDocAddins", "a00223.html", "a00223" ],
-          [ "VersionAddins", "a00308.html", "a00308" ]
+          [ "OpenDocAddins", "a00221.html", "a00221" ],
+          [ "VersionAddins", "a00301.html", "a00301" ]
         ] ],
         [ "doxygen", null, [
-          [ "filter", null, [
-            [ "Empty", "a00169.html", "a00169" ],
-            [ "SolutionPath", "a00276.html", "a00276" ]
-          ] ],
-          [ "AddDescription", "a00093.html", "a00093" ],
-          [ "DocumentHelper", "a00151.html", "a00151" ],
-          [ "IncreaseSubsubversion", "a00186.html", null ],
-          [ "IncreaseSubversion", "a00187.html", null ],
-          [ "IncreaseVersion", "a00188.html", null ],
-          [ "IncreaseVersionCommon", "a00189.html", "a00189" ],
-          [ "OpenDoc", "a00222.html", "a00222" ],
-          [ "OpenDoxygenDoc", "a00224.html", "a00224" ],
-          [ "OpenOwnLibsDoc", "a00226.html", "a00226" ],
-          [ "OpenSolutionDoc", "a00229.html", "a00229" ]
+          [ "AddDescription", "a00096.html", "a00096" ],
+          [ "DocumentHelper", "a00150.html", "a00150" ],
+          [ "IncreaseSubsubversion", "a00184.html", null ],
+          [ "IncreaseSubversion", "a00185.html", null ],
+          [ "IncreaseVersion", "a00186.html", null ],
+          [ "IncreaseVersionCommon", "a00187.html", "a00187" ],
+          [ "OpenDoc", "a00220.html", "a00220" ],
+          [ "OpenDoxygenDoc", "a00222.html", "a00222" ],
+          [ "OpenOwnLibsDoc", "a00224.html", "a00224" ],
+          [ "OpenSolutionDoc", "a00227.html", "a00227" ]
         ] ],
         [ "macros", null, [
-          [ "CommentLineBreak", "a00125.html", "a00125" ],
-          [ "InsertPragmaMessage", "a00190.html", "a00190" ],
-          [ "InsertTextBlank", "a00191.html", "a00191" ]
+          [ "CommentLineBreak", "a00128.html", "a00128" ],
+          [ "InsertPragmaMessage", "a00188.html", "a00188" ],
+          [ "InsertTextBlank", "a00189.html", "a00189" ]
         ] ],
         [ "testing", null, [
-          [ "AddClassTest", "a00092.html", "a00092" ],
-          [ "AddProjectTest", "a00096.html", "a00096" ],
-          [ "AddSolutionTest", "a00099.html", "a00099" ],
-          [ "AddTemplateTest", "a00100.html", "a00100" ],
-          [ "ClassInfo", "a00111.html", "a00111" ],
-          [ "ProjectInfo", "a00245.html", "a00245" ],
-          [ "TestClassBlank", "a00286.html", "a00286" ],
-          [ "TestClassProject", "a00287.html", "a00287" ]
+          [ "AddClassTest", "a00095.html", "a00095" ],
+          [ "AddProjectTest", "a00099.html", "a00099" ],
+          [ "AddTemplateTest", "a00103.html", "a00103" ],
+          [ "ClassInfo", "a00114.html", "a00114" ],
+          [ "ProjectInfo", "a00243.html", "a00243" ],
+          [ "TestClassBlank", "a00280.html", "a00280" ],
+          [ "TestClassProject", "a00281.html", "a00281" ]
         ] ],
         [ "utilities", null, [
-          [ "AddSelectedTextToUsertypeFile", "a00097.html", "a00097" ],
-          [ "AStyleProcess", "a00102.html", "a00102" ],
-          [ "CppCheckSolutionQuickProcess", "a00137.html", "a00137" ],
-          [ "OpenRegExWindow", "a00227.html", "a00227" ]
+          [ "AddSelectedTextToUsertypeFile", "a00100.html", "a00100" ],
+          [ "AStyleProcess", "a00105.html", "a00105" ],
+          [ "CppCheckSolutionQuickProcess", "a00139.html", "a00139" ]
         ] ],
-        [ "Test", "a00285.html", "a00285" ],
-        [ "Unknown", "a00296.html", "a00296" ]
+        [ "Test", "a00279.html", "a00279" ]
       ] ],
-      [ "Commands", "a00123.html", "a00123" ],
-      [ "ICommand", "a00180.html", "a00180" ],
-      [ "IMenuCommand", "a00182.html", "a00182" ],
-      [ "UnionCommand", "a00293.html", "a00293" ]
+      [ "Commands", "a00126.html", "a00126" ],
+      [ "UnionCommand", "a00287.html", "a00287" ]
     ] ],
     [ "utilities", null, [
       [ "dialog", null, [
         [ "progress", null, [
-          [ "Marquee", "a00213.html", "a00213" ],
-          [ "Mfc", "a00218.html", "a00218" ],
-          [ "None", "a00221.html", "a00221" ],
-          [ "Percent", "a00238.html", null ]
+          [ "Marquee", "a00210.html", "a00210" ],
+          [ "Mfc", "a00216.html", "a00216" ],
+          [ "None", "a00219.html", "a00219" ],
+          [ "Percent", "a00236.html", null ]
         ] ]
       ] ],
       [ "doxygen", null, [
-        [ "Prefatory", "a00241.html", "a00241" ]
+        [ "Prefatory", "a00239.html", "a00239" ]
       ] ],
       [ "environment_variables", null, [
-        [ "Doxygen", "a00164.html", "a00164" ],
-        [ "Empty", "a00170.html", null ],
-        [ "Main", "a00207.html", "a00207" ]
+        [ "Doxygen", "a00163.html", "a00163" ],
+        [ "Empty", "a00168.html", null ],
+        [ "Main", "a00206.html", "a00206" ]
       ] ],
       [ "execute", null, [
-        [ "CppCheck", "a00135.html", "a00135" ],
-        [ "Doxygen", "a00165.html", "a00165" ],
-        [ "Main", "a00210.html", null ],
-        [ "Svn", "a00282.html", "a00282" ],
-        [ "SvnInfo", "a00283.html", "a00283" ]
+        [ "CppCheck", "a00137.html", "a00137" ],
+        [ "Doxygen", "a00164.html", "a00164" ],
+        [ "Main", "a00207.html", null ],
+        [ "Svn", "a00276.html", "a00276" ],
+        [ "SvnInfo", "a00277.html", "a00277" ]
       ] ],
       [ "filter", null, [
-        [ "CppCheck", "a00136.html", "a00136" ],
-        [ "Doxygen", "a00166.html", "a00166" ],
-        [ "Empty", "a00171.html", null ]
+        [ "CppCheck", "a00138.html", "a00138" ],
+        [ "Doxygen", "a00165.html", "a00165" ],
+        [ "Empty", "a00169.html", null ]
       ] ],
       [ "progress", null, [
-        [ "ConsoleProgram", "a00130.html", "a00130" ],
-        [ "CppCheck", "a00134.html", null ],
-        [ "Doxygen", "a00162.html", null ],
-        [ "IProgress", "a00192.html", "a00192" ],
-        [ "Svn", "a00281.html", null ]
-      ] ],
-      [ "tags", null, [
-        [ "vs", null, [
-          [ "DocumentProject", "a00153.html", "a00153" ],
-          [ "File", "a00173.html", "a00173" ],
-          [ "ITagValue", "a00199.html", "a00199" ],
-          [ "SelectedText", "a00265.html", "a00265" ],
-          [ "Solution", "a00268.html", "a00268" ],
-          [ "SolutionProject", "a00277.html", "a00277" ],
-          [ "Tag", "a00284.html", "a00284" ],
-          [ "Text", "a00288.html", "a00288" ]
-        ] ]
+        [ "ConsoleProgram", "a00133.html", "a00133" ],
+        [ "CppCheck", "a00136.html", null ],
+        [ "Doxygen", "a00161.html", null ],
+        [ "IProgress", "a00190.html", "a00190" ],
+        [ "Svn", "a00275.html", null ]
       ] ],
       [ "vs", null, [
-        [ "Data", "a00143.html", null ],
-        [ "LoggerProxy", "a00206.html", "a00206" ],
-        [ "Message", "a00217.html", null ],
-        [ "ReplaceTag", "a00261.html", "a00261" ],
-        [ "Report", "a00262.html", "a00262" ]
+        [ "Data", "a00142.html", null ],
+        [ "LoggerProxy", "a00203.html", "a00203" ],
+        [ "Message", "a00215.html", null ],
+        [ "Report", "a00259.html", "a00259" ]
       ] ],
-      [ "HotKey", "a00176.html", "a00176" ],
-      [ "Text", "a00289.html", null ],
-      [ "Version", "a00307.html", "a00307" ],
-      [ "VersionResource", "a00309.html", "a00309" ]
+      [ "HotKey", "a00174.html", "a00174" ],
+      [ "Text", "a00282.html", null ],
+      [ "Version", "a00300.html", "a00300" ],
+      [ "VersionResource", "a00302.html", "a00302" ]
     ] ],
     [ "view", null, [
-      [ "IRead", "a00197.html", "a00197" ],
-      [ "IView", "a00200.html", null ],
-      [ "IViewImpl", "a00201.html", null ],
-      [ "IWrite", "a00202.html", "a00202" ],
-      [ "View", "a00310.html", null ]
+      [ "IRead", "a00195.html", "a00195" ],
+      [ "IView", "a00198.html", null ],
+      [ "IViewImpl", "a00199.html", null ],
+      [ "IWrite", "a00200.html", "a00200" ],
+      [ "View", "a00303.html", null ]
     ] ],
-    [ "wrappers", "a01190.html", "a01190" ],
+    [ "wrappers", "a01178.html", "a01178" ],
     [ "wx", null, [
-      [ "AppFrame", "a00101.html", null ],
-      [ "BasePanelMatchSearch", "a00104.html", null ],
-      [ "BasePanelReplace", "a00105.html", null ],
-      [ "HtmlAbout", "a00177.html", null ],
-      [ "HtmlHelper", "a00178.html", null ],
-      [ "HtmlResultBuilder", "a00179.html", "a00179" ],
-      [ "MainFrame", "a00211.html", null ],
-      [ "MenuPanel", "a00216.html", null ],
-      [ "PanelMatch", "a00234.html", "a00234" ],
-      [ "PanelReplace", "a00235.html", "a00235" ],
-      [ "PanelSearch", "a00236.html", "a00236" ],
-      [ "PanelView", "a00237.html", "a00237" ]
+      [ "AppFrame", "a00104.html", null ],
+      [ "BasePanelMatchSearch", "a00107.html", null ],
+      [ "BasePanelReplace", "a00108.html", null ],
+      [ "HtmlAbout", "a00175.html", null ],
+      [ "HtmlHelper", "a00176.html", null ],
+      [ "HtmlResultBuilder", "a00177.html", "a00177" ],
+      [ "MainFrame", "a00208.html", null ],
+      [ "MenuPanel", "a00213.html", null ],
+      [ "PanelMatch", "a00232.html", "a00232" ],
+      [ "PanelReplace", "a00233.html", "a00233" ],
+      [ "PanelSearch", "a00234.html", "a00234" ],
+      [ "PanelView", "a00235.html", "a00235" ]
     ] ],
-    [ "BuildEvents", "a00108.html", "a00108" ],
-    [ "CConnect", "a00109.html", "a00109" ],
-    [ "CMainDllApp", "a00113.html", null ],
-    [ "CommandManager", "a00122.html", "a00122" ],
-    [ "SolutionEvents", "a00270.html", "a00270" ]
+    [ "BuildEvents", "a00111.html", "a00111" ],
+    [ "CConnect", "a00112.html", "a00112" ],
+    [ "CMainDllApp", "a00116.html", null ],
+    [ "CommandManager", "a00124.html", "a00124" ],
+    [ "SolutionEvents", "a00266.html", "a00266" ]
 ];

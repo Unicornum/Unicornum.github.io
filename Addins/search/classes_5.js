@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file',['File',['../a00173.html',1,'utilities::tags::vs']]]
+  ['file',['File',['../a00171.html',1,'core::useful_commands::vs::tags']]]
 ];

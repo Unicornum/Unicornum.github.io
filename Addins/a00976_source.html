@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>Addins: Исходный файл Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/PanelMatch.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/Configurations.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.11 Revision: 2758 Architecture: x86.32 Build: 19:29 23 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -42,7 +42,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -109,52 +109,23 @@ $(document).ready(function(){initNavTree('a00976_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PanelMatch.hpp</div>  </div>
+<div class="title">Configurations.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Generated.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;PanelView.hpp&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;HtmlResultBuilder.hpp&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01263.html">wx</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a00312.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00312.html">PanelMatch</a> final :</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00315.html">PanelView</a>&lt;BasePanelMatchSearch&gt;,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00258.html">HtmlResultBuilder</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">using</span> Data_t = ::std::vector&lt;::support::Data&gt;;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">using</span> String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Интерфейс view::IRead:</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00312.html#acf07909284b3dcc712fd11ecb8bc6496">SetProcessedData</a>(<span class="keyword">const</span> Data_t &amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> BuildSourceStringInfo(const ::support::Data &amp;, wxString &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> BuildSourceString(<span class="keyword">const</span> String_t &amp;, <span class="keyword">const</span> String_t &amp;, wxString &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="a00312.html">PanelMatch</a>(wxWindow *, wxWindowID, <span class="keyword">const</span> wxPoint &amp;, <span class="keyword">const</span> wxSize &amp;, <span class="keywordtype">long</span>);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace wx</span></div>
-<div class="ttc" id="a00312_html_acf07909284b3dcc712fd11ecb8bc6496"><div class="ttname"><a href="a00312.html#acf07909284b3dcc712fd11ecb8bc6496">wx::PanelMatch::SetProcessedData</a></div><div class="ttdeci">void SetProcessedData(const Data_t &amp;) override</div><div class="ttdoc">Функция передачи объекту представления обработанных данных. </div><div class="ttdef"><b>Definition:</b> PanelMatch.cpp:13</div></div>
-<div class="ttc" id="a00315_html"><div class="ttname"><a href="a00315.html">wx::PanelView</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Базовый класс панелей главного tabctrl&#39;a окна программы...</div><div class="ttdef"><b>Definition:</b> PanelView.hpp:36</div></div>
-<div class="ttc" id="a00312_html"><div class="ttname"><a href="a00312.html">wx::PanelMatch</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Класс панели создания регулярного выражения для совпадения...</div><div class="ttdef"><b>Definition:</b> PanelMatch.hpp:25</div></div>
-<div class="ttc" id="a00258_html"><div class="ttname"><a href="a00258.html">wx::HtmlResultBuilder</a></div><div class="ttdoc">Класс входит в Проект RegexTester   Класс построения результата обработки в виде html таблицы...</div><div class="ttdef"><b>Definition:</b> HtmlResultBuilder.hpp:24</div></div>
-<div class="ttc" id="a01263_html"><div class="ttname"><a href="a01263.html">wx</a></div><div class="ttdef"><b>Definition:</b> AppFrame.hpp:12</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01150.html">wrappers</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>Configuration;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00131.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00131.html">Configurations</a> : <span class="keyword">public</span> <a class="code" href="a00291.html">VCCollection</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="a00130.html">Configuration</a> <a class="code" href="a00131.html#a0036fdc937ebb1ac612c05fa377ea770">operator[] </a>(<span class="keywordtype">long</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="a00130.html">Configuration</a> <a class="code" href="a00131.html#a0036fdc937ebb1ac612c05fa377ea770">operator[] </a>(<span class="keyword">const</span> CString &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="a00131.html">Configurations</a>(<span class="keyword">const</span> ComPtr_t &amp;);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  ~<a class="code" href="a00131.html">Configurations</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace wrappers</span></div><div class="ttc" id="a00291_html"><div class="ttname"><a href="a00291.html">wrappers::vs::VCCollection</a></div><div class="ttdoc">Класс входит в Проект Common   Шаблон базового класса набора свойств. </div><div class="ttdef"><b>Definition:</b> VCCollection.hpp:29</div></div>
+<div class="ttc" id="a00130_html"><div class="ttname"><a href="a00130.html">wrappers::vs::Configuration</a></div><div class="ttdoc">Класс входит в Проект Configuration   Класс для работы с конфигурацией проекта. </div><div class="ttdef"><b>Definition:</b> Configuration.hpp:27</div></div>
+<div class="ttc" id="a01150_html"><div class="ttname"><a href="a01150.html">mock::wrappers</a></div><div class="ttdef"><b>Definition:</b> Data.mock.hpp:10</div></div>
+<div class="ttc" id="a00131_html"><div class="ttname"><a href="a00131.html">wrappers::vs::Configurations</a></div><div class="ttdoc">Класс входит в Проект Configuration   Класс для доступа к списку конфигураций проекта. </div><div class="ttdef"><b>Definition:</b> Configurations.hpp:26</div></div>
+<div class="ttc" id="a00131_html_a0036fdc937ebb1ac612c05fa377ea770"><div class="ttname"><a href="a00131.html#a0036fdc937ebb1ac612c05fa377ea770">wrappers::vs::Configurations::operator[]</a></div><div class="ttdeci">Configuration operator[](long) const </div><div class="ttdoc">Оператор доступа к конфигурации по индексу. </div><div class="ttdef"><b>Definition:</b> Configurations.cpp:28</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_89a023a0cdd7056365d23f3f97bddae3.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_4d0571eb7ed137673ab07aff89e47909.html">RegexTester</a></li><li class="navelem"><a class="el" href="dir_35e469d4030ab18f4e85f94a313f50f6.html">View</a></li><li class="navelem"><a class="el" href="dir_dc658f9dce0a311db84303db44147e8d.html">wxWidgets</a></li><li class="navelem"><b>PanelMatch.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 23 Дек 2015 19:30:22. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6286ca65141999c3454cfc128243a7c6.html">Configuration</a></li><li class="navelem"><a class="el" href="dir_f6358a5537d15380207bce6b41615bce.html">Configuration</a></li><li class="navelem"><b>Configurations.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:21. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

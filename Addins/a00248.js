@@ -1,7 +1,6 @@
 var a00248 =
 [
-    [ "Add", "a00248.html#a0012b4e75c23ff1d15dd20b015c382f8", null ],
-    [ "GetActiveProject", "a00248.html#ab65c3c5fd33d48525282e5a2ee117845", null ],
-    [ "GetCount", "a00248.html#ad3a9bb60ba293784d8c7babbc45aba70", null ],
-    [ "GetProject", "a00248.html#a226a79cb9b399e8d95c23e8c339a979c", null ]
+    [ "PropertySheet2012", "a00248.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
+    [ "GetPathToFile", "a00248.html#a7930a5bc2066899ea7834758ef47556f", null ],
+    [ "Remove", "a00248.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
 ];

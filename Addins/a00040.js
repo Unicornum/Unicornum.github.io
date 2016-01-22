@@ -1,7 +1,7 @@
 var a00040 =
 [
-    [ "Введение", "a00040.html#sCoreUsefulCommandsVSVersionBrief", [
-      [ "Список задач проекта", "a00040.html#ssCoreUsefulCommandsVSVersionTasks", null ]
+    [ "Введение", "a00040.html#sCoreUcVsSupportPartBrief", [
+      [ "Проекты раздела", "a00040.html#ssCoreUcVsSupportPartProjects", null ]
     ] ],
-    [ "Список задач проекта", "a00041.html", null ]
+    [ "Проект Tags", "a00041.html", "a00041" ]
 ];
