@@ -1,5 +1,6 @@
 var a00190 =
 [
-    [ "DoProcess", "a00190.html#a5d04d77bf55c572a3297c2ff67198678", null ],
-    [ "IsEnded", "a00190.html#a1650f8c64edbb695f3c3b2e55b4d53f7", null ]
+    [ "GetCaption", "a00190.html#aeadc45279201876deba468080f265e90", null ],
+    [ "GetHotKey", "a00190.html#a8b37da1f657bf32132fcd811b626e81a", null ],
+    [ "IsEnabled", "a00190.html#adf7ae5ef3739097507185cd921544dfd", null ]
 ];

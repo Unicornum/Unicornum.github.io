@@ -1,4 +1,5 @@
 var a00258 =
 [
-    [ "DoLocalProcess", "a00258.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f", null ]
+    [ "WasFoundNext", "a00258.html#a094a112ede90e57b8e3504addf0bffb4", null ],
+    [ "WasNoFound", "a00258.html#a91bd97971ab02faae49491dc5f0f558b", null ]
 ];

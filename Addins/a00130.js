@@ -1,6 +1,4 @@
 var a00130 =
 [
-    [ "GetName", "a00130.html#ada1d4821134087994c4b47174d4a0dc8", null ],
-    [ "GetType", "a00130.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
-    [ "PROPERTY_GET", "a00130.html#a1a8fca27d2b23413c1e2530f0a1e4acf", null ]
+    [ "DoProcess", "a00130.html#a0abb8e6669ac19141bc9a1b86216df97", null ]
 ];

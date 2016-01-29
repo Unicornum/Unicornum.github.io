@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['version_2ehpp',['Version.hpp',['../a00763.html',1,'']]],
-  ['version_2ehpp',['Version.hpp',['../a00765.html',1,'']]],
-  ['version_2einside_2ehpp',['Version.inside.hpp',['../a00766.html',1,'']]],
-  ['version_2emock_2ehpp',['Version.mock.hpp',['../a00767.html',1,'']]],
-  ['visualstudio_2ehpp',['VisualStudio.hpp',['../a00774.html',1,'']]],
-  ['visualstudio_2einside_2ehpp',['VisualStudio.inside.hpp',['../a00776.html',1,'']]],
-  ['visualstudio_2einside_2ehpp',['VisualStudio.inside.hpp',['../a00777.html',1,'']]]
+  ['usefulcommands_2einside_2ehpp',['UsefulCommands.inside.hpp',['../a00619.html',1,'']]],
+  ['utilities_2ehpp',['Utilities.hpp',['../a00741.html',1,'']]],
+  ['utilities_2einside_2ehpp',['Utilities.inside.hpp',['../a00744.html',1,'']]],
+  ['utilities_2emock_2ehpp',['Utilities.mock.hpp',['../a00746.html',1,'']]]
 ];

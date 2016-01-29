@@ -1,6 +1,7 @@
 var a00041 =
 [
-    [ "Введение", "a00041.html#CoreUcVsSupportTagsBrief", null ],
-    [ "Подробное описание проекта", "a00041.html#CoreUcVsSupportTagsDetails", null ],
-    [ "Список задач проекта", "a00042.html", null ]
+    [ "Введение", "a00041.html#sCoreUcVsSupportPartBrief", [
+      [ "Проекты раздела", "a00041.html#ssCoreUcVsSupportPartProjects", null ]
+    ] ],
+    [ "Проект Tags", "a00042.html", "a00042" ]
 ];

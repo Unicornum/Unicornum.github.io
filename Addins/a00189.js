@@ -1,6 +1,6 @@
 var a00189 =
 [
-    [ "GetCaption", "a00189.html#a3f840e8e0fdb677f60df2a0feed3f9dc", null ],
-    [ "GetHotKey", "a00189.html#a95e2230fbf4faf2694b3b3f52e81e715", null ],
-    [ "IsEnabled", "a00189.html#a3db378e345242423e2e518555c1987da", null ]
+    [ "GetCaption", "a00189.html#a9edd2c2b7f26c3570d4e0ee7fc2beae7", null ],
+    [ "GetHotKey", "a00189.html#aee25232ff4a57fae61cac95edb6edc62", null ],
+    [ "IsEnabled", "a00189.html#ad385bc3596e1107b7282e76b23e9343f", null ]
 ];

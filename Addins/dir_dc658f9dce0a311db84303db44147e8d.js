@@ -10,6 +10,6 @@ var dir_dc658f9dce0a311db84303db44147e8d =
     [ "PanelReplace.hpp", "a00897_source.html", null ],
     [ "PanelSearch.hpp", "a00899_source.html", null ],
     [ "PanelView.hpp", "a00900_source.html", null ],
-    [ "stdafx.h", "a00483_source.html", null ],
+    [ "stdafx.h", "a00480_source.html", null ],
     [ "TextCtrlReplaceSpace.hpp", "a00903_source.html", null ]
 ];

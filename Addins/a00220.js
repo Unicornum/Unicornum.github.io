@@ -1,5 +1,5 @@
 var a00220 =
 [
-    [ "OpenDoc", "a00220.html#a23d5a534f67c7c2c6cfaf1a0478c7b56", null ],
-    [ "IsEnabled", "a00220.html#aab9a6cfe59592c1b7cf840c4a28d7e96", null ]
+    [ "None", "a00220.html#a82442d3bdcb7eeb40dc06768ddca38ea", null ],
+    [ "ShowModal", "a00220.html#ab989232c084654ae6996038a88f35025", null ]
 ];

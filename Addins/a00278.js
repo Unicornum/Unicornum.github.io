@@ -1,5 +1,5 @@
 var a00278 =
 [
-    [ "Tag", "a00278.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
-    [ "GetCaption", "a00278.html#a21ce3a76b5870765f7b503b4318f4df8", null ]
+    [ "SvnInfo", "a00278.html#afbe6155b781c22ca9970f58db8ba04db", null ],
+    [ "GetRevision", "a00278.html#a4f6216fcd912a1b4216ae5587ce17827", null ]
 ];

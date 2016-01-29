@@ -5,5 +5,5 @@ var a00022 =
     [ "Проект ConnectionCommands", "a00023.html", "a00023" ],
     [ "Проект Menu", "a00025.html", "a00025" ],
     [ "Раздел UsefulCommands", "a00027.html", "a00027" ],
-    [ "Раздел Utilities", "a00049.html", "a00049" ]
+    [ "Раздел Utilities", "a00050.html", "a00050" ]
 ];

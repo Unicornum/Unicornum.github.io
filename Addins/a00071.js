@@ -1,7 +1,10 @@
 var a00071 =
 [
-    [ "Введение", "a00071.html#sHelperBrief", [
-      [ "Список задач проекта", "a00071.html#ssHelperTasks", null ]
+    [ "Введение", "a00071.html#sWrappersBrief", null ],
+    [ "Проекты раздела", "a00071.html#sWrappersDetails", [
+      [ "Раздел VisualStudio", "a00071.html#ssWrappersVisualStudio", null ],
+      [ "Проект Helper", "a00071.html#ssHelper", null ]
     ] ],
-    [ "Список задач проекта", "a00072.html", null ]
+    [ "Раздел VisualStudio", "a00074.html", "a00074" ],
+    [ "Проект Helper", "a00072.html", "a00072" ]
 ];

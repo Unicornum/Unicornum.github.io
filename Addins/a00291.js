@@ -1,5 +1,4 @@
 var a00291 =
 [
-    [ "GetCount", "a00291.html#aa154e70c4f4beb10408ebd7639ddd71e", null ],
-    [ "GetElement", "a00291.html#aa3d0f9502c74d80fa41f920314db0f81", null ]
+    [ "IsEnabled", "a00291.html#adf476033bc2dc4304bac28cba75f3185", null ]
 ];

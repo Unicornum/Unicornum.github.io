@@ -1,6 +1,6 @@
 var a00128 =
 [
-    [ "GetCaption", "a00128.html#a91652a0cc22bd7081948c46605230075", null ],
-    [ "GetHotKey", "a00128.html#a02367e73d733db8b4d8efbd70f5bed1c", null ],
-    [ "IsEnabled", "a00128.html#a6bf0014226bbeaf650d63813b203c1e0", null ]
+    [ "Commands", "a00128.html#a8273ee6ce9732a442b06ed151fca79f0", null ],
+    [ "Add", "a00128.html#a201e7ba9487eeb532555ec2c61e60edb", null ],
+    [ "GetItem", "a00128.html#a9a71fda817a3f6219f411beb7b8aa8c4", null ]
 ];

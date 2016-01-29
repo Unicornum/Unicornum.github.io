@@ -1,4 +1,5 @@
 var a00203 =
 [
-    [ "operator=", "a00203.html#a17780b4769971be6e974544f47de2085", null ]
+    [ "GetCount", "a00203.html#ac8eff1a845371263bb0176e42652a1ea", null ],
+    [ "operator[]", "a00203.html#a8fd9683edcdba66018fbc2a36b976f02", null ]
 ];

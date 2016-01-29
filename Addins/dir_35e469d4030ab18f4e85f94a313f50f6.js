@@ -5,6 +5,6 @@ var dir_35e469d4030ab18f4e85f94a313f50f6 =
     [ "IView.hpp", "a00878_source.html", null ],
     [ "IViewImpl.hpp", "a00879_source.html", null ],
     [ "IWrite.hpp", "a00880_source.html", null ],
-    [ "stdafx.h", "a00482_source.html", null ],
+    [ "stdafx.h", "a00479_source.html", null ],
     [ "View.hpp", "a00882_source.html", null ]
 ];

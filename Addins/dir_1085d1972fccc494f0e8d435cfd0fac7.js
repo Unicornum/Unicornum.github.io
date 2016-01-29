@@ -7,8 +7,8 @@ var dir_1085d1972fccc494f0e8d435cfd0fac7 =
     [ "Service.hpp", "a00960_source.html", null ],
     [ "SolutionFolderHelper.hpp", "a00962_source.html", null ],
     [ "SolutionFolderHelper.mock.hpp", "a00963_source.html", null ],
-    [ "stdafx.h", "a00487_source.html", null ],
-    [ "targetver.h", "a00524_source.html", null ],
+    [ "stdafx.h", "a00484_source.html", null ],
+    [ "targetver.h", "a00521_source.html", null ],
     [ "Types.hpp", "a00964.html", null ],
     [ "VCCollection.hpp", "a00966_source.html", null ]
 ];

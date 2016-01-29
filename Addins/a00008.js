@@ -17,6 +17,6 @@ var a00008 =
     [ "Build", "a00003.html", "a00003" ],
     [ "ConnectionPoints", "a00009.html", "a00009" ],
     [ "Core", "a00022.html", "a00022" ],
-    [ "Wrappers", "a00070.html", "a00070" ],
-    [ "Утилиты", "a00066.html", "a00066" ]
+    [ "Wrappers", "a00071.html", "a00071" ],
+    [ "Утилиты", "a00067.html", "a00067" ]
 ];

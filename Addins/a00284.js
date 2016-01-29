@@ -1,4 +1,4 @@
 var a00284 =
 [
-    [ "GetText", "a00284.html#a5ae7924d86565536e128176ae718abce", null ]
+    [ "GetValue", "a00284.html#a4af69b0fdcde1de75ccdedcf641c99fe", null ]
 ];

@@ -1,4 +1,4 @@
 var a00285 =
 [
-    [ "PROPERTY_GET", "a00285.html#a826ace39fb5becf6d73873203f628db1", null ]
+    [ "GetText", "a00285.html#a5ae7924d86565536e128176ae718abce", null ]
 ];

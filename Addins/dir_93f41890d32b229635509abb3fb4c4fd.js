@@ -8,6 +8,6 @@ var dir_93f41890d32b229635509abb3fb4c4fd =
     [ "Is.mock.hpp", "a00910_source.html", null ],
     [ "ISolution.hpp", "a00911_source.html", null ],
     [ "Proxy.hpp", "a00912_source.html", null ],
-    [ "stdafx.h", "a00484_source.html", null ],
-    [ "targetver.h", "a00522_source.html", null ]
+    [ "stdafx.h", "a00481_source.html", null ],
+    [ "targetver.h", "a00519_source.html", null ]
 ];

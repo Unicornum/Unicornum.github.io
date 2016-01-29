@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wrappers::vs::AddIns</title>
+<title>Addins: Класс wrappers::vs::AddIn</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 2942 Architecture: x86.32 Build: 13:49 22 January 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3008 Architecture: x86.32 Build: 15:56 29 January 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,85 +112,90 @@ $(document).ready(function(){initNavTree('a00098.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01685.html">Полный список членов класса</a>  </div>
+<a href="a01684.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wrappers::vs::AddIns</div>  </div>
+<div class="title">Класс wrappers::vs::AddIn</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00084.html">Проект Ide</a> <br />
- Класс для удобного и логичного доступа к объекту надстройки.  
+<p>Класс входит в <a class="el" href="a00085.html">Проект Ide</a> <br />
+ Класс-обертка для EnvDTE::AddIn.  
  <a href="a00098.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01028_source.html">AddIns.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01025_source.html">AddIn.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса wrappers::vs::AddIns:</div>
+Граф наследования:wrappers::vs::AddIn:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01686.png" border="0" usemap="#wrappers_1_1vs_1_1_add_ins_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1vs_1_1_add_ins_coll__map" id="wrappers_1_1vs_1_1_add_ins_coll__map">
+<div class="center"><img src="a01685.png" border="0" usemap="#wrappers_1_1vs_1_1_add_in_inherit__map" alt="Inheritance graph"/></div>
+<map name="wrappers_1_1vs_1_1_add_in_inherit__map" id="wrappers_1_1vs_1_1_add_in_inherit__map">
+<area shape="rect" id="node2" href="a00107.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::AddIn \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="12,6,164,186"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса wrappers::vs::AddIn:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01686.png" border="0" usemap="#wrappers_1_1vs_1_1_add_in_coll__map" alt="Collaboration graph"/></div>
+<map name="wrappers_1_1vs_1_1_add_in_coll__map" id="wrappers_1_1vs_1_1_add_in_coll__map">
+<area shape="rect" id="node2" href="a00107.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::AddIn \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="12,6,164,186"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a574dd95dde83c6bd52cf73166a88ba67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00097.html">AddIn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a574dd95dde83c6bd52cf73166a88ba67">operator[]</a> (Current_t) const </td></tr>
-<tr class="memdesc:a574dd95dde83c6bd52cf73166a88ba67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор получения текущего объекта надстройки. </p><dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception.</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
- <a href="#a574dd95dde83c6bd52cf73166a88ba67">Подробнее...</a><br /></td></tr>
-<tr class="separator:a574dd95dde83c6bd52cf73166a88ba67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e251c846958372bba1a743db8367b09"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e251c846958372bba1a743db8367b09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a3e251c846958372bba1a743db8367b09">ExtractFrom</a> (IDispatch *_pDispatch)</td></tr>
+<tr class="memdesc:a3e251c846958372bba1a743db8367b09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначить классу-обертке другой объект. <br /></td></tr>
+<tr class="separator:a3e251c846958372bba1a743db8367b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34b5f4c11993b8b36444540ecf49dee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af34b5f4c11993b8b36444540ecf49dee"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#af34b5f4c11993b8b36444540ecf49dee">GetVersion</a> (void) const </td></tr>
+<tr class="memdesc:af34b5f4c11993b8b36444540ecf49dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Версия надстройки. <br /></td></tr>
+<tr class="separator:af34b5f4c11993b8b36444540ecf49dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562089c22cfb703a62f7f4413e2ab89c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a562089c22cfb703a62f7f4413e2ab89c"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html#a562089c22cfb703a62f7f4413e2ab89c">GetConnectString</a> (void) const </td></tr>
+<tr class="memdesc:a562089c22cfb703a62f7f4413e2ab89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка подключения команд надстройки. <br /></td></tr>
+<tr class="separator:a562089c22cfb703a62f7f4413e2ab89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_a00107"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00107')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00107.html">wrappers::vs::Base&lt; EnvDTE::AddIn &gt;</a></td></tr>
+<tr class="memitem:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00107"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bd20844e7332406932787c9b5b852d"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#af8bd20844e7332406932787c9b5b852d">GetName</a> (void) const</td></tr>
+<tr class="memdesc:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта. <br /></td></tr>
+<tr class="separator:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00107"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36588f576db9d1dd86e5ae158a165c3"></a>
+<a class="el" href="a00210.html">Service::MakeProxy</a>&lt; TReturn, EnvDTE::AddIn &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#ae36588f576db9d1dd86e5ae158a165c3">Make</a> (void) const</td></tr>
+<tr class="memdesc:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t. <br /></td></tr>
+<tr class="separator:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00107"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42cc94ed152690a3fe262eec788ef191"></a>
+<a class="el" href="a00210.html">Service::MakeProxy</a>&lt; void *, EnvDTE::AddIn &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a42cc94ed152690a3fe262eec788ef191">Make</a> (void) const</td></tr>
+<tr class="memdesc:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t, не возвращающих значения. <br /></td></tr>
+<tr class="separator:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_a00107"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_a00107')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="a00107.html">wrappers::vs::Base&lt; EnvDTE::AddIn &gt;</a></td></tr>
+<tr class="memitem:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00107"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c540555a66a709a4f21f9bfc3e8dbf5"></a>
+static <a class="el" href="a00210.html">Service::MakeProxy</a>&lt; TReturn, TSource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a6c540555a66a709a4f21f9bfc3e8dbf5">Make</a> (TSource *_pSource)</td></tr>
+<tr class="memdesc:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций прототипов. <br /></td></tr>
+<tr class="separator:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00084.html">Проект Ide</a> <br />
- Класс для удобного и логичного доступа к объекту надстройки. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00085.html">Проект Ide</a> <br />
+ Класс-обертка для EnvDTE::AddIn. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>17 май 2014 <br />
+<dl class="section date"><dt>Дата</dt><dd>6 дек 2014 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a574dd95dde83c6bd52cf73166a88ba67"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00097.html">AddIn</a> AddIns::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">Current_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Оператор получения текущего объекта надстройки. </p><dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception.</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-</p>
-<ul>
-<li>Указанного объекта надстройки не существует. </li>
-</ul>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/<a class="el" href="a01028_source.html">AddIns.hpp</a></li>
-<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/AddIns.cpp</li>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/<a class="el" href="a01025_source.html">AddIn.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/AddIn.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a01178.html">wrappers</a></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00098.html">AddIns</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 22 Янв 2016 13:50:24. Создано системой
+    <li class="navelem"><a class="el" href="a01178.html">wrappers</a></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00098.html">AddIn</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 29 Янв 2016 15:57:04. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

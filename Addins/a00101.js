@@ -1,5 +1,5 @@
 var a00101 =
 [
-    [ "WasFoundNext", "a00101.html#abbb3a4c1bca71e9510522a27e5b86e72", null ],
-    [ "WasNoFound", "a00101.html#af6330f00eab5407344d37a1939951a5f", null ]
+    [ "GetCaption", "a00101.html#a61df3c68c33ecedb181a6f2e1ac411c6", null ],
+    [ "IsEnabled", "a00101.html#a4ee0fc4d45c1026f9889916c7145e0a2", null ]
 ];

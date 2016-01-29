@@ -1,5 +1,7 @@
 var a00193 =
 [
-    [ "GetPathToFile", "a00193.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
-    [ "Remove", "a00193.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
+    [ "Add", "a00193.html#a70cb54deb2ee7c638d0cb14f6bb0d853", null ],
+    [ "GetActiveProject", "a00193.html#a80b6fa85287d8fcdb196b52fdbcd0f32", null ],
+    [ "GetCount", "a00193.html#a3952f4465a19aa84440ec83b7da64929", null ],
+    [ "GetProject", "a00193.html#a1bece1c2d61f67f051780943e2d76c65", null ]
 ];

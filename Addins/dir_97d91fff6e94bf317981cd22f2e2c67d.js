@@ -8,5 +8,5 @@ var dir_97d91fff6e94bf317981cd22f2e2c67d =
     [ "PropertySheetSearcher.mock.hpp", "a00921_source.html", null ],
     [ "SolutionImpl.hpp", "a00923_source.html", null ],
     [ "SolutionProxy.hpp", "a00924_source.html", null ],
-    [ "stdafx.h", "a00485_source.html", null ]
+    [ "stdafx.h", "a00482_source.html", null ]
 ];
