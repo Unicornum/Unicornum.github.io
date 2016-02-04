@@ -22,13 +22,13 @@ var a00556 =
       [ "WriteRecord", "a00085.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
       [ "WriteTitle", "a00085.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
     ] ],
-    [ "Report", "a00119.html", null ],
-    [ "Text", "a00132.html", [
-      [ "WriteRecord", "a00132.html#a487f860fae5255eaa76c988294a764b7", null ],
-      [ "WriteTitle", "a00132.html#a16e5c27860d379682fe582396e14609d", null ]
+    [ "Report", "a00121.html", null ],
+    [ "Text", "a00135.html", [
+      [ "WriteRecord", "a00135.html#a487f860fae5255eaa76c988294a764b7", null ],
+      [ "WriteTitle", "a00135.html#a16e5c27860d379682fe582396e14609d", null ]
     ] ],
-    [ "VisualStudioOutput", "a00138.html", [
-      [ "WriteRecord", "a00138.html#a36ba11583024bbba693e2998ea4d3668", null ],
-      [ "WriteTitle", "a00138.html#a672763fba708c23851b38be162768bac", null ]
+    [ "VisualStudioOutput", "a00140.html", [
+      [ "WriteRecord", "a00140.html#a36ba11583024bbba693e2998ea4d3668", null ],
+      [ "WriteTitle", "a00140.html#a672763fba708c23851b38be162768bac", null ]
     ] ]
 ];

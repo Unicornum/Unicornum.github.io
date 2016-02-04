@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['add',['Add',['../a00133.html#a4889bcc9ee6867f66009d5074a406e71',1,'alicorn::extension::std::Text']]],
-  ['addchildnode',['AddChildNode',['../a00089.html#aa087f11a1e9bb932053234a3766ae561',1,'alicorn::document::xml::IXml::AddChildNode()'],['../a00116.html#a5c08bfefb23069ab03adddc449ab00df',1,'alicorn::document::xml::RapidXml::AddChildNode()']]],
-  ['addextra',['AddExtra',['../a00121.html#ae3c5a0a3bd12c765a813bd89a31acfb7',1,'alicorn::settings::Section']]],
-  ['addextravalue',['AddExtraValue',['../a00123.html#a1cf06e4a5b1302e1dce4d76be20b39b5',1,'alicorn::settings::SectionImpl']]],
+  ['add',['Add',['../a00134.html#a4889bcc9ee6867f66009d5074a406e71',1,'alicorn::extension::std::Text']]],
+  ['addchildnode',['AddChildNode',['../a00089.html#aa087f11a1e9bb932053234a3766ae561',1,'alicorn::document::xml::IXml::AddChildNode()'],['../a00118.html#a5c08bfefb23069ab03adddc449ab00df',1,'alicorn::document::xml::RapidXml::AddChildNode()']]],
+  ['addextra',['AddExtra',['../a00123.html#ae3c5a0a3bd12c765a813bd89a31acfb7',1,'alicorn::settings::Section']]],
+  ['addextravalue',['AddExtraValue',['../a00125.html#a1cf06e4a5b1302e1dce4d76be20b39b5',1,'alicorn::settings::SectionImpl']]],
   ['allowreplace',['AllowReplace',['../a00043.html',1,'alicorn::logger']]],
   ['app',['app',['../a00520.html',1,'']]],
   ['assert_5fdirectory_5feq',['ASSERT_DIRECTORY_EQ',['../a00565.html#ga5114b2eddd505e8e2cc6a3e17699e5b4',1,'equal-directories.hpp']]],

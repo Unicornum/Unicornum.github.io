@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.10"/>
-<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/testing/directory/compare-files.hpp</title>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/patterns/factory/factory.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,16 +33,16 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.2.2 Revision: 1245 Architecture: x86.64 Build: 22:28 18 Декабрь 2015</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1448 Architecture: x86.64 Build: 13:26 04 Февраль 2016</span>
    </div>
-   <div id="projectbrief">Libs</div>
+   <div id="projectbrief">LibsVS2013</div>
   </td>
  </tr>
  </tbody>
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.10 -->
+<!-- Создано системой Doxygen 1.8.11 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
@@ -51,6 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li class="current"><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -108,41 +109,22 @@ $(document).ready(function(){initNavTree('a00423_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">compare-files.hpp</div>  </div>
+<div class="title">factory.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00270.html">alicorn\extension\boost\filesystem.forward.hpp</a>&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00451.html">alicorn</a></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>testing</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>directory</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;boost::filesystem::path CompareFiles(<span class="keyword">const</span> boost::filesystem::path &amp;, </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                                     <span class="keyword">const</span> boost::filesystem::path &amp;);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;} <span class="comment">// namespace directory</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <span class="comment">// namespace testing</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace alicorn</span></div>
-<div class="ttc" id="a00270_html"><div class="ttname"><a href="a00270.html">filesystem.forward.hpp</a></div></div>
-<div class="ttc" id="a00451_html"><div class="ttname"><a href="a00451.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> attribute.hpp:6</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00496.html">alicorn</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>patterns</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>factory</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TInterface, <span class="keyword">class</span> TId = std::<span class="keywordtype">string</span>&gt;</div><div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="a00068.html">   96</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00068.html">Factory</a> final</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">using</span> Ptr_t = std::unique_ptr&lt;TInterface&gt;;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> Ptr_t <a class="code" href="a00068.html#ab623e8fecccf0c69bf8a9be11af41b10">Create</a>(<span class="keyword">const</span> TId &amp;);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> TClass&gt;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="a00068.html#a7fa0f3418698b0f028e84791fc62c421">Register</a>(<span class="keyword">const</span> TId &amp;);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">static</span> <a class="code" href="a00068.html">Factory</a> &amp; GetInstance(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> TClass&gt;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;  <span class="keyword">static</span> Ptr_t Create(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> Ptr_t(<span class="keyword">new</span> TClass); }  </div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keyword">using</span> Creation_t = std::function&lt;Ptr_t(void)&gt;;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  std::map&lt;TId, Creation_t&gt; m_CreationFunctions;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <a class="code" href="a00068.html">Factory</a>(<span class="keywordtype">void</span>) {};</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;} <span class="comment">// namespace factory</span></div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;} <span class="comment">// namespace patterns</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#include &quot;factory.inl&quot;</span></div><div class="ttc" id="a00068_html_ab623e8fecccf0c69bf8a9be11af41b10"><div class="ttname"><a href="a00068.html#ab623e8fecccf0c69bf8a9be11af41b10">alicorn::patterns::factory::Factory::Create</a></div><div class="ttdeci">static Ptr_t Create(const TId &amp;)</div><div class="ttdoc">Создать объект. </div><div class="ttdef"><b>Definition:</b> factory.inl:30</div></div>
+<div class="ttc" id="a00068_html"><div class="ttname"><a href="a00068.html">alicorn::patterns::factory::Factory</a></div><div class="ttdoc">Класс входит в Проект Patterns   Фабрика объектов (создание объектов по идентификатору (строке) класс...</div><div class="ttdef"><b>Definition:</b> factory.hpp:96</div></div>
+<div class="ttc" id="a00068_html_a7fa0f3418698b0f028e84791fc62c421"><div class="ttname"><a href="a00068.html#a7fa0f3418698b0f028e84791fc62c421">alicorn::patterns::factory::Factory::Register</a></div><div class="ttdeci">static bool Register(const TId &amp;)</div><div class="ttdoc">Функция для регистрации класса в фабрике объектов. </div><div class="ttdef"><b>Definition:</b> factory.inl:57</div></div>
+<div class="ttc" id="a00496_html"><div class="ttname"><a href="a00496.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> Model.hpp:5</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_da7c20acf68aaddb5f7d59d7e20edd54.html">testing</a></li><li class="navelem"><a class="el" href="dir_370cb26e46c004782f59fb55c21f7d48.html">directory</a></li><li class="navelem"><b>compare-files.hpp</b></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 18 Дек 2015 22:29:40. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_45b4c2f261ab8f95481e28e0bd86e7bc.html">patterns</a></li><li class="navelem"><a class="el" href="dir_697af14083acc521dc778bfcfca8c68d.html">factory</a></li><li class="navelem"><b>factory.hpp</b></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Чт 4 Фев 2016 13:26:17. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.10 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
 </div>
 </body>

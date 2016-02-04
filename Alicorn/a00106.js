@@ -1,7 +1,11 @@
 var a00106 =
 [
-    [ "Match", "a00106.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
-    [ "Match", "a00106.html#a6771afe48b8f1155f53536b2220e2764", null ],
-    [ "GetGroups", "a00106.html#a25a080222bf760066265b29637242692", null ],
-    [ "IsMatch", "a00106.html#abaaf6788b646b68ad35c6063693f07b3", null ]
+    [ "operator+=", "a00106.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
+    [ "operator-=", "a00106.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
+    [ "operator[]", "a00106.html#aab381d95bc38753a42ebc7c60fb2ce9a", null ],
+    [ "operator[]", "a00106.html#afc41066cbf2787ffb952d199a0640273", null ],
+    [ "operator[]", "a00106.html#a2f8e7fe05286832a146e97352345506e", null ],
+    [ "operator[]", "a00106.html#a4bfda637ac9887bb9676f301e40861be", null ],
+    [ "operator[]", "a00106.html#a44ae2217ccac94b6b565701bfd05774e", null ],
+    [ "operator[]", "a00106.html#a75535c69883d5768f646b92554d745d2", null ]
 ];

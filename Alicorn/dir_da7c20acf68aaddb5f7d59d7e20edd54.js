@@ -10,9 +10,9 @@ var dir_da7c20acf68aaddb5f7d59d7e20edd54 =
     [ "expect-exception.hpp", "a00476_source.html", null ],
     [ "final.hpp", "a00483_source.html", null ],
     [ "friend.hpp", "a00484_source.html", null ],
-    [ "proxy.hpp", "a00333_source.html", null ],
+    [ "proxy.hpp", "a00335_source.html", null ],
     [ "run-in-multithreads.hpp", "a00486_source.html", null ],
-    [ "stdafx.h", "a00226_source.html", null ],
+    [ "stdafx.h", "a00228_source.html", null ],
     [ "this-directory.hpp", "a00487_source.html", null ],
     [ "using-mock.hpp", "a00488_source.html", null ],
     [ "virtual-mock.hpp", "a00489_source.html", null ]

@@ -11,6 +11,6 @@ var searchData=
   ['expect_5ffiles_5fbinary_5fne',['EXPECT_FILES_BINARY_NE',['../a00565.html#gaae14802f30c143ba014bc7980d3db7f0',1,'equal-files.hpp']]],
   ['expect_5ffiles_5fstreq',['EXPECT_FILES_STREQ',['../a00565.html#ga14628cf5a758a8aeec9b5bb69fed767e',1,'equal-files.hpp']]],
   ['expect_5fstdexception',['EXPECT_STDEXCEPTION',['../a00565.html#gae7553b6a2b3b0c4a21e94d06217ef8f3',1,'expect-exception.hpp']]],
-  ['extension_2ehpp',['extension.hpp',['../a00304.html',1,'']]],
+  ['extension_2ehpp',['extension.hpp',['../a00306.html',1,'']]],
   ['extension',['Extension',['../a00553.html',1,'']]]
 ];

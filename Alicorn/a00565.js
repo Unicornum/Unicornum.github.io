@@ -1,6 +1,6 @@
 var a00565 =
 [
-    [ "Proxy", "a00110.html", null ],
+    [ "Proxy", "a00112.html", null ],
     [ "ASSERT_DIRECTORY_EQ", "a00565.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
     [ "ASSERT_EXISTS_FILE_FALSE", "a00565.html#gaf5900286722be76eaf83b881ba160bb1", null ],
     [ "ASSERT_EXISTS_FILE_TRUE", "a00565.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],

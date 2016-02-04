@@ -1,4 +1,5 @@
 var a00135 =
 [
-    [ "SetSections", "a00135.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
+    [ "WriteRecord", "a00135.html#a487f860fae5255eaa76c988294a764b7", null ],
+    [ "WriteTitle", "a00135.html#a16e5c27860d379682fe582396e14609d", null ]
 ];

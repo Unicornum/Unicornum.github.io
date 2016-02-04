@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1436 Architecture: x86.64 Build: 17:53 08 Январь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1448 Architecture: x86.64 Build: 13:26 04 Февраль 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('a00020.html','');});
 <li>Окно "Вывод" Visual Studio (формат вывода сделан таким, чтобы по двойному клику на сообщении можно было сразу перейти к месту, где это сообщение было записано).</li>
 </ul>
 <h1>Подключение </h1>
-<p>Для использованя логгера в файл stdafx.h добавить строку </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="a00361.html">alicorn\logger.hpp</a>&gt;</span></div></div><!-- fragment --><p>До первой записи в лог следует установить формат ведения журнала: </p><div class="fragment"><div class="line"><span class="comment">// Вывод в текстовый файл.</span></div><div class="line"><a class="code" href="a00557.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(report::Text);</div></div><!-- fragment --><h1>Использование </h1>
+<p>Для использованя логгера в файл stdafx.h добавить строку </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="a00363.html">alicorn\logger.hpp</a>&gt;</span></div></div><!-- fragment --><p>До первой записи в лог следует установить формат ведения журнала: </p><div class="fragment"><div class="line"><span class="comment">// Вывод в текстовый файл.</span></div><div class="line"><a class="code" href="a00557.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(report::Text);</div></div><!-- fragment --><h1>Использование </h1>
 <p>Запись сообщения в лог производится при помощи макросов <b><a class="el" href="a00557.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER()</a></b>, <b><a class="el" href="a00557.html#ga87f9f935c2d2acfc81a79f73e4c2bf85">LOGGER_DEBUG()</a></b> (только в отладочной версии программы) и оператора &lt;&lt;. <br />
  В цепочке операторов &lt;&lt; может быть сколько угодно значений (причем могут быть использованы любые типы, для которых определен оператор &lt;&lt; вывода в wostream), в качестве сообщения в журнал будет записана вся цепочка до точки с запятой.</p>
 <dl class="section warning"><dt>Предупреждения</dt><dd>Поскольку логгер для работы использует статические объекты, запись в лог нельзя производить в деструкторах статических объектов.</dd></dl>
@@ -223,7 +223,7 @@ $(document).ready(function(){initNavTree('a00020.html','');});
 </table>
 <h2>Создание собственного типа журнала </h2>
 <ul>
-<li>Создать класс, унаследованный от класса <a class="el" href="a00119.html" title="Класс входит в Проект Logger   Вспомогательный класс для обеспечения интерфейса, необходимого для уст...">alicorn::logger::report::Report</a> и определить для него функции интерфейса <a class="el" href="a00085.html" title="Класс входит в Проект Logger   Интерфейсный класс конкретных формирователей отчетов. ">alicorn::logger::report::IReport</a>. <br />
+<li>Создать класс, унаследованный от класса <a class="el" href="a00121.html" title="Класс входит в Проект Logger   Вспомогательный класс для обеспечения интерфейса, необходимого для уст...">alicorn::logger::report::Report</a> и определить для него функции интерфейса <a class="el" href="a00085.html" title="Класс входит в Проект Logger   Интерфейсный класс конкретных формирователей отчетов. ">alicorn::logger::report::IReport</a>. <br />
 </li>
 <li>Разместить его впространстве имен alicorn::logger::report.</li>
 </ul>
@@ -237,7 +237,7 @@ $(document).ready(function(){initNavTree('a00020.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Libs</a></li><li class="navelem"><a class="el" href="a00009.html">Раздел Alicorn</a></li><li class="navelem"><a class="el" href="a00010.html">Раздел Build</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 8 Янв 2016 17:55:20. Создано системой
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Чт 4 Фев 2016 13:26:18. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

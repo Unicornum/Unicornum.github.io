@@ -1,12 +1,7 @@
 var a00122 =
 [
-    [ "SectionFullAccess", "a00122.html#a559559549868bf00850723837cce477d", null ],
-    [ "SectionFullAccess", "a00122.html#a36af9981933fcf7ed983197a12b33faf", null ],
-    [ "Get", "a00122.html#ad4abd7c2d4a27b75c47e915d51254360", null ],
-    [ "GetChildSectionNames", "a00122.html#a0dfa6380c7daee4f01be778650e54ea0", null ],
-    [ "GetComment", "a00122.html#aa145a5857bfe91b0338ed5a8dff9557d", null ],
-    [ "GetParameterNames", "a00122.html#a9ab6fd548602a005d21b1ffa927f01da", null ],
-    [ "operator[]", "a00122.html#aec59b411a094c25e4ebdd314d882dbe0", null ],
-    [ "Set", "a00122.html#a7f4ca4c0296175034a60c9c608480168", null ],
-    [ "SetComment", "a00122.html#a6c17f7e6bedce23523c3326c535761a2", null ]
+    [ "Search", "a00122.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+    [ "Search", "a00122.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+    [ "GetCoincided", "a00122.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+    [ "IsSearch", "a00122.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
 ];

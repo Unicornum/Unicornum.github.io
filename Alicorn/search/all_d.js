@@ -1,11 +1,4 @@
 var searchData=
 [
-  ['object',['Object',['../a00105.html',1,'alicorn::system::dll']]],
-  ['openfile',['OpenFile',['../a00070.html#aaaf2c3c72eeff330e433f306a7f547c1',1,'alicorn::logger::report::File']]],
-  ['operator_28_29',['operator()',['../a00046.html#aeea3117f12d7c1cd4ab2fe12aee5ffa2',1,'alicorn::patterns::mvc::controller::BlockingSignal']]],
-  ['operator_2b_3d',['operator+=',['../a00104.html#a9226f6f5ba874e2494e9ba38d8870858',1,'alicorn::document::xml::Node']]],
-  ['operator_2d_3d',['operator-=',['../a00104.html#a6791f722b7917711ea8d8bd42d1f238c',1,'alicorn::document::xml::Node']]],
-  ['operator_2d_3e',['operator-&gt;',['../a00114.html#a2f9f74776cb12ed9037d527703094d11',1,'alicorn::system::dll::Ptr::operator-&gt;(void)'],['../a00114.html#a112467f369aaa88f3cf16ee0e8ac65c1',1,'alicorn::system::dll::Ptr::operator-&gt;(void) const ']]],
-  ['operator_3d',['operator=',['../a00044.html#aa1d1cd6c6dafe897c02f3e390e321921',1,'alicorn::document::xml::Attribute::operator=()'],['../a00137.html#a36192a1697e4ef5ffdfa35e61f356220',1,'alicorn::document::xml::Value::operator=()']]],
-  ['operator_5b_5d',['operator[]',['../a00045.html#a59e6aeca13e16623425a2c0e9c0b3392',1,'alicorn::document::xml::Attributes::operator[]()'],['../a00104.html#aab381d95bc38753a42ebc7c60fb2ce9a',1,'alicorn::document::xml::Node::operator[](const String_t &amp;) const '],['../a00104.html#afc41066cbf2787ffb952d199a0640273',1,'alicorn::document::xml::Node::operator[](const String_t &amp;)'],['../a00104.html#a2f8e7fe05286832a146e97352345506e',1,'alicorn::document::xml::Node::operator[](xml::Parent_t) const '],['../a00104.html#a4bfda637ac9887bb9676f301e40861be',1,'alicorn::document::xml::Node::operator[](xml::Parent_t)'],['../a00104.html#a44ae2217ccac94b6b565701bfd05774e',1,'alicorn::document::xml::Node::operator[](xml::FirstChild_t) const '],['../a00104.html#a75535c69883d5768f646b92554d745d2',1,'alicorn::document::xml::Node::operator[](xml::Next_t) const '],['../a00141.html#ac89ad522f60817a4dd46d73c1c931c5e',1,'alicorn::document::Xml::operator[]()'],['../a00133.html#aa25f800aca7cdbcf85d4bf22f3d2d4a6',1,'alicorn::extension::std::Text::operator[]()'],['../a00122.html#aec59b411a094c25e4ebdd314d882dbe0',1,'alicorn::settings::SectionFullAccess::operator[]()'],['../a00121.html#ad68da58ac4cdfc8e177417b1c0893d60',1,'alicorn::settings::Section::operator[]()']]]
+  ['node',['Node',['../a00106.html',1,'alicorn::document::xml']]]
 ];

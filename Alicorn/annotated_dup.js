@@ -6,11 +6,11 @@ var annotated_dup =
           [ "Attribute", "a00044.html", "a00044" ],
           [ "Attributes", "a00045.html", "a00045" ],
           [ "IXml", "a00089.html", "a00089" ],
-          [ "Node", "a00104.html", "a00104" ],
-          [ "RapidXml", "a00116.html", "a00116" ],
-          [ "Value", "a00137.html", "a00137" ]
+          [ "Node", "a00106.html", "a00106" ],
+          [ "RapidXml", "a00118.html", "a00118" ],
+          [ "Value", "a00139.html", "a00139" ]
         ] ],
-        [ "Xml", "a00141.html", "a00141" ]
+        [ "Xml", "a00143.html", "a00143" ]
       ] ],
       [ "extension", null, [
         [ "boost", null, [
@@ -18,26 +18,26 @@ var annotated_dup =
         ] ],
         [ "std", null, [
           [ "exception", null, [
-            [ "Message", "a00099.html", null ],
-            [ "Proxy", "a00111.html", null ]
+            [ "Message", "a00101.html", null ],
+            [ "Proxy", "a00113.html", null ]
           ] ],
           [ "regex", null, [
-            [ "Match", "a00095.html", "a00095" ],
-            [ "Replace", "a00118.html", "a00118" ],
-            [ "Search", "a00120.html", "a00120" ]
+            [ "Match", "a00097.html", "a00097" ],
+            [ "Replace", "a00120.html", "a00120" ],
+            [ "Search", "a00122.html", "a00122" ]
           ] ],
           [ "CallProxy", "a00047.html", null ],
-          [ "Locale", "a00090.html", [
+          [ "Locale", "a00092.html", [
             [ "CP1251", "a00054.html", null ],
             [ "CP866", "a00055.html", null ],
             [ "Default", "a00060.html", null ],
-            [ "System", "a00131.html", null ],
-            [ "UTF8", "a00136.html", null ]
+            [ "System", "a00133.html", null ],
+            [ "UTF8", "a00138.html", null ]
           ] ],
-          [ "Message", "a00100.html", null ],
-          [ "String", "a00128.html", "a00128" ],
-          [ "StringCastProxy", "a00129.html", "a00129" ],
-          [ "Text", "a00133.html", "a00133" ]
+          [ "Message", "a00102.html", null ],
+          [ "String", "a00130.html", "a00130" ],
+          [ "StringCastProxy", "a00131.html", "a00131" ],
+          [ "Text", "a00134.html", "a00134" ]
         ] ]
       ] ],
       [ "logger", null, [
@@ -47,9 +47,9 @@ var annotated_dup =
           [ "File", "a00070.html", "a00070" ],
           [ "Html", "a00075.html", "a00075" ],
           [ "IReport", "a00085.html", "a00085" ],
-          [ "Report", "a00119.html", null ],
-          [ "Text", "a00132.html", "a00132" ],
-          [ "VisualStudioOutput", "a00138.html", "a00138" ]
+          [ "Report", "a00121.html", null ],
+          [ "Text", "a00135.html", "a00135" ],
+          [ "VisualStudioOutput", "a00140.html", "a00140" ]
         ] ],
         [ "AllowReplace", "a00043.html", null ],
         [ "Configurator", "a00048.html", "a00048" ],
@@ -62,19 +62,19 @@ var annotated_dup =
         [ "Filter", "a00072.html", null ],
         [ "Info", "a00082.html", null ],
         [ "IntConfigValue", "a00084.html", null ],
-        [ "MaxLogFiles", "a00096.html", null ],
-        [ "MaxLogSize", "a00097.html", null ],
-        [ "Message", "a00098.html", "a00098" ],
-        [ "MessageImpl", "a00101.html", "a00101" ],
-        [ "MessagePoints", "a00102.html", "a00102" ],
-        [ "PathToLogDirectory", "a00106.html", null ],
-        [ "ProgramName", "a00108.html", null ],
-        [ "ProgramVersion", "a00109.html", null ],
-        [ "Proxy", "a00112.html", null ],
-        [ "ProxyDebug", "a00113.html", null ],
-        [ "StringConfigValue", "a00130.html", null ],
-        [ "Trace", "a00134.html", null ],
-        [ "Warning", "a00139.html", null ]
+        [ "MaxLogFiles", "a00098.html", null ],
+        [ "MaxLogSize", "a00099.html", null ],
+        [ "Message", "a00100.html", "a00100" ],
+        [ "MessageImpl", "a00103.html", "a00103" ],
+        [ "MessagePoints", "a00104.html", "a00104" ],
+        [ "PathToLogDirectory", "a00108.html", null ],
+        [ "ProgramName", "a00110.html", null ],
+        [ "ProgramVersion", "a00111.html", null ],
+        [ "Proxy", "a00114.html", null ],
+        [ "ProxyDebug", "a00115.html", null ],
+        [ "StringConfigValue", "a00132.html", null ],
+        [ "Trace", "a00136.html", null ],
+        [ "Warning", "a00141.html", null ]
       ] ],
       [ "patterns", null, [
         [ "command", null, [
@@ -83,12 +83,12 @@ var annotated_dup =
           [ "ICommand", "a00078.html", null ],
           [ "IManager", "a00079.html", null ],
           [ "IUndo", "a00087.html", null ],
-          [ "ManagerCommon", "a00093.html", null ],
-          [ "ManagerUndoRedo", "a00094.html", "a00094" ]
+          [ "ManagerCommon", "a00095.html", null ],
+          [ "ManagerUndoRedo", "a00096.html", "a00096" ]
         ] ],
         [ "factory", null, [
           [ "Factory", "a00068.html", null ],
-          [ "Registrator", "a00117.html", null ]
+          [ "Registrator", "a00119.html", null ]
         ] ],
         [ "mvc", null, [
           [ "controller", null, [
@@ -99,26 +99,26 @@ var annotated_dup =
       [ "settings", null, [
         [ "File", "a00071.html", "a00071" ],
         [ "ISection", "a00086.html", null ],
-        [ "Section", "a00121.html", "a00121" ],
-        [ "SectionFullAccess", "a00122.html", "a00122" ],
-        [ "SectionImpl", "a00123.html", "a00123" ]
+        [ "Section", "a00123.html", "a00123" ],
+        [ "SectionFullAccess", "a00124.html", "a00124" ],
+        [ "SectionImpl", "a00125.html", "a00125" ]
       ] ],
       [ "system", null, [
         [ "dll", null, [
-          [ "Object", "a00105.html", null ],
-          [ "Ptr", "a00114.html", "a00114" ],
-          [ "PtrObject", "a00115.html", "a00115" ]
+          [ "Object", "a00107.html", null ],
+          [ "Ptr", "a00116.html", "a00116" ],
+          [ "PtrObject", "a00117.html", "a00117" ]
         ] ],
         [ "process", null, [
           [ "ICallBack", "a00077.html", null ]
         ] ],
         [ "CurrentModule", "a00056.html", null ],
         [ "Dump", "a00065.html", null ],
-        [ "Process", "a00107.html", "a00107" ],
-        [ "WinapiCallProxy", "a00140.html", null ]
+        [ "Process", "a00109.html", "a00109" ],
+        [ "WinapiCallProxy", "a00142.html", null ]
       ] ],
       [ "testing", null, [
-        [ "Proxy", "a00110.html", null ]
+        [ "Proxy", "a00112.html", null ]
       ] ],
       [ "version", null, [
         [ "Info", "a00081.html", "a00081" ]
@@ -133,7 +133,7 @@ var annotated_dup =
     ] ],
     [ "model", null, [
       [ "IModel", "a00080.html", null ],
-      [ "Model", "a00103.html", "a00103" ]
+      [ "Model", "a00105.html", "a00105" ]
     ] ],
     [ "support", null, [
       [ "Info", "a00083.html", null ]
@@ -143,12 +143,12 @@ var annotated_dup =
     ] ],
     [ "wx", null, [
       [ "HtmlAbout", "a00076.html", null ],
-      [ "MainFrame", "a00092.html", null ],
-      [ "SettingsFrame", "a00124.html", null ],
-      [ "SettingsPage", "a00125.html", "a00125" ],
-      [ "SettingsPanel", "a00126.html", null ],
-      [ "SettingsPanelImpl", "a00127.html", null ],
-      [ "TreeSections", "a00135.html", "a00135" ]
+      [ "MainFrame", "a00094.html", null ],
+      [ "SettingsFrame", "a00126.html", null ],
+      [ "SettingsPage", "a00127.html", "a00127" ],
+      [ "SettingsPanel", "a00128.html", null ],
+      [ "SettingsPanelImpl", "a00129.html", null ],
+      [ "TreeSections", "a00137.html", "a00137" ]
     ] ],
     [ "GTestResult", "a00074.html", null ]
 ];
