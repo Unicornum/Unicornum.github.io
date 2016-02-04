@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['hotkey',['HotKey',['../a00175.html',1,'utilities']]],
-  ['htmlabout',['HtmlAbout',['../a00176.html',1,'wx']]],
-  ['htmlhelper',['HtmlHelper',['../a00177.html',1,'wx']]],
-  ['htmlresultbuilder',['HtmlResultBuilder',['../a00178.html',1,'wx']]]
+  ['hotkey',['HotKey',['../a00170.html',1,'core::utilities']]],
+  ['htmlabout',['HtmlAbout',['../a00171.html',1,'wx']]],
+  ['htmlhelper',['HtmlHelper',['../a00172.html',1,'wx']]],
+  ['htmlresultbuilder',['HtmlResultBuilder',['../a00173.html',1,'wx']]]
 ];

@@ -4,5 +4,6 @@ var dir_6bc60bfcd83ba3aeaf980256daedb4cf =
     [ "ConnectionCommands", "dir_d4bac49fe86bdf17f76c70784b22e76c.html", "dir_d4bac49fe86bdf17f76c70784b22e76c" ],
     [ "Menu", "dir_b7db68a4420cc255ba6bfb604d397cca.html", "dir_b7db68a4420cc255ba6bfb604d397cca" ],
     [ "UsefulCommands", "dir_2a819047725ad23e43aba6a9c87e3a2d.html", "dir_2a819047725ad23e43aba6a9c87e3a2d" ],
-    [ "Utilities", "dir_25b9914551f1834bd861c9e82ac6d479.html", "dir_25b9914551f1834bd861c9e82ac6d479" ]
+    [ "Utilities", "dir_25b9914551f1834bd861c9e82ac6d479.html", "dir_25b9914551f1834bd861c9e82ac6d479" ],
+    [ "Core.hpp", "a00583.html", null ]
 ];

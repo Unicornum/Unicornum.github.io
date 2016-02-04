@@ -1,9 +1,8 @@
 var a00210 =
 [
-    [ "Call", "a00210.html#abf5cc16c405af417713274439609135c", null ],
-    [ "Call", "a00210.html#a1749f1a505f4eed3fef62fd734c4c1a7", null ],
-    [ "Call", "a00210.html#aae14d3dce716d45d7c97dd460132b207", null ],
-    [ "Call", "a00210.html#aebc91b2bc321d297c3dc821388bbecf1", null ],
-    [ "Call", "a00210.html#a164cb767aa64b577d292930b50c5f657", null ],
-    [ "Call", "a00210.html#a0df24fbb6fb1b453ce82dceb350dedc5", null ]
+    [ "Create", "a00210.html#a29969cb90779a3342362b938ade775b8", null ],
+    [ "Delete", "a00210.html#a7fb61ee25708fe24d4a50684b1157452", null ],
+    [ "GetHotKey", "a00210.html#aca3ff0d4b98302f05ca6c14f705f18f8", null ],
+    [ "GetPictureId", "a00210.html#a4604e12a333e326fc657f55542e46caa", null ],
+    [ "GetStatus", "a00210.html#a9b2364ad4b131179a065516753e1181e", null ]
 ];

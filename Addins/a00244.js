@@ -1,8 +1,6 @@
 var a00244 =
 [
-    [ "GetFileExtension", "a00244.html#ab45eca3582c96be43ba0d56d5aa27149", null ],
-    [ "GetName", "a00244.html#a185fa317fc2359ddb72c385103d4d76e", null ],
-    [ "GetPathToMainProjectDirectory", "a00244.html#a0be3886803f1fa836faea2906e93001d", null ],
-    [ "GetPathToTestProjectDirectory", "a00244.html#aca1be907095d923ccff307562b57e07e", null ],
-    [ "GetTestProjectName", "a00244.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
+    [ "PropertySheet2012", "a00244.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
+    [ "GetPathToFile", "a00244.html#a7930a5bc2066899ea7834758ef47556f", null ],
+    [ "Remove", "a00244.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
 ];

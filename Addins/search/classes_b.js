@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['needactivatecommand',['NeedActivateCommand',['../a00219.html',1,'core::connection_commands']]],
-  ['none',['None',['../a00220.html',1,'utilities::dialog::progress']]]
+  ['needactivatecommand',['NeedActivateCommand',['../a00214.html',1,'core::connection_commands']]],
+  ['none',['None',['../a00215.html',1,'core::utilities::dialog']]]
 ];

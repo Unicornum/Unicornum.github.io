@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['generated',['Generated',['../a01191.html',1,'']]]
+  ['dialog',['Dialog',['../a01169.html',1,'']]],
+  ['doxygen',['Doxygen',['../a01170.html',1,'']]]
 ];

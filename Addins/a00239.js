@@ -1,5 +1,8 @@
 var a00239 =
 [
-    [ "ToCommandLine", "a00239.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
-    [ "ToLog", "a00239.html#a13578a09c2e689167fe7aa0121fbda80", null ]
+    [ "GetFileExtension", "a00239.html#ab45eca3582c96be43ba0d56d5aa27149", null ],
+    [ "GetName", "a00239.html#a185fa317fc2359ddb72c385103d4d76e", null ],
+    [ "GetPathToMainProjectDirectory", "a00239.html#a0be3886803f1fa836faea2906e93001d", null ],
+    [ "GetPathToTestProjectDirectory", "a00239.html#aca1be907095d923ccff307562b57e07e", null ],
+    [ "GetTestProjectName", "a00239.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
 ];

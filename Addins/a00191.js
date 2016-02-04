@@ -1,5 +1,8 @@
 var a00191 =
 [
-    [ "DoProcess", "a00191.html#a5d04d77bf55c572a3297c2ff67198678", null ],
-    [ "IsEnded", "a00191.html#a1650f8c64edbb695f3c3b2e55b4d53f7", null ]
+    [ "GetRegexString", "a00191.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
+    [ "GetReplaceString", "a00191.html#a81029770ef4725794abaa505ad34fc55", null ],
+    [ "GetSourseStrings", "a00191.html#a53b21f1290abceb1fda90789c42f82ee", null ],
+    [ "SetProcessedData", "a00191.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
+    [ "DoProcess", "a00191.html#a5491cd61ba8f067527535004e251f81a", null ]
 ];

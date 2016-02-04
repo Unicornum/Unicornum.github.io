@@ -31,12 +31,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00085.html#sIdeBrief",
-"a00181.html#a64e57a2e969aa1416318e2b4e3f501a6",
-"a00266.html",
-"a00500_source.html",
-"a00805_source.html",
-"a01114_source.html"
+"a00089.html#ssProjectFilesTasks",
+"a00181.html",
+"a00271.html#afa2e65f599adc03536740b78ccd9c07b",
+"a00529_source.html",
+"a00838_source.html",
+"dir_1b531eb723a6ba09b90be017428f50fe.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

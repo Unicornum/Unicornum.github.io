@@ -1,5 +1,6 @@
 var a00226 =
 [
-    [ "GetCaption", "a00226.html#aa7faa727579bf38ea063bda4888be34f", null ],
-    [ "IsEnabled", "a00226.html#a69c63a062001fde5ccd4750985a04562", null ]
+    [ "Clear", "a00226.html#a7f32188bd28308199e9f40df6b04418f", null ],
+    [ "operator=", "a00226.html#ac61901bfd8f5b4ad761f64ac5650cfb5", null ],
+    [ "OutputString", "a00226.html#ae8bc67c8ce5e1a7d9214a7a0f6f15afe", null ]
 ];

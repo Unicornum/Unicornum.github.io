@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wrappers::helper::vs::ProjectImpl</title>
+<title>Addins: Класс wrappers::vs::PropertySheet</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3008 Architecture: x86.32 Build: 15:56 29 January 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,104 +112,54 @@ $(document).ready(function(){initNavTree('a00243.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01675.html">Полный список членов класса</a>  </div>
+<a href="a01756.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wrappers::helper::vs::ProjectImpl</div>  </div>
+<div class="title">Класс wrappers::vs::PropertySheet</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00072.html">Проект Helper</a> <br />
- Реализация интерфейса для проекта.  
+<p>Класс входит в <a class="el" href="a00077.html">Проект Configuration</a> <br />
+ Класс-обертка для объекта страницы свойств (зависящего от версии Visual Studio).  
  <a href="a00243.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00917_source.html">ProjectImpl.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00967_source.html">PropertySheet.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:wrappers::helper::vs::ProjectImpl:</div>
+Граф связей класса wrappers::vs::PropertySheet:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01676.png" border="0" usemap="#wrappers_1_1helper_1_1vs_1_1_project_impl_inherit__map" alt="Inheritance graph"/></div>
-<map name="wrappers_1_1helper_1_1vs_1_1_project_impl_inherit__map" id="wrappers_1_1helper_1_1vs_1_1_project_impl_inherit__map">
-<area shape="rect" id="node2" href="a00192.html" title="Класс входит в Проект Helper &#160;&#160;Интерфейс, содержащий функции проверки состояния проекта. " alt="" coords="5,6,285,98"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса wrappers::helper::vs::ProjectImpl:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01677.png" border="0" usemap="#wrappers_1_1helper_1_1vs_1_1_project_impl_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1helper_1_1vs_1_1_project_impl_coll__map" id="wrappers_1_1helper_1_1vs_1_1_project_impl_coll__map">
-<area shape="rect" id="node2" href="a00192.html" title="Класс входит в Проект Helper &#160;&#160;Интерфейс, содержащий функции проверки состояния проекта. " alt="" coords="5,6,285,98"/>
-</map>
+<div class="center"><img src="a01757.png" border="0" usemap="#wrappers_1_1vs_1_1_property_sheet_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a29c9b253f399f7ef8f9f98f93da9aa8c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#a29c9b253f399f7ef8f9f98f93da9aa8c">LocatedInDoubleFolderProjectName</a> (void) const </td></tr>
-<tr class="memdesc:a29c9b253f399f7ef8f9f98f93da9aa8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка того, что проект находится в двух вложенных папках, совпадающих с именем самого проекта.  <a href="#a29c9b253f399f7ef8f9f98f93da9aa8c">Подробнее...</a><br /></td></tr>
-<tr class="separator:a29c9b253f399f7ef8f9f98f93da9aa8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab180b7904ac341e4311bbf738353481e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab180b7904ac341e4311bbf738353481e"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#ab180b7904ac341e4311bbf738353481e">GetPathToFile</a> (void) const </td></tr>
+<tr class="memdesc:ab180b7904ac341e4311bbf738353481e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Описание функции см. у <a class="el" href="a00189.html#ab1473a7d6d10ec7f4018714a4cc2a28c" title="Полный путь к файлу страницы свойств. ">IPropertySheet::GetPathToFile()</a>. <br /></td></tr>
+<tr class="separator:ab180b7904ac341e4311bbf738353481e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e283e019a3f0e6b90548465a6c8179f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e283e019a3f0e6b90548465a6c8179f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#a0e283e019a3f0e6b90548465a6c8179f">Remove</a> (void)</td></tr>
+<tr class="memdesc:a0e283e019a3f0e6b90548465a6c8179f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Описание функции см. у <a class="el" href="a00189.html#a952ef4cb92f66af5b7d0678b06a84de3" title="Удаление страницы свойств из родительской конфигурации. ">IPropertySheet::Remove()</a>. <br /></td></tr>
+<tr class="separator:a0e283e019a3f0e6b90548465a6c8179f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00072.html">Проект Helper</a> <br />
- Реализация интерфейса для проекта. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00077.html">Проект Configuration</a> <br />
+ Класс-обертка для объекта страницы свойств (зависящего от версии Visual Studio). </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>08 Май 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Июль 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a29c9b253f399f7ef8f9f98f93da9aa8c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ProjectImpl::LocatedInDoubleFolderProjectName </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Проверка того, что проект находится в двух вложенных папках, совпадающих с именем самого проекта. </p>
-<ul>
-<li>Сравнение папок с именем проекта регистрозависимое.</li>
-</ul>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Если путь к проекту 'solution\source\project\project\project.vcproj'. </dd>
-<dd>
-<b>false</b> Если путь к проекту 'solution\source\project\project.vcproj'.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещает <a class="el" href="a00192.html">wrappers::helper::IProject</a>.</p>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/Helper/Helper/VisualStudio/<a class="el" href="a00917_source.html">ProjectImpl.hpp</a></li>
-<li>Solution/Solution/Wrappers/Helper/Helper/VisualStudio/ProjectImpl.cpp</li>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/<a class="el" href="a00967_source.html">PropertySheet.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/PropertySheet.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a01178.html">wrappers</a></li><li class="navelem"><b>helper</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00243.html">ProjectImpl</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 29 Янв 2016 15:57:04. Создано системой
+    <li class="navelem"><a class="el" href="a01161.html">wrappers</a></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00243.html">PropertySheet</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:37. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

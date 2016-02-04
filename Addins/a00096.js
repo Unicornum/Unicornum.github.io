@@ -1,6 +1,6 @@
 var a00096 =
 [
-    [ "GetCaption", "a00096.html#a664da5af815f1005540a4e1ef4d9d859", null ],
-    [ "GetPictureId", "a00096.html#a95b66959d758fa83d9198bb50075a634", null ],
-    [ "IsEnabled", "a00096.html#ac49d6ae93e81de6797e228a2ad1ae8db", null ]
+    [ "ExtractFrom", "a00096.html#a3e251c846958372bba1a743db8367b09", null ],
+    [ "GetConnectString", "a00096.html#a562089c22cfb703a62f7f4413e2ab89c", null ],
+    [ "GetVersion", "a00096.html#af34b5f4c11993b8b36444540ecf49dee", null ]
 ];

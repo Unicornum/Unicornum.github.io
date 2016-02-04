@@ -1,5 +1,6 @@
 var a00274 =
 [
-    [ "operator=", "a00274.html#adb712b65047472ac48342b15e7145e68", null ],
-    [ "SetText", "a00274.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
+    [ "GetCaption", "a00274.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
+    [ "GetPictureId", "a00274.html#a746b515d057c24d1da8a4ae132cdb72e", null ],
+    [ "IsEnabled", "a00274.html#ad020704272b8e116a3a4ee92f48ee449", null ]
 ];

@@ -1,5 +1,5 @@
 var a00270 =
 [
-    [ "operator[]", "a00270.html#a83bd33be7f97dff72c030d7f612a9688", null ],
-    [ "operator[]", "a00270.html#a16022abff37528a4226be0f9d6be91b7", null ]
+    [ "Advise", "a00270.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
+    [ "Unadvise", "a00270.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Execute/Execute/Svn.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/Utilities/Logger/Logger.mock.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3008 Architecture: x86.32 Build: 15:56 29 January 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -109,19 +109,16 @@ $(document).ready(function(){initNavTree('a00823_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Svn.hpp</div>  </div>
+<div class="title">Logger.mock.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01165.html">utilities</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>execute</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="a00276.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00276.html">Svn</a></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Экспорт папки из репозитория.</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00276.html#afa2e65f599adc03536740b78ccd9c07b">Export</a>(<span class="keyword">const</span> CString &amp; _RepositoryUrl, <span class="keyword">const</span> CString &amp; _DestPath);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;} <span class="comment">// namespace execute</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace utilities</span></div><div class="ttc" id="a00276_html"><div class="ttname"><a href="a00276.html">utilities::execute::Svn</a></div><div class="ttdoc">Класс входит в Проект Execute   Класс для выполнения команд svn. </div><div class="ttdef"><b>Definition:</b> Svn.hpp:30</div></div>
-<div class="ttc" id="a00276_html_afa2e65f599adc03536740b78ccd9c07b"><div class="ttname"><a href="a00276.html#afa2e65f599adc03536740b78ccd9c07b">utilities::execute::Svn::Export</a></div><div class="ttdeci">void Export(const CString &amp;_RepositoryUrl, const CString &amp;_DestPath)</div><div class="ttdoc">Экспорт папки из репозитория. </div><div class="ttdef"><b>Definition:</b> Svn.cpp:22</div></div>
-<div class="ttc" id="a01165_html"><div class="ttname"><a href="a01165.html">utilities</a></div><div class="ttdef"><b>Definition:</b> VSMenuImpl.hpp:6</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Logger\LoggerProxy.mock.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_a94cdd258badd1619b0111688b385338.html">Execute</a></li><li class="navelem"><a class="el" href="dir_4369e4cd5c6191cc3bcd9e4c2286c1c4.html">Execute</a></li><li class="navelem"><b>Svn.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 29 Янв 2016 15:56:59. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><a class="el" href="dir_f68686a0e0cfb9a6a9e78d33a04ce9fc.html">Logger</a></li><li class="navelem"><b>Logger.mock.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:34. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['controller',['Controller',['../a01186.html',1,'']]]
+  ['core',['Core',['../a01168.html',1,'']]],
+  ['controller',['Controller',['../a01178.html',1,'']]]
 ];

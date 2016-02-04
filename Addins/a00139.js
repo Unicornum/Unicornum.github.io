@@ -1,9 +1,7 @@
 var a00139 =
 [
-    [ "Platform", "a00239.html", "a00239" ],
-    [ "Quick", "a00257.html", null ],
-    [ "Standart", "a00273.html", null ],
-    [ "CppCheck", "a00139.html#a134da6a575e7d70f51d2de7332b461fe", null ],
-    [ "Check", "a00139.html#ae8a834af0acb138cb67cfd72a065d78e", null ],
-    [ "GetLogProgress", "a00139.html#a492e43a0d308ace61dfa53cae267f844", null ]
+    [ "Backspace", "a00139.html#a6cc744df765deddc7d08899f49b65649", null ],
+    [ "CharLeft", "a00139.html#a1cd808469c99b95129d677263c46fc97", null ],
+    [ "CharRight", "a00139.html#a6e582634d66528a35a34959fbb878e36", null ],
+    [ "GetCurrentColumn", "a00139.html#a8842526eca988c57d88408ee6054bc03", null ]
 ];

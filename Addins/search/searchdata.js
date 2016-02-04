@@ -4,11 +4,10 @@ var indexSectionsWithContent =
   1: "abcdefghilmnopqrstuvw",
   2: "cw",
   3: "acdefilmpstuv",
-  4: "abcdefgilmnopqrstuvw",
+  4: "abcdefgilmnopqrstuw",
   5: "dgiprsu",
-  6: "l",
-  7: "cgmrsvw",
-  8: "abcwÐ"
+  6: "cdefglmrsuvw",
+  7: "abcwÐ"
 };
 
 var indexSectionNames =
@@ -19,9 +18,8 @@ var indexSectionNames =
   3: "files",
   4: "functions",
   5: "variables",
-  6: "defines",
-  7: "groups",
-  8: "pages"
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -32,8 +30,7 @@ var indexSectionLabels =
   3: "Файлы",
   4: "Функции",
   5: "Переменные",
-  6: "Макросы",
-  7: "Группы",
-  8: "Страницы"
+  6: "Группы",
+  7: "Страницы"
 };
 

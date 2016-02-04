@@ -1,7 +1,7 @@
 var a00142 =
 [
-    [ "Backspace", "a00142.html#a6cc744df765deddc7d08899f49b65649", null ],
-    [ "CharLeft", "a00142.html#a1cd808469c99b95129d677263c46fc97", null ],
-    [ "CharRight", "a00142.html#a6e582634d66528a35a34959fbb878e36", null ],
-    [ "GetCurrentColumn", "a00142.html#a8842526eca988c57d88408ee6054bc03", null ]
+    [ "ProcessingInfo", "a00236.html", "a00236" ],
+    [ "Dump", "a00142.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
+    [ "ProcessingResults", "a00142.html#a269a4595d146ddae5e2f2d12637822a0", null ],
+    [ "String", "a00142.html#a757d3e341008a41c15c16a180ca27a0c", null ]
 ];

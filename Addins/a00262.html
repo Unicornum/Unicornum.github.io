@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::useful_commands::vs::tags::SelectedText</title>
+<title>Addins: Класс SolutionEvents</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3008 Architecture: x86.32 Build: 15:56 29 January 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,99 +112,119 @@ $(document).ready(function(){initNavTree('a00262.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01468.html">Полный список членов класса</a>  </div>
+<a href="a01312.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::useful_commands::vs::tags::SelectedText<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">Класс SolutionEvents</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00042.html">Проект Tags</a> <br />
- Класс получения значения тега выделенного текста.  
+<p>Класс входит в <a class="el" href="a00014.html">Проект Properties</a> <br />
+ Класс, содержащий функции, которые будут вызываться при возникновении событий решения.  
  <a href="a00262.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00705_source.html">SelectedText.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00552_source.html">SolutionEvents.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:SolutionEventsImpl_t.</p>
 <div class="dynheader">
-Граф наследования:core::useful_commands::vs::tags::SelectedText:</div>
+Граф связей класса SolutionEvents:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01469.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1tags_1_1_selected_text_inherit__map" alt="Inheritance graph"/></div>
-<map name="core_1_1useful__commands_1_1vs_1_1tags_1_1_selected_text_inherit__map" id="core_1_1useful__commands_1_1vs_1_1tags_1_1_selected_text_inherit__map">
-<area shape="rect" id="node2" href="a00198.html" title="Класс входит в Проект Tags &#160;&#160;Интерфейс классов получения значения конкретного тега. " alt="" coords="11,5,189,112"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса core::useful_commands::vs::tags::SelectedText:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01470.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1tags_1_1_selected_text_coll__map" alt="Collaboration graph"/></div>
-<map name="core_1_1useful__commands_1_1vs_1_1tags_1_1_selected_text_coll__map" id="core_1_1useful__commands_1_1vs_1_1tags_1_1_selected_text_coll__map">
-<area shape="rect" id="node2" href="a00198.html" title="Класс входит в Проект Tags &#160;&#160;Интерфейс классов получения значения конкретного тега. " alt="" coords="11,5,189,112"/>
-</map>
+<div class="center"><img src="a01313.png" border="0" usemap="#_solution_events_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a32784c24a459077a88242235c5c059a5"><td class="memItemLeft" align="right" valign="top">CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a32784c24a459077a88242235c5c059a5">GetValue</a> (const <a class="el" href="a00143.html">Data_t</a> *) const  override</td></tr>
-<tr class="memdesc:a32784c24a459077a88242235c5c059a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения значения тега.  <a href="#a32784c24a459077a88242235c5c059a5">Подробнее...</a><br /></td></tr>
-<tr class="separator:a32784c24a459077a88242235c5c059a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ab7699805a19a8e22a902f21d1bc10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37ab7699805a19a8e22a902f21d1bc10"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a37ab7699805a19a8e22a902f21d1bc10">Opened</a> (void)</td></tr>
+<tr class="memdesc:a37ab7699805a19a8e22a902f21d1bc10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается сразу после открытия решения. <br /></td></tr>
+<tr class="separator:a37ab7699805a19a8e22a902f21d1bc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b82a0ee9f577e8d879eada4c611a3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92b82a0ee9f577e8d879eada4c611a3b"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a92b82a0ee9f577e8d879eada4c611a3b">AfterClosing</a> (void)</td></tr>
+<tr class="memdesc:a92b82a0ee9f577e8d879eada4c611a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается сразу после закрытия решения. <br /></td></tr>
+<tr class="separator:a92b82a0ee9f577e8d879eada4c611a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b7a290c5f3fcba26b4b07e056a7320"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21b7a290c5f3fcba26b4b07e056a7320"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a21b7a290c5f3fcba26b4b07e056a7320">BeforeClosing</a> (void)</td></tr>
+<tr class="memdesc:a21b7a290c5f3fcba26b4b07e056a7320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается непосредственно перед закрытием решения. <br /></td></tr>
+<tr class="separator:a21b7a290c5f3fcba26b4b07e056a7320"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1729654adb306bca37aa34a328e3ebdd"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a1729654adb306bca37aa34a328e3ebdd">ProjectAdded</a> (EnvDTE::Project *)</td></tr>
+<tr class="memdesc:a1729654adb306bca37aa34a328e3ebdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается после загрузки проекта.  <a href="#a1729654adb306bca37aa34a328e3ebdd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1729654adb306bca37aa34a328e3ebdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a681cdac782a42019aa3b83ab8508d4ac"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html#a681cdac782a42019aa3b83ab8508d4ac">ProjectRemoved</a> (EnvDTE::Project *)</td></tr>
+<tr class="memdesc:a681cdac782a42019aa3b83ab8508d4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается перед выгрузкой проекта.  <a href="#a681cdac782a42019aa3b83ab8508d4ac">Подробнее...</a><br /></td></tr>
+<tr class="separator:a681cdac782a42019aa3b83ab8508d4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект Tags</a> <br />
- Класс получения значения тега выделенного текста. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00014.html">Проект Properties</a> <br />
+ Класс, содержащий функции, которые будут вызываться при возникновении событий решения. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>30 Июнь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>20 Июль 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a32784c24a459077a88242235c5c059a5"></a>
+<a class="anchor" id="a1729654adb306bca37aa34a328e3ebdd"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CString SelectedText::GetValue </td>
+          <td class="memname">void __stdcall SolutionEvents::ProjectAdded </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00143.html">Data_t</a> *&#160;</td>
-          <td class="paramname"><em>_pData</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">EnvDTE::Project *&#160;</td>
+          <td class="paramname"><em>_pProject</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Функция получения значения тега. </p>
-<dl class="section return"><dt>Возвращает</dt><dd>Выделенный текст активного документа.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
+<p>Функция вызывается после загрузки проекта. </p>
+<p>Вызывается:</p><ul>
+<li>При создании нового проекта.</li>
+<li>При подключении существующего проекта (вручную или надстройкой).</li>
+<li>При загрузке проектов для папки решения.</li>
+<li>VS2013: для каждого проекта при загрузке решения.</li>
 </ul>
-</td></tr>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pProject</td><td>Указатель на объект проекта, который загружается. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Замещает <a class="el" href="a00198.html#a6ebfa0f1cb27871d9d1d81940d18d60b">core::useful_commands::vs::tags::ITagValue</a>.</p>
+</div>
+</div>
+<a class="anchor" id="a681cdac782a42019aa3b83ab8508d4ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __stdcall SolutionEvents::ProjectRemoved </td>
+          <td>(</td>
+          <td class="paramtype">EnvDTE::Project *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вызывается перед выгрузкой проекта. </p>
+<p>Вызывается:</p><ul>
+<li>При удалении проекта.</li>
+<li>При выгрузке проектов из папки решения. </li>
+</ul>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Support/Tags/Tags/<a class="el" href="a00705_source.html">SelectedText.hpp</a></li>
-<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Support/Tags/Tags/SelectedText.cpp</li>
+<li>Solution/Solution/ConnectionPoints/VisualStudio/Properties/Properties/<a class="el" href="a00552_source.html">SolutionEvents.hpp</a></li>
+<li>Solution/Solution/ConnectionPoints/VisualStudio/Properties/Properties/SolutionEvents.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>tags</b></li><li class="navelem"><a class="el" href="a00262.html">SelectedText</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 29 Янв 2016 15:57:02. Создано системой
+    <li class="navelem"><a class="el" href="a00262.html">SolutionEvents</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:35. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
