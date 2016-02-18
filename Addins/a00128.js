@@ -1,6 +1,8 @@
 var a00128 =
 [
-    [ "GetCaption", "a00128.html#a6d00d75983e24e3816bd5ca377139746", null ],
-    [ "GetHotKey", "a00128.html#a827a32ffbd7cc8a9ab2f5c0b130cd917", null ],
-    [ "IsEnabled", "a00128.html#a3b921ee882fc84f1e68ad73a4ad345a3", null ]
+    [ "GetCount", "a00128.html#abbc95386bcc2e25287929c3aeb044c81", null ],
+    [ "GetItem", "a00128.html#a212a9fd442dace44367a7d6dcfa3a9f8", null ],
+    [ "IsExist", "a00128.html#a373c590faedafe634836c26ad9419161", null ],
+    [ "operator[]", "a00128.html#afafc3273142ce39cc288fcfa61ddf4d5", null ],
+    [ "operator[]", "a00128.html#a5d2215c2dc29590520d9ede5f171613d", null ]
 ];

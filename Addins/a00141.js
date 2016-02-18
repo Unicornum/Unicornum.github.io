@@ -1,6 +1,6 @@
 var a00141 =
 [
-    [ "RegexString", "a00141.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
-    [ "ReplaceString", "a00141.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
-    [ "SourceStrings", "a00141.html#a5b43bb718b3729c19bada2c831ca2297", null ]
+    [ "GetName", "a00141.html#ada1d4821134087994c4b47174d4a0dc8", null ],
+    [ "GetType", "a00141.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
+    [ "PROPERTY_GET", "a00141.html#a1a8fca27d2b23413c1e2530f0a1e4acf", null ]
 ];

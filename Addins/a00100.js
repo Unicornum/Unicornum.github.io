@@ -1,5 +1,7 @@
 var a00100 =
 [
-    [ "WasFoundNext", "a00100.html#abbb3a4c1bca71e9510522a27e5b86e72", null ],
-    [ "WasNoFound", "a00100.html#af6330f00eab5407344d37a1939951a5f", null ]
+    [ "Введение", "a00100.html#sProjectFilesBrief", [
+      [ "Список задач проекта", "a00100.html#ssProjectFilesTasks", null ]
+    ] ],
+    [ "Список задач проекта", "a00101.html", null ]
 ];

@@ -1,5 +1,5 @@
 var a00270 =
 [
-    [ "Advise", "a00270.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
-    [ "Unadvise", "a00270.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
+    [ "WasFoundNext", "a00270.html#a094a112ede90e57b8e3504addf0bffb4", null ],
+    [ "WasNoFound", "a00270.html#a91bd97971ab02faae49491dc5f0f558b", null ]
 ];

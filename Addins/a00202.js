@@ -1,5 +1,6 @@
 var a00202 =
 [
-    [ "Main", "a00202.html#a41fd0853ce2d4dcd5c6c5096352e37a3", null ],
-    [ "Set", "a00202.html#a7bb75640e0313e7482d8df39ef523fa2", null ]
+    [ "GetCaption", "a00202.html#a9edd2c2b7f26c3570d4e0ee7fc2beae7", null ],
+    [ "GetHotKey", "a00202.html#aee25232ff4a57fae61cac95edb6edc62", null ],
+    [ "IsEnabled", "a00202.html#ad385bc3596e1107b7282e76b23e9343f", null ]
 ];

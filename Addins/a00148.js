@@ -1,6 +1,6 @@
 var a00148 =
 [
-    [ "AddVersionData", "a00148.html#ab3ca0f779fe4dfc4ab250a0561c72af7", null ],
-    [ "UpdateCopyrightYear", "a00148.html#af819ea33c04761393ed44c212ba0ae33", null ],
-    [ "UpdateVersion", "a00148.html#a94fb71da43515d70e9d93b813ffc9339", null ]
+    [ "GetCaption", "a00148.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
+    [ "GetPictureId", "a00148.html#a1f1d44ed835b9b589b2f383cff9f5d88", null ],
+    [ "IsEnabled", "a00148.html#a006eca46887e662789831772b0c5107a", null ]
 ];

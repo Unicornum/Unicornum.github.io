@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -51,7 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li class="current"><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -125,15 +124,16 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 </li>
 </ul>
 <ul>
-<li>Открыть документацию внешних библиотек.</li>
-<li>Открыть документацию продукта.</li>
+<li>Открыть документацию Alicorn.</li>
+<li>Открыть документацию UniCA.</li>
 <li>Онлайн-документация Doxygen. <h4>Macros</h4>
 </li>
 </ul>
 <ul>
 <li>Вставить #pragma chMSG()</li>
 <li>Перенос строки комментария</li>
-<li>Вставить заготовку текста <h4></h4>
+<li>Вставить заготовку текста</li>
+<li>Вставить дату/время <h4></h4>
 </li>
 </ul>
 <ul>
@@ -144,25 +144,25 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <p>Содержит команды: </p><h4>Тестирование</h4>
 <ul>
 <li>Добавить тест класса &lt;&gt;.</li>
-<li>Добавить заготовку теста.</li>
-<li>Создать mock класс для класса &lt;&gt;. <h5>Doxygen</h5>
+<li>Добавить заготовку теста. <h5>Doxygen</h5>
 </li>
 </ul>
 <ul>
 <li>Добавить описание функции/класса &lt;&gt;.</li>
 <li>Увеличить номер версии класса &lt;&gt;.</li>
 <li>Увеличить номер подверсии класса &lt;&gt;.</li>
-<li>Увеличить номер подподверсии класса &lt;&gt;. <h4>Утилиты</h4>
+<li>Увеличить номер подподверсии класса &lt;&gt;. <h4></h4>
+</li>
+</ul>
+<ul>
+<li>Добавить &lt;выделенное&gt; в файл файл usertype.dat <h4>Утилиты</h4>
 </li>
 </ul>
 <ul>
 <li>AStyle: обработать файл.</li>
 </ul>
 <h3>Контекстное меню проекта</h3>
-<p>Содержит команды:</p><ul>
-<li>Добавить класс <h4>Doxygen</h4>
-</li>
-</ul>
+<p>Содержит команды: </p><h4>Doxygen</h4>
 <ul>
 <li>Добавить проект тестирования.</li>
 </ul>
@@ -185,39 +185,67 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 </ul>
 <h2>Раздел Macros </h2>
 <p>Раздел команд в общем меню для ввода типичных кусков кода и назначающая им "горячие" клавиши:</p><ul>
-<li>Добавление строки "#pragma chMSG()" (ALT + M).</li>
-<li>Перевод строки в комментарии (ALT + 8).</li>
-<li>Добавление заготовки текста _T("") (ALT + T).</li>
+<li> <input type="checkbox" checked>  Добавление строки "#pragma chMSG()" (ALT + M).</li>
+<li> <input type="checkbox" checked>  Перевод строки в комментарии (ALT + 8).</li>
+<li> <input type="checkbox" checked>  Добавление заготовки текста _T("") (ALT + T).</li>
+<li> <input type="checkbox" checked>  Добавление строки даты/времени (в виде 1602061200) (ALT + D).</li>
 </ul>
 <h2>CppCheck </h2>
-<h3>Общие требования</h3>
-<ul>
-<li>Шаблон выводных сообщений: '{file}({line}): {severity} (suppress_id = {id}): {message}'.</li>
-<li>Включены все сообщения (&ndash;enable=all).</li>
-<li>Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
-<li>Показывать подозрительные места (&ndash;inconclusive).</li>
-<li>В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013).</li>
+<p>### Общие требования</p><ul>
+<li> <input type="checkbox" checked>  Шаблон выводных сообщений: '{file}({line}): {severity} (suppress_id = {id}): {message}'.</li>
+<li> <input type="checkbox" checked>  Включены все сообщения (&ndash;enable=all).</li>
+<li> <input type="checkbox" checked>  Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
+<li> <input type="checkbox" checked>  Показывать подозрительные места (&ndash;inconclusive).</li>
+<li> <input type="checkbox" checked>  Игнорировать папку внешних библиотек.</li>
+<li> <input type="checkbox">  В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013).</li>
 </ul>
 <p>Игнорировать строки, содержащие:</p><ul>
-<li>'information (suppress_id = purgedConfiguration):'.</li>
+<li> <input type="checkbox" checked>  'information (suppress_id = purgedConfiguration):'.</li>
 </ul>
-<h3>Быстрая проверка</h3>
-<ul>
-<li>Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
-<li>Проверка со всеми вариантами макросов (&ndash;force).</li>
+<p>### Быстрая проверка</p><ul>
+<li> <input type="checkbox" checked>  Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
+<li> <input type="checkbox" checked>  Проверка со всеми вариантами макросов (&ndash;force).</li>
 </ul>
 <h2>Version </h2>
 <p>Надстройка должна обеспечивать:</p><ul>
-<li>Все .exe и .dll файлы при сборке должны содержать версию исходных файлов (ревизия файлов решения + ревизия файлов внешних библиотек).</li>
-<li>Макрос, представляющий собой строку текущей версии программы.</li>
-<li>Формат версии '1.0.0.123(456) Build ЧЧ:ММ ДД.ММ.ГГГГ'.</li>
+<li> <input type="checkbox" checked>  Все .exe и .dll файлы при сборке должны содержать версию исходных файлов + ревизию файлов решения.</li>
+<li> <input type="checkbox" checked>  Макрос, представляющий собой строку текущей версии программы.</li>
+<li> <input type="checkbox" checked>  Формат версии '1.0.0.1234 Build ЧЧ:ММ ДД.ММ.ГГГГ'.</li>
 </ul>
 <h2>Properties </h2>
 <p>Надстройка, подключающая всем проектам решения общий файл .props.</p><ul>
-<li>Путь к общему файлу свойств берется из настроек.</li>
-<li>При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
-<li>При отсутствии файла свойств он должен подключаться.</li>
-<li>При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
+<li> <input type="checkbox" checked>  Путь к общему файлу свойств берется из настроек.</li>
+<li> <input type="checkbox" checked>  При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
+<li> <input type="checkbox" checked>  При отсутствии файла свойств у проекта он должен подключаться.</li>
+<li> <input type="checkbox">  При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
+</ul>
+<h2><a class="anchor" id="ssRequirementsTimeTracker"></a>
+Time Tracker</h2>
+<p>Надстройка предназначена для автоматизация учета времени, потраченного на разработку ПО и простого доступа к результатам этого учета.</p><ul>
+<li> <input type="checkbox">  Ключевое требование! Все действия должны происходить автоматически, пользователь вообще не должен участвовать в процессе учета времени.</li>
+<li> <input type="checkbox">  Затраченное время учитывается по действиям пользователя во время работы с Visual Studio (нажатия клавишь клавиатуры и клики мышью (правая и левая кнопки) в окнах документа, меню, обозревателя решений).</li>
+<li> <input type="checkbox">  Учтенное время работы должно записываться на специальную страницу документации в формате Doxygen.</li>
+<li> <input type="checkbox">  Команда вызова окна просмотра отчета за неделю.</li>
+<li> <input type="checkbox">  Учет суммарного времени, потраченного на работу с разными решениями в течении недели (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000001">Необходимо сделать:</a></b></dt><dd>уточнить - здесь должен быть какой-то сервис, получающий отчеты ото всех решений и отправляющий общий отчет на почту в конце недели).</dd></dl>
+</li>
+</ul>
+<p>### Учет времени</p><ul>
+<li> <input type="checkbox">  Промежутки веремени между событиями более &lt; уточнить&gt;=""&gt; минут не должны учитываться.</li>
+<li> <input type="checkbox">  Запись времени работы должна производиться таким образом, чтобы при аварийном завершении работы Visual Studio учтенное время не должно теряться (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000002">Необходимо сделать:</a></b></dt><dd>требуется более точная формулировка).</dd></dl>
+</li>
+</ul>
+<p>### Страница информации о времени работы с решением</p><ul>
+<li> <input type="checkbox">  Содержит информацию о времени, потраченном на разработку сегодня (в виде, пригодном для ее быстрого извлечения).</li>
+<li> <input type="checkbox">  Содержит информацию о времени, потраченном на разработку за текущую и предыдущую недели по дням (в виде, пригодном для ее быстрого извлечения).</li>
+</ul>
+<p>### Страница статистики времени работы с решением</p><ul>
+<li> <input type="checkbox">  Содержит статистику времени работы с решением в виде, пригодном для генерации документации при помощи Doxygen.</li>
+<li> <input type="checkbox">  Раздел общей статистики (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000003">Необходимо сделать:</a></b></dt><dd>учточнить список выводимых значений).</dd></dl>
+</li>
+</ul>
+<p>### Отчет за неделю</p><ul>
+<li> <input type="checkbox">  Отдельная утилита, получающая в качестве параметра путь к файлу, содержащему статистику работы с решением.</li>
+<li> <input type="checkbox">  Диалоговое окно, отображающее диаграмму, аналогичную полю 'Обзор на неделю' сервиса Primaerp.</li>
 </ul>
 <h1>Утилиты </h1>
 <h2>Regex Tester </h2>
@@ -248,7 +276,7 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:35. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

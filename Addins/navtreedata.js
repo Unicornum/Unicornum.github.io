@@ -5,9 +5,6 @@ var NAVTREE =
     [ "Список задач", "a00001.html", null ],
     [ "Ошибки", "a00002.html", null ],
     [ "Группы", "modules.html", "modules" ],
-    [ "Пространства имен", null, [
-      [ "Пространства имен", "namespaces.html", "namespaces" ]
-    ] ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель классов", "classes.html", null ],
@@ -31,12 +28,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00089.html#ssProjectFilesTasks",
-"a00181.html",
-"a00271.html#afa2e65f599adc03536740b78ccd9c07b",
-"a00529_source.html",
-"a00838_source.html",
-"dir_1b531eb723a6ba09b90be017428f50fe.html"
+"a00092.html",
+"a00186.html",
+"a00273.html#a338d994f833f48fd5597d859c40e57c6",
+"a00509_source.html",
+"a00816_source.html",
+"a01128_source.html",
+"functions_g.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

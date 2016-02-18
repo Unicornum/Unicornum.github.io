@@ -1,4 +1,6 @@
 var a00292 =
 [
-    [ "GetFilter", "a00292.html#a698c1a9d5fbf3317d76d84245d664510", null ]
+    [ "GetCaption", "a00292.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
+    [ "GetPictureId", "a00292.html#a746b515d057c24d1da8a4ae132cdb72e", null ],
+    [ "IsEnabled", "a00292.html#ad020704272b8e116a3a4ee92f48ee449", null ]
 ];

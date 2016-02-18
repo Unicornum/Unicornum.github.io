@@ -1,5 +1,6 @@
 var a00159 =
 [
-    [ "Check", "a00159.html#ad56ae2ebe73c809f04cc5bf55eaff4d3", null ],
-    [ "GetProgress", "a00159.html#a32e2bdd187c9fc89d60b4d9afa6749d6", null ]
+    [ "AddVersionData", "a00159.html#ab3ca0f779fe4dfc4ab250a0561c72af7", null ],
+    [ "UpdateCopyrightYear", "a00159.html#af819ea33c04761393ed44c212ba0ae33", null ],
+    [ "UpdateVersion", "a00159.html#a94fb71da43515d70e9d93b813ffc9339", null ]
 ];

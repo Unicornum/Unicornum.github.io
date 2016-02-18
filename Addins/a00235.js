@@ -1,5 +1,5 @@
 var a00235 =
 [
-    [ "GetLogProgress", "a00235.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
-    [ "Process", "a00235.html#ac73e507ff9c6d09893cddc29aef9b5c3", null ]
+    [ "OpenDoc", "a00235.html#aa03a7cc3b7e471baa81d65b1e0919f5f", null ],
+    [ "IsEnabled", "a00235.html#a39a3353ef4403a4f5efeb973a1e9fcb6", null ]
 ];

@@ -1,7 +1,6 @@
 var a00025 =
 [
-    [ "Введение", "a00025.html#sMenuBrief", [
-      [ "Список задач проекта", "a00025.html#ssMenuTasks", null ]
-    ] ],
+    [ "Введение", "a00025.html#sCpVsTimeTrackerBrief", null ],
+    [ "Подробное описание проекта", "a00025.html#sCpVsTimeTrackerDetails", null ],
     [ "Список задач проекта", "a00026.html", null ]
 ];

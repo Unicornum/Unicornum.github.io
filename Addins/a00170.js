@@ -1,4 +1,4 @@
 var a00170 =
 [
-    [ "GetText", "a00170.html#acadb8f31e8af23bf0700700fe57be431", null ]
+    [ "GetLogProgress", "a00170.html#a7cfb5d0a3e528d578215c812e4832be6", null ]
 ];

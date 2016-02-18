@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Шаблон класса controller::BlockingSignal&lt; TParam &gt;</title>
+<title>Addins: Класс wrappers::vs::AddIns</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -51,7 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -112,83 +111,83 @@ $(document).ready(function(){initNavTree('a00108.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01321.html">Полный список членов класса</a>  </div>
+<a href="a01766.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса controller::BlockingSignal&lt; TParam &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01177.html">RegexTester</a> &raquo; <a class="el" href="a01178.html">Controller</a></div></div>  </div>
+<div class="title">Класс wrappers::vs::AddIns</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00066.html">Проект RegexTester</a> <br />
- Базовый класс блокирующего сигнала.  
+<p>Класс входит в <a class="el" href="a00094.html">Проект Ide</a> <br />
+ Класс для удобного и логичного доступа к объекту надстройки.  
  <a href="a00108.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00845_source.html">BlockingSignal.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:controller::IsBlocked.</p>
+<p><code>#include &lt;<a class="el" href="a01083_source.html">AddIns.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса controller::BlockingSignal&lt; TParam &gt;:</div>
+Граф связей класса wrappers::vs::AddIns:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01322.png" border="0" usemap="#controller_1_1_blocking_signal_3_01_t_param_01_4_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01767.png" border="0" usemap="#wrappers_1_1vs_1_1_add_ins_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:aa9d7a4160ad52d6148570afad770cf9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#aa9d7a4160ad52d6148570afad770cf9c">operator()</a> (TParam)</td></tr>
-<tr class="memdesc:aa9d7a4160ad52d6148570afad770cf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор выполнения действия сигнала.  <a href="#aa9d7a4160ad52d6148570afad770cf9c">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa9d7a4160ad52d6148570afad770cf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a574dd95dde83c6bd52cf73166a88ba67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00107.html">AddIn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html#a574dd95dde83c6bd52cf73166a88ba67">operator[]</a> (Current_t) const </td></tr>
+<tr class="memdesc:a574dd95dde83c6bd52cf73166a88ba67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор получения текущего объекта надстройки. </p><dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+ <a href="#a574dd95dde83c6bd52cf73166a88ba67">Подробнее...</a><br /></td></tr>
+<tr class="separator:a574dd95dde83c6bd52cf73166a88ba67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TParam&gt;<br />
-class controller::BlockingSignal&lt; TParam &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00066.html">Проект RegexTester</a> <br />
- Базовый класс блокирующего сигнала. </p>
-<ul>
-<li>Все классы сигналов, которые должны блокировать выполнение других сигналов на время выполнения текущего текущего, должны наследоваться от этого класса.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00094.html">Проект Ide</a> <br />
+ Класс для удобного и логичного доступа к объекту надстройки. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>02 Декабрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>17 май 2014 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="aa9d7a4160ad52d6148570afad770cf9c"></a>
+<a class="anchor" id="a574dd95dde83c6bd52cf73166a88ba67"></a>
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class TParam&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="a00108.html">controller::BlockingSignal</a>&lt; TParam &gt;::operator() </td>
+          <td class="memname"><a class="el" href="a00107.html">AddIn</a> AddIns::operator[] </td>
           <td>(</td>
-          <td class="paramtype">TParam&#160;</td>
-          <td class="paramname"><em>_Param</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">Current_t&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Оператор выполнения действия сигнала. </p>
+<p>Оператор получения текущего объекта надстройки. </p><dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception.</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</p>
 <ul>
-<li>Вызывает функцию Execute(), передавая ей свой параметр.</li>
-<li>Блокирует вызов функций Execute() других классов, унаследованных от текущего на время выполнения функции Execute() текущего объекта.</li>
-<li>Перехватывает исключение при выполнении функции Execute(). </li>
+<li>Указанного объекта надстройки не существует. </li>
 </ul>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Tools/RegexTester/RegexTester/Controller/<a class="el" href="a00845_source.html">BlockingSignal.hpp</a></li>
-<li>Solution/Solution/Tools/RegexTester/RegexTester/Controller/BlockingSignal.inl</li>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/<a class="el" href="a01083_source.html">AddIns.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/AddIns.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a00108.html">BlockingSignal</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:35. Создано системой
+    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00108.html">AddIns</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

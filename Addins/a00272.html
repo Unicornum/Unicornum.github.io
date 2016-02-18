@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::utilities::execute::SvnInfo</title>
+<title>Addins: Класс core::utilities::vs::Report</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -51,7 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -111,44 +110,109 @@ $(document).ready(function(){initNavTree('a00272.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01568.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01681.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::execute::SvnInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01168.html">Core</a> &raquo; <a class="el" href="a01176.html">Utilities</a> &raquo; <a class="el" href="a01172.html">Execute</a></div></div>  </div>
+<div class="title">Класс core::utilities::vs::Report<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01242.html">Core</a> &raquo; <a class="el" href="a01250.html">Utilities</a> &raquo; <a class="el" href="a01248.html">Logger</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00057.html">Проект Execute</a> <br />
- Класс получения информации о репозитории для указанной рабочей копии.  
+<p>Класс входит в <a class="el" href="a00070.html">Проект Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio.  
  <a href="a00272.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00817_source.html">SvnInfo.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00894_source.html">Report.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:noncopyable.</p>
 <div class="dynheader">
-Граф связей класса core::utilities::execute::SvnInfo:</div>
+Граф связей класса core::utilities::vs::Report:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01569.png" border="0" usemap="#core_1_1utilities_1_1execute_1_1_svn_info_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01682.png" border="0" usemap="#core_1_1utilities_1_1vs_1_1_report_coll__map" alt="Collaboration graph"/></div>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae23c3dd2c59922ac8994444707812c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00272.html#ae23c3dd2c59922ac8994444707812c3f">ToLog</a> (size_t _Flag, const CString &amp;_Text)</td></tr>
+<tr class="memdesc:ae23c3dd2c59922ac8994444707812c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод сообщения в окно вывода.  <a href="#ae23c3dd2c59922ac8994444707812c3f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae23c3dd2c59922ac8994444707812c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00057.html">Проект Execute</a> <br />
- Класс получения информации о репозитории для указанной рабочей копии. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00070.html">Проект Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio. </p>
+<ul>
+<li>Если имя модуля не задано (параметр Name), выводится оно не будет.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.0.1.0 <br />
+ 2.0.0.0 <br />
+ 2.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>06 Август 2015 <br />
- 01 Февраль 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>? ??? 2014 <br />
+ 5 янв 2015 <br />
+ 8 фев 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a00817_source.html">SvnInfo.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/SvnInfo.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ae23c3dd2c59922ac8994444707812c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::ToLog </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вывод сообщения в окно вывода. </p>
+<ul>
+<li>Сообщение будет выведено в окно, имя которого указно в конструкторе.</li>
+<li>Флаг Clear обрабатывается в первую очередь и очищает окно вывода; может использоваться вместе с любыми другими флагами.</li>
+<li>Если установлен флаг Title, то текст будет выведен как заголовок (без указания времени и типа сообщения, а также дополнен символами '=' до длинны MaxMessageLenght), флаги [Fatal ... Debug] игнорируются.</li>
+<li>Если установлен флаг Status, то текст будет выведен в статус-бар Visual Studio.</li>
+<li>Если установлен один из флагов [Fatal ... Debug], будет выведено текущее время, тип сообщения (определяется по флагу) и само сообщение.</li>
+<li>Сообщение с флагом Debug выводится только в отладочной версии программы.</li>
+<li>Сообщение Simple будет выведено без времени и типа, просто указанная строка.</li>
+<li>При выводе сообщений с типом Fatal, Error, Warning или установленном флаге Open будет окрыто выводное окно Visual Studio. </li>
+</ul>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00272_ae23c3dd2c59922ac8994444707812c3f_cgraph.png" border="0" usemap="#a00272_ae23c3dd2c59922ac8994444707812c3f_cgraph" alt=""/></div>
+<map name="a00272_ae23c3dd2c59922ac8994444707812c3f_cgraph" id="a00272_ae23c3dd2c59922ac8994444707812c3f_cgraph">
+<area shape="rect" id="node3" href="a00128.html#a373c590faedafe634836c26ad9419161" title="Проверка того, что объект с указанным именем существует в коллекции. " alt="" coords="209,5,394,46"/>
+<area shape="rect" id="node5" href="a00244.html#a3d43f02811e8098d4aad8e43dede0917" title="Добавить окно с указанным именем. " alt="" coords="192,70,411,111"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a00894_source.html">Report.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/Report.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00272.html">SvnInfo</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:36. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00272.html">Report</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

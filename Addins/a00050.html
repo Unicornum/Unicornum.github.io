@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Раздел Utilities</title>
+<title>Addins: Раздел Support</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.16 Revision: 3087 Architecture: x86.32 Build: 17:44 04 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -51,7 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li class="current"><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -103,71 +102,30 @@ $(document).ready(function(){initNavTree('a00050.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Раздел Utilities </div>  </div>
+<div class="title">Раздел Support </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sUtilitiesBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sCoreUcVsSupportPartBrief"></a>
 Введение</h1>
-<p>Раздел вспомогательных классов, которые используются в других разделах решения.</p>
-<h1><a class="anchor" id="sUtilitiesDetails"></a>
-Проекты раздела</h1>
-<h2><a class="anchor" id="ssUtilitiesProject"></a>
-Utilities</h2>
-<p>Проект содержит отдельные вспомогательные классы общего характера, используемые в других разделах решения.</p>
-<p>Список классов проекта: <a class="el" href="a01175.html#aCoreUtilitiesUtilitiesClasses">aCoreUtilitiesUtilitiesClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00063.html">Проект UtilitiesProject</a></p>
-<h2><a class="anchor" id="ssExecuteProject"></a>
-Execute</h2>
-<p>Проект содержит классы-фасады для запуска внешних программ (утилит), обеспечивающих работу соответствующих команд надстройки:</p><ul>
-<li>Класс запуска программы Svn (экспорт папок из репозитория, получение номера ревизии файлов проекта/библиотек).</li>
-<li>Класс запуска программы Doxygen (генерация документации).</li>
-<li>Класс запуска программы CppCheck (статический анализ кода).</li>
+<p>Раздел проектов, содержащих вспомогательные классы для классов команд.</p>
+<h2><a class="anchor" id="ssCoreUcVsSupportPartProjects"></a>
+Проекты раздела</h2>
+<p>Проект классов, предназначенных для замены тегов в заголовке команды. <br />
+ Поддерживаются следующие теги:</p><ul>
+<li>&lt;Text&gt;: заменяется выделенным текстом.</li>
+<li>&lt;File&gt;: заменяется именем файла активного документа.</li>
+<li>&lt;Solution&gt;: заменяется именем текущего решения.</li>
+<li>&lt;SolutionProject&gt;: заменяется именем выделенного в дереве решения проекта.</li>
+<li>&lt;DocumentProject&gt;: заменяется именем родительского для открытого документа проектом.</li>
 </ul>
-<p>Список классов проекта: <a class="el" href="a01172.html#aCoreUtilitiesExecuteClasses">aCoreUtilitiesExecuteClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00057.html">Проект Execute</a></p>
-<h2><a class="anchor" id="ssEnvironmentVariablesProject"></a>
-EnvironmentVariables</h2>
-<p>Проект классов для установки значений переменных окружения для программ:</p><ul>
-<li>Doxygen.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>Проект предназначен для внутреннего использования в разделе Utilities и поэтому его классы не должны включаться в заголовочный файл раздела.</dd></dl>
-<p>Список классов проекта: <a class="el" href="a01171.html#aCoreUtilitiesEnvironmentVariablesClasses">aCoreUtilitiesEnvironmentVariablesClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00055.html">Проект EnvironmentVariables</a></p>
-<h2><a class="anchor" id="ssFilterProject"></a>
-Filter</h2>
-<p>Проект классов фильтрации полученного от выполняемой программы консольного вывода.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Проект предназначен для внутреннего использования в разделе Utilities и поэтому его классы не должны включаться в заголовочный файл раздела.</dd></dl>
-<p>Список классов проекта: <a class="el" href="a01173.html#aCoreUtilitiesFilterClasses">aCoreUtilitiesFilterClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00059.html">Проект Filter</a></p>
-<h2><a class="anchor" id="ssDialogProject"></a>
-Dialog</h2>
-<p>Проект, содержащий классы диалоговых окон:</p><ul>
-<li>Для отображения прогресса некоего процесса (в процентах и просто 'бегущей' строкой).</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>Проект предназначен для внутреннего использования в разделе Utilities и поэтому его классы не должны включаться в заголовочный файл раздела.</dd></dl>
-<p>Список классов проекта: <a class="el" href="a01169.html#aCoreUtilitiesDialogClasses">aCoreUtilitiesDialogClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00051.html">Проект Dialog</a></p>
-<h2><a class="anchor" id="ssDoxygenProject"></a>
-Doxygen</h2>
-<p>Проект классов, специфичных для Doxygen:</p><ul>
-<li>Предварительная обработка документации решения для вставки описаний дочерних разделов/проектов.</li>
-</ul>
-<p>Список классов проекта: <a class="el" href="a01170.html#aCoreUtilitiesDoxygenClasses">aCoreUtilitiesDoxygenClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00053.html">Проект Doxygen</a></p>
-<h2><a class="anchor" id="ssLoggerProject"></a>
-Logger</h2>
-<p>Проект классов, обеспечивающих вывод информации:</p><ul>
-<li>В выводное окно Visual Studio.</li>
-</ul>
-<p>Список классов проекта: <a class="el" href="a01174.html#aCoreUtilitiesLoggerClasses">aCoreUtilitiesLoggerClasses</a></p>
-<p>Страница проекта: <a class="el" href="a00061.html">Проект Logger</a> </p>
+<p>Страница проекта: <a class="el" href="a00051.html">Проект Tags</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00022.html">Core</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Чт 4 Фев 2016 17:44:35. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00031.html">Core</a></li><li class="navelem"><a class="el" href="a00036.html">Раздел UsefulCommands</a></li><li class="navelem"><a class="el" href="a00039.html">Раздел VisualStudio</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

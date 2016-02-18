@@ -1,6 +1,4 @@
 var a00236 =
 [
-    [ "Groups", "a00236.html#a5e81145a5fcdf590752cb52b753e185f", null ],
-    [ "IsInvalidRegex", "a00236.html#ab125412a0bd7cfe6eec463b740827942", null ],
-    [ "Result", "a00236.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
+    [ "GetCaption", "a00236.html#ade76701e06d95dd78419f0e23bd2ea28", null ]
 ];

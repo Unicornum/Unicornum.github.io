@@ -1,6 +1,5 @@
 var a00137 =
 [
-    [ "GetCaption", "a00137.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
-    [ "GetPictureId", "a00137.html#a1f1d44ed835b9b589b2f383cff9f5d88", null ],
-    [ "IsEnabled", "a00137.html#a006eca46887e662789831772b0c5107a", null ]
+    [ "Clear", "a00137.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
+    [ "GetSize", "a00137.html#a2a85a0531e1896a6097f74726fe12666", null ]
 ];

@@ -1,7 +1,8 @@
 var a00208 =
 [
-    [ "Menu", "a00208.html#a1881db3258148a820135f54a229a0777", null ],
-    [ "Add", "a00208.html#a4ca44c10bf386c40943bfe3bbf8ba312", null ],
-    [ "AddSeparator", "a00208.html#ac9b0f89019d2e3725c557f35daa7d052", null ],
-    [ "operator[]", "a00208.html#ae59ba15a4d1d48d81124363aafceeea4", null ]
+    [ "GetRegexString", "a00208.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
+    [ "GetReplaceString", "a00208.html#a81029770ef4725794abaa505ad34fc55", null ],
+    [ "GetSourseStrings", "a00208.html#a53b21f1290abceb1fda90789c42f82ee", null ],
+    [ "SetProcessedData", "a00208.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
+    [ "DoProcess", "a00208.html#a5491cd61ba8f067527535004e251f81a", null ]
 ];

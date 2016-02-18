@@ -1,7 +1,5 @@
 var a00246 =
 [
-    [ "GetCount", "a00246.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
-    [ "GetItem", "a00246.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
-    [ "LoadFromFile", "a00246.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
-    [ "Remove", "a00246.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
+    [ "GetReplaceString", "a00246.html#a672429326859357fdab4692dbfbacbef", null ],
+    [ "SetProcessedData", "a00246.html#a133c64c63a2004726817884ea2e59ab8", null ]
 ];
