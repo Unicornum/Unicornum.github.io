@@ -2,6 +2,7 @@ var NAVTREE =
 [
   [ "Addins", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
+    [ "Требования модуля Time Tracker", "a00026.html", null ],
     [ "Список задач", "a00001.html", null ],
     [ "Ошибки", "a00002.html", null ],
     [ "Группы", "modules.html", "modules" ],
@@ -28,13 +29,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00092.html",
-"a00186.html",
-"a00273.html#a338d994f833f48fd5597d859c40e57c6",
-"a00509_source.html",
-"a00816_source.html",
-"a01128_source.html",
-"functions_g.html"
+"a00093.html",
+"a00184.html#a215eea9ada4f8e1da3ebd03517ef9cb3",
+"a00273.html",
+"a00505_source.html",
+"a00824_source.html",
+"a01121_source.html",
+"functions_func.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

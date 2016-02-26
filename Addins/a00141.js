@@ -1,6 +1,6 @@
 var a00141 =
 [
-    [ "GetName", "a00141.html#ada1d4821134087994c4b47174d4a0dc8", null ],
-    [ "GetType", "a00141.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
-    [ "PROPERTY_GET", "a00141.html#a1a8fca27d2b23413c1e2530f0a1e4acf", null ]
+    [ "GetCaption", "a00141.html#a6d00d75983e24e3816bd5ca377139746", null ],
+    [ "GetHotKey", "a00141.html#a827a32ffbd7cc8a9ab2f5c0b130cd917", null ],
+    [ "IsEnabled", "a00141.html#a3b921ee882fc84f1e68ad73a4ad345a3", null ]
 ];

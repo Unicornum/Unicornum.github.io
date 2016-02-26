@@ -1,6 +1,7 @@
 var a00115 =
 [
-    [ "Execute", "a00115.html#a2a3d86e1bbbc535a5839c0f2fd0c8182", null ],
-    [ "GetCaption", "a00115.html#a00681eac40b5615f32997ca88b7799ce", null ],
-    [ "IsEnabled", "a00115.html#a97e3720e0e4a4cc5467e5b6cfdbe9d0f", null ]
+    [ "AllSolutionsDevelopmentInfo", "a00115.html#a84937480f2cc72fe70ca90e39b88736d", null ],
+    [ "AddTime", "a00115.html#afa701514b14a521a85498f2cde3cfe18", null ],
+    [ "GetInfo", "a00115.html#afe483a78ad91e5c5da6335541826d2d0", null ],
+    [ "GetSolutionNames", "a00115.html#aaff3e129923c9a89b74db985074774f6", null ]
 ];

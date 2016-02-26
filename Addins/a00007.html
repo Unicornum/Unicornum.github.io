@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3273 Architecture: x86.32 Build: 18:06 26 Февраль 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -144,7 +144,7 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <p>Содержит команды: </p><h4>Тестирование</h4>
 <ul>
 <li>Добавить тест класса &lt;&gt;.</li>
-<li>Добавить заготовку теста. <h5>Doxygen</h5>
+<li>Добавить заготовку теста. <h4>Doxygen</h4>
 </li>
 </ul>
 <ul>
@@ -191,7 +191,9 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <li> <input type="checkbox" checked>  Добавление строки даты/времени (в виде 1602061200) (ALT + D).</li>
 </ul>
 <h2>CppCheck </h2>
-<p>### Общие требования</p><ul>
+<p>Проверка кода статическим анализатором CppCheck.</p>
+<h3>Общие требования</h3>
+<ul>
 <li> <input type="checkbox" checked>  Шаблон выводных сообщений: '{file}({line}): {severity} (suppress_id = {id}): {message}'.</li>
 <li> <input type="checkbox" checked>  Включены все сообщения (&ndash;enable=all).</li>
 <li> <input type="checkbox" checked>  Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
@@ -202,7 +204,8 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <p>Игнорировать строки, содержащие:</p><ul>
 <li> <input type="checkbox" checked>  'information (suppress_id = purgedConfiguration):'.</li>
 </ul>
-<p>### Быстрая проверка</p><ul>
+<h3>Быстрая проверка</h3>
+<ul>
 <li> <input type="checkbox" checked>  Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
 <li> <input type="checkbox" checked>  Проверка со всеми вариантами макросов (&ndash;force).</li>
 </ul>
@@ -219,37 +222,12 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <li> <input type="checkbox" checked>  При отсутствии файла свойств у проекта он должен подключаться.</li>
 <li> <input type="checkbox">  При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
 </ul>
-<h2><a class="anchor" id="ssRequirementsTimeTracker"></a>
-Time Tracker</h2>
-<p>Надстройка предназначена для автоматизация учета времени, потраченного на разработку ПО и простого доступа к результатам этого учета.</p><ul>
-<li> <input type="checkbox">  Ключевое требование! Все действия должны происходить автоматически, пользователь вообще не должен участвовать в процессе учета времени.</li>
-<li> <input type="checkbox">  Затраченное время учитывается по действиям пользователя во время работы с Visual Studio (нажатия клавишь клавиатуры и клики мышью (правая и левая кнопки) в окнах документа, меню, обозревателя решений).</li>
-<li> <input type="checkbox">  Учтенное время работы должно записываться на специальную страницу документации в формате Doxygen.</li>
-<li> <input type="checkbox">  Команда вызова окна просмотра отчета за неделю.</li>
-<li> <input type="checkbox">  Учет суммарного времени, потраченного на работу с разными решениями в течении недели (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000001">Необходимо сделать:</a></b></dt><dd>уточнить - здесь должен быть какой-то сервис, получающий отчеты ото всех решений и отправляющий общий отчет на почту в конце недели).</dd></dl>
-</li>
-</ul>
-<p>### Учет времени</p><ul>
-<li> <input type="checkbox">  Промежутки веремени между событиями более &lt; уточнить&gt;=""&gt; минут не должны учитываться.</li>
-<li> <input type="checkbox">  Запись времени работы должна производиться таким образом, чтобы при аварийном завершении работы Visual Studio учтенное время не должно теряться (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000002">Необходимо сделать:</a></b></dt><dd>требуется более точная формулировка).</dd></dl>
-</li>
-</ul>
-<p>### Страница информации о времени работы с решением</p><ul>
-<li> <input type="checkbox">  Содержит информацию о времени, потраченном на разработку сегодня (в виде, пригодном для ее быстрого извлечения).</li>
-<li> <input type="checkbox">  Содержит информацию о времени, потраченном на разработку за текущую и предыдущую недели по дням (в виде, пригодном для ее быстрого извлечения).</li>
-</ul>
-<p>### Страница статистики времени работы с решением</p><ul>
-<li> <input type="checkbox">  Содержит статистику времени работы с решением в виде, пригодном для генерации документации при помощи Doxygen.</li>
-<li> <input type="checkbox">  Раздел общей статистики (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000003">Необходимо сделать:</a></b></dt><dd>учточнить список выводимых значений).</dd></dl>
-</li>
-</ul>
-<p>### Отчет за неделю</p><ul>
-<li> <input type="checkbox">  Отдельная утилита, получающая в качестве параметра путь к файлу, содержащему статистику работы с решением.</li>
-<li> <input type="checkbox">  Диалоговое окно, отображающее диаграмму, аналогичную полю 'Обзор на неделю' сервиса Primaerp.</li>
-</ul>
+<h2>Time Tracker </h2>
+<p><a class="el" href="a00026.html">Требования модуля Time Tracker</a></p>
 <h1>Утилиты </h1>
 <h2>Regex Tester </h2>
-<p>Прототип: <a href="https://cacoo.com/diagrams/4AYESADorTeoeyKf">https://cacoo.com/diagrams/4AYESADorTeoeyKf</a> </p><h3>Порядок работы с программой</h3>
+<p>Прототип: <a href="https://cacoo.com/diagrams/4AYESADorTeoeyKf">https://cacoo.com/diagrams/4AYESADorTeoeyKf</a></p>
+<h3>Порядок работы с программой</h3>
 <ul>
 <li>При запуске программы отображается вкладка Match, на ней активна вкладка 'Тестовые строки'.</li>
 <li>В поле регулярного выражения введено простое регулярное выражение для примера.</li>
@@ -276,7 +254,7 @@ Time Tracker</h2>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:41. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Пт 26 Фев 2016 18:06:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

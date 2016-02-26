@@ -1,13 +1,10 @@
 var a00125 =
 [
-    [ "GetExistFiles", "a00125.html#a96245172e7bb646af787c5e51a49dc5e", null ],
-    [ "GetName", "a00125.html#a26824eedffed5bf91bbbd632190da984", null ],
-    [ "GetPathToHeaderDirectory", "a00125.html#add52046649a0c63b5ac765848908581f", null ],
-    [ "GetPathToInitialCppTestFile", "a00125.html#af2c43ee8281103c44d44f141af22998b", null ],
-    [ "GetPathToInitialTestFile", "a00125.html#a4245bf77f03ddb24bf480e8b30c1edd5", null ],
-    [ "GetPathToTemplateTestFile", "a00125.html#a2ce2aeb6a292e8ea6f6c7a7a2d57a389", null ],
-    [ "GetPathToTestDirectory", "a00125.html#aa34b36b5bb7f52323e3a9cbe2cf31b2b", null ],
-    [ "GetPathToTestFile", "a00125.html#a2e0bc98c727b1cc0f3f5c23f7741acbc", null ],
-    [ "GetProjectInfo", "a00125.html#a94774169a8e7b708bb9a14079104721b", null ],
-    [ "GetTestProjectName", "a00125.html#af870f2abdd1b13f3006ddeaf2316757f", null ]
+    [ "Exec", "a00125.html#a3ce3f0cfe75a9b904eed0d91bdc247ac", null ],
+    [ "OnAddInsUpdate", "a00125.html#ae98a1afac6bdc0b98e7d3004e9c35bf8", null ],
+    [ "OnBeginShutdown", "a00125.html#af6de694c255a916f5b588bb92bbbcda2", null ],
+    [ "OnConnection", "a00125.html#a719edffe00f3bf234f64d934d5effcde", null ],
+    [ "OnDisconnection", "a00125.html#a227b083c08ad0158a02fbb52606f4859", null ],
+    [ "OnStartupComplete", "a00125.html#ab095fe3201b662e5735e72d6f4471473", null ],
+    [ "QueryStatus", "a00125.html#a5214bfbafece8323426016c08a2a1536", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Шаблон класса connection_points::Extensions&lt; TInterface &gt;</title>
+<title>Addins: Класс Events</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3273 Architecture: x86.32 Build: 18:06 26 Февраль 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -110,97 +110,44 @@ $(document).ready(function(){initNavTree('a00181.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01400.html">Полный список членов класса</a>  </div>
+<a href="a01407.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса connection_points::Extensions&lt; TInterface &gt;<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">Класс Events<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00011.html">Проект Common</a> <br />
- Класс-контейнер модулей расширения IDE.  
+<p>Класс входит в <a class="el" href="a00017.html">Проект Main</a> <br />
+ Класс, содержащий функции, которые будут вызываться при возникновении событий DTE.  
  <a href="a00181.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00437_source.html">Extensions.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса connection_points::Extensions&lt; TInterface &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01401.png" border="0" usemap="#connection__points_1_1_extensions_3_01_t_interface_01_4_coll__map" alt="Collaboration graph"/></div>
-</div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a215eea9ada4f8e1da3ebd03517ef9cb3"><td class="memTemplParams" colspan="2">template&lt;class... Args&gt; </td></tr>
-<tr class="memitem:a215eea9ada4f8e1da3ebd03517ef9cb3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00181.html#a215eea9ada4f8e1da3ebd03517ef9cb3">Call</a> (void(TInterface::*_Funct)(const Args &amp;...), const Args &amp;..._Args)</td></tr>
-<tr class="memdesc:a215eea9ada4f8e1da3ebd03517ef9cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вызов указанной функции для всех объектов, содержащихся в контейнере.  <a href="#a215eea9ada4f8e1da3ebd03517ef9cb3">Подробнее...</a><br /></td></tr>
-<tr class="separator:a215eea9ada4f8e1da3ebd03517ef9cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TInterface&gt;<br />
-class connection_points::Extensions&lt; TInterface &gt;</h3>
+<p><code>#include &lt;<a class="el" href="a00579_source.html">Events.hpp</a>&gt;</code></p>
 
-<p>Класс входит в <a class="el" href="a00011.html">Проект Common</a> <br />
- Класс-контейнер модулей расширения IDE. </p>
-<ul>
-<li>В конструкторе перебирает все dll в папке текущего модуля и создает содержащиеся в них объекты как указатель на TInterface.</li>
-</ul>
+<p>Базовые классы:DTEEvents_t и TextEditorEvents_t.</p>
+<div class="dynheader">
+Граф связей класса Events:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01408.png" border="0" usemap="#_events_coll__map" alt="Collaboration graph"/></div>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00017.html">Проект Main</a> <br />
+ Класс, содержащий функции, которые будут вызываться при возникновении событий DTE. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Февраль 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>15 Февраль 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a215eea9ada4f8e1da3ebd03517ef9cb3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TInterface&gt; </div>
-<div class="memtemplate">
-template&lt;class... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="a00181.html">connection_points::Extensions</a>&lt; TInterface &gt;::Call </td>
-          <td>(</td>
-          <td class="paramtype">void(TInterface::*)(const Args &amp;...)&#160;</td>
-          <td class="paramname"><em>_Funct</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
-          <td class="paramname"><em>_Args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Вызов указанной функции для всех объектов, содержащихся в контейнере. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Funct</td><td>Указатель на вызываемую функцию. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Параметры вызываемой функции (количество и типы должны соответствовать вызываемой функции). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/ConnectionPoints/Common/Common/<a class="el" href="a00437_source.html">Extensions.hpp</a></li>
-<li>Solution/Solution/ConnectionPoints/Common/Common/Extensions.inl</li>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/ConnectionPoints/VisualStudio/Main/Main/<a class="el" href="a00579_source.html">Events.hpp</a></li>
+<li>Solution/Solution/ConnectionPoints/VisualStudio/Main/Main/Events.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>connection_points</b></li><li class="navelem"><a class="el" href="a00181.html">Extensions</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:42. Создано системой
+    <li class="navelem"><a class="el" href="a00181.html">Events</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 26 Фев 2016 18:06:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

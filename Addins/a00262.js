@@ -1,8 +1,7 @@
 var a00262 =
 [
-    [ "GetCount", "a00262.html#a84deda4da0dee63d4649e716530fa40a", null ],
-    [ "LoadFromFile", "a00262.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee", null ],
-    [ "operator[]", "a00262.html#ad72225ba2b4463641376cf898ed3601b", null ],
-    [ "operator[]", "a00262.html#a8ca988ed57b6e781a9ea5f82e6a00373", null ],
-    [ "Remove", "a00262.html#acf74f6d63cbd4f8cb649ebf3404117db", null ]
+    [ "Add", "a00262.html#a0012b4e75c23ff1d15dd20b015c382f8", null ],
+    [ "GetActiveProject", "a00262.html#ab65c3c5fd33d48525282e5a2ee117845", null ],
+    [ "GetCount", "a00262.html#ad3a9bb60ba293784d8c7babbc45aba70", null ],
+    [ "GetProject", "a00262.html#a226a79cb9b399e8d95c23e8c339a979c", null ]
 ];

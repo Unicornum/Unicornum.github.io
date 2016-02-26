@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс BuildEvents</title>
+<title>Addins: Шаблон класса controller::BlockingSignal&lt; TParam &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3273 Architecture: x86.32 Build: 18:06 26 Февраль 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,113 +111,83 @@ $(document).ready(function(){initNavTree('a00121.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01378.html">Полный список членов класса</a>  </div>
+<a href="a01429.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс BuildEvents</div>  </div>
+<div class="title">Шаблон класса controller::BlockingSignal&lt; TParam &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01261.html">RegexTester</a> &raquo; <a class="el" href="a01262.html">Controller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00029.html">Проект Version</a> <br />
- Класс, содержащий функции, которые будут вызываться при возникновении событий построения.  
+<p>Класс входит в <a class="el" href="a00038.html">Проект RegexTester</a> <br />
+ Базовый класс блокирующего сигнала.  
  <a href="a00121.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00631_source.html">BuildEvents.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00664_source.html">BlockingSignal.hpp</a>&gt;</code></p>
 
-<p>Базовые классы:BuildEventsImpl_t.</p>
+<p>Базовые классы:controller::IsBlocked.</p>
 <div class="dynheader">
-Граф связей класса BuildEvents:</div>
+Граф связей класса controller::BlockingSignal&lt; TParam &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01379.png" border="0" usemap="#_build_events_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01430.png" border="0" usemap="#controller_1_1_blocking_signal_3_01_t_param_01_4_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a87a0f9f968a5cd336184ccd19f62a42f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87a0f9f968a5cd336184ccd19f62a42f"></a>
-void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00121.html#a87a0f9f968a5cd336184ccd19f62a42f">BeforeBuildStart</a> (EnvDTE::vsBuildScope, EnvDTE::vsBuildAction)</td></tr>
-<tr class="memdesc:a87a0f9f968a5cd336184ccd19f62a42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается один раз в начале построения группы проектов. <br /></td></tr>
-<tr class="separator:a87a0f9f968a5cd336184ccd19f62a42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ef35f1dee5b99d678e43c82c0f3d07"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35ef35f1dee5b99d678e43c82c0f3d07"></a>
-void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00121.html#a35ef35f1dee5b99d678e43c82c0f3d07">AfterBuildFinish</a> (EnvDTE::vsBuildScope, EnvDTE::vsBuildAction)</td></tr>
-<tr class="memdesc:a35ef35f1dee5b99d678e43c82c0f3d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается один раз в конце построения группы проектов. <br /></td></tr>
-<tr class="separator:a35ef35f1dee5b99d678e43c82c0f3d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82624b7458a674601e2b57760df4c5d"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00121.html#ab82624b7458a674601e2b57760df4c5d">BeforeProjConfBuildStart</a> (BSTR, BSTR, BSTR, BSTR)</td></tr>
-<tr class="memdesc:ab82624b7458a674601e2b57760df4c5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается перед построением каждого проекта.  <a href="#ab82624b7458a674601e2b57760df4c5d">Подробнее...</a><br /></td></tr>
-<tr class="separator:ab82624b7458a674601e2b57760df4c5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5069d384f3d39de2e57e3f6cb2f3005b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5069d384f3d39de2e57e3f6cb2f3005b"></a>
-void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00121.html#a5069d384f3d39de2e57e3f6cb2f3005b">BuildProjConfFinish</a> (BSTR, BSTR, BSTR, BSTR, bool)</td></tr>
-<tr class="memdesc:a5069d384f3d39de2e57e3f6cb2f3005b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается после завершения построения каждого проекта. <br /></td></tr>
-<tr class="separator:a5069d384f3d39de2e57e3f6cb2f3005b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d7a4160ad52d6148570afad770cf9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00121.html#aa9d7a4160ad52d6148570afad770cf9c">operator()</a> (TParam)</td></tr>
+<tr class="memdesc:aa9d7a4160ad52d6148570afad770cf9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор выполнения действия сигнала.  <a href="#aa9d7a4160ad52d6148570afad770cf9c">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa9d7a4160ad52d6148570afad770cf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00029.html">Проект Version</a> <br />
- Класс, содержащий функции, которые будут вызываться при возникновении событий построения. </p>
+<div class="textblock"><h3>template&lt;class TParam&gt;<br />
+class controller::BlockingSignal&lt; TParam &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a00038.html">Проект RegexTester</a> <br />
+ Базовый класс блокирующего сигнала. </p>
+<ul>
+<li>Все классы сигналов, которые должны блокировать выполнение других сигналов на время выполнения текущего текущего, должны наследоваться от этого класса.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>03 Август 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>02 Декабрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="ab82624b7458a674601e2b57760df4c5d"></a>
+<a class="anchor" id="aa9d7a4160ad52d6148570afad770cf9c"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class TParam&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void __stdcall BuildEvents::BeforeProjConfBuildStart </td>
+          <td class="memname">void <a class="el" href="a00121.html">controller::BlockingSignal</a>&lt; TParam &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>_UniqueProjectName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">TParam&#160;</td>
+          <td class="paramname"><em>_Param</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>_ProjectConfig</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>_Platform</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">BSTR&#160;</td>
-          <td class="paramname"><em>_SolutionConfig</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция вызывается перед построением каждого проекта. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_UniqueProjectName</td><td>Путь к файлу проекта, который будет строится, относительно папки решения. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_ProjectConfig</td><td>Конфигурация проекта (Debug или Release). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Platform</td><td>Платформа проекта (Win32 или Win64). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_SolutionConfig</td><td>Активная конфигурация решения (например, 'Debug|Win32'). </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Оператор выполнения действия сигнала. </p>
+<ul>
+<li>Вызывает функцию Execute(), передавая ей свой параметр.</li>
+<li>Блокирует вызов функций Execute() других классов, унаследованных от текущего на время выполнения функции Execute() текущего объекта.</li>
+<li>Перехватывает исключение при выполнении функции Execute(). </li>
+</ul>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/ConnectionPoints/VisualStudio/Version/Version/<a class="el" href="a00631_source.html">BuildEvents.hpp</a></li>
-<li>Solution/Solution/ConnectionPoints/VisualStudio/Version/Version/BuildEvents.cpp</li>
+<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Controller/<a class="el" href="a00664_source.html">BlockingSignal.hpp</a></li>
+<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Controller/BlockingSignal.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00121.html">BuildEvents</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:42. Создано системой
+    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a00121.html">BlockingSignal</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 26 Фев 2016 18:06:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

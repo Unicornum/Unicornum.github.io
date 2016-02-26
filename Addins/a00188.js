@@ -1,5 +1,4 @@
 var a00188 =
 [
-    [ "Build", "a00188.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
-    [ "BuildSourceStringInfo", "a00188.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
+    [ "GetText", "a00188.html#acadb8f31e8af23bf0700700fe57be431", null ]
 ];

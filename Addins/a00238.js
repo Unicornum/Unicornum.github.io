@@ -1,5 +1,5 @@
 var a00238 =
 [
-    [ "GetCaption", "a00238.html#aa7faa727579bf38ea063bda4888be34f", null ],
-    [ "IsEnabled", "a00238.html#a69c63a062001fde5ccd4750985a04562", null ]
+    [ "OpenDoc", "a00238.html#aa03a7cc3b7e471baa81d65b1e0919f5f", null ],
+    [ "IsEnabled", "a00238.html#a39a3353ef4403a4f5efeb973a1e9fcb6", null ]
 ];

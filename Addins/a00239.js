@@ -1,5 +1,4 @@
 var a00239 =
 [
-    [ "GetCaption", "a00239.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
-    [ "IsEnabled", "a00239.html#a9b8d0a60c4eefe8c3860c560b7c62edb", null ]
+    [ "GetCaption", "a00239.html#ade76701e06d95dd78419f0e23bd2ea28", null ]
 ];

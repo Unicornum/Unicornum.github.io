@@ -1,6 +1,5 @@
 var a00139 =
 [
-    [ "GetCaption", "a00139.html#a6d00d75983e24e3816bd5ca377139746", null ],
-    [ "GetHotKey", "a00139.html#a827a32ffbd7cc8a9ab2f5c0b130cd917", null ],
-    [ "IsEnabled", "a00139.html#a3b921ee882fc84f1e68ad73a4ad345a3", null ]
+    [ "Clear", "a00139.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
+    [ "GetSize", "a00139.html#a2a85a0531e1896a6097f74726fe12666", null ]
 ];

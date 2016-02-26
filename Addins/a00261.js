@@ -1,6 +1,7 @@
 var a00261 =
 [
-    [ "PropertySheet2012", "a00261.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
-    [ "GetPathToFile", "a00261.html#a7930a5bc2066899ea7834758ef47556f", null ],
-    [ "Remove", "a00261.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
+    [ "Add", "a00261.html#a36221e7e62e513d7f679bb45e402de50", null ],
+    [ "GetActiveProject", "a00261.html#a3aa622ac93631a3da290e143e3f76d1e", null ],
+    [ "GetCount", "a00261.html#a925525848df48b2ee54238b191a101ed", null ],
+    [ "GetProject", "a00261.html#a7404a7dbb0a703c19129e29124d62e17", null ]
 ];

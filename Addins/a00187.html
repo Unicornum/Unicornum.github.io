@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wx::HtmlHelper</title>
+<title>Addins: Класс connection_points::GlobalMutex</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3202 Architecture: x86.32 Build: 00:37 19 February 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3273 Architecture: x86.32 Build: 18:06 26 Февраль 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -110,44 +110,53 @@ $(document).ready(function(){initNavTree('a00187.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01949.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01421.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wx::HtmlHelper<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01251.html">RegexTester</a> &raquo; <a class="el" href="a01255.html">View</a> &raquo; <a class="el" href="a01256.html">wxWidgets</a></div></div>  </div>
+<div class="title">Класс connection_points::GlobalMutex</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00075.html">Проект RegexTester</a> <br />
- Класс отображения текста подсказки в html формате.  
+<p>Класс входит в <a class="el" href="a00011.html">Проект Common</a> <br />
+ Класс для проверки существования другой версии надстройки.  
  <a href="a00187.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00942_source.html">HtmlHelper.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:wxHtmlWindow.</p>
+<p><code>#include &lt;<a class="el" href="a00444_source.html">GlobalMutex.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса wx::HtmlHelper:</div>
+Граф связей класса connection_points::GlobalMutex:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01950.png" border="0" usemap="#wx_1_1_html_helper_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01422.png" border="0" usemap="#connection__points_1_1_global_mutex_coll__map" alt="Collaboration graph"/></div>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a355c808ae26654af86b3a21150067904"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a355c808ae26654af86b3a21150067904"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00187.html#a355c808ae26654af86b3a21150067904">IsAlreadyExists</a> (void) const </td></tr>
+<tr class="memdesc:a355c808ae26654af86b3a21150067904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Признак того, что такой мьютекс уже существует в системе. <br /></td></tr>
+<tr class="separator:a355c808ae26654af86b3a21150067904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00075.html">Проект RegexTester</a> <br />
- Класс отображения текста подсказки в html формате. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00011.html">Проект Common</a> <br />
+ Класс для проверки существования другой версии надстройки. </p>
+<ul>
+<li>Используется для исключения ситуации, при кототорой Relese и Debug версии надстроек выполняют одинаковые операции дважды.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>30 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>27 Июль 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/<a class="el" href="a00942_source.html">HtmlHelper.hpp</a></li>
-<li>Solution/Solution/Tools/RegexTester/RegexTester/View/wxWidgets/HtmlHelper.cpp</li>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/ConnectionPoints/Common/Common/<a class="el" href="a00444_source.html">GlobalMutex.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00187.html">HtmlHelper</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 19 Фев 2016 00:37:44. Создано системой
+    <li class="navelem"><b>connection_points</b></li><li class="navelem"><a class="el" href="a00187.html">GlobalMutex</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 26 Фев 2016 18:06:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,6 +1,5 @@
 var a00203 =
 [
-    [ "GetCaption", "a00203.html#aeadc45279201876deba468080f265e90", null ],
-    [ "GetHotKey", "a00203.html#a8b37da1f657bf32132fcd811b626e81a", null ],
-    [ "IsEnabled", "a00203.html#adf7ae5ef3739097507185cd921544dfd", null ]
+    [ "GetCaption", "a00203.html#a90513db30e85b2866071d8a5abf187df", null ],
+    [ "IsEnabled", "a00203.html#a0a0b0a135d365446336a91f41cb7a9ca", null ]
 ];

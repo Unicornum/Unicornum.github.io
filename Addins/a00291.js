@@ -1,5 +1,5 @@
 var a00291 =
 [
-    [ "Tag", "a00291.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
-    [ "GetCaption", "a00291.html#a21ce3a76b5870765f7b503b4318f4df8", null ]
+    [ "operator=", "a00291.html#adb712b65047472ac48342b15e7145e68", null ],
+    [ "SetText", "a00291.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
 ];

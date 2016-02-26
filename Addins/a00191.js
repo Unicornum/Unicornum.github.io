@@ -1,6 +1,5 @@
 var a00191 =
 [
-    [ "OnConnection", "a00191.html#a8723f5919cae8f803dbd65acdf053c7b", null ],
-    [ "OnDisconnection", "a00191.html#a59c192bafe270ada9ccbb6b010250869", null ],
-    [ "OnTextChanged", "a00191.html#aff48aedbb4df92b606305a6916d94376", null ]
+    [ "Build", "a00191.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
+    [ "BuildSourceStringInfo", "a00191.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
 ];

@@ -1,7 +1,8 @@
 var a00259 =
 [
-    [ "Add", "a00259.html#a0012b4e75c23ff1d15dd20b015c382f8", null ],
-    [ "GetActiveProject", "a00259.html#ab65c3c5fd33d48525282e5a2ee117845", null ],
-    [ "GetCount", "a00259.html#ad3a9bb60ba293784d8c7babbc45aba70", null ],
-    [ "GetProject", "a00259.html#a226a79cb9b399e8d95c23e8c339a979c", null ]
+    [ "GetFileExtension", "a00259.html#ab45eca3582c96be43ba0d56d5aa27149", null ],
+    [ "GetName", "a00259.html#a185fa317fc2359ddb72c385103d4d76e", null ],
+    [ "GetPathToMainProjectDirectory", "a00259.html#a0be3886803f1fa836faea2906e93001d", null ],
+    [ "GetPathToTestProjectDirectory", "a00259.html#aca1be907095d923ccff307562b57e07e", null ],
+    [ "GetTestProjectName", "a00259.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
 ];

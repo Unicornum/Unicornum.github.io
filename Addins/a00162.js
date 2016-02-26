@@ -1,4 +1,6 @@
 var a00162 =
 [
-    [ "operator[]", "a00162.html#ae3a0bf136d31a78709f12b2c507a7f8d", null ]
+    [ "AddVersionData", "a00162.html#ab3ca0f779fe4dfc4ab250a0561c72af7", null ],
+    [ "UpdateCopyrightYear", "a00162.html#af819ea33c04761393ed44c212ba0ae33", null ],
+    [ "UpdateVersion", "a00162.html#a94fb71da43515d70e9d93b813ffc9339", null ]
 ];

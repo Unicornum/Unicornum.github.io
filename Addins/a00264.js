@@ -1,6 +1,6 @@
 var a00264 =
 [
-    [ "SearchForFullPath", "a00264.html#ac85a4ff36109083a4286198e318fb850", null ],
-    [ "WasFoundNext", "a00264.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
-    [ "WasNoFound", "a00264.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
+    [ "PropertySheet2012", "a00264.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
+    [ "GetPathToFile", "a00264.html#a7930a5bc2066899ea7834758ef47556f", null ],
+    [ "Remove", "a00264.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
 ];

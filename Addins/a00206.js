@@ -1,5 +1,6 @@
 var a00206 =
 [
-    [ "GetPathToFile", "a00206.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
-    [ "Remove", "a00206.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
+    [ "GetCaption", "a00206.html#aeadc45279201876deba468080f265e90", null ],
+    [ "GetHotKey", "a00206.html#a8b37da1f657bf32132fcd811b626e81a", null ],
+    [ "IsEnabled", "a00206.html#adf7ae5ef3739097507185cd921544dfd", null ]
 ];

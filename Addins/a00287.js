@@ -1,5 +1,5 @@
 var a00287 =
 [
-    [ "operator=", "a00287.html#adb712b65047472ac48342b15e7145e68", null ],
-    [ "SetText", "a00287.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
+    [ "operator[]", "a00287.html#a83bd33be7f97dff72c030d7f612a9688", null ],
+    [ "operator[]", "a00287.html#a16022abff37528a4226be0f9d6be91b7", null ]
 ];
