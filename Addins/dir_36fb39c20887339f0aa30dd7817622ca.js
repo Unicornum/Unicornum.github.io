@@ -14,6 +14,6 @@ var dir_36fb39c20887339f0aa30dd7817622ca =
     [ "SolutionFolder.mock.hpp", "a01206_source.html", null ],
     [ "SolutionFolders.hpp", "a01208_source.html", null ],
     [ "SolutionFolders.mock.hpp", "a01209_source.html", null ],
-    [ "stdafx.h", "a00551_source.html", null ],
-    [ "targetver.h", "a00590_source.html", null ]
+    [ "stdafx.h", "a00552_source.html", null ],
+    [ "targetver.h", "a00591_source.html", null ]
 ];

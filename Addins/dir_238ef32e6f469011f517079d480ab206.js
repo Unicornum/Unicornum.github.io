@@ -6,6 +6,6 @@ var dir_238ef32e6f469011f517079d480ab206 =
     [ "OpenDevelopmentInfo.hpp", "a00923_source.html", null ],
     [ "OpenRegExWindow.hpp", "a00925_source.html", null ],
     [ "OpenSettings.hpp", "a00927_source.html", null ],
-    [ "stdafx.h", "a00532_source.html", null ],
-    [ "targetver.h", "a00573_source.html", null ]
+    [ "stdafx.h", "a00533_source.html", null ],
+    [ "targetver.h", "a00574_source.html", null ]
 ];

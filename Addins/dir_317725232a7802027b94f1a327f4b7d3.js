@@ -11,8 +11,8 @@ var dir_317725232a7802027b94f1a327f4b7d3 =
     [ "Line.mock.hpp", "a01129_source.html", null ],
     [ "Lines.hpp", "a01131_source.html", null ],
     [ "Lines.mock.hpp", "a01132_source.html", null ],
-    [ "stdafx.h", "a00547_source.html", null ],
-    [ "targetver.h", "a00586_source.html", null ],
+    [ "stdafx.h", "a00548_source.html", null ],
+    [ "targetver.h", "a00587_source.html", null ],
     [ "TextSelection.hpp", "a01134_source.html", null ],
     [ "TextSelection.mock.hpp", "a01135_source.html", null ]
 ];

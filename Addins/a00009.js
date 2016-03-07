@@ -1,15 +1,11 @@
 var a00009 =
 [
-    [ "Введение", "a00009.html#sConnectionPointsBrief", null ],
-    [ "Проект Common", "a00011.html", "a00011" ],
-    [ "Описание создания VSPackage на С++", "a00010.html", null ],
-    [ "Проект Support", "a00023.html", "a00023" ],
-    [ "Проект UnicornumCodeAssistant", "a00028.html", "a00028" ],
-    [ "Проект Properties", "a00021.html", "a00021" ],
-    [ "Проект Version", "a00030.html", "a00030" ],
-    [ "Проект Icons", "a00015.html", "a00015" ],
-    [ "Проект Data", "a00013.html", "a00013" ],
-    [ "Проект Main", "a00017.html", "a00017" ],
-    [ "Проект MainUI", "a00019.html", "a00019" ],
-    [ "Проект TimeTracker", "a00025.html", "a00025" ]
+    [ "Описание решения", "a00009.html#sSolutionBrief", [
+      [ "Исходные требования", "a00009.html#ssRequirements", null ]
+    ] ],
+    [ "Исходные требования", "a00007.html", "a00007" ],
+    [ "Build", "a00003.html", "a00003" ],
+    [ "ConnectionPoints", "a00010.html", "a00010" ],
+    [ "Core", "a00033.html", "a00033" ],
+    [ "Wrappers", "a00085.html", "a00085" ]
 ];

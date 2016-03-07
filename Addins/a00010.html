@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Описание создания VSPackage на С++</title>
+<title>Addins: ConnectionPoints</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3406 Architecture: x86.32 Build: 20:46 07 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3407 Architecture: x86.32 Build: 23:04 07 Март 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -103,37 +103,63 @@ $(document).ready(function(){initNavTree('a00010.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Описание создания VSPackage на С++ </div>  </div>
+<div class="title">ConnectionPoints </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Описание создания VSPackage на С++ </h1>
-<h2>Создание проекта </h2>
-<p>При создании проекта расширения создаются 3 проекта:</p><ul>
-<li>VSPackage1 - основной модуль расширения. Ключевой класс - CVSPackage1Package.</li>
-<li>VSPackage1UI - вспомогательная dll (задается в файле .pkgdef как <div class="fragment"><div class="line">[$RootKey$\Packages\{f521d44a-05d4-4cf6-bbec-2a47fb6eadab}\SatelliteDll]</div><div class="line"><span class="stringliteral">&quot;DllName&quot;</span>=<span class="stringliteral">&quot;VSPackage1UI.dll&quot;</span></div><div class="line"><span class="stringliteral">&quot;Path&quot;</span>=<span class="stringliteral">&quot;$PackageFolder$&quot;</span></div></div><!-- fragment --> ). Содержит иконки (в формате png) и структуру добавляемых команд (которую можно игнорировать?).</li>
-<li>VSPackage1VSIX (C#). Этот проект, судя по всему нужен только для хранения файла source.extension.vsixmanifest и создания файла .vsix (см. описание формата ниже).</li>
+<div class="textblock"><h1><a class="anchor" id="sConnectionPointsBrief"></a>
+Введение</h1>
+<p>Содержит классы подключения компонентов надстройки к конкретной IDE.</p>
+<h1>Структура раздела </h1>
+<h2>Проект Common </h2>
+<p>Проект содержит классы, общие для всех точек подключения и не зависящие от конкретного типа IDE.</p>
+<p>Страница проекта: <a class="el" href="a00012.html">Проект Common</a></p>
+<h2>Раздел Visual Studio </h2>
+<p>Раздел содержит проекты классов подключения к Visual Studio.</p>
+<h3>Точка подключения как VSPackage</h3>
+<p><a class="el" href="a00011.html">Описание создания VSPackage на С++</a></p>
+<h3>Проект Support</h3>
+<p>Проект, содержащий вспомогательные классы, общие для проектов раздела.</p>
+<p>Страница проекта: <a class="el" href="a00024.html">Проект Support</a></p>
+<h3>Проект UnicornumCodeAssistant</h3>
+<p>Проект точки подключения к Visual Studio, обеспечивающей работу команд, доступных из меню.</p>
+<p>Проект выполняет следующие действия:</p><ul>
+<li>Загрузку параметров надстройки для текущей используемой версии Visual Studio.</li>
+<li>Создание меню и их команд при старте надстройки.</li>
+<li>Уничтожение меню и команд при выгрузке надстройки.</li>
+<li>Запрос и установку текущего статуса команд.</li>
+<li>Выполнение команд, соответствующих выбранной строке меню.</li>
+<li>Удаление команд, оставшихся от предыдущего запуска надстройки (возможно в случае аварийного завершения работы Visual Studio).</li>
+<li>Копирование файла usertype.dat в папку Visual Studio при запуске надстройки.</li>
 </ul>
-<h2>Описание формата .vsix </h2>
-<p>Файл формата .vsix - это zip архив ('ручная' упаковка файлов работает, да), содержащий файлы:</p><ul>
-<li>VSPackage1.dll</li>
-<li>VSPackage1.pkgdef</li>
-<li>extension.vsixmanifest</li>
-<li>[Content_Types].xml</li>
-<li>1033\VSPackage1UI.dll</li>
-</ul>
-<h2>Автозапуск расширения при старте Visual Studio </h2>
-<p>Добавить в файл .pkgdef строки </p><div class="fragment"><div class="line">[$RootKey$\AutoLoadPackages\{ADFC4E64-0397-11D1-9F4E-00A0C911004F}]</div><div class="line"><span class="stringliteral">&quot;{CURRENT_PACKAGE_GUID}&quot;</span>=dword:00000000</div><div class="line">@=<span class="stringliteral">&quot;UICONTEXT_NoSolution&quot;</span></div></div><!-- fragment --><h2>Получение объекта DTE </h2>
-<p>Использовать в классе C&lt;PackageName&gt;Package следующий код (в конструкторе при автостарте не сработает!): </p><div class="fragment"><div class="line">CComPtr&lt;IServiceProvider&gt; pSP;</div><div class="line">HRESULT hr1 = this-&gt;GetSite(&amp;pSP);</div><div class="line"><span class="keywordflow">if</span> (FAILED(hr1)) MessageBox(NULL, _T(<span class="stringliteral">&quot;Failed1&quot;</span>), NULL, MB_OK);</div><div class="line"></div><div class="line">CComPtr&lt;EnvDTE::_DTE&gt; m_pDTE;</div><div class="line">HRESULT hr2 = pSP-&gt;QueryService(SID_SDTE, IID__DTE, (<span class="keywordtype">void</span> **)&amp;m_pDTE);</div><div class="line"><span class="keywordflow">if</span> (FAILED(hr2)) MessageBox(NULL, _T(<span class="stringliteral">&quot;Failed2&quot;</span>), NULL, MB_OK);</div></div><!-- fragment --><p> Для получения объекта DTE при старте Visual Studio добавить в класс CVSPackage1Package функцию: </p><div class="fragment"><div class="line"><span class="comment">// Вызывается при старте Visual Studio</span></div><div class="line"><span class="keywordtype">void</span> PostSited(IVsPackageEnums::SetSiteResult)</div><div class="line">{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}</div></div><!-- fragment --><p>Завершение работы расширения: </p><div class="fragment"><div class="line"><span class="comment">// Вызывается перед закрытием Visual Studio</span></div><div class="line"><span class="keywordtype">void</span> PreClosing(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}</div></div><!-- fragment --><h2>Запрос состояния и выполнение команды </h2>
-<p>Переопределить функции интерфейса IOleCommandTarget. <br />
- Для этого требуется особая регистрация создаваемых команд?</p>
-<h2>Подписка на событие изменения активного документа </h2>
-<div class="fragment"><div class="line"><span class="comment">// Унаследовать класс от</span></div><div class="line"><span class="keyword">using</span> TextEditorEvents_t = IDispEventImpl&lt;1, CVSPackage1Package,</div><div class="line">  &amp;__uuidof(EnvDTE::_dispTextEditorEvents), &amp;EnvDTE::LIBID_EnvDTE, 8, 0&gt;;</div><div class="line"></div><div class="line"><span class="comment">// Добавить обработчик изменения строки активного документа</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">BEGIN_SINK_MAP(CVSPackage1Package)</div><div class="line">  SINK_ENTRY_EX(1, __uuidof(_dispTextEditorEvents), 1, OnLineChanged)</div><div class="line">END_SINK_MAP()</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> __stdcall OnLineChanged(TextPoint * startPoint, TextPoint * endPoint, <span class="keywordtype">long</span> hint)</div><div class="line">{</div><div class="line">  MessageBox(NULL, _T(<span class="stringliteral">&quot;OnLineChanged&quot;</span>), NULL, MB_OK);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Подписаться на события изменения текста активного документа</span></div><div class="line">CComPtr&lt;EnvDTE::_TextEditorEvents&gt; m_pTextEditorEvents;</div><div class="line">hr2 = m_pEvents-&gt;get_TextEditorEvents(<span class="keyword">nullptr</span>, &amp;m_pTextEditorEvents);</div><div class="line"><span class="keywordflow">if</span> (FAILED(hr2))</div><div class="line">{</div><div class="line">  MessageBox(NULL, _T(<span class="stringliteral">&quot;Failed4&quot;</span>), NULL, MB_OK);</div><div class="line">  <span class="keywordflow">return</span>;</div><div class="line">}</div><div class="line"></div><div class="line">DispEventAdvise(m_pTextEditorEvents);</div></div><!-- fragment --> </div></div><!-- contents -->
+<p>Страница проекта: <a class="el" href="a00029.html">Проект UnicornumCodeAssistant</a></p>
+<h3>Проект Properties</h3>
+<p>Проект точки подключения к Visual Studio, реализующий логику подключения к проекту файла общей страницы свойств решения.</p>
+<p>Страница проекта: <a class="el" href="a00022.html">Проект Properties</a></p>
+<h3>Проект Version</h3>
+<p>Надстройка предназначена для установки .exe и .dll файлам версии решения, включая номера ревизии файлов решения и внешних библиотек.</p>
+<p>Страница проекта: <a class="el" href="a00031.html">Проект Version</a></p>
+<h3>Проект Icons</h3>
+<p>Проект DLL, содержащей иконки, используемые надстройкой для обозначения пунктов меню.</p>
+<p>Страница проекта: <a class="el" href="a00016.html">Проект Icons</a></p>
+<h3>Проект Data</h3>
+<p>Проект содержит файлы, необходимые для работы надстроек (настройки, шаблоны документов и т.п.), которые копируются в папку построения при сборке проекта.</p>
+<p>Страница проекта: <a class="el" href="a00014.html">Проект Data</a></p>
+<h3>Проект Main</h3>
+<p>Главный модуль подключения к Visual Studio: загружает и активирует все остальные модули при старте IDE.</p>
+<p>Страница проекта: <a class="el" href="a00018.html">Проект Main</a></p>
+<h3>Проект MainUI</h3>
+<p>Проект dll, содержащей ресурсы, необходимые для работы главного модуля VSPackage.</p>
+<p>Страница проекта: <a class="el" href="a00020.html">Проект MainUI</a></p>
+<h3>Проект <a class="el" href="a00315.html" title="Класс входит в Проект TimeTracker   Главный класс модуля. ">TimeTracker</a></h3>
+<p>Проект модуля учета времени работы над решением.</p>
+<p>Страница проекта: <a class="el" href="a00026.html">Проект TimeTracker</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00009.html">ConnectionPoints</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 20:46:44. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 23:04:42. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

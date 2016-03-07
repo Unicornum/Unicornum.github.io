@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['connectionpoints',['ConnectionPoints',['../a00009.html',1,'SolutionPage']]],
-  ['core',['Core',['../a00032.html',1,'SolutionPage']]]
+  ['connectionpoints',['ConnectionPoints',['../a00010.html',1,'SolutionPage']]],
+  ['core',['Core',['../a00033.html',1,'SolutionPage']]]
 ];

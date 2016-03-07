@@ -48,12 +48,12 @@ var searchData=
   ['subscriber_3c_20envdte_3a_3a_5fdteevents_20_3e',['Subscriber&lt; EnvDTE::_DTEEvents &gt;',['../a00304.html',1,'wrappers::vs']]],
   ['subscriber_3c_20envdte_3a_3a_5fsolutionevents_20_3e',['Subscriber&lt; EnvDTE::_SolutionEvents &gt;',['../a00304.html',1,'wrappers::vs']]],
   ['subscriber_3c_20envdte_3a_3a_5ftexteditorevents_20_3e',['Subscriber&lt; EnvDTE::_TextEditorEvents &gt;',['../a00304.html',1,'wrappers::vs']]],
-  ['support_2ehpp',['Support.hpp',['../a00642.html',1,'']]],
-  ['support_2ehpp',['Support.hpp',['../a00644.html',1,'']]],
-  ['support_2einside_2ehpp',['Support.inside.hpp',['../a00645.html',1,'']]],
+  ['support_2ehpp',['Support.hpp',['../a00643.html',1,'']]],
+  ['support_2ehpp',['Support.hpp',['../a00645.html',1,'']]],
   ['support_2einside_2ehpp',['Support.inside.hpp',['../a00646.html',1,'']]],
+  ['support_2einside_2ehpp',['Support.inside.hpp',['../a00647.html',1,'']]],
+  ['support_2emock_2ehpp',['Support.mock.hpp',['../a00649.html',1,'']]],
   ['support_2emock_2ehpp',['Support.mock.hpp',['../a00648.html',1,'']]],
-  ['support_2emock_2ehpp',['Support.mock.hpp',['../a00647.html',1,'']]],
   ['svn',['Svn',['../a00305.html',1,'core::utilities::execute']]],
   ['svninfo',['SvnInfo',['../a00306.html',1,'core::utilities::execute']]]
 ];

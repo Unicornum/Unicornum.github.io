@@ -10,6 +10,6 @@ var dir_8f0bc40d9a9d49962ee5dcc890b442a2 =
     [ "OpenDocImpl.hpp", "a00829_source.html", null ],
     [ "OpenDoxygenDoc.hpp", "a00831_source.html", null ],
     [ "OpenSolutionDoc.hpp", "a00833_source.html", null ],
-    [ "stdafx.h", "a00526_source.html", null ],
-    [ "targetver.h", "a00567_source.html", null ]
+    [ "stdafx.h", "a00527_source.html", null ],
+    [ "targetver.h", "a00568_source.html", null ]
 ];

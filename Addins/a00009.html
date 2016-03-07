@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: ConnectionPoints</title>
+<title>Addins: Addins</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3406 Architecture: x86.32 Build: 20:46 07 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3407 Architecture: x86.32 Build: 23:04 07 Март 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -103,63 +103,44 @@ $(document).ready(function(){initNavTree('a00009.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ConnectionPoints </div>  </div>
+<div class="title">Addins </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sConnectionPointsBrief"></a>
-Введение</h1>
-<p>Содержит классы подключения компонентов надстройки к конкретной IDE.</p>
-<h1>Структура раздела </h1>
-<h2>Проект Common </h2>
-<p>Проект содержит классы, общие для всех точек подключения и не зависящие от конкретного типа IDE.</p>
-<p>Страница проекта: <a class="el" href="a00011.html">Проект Common</a></p>
-<h2>Раздел Visual Studio </h2>
-<p>Раздел содержит проекты классов подключения к Visual Studio.</p>
-<h3>Точка подключения как VSPackage</h3>
-<p><a class="el" href="a00010.html">Описание создания VSPackage на С++</a></p>
-<h3>Проект Support</h3>
-<p>Проект, содержащий вспомогательные классы, общие для проектов раздела.</p>
-<p>Страница проекта: <a class="el" href="a00023.html">Проект Support</a></p>
-<h3>Проект UnicornumCodeAssistant</h3>
-<p>Проект точки подключения к Visual Studio, обеспечивающей работу команд, доступных из меню.</p>
-<p>Проект выполняет следующие действия:</p><ul>
-<li>Загрузку параметров надстройки для текущей используемой версии Visual Studio.</li>
-<li>Создание меню и их команд при старте надстройки.</li>
-<li>Уничтожение меню и команд при выгрузке надстройки.</li>
-<li>Запрос и установку текущего статуса команд.</li>
-<li>Выполнение команд, соответствующих выбранной строке меню.</li>
-<li>Удаление команд, оставшихся от предыдущего запуска надстройки (возможно в случае аварийного завершения работы Visual Studio).</li>
-<li>Копирование файла usertype.dat в папку Visual Studio при запуске надстройки.</li>
+<div class="textblock"><h1><a class="anchor" id="sSolutionBrief"></a>
+Описание решения</h1>
+<p>Решение представляет собой набор надстроек для IDE, предназначенных для:</p><ul>
+<li>автоматизации рутинных операций при работе с кодом;</li>
+<li>упрощения работы со вспомогательными утилитами (прямо из среды разработки);</li>
 </ul>
-<p>Страница проекта: <a class="el" href="a00028.html">Проект UnicornumCodeAssistant</a></p>
-<h3>Проект Properties</h3>
-<p>Проект точки подключения к Visual Studio, реализующий логику подключения к проекту файла общей страницы свойств решения.</p>
-<p>Страница проекта: <a class="el" href="a00021.html">Проект Properties</a></p>
-<h3>Проект Version</h3>
-<p>Надстройка предназначена для установки .exe и .dll файлам версии решения, включая номера ревизии файлов решения и внешних библиотек.</p>
-<p>Страница проекта: <a class="el" href="a00030.html">Проект Version</a></p>
-<h3>Проект Icons</h3>
-<p>Проект DLL, содержащей иконки, используемые надстройкой для обозначения пунктов меню.</p>
-<p>Страница проекта: <a class="el" href="a00015.html">Проект Icons</a></p>
-<h3>Проект Data</h3>
-<p>Проект содержит файлы, необходимые для работы надстроек (настройки, шаблоны документов и т.п.), которые копируются в папку построения при сборке проекта.</p>
-<p>Страница проекта: <a class="el" href="a00013.html">Проект Data</a></p>
-<h3>Проект Main</h3>
-<p>Главный модуль подключения к Visual Studio: загружает и активирует все остальные модули при старте IDE.</p>
-<p>Страница проекта: <a class="el" href="a00017.html">Проект Main</a></p>
-<h3>Проект MainUI</h3>
-<p>Проект dll, содержащей ресурсы, необходимые для работы главного модуля VSPackage.</p>
-<p>Страница проекта: <a class="el" href="a00019.html">Проект MainUI</a></p>
-<h3>Проект <a class="el" href="a00315.html" title="Класс входит в Проект TimeTracker   Главный класс модуля. ">TimeTracker</a></h3>
-<p>Проект модуля учета времени работы над решением.</p>
-<p>Страница проекта: <a class="el" href="a00025.html">Проект TimeTracker</a> </p>
+<p>Поддерживаются следующие IDE:</p><ul>
+<li>Visual Studio.</li>
+</ul>
+<h2><a class="anchor" id="ssRequirements"></a>
+Исходные требования</h2>
+<p><a class="el" href="a00007.html">Исходные требования</a></p>
+<h2>Структура решения </h2>
+<p>Схема взаимодействия разделов решения (стрелочки обозначают, что раздел может использовать классы указанного раздела).</p>
+<div class="image">
+<img src="SolutionStruct.png" alt="SolutionStruct.png"/>
+</div>
+<h2>Разделы решения </h2>
+<h3>Build</h3>
+<p>Описание раздела <a class="el" href="a00003.html">Build</a></p>
+<h3>Connection Points</h3>
+<p>Описание раздела <a class="el" href="a00010.html">ConnectionPoints</a></p>
+<h3>Core</h3>
+<p>Содержит классы, выполняющие основную работу надстройки.</p>
+<p>Описание раздела <a class="el" href="a00033.html">Core</a></p>
+<h3>Wrappers</h3>
+<p>Содержит вспомогательные классы для работы в конкретной IDE.</p>
+<p>Описание раздела <a class="el" href="a00085.html">Wrappers</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 20:46:44. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 23:04:42. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

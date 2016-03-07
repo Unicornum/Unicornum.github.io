@@ -4,6 +4,6 @@ var dir_8754577cbdc5d4a9bf18dc056454a98b =
     [ "InsertDataTime.hpp", "a00840_source.html", null ],
     [ "InsertPragmaMessage.hpp", "a00842_source.html", null ],
     [ "InsertTextBlank.hpp", "a00844_source.html", null ],
-    [ "stdafx.h", "a00527_source.html", null ],
-    [ "targetver.h", "a00568_source.html", null ]
+    [ "stdafx.h", "a00528_source.html", null ],
+    [ "targetver.h", "a00569_source.html", null ]
 ];

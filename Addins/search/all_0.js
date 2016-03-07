@@ -6,8 +6,8 @@ var searchData=
   ['addcontrol',['AddControl',['../a00136.html#a86130e59757e2c2e7976498b8ed55cbf',1,'wrappers::vs::Command']]],
   ['adddescription',['AddDescription',['../a00111.html',1,'core::useful_commands::vs::documentation::doxygen']]],
   ['addin',['AddIn',['../a00112.html',1,'wrappers::vs']]],
-  ['addin_2eidl',['AddIn.idl',['../a00615.html',1,'']]],
   ['addin_2eidl',['AddIn.idl',['../a00616.html',1,'']]],
+  ['addin_2eidl',['AddIn.idl',['../a00617.html',1,'']]],
   ['addins',['AddIns',['../a00113.html',1,'wrappers::vs']]],
   ['addpopup',['AddPopup',['../a00139.html#a8fbb2e6cf86f155028496a37aea0cb1a',1,'wrappers::vs::CommandBarControls']]],
   ['addprojecttest',['AddProjectTest',['../a00114.html',1,'core::useful_commands::vs::testing']]],
@@ -27,5 +27,5 @@ var searchData=
   ['appframe',['AppFrame',['../a00121.html',1,'wx']]],
   ['assign',['Assign',['../a00123.html#aa24004d311ec03f3115d5937b39fadd0',1,'wrappers::vs::Base']]],
   ['astyleprocess',['AStyleProcess',['../a00122.html',1,'core::useful_commands::vs::utilities']]],
-  ['addins',['Addins',['../a00008.html',1,'index']]]
+  ['addins',['Addins',['../a00009.html',1,'index']]]
 ];

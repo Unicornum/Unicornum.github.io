@@ -2,7 +2,6 @@ var NAVTREE =
 [
   [ "Addins", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "?????????? ? ?????? ??? ????????", "a00041.html", null ],
     [ "Список задач", "a00001.html", null ],
     [ "Ошибки", "a00002.html", null ],
     [ "Группы", "modules.html", "modules" ],

@@ -12,6 +12,6 @@ var dir_aef1dea53519195b0c4938147c35440c =
     [ "ServiceProvider.hpp", "a01162_source.html", null ],
     [ "StatusBar.hpp", "a01165_source.html", null ],
     [ "StatusBarEmpty.hpp", "a01166_source.html", null ],
-    [ "stdafx.h", "a00549_source.html", null ],
-    [ "targetver.h", "a00588_source.html", null ]
+    [ "stdafx.h", "a00550_source.html", null ],
+    [ "targetver.h", "a00589_source.html", null ]
 ];
