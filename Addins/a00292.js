@@ -1,5 +1,6 @@
 var a00292 =
 [
-    [ "Advise", "a00292.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
-    [ "Unadvise", "a00292.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
+    [ "GetActivePlatformName", "a00292.html#a3a5de2684219f84b149e41da839ecf2f", null ],
+    [ "GetName", "a00292.html#ae2fea29770d4277e57a24c17e8c875de", null ],
+    [ "GetPathToFile", "a00292.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
 ];

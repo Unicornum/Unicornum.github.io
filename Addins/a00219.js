@@ -1,4 +1,5 @@
 var a00219 =
 [
-    [ "operator=", "a00219.html#a17780b4769971be6e974544f47de2085", null ]
+    [ "GetPathToFile", "a00219.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
+    [ "Remove", "a00219.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
 ];

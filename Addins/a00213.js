@@ -1,4 +1,5 @@
 var a00213 =
 [
-    [ "GetValue", "a00213.html#a6ebfa0f1cb27871d9d1d81940d18d60b", null ]
+    [ "GetCaption", "a00213.html#a90513db30e85b2866071d8a5abf187df", null ],
+    [ "IsEnabled", "a00213.html#a0a0b0a135d365446336a91f41cb7a9ca", null ]
 ];

@@ -1,4 +1,4 @@
 var a00248 =
 [
-    [ "SetProcessedData", "a00248.html#acf07909284b3dcc712fd11ecb8bc6496", null ]
+    [ "GetCaption", "a00248.html#accc91b280baa5f4bbbd054dd62698b0f", null ]
 ];

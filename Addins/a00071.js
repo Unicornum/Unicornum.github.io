@@ -1,7 +1,7 @@
 var a00071 =
 [
-    [ "Введение", "a00071.html#sEnvironmentVariablesBrief", [
-      [ "Список задач проекта", "a00071.html#ssEnvironmentVariablesTasks", null ]
+    [ "Введение", "a00071.html#sDialogBrief", [
+      [ "Список задач проекта", "a00071.html#ssDialogTasks", null ]
     ] ],
     [ "Список задач проекта", "a00072.html", null ]
 ];

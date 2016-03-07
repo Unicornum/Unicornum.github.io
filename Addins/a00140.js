@@ -1,6 +1,9 @@
 var a00140 =
 [
-    [ "Commands", "a00140.html#a8273ee6ce9732a442b06ed151fca79f0", null ],
-    [ "Add", "a00140.html#a201e7ba9487eeb532555ec2c61e60edb", null ],
-    [ "GetItem", "a00140.html#a9a71fda817a3f6219f411beb7b8aa8c4", null ]
+    [ "Delete", "a00140.html#a8bbb63f588b2f90e3c9f517a44a7ed4b", null ],
+    [ "PROPERTY_GET", "a00140.html#ad3bebadeb0077f2d5cec751995aedc37", null ],
+    [ "PROPERTY_GET", "a00140.html#a3adfcc08dd94c2d6fc801967cd6fae57", null ],
+    [ "SetBeginGroup", "a00140.html#a7bd14f74efb1ff877f410c1af87eae37", null ],
+    [ "SetCaption", "a00140.html#a1a240117271fd1d6c6a444db3b60a747", null ],
+    [ "SetVisible", "a00140.html#a5fc0a8ec29327acc66d1f63bfdaf2337", null ]
 ];

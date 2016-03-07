@@ -1,5 +1,6 @@
 var a00112 =
 [
-    [ "WasFoundNext", "a00112.html#abbb3a4c1bca71e9510522a27e5b86e72", null ],
-    [ "WasNoFound", "a00112.html#af6330f00eab5407344d37a1939951a5f", null ]
+    [ "ExtractFrom", "a00112.html#a3e251c846958372bba1a743db8367b09", null ],
+    [ "GetConnectString", "a00112.html#a562089c22cfb703a62f7f4413e2ab89c", null ],
+    [ "GetVersion", "a00112.html#af34b5f4c11993b8b36444540ecf49dee", null ]
 ];

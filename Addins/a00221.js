@@ -1,5 +1,8 @@
 var a00221 =
 [
-    [ "Main", "a00221.html#a41fd0853ce2d4dcd5c6c5096352e37a3", null ],
-    [ "Set", "a00221.html#a7bb75640e0313e7482d8df39ef523fa2", null ]
+    [ "GetRegexString", "a00221.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
+    [ "GetReplaceString", "a00221.html#a81029770ef4725794abaa505ad34fc55", null ],
+    [ "GetSourseStrings", "a00221.html#a53b21f1290abceb1fda90789c42f82ee", null ],
+    [ "SetProcessedData", "a00221.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
+    [ "DoProcess", "a00221.html#a5491cd61ba8f067527535004e251f81a", null ]
 ];

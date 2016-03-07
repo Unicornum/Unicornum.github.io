@@ -1,7 +1,7 @@
 var a00097 =
 [
-    [ "Введение", "a00097.html#sPanesBrief", [
-      [ "Список задач проекта", "a00097.html#ssPanesTasks", null ]
+    [ "Введение", "a00097.html#sEventsBrief", [
+      [ "Список задач проекта", "a00097.html#ssEventsTasks", null ]
     ] ],
     [ "Список задач проекта", "a00098.html", null ]
 ];

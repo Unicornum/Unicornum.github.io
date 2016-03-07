@@ -1,4 +1,5 @@
 var a00323 =
 [
-    [ "Activate", "a00323.html#a866e9ba5636efab9ebfac50b7e02180d", null ]
+    [ "GetCount", "a00323.html#aa154e70c4f4beb10408ebd7639ddd71e", null ],
+    [ "GetElement", "a00323.html#aa3d0f9502c74d80fa41f920314db0f81", null ]
 ];

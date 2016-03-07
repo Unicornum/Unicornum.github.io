@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wrappers::vs::SolutionFolderHelper</title>
+<title>Addins: Класс model::Replace</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3273 Architecture: x86.32 Build: 18:06 26 Февраль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3406 Architecture: x86.32 Build: 20:46 07 Март 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -51,6 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -111,73 +112,77 @@ $(document).ready(function(){initNavTree('a00286.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pro-methods">Защищенные члены</a> &#124;
-<a href="a01896.html">Полный список членов класса</a>  </div>
+<a href="a01801.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wrappers::vs::SolutionFolderHelper</div>  </div>
+<div class="title">Класс model::Replace<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01323.html">RegexTester</a> &raquo; <a class="el" href="a01325.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00103.html">Проект Solution</a> <br />
- Класс, содержащий вспомогательные функции для работы с EnvDTE80::SolutionFolder.  
+<p>Класс входит в <a class="el" href="a00042.html">Проект RegexTester</a> <br />
+ Класс реализации модели для замены в строке с помощью регулярного выражения.  
  <a href="a00286.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01030_source.html">SolutionFolderHelper.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00739_source.html">Replace.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:wrappers::vs::SolutionFolderHelper:</div>
+Граф наследования:model::Replace:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01897.png" border="0" usemap="#wrappers_1_1vs_1_1_solution_folder_helper_inherit__map" alt="Inheritance graph"/></div>
-<map name="wrappers_1_1vs_1_1_solution_folder_helper_inherit__map" id="wrappers_1_1vs_1_1_solution_folder_helper_inherit__map">
-<area shape="rect" id="node6" href="a00287.html" title="Класс входит в Проект Solution &#160;&#160;Класс списка дочерних папок папки решения. " alt="" coords="5,419,227,541"/>
-<area shape="rect" id="node2" href="a00118.html" title="{wrappers::vs::Base\l\&lt; EnvDTE80::SolutionFolder \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="5,6,227,186"/>
+<div class="center"><img src="a01802.png" border="0" usemap="#model_1_1_replace_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_replace_inherit__map" id="model_1_1_replace_inherit__map">
+<area shape="rect" id="node2" href="a00147.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс, содержащий общую логику обработки исходных строк..." alt="" coords="21,248,171,355"/>
+<area shape="rect" id="node4" href="a00208.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,5,187,200"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса wrappers::vs::SolutionFolderHelper:</div>
+Граф связей класса model::Replace:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01898.png" border="0" usemap="#wrappers_1_1vs_1_1_solution_folder_helper_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1vs_1_1_solution_folder_helper_coll__map" id="wrappers_1_1vs_1_1_solution_folder_helper_coll__map">
-<area shape="rect" id="node2" href="a00118.html" title="{wrappers::vs::Base\l\&lt; EnvDTE80::SolutionFolder \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="5,6,227,186"/>
+<div class="center"><img src="a01803.png" border="0" usemap="#model_1_1_replace_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_replace_coll__map" id="model_1_1_replace_coll__map">
+<area shape="rect" id="node2" href="a00147.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс, содержащий общую логику обработки исходных строк..." alt="" coords="21,248,171,355"/>
+<area shape="rect" id="node4" href="a00208.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,5,187,200"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Защищенные члены</h2></td></tr>
-<tr class="memitem:acc311206f85e40019eb0033c34614f42"><td class="memItemLeft" align="right" valign="top">Item_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#acc311206f85e40019eb0033c34614f42">GetItem</a> (Items_t *_pItems, const CString &amp;_Name) const </td></tr>
-<tr class="memdesc:acc311206f85e40019eb0033c34614f42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для поиска в списке элементов элемента с указанным именем.  <a href="#acc311206f85e40019eb0033c34614f42">Подробнее...</a><br /></td></tr>
-<tr class="separator:acc311206f85e40019eb0033c34614f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_methods_a00118"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00118')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00118.html">wrappers::vs::Base&lt; EnvDTE80::SolutionFolder &gt;</a></td></tr>
-<tr class="memitem:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bd20844e7332406932787c9b5b852d"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#af8bd20844e7332406932787c9b5b852d">GetName</a> (void) const</td></tr>
-<tr class="memdesc:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта. <br /></td></tr>
-<tr class="separator:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36588f576db9d1dd86e5ae158a165c3"></a>
-<a class="el" href="a00225.html">Service::MakeProxy</a>&lt; TReturn, EnvDTE80::SolutionFolder &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#ae36588f576db9d1dd86e5ae158a165c3">Make</a> (void) const</td></tr>
-<tr class="memdesc:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t. <br /></td></tr>
-<tr class="separator:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00118"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42cc94ed152690a3fe262eec788ef191"></a>
-<a class="el" href="a00225.html">Service::MakeProxy</a>&lt; void *, EnvDTE80::SolutionFolder &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a42cc94ed152690a3fe262eec788ef191">Make</a> (void) const</td></tr>
-<tr class="memdesc:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t, не возвращающих значения. <br /></td></tr>
-<tr class="separator:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05a7f3f17cc8ad1cfb7d44dd7754d67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f">DoLocalProcess</a> (void) override</td></tr>
+<tr class="memdesc:a05a7f3f17cc8ad1cfb7d44dd7754d67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция обработки данных, переданных в конструкторе.  <a href="#a05a7f3f17cc8ad1cfb7d44dd7754d67f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a05a7f3f17cc8ad1cfb7d44dd7754d67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pro_static_methods_a00118"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_a00118')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="a00118.html">wrappers::vs::Base&lt; EnvDTE80::SolutionFolder &gt;</a></td></tr>
-<tr class="memitem:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00118"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c540555a66a709a4f21f9bfc3e8dbf5"></a>
-static <a class="el" href="a00225.html">Service::MakeProxy</a>&lt; TReturn, TSource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html#a6c540555a66a709a4f21f9bfc3e8dbf5">Make</a> (TSource *_pSource)</td></tr>
-<tr class="memdesc:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций прототипов. <br /></td></tr>
-<tr class="separator:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00118"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00147"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00147')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00147.html">model::Common</a></td></tr>
+<tr class="memitem:a0abb8e6669ac19141bc9a1b86216df97 inherit pub_methods_a00147"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html#a0abb8e6669ac19141bc9a1b86216df97">DoProcess</a> (void) override final</td></tr>
+<tr class="memdesc:a0abb8e6669ac19141bc9a1b86216df97 inherit pub_methods_a00147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция обработки данных, переданных в конструкторе (общая логика).  <a href="#a0abb8e6669ac19141bc9a1b86216df97">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0abb8e6669ac19141bc9a1b86216df97 inherit pub_methods_a00147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00208"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00208')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00208.html">model::IModel</a></td></tr>
+<tr class="memitem:a3b23716ff60787c927b882a9cc3e9774 inherit pub_methods_a00208"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b23716ff60787c927b882a9cc3e9774"></a>
+virtual const String_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#a3b23716ff60787c927b882a9cc3e9774">GetViewTitle</a> (void) const  =0</td></tr>
+<tr class="memdesc:a3b23716ff60787c927b882a9cc3e9774 inherit pub_methods_a00208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения заголовка окна, отображающего информацию объекта модели. <br /></td></tr>
+<tr class="separator:a3b23716ff60787c927b882a9cc3e9774 inherit pub_methods_a00208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcdf4ce9e35ac80e99bcfe1540b3f6eb inherit pub_methods_a00208"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcdf4ce9e35ac80e99bcfe1540b3f6eb"></a>
+virtual const <a class="el" href="a00165.html">Info_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb">GetDevelopmentInfo</a> (void) const  =0</td></tr>
+<tr class="memdesc:abcdf4ce9e35ac80e99bcfe1540b3f6eb inherit pub_methods_a00208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения информации объекта текущей модели. <br /></td></tr>
+<tr class="separator:abcdf4ce9e35ac80e99bcfe1540b3f6eb inherit pub_methods_a00208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eb51fafa31fc823f21f8f67347165f2 inherit pub_methods_a00208"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9eb51fafa31fc823f21f8f67347165f2"></a>
+<a class="el" href="a00160.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#a9eb51fafa31fc823f21f8f67347165f2">GetData</a> (void)</td></tr>
+<tr class="memdesc:a9eb51fafa31fc823f21f8f67347165f2 inherit pub_methods_a00208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения данных модели. <br /></td></tr>
+<tr class="separator:a9eb51fafa31fc823f21f8f67347165f2 inherit pub_methods_a00208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65322a253f89d9f7bfcc4384828d1d3c inherit pub_methods_a00208"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65322a253f89d9f7bfcc4384828d1d3c"></a>
+const <a class="el" href="a00160.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html#a65322a253f89d9f7bfcc4384828d1d3c">GetData</a> (void) const </td></tr>
+<tr class="memdesc:a65322a253f89d9f7bfcc4384828d1d3c inherit pub_methods_a00208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения данных модели. <br /></td></tr>
+<tr class="separator:a65322a253f89d9f7bfcc4384828d1d3c inherit pub_methods_a00208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00103.html">Проект Solution</a> <br />
- Класс, содержащий вспомогательные функции для работы с EnvDTE80::SolutionFolder. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект RegexTester</a> <br />
+ Класс реализации модели для замены в строке с помощью регулярного выражения. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>23 Май 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>28 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="acc311206f85e40019eb0033c34614f42"></a>
+<a class="anchor" id="a05a7f3f17cc8ad1cfb7d44dd7754d67f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -185,59 +190,37 @@ static <a class="el" href="a00225.html">Service::MakeProxy</a>&lt; TReturn, TSou
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">SolutionFolderHelper::Item_t * SolutionFolderHelper::GetItem </td>
+          <td class="memname">void Replace::DoLocalProcess </td>
           <td>(</td>
-          <td class="paramtype">Items_t *&#160;</td>
-          <td class="paramname"><em>_pItems</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">const CString &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Функция для поиска в списке элементов элемента с указанным именем. </p>
+<p>Функция обработки данных, переданных в конструкторе. </p>
 <ul>
-<li>Прямой поиск по имени не работает в VS2013, поэтому ищем перебором.</li>
-<li>В VS2008 проект не будет найден по новому имени сразу после переименования.</li>
+<li>У переданных данных RegexString должна содержать регулярное выражение, ReplaceString - строку на замену, SourceStrings - список обрабатываемых строк (поле String у каждого элемента).</li>
+<li>Функция обработает все строки из SourceStrings и заполнит поля ProcessingResults (будет только один элемент).</li>
+<li>ProcessingResults[0].Result будет содержать строку результата замены или описание ошибки, если введено некорректное регулярное выражение.</li>
+<li>ProcessingResults[0].IsInvalidRegex будет содержать true, если введено некорректное регулярное выражение.</li>
+<li>Если список обрабатываемых строк пуст, в SourceStrings будет добавлен элемент, содержащий пустую строку для String, а в ProcessingResults будет добавлен один элемент, Result которого будет содержащать строку 'Нет исходных строк для обработки.'. </li>
 </ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_pItems</td><td>Исходный список элементов. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя искомого элемента.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Нет элемента с указанным именем.</li>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p>Замещает <a class="el" href="a00147.html">model::Common</a>.</p>
 
 <p><div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00286_acc311206f85e40019eb0033c34614f42_cgraph.png" border="0" usemap="#a00286_acc311206f85e40019eb0033c34614f42_cgraph" alt=""/></div>
-<map name="a00286_acc311206f85e40019eb0033c34614f42_cgraph" id="a00286_acc311206f85e40019eb0033c34614f42_cgraph">
-<area shape="rect" id="node3" href="a00225.html#abf5cc16c405af417713274439609135c" title="Вызов функции, не возвращающей значения. " alt="" coords="269,5,437,46"/>
+<div class="center"><img src="a00286_a05a7f3f17cc8ad1cfb7d44dd7754d67f_cgraph.png" border="0" usemap="#a00286_a05a7f3f17cc8ad1cfb7d44dd7754d67f_cgraph" alt=""/></div>
+<map name="a00286_a05a7f3f17cc8ad1cfb7d44dd7754d67f_cgraph" id="a00286_a05a7f3f17cc8ad1cfb7d44dd7754d67f_cgraph">
+<area shape="rect" id="node3" href="a00208.html#a9eb51fafa31fc823f21f8f67347165f2" title="Функция получения данных модели. " alt="" coords="291,5,472,32"/>
 </map>
 </div>
 </p>
@@ -245,17 +228,16 @@ static <a class="el" href="a00225.html">Service::MakeProxy</a>&lt; TReturn, TSou
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Common/Common/<a class="el" href="a01030_source.html">SolutionFolderHelper.hpp</a></li>
-<li>Solution/Solution/Wrappers/VisualStudio/Common/Common/<a class="el" href="a01031_source.html">SolutionFolderHelper.mock.hpp</a></li>
-<li>Solution/Solution/Wrappers/VisualStudio/Common/Common/SolutionFolderHelper.cpp</li>
+<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Model/<a class="el" href="a00739_source.html">Replace.hpp</a></li>
+<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Model/Replace.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00286.html">SolutionFolderHelper</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 26 Фев 2016 18:06:54. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00286.html">Replace</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 20:46:46. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

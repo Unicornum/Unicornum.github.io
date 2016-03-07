@@ -1,5 +1,5 @@
 var a00249 =
 [
-    [ "GetReplaceString", "a00249.html#a672429326859357fdab4692dbfbacbef", null ],
-    [ "SetProcessedData", "a00249.html#a133c64c63a2004726817884ea2e59ab8", null ]
+    [ "GetCaption", "a00249.html#abd5a3ad5b334b05b063df592976f87db", null ],
+    [ "IsEnabled", "a00249.html#a76dc9b8c59f1dbfeeb5252e521282a98", null ]
 ];

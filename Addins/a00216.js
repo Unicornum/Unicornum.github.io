@@ -1,6 +1,6 @@
 var a00216 =
 [
-    [ "SetRegexString", "a00216.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
-    [ "SetSourceStrings", "a00216.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
-    [ "UpdateView", "a00216.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
+    [ "GetCaption", "a00216.html#aeadc45279201876deba468080f265e90", null ],
+    [ "GetHotKey", "a00216.html#a8b37da1f657bf32132fcd811b626e81a", null ],
+    [ "IsEnabled", "a00216.html#adf7ae5ef3739097507185cd921544dfd", null ]
 ];

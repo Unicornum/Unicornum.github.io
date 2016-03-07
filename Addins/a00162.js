@@ -1,6 +1,7 @@
 var a00162 =
 [
-    [ "AddVersionData", "a00162.html#ab3ca0f779fe4dfc4ab250a0561c72af7", null ],
-    [ "UpdateCopyrightYear", "a00162.html#af819ea33c04761393ed44c212ba0ae33", null ],
-    [ "UpdateVersion", "a00162.html#a94fb71da43515d70e9d93b813ffc9339", null ]
+    [ "ProcessingInfo", "a00268.html", "a00268" ],
+    [ "Dump", "a00162.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
+    [ "ProcessingResults", "a00162.html#a269a4595d146ddae5e2f2d12637822a0", null ],
+    [ "String", "a00162.html#a757d3e341008a41c15c16a180ca27a0c", null ]
 ];

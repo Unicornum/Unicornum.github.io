@@ -2,6 +2,6 @@ var dir_f68686a0e0cfb9a6a9e78d33a04ce9fc =
 [
     [ "(Documentation)", "dir_1c9de3fc5c2200a62fd8ba44b0ee54ff.html", "dir_1c9de3fc5c2200a62fd8ba44b0ee54ff" ],
     [ "Logger", "dir_67f7c68eaba9e75603d6e46d6be7c64a.html", "dir_67f7c68eaba9e75603d6e46d6be7c64a" ],
-    [ "Logger.hpp", "a00941.html", "a00941" ],
-    [ "Logger.mock.hpp", "a00942_source.html", null ]
+    [ "Logger.hpp", "a00998.html", "a00998" ],
+    [ "Logger.mock.hpp", "a00999_source.html", null ]
 ];

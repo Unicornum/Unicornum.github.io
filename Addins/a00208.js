@@ -1,7 +1,8 @@
 var a00208 =
 [
-    [ "Add", "a00208.html#a70cb54deb2ee7c638d0cb14f6bb0d853", null ],
-    [ "GetActiveProject", "a00208.html#a80b6fa85287d8fcdb196b52fdbcd0f32", null ],
-    [ "GetCount", "a00208.html#a3952f4465a19aa84440ec83b7da64929", null ],
-    [ "GetProject", "a00208.html#a1bece1c2d61f67f051780943e2d76c65", null ]
+    [ "DoProcess", "a00208.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
+    [ "GetData", "a00208.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
+    [ "GetData", "a00208.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
+    [ "GetDevelopmentInfo", "a00208.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
+    [ "GetViewTitle", "a00208.html#a3b23716ff60787c927b882a9cc3e9774", null ]
 ];

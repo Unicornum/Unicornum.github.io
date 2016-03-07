@@ -1,4 +1,6 @@
 var a00279 =
 [
-    [ "GetFullPathToPropsFile", "a00279.html#a6111c3f4dd9f7f6a31071127b28002b5", null ]
+    [ "SearchForFullPath", "a00279.html#ac85a4ff36109083a4286198e318fb850", null ],
+    [ "WasFoundNext", "a00279.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
+    [ "WasNoFound", "a00279.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
 ];

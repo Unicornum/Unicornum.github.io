@@ -1,5 +1,5 @@
 var a00139 =
 [
-    [ "Clear", "a00139.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
-    [ "GetSize", "a00139.html#a2a85a0531e1896a6097f74726fe12666", null ]
+    [ "AddPopup", "a00139.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
+    [ "GetCount", "a00139.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
 ];

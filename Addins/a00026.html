@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.18 Revision: 3273 Architecture: x86.32 Build: 18:06 26 Февраль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3406 Architecture: x86.32 Build: 20:46 07 Март 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -51,6 +51,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li class="current"><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -106,37 +107,37 @@ $(document).ready(function(){initNavTree('a00026.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Надстройка предназначена для автоматизация учета времени, потраченного на разработку ПО и простого доступа к результатам этого учета.</p><ul>
-<li> <input type="checkbox">  Ключевое требование! Все действия должны происходить автоматически, пользователь вообще не должен участвовать в процессе учета времени.</li>
+<li> <input type="checkbox" checked>  Ключевое требование! Все действия должны происходить автоматически, пользователь вообще не должен участвовать в процессе учета времени.</li>
 <li> <input type="checkbox" checked>  Затраченное время учитывается по действиям пользователя во время работы с Visual Studio (изменение текста открытого документа).</li>
-<li> <input type="checkbox">  Учтенное время работы должно записываться на специальную страницу документации в виде отчета в формате Doxygen.</li>
-<li> <input type="checkbox">  Команда вызова окна просмотра отчета за две недели (для текущего решения и суммарный для всех решений, в которые вносились исправления).</li>
+<li> <input type="checkbox" checked>  Учтенное время работы должно записываться на специальную страницу документации в виде отчета в формате Doxygen.</li>
+<li> <input type="checkbox" checked>  Команда вызова окна просмотра отчета за две недели (для текущего решения и суммарный для всех решений, в которые вносились исправления).</li>
 </ul>
 <h2>Учет времени </h2>
 <ul>
-<li> <input type="checkbox">  Промежутки веремени между событиями более &lt; уточнить&gt;=""&gt; минут не должны учитываться.</li>
-<li> <input type="checkbox">  Запись времени работы должна производиться таким образом, чтобы при аварийном завершении работы Visual Studio учтенное время не должно теряться (<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000005">Необходимо сделать:</a></b></dt><dd>требуется более точная формулировка).</dd></dl>
-</li>
+<li> <input type="checkbox" checked>  Промежутки веремени между событиями более (параметр IgnoreTime в разделе DevelopmentInfo настроек) не должны учитываться.</li>
+<li> <input type="checkbox" checked>  Запись времени работы в файлы через промежутки времени, заданные параметром TimeSaveChange в разделе DevelopmentInfo настроек.</li>
 </ul>
 <h2>Страница информации о времени работы с решением </h2>
 <ul>
-<li> <input type="checkbox">  Содержит информацию о общем времени, потраченном на разработку решения.</li>
-<li> <input type="checkbox">  Содержит сгенерированный отчет для Doxygen.</li>
+<li> <input type="checkbox" checked>  Содержит информацию о общем времени, потраченном на разработку решения.</li>
+<li> <input type="checkbox" checked>  Содержит сгенерированный отчет для Doxygen.</li>
 </ul>
 <h2>Страница информации обо всех решениях, измененных за последние 2 недели </h2>
 <ul>
-<li> <input type="checkbox">  Содержит статистику времени работы с решениями за последние две недели (раздельно по дням недели).</li>
+<li> <input type="checkbox" checked>  Содержит статистику времени работы с решениями за последние две недели (раздельно по дням недели).</li>
 </ul>
 <h2>Отчет за неделю </h2>
 <ul>
-<li> <input type="checkbox">  Отдельная утилита, получающая в качестве параметра пути к файлам, содержащим статистику работы с текущим решением и со всеми решениями, измененными за последние две недели.</li>
-<li> <input type="checkbox">  Диалоговое окно, отображающее диаграмму, аналогичную полю 'Обзор на неделю' сервиса Primaerp (две вкладки - одна для текущего решения, вторая - для всех решений, измененных за последние две недели). </li>
+<li> <input type="checkbox" checked>  Отдельная утилита, получающая в качестве параметра пути к файлам, содержащим статистику работы с текущим решением и со всеми решениями, измененными за последние две недели.</li>
 </ul>
+<p><a class="el" href="a00039.html">Исходные требования утилиты DevelopmentInfo</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 26 Фев 2016 18:06:52. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Addins</a></li><li class="navelem"><a class="el" href="a00007.html">Исходные требования</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 20:46:44. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
