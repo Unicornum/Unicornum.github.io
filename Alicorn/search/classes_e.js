@@ -9,6 +9,7 @@ var searchData=
   ['proxy',['Proxy',['../a00114.html',1,'alicorn::logger']]],
   ['proxy_3c_20currentmoduleproxy_20_3e',['Proxy&lt; CurrentModuleProxy &gt;',['../a00112.html',1,'alicorn::testing']]],
   ['proxy_3c_20loggerproxy_20_3e',['Proxy&lt; LoggerProxy &gt;',['../a00112.html',1,'alicorn::testing']]],
+  ['proxy_3c_20paramsproxy_3c_20tdata_20_3e_20_3e',['Proxy&lt; ParamsProxy&lt; TData &gt; &gt;',['../a00112.html',1,'alicorn::testing']]],
   ['proxy_3c_20processproxy_20_3e',['Proxy&lt; ProcessProxy &gt;',['../a00112.html',1,'alicorn::testing']]],
   ['proxy_3c_20rapidxmlproxy_20_3e',['Proxy&lt; RapidXmlProxy &gt;',['../a00112.html',1,'alicorn::testing']]],
   ['proxy_3c_20sectionimplproxy_20_3e',['Proxy&lt; SectionImplProxy &gt;',['../a00112.html',1,'alicorn::testing']]],

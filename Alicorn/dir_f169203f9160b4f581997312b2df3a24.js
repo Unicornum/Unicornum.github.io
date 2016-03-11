@@ -4,5 +4,6 @@ var dir_f169203f9160b4f581997312b2df3a24 =
     [ "History.hpp", "a00147_source.html", null ],
     [ "MainPage.hpp", "a00148_source.html", null ],
     [ "MSBuild.hpp", "a00149_source.html", null ],
-    [ "SolutionPage.hpp", "a00150_source.html", null ]
+    [ "Solution.info.hpp", "a00150_source.html", null ],
+    [ "SolutionPage.hpp", "a00151_source.html", null ]
 ];

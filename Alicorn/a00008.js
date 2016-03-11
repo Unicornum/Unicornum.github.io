@@ -2,14 +2,14 @@ var a00008 =
 [
     [ "Описание решения", "a00008.html#sSolutionBrief", null ],
     [ "Разделы решения", "a00008.html#sLayers", null ],
-    [ "Build", "a00004.html", [
-      [ "Описание раздела", "a00004.html#sBuildBrief", [
-        [ "Проект BuildAll", "a00004.html#ssBuildAllBriefProject", null ],
-        [ "Проект Alicorn", "a00004.html#ssAlicornBriefProject", null ]
+    [ "Build", "a00003.html", [
+      [ "Описание раздела", "a00003.html#sBuildBrief", [
+        [ "Проект BuildAll", "a00003.html#ssBuildAllBriefProject", null ],
+        [ "Проект Alicorn", "a00003.html#ssAlicornBriefProject", null ]
       ] ]
     ] ],
     [ "Раздел Alicorn", "a00009.html", "a00009" ],
-    [ "Раздел Externals", "a00005.html", null ],
+    [ "Раздел Externals", "a00004.html", null ],
     [ "Раздел Documentation", "a00040.html", [
       [ "Введение", "a00040.html#sDocumentationBrief", null ],
       [ "Подробное описание раздела", "a00040.html#sDocumentationDetails", [

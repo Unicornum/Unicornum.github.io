@@ -1,7 +1,7 @@
 var searchData=
 [
   ['match',['Match',['../a00097.html#aed057b113464ab4f76edbb8d9a01b3b4',1,'alicorn::extension::std::regex::Match::Match(const String &amp;)'],['../a00097.html#a6771afe48b8f1155f53536b2220e2764',1,'alicorn::extension::std::regex::Match::Match(const String &amp;, IgnoreCase)']]],
-  ['message',['Message',['../a00100.html#a3d40aeefeba1cf87f0ce3cc251f656f2',1,'alicorn::logger::Message']]],
+  ['message',['Message',['../a00102.html#a3d40aeefeba1cf87f0ce3cc251f656f2',1,'alicorn::logger::Message']]],
   ['messageimpl',['MessageImpl',['../a00103.html#a905589b1e01ae683692049bbfdc35a54',1,'alicorn::logger::MessageImpl']]],
   ['movetochildnode',['MoveToChildNode',['../a00089.html#a92be4896f9248f6ffbf3c3d1eab619eb',1,'alicorn::document::xml::IXml::MoveToChildNode()'],['../a00118.html#a04d0bbeeba0ce1f1e166d890caa20d0b',1,'alicorn::document::xml::RapidXml::MoveToChildNode()']]],
   ['movetofirstchildnode',['MoveToFirstChildNode',['../a00089.html#a0e52b7246a1ebdb8fb326b009adf49b9',1,'alicorn::document::xml::IXml::MoveToFirstChildNode()'],['../a00118.html#a7b73c1ffb6b49c361f20dbda9169c250',1,'alicorn::document::xml::RapidXml::MoveToFirstChildNode()']]],

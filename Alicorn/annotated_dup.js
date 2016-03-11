@@ -18,7 +18,7 @@ var annotated_dup =
         ] ],
         [ "std", null, [
           [ "exception", null, [
-            [ "Message", "a00101.html", null ],
+            [ "Message", "a00100.html", null ],
             [ "Proxy", "a00113.html", null ]
           ] ],
           [ "regex", null, [
@@ -34,10 +34,10 @@ var annotated_dup =
             [ "System", "a00133.html", null ],
             [ "UTF8", "a00138.html", null ]
           ] ],
-          [ "Message", "a00102.html", null ],
+          [ "Message", "a00101.html", null ],
           [ "String", "a00130.html", "a00130" ],
           [ "StringCastProxy", "a00131.html", "a00131" ],
-          [ "Text", "a00134.html", "a00134" ]
+          [ "Text", "a00135.html", "a00135" ]
         ] ]
       ] ],
       [ "logger", null, [
@@ -48,7 +48,7 @@ var annotated_dup =
           [ "Html", "a00075.html", "a00075" ],
           [ "IReport", "a00085.html", "a00085" ],
           [ "Report", "a00121.html", null ],
-          [ "Text", "a00135.html", "a00135" ],
+          [ "Text", "a00134.html", "a00134" ],
           [ "VisualStudioOutput", "a00140.html", "a00140" ]
         ] ],
         [ "AllowReplace", "a00043.html", null ],
@@ -64,7 +64,7 @@ var annotated_dup =
         [ "IntConfigValue", "a00084.html", null ],
         [ "MaxLogFiles", "a00098.html", null ],
         [ "MaxLogSize", "a00099.html", null ],
-        [ "Message", "a00100.html", "a00100" ],
+        [ "Message", "a00102.html", "a00102" ],
         [ "MessageImpl", "a00103.html", "a00103" ],
         [ "MessagePoints", "a00104.html", "a00104" ],
         [ "PathToLogDirectory", "a00108.html", null ],
@@ -124,7 +124,7 @@ var annotated_dup =
         [ "Info", "a00081.html", "a00081" ]
       ] ]
     ] ],
-    [ "app", "a00520.html", "a00520" ],
+    [ "app", "a00526.html", "a00526" ],
     [ "controller", null, [
       [ "Controller", "a00052.html", null ],
       [ "DoChangeValue", "a00061.html", null ],

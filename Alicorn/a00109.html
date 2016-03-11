@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1448 Architecture: x86.64 Build: 13:26 04 Февраль 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1485 Architecture: x86.64 Build: 02:10 11 Март 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -113,9 +113,10 @@ $(document).ready(function(){initNavTree('a00109.html','');});
   <div class="summary">
 <a href="#nested-classes">Классы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a00786.html">Полный список членов класса</a>  </div>
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="a00793.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::system::Process<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00538.html">Alicorn</a> &raquo; <a class="el" href="a00564.html">System</a></div></div>  </div>
+<div class="title">Класс alicorn::system::Process<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00545.html">Alicorn</a> &raquo; <a class="el" href="a00571.html">System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -123,13 +124,15 @@ $(document).ready(function(){initNavTree('a00109.html','');});
  Класс для запуска других программ.  
  <a href="a00109.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00460_source.html">process.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00464_source.html">process.hpp</a>&gt;</code></p>
 
 <p>Базовые классы:noncopyable.</p>
 <div class="dynheader">
 Граф связей класса alicorn::system::Process:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00787.png" border="0" usemap="#alicorn_1_1system_1_1_process_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a00794.png" border="0" usemap="#alicorn_1_1system_1_1_process_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1system_1_1_process_coll__map" id="alicorn_1_1system_1_1_process_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -140,39 +143,46 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a8829a0020c2f836c1c5efa408c261ea1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a8829a0020c2f836c1c5efa408c261ea1">RunWithoutWaitingCompletion</a> (const Args_t &amp;=Args_t()) const </td></tr>
-<tr class="memdesc:a8829a0020c2f836c1c5efa408c261ea1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы без ожидания ее завершения.  <a href="#a8829a0020c2f836c1c5efa408c261ea1">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8829a0020c2f836c1c5efa408c261ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a063aed97bbe1aab8e168710a235f330f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a063aed97bbe1aab8e168710a235f330f">RunWithoutWaitingCompletion</a> (const <a class="el" href="a00130.html">String_t</a> &amp;) const </td></tr>
-<tr class="memdesc:a063aed97bbe1aab8e168710a235f330f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы без ожидания ее завершения.  <a href="#a063aed97bbe1aab8e168710a235f330f">Подробнее...</a><br /></td></tr>
-<tr class="separator:a063aed97bbe1aab8e168710a235f330f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae19ea48857085dd694fd60e0bee623ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ae19ea48857085dd694fd60e0bee623ae">RunWithWaitingCompletion</a> (const Args_t &amp;=Args_t(), TimeMs_t=1000) const </td></tr>
-<tr class="memdesc:ae19ea48857085dd694fd60e0bee623ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы с ожиданием ее завершения.  <a href="#ae19ea48857085dd694fd60e0bee623ae">Подробнее...</a><br /></td></tr>
-<tr class="separator:ae19ea48857085dd694fd60e0bee623ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ab8cf5ea6e95e8d68f9ab5091947a90"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a2ab8cf5ea6e95e8d68f9ab5091947a90">RunWithWaitingCompletion</a> (const <a class="el" href="a00130.html">String_t</a> &amp;, TimeMs_t=1000) const </td></tr>
-<tr class="memdesc:a2ab8cf5ea6e95e8d68f9ab5091947a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы с ожиданием ее завершения.  <a href="#a2ab8cf5ea6e95e8d68f9ab5091947a90">Подробнее...</a><br /></td></tr>
-<tr class="separator:a2ab8cf5ea6e95e8d68f9ab5091947a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f1f11f01d19ce759652b29ffe2fbc1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a85f1f11f01d19ce759652b29ffe2fbc1">RunWithReceiveStdout</a> (const Args_t &amp;, <a class="el" href="a00077.html">process::ICallBack</a> &amp;) const </td></tr>
-<tr class="memdesc:a85f1f11f01d19ce759652b29ffe2fbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы с ожиданием ее завершения и получением ее консольного вывода.  <a href="#a85f1f11f01d19ce759652b29ffe2fbc1">Подробнее...</a><br /></td></tr>
-<tr class="separator:a85f1f11f01d19ce759652b29ffe2fbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad114a7151d53e2698494fe1e9c13b9d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ad114a7151d53e2698494fe1e9c13b9d0">RunWithoutWaitingCompletion</a> (const <a class="el" href="a00130.html">String_t</a> &amp;=_T(&quot;&quot;)) const </td></tr>
+<tr class="memdesc:ad114a7151d53e2698494fe1e9c13b9d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы без ожидания ее завершения.  <a href="#ad114a7151d53e2698494fe1e9c13b9d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad114a7151d53e2698494fe1e9c13b9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8fa0dc6e81fa4d9b37559337994efc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a5e8fa0dc6e81fa4d9b37559337994efc">RunWithWaitingCompletion</a> (const <a class="el" href="a00130.html">String_t</a> &amp;=_T(&quot;&quot;), TimeMs_t=TimeMs_t(1000)) const </td></tr>
+<tr class="memdesc:a5e8fa0dc6e81fa4d9b37559337994efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы с ожиданием ее завершения.  <a href="#a5e8fa0dc6e81fa4d9b37559337994efc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5e8fa0dc6e81fa4d9b37559337994efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2971a5187f0cb4ff11e9b060a04fb9a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a2971a5187f0cb4ff11e9b060a04fb9a6">RunWithReceiveStdout</a> (const <a class="el" href="a00130.html">String_t</a> &amp;, <a class="el" href="a00077.html">process::ICallBack</a> &amp;) const </td></tr>
 <tr class="memdesc:a2971a5187f0cb4ff11e9b060a04fb9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Запуск программы с ожиданием ее завершения и получением ее консольного вывода.  <a href="#a2971a5187f0cb4ff11e9b060a04fb9a6">Подробнее...</a><br /></td></tr>
 <tr class="separator:a2971a5187f0cb4ff11e9b060a04fb9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e50961e4b433d523527cc82254aa1d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a7e50961e4b433d523527cc82254aa1d0">Process</a> (const Path_t &amp;, const Path_t &amp;=&quot;&quot;, size_t _PipeReadBufferSize=1024)</td></tr>
 <tr class="memdesc:a7e50961e4b433d523527cc82254aa1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a7e50961e4b433d523527cc82254aa1d0">Подробнее...</a><br /></td></tr>
 <tr class="separator:a7e50961e4b433d523527cc82254aa1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a9cc5113978708ba27c4335c75825d0e1"><td class="memTemplParams" colspan="2">template&lt;class TData &gt; </td></tr>
+<tr class="memitem:a9cc5113978708ba27c4335c75825d0e1"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="a00130.html">String_t</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00109.html#a9cc5113978708ba27c4335c75825d0e1">ToParams</a> (const TData &amp;_Data)</td></tr>
+<tr class="memdesc:a9cc5113978708ba27c4335c75825d0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве параметра.  <a href="#a9cc5113978708ba27c4335c75825d0e1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9cc5113978708ba27c4335c75825d0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3a668b5135d1d92c4a2a6b713e7da87"><td class="memItemLeft" align="right" valign="top">::std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#ab3a668b5135d1d92c4a2a6b713e7da87">Tokenize</a> (const ::std::string &amp;, <a class="el" href="a00077.html">process::ICallBack</a> &amp;)</td></tr>
+<tr class="memdesc:ab3a668b5135d1d92c4a2a6b713e7da87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция разбиения получяемой строки на отдельные строки.  <a href="#ab3a668b5135d1d92c4a2a6b713e7da87">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab3a668b5135d1d92c4a2a6b713e7da87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a91dcba3b1a5c49ab13d490ecb61c23"><td class="memTemplParams" colspan="2">template&lt;class TData &gt; </td></tr>
+<tr class="memitem:a9a91dcba3b1a5c49ab13d490ecb61c23"><td class="memTemplItemLeft" align="right" valign="top">static TData&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00109.html#a9a91dcba3b1a5c49ab13d490ecb61c23">FromParams</a> (const <a class="el" href="a00130.html">String_t</a> &amp;_Value)</td></tr>
+<tr class="memdesc:a9a91dcba3b1a5c49ab13d490ecb61c23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция преобразования параметра командной строки программы в объект класса.  <a href="#a9a91dcba3b1a5c49ab13d490ecb61c23">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9a91dcba3b1a5c49ab13d490ecb61c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс входит в <a class="el" href="a00028.html">Проект System</a> <br />
  Класс для запуска других программ. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
  </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>09 Сентябрь 2015 <br />
+ 09 Март 2016 <br />
  </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016</dd></dl>
 <h2>Пример использования: </h2>
-<p>Запуск программы без ожидания ее завершения: </p><div class="fragment"><div class="line"><a class="code" href="a00109.html">::alicorn::system::Process</a>(<span class="stringliteral">&quot;calc.exe&quot;</span>).<a class="code" href="a00109.html#a8829a0020c2f836c1c5efa408c261ea1">RunWithoutWaitingCompletion</a>();</div></div><!-- fragment --> </div><h2 class="groupheader">Конструктор(ы)</h2>
+<p>Запуск программы без ожидания ее завершения: </p><div class="fragment"><div class="line"><a class="code" href="a00109.html">::alicorn::system::Process</a>(<span class="stringliteral">&quot;calc.exe&quot;</span>).<a class="code" href="a00109.html#ad114a7151d53e2698494fe1e9c13b9d0">RunWithoutWaitingCompletion</a>();</div></div><!-- fragment --> </div><h2 class="groupheader">Конструктор(ы)</h2>
 <a class="anchor" id="a7e50961e4b433d523527cc82254aa1d0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -216,78 +226,7 @@ $(document).ready(function(){initNavTree('a00109.html','');});
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">_PathToProgram</td><td>Путь к запускаемой программе (абсолютный или относительный). Может содержать кириллицу и пробелы. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">_PathToInitialDirectory</td><td>Путь к папке, которая будет рабочей для запускаемой программы (абсолютный или относительный). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PipeReadBufferSize</td><td>Размер буфера для чтения данных из пайпа в байтах для функции <a class="el" href="a00109.html#a85f1f11f01d19ce759652b29ffe2fbc1" title="Запуск программы с ожиданием ее завершения и получением ее консольного вывода. ">RunWithReceiveStdout()</a> (чем меньше его размер, тем чаще будет вызываться функция IsContinue() объекта обратного вызова, но при этом будет замедляться работа запущенной программы, т.к. она будет блокироваться на то время, пока не будет вычитан ее существующий консольный вывод). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a8829a0020c2f836c1c5efa408c261ea1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Process::RunWithoutWaitingCompletion </td>
-          <td>(</td>
-          <td class="paramtype">const Args_t &amp;&#160;</td>
-          <td class="paramname"><em>_Args</em> = <code>Args_t()</code></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Запуск программы без ожидания ее завершения. </p>
-<ul>
-<li>Функция запустит программу и сразу же вернет управление.</li>
-<li>Программа с окном будет отображаться на экране, консольная программа будет запущена в скрытом режиме.</li>
-<li>В качестве программы может быть задан путь к файлу (например, .txt), ярлыку или url, файл будет открыт в назначенной ему программе, ярлык или url будут открыты в браузере (аргументы командной строки в этом случае игнорируются).</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (могут быть переданы как набор строк, где каждая строка - отдельный параметр, так и одной строкой, в которой параметры разделены пробелами). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Заметки</dt><dd>Использовать строки в формате UTF8.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="a00003.html#_deprecated000001">Уст.:</a></b></dt><dd>Использовать функцию, получающую в качестве параметров String. </dd></dl>
-
-<p><div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00109_a8829a0020c2f836c1c5efa408c261ea1_icgraph.png" border="0" usemap="#a00109_a8829a0020c2f836c1c5efa408c261ea1_icgraph" alt=""/></div>
-<map name="a00109_a8829a0020c2f836c1c5efa408c261ea1_icgraph" id="a00109_a8829a0020c2f836c1c5efa408c261ea1_icgraph">
-<area shape="rect" id="node3" href="a00109.html#a063aed97bbe1aab8e168710a235f330f" title="Запуск программы без ожидания ее завершения. " alt="" coords="286,5,517,46"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a063aed97bbe1aab8e168710a235f330f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Process::RunWithoutWaitingCompletion </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00130.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Args</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Запуск программы без ожидания ее завершения. </p>
-<ul>
-<li>Функция запустит программу и сразу же вернет управление.</li>
-<li>Программа с окном будет отображаться на экране, консольная программа будет запущена в скрытом режиме.</li>
-<li>В качестве программы может быть задан путь к файлу (например, .txt), ярлыку или url, файл будет открыт в назначенной ему программе, ярлык или url будут открыты в браузере (аргументы командной строки в этом случае игнорируются).</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (одна строка, в которой параметры разделены пробелами). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PipeReadBufferSize</td><td>Размер буфера для чтения данных из пайпа в байтах для функции <a class="el" href="a00109.html#a2971a5187f0cb4ff11e9b060a04fb9a6" title="Запуск программы с ожиданием ее завершения и получением ее консольного вывода. ">RunWithReceiveStdout()</a> (чем меньше его размер, тем чаще будет вызываться функция IsContinue() объекта обратного вызова, но при этом будет замедляться работа запущенной программы, т.к. она будет блокироваться на то время, пока не будет вычитан ее существующий консольный вывод). </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,84 +234,110 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 <p><div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00109_a063aed97bbe1aab8e168710a235f330f_cgraph.png" border="0" usemap="#a00109_a063aed97bbe1aab8e168710a235f330f_cgraph" alt=""/></div>
-<map name="a00109_a063aed97bbe1aab8e168710a235f330f_cgraph" id="a00109_a063aed97bbe1aab8e168710a235f330f_cgraph">
-<area shape="rect" id="node3" href="a00550.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="331,5,472,46"/>
-<area shape="rect" id="node5" href="a00109.html#a8829a0020c2f836c1c5efa408c261ea1" title="Запуск программы без ожидания ее завершения. " alt="" coords="286,70,517,111"/>
+<div class="center"><img src="a00109_a7e50961e4b433d523527cc82254aa1d0_cgraph.png" border="0" usemap="#a00109_a7e50961e4b433d523527cc82254aa1d0_cgraph" alt=""/></div>
+<map name="a00109_a7e50961e4b433d523527cc82254aa1d0_cgraph" id="a00109_a7e50961e4b433d523527cc82254aa1d0_cgraph">
+<area shape="rect" id="node3" href="a00109.html#ad114a7151d53e2698494fe1e9c13b9d0" title="Запуск программы без ожидания ее завершения. " alt="" coords="241,5,471,46"/>
+<area shape="rect" id="node5" href="a00557.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="779,5,920,46"/>
+<area shape="rect" id="node7" href="a00109.html#a5e8fa0dc6e81fa4d9b37559337994efc" title="Запуск программы с ожиданием ее завершения. " alt="" coords="521,34,730,75"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a85f1f11f01d19ce759652b29ffe2fbc1"></a>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a9a91dcba3b1a5c49ab13d490ecb61c23"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TData &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static TData alicorn::system::Process::FromParams </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00130.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция преобразования параметра командной строки программы в объект класса. </p>
+<ul>
+<li>Корректно будет преобразована строка, созданная при помощи функции <a class="el" href="a00109.html#a9cc5113978708ba27c4335c75825d0e1" title="Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве парам...">ToParams()</a> для того же класса.</li>
+<li>Для того, чтобы строку параметра можно было преобразовать объект класса, он должен поддерживать сериализацию при помощи Boost.Serialization, т.е. содержать функцию <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> TArchive&gt;</div><div class="line"><span class="keywordtype">void</span> serialize(TArchive &amp; _Archive, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)</div><div class="line">{</div><div class="line">_Archive &amp; BoolValue; <span class="comment">// Для каждой переменной класса</span></div><div class="line">}</div></div><!-- fragment --></li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Value</td><td>Строка параметра (argv[1]), полученная программой (переданная при помощи функции <a class="el" href="a00109.html#a9cc5113978708ba27c4335c75825d0e1" title="Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве парам...">ToParams()</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Объект класса, содержащий переданные значения.</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad114a7151d53e2698494fe1e9c13b9d0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Process::RunWithReceiveStdout </td>
+          <td class="memname">void Process::RunWithoutWaitingCompletion </td>
           <td>(</td>
-          <td class="paramtype">const Args_t &amp;&#160;</td>
-          <td class="paramname"><em>_Args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00077.html">process::ICallBack</a> &amp;&#160;</td>
-          <td class="paramname"><em>_CallBack</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
+          <td class="paramtype">const <a class="el" href="a00130.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Args</em> = <code>_T(&quot;&quot;)</code></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Запуск программы с ожиданием ее завершения и получением ее консольного вывода. </p>
+<p>Запуск программы без ожидания ее завершения. </p>
 <ul>
-<li>Функция запустит программу и будет читать ее консольный вывод (stdout и stderr).</li>
-<li>Когда работа программы будет завершена, функция вернет управление.</li>
-<li>После завершения работы программы (штатного или принудительного) консольный вывод будет передан по одной строке через функцию Received() объекта обратного вызова.</li>
-<li>Для принудительного завершения работы программы функция IsContinue() объекта обратного вызова должна вернуть false.</li>
+<li>Функция запустит программу и сразу же вернет управление.</li>
 <li>Программа с окном будет отображаться на экране, консольная программа будет запущена в скрытом режиме.</li>
+<li>В качестве программы может быть задан путь к файлу (например, .txt), ярлыку или url, файл будет открыт в назначенной ему программе, ярлык или url будут открыты в браузере (аргументы командной строки в этом случае игнорируются).</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (могут быть переданы как набор строк, где каждая строка - отдельный параметр, так и одной строкой, в которой параметры разделены пробелами). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (одна строка, в которой параметры разделены пробелами). См. также функцию <a class="el" href="a00109.html#a9cc5113978708ba27c4335c75825d0e1" title="Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве парам...">ToParams()</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Заметки</dt><dd>Использовать строки в формате UTF8. </dd></dl>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_CallBack</td><td>Объект обратного вызова, который будет получать консольный вывод запущенной программы.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Код, который вернула программа при штатном завершении работы.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Указанной в конструкторе программы не существует.</li>
-<li>Указанный в конструкторе файл существует, но не является запускаемой программой. </li>
-</ul>
-</td></tr>
-    <tr><td class="paramname"><a class="el" href="a00090.html" title="Класс исключения, бросаемого при принудительном завершении программы. ">Process::KilledException</a></td><td><ul>
-<li>Программа была принудительно завершена возвратом false функцией объекта обратного вызова.</li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="a00003.html#_deprecated000003">Уст.:</a></b></dt><dd>Использовать функцию, получающую в качестве параметров String. </dd></dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00109_ad114a7151d53e2698494fe1e9c13b9d0_cgraph.png" border="0" usemap="#a00109_ad114a7151d53e2698494fe1e9c13b9d0_cgraph" alt=""/></div>
+<map name="a00109_ad114a7151d53e2698494fe1e9c13b9d0_cgraph" id="a00109_ad114a7151d53e2698494fe1e9c13b9d0_cgraph">
+<area shape="rect" id="node3" href="a00557.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="544,5,685,46"/>
+<area shape="rect" id="node5" href="a00109.html#a5e8fa0dc6e81fa4d9b37559337994efc" title="Запуск программы с ожиданием ее завершения. " alt="" coords="286,34,495,75"/>
+</map>
+</div>
+</p>
 
 <p><div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00109_a85f1f11f01d19ce759652b29ffe2fbc1_icgraph.png" border="0" usemap="#a00109_a85f1f11f01d19ce759652b29ffe2fbc1_icgraph" alt=""/></div>
-<map name="a00109_a85f1f11f01d19ce759652b29ffe2fbc1_icgraph" id="a00109_a85f1f11f01d19ce759652b29ffe2fbc1_icgraph">
-<area shape="rect" id="node3" href="a00109.html#a2971a5187f0cb4ff11e9b060a04fb9a6" title="Запуск программы с ожиданием ее завершения и получением ее консольного вывода. " alt="" coords="240,5,427,46"/>
+<div class="center"><img src="a00109_ad114a7151d53e2698494fe1e9c13b9d0_icgraph.png" border="0" usemap="#a00109_ad114a7151d53e2698494fe1e9c13b9d0_icgraph" alt=""/></div>
+<map name="a00109_ad114a7151d53e2698494fe1e9c13b9d0_icgraph" id="a00109_ad114a7151d53e2698494fe1e9c13b9d0_icgraph">
+<area shape="rect" id="node3" href="a00109.html#a7e50961e4b433d523527cc82254aa1d0" title="Конструктор класса. " alt="" coords="285,5,472,46"/>
 </map>
 </div>
 </p>
@@ -413,7 +378,7 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (одна строка, в которой параметры разделены пробелами). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (одна строка, в которой параметры разделены пробелами). См. также функцию <a class="el" href="a00109.html#a9cc5113978708ba27c4335c75825d0e1" title="Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве парам...">ToParams()</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">_CallBack</td><td>Объект обратного вызова, который будет получать консольный вывод запущенной программы.</td></tr>
   </table>
   </dd>
@@ -439,84 +404,24 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 <div class="dyncontent">
 <div class="center"><img src="a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_cgraph.png" border="0" usemap="#a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_cgraph" alt=""/></div>
 <map name="a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_cgraph" id="a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_cgraph">
-<area shape="rect" id="node3" href="a00550.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="263,5,404,46"/>
-<area shape="rect" id="node5" href="a00109.html#a85f1f11f01d19ce759652b29ffe2fbc1" title="Запуск программы с ожиданием ее завершения и получением ее консольного вывода. " alt="" coords="240,70,427,111"/>
+<area shape="rect" id="node3" href="a00557.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="240,5,381,46"/>
 </map>
 </div>
 </p>
-
-</div>
-</div>
-<a class="anchor" id="ae19ea48857085dd694fd60e0bee623ae"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Process::RunWithWaitingCompletion </td>
-          <td>(</td>
-          <td class="paramtype">const Args_t &amp;&#160;</td>
-          <td class="paramname"><em>_Args</em> = <code>Args_t()</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeMs_t&#160;</td>
-          <td class="paramname"><em>_TimeOut</em> = <code>1000</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Запуск программы с ожиданием ее завершения. </p>
-<ul>
-<li>Функция запустит программу и будет ожидать ее завершения указанное время; функция вернет управление, когда работа программы будет завершена.</li>
-<li>Если программа не завершит работу за указанное время, она будет завершена принудительно.</li>
-<li>Программа с окном будет отображаться на экране, консольная программа будет запущена в скрытом режиме.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (могут быть переданы как набор строк, где каждая строка - отдельный параметр, так и одной строкой, в которой параметры разделены пробелами). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Заметки</dt><dd>Использовать строки в формате UTF8. </dd></dl>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_TimeOut</td><td>Время в миллисекундах, в течении которого будет ожидаться завершение работы запущенной программы.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Код, который вернула программа при завершении работы.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Указанной в конструкторе программы не существует.</li>
-<li>Указанный в конструкторе файл существует, но не является запускаемой программой.</li>
-<li>Программа не завершила работу за указанное время.</li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="a00003.html#_deprecated000002">Уст.:</a></b></dt><dd>Использовать функцию, получающую в качестве параметров String. </dd></dl>
 
 <p><div class="dynheader">
 Граф вызова функции:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00109_ae19ea48857085dd694fd60e0bee623ae_icgraph.png" border="0" usemap="#a00109_ae19ea48857085dd694fd60e0bee623ae_icgraph" alt=""/></div>
-<map name="a00109_ae19ea48857085dd694fd60e0bee623ae_icgraph" id="a00109_ae19ea48857085dd694fd60e0bee623ae_icgraph">
-<area shape="rect" id="node3" href="a00109.html#a2ab8cf5ea6e95e8d68f9ab5091947a90" title="Запуск программы с ожиданием ее завершения. " alt="" coords="265,5,474,46"/>
+<div class="center"><img src="a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_icgraph.png" border="0" usemap="#a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_icgraph" alt=""/></div>
+<map name="a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_icgraph" id="a00109_a2971a5187f0cb4ff11e9b060a04fb9a6_icgraph">
+<area shape="rect" id="node3" href="a00109.html#ab3a668b5135d1d92c4a2a6b713e7da87" title="Функция разбиения получяемой строки на отдельные строки. " alt="" coords="240,5,427,46"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a2ab8cf5ea6e95e8d68f9ab5091947a90"></a>
+<a class="anchor" id="a5e8fa0dc6e81fa4d9b37559337994efc"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -524,13 +429,13 @@ $(document).ready(function(){initNavTree('a00109.html','');});
           <td class="memname">int Process::RunWithWaitingCompletion </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="a00130.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Args</em>, </td>
+          <td class="paramname"><em>_Args</em> = <code>_T(&quot;&quot;)</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">TimeMs_t&#160;</td>
-          <td class="paramname"><em>_TimeOut</em> = <code>1000</code>&#160;</td>
+          <td class="paramname"><em>_TimeOut</em> = <code>TimeMs_t(1000)</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -548,7 +453,7 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (одна строка, в которой параметры разделены пробелами). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Аргументы командной строки (одна строка, в которой параметры разделены пробелами). См. также функцию <a class="el" href="a00109.html#a9cc5113978708ba27c4335c75825d0e1" title="Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве парам...">ToParams()</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">_TimeOut</td><td>Время в миллисекундах, в течении которого будет ожидаться завершение работы запущенной программы.</td></tr>
   </table>
   </dd>
@@ -569,10 +474,148 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 <p><div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00109_a2ab8cf5ea6e95e8d68f9ab5091947a90_cgraph.png" border="0" usemap="#a00109_a2ab8cf5ea6e95e8d68f9ab5091947a90_cgraph" alt=""/></div>
-<map name="a00109_a2ab8cf5ea6e95e8d68f9ab5091947a90_cgraph" id="a00109_a2ab8cf5ea6e95e8d68f9ab5091947a90_cgraph">
-<area shape="rect" id="node3" href="a00550.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="299,5,440,46"/>
-<area shape="rect" id="node5" href="a00109.html#ae19ea48857085dd694fd60e0bee623ae" title="Запуск программы с ожиданием ее завершения. " alt="" coords="265,70,474,111"/>
+<div class="center"><img src="a00109_a5e8fa0dc6e81fa4d9b37559337994efc_cgraph.png" border="0" usemap="#a00109_a5e8fa0dc6e81fa4d9b37559337994efc_cgraph" alt=""/></div>
+<map name="a00109_a5e8fa0dc6e81fa4d9b37559337994efc_cgraph" id="a00109_a5e8fa0dc6e81fa4d9b37559337994efc_cgraph">
+<area shape="rect" id="node3" href="a00557.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="264,5,405,46"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00109_a5e8fa0dc6e81fa4d9b37559337994efc_icgraph.png" border="0" usemap="#a00109_a5e8fa0dc6e81fa4d9b37559337994efc_icgraph" alt=""/></div>
+<map name="a00109_a5e8fa0dc6e81fa4d9b37559337994efc_icgraph" id="a00109_a5e8fa0dc6e81fa4d9b37559337994efc_icgraph">
+<area shape="rect" id="node3" href="a00109.html#ad114a7151d53e2698494fe1e9c13b9d0" title="Запуск программы без ожидания ее завершения. " alt="" coords="265,5,495,46"/>
+<area shape="rect" id="node5" href="a00109.html#a7e50961e4b433d523527cc82254aa1d0" title="Конструктор класса. " alt="" coords="544,5,731,46"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3a668b5135d1d92c4a2a6b713e7da87"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Process::Tokenize </td>
+          <td>(</td>
+          <td class="paramtype">const ::std::string &amp;&#160;</td>
+          <td class="paramname"><em>_Source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00077.html">process::ICallBack</a> &amp;&#160;</td>
+          <td class="paramname"><em>_CallBack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция разбиения получяемой строки на отдельные строки. </p>
+<ul>
+<li>Если исходная строка содержит строки, каждая из которых завершается символами переноса, то все эти строки будут переданы объекту обратного вызова и функция вернет пустую строку.</li>
+<li>Если исходная строка завержается не символами переноса, то объекту обратного вызова будут переданы все строки, кроме завершающей и функция вернет остаток.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Source</td><td>Исходная строка. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_CallBack</td><td>Объект обратного вызова, которому будут передаваться отдельные строки.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Остаток (последняя строка, не содержащая символов переноса).</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00109_ab3a668b5135d1d92c4a2a6b713e7da87_cgraph.png" border="0" usemap="#a00109_ab3a668b5135d1d92c4a2a6b713e7da87_cgraph" alt=""/></div>
+<map name="a00109_ab3a668b5135d1d92c4a2a6b713e7da87_cgraph" id="a00109_ab3a668b5135d1d92c4a2a6b713e7da87_cgraph">
+<area shape="rect" id="node3" href="a00109.html#a2971a5187f0cb4ff11e9b060a04fb9a6" title="Запуск программы с ожиданием ее завершения и получением ее консольного вывода. " alt="" coords="240,5,427,46"/>
+<area shape="rect" id="node5" href="a00557.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="475,5,616,46"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9cc5113978708ba27c4335c75825d0e1"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TData &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00130.html">Process::String_t</a> alicorn::system::Process::ToParams </td>
+          <td>(</td>
+          <td class="paramtype">const TData &amp;&#160;</td>
+          <td class="paramname"><em>_Data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция преобразования объекта класса в строку для передачи его вызываемой программе в качестве параметра. </p>
+<ul>
+<li>Для того, чтобы объект класса можно было преобразовать в строку параметра, он должен поддерживать сериализацию при помощи Boost.Serialization, т.е. содержать функцию <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> TArchive&gt;</div><div class="line"><span class="keywordtype">void</span> serialize(TArchive &amp; _Archive, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)</div><div class="line">{</div><div class="line">  _Archive &amp; BoolValue; <span class="comment">// Для каждой переменной класса</span></div><div class="line">}</div></div><!-- fragment --></li>
+<li>В сериализованном объекте все кавычки будут заменены на специальную группу символов для того, чтобы можно было передавать строки, содержащие кавычки без разрыва параметра командной строки на отдельные строки.</li>
+<li>Сериализованный объект будет обрамлен кавычками для того, чтобы при его передаче вызываемая программа получила его как единый параметр (вызываемая программа получит его без обрамляющих кавычек).</li>
+<li>Для обратного преобразования строки в объект класса использовать функцию FromParams().</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Исходный объект.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Строка-параметр, пригодная для передачи вызываемой программе.</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00109_a9cc5113978708ba27c4335c75825d0e1_cgraph.png" border="0" usemap="#a00109_a9cc5113978708ba27c4335c75825d0e1_cgraph" alt=""/></div>
+<map name="a00109_a9cc5113978708ba27c4335c75825d0e1_cgraph" id="a00109_a9cc5113978708ba27c4335c75825d0e1_cgraph">
+<area shape="rect" id="node3" href="a00557.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="240,5,381,46"/>
 </map>
 </div>
 </p>
@@ -580,8 +623,9 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/system/<a class="el" href="a00460_source.html">process.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/system/<a class="el" href="a00464_source.html">process.hpp</a></li>
 <li>Solution/Solution/Alicorn/include/alicorn/system/process.cpp</li>
+<li>Solution/Solution/Alicorn/include/alicorn/system/process.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -589,7 +633,7 @@ $(document).ready(function(){initNavTree('a00109.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><a class="el" href="a00109.html">Process</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Чт 4 Фев 2016 13:26:19. Создано системой
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 11 Мар 2016 02:10:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

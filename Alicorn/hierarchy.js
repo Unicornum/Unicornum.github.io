@@ -66,7 +66,7 @@ var hierarchy =
         [ "alicorn::logger::report::Empty", "a00066.html", null ],
         [ "alicorn::logger::report::File", "a00070.html", [
           [ "alicorn::logger::report::Html", "a00075.html", null ],
-          [ "alicorn::logger::report::Text", "a00135.html", null ]
+          [ "alicorn::logger::report::Text", "a00134.html", null ]
         ] ],
         [ "alicorn::logger::report::VisualStudioOutput", "a00140.html", null ]
       ] ]
@@ -85,16 +85,16 @@ var hierarchy =
     [ "alicorn::extension::std::Locale", "a00092.html", null ],
     [ "app::Main", "a00093.html", null ],
     [ "alicorn::extension::std::regex::Match", "a00097.html", null ],
-    [ "alicorn::logger::Message", "a00100.html", [
+    [ "alicorn::extension::std::Message< TStream >", "a00101.html", null ],
+    [ "alicorn::logger::Message", "a00102.html", [
       [ "alicorn::logger::Error", "a00067.html", null ],
       [ "alicorn::logger::Fatal", "a00069.html", null ],
       [ "alicorn::logger::Info", "a00082.html", null ],
       [ "alicorn::logger::Trace", "a00136.html", null ],
       [ "alicorn::logger::Warning", "a00141.html", null ]
     ] ],
-    [ "alicorn::extension::std::Message< TStream >", "a00102.html", null ],
-    [ "alicorn::extension::std::Message<::std::stringstream >", "a00102.html", [
-      [ "alicorn::extension::std::exception::Message", "a00101.html", null ]
+    [ "alicorn::extension::std::Message<::std::stringstream >", "a00101.html", [
+      [ "alicorn::extension::std::exception::Message", "a00100.html", null ]
     ] ],
     [ "alicorn::logger::MessageImpl", "a00103.html", null ],
     [ "alicorn::logger::MessagePoints", "a00104.html", null ],
@@ -106,6 +106,7 @@ var hierarchy =
     [ "alicorn::logger::Proxy< TType >", "a00114.html", null ],
     [ "alicorn::testing::Proxy< CurrentModuleProxy >", "a00112.html", null ],
     [ "alicorn::testing::Proxy< LoggerProxy >", "a00112.html", null ],
+    [ "alicorn::testing::Proxy< ParamsProxy< TData > >", "a00112.html", null ],
     [ "alicorn::testing::Proxy< ProcessProxy >", "a00112.html", null ],
     [ "alicorn::testing::Proxy< RapidXmlProxy >", "a00112.html", null ],
     [ "alicorn::testing::Proxy< SectionImplProxy >", "a00112.html", null ],
@@ -128,7 +129,7 @@ var hierarchy =
     [ "alicorn::extension::std::String", "a00130.html", null ],
     [ "alicorn::extension::std::StringCastProxy", "a00131.html", null ],
     [ "alicorn::extension::std::Locale::System", "a00133.html", null ],
-    [ "alicorn::extension::std::Text", "a00134.html", null ],
+    [ "alicorn::extension::std::Text", "a00135.html", null ],
     [ "wx::TreeSections", "a00137.html", null ],
     [ "alicorn::extension::std::Locale::UTF8", "a00138.html", null ],
     [ "alicorn::document::xml::Value", "a00139.html", null ],
