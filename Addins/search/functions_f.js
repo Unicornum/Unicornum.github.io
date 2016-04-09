@@ -1,22 +1,9 @@
 var searchData=
 [
-  ['save',['Save',['../a00170.html#af3141118fde858bacab72ebda1619ffa',1,'wrappers::vs::Document']]],
-  ['searchforfullpath',['SearchForFullPath',['../a00279.html#ac85a4ff36109083a4286198e318fb850',1,'wrappers::helper::vs::PropertySheetSearcher']]],
-  ['serviceprovider',['ServiceProvider',['../a00290.html#a9655295867a66190485a61a568947b25',1,'wrappers::vs::ServiceProvider']]],
-  ['set',['Set',['../a00320.html#a0b6b7d14a1004038aaa98e1979dff975',1,'core::useful_commands::vs::common::Unknown::Set()'],['../a00230.html#a7bb75640e0313e7482d8df39ef523fa2',1,'core::utilities::environment_variables::Main::Set()']]],
-  ['setbegingroup',['SetBeginGroup',['../a00140.html#a7bd14f74efb1ff877f410c1af87eae37',1,'wrappers::vs::CommandBarPopup']]],
-  ['setcaption',['SetCaption',['../a00140.html#a1a240117271fd1d6c6a444db3b60a747',1,'wrappers::vs::CommandBarPopup']]],
-  ['setcheckactivate',['SetCheckActivate',['../a00142.html#a6a3b678c3e7328018d99bb48b944ce51',1,'connection_points::CommandManager']]],
-  ['setdata',['SetData',['../a00192.html#adf110a3b0a2e7ddbb561951cbee050e6',1,'connection_points::vs::Extension']]],
-  ['setdependency',['SetDependency',['../a00269.html#a95e6917efc95ded0b561223483b75cfc',1,'wrappers::vs::Project']]],
-  ['setdevelopmentinfo',['SetDevelopmentInfo',['../a00224.html#a63d80cbe8e7536b4608e870371394d25',1,'view::IView::SetDevelopmentInfo()'],['../a00168.html#a20f0ac69c37e60daca70507a341fed0e',1,'wx::DiagramPanel::SetDevelopmentInfo()']]],
-  ['sethotkey',['SetHotKey',['../a00136.html#a400ef4a02584cd6ff91cf1e543513ac6',1,'wrappers::vs::Command']]],
-  ['setname',['SetName',['../a00269.html#a5d6eb82c1dc3cb2ee1cef5e5df1afcc8',1,'wrappers::vs::Project']]],
-  ['setprocesseddata',['SetProcessedData',['../a00221.html#a9aa2bc91d1e49bfdcf91024887a06b1c',1,'view::IRead::SetProcessedData()'],['../a00260.html#acf07909284b3dcc712fd11ecb8bc6496',1,'wx::PanelMatch::SetProcessedData()'],['../a00261.html#a133c64c63a2004726817884ea2e59ab8',1,'wx::PanelReplace::SetProcessedData()'],['../a00262.html#a4e19adf4e3c5d667257250ebd0866583',1,'wx::PanelSearch::SetProcessedData()']]],
-  ['setregexstring',['SetRegexString',['../a00226.html#af5040b0aa0f465bb367c6d7b3b827132',1,'view::IWrite::SetRegexString()'],['../a00263.html#a53e9b7ec5a5357405275d2478965dca1',1,'wx::PanelView::SetRegexString()']]],
-  ['setsourcestrings',['SetSourceStrings',['../a00226.html#a40111fbde225b3bce8aa1b4ac7c7586f',1,'view::IWrite::SetSourceStrings()'],['../a00263.html#a315df15379a49155b32aa8526047ed7b',1,'wx::PanelView::SetSourceStrings()']]],
-  ['setstartup',['SetStartUp',['../a00269.html#abe091468f207dd79efdff99c29364bef',1,'wrappers::vs::Project']]],
-  ['settext',['SetText',['../a00303.html#a5a4a4f84774890f55fc0b1b1bd489040',1,'wrappers::vs::StatusBar']]],
-  ['settitle',['SetTitle',['../a00224.html#a7e74984281cd804f6e835ff317d48ae6',1,'view::IView::SetTitle()'],['../a00168.html#a6296ed6866b435b03a1a1de9db3916c9',1,'wx::DiagramPanel::SetTitle()']]],
-  ['setvisible',['SetVisible',['../a00140.html#a5fc0a8ec29327acc66d1f63bfdaf2337',1,'wrappers::vs::CommandBarPopup']]]
+  ['readdatafrom',['ReadDataFrom',['../a00333.html#a828606eadccc2469c6b308d439d37f1b',1,'support::Task']]],
+  ['readfrom',['ReadFrom',['../a00174.html#a37f24adf400bf01b396c7ba7cfae56d4',1,'core::utilities::DevelopmentInfo']]],
+  ['received',['Received',['../a00134.html#ad568a794a02d349abf5a017319b724fa',1,'core::utilities::dialog::CallBack']]],
+  ['remove',['Remove',['../a00231.html#a952ef4cb92f66af5b7d0678b06a84de3',1,'wrappers::vs::IPropertySheet::Remove()'],['../a00232.html#aac2aa044e6bea3eabf721822e5a28663',1,'wrappers::vs::IPropertySheets::Remove()'],['../a00299.html#a0e283e019a3f0e6b90548465a6c8179f',1,'wrappers::vs::PropertySheet::Remove()'],['../a00300.html#aa7c01ddc200844a6317d9818f6ec70b0',1,'wrappers::vs::PropertySheet2012::Remove()'],['../a00301.html#acf74f6d63cbd4f8cb649ebf3404117db',1,'wrappers::vs::PropertySheets::Remove()'],['../a00302.html#a07b9a0ea671d2e3dfe4ed3151b9d3135',1,'wrappers::vs::PropertySheets2012::Remove()']]],
+  ['replace',['Replace',['../a00179.html#ab580ca43598caf88e289b9b2f0e44517',1,'wrappers::vs::Document']]],
+  ['run',['Run',['../a00251.html#a7bfa91a4af18d1c92ceba85d48232d38',1,'core::utilities::execute::Main']]]
 ];

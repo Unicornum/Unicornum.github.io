@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Список задач проекта</title>
+<title>Addins: Исходные требования утилиты ProjectTasks</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3407 Architecture: x86.32 Build: 23:04 07 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -103,16 +103,66 @@ $(document).ready(function(){initNavTree('a00043.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Список задач проекта </div>  </div>
+<div class="title">Исходные требования утилиты ProjectTasks </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><h2>Общее описание </h2>
+<h2>Исходные данные </h2>
+<p>В качестве параметров командной строки программа должна получать:</p><ul>
+<li> <input type="checkbox" checked>  Имя проекта (с путем внутри решения).</li>
+<li> <input type="checkbox" checked>  Путь к файлу, содержащему список задач проекта.</li>
+<li> <input type="checkbox">  Путь к файлу истории решения.</li>
+</ul>
+<h2>Настройки списка задач </h2>
+<ul>
+<li> <input type="checkbox">  Номер дня недели, который считается завершающим днем текущей недели.</li>
+<li> <input type="checkbox">  Путь к файлу списка задач относительно родительской папки проекта.</li>
+<li> <input type="checkbox">  Путь к файлу истории решения.</li>
+<li> <input type="checkbox">  Количество недель, для которых следует хранить завершенные задачи.</li>
+</ul>
+<h1>Требования первого этапа </h1>
+<ul>
+<li> <input type="checkbox">  Команда выпадающего меню проекта (UniCA) открытия окна, отображающего список задач.</li>
+</ul>
+<h2>Главное диалоговое окно программы </h2>
+<ul>
+<li> <input type="checkbox" checked>  Отображение в заголовке окна имени проекта, для которого отображается список задач.</li>
+<li> <input type="checkbox" checked>  Вкладка со списком текущих задач.</li>
+<li> <input type="checkbox" checked>  Вкладка со списком завершенных задач.</li>
+<li> <input type="checkbox">  Вкладка 'О программе'.</li>
+<li> <input type="checkbox" checked>  Все изменения должны записываться в исходный файл списка задач при закрытии окна.</li>
+</ul>
+<h2>Вкладка со списком задач </h2>
+<ul>
+<li> <input type="checkbox" checked>  Задачи должны отображаться в виде иерархического дерева, позволяющего создавать подзадачи.</li>
+<li> <input type="checkbox" checked>  Корневой раздел 'В процессе', содержащий список задач, находящихся в работе.</li>
+<li> <input type="checkbox">  Перетаскивание задач мышью из одного узла в другой (вместе с дочерними узлами).</li>
+<li> <input type="checkbox" checked>  Задача представляет собой строку, содержащую текст задачи и набор кнопок для управления задачей.</li>
+<li> <input type="checkbox" checked>  Кнопка 'Редактировать' позволяет изменить текст задачи.</li>
+<li> <input type="checkbox" checked>  Кнопка 'Создать' позволяет создать дочернюю задачу для текущей.</li>
+<li> <input type="checkbox" checked>  CheckBox 'Завершить' позволяет завершить задачу.</li>
+<li> <input type="checkbox" checked>  При завершении задачи из корневого раздела, она переноситься во вкладку завершенных задач, в раздел текущей недели.</li>
+<li> <input type="checkbox">  При завершении дочерней задачи, она переносится в конец списка родительской задачи с пометкой 'завершенная'.</li>
+<li> <input type="checkbox">  При завершении задачи добавляется запись в файл истории решения, содержащая дату/время завершения, имя проекта к которому она относилась и текст задачи.</li>
+</ul>
+<h2>Вкладка со списком завершенных задач </h2>
+<ul>
+<li> <input type="checkbox" checked>  Содержит разделы задач, завершенных за несколько последних недель.</li>
+<li> <input type="checkbox">  Запрещена манипуляция задачами (изменение порядка расположения, перенос задачи из одной родительской задачи в другую).</li>
+<li> <input type="checkbox" checked>  Задача представляет собой строку, содержащую текст задачи и набор кнопок для управления задачей.</li>
+<li> <input type="checkbox" checked>  Дочерняя задача раздела недели должна быть помечена как выполненная с возможность ее 'развыполнения' (с переносом в родительскую задачу списка текущих задач).</li>
+<li> <input type="checkbox">  Дочерняя задача другой задачи должна быть помечена как выполненная без возможности ее 'развыполнения'.</li>
+</ul>
+<h2>Образец списка задач </h2>
+<div class="image">
+<img src="ProjectTasks.Sample.png" alt="ProjectTasks.Sample.png"/>
+</div>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00033.html">Core</a></li><li class="navelem"><a class="el" href="a00038.html">Утилиты</a></li><li class="navelem"><a class="el" href="a00042.html">Проект RegexTester</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 23:04:42. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:35. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

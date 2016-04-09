@@ -1,6 +1,6 @@
 var a00155 =
 [
-    [ "GetCaption", "a00155.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
-    [ "GetPictureId", "a00155.html#a1f1d44ed835b9b589b2f383cff9f5d88", null ],
-    [ "IsEnabled", "a00155.html#a006eca46887e662789831772b0c5107a", null ]
+    [ "GetName", "a00155.html#ada1d4821134087994c4b47174d4a0dc8", null ],
+    [ "GetType", "a00155.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
+    [ "PROPERTY_GET", "a00155.html#a463ae15d09a10d7d00d01e96400d7437", null ]
 ];

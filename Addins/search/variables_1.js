@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['groups',['Groups',['../a00268.html#a5e81145a5fcdf590752cb52b753e185f',1,'support::Data::ProcessingInfo']]]
+  ['doprocess',['DoProcess',['../a00233.html#a5491cd61ba8f067527535004e251f81a',1,'view::IRead']]],
+  ['doupdate',['DoUpdate',['../a00241.html#a67150deb963bc35daf58985e5c9e478d',1,'view::IView']]]
 ];

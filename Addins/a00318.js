@@ -1,6 +1,6 @@
 var a00318 =
 [
-    [ "Add", "a00318.html#a23b61e1353296b386c662d7d6cd13e6f", null ],
-    [ "Execute", "a00318.html#a292df09cd6ef231bb61faf93971a23c6", null ],
-    [ "IsEnabled", "a00318.html#ad396c5c9066927e075c85491f1ead20e", null ]
+    [ "GetActivePlatformName", "a00318.html#a3a5de2684219f84b149e41da839ecf2f", null ],
+    [ "GetName", "a00318.html#ae2fea29770d4277e57a24c17e8c875de", null ],
+    [ "GetPathToFile", "a00318.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
 ];

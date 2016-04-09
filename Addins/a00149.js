@@ -1,5 +1,6 @@
 var a00149 =
 [
-    [ "operator[]", "a00149.html#a0036fdc937ebb1ac612c05fa377ea770", null ],
-    [ "operator[]", "a00149.html#a0f43aa74924faf56d69e04dc79ac1f4b", null ]
+    [ "Commands", "a00149.html#a8273ee6ce9732a442b06ed151fca79f0", null ],
+    [ "Add", "a00149.html#a201e7ba9487eeb532555ec2c61e60edb", null ],
+    [ "GetItem", "a00149.html#a9a71fda817a3f6219f411beb7b8aa8c4", null ]
 ];

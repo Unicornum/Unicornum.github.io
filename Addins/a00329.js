@@ -1,4 +1,5 @@
 var a00329 =
 [
-    [ "GetFilter", "a00329.html#a698c1a9d5fbf3317d76d84245d664510", null ]
+    [ "Advise", "a00329.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
+    [ "Unadvise", "a00329.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
 ];

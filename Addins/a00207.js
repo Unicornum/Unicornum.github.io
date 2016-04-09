@@ -1,8 +1,4 @@
 var a00207 =
 [
-    [ "AddSeparator", "a00207.html#a055f644ab11bb7d8e2cc878f495ede6d", null ],
-    [ "Destroy", "a00207.html#a499ff96a414a23b007ccc70d4f84d058", null ],
-    [ "Insert", "a00207.html#aa80213278810b829985fed792ea8620a", null ],
-    [ "MoveToChildMenuFromCurrent", "a00207.html#a35e624f04a60c1987deece1eee132526", null ],
-    [ "MoveToChildMenuFromRoot", "a00207.html#aef42df975494de0a0eff4980bf18c44d", null ]
+    [ "GetValue", "a00207.html#aa0d65182ef65f2ea80e5e3d0d95d528b", null ]
 ];

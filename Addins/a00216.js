@@ -1,6 +1,6 @@
 var a00216 =
 [
-    [ "GetCaption", "a00216.html#aeadc45279201876deba468080f265e90", null ],
-    [ "GetHotKey", "a00216.html#a8b37da1f657bf32132fcd811b626e81a", null ],
-    [ "IsEnabled", "a00216.html#adf7ae5ef3739097507185cd921544dfd", null ]
+    [ "OnConnection", "a00216.html#a8723f5919cae8f803dbd65acdf053c7b", null ],
+    [ "OnDisconnection", "a00216.html#a59c192bafe270ada9ccbb6b010250869", null ],
+    [ "OnTextChanged", "a00216.html#aff48aedbb4df92b606305a6916d94376", null ]
 ];

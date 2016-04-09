@@ -1,14 +1,19 @@
 var searchData=
 [
-  ['tag',['Tag',['../a00307.html',1,'core::useful_commands::vs::tags']]],
-  ['test',['Test',['../a00308.html',1,'core::useful_commands::vs::common']]],
-  ['testclassblank',['TestClassBlank',['../a00309.html',1,'core::useful_commands::vs::testing']]],
-  ['testclassproject',['TestClassProject',['../a00310.html',1,'core::useful_commands::vs::testing']]],
-  ['text',['Text',['../a00311.html',1,'core::utilities']]],
-  ['text',['Text',['../a00312.html',1,'core::useful_commands::vs::tags']]],
-  ['texteditorevents',['TextEditorEvents',['../a00313.html',1,'wrappers::vs']]],
-  ['textselection',['TextSelection',['../a00314.html',1,'wrappers::vs']]],
-  ['timetracker',['TimeTracker',['../a00315.html',1,'']]],
-  ['toolwindows',['ToolWindows',['../a00316.html',1,'wrappers::vs']]],
-  ['type',['Type',['../a00317.html',1,'wrappers::vs']]]
+  ['tag',['Tag',['../a00332.html',1,'core::useful_commands::vs::tags']]],
+  ['task',['Task',['../a00333.html',1,'support']]],
+  ['taskpanel',['TaskPanel',['../a00335.html',1,'view']]],
+  ['taskpanel',['TaskPanel',['../a00334.html',1,'wx']]],
+  ['taskspanel',['TasksPanel',['../a00336.html',1,'view']]],
+  ['taskspanel',['TasksPanel',['../a00337.html',1,'wx']]],
+  ['test',['Test',['../a00338.html',1,'core::useful_commands::vs::common']]],
+  ['testclassblank',['TestClassBlank',['../a00339.html',1,'core::useful_commands::vs::testing']]],
+  ['testclassproject',['TestClassProject',['../a00340.html',1,'core::useful_commands::vs::testing']]],
+  ['text',['Text',['../a00341.html',1,'core::useful_commands::vs::tags']]],
+  ['text',['Text',['../a00342.html',1,'core::utilities']]],
+  ['texteditorevents',['TextEditorEvents',['../a00343.html',1,'wrappers::vs']]],
+  ['textselection',['TextSelection',['../a00344.html',1,'wrappers::vs']]],
+  ['timetracker',['TimeTracker',['../a00345.html',1,'']]],
+  ['toolwindows',['ToolWindows',['../a00346.html',1,'wrappers::vs']]],
+  ['type',['Type',['../a00347.html',1,'wrappers::vs']]]
 ];

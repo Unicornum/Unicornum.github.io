@@ -1,5 +1,6 @@
 var a00168 =
 [
-    [ "SetDevelopmentInfo", "a00168.html#a20f0ac69c37e60daca70507a341fed0e", null ],
-    [ "SetTitle", "a00168.html#a6296ed6866b435b03a1a1de9db3916c9", null ]
+    [ "RegexString", "a00168.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
+    [ "ReplaceString", "a00168.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
+    [ "SourceStrings", "a00168.html#a5b43bb718b3729c19bada2c831ca2297", null ]
 ];

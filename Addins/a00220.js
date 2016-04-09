@@ -1,7 +1,8 @@
 var a00220 =
 [
-    [ "GetCount", "a00220.html#a79bad819e3756478477a430821e9e575", null ],
-    [ "GetItem", "a00220.html#aca2deef5aed3e1e4598c290ecf48b812", null ],
-    [ "LoadFromFile", "a00220.html#af08a2b241ca5445b4ea24ae91393d66b", null ],
-    [ "Remove", "a00220.html#aac2aa044e6bea3eabf721822e5a28663", null ]
+    [ "DoProcess", "a00220.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
+    [ "GetData", "a00220.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
+    [ "GetData", "a00220.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
+    [ "GetDevelopmentInfo", "a00220.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
+    [ "GetViewTitle", "a00220.html#a3b23716ff60787c927b882a9cc3e9774", null ]
 ];

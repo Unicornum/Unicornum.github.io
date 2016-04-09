@@ -1,4 +1,4 @@
 var a00196 =
 [
-    [ "IsAlreadyExists", "a00196.html#a355c808ae26654af86b3a21150067904", null ]
+    [ "GetLogProgress", "a00196.html#a7cfb5d0a3e528d578215c812e4832be6", null ]
 ];

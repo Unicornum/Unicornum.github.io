@@ -1,7 +1,8 @@
 var a00127 =
 [
-    [ "AfterBuildFinish", "a00127.html#a35ef35f1dee5b99d678e43c82c0f3d07", null ],
-    [ "BeforeBuildStart", "a00127.html#a87a0f9f968a5cd336184ccd19f62a42f", null ],
-    [ "BeforeProjConfBuildStart", "a00127.html#ab82624b7458a674601e2b57760df4c5d", null ],
-    [ "BuildProjConfFinish", "a00127.html#a5069d384f3d39de2e57e3f6cb2f3005b", null ]
+    [ "Assign", "a00127.html#aa24004d311ec03f3115d5937b39fadd0", null ],
+    [ "ExtractFrom", "a00127.html#a7ab54b209b934b622fd1523fdc61a846", null ],
+    [ "GetName", "a00127.html#af8bd20844e7332406932787c9b5b852d", null ],
+    [ "Make", "a00127.html#ae36588f576db9d1dd86e5ae158a165c3", null ],
+    [ "Make", "a00127.html#a42cc94ed152690a3fe262eec788ef191", null ]
 ];

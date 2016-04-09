@@ -1,8 +1,6 @@
 var a00123 =
 [
-    [ "Assign", "a00123.html#aa24004d311ec03f3115d5937b39fadd0", null ],
-    [ "ExtractFrom", "a00123.html#a7ab54b209b934b622fd1523fdc61a846", null ],
-    [ "GetName", "a00123.html#af8bd20844e7332406932787c9b5b852d", null ],
-    [ "Make", "a00123.html#ae36588f576db9d1dd86e5ae158a165c3", null ],
-    [ "Make", "a00123.html#a42cc94ed152690a3fe262eec788ef191", null ]
+    [ "AllSolutionsInfo", "a00123.html#a6a9437ded0fa739f97d228fca1a4598f", null ],
+    [ "GetDevelopmentInfo", "a00123.html#a15f7b23c75c0114957f39f8ded9e963d", null ],
+    [ "GetViewTitle", "a00123.html#a1595757e6c092e9e78fa2d3eeecdba58", null ]
 ];

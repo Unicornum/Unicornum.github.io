@@ -1,4 +1,4 @@
 var a00312 =
 [
-    [ "GetValue", "a00312.html#a4af69b0fdcde1de75ccdedcf641c99fe", null ]
+    [ "ToLog", "a00312.html#ae23c3dd2c59922ac8994444707812c3f", null ]
 ];

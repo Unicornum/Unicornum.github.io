@@ -1,6 +1,5 @@
 var a00204 =
 [
-    [ "OnConnection", "a00204.html#a8723f5919cae8f803dbd65acdf053c7b", null ],
-    [ "OnDisconnection", "a00204.html#a59c192bafe270ada9ccbb6b010250869", null ],
-    [ "OnTextChanged", "a00204.html#aff48aedbb4df92b606305a6916d94376", null ]
+    [ "Extension", "a00204.html#a23dca7dbea79d03e8a1e07487ff79748", null ],
+    [ "SetData", "a00204.html#adf110a3b0a2e7ddbb561951cbee050e6", null ]
 ];

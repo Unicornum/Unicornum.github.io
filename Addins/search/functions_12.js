@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['wasfoundnext',['WasFoundNext',['../a00116.html#abbb3a4c1bca71e9510522a27e5b86e72',1,'core::useful_commands::vs::properties::AddSolutionPropsToProject::WasFoundNext()'],['../a00285.html#a094a112ede90e57b8e3504addf0bffb4',1,'core::useful_commands::vs::properties::RemoveSolutionPropsFromProject::WasFoundNext()'],['../a00279.html#a12db12b83bbbe5025b1b460ed700a6cd',1,'wrappers::helper::vs::PropertySheetSearcher::WasFoundNext()']]],
-  ['wasnofound',['WasNoFound',['../a00116.html#af6330f00eab5407344d37a1939951a5f',1,'core::useful_commands::vs::properties::AddSolutionPropsToProject::WasNoFound()'],['../a00285.html#a91bd97971ab02faae49491dc5f0f558b',1,'core::useful_commands::vs::properties::RemoveSolutionPropsFromProject::WasNoFound()'],['../a00279.html#abd666cb10b06cc5b2b844ad454ad3c61',1,'wrappers::helper::vs::PropertySheetSearcher::WasNoFound()']]],
-  ['writeto',['WriteTo',['../a00166.html#ad5956ef6784bd16e944e9959aef591f9',1,'core::utilities::DevelopmentInfo']]]
+  ['unadvise',['Unadvise',['../a00329.html#adb32e6ea934d4932869c54cf0bad88f1',1,'wrappers::vs::Subscriber']]],
+  ['unknown',['Unknown',['../a00350.html#aa85d6569bfabb3c18f57305ca1fad6dc',1,'core::useful_commands::vs::common::Unknown']]],
+  ['updatecopyrightyear',['UpdateCopyrightYear',['../a00180.html#af819ea33c04761393ed44c212ba0ae33',1,'core::useful_commands::vs::documentation::doxygen::DocumentHelper']]],
+  ['updatetime',['UpdateTime',['../a00122.html#a020351d1edcb9700d2db5cbc407186d7',1,'core::utilities::AllSolutionsDevelopmentInfo::UpdateTime()'],['../a00174.html#a3d8e7bb0dea6850d7a22ebad00c53793',1,'core::utilities::DevelopmentInfo::UpdateTime()'],['../a00319.html#a3e357414c28cd8fbe76fd04d40409c12',1,'core::utilities::SolutionDevelopmentInfo::UpdateTime()']]],
+  ['updateversion',['UpdateVersion',['../a00180.html#a94fb71da43515d70e9d93b813ffc9339',1,'core::useful_commands::vs::documentation::doxygen::DocumentHelper']]]
 ];

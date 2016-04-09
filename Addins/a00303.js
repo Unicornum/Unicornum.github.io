@@ -1,5 +1,6 @@
 var a00303 =
 [
-    [ "operator=", "a00303.html#adb712b65047472ac48342b15e7145e68", null ],
-    [ "SetText", "a00303.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
+    [ "SearchForFullPath", "a00303.html#ac85a4ff36109083a4286198e318fb850", null ],
+    [ "WasFoundNext", "a00303.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
+    [ "WasNoFound", "a00303.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
 ];

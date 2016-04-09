@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::utilities::Version</title>
+<title>Addins: Класс core::useful_commands::vs::tags::Tag</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3407 Architecture: x86.32 Build: 23:04 07 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,49 +111,116 @@ $(document).ready(function(){initNavTree('a00332.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01709.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01778.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::Version<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01316.html">Core</a> &raquo; <a class="el" href="a01337.html">Utilities</a> &raquo; <a class="el" href="a01336.html">Utilities</a></div></div>  </div>
+<div class="title">Класс core::useful_commands::vs::tags::Tag<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00070.html">Раздел Utilities</a> <br />
- Класс манипуляцией версией решения.  
+<p>Класс входит в <a class="el" href="a00065.html">Проект Tags</a> <br />
+ Класс замены тегов.  
  <a href="a00332.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00929_source.html">Version.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00979_source.html">Tag.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса core::utilities::Version:</div>
+Граф связей класса core::useful_commands::vs::tags::Tag:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01710.png" border="0" usemap="#core_1_1utilities_1_1_version_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01779.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1tags_1_1_tag_coll__map" alt="Collaboration graph"/></div>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a21ce3a76b5870765f7b503b4318f4df8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21ce3a76b5870765f7b503b4318f4df8"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00332.html#a21ce3a76b5870765f7b503b4318f4df8">GetCaption</a> (void) const </td></tr>
+<tr class="memdesc:a21ce3a76b5870765f7b503b4318f4df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения строки с замененным текстом. <br /></td></tr>
+<tr class="separator:a21ce3a76b5870765f7b503b4318f4df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8029a5b5d55e3e7e41692a89640b43f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00332.html#a8029a5b5d55e3e7e41692a89640b43f4">Tag</a> (const <a class="el" href="a00166.html">Data_t</a> *, const CString &amp;)</td></tr>
+<tr class="memdesc:a8029a5b5d55e3e7e41692a89640b43f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a8029a5b5d55e3e7e41692a89640b43f4">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8029a5b5d55e3e7e41692a89640b43f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00070.html">Раздел Utilities</a> <br />
- Класс манипуляцией версией решения. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00065.html">Проект Tags</a> <br />
+ Класс замены тегов. </p>
 <ul>
-<li>Если в указанной в конструкторе папке нет файла версии решения, он будет создан со значениями по умолчанию.</li>
-<li>Отсутствующие в файле версии решения значения будут установлены в значения по умолчанию.</li>
-<li>Генерируемый файл версии решения будет содержать макросы (в стиле С++) со значениями текущей версии решения.</li>
-<li>Строковый формат версии: 'Version.Subversion.Subsubversion.Revision Architecture: x86.xx Build ЧЧ:ММ ДД.ММ.ГГГГ'</li>
+<li>Предназначен для замены тегов (текста в скобках '&lt;...&gt;') на нужные значения.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.0.1.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>05 Август 2015 <br />
- 20 Декабрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>1 мар 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Utilities/Utilities/Utilities/<a class="el" href="a00929_source.html">Version.hpp</a></li>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a8029a5b5d55e3e7e41692a89640b43f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Tag::Tag </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00166.html">Data_t</a> *&#160;</td>
+          <td class="paramname"><em>_pData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_RawCaption</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса. </p>
+<ul>
+<li>Содержит логику замены тегов.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pData</td><td>Указатель на объект данных надстройки. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_RawCaption</td><td>Текст, теги внутри которого нужно заменить.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Невозможно получить значение найденного тега. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00332_a8029a5b5d55e3e7e41692a89640b43f4_icgraph.png" border="0" usemap="#a00332_a8029a5b5d55e3e7e41692a89640b43f4_icgraph" alt=""/></div>
+<map name="a00332_a8029a5b5d55e3e7e41692a89640b43f4_icgraph" id="a00332_a8029a5b5d55e3e7e41692a89640b43f4_icgraph">
+<area shape="rect" id="node3" href="a00332.html#a21ce3a76b5870765f7b503b4318f4df8" title="Функция получения строки с замененным текстом. " alt="" coords="233,13,445,54"/>
+<area shape="rect" id="node5" href="a00261.html#aca3ff0d4b98302f05ca6c14f705f18f8" title="Функция получения &#39;горячей&#39; клавиши для команды. " alt="" coords="493,5,715,61"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Support/Tags/Tags/<a class="el" href="a00979_source.html">Tag.hpp</a></li>
+<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Support/Tags/Tags/Tag.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><a class="el" href="a00332.html">Version</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 23:04:43. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>tags</b></li><li class="navelem"><a class="el" href="a00332.html">Tag</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:37. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

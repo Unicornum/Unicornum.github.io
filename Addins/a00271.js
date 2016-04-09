@@ -1,8 +1,5 @@
 var a00271 =
 [
-    [ "GetFileExtension", "a00271.html#ab45eca3582c96be43ba0d56d5aa27149", null ],
-    [ "GetName", "a00271.html#a185fa317fc2359ddb72c385103d4d76e", null ],
-    [ "GetPathToMainProjectDirectory", "a00271.html#a0be3886803f1fa836faea2906e93001d", null ],
-    [ "GetPathToTestProjectDirectory", "a00271.html#aca1be907095d923ccff307562b57e07e", null ],
-    [ "GetTestProjectName", "a00271.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
+    [ "OpenDoc", "a00271.html#aa03a7cc3b7e471baa81d65b1e0919f5f", null ],
+    [ "IsEnabled", "a00271.html#a39a3353ef4403a4f5efeb973a1e9fcb6", null ]
 ];

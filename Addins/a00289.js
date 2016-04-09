@@ -1,4 +1,5 @@
 var a00289 =
 [
-    [ "GetValue", "a00289.html#a32784c24a459077a88242235c5c059a5", null ]
+    [ "GetLogProgress", "a00289.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
+    [ "Process", "a00289.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
 ];

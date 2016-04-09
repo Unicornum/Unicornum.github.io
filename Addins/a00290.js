@@ -1,5 +1,6 @@
 var a00290 =
 [
-    [ "ServiceProvider", "a00290.html#a9655295867a66190485a61a568947b25", null ],
-    [ "GetDte", "a00290.html#a7076c9166c6a30245972ccddbabb6cfd", null ]
+    [ "Groups", "a00290.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+    [ "IsInvalidRegex", "a00290.html#ab125412a0bd7cfe6eec463b740827942", null ],
+    [ "Result", "a00290.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
 ];

@@ -1,5 +1,6 @@
 var a00304 =
 [
-    [ "Advise", "a00304.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
-    [ "Unadvise", "a00304.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
+    [ "SearchForFullPath", "a00304.html#ac85a4ff36109083a4286198e318fb850", null ],
+    [ "WasFoundNext", "a00304.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
+    [ "WasNoFound", "a00304.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
 ];

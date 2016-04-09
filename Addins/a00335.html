@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::View</title>
+<title>Addins: Класс view::TaskPanel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3407 Architecture: x86.32 Build: 23:04 07 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,56 +111,202 @@ $(document).ready(function(){initNavTree('a00335.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01830.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a02010.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::View<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01323.html">RegexTester</a> &raquo; <a class="el" href="a01327.html">View</a></div></div>  </div>
+<div class="title">Класс view::TaskPanel<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01429.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01433.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00042.html">Проект RegexTester</a> <br />
- Класс главного объекта представления.  
+<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Класс панели одной задачи.  
  <a href="a00335.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00710_source.html">View.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00824_source.html">TaskPanel.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::View:</div>
+Граф наследования:view::TaskPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01831.png" border="0" usemap="#view_1_1_view_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_view_inherit__map" id="view_1_1_view_inherit__map">
-<area shape="rect" id="node2" href="a00232.html" title="{support::Main\&lt; IView \&gt;\n|+ m_Match\l+ m_Search\l+ m_Replace\l|# Main()\l}" alt="" coords="5,5,184,112"/>
+<div class="center"><img src="a02011.png" border="0" usemap="#view_1_1_task_panel_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_task_panel_inherit__map" id="view_1_1_task_panel_inherit__map">
+<area shape="rect" id="node2" href="a00235.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс представления для передачи модели измененных ..." alt="" coords="5,137,171,273"/>
+<area shape="rect" id="node4" href="a00245.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс представления для получения данных из модели ..." alt="" coords="196,137,367,273"/>
+<area shape="rect" id="node6" href="a00334.html" title="Class TaskPanel. " alt="" coords="391,5,619,405"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::View:</div>
+Граф связей класса view::TaskPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01832.png" border="0" usemap="#view_1_1_view_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_view_coll__map" id="view_1_1_view_coll__map">
-<area shape="rect" id="node2" href="a00232.html" title="{support::Main\&lt; IView \&gt;\n||# Main()\l}" alt="" coords="95,392,273,469"/>
-<area shape="rect" id="node4" href="a00224.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Интерфейсный класс представления. " alt="" coords="93,192,275,299"/>
-<area shape="rect" id="node6" href="a00221.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейс для чтения введенных данным из объекта представления..." alt="" coords="5,5,173,141"/>
-<area shape="rect" id="node8" href="a00226.html" title="Класс входит в Проект RegexTester &#160;&#160;Интерфейс для записи данных модели в объект представления. " alt="" coords="199,20,361,127"/>
+<div class="center"><img src="a02012.png" border="0" usemap="#view_1_1_task_panel_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_task_panel_coll__map" id="view_1_1_task_panel_coll__map">
+<area shape="rect" id="node2" href="a00235.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс представления для передачи модели измененных ..." alt="" coords="5,137,171,273"/>
+<area shape="rect" id="node4" href="a00245.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс представления для получения данных из модели ..." alt="" coords="196,137,367,273"/>
+<area shape="rect" id="node6" href="a00334.html" title="Class TaskPanel. " alt="" coords="391,5,619,405"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a14dcc84f384ae30d971b67bff3f0f0db"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14dcc84f384ae30d971b67bff3f0f0db"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html#a14dcc84f384ae30d971b67bff3f0f0db">GetId</a> (void) const  override</td></tr>
+<tr class="memdesc:a14dcc84f384ae30d971b67bff3f0f0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора текущей задачи. <br /></td></tr>
+<tr class="separator:a14dcc84f384ae30d971b67bff3f0f0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e2edacf920d60fb463c4b3e2dc9827"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a18e2edacf920d60fb463c4b3e2dc9827"></a>
+<a class="el" href="a00309.html">RawData_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html#a18e2edacf920d60fb463c4b3e2dc9827">GetData</a> (void) const  override</td></tr>
+<tr class="memdesc:a18e2edacf920d60fb463c4b3e2dc9827"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущих данных задачи. <br /></td></tr>
+<tr class="separator:a18e2edacf920d60fb463c4b3e2dc9827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39711897f9686cf5d2cec3ecd7d2ce3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad39711897f9686cf5d2cec3ecd7d2ce3"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html#ad39711897f9686cf5d2cec3ecd7d2ce3">GetParentId</a> (void) const  override</td></tr>
+<tr class="memdesc:ad39711897f9686cf5d2cec3ecd7d2ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора родительской задачи для текущей. <br /></td></tr>
+<tr class="separator:ad39711897f9686cf5d2cec3ecd7d2ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32af638c80e0dd71285325e0085f30c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32af638c80e0dd71285325e0085f30c2"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html#a32af638c80e0dd71285325e0085f30c2">GetPosition</a> (void) const  override</td></tr>
+<tr class="memdesc:a32af638c80e0dd71285325e0085f30c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего положения задачи в списке ее родительской задачи. <br /></td></tr>
+<tr class="separator:a32af638c80e0dd71285325e0085f30c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e0cf73a171c8627313d05b9b54bcc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html#ab7e0cf73a171c8627313d05b9b54bcc0">TaskPanel</a> (wxWindow *)</td></tr>
+<tr class="memdesc:ab7e0cf73a171c8627313d05b9b54bcc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор создания панели корневой задачи.  <a href="#ab7e0cf73a171c8627313d05b9b54bcc0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab7e0cf73a171c8627313d05b9b54bcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabd94343178651e48d5645a50cdbaf95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00335.html#aabd94343178651e48d5645a50cdbaf95">TaskPanel</a> (<a class="el" href="a00335.html">TaskPanel</a> *, const <a class="el" href="a00309.html">Data_t</a> &amp;, bool)</td></tr>
+<tr class="memdesc:aabd94343178651e48d5645a50cdbaf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор создания панели задачи.  <a href="#aabd94343178651e48d5645a50cdbaf95">Подробнее...</a><br /></td></tr>
+<tr class="separator:aabd94343178651e48d5645a50cdbaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00245"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00245')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00245.html">view::IWriteTaskPanel</a></td></tr>
+<tr class="memitem:a517383520f8e761bb7317640ba7bb0aa inherit pub_methods_a00245"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00245.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html#a517383520f8e761bb7317640ba7bb0aa">CreateChild</a> (const <a class="el" href="a00170.html">Data_t</a> &amp;_Data, bool _IsExistsChilsTasks)=0</td></tr>
+<tr class="memdesc:a517383520f8e761bb7317640ba7bb0aa inherit pub_methods_a00245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания дочерней панели.  <a href="#a517383520f8e761bb7317640ba7bb0aa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a517383520f8e761bb7317640ba7bb0aa inherit pub_methods_a00245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_attribs_a00245"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00245')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="a00245.html">view::IWriteTaskPanel</a></td></tr>
+<tr class="memitem:a569b97ff58cd75118b3dc23f685a007a inherit pub_attribs_a00245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a569b97ff58cd75118b3dc23f685a007a"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00235.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html#a569b97ff58cd75118b3dc23f685a007a">ChangedData</a></td></tr>
+<tr class="memdesc:a569b97ff58cd75118b3dc23f685a007a inherit pub_attribs_a00245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:a569b97ff58cd75118b3dc23f685a007a inherit pub_attribs_a00245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87f8f4b0d4f18613db3a486006cec2f inherit pub_attribs_a00245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa87f8f4b0d4f18613db3a486006cec2f"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00235.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html#aa87f8f4b0d4f18613db3a486006cec2f">ChangedParent</a></td></tr>
+<tr class="memdesc:aa87f8f4b0d4f18613db3a486006cec2f inherit pub_attribs_a00245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:aa87f8f4b0d4f18613db3a486006cec2f inherit pub_attribs_a00245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e48ab48fbd8ea4d0f92fedf3bfc71cd inherit pub_attribs_a00245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e48ab48fbd8ea4d0f92fedf3bfc71cd"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00235.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html#a7e48ab48fbd8ea4d0f92fedf3bfc71cd">ChangedPosition</a></td></tr>
+<tr class="memdesc:a7e48ab48fbd8ea4d0f92fedf3bfc71cd inherit pub_attribs_a00245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:a7e48ab48fbd8ea4d0f92fedf3bfc71cd inherit pub_attribs_a00245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1d23b6e327df602037a291ac1d637e inherit pub_attribs_a00245"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1d23b6e327df602037a291ac1d637e"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00235.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00245.html#a2e1d23b6e327df602037a291ac1d637e">CreateChildTask</a></td></tr>
+<tr class="memdesc:a2e1d23b6e327df602037a291ac1d637e inherit pub_attribs_a00245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:a2e1d23b6e327df602037a291ac1d637e inherit pub_attribs_a00245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект RegexTester</a> <br />
- Класс главного объекта представления. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Класс панели одной задачи. </p>
+<ul>
+<li>Позволяет изменить текст задачи.</li>
+<li>Позволяет пометить задачу как выполненную.</li>
+<li>Позволяет добавить задаче дочернюю подзадачу.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>01 Декабрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>06 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/View/<a class="el" href="a00710_source.html">View.hpp</a></li>
-<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/View/View.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ab7e0cf73a171c8627313d05b9b54bcc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskPanel::TaskPanel </td>
+          <td>(</td>
+          <td class="paramtype">wxWindow *&#160;</td>
+          <td class="paramname"><em>_pParent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор создания панели корневой задачи. </p>
+<ul>
+<li>Все остальные задачи будут являться дочерними задачами созданной при помощи этого конструктора задачи.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pParent</td><td>Родительское окно панели. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00335_ab7e0cf73a171c8627313d05b9b54bcc0_icgraph.png" border="0" usemap="#a00335_ab7e0cf73a171c8627313d05b9b54bcc0_icgraph" alt=""/></div>
+<map name="a00335_ab7e0cf73a171c8627313d05b9b54bcc0_icgraph" id="a00335_ab7e0cf73a171c8627313d05b9b54bcc0_icgraph">
+<area shape="rect" id="node3" href="a00335.html#a32af638c80e0dd71285325e0085f30c2" title="Функция получения текущего положения задачи в списке ее родительской задачи. " alt="" coords="265,5,481,32"/>
+<area shape="rect" id="node5" href="a00336.html#a20ad9c040aa9c0617d77cb82658ad0ce" title="Функция создания панели корневой задачи. " alt="" coords="262,56,485,83"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aabd94343178651e48d5645a50cdbaf95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TaskPanel::TaskPanel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00335.html">TaskPanel</a> *&#160;</td>
+          <td class="paramname"><em>_pParent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00309.html">Data_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsExistsChildTasks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор создания панели задачи. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pParent</td><td>Родительская панель задачи. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Данные задачи. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsExistsChildTasks</td><td>Признак того, что у задачи есть дочерние подзадачи. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00824_source.html">TaskPanel.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/TaskPanel.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00335.html">View</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 23:04:44. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00335.html">TaskPanel</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:38. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

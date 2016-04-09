@@ -1,4 +1,6 @@
 var a00336 =
 [
-    [ "Activate", "a00336.html#a866e9ba5636efab9ebfac50b7e02180d", null ]
+    [ "BeginUpdate", "a00336.html#a648f2200fad8b409579c381e58da3541", null ],
+    [ "CreateRoot", "a00336.html#a20ad9c040aa9c0617d77cb82658ad0ce", null ],
+    [ "EndUpdate", "a00336.html#a7b9a39def271ffaf3eb6e5aff6bf49a6", null ]
 ];

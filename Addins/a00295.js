@@ -1,8 +1,7 @@
 var a00295 =
 [
-    [ "AfterClosing", "a00295.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
-    [ "BeforeClosing", "a00295.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
-    [ "Opened", "a00295.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
-    [ "ProjectAdded", "a00295.html#a1729654adb306bca37aa34a328e3ebdd", null ],
-    [ "ProjectRemoved", "a00295.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
+    [ "Add", "a00295.html#a59fdfdd7d7ff5afafe5d649ecb0e9192", null ],
+    [ "operator[]", "a00295.html#a5b71846ab44f62e1ec8f435172b972c0", null ],
+    [ "operator[]", "a00295.html#a2dbc8a80d89c833cefefbcb6ef068b88", null ],
+    [ "operator[]", "a00295.html#a8d5dc2d1f8379a71ee129f897f8899e8", null ]
 ];

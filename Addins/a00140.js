@@ -1,9 +1,8 @@
 var a00140 =
 [
-    [ "Delete", "a00140.html#a8bbb63f588b2f90e3c9f517a44a7ed4b", null ],
-    [ "PROPERTY_GET", "a00140.html#ad3bebadeb0077f2d5cec751995aedc37", null ],
-    [ "PROPERTY_GET", "a00140.html#a3adfcc08dd94c2d6fc801967cd6fae57", null ],
-    [ "SetBeginGroup", "a00140.html#a7bd14f74efb1ff877f410c1af87eae37", null ],
-    [ "SetCaption", "a00140.html#a1a240117271fd1d6c6a444db3b60a747", null ],
-    [ "SetVisible", "a00140.html#a5fc0a8ec29327acc66d1f63bfdaf2337", null ]
+    [ "GetCount", "a00140.html#abbc95386bcc2e25287929c3aeb044c81", null ],
+    [ "GetItem", "a00140.html#a212a9fd442dace44367a7d6dcfa3a9f8", null ],
+    [ "IsExist", "a00140.html#a373c590faedafe634836c26ad9419161", null ],
+    [ "operator[]", "a00140.html#afafc3273142ce39cc288fcfa61ddf4d5", null ],
+    [ "operator[]", "a00140.html#a5d2215c2dc29590520d9ede5f171613d", null ]
 ];

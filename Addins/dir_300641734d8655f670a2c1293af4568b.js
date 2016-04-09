@@ -12,7 +12,7 @@ var dir_300641734d8655f670a2c1293af4568b =
     [ "Project", "dir_6f9ca78e581ecb75b95f03d51de1e656.html", "dir_6f9ca78e581ecb75b95f03d51de1e656" ],
     [ "ProjectFiles", "dir_8a5ea6664f36e21b2f1c56aab73e84a9.html", "dir_8a5ea6664f36e21b2f1c56aab73e84a9" ],
     [ "Solution", "dir_a5927a475d4bb0b700e48860563956d1.html", "dir_a5927a475d4bb0b700e48860563956d1" ],
-    [ "VisualStudio.hpp", "a00942_source.html", null ],
-    [ "VisualStudio.inside.hpp", "a00944.html", null ],
-    [ "VisualStudio.mock.hpp", "a01242_source.html", null ]
+    [ "VisualStudio.hpp", "a01042_source.html", null ],
+    [ "VisualStudio.inside.hpp", "a01044.html", null ],
+    [ "VisualStudio.mock.hpp", "a01348_source.html", null ]
 ];

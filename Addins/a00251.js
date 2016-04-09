@@ -1,4 +1,5 @@
 var a00251 =
 [
-    [ "GetCaption", "a00251.html#ade76701e06d95dd78419f0e23bd2ea28", null ]
+    [ "Main", "a00251.html#a41fd0853ce2d4dcd5c6c5096352e37a3", null ],
+    [ "Set", "a00251.html#a7bb75640e0313e7482d8df39ef523fa2", null ]
 ];

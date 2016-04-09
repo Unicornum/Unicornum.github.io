@@ -1,5 +1,7 @@
 var a00333 =
 [
-    [ "GetCaption", "a00333.html#a213b05e1e799977867081656e3936a23", null ],
-    [ "IsEnabled", "a00333.html#a787eec667e45ffc550976b3f6651a27d", null ]
+    [ "Task", "a00333.html#ac75c69d7af04e37adb7479ebbd8d6a01", null ],
+    [ "ReadDataFrom", "a00333.html#a828606eadccc2469c6b308d439d37f1b", null ],
+    [ "SetData", "a00333.html#a3e47428fe92345f802ba1d2bf7586789", null ],
+    [ "WriteDataTo", "a00333.html#aedf20aaba899f8b08c767d0f371de944", null ]
 ];

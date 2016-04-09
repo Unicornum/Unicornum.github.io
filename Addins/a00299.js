@@ -1,5 +1,5 @@
 var a00299 =
 [
-    [ "operator[]", "a00299.html#a83bd33be7f97dff72c030d7f612a9688", null ],
-    [ "operator[]", "a00299.html#a16022abff37528a4226be0f9d6be91b7", null ]
+    [ "GetPathToFile", "a00299.html#ab180b7904ac341e4311bbf738353481e", null ],
+    [ "Remove", "a00299.html#a0e283e019a3f0e6b90548465a6c8179f", null ]
 ];

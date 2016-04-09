@@ -1,11 +1,12 @@
 var a00170 =
 [
-    [ "GetName", "a00170.html#a8c7e6208a41879aeacea4d00e8669c8e", null ],
-    [ "GetPathToFile", "a00170.html#a8903ddf505aee83e2c3700f27e67698e", null ],
-    [ "PROPERTY_GET", "a00170.html#ac6578be7f970b5bc52978d8bc3885305", null ],
-    [ "PROPERTY_GET", "a00170.html#a5c7ad7c2bfc2659740f6ec4280aed72c", null ],
-    [ "PROPERTY_GET", "a00170.html#ad6f4388c70a8987bb5b88e92ab767056", null ],
-    [ "PROPERTY_GET", "a00170.html#a21d1e78afc283e3a00638d88bda05e69", null ],
-    [ "Replace", "a00170.html#ab580ca43598caf88e289b9b2f0e44517", null ],
-    [ "Save", "a00170.html#af3141118fde858bacab72ebda1619ffa", null ]
+    [ "AllowedFlags", "a00170.html#a1aff9703315ef9c956efe99cb62bf994", [
+      [ "Editable", "a00170.html#a1aff9703315ef9c956efe99cb62bf994ab296339eb0880b0ce95e5082f6f63c49", null ],
+      [ "CreateChild", "a00170.html#a1aff9703315ef9c956efe99cb62bf994a37ea3f85969618b25d9a8a0f69cdaab2", null ],
+      [ "Completed", "a00170.html#a1aff9703315ef9c956efe99cb62bf994a3a004d40b90d1e25db7faa05ed115045", null ]
+    ] ],
+    [ "GetId", "a00170.html#a5af54aba6054ade4288df300b4747c48", null ],
+    [ "Is", "a00170.html#a1e27c0b5db8bd70adf5298e50e47dc56", null ],
+    [ "To", "a00170.html#aff285a7e21a4c497e71c8a61c4a37d6a", null ],
+    [ "To", "a00170.html#a691262cf2fe5bef7f91cfc1e90d442f5", null ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logger_2ehpp',['Logger.hpp',['../a00998.html',1,'']]]
+  ['logger_2ehpp',['Logger.hpp',['../a01098.html',1,'']]]
 ];

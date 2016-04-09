@@ -1,8 +1,6 @@
 var a00241 =
 [
-    [ "Create", "a00241.html#a29969cb90779a3342362b938ade775b8", null ],
-    [ "Delete", "a00241.html#a7fb61ee25708fe24d4a50684b1157452", null ],
-    [ "GetHotKey", "a00241.html#aca3ff0d4b98302f05ca6c14f705f18f8", null ],
-    [ "GetPictureId", "a00241.html#a4604e12a333e326fc657f55542e46caa", null ],
-    [ "GetStatus", "a00241.html#a9b2364ad4b131179a065516753e1181e", null ]
+    [ "SetDevelopmentInfo", "a00241.html#a63d80cbe8e7536b4608e870371394d25", null ],
+    [ "SetTitle", "a00241.html#a7e74984281cd804f6e835ff317d48ae6", null ],
+    [ "DoUpdate", "a00241.html#a67150deb963bc35daf58985e5c9e478d", null ]
 ];

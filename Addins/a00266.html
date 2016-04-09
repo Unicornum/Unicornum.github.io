@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::utilities::execute::CppCheck::Platform</title>
+<title>Addins: Шаблон класса controller::NonBlockingSignal&lt; TParam &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.20 Revision: 3407 Architecture: x86.32 Build: 23:04 07 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,46 +112,82 @@ $(document).ready(function(){initNavTree('a00266.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01740.html">Полный список членов класса</a>  </div>
+<a href="a01629.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::execute::CppCheck::Platform</div>  </div>
+<div class="title">Шаблон класса controller::NonBlockingSignal&lt; TParam &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01429.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01430.html">Controller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс для формирования флага платформы.  
+<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Базовый класс неблокирующего сигнала.  
  <a href="a00266.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00986_source.html">CppCheck.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00798_source.html">NonBlockingSignal.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса core::utilities::execute::CppCheck::Platform:</div>
+Граф связей класса controller::NonBlockingSignal&lt; TParam &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01741.png" border="0" usemap="#core_1_1utilities_1_1execute_1_1_cpp_check_1_1_platform_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01630.png" border="0" usemap="#controller_1_1_non_blocking_signal_3_01_t_param_01_4_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2fb4d077ae8d67751e678c9ea2473d6"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ae2fb4d077ae8d67751e678c9ea2473d6">ToCommandLine</a> (void) const </td></tr>
-<tr class="memdesc:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования числового значения флагов в строку для передачи <a class="el" href="a00153.html" title="Класс входит в Проект Execute   Класс для обработки папки программой CppCheck. ">CppCheck</a> в качестве параметров командной строки. <br /></td></tr>
-<tr class="separator:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13578a09c2e689167fe7aa0121fbda80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13578a09c2e689167fe7aa0121fbda80"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#a13578a09c2e689167fe7aa0121fbda80">ToLog</a> (void) const </td></tr>
-<tr class="memdesc:a13578a09c2e689167fe7aa0121fbda80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования числового значения флагов в строку для записи в лог результата обработки. <br /></td></tr>
-<tr class="separator:a13578a09c2e689167fe7aa0121fbda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36353dddc7cf6495bdcff6eb5806d07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html#ae36353dddc7cf6495bdcff6eb5806d07">operator()</a> (TParam)</td></tr>
+<tr class="memdesc:ae36353dddc7cf6495bdcff6eb5806d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор выполнения действия сигнала.  <a href="#ae36353dddc7cf6495bdcff6eb5806d07">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae36353dddc7cf6495bdcff6eb5806d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс для формирования флага платформы. </p>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a00986_source.html">CppCheck.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/CppCheck.cpp</li>
+<div class="textblock"><h3>template&lt;class TParam&gt;<br />
+class controller::NonBlockingSignal&lt; TParam &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Базовый класс неблокирующего сигнала. </p>
+<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000013">Необходимо сделать:</a></b></dt><dd>Перенести в Alicorn </dd></dl>
+<ul>
+<li>Класс сигнала, унаследованного от этого класса будет выполняться во время выполнения другого сигнала.</li>
+<li>В функцию Execute() класс - наследник должен поместить логику работы сигнала, в Fail() - обработку ошибки, произошедшей во время выполнения функции Execute().</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>04 Апрель 2016 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ae36353dddc7cf6495bdcff6eb5806d07"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TParam&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00266.html">controller::NonBlockingSignal</a>&lt; TParam &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">TParam&#160;</td>
+          <td class="paramname"><em>_Param</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оператор выполнения действия сигнала. </p>
+<ul>
+<li>Вызывает функцию Execute(), передавая ей свой параметр.</li>
+<li>Перехватывает исключение при выполнении функции Execute(). </li>
+</ul>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/<a class="el" href="a00798_source.html">NonBlockingSignal.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/NonBlockingSignal.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00153.html">CppCheck</a></li><li class="navelem"><a class="el" href="a00266.html">Platform</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пн 7 Мар 2016 23:04:43. Создано системой
+    <li class="navelem"><a class="el" href="a01358.html">controller</a></li><li class="navelem"><a class="el" href="a00266.html">NonBlockingSignal</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:36. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

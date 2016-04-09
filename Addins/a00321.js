@@ -1,4 +1,8 @@
 var a00321 =
 [
-    [ "IsEnabled", "a00321.html#adf476033bc2dc4304bac28cba75f3185", null ]
+    [ "AfterClosing", "a00321.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
+    [ "BeforeClosing", "a00321.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
+    [ "Opened", "a00321.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
+    [ "ProjectAdded", "a00321.html#a1729654adb306bca37aa34a328e3ebdd", null ],
+    [ "ProjectRemoved", "a00321.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
 ];

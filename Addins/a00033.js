@@ -4,7 +4,7 @@ var a00033 =
     [ "Подробное описание раздела", "a00033.html#sCoreDetails", null ],
     [ "Проект ConnectionCommands", "a00034.html", "a00034" ],
     [ "Проект Menu", "a00036.html", "a00036" ],
-    [ "Раздел UsefulCommands", "a00047.html", "a00047" ],
-    [ "Раздел Utilities", "a00070.html", "a00070" ],
+    [ "Раздел UsefulCommands", "a00050.html", "a00050" ],
+    [ "Раздел Utilities", "a00073.html", "a00073" ],
     [ "Утилиты", "a00038.html", "a00038" ]
 ];

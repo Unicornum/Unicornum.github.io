@@ -1,6 +1,9 @@
 var a00160 =
 [
-    [ "RegexString", "a00160.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
-    [ "ReplaceString", "a00160.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
-    [ "SourceStrings", "a00160.html#a5b43bb718b3729c19bada2c831ca2297", null ]
+    [ "Platform", "a00288.html", "a00288" ],
+    [ "Quick", "a00308.html", null ],
+    [ "Standart", "a00327.html", null ],
+    [ "CppCheck", "a00160.html#a134da6a575e7d70f51d2de7332b461fe", null ],
+    [ "Check", "a00160.html#adc469aac4a6f9ccc91ea6dd754de90ac", null ],
+    [ "GetLogProgress", "a00160.html#a25281b25adf41f6dd46387f38b68703f", null ]
 ];

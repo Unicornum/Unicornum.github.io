@@ -7,5 +7,5 @@ var a00009 =
     [ "Build", "a00003.html", "a00003" ],
     [ "ConnectionPoints", "a00010.html", "a00010" ],
     [ "Core", "a00033.html", "a00033" ],
-    [ "Wrappers", "a00085.html", "a00085" ]
+    [ "Wrappers", "a00088.html", "a00088" ]
 ];

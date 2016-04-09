@@ -1,8 +1,7 @@
 var a00064 =
 [
-    [ "Введение", "a00064.html#sUsefulCommandsVSTestingBrief", null ],
-    [ "Подробное описание проекта", "a00064.html#sUsefulCommandsVSTestingDetails", [
-      [ "Список задач проекта", "a00064.html#ssUsefulCommandsVSTestingTasks", null ]
+    [ "Введение", "a00064.html#sCoreUcVsSupportPartBrief", [
+      [ "Проекты раздела", "a00064.html#ssCoreUcVsSupportPartProjects", null ]
     ] ],
-    [ "Список задач проекта", "a00065.html", null ]
+    [ "Проект Tags", "a00065.html", "a00065" ]
 ];
