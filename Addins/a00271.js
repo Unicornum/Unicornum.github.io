@@ -1,5 +1,4 @@
 var a00271 =
 [
-    [ "OpenDoc", "a00271.html#aa03a7cc3b7e471baa81d65b1e0919f5f", null ],
-    [ "IsEnabled", "a00271.html#a39a3353ef4403a4f5efeb973a1e9fcb6", null ]
+    [ "GetCaption", "a00271.html#a85bf15cdc6c504c9e960b2b206dcc32a", null ]
 ];

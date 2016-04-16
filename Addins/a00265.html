@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::connection_commands::NeedActivateCommand</title>
+<title>Addins: Класс core::utilities::vs::Message</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,54 +111,46 @@ $(document).ready(function(){initNavTree('a00265.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01646.html">Полный список членов класса</a>  </div>
+<a href="a01940.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::connection_commands::NeedActivateCommand</div>  </div>
+<div class="title">Класс core::utilities::vs::Message<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01447.html">Core</a> &raquo; <a class="el" href="a01473.html">Utilities</a> &raquo; <a class="el" href="a01471.html">Logger</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00034.html">Проект ConnectionCommands</a> <br />
- Базовый класс команды, обеспечивающих проверку неоходимости выполнения команды на активированном менеджере команд.  
+<p>Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
+ Класс формирования сообщения.  
  <a href="a00265.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00721_source.html">NeedActivateCommand.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01128_source.html">Message.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:Message&lt; std::wstringstream &gt;.</p>
 <div class="dynheader">
-Граф наследования:core::connection_commands::NeedActivateCommand:</div>
+Граф связей класса core::utilities::vs::Message:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01647.png" border="0" usemap="#core_1_1connection__commands_1_1_need_activate_command_inherit__map" alt="Inheritance graph"/></div>
-<map name="core_1_1connection__commands_1_1_need_activate_command_inherit__map" id="core_1_1connection__commands_1_1_need_activate_command_inherit__map">
-<area shape="rect" id="node3" href="a00163.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Класс создания команд надстройки. " alt="" coords="5,154,251,275"/>
-<area shape="rect" id="node5" href="a00172.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Класс уничтожения команд надстройки. " alt="" coords="276,161,489,268"/>
-<area shape="rect" id="node7" href="a00184.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Класс команды, обабатывающей выполнение команды надстройки..." alt="" coords="513,161,727,268"/>
-<area shape="rect" id="node9" href="a00188.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Класс команды, обабатывающей запрос статуса команды надстр..." alt="" coords="751,161,964,268"/>
-<area shape="rect" id="node11" href="a00287.html" title="Класс входит в Проект ConnectionCommands &#160;&#160;Класс выполнения команды, не связанной с пунктом меню..." alt="" coords="989,147,1203,283"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса core::connection_commands::NeedActivateCommand:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01648.png" border="0" usemap="#core_1_1connection__commands_1_1_need_activate_command_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01941.png" border="0" usemap="#core_1_1utilities_1_1vs_1_1_message_coll__map" alt="Collaboration graph"/></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00034.html">Проект ConnectionCommands</a> <br />
- Базовый класс команды, обеспечивающих проверку неоходимости выполнения команды на активированном менеджере команд. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
+ Класс формирования сообщения. </p>
 <ul>
-<li>Если необходимо, чтобы команда выполнялась в любом случае, в классе- наследнике переопределить функцию IsNeedActivate() и вернуть false.</li>
+<li>Сообщение формируется при помощи оператора '&lt;&lt;', допустимо использовать переменные/значения различных типов.</li>
 </ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>1 июн 2014 </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>7 янв 2015 <br />
+</dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/ConnectionCommands/ConnectionCommands/<a class="el" href="a00721_source.html">NeedActivateCommand.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a01128_source.html">Message.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>connection_commands</b></li><li class="navelem"><a class="el" href="a00265.html">NeedActivateCommand</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:36. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00265.html">Message</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:06. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

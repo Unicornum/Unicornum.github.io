@@ -1,6 +1,4 @@
 var a00240 =
 [
-    [ "BeginUpdate", "a00240.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
-    [ "CreateRoot", "a00240.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
-    [ "EndUpdate", "a00240.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
+    [ "GetValue", "a00240.html#a6ebfa0f1cb27871d9d1d81940d18d60b", null ]
 ];

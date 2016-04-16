@@ -1,6 +1,5 @@
 var a00234 =
 [
-    [ "GetChildTasks", "a00234.html#afdfd98f8ad70023d5188dda69a5e4dd6", null ],
-    [ "GetRootTaskId", "a00234.html#a2fd780e73bb9ff92995edacaa0295a73", null ],
-    [ "Changed", "a00234.html#a9444372a28d6fd34dda9f8b192964c4f", null ]
+    [ "GetPathToFile", "a00234.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
+    [ "Remove", "a00234.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
 ];

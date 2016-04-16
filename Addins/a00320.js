@@ -1,8 +1,6 @@
 var a00320 =
 [
-    [ "AfterClosing", "a00320.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
-    [ "BeforeClosing", "a00320.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
-    [ "Opened", "a00320.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
-    [ "ProjectAdded", "a00320.html#a1729654adb306bca37aa34a328e3ebdd", null ],
-    [ "ProjectRemoved", "a00320.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
+    [ "GetActivePlatformName", "a00320.html#a3a5de2684219f84b149e41da839ecf2f", null ],
+    [ "GetName", "a00320.html#ae2fea29770d4277e57a24c17e8c875de", null ],
+    [ "GetPathToFile", "a00320.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
 ];

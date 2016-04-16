@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/ConnectionPoints/VisualStudio/TimeTracker/TimeTracker/TimeTracker.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/VisualStudio/Support/Support.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -109,21 +109,16 @@ $(document).ready(function(){initNavTree('a00699_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">TimeTracker.hpp</div>  </div>
+<div class="title">Support.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="a00345.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00345.html">TimeTracker</a> final :</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00204.html">::connection_points::vs::Extension</a></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="comment">// Интерфейс IExtension</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00345.html#ac6b6a10434991cb962a81c1a603f509b">OnConnection</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00345.html#a7b3f548c1324756ad19fa1a718162609">OnDisconnection</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00345.html#a10cd87000aee0bab382a078a643a07df">OnTextChanged</a>(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  CTime m_BeginTime;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  CTime m_EndTime;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  CTime m_LastOutputTime;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <a class="code" href="a00345.html">TimeTracker</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="a00345.html">TimeTracker</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a00345.html">TimeTracker</a> &amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="ttc" id="a00345_html_a10cd87000aee0bab382a078a643a07df"><div class="ttname"><a href="a00345.html#a10cd87000aee0bab382a078a643a07df">TimeTracker::OnTextChanged</a></div><div class="ttdeci">void OnTextChanged(void) override</div><div class="ttdoc">Функция будет вызываться при изменении текста документа. </div><div class="ttdef"><b>Definition:</b> TimeTracker.cpp:32</div></div>
-<div class="ttc" id="a00345_html_a7b3f548c1324756ad19fa1a718162609"><div class="ttname"><a href="a00345.html#a7b3f548c1324756ad19fa1a718162609">TimeTracker::OnDisconnection</a></div><div class="ttdeci">void OnDisconnection(void) override</div><div class="ttdoc">Функция будет вызываться при завершении работы IDE. </div><div class="ttdef"><b>Definition:</b> TimeTracker.cpp:27</div></div>
-<div class="ttc" id="a00345_html_ac6b6a10434991cb962a81c1a603f509b"><div class="ttname"><a href="a00345.html#ac6b6a10434991cb962a81c1a603f509b">TimeTracker::OnConnection</a></div><div class="ttdeci">void OnConnection(void) override</div><div class="ttdoc">Функция будет вызываться при запуске IDE, причем в том момент, когда основной объект среды разработки...</div><div class="ttdef"><b>Definition:</b> TimeTracker.cpp:14</div></div>
-<div class="ttc" id="a00345_html"><div class="ttname"><a href="a00345.html">TimeTracker</a></div><div class="ttdoc">Класс входит в Проект TimeTracker   Главный класс модуля. </div><div class="ttdef"><b>Definition:</b> TimeTracker.hpp:18</div></div>
-<div class="ttc" id="a00204_html"><div class="ttname"><a href="a00204.html">connection_points::vs::Extension</a></div><div class="ttdoc">Класс входит в Проект Support   Базовый класс всех объектов расширений для Visual Studio...</div><div class="ttdef"><b>Definition:</b> Extension.hpp:28</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<a href="a00699.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_507a45db08fa34c6d3b352cda19bee73.html">ConnectionPoints</a></li><li class="navelem"><a class="el" href="dir_a7c7e64e0e812907f1fa8bc7c1d66110.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_c7662ca867927c439fcbc87e9da6c8c2.html">TimeTracker</a></li><li class="navelem"><a class="el" href="dir_a9bad24463359b947b9e27895319cb92.html">TimeTracker</a></li><li class="navelem"><b>TimeTracker.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:33. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_68c243c7ca65f1e8337d9c44e9fb488c.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_1b531eb723a6ba09b90be017428f50fe.html">Support</a></li><li class="navelem"><a class="el" href="a00699.html">Support.hpp</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

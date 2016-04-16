@@ -1,6 +1,7 @@
 var a00304 =
 [
-    [ "SearchForFullPath", "a00304.html#ac85a4ff36109083a4286198e318fb850", null ],
-    [ "WasFoundNext", "a00304.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
-    [ "WasNoFound", "a00304.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
+    [ "GetCount", "a00304.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
+    [ "GetItem", "a00304.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
+    [ "LoadFromFile", "a00304.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
+    [ "Remove", "a00304.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
 ];

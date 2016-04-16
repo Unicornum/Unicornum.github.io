@@ -1,6 +1,6 @@
 var a00348 =
 [
-    [ "Add", "a00348.html#a23b61e1353296b386c662d7d6cd13e6f", null ],
-    [ "Execute", "a00348.html#a292df09cd6ef231bb61faf93971a23c6", null ],
-    [ "IsEnabled", "a00348.html#ad396c5c9066927e075c85491f1ead20e", null ]
+    [ "GetCaption", "a00348.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
+    [ "GetPictureId", "a00348.html#a746b515d057c24d1da8a4ae132cdb72e", null ],
+    [ "IsEnabled", "a00348.html#ad020704272b8e116a3a4ee92f48ee449", null ]
 ];

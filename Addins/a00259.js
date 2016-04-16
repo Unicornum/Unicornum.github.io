@@ -1,7 +1,9 @@
 var a00259 =
 [
-    [ "Menu", "a00259.html#a1881db3258148a820135f54a229a0777", null ],
-    [ "Add", "a00259.html#a4ca44c10bf386c40943bfe3bbf8ba312", null ],
-    [ "AddSeparator", "a00259.html#ac9b0f89019d2e3725c557f35daa7d052", null ],
-    [ "operator[]", "a00259.html#ae59ba15a4d1d48d81124363aafceeea4", null ]
+    [ "Call", "a00259.html#abf5cc16c405af417713274439609135c", null ],
+    [ "Call", "a00259.html#a1749f1a505f4eed3fef62fd734c4c1a7", null ],
+    [ "Call", "a00259.html#aae14d3dce716d45d7c97dd460132b207", null ],
+    [ "Call", "a00259.html#aebc91b2bc321d297c3dc821388bbecf1", null ],
+    [ "Call", "a00259.html#a164cb767aa64b577d292930b50c5f657", null ],
+    [ "Call", "a00259.html#a0df24fbb6fb1b453ce82dceb350dedc5", null ]
 ];

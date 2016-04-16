@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wxwidgets',['wxWidgets',['../a01439.html',1,'']]]
+  ['wxwidgets',['wxWidgets',['../a01464.html',1,'']]]
 ];

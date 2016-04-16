@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс model::ITasks</title>
+<title>Addins: Класс wrappers::helper::ISolution</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,336 +111,49 @@ $(document).ready(function(){initNavTree('a00239.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01948.html">Полный список членов класса</a>  </div>
+<a href="a02074.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс model::ITasks<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01429.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01431.html">Model</a></div></div>  </div>
+<div class="title">Класс wrappers::helper::ISolution<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс для списка всех задач.  
+<p>Класс входит в <a class="el" href="a00089.html">Проект Helper</a> <br />
+ Интерфейс, содержащий функции проверки состояния решения.  
  <a href="a00239.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00809_source.html">ITasks.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01163_source.html">ISolution.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:model::ITasks:</div>
+Граф наследования:wrappers::helper::ISolution:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01949.png" border="0" usemap="#model_1_1_i_tasks_inherit__map" alt="Inheritance graph"/></div>
-<map name="model_1_1_i_tasks_inherit__map" id="model_1_1_i_tasks_inherit__map">
-<area shape="rect" id="node3" href="a00124.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс, содержащий полный список всех задач проекта. " alt="" coords="5,235,211,445"/>
+<div class="center"><img src="a02075.png" border="0" usemap="#wrappers_1_1helper_1_1_i_solution_inherit__map" alt="Inheritance graph"/></div>
+<map name="wrappers_1_1helper_1_1_i_solution_inherit__map" id="wrappers_1_1helper_1_1_i_solution_inherit__map">
+<area shape="rect" id="node3" href="a00327.html" title="Класс входит в Проект Helper &#160;&#160;Реализация интерфейса для решения. " alt="" coords="26,131,187,237"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса model::ITasks:</div>
+Граф связей класса wrappers::helper::ISolution:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01950.png" border="0" usemap="#model_1_1_i_tasks_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02076.png" border="0" usemap="#wrappers_1_1helper_1_1_i_solution_coll__map" alt="Collaboration graph"/></div>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a95e8c4cb8fb22f3ea8cc601b461699d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95e8c4cb8fb22f3ea8cc601b461699d7"></a>
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a95e8c4cb8fb22f3ea8cc601b461699d7">GetRootProcessTaskId</a> (void) const  =0</td></tr>
-<tr class="memdesc:a95e8c4cb8fb22f3ea8cc601b461699d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи для задач, находящихся в процессе работы. <br /></td></tr>
-<tr class="separator:a95e8c4cb8fb22f3ea8cc601b461699d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69bc888eaed1fc7c7806119278077969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69bc888eaed1fc7c7806119278077969"></a>
-virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a69bc888eaed1fc7c7806119278077969">GetRootCompleteTaskId</a> (void) const  =0</td></tr>
-<tr class="memdesc:a69bc888eaed1fc7c7806119278077969"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи для выполненных задач. <br /></td></tr>
-<tr class="separator:a69bc888eaed1fc7c7806119278077969"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd90424a16a81b90eb3d979f3cbb5e6c"><td class="memItemLeft" align="right" valign="top">virtual ChildTasks_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#afd90424a16a81b90eb3d979f3cbb5e6c">GetChildTasks</a> (size_t) const  =0</td></tr>
-<tr class="memdesc:afd90424a16a81b90eb3d979f3cbb5e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка дочерних задач для задачи с указанным идентификатором.  <a href="#afd90424a16a81b90eb3d979f3cbb5e6c">Подробнее...</a><br /></td></tr>
-<tr class="separator:afd90424a16a81b90eb3d979f3cbb5e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13be8904a3eabd1f7ed639407c48e120"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a13be8904a3eabd1f7ed639407c48e120">SetData</a> (size_t _Id, const <a class="el" href="a00309.html">RawDataTask_t</a> &amp;_Data)=0</td></tr>
-<tr class="memdesc:a13be8904a3eabd1f7ed639407c48e120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения данных текущей задачи.  <a href="#a13be8904a3eabd1f7ed639407c48e120">Подробнее...</a><br /></td></tr>
-<tr class="separator:a13be8904a3eabd1f7ed639407c48e120"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9486a26382830b1e2ca1a901e11318e7"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a9486a26382830b1e2ca1a901e11318e7">SetParent</a> (size_t _Id, size_t _ParentId)=0</td></tr>
-<tr class="memdesc:a9486a26382830b1e2ca1a901e11318e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция переноса текущей задачи в другую родительскую задачу.  <a href="#a9486a26382830b1e2ca1a901e11318e7">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9486a26382830b1e2ca1a901e11318e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a954e0a19c7220be552b7142a43f7e857"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a954e0a19c7220be552b7142a43f7e857">SetPosition</a> (size_t _Id, size_t _Position)=0</td></tr>
-<tr class="memdesc:a954e0a19c7220be552b7142a43f7e857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения позиции текущей задачи.  <a href="#a954e0a19c7220be552b7142a43f7e857">Подробнее...</a><br /></td></tr>
-<tr class="separator:a954e0a19c7220be552b7142a43f7e857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7407e0f515c32af91625b0d5c5e3c3da"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00239.html#a7407e0f515c32af91625b0d5c5e3c3da">CreateChild</a> (size_t _Id)=0</td></tr>
-<tr class="memdesc:a7407e0f515c32af91625b0d5c5e3c3da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления дочерней задачи для указанной.  <a href="#a7407e0f515c32af91625b0d5c5e3c3da">Подробнее...</a><br /></td></tr>
-<tr class="separator:a7407e0f515c32af91625b0d5c5e3c3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс для списка всех задач. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00089.html">Проект Helper</a> <br />
+ Интерфейс, содержащий функции проверки состояния решения. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>26 Март 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>07 Май 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a7407e0f515c32af91625b0d5c5e3c3da"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void model::ITasks::CreateChild </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_Id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция добавления дочерней задачи для указанной. </p>
-<ul>
-<li>Новая задача должна быть добавлена в конец списка дочерних задач указанной задачи.</li>
-<li>Текущей задаче должен быть выставлен флаг IsExpanded.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор задачи, в список дочерних которой будет добавлена задача.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Задачи с указанным идентификатором не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00124.html#a4ce7efcf971b5130c44ea4990565abc8">model::AllTasks</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="afd90424a16a81b90eb3d979f3cbb5e6c"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual ChildTasks_t model::ITasks::GetChildTasks </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция получения списка дочерних задач для задачи с указанным идентификатором. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Задачи с указанным идентификатором не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00124.html#a1dca46c97730f8b69944a50551fc8e5a">model::AllTasks</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a13be8904a3eabd1f7ed639407c48e120"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool model::ITasks::SetData </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_Id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a00309.html">RawDataTask_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция изменения данных текущей задачи. </p>
-<ul>
-<li>Данные, которые не могут быть изменены у данной конкретной задачи должны игнорироваться.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор изменяемой задачи. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Требуется обновить представление.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Задачи с указанным идентификатором не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00124.html#a6a0cc886008ceb1e87a401329b1a40cd">model::AllTasks</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a9486a26382830b1e2ca1a901e11318e7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool model::ITasks::SetParent </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_Id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_ParentId</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция переноса текущей задачи в другую родительскую задачу. </p>
-<ul>
-<li>При переносе задача должна быть добавлена в конец спсика указнной родительской задачи.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор переносимой задачи. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_ParentId</td><td>Идентификатор родительской задачи, в которую должна быть перенесена текущая.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Требуется обновить представление.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Задач с указанными идентификаторами не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00124.html#a12244caa7476b09b907f25caf3d490dc">model::AllTasks</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a954e0a19c7220be552b7142a43f7e857"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool model::ITasks::SetPosition </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_Id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_Position</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция изменения позиции текущей задачи. </p>
-<ul>
-<li>Если позиция превышает количесво дочерних задач у родительской задачи текущей, переместить задачу в конец списка.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор переносимой задачи. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Position</td><td>Позиция в списке родительской задачи, в которую должна быть установлена текущая (отсчет - от нуля).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Требуется обновить представление.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Задачи с указанным идентификатором не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00124.html#a020f9d878e9a73dc7011c244d1981a2e">model::AllTasks</a>.</p>
-
-</div>
-</div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/<a class="el" href="a00809_source.html">ITasks.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Wrappers/Helper/Helper/<a class="el" href="a01163_source.html">ISolution.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00239.html">ITasks</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:38. Создано системой
+    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>helper</b></li><li class="navelem"><a class="el" href="a00239.html">ISolution</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:06. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,8 +1,4 @@
 var a00261 =
 [
-    [ "Create", "a00261.html#a29969cb90779a3342362b938ade775b8", null ],
-    [ "Delete", "a00261.html#a7fb61ee25708fe24d4a50684b1157452", null ],
-    [ "GetHotKey", "a00261.html#aca3ff0d4b98302f05ca6c14f705f18f8", null ],
-    [ "GetPictureId", "a00261.html#a4604e12a333e326fc657f55542e46caa", null ],
-    [ "GetStatus", "a00261.html#a9b2364ad4b131179a065516753e1181e", null ]
+    [ "DoLocalProcess", "a00261.html#a395819a068d121a79711847d46e59dc3", null ]
 ];

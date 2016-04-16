@@ -1,7 +1,7 @@
 var a00235 =
 [
-    [ "GetData", "a00235.html#ad3c5511dfdb2310760b337315d6f39fb", null ],
-    [ "GetId", "a00235.html#afe91df10487c8745ce4d06fe3dd2af8b", null ],
-    [ "GetParentId", "a00235.html#a58755b59e1c46e162411d0677b27a61b", null ],
-    [ "GetPosition", "a00235.html#a28f8281425696dab4956788acbb1d76f", null ]
+    [ "GetCount", "a00235.html#a79bad819e3756478477a430821e9e575", null ],
+    [ "GetItem", "a00235.html#aca2deef5aed3e1e4598c290ecf48b812", null ],
+    [ "LoadFromFile", "a00235.html#af08a2b241ca5445b4ea24ae91393d66b", null ],
+    [ "Remove", "a00235.html#aac2aa044e6bea3eabf721822e5a28663", null ]
 ];

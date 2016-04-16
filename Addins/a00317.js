@@ -1,4 +1,5 @@
 var a00317 =
 [
-    [ "GetValue", "a00317.html#ab9df7cd2a4ce6c85d794dded60d911c1", null ]
+    [ "ServiceProvider", "a00317.html#a9655295867a66190485a61a568947b25", null ],
+    [ "GetDte", "a00317.html#a7076c9166c6a30245972ccddbabb6cfd", null ]
 ];

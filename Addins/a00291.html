@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс model::ProcessTasks</title>
+<title>Addins: Класс core::utilities::execute::CppCheck::Platform</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3684 Architecture: x86.32 Build: 14:22 09 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,95 +112,46 @@ $(document).ready(function(){initNavTree('a00291.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01960.html">Полный список членов класса</a>  </div>
+<a href="a01909.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс model::ProcessTasks<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01429.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01431.html">Model</a></div></div>  </div>
+<div class="title">Класс core::utilities::execute::CppCheck::Platform</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Класс-обертка для манипуляции задачами, находящимися в процессе работы.  
+<p>Класс для формирования флага платформы.  
  <a href="a00291.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00812_source.html">ProcessTasks.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01111_source.html">CppCheck.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:model::ProcessTasks:</div>
+Граф связей класса core::utilities::execute::CppCheck::Platform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01961.png" border="0" usemap="#model_1_1_process_tasks_inherit__map" alt="Inheritance graph"/></div>
-<map name="model_1_1_process_tasks_inherit__map" id="model_1_1_process_tasks_inherit__map">
-<area shape="rect" id="node2" href="a00153.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс, содержащий общую логику манипуляции списком задач..." alt="" coords="79,315,244,466"/>
-<area shape="rect" id="node4" href="a00238.html" title="Класс входит в Проект ProjectTasks &#160;&#160;&quot;Суммарный&quot; интерфейсный класс одной задачи. ..." alt="" coords="107,189,215,267"/>
-<area shape="rect" id="node6" href="a00234.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для чтения данных о задаче. " alt="" coords="5,20,149,127"/>
-<area shape="rect" id="node8" href="a00244.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для изменения данных задачи. " alt="" coords="174,5,316,141"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса model::ProcessTasks:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01962.png" border="0" usemap="#model_1_1_process_tasks_coll__map" alt="Collaboration graph"/></div>
-<map name="model_1_1_process_tasks_coll__map" id="model_1_1_process_tasks_coll__map">
-<area shape="rect" id="node2" href="a00153.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс, содержащий общую логику манипуляции списком задач..." alt="" coords="215,438,380,589"/>
-<area shape="rect" id="node4" href="a00238.html" title="Класс входит в Проект ProjectTasks &#160;&#160;&quot;Суммарный&quot; интерфейсный класс одной задачи. ..." alt="" coords="107,244,215,321"/>
-<area shape="rect" id="node6" href="a00234.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для чтения данных о задаче. " alt="" coords="5,20,149,127"/>
-<area shape="rect" id="node8" href="a00244.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для изменения данных задачи. " alt="" coords="174,5,316,141"/>
-<area shape="rect" id="node10" href="a00239.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для списка всех задач. " alt="" coords="239,193,445,373"/>
-</map>
+<div class="center"><img src="a01910.png" border="0" usemap="#core_1_1utilities_1_1execute_1_1_cpp_check_1_1_platform_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a1d86f3a04c1bc4f29c078859c76ddb13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d86f3a04c1bc4f29c078859c76ddb13"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00291.html#a1d86f3a04c1bc4f29c078859c76ddb13">GetRootTaskId</a> (void) const  override</td></tr>
-<tr class="memdesc:a1d86f3a04c1bc4f29c078859c76ddb13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи. <br /></td></tr>
-<tr class="separator:a1d86f3a04c1bc4f29c078859c76ddb13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a00153"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00153')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00153.html">model::CommonTasks</a></td></tr>
-<tr class="memitem:afeba688b04973f79e12fb396fbc1a7d7 inherit pub_methods_a00153"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeba688b04973f79e12fb396fbc1a7d7"></a>
-ChildTasks_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#afeba688b04973f79e12fb396fbc1a7d7">GetChildTasks</a> (size_t) const  override</td></tr>
-<tr class="memdesc:afeba688b04973f79e12fb396fbc1a7d7 inherit pub_methods_a00153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка дочерних задач для указанной задачи. <br /></td></tr>
-<tr class="separator:afeba688b04973f79e12fb396fbc1a7d7 inherit pub_methods_a00153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bcc53d830c4a7c15dd2819de493afa4 inherit pub_methods_a00153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#a7bcc53d830c4a7c15dd2819de493afa4">SetData</a> (size_t, const <a class="el" href="a00309.html">RawDataTask_t</a> &amp;) override</td></tr>
-<tr class="memdesc:a7bcc53d830c4a7c15dd2819de493afa4 inherit pub_methods_a00153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения данных текущей задачи.  <a href="#a7bcc53d830c4a7c15dd2819de493afa4">Подробнее...</a><br /></td></tr>
-<tr class="separator:a7bcc53d830c4a7c15dd2819de493afa4 inherit pub_methods_a00153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a619ad189b7492640009b61006aa0320f inherit pub_methods_a00153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#a619ad189b7492640009b61006aa0320f">SetParent</a> (size_t, size_t) override</td></tr>
-<tr class="memdesc:a619ad189b7492640009b61006aa0320f inherit pub_methods_a00153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция переноса текущей задачи в другую родительскую задачу.  <a href="#a619ad189b7492640009b61006aa0320f">Подробнее...</a><br /></td></tr>
-<tr class="separator:a619ad189b7492640009b61006aa0320f inherit pub_methods_a00153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b733cf7729d3a56cb17d43098a78be2 inherit pub_methods_a00153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#a5b733cf7729d3a56cb17d43098a78be2">SetPosition</a> (size_t, size_t) override</td></tr>
-<tr class="memdesc:a5b733cf7729d3a56cb17d43098a78be2 inherit pub_methods_a00153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения позиции текущей задачи.  <a href="#a5b733cf7729d3a56cb17d43098a78be2">Подробнее...</a><br /></td></tr>
-<tr class="separator:a5b733cf7729d3a56cb17d43098a78be2 inherit pub_methods_a00153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fdc0cd2234a257cfcf32e0aaca5f0f5 inherit pub_methods_a00153"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#a5fdc0cd2234a257cfcf32e0aaca5f0f5">CreateChild</a> (size_t) override</td></tr>
-<tr class="memdesc:a5fdc0cd2234a257cfcf32e0aaca5f0f5 inherit pub_methods_a00153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления дочерней задачи для указанной.  <a href="#a5fdc0cd2234a257cfcf32e0aaca5f0f5">Подробнее...</a><br /></td></tr>
-<tr class="separator:a5fdc0cd2234a257cfcf32e0aaca5f0f5 inherit pub_methods_a00153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pub_attribs_a00234"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_a00234')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="a00234.html">model::IReadTask</a></td></tr>
-<tr class="memitem:a9444372a28d6fd34dda9f8b192964c4f inherit pub_attribs_a00234"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9444372a28d6fd34dda9f8b192964c4f"></a>
-::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">ITask</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00234.html#a9444372a28d6fd34dda9f8b192964c4f">Changed</a></td></tr>
-<tr class="memdesc:a9444372a28d6fd34dda9f8b192964c4f inherit pub_attribs_a00234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должен быть активирован, если изменения требуют обновления представления. <br /></td></tr>
-<tr class="separator:a9444372a28d6fd34dda9f8b192964c4f inherit pub_attribs_a00234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2fb4d077ae8d67751e678c9ea2473d6"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00291.html#ae2fb4d077ae8d67751e678c9ea2473d6">ToCommandLine</a> (void) const </td></tr>
+<tr class="memdesc:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования числового значения флагов в строку для передачи <a class="el" href="a00158.html" title="Класс входит в Проект Execute   Класс для обработки папки программой CppCheck. ">CppCheck</a> в качестве параметров командной строки. <br /></td></tr>
+<tr class="separator:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13578a09c2e689167fe7aa0121fbda80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13578a09c2e689167fe7aa0121fbda80"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00291.html#a13578a09c2e689167fe7aa0121fbda80">ToLog</a> (void) const </td></tr>
+<tr class="memdesc:a13578a09c2e689167fe7aa0121fbda80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования числового значения флагов в строку для записи в лог результата обработки. <br /></td></tr>
+<tr class="separator:a13578a09c2e689167fe7aa0121fbda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Класс-обертка для манипуляции задачами, находящимися в процессе работы. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>26 Март 2016 <br />
- 31 Март 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+<div class="textblock"><p>Класс для формирования флага платформы. </p>
 </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/<a class="el" href="a00812_source.html">ProcessTasks.hpp</a></li>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/ProcessTasks.cpp</li>
+<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a01111_source.html">CppCheck.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Execute/Execute/CppCheck.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00291.html">ProcessTasks</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 9 Апр 2016 14:22:38. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00158.html">CppCheck</a></li><li class="navelem"><a class="el" href="a00291.html">Platform</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

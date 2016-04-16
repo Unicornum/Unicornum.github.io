@@ -1,8 +1,8 @@
 var a00221 =
 [
-    [ "DoProcess", "a00221.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
-    [ "GetData", "a00221.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
-    [ "GetData", "a00221.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
-    [ "GetDevelopmentInfo", "a00221.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
-    [ "GetViewTitle", "a00221.html#a3b23716ff60787c927b882a9cc3e9774", null ]
+    [ "AddSeparator", "a00221.html#a055f644ab11bb7d8e2cc878f495ede6d", null ],
+    [ "Destroy", "a00221.html#a499ff96a414a23b007ccc70d4f84d058", null ],
+    [ "Insert", "a00221.html#aa80213278810b829985fed792ea8620a", null ],
+    [ "MoveToChildMenuFromCurrent", "a00221.html#a35e624f04a60c1987deece1eee132526", null ],
+    [ "MoveToChildMenuFromRoot", "a00221.html#aef42df975494de0a0eff4980bf18c44d", null ]
 ];

@@ -1,5 +1,5 @@
 var a00364 =
 [
-    [ "GetCaption", "a00364.html#a213b05e1e799977867081656e3936a23", null ],
-    [ "IsEnabled", "a00364.html#a787eec667e45ffc550976b3f6651a27d", null ]
+    [ "GetCount", "a00364.html#aa154e70c4f4beb10408ebd7639ddd71e", null ],
+    [ "GetElement", "a00364.html#aa3d0f9502c74d80fa41f920314db0f81", null ]
 ];

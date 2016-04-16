@@ -1,4 +1,5 @@
 var a00291 =
 [
-    [ "GetRootTaskId", "a00291.html#a1d86f3a04c1bc4f29c078859c76ddb13", null ]
+    [ "ToCommandLine", "a00291.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
+    [ "ToLog", "a00291.html#a13578a09c2e689167fe7aa0121fbda80", null ]
 ];

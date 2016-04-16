@@ -1,7 +1,6 @@
 var a00218 =
 [
-    [ "Delete", "a00218.html#ae43a87cdefe0422bdd5864edfcbe3323", null ],
-    [ "GetCaption", "a00218.html#aea0ec3fe92a34c4017f2542f008e9d6d", null ],
-    [ "GetStatus", "a00218.html#af65e439fdefe385b09fe963017bf1a70", null ],
-    [ "GetUniqueName", "a00218.html#a64e57a2e969aa1416318e2b4e3f501a6", null ]
+    [ "OnConnection", "a00218.html#a8723f5919cae8f803dbd65acdf053c7b", null ],
+    [ "OnDisconnection", "a00218.html#a59c192bafe270ada9ccbb6b010250869", null ],
+    [ "OnTextChanged", "a00218.html#aff48aedbb4df92b606305a6916d94376", null ]
 ];

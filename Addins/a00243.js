@@ -1,6 +1,6 @@
 var a00243 =
 [
-    [ "SetRegexString", "a00243.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
-    [ "SetSourceStrings", "a00243.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
-    [ "UpdateView", "a00243.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
+    [ "BeginUpdate", "a00243.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
+    [ "CreateRoot", "a00243.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
+    [ "EndUpdate", "a00243.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
 ];
