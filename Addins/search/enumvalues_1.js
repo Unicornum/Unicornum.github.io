@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['editable',['Editable',['../a00168.html#a1aff9703315ef9c956efe99cb62bf994ab296339eb0880b0ce95e5082f6f63c49',1,'support::DataTask']]]
+  ['completed',['Completed',['../a00168.html#a1aff9703315ef9c956efe99cb62bf994a3a004d40b90d1e25db7faa05ed115045',1,'support::DataTask']]],
+  ['createchild',['CreateChild',['../a00168.html#a1aff9703315ef9c956efe99cb62bf994a37ea3f85969618b25d9a8a0f69cdaab2',1,'support::DataTask']]]
 ];

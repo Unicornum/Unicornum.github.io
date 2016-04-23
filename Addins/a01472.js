@@ -1,50 +1,30 @@
 var a01472 =
 [
-    [ "AllSolutionsDevelopmentInfo", "a00122.html", [
-      [ "AllSolutionsDevelopmentInfo", "a00122.html#af512f9fe956cfda7584810405f55efd5", null ],
-      [ "GetInfo", "a00122.html#afe483a78ad91e5c5da6335541826d2d0", null ],
-      [ "GetSolutionNames", "a00122.html#aaff3e129923c9a89b74db985074774f6", null ],
-      [ "UpdateTime", "a00122.html#a020351d1edcb9700d2db5cbc407186d7", null ]
+    [ "Generated", "a01460.html", "a01460" ],
+    [ "AppFrame", "a00125.html", null ],
+    [ "HtmlAbout", "a00211.html", [
+      [ "HtmlAbout", "a00211.html#a0ece9e7b3d79e5fa87a4367b51bf81fd", null ]
     ] ],
-    [ "Calendar", "a00133.html", [
-      [ "Calendar", "a00133.html#a71050fe9e0a7215ccfc3f7183c5dce7e", null ],
-      [ "Calendar", "a00133.html#a1881a04d3dad63eab273d6c026a6a3c6", null ],
-      [ "GetDayOfWeek", "a00133.html#a75870ed2d3f52004fa903255341288b3", null ],
-      [ "GetLastDayOfWeek", "a00133.html#a33cfd4cafe5da7161dde10edbab1c8f4", null ],
-      [ "GetWeekNumber", "a00133.html#a7e31ab8bba770881b6037f6b3267e772", null ]
+    [ "HtmlHelper", "a00212.html", null ],
+    [ "HtmlResultBuilder", "a00213.html", [
+      [ "Build", "a00213.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
+      [ "BuildSourceStringInfo", "a00213.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
     ] ],
-    [ "DevelopmentInfo", "a00171.html", [
-      [ "DevelopmentInfo", "a00171.html#a5ac298e8a44deed591d98ad58817e30e", null ],
-      [ "GetTime", "a00171.html#aa800105019a059d761e719d62cfb984e", null ],
-      [ "ReadFrom", "a00171.html#a37f24adf400bf01b396c7ba7cfae56d4", null ],
-      [ "UpdateTime", "a00171.html#a3d8e7bb0dea6850d7a22ebad00c53793", null ],
-      [ "WriteTo", "a00171.html#ad5956ef6784bd16e944e9959aef591f9", null ]
+    [ "PanelMatch", "a00288.html", [
+      [ "SetProcessedData", "a00288.html#acf07909284b3dcc712fd11ecb8bc6496", null ]
     ] ],
-    [ "HotKey", "a00210.html", [
-      [ "GetText", "a00210.html#a8bdc01456ffd2dfae59dab106e12b12e", null ]
+    [ "PanelReplace", "a00289.html", [
+      [ "GetReplaceString", "a00289.html#a672429326859357fdab4692dbfbacbef", null ],
+      [ "SetProcessedData", "a00289.html#a133c64c63a2004726817884ea2e59ab8", null ]
     ] ],
-    [ "ProjectTasksData", "a00300.html", null ],
-    [ "SolutionDevelopmentInfo", "a00321.html", [
-      [ "SolutionDevelopmentInfo", "a00321.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
-      [ "GetInfo", "a00321.html#a61bd18745090e834f86393cbd0ed38fe", null ],
-      [ "UpdateTime", "a00321.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
+    [ "PanelSearch", "a00290.html", [
+      [ "SetProcessedData", "a00290.html#a4e19adf4e3c5d667257250ebd0866583", null ]
     ] ],
-    [ "Text", "a00351.html", null ],
-    [ "Version", "a00373.html", [
-      [ "Version", "a00373.html#a31304e9556465f37545d36852be5392d", null ],
-      [ "GetProductDescription", "a00373.html#afd6ca8691760681740a474ebf497d267", null ],
-      [ "GetSolutionName", "a00373.html#aa5a8221093a344e9ec78066f1da9573d", null ],
-      [ "IncrementSubsubversion", "a00373.html#ade73e972a6e2db1bfdd106235a7c3786", null ],
-      [ "IncrementSubversion", "a00373.html#a8274c1a153e65bc33d67f0e170d99389", null ],
-      [ "IncrementVersion", "a00373.html#a0911f654f086797fb2d54526b7f21169", null ],
-      [ "Save", "a00373.html#a9529ad8ad8894cfa099aac9f7d7d054a", null ],
-      [ "SetRevisionSolution", "a00373.html#ae2ec138e3a05a43dfe65e243c8b783d8", null ],
-      [ "ToString", "a00373.html#ab3c0efc5b695d5f93045bcc5363a6dfd", null ]
-    ] ],
-    [ "Data", "a00164.html", null ],
-    [ "VersionResource", "a00375.html", [
-      [ "VersionResource", "a00375.html#a4f80a6608fed4a60903a4196431c632a", null ],
-      [ "Generate", "a00375.html#a6d209b353d950ff590eadd3fc4f28c35", null ]
-    ] ],
-    [ "COM_CALL", "a01472.html#ga6b1065cd0ff6737bb18d2fb8dbfc6eb2", null ]
+    [ "PanelView", "a00291.html", [
+      [ "GetRegexString", "a00291.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
+      [ "GetReplaceString", "a00291.html#ab265e215ef659098f37618b48281f08e", null ],
+      [ "GetSourseStrings", "a00291.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
+      [ "SetRegexString", "a00291.html#a53e9b7ec5a5357405275d2478965dca1", null ],
+      [ "SetSourceStrings", "a00291.html#a315df15379a49155b32aa8526047ed7b", null ]
+    ] ]
 ];

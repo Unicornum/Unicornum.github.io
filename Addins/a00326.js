@@ -1,5 +1,8 @@
 var a00326 =
 [
-    [ "operator[]", "a00326.html#a83bd33be7f97dff72c030d7f612a9688", null ],
-    [ "operator[]", "a00326.html#a16022abff37528a4226be0f9d6be91b7", null ]
+    [ "AfterClosing", "a00326.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
+    [ "BeforeClosing", "a00326.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
+    [ "Opened", "a00326.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
+    [ "ProjectAdded", "a00326.html#a1729654adb306bca37aa34a328e3ebdd", null ],
+    [ "ProjectRemoved", "a00326.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
 ];

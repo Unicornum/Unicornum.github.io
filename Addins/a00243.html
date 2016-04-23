@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::ITasksPanel</title>
+<title>Addins: Класс view::ITaskPanelMain</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,71 +111,52 @@ $(document).ready(function(){initNavTree('a00243.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a02022.html">Полный список членов класса</a>  </div>
+<a href="a02032.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::ITasksPanel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01454.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01458.html">View</a></div></div>  </div>
+<div class="title">Класс view::ITaskPanelMain<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01462.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01466.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс панели, содержащей список панелей отдельных задач.  
+ Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях.  
  <a href="a00243.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00833_source.html">ITasksPanel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00838_source.html">ITaskPanelMain.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::ITasksPanel:</div>
+Граф наследования:view::ITaskPanelMain:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02023.png" border="0" usemap="#view_1_1_i_tasks_panel_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_tasks_panel_inherit__map" id="view_1_1_i_tasks_panel_inherit__map">
-<area shape="rect" id="node3" href="a00215.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс для интерфейса панели завершенных задач..." alt="" coords="15,176,217,253"/>
-<area shape="rect" id="node7" href="a00231.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс для интерфейса панели задач, находящихся в процессе работы. " alt="" coords="249,176,441,253"/>
-<area shape="rect" id="node5" href="a00347.html" title="{view::TasksPanel\&lt; IComplete\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="5,301,221,437"/>
-<area shape="rect" id="node9" href="a00347.html" title="{view::TasksPanel\&lt; IProcess\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="246,301,452,437"/>
+<div class="center"><img src="a02033.png" border="0" usemap="#view_1_1_i_task_panel_main_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_i_task_panel_main_inherit__map" id="view_1_1_i_task_panel_main_inherit__map">
+<area shape="rect" id="node3" href="a00340.html" title="Class TaskPanel. " alt="" coords="5,235,232,415"/>
+<area shape="rect" id="node5" href="a00339.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс панели одной задачи. " alt="" coords="5,465,232,703"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::ITasksPanel:</div>
+Граф связей класса view::ITaskPanelMain:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02024.png" border="0" usemap="#view_1_1_i_tasks_panel_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02034.png" border="0" usemap="#view_1_1_i_task_panel_main_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_i_task_panel_main_coll__map" id="view_1_1_i_task_panel_main_coll__map">
+</map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b573f4e5f8b8471589cf411ea5fe4f1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#a4b573f4e5f8b8471589cf411ea5fe4f1">BeginUpdate</a> (void)=0</td></tr>
-<tr class="memdesc:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция начала обновления панели задач (должна вызываться перед началом создания дочерних элементов общей панели). <br /></td></tr>
-<tr class="separator:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc27a730e3d270a9ff89dd381b67de1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc27a730e3d270a9ff89dd381b67de1d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#afc27a730e3d270a9ff89dd381b67de1d">EndUpdate</a> (void)=0</td></tr>
-<tr class="memdesc:afc27a730e3d270a9ff89dd381b67de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция завершения обновления панели задач (должна вызываться после завершения создания дочерних элементов общей панели). <br /></td></tr>
-<tr class="separator:afc27a730e3d270a9ff89dd381b67de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae309b84e8011dc63d4ec043404dcd7be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae309b84e8011dc63d4ec043404dcd7be"></a>
-virtual <a class="el" href="a00248.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00243.html#ae309b84e8011dc63d4ec043404dcd7be">CreateRoot</a> (void)=0</td></tr>
-<tr class="memdesc:ae309b84e8011dc63d4ec043404dcd7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания панели корневой задачи. <br /></td></tr>
-<tr class="separator:ae309b84e8011dc63d4ec043404dcd7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс панели, содержащей список панелей отдельных задач. </p>
+ Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
- 04 Апрель 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>21 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00833_source.html">ITasksPanel.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00838_source.html">ITaskPanelMain.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00243.html">ITasksPanel</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:06. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00243.html">ITaskPanelMain</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

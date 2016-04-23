@@ -1,7 +1,10 @@
 var a01467 =
 [
-    [ "Prefatory", "a00292.html", [
-      [ "GetLogProgress", "a00292.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
-      [ "Process", "a00292.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
+    [ "Controller", "a01468.html", "a01468" ],
+    [ "Model", "a01469.html", "a01469" ],
+    [ "Support", "a01470.html", "a01470" ],
+    [ "View", "a01471.html", "a01471" ],
+    [ "Main", "a00255.html", [
+      [ "OnInit", "a00255.html#a9dc4643506187278287c80ba4e5df438", null ]
     ] ]
 ];

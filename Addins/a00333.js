@@ -1,5 +1,5 @@
 var a00333 =
 [
-    [ "SvnInfo", "a00333.html#afbe6155b781c22ca9970f58db8ba04db", null ],
-    [ "GetRevision", "a00333.html#a4f6216fcd912a1b4216ae5587ce17827", null ]
+    [ "operator=", "a00333.html#adb712b65047472ac48342b15e7145e68", null ],
+    [ "SetText", "a00333.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
 ];

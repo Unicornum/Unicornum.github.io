@@ -1,30 +1,25 @@
 var a01465 =
 [
-    [ "Generated", "a01453.html", "a01453" ],
-    [ "AppFrame", "a00125.html", null ],
-    [ "HtmlAbout", "a00211.html", [
-      [ "HtmlAbout", "a00211.html#a0ece9e7b3d79e5fa87a4367b51bf81fd", null ]
+    [ "DataTask", "a00168.html", [
+      [ "AllowedFlags", "a00168.html#a1aff9703315ef9c956efe99cb62bf994", [
+        [ "Editable", "a00168.html#a1aff9703315ef9c956efe99cb62bf994ab296339eb0880b0ce95e5082f6f63c49", null ],
+        [ "CreateChild", "a00168.html#a1aff9703315ef9c956efe99cb62bf994a37ea3f85969618b25d9a8a0f69cdaab2", null ],
+        [ "Completed", "a00168.html#a1aff9703315ef9c956efe99cb62bf994a3a004d40b90d1e25db7faa05ed115045", null ],
+        [ "BlockCompleted", "a00168.html#a1aff9703315ef9c956efe99cb62bf994a643b4b773985c35190cf993d5c455bc8", null ]
+      ] ],
+      [ "GetId", "a00168.html#a5af54aba6054ade4288df300b4747c48", null ],
+      [ "Is", "a00168.html#a1e27c0b5db8bd70adf5298e50e47dc56", null ],
+      [ "To", "a00168.html#aff285a7e21a4c497e71c8a61c4a37d6a", null ],
+      [ "To", "a00168.html#a691262cf2fe5bef7f91cfc1e90d442f5", null ]
     ] ],
-    [ "HtmlHelper", "a00212.html", null ],
-    [ "HtmlResultBuilder", "a00213.html", [
-      [ "Build", "a00213.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
-      [ "BuildSourceStringInfo", "a00213.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
+    [ "RawDataTask", "a00314.html", null ],
+    [ "Task", "a00338.html", [
+      [ "Task", "a00338.html#ac75c69d7af04e37adb7479ebbd8d6a01", null ],
+      [ "ReadDataFrom", "a00338.html#a828606eadccc2469c6b308d439d37f1b", null ],
+      [ "SetData", "a00338.html#a3e47428fe92345f802ba1d2bf7586789", null ],
+      [ "WriteDataTo", "a00338.html#aedf20aaba899f8b08c767d0f371de944", null ]
     ] ],
-    [ "PanelMatch", "a00285.html", [
-      [ "SetProcessedData", "a00285.html#acf07909284b3dcc712fd11ecb8bc6496", null ]
-    ] ],
-    [ "PanelReplace", "a00286.html", [
-      [ "GetReplaceString", "a00286.html#a672429326859357fdab4692dbfbacbef", null ],
-      [ "SetProcessedData", "a00286.html#a133c64c63a2004726817884ea2e59ab8", null ]
-    ] ],
-    [ "PanelSearch", "a00287.html", [
-      [ "SetProcessedData", "a00287.html#a4e19adf4e3c5d667257250ebd0866583", null ]
-    ] ],
-    [ "PanelView", "a00288.html", [
-      [ "GetRegexString", "a00288.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
-      [ "GetReplaceString", "a00288.html#ab265e215ef659098f37618b48281f08e", null ],
-      [ "GetSourseStrings", "a00288.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
-      [ "SetRegexString", "a00288.html#a53e9b7ec5a5357405275d2478965dca1", null ],
-      [ "SetSourceStrings", "a00288.html#a315df15379a49155b32aa8526047ed7b", null ]
+    [ "TaskType", "a00351.html", [
+      [ "TaskType", "a00351.html#a371b74b9588cb6443dbc9ca100caf5b6", null ]
     ] ]
 ];

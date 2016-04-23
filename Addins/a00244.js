@@ -1,6 +1,8 @@
 var a00244 =
 [
-    [ "SetDevelopmentInfo", "a00244.html#a63d80cbe8e7536b4608e870371394d25", null ],
-    [ "SetTitle", "a00244.html#a7e74984281cd804f6e835ff317d48ae6", null ],
-    [ "DoUpdate", "a00244.html#a67150deb963bc35daf58985e5c9e478d", null ]
+    [ "GetText", "a00244.html#a82edf752ec3b33465d3ea64394ba6c91", null ],
+    [ "GetType", "a00244.html#a1551b18e50cfe6c08e35025cd79d62df", null ],
+    [ "IsChecked", "a00244.html#aa45e264cea03175160b9ea5397772255", null ],
+    [ "IsEditAvailable", "a00244.html#a96b3866059aca0d1eff944c5ec734706", null ],
+    [ "ShowPanel", "a00244.html#aeb3a4e2d3810e06cfc6e8f54150726d4", null ]
 ];

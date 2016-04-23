@@ -1,5 +1,5 @@
 var a00334 =
 [
-    [ "Tag", "a00334.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
-    [ "GetCaption", "a00334.html#a21ce3a76b5870765f7b503b4318f4df8", null ]
+    [ "Advise", "a00334.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
+    [ "Unadvise", "a00334.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
 ];

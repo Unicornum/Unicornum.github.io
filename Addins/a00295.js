@@ -1,4 +1,5 @@
 var a00295 =
 [
-    [ "LocatedInDoubleFolderProjectName", "a00295.html#a29c9b253f399f7ef8f9f98f93da9aa8c", null ]
+    [ "GetLogProgress", "a00295.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
+    [ "Process", "a00295.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::utilities::vs::LoggerProxy</title>
+<title>Addins: Класс view::IWriteTaskPanel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,52 +112,123 @@ $(document).ready(function(){initNavTree('a00251.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01938.html">Полный список членов класса</a>  </div>
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="a02053.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::vs::LoggerProxy<div class="ingroups"><a class="el" href="a01447.html">Core</a> &raquo; <a class="el" href="a01473.html">Utilities</a> &raquo; <a class="el" href="a01471.html">Logger</a></div></div>  </div>
+<div class="title">Класс view::IWriteTaskPanel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01462.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01466.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
- Прокси-класс для записи сообщения в выводное окно Visual Studio.  
+<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Интерфейсный класс представления для получения данных из модели задачи.  
  <a href="a00251.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01126_source.html">LoggerProxy.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00842_source.html">IWriteTaskPanel.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса core::utilities::vs::LoggerProxy:</div>
+Граф наследования:view::IWriteTaskPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01939.png" border="0" usemap="#core_1_1utilities_1_1vs_1_1_logger_proxy_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02054.png" border="0" usemap="#view_1_1_i_write_task_panel_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_i_write_task_panel_inherit__map" id="view_1_1_i_write_task_panel_inherit__map">
+<area shape="rect" id="node3" href="a00344.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс, реализующий интерфейс получения данных за..." alt="" coords="38,190,199,429"/>
+<area shape="rect" id="node5" href="a00339.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс панели одной задачи. " alt="" coords="5,478,232,717"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса view::IWriteTaskPanel:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02055.png" border="0" usemap="#view_1_1_i_write_task_panel_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_i_write_task_panel_coll__map" id="view_1_1_i_write_task_panel_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a17780b4769971be6e974544f47de2085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17780b4769971be6e974544f47de2085"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a17780b4769971be6e974544f47de2085">operator=</a> (const <a class="el" href="a00265.html">Message</a> &amp;_Message)</td></tr>
-<tr class="memdesc:a17780b4769971be6e974544f47de2085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод текста сообщения в выводное окно Visual Studio. <br /></td></tr>
-<tr class="separator:a17780b4769971be6e974544f47de2085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a517383520f8e761bb7317640ba7bb0aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00251.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a517383520f8e761bb7317640ba7bb0aa">CreateChild</a> (const <a class="el" href="a00168.html">Data_t</a> &amp;_Data, bool _IsExistsChilsTasks)=0</td></tr>
+<tr class="memdesc:a517383520f8e761bb7317640ba7bb0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания дочерней панели.  <a href="#a517383520f8e761bb7317640ba7bb0aa">Подробнее...</a><br /></td></tr>
+<tr class="separator:a517383520f8e761bb7317640ba7bb0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a569b97ff58cd75118b3dc23f685a007a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a569b97ff58cd75118b3dc23f685a007a"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a569b97ff58cd75118b3dc23f685a007a">ChangedData</a></td></tr>
+<tr class="memdesc:a569b97ff58cd75118b3dc23f685a007a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:a569b97ff58cd75118b3dc23f685a007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87f8f4b0d4f18613db3a486006cec2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa87f8f4b0d4f18613db3a486006cec2f"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#aa87f8f4b0d4f18613db3a486006cec2f">ChangedParent</a></td></tr>
+<tr class="memdesc:aa87f8f4b0d4f18613db3a486006cec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:aa87f8f4b0d4f18613db3a486006cec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e48ab48fbd8ea4d0f92fedf3bfc71cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e48ab48fbd8ea4d0f92fedf3bfc71cd"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a7e48ab48fbd8ea4d0f92fedf3bfc71cd">ChangedPosition</a></td></tr>
+<tr class="memdesc:a7e48ab48fbd8ea4d0f92fedf3bfc71cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:a7e48ab48fbd8ea4d0f92fedf3bfc71cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e1d23b6e327df602037a291ac1d637e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1d23b6e327df602037a291ac1d637e"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a2e1d23b6e327df602037a291ac1d637e">CreateChildTask</a></td></tr>
+<tr class="memdesc:a2e1d23b6e327df602037a291ac1d637e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
+<tr class="separator:a2e1d23b6e327df602037a291ac1d637e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
- Прокси-класс для записи сообщения в выводное окно Visual Studio. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Интерфейсный класс представления для получения данных из модели задачи. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>07 Январь 2015 <br />
- 06 Июнь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a01126_source.html">LoggerProxy.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Logger/Logger/LoggerProxy.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a517383520f8e761bb7317640ba7bb0aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="a00251.html">IWriteTaskPanel</a>* view::IWriteTaskPanel::CreateChild </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00168.html">Data_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsExistsChilsTasks</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция создания дочерней панели. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Данные задачи для текущей панели. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsExistsChilsTasks</td><td>Признак того, что у текущей задачи есть дочерние подзадачи. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00842_source.html">IWriteTaskPanel.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00251.html">LoggerProxy</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:06. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00251.html">IWriteTaskPanel</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

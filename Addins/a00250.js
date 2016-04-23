@@ -1,5 +1,7 @@
 var a00250 =
 [
-    [ "GetCount", "a00250.html#ac8eff1a845371263bb0176e42652a1ea", null ],
-    [ "operator[]", "a00250.html#a8fd9683edcdba66018fbc2a36b976f02", null ]
+    [ "CreateChild", "a00250.html#ae7b9d569abe192b02d467ab20ed80da0", null ],
+    [ "SetData", "a00250.html#ac7a9fc49923472292827a665e1caba96", null ],
+    [ "SetParent", "a00250.html#aa08f809f970cdb73f473f0012aa5404d", null ],
+    [ "SetPosition", "a00250.html#ae14200ab3f9667789e460dc116d05f0c", null ]
 ];

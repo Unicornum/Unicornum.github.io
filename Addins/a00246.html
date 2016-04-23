@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::IWrite</title>
+<title>Addins: Класс view::ITasksPanel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3784 Architecture: x86.32 Build: 12:04 16 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,176 +112,72 @@ $(document).ready(function(){initNavTree('a00246.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pub-attribs">Открытые атрибуты</a> &#124;
-<a href="a02031.html">Полный список членов класса</a>  </div>
+<a href="a02041.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::IWrite<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01459.html">RegexTester</a> &raquo; <a class="el" href="a01463.html">View</a></div></div>  </div>
+<div class="title">Класс view::ITasksPanel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01462.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01466.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00045.html">Проект RegexTester</a> <br />
- Интерфейс для записи данных модели в объект представления.  
+<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Интерфейсный класс панели, содержащей список панелей отдельных задач.  
  <a href="a00246.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00870_source.html">IWrite.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00841_source.html">ITasksPanel.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::IWrite:</div>
+Граф наследования:view::ITasksPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02032.png" border="0" usemap="#view_1_1_i_write_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_write_inherit__map" id="view_1_1_i_write_inherit__map">
-<area shape="rect" id="node3" href="a00244.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Интерфейсный класс представления. " alt="" coords="521,160,703,267"/>
-<area shape="rect" id="node5" href="a00288.html" title="{wx::PanelView\&lt; BasePanel\lMatchSearch \&gt;\n||+ GetRegexString()\l+ GetReplaceString()\l+ GetSourseStrings()\l+ SetRegexString()\l+ SetSourceStrings()\l+ Copy()\l+ Paste()\l+ CopyToCpp()\l+ PasteFromCpp()\l+ SelectAll()\l+ PanelView()\l# OnActive()\l# OnRegexChanged()\l# OnRMouseUp()\l# OnSourceStringsChanged()\l}" alt="" coords="152,315,368,613"/>
-<area shape="rect" id="node11" href="a00288.html" title="{wx::PanelView\&lt; BasePanel\lReplace \&gt;\n||+ GetRegexString()\l+ GetReplaceString()\l+ GetSourseStrings()\l+ SetRegexString()\l+ SetSourceStrings()\l+ Copy()\l+ Paste()\l+ CopyToCpp()\l+ PasteFromCpp()\l+ SelectAll()\l+ PanelView()\l# OnActive()\l# OnRegexChanged()\l# OnRMouseUp()\l# OnSourceStringsChanged()\l}" alt="" coords="392,315,608,613"/>
-<area shape="rect" id="node15" href="a00174.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Класс реализации интерфейса представления. " alt="" coords="633,396,815,532"/>
-<area shape="rect" id="node17" href="a00288.html" title="Класс входит в Проект RegexTester &#160;&#160;Базовый класс панелей главного tabctrl&#39;a окна программы..." alt="" coords="840,323,1056,605"/>
-<area shape="rect" id="node7" href="a00285.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для совпадения..." alt="" coords="5,677,173,769"/>
-<area shape="rect" id="node9" href="a00287.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для поиска..." alt="" coords="198,677,367,769"/>
-<area shape="rect" id="node13" href="a00286.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс панели создания регулярного выражения для замены..." alt="" coords="413,662,587,783"/>
+<div class="center"><img src="a02042.png" border="0" usemap="#view_1_1_i_tasks_panel_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_i_tasks_panel_inherit__map" id="view_1_1_i_tasks_panel_inherit__map">
+<area shape="rect" id="node3" href="a00215.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс для интерфейса панели завершенных задач..." alt="" coords="15,176,217,253"/>
+<area shape="rect" id="node7" href="a00231.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс для интерфейса панели задач, находящихся в процессе работы. " alt="" coords="249,176,441,253"/>
+<area shape="rect" id="node5" href="a00349.html" title="{view::TasksPanel\&lt; IComplete\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="5,301,221,437"/>
+<area shape="rect" id="node9" href="a00349.html" title="{view::TasksPanel\&lt; IProcess\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="246,301,452,437"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::IWrite:</div>
+Граф связей класса view::ITasksPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02033.png" border="0" usemap="#view_1_1_i_write_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02043.png" border="0" usemap="#view_1_1_i_tasks_panel_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_i_tasks_panel_coll__map" id="view_1_1_i_tasks_panel_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:af5040b0aa0f465bb367c6d7b3b827132"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#af5040b0aa0f465bb367c6d7b3b827132">SetRegexString</a> (const String_t &amp;)=0</td></tr>
-<tr class="memdesc:af5040b0aa0f465bb367c6d7b3b827132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления регулярного выражения.  <a href="#af5040b0aa0f465bb367c6d7b3b827132">Подробнее...</a><br /></td></tr>
-<tr class="separator:af5040b0aa0f465bb367c6d7b3b827132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40111fbde225b3bce8aa1b4ac7c7586f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#a40111fbde225b3bce8aa1b4ac7c7586f">SetSourceStrings</a> (const Strings_t &amp;)=0</td></tr>
-<tr class="memdesc:a40111fbde225b3bce8aa1b4ac7c7586f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления списка обрабатываемых строк.  <a href="#a40111fbde225b3bce8aa1b4ac7c7586f">Подробнее...</a><br /></td></tr>
-<tr class="separator:a40111fbde225b3bce8aa1b4ac7c7586f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Открытые атрибуты</h2></td></tr>
-<tr class="memitem:a8c80e0235b8dd5fbf242595f6d1911e5"><td class="memItemLeft" align="right" valign="top">boost::signals2::signal&lt; void(<a class="el" href="a00246.html">IWrite</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#a8c80e0235b8dd5fbf242595f6d1911e5">UpdateView</a></td></tr>
-<tr class="memdesc:a8c80e0235b8dd5fbf242595f6d1911e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала для обновления объекта представления.  <a href="#a8c80e0235b8dd5fbf242595f6d1911e5">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8c80e0235b8dd5fbf242595f6d1911e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b573f4e5f8b8471589cf411ea5fe4f1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#a4b573f4e5f8b8471589cf411ea5fe4f1">BeginUpdate</a> (void)=0</td></tr>
+<tr class="memdesc:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция начала обновления панели задач (должна вызываться перед началом создания дочерних элементов общей панели). <br /></td></tr>
+<tr class="separator:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc27a730e3d270a9ff89dd381b67de1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc27a730e3d270a9ff89dd381b67de1d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#afc27a730e3d270a9ff89dd381b67de1d">EndUpdate</a> (void)=0</td></tr>
+<tr class="memdesc:afc27a730e3d270a9ff89dd381b67de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция завершения обновления панели задач (должна вызываться после завершения создания дочерних элементов общей панели). <br /></td></tr>
+<tr class="separator:afc27a730e3d270a9ff89dd381b67de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae309b84e8011dc63d4ec043404dcd7be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae309b84e8011dc63d4ec043404dcd7be"></a>
+virtual <a class="el" href="a00251.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html#ae309b84e8011dc63d4ec043404dcd7be">CreateRoot</a> (void)=0</td></tr>
+<tr class="memdesc:ae309b84e8011dc63d4ec043404dcd7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания панели корневой задачи. <br /></td></tr>
+<tr class="separator:ae309b84e8011dc63d4ec043404dcd7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00045.html">Проект RegexTester</a> <br />
- Интерфейс для записи данных модели в объект представления. </p>
-<ul>
-<li>Используется при запуске программы.</li>
-<li>Поскольку при запуске программы активны будут вкладка Match и 'Исходные строки', функции передачи других параметров не нужны.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Интерфейсный класс панели, содержащей список панелей отдельных задач. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>27 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
+ 04 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="af5040b0aa0f465bb367c6d7b3b827132"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void view::IWrite::SetRegexString </td>
-          <td>(</td>
-          <td class="paramtype">const String_t &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция передачи объекту представления регулярного выражения. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00288.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView&lt; TPanel &gt;</a>, <a class="el" href="a00288.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView&lt; BasePanelReplace &gt;</a> и <a class="el" href="a00288.html#a53e9b7ec5a5357405275d2478965dca1">wx::PanelView&lt; BasePanelMatchSearch &gt;</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a40111fbde225b3bce8aa1b4ac7c7586f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void view::IWrite::SetSourceStrings </td>
-          <td>(</td>
-          <td class="paramtype">const Strings_t &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция передачи объекту представления списка обрабатываемых строк. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a00288.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView&lt; TPanel &gt;</a>, <a class="el" href="a00288.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView&lt; BasePanelReplace &gt;</a> и <a class="el" href="a00288.html#a315df15379a49155b32aa8526047ed7b">wx::PanelView&lt; BasePanelMatchSearch &gt;</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Данные класса</h2>
-<a class="anchor" id="a8c80e0235b8dd5fbf242595f6d1911e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::signals2::signal&lt;void(<a class="el" href="a00246.html">IWrite</a> *)&gt; view::IWrite::UpdateView</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Объект сигнала для обновления объекта представления. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/View/<a class="el" href="a00870_source.html">IWrite.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00841_source.html">ITasksPanel.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00246.html">IWrite</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 16 Апр 2016 12:05:06. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00246.html">ITasksPanel</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

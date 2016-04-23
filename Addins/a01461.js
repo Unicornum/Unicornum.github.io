@@ -1,28 +1,16 @@
 var a01461 =
 [
-    [ "Common", "a00152.html", [
-      [ "DoProcess", "a00152.html#a0abb8e6669ac19141bc9a1b86216df97", null ]
+    [ "IView", "a00247.html", [
+      [ "SetDevelopmentInfo", "a00247.html#a63d80cbe8e7536b4608e870371394d25", null ],
+      [ "SetTitle", "a00247.html#a7e74984281cd804f6e835ff317d48ae6", null ],
+      [ "DoUpdate", "a00247.html#a67150deb963bc35daf58985e5c9e478d", null ]
     ] ],
-    [ "Data", "a00166.html", [
-      [ "RegexString", "a00166.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
-      [ "ReplaceString", "a00166.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
-      [ "SourceStrings", "a00166.html#a5b43bb718b3729c19bada2c831ca2297", null ]
+    [ "MainFrame", "a00259.html", null ],
+    [ "Diagram", "a00173.html", [
+      [ "Diagram", "a00173.html#af091b9b2c247243c974efba350e3302f", null ]
     ] ],
-    [ "IModel", "a00222.html", [
-      [ "DoProcess", "a00222.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
-      [ "GetData", "a00222.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
-      [ "GetData", "a00222.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
-      [ "GetDevelopmentInfo", "a00222.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
-      [ "GetViewTitle", "a00222.html#a3b23716ff60787c927b882a9cc3e9774", null ]
-    ] ],
-    [ "Match", "a00261.html", [
-      [ "DoLocalProcess", "a00261.html#a395819a068d121a79711847d46e59dc3", null ]
-    ] ],
-    [ "Model", "a00267.html", null ],
-    [ "Replace", "a00313.html", [
-      [ "DoLocalProcess", "a00313.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f", null ]
-    ] ],
-    [ "Search", "a00315.html", [
-      [ "DoLocalProcess", "a00315.html#a338d994f833f48fd5597d859c40e57c6", null ]
+    [ "DiagramPanel", "a00174.html", [
+      [ "SetDevelopmentInfo", "a00174.html#a20f0ac69c37e60daca70507a341fed0e", null ],
+      [ "SetTitle", "a00174.html#a6296ed6866b435b03a1a1de9db3916c9", null ]
     ] ]
 ];

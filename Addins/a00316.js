@@ -1,4 +1,4 @@
 var a00316 =
 [
-    [ "GetValue", "a00316.html#a32784c24a459077a88242235c5c059a5", null ]
+    [ "DoLocalProcess", "a00316.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f", null ]
 ];

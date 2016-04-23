@@ -1,6 +1,4 @@
 var a00283 =
 [
-    [ "Clear", "a00283.html#a7f32188bd28308199e9f40df6b04418f", null ],
-    [ "operator=", "a00283.html#ac61901bfd8f5b4ad761f64ac5650cfb5", null ],
-    [ "OutputString", "a00283.html#ae8bc67c8ce5e1a7d9214a7a0f6f15afe", null ]
+    [ "GetCaption", "a00283.html#a2018302a43e1093f0a2e1e9fb47f7ca5", null ]
 ];

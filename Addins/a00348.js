@@ -1,6 +1,11 @@
 var a00348 =
 [
-    [ "GetCaption", "a00348.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
-    [ "GetPictureId", "a00348.html#a746b515d057c24d1da8a4ae132cdb72e", null ],
-    [ "IsEnabled", "a00348.html#ad020704272b8e116a3a4ee92f48ee449", null ]
+    [ "TaskPanelText", "a00348.html#a753ae492d184021fa87c6a914fa260e4", null ],
+    [ "EditModeOff", "a00348.html#a3242753759027ff0a673c42fe1a4a797", null ],
+    [ "EditModeOn", "a00348.html#a71448539913d00f0d7cc06b6dc10be2d", null ],
+    [ "GetText", "a00348.html#a97419ac6961199a04cb2a72b7a5c3d41", null ],
+    [ "GetType", "a00348.html#aa6bc4b00c5d597007ce39c7179670a71", null ],
+    [ "IsChecked", "a00348.html#a38eba13ac81a062cc96287e52a3f3625", null ],
+    [ "IsEditAvailable", "a00348.html#afc87f99baf76d17c993d39d9b038a0b1", null ],
+    [ "ShowPanel", "a00348.html#ae7fb875ba4a263cc5f2b22c1f7a97c1c", null ]
 ];

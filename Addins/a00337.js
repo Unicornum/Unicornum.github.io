@@ -1,5 +1,5 @@
 var a00337 =
 [
-    [ "TaskPanel", "a00337.html#ab7e0cf73a171c8627313d05b9b54bcc0", null ],
-    [ "TaskPanel", "a00337.html#aabd94343178651e48d5645a50cdbaf95", null ]
+    [ "Tag", "a00337.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
+    [ "GetCaption", "a00337.html#a21ce3a76b5870765f7b503b4318f4df8", null ]
 ];

@@ -31,11 +31,14 @@ var searchData=
   ['isolution',['ISolution',['../a00239.html',1,'wrappers::helper']]],
   ['itagvalue',['ITagValue',['../a00240.html',1,'core::useful_commands::vs::tags']]],
   ['itask',['ITask',['../a00241.html',1,'model']]],
-  ['itaskpaneltext',['ITaskPanelText',['../a00242.html',1,'view']]],
-  ['itaskspanel',['ITasksPanel',['../a00243.html',1,'view']]],
-  ['iview',['IView',['../a00244.html',1,'view']]],
-  ['iviewimpl',['IViewImpl',['../a00245.html',1,'view']]],
-  ['iwrite',['IWrite',['../a00246.html',1,'view']]],
-  ['iwritetask',['IWriteTask',['../a00247.html',1,'model']]],
-  ['iwritetaskpanel',['IWriteTaskPanel',['../a00248.html',1,'view']]]
+  ['itaskpaneldata',['ITaskPanelData',['../a00242.html',1,'view']]],
+  ['itaskpanelmain',['ITaskPanelMain',['../a00243.html',1,'view']]],
+  ['itaskpanelreaddata',['ITaskPanelReadData',['../a00244.html',1,'view']]],
+  ['itaskpanelwritedata',['ITaskPanelWriteData',['../a00245.html',1,'view']]],
+  ['itaskspanel',['ITasksPanel',['../a00246.html',1,'view']]],
+  ['iview',['IView',['../a00247.html',1,'view']]],
+  ['iviewimpl',['IViewImpl',['../a00248.html',1,'view']]],
+  ['iwrite',['IWrite',['../a00249.html',1,'view']]],
+  ['iwritetask',['IWriteTask',['../a00250.html',1,'model']]],
+  ['iwritetaskpanel',['IWriteTaskPanel',['../a00251.html',1,'view']]]
 ];

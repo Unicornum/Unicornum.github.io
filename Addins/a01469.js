@@ -1,25 +1,28 @@
 var a01469 =
 [
-    [ "CppCheck", "a00158.html", [
-      [ "Platform", "a00291.html", [
-        [ "ToCommandLine", "a00291.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
-        [ "ToLog", "a00291.html#a13578a09c2e689167fe7aa0121fbda80", null ]
-      ] ],
-      [ "Quick", "a00310.html", null ],
-      [ "Standart", "a00329.html", null ],
-      [ "CppCheck", "a00158.html#a134da6a575e7d70f51d2de7332b461fe", null ],
-      [ "Check", "a00158.html#adc469aac4a6f9ccc91ea6dd754de90ac", null ],
-      [ "GetLogProgress", "a00158.html#a25281b25adf41f6dd46387f38b68703f", null ]
+    [ "Common", "a00152.html", [
+      [ "DoProcess", "a00152.html#a0abb8e6669ac19141bc9a1b86216df97", null ]
     ] ],
-    [ "Doxygen", "a00196.html", [
-      [ "GetLogProgress", "a00196.html#a7cfb5d0a3e528d578215c812e4832be6", null ]
+    [ "Data", "a00166.html", [
+      [ "RegexString", "a00166.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
+      [ "ReplaceString", "a00166.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
+      [ "SourceStrings", "a00166.html#a5b43bb718b3729c19bada2c831ca2297", null ]
     ] ],
-    [ "Main", "a00254.html", null ],
-    [ "Svn", "a00332.html", [
-      [ "Export", "a00332.html#afa2e65f599adc03536740b78ccd9c07b", null ]
+    [ "IModel", "a00222.html", [
+      [ "DoProcess", "a00222.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
+      [ "GetData", "a00222.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
+      [ "GetData", "a00222.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
+      [ "GetDevelopmentInfo", "a00222.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
+      [ "GetViewTitle", "a00222.html#a3b23716ff60787c927b882a9cc3e9774", null ]
     ] ],
-    [ "SvnInfo", "a00333.html", [
-      [ "SvnInfo", "a00333.html#afbe6155b781c22ca9970f58db8ba04db", null ],
-      [ "GetRevision", "a00333.html#a4f6216fcd912a1b4216ae5587ce17827", null ]
+    [ "Match", "a00264.html", [
+      [ "DoLocalProcess", "a00264.html#a395819a068d121a79711847d46e59dc3", null ]
+    ] ],
+    [ "Model", "a00270.html", null ],
+    [ "Replace", "a00316.html", [
+      [ "DoLocalProcess", "a00316.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f", null ]
+    ] ],
+    [ "Search", "a00318.html", [
+      [ "DoLocalProcess", "a00318.html#a338d994f833f48fd5597d859c40e57c6", null ]
     ] ]
 ];
