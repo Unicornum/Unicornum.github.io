@@ -1,4 +1,5 @@
 var a00146 =
 [
-    [ "operator[]", "a00146.html#a501bc4c117f8d23ba18e1227fb407c33", null ]
+    [ "AddPopup", "a00146.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
+    [ "GetCount", "a00146.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
 ];

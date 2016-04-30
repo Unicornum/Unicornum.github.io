@@ -1,5 +1,4 @@
 var a00368 =
 [
-    [ "GetCount", "a00368.html#aa154e70c4f4beb10408ebd7639ddd71e", null ],
-    [ "GetElement", "a00368.html#aa3d0f9502c74d80fa41f920314db0f81", null ]
+    [ "PROPERTY_GET", "a00368.html#acb05dc04e57109da1e88a63bb94099e0", null ]
 ];

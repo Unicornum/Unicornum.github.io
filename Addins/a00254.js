@@ -1,4 +1,6 @@
 var a00254 =
 [
-    [ "operator=", "a00254.html#a17780b4769971be6e974544f47de2085", null ]
+    [ "SetRegexString", "a00254.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
+    [ "SetSourceStrings", "a00254.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
+    [ "UpdateView", "a00254.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
 ];

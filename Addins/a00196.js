@@ -1,4 +1,4 @@
 var a00196 =
 [
-    [ "GetLogProgress", "a00196.html#a7cfb5d0a3e528d578215c812e4832be6", null ]
+    [ "GetRootId", "a00196.html#a0d7cfd967b4417c9e229efe0dbf02396", null ]
 ];

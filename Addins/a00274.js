@@ -1,4 +1,4 @@
 var a00274 =
 [
-    [ "GetCaption", "a00274.html#a85bf15cdc6c504c9e960b2b206dcc32a", null ]
+    [ "Mfc", "a00274.html#ad89207b74c4b8aa29181a95831be33bf", null ]
 ];

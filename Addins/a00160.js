@@ -1,6 +1,9 @@
 var a00160 =
 [
-    [ "GetCaption", "a00160.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
-    [ "GetPictureId", "a00160.html#a1f1d44ed835b9b589b2f383cff9f5d88", null ],
-    [ "IsEnabled", "a00160.html#a006eca46887e662789831772b0c5107a", null ]
+    [ "Platform", "a00299.html", "a00299" ],
+    [ "Quick", "a00319.html", null ],
+    [ "Standart", "a00339.html", null ],
+    [ "CppCheck", "a00160.html#a134da6a575e7d70f51d2de7332b461fe", null ],
+    [ "Check", "a00160.html#adc469aac4a6f9ccc91ea6dd754de90ac", null ],
+    [ "GetLogProgress", "a00160.html#a25281b25adf41f6dd46387f38b68703f", null ]
 ];

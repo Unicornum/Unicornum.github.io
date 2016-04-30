@@ -1,5 +1,8 @@
 var a00227 =
 [
-    [ "GetCaption", "a00227.html#a90513db30e85b2866071d8a5abf187df", null ],
-    [ "IsEnabled", "a00227.html#a0a0b0a135d365446336a91f41cb7a9ca", null ]
+    [ "DoProcess", "a00227.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
+    [ "GetData", "a00227.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
+    [ "GetData", "a00227.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
+    [ "GetDevelopmentInfo", "a00227.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
+    [ "GetViewTitle", "a00227.html#a3b23716ff60787c927b882a9cc3e9774", null ]
 ];

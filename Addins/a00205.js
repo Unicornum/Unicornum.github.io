@@ -1,5 +1,5 @@
 var a00205 =
 [
-    [ "Extension", "a00205.html#a23dca7dbea79d03e8a1e07487ff79748", null ],
-    [ "SetData", "a00205.html#adf110a3b0a2e7ddbb561951cbee050e6", null ]
+    [ "Check", "a00205.html#af8fb249031ba9971d14e04253923eb95", null ],
+    [ "GetProgress", "a00205.html#a4aa17f92cd40b98df93522aae5bd26eb", null ]
 ];

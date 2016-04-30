@@ -1,4 +1,6 @@
 var a00331 =
 [
-    [ "GetValue", "a00331.html#ade427871f1f9f26069f7b884fca8f0c1", null ]
+    [ "SolutionDevelopmentInfo", "a00331.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
+    [ "GetInfo", "a00331.html#a61bd18745090e834f86393cbd0ed38fe", null ],
+    [ "UpdateTime", "a00331.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
 ];

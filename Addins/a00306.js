@@ -1,8 +1,7 @@
 var a00306 =
 [
-    [ "GetCount", "a00306.html#a84deda4da0dee63d4649e716530fa40a", null ],
-    [ "LoadFromFile", "a00306.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee", null ],
-    [ "operator[]", "a00306.html#ad72225ba2b4463641376cf898ed3601b", null ],
-    [ "operator[]", "a00306.html#a8ca988ed57b6e781a9ea5f82e6a00373", null ],
-    [ "Remove", "a00306.html#acf74f6d63cbd4f8cb649ebf3404117db", null ]
+    [ "Add", "a00306.html#a59fdfdd7d7ff5afafe5d649ecb0e9192", null ],
+    [ "operator[]", "a00306.html#a5b71846ab44f62e1ec8f435172b972c0", null ],
+    [ "operator[]", "a00306.html#a2dbc8a80d89c833cefefbcb6ef068b88", null ],
+    [ "operator[]", "a00306.html#a8d5dc2d1f8379a71ee129f897f8899e8", null ]
 ];

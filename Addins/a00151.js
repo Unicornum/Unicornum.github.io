@@ -1,6 +1,7 @@
 var a00151 =
 [
-    [ "GetCaption", "a00151.html#a6d00d75983e24e3816bd5ca377139746", null ],
-    [ "GetHotKey", "a00151.html#a827a32ffbd7cc8a9ab2f5c0b130cd917", null ],
-    [ "IsEnabled", "a00151.html#a3b921ee882fc84f1e68ad73a4ad345a3", null ]
+    [ "Add", "a00151.html#a89618778c2a8b30d4a8b0b743acd667d", null ],
+    [ "Clear", "a00151.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
+    [ "GetSize", "a00151.html#a2a85a0531e1896a6097f74726fe12666", null ],
+    [ "operator[]", "a00151.html#acc4485b00f993ff3ea45a6662e28c7af", null ]
 ];

@@ -1,4 +1,5 @@
 var a00207 =
 [
-    [ "GetValue", "a00207.html#aa0d65182ef65f2ea80e5e3d0d95d528b", null ]
+    [ "Extension", "a00207.html#a23dca7dbea79d03e8a1e07487ff79748", null ],
+    [ "SetData", "a00207.html#adf110a3b0a2e7ddbb561951cbee050e6", null ]
 ];

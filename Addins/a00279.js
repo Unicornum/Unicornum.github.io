@@ -1,4 +1,4 @@
 var a00279 =
 [
-    [ "IsEnabled", "a00279.html#a5a4026226486a3fe367b7f908cf0beb8", null ]
+    [ "GetCaption", "a00279.html#a85bf15cdc6c504c9e960b2b206dcc32a", null ]
 ];

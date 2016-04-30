@@ -1,5 +1,5 @@
 var a00294 =
 [
-    [ "ToCommandLine", "a00294.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
-    [ "ToLog", "a00294.html#a13578a09c2e689167fe7aa0121fbda80", null ]
+    [ "GetReplaceString", "a00294.html#a672429326859357fdab4692dbfbacbef", null ],
+    [ "SetProcessedData", "a00294.html#a133c64c63a2004726817884ea2e59ab8", null ]
 ];

@@ -1,5 +1,8 @@
 var a00333 =
 [
-    [ "operator=", "a00333.html#adb712b65047472ac48342b15e7145e68", null ],
-    [ "SetText", "a00333.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
+    [ "AfterClosing", "a00333.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
+    [ "BeforeClosing", "a00333.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
+    [ "Opened", "a00333.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
+    [ "ProjectAdded", "a00333.html#a1729654adb306bca37aa34a328e3ebdd", null ],
+    [ "ProjectRemoved", "a00333.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Шаблон класса wrappers::helper::ImplPtr&lt; TInterface &gt;</title>
+<title>Addins: Класс connection_points::IExtension</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 4040 Architecture: x86.32 Build: 11:23 30 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,50 +111,70 @@ $(document).ready(function(){initNavTree('a00223.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02088.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01673.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса wrappers::helper::ImplPtr&lt; TInterface &gt;</div>  </div>
+<div class="title">Класс connection_points::IExtension<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00089.html">Проект Helper</a> <br />
- Вспомогательный класс для построения специализаций шаблонного класса <a class="el" href="a00309.html" title="Класс входит в Проект Helper   Шаблон класса для связывания воедино исходного класса, его интерфейса и реализации этого интерфейса. ">Proxy</a>.  
+<p>Класс входит в <a class="el" href="a00012.html">Проект Common</a> <br />
+ Интерфейс модулей расширений.  
  <a href="a00223.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01167_source.html">ImplPtr.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00523_source.html">IExtension.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса wrappers::helper::ImplPtr&lt; TInterface &gt;:</div>
+Граф наследования:connection_points::IExtension:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02089.png" border="0" usemap="#wrappers_1_1helper_1_1_impl_ptr_3_01_t_interface_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1helper_1_1_impl_ptr_3_01_t_interface_01_4_coll__map" id="wrappers_1_1helper_1_1_impl_ptr_3_01_t_interface_01_4_coll__map">
+<div class="center"><img src="a01674.png" border="0" usemap="#connection__points_1_1_i_extension_inherit__map" alt="Inheritance graph"/></div>
+<map name="connection__points_1_1_i_extension_inherit__map" id="connection__points_1_1_i_extension_inherit__map">
+<area shape="rect" id="node3" href="a00207.html" title="Класс входит в Проект Support &#160;&#160;Базовый класс всех объектов расширений для Visual Studio..." alt="" coords="5,190,179,311"/>
+<area shape="rect" id="node5" href="a00367.html" title="Класс входит в Проект TimeTracker &#160;&#160;Главный класс модуля. " alt="" coords="13,360,171,496"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса connection_points::IExtension:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01675.png" border="0" usemap="#connection__points_1_1_i_extension_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8723f5919cae8f803dbd65acdf053c7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8723f5919cae8f803dbd65acdf053c7b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html#a8723f5919cae8f803dbd65acdf053c7b">OnConnection</a> (void)=0</td></tr>
+<tr class="memdesc:a8723f5919cae8f803dbd65acdf053c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция будет вызываться при запуске IDE, причем в том момент, когда основной объект среды разработки уже может быть получен. <br /></td></tr>
+<tr class="separator:a8723f5919cae8f803dbd65acdf053c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c192bafe270ada9ccbb6b010250869"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59c192bafe270ada9ccbb6b010250869"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html#a59c192bafe270ada9ccbb6b010250869">OnDisconnection</a> (void)=0</td></tr>
+<tr class="memdesc:a59c192bafe270ada9ccbb6b010250869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция будет вызываться при завершении работы IDE. <br /></td></tr>
+<tr class="separator:a59c192bafe270ada9ccbb6b010250869"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff48aedbb4df92b606305a6916d94376"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff48aedbb4df92b606305a6916d94376"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00223.html#aff48aedbb4df92b606305a6916d94376">OnTextChanged</a> (void)=0</td></tr>
+<tr class="memdesc:aff48aedbb4df92b606305a6916d94376"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция будет вызываться при изменении текста документа. <br /></td></tr>
+<tr class="separator:aff48aedbb4df92b606305a6916d94376"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TInterface&gt;<br />
-class wrappers::helper::ImplPtr&lt; TInterface &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00089.html">Проект Helper</a> <br />
- Вспомогательный класс для построения специализаций шаблонного класса <a class="el" href="a00309.html" title="Класс входит в Проект Helper   Шаблон класса для связывания воедино исходного класса, его интерфейса и реализации этого интерфейса. ">Proxy</a>. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00012.html">Проект Common</a> <br />
+ Интерфейс модулей расширений. </p>
 <ul>
-<li>Параметр шаблона - используемый интерфейс.</li>
-<li>От этого класса должен наследоваться класс конкретной специализации шаблона <a class="el" href="a00309.html" title="Класс входит в Проект Helper   Шаблон класса для связывания воедино исходного класса, его интерфейса и реализации этого интерфейса. ">Proxy</a>.</li>
+<li>Предполагается, что будет одна точка подключения к кокретной IDE, которая будет подгружать отдельные модули (построенные как dll) и запрашивать у них объект этого интерфейса.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>07 Май 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>10 Февраль 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Wrappers/Helper/Helper/<a class="el" href="a01167_source.html">ImplPtr.hpp</a></li>
+<li>Solution/Solution/ConnectionPoints/Common/Common/<a class="el" href="a00523_source.html">IExtension.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>helper</b></li><li class="navelem"><a class="el" href="a00223.html">ImplPtr</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:23. Создано системой
+    <li class="navelem"><b>connection_points</b></li><li class="navelem"><a class="el" href="a00223.html">IExtension</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Апр 2016 11:23:47. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

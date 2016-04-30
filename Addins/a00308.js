@@ -1,6 +1,7 @@
 var a00308 =
 [
-    [ "SearchForFullPath", "a00308.html#ac85a4ff36109083a4286198e318fb850", null ],
-    [ "WasFoundNext", "a00308.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
-    [ "WasNoFound", "a00308.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
+    [ "Add", "a00308.html#a0012b4e75c23ff1d15dd20b015c382f8", null ],
+    [ "GetActiveProject", "a00308.html#ab65c3c5fd33d48525282e5a2ee117845", null ],
+    [ "GetCount", "a00308.html#ad3a9bb60ba293784d8c7babbc45aba70", null ],
+    [ "GetProject", "a00308.html#a226a79cb9b399e8d95c23e8c339a979c", null ]
 ];

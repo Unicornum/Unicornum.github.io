@@ -1,5 +1,7 @@
 var a00213 =
 [
-    [ "Build", "a00213.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
-    [ "BuildSourceStringInfo", "a00213.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
+    [ "History", "a00213.html#a47ab8759ebf82b5a8c14eef5c210164e", null ],
+    [ "AddMessage", "a00213.html#a37cf4c9b74efd747f5ec62187f2e3c36", null ],
+    [ "AddSection", "a00213.html#a0fede224139df2360c6cfa617e95d64a", null ],
+    [ "AddSubsection", "a00213.html#ab75530fa4d54f3acc33b7a2fdbe6ec11", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс SolutionEvents</title>
+<title>Addins: Класс wrappers::vs::ServiceProvider</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 4040 Architecture: x86.32 Build: 11:23 30 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,121 +112,172 @@ $(document).ready(function(){initNavTree('a00326.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01612.html">Полный список членов класса</a>  </div>
+<a href="a02272.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс SolutionEvents</div>  </div>
+<div class="title">Класс wrappers::vs::ServiceProvider<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00022.html">Проект Properties</a> <br />
- Класс, содержащий функции, которые будут вызываться при возникновении событий решения.  
+<p>Класс входит в <a class="el" href="a00102.html">Проект Ide</a> <br />
+ Класс-обертка для IServiceProvider.  
  <a href="a00326.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00698_source.html">SolutionEvents.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:SolutionEventsImpl_t.</p>
+<p><code>#include &lt;<a class="el" href="a01335_source.html">ServiceProvider.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса SolutionEvents:</div>
+Граф наследования:wrappers::vs::ServiceProvider:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01613.png" border="0" usemap="#_solution_events_coll__map" alt="Collaboration graph"/></div>
-<map name="_solution_events_coll__map" id="_solution_events_coll__map">
+<div class="center"><img src="a02273.png" border="0" usemap="#wrappers_1_1vs_1_1_service_provider_inherit__map" alt="Inheritance graph"/></div>
+<map name="wrappers_1_1vs_1_1_service_provider_inherit__map" id="wrappers_1_1vs_1_1_service_provider_inherit__map">
+<area shape="rect" id="node2" href="a00127.html" title="{wrappers::vs::Base\l\&lt; IServiceProvider \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="37,6,195,186"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса wrappers::vs::ServiceProvider:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02274.png" border="0" usemap="#wrappers_1_1vs_1_1_service_provider_coll__map" alt="Collaboration graph"/></div>
+<map name="wrappers_1_1vs_1_1_service_provider_coll__map" id="wrappers_1_1vs_1_1_service_provider_coll__map">
+<area shape="rect" id="node2" href="a00127.html" title="{wrappers::vs::Base\l\&lt; IServiceProvider \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="37,6,195,186"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a37ab7699805a19a8e22a902f21d1bc10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37ab7699805a19a8e22a902f21d1bc10"></a>
-void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html#a37ab7699805a19a8e22a902f21d1bc10">Opened</a> (void)</td></tr>
-<tr class="memdesc:a37ab7699805a19a8e22a902f21d1bc10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается сразу после открытия решения. <br /></td></tr>
-<tr class="separator:a37ab7699805a19a8e22a902f21d1bc10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92b82a0ee9f577e8d879eada4c611a3b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92b82a0ee9f577e8d879eada4c611a3b"></a>
-void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html#a92b82a0ee9f577e8d879eada4c611a3b">AfterClosing</a> (void)</td></tr>
-<tr class="memdesc:a92b82a0ee9f577e8d879eada4c611a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается сразу после закрытия решения. <br /></td></tr>
-<tr class="separator:a92b82a0ee9f577e8d879eada4c611a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b7a290c5f3fcba26b4b07e056a7320"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21b7a290c5f3fcba26b4b07e056a7320"></a>
-void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html#a21b7a290c5f3fcba26b4b07e056a7320">BeforeClosing</a> (void)</td></tr>
-<tr class="memdesc:a21b7a290c5f3fcba26b4b07e056a7320"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается непосредственно перед закрытием решения. <br /></td></tr>
-<tr class="separator:a21b7a290c5f3fcba26b4b07e056a7320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1729654adb306bca37aa34a328e3ebdd"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html#a1729654adb306bca37aa34a328e3ebdd">ProjectAdded</a> (EnvDTE::Project *)</td></tr>
-<tr class="memdesc:a1729654adb306bca37aa34a328e3ebdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается после загрузки проекта.  <a href="#a1729654adb306bca37aa34a328e3ebdd">Подробнее...</a><br /></td></tr>
-<tr class="separator:a1729654adb306bca37aa34a328e3ebdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a681cdac782a42019aa3b83ab8508d4ac"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html#a681cdac782a42019aa3b83ab8508d4ac">ProjectRemoved</a> (EnvDTE::Project *)</td></tr>
-<tr class="memdesc:a681cdac782a42019aa3b83ab8508d4ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается перед выгрузкой проекта.  <a href="#a681cdac782a42019aa3b83ab8508d4ac">Подробнее...</a><br /></td></tr>
-<tr class="separator:a681cdac782a42019aa3b83ab8508d4ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7076c9166c6a30245972ccddbabb6cfd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00201.html">DTE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html#a7076c9166c6a30245972ccddbabb6cfd">GetDte</a> (void) const </td></tr>
+<tr class="memdesc:a7076c9166c6a30245972ccddbabb6cfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения объекта <a class="el" href="a00201.html" title="Класс входит в Проект Ide   Класс-обертка для EnvDTE80::DTE2. ">DTE</a>.  <a href="#a7076c9166c6a30245972ccddbabb6cfd">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7076c9166c6a30245972ccddbabb6cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9655295867a66190485a61a568947b25"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a9655295867a66190485a61a568947b25"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00326.html#a9655295867a66190485a61a568947b25">ServiceProvider</a> (T *, const CString &amp;=_T(&quot;Unknown&quot;))</td></tr>
+<tr class="memdesc:a9655295867a66190485a61a568947b25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a9655295867a66190485a61a568947b25">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9655295867a66190485a61a568947b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_a00127"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00127')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00127.html">wrappers::vs::Base&lt; IServiceProvider &gt;</a></td></tr>
+<tr class="memitem:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bd20844e7332406932787c9b5b852d"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00127.html#af8bd20844e7332406932787c9b5b852d">GetName</a> (void) const</td></tr>
+<tr class="memdesc:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта. <br /></td></tr>
+<tr class="separator:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36588f576db9d1dd86e5ae158a165c3"></a>
+<a class="el" href="a00267.html">Service::MakeProxy</a>&lt; TReturn, IServiceProvider &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00127.html#ae36588f576db9d1dd86e5ae158a165c3">Make</a> (void) const</td></tr>
+<tr class="memdesc:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t. <br /></td></tr>
+<tr class="separator:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42cc94ed152690a3fe262eec788ef191"></a>
+<a class="el" href="a00267.html">Service::MakeProxy</a>&lt; void *, IServiceProvider &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00127.html#a42cc94ed152690a3fe262eec788ef191">Make</a> (void) const</td></tr>
+<tr class="memdesc:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t, не возвращающих значения. <br /></td></tr>
+<tr class="separator:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_a00127"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_a00127')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="a00127.html">wrappers::vs::Base&lt; IServiceProvider &gt;</a></td></tr>
+<tr class="memitem:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00127"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c540555a66a709a4f21f9bfc3e8dbf5"></a>
+static <a class="el" href="a00267.html">Service::MakeProxy</a>&lt; TReturn, TSource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00127.html#a6c540555a66a709a4f21f9bfc3e8dbf5">Make</a> (TSource *_pSource)</td></tr>
+<tr class="memdesc:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций прототипов. <br /></td></tr>
+<tr class="separator:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00022.html">Проект Properties</a> <br />
- Класс, содержащий функции, которые будут вызываться при возникновении событий решения. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00102.html">Проект Ide</a> <br />
+ Класс-обертка для IServiceProvider. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>20 Июль 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>09 Февраль 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a1729654adb306bca37aa34a328e3ebdd"></a>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a9655295867a66190485a61a568947b25"></a>
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void __stdcall SolutionEvents::ProjectAdded </td>
+          <td class="memname">wrappers::vs::ServiceProvider::ServiceProvider </td>
           <td>(</td>
-          <td class="paramtype">EnvDTE::Project *&#160;</td>
-          <td class="paramname"><em>_pProject</em></td><td>)</td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>_pVSPackage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_VersionAddin</em> = <code>_T(&quot;Unknown&quot;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Функция вызывается после загрузки проекта. </p>
-<p>Вызывается:</p><ul>
-<li>При создании нового проекта.</li>
-<li>При подключении существующего проекта (вручную или надстройкой).</li>
-<li>При загрузке проектов для папки решения.</li>
-<li>VS2013: для каждого проекта при загрузке решения.</li>
+<p>Конструктор класса. </p>
+<ul>
+<li>Предназначен для получения объекта IServiceProvider из указателя на главный объект VSPackage.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_pProject</td><td>Указатель на объект проекта, который загружается. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pVSPackage</td><td>Исходное значение. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_VersionAddin</td><td>Строка версии текущего расширения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a681cdac782a42019aa3b83ab8508d4ac"></a>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a7076c9166c6a30245972ccddbabb6cfd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void __stdcall SolutionEvents::ProjectRemoved </td>
+          <td class="memname"><a class="el" href="a00201.html">wrappers::vs::DTE</a> ServiceProvider::GetDte </td>
           <td>(</td>
-          <td class="paramtype">EnvDTE::Project *&#160;</td>
+          <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Функция вызывается перед выгрузкой проекта. </p>
-<p>Вызывается:</p><ul>
-<li>При удалении проекта.</li>
-<li>При выгрузке проектов из папки решения. </li>
+<p>Функция получения объекта <a class="el" href="a00201.html" title="Класс входит в Проект Ide   Класс-обертка для EnvDTE80::DTE2. ">DTE</a>. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
 </ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/ConnectionPoints/VisualStudio/Properties/Properties/<a class="el" href="a00698_source.html">SolutionEvents.hpp</a></li>
-<li>Solution/Solution/ConnectionPoints/VisualStudio/Properties/Properties/SolutionEvents.cpp</li>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/<a class="el" href="a01335_source.html">ServiceProvider.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/ServiceProvider.cpp</li>
+<li>Solution/Solution/Wrappers/VisualStudio/Ide/Ide/ServiceProvider.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a00326.html">SolutionEvents</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:21. Создано системой
+    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00326.html">ServiceProvider</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Апр 2016 11:23:49. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

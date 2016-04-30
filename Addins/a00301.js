@@ -1,7 +1,6 @@
 var a00301 =
 [
-    [ "Add", "a00301.html#a36221e7e62e513d7f679bb45e402de50", null ],
-    [ "GetActiveProject", "a00301.html#a3aa622ac93631a3da290e143e3f76d1e", null ],
-    [ "GetCount", "a00301.html#a925525848df48b2ee54238b191a101ed", null ],
-    [ "GetProject", "a00301.html#a7404a7dbb0a703c19129e29124d62e17", null ]
+    [ "Groups", "a00301.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+    [ "IsInvalidRegex", "a00301.html#ab125412a0bd7cfe6eec463b740827942", null ],
+    [ "Result", "a00301.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
 ];

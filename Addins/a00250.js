@@ -1,7 +1,6 @@
 var a00250 =
 [
-    [ "CreateChild", "a00250.html#ae7b9d569abe192b02d467ab20ed80da0", null ],
-    [ "SetData", "a00250.html#ac7a9fc49923472292827a665e1caba96", null ],
-    [ "SetParent", "a00250.html#aa08f809f970cdb73f473f0012aa5404d", null ],
-    [ "SetPosition", "a00250.html#ae14200ab3f9667789e460dc116d05f0c", null ]
+    [ "Initialyze", "a00250.html#a225ddd8e35b2e40a8810acab3754590a", null ],
+    [ "SetText", "a00250.html#af3300ee5c79838bd9c650935395161ae", null ],
+    [ "SetType", "a00250.html#a6ea09ba6ad7e48cdc12b87d958796bdc", null ]
 ];

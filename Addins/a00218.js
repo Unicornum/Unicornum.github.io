@@ -1,6 +1,5 @@
 var a00218 =
 [
-    [ "OnConnection", "a00218.html#a8723f5919cae8f803dbd65acdf053c7b", null ],
-    [ "OnDisconnection", "a00218.html#a59c192bafe270ada9ccbb6b010250869", null ],
-    [ "OnTextChanged", "a00218.html#aff48aedbb4df92b606305a6916d94376", null ]
+    [ "DoActivate", "a00218.html#a29857a47b0b95970ae34c7b42b0f5a20", null ],
+    [ "DoCancel", "a00218.html#a287151415838c3601525537451126f7e", null ]
 ];

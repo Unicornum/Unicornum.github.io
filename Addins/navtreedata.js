@@ -34,14 +34,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00094.html#ssWrappersCommonTasks",
-"a00171.html#a3d8e7bb0dea6850d7a22ebad00c53793",
-"a00257.html#a7bb75640e0313e7482d8df39ef523fa2",
-"a00344.html#ad29b50a57742175b7e2d0c0d41457bd7",
-"a00570_source.html",
-"a00899.html",
-"a01213_source.html",
-"dir_609d2ba299bec0d5a655e8e817b71a52.html"
+"a00094.html#sWrappersCommonBrief",
+"a00170.html#a5af54aba6054ade4288df300b4747c48",
+"a00257.html#a4c0f82e5f6225f0586fcbbd2ba63e040",
+"a00345.html#a828606eadccc2469c6b308d439d37f1b",
+"a00495_source.html",
+"a00835_source.html",
+"a01168_source.html",
+"dir_0605582c2d2ccb0c32d69c73b257cb8e.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

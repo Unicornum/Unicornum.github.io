@@ -1,9 +1,5 @@
 var a00199 =
 [
-    [ "Clear", "a00199.html#a684a837d7a9af34d1bde964dcd589016", null ],
-    [ "Execute", "a00199.html#a1d753b3a2304a1f209345bd3bb205808", null ],
-    [ "ExtractFrom", "a00199.html#a2227e23a4e37fde1e744ac72ebf11a64", null ],
-    [ "GetPathToVSExe", "a00199.html#ab51d959df8b6194494b43e14a5439cf4", null ],
-    [ "GetVersion", "a00199.html#a0d3d00caa47c14b97918be3ab927e638", null ],
-    [ "OpenFile", "a00199.html#a470bd161e0250124be535f7ff972404d", null ]
+    [ "Check", "a00199.html#ad56ae2ebe73c809f04cc5bf55eaff4d3", null ],
+    [ "GetProgress", "a00199.html#a32e2bdd187c9fc89d60b4d9afa6749d6", null ]
 ];

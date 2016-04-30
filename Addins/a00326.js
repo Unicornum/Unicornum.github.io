@@ -1,8 +1,5 @@
 var a00326 =
 [
-    [ "AfterClosing", "a00326.html#a92b82a0ee9f577e8d879eada4c611a3b", null ],
-    [ "BeforeClosing", "a00326.html#a21b7a290c5f3fcba26b4b07e056a7320", null ],
-    [ "Opened", "a00326.html#a37ab7699805a19a8e22a902f21d1bc10", null ],
-    [ "ProjectAdded", "a00326.html#a1729654adb306bca37aa34a328e3ebdd", null ],
-    [ "ProjectRemoved", "a00326.html#a681cdac782a42019aa3b83ab8508d4ac", null ]
+    [ "ServiceProvider", "a00326.html#a9655295867a66190485a61a568947b25", null ],
+    [ "GetDte", "a00326.html#a7076c9166c6a30245972ccddbabb6cfd", null ]
 ];

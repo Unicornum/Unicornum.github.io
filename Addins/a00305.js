@@ -1,6 +1,8 @@
 var a00305 =
 [
-    [ "PropertySheet2012", "a00305.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
-    [ "GetPathToFile", "a00305.html#a7930a5bc2066899ea7834758ef47556f", null ],
-    [ "Remove", "a00305.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
+    [ "GetFileExtension", "a00305.html#ab45eca3582c96be43ba0d56d5aa27149", null ],
+    [ "GetName", "a00305.html#a185fa317fc2359ddb72c385103d4d76e", null ],
+    [ "GetPathToMainProjectDirectory", "a00305.html#a0be3886803f1fa836faea2906e93001d", null ],
+    [ "GetPathToTestProjectDirectory", "a00305.html#aca1be907095d923ccff307562b57e07e", null ],
+    [ "GetTestProjectName", "a00305.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
 ];

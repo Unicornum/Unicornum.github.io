@@ -1,7 +1,7 @@
 var a00307 =
 [
-    [ "GetCount", "a00307.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
-    [ "GetItem", "a00307.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
-    [ "LoadFromFile", "a00307.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
-    [ "Remove", "a00307.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
+    [ "Add", "a00307.html#a36221e7e62e513d7f679bb45e402de50", null ],
+    [ "GetActiveProject", "a00307.html#a3aa622ac93631a3da290e143e3f76d1e", null ],
+    [ "GetCount", "a00307.html#a925525848df48b2ee54238b191a101ed", null ],
+    [ "GetProject", "a00307.html#a7404a7dbb0a703c19129e29124d62e17", null ]
 ];

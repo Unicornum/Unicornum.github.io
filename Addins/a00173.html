@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wx::Diagram</title>
+<title>Addins: Класс core::utilities::DevelopmentInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 4040 Architecture: x86.32 Build: 11:23 30 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,111 +112,145 @@ $(document).ready(function(){initNavTree('a00173.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a02302.html">Полный список членов класса</a>  </div>
+<a href="a01918.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wx::Diagram<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01456.html">CoreToolsDevelopmentInfo</a> &raquo; <a class="el" href="a01461.html">View</a></div></div>  </div>
+<div class="title">Класс core::utilities::DevelopmentInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01494.html">Core</a> &raquo; <a class="el" href="a01521.html">Utilities</a> &raquo; <a class="el" href="a01520.html">Utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00039.html">Проект DevelopmentInfo</a> <br />
- Класс формирования диаграммы для информации, возвращаемой объектом модели.  
+<p>Класс входит в <a class="el" href="a00073.html">Раздел Utilities</a> <br />
+ Класс одной записи, содержащей статистику о работе над решением.  
  <a href="a00173.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00799_source.html">wxDiagram.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:wxBitmap.</p>
+<p><code>#include &lt;<a class="el" href="a00784_source.html">DevelopmentInfo.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса wx::Diagram:</div>
+Граф связей класса core::utilities::DevelopmentInfo:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02303.png" border="0" usemap="#wx_1_1_diagram_coll__map" alt="Collaboration graph"/></div>
-<map name="wx_1_1_diagram_coll__map" id="wx_1_1_diagram_coll__map">
-</map>
+<div class="center"><img src="a01919.png" border="0" usemap="#core_1_1utilities_1_1_development_info_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:af091b9b2c247243c974efba350e3302f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#af091b9b2c247243c974efba350e3302f">Diagram</a> (const <a class="el" href="a00172.html">Info_t</a> &amp;, int, int)</td></tr>
-<tr class="memdesc:af091b9b2c247243c974efba350e3302f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#af091b9b2c247243c974efba350e3302f">Подробнее...</a><br /></td></tr>
-<tr class="separator:af091b9b2c247243c974efba350e3302f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37f24adf400bf01b396c7ba7cfae56d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f24adf400bf01b396c7ba7cfae56d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#a37f24adf400bf01b396c7ba7cfae56d4">ReadFrom</a> (const Node_t &amp;)</td></tr>
+<tr class="memdesc:a37f24adf400bf01b396c7ba7cfae56d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения значений из указанного узла xml документа. <br /></td></tr>
+<tr class="separator:a37f24adf400bf01b396c7ba7cfae56d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5956ef6784bd16e944e9959aef591f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5956ef6784bd16e944e9959aef591f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#ad5956ef6784bd16e944e9959aef591f9">WriteTo</a> (Node_t &amp;) const </td></tr>
+<tr class="memdesc:ad5956ef6784bd16e944e9959aef591f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция записи текущих значений переменных класса в указанный узел xml документа. <br /></td></tr>
+<tr class="separator:ad5956ef6784bd16e944e9959aef591f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa800105019a059d761e719d62cfb984e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa800105019a059d761e719d62cfb984e"></a>
+Time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#aa800105019a059d761e719d62cfb984e">GetTime</a> (void) const </td></tr>
+<tr class="memdesc:aa800105019a059d761e719d62cfb984e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего времени работы над решением. <br /></td></tr>
+<tr class="separator:aa800105019a059d761e719d62cfb984e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d8e7bb0dea6850d7a22ebad00c53793"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#a3d8e7bb0dea6850d7a22ebad00c53793">UpdateTime</a> (void)</td></tr>
+<tr class="memdesc:a3d8e7bb0dea6850d7a22ebad00c53793"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция обновления текущего времени работы над решением.  <a href="#a3d8e7bb0dea6850d7a22ebad00c53793">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3d8e7bb0dea6850d7a22ebad00c53793"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac298e8a44deed591d98ad58817e30e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html#a5ac298e8a44deed591d98ad58817e30e">DevelopmentInfo</a> (const Time_t &amp;=Time_t::zero())</td></tr>
+<tr class="memdesc:a5ac298e8a44deed591d98ad58817e30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a5ac298e8a44deed591d98ad58817e30e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a5ac298e8a44deed591d98ad58817e30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00039.html">Проект DevelopmentInfo</a> <br />
- Класс формирования диаграммы для информации, возвращаемой объектом модели. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00073.html">Раздел Utilities</a> <br />
+ Класс одной записи, содержащей статистику о работе над решением. </p>
 <ul>
-<li>Формирует изображение диаграммы на основе переданной в конструкторе информации.</li>
+<li>Трактовка 'одной записи' может отличаться в зависимости от контекста (например, в классе <a class="el" href="a00331.html" title="Класс входит в Раздел Utilities   Класс статистики о работе над решением. ">SolutionDevelopmentInfo</a> это запись обо всем решении за все время его существования, а в классе <a class="el" href="a00122.html" title="Класс входит в Раздел Utilities   Класс доступа к статистике работы над всеми решениями, которые были изменены за последние две недели. ">AllSolutionsDevelopmentInfo</a> - запись об одном дне работы над решением).</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>02 Март 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>22 Февраль 2016 <br />
+ 28 Февраль 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><h2 class="groupheader">Конструктор(ы)</h2>
-<a class="anchor" id="af091b9b2c247243c974efba350e3302f"></a>
+<a class="anchor" id="a5ac298e8a44deed591d98ad58817e30e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DevelopmentInfo::DevelopmentInfo </td>
+          <td>(</td>
+          <td class="paramtype">const Time_t &amp;&#160;</td>
+          <td class="paramname"><em>_IgnoreTime</em> = <code>Time_t::zero()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IgnoreTime</td><td>Если промежуток времени между вызовами <a class="el" href="a00173.html#a3d8e7bb0dea6850d7a22ebad00c53793" title="Функция обновления текущего времени работы над решением. ">UpdateTime()</a> будет больше указанного, он будет проигнорирован. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a3d8e7bb0dea6850d7a22ebad00c53793"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Diagram::Diagram </td>
+          <td class="memname">void DevelopmentInfo::UpdateTime </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00172.html">Info_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Info</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_Width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_Height</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Конструктор класса. </p>
+<p>Функция обновления текущего времени работы над решением. </p>
 <ul>
-<li>Выполняет формирование изображения диаграммы.</li>
+<li>Если промежуток времени между вызовами функции превышает значение m_IgnoreTime, он будет проигнорирован. </li>
 </ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Info</td><td>Объект, содержащий информацию, которая должна быть отображена на диаграмме. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Width</td><td>Ширина изображения диаграммы. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Height</td><td>Высота изображения диаграммы.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00173_a3d8e7bb0dea6850d7a22ebad00c53793_cgraph.png" border="0" usemap="#a00173_a3d8e7bb0dea6850d7a22ebad00c53793_cgraph" alt=""/></div>
+<map name="a00173_a3d8e7bb0dea6850d7a22ebad00c53793_cgraph" id="a00173_a3d8e7bb0dea6850d7a22ebad00c53793_cgraph">
+<area shape="rect" id="node3" href="a00173.html#aa800105019a059d761e719d62cfb984e" title="Функция получения текущего времени работы над решением. " alt="" coords="262,5,469,46"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00173_a3d8e7bb0dea6850d7a22ebad00c53793_icgraph.png" border="0" usemap="#a00173_a3d8e7bb0dea6850d7a22ebad00c53793_icgraph" alt=""/></div>
+<map name="a00173_a3d8e7bb0dea6850d7a22ebad00c53793_icgraph" id="a00173_a3d8e7bb0dea6850d7a22ebad00c53793_icgraph">
+<area shape="rect" id="node3" href="a00122.html#a020351d1edcb9700d2db5cbc407186d7" title="Функция обновления времени существующих данных. " alt="" coords="262,5,485,46"/>
+<area shape="rect" id="node5" href="a00331.html#a3e357414c28cd8fbe76fd04d40409c12" title="Функция обновления промежутка времени работы над решением. " alt="" coords="262,70,485,111"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/View/wxWidgets/<a class="el" href="a00799_source.html">wxDiagram.hpp</a></li>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/View/wxWidgets/wxDiagram.cpp</li>
+<li>Solution/Solution/Core/Utilities/Utilities/Utilities/<a class="el" href="a00784_source.html">DevelopmentInfo.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Utilities/Utilities/DevelopmentInfo.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00173.html">Diagram</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:24. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><a class="el" href="a00173.html">DevelopmentInfo</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Апр 2016 11:23:48. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::IWriteTaskPanel</title>
+<title>Addins: Класс view::ITasksPanel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 4040 Architecture: x86.32 Build: 11:23 30 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -112,123 +112,70 @@ $(document).ready(function(){initNavTree('a00251.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pub-attribs">Открытые атрибуты</a> &#124;
-<a href="a02053.html">Полный список членов класса</a>  </div>
+<a href="a02099.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::IWriteTaskPanel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01462.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01466.html">View</a></div></div>  </div>
+<div class="title">Класс view::ITasksPanel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01501.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01506.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс представления для получения данных из модели задачи.  
+ Интерфейсный класс панели, содержащей список панелей отдельных задач.  
  <a href="a00251.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00842_source.html">IWriteTaskPanel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00868_source.html">ITasksPanel.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::IWriteTaskPanel:</div>
+Граф наследования:view::ITasksPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02054.png" border="0" usemap="#view_1_1_i_write_task_panel_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_write_task_panel_inherit__map" id="view_1_1_i_write_task_panel_inherit__map">
-<area shape="rect" id="node3" href="a00344.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс, реализующий интерфейс получения данных за..." alt="" coords="38,190,199,429"/>
-<area shape="rect" id="node5" href="a00339.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс панели одной задачи. " alt="" coords="5,478,232,717"/>
+<div class="center"><img src="a02100.png" border="0" usemap="#view_1_1_i_tasks_panel_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_i_tasks_panel_inherit__map" id="view_1_1_i_tasks_panel_inherit__map">
+<area shape="rect" id="node3" href="a00220.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс для интерфейса панели завершенных задач..." alt="" coords="15,176,217,253"/>
+<area shape="rect" id="node7" href="a00236.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Вспомогательный класс для интерфейса панели задач, находящихся в процессе работы. " alt="" coords="249,176,441,253"/>
+<area shape="rect" id="node5" href="a00357.html" title="{view::TasksPanel\&lt; IComplete\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="5,301,221,437"/>
+<area shape="rect" id="node9" href="a00357.html" title="{view::TasksPanel\&lt; IProcess\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="246,301,452,437"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::IWriteTaskPanel:</div>
+Граф связей класса view::ITasksPanel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02055.png" border="0" usemap="#view_1_1_i_write_task_panel_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_i_write_task_panel_coll__map" id="view_1_1_i_write_task_panel_coll__map">
-</map>
+<div class="center"><img src="a02101.png" border="0" usemap="#view_1_1_i_tasks_panel_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a517383520f8e761bb7317640ba7bb0aa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="a00251.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a517383520f8e761bb7317640ba7bb0aa">CreateChild</a> (const <a class="el" href="a00168.html">Data_t</a> &amp;_Data, bool _IsExistsChilsTasks)=0</td></tr>
-<tr class="memdesc:a517383520f8e761bb7317640ba7bb0aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания дочерней панели.  <a href="#a517383520f8e761bb7317640ba7bb0aa">Подробнее...</a><br /></td></tr>
-<tr class="separator:a517383520f8e761bb7317640ba7bb0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Открытые атрибуты</h2></td></tr>
-<tr class="memitem:a569b97ff58cd75118b3dc23f685a007a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a569b97ff58cd75118b3dc23f685a007a"></a>
-::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a569b97ff58cd75118b3dc23f685a007a">ChangedData</a></td></tr>
-<tr class="memdesc:a569b97ff58cd75118b3dc23f685a007a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
-<tr class="separator:a569b97ff58cd75118b3dc23f685a007a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa87f8f4b0d4f18613db3a486006cec2f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa87f8f4b0d4f18613db3a486006cec2f"></a>
-::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#aa87f8f4b0d4f18613db3a486006cec2f">ChangedParent</a></td></tr>
-<tr class="memdesc:aa87f8f4b0d4f18613db3a486006cec2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
-<tr class="separator:aa87f8f4b0d4f18613db3a486006cec2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e48ab48fbd8ea4d0f92fedf3bfc71cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e48ab48fbd8ea4d0f92fedf3bfc71cd"></a>
-::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a7e48ab48fbd8ea4d0f92fedf3bfc71cd">ChangedPosition</a></td></tr>
-<tr class="memdesc:a7e48ab48fbd8ea4d0f92fedf3bfc71cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
-<tr class="separator:a7e48ab48fbd8ea4d0f92fedf3bfc71cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e1d23b6e327df602037a291ac1d637e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e1d23b6e327df602037a291ac1d637e"></a>
-::boost::signals2::signal&lt; void(<a class="el" href="a00238.html">IReadTaskPanel</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a2e1d23b6e327df602037a291ac1d637e">CreateChildTask</a></td></tr>
-<tr class="memdesc:a2e1d23b6e327df602037a291ac1d637e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должна вызывать панель, если ее изменение требует обновление модели задачи. <br /></td></tr>
-<tr class="separator:a2e1d23b6e327df602037a291ac1d637e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b573f4e5f8b8471589cf411ea5fe4f1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#a4b573f4e5f8b8471589cf411ea5fe4f1">BeginUpdate</a> (void)=0</td></tr>
+<tr class="memdesc:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция начала обновления панели задач (должна вызываться перед началом создания дочерних элементов общей панели). <br /></td></tr>
+<tr class="separator:a4b573f4e5f8b8471589cf411ea5fe4f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc27a730e3d270a9ff89dd381b67de1d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc27a730e3d270a9ff89dd381b67de1d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#afc27a730e3d270a9ff89dd381b67de1d">EndUpdate</a> (void)=0</td></tr>
+<tr class="memdesc:afc27a730e3d270a9ff89dd381b67de1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция завершения обновления панели задач (должна вызываться после завершения создания дочерних элементов общей панели). <br /></td></tr>
+<tr class="separator:afc27a730e3d270a9ff89dd381b67de1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae309b84e8011dc63d4ec043404dcd7be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae309b84e8011dc63d4ec043404dcd7be"></a>
+virtual <a class="el" href="a00256.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00251.html#ae309b84e8011dc63d4ec043404dcd7be">CreateRoot</a> (void)=0</td></tr>
+<tr class="memdesc:ae309b84e8011dc63d4ec043404dcd7be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания панели корневой задачи. <br /></td></tr>
+<tr class="separator:ae309b84e8011dc63d4ec043404dcd7be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс представления для получения данных из модели задачи. </p>
+ Интерфейсный класс панели, содержащей список панелей отдельных задач. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
+ 04 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a517383520f8e761bb7317640ba7bb0aa"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual <a class="el" href="a00251.html">IWriteTaskPanel</a>* view::IWriteTaskPanel::CreateChild </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00168.html">Data_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Data</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_IsExistsChilsTasks</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция создания дочерней панели. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Данные задачи для текущей панели. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_IsExistsChilsTasks</td><td>Признак того, что у текущей задачи есть дочерние подзадачи. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00842_source.html">IWriteTaskPanel.hpp</a></li>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00868_source.html">ITasksPanel.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00251.html">IWriteTaskPanel</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:23. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00251.html">ITasksPanel</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Апр 2016 11:23:48. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

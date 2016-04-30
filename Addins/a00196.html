@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::utilities::execute::Doxygen</title>
+<title>Addins: Класс controller::DoUpdateView</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 3899 Architecture: x86.32 Build: 11:54 23 Апрель 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.1.21 Revision: 4040 Architecture: x86.32 Build: 11:23 30 Апрель 2016</span>
    </div>
    <div id="projectbrief">Addins</div>
   </td>
@@ -111,62 +111,97 @@ $(document).ready(function(){initNavTree('a00196.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01923.html">Полный список членов класса</a>  </div>
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="a01707.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::execute::Doxygen<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01455.html">Core</a> &raquo; <a class="el" href="a01481.html">Utilities</a> &raquo; <a class="el" href="a01477.html">Execute</a></div></div>  </div>
+<div class="title">Класс controller::DoUpdateView<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01501.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01502.html">Controller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00080.html">Проект Execute</a> <br />
- Класс для генерации документации <a class="el" href="a00196.html" title="Класс входит в Проект Execute   Класс для генерации документации Doxygen. ">Doxygen</a>.  
+<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Класс, содержащий общую логику работы сигнала обновления представления.  
  <a href="a00196.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01094_source.html">Doxygen.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00828_source.html">DoUpdateView.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса core::utilities::execute::Doxygen:</div>
+Граф наследования:controller::DoUpdateView:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01924.png" border="0" usemap="#core_1_1utilities_1_1execute_1_1_doxygen_coll__map" alt="Collaboration graph"/></div>
-<map name="core_1_1utilities_1_1execute_1_1_doxygen_coll__map" id="core_1_1utilities_1_1execute_1_1_doxygen_coll__map">
+<div class="center"><img src="a01708.png" border="0" usemap="#controller_1_1_do_update_view_inherit__map" alt="Inheritance graph"/></div>
+<map name="controller_1_1_do_update_view_inherit__map" id="controller_1_1_do_update_view_inherit__map">
+<area shape="rect" id="node5" href="a00191.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс реализации обновления панели выполненных задач..." alt="" coords="5,361,256,453"/>
+<area shape="rect" id="node7" href="a00195.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс реализации обновления панели задач, находящихся в процессе..." alt="" coords="281,361,524,453"/>
+<area shape="rect" id="node2" href="a00277.html" title="{controller::NonBlockingSignal\l\&lt;::model::ITask * \&gt;\n||+ operator()()\l+ Execute()\l+ Fail()\l+ ~NonBlockingSignal()\l}" alt="" coords="160,5,373,141"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса controller::DoUpdateView:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01709.png" border="0" usemap="#controller_1_1_do_update_view_coll__map" alt="Collaboration graph"/></div>
+<map name="controller_1_1_do_update_view_coll__map" id="controller_1_1_do_update_view_coll__map">
+<area shape="rect" id="node2" href="a00277.html" title="{controller::NonBlockingSignal\l\&lt;::model::ITask * \&gt;\n||+ operator()()\l+ Execute()\l+ Fail()\l+ ~NonBlockingSignal()\l}" alt="" coords="5,5,219,141"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a7cfb5d0a3e528d578215c812e4832be6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cfb5d0a3e528d578215c812e4832be6"></a>
-const CString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00196.html#a7cfb5d0a3e528d578215c812e4832be6">GetLogProgress</a> (void) const </td></tr>
-<tr class="memdesc:a7cfb5d0a3e528d578215c812e4832be6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения лога выполнения программы. <br /></td></tr>
-<tr class="separator:a7cfb5d0a3e528d578215c812e4832be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a0d7cfd967b4417c9e229efe0dbf02396"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00196.html#a0d7cfd967b4417c9e229efe0dbf02396">GetRootId</a> (::<a class="el" href="a00246.html">model::ITask</a> *) const  =0</td></tr>
+<tr class="memdesc:a0d7cfd967b4417c9e229efe0dbf02396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи текущей панели.  <a href="#a0d7cfd967b4417c9e229efe0dbf02396">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d7cfd967b4417c9e229efe0dbf02396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00080.html">Проект Execute</a> <br />
- Класс для генерации документации <a class="el" href="a00196.html" title="Класс входит в Проект Execute   Класс для генерации документации Doxygen. ">Doxygen</a>. </p>
-<ul>
-<li>Для работы класса требуется установленная программа <a class="el" href="a00196.html" title="Класс входит в Проект Execute   Класс для генерации документации Doxygen. ">Doxygen</a>.</li>
-<li>В процессе обработки отображает диалоговое окно с прогресс-баром в виде бегущей строки.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
+ Класс, содержащий общую логику работы сигнала обновления представления. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
  1.1.0.0 <br />
- 2.0.0.0 <br />
- 2.0.1.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>01 Июнь 2015 <br />
- 19 Июнь 2015 <br />
- 22 Июнь 2015 <br />
- 01 Февраль 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>31 Март 2016 <br />
+ 09 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a01094_source.html">Doxygen.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a0d7cfd967b4417c9e229efe0dbf02396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t controller::DoUpdateView::GetRootId </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="a00246.html">model::ITask</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения идентификатора корневой задачи текущей панели. </p>
+<ul>
+<li>Реализуется в классе-наследнике. </li>
+</ul>
+
+<p>Замещается в <a class="el" href="a00191.html#af53852207d69b704bbf0304eb8d1f3dd">controller::DoUpdateCompleteView</a> и <a class="el" href="a00195.html#a1c8166a7e1eb5237c5398fc349cb2bdd">controller::DoUpdateProcessView</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/<a class="el" href="a00828_source.html">DoUpdateView.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/DoUpdateView.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00196.html">Doxygen</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Апр 2016 11:54:22. Создано системой
+    <li class="navelem"><a class="el" href="a01427.html">controller</a></li><li class="navelem"><a class="el" href="a00196.html">DoUpdateView</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Апр 2016 11:23:47. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

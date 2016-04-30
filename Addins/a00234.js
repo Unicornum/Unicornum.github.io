@@ -1,5 +1,6 @@
 var a00234 =
 [
-    [ "GetPathToFile", "a00234.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
-    [ "Remove", "a00234.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
+    [ "GetCaption", "a00234.html#a9edd2c2b7f26c3570d4e0ee7fc2beae7", null ],
+    [ "GetHotKey", "a00234.html#aee25232ff4a57fae61cac95edb6edc62", null ],
+    [ "IsEnabled", "a00234.html#ad385bc3596e1107b7282e76b23e9343f", null ]
 ];
