@@ -1,5 +1,5 @@
 var a00341 =
 [
-    [ "Advise", "a00341.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
-    [ "Unadvise", "a00341.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
+    [ "operator=", "a00341.html#adb712b65047472ac48342b15e7145e68", null ],
+    [ "SetText", "a00341.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
 ];

@@ -7,6 +7,7 @@ var searchData=
   ['base_3c_20envdte80_3a_3atoolwindows_20_3e',['Base&lt; EnvDTE80::ToolWindows &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['base_3c_20envdte_3a_3a_5fbuildevents_20_3e',['Base&lt; EnvDTE::_BuildEvents &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['base_3c_20envdte_3a_3a_5fdteevents_20_3e',['Base&lt; EnvDTE::_DTEEvents &gt;',['../a00127.html',1,'wrappers::vs']]],
+  ['base_3c_20envdte_3a_3a_5fselectionevents_20_3e',['Base&lt; EnvDTE::_SelectionEvents &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['base_3c_20envdte_3a_3a_5fsolution_20_3e',['Base&lt; EnvDTE::_Solution &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['base_3c_20envdte_3a_3a_5fsolutionevents_20_3e',['Base&lt; EnvDTE::_SolutionEvents &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['base_3c_20envdte_3a_3a_5ftexteditorevents_20_3e',['Base&lt; EnvDTE::_TextEditorEvents &gt;',['../a00127.html',1,'wrappers::vs']]],
@@ -39,10 +40,6 @@ var searchData=
   ['base_3c_20vcprojectenginelibrary_3a_3avcproject_20_3e',['Base&lt; VCProjectEngineLibrary::VCProject &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['basepanelmatchsearch',['BasePanelMatchSearch',['../a00128.html',1,'wx']]],
   ['basepanelreplace',['BasePanelReplace',['../a00129.html',1,'wx']]],
-  ['blockingsignal',['BlockingSignal',['../a00130.html',1,'controller']]],
-  ['blockingsignal_3c_20const_20_3a_3aview_3a_3aireadtaskpanel_20_2a_20_3e',['BlockingSignal&lt; const ::view::IReadTaskPanel * &gt;',['../a00130.html',1,'controller']]],
-  ['blockingsignal_3c_3a_3aview_3a_3airead_20_2a_20_3e',['BlockingSignal&lt;::view::IRead * &gt;',['../a00130.html',1,'controller']]],
-  ['blockingsignal_3c_3a_3aview_3a_3aiwrite_20_2a_20_3e',['BlockingSignal&lt;::view::IWrite * &gt;',['../a00130.html',1,'controller']]],
-  ['buildevents',['BuildEvents',['../a00132.html',1,'wrappers::vs']]],
-  ['buildevents',['BuildEvents',['../a00131.html',1,'']]]
+  ['buildevents',['BuildEvents',['../a00130.html',1,'']]],
+  ['buildevents',['BuildEvents',['../a00131.html',1,'wrappers::vs']]]
 ];

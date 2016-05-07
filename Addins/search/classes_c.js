@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['openaddinsdoc',['OpenAddinsDoc',['../a00279.html',1,'core::useful_commands::vs::documentation']]],
-  ['openalicorndoc',['OpenAlicornDoc',['../a00280.html',1,'core::useful_commands::vs::documentation']]],
-  ['opendevelopmentinfo',['OpenDevelopmentInfo',['../a00281.html',1,'core::useful_commands::vs::utilities']]],
-  ['opendoc',['OpenDoc',['../a00282.html',1,'core::useful_commands::vs::documentation']]],
+  ['openaddinsdoc',['OpenAddinsDoc',['../a00280.html',1,'core::useful_commands::vs::documentation']]],
+  ['openalicorndoc',['OpenAlicornDoc',['../a00281.html',1,'core::useful_commands::vs::documentation']]],
+  ['opendevelopmentinfo',['OpenDevelopmentInfo',['../a00282.html',1,'core::useful_commands::vs::utilities']]],
   ['opendoxygendoc',['OpenDoxygenDoc',['../a00283.html',1,'core::useful_commands::vs::documentation']]],
   ['openlog',['OpenLog',['../a00284.html',1,'core::useful_commands::vs::common']]],
   ['openprojecttasks',['OpenProjectTasks',['../a00285.html',1,'core::useful_commands::vs::utilities']]],

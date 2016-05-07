@@ -1,11 +1,14 @@
 var a00355 =
 [
-    [ "TaskPanelText", "a00355.html#a753ae492d184021fa87c6a914fa260e4", null ],
-    [ "EditModeOff", "a00355.html#a3242753759027ff0a673c42fe1a4a797", null ],
-    [ "EditModeOn", "a00355.html#a71448539913d00f0d7cc06b6dc10be2d", null ],
-    [ "GetText", "a00355.html#a97419ac6961199a04cb2a72b7a5c3d41", null ],
-    [ "GetType", "a00355.html#aa6bc4b00c5d597007ce39c7179670a71", null ],
-    [ "IsChecked", "a00355.html#a38eba13ac81a062cc96287e52a3f3625", null ],
-    [ "IsEditAvailable", "a00355.html#afc87f99baf76d17c993d39d9b038a0b1", null ],
-    [ "ShowPanel", "a00355.html#ae7fb875ba4a263cc5f2b22c1f7a97c1c", null ]
+    [ "GetExternalProgramAction", "a00355.html#a9e69dd5ce935364f261a0d96b920b42f", null ],
+    [ "GetText", "a00355.html#a6d455f7bbb345ed44ef31b6cb4bdf2c7", null ],
+    [ "GetType", "a00355.html#aa5bda11f0de381fcce0d7cecc3b52851", null ],
+    [ "GetVersionAction", "a00355.html#a45802fed639d6705f07e9fd8a81e568e", null ],
+    [ "Initialyze", "a00355.html#a030a75d28845534467289c539b301aaf", null ],
+    [ "IsChecked", "a00355.html#a43ddd93249b59f6f18effaae7c8356d4", null ],
+    [ "IsEditAvailable", "a00355.html#a12fffebdb37e10691d8b95e24713789c", null ],
+    [ "IsWriteToHistory", "a00355.html#a7d3ba36d59a78e029099baecc57db626", null ],
+    [ "SetText", "a00355.html#a5683373ff6da988879a9e6bcf69c61f7", null ],
+    [ "SetType", "a00355.html#a3163f3307fe795772a5b6e2356a3f673", null ],
+    [ "ShowPanel", "a00355.html#a67ab7479649421c077bb758a139eb611", null ]
 ];

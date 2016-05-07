@@ -1,8 +1,5 @@
 var a00345 =
 [
-    [ "Task", "a00345.html#ac75c69d7af04e37adb7479ebbd8d6a01", null ],
-    [ "GetHtmlText", "a00345.html#a365aa1045bad92b55b13a728e58089db", null ],
-    [ "ReadDataFrom", "a00345.html#a828606eadccc2469c6b308d439d37f1b", null ],
-    [ "SetData", "a00345.html#a3e47428fe92345f802ba1d2bf7586789", null ],
-    [ "WriteDataTo", "a00345.html#aedf20aaba899f8b08c767d0f371de944", null ]
+    [ "Tag", "a00345.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
+    [ "GetCaption", "a00345.html#a21ce3a76b5870765f7b503b4318f4df8", null ]
 ];

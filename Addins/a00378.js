@@ -1,5 +1,5 @@
 var a00378 =
 [
-    [ "GetCount", "a00378.html#aa154e70c4f4beb10408ebd7639ddd71e", null ],
-    [ "GetElement", "a00378.html#aa3d0f9502c74d80fa41f920314db0f81", null ]
+    [ "OnBeginShutdown", "a00378.html#a71f3f4bee92ff601a27a1d715d3bdafc", null ],
+    [ "OnStartupComplete", "a00378.html#a9c46dcb2e8de0f1939a30c41f0b3b34d", null ]
 ];

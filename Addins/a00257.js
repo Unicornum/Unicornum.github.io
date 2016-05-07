@@ -1,9 +1,8 @@
 var a00257 =
 [
-    [ "Find", "a00257.html#aab9e83170d18f61704e2a57e9ebc6882", null ],
-    [ "GetIndex", "a00257.html#acb5d674808c6a4cf2abf1c2aecef1714", null ],
-    [ "GetText", "a00257.html#a4c0f82e5f6225f0586fcbbd2ba63e040", null ],
-    [ "IsInvalid", "a00257.html#aa0ec1440279a455253d4c0711e40bfae", null ],
-    [ "operator=", "a00257.html#a9481d82ef511642decacba7b7eebe29d", null ],
-    [ "operator=", "a00257.html#a6b2ed1a75472956cf0de19dcdecf7063", null ]
+    [ "CreateChild", "a00257.html#a517383520f8e761bb7317640ba7bb0aa", null ],
+    [ "ChangedData", "a00257.html#a569b97ff58cd75118b3dc23f685a007a", null ],
+    [ "ChangedParent", "a00257.html#aa87f8f4b0d4f18613db3a486006cec2f", null ],
+    [ "ChangedPosition", "a00257.html#a7e48ab48fbd8ea4d0f92fedf3bfc71cd", null ],
+    [ "CreateChildTask", "a00257.html#a2e1d23b6e327df602037a291ac1d637e", null ]
 ];

@@ -1,16 +1,10 @@
 var a01500 =
 [
-    [ "IView", "a00252.html", [
-      [ "SetDevelopmentInfo", "a00252.html#a63d80cbe8e7536b4608e870371394d25", null ],
-      [ "SetTitle", "a00252.html#a7e74984281cd804f6e835ff317d48ae6", null ],
-      [ "DoUpdate", "a00252.html#a67150deb963bc35daf58985e5c9e478d", null ]
+    [ "Controller", "a00157.html", [
+      [ "Controller", "a00157.html#a19b0c47ccb02e40feb2ccc7acbbb264e", null ],
+      [ "Controller", "a00157.html#a3abe5def5ca527d4515537159d3d12af", null ],
+      [ "Controller", "a00157.html#a94a996eec18108afd8da831289c8835b", null ],
+      [ "Controller", "a00157.html#a8e43ca1edbff3faad8cd167b0551155d", null ]
     ] ],
-    [ "MainFrame", "a00264.html", null ],
-    [ "Diagram", "a00175.html", [
-      [ "Diagram", "a00175.html#af091b9b2c247243c974efba350e3302f", null ]
-    ] ],
-    [ "DiagramPanel", "a00176.html", [
-      [ "SetDevelopmentInfo", "a00176.html#a20f0ac69c37e60daca70507a341fed0e", null ],
-      [ "SetTitle", "a00176.html#a6296ed6866b435b03a1a1de9db3916c9", null ]
-    ] ]
+    [ "DoUpdate", "a00191.html", null ]
 ];

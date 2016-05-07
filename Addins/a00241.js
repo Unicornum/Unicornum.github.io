@@ -1,8 +1,7 @@
 var a00241 =
 [
-    [ "GetRegexString", "a00241.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
-    [ "GetReplaceString", "a00241.html#a81029770ef4725794abaa505ad34fc55", null ],
-    [ "GetSourseStrings", "a00241.html#a53b21f1290abceb1fda90789c42f82ee", null ],
-    [ "SetProcessedData", "a00241.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
-    [ "DoProcess", "a00241.html#a5491cd61ba8f067527535004e251f81a", null ]
+    [ "GetCount", "a00241.html#a79bad819e3756478477a430821e9e575", null ],
+    [ "GetItem", "a00241.html#aca2deef5aed3e1e4598c290ecf48b812", null ],
+    [ "LoadFromFile", "a00241.html#af08a2b241ca5445b4ea24ae91393d66b", null ],
+    [ "Remove", "a00241.html#aac2aa044e6bea3eabf721822e5a28663", null ]
 ];

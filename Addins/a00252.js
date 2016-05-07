@@ -1,6 +1,6 @@
 var a00252 =
 [
-    [ "SetDevelopmentInfo", "a00252.html#a63d80cbe8e7536b4608e870371394d25", null ],
-    [ "SetTitle", "a00252.html#a7e74984281cd804f6e835ff317d48ae6", null ],
-    [ "DoUpdate", "a00252.html#a67150deb963bc35daf58985e5c9e478d", null ]
+    [ "BeginUpdate", "a00252.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
+    [ "CreateRoot", "a00252.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
+    [ "EndUpdate", "a00252.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
 ];

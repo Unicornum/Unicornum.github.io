@@ -1,5 +1,6 @@
 var a00142 =
 [
-    [ "DoActivate", "a00142.html#a1cc26ef0287b68baad5fd96e0ad1af42", null ],
-    [ "DoCancel", "a00142.html#a6302cc6adad85ecc1facd20c37b00f0a", null ]
+    [ "AddControl", "a00142.html#a86130e59757e2c2e7976498b8ed55cbf", null ],
+    [ "Delete", "a00142.html#afa679db93d2c5c38d056d0a37256d446", null ],
+    [ "SetHotKey", "a00142.html#a400ef4a02584cd6ff91cf1e543513ac6", null ]
 ];

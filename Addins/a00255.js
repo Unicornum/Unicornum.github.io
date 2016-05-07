@@ -1,7 +1,6 @@
 var a00255 =
 [
-    [ "CreateChild", "a00255.html#ae7b9d569abe192b02d467ab20ed80da0", null ],
-    [ "SetData", "a00255.html#ac7a9fc49923472292827a665e1caba96", null ],
-    [ "SetParent", "a00255.html#aa08f809f970cdb73f473f0012aa5404d", null ],
-    [ "SetPosition", "a00255.html#ae14200ab3f9667789e460dc116d05f0c", null ]
+    [ "SetRegexString", "a00255.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
+    [ "SetSourceStrings", "a00255.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
+    [ "UpdateView", "a00255.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
 ];

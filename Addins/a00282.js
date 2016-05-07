@@ -1,5 +1,5 @@
 var a00282 =
 [
-    [ "OpenDoc", "a00282.html#aa03a7cc3b7e471baa81d65b1e0919f5f", null ],
-    [ "IsEnabled", "a00282.html#a39a3353ef4403a4f5efeb973a1e9fcb6", null ]
+    [ "GetCaption", "a00282.html#abd5a3ad5b334b05b063df592976f87db", null ],
+    [ "GetPictureId", "a00282.html#a56fbe69af8b4f5a1454c6c00d6a328ea", null ]
 ];

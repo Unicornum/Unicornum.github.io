@@ -1,6 +1,6 @@
 var a00251 =
 [
-    [ "BeginUpdate", "a00251.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
-    [ "CreateRoot", "a00251.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
-    [ "EndUpdate", "a00251.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
+    [ "Initialyze", "a00251.html#a225ddd8e35b2e40a8810acab3754590a", null ],
+    [ "SetText", "a00251.html#af3300ee5c79838bd9c650935395161ae", null ],
+    [ "SetType", "a00251.html#a6ea09ba6ad7e48cdc12b87d958796bdc", null ]
 ];
