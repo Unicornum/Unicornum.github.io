@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['report',['Report',['../a00563.html',1,'']]],
-  ['regex',['Regex',['../a00556.html',1,'']]],
-  ['rapidxml',['RapidXml',['../a00118.html',1,'alicorn::document::xml']]],
-  ['redo',['Redo',['../a00096.html#a2cf7a9e613cbb698cc1ca2c26e554637',1,'alicorn::patterns::command::ManagerUndoRedo']]],
-  ['register',['Register',['../a00068.html#a7fa0f3418698b0f028e84791fc62c421',1,'alicorn::patterns::factory::Factory']]],
-  ['registrator',['Registrator',['../a00119.html',1,'alicorn::patterns::factory']]],
-  ['remove',['Remove',['../a00135.html#a5775f11872d97e4b59e6df3e7089bf91',1,'alicorn::extension::std::Text']]],
-  ['replace',['Replace',['../a00120.html#adb87baefad52f5062b8edeba4ca08c03',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx)'],['../a00120.html#a16563cd9219fb222a79395912e3dc987',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx, IgnoreCase)']]],
-  ['replace',['Replace',['../a00120.html',1,'alicorn::extension::std::regex']]],
-  ['report',['Report',['../a00121.html',1,'alicorn::logger::report']]],
-  ['requirements_2ehpp',['requirements.hpp',['../a00437.html',1,'']]],
-  ['runwithoutwaitingcompletion',['RunWithoutWaitingCompletion',['../a00109.html#ad114a7151d53e2698494fe1e9c13b9d0',1,'alicorn::system::Process']]],
-  ['runwithreceivestdout',['RunWithReceiveStdout',['../a00109.html#a2971a5187f0cb4ff11e9b060a04fb9a6',1,'alicorn::system::Process']]],
-  ['runwithwaitingcompletion',['RunWithWaitingCompletion',['../a00109.html#a5e8fa0dc6e81fa4d9b37559337994efc',1,'alicorn::system::Process']]]
+  ['report',['Report',['../a00615.html',1,'']]],
+  ['regex',['Regex',['../a00608.html',1,'']]],
+  ['rapidxml',['RapidXml',['../a00121.html',1,'alicorn::document::xml']]],
+  ['redo',['Redo',['../a00098.html#a2cf7a9e613cbb698cc1ca2c26e554637',1,'alicorn::patterns::command::ManagerUndoRedo']]],
+  ['register',['Register',['../a00070.html#a7fa0f3418698b0f028e84791fc62c421',1,'alicorn::patterns::factory::Factory']]],
+  ['registrator',['Registrator',['../a00122.html',1,'alicorn::patterns::factory']]],
+  ['remove',['Remove',['../a00139.html#a5775f11872d97e4b59e6df3e7089bf91',1,'alicorn::extension::std::Text']]],
+  ['replace',['Replace',['../a00123.html#adb87baefad52f5062b8edeba4ca08c03',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx)'],['../a00123.html#a16563cd9219fb222a79395912e3dc987',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx, IgnoreCase)']]],
+  ['replace',['Replace',['../a00123.html',1,'alicorn::extension::std::regex']]],
+  ['report',['Report',['../a00124.html',1,'alicorn::logger::report']]],
+  ['requirements_2ehpp',['requirements.hpp',['../a00487.html',1,'']]],
+  ['runwithoutwaitingcompletion',['RunWithoutWaitingCompletion',['../a00112.html#aba7f11fb8fa69202ba38b053573120e2',1,'alicorn::system::Process::RunWithoutWaitingCompletion(const Args_t &amp;=Args_t{}) const '],['../a00112.html#a063aed97bbe1aab8e168710a235f330f',1,'alicorn::system::Process::RunWithoutWaitingCompletion(const String_t &amp;) const ']]],
+  ['runwithreceivestdout',['RunWithReceiveStdout',['../a00112.html#a85f1f11f01d19ce759652b29ffe2fbc1',1,'alicorn::system::Process::RunWithReceiveStdout(const Args_t &amp;, process::ICallBack &amp;) const '],['../a00112.html#a2971a5187f0cb4ff11e9b060a04fb9a6',1,'alicorn::system::Process::RunWithReceiveStdout(const String_t &amp;, process::ICallBack &amp;) const ']]],
+  ['runwithwaitingcompletion',['RunWithWaitingCompletion',['../a00112.html#abf13c8f751e0a515e8a727d26c1ce237',1,'alicorn::system::Process::RunWithWaitingCompletion(const Args_t &amp;=Args_t{}, TimeMs_t=TimeMs_t(1000)) const '],['../a00112.html#a307fd8ed0bb55e570eed80cc292e75c0',1,'alicorn::system::Process::RunWithWaitingCompletion(const String_t &amp;, TimeMs_t=TimeMs_t(1000)) const ']]]
 ];

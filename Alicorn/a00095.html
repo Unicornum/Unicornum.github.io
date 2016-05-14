@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Шаблон класса alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;</title>
+<title>LibsVS2013: Класс app::Main</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1485 Architecture: x86.64 Build: 02:10 11 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1548 Architecture: x86.64 Build: 13:57 14 Май 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -111,75 +111,44 @@ $(document).ready(function(){initNavTree('a00095.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00765.html">Полный список членов класса</a>  </div>
+<a href="a00875.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;<div class="ingroups"><a class="el" href="a00545.html">Alicorn</a> &raquo; <a class="el" href="a00568.html">Patterns</a> &raquo; <a class="el" href="a00565.html">Command</a></div></div>  </div>
+<div class="title">Класс app::Main<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00597.html">Alicorn</a> &raquo; <a class="el" href="a00601.html">SettingsApp</a> &raquo; <a class="el" href="a00600.html">View</a> &raquo; <a class="el" href="a00602.html">wxWidgets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00022.html">Проект Patterns</a> <br />
- Базовый класс менеджеров, управляющих выполнением команд.  
+<p>Класс входит в <a class="el" href="a00027.html">Проект SettingsApp</a> <br />
+ Главный класс программы.  
  <a href="a00095.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00423_source.html">ManagerCommon.hpp</a>&gt;</code></p>
+<p>Базовые классы:wxApp.</p>
 <div class="dynheader">
-Граф наследования:alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;:</div>
+Граф связей класса app::Main:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00766.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_manager_common_3_01_t_interface_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_manager_common_3_01_t_interface_01_4_inherit__map" id="alicorn_1_1patterns_1_1command_1_1_manager_common_3_01_t_interface_01_4_inherit__map">
-<area shape="rect" id="node2" href="a00079.html" title="Класс входит в Проект Patterns &#160;&#160;Интерфейсный класс менеджеров, управляющих выполнением команд..." alt="" coords="5,6,259,127"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00767.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_manager_common_3_01_t_interface_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_manager_common_3_01_t_interface_01_4_coll__map" id="alicorn_1_1patterns_1_1command_1_1_manager_common_3_01_t_interface_01_4_coll__map">
-<area shape="rect" id="node2" href="a00079.html" title="Класс входит в Проект Patterns &#160;&#160;Интерфейсный класс менеджеров, управляющих выполнением команд..." alt="" coords="5,6,259,127"/>
-</map>
+<div class="center"><img src="a00876.png" border="0" usemap="#app_1_1_main_coll__map" alt="Collaboration graph"/></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TInterface&gt;<br />
-class alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00022.html">Проект Patterns</a> <br />
- Базовый класс менеджеров, управляющих выполнением команд. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00027.html">Проект SettingsApp</a> <br />
+ Главный класс программы. </p>
 <ul>
-<li>Выполнение команды производится вызовом шаблонной функции Execute&lt;Command&gt;(...); количество и тип переданных ей параметров должны совпадать с количеством и типом параметров конструктора команды.</li>
-<li>Параметрами функций Execute(...) могут быть указатели, ссылки и значения.</li>
-<li>Непосредственное выполнение команды производится в функции DoExecute(...), при необходимости дополнительной обработки команды, ее можно переопределить в классе-наследнике.</li>
-<li>Если во время выделения памяти под объект команды, в ее конструкторе или при выполнении команды произойдет исключение, будет вызвана функция DoException(...) с объектом произошедшего исключения.</li>
-<li>Если во время выполнения команды произойдет исключение, будет вызвана функция Fail() этой команды.</li>
+<li>Создает и активирует главное окно программы.</li>
 </ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Интерфейсный</td><td>класс выполняемых команд.</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
- 2.0.0.0 <br />
- 2.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
- 31 май 2014 <br />
- 05 Сентябрь 2015 <br />
- 06 Сентябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>25 Декабрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00423_source.html">ManagerCommon.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/ManagerCommon.inl</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/AppMain.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00095.html">ManagerCommon</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 11 Мар 2016 02:10:56. Создано системой
+    <li class="navelem"><a class="el" href="a00576.html">app</a></li><li class="navelem"><a class="el" href="a00095.html">Main</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 14 Май 2016 13:57:40. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

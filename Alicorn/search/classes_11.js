@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['text',['Text',['../a00134.html',1,'alicorn::logger::report']]],
-  ['text',['Text',['../a00135.html',1,'alicorn::extension::std']]],
-  ['trace',['Trace',['../a00136.html',1,'alicorn::logger']]],
-  ['treesections',['TreeSections',['../a00137.html',1,'wx']]]
+  ['text',['Text',['../a00138.html',1,'alicorn::logger::report']]],
+  ['text',['Text',['../a00139.html',1,'alicorn::extension::std']]],
+  ['trace',['Trace',['../a00140.html',1,'alicorn::logger']]],
+  ['treesections',['TreeSections',['../a00141.html',1,'wx']]]
 ];

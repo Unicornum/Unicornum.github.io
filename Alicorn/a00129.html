@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Класс wx::SettingsPanelImpl</title>
+<title>LibsVS2013: Класс alicorn::extension::std::SetLocale</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1485 Architecture: x86.64 Build: 02:10 11 Март 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1548 Architecture: x86.64 Build: 13:57 14 Май 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -111,57 +111,48 @@ $(document).ready(function(){initNavTree('a00129.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00853.html">Полный список членов класса</a>  </div>
+<a href="a00702.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wx::SettingsPanelImpl<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a00545.html">Alicorn</a> &raquo; <a class="el" href="a00549.html">SettingsApp</a> &raquo; <a class="el" href="a00548.html">View</a> &raquo; <a class="el" href="a00550.html">wxWidgets</a> &raquo; <a class="el" href="a00551.html">Generated</a></div></div>  </div>
+<div class="title">Класс alicorn::extension::std::SetLocale<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00597.html">Alicorn</a> &raquo; <a class="el" href="a00612.html">Extension</a> &raquo; <a class="el" href="a00610.html">Std</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Class <a class="el" href="a00129.html" title="Class SettingsPanelImpl. ">SettingsPanelImpl</a>.  
+<p>Класс входит в <a class="el" href="a00017.html">Проект Std</a> <br />
+ Класс для установки текущей активной локали.  
  <a href="a00129.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00265_source.html">Generated.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00362_source.html">set-locale.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:wx::SettingsPanelImpl:</div>
+Граф связей класса alicorn::extension::std::SetLocale:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00854.png" border="0" usemap="#wx_1_1_settings_panel_impl_inherit__map" alt="Inheritance graph"/></div>
-<map name="wx_1_1_settings_panel_impl_inherit__map" id="wx_1_1_settings_panel_impl_inherit__map">
-<area shape="rect" id="node3" href="a00128.html" title="Класс входит в Проект SettingsApp &#160;&#160;Класс панели для отображения настроек (реализация представления)..." alt="" coords="5,205,221,400"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса wx::SettingsPanelImpl:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00855.png" border="0" usemap="#wx_1_1_settings_panel_impl_coll__map" alt="Collaboration graph"/></div>
-<map name="wx_1_1_settings_panel_impl_coll__map" id="wx_1_1_settings_panel_impl_coll__map">
-<area shape="rect" id="node2" href="a00127.html" title="Класс входит в Проект SettingsApp &#160;&#160;Класс для отображаения/редактирования настроек одного раздела..." alt="" coords="5,6,221,127"/>
-<area shape="rect" id="node4" href="a00137.html" title="Класс входит в Проект SettingsApp &#160;&#160;Класс дерева, отображающего разделы настроек программы. " alt="" coords="245,13,408,120"/>
+<div class="center"><img src="a00703.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1_set_locale_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1extension_1_1std_1_1_set_locale_coll__map" id="alicorn_1_1extension_1_1std_1_1_set_locale_coll__map">
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Class <a class="el" href="a00129.html" title="Class SettingsPanelImpl. ">SettingsPanelImpl</a>. </p>
-<p>Класс входит в <a class="el" href="a00026.html">Проект SettingsApp</a> <br />
- Базовый класс панели отображения настроек программы.</p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00017.html">Проект Std</a> <br />
+ Класс для установки текущей активной локали. </p>
 <ul>
-<li>Содержит дерево для отображения иерархии разделов настроек и панель для отображения/редактирования настроек выбранного раздела.</li>
+<li>Предназначен для установки текущей локали в пределах видимости объекта класса (в деструкторе вернет предыдущую локаль).</li>
+<li>Установленная с помощью этого класса локаль - это локаль, которая будет являтся локалью <b><a class="el" href="a00062.html" title="Использовать кодировку, заданную при помощи функции setlocale(). ">Locale::Default</a></b> при конвертации строк при помощи string_cast.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>01 Январь 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>11 Май 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/<a class="el" href="a00265_source.html">Generated.h</a></li>
-<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/Generated.cpp</li>
+<li>Solution/Solution/Alicorn/include/alicorn/extension/std/<a class="el" href="a00362_source.html">set-locale.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/extension/std/set-locale.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00129.html">SettingsPanelImpl</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Пт 11 Мар 2016 02:10:57. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="a00129.html">SetLocale</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 14 Май 2016 13:57:39. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
