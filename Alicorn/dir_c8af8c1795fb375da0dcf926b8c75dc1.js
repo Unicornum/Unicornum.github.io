@@ -5,9 +5,10 @@ var dir_c8af8c1795fb375da0dcf926b8c75dc1 =
     [ "mfc", "dir_f41df87cfa1e7d1036876d4bc7d4e27c.html", "dir_f41df87cfa1e7d1036876d4bc7d4e27c" ],
     [ "std", "dir_1c1ae6a9dd513339114153138401ee8e.html", "dir_1c1ae6a9dd513339114153138401ee8e" ],
     [ "wx", "dir_ca288751250a01e988964118a96c4add.html", "dir_ca288751250a01e988964118a96c4add" ],
-    [ "boost.hpp", "a00314.html", null ],
-    [ "cpp.hpp", "a00335_source.html", null ],
-    [ "std.hpp", "a00338.html", null ],
-    [ "wx.hpp", "a00410.html", null ],
-    [ "wx.mock.hpp", "a00412_source.html", null ]
+    [ "boost.hpp", "a00400.html", null ],
+    [ "cpp.hpp", "a00421_source.html", null ],
+    [ "google.hpp", "a00422.html", null ],
+    [ "std.hpp", "a00429.html", null ],
+    [ "wx.hpp", "a00507.html", null ],
+    [ "wx.mock.hpp", "a00509_source.html", null ]
 ];

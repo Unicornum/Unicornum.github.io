@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Раздел Tools</title>
+<title>LibsVS2013: Проект Testing.App</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1548 Architecture: x86.64 Build: 13:57 14 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1595 Architecture: x86.64 Build: 16:39 21 Май 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -51,7 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li class="current"><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -103,24 +102,49 @@ $(document).ready(function(){initNavTree('a00038.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Раздел Tools </div>  </div>
+<div class="title">Проект Testing.App </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sToolsBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sAlicornBuildTestingAppBrief"></a>
 Введение</h1>
-<p>Раздел проектов вспомогательных утилит.</p>
-<h2><a class="anchor" id="ssToolsProjects"></a>
-Проекты раздела</h2>
-<h3>Проект Settings</h3>
-<p>Проект программы редактирования настроек.</p>
-<p>Страница проекта: <a class="el" href="a00039.html">Проект ToolsSettings</a> </p>
+<p>Проект, содержащий реализацию проектов тестирования.</p>
+<h1><a class="anchor" id="sAlicornBuildTestingAppDetails"></a>
+Подробное описание проекта</h1>
+<p><a class="el" href="a00039.html">Исходные требования</a></p>
+<p>Проект реализует программу отображения результат прогона тестов. <br />
+ Программа существует в трех версиях:</p><ul>
+<li>Тесты одного класса.</li>
+<li>Тесты всех классов одного проекта.</li>
+<li>Тесты всех классов всех проектов решения.</li>
+</ul>
+<h2>Тестовый проект одного класса </h2>
+<p>Собирается как исполняемый файл, при запуске отображает результат прогона тестов своего класса.</p>
+<h3>Схема взаимодействия классов тестового проекта одного класса</h3>
+<div class="image">
+<img src="Testing.App.Classes.TestClass.png" alt="Testing.App.Classes.TestClass.png"/>
+</div>
+<h2>Общий тестовый проект проекта </h2>
+<p>Собирается как dll, предоставляя интерфейс получения результата прогона тестов всех классов одного проекта.</p>
+<h3>Схема взаимодействия классов тестового проекта всех классов проекта</h3>
+<div class="image">
+<img src="Testing.App.Classes.TestProject.png" alt="Testing.App.Classes.TestProject.png"/>
+</div>
+<h2>Тестовый проект всего решения </h2>
+<p>Собирается как исполняемый файл, при запуске собирает и отображает информацию о прогоне тестов всех проектов решения.</p>
+<h3>Схема взаимодействия классов тестового проекта всего решения</h3>
+<div class="image">
+<img src="Testing.App.Classes.TestSolution.png" alt="Testing.App.Classes.TestSolution.png"/>
+</div>
+<h2>Список классов проекта </h2>
+<p><a class="el" href="a00701.html">Testing.App</a></p>
+<h2>Список задач проекта </h2>
+<p><a class="el" href="a00040.html">Список задач проекта</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li><li class="navelem"><a class="el" href="a00010.html">Раздел Alicorn</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 14 Май 2016 13:57:39. Создано системой
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 21 Май 2016 16:39:47. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

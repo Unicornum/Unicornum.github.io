@@ -1,6 +1,7 @@
 var a00083 =
 [
-    [ "Info", "a00083.html#adf1ff51360edbfc0c5d43157a76b540b", null ],
-    [ "Info", "a00083.html#a04be24f54850388719f7e4b7d90473b4", null ],
-    [ "GetStringFile", "a00083.html#aea77ed774da02bbaffc1afba165980d0", null ]
+    [ "FormFileName", "a00083.html#a78253bd31454f39e16fb359f206526c1", null ],
+    [ "OpenFile", "a00083.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
+    [ "WriteRecord", "a00083.html#acb716a4ccea948033c64be86775d671d", null ],
+    [ "m_LogFile", "a00083.html#abaf06f0b024ca4033e968df2b5ee9643", null ]
 ];

@@ -1,8 +1,7 @@
 var a00017 =
 [
-    [ "Введение", "a00017.html#sStdBrief", [
-      [ "Список классов", "a00017.html#ssStdClasses", null ],
-      [ "Список задач проекта", "a00017.html#ssStdTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00018.html", null ]
+    [ "Введение", "a00017.html#sAlicornBuildExtensionGooglePartBrief", null ],
+    [ "Проекты раздела", "a00017.html#sGooglePartDetails", null ],
+    [ "Проект Google Test", "a00020.html", "a00020" ],
+    [ "Проект Google Mock", "a00018.html", "a00018" ]
 ];

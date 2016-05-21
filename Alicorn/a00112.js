@@ -1,11 +1,7 @@
 var a00112 =
 [
-    [ "KilledException", "a00092.html", null ],
-    [ "Process", "a00112.html#a15c85d53e3079f343aead5930adb4b2a", null ],
-    [ "RunWithoutWaitingCompletion", "a00112.html#aba7f11fb8fa69202ba38b053573120e2", null ],
-    [ "RunWithoutWaitingCompletion", "a00112.html#a063aed97bbe1aab8e168710a235f330f", null ],
-    [ "RunWithReceiveStdout", "a00112.html#a85f1f11f01d19ce759652b29ffe2fbc1", null ],
-    [ "RunWithReceiveStdout", "a00112.html#a2971a5187f0cb4ff11e9b060a04fb9a6", null ],
-    [ "RunWithWaitingCompletion", "a00112.html#abf13c8f751e0a515e8a727d26c1ce237", null ],
-    [ "RunWithWaitingCompletion", "a00112.html#a307fd8ed0bb55e570eed80cc292e75c0", null ]
+    [ "IsAllowedRedo", "a00112.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
+    [ "IsAllowedUndo", "a00112.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
+    [ "Redo", "a00112.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
+    [ "Undo", "a00112.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
 ];

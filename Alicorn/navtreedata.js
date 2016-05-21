@@ -3,15 +3,14 @@ var NAVTREE =
   [ "LibsVS2013", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
     [ "Информация о работе над решением", "a00008.html", null ],
-    [ "Проект SettingsApp", "a00027.html", "a00027" ],
-    [ "Использование подставных объектов Google Mock", "a00037.html", null ],
+    [ "Проект SettingsApp", "a00032.html", "a00032" ],
+    [ "Проект Testing.App", "a00038.html", "a00038" ],
+    [ "Исходные требования", "a00039.html", null ],
+    [ "Использование подставных объектов Google Mock", "a00045.html", null ],
     [ "Список задач", "a00001.html", null ],
     [ "Список устаревших определений и описаний", "a00003.html", null ],
     [ "Ошибки", "a00002.html", null ],
     [ "Группы", "modules.html", "modules" ],
-    [ "Пространства имен", null, [
-      [ "Пространства имен", "namespaces.html", "namespaces" ]
-    ] ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
       [ "Алфавитный указатель классов", "classes.html", null ],
@@ -36,9 +35,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00105.html#a5488596e9976dd74cd60218ace6b7bfc",
-"a00265_source.html",
-"a00607.html"
+"a00104.html#aa52838badaaabba0c6220233207c10f3",
+"a00239_source.html",
+"a00522_source.html",
+"dir_97998f6cbd155b4c7d660a6d8bea9d3d.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

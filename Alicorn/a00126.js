@@ -1,8 +1,11 @@
 var a00126 =
 [
-    [ "Section", "a00126.html#a53bfb4cb221122d2c66b18659c84df4a", null ],
-    [ "AddExtra", "a00126.html#ae3c5a0a3bd12c765a813bd89a31acfb7", null ],
-    [ "Get", "a00126.html#a8f0e717f7f49c0550dde81bda8990fc6", null ],
-    [ "operator[]", "a00126.html#ad68da58ac4cdfc8e177417b1c0893d60", null ],
-    [ "SetDefault", "a00126.html#ae7fc716666810cea16ad7b217f084a1e", null ]
+    [ "KilledException", "a00105.html", null ],
+    [ "Process", "a00126.html#a15c85d53e3079f343aead5930adb4b2a", null ],
+    [ "RunWithoutWaitingCompletion", "a00126.html#aba7f11fb8fa69202ba38b053573120e2", null ],
+    [ "RunWithoutWaitingCompletion", "a00126.html#a063aed97bbe1aab8e168710a235f330f", null ],
+    [ "RunWithReceiveStdout", "a00126.html#a85f1f11f01d19ce759652b29ffe2fbc1", null ],
+    [ "RunWithReceiveStdout", "a00126.html#a2971a5187f0cb4ff11e9b060a04fb9a6", null ],
+    [ "RunWithWaitingCompletion", "a00126.html#abf13c8f751e0a515e8a727d26c1ce237", null ],
+    [ "RunWithWaitingCompletion", "a00126.html#a307fd8ed0bb55e570eed80cc292e75c0", null ]
 ];

@@ -1,4 +1,6 @@
 var a00047 =
 [
-    [ "operator()", "a00047.html#aeea3117f12d7c1cd4ab2fe12aee5ffa2", null ]
+    [ "Введение", "a00047.html#sToolsSettingsBrief", null ],
+    [ "Подробное описание проекта", "a00047.html#sToolsSettingsDetails", null ],
+    [ "Список задач проекта", "a00048.html", null ]
 ];

@@ -9,6 +9,7 @@ var dir_8474876d6addb29d5cfd67f2cdcf2951 =
     [ "Settings.App", "dir_ce42ae0fb6788d92ba25a0219a63bace.html", "dir_ce42ae0fb6788d92ba25a0219a63bace" ],
     [ "System", "dir_e4c66c923d83ea2bdee3f69030086c4d.html", "dir_e4c66c923d83ea2bdee3f69030086c4d" ],
     [ "Testing", "dir_5165ddde492b64f3920bd9eacb5e5608.html", "dir_5165ddde492b64f3920bd9eacb5e5608" ],
+    [ "Testing.App", "dir_5d1c2c80bed916d20043917303c9546c.html", "dir_5d1c2c80bed916d20043917303c9546c" ],
     [ "Version", "dir_a202fe670f1afbd4c52fb516076e5836.html", "dir_a202fe670f1afbd4c52fb516076e5836" ],
     [ "Vs", "dir_a4c86420309d1806a9881f61dd0e4ad4.html", "dir_a4c86420309d1806a9881f61dd0e4ad4" ]
 ];

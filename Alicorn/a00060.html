@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Шаблон класса alicorn::patterns::command::Data&lt; Pointer * &gt;</title>
+<title>LibsVS2013: Класс alicorn::logger::ConfigValue</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.0 Revision: 1548 Architecture: x86.64 Build: 13:57 14 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1595 Architecture: x86.64 Build: 16:39 21 Май 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -51,7 +51,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
       <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
       <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
@@ -111,53 +110,163 @@ $(document).ready(function(){initNavTree('a00060.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00811.html">Полный список членов класса</a>  </div>
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="a00839.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::command::Data&lt; Pointer * &gt;<div class="ingroups"><a class="el" href="a00597.html">Alicorn</a> &raquo; <a class="el" href="a00620.html">Patterns</a></div></div>  </div>
+<div class="title">Класс alicorn::logger::ConfigValue<div class="ingroups"><a class="el" href="a00694.html">Alicorn</a> &raquo; <a class="el" href="a00720.html">Logger</a> &raquo; <a class="el" href="a00717.html">Config</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00023.html">Проект Patterns</a> <br />
- Специализация шаблона для указателей.  
+<p>Класс входит в <a class="el" href="a00026.html">Проект Logger</a> <br />
+ Базовый класс-обертка параметров для передачи их значений конфигуратору.  
  <a href="a00060.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00466_source.html">Data.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00532_source.html">config-value.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::patterns::command::Data&lt; Pointer * &gt;:</div>
+Граф наследования:alicorn::logger::ConfigValue:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00812.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a00840.png" border="0" usemap="#alicorn_1_1logger_1_1_config_value_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1logger_1_1_config_value_inherit__map" id="alicorn_1_1logger_1_1_config_value_inherit__map">
+<area shape="rect" id="node3" href="a00052.html" title="Класс входит в Проект Logger &#160;&#160;Включить/выключить разрешение повторов сообщений из одного и того же м..." alt="" coords="5,189,219,325"/>
+<area shape="rect" id="node5" href="a00085.html" title="Класс входит в Проект Logger &#160;&#160;Фильтр сообщений. Выводиться в лог будут сообщения &gt;= установленного..." alt="" coords="244,204,407,311"/>
+<area shape="rect" id="node7" href="a00099.html" title="Класс входит в Проект Logger &#160;&#160;Базовый класс для целочисленных параметров. " alt="" coords="431,197,620,318"/>
+<area shape="rect" id="node13" href="a00125.html" title="Класс входит в Проект Logger &#160;&#160;Имя папки, в которой будут создаваться файлы журнала. " alt="" coords="645,204,843,311"/>
+<area shape="rect" id="node15" href="a00150.html" title="Класс входит в Проект Logger &#160;&#160;Базовый класс для строковых параметров. " alt="" coords="867,204,1076,311"/>
+<area shape="rect" id="node9" href="a00114.html" title="Класс входит в Проект Logger &#160;&#160;Количество файлов журнала лога, которые будут храниться (0 &#45; для отклю..." alt="" coords="243,381,449,459"/>
+<area shape="rect" id="node11" href="a00115.html" title="Класс входит в Проект Logger &#160;&#160;Максимальный размер файла журнала в байтах (0 &#45; без ограничений)..." alt="" coords="475,381,680,459"/>
+<area shape="rect" id="node17" href="a00127.html" title="Класс входит в Проект Logger &#160;&#160;Имя программы (по умолчанию берется из ресурсов текущего модуля)..." alt="" coords="809,381,1028,459"/>
+<area shape="rect" id="node19" href="a00128.html" title="Класс входит в Проект Logger &#160;&#160;Строка версии программы (по умолчанию берется из ресурсов текущего мод..." alt="" coords="1053,374,1235,466"/>
+</map>
 </div>
+<div class="dynheader">
+Граф связей класса alicorn::logger::ConfigValue:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00841.png" border="0" usemap="#alicorn_1_1logger_1_1_config_value_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1logger_1_1_config_value_coll__map" id="alicorn_1_1logger_1_1_config_value_coll__map">
+<area shape="rect" id="node2" href="a00061.html" title="Класс входит в Проект Logger &#160;&#160;Класс для передачи значения параметра конфигуратору. " alt="" coords="5,323,237,400"/>
+<area shape="rect" id="node4" href="a00148.html" title="Класс входит в Проект Std &#160;&#160;Класс&#45;обертка для строк из стандартной библиотеки. " alt="" coords="51,6,191,245"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:a1bc3db12e58ae1a9990aabe36e87f524"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#a1bc3db12e58ae1a9990aabe36e87f524">DoComplete</a> (const ConfigValuePtr_t &amp;)</td></tr>
+<tr class="memdesc:a1bc3db12e58ae1a9990aabe36e87f524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#a1bc3db12e58ae1a9990aabe36e87f524">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1bc3db12e58ae1a9990aabe36e87f524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3d153992034d8ba9ec875981e77cdc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html#abc3d153992034d8ba9ec875981e77cdc">DoComplete</a> (const ConfigValuePtr_t &amp;, bool)</td></tr>
+<tr class="memdesc:abc3d153992034d8ba9ec875981e77cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#abc3d153992034d8ba9ec875981e77cdc">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc3d153992034d8ba9ec875981e77cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class Pointer&gt;<br />
-class alicorn::patterns::command::Data&lt; Pointer * &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00023.html">Проект Patterns</a> <br />
- Специализация шаблона для указателей. </p>
-<ul>
-<li>В конструкторе проверяет валидность переданного указателя и бросает исключение, если он нулевой.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Тип</td><td>хранимого указателя.</td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00026.html">Проект Logger</a> <br />
+ Базовый класс-обертка параметров для передачи их значений конфигуратору. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.0.1.0 <br />
+ 2.0.0.0 <br />
+ 2.1.0.0 <br />
+ 3.0.0.0 <br />
+ 3.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 май 2014 <br />
+<dl class="section date"><dt>Дата</dt><dd>30 июл 2012 <br />
+ 24 Октябрь 2015 <br />
+ 28 Октябрь 2015 <br />
+ 29 Октябрь 2015 <br />
+ 29 Октябрь 2015 <br />
+ 18 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00466_source.html">Data.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2015 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a1bc3db12e58ae1a9990aabe36e87f524"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigValue::DoComplete </td>
+          <td>(</td>
+          <td class="paramtype">const ConfigValuePtr_t &amp;&#160;</td>
+          <td class="paramname"><em>_pConfigValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для выполнения завершающего действия. </p>
+<ul>
+<li>Будет вызвана для передачи объекта параметра 'ядру' логгера. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="abc3d153992034d8ba9ec875981e77cdc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ConfigValue::DoComplete </td>
+          <td>(</td>
+          <td class="paramtype">const ConfigValuePtr_t &amp;&#160;</td>
+          <td class="paramname"><em>_pConfigValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для выполнения завершающего действия. </p>
+<ul>
+<li>Будет вызвана для передачи объекта параметра 'ядру' логгера. </li>
+</ul>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00060_abc3d153992034d8ba9ec875981e77cdc_cgraph.png" border="0" usemap="#a00060_abc3d153992034d8ba9ec875981e77cdc_cgraph" alt=""/></div>
+<map name="a00060_abc3d153992034d8ba9ec875981e77cdc_cgraph" id="a00060_abc3d153992034d8ba9ec875981e77cdc_cgraph">
+<area shape="rect" id="node3" href="a00116.html#a7e0aa36f88d152d1b6e99a9d1bb2da04" title="Функция возвращает уровень приоритета сообщения. " alt="" coords="261,5,448,46"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/<a class="el" href="a00532_source.html">config-value.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/config-value.cpp</li>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/config-value.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00060.html">Data&lt; Pointer * &gt;</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 14 Май 2016 13:57:40. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a00060.html">ConfigValue</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 21 Май 2016 16:39:47. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
