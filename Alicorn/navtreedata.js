@@ -16,7 +16,7 @@ var NAVTREE =
       [ "Алфавитный указатель классов", "classes.html", null ],
       [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
       [ "Члены классов", "functions.html", [
-        [ "Указатель", "functions.html", null ],
+        [ "Указатель", "functions.html", "functions_dup" ],
         [ "Функции", "functions_func.html", null ],
         [ "Переменные", "functions_vars.html", null ],
         [ "Относящиеся к классу функции", "functions_rela.html", null ]
@@ -35,10 +35,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00104.html#aa52838badaaabba0c6220233207c10f3",
-"a00239_source.html",
+"a00107.html",
+"a00208_source.html",
 "a00522_source.html",
-"dir_97998f6cbd155b4c7d660a6d8bea9d3d.html"
+"dir_40da31625bd798043a5d0ed69e66f034.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

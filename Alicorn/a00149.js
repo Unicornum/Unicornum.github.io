@@ -1,5 +1,17 @@
 var a00149 =
 [
-    [ "string_cast", "a00149.html#acda0aa998e1a3e1d0e9217b2d9b081d7", null ],
-    [ "string_cast", "a00149.html#add2a4f861ab927f202e9e49fc868699d", null ]
+    [ "SectionImpl", "a00149.html#ae95057df444c99b0ea0fbb5bf9b25ec7", null ],
+    [ "SectionImpl", "a00149.html#ad7fb702f4109de1ff4a52f000bc1ddf7", null ],
+    [ "SectionImpl", "a00149.html#a33d3ad9bdeee84aca865105c2de00006", null ],
+    [ "AddExtraValue", "a00149.html#a1cf06e4a5b1302e1dce4d76be20b39b5", null ],
+    [ "GetChildSectionImpl", "a00149.html#a3df5c9b056b01466c8a70001861867ed", null ],
+    [ "GetChildSectionNames", "a00149.html#aa2494768604698224cb7f4cbc7802da7", null ],
+    [ "GetComment", "a00149.html#afeafe7852bb3b8ed88b3d7c658e50d69", null ],
+    [ "GetParameterNames", "a00149.html#aafff73721fb85b69e4cf33c28dbe10d9", null ],
+    [ "GetRawValue", "a00149.html#a25d311cf8547a1ecb6157b0639116c2e", null ],
+    [ "GetValue", "a00149.html#abc6514e8d3099d69d87c8a6707a1de75", null ],
+    [ "Save", "a00149.html#a7f9bc78cb9b514f69d1c915376315484", null ],
+    [ "SetComment", "a00149.html#abe80d2ac53d50b5093c8fd0d5b5a96e5", null ],
+    [ "SetDefaultValue", "a00149.html#a414663dce0d9861f658b1a4e9df65344", null ],
+    [ "SetValue", "a00149.html#a1b5bbfe503c6ec6a69c5c8bafa662095", null ]
 ];

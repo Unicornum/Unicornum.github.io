@@ -1,5 +1,5 @@
 var a00163 =
 [
-    [ "WriteRecord", "a00163.html#a36ba11583024bbba693e2998ea4d3668", null ],
-    [ "WriteTitle", "a00163.html#a672763fba708c23851b38be162768bac", null ]
+    [ "GetResult", "a00163.html#add6bb029b808a1c97644e67981908c3f", null ],
+    [ "SetResultRunTests", "a00163.html#a275cb632e9461b124b67339aabec00c9", null ]
 ];

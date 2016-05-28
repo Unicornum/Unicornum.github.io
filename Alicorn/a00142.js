@@ -1,17 +1,18 @@
 var a00142 =
 [
-    [ "SectionImpl", "a00142.html#ae95057df444c99b0ea0fbb5bf9b25ec7", null ],
-    [ "SectionImpl", "a00142.html#ad7fb702f4109de1ff4a52f000bc1ddf7", null ],
-    [ "SectionImpl", "a00142.html#a33d3ad9bdeee84aca865105c2de00006", null ],
-    [ "AddExtraValue", "a00142.html#a1cf06e4a5b1302e1dce4d76be20b39b5", null ],
-    [ "GetChildSectionImpl", "a00142.html#a3df5c9b056b01466c8a70001861867ed", null ],
-    [ "GetChildSectionNames", "a00142.html#aa2494768604698224cb7f4cbc7802da7", null ],
-    [ "GetComment", "a00142.html#afeafe7852bb3b8ed88b3d7c658e50d69", null ],
-    [ "GetParameterNames", "a00142.html#aafff73721fb85b69e4cf33c28dbe10d9", null ],
-    [ "GetRawValue", "a00142.html#a25d311cf8547a1ecb6157b0639116c2e", null ],
-    [ "GetValue", "a00142.html#abc6514e8d3099d69d87c8a6707a1de75", null ],
-    [ "Save", "a00142.html#a7f9bc78cb9b514f69d1c915376315484", null ],
-    [ "SetComment", "a00142.html#abe80d2ac53d50b5093c8fd0d5b5a96e5", null ],
-    [ "SetDefaultValue", "a00142.html#a414663dce0d9861f658b1a4e9df65344", null ],
-    [ "SetValue", "a00142.html#a1b5bbfe503c6ec6a69c5c8bafa662095", null ]
+    [ "AddChildNode", "a00142.html#a5c08bfefb23069ab03adddc449ab00df", null ],
+    [ "DeleteChildNode", "a00142.html#a26d9ba3ba00686646e725e3bab40cb2d", null ],
+    [ "GetAttribute", "a00142.html#a48a0c20687fb2d813ab5df656993cc65", null ],
+    [ "GetCurrentNodeName", "a00142.html#a1aca537538e91a54b1a177b60c6e97b8", null ],
+    [ "GetValue", "a00142.html#a50dc58df3ac319bab6b646db8fec3e47", null ],
+    [ "MoveToChildNode", "a00142.html#a04d0bbeeba0ce1f1e166d890caa20d0b", null ],
+    [ "MoveToFirstChildNode", "a00142.html#a7b73c1ffb6b49c361f20dbda9169c250", null ],
+    [ "MoveToNextNode", "a00142.html#af06f8126e7f039adc585e837b7b81f82", null ],
+    [ "MoveToParentNode", "a00142.html#a71869c4c9d018174f02d77f6e3041dcf", null ],
+    [ "MoveToRootNode", "a00142.html#ad3e96461fdaf5f39c688cd32fbeff564", null ],
+    [ "Parse", "a00142.html#a673e6055c6662c15c81931ae71ac7f28", null ],
+    [ "Parse", "a00142.html#a1d4d777da0008cf9e57707f89ed12486", null ],
+    [ "Save", "a00142.html#ada002643ade3567c9edfc576f8beaa81", null ],
+    [ "SetAttribute", "a00142.html#a8b410764c8c20de92ce18251f65ed66e", null ],
+    [ "SetValue", "a00142.html#a587389217c21a274669d906385315ade", null ]
 ];

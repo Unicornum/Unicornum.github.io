@@ -1,6 +1,7 @@
 var a00116 =
 [
-    [ "Message", "a00116.html#a3d40aeefeba1cf87f0ce3cc251f656f2", null ],
-    [ "DoSpecialAction", "a00116.html#a22780dd83eb6c92232d773cf09536961", null ],
-    [ "GetLevel", "a00116.html#a7e0aa36f88d152d1b6e99a9d1bb2da04", null ]
+    [ "IsAllowedRedo", "a00116.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
+    [ "IsAllowedUndo", "a00116.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
+    [ "Redo", "a00116.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
+    [ "Undo", "a00116.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
 ];

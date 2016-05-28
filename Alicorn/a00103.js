@@ -1,4 +1,4 @@
 var a00103 =
 [
-    [ "SetResultRunTests", "a00103.html#ae7eddbdc0628726a9a3f446e3cb8f199", null ]
+    [ "GetResult", "a00103.html#af3b06a8f3860ae9f64b3dd8a4bf5d6fe", null ]
 ];

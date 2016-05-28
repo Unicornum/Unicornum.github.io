@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['wxwidgets',['WxWidgets',['../a00706.html',1,'']]],
-  ['wxwidgets',['wxWidgets',['../a00696.html',1,'']]],
-  ['wxwidgets',['wxWidgets',['../a00715.html',1,'']]],
-  ['warning',['Warning',['../a00164.html',1,'alicorn::logger']]],
-  ['winapi_5fcall',['WINAPI_CALL',['../a00727.html#gac67366a4782d98fd71f21ecc3981365b',1,'winapi-call.hpp']]],
-  ['winapicallproxy',['WinapiCallProxy',['../a00165.html',1,'alicorn::system']]],
-  ['writerecord',['WriteRecord',['../a00062.html#aab3352a57302cff220e46d9cea1c12bb',1,'alicorn::logger::report::Console::WriteRecord()'],['../a00078.html#a85e8f0a3f9eb6761d72e2aa56c3c115f',1,'alicorn::logger::report::Empty::WriteRecord()'],['../a00083.html#acb716a4ccea948033c64be86775d671d',1,'alicorn::logger::report::File::WriteRecord()'],['../a00089.html#a7e66035d80654aefc735bc594ded20ef',1,'alicorn::logger::report::Html::WriteRecord()'],['../a00100.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3',1,'alicorn::logger::report::IReport::WriteRecord()'],['../a00157.html#a487f860fae5255eaa76c988294a764b7',1,'alicorn::logger::report::Text::WriteRecord()'],['../a00163.html#a36ba11583024bbba693e2998ea4d3668',1,'alicorn::logger::report::VisualStudioOutput::WriteRecord()']]],
-  ['writetitle',['WriteTitle',['../a00062.html#a16ff9b02d58211e7be68cc7514755e85',1,'alicorn::logger::report::Console::WriteTitle()'],['../a00078.html#a6253aaf199d14172d37737d1cc1d7de6',1,'alicorn::logger::report::Empty::WriteTitle()'],['../a00089.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b',1,'alicorn::logger::report::Html::WriteTitle()'],['../a00100.html#a9bf8de2311368a37058659bb9c3ae1da',1,'alicorn::logger::report::IReport::WriteTitle()'],['../a00157.html#a16e5c27860d379682fe582396e14609d',1,'alicorn::logger::report::Text::WriteTitle()'],['../a00163.html#a672763fba708c23851b38be162768bac',1,'alicorn::logger::report::VisualStudioOutput::WriteTitle()']]],
-  ['wx_2ehpp',['wx.hpp',['../a00507.html',1,'']]],
-  ['wx_2emock_2ehpp',['wx.mock.hpp',['../a00508.html',1,'']]],
-  ['wx_2eusing_2ehpp',['wx.using.hpp',['../a00510.html',1,'']]]
+  ['wxwidgets',['WxWidgets',['../a00733.html',1,'']]],
+  ['wxwidgets',['wxWidgets',['../a00724.html',1,'']]],
+  ['wxwidgets',['wxWidgets',['../a00743.html',1,'']]],
+  ['warning',['Warning',['../a00174.html',1,'alicorn::logger']]],
+  ['winapi_5fcall',['WINAPI_CALL',['../a00755.html#gac67366a4782d98fd71f21ecc3981365b',1,'winapi-call.hpp']]],
+  ['winapicallproxy',['WinapiCallProxy',['../a00175.html',1,'alicorn::system']]],
+  ['writerecord',['WriteRecord',['../a00062.html#aab3352a57302cff220e46d9cea1c12bb',1,'alicorn::logger::report::Console::WriteRecord()'],['../a00078.html#a85e8f0a3f9eb6761d72e2aa56c3c115f',1,'alicorn::logger::report::Empty::WriteRecord()'],['../a00084.html#acb716a4ccea948033c64be86775d671d',1,'alicorn::logger::report::File::WriteRecord()'],['../a00090.html#a7e66035d80654aefc735bc594ded20ef',1,'alicorn::logger::report::Html::WriteRecord()'],['../a00102.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3',1,'alicorn::logger::report::IReport::WriteRecord()'],['../a00167.html#a487f860fae5255eaa76c988294a764b7',1,'alicorn::logger::report::Text::WriteRecord()'],['../a00173.html#a36ba11583024bbba693e2998ea4d3668',1,'alicorn::logger::report::VisualStudioOutput::WriteRecord()']]],
+  ['writetitle',['WriteTitle',['../a00062.html#a16ff9b02d58211e7be68cc7514755e85',1,'alicorn::logger::report::Console::WriteTitle()'],['../a00078.html#a6253aaf199d14172d37737d1cc1d7de6',1,'alicorn::logger::report::Empty::WriteTitle()'],['../a00090.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b',1,'alicorn::logger::report::Html::WriteTitle()'],['../a00102.html#a9bf8de2311368a37058659bb9c3ae1da',1,'alicorn::logger::report::IReport::WriteTitle()'],['../a00167.html#a16e5c27860d379682fe582396e14609d',1,'alicorn::logger::report::Text::WriteTitle()'],['../a00173.html#a672763fba708c23851b38be162768bac',1,'alicorn::logger::report::VisualStudioOutput::WriteTitle()']]],
+  ['wx_2ehpp',['wx.hpp',['../a00534.html',1,'']]],
+  ['wx_2emock_2ehpp',['wx.mock.hpp',['../a00535.html',1,'']]],
+  ['wx_2eusing_2ehpp',['wx.using.hpp',['../a00537.html',1,'']]]
 ];

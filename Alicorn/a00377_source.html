@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/document.hpp</title>
+<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/Build/Testing.App/Testing.App/Support/IReport.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1595 Architecture: x86.64 Build: 16:39 21 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1681 Architecture: x86.64 Build: 11:41 28 Май 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -108,16 +108,21 @@ $(document).ready(function(){initNavTree('a00377_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">document.hpp</div>  </div>
+<div class="title">IReport.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a00377.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;document\xml.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\system\dll\object.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a00719.html">support</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span>Info;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00103.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00103.html">IReport</a> :</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00128.html">::alicorn::system::dll::Object</a></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00097.html">Info_t</a> = <a class="code" href="a00097.html">::support::Info</a>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> <a class="code" href="a00097.html">Info_t</a> &amp; <a class="code" href="a00103.html#af3b06a8f3860ae9f64b3dd8a4bf5d6fe">GetResult</a>(<span class="keywordtype">void</span>) = 0;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace support</span></div><div class="ttc" id="a00103_html"><div class="ttname"><a href="a00103.html">support::IReport</a></div><div class="ttdoc">Класс входит в Проект Testing.App   Интерфейсный класс для передачи результатов прогона тестов из dll...</div><div class="ttdef"><b>Definition:</b> IReport.hpp:26</div></div>
+<div class="ttc" id="a00103_html_af3b06a8f3860ae9f64b3dd8a4bf5d6fe"><div class="ttname"><a href="a00103.html#af3b06a8f3860ae9f64b3dd8a4bf5d6fe">support::IReport::GetResult</a></div><div class="ttdeci">virtual const Info_t &amp; GetResult(void)=0</div><div class="ttdoc">Функция получения информации о результатах прогона тестов. </div></div>
+<div class="ttc" id="a00128_html"><div class="ttname"><a href="a00128.html">alicorn::system::dll::Object</a></div><div class="ttdoc">Класс входит в Проект System   Базовый класс объектов, создаваемых в dll. </div><div class="ttdef"><b>Definition:</b> object.hpp:30</div></div>
+<div class="ttc" id="a00097_html"><div class="ttname"><a href="a00097.html">support::Info</a></div><div class="ttdoc">Класс входит в Проект SettingsApp   Класс, содержащий информацию об одном параметре. </div><div class="ttdef"><b>Definition:</b> Parameters.hpp:22</div></div>
+<div class="ttc" id="a00719_html"><div class="ttname"><a href="a00719.html">support</a></div><div class="ttdef"><b>Definition:</b> Parameters.hpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="a00377.html">document.hpp</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 21 Май 2016 16:39:46. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_5d1c2c80bed916d20043917303c9546c.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_cad1c512beafda1209274ba9611f9f30.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_65f6658ffad97724d87c5162ec57f707.html">Support</a></li><li class="navelem"><b>IReport.hpp</b></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 28 Май 2016 11:41:50. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

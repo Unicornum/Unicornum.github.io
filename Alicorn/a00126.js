@@ -1,11 +1,11 @@
 var a00126 =
 [
-    [ "KilledException", "a00105.html", null ],
-    [ "Process", "a00126.html#a15c85d53e3079f343aead5930adb4b2a", null ],
-    [ "RunWithoutWaitingCompletion", "a00126.html#aba7f11fb8fa69202ba38b053573120e2", null ],
-    [ "RunWithoutWaitingCompletion", "a00126.html#a063aed97bbe1aab8e168710a235f330f", null ],
-    [ "RunWithReceiveStdout", "a00126.html#a85f1f11f01d19ce759652b29ffe2fbc1", null ],
-    [ "RunWithReceiveStdout", "a00126.html#a2971a5187f0cb4ff11e9b060a04fb9a6", null ],
-    [ "RunWithWaitingCompletion", "a00126.html#abf13c8f751e0a515e8a727d26c1ce237", null ],
-    [ "RunWithWaitingCompletion", "a00126.html#a307fd8ed0bb55e570eed80cc292e75c0", null ]
+    [ "operator+=", "a00126.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
+    [ "operator-=", "a00126.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
+    [ "operator[]", "a00126.html#aab381d95bc38753a42ebc7c60fb2ce9a", null ],
+    [ "operator[]", "a00126.html#afc41066cbf2787ffb952d199a0640273", null ],
+    [ "operator[]", "a00126.html#a2f8e7fe05286832a146e97352345506e", null ],
+    [ "operator[]", "a00126.html#a4bfda637ac9887bb9676f301e40861be", null ],
+    [ "operator[]", "a00126.html#a44ae2217ccac94b6b565701bfd05774e", null ],
+    [ "operator[]", "a00126.html#a75535c69883d5768f646b92554d745d2", null ]
 ];
