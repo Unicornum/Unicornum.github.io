@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Шаблон класса alicorn::patterns::command::IManager&lt; TInterface &gt;</title>
+<title>LibsVS2013: Класс model::IModel</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1681 Architecture: x86.64 Build: 11:41 28 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.4.0 Revision: 1726 Architecture: x86.32 Build: 11:35 02 Июнь 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -110,64 +110,51 @@ $(document).ready(function(){initNavTree('a00095.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00959.html">Полный список членов класса</a>  </div>
+<a href="a01078.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::command::IManager&lt; TInterface &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a00722.html">Alicorn</a> &raquo; <a class="el" href="a00752.html">Patterns</a> &raquo; <a class="el" href="a00749.html">Command</a></div></div>  </div>
+<div class="title">Класс model::IModel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a00739.html">Alicorn</a> &raquo; <a class="el" href="a00740.html">SettingsApp</a> &raquo; <a class="el" href="a00743.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00028.html">Проект Patterns</a> <br />
- Интерфейсный класс менеджеров, управляющих выполнением команд.  
+<p>Класс входит в <a class="el" href="a00032.html">Проект SettingsApp</a> <br />
+ Интерфейсный класс модели.  
  <a href="a00095.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00591_source.html">IManager.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00325_source.html">IModel.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:alicorn::patterns::command::IManager&lt; TInterface &gt;:</div>
+Граф наследования:model::IModel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00960.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_inherit__map" id="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_inherit__map">
-<area shape="rect" id="node3" href="a00115.html" title="Класс входит в Проект Patterns &#160;&#160;Базовый класс менеджеров, управляющих выполнением команд..." alt="" coords="29,177,235,298"/>
+<div class="center"><img src="a01079.png" border="0" usemap="#model_1_1_i_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_i_model_inherit__map" id="model_1_1_i_model_inherit__map">
+<area shape="rect" id="node3" href="a00127.html" title="Класс входит в Проект SettingsApp &#160;&#160;Класс главного объекта модели. " alt="" coords="5,177,133,298"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса alicorn::patterns::command::IManager&lt; TInterface &gt;:</div>
+Граф связей класса model::IModel:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00961.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_coll__map" id="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_coll__map">
+<div class="center"><img src="a01080.png" border="0" usemap="#model_1_1_i_model_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_i_model_coll__map" id="model_1_1_i_model_coll__map">
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TInterface&gt;<br />
-class alicorn::patterns::command::IManager&lt; TInterface &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00028.html">Проект Patterns</a> <br />
- Интерфейсный класс менеджеров, управляющих выполнением команд. </p>
-<ul>
-<li>Функция DoExecute(...) должна выполнять действия, необходимые для выполнения команды.</li>
-<li>Функция DoException(...) должна вызываться при перехвате исключения.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Интерфейсный</td><td>класс выполняемых команд.</td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00032.html">Проект SettingsApp</a> <br />
+ Интерфейсный класс модели. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
+<dl class="section date"><dt>Дата</dt><dd>26 Декабрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00591_source.html">IManager.hpp</a></li>
+<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/Model/<a class="el" href="a00325_source.html">IModel.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00095.html">IManager</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 28 Май 2016 11:41:52. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00095.html">IModel</a></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Чт 2 Июн 2016 11:36:03. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

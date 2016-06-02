@@ -1,17 +1,15 @@
 var a00739 =
 [
-    [ "Controller", "a00729.html", "a00729" ],
-    [ "Model", "a00730.html", "a00730" ],
-    [ "Support", "a00731.html", "a00731" ],
-    [ "View", "a00734.html", "a00734" ],
-    [ "TestProject", "a00162.html", [
-      [ "DoInit", "a00162.html#a166e2f39596af561eb1248c513afbccb", null ]
-    ] ],
-    [ "TestSolution", "a00164.html", null ],
-    [ "MainFrame", "a00113.html", null ],
-    [ "TestClassMainFrame", "a00161.html", null ],
-    [ "TestSolutionMainFrame", "a00165.html", null ],
-    [ "Init", "a00100.html", null ],
-    [ "Main", "a00112.html", null ],
-    [ "TestClass", "a00160.html", null ]
+    [ "SettingsApp", "a00740.html", "a00740" ],
+    [ "Document", "a00753.html", "a00753" ],
+    [ "Testing.App", "a00756.html", "a00756" ],
+    [ "Extension", "a00761.html", "a00761" ],
+    [ "Logger", "a00765.html", "a00765" ],
+    [ "Patterns", "a00769.html", "a00769" ],
+    [ "Platform", "a00770.html", null ],
+    [ "Settings", "a00771.html", "a00771" ],
+    [ "System", "a00772.html", "a00772" ],
+    [ "Testing", "a00773.html", "a00773" ],
+    [ "Version", "a00774.html", "a00774" ],
+    [ "Visual Studio", "a00775.html", "a00775" ]
 ];

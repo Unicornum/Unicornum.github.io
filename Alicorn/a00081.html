@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1681 Architecture: x86.64 Build: 11:41 28 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.4.0 Revision: 1726 Architecture: x86.32 Build: 11:35 02 Июнь 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -111,9 +111,9 @@ $(document).ready(function(){initNavTree('a00081.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Открытые статические члены</a> &#124;
-<a href="a00971.html">Полный список членов класса</a>  </div>
+<a href="a00986.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::factory::Factory&lt; TInterface, TId &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00722.html">Alicorn</a> &raquo; <a class="el" href="a00752.html">Patterns</a> &raquo; <a class="el" href="a00750.html">Factory</a></div></div>  </div>
+<div class="title">Шаблон класса alicorn::patterns::factory::Factory&lt; TInterface, TId &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00739.html">Alicorn</a> &raquo; <a class="el" href="a00769.html">Patterns</a> &raquo; <a class="el" href="a00767.html">Factory</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -121,11 +121,11 @@ $(document).ready(function(){initNavTree('a00081.html','');});
  Фабрика объектов (создание объектов по идентификатору (строке) класса).  
  <a href="a00081.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00598_source.html">factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00614_source.html">factory.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса alicorn::patterns::factory::Factory&lt; TInterface, TId &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00972.png" border="0" usemap="#alicorn_1_1patterns_1_1factory_1_1_factory_3_01_t_interface_00_01_t_id_01_4_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a00987.png" border="0" usemap="#alicorn_1_1patterns_1_1factory_1_1_factory_3_01_t_interface_00_01_t_id_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="alicorn_1_1patterns_1_1factory_1_1_factory_3_01_t_interface_00_01_t_id_01_4_coll__map" id="alicorn_1_1patterns_1_1factory_1_1_factory_3_01_t_interface_00_01_t_id_01_4_coll__map">
 </map>
 </div>
@@ -167,7 +167,7 @@ class alicorn::patterns::factory::Factory&lt; TInterface, TId &gt;</h3>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2010 - 2015</dd></dl>
 <h2>Пример использования: </h2>
-<div class="fragment"><div class="line"><span class="keyword">class </span>IBase</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func() <span class="keyword">const</span> = 0;</div><div class="line">  <span class="keyword">virtual</span> ~BaseBase() {}</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Base : <span class="keyword">public</span> IBase</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func()<span class="keyword"> const </span>{ std::cout &lt;&lt; <span class="stringliteral">&quot;Base::func\n&quot;</span>; }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der1 : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func()<span class="keyword"> const </span>{ std::cout &lt;&lt; <span class="stringliteral">&quot;Der1::func()&quot;</span> &lt;&lt; std::endl; }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a00752.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der1, IBase);</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der2 : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func()<span class="keyword"> const </span>{ std::cout &lt;&lt; <span class="stringliteral">&quot;Der2::func()&quot;</span>  &lt;&lt; std::endl; }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a00752.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der2, IBase);</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <span class="keyword">using</span> Factory_t = <a class="code" href="a00081.html">::alicorn::patterns::factory::Factory&lt;IBase&gt;</a>;</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> pObject = Factory_t::Create(<span class="stringliteral">&quot;Der1&quot;</span>);</div><div class="line">  <span class="keywordflow">if</span>(pObject) pObject-&gt;func(); <span class="comment">// &#39;Der1::func()&#39;</span></div><div class="line"></div><div class="line">  pObject = Factory_t::Create(<span class="stringliteral">&quot;Der2&quot;</span>);</div><div class="line">  <span class="keywordflow">if</span>(pObject) pObject-&gt;func(); <span class="comment">// &#39;Der2::func()&#39;</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Методы</h2>
+<div class="fragment"><div class="line"><span class="keyword">class </span>IBase</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func() <span class="keyword">const</span> = 0;</div><div class="line">  <span class="keyword">virtual</span> ~BaseBase() {}</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Base : <span class="keyword">public</span> IBase</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func()<span class="keyword"> const </span>{ std::cout &lt;&lt; <span class="stringliteral">&quot;Base::func\n&quot;</span>; }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der1 : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func()<span class="keyword"> const </span>{ std::cout &lt;&lt; <span class="stringliteral">&quot;Der1::func()&quot;</span> &lt;&lt; std::endl; }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a00769.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der1, IBase);</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der2 : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> <span class="keywordtype">void</span> func()<span class="keyword"> const </span>{ std::cout &lt;&lt; <span class="stringliteral">&quot;Der2::func()&quot;</span>  &lt;&lt; std::endl; }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a00769.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der2, IBase);</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <span class="keyword">using</span> Factory_t = <a class="code" href="a00081.html">::alicorn::patterns::factory::Factory&lt;IBase&gt;</a>;</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> pObject = Factory_t::Create(<span class="stringliteral">&quot;Der1&quot;</span>);</div><div class="line">  <span class="keywordflow">if</span>(pObject) pObject-&gt;func(); <span class="comment">// &#39;Der1::func()&#39;</span></div><div class="line"></div><div class="line">  pObject = Factory_t::Create(<span class="stringliteral">&quot;Der2&quot;</span>);</div><div class="line">  <span class="keywordflow">if</span>(pObject) pObject-&gt;func(); <span class="comment">// &#39;Der2::func()&#39;</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Методы</h2>
 <a class="anchor" id="ab623e8fecccf0c69bf8a9be11af41b10"></a>
 <div class="memitem">
 <div class="memproto">
@@ -253,7 +253,7 @@ template&lt;class TClass &gt; </div>
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/factory/<a class="el" href="a00598_source.html">factory.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/patterns/factory/<a class="el" href="a00614_source.html">factory.hpp</a></li>
 <li>Solution/Solution/Alicorn/include/alicorn/patterns/factory/factory.inl</li>
 </ul>
 </div><!-- contents -->
@@ -262,7 +262,7 @@ template&lt;class TClass &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>factory</b></li><li class="navelem"><a class="el" href="a00081.html">Factory</a></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 28 Май 2016 11:41:52. Создано системой
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Чт 2 Июн 2016 11:36:02. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

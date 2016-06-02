@@ -1,20 +1,15 @@
 var a00741 =
 [
-    [ "Locale", "a00111.html", [
-      [ "CP1251", "a00065.html", null ],
-      [ "CP866", "a00066.html", null ],
-      [ "Default", "a00071.html", null ],
-      [ "System", "a00159.html", null ],
-      [ "UTF8", "a00171.html", null ]
+    [ "Generated", "a00745.html", "a00745" ],
+    [ "Main", "a00114.html", null ],
+    [ "MainFrame", "a00116.html", null ],
+    [ "HtmlAbout", "a00090.html", null ],
+    [ "SettingsPage", "a00154.html", [
+      [ "GetActiveNameParameter", "a00154.html#a6c426d98cb43c98ace9fdd6f1f51c01a", null ],
+      [ "SetSettings", "a00154.html#a3a39a65878a05a704a6752f812e38384", null ]
     ] ],
-    [ "StringCastProxy", "a00156.html", [
-      [ "string_cast", "a00156.html#acda0aa998e1a3e1d0e9217b2d9b081d7", null ],
-      [ "string_cast", "a00156.html#add2a4f861ab927f202e9e49fc868699d", null ]
-    ] ],
-    [ "String", "a00155.html", [
-      [ "serialize", "a00155.html#a525d06040212293da2c8c3eb7006e561", null ],
-      [ "Tokenize", "a00155.html#a22e59a8ecbd629a830dd32f858286d02", null ]
-    ] ],
-    [ "string_cast", "a00741.html#gafc1bb38569424983a63fbf99ce9f47c1", null ],
-    [ "string_cast", "a00741.html#ga7547d6bee1244042e43ffb63d797c231", null ]
+    [ "SettingsPanel", "a00155.html", null ],
+    [ "TreeSections", "a00173.html", [
+      [ "SetSections", "a00173.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
+    ] ]
 ];

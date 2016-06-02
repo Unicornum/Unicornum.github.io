@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/extension/std/exception.hpp</title>
+<title>LibsVS2013: Исходный файл Solution/Solution/Alicorn/include/alicorn/lib-info/Test.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">LibsVS2013
-   &#160;<span id="projectnumber">Версия: 3.3.1 Revision: 1681 Architecture: x86.64 Build: 11:41 28 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.4.0 Revision: 1726 Architecture: x86.32 Build: 11:35 02 Июнь 2016</span>
    </div>
    <div id="projectbrief">LibsVS2013</div>
   </td>
@@ -108,16 +108,16 @@ $(document).ready(function(){initNavTree('a00461_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">exception.hpp</div>  </div>
+<div class="title">Test.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;exception\proxy.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;exception\message.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="a00742.html#ga18c80e0bf61e9c8f9efa6d60e9be4718">   44</a></span>&#160;<span class="preprocessor">#define EXCEPTION(Type) \</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">  ::alicorn::extension::std::exception::Proxy&lt;Type&gt;() = \</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">    ::alicorn::extension::std::exception::Message(__FILE__, __LINE__)</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="a00742.html#ga548754b3aa0a4a77f1eeff2fd63e99dc">   53</a></span>&#160;<span class="preprocessor">#define EXCEPTION_NO_FILE_LINE(Type) \</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">  ::alicorn::extension::std::exception::Proxy&lt;Type&gt;() = \</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    ::alicorn::extension::std::Message&lt;::std::stringstream&gt;()</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a00742.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">   62</a></span>&#160;<span class="preprocessor">#define STD_EXCEPTION \</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">  EXCEPTION(::std::exception)</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once </span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// This is an automatically generated file, </span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// all changes will be lost the build of the project Test. </span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"> #ifdef _DEBUG </span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"> # pragma comment(lib, &quot;Alicorn.Extension.Google.Test.Debug.lib&quot;) </span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"> #else </span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"> # pragma comment(lib, &quot;Alicorn.Extension.Google.Test.Release.lib&quot;) </span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"> #endif </span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_c8af8c1795fb375da0dcf926b8c75dc1.html">extension</a></li><li class="navelem"><a class="el" href="dir_1c1ae6a9dd513339114153138401ee8e.html">std</a></li><li class="navelem"><b>exception.hpp</b></li>
-    <li class="footer">Документация по LibsVS2013. Последние изменения: Сб 28 Май 2016 11:41:50. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_d402b73afef290bc974772fd55dcf507.html">lib-info</a></li><li class="navelem"><b>Test.hpp</b></li>
+    <li class="footer">Документация по LibsVS2013. Последние изменения: Чт 2 Июн 2016 11:36:00. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

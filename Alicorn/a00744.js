@@ -1,7 +1,5 @@
 var a00744 =
 [
-    [ "Boost", "a00737.html", "a00737" ],
-    [ "C++", "a00738.html", null ],
-    [ "Std", "a00742.html", "a00742" ],
-    [ "wxWidgets", "a00743.html", null ]
+    [ "wxWidgets", "a00741.html", "a00741" ],
+    [ "IView", "a00107.html", null ]
 ];
