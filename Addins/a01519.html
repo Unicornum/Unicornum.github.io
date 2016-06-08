@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Doxygen</title>
+<title>Addins: Logger</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.0 Revision: 4123 Architecture: x86.32 Build: 15:06 07 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
    </div>
-   <div id="projectbrief">Addins</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -102,36 +102,121 @@ $(document).ready(function(){initNavTree('a01519.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a>  </div>
   <div class="headertitle">
-<div class="title">Doxygen<div class="ingroups"><a class="el" href="a01498.html">Core</a> &raquo; <a class="el" href="a01525.html">Utilities</a></div></div>  </div>
+<div class="title">Logger<div class="ingroups"><a class="el" href="a01494.html">Core</a> &raquo; <a class="el" href="a01521.html">Utilities</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Doxygen:</div>
+Граф связей класса Logger:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a01519.png" border="0" alt="" usemap="#a01519"/>
 <map name="a01519" id="a01519">
-<area shape="rect" id="node1" href="a01525.html" title="Utilities" alt="" coords="6,5,77,32"/>
+<area shape="rect" id="node1" href="a01521.html" title="Utilities" alt="" coords="6,5,77,32"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00300.html">core::utilities::doxygen::Prefatory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00076.html">Проект Doxygen</a> <br />
- Класс для предварительной обработки файлов документации.  <a href="a00300.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00260.html">core::utilities::vs::LoggerProxy</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
+ Прокси-класс для записи сообщения в выводное окно Visual Studio.  <a href="a00260.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00274.html">core::utilities::vs::Message</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
+ Класс формирования сообщения.  <a href="a00274.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00322.html">core::utilities::vs::Report</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00084.html">Проект Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio.  <a href="a00322.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga345c4c5738e77b5c57829337d3cd0444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01519.html#ga345c4c5738e77b5c57829337d3cd0444">LOGGER_WINDOW</a>(TypeMessage,  WindowName)</td></tr>
+<tr class="memdesc:ga345c4c5738e77b5c57829337d3cd0444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос для записи сообщений в окно с указанным именем.  <a href="#ga345c4c5738e77b5c57829337d3cd0444">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga345c4c5738e77b5c57829337d3cd0444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e006c362392fcb5ee93ed2e45521d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01519.html#ga7e006c362392fcb5ee93ed2e45521d13">LOGGER</a>(TypeMessage)&#160;&#160;&#160;<a class="el" href="a01519.html#ga345c4c5738e77b5c57829337d3cd0444">LOGGER_WINDOW</a>(TypeMessage, LOG_TITLE)</td></tr>
+<tr class="memdesc:ga7e006c362392fcb5ee93ed2e45521d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос для записи сообщений в лог.  <a href="#ga7e006c362392fcb5ee93ed2e45521d13">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga7e006c362392fcb5ee93ed2e45521d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p><a class="anchor" id="aCoreUtilitiesDoxygenClasses"></a> Группа классов проекта <a class="el" href="a00076.html">Проект Doxygen</a>. </p>
+<p><a class="anchor" id="aCoreUtilitiesLoggerClasses"></a> Группа классов проекта <a class="el" href="a00084.html">Проект Logger</a>. </p>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="ga7e006c362392fcb5ee93ed2e45521d13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOGGER</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TypeMessage</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="a01519.html#ga345c4c5738e77b5c57829337d3cd0444">LOGGER_WINDOW</a>(TypeMessage, LOG_TITLE)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Макрос для записи сообщений в лог. </p>
+<ul>
+<li>Для того, чтобы этот макрос можно было использовать в классе, этот класс должен определять функцию: <br />
+ const <a class="el" href="a00202.html" title="Класс входит в Проект Ide   Класс-обертка для EnvDTE80::DTE2. ">wrappers::vs::DTE</a> &amp; GetDTE() const;</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>5 мар 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga345c4c5738e77b5c57829337d3cd0444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOGGER_WINDOW</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TypeMessage, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">WindowName&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line">::core::utilities::vs::LoggerProxy::GetInstance(GetDTE(), WindowName) = \</div><div class="line">    ::core::utilities::vs::Message(::core::utilities::vs::Report::Flag::TypeMessage)</div></div><!-- fragment -->
+<p>Макрос для записи сообщений в окно с указанным именем. </p>
+<ul>
+<li>Для того, чтобы этот макрос можно было использовать в классе, этот класс должен определять функцию: <br />
+ const <a class="el" href="a00202.html" title="Класс входит в Проект Ide   Класс-обертка для EnvDTE80::DTE2. ">wrappers::vs::DTE</a> &amp; GetDTE() const;</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2 июнь 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 7 Май 2016 15:06:27. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

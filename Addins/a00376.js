@@ -1,4 +1,5 @@
 var a00376 =
 [
-    [ "IsEnabled", "a00376.html#adf476033bc2dc4304bac28cba75f3185", null ]
+    [ "OnBeginShutdown", "a00376.html#a71f3f4bee92ff601a27a1d715d3bdafc", null ],
+    [ "OnStartupComplete", "a00376.html#a9c46dcb2e8de0f1939a30c41f0b3b34d", null ]
 ];

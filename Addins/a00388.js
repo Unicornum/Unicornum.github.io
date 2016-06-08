@@ -1,5 +1,5 @@
 var a00388 =
 [
-    [ "Version", "a00388.html#a7d2499fa8d9c9662b901025faac90256", null ],
-    [ "DoIncrement", "a00388.html#a2dd372ebbca46fceb191708e0976e340", null ]
+    [ "GetCaption", "a00388.html#a213b05e1e799977867081656e3936a23", null ],
+    [ "IsEnabled", "a00388.html#a787eec667e45ffc550976b3f6651a27d", null ]
 ];

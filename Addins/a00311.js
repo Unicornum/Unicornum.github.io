@@ -1,6 +1,8 @@
 var a00311 =
 [
-    [ "PropertySheet2012", "a00311.html#a9e3292b8deeaed8576cc91c6361adb13", null ],
-    [ "GetPathToFile", "a00311.html#a7930a5bc2066899ea7834758ef47556f", null ],
-    [ "Remove", "a00311.html#aa7c01ddc200844a6317d9818f6ec70b0", null ]
+    [ "GetCount", "a00311.html#a84deda4da0dee63d4649e716530fa40a", null ],
+    [ "LoadFromFile", "a00311.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee", null ],
+    [ "operator[]", "a00311.html#ad72225ba2b4463641376cf898ed3601b", null ],
+    [ "operator[]", "a00311.html#a8ca988ed57b6e781a9ea5f82e6a00373", null ],
+    [ "Remove", "a00311.html#acf74f6d63cbd4f8cb649ebf3404117db", null ]
 ];

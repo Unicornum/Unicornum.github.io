@@ -42,7 +42,7 @@ var searchData=
   ['basepanelmatchsearch',['BasePanelMatchSearch',['../a00128.html',1,'wx']]],
   ['basepanelreplace',['BasePanelReplace',['../a00129.html',1,'wx']]],
   ['beforebuildstart',['BeforeBuildStart',['../a00130.html#a87a0f9f968a5cd336184ccd19f62a42f',1,'BuildEvents']]],
-  ['beforeclosing',['BeforeClosing',['../a00333.html#a21b7a290c5f3fcba26b4b07e056a7320',1,'SolutionEvents']]],
+  ['beforeclosing',['BeforeClosing',['../a00331.html#a21b7a290c5f3fcba26b4b07e056a7320',1,'SolutionEvents']]],
   ['beforeprojconfbuildstart',['BeforeProjConfBuildStart',['../a00130.html#ab82624b7458a674601e2b57760df4c5d',1,'BuildEvents']]],
   ['beginupdate',['BeginUpdate',['../a00252.html#a4b573f4e5f8b8471589cf411ea5fe4f1',1,'view::ITasksPanel']]],
   ['blockcompleted',['BlockCompleted',['../a00169.html#a1aff9703315ef9c956efe99cb62bf994a643b4b773985c35190cf993d5c455bc8',1,'support::DataTask']]],

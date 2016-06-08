@@ -1,7 +1,12 @@
 var a01519 =
 [
-    [ "Prefatory", "a00300.html", [
-      [ "GetLogProgress", "a00300.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
-      [ "Process", "a00300.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
-    ] ]
+    [ "LoggerProxy", "a00260.html", [
+      [ "operator=", "a00260.html#a17780b4769971be6e974544f47de2085", null ]
+    ] ],
+    [ "Message", "a00274.html", null ],
+    [ "Report", "a00322.html", [
+      [ "ToLog", "a00322.html#ae23c3dd2c59922ac8994444707812c3f", null ]
+    ] ],
+    [ "LOGGER", "a01519.html#ga7e006c362392fcb5ee93ed2e45521d13", null ],
+    [ "LOGGER_WINDOW", "a01519.html#ga345c4c5738e77b5c57829337d3cd0444", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Controller/DoUpdate.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Model.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.0 Revision: 4123 Architecture: x86.32 Build: 15:06 07 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
    </div>
-   <div id="projectbrief">Addins</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -108,21 +108,16 @@ $(document).ready(function(){initNavTree('a00776_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">DoUpdate.hpp</div>  </div>
+<div class="title">Model.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\patterns\mvc.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01478.html">model</a> { <span class="keyword">class </span>IModel; }</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01489.html">view</a> { <span class="keyword">class </span>IView; }</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01431.html">controller</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a00191.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00191.html">DoUpdate</a> final :</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span> ::alicorn::patterns::mvc::controller::BlockingSignal&lt;::view::IView *&gt;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> Execute(::<a class="code" href="a00253.html">view::IView</a> *) <span class="keyword">override</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> Fail(const ::std::string &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  const ::model::IModel &amp; m_Model;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00191.html">DoUpdate</a>(const ::model::IModel &amp;);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <a class="code" href="a00191.html">DoUpdate</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a00191.html">DoUpdate</a> &amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace controller</span></div><div class="ttc" id="a00191_html"><div class="ttname"><a href="a00191.html">controller::DoUpdate</a></div><div class="ttdoc">Класс входит в Проект DevelopmentInfo   Класс, обеспечивающий логику работы сигнала обновления предст...</div><div class="ttdef"><b>Definition:</b> DoUpdate.hpp:26</div></div>
-<div class="ttc" id="a01478_html"><div class="ttname"><a href="a01478.html">model</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:4</div></div>
-<div class="ttc" id="a00253_html"><div class="ttname"><a href="a00253.html">view::IView</a></div><div class="ttdoc">Класс входит в Проект DevelopmentInfo   Интерфейсный класс представления. </div><div class="ttdef"><b>Definition:</b> IView.hpp:24</div></div>
-<div class="ttc" id="a01431_html"><div class="ttname"><a href="a01431.html">controller</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:7</div></div>
-<div class="ttc" id="a01489_html"><div class="ttname"><a href="a01489.html">view</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:5</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Model\CurrentSolutionInfo.hpp&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Model\AllSolutionsInfo.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_110d6735e314bf40517722ce589b8bcb.html">DevelopmentInfo</a></li><li class="navelem"><a class="el" href="dir_099d960dd30edc6ef4edba046e1efc93.html">DevelopmentInfo</a></li><li class="navelem"><a class="el" href="dir_5977f651243f111992c285effe2a100e.html">Controller</a></li><li class="navelem"><b>DoUpdate.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 7 Май 2016 15:06:24. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_110d6735e314bf40517722ce589b8bcb.html">DevelopmentInfo</a></li><li class="navelem"><a class="el" href="dir_099d960dd30edc6ef4edba046e1efc93.html">DevelopmentInfo</a></li><li class="navelem"><b>Model.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:49. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

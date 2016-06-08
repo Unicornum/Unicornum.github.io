@@ -1,5 +1,5 @@
 var a00299 =
 [
-    [ "ToCommandLine", "a00299.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
-    [ "ToLog", "a00299.html#a13578a09c2e689167fe7aa0121fbda80", null ]
+    [ "GetLogProgress", "a00299.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
+    [ "Process", "a00299.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
 ];

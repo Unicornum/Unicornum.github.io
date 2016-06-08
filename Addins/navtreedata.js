@@ -2,7 +2,6 @@ var NAVTREE =
 [
   [ "Addins", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Исходные требования утилиты ProjectTasks", "a00043.html", null ],
     [ "Список задач", "a00001.html", null ],
     [ "Ошибки", "a00002.html", null ],
     [ "Группы", "modules.html", "modules" ],
@@ -31,14 +30,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00094.html#sWrappersCommonBrief",
-"a00169.html#aff285a7e21a4c497e71c8a61c4a37d6a",
-"a00257.html#aa87f8f4b0d4f18613db3a486006cec2f",
+"a00094.html",
+"a00169.html#a691262cf2fe5bef7f91cfc1e90d442f5",
+"a00258.html#a4c0f82e5f6225f0586fcbbd2ba63e040",
 "a00347.html",
-"a00498_source.html",
-"a00839_source.html",
-"a01170_source.html",
-"dir_032f8e2d585e842bec8044b05d03b16d.html"
+"a00500_source.html",
+"a00843.html",
+"a01172_source.html",
+"dir_099d960dd30edc6ef4edba046e1efc93.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

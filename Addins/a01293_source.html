@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Document/Document.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Document/Document/Documents.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.0 Revision: 4123 Architecture: x86.32 Build: 15:06 07 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
    </div>
-   <div id="projectbrief">Addins</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -108,16 +108,21 @@ $(document).ready(function(){initNavTree('a01293_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Document.hpp</div>  </div>
+<div class="title">Documents.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a01293.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;Document\Document.forward.hpp&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Document\Documents.hpp&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Document\Document.hpp&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;Document\Cursor.hpp&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Document\Lines.hpp&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;Document\Line.hpp&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;Document\TextSelection.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01469.html">wrappers</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>Document;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a00183.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00183.html">Documents</a> : <span class="keyword">public</span> <a class="code" href="a00127.html">Base</a>&lt;EnvDTE::Documents&gt;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Оператор доступа к активному документу.</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="a00179.html">Document</a> <a class="code" href="a00183.html#ae3a0bf136d31a78709f12b2c507a7f8d">operator[] </a>(Active_t) <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <a class="code" href="a00183.html">Documents</a>(<span class="keyword">const</span> ComPtr_t &amp; _pPointer);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ~<a class="code" href="a00183.html">Documents</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace wrappers</span></div><div class="ttc" id="a00127_html"><div class="ttname"><a href="a00127.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Проект Common   Базовый класс для оберток объектов надстройки. </div><div class="ttdef"><b>Definition:</b> Base.hpp:34</div></div>
+<div class="ttc" id="a00179_html"><div class="ttname"><a href="a00179.html">wrappers::vs::Document</a></div><div class="ttdoc">Класс входит в Проект Document   Класс-обертка для EnvDTE::Document. </div><div class="ttdef"><b>Definition:</b> Document.hpp:37</div></div>
+<div class="ttc" id="a00183_html"><div class="ttname"><a href="a00183.html">wrappers::vs::Documents</a></div><div class="ttdoc">Класс входит в Проект Document   Коллекция документов Visual Studio. </div><div class="ttdef"><b>Definition:</b> Documents.hpp:37</div></div>
+<div class="ttc" id="a01469_html"><div class="ttname"><a href="a01469.html">mock::wrappers</a></div><div class="ttdef"><b>Definition:</b> Data.mock.hpp:10</div></div>
+<div class="ttc" id="a00183_html_ae3a0bf136d31a78709f12b2c507a7f8d"><div class="ttname"><a href="a00183.html#ae3a0bf136d31a78709f12b2c507a7f8d">wrappers::vs::Documents::operator[]</a></div><div class="ttdeci">Document operator[](Active_t) const </div><div class="ttdoc">Оператор доступа к активному документу. </div><div class="ttdef"><b>Definition:</b> Documents.cpp:25</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_d157d7bfe6141e2aaab6e272ec3ed556.html">Document</a></li><li class="navelem"><a class="el" href="a01293.html">Document.hpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 7 Май 2016 15:06:26. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_d157d7bfe6141e2aaab6e272ec3ed556.html">Document</a></li><li class="navelem"><a class="el" href="dir_317725232a7802027b94f1a327f4b7d3.html">Document</a></li><li class="navelem"><b>Documents.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:50. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

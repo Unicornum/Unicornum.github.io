@@ -23,34 +23,33 @@ var annotated_dup =
       [ "DoUpdateParentTask", "a00194.html", null ],
       [ "DoUpdatePositionTask", "a00195.html", null ],
       [ "DoUpdateProcessView", "a00196.html", "a00196" ],
-      [ "DoUpdateView", "a00197.html", "a00197" ],
-      [ "NonBlockingSignal", "a00278.html", "a00278" ]
+      [ "DoUpdateView", "a00197.html", "a00197" ]
     ] ],
     [ "core", null, [
       [ "connection_commands", null, [
         [ "CreateCommands", "a00162.html", null ],
-        [ "Data", "a00166.html", null ],
+        [ "Data", "a00165.html", null ],
         [ "DestroyCommands", "a00171.html", null ],
         [ "DoExecute", "a00184.html", null ],
         [ "DoQueryStatus", "a00188.html", null ],
         [ "NeedActivateCommand", "a00277.html", null ],
-        [ "Perform", "a00298.html", null ]
+        [ "Perform", "a00297.html", null ]
       ] ],
       [ "useful_commands", null, [
         [ "common", null, [
           [ "Commands", "a00150.html", "a00150" ],
           [ "ICommand", "a00220.html", "a00220" ],
           [ "IMenuCommand", "a00226.html", "a00226" ],
-          [ "UnionCommand", "a00373.html", "a00373" ]
+          [ "UnionCommand", "a00371.html", "a00371" ]
         ] ],
         [ "vs", null, [
           [ "common", null, [
             [ "ClearLog", "a00138.html", "a00138" ],
             [ "DoRunUtilities", "a00190.html", null ],
             [ "MenuUnknown", "a00273.html", "a00273" ],
-            [ "OpenLog", "a00284.html", "a00284" ],
-            [ "Test", "a00360.html", "a00360" ],
-            [ "Unknown", "a00375.html", "a00375" ]
+            [ "OpenLog", "a00283.html", "a00283" ],
+            [ "Test", "a00358.html", "a00358" ],
+            [ "Unknown", "a00373.html", "a00373" ]
           ] ],
           [ "documentation", null, [
             [ "doxygen", null, [
@@ -62,15 +61,15 @@ var annotated_dup =
               [ "IncreaseSubversion", "a00231.html", null ],
               [ "IncreaseVersion", "a00232.html", null ],
               [ "IncreaseVersionCommon", "a00233.html", "a00233" ],
-              [ "UpdateTimeDevelopmentInfo", "a00377.html", null ]
+              [ "UpdateTimeDevelopmentInfo", "a00375.html", null ]
             ] ],
             [ "DoBuildResultToHtml", "a00177.html", "a00177" ],
             [ "DoOpen", "a00185.html", "a00185" ],
             [ "GenerateSolutionDoc", "a00212.html", null ],
-            [ "OpenAddinsDoc", "a00280.html", "a00280" ],
-            [ "OpenAlicornDoc", "a00281.html", "a00281" ],
-            [ "OpenDoxygenDoc", "a00283.html", "a00283" ],
-            [ "OpenSolutionDoc", "a00288.html", "a00288" ]
+            [ "OpenAddinsDoc", "a00279.html", "a00279" ],
+            [ "OpenAlicornDoc", "a00280.html", "a00280" ],
+            [ "OpenDoxygenDoc", "a00282.html", "a00282" ],
+            [ "OpenSolutionDoc", "a00287.html", "a00287" ]
           ] ],
           [ "macros", null, [
             [ "CommentLineBreak", "a00152.html", "a00152" ],
@@ -81,23 +80,23 @@ var annotated_dup =
           [ "properties", null, [
             [ "AddSolutionPropsToProject", "a00119.html", "a00119" ],
             [ "CheckExistencePropertiesFile", "a00136.html", null ],
-            [ "RemoveSolutionPropsFromProject", "a00321.html", "a00321" ],
-            [ "SettingsValue", "a00329.html", "a00329" ]
+            [ "RemoveSolutionPropsFromProject", "a00320.html", "a00320" ],
+            [ "SettingsValue", "a00327.html", "a00327" ]
           ] ],
           [ "startup", null, [
             [ "CopyUsertypeFile", "a00158.html", null ],
             [ "DeleteLostCommand", "a00170.html", null ],
-            [ "OutputHostInfo", "a00289.html", null ]
+            [ "OutputHostInfo", "a00288.html", null ]
           ] ],
           [ "tags", null, [
             [ "DocumentProject", "a00182.html", "a00182" ],
             [ "File", "a00211.html", "a00211" ],
             [ "ITagValue", "a00246.html", "a00246" ],
-            [ "SelectedText", "a00325.html", "a00325" ],
-            [ "Solution", "a00330.html", "a00330" ],
-            [ "SolutionProject", "a00339.html", "a00339" ],
-            [ "Tag", "a00345.html", "a00345" ],
-            [ "Text", "a00364.html", "a00364" ]
+            [ "SelectedText", "a00324.html", "a00324" ],
+            [ "Solution", "a00328.html", "a00328" ],
+            [ "SolutionProject", "a00337.html", "a00337" ],
+            [ "Tag", "a00343.html", "a00343" ],
+            [ "Text", "a00361.html", "a00361" ]
           ] ],
           [ "testing", null, [
             [ "AddClassTest", "a00113.html", "a00113" ],
@@ -106,22 +105,22 @@ var annotated_dup =
             [ "AddTemplateTest", "a00121.html", "a00121" ],
             [ "ClassInfo", "a00137.html", "a00137" ],
             [ "ProjectInfo", "a00304.html", "a00304" ],
-            [ "TestClassBlank", "a00361.html", "a00361" ],
-            [ "TestClassProject", "a00362.html", "a00362" ]
+            [ "TestClassBlank", "a00359.html", "a00359" ],
+            [ "TestClassProject", "a00360.html", "a00360" ]
           ] ],
           [ "utilities", null, [
             [ "AddSelectedTextToUsertypeFile", "a00118.html", "a00118" ],
             [ "AStyleProcess", "a00126.html", "a00126" ],
             [ "CppCheckSolutionQuickProcess", "a00161.html", "a00161" ],
-            [ "OpenDevelopmentInfo", "a00282.html", "a00282" ],
-            [ "OpenProjectTasks", "a00285.html", "a00285" ],
-            [ "OpenRegExWindow", "a00286.html", "a00286" ],
-            [ "OpenSettings", "a00287.html", "a00287" ]
+            [ "OpenDevelopmentInfo", "a00281.html", "a00281" ],
+            [ "OpenProjectTasks", "a00284.html", "a00284" ],
+            [ "OpenRegExWindow", "a00285.html", "a00285" ],
+            [ "OpenSettings", "a00286.html", "a00286" ]
           ] ],
           [ "version", null, [
             [ "ConnectVersionResource", "a00156.html", null ],
-            [ "UpdateRevision", "a00376.html", "a00376" ],
-            [ "VersionAddins", "a00390.html", "a00390" ]
+            [ "UpdateRevision", "a00374.html", "a00374" ],
+            [ "VersionAddins", "a00388.html", "a00388" ]
           ] ]
         ] ]
       ] ],
@@ -130,23 +129,23 @@ var annotated_dup =
           [ "CallBack", "a00133.html", "a00133" ],
           [ "Marquee", "a00269.html", null ],
           [ "Mfc", "a00275.html", "a00275" ],
-          [ "None", "a00279.html", "a00279" ],
-          [ "Percent", "a00297.html", null ]
+          [ "None", "a00278.html", "a00278" ],
+          [ "Percent", "a00296.html", null ]
         ] ],
         [ "doxygen", null, [
-          [ "Prefatory", "a00300.html", "a00300" ]
+          [ "Prefatory", "a00299.html", "a00299" ]
         ] ],
         [ "environment_variables", null, [
           [ "Doxygen", "a00198.html", "a00198" ],
           [ "Empty", "a00205.html", null ],
-          [ "Main", "a00263.html", "a00263" ]
+          [ "Main", "a00262.html", "a00262" ]
         ] ],
         [ "execute", null, [
           [ "CppCheck", "a00159.html", "a00159" ],
           [ "Doxygen", "a00199.html", "a00199" ],
-          [ "Main", "a00261.html", null ],
-          [ "Svn", "a00343.html", "a00343" ],
-          [ "SvnInfo", "a00344.html", "a00344" ]
+          [ "Main", "a00263.html", null ],
+          [ "Svn", "a00341.html", "a00341" ],
+          [ "SvnInfo", "a00342.html", "a00342" ]
         ] ],
         [ "filter", null, [
           [ "CppCheck", "a00160.html", "a00160" ],
@@ -155,22 +154,22 @@ var annotated_dup =
           [ "IFilter", "a00225.html", "a00225" ]
         ] ],
         [ "vs", null, [
-          [ "Data", "a00165.html", null ],
+          [ "Data", "a00166.html", null ],
           [ "LoggerProxy", "a00260.html", "a00260" ],
           [ "Message", "a00274.html", null ],
-          [ "Report", "a00323.html", "a00323" ]
+          [ "Report", "a00322.html", "a00322" ]
         ] ],
         [ "AllSolutionsDevelopmentInfo", "a00122.html", "a00122" ],
         [ "Calendar", "a00132.html", "a00132" ],
         [ "DevelopmentInfo", "a00172.html", "a00172" ],
         [ "DevelopmentInfoData", "a00174.html", null ],
         [ "HotKey", "a00215.html", "a00215" ],
-        [ "ProjectInfo", "a00305.html", "a00305" ],
-        [ "ProjectTasksData", "a00309.html", null ],
-        [ "SolutionDevelopmentInfo", "a00332.html", "a00332" ],
-        [ "Text", "a00363.html", null ],
-        [ "Version", "a00389.html", "a00389" ],
-        [ "VersionResource", "a00391.html", "a00391" ]
+        [ "ProjectInfo", "a00303.html", "a00303" ],
+        [ "ProjectTasksData", "a00308.html", null ],
+        [ "SolutionDevelopmentInfo", "a00330.html", "a00330" ],
+        [ "Text", "a00362.html", null ],
+        [ "Version", "a00387.html", "a00387" ],
+        [ "VersionResource", "a00389.html", "a00389" ]
       ] ]
     ] ],
     [ "EnvDTE", null, [
@@ -192,24 +191,24 @@ var annotated_dup =
       [ "IWriteTask", "a00256.html", "a00256" ],
       [ "Match", "a00270.html", "a00270" ],
       [ "Model", "a00276.html", null ],
-      [ "Replace", "a00322.html", "a00322" ],
-      [ "Search", "a00324.html", "a00324" ]
+      [ "Replace", "a00321.html", "a00321" ],
+      [ "Search", "a00323.html", "a00323" ]
     ] ],
     [ "support", null, [
       [ "action", null, [
         [ "ExternalProgram", "a00210.html", "a00210" ],
-        [ "Version", "a00388.html", "a00388" ]
+        [ "Version", "a00386.html", "a00386" ]
       ] ],
       [ "Data", "a00168.html", "a00168" ],
       [ "DataTask", "a00169.html", "a00169" ],
       [ "DevelopmentInfo", "a00173.html", null ],
       [ "History", "a00214.html", "a00214" ],
-      [ "Main", "a00262.html", null ],
-      [ "RawDataTask", "a00320.html", null ],
-      [ "Task", "a00346.html", "a00346" ],
-      [ "TaskType", "a00359.html", "a00359" ],
-      [ "Type", "a00371.html", "a00371" ],
-      [ "TypeList", "a00372.html", null ]
+      [ "Main", "a00261.html", null ],
+      [ "RawDataTask", "a00319.html", null ],
+      [ "Task", "a00344.html", "a00344" ],
+      [ "TaskType", "a00357.html", "a00357" ],
+      [ "Type", "a00369.html", "a00369" ],
+      [ "TypeList", "a00370.html", null ]
     ] ],
     [ "view", null, [
       [ "DraggingTaskPanel", "a00201.html", null ],
@@ -227,32 +226,32 @@ var annotated_dup =
       [ "IWrite", "a00255.html", "a00255" ],
       [ "IWriteTaskPanel", "a00257.html", "a00257" ],
       [ "MainFrame", "a00265.html", null ],
-      [ "TaskPanel", "a00347.html", "a00347" ],
-      [ "TaskPanelBkColor", "a00349.html", "a00349" ],
-      [ "TaskPanelBrief", "a00351.html", "a00351" ],
-      [ "TaskPanelData", "a00352.html", "a00352" ],
-      [ "TaskPanelDept", "a00353.html", "a00353" ],
-      [ "TaskPanelEditor", "a00355.html", "a00355" ],
-      [ "TaskPanelText", "a00356.html", "a00356" ],
-      [ "TasksPanel", "a00358.html", null ],
-      [ "View", "a00392.html", null ]
+      [ "TaskPanel", "a00345.html", "a00345" ],
+      [ "TaskPanelBkColor", "a00347.html", "a00347" ],
+      [ "TaskPanelBrief", "a00349.html", "a00349" ],
+      [ "TaskPanelData", "a00350.html", "a00350" ],
+      [ "TaskPanelDept", "a00351.html", "a00351" ],
+      [ "TaskPanelEditor", "a00353.html", "a00353" ],
+      [ "TaskPanelText", "a00354.html", "a00354" ],
+      [ "TasksPanel", "a00355.html", null ],
+      [ "View", "a00390.html", null ]
     ] ],
     [ "wrappers", null, [
       [ "helper", null, [
         [ "vs", null, [
           [ "DocumentImpl", "a00181.html", "a00181" ],
-          [ "ProjectImpl", "a00303.html", "a00303" ],
-          [ "PropertySheetSearcher", "a00314.html", "a00314" ],
-          [ "SolutionImpl", "a00338.html", null ]
+          [ "ProjectImpl", "a00302.html", "a00302" ],
+          [ "PropertySheetSearcher", "a00313.html", "a00313" ],
+          [ "SolutionImpl", "a00336.html", null ]
         ] ],
         [ "IDocument", "a00223.html", null ],
         [ "ImplPtr", "a00229.html", null ],
         [ "IProject", "a00238.html", null ],
         [ "ISolution", "a00245.html", null ],
-        [ "Proxy", "a00315.html", null ],
-        [ "Proxy< wrappers::vs::Document >", "a00316.html", null ],
-        [ "Proxy< wrappers::vs::Project >", "a00317.html", null ],
-        [ "Proxy< wrappers::vs::Solution >", "a00318.html", null ]
+        [ "Proxy", "a00314.html", null ],
+        [ "Proxy< wrappers::vs::Document >", "a00315.html", null ],
+        [ "Proxy< wrappers::vs::Project >", "a00316.html", null ],
+        [ "Proxy< wrappers::vs::Solution >", "a00317.html", null ]
       ] ],
       [ "vs", null, [
         [ "selection", null, [
@@ -285,41 +284,41 @@ var annotated_dup =
         [ "IProjects", "a00239.html", "a00239" ],
         [ "IPropertySheet", "a00240.html", "a00240" ],
         [ "IPropertySheets", "a00241.html", "a00241" ],
-        [ "OutputWindow", "a00290.html", "a00290" ],
-        [ "OutputWindowPane", "a00291.html", "a00291" ],
-        [ "OutputWindowPanes", "a00292.html", "a00292" ],
-        [ "Project", "a00302.html", "a00302" ],
-        [ "Projects", "a00306.html", "a00306" ],
-        [ "ProjectsFolderImpl", "a00307.html", "a00307" ],
-        [ "ProjectsSolutionImpl", "a00308.html", "a00308" ],
-        [ "PropertySheet", "a00310.html", "a00310" ],
-        [ "PropertySheet2012", "a00311.html", "a00311" ],
-        [ "PropertySheets", "a00312.html", "a00312" ],
-        [ "PropertySheets2012", "a00313.html", "a00313" ],
-        [ "SelectionEvents", "a00326.html", null ],
-        [ "ServiceProvider", "a00327.html", "a00327" ],
-        [ "Solution", "a00331.html", "a00331" ],
-        [ "SolutionEvents", "a00334.html", null ],
-        [ "SolutionFolder", "a00335.html", null ],
-        [ "SolutionFolderHelper", "a00336.html", "a00336" ],
-        [ "SolutionFolders", "a00337.html", "a00337" ],
-        [ "StatusBar", "a00341.html", "a00341" ],
-        [ "Subscriber", "a00342.html", "a00342" ],
-        [ "TextEditorEvents", "a00366.html", null ],
-        [ "TextSelection", "a00367.html", "a00367" ],
-        [ "ToolWindows", "a00369.html", "a00369" ],
-        [ "Type", "a00370.html", null ],
-        [ "VCCollection", "a00379.html", "a00379" ],
-        [ "VCFile", "a00380.html", null ],
-        [ "VCFiles", "a00381.html", "a00381" ],
-        [ "VCFilter", "a00382.html", null ],
-        [ "VCFilterFiles", "a00383.html", "a00383" ],
-        [ "VCFilterFilters", "a00384.html", null ],
-        [ "VCFilters", "a00385.html", "a00385" ],
-        [ "VCProjectFiles", "a00386.html", "a00386" ],
-        [ "VCProjectFilters", "a00387.html", null ],
-        [ "Window", "a00393.html", "a00393" ],
-        [ "Windows", "a00394.html", null ]
+        [ "OutputWindow", "a00289.html", "a00289" ],
+        [ "OutputWindowPane", "a00290.html", "a00290" ],
+        [ "OutputWindowPanes", "a00291.html", "a00291" ],
+        [ "Project", "a00301.html", "a00301" ],
+        [ "Projects", "a00305.html", "a00305" ],
+        [ "ProjectsFolderImpl", "a00306.html", "a00306" ],
+        [ "ProjectsSolutionImpl", "a00307.html", "a00307" ],
+        [ "PropertySheet", "a00309.html", "a00309" ],
+        [ "PropertySheet2012", "a00310.html", "a00310" ],
+        [ "PropertySheets", "a00311.html", "a00311" ],
+        [ "PropertySheets2012", "a00312.html", "a00312" ],
+        [ "SelectionEvents", "a00325.html", null ],
+        [ "ServiceProvider", "a00326.html", "a00326" ],
+        [ "Solution", "a00329.html", "a00329" ],
+        [ "SolutionEvents", "a00332.html", null ],
+        [ "SolutionFolder", "a00333.html", null ],
+        [ "SolutionFolderHelper", "a00334.html", "a00334" ],
+        [ "SolutionFolders", "a00335.html", "a00335" ],
+        [ "StatusBar", "a00339.html", "a00339" ],
+        [ "Subscriber", "a00340.html", "a00340" ],
+        [ "TextEditorEvents", "a00364.html", null ],
+        [ "TextSelection", "a00365.html", "a00365" ],
+        [ "ToolWindows", "a00367.html", "a00367" ],
+        [ "Type", "a00368.html", null ],
+        [ "VCCollection", "a00377.html", "a00377" ],
+        [ "VCFile", "a00378.html", null ],
+        [ "VCFiles", "a00379.html", "a00379" ],
+        [ "VCFilter", "a00380.html", null ],
+        [ "VCFilterFiles", "a00381.html", "a00381" ],
+        [ "VCFilterFilters", "a00382.html", null ],
+        [ "VCFilters", "a00383.html", "a00383" ],
+        [ "VCProjectFiles", "a00384.html", "a00384" ],
+        [ "VCProjectFilters", "a00385.html", null ],
+        [ "Window", "a00391.html", "a00391" ],
+        [ "Windows", "a00392.html", null ]
       ] ]
     ] ],
     [ "wx", null, [
@@ -330,29 +329,28 @@ var annotated_dup =
       [ "ComboBox", "a00141.html", "a00141" ],
       [ "Diagram", "a00175.html", "a00175" ],
       [ "DiagramPanel", "a00176.html", "a00176" ],
-      [ "HtmlAbout", "a00216.html", "a00216" ],
+      [ "HtmlAbout", "a00216.html", null ],
       [ "HtmlHelper", "a00217.html", null ],
       [ "HtmlResultBuilder", "a00218.html", "a00218" ],
       [ "ICancelControl", "a00219.html", "a00219" ],
       [ "IDiagramPanel", "a00222.html", null ],
       [ "MainFrame", "a00266.html", null ],
       [ "MenuPanel", "a00272.html", null ],
-      [ "PanelMatch", "a00293.html", "a00293" ],
-      [ "PanelReplace", "a00294.html", "a00294" ],
-      [ "PanelSearch", "a00295.html", "a00295" ],
-      [ "PanelView", "a00296.html", "a00296" ],
-      [ "TaskPanel", "a00348.html", null ],
-      [ "TaskPanelBrief", "a00350.html", null ],
-      [ "TaskPanelEditor", "a00354.html", null ],
-      [ "TasksPanel", "a00357.html", null ],
-      [ "TextCtrl", "a00365.html", "a00365" ]
+      [ "PanelMatch", "a00292.html", "a00292" ],
+      [ "PanelReplace", "a00293.html", "a00293" ],
+      [ "PanelSearch", "a00294.html", "a00294" ],
+      [ "PanelView", "a00295.html", "a00295" ],
+      [ "TaskPanel", "a00346.html", null ],
+      [ "TaskPanelBrief", "a00348.html", null ],
+      [ "TaskPanelEditor", "a00352.html", null ],
+      [ "TasksPanel", "a00356.html", null ],
+      [ "TextCtrl", "a00363.html", "a00363" ]
     ] ],
     [ "BuildEvents", "a00130.html", "a00130" ],
     [ "CConnect", "a00134.html", "a00134" ],
     [ "CMainDllApp", "a00139.html", null ],
     [ "CommandManager", "a00149.html", "a00149" ],
-    [ "SetLocale", "a00328.html", null ],
-    [ "SolutionEvents", "a00333.html", "a00333" ],
-    [ "TimeTracker", "a00368.html", "a00368" ],
-    [ "UsingEvents", "a00378.html", "a00378" ]
+    [ "SolutionEvents", "a00331.html", "a00331" ],
+    [ "TimeTracker", "a00366.html", "a00366" ],
+    [ "UsingEvents", "a00376.html", "a00376" ]
 ];

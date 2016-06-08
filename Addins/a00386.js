@@ -1,4 +1,5 @@
 var a00386 =
 [
-    [ "Add", "a00386.html#ab059f2bea33c6a0f324c8a7f73f91458", null ]
+    [ "Version", "a00386.html#a7d2499fa8d9c9662b901025faac90256", null ],
+    [ "DoIncrement", "a00386.html#a2dd372ebbca46fceb191708e0976e340", null ]
 ];

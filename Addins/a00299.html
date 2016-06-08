@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::utilities::execute::CppCheck::Platform</title>
+<title>Addins: Класс core::utilities::doxygen::Prefatory</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.0 Revision: 4123 Architecture: x86.32 Build: 15:06 07 Май 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
    </div>
-   <div id="projectbrief">Addins</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -111,46 +111,62 @@ $(document).ready(function(){initNavTree('a00299.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01965.html">Полный список членов класса</a>  </div>
+<a href="a01945.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::execute::CppCheck::Platform</div>  </div>
+<div class="title">Класс core::utilities::doxygen::Prefatory<div class="ingroups"><a class="el" href="a01494.html">Core</a> &raquo; <a class="el" href="a01521.html">Utilities</a> &raquo; <a class="el" href="a01515.html">Doxygen</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс для формирования флага платформы.  
+<p>Класс входит в <a class="el" href="a00076.html">Проект Doxygen</a> <br />
+ Класс для предварительной обработки файлов документации.  
  <a href="a00299.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01154_source.html">CppCheck.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01131_source.html">Prefatory.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса core::utilities::execute::CppCheck::Platform:</div>
+Граф связей класса core::utilities::doxygen::Prefatory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01966.png" border="0" usemap="#core_1_1utilities_1_1execute_1_1_cpp_check_1_1_platform_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a01946.png" border="0" usemap="#core_1_1utilities_1_1doxygen_1_1_prefatory_coll__map" alt="Collaboration graph"/></div>
+<map name="core_1_1utilities_1_1doxygen_1_1_prefatory_coll__map" id="core_1_1utilities_1_1doxygen_1_1_prefatory_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2fb4d077ae8d67751e678c9ea2473d6"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#ae2fb4d077ae8d67751e678c9ea2473d6">ToCommandLine</a> (void) const </td></tr>
-<tr class="memdesc:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования числового значения флагов в строку для передачи <a class="el" href="a00159.html" title="Класс входит в Проект Execute   Класс для обработки папки программой CppCheck. ">CppCheck</a> в качестве параметров командной строки. <br /></td></tr>
-<tr class="separator:ae2fb4d077ae8d67751e678c9ea2473d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13578a09c2e689167fe7aa0121fbda80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13578a09c2e689167fe7aa0121fbda80"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#a13578a09c2e689167fe7aa0121fbda80">ToLog</a> (void) const </td></tr>
-<tr class="memdesc:a13578a09c2e689167fe7aa0121fbda80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования числового значения флагов в строку для записи в лог результата обработки. <br /></td></tr>
-<tr class="separator:a13578a09c2e689167fe7aa0121fbda80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bc24e8cacc0e599ac82947a32a90e58"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bc24e8cacc0e599ac82947a32a90e58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#a3bc24e8cacc0e599ac82947a32a90e58">Process</a> (const CString &amp;)</td></tr>
+<tr class="memdesc:a3bc24e8cacc0e599ac82947a32a90e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработать указанную папку. <br /></td></tr>
+<tr class="separator:a3bc24e8cacc0e599ac82947a32a90e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89c8fc6bb10d2f21f1703b4b3791e4bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89c8fc6bb10d2f21f1703b4b3791e4bd"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00299.html#a89c8fc6bb10d2f21f1703b4b3791e4bd">GetLogProgress</a> (void) const </td></tr>
+<tr class="memdesc:a89c8fc6bb10d2f21f1703b4b3791e4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения лога обработки. <br /></td></tr>
+<tr class="separator:a89c8fc6bb10d2f21f1703b4b3791e4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс для формирования флага платформы. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00076.html">Проект Doxygen</a> <br />
+ Класс для предварительной обработки файлов документации. </p>
+<ul>
+<li>Предназначен для использования перед генерацией документации при помощи Doxygen.</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>07 Июнь 2015 <br />
+ 09 Июнь 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
 </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/<a class="el" href="a01154_source.html">CppCheck.hpp</a></li>
-<li>Solution/Solution/Core/Utilities/Execute/Execute/CppCheck.cpp</li>
+<li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/<a class="el" href="a01131_source.html">Prefatory.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/Prefatory.cpp</li>
+<li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/Prefatory.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>execute</b></li><li class="navelem"><a class="el" href="a00159.html">CppCheck</a></li><li class="navelem"><a class="el" href="a00299.html">Platform</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 7 Май 2016 15:06:29. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>doxygen</b></li><li class="navelem"><a class="el" href="a00299.html">Prefatory</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:54. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,5 +1,6 @@
 var a00300 =
 [
-    [ "GetLogProgress", "a00300.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
-    [ "Process", "a00300.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
+    [ "Groups", "a00300.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+    [ "IsInvalidRegex", "a00300.html#ab125412a0bd7cfe6eec463b740827942", null ],
+    [ "Result", "a00300.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
 ];

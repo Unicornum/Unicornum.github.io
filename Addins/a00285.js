@@ -1,6 +1,4 @@
 var a00285 =
 [
-    [ "GetCaption", "a00285.html#a42991b73ff1a1740ecdb5fb3c1ded860", null ],
-    [ "GetPictureId", "a00285.html#a1297b4519cf1470809e0628cee9bca9e", null ],
-    [ "IsEnabled", "a00285.html#a411f5e1d9fcc9fc1a481a36d29b02edb", null ]
+    [ "GetCaption", "a00285.html#aa7faa727579bf38ea063bda4888be34f", null ]
 ];

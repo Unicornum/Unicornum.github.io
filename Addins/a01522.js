@@ -1,19 +1,19 @@
 var a01522 =
 [
-    [ "CppCheck", "a00160.html", [
-      [ "Check", "a00160.html#a2cd8b5ee3b04ef8db417d9fb6db50c1d", null ],
-      [ "GetProgress", "a00160.html#a1d5abe814c3015b03078a9301d9b4e6b", null ]
+    [ "BuildEvents", "a00131.html", null ],
+    [ "DteEvents", "a00204.html", null ],
+    [ "Events", "a00207.html", [
+      [ "PROPERTY_GET", "a00207.html#a9d4967508675ea05bfbb3c8082d477fb", null ],
+      [ "PROPERTY_GET", "a00207.html#ac8ae3f10390d5c88d2404306c988f140", null ],
+      [ "PROPERTY_GET", "a00207.html#aedd963804c9d8b2fa29197c4b22bacd5", null ],
+      [ "PROPERTY_GET", "a00207.html#a004d305087511f25284f88866b52717a", null ],
+      [ "PROPERTY_GET", "a00207.html#ab5adbc8afb5df593431ee876171b26c5", null ]
     ] ],
-    [ "Doxygen", "a00200.html", [
-      [ "Check", "a00200.html#ad56ae2ebe73c809f04cc5bf55eaff4d3", null ],
-      [ "GetProgress", "a00200.html#a32e2bdd187c9fc89d60b4d9afa6749d6", null ]
+    [ "SelectionEvents", "a00325.html", null ],
+    [ "SolutionEvents", "a00332.html", null ],
+    [ "Subscriber", "a00340.html", [
+      [ "Advise", "a00340.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
+      [ "Unadvise", "a00340.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
     ] ],
-    [ "Empty", "a00206.html", [
-      [ "Check", "a00206.html#af8fb249031ba9971d14e04253923eb95", null ],
-      [ "GetProgress", "a00206.html#a4aa17f92cd40b98df93522aae5bd26eb", null ]
-    ] ],
-    [ "IFilter", "a00225.html", [
-      [ "Check", "a00225.html#a7b384636712e62b31c577aeb72977365", null ],
-      [ "GetProgress", "a00225.html#a85a1df60506fb28daaeec201925140ef", null ]
-    ] ]
+    [ "TextEditorEvents", "a00364.html", null ]
 ];

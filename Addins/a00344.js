@@ -1,5 +1,8 @@
 var a00344 =
 [
-    [ "SvnInfo", "a00344.html#afbe6155b781c22ca9970f58db8ba04db", null ],
-    [ "GetRevision", "a00344.html#a4f6216fcd912a1b4216ae5587ce17827", null ]
+    [ "Task", "a00344.html#ac75c69d7af04e37adb7479ebbd8d6a01", null ],
+    [ "GetHtmlText", "a00344.html#a365aa1045bad92b55b13a728e58089db", null ],
+    [ "ReadDataFrom", "a00344.html#a828606eadccc2469c6b308d439d37f1b", null ],
+    [ "SetData", "a00344.html#a3e47428fe92345f802ba1d2bf7586789", null ],
+    [ "WriteDataTo", "a00344.html#aedf20aaba899f8b08c767d0f371de944", null ]
 ];
