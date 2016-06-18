@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['onchanged',['OnChanged',['../a00082.html#a8f31082d1573122757db0572e9100a93',1,'view::FailedTestsInfo']]],
-  ['onpaint',['OnPaint',['../a00082.html#ad8351ca940eeac53bdbd81672c52db1d',1,'view::FailedTestsInfo']]],
-  ['openfile',['OpenFile',['../a00084.html#aaaf2c3c72eeff330e433f306a7f547c1',1,'alicorn::logger::report::File']]],
-  ['operator_28_29',['operator()',['../a00056.html#aeea3117f12d7c1cd4ab2fe12aee5ffa2',1,'alicorn::patterns::mvc::controller::BlockingSignal::operator()()'],['../a00129.html#ac1a6020453eb2c5332315e02dc9dcc48',1,'alicorn::patterns::mvc::controller::NonBlockingSignal::operator()()']]],
-  ['operator_2b_3d',['operator+=',['../a00128.html#a9226f6f5ba874e2494e9ba38d8870858',1,'alicorn::document::xml::Node']]],
-  ['operator_2d_3d',['operator-=',['../a00128.html#a6791f722b7917711ea8d8bd42d1f238c',1,'alicorn::document::xml::Node']]],
-  ['operator_2d_3e',['operator-&gt;',['../a00142.html#a2f9f74776cb12ed9037d527703094d11',1,'alicorn::system::dll::Ptr::operator-&gt;(void)'],['../a00142.html#a112467f369aaa88f3cf16ee0e8ac65c1',1,'alicorn::system::dll::Ptr::operator-&gt;(void) const ']]],
-  ['operator_3d',['operator=',['../a00054.html#aa1d1cd6c6dafe897c02f3e390e321921',1,'alicorn::document::xml::Attribute::operator=()'],['../a00175.html#a36192a1697e4ef5ffdfa35e61f356220',1,'alicorn::document::xml::Value::operator=()']]],
-  ['operator_3d_3d',['operator==',['../a00748.html#ga2b1de01ae80f1214a4f726afd9e3a50d',1,'support::operator==(const InfoTestingApp &amp;_Right, const InfoTestingApp &amp;_Left)'],['../a00748.html#ga00a359a3b95e8cc21123efb4c22130b2',1,'support::operator==(const InfoTestingApp::Case &amp;_Right, const InfoTestingApp::Case &amp;_Left)'],['../a00748.html#ga49f782b060a688cbb902b154a3f72622',1,'support::operator==(const InfoTestingApp::Test &amp;_Right, const InfoTestingApp::Test &amp;_Left)'],['../a00748.html#ga2f6bc0e62ec581d270647905030ade53',1,'support::operator==(const InfoTestingApp::Result &amp;_Right, const InfoTestingApp::Result &amp;_Left)']]],
-  ['operator_5b_5d',['operator[]',['../a00055.html#a59e6aeca13e16623425a2c0e9c0b3392',1,'alicorn::document::xml::Attributes::operator[]()'],['../a00128.html#aab381d95bc38753a42ebc7c60fb2ce9a',1,'alicorn::document::xml::Node::operator[](const String_t &amp;) const '],['../a00128.html#afc41066cbf2787ffb952d199a0640273',1,'alicorn::document::xml::Node::operator[](const String_t &amp;)'],['../a00128.html#a2f8e7fe05286832a146e97352345506e',1,'alicorn::document::xml::Node::operator[](xml::Parent_t) const '],['../a00128.html#a4bfda637ac9887bb9676f301e40861be',1,'alicorn::document::xml::Node::operator[](xml::Parent_t)'],['../a00128.html#a44ae2217ccac94b6b565701bfd05774e',1,'alicorn::document::xml::Node::operator[](xml::FirstChild_t) const '],['../a00128.html#a75535c69883d5768f646b92554d745d2',1,'alicorn::document::xml::Node::operator[](xml::Next_t) const '],['../a00179.html#ac89ad522f60817a4dd46d73c1c931c5e',1,'alicorn::document::Xml::operator[]()'],['../a00169.html#aa25f800aca7cdbcf85d4bf22f3d2d4a6',1,'alicorn::extension::std::Text::operator[]()'],['../a00150.html#aec59b411a094c25e4ebdd314d882dbe0',1,'alicorn::settings::SectionFullAccess::operator[]()'],['../a00149.html#ad68da58ac4cdfc8e177417b1c0893d60',1,'alicorn::settings::Section::operator[]()']]]
+  ['info',['Info',['../a00114.html#adf1ff51360edbfc0c5d43157a76b540b',1,'alicorn::version::Info::Info(void)'],['../a00114.html#a04be24f54850388719f7e4b7d90473b4',1,'alicorn::version::Info::Info(hModule_t)']]],
+  ['insert',['Insert',['../a00186.html#aeb59df6f8773ffc07d609df5f584279e',1,'alicorn::extension::std::Text']]],
+  ['irelative',['irelative',['../a00808.html#ga1bd1bcb8aa17149be5ae9ec4c4633900',1,'boost::filesystem']]],
+  ['isallowedredo',['IsAllowedRedo',['../a00134.html#aba31de05f232e77cb07f3ff595fdf19d',1,'alicorn::patterns::command::ManagerUndoRedo']]],
+  ['isallowedundo',['IsAllowedUndo',['../a00134.html#a1ae8ad925f254d16cb178839a01bbae5',1,'alicorn::patterns::command::ManagerUndoRedo']]],
+  ['isbinaryequal',['IsBinaryEqual',['../a00827.html#gac7d4c476b4ca78e9173fd36c42688648',1,'alicorn::testing::file']]],
+  ['isexist',['IsExist',['../a00142.html#a2d614dae166ac30dc577efbde0530be4',1,'alicorn::logger::MessagePoints']]],
+  ['isexists',['IsExists',['../a00827.html#gaba7352a2eed189b48b6cdda86280e0e2',1,'alicorn::testing::file']]],
+  ['isexistsfiledtest',['IsExistsFiledTest',['../a00091.html#a5a4450538408863afcbfd6766347d36a',1,'model::Executor::IsExistsFiledTest()'],['../a00111.html#ab78e331ee5dddc722637ad0b10893bd9',1,'model::IModelTestingApp::IsExistsFiledTest()'],['../a00128.html#a86629bf7e2fe835f483d5cf775ea14fb',1,'model::Loader::IsExistsFiledTest()']]],
+  ['ismatch',['IsMatch',['../a00135.html#abaaf6788b646b68ad35c6063693f07b3',1,'alicorn::extension::std::regex::Match::IsMatch()'],['../a00827.html#ga12fae53dd48adfd54cc17b98f46a3def',1,'alicorn::testing::IsMatch()']]],
+  ['issearch',['IsSearch',['../a00165.html#a3e8292a479ee0a7ce4d42c38dbb51e25',1,'alicorn::extension::std::regex::Search']]],
+  ['isstrequal',['IsStrEqual',['../a00827.html#gac541b5429b4a879c791f2f36b2697046',1,'alicorn::testing::file']]]
 ];

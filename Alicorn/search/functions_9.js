@@ -1,8 +1,11 @@
 var searchData=
 [
-  ['parse',['Parse',['../a00109.html#aa52838badaaabba0c6220233207c10f3',1,'alicorn::document::xml::IXml::Parse(const Path_t &amp;_PathToFile)=0'],['../a00109.html#a377aa37cbe981975abb22d8d47253d77',1,'alicorn::document::xml::IXml::Parse(const Data_t &amp;_Data)=0'],['../a00144.html#a673e6055c6662c15c81931ae71ac7f28',1,'alicorn::document::xml::RapidXml::Parse(const Path_t &amp;_PathToFile) override'],['../a00144.html#a1d4d777da0008cf9e57707f89ed12486',1,'alicorn::document::xml::RapidXml::Parse(const Data_t &amp;_Data) override']]],
-  ['process',['Process',['../a00135.html#a15c85d53e3079f343aead5930adb4b2a',1,'alicorn::system::Process']]],
-  ['processoutput',['ProcessOutput',['../a00772.html#ga9d847c18ebc2abac375a25fbaf95f123',1,'process.cpp']]],
-  ['ptr',['Ptr',['../a00142.html#a85a101c3ca8e8fbb7cc8ca71bc08fb52',1,'alicorn::system::dll::Ptr']]],
-  ['ptrobject',['PtrObject',['../a00143.html#acd781dd50b7eb7368848018c052c136f',1,'alicorn::system::dll::PtrObject']]]
+  ['match',['Match',['../a00135.html#aed057b113464ab4f76edbb8d9a01b3b4',1,'alicorn::extension::std::regex::Match::Match(const String &amp;)'],['../a00135.html#a6771afe48b8f1155f53536b2220e2764',1,'alicorn::extension::std::regex::Match::Match(const String &amp;, IgnoreCase)']]],
+  ['message',['Message',['../a00140.html#a3d40aeefeba1cf87f0ce3cc251f656f2',1,'alicorn::logger::Message']]],
+  ['messageimpl',['MessageImpl',['../a00141.html#a905589b1e01ae683692049bbfdc35a54',1,'alicorn::logger::MessageImpl']]],
+  ['movetochildnode',['MoveToChildNode',['../a00125.html#a92be4896f9248f6ffbf3c3d1eab619eb',1,'alicorn::document::xml::IXml::MoveToChildNode()'],['../a00161.html#a04d0bbeeba0ce1f1e166d890caa20d0b',1,'alicorn::document::xml::RapidXml::MoveToChildNode()']]],
+  ['movetofirstchildnode',['MoveToFirstChildNode',['../a00125.html#a0e52b7246a1ebdb8fb326b009adf49b9',1,'alicorn::document::xml::IXml::MoveToFirstChildNode()'],['../a00161.html#a7b73c1ffb6b49c361f20dbda9169c250',1,'alicorn::document::xml::RapidXml::MoveToFirstChildNode()']]],
+  ['movetonextnode',['MoveToNextNode',['../a00125.html#a2fdec796a96ca25e13bafb2787db59e3',1,'alicorn::document::xml::IXml::MoveToNextNode()'],['../a00161.html#af06f8126e7f039adc585e837b7b81f82',1,'alicorn::document::xml::RapidXml::MoveToNextNode()']]],
+  ['movetoparentnode',['MoveToParentNode',['../a00125.html#a50c6a5adf8ec04d3a4c984c371809e1e',1,'alicorn::document::xml::IXml::MoveToParentNode()'],['../a00161.html#a71869c4c9d018174f02d77f6e3041dcf',1,'alicorn::document::xml::RapidXml::MoveToParentNode()']]],
+  ['movetorootnode',['MoveToRootNode',['../a00125.html#afb470afc227c1d972195d61ce6edde68',1,'alicorn::document::xml::IXml::MoveToRootNode()'],['../a00161.html#ad3e96461fdaf5f39c688cd32fbeff564',1,'alicorn::document::xml::RapidXml::MoveToRootNode()']]]
 ];

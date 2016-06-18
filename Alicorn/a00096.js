@@ -1,5 +1,5 @@
 var a00096 =
 [
-    [ "GetResultRunTests", "a00096.html#a639e70b99c264abe0ad06d45dd6c8706", null ],
-    [ "IsExistsFiledTest", "a00096.html#ab78e331ee5dddc722637ad0b10893bd9", null ]
+    [ "File", "a00096.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
+    [ "Save", "a00096.html#ae1eeefb237c2c1965a388681e993bc8b", null ]
 ];

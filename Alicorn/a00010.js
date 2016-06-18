@@ -4,5 +4,5 @@ var a00010 =
       [ "Проекты раздела", "a00010.html#ssAlicornProjects", null ]
     ] ],
     [ "Раздел Build", "a00011.html", "a00011" ],
-    [ "Раздел Tools", "a00046.html", "a00046" ]
+    [ "Раздел Tools", "a00050.html", "a00050" ]
 ];

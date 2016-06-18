@@ -1,13 +1,18 @@
 var a00125 =
 [
-    [ "MessageImpl", "a00125.html#a905589b1e01ae683692049bbfdc35a54", null ],
-    [ "m_DateTime", "a00125.html#afa58e26786b951a8c796f060d93c13f5", null ],
-    [ "m_FileLine", "a00125.html#a2fcf644acdc70fc17a9ced3f7c206408", null ],
-    [ "m_FullFileLine", "a00125.html#a5488596e9976dd74cd60218ace6b7bfc", null ],
-    [ "m_Function", "a00125.html#acb1be41dfc2a8fb6f212b5dd7ffb5600", null ],
-    [ "m_Hash", "a00125.html#a70dde1057597afe5723ab5e9e776f027", null ],
-    [ "m_Level", "a00125.html#a6e74c8ae0d3d3f5c66a86998c6bc5a9e", null ],
-    [ "m_Message", "a00125.html#a197f88a4e9bd58de9eb043ecb5c23394", null ],
-    [ "m_StrType", "a00125.html#ada6012e1c6046f2287c98380d019a022", null ],
-    [ "m_ThreadInfo", "a00125.html#a35d7fed271b732e9867b8c9fea6617b3", null ]
+    [ "AddChildNode", "a00125.html#aa087f11a1e9bb932053234a3766ae561", null ],
+    [ "DeleteChildNode", "a00125.html#a62b67c917e698db793c197eae8115a86", null ],
+    [ "GetAttribute", "a00125.html#a81e00328102b171e94014a28d0df1501", null ],
+    [ "GetCurrentNodeName", "a00125.html#a5254b3b74b7e4c713d0b149807aea8f3", null ],
+    [ "GetValue", "a00125.html#a629ed43bf59e337091b5ad833efe3828", null ],
+    [ "MoveToChildNode", "a00125.html#a92be4896f9248f6ffbf3c3d1eab619eb", null ],
+    [ "MoveToFirstChildNode", "a00125.html#a0e52b7246a1ebdb8fb326b009adf49b9", null ],
+    [ "MoveToNextNode", "a00125.html#a2fdec796a96ca25e13bafb2787db59e3", null ],
+    [ "MoveToParentNode", "a00125.html#a50c6a5adf8ec04d3a4c984c371809e1e", null ],
+    [ "MoveToRootNode", "a00125.html#afb470afc227c1d972195d61ce6edde68", null ],
+    [ "Parse", "a00125.html#aa52838badaaabba0c6220233207c10f3", null ],
+    [ "Parse", "a00125.html#a377aa37cbe981975abb22d8d47253d77", null ],
+    [ "Save", "a00125.html#a1646fc139c23eadfa1eed5ca90707945", null ],
+    [ "SetAttribute", "a00125.html#a969f1058fe4ef9b68c187be6f24a41d8", null ],
+    [ "SetValue", "a00125.html#af2fb77430c4a371281e93b1af0df4402", null ]
 ];

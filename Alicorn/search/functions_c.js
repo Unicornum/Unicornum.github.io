@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['text',['Text',['../a00169.html#a1952a7b7ee9ed7737c3d4900b85770f3',1,'alicorn::extension::std::Text::Text(bool=true)'],['../a00169.html#a907a0f964cbfa801382aa6508aab52b8',1,'alicorn::extension::std::Text::Text(const Path_t &amp;, bool=true)']]],
-  ['to',['To',['../a00054.html#a2d469bdba6260a64336e3f17c0ff170c',1,'alicorn::document::xml::Attribute::To()'],['../a00175.html#a36becd5fc4b1dbbddad326c67708eae7',1,'alicorn::document::xml::Value::To()']]],
-  ['tokenize',['Tokenize',['../a00157.html#a22e59a8ecbd629a830dd32f858286d02',1,'alicorn::extension::std::String::Tokenize()'],['../a00135.html#ab3a668b5135d1d92c4a2a6b713e7da87',1,'alicorn::system::Process::Tokenize()']]],
-  ['toparams',['ToParams',['../a00135.html#a9cc5113978708ba27c4335c75825d0e1',1,'alicorn::system::Process']]],
-  ['topocoargs',['ToPocoArgs',['../a00772.html#gabb34099f31487d25c396ec74b6cbbb3f',1,'process.cpp']]]
+  ['redo',['Redo',['../a00134.html#a2cf7a9e613cbb698cc1ca2c26e554637',1,'alicorn::patterns::command::ManagerUndoRedo']]],
+  ['register',['Register',['../a00092.html#a7fa0f3418698b0f028e84791fc62c421',1,'alicorn::patterns::factory::Factory']]],
+  ['remove',['Remove',['../a00186.html#a5775f11872d97e4b59e6df3e7089bf91',1,'alicorn::extension::std::Text']]],
+  ['replace',['Replace',['../a00163.html#adb87baefad52f5062b8edeba4ca08c03',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx)'],['../a00163.html#a16563cd9219fb222a79395912e3dc987',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx, IgnoreCase)']]],
+  ['runwithoutwaitingcompletion',['RunWithoutWaitingCompletion',['../a00152.html#aba7f11fb8fa69202ba38b053573120e2',1,'alicorn::system::Process::RunWithoutWaitingCompletion(const Args_t &amp;=Args_t{}) const '],['../a00152.html#a063aed97bbe1aab8e168710a235f330f',1,'alicorn::system::Process::RunWithoutWaitingCompletion(const String_t &amp;) const ']]],
+  ['runwithreceivestdout',['RunWithReceiveStdout',['../a00152.html#a85f1f11f01d19ce759652b29ffe2fbc1',1,'alicorn::system::Process::RunWithReceiveStdout(const Args_t &amp;, process::ICallBack &amp;) const '],['../a00152.html#a2971a5187f0cb4ff11e9b060a04fb9a6',1,'alicorn::system::Process::RunWithReceiveStdout(const String_t &amp;, process::ICallBack &amp;) const ']]],
+  ['runwithwaitingcompletion',['RunWithWaitingCompletion',['../a00152.html#abf13c8f751e0a515e8a727d26c1ce237',1,'alicorn::system::Process::RunWithWaitingCompletion(const Args_t &amp;=Args_t{}, TimeMs_t=TimeMs_t(1000)) const '],['../a00152.html#a307fd8ed0bb55e570eed80cc292e75c0',1,'alicorn::system::Process::RunWithWaitingCompletion(const String_t &amp;, TimeMs_t=TimeMs_t(1000)) const ']]]
 ];

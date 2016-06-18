@@ -1,5 +1,5 @@
 var a00062 =
 [
-    [ "WriteRecord", "a00062.html#aab3352a57302cff220e46d9cea1c12bb", null ],
-    [ "WriteTitle", "a00062.html#a16ff9b02d58211e7be68cc7514755e85", null ]
+    [ "GetPureName", "a00062.html#a30bc3f0e9ea1ab0cdd0b82a4b5795b22", null ],
+    [ "GetPureName", "a00062.html#adc7ceeb2c73da4bc2b9dc55df64861f6", null ]
 ];

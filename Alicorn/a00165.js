@@ -1,5 +1,7 @@
 var a00165 =
 [
-    [ "GetResult", "a00165.html#add6bb029b808a1c97644e67981908c3f", null ],
-    [ "SetResultRunTests", "a00165.html#ae4129466fcff83676f70b05c119f3938", null ]
+    [ "Search", "a00165.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+    [ "Search", "a00165.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+    [ "GetCoincided", "a00165.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+    [ "IsSearch", "a00165.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
 ];

@@ -1,5 +1,6 @@
 var a00058 =
 [
-    [ "GetPureName", "a00058.html#a30bc3f0e9ea1ab0cdd0b82a4b5795b22", null ],
-    [ "GetPureName", "a00058.html#adc7ceeb2c73da4bc2b9dc55df64861f6", null ]
+    [ "Attribute", "a00058.html#accacf35e6d74d8200551c88e5ae0dc74", null ],
+    [ "operator=", "a00058.html#aa1d1cd6c6dafe897c02f3e390e321921", null ],
+    [ "To", "a00058.html#a2d469bdba6260a64336e3f17c0ff170c", null ]
 ];
