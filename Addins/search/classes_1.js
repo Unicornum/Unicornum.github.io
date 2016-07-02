@@ -40,6 +40,5 @@ var searchData=
   ['base_3c_20vcprojectenginelibrary_3a_3avcproject_20_3e',['Base&lt; VCProjectEngineLibrary::VCProject &gt;',['../a00127.html',1,'wrappers::vs']]],
   ['basepanelmatchsearch',['BasePanelMatchSearch',['../a00128.html',1,'wx']]],
   ['basepanelreplace',['BasePanelReplace',['../a00129.html',1,'wx']]],
-  ['buildevents',['BuildEvents',['../a00130.html',1,'']]],
-  ['buildevents',['BuildEvents',['../a00131.html',1,'wrappers::vs']]]
+  ['buildevents',['BuildEvents',['../a00130.html',1,'wrappers::vs']]]
 ];

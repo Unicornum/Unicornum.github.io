@@ -1,20 +1,28 @@
 var a01497 =
 [
-    [ "AllSolutionsInfo", "a00123.html", [
-      [ "AllSolutionsInfo", "a00123.html#aded21bbe2bfba0bdef7080a3ad7d8d10", null ],
-      [ "GetDevelopmentInfo", "a00123.html#a15f7b23c75c0114957f39f8ded9e963d", null ],
-      [ "GetViewTitle", "a00123.html#a1595757e6c092e9e78fa2d3eeecdba58", null ]
+    [ "Generated", "a01484.html", "a01484" ],
+    [ "AppFrame", "a00125.html", null ],
+    [ "HtmlAbout", "a00215.html", null ],
+    [ "HtmlHelper", "a00216.html", null ],
+    [ "HtmlResultBuilder", "a00217.html", [
+      [ "Build", "a00217.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
+      [ "BuildSourceStringInfo", "a00217.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
     ] ],
-    [ "CurrentSolutionInfo", "a00163.html", [
-      [ "CurrentSolutionInfo", "a00163.html#a05662b187b55d88794cab6e103d34cb7", null ],
-      [ "GetDevelopmentInfo", "a00163.html#a4f3e407f11885af146618d7661ea87b2", null ],
-      [ "GetViewTitle", "a00163.html#af438567497d5733d12d2278b797262a3", null ]
+    [ "PanelMatch", "a00292.html", [
+      [ "SetProcessedData", "a00292.html#acf07909284b3dcc712fd11ecb8bc6496", null ]
     ] ],
-    [ "IModel", "a00228.html", [
-      [ "DoProcess", "a00228.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
-      [ "GetData", "a00228.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
-      [ "GetData", "a00228.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
-      [ "GetDevelopmentInfo", "a00228.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
-      [ "GetViewTitle", "a00228.html#a3b23716ff60787c927b882a9cc3e9774", null ]
+    [ "PanelReplace", "a00293.html", [
+      [ "GetReplaceString", "a00293.html#a672429326859357fdab4692dbfbacbef", null ],
+      [ "SetProcessedData", "a00293.html#a133c64c63a2004726817884ea2e59ab8", null ]
+    ] ],
+    [ "PanelSearch", "a00294.html", [
+      [ "SetProcessedData", "a00294.html#a4e19adf4e3c5d667257250ebd0866583", null ]
+    ] ],
+    [ "PanelView", "a00295.html", [
+      [ "GetRegexString", "a00295.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
+      [ "GetReplaceString", "a00295.html#ab265e215ef659098f37618b48281f08e", null ],
+      [ "GetSourseStrings", "a00295.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
+      [ "SetRegexString", "a00295.html#a53e9b7ec5a5357405275d2478965dca1", null ],
+      [ "SetSourceStrings", "a00295.html#a315df15379a49155b32aa8526047ed7b", null ]
     ] ]
 ];

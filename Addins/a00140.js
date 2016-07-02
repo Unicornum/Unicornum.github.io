@@ -1,8 +1,5 @@
 var a00140 =
 [
-    [ "GetCount", "a00140.html#abbc95386bcc2e25287929c3aeb044c81", null ],
-    [ "GetItem", "a00140.html#a212a9fd442dace44367a7d6dcfa3a9f8", null ],
-    [ "IsExist", "a00140.html#a373c590faedafe634836c26ad9419161", null ],
-    [ "operator[]", "a00140.html#afafc3273142ce39cc288fcfa61ddf4d5", null ],
-    [ "operator[]", "a00140.html#a5d2215c2dc29590520d9ede5f171613d", null ]
+    [ "DoActivate", "a00140.html#a1cc26ef0287b68baad5fd96e0ad1af42", null ],
+    [ "DoCancel", "a00140.html#a6302cc6adad85ecc1facd20c37b00f0a", null ]
 ];

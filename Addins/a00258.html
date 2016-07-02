@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('a00258.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a02342.html">Полный список членов класса</a>  </div>
+<a href="a02332.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Класс wrappers::vs::selection::Line</div>  </div>
 </div><!--header-->
@@ -121,11 +121,11 @@ $(document).ready(function(){initNavTree('a00258.html','');});
  Класс-обертка для EnvDTE::TextSelection.  
  <a href="a00258.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01296_source.html">Line.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01277_source.html">Line.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф наследования:wrappers::vs::selection::Line:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02343.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_inherit__map" alt="Inheritance graph"/></div>
+<div class="center"><img src="a02333.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_inherit__map" alt="Inheritance graph"/></div>
 <map name="wrappers_1_1vs_1_1selection_1_1_line_inherit__map" id="wrappers_1_1vs_1_1selection_1_1_line_inherit__map">
 <area shape="rect" id="node2" href="a00127.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::TextSelection \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="5,6,208,186"/>
 </map>
@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('a00258.html','');});
 <div class="dynheader">
 Граф связей класса wrappers::vs::selection::Line:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02344.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02334.png" border="0" usemap="#wrappers_1_1vs_1_1selection_1_1_line_coll__map" alt="Collaboration graph"/></div>
 <map name="wrappers_1_1vs_1_1selection_1_1_line_coll__map" id="wrappers_1_1vs_1_1selection_1_1_line_coll__map">
 <area shape="rect" id="node2" href="a00127.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::TextSelection \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l}" alt="" coords="5,6,208,186"/>
 </map>
@@ -200,7 +200,7 @@ static <a class="el" href="a00268.html">Service::MakeProxy</a>&lt; TReturn, TSou
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
 <h2>Пример использования: </h2>
 <p>Удаление строки, на которой стоит курсор: </p><div class="fragment"><div class="line">GetDTE().Documents[Active].Lines[Current] = _T(<span class="stringliteral">&quot;&quot;</span>);</div></div><!-- fragment --> <h2>Пример использования: </h2>
-<p>Проход по строкам, которые содержат "nullptr": </p><div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="a01490.html">wrappers::vs</a>;</div><div class="line"><a class="code" href="a00179.html">Document</a> Example = GetDTE().Documents[Active];</div><div class="line"><a class="code" href="a00258.html">selection::Line</a> FindedLine = Example.Lines[-1];</div><div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>)</div><div class="line">{</div><div class="line">  FindedLine = Example.Lines[FindedLine.<a class="code" href="a00258.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>() + 1].Find(_T(<span class="stringliteral">&quot;nullptr&quot;</span>));</div><div class="line">  <span class="keywordflow">if</span> (FindedLine.<a class="code" href="a00258.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>() &lt; 0) <span class="keywordflow">break</span>;</div><div class="line"></div><div class="line">  <span class="comment">// FindedLine содержит &quot;nullptr&quot;</span></div><div class="line">  <span class="keywordtype">long</span> Index = FindedLine.<a class="code" href="a00258.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>();</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Методы</h2>
+<p>Проход по строкам, которые содержат "nullptr": </p><div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="a01475.html">wrappers::vs</a>;</div><div class="line"><a class="code" href="a00178.html">Document</a> Example = GetDTE().Documents[Active];</div><div class="line"><a class="code" href="a00258.html">selection::Line</a> FindedLine = Example.Lines[-1];</div><div class="line"><span class="keywordflow">while</span> (<span class="keyword">true</span>)</div><div class="line">{</div><div class="line">  FindedLine = Example.Lines[FindedLine.<a class="code" href="a00258.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>() + 1].Find(_T(<span class="stringliteral">&quot;nullptr&quot;</span>));</div><div class="line">  <span class="keywordflow">if</span> (FindedLine.<a class="code" href="a00258.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>() &lt; 0) <span class="keywordflow">break</span>;</div><div class="line"></div><div class="line">  <span class="comment">// FindedLine содержит &quot;nullptr&quot;</span></div><div class="line">  <span class="keywordtype">long</span> Index = FindedLine.<a class="code" href="a00258.html#acb5d674808c6a4cf2abf1c2aecef1714">GetIndex</a>();</div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Методы</h2>
 <a class="anchor" id="aab9e83170d18f61704e2a57e9ebc6882"></a>
 <div class="memitem">
 <div class="memproto">
@@ -264,9 +264,9 @@ static <a class="el" href="a00268.html">Service::MakeProxy</a>&lt; TReturn, TSou
 <div class="dyncontent">
 <div class="center"><img src="a00258_aab9e83170d18f61704e2a57e9ebc6882_icgraph.png" border="0" usemap="#a00258_aab9e83170d18f61704e2a57e9ebc6882_icgraph" alt=""/></div>
 <map name="a00258_aab9e83170d18f61704e2a57e9ebc6882_icgraph" id="a00258_aab9e83170d18f61704e2a57e9ebc6882_icgraph">
-<area shape="rect" id="node3" href="a00180.html#af819ea33c04761393ed44c212ba0ae33" title="Функция обновления года в строке copyright&#39;a. " alt="" coords="235,5,431,75"/>
-<area shape="rect" id="node5" href="a00180.html#ab3ca0f779fe4dfc4ab250a0561c72af7" title="Функция добавления даты для новой версии. " alt="" coords="235,99,431,170"/>
-<area shape="rect" id="node7" href="a00180.html#a94fb71da43515d70e9d93b813ffc9339" title="Функция увеличения версии в описании класса. " alt="" coords="235,194,431,265"/>
+<area shape="rect" id="node3" href="a00179.html#af819ea33c04761393ed44c212ba0ae33" title="Функция обновления года в строке copyright&#39;a. " alt="" coords="235,5,431,75"/>
+<area shape="rect" id="node5" href="a00179.html#ab3ca0f779fe4dfc4ab250a0561c72af7" title="Функция добавления даты для новой версии. " alt="" coords="235,99,431,170"/>
+<area shape="rect" id="node7" href="a00179.html#a94fb71da43515d70e9d93b813ffc9339" title="Функция увеличения версии в описании класса. " alt="" coords="235,194,431,265"/>
 </map>
 </div>
 </p>
@@ -308,9 +308,9 @@ static <a class="el" href="a00268.html">Service::MakeProxy</a>&lt; TReturn, TSou
 <div class="dyncontent">
 <div class="center"><img src="a00258_a4c0f82e5f6225f0586fcbbd2ba63e040_icgraph.png" border="0" usemap="#a00258_a4c0f82e5f6225f0586fcbbd2ba63e040_icgraph" alt=""/></div>
 <map name="a00258_a4c0f82e5f6225f0586fcbbd2ba63e040_icgraph" id="a00258_a4c0f82e5f6225f0586fcbbd2ba63e040_icgraph">
-<area shape="rect" id="node3" href="a00180.html#af819ea33c04761393ed44c212ba0ae33" title="Функция обновления года в строке copyright&#39;a. " alt="" coords="235,5,431,75"/>
-<area shape="rect" id="node5" href="a00180.html#ab3ca0f779fe4dfc4ab250a0561c72af7" title="Функция добавления даты для новой версии. " alt="" coords="235,99,431,170"/>
-<area shape="rect" id="node7" href="a00180.html#a94fb71da43515d70e9d93b813ffc9339" title="Функция увеличения версии в описании класса. " alt="" coords="235,194,431,265"/>
+<area shape="rect" id="node3" href="a00179.html#af819ea33c04761393ed44c212ba0ae33" title="Функция обновления года в строке copyright&#39;a. " alt="" coords="235,5,431,75"/>
+<area shape="rect" id="node5" href="a00179.html#ab3ca0f779fe4dfc4ab250a0561c72af7" title="Функция добавления даты для новой версии. " alt="" coords="235,99,431,170"/>
+<area shape="rect" id="node7" href="a00179.html#a94fb71da43515d70e9d93b813ffc9339" title="Функция увеличения версии в описании класса. " alt="" coords="235,194,431,265"/>
 </map>
 </div>
 </p>
@@ -397,7 +397,7 @@ static <a class="el" href="a00268.html">Service::MakeProxy</a>&lt; TReturn, TSou
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Document/Document/<a class="el" href="a01296_source.html">Line.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Document/Document/<a class="el" href="a01277_source.html">Line.hpp</a></li>
 <li>Solution/Solution/Wrappers/VisualStudio/Document/Document/Line.cpp</li>
 </ul>
 </div><!-- contents -->
@@ -406,7 +406,7 @@ static <a class="el" href="a00268.html">Service::MakeProxy</a>&lt; TReturn, TSou
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>selection</b></li><li class="navelem"><a class="el" href="a00258.html">Line</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:56. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

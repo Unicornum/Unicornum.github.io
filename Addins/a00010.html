@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,6 +108,10 @@ $(document).ready(function(){initNavTree('a00010.html','');});
 <div class="textblock"><h1><a class="anchor" id="sConnectionPointsBrief"></a>
 Введение</h1>
 <p>Содержит классы подключения компонентов надстройки к конкретной IDE.</p>
+<h2>Схема классов раздела </h2>
+<div class="image">
+<img src="ConnectionPoints.Classes.png" alt="ConnectionPoints.Classes.png"/>
+</div>
 <h1>Структура раздела </h1>
 <h2>Проект Common </h2>
 <p>Проект содержит классы, общие для всех точек подключения и не зависящие от конкретного типа IDE.</p>
@@ -116,9 +120,24 @@ $(document).ready(function(){initNavTree('a00010.html','');});
 <p>Раздел содержит проекты классов подключения к Visual Studio.</p>
 <h3>Точка подключения как VSPackage</h3>
 <p><a class="el" href="a00011.html">Описание создания VSPackage на С++</a></p>
-<h3>Проект Support</h3>
-<p>Проект, содержащий вспомогательные классы, общие для проектов раздела.</p>
-<p>Страница проекта: <a class="el" href="a00024.html">Проект Support</a></p>
+<h3>Проект Main</h3>
+<p>Главный модуль подключения к Visual Studio: загружает и активирует все остальные модули при старте IDE.</p>
+<p>Страница проекта: <a class="el" href="a00018.html">Проект Main</a></p>
+<h3>Проект MainUI</h3>
+<p>Проект dll, содержащей ресурсы, необходимые для работы главного модуля VSPackage.</p>
+<p>Страница проекта: <a class="el" href="a00020.html">Проект MainUI</a></p>
+<h3>Проект Data</h3>
+<p>Проект содержит файлы, необходимые для работы надстроек (настройки, шаблоны документов и т.п.), которые копируются в папку построения при сборке проекта.</p>
+<p>Страница проекта: <a class="el" href="a00014.html">Проект Data</a></p>
+<h3>Проект <a class="el" href="a00309.html" title="Класс входит в Проект Properties   Главный класс модуля Properties. ">Properties</a></h3>
+<p>Проект точки подключения к Visual Studio, реализующий логику подключения к проекту файла общей страницы свойств решения.</p>
+<p>Страница проекта: <a class="el" href="a00022.html">Проект Properties</a></p>
+<h3>Проект <a class="el" href="a00386.html" title="Класс входит в Проект Version   Главный класс модуля Version. ">Version</a></h3>
+<p>Надстройка предназначена для установки .exe и .dll файлам версии решения, включая номера ревизии файлов решения и внешних библиотек.</p>
+<p>Страница проекта: <a class="el" href="a00031.html">Проект Version</a></p>
+<h3>Проект <a class="el" href="a00366.html" title="Класс входит в Проект TimeTracker   Главный класс модуля TimeTracker. ">TimeTracker</a></h3>
+<p>Проект модуля учета времени работы над решением.</p>
+<p>Страница проекта: <a class="el" href="a00026.html">Проект TimeTracker</a></p>
 <h3>Проект UnicornumCodeAssistant</h3>
 <p>Проект точки подключения к Visual Studio, обеспечивающей работу команд, доступных из меню.</p>
 <p>Проект выполняет следующие действия:</p><ul>
@@ -131,34 +150,19 @@ $(document).ready(function(){initNavTree('a00010.html','');});
 <li>Копирование файла usertype.dat в папку Visual Studio при запуске надстройки.</li>
 </ul>
 <p>Страница проекта: <a class="el" href="a00029.html">Проект UnicornumCodeAssistant</a></p>
-<h3>Проект Properties</h3>
-<p>Проект точки подключения к Visual Studio, реализующий логику подключения к проекту файла общей страницы свойств решения.</p>
-<p>Страница проекта: <a class="el" href="a00022.html">Проект Properties</a></p>
-<h3>Проект Version</h3>
-<p>Надстройка предназначена для установки .exe и .dll файлам версии решения, включая номера ревизии файлов решения и внешних библиотек.</p>
-<p>Страница проекта: <a class="el" href="a00031.html">Проект Version</a></p>
 <h3>Проект Icons</h3>
 <p>Проект DLL, содержащей иконки, используемые надстройкой для обозначения пунктов меню.</p>
 <p>Страница проекта: <a class="el" href="a00016.html">Проект Icons</a></p>
-<h3>Проект Data</h3>
-<p>Проект содержит файлы, необходимые для работы надстроек (настройки, шаблоны документов и т.п.), которые копируются в папку построения при сборке проекта.</p>
-<p>Страница проекта: <a class="el" href="a00014.html">Проект Data</a></p>
-<h3>Проект Main</h3>
-<p>Главный модуль подключения к Visual Studio: загружает и активирует все остальные модули при старте IDE.</p>
-<p>Страница проекта: <a class="el" href="a00018.html">Проект Main</a></p>
-<h3>Проект MainUI</h3>
-<p>Проект dll, содержащей ресурсы, необходимые для работы главного модуля VSPackage.</p>
-<p>Страница проекта: <a class="el" href="a00020.html">Проект MainUI</a></p>
-<h3>Проект <a class="el" href="a00366.html" title="Класс входит в Проект TimeTracker   Главный класс модуля. ">TimeTracker</a></h3>
-<p>Проект модуля учета времени работы над решением.</p>
-<p>Страница проекта: <a class="el" href="a00026.html">Проект TimeTracker</a> </p>
+<h3>Проект Support</h3>
+<p>Проект, содержащий вспомогательные классы, общие для проектов раздела.</p>
+<p>Страница проекта: <a class="el" href="a00024.html">Проект Support</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:51. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,5 +1,5 @@
 var a00389 =
 [
-    [ "VersionResource", "a00389.html#a4f80a6608fed4a60903a4196431c632a", null ],
-    [ "Generate", "a00389.html#a6d209b353d950ff590eadd3fc4f28c35", null ]
+    [ "GetCaption", "a00389.html#a213b05e1e799977867081656e3936a23", null ],
+    [ "IsEnabled", "a00389.html#a787eec667e45ffc550976b3f6651a27d", null ]
 ];

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('a00268.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a02348.html">Полный список членов класса</a>  </div>
+<a href="a02338.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
 <div class="title">Шаблон класса wrappers::vs::service::MakeProxy&lt; TReturn, TSource &gt;</div>  </div>
 </div><!--header-->
@@ -121,11 +121,11 @@ $(document).ready(function(){initNavTree('a00268.html','');});
  Вспомогательный класс для вызова функций классов автоматизации Visual Studio.  
  <a href="a00268.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01251_source.html">MakeProxy.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01232_source.html">MakeProxy.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса wrappers::vs::service::MakeProxy&lt; TReturn, TSource &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02349.png" border="0" usemap="#wrappers_1_1vs_1_1service_1_1_make_proxy_3_01_t_return_00_01_t_source_01_4_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02339.png" border="0" usemap="#wrappers_1_1vs_1_1service_1_1_make_proxy_3_01_t_return_00_01_t_source_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="wrappers_1_1vs_1_1service_1_1_make_proxy_3_01_t_return_00_01_t_source_01_4_coll__map" id="wrappers_1_1vs_1_1service_1_1_make_proxy_3_01_t_return_00_01_t_source_01_4_coll__map">
 </map>
 </div>
@@ -179,7 +179,7 @@ class wrappers::vs::service::MakeProxy&lt; TReturn, TSource &gt;</h3>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
 <h2>Пример использования: </h2>
 <div class="fragment"><div class="line"><span class="comment">// Для функции:</span></div><div class="line"><span class="keyword">struct </span>Document : IDispatch</div><div class="line">{</div><div class="line">  <span class="keyword">virtual</span> HRESULT __stdcall get_DTE(_DTE **) = 0;</div><div class="line">  ...</div><div class="line">};</div><div class="line"></div><div class="line"><span class="comment">// Соответствующая функция класса-обертки будет выглядеть так:</span></div><div class="line">DTE Document::GetDTE(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div><div class="line"><span class="keyword"></span>{</div><div class="line">  <span class="keywordflow">return</span> Make&lt;EnvDTE::_DTE *&gt;(m_pPointer).<a class="code" href="a00268.html#abf5cc16c405af417713274439609135c">Call</a>(&amp;Type_t::get_DTE);</div><div class="line">}</div></div><!-- fragment --> </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Common/Common/<a class="el" href="a01251_source.html">MakeProxy.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Common/Common/<a class="el" href="a01232_source.html">MakeProxy.hpp</a></li>
 <li>Solution/Solution/Wrappers/VisualStudio/Common/Common/MakeProxy.inl</li>
 </ul>
 </div><!-- contents -->
@@ -188,7 +188,7 @@ class wrappers::vs::service::MakeProxy&lt; TReturn, TSource &gt;</h3>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>service</b></li><li class="navelem"><a class="el" href="a00268.html">MakeProxy</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:56. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

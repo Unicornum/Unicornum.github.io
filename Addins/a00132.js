@@ -1,8 +1,7 @@
 var a00132 =
 [
-    [ "Calendar", "a00132.html#a71050fe9e0a7215ccfc3f7183c5dce7e", null ],
-    [ "Calendar", "a00132.html#a1881a04d3dad63eab273d6c026a6a3c6", null ],
-    [ "GetDayOfWeek", "a00132.html#a75870ed2d3f52004fa903255341288b3", null ],
-    [ "GetLastDayOfWeek", "a00132.html#a33cfd4cafe5da7161dde10edbab1c8f4", null ],
-    [ "GetWeekNumber", "a00132.html#a7e31ab8bba770881b6037f6b3267e772", null ]
+    [ "CallBack", "a00132.html#ae97bdf8d9a59dd8f0dd16eadf8ae913f", null ],
+    [ "GetProcessLog", "a00132.html#a0064376c905d85dfec205dac0721ff2a", null ],
+    [ "IsContinue", "a00132.html#a0bdfd6930a4c2de36ad4545e933ecdd4", null ],
+    [ "Received", "a00132.html#ad568a794a02d349abf5a017319b724fa", null ]
 ];

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -185,42 +185,42 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 </ul>
 <h2>Раздел Macros </h2>
 <p>Раздел команд в общем меню для ввода типичных кусков кода и назначающая им "горячие" клавиши:</p><ul>
-<li> <input type="checkbox" checked>  Добавление строки "#pragma chMSG()" (ALT + M).</li>
-<li> <input type="checkbox" checked>  Перевод строки в комментарии (ALT + 8).</li>
-<li> <input type="checkbox" checked>  Добавление заготовки текста _T("") (ALT + T).</li>
-<li> <input type="checkbox" checked>  Добавление строки даты/времени (в виде 1602061200) (ALT + D).</li>
+<li> <input type="checkbox" checked disabled>  Добавление строки "#pragma chMSG()" (ALT + M).</li>
+<li> <input type="checkbox" checked disabled>  Перевод строки в комментарии (ALT + 8).</li>
+<li> <input type="checkbox" checked disabled>  Добавление заготовки текста _T("") (ALT + T).</li>
+<li> <input type="checkbox" checked disabled>  Добавление строки даты/времени (в виде 1602061200) (ALT + D).</li>
 </ul>
 <h2>CppCheck </h2>
 <p>Проверка кода статическим анализатором CppCheck.</p>
 <h3>Общие требования</h3>
 <ul>
-<li> <input type="checkbox" checked>  Шаблон выводных сообщений: '{file}({line}): {severity} (suppress_id = {id}): {message}'.</li>
-<li> <input type="checkbox" checked>  Включены все сообщения (&ndash;enable=all).</li>
-<li> <input type="checkbox" checked>  Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
-<li> <input type="checkbox" checked>  Показывать подозрительные места (&ndash;inconclusive).</li>
-<li> <input type="checkbox" checked>  Игнорировать папку внешних библиотек.</li>
-<li> <input type="checkbox">  В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013).</li>
+<li> <input type="checkbox" checked disabled>  Шаблон выводных сообщений: '{file}({line}): {severity} (suppress_id = {id}): {message}'.</li>
+<li> <input type="checkbox" checked disabled>  Включены все сообщения (&ndash;enable=all).</li>
+<li> <input type="checkbox" checked disabled>  Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
+<li> <input type="checkbox" checked disabled>  Показывать подозрительные места (&ndash;inconclusive).</li>
+<li> <input type="checkbox" checked disabled>  Игнорировать папку внешних библиотек.</li>
+<li> <input type="checkbox" disabled>  В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013).</li>
 </ul>
 <p>Игнорировать строки, содержащие:</p><ul>
-<li> <input type="checkbox" checked>  'information (suppress_id = purgedConfiguration):'.</li>
+<li> <input type="checkbox" checked disabled>  'information (suppress_id = purgedConfiguration):'.</li>
 </ul>
 <h3>Быстрая проверка</h3>
 <ul>
-<li> <input type="checkbox" checked>  Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
-<li> <input type="checkbox" checked>  Проверка со всеми вариантами макросов (&ndash;force).</li>
+<li> <input type="checkbox" checked disabled>  Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
+<li> <input type="checkbox" checked disabled>  Проверка со всеми вариантами макросов (&ndash;force).</li>
 </ul>
-<h2>Version </h2>
+<h2><a class="el" href="a00386.html" title="Класс входит в Проект Version   Главный класс модуля Version. ">Version</a> </h2>
 <p>Надстройка должна обеспечивать:</p><ul>
-<li> <input type="checkbox" checked>  Все .exe и .dll файлы при сборке должны содержать версию исходных файлов + ревизию файлов решения.</li>
-<li> <input type="checkbox" checked>  Макрос, представляющий собой строку текущей версии программы.</li>
-<li> <input type="checkbox" checked>  Формат версии '1.0.0.1234 Build ЧЧ:ММ ДД.ММ.ГГГГ'.</li>
+<li> <input type="checkbox" checked disabled>  Все .exe и .dll файлы при сборке должны содержать версию исходных файлов + ревизию файлов решения.</li>
+<li> <input type="checkbox" checked disabled>  Макрос, представляющий собой строку текущей версии программы.</li>
+<li> <input type="checkbox" checked disabled>  Формат версии '1.0.0.1234 Build ЧЧ:ММ ДД.ММ.ГГГГ'.</li>
 </ul>
-<h2>Properties </h2>
+<h2><a class="el" href="a00309.html" title="Класс входит в Проект Properties   Главный класс модуля Properties. ">Properties</a> </h2>
 <p>Надстройка, подключающая всем проектам решения общий файл .props.</p><ul>
-<li> <input type="checkbox" checked>  Путь к общему файлу свойств берется из настроек.</li>
-<li> <input type="checkbox" checked>  При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
-<li> <input type="checkbox" checked>  При отсутствии файла свойств у проекта он должен подключаться.</li>
-<li> <input type="checkbox">  При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
+<li> <input type="checkbox" checked disabled>  Путь к общему файлу свойств берется из настроек.</li>
+<li> <input type="checkbox" checked disabled>  При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
+<li> <input type="checkbox" checked disabled>  При отсутствии файла свойств у проекта он должен подключаться.</li>
+<li> <input type="checkbox" disabled>  При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
 </ul>
 <h2>Time Tracker </h2>
 <p><a class="el" href="a00027.html">Требования модуля Time Tracker</a></p>
@@ -258,7 +258,7 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:51. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

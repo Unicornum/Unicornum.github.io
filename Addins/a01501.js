@@ -1,11 +1,11 @@
 var a01501 =
 [
-    [ "Controller", "a01502.html", "a01502" ],
-    [ "Model", "a01503.html", "a01503" ],
-    [ "Support", "a01505.html", "a01505" ],
-    [ "View", "a01506.html", "a01506" ],
-    [ "Main", "a00264.html", [
-      [ "OnInit", "a00264.html#a9dc4643506187278287c80ba4e5df438", null ]
+    [ "Doxygen", "a00197.html", [
+      [ "Doxygen", "a00197.html#a218059ce02f976e8c699b918e6da3534", null ]
     ] ],
-    [ "MainFrame", "a00267.html", null ]
+    [ "Empty", "a00204.html", null ],
+    [ "Main", "a00262.html", [
+      [ "Main", "a00262.html#a41fd0853ce2d4dcd5c6c5096352e37a3", null ],
+      [ "Set", "a00262.html#a7bb75640e0313e7482d8df39ef523fa2", null ]
+    ] ]
 ];

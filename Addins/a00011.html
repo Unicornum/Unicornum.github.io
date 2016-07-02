@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.1 Revision: 4190 Architecture: x86.64 Build: 21:50 08 Июнь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,15 +110,15 @@ $(document).ready(function(){initNavTree('a00011.html','');});
 <p>При создании проекта расширения создаются 3 проекта:</p><ul>
 <li>VSPackage1 - основной модуль расширения. Ключевой класс - CVSPackage1Package.</li>
 <li>VSPackage1UI - вспомогательная dll (задается в файле .pkgdef как <div class="fragment"><div class="line">[$RootKey$\Packages\{f521d44a-05d4-4cf6-bbec-2a47fb6eadab}\SatelliteDll]</div><div class="line"><span class="stringliteral">&quot;DllName&quot;</span>=<span class="stringliteral">&quot;VSPackage1UI.dll&quot;</span></div><div class="line"><span class="stringliteral">&quot;Path&quot;</span>=<span class="stringliteral">&quot;$PackageFolder$&quot;</span></div></div><!-- fragment --> ). Содержит иконки (в формате png) и структуру добавляемых команд (которую можно игнорировать?).</li>
-<li>VSPackage1VSIX (C#). Этот проект, судя по всему нужен только для хранения файла source.extension.vsixmanifest и создания файла .vsix (см. описание формата ниже).</li>
+<li>VSPackage1VSIX (C#). Этот проект, судя по всему, нужен только для хранения файла source.extension.vsixmanifest и создания файла .vsix (см. описание формата ниже).</li>
 </ul>
 <h2>Описание формата .vsix </h2>
 <p>Файл формата .vsix - это zip архив ('ручная' упаковка файлов работает, да), содержащий файлы:</p><ul>
-<li>VSPackage1.dll</li>
-<li>VSPackage1.pkgdef</li>
-<li>extension.vsixmanifest</li>
-<li>[Content_Types].xml</li>
-<li>1033\VSPackage1UI.dll</li>
+<li>VSPackage1.dll (главный модуль расширения).</li>
+<li>VSPackage1.pkgdef (регистрация главного модуля расширения и вспомогательной dll).</li>
+<li>extension.vsixmanifest (информация о расширении, которую будет отображать установщик VSIX и сама Visual Studio).</li>
+<li>[Content_Types].xml (список расширений файлов, которые будет копировать установщик VSIX в папку результата при установке расширения).</li>
+<li>1033\VSPackage1UI.dll (вспомогательная dll главного модуля расширения).</li>
 </ul>
 <h2>Автозапуск расширения при старте Visual Studio </h2>
 <p>Добавить в файл .pkgdef строки </p><div class="fragment"><div class="line">[$RootKey$\AutoLoadPackages\{ADFC4E64-0397-11D1-9F4E-00A0C911004F}]</div><div class="line"><span class="stringliteral">&quot;{CURRENT_PACKAGE_GUID}&quot;</span>=dword:00000000</div><div class="line">@=<span class="stringliteral">&quot;UICONTEXT_NoSolution&quot;</span></div></div><!-- fragment --><h2>Получение объекта DTE </h2>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('a00011.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00010.html">ConnectionPoints</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Ср 8 Июн 2016 21:50:51. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -19,13 +19,14 @@ var searchData=
   ['projectsfolderimpl',['ProjectsFolderImpl',['../a00306.html',1,'wrappers::vs']]],
   ['projectssolutionimpl',['ProjectsSolutionImpl',['../a00307.html',1,'wrappers::vs']]],
   ['projecttasksdata',['ProjectTasksData',['../a00308.html',1,'core::utilities']]],
-  ['propertysheet',['PropertySheet',['../a00309.html',1,'wrappers::vs']]],
-  ['propertysheet2012',['PropertySheet2012',['../a00310.html',1,'wrappers::vs']]],
-  ['propertysheets',['PropertySheets',['../a00311.html',1,'wrappers::vs']]],
-  ['propertysheets2012',['PropertySheets2012',['../a00312.html',1,'wrappers::vs']]],
-  ['propertysheetsearcher',['PropertySheetSearcher',['../a00313.html',1,'wrappers::helper::vs']]],
-  ['proxy',['Proxy',['../a00314.html',1,'wrappers::helper']]],
-  ['proxy_3c_20wrappers_3a_3avs_3a_3adocument_20_3e',['Proxy&lt; wrappers::vs::Document &gt;',['../a00315.html',1,'wrappers::helper']]],
-  ['proxy_3c_20wrappers_3a_3avs_3a_3aproject_20_3e',['Proxy&lt; wrappers::vs::Project &gt;',['../a00316.html',1,'wrappers::helper']]],
-  ['proxy_3c_20wrappers_3a_3avs_3a_3asolution_20_3e',['Proxy&lt; wrappers::vs::Solution &gt;',['../a00317.html',1,'wrappers::helper']]]
+  ['properties',['Properties',['../a00309.html',1,'']]],
+  ['propertysheet',['PropertySheet',['../a00310.html',1,'wrappers::vs']]],
+  ['propertysheet2012',['PropertySheet2012',['../a00311.html',1,'wrappers::vs']]],
+  ['propertysheets',['PropertySheets',['../a00312.html',1,'wrappers::vs']]],
+  ['propertysheets2012',['PropertySheets2012',['../a00313.html',1,'wrappers::vs']]],
+  ['propertysheetsearcher',['PropertySheetSearcher',['../a00314.html',1,'wrappers::helper::vs']]],
+  ['proxy',['Proxy',['../a00315.html',1,'wrappers::helper']]],
+  ['proxy_3c_20wrappers_3a_3avs_3a_3adocument_20_3e',['Proxy&lt; wrappers::vs::Document &gt;',['../a00316.html',1,'wrappers::helper']]],
+  ['proxy_3c_20wrappers_3a_3avs_3a_3aproject_20_3e',['Proxy&lt; wrappers::vs::Project &gt;',['../a00317.html',1,'wrappers::helper']]],
+  ['proxy_3c_20wrappers_3a_3avs_3a_3asolution_20_3e',['Proxy&lt; wrappers::vs::Solution &gt;',['../a00318.html',1,'wrappers::helper']]]
 ];

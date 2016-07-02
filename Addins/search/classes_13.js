@@ -13,9 +13,10 @@ var searchData=
   ['vcfilters_3c_20vcprojectenginelibrary_3a_3avcproject_20_3e',['VCFilters&lt; VCProjectEngineLibrary::VCProject &gt;',['../a00383.html',1,'wrappers::vs']]],
   ['vcprojectfiles',['VCProjectFiles',['../a00384.html',1,'wrappers::vs']]],
   ['vcprojectfilters',['VCProjectFilters',['../a00385.html',1,'wrappers::vs']]],
-  ['version',['Version',['../a00387.html',1,'core::utilities']]],
-  ['version',['Version',['../a00386.html',1,'support::action']]],
-  ['versionaddins',['VersionAddins',['../a00388.html',1,'core::useful_commands::vs::version']]],
-  ['versionresource',['VersionResource',['../a00389.html',1,'core::utilities']]],
-  ['view',['View',['../a00390.html',1,'view']]]
+  ['version',['Version',['../a00386.html',1,'']]],
+  ['version',['Version',['../a00388.html',1,'core::utilities']]],
+  ['version',['Version',['../a00387.html',1,'support::action']]],
+  ['versionaddins',['VersionAddins',['../a00389.html',1,'core::useful_commands::vs::version']]],
+  ['versionresource',['VersionResource',['../a00390.html',1,'core::utilities']]],
+  ['view',['View',['../a00391.html',1,'view']]]
 ];

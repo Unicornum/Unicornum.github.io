@@ -1,5 +1,6 @@
 var a00160 =
 [
-    [ "Check", "a00160.html#a2cd8b5ee3b04ef8db417d9fb6db50c1d", null ],
-    [ "GetProgress", "a00160.html#a1d5abe814c3015b03078a9301d9b4e6b", null ]
+    [ "GetCaption", "a00160.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
+    [ "GetPictureId", "a00160.html#a1f1d44ed835b9b589b2f383cff9f5d88", null ],
+    [ "IsEnabled", "a00160.html#a006eca46887e662789831772b0c5107a", null ]
 ];
