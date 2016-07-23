@@ -1,6 +1,5 @@
 var a00150 =
 [
-    [ "Commands", "a00150.html#a8273ee6ce9732a442b06ed151fca79f0", null ],
-    [ "Add", "a00150.html#a201e7ba9487eeb532555ec2c61e60edb", null ],
-    [ "GetItem", "a00150.html#a9a71fda817a3f6219f411beb7b8aa8c4", null ]
+    [ "SetDevelopmentInfo", "a00150.html#a659e436fe7b29034bb9335ca2672e3f1", null ],
+    [ "SetTitle", "a00150.html#a6e9280ff3760b54ae9db94ecbdb6a237", null ]
 ];

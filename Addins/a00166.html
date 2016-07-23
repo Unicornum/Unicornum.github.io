@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс model::Data</title>
+<title>Addins: Класс controller::DoUpdate</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,72 +110,54 @@ $(document).ready(function(){initNavTree('a00166.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Открытые атрибуты</a> &#124;
-<a href="a02000.html">Полный список членов класса</a>  </div>
+<a href="a01624.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс model::Data<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01492.html">RegexTester</a> &raquo; <a class="el" href="a01494.html">Model</a></div></div>  </div>
+<div class="title">Класс controller::DoUpdate<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01413.html">CoreToolsDevelopmentInfo</a> &raquo; <a class="el" href="a01414.html">Controller</a><a class="el" href="a01425.html">RegexTester</a> &raquo;  &#124; <a class="el" href="a01426.html">Controller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00045.html">Проект RegexTester</a> <br />
- Класс данных, которые обрабатываются классом модели.  
+<p>Класс входит в <a class="el" href="a00027.html">Проект DevelopmentInfo</a> <br />
+ Класс, обеспечивающий логику работы сигнала обновления представления.  
  <a href="a00166.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00729_source.html">Data.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00703_source.html">DoUpdate.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:BlockingSignal&lt;::view::IWrite * &gt; и BlockingSignal&lt;::view::IView * &gt;.</p>
 <div class="dynheader">
-Граф связей класса model::Data:</div>
+Граф связей класса controller::DoUpdate:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02001.png" border="0" usemap="#model_1_1_data_coll__map" alt="Collaboration graph"/></div>
-<map name="model_1_1_data_coll__map" id="model_1_1_data_coll__map">
+<div class="center"><img src="a01625.png" border="0" usemap="#controller_1_1_do_update_coll__map" alt="Collaboration graph"/></div>
+<map name="controller_1_1_do_update_coll__map" id="controller_1_1_do_update_coll__map">
 </map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Открытые атрибуты</h2></td></tr>
-<tr class="memitem:aac8ba5f0eec96ee70f362f7def83284b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac8ba5f0eec96ee70f362f7def83284b"></a>
-String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html#aac8ba5f0eec96ee70f362f7def83284b">RegexString</a></td></tr>
-<tr class="memdesc:aac8ba5f0eec96ee70f362f7def83284b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка регулярного выражения (задается пользователем). <br /></td></tr>
-<tr class="separator:aac8ba5f0eec96ee70f362f7def83284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1cebbfa13abe8036b307698f163c0dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1cebbfa13abe8036b307698f163c0dc"></a>
-String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html#ad1cebbfa13abe8036b307698f163c0dc">ReplaceString</a></td></tr>
-<tr class="memdesc:ad1cebbfa13abe8036b307698f163c0dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка на замену для <a class="el" href="a00322.html" title="Класс входит в Проект RegexTester   Класс реализации модели для замены в строке с помощью регулярного...">Replace</a> (задается пользователем). <br /></td></tr>
-<tr class="separator:ad1cebbfa13abe8036b307698f163c0dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b43bb718b3729c19bada2c831ca2297"><td class="memItemLeft" align="right" valign="top">Strings_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html#a5b43bb718b3729c19bada2c831ca2297">SourceStrings</a></td></tr>
-<tr class="separator:a5b43bb718b3729c19bada2c831ca2297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00045.html">Проект RegexTester</a> <br />
- Класс данных, которые обрабатываются классом модели. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00027.html">Проект DevelopmentInfo</a> <br />
+ Класс, обеспечивающий логику работы сигнала обновления представления. </p>
+<p>Класс входит в <a class="el" href="a00033.html">Проект RegexTester</a> <br />
+ Класс, объекты которого назначаются сигналам обновления представления.</p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>27 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>01 Март 2016 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016</dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>29 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Данные класса</h2>
-<a class="anchor" id="a5b43bb718b3729c19bada2c831ca2297"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Strings_t model::Data::SourceStrings</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Список исходных строк для обработки (задаются пользователем) и результ их обработки (заполняется классом конктретной реализации модели). </p>
-
-</div>
-</div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Model/<a class="el" href="a00729_source.html">Data.hpp</a></li>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Controller/<a class="el" href="a00703_source.html">DoUpdate.hpp</a></li>
+<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Controller/DoUpdate.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00166.html">Data</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:51. Создано системой
+    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a00166.html">DoUpdate</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

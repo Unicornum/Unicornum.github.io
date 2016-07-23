@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['usefulcommands_2einside_2ehpp',['UsefulCommands.inside.hpp',['../a00928.html',1,'']]],
-  ['utilities_2ehpp',['Utilities.hpp',['../a01054.html',1,'']]],
-  ['utilities_2ehpp',['Utilities.hpp',['../a01056.html',1,'']]],
-  ['utilities_2ehpp',['Utilities.hpp',['../a01055.html',1,'']]],
-  ['utilities_2einside_2ehpp',['Utilities.inside.hpp',['../a01057.html',1,'']]],
-  ['utilities_2emock_2ehpp',['Utilities.mock.hpp',['../a01059.html',1,'']]]
+  ['version_2ehpp',['Version.hpp',['../a00641.html',1,'']]],
+  ['version_2ehpp',['Version.hpp',['../a00643.html',1,'']]],
+  ['version_2einside_2ehpp',['Version.inside.hpp',['../a01016.html',1,'']]],
+  ['version_2emock_2ehpp',['Version.mock.hpp',['../a01017.html',1,'']]],
+  ['visualstudio_2ehpp',['VisualStudio.hpp',['../a00646.html',1,'']]],
+  ['visualstudio_2ehpp',['VisualStudio.hpp',['../a00645.html',1,'']]],
+  ['visualstudio_2einside_2ehpp',['VisualStudio.inside.hpp',['../a01026.html',1,'']]],
+  ['visualstudio_2einside_2ehpp',['VisualStudio.inside.hpp',['../a01027.html',1,'']]]
 ];

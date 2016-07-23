@@ -1,4 +1,6 @@
 var a00210 =
 [
-    [ "GetValue", "a00210.html#aa0d65182ef65f2ea80e5e3d0d95d528b", null ]
+    [ "GetCaption", "a00210.html#a9edd2c2b7f26c3570d4e0ee7fc2beae7", null ],
+    [ "GetId", "a00210.html#a6b87841fd282e6f304d0fdec4e5f098a", null ],
+    [ "IsEnabled", "a00210.html#ad385bc3596e1107b7282e76b23e9343f", null ]
 ];

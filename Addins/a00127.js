@@ -1,8 +1,6 @@
 var a00127 =
 [
-    [ "Assign", "a00127.html#aa24004d311ec03f3115d5937b39fadd0", null ],
-    [ "ExtractFrom", "a00127.html#a7ab54b209b934b622fd1523fdc61a846", null ],
-    [ "GetName", "a00127.html#af8bd20844e7332406932787c9b5b852d", null ],
-    [ "Make", "a00127.html#ae36588f576db9d1dd86e5ae158a165c3", null ],
-    [ "Make", "a00127.html#a42cc94ed152690a3fe262eec788ef191", null ]
+    [ "GetCaption", "a00127.html#a6d00d75983e24e3816bd5ca377139746", null ],
+    [ "GetId", "a00127.html#a340d8aeea5a9b3028e2030fda573df43", null ],
+    [ "IsEnabled", "a00127.html#a3b921ee882fc84f1e68ad73a4ad345a3", null ]
 ];

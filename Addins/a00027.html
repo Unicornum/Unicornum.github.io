@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Требования модуля Time Tracker</title>
+<title>Addins: Проект DevelopmentInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -102,41 +102,32 @@ $(document).ready(function(){initNavTree('a00027.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Требования модуля Time Tracker </div>  </div>
+<div class="title">Проект DevelopmentInfo </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Надстройка предназначена для автоматизация учета времени, потраченного на разработку ПО и простого доступа к результатам этого учета.</p><ul>
-<li> <input type="checkbox" checked disabled>  Ключевое требование! Все действия должны происходить автоматически, пользователь вообще не должен участвовать в процессе учета времени.</li>
-<li> <input type="checkbox" checked disabled>  Затраченное время учитывается по действиям пользователя во время работы с Visual Studio (изменение текста открытого документа, выбор другого элемента в обозревателе решений, переключение активного окна).</li>
-<li> <input type="checkbox" checked disabled>  Учтенное время работы должно записываться на специальную страницу документации в виде отчета в формате Doxygen.</li>
-<li> <input type="checkbox" checked disabled>  Команда вызова окна просмотра отчета за две недели (для текущего решения и суммарный для всех решений, в которые вносились исправления).</li>
-</ul>
-<h2>Учет времени </h2>
+<div class="textblock"><h1><a class="anchor" id="sCoreToolsDevelopmentInfoBrief"></a>
+Введение</h1>
+<p>Проект программы отображения статистики работы над решением.</p>
+<h1><a class="anchor" id="sCoreToolsDevelopmentInfoDetails"></a>
+Подробное описание проекта</h1>
 <ul>
-<li> <input type="checkbox" checked disabled>  Промежутки веремени между событиями более (параметр IgnoreTime в разделе DevelopmentInfo настроек) не должны учитываться.</li>
-<li> <input type="checkbox" checked disabled>  Запись времени работы в файлы через промежутки времени, заданные параметром TimeSaveChange в разделе DevelopmentInfo настроек.</li>
+<li>Предназначен для отображения статистики, собираемой модулем <a class="el" href="a00339.html" title="Класс входит в Проект TimeTracker   Главный класс модуля TimeTracker. ">TimeTracker</a>.</li>
+<li>Вызывается при выборе соответствующе строки в выпадающем меню решения.</li>
 </ul>
-<h2>Страница информации о времени работы с решением </h2>
-<ul>
-<li> <input type="checkbox" checked disabled>  Содержит информацию о общем времени, потраченном на разработку решения.</li>
-<li> <input type="checkbox" checked disabled>  Содержит сгенерированный отчет для Doxygen.</li>
-</ul>
-<h2>Страница информации обо всех решениях, измененных за последние 2 недели </h2>
-<ul>
-<li> <input type="checkbox" checked disabled>  Содержит статистику времени работы с решениями за последние две недели (раздельно по дням недели).</li>
-</ul>
-<h2>Отчет за неделю </h2>
-<ul>
-<li> <input type="checkbox" checked disabled>  Отдельная утилита, получающая в качестве параметра пути к файлам, содержащим статистику работы с текущим решением и со всеми решениями, измененными за последние две недели.</li>
-</ul>
-<p><a class="el" href="a00040.html">Исходные требования утилиты DevelopmentInfo</a> </p>
+<p><a class="el" href="a00028.html">Исходные требования утилиты DevelopmentInfo</a>.</p>
+<h2>Схема взаимодействия классов </h2>
+<div class="image">
+<img src="DevelopmentInfo.Classes.png" alt="DevelopmentInfo.Classes.png"/>
+</div>
+<h2>Список задач проекта </h2>
+<p><a class="el" href="a00029.html">Список задач проекта</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00007.html">Исходные требования</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00024.html">Core</a></li><li class="navelem"><a class="el" href="a00026.html">Утилиты</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:51. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

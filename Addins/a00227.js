@@ -1,8 +1,6 @@
 var a00227 =
 [
-    [ "AddSeparator", "a00227.html#a055f644ab11bb7d8e2cc878f495ede6d", null ],
-    [ "Destroy", "a00227.html#a499ff96a414a23b007ccc70d4f84d058", null ],
-    [ "Insert", "a00227.html#aa80213278810b829985fed792ea8620a", null ],
-    [ "MoveToChildMenuFromCurrent", "a00227.html#a35e624f04a60c1987deece1eee132526", null ],
-    [ "MoveToChildMenuFromRoot", "a00227.html#aef42df975494de0a0eff4980bf18c44d", null ]
+    [ "BeginUpdate", "a00227.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
+    [ "CreateRoot", "a00227.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
+    [ "EndUpdate", "a00227.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
 ];

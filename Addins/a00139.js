@@ -1,8 +1,7 @@
 var a00139 =
 [
-    [ "GetCount", "a00139.html#abbc95386bcc2e25287929c3aeb044c81", null ],
-    [ "GetItem", "a00139.html#a212a9fd442dace44367a7d6dcfa3a9f8", null ],
-    [ "IsExist", "a00139.html#a373c590faedafe634836c26ad9419161", null ],
-    [ "operator[]", "a00139.html#afafc3273142ce39cc288fcfa61ddf4d5", null ],
-    [ "operator[]", "a00139.html#a5d2215c2dc29590520d9ede5f171613d", null ]
+    [ "Backspace", "a00139.html#a6cc744df765deddc7d08899f49b65649", null ],
+    [ "CharLeft", "a00139.html#a1cd808469c99b95129d677263c46fc97", null ],
+    [ "CharRight", "a00139.html#a6e582634d66528a35a34959fbb878e36", null ],
+    [ "GetCurrentColumn", "a00139.html#a8842526eca988c57d88408ee6054bc03", null ]
 ];

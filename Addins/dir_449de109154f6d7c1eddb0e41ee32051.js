@@ -1,5 +1,0 @@
-var dir_449de109154f6d7c1eddb0e41ee32051 =
-[
-    [ "(Documentation)", "dir_731d4e15750400775a955128b4e2e4f0.html", "dir_731d4e15750400775a955128b4e2e4f0" ],
-    [ "Icons", "dir_56f04d3743567d790e11f8211e43b0d0.html", "dir_56f04d3743567d790e11f8211e43b0d0" ]
-];

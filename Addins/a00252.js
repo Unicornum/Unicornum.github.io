@@ -1,6 +1,5 @@
 var a00252 =
 [
-    [ "BeginUpdate", "a00252.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
-    [ "CreateRoot", "a00252.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
-    [ "EndUpdate", "a00252.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
+    [ "GetCaption", "a00252.html#a85bf15cdc6c504c9e960b2b206dcc32a", null ],
+    [ "GetId", "a00252.html#ad6a934a38763c92ea29fb69d3168e572", null ]
 ];

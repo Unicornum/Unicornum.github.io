@@ -1,8 +1,6 @@
 var a00304 =
 [
-    [ "GetFileExtension", "a00304.html#ab45eca3582c96be43ba0d56d5aa27149", null ],
-    [ "GetName", "a00304.html#a185fa317fc2359ddb72c385103d4d76e", null ],
-    [ "GetPathToMainProjectDirectory", "a00304.html#a0be3886803f1fa836faea2906e93001d", null ],
-    [ "GetPathToTestProjectDirectory", "a00304.html#aca1be907095d923ccff307562b57e07e", null ],
-    [ "GetTestProjectName", "a00304.html#a8eb1e1f41628c28a2c99a77dd25f2192", null ]
+    [ "SolutionDevelopmentInfo", "a00304.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
+    [ "GetInfo", "a00304.html#a61bd18745090e834f86393cbd0ed38fe", null ],
+    [ "UpdateTime", "a00304.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
 ];

@@ -1,8 +1,6 @@
 var a00273 =
 [
-    [ "Create", "a00273.html#a29969cb90779a3342362b938ade775b8", null ],
-    [ "Delete", "a00273.html#a7fb61ee25708fe24d4a50684b1157452", null ],
-    [ "GetHotKey", "a00273.html#aca3ff0d4b98302f05ca6c14f705f18f8", null ],
-    [ "GetPictureId", "a00273.html#a4604e12a333e326fc657f55542e46caa", null ],
-    [ "GetStatus", "a00273.html#a9b2364ad4b131179a065516753e1181e", null ]
+    [ "Groups", "a00273.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+    [ "IsInvalidRegex", "a00273.html#ab125412a0bd7cfe6eec463b740827942", null ],
+    [ "Result", "a00273.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::ITaskPanelMain</title>
+<title>Addins: Класс model::Model</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,52 +110,57 @@ $(document).ready(function(){initNavTree('a00249.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02076.html">Полный список членов класса</a>  </div>
+<a href="a01956.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::ITaskPanelMain<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01486.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01491.html">View</a></div></div>  </div>
+<div class="title">Класс model::Model<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01425.html">RegexTester</a> &raquo; <a class="el" href="a01427.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях.  
+<p>Класс входит в <a class="el" href="a00033.html">Проект RegexTester</a> <br />
+ Класс главного объекта модели.  
  <a href="a00249.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00848_source.html">ITaskPanelMain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00707_source.html">Model.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::ITaskPanelMain:</div>
+Граф наследования:model::Model:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02077.png" border="0" usemap="#view_1_1_i_task_panel_main_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_task_panel_main_inherit__map" id="view_1_1_i_task_panel_main_inherit__map">
-<area shape="rect" id="node3" href="a00345.html" title="Class TaskPanel. " alt="" coords="5,235,232,415"/>
-<area shape="rect" id="node5" href="a00346.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс панели одной задачи. " alt="" coords="5,465,232,703"/>
+<div class="center"><img src="a01957.png" border="0" usemap="#model_1_1_model_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_model_inherit__map" id="model_1_1_model_inherit__map">
+<area shape="rect" id="node2" href="a00237.html" title="{support::Main\&lt; IModel \&gt;\n|+ m_Match\l+ m_Search\l+ m_Replace\l|# Main()\l}" alt="" coords="5,5,189,112"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::ITaskPanelMain:</div>
+Граф связей класса model::Model:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02078.png" border="0" usemap="#view_1_1_i_task_panel_main_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_i_task_panel_main_coll__map" id="view_1_1_i_task_panel_main_coll__map">
+<div class="center"><img src="a01958.png" border="0" usemap="#model_1_1_model_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_model_coll__map" id="model_1_1_model_coll__map">
+<area shape="rect" id="node2" href="a00237.html" title="{support::Main\&lt; IModel \&gt;\n||# Main()\l}" alt="" coords="5,293,189,371"/>
+<area shape="rect" id="node4" href="a00203.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Интерфейсный класс модели. " alt="" coords="6,5,188,200"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00033.html">Проект RegexTester</a> <br />
+ Класс главного объекта модели. </p>
+<ul>
+<li>Является контейнером для реализаций моделей конкретных операций.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>21 Апрель 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>28 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00848_source.html">ITaskPanelMain.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Model/<a class="el" href="a00707_source.html">Model.hpp</a></li>
+<li>Solution/Solution/Core/Tools/RegexTester/RegexTester/Model/Model.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00249.html">ITaskPanelMain</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:51. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00249.html">Model</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:53. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

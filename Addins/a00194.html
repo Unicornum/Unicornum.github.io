@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс controller::DoUpdatePositionTask</title>
+<title>Addins: Класс wx::ICancelControl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,46 +110,66 @@ $(document).ready(function(){initNavTree('a00194.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01689.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a02306.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс controller::DoUpdatePositionTask<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01486.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01487.html">Controller</a></div></div>  </div>
+<div class="title">Класс wx::ICancelControl<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01419.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01424.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Класс, обеспечивающий логику работы сигнала обновления данных задачи.  
+<p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
+ Интерфейсный класс элементов управления, для которых требуется поддержка отмены изменений в панели редактирования задачи.  
  <a href="a00194.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00815_source.html">DoUpdatePositionTask.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:BlockingSignal&lt; const ::view::IReadTaskPanel * &gt;.</p>
+<p><code>#include &lt;<a class="el" href="a00815_source.html">ICancelControl.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса controller::DoUpdatePositionTask:</div>
+Граф наследования:wx::ICancelControl:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01690.png" border="0" usemap="#controller_1_1_do_update_position_task_coll__map" alt="Collaboration graph"/></div>
-<map name="controller_1_1_do_update_position_task_coll__map" id="controller_1_1_do_update_position_task_coll__map">
+<div class="center"><img src="a02307.png" border="0" usemap="#wx_1_1_i_cancel_control_inherit__map" alt="Inheritance graph"/></div>
+<map name="wx_1_1_i_cancel_control_inherit__map" id="wx_1_1_i_cancel_control_inherit__map">
+<area shape="rect" id="node3" href="a00111.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс CheckBox&#39;a с поддержкой отмены изменений. " alt="" coords="5,161,125,268"/>
+<area shape="rect" id="node5" href="a00116.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс ComboBox&#39;a с автоматическим заполнением элементов выпадающ..." alt="" coords="150,161,305,268"/>
+<area shape="rect" id="node7" href="a00336.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс для текстового элемента управления с поддержкой отмены изм..." alt="" coords="331,147,469,283"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса wx::ICancelControl:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02308.png" border="0" usemap="#wx_1_1_i_cancel_control_coll__map" alt="Collaboration graph"/></div>
+<map name="wx_1_1_i_cancel_control_coll__map" id="wx_1_1_i_cancel_control_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a29857a47b0b95970ae34c7b42b0f5a20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29857a47b0b95970ae34c7b42b0f5a20"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html#a29857a47b0b95970ae34c7b42b0f5a20">DoActivate</a> (void)=0</td></tr>
+<tr class="memdesc:a29857a47b0b95970ae34c7b42b0f5a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при отображении панели редактирования задачи (в ней нужно запомнить текущее состояние элемента управления). <br /></td></tr>
+<tr class="separator:a29857a47b0b95970ae34c7b42b0f5a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287151415838c3601525537451126f7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a287151415838c3601525537451126f7e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html#a287151415838c3601525537451126f7e">DoCancel</a> (void)=0</td></tr>
+<tr class="memdesc:a287151415838c3601525537451126f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при закрытии панели редактирования задачи кнопкой "Отменить" (в ней следует вернуть элемент управления в состояние, в котором он находился на момент вызова функции <a class="el" href="a00194.html#a29857a47b0b95970ae34c7b42b0f5a20" title="Функция вызывается при отображении панели редактирования задачи (в ней нужно запомнить текущее состоя...">DoActivate()</a>). <br /></td></tr>
+<tr class="separator:a287151415838c3601525537451126f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00042.html">Проект ProjectTasks</a> <br />
- Класс, обеспечивающий логику работы сигнала обновления данных задачи. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
+ Интерфейсный класс элементов управления, для которых требуется поддержка отмены изменений в панели редактирования задачи. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>31 Март 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>24 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/<a class="el" href="a00815_source.html">DoUpdatePositionTask.hpp</a></li>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/DoUpdatePositionTask.cpp</li>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/wxWidgets/<a class="el" href="a00815_source.html">ICancelControl.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a00194.html">DoUpdatePositionTask</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
+    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00194.html">ICancelControl</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:55. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

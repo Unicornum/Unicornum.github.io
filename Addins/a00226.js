@@ -1,7 +1,6 @@
 var a00226 =
 [
-    [ "Delete", "a00226.html#ae43a87cdefe0422bdd5864edfcbe3323", null ],
-    [ "GetCaption", "a00226.html#aea0ec3fe92a34c4017f2542f008e9d6d", null ],
-    [ "GetStatus", "a00226.html#af65e439fdefe385b09fe963017bf1a70", null ],
-    [ "GetUniqueName", "a00226.html#a64e57a2e969aa1416318e2b4e3f501a6", null ]
+    [ "Initialyze", "a00226.html#a225ddd8e35b2e40a8810acab3754590a", null ],
+    [ "SetText", "a00226.html#af3300ee5c79838bd9c650935395161ae", null ],
+    [ "SetType", "a00226.html#a6ea09ba6ad7e48cdc12b87d958796bdc", null ]
 ];

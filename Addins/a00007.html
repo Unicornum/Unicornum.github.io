@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -199,7 +199,7 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <li> <input type="checkbox" checked disabled>  Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
 <li> <input type="checkbox" checked disabled>  Показывать подозрительные места (&ndash;inconclusive).</li>
 <li> <input type="checkbox" checked disabled>  Игнорировать папку внешних библиотек.</li>
-<li> <input type="checkbox" disabled>  В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013).</li>
+<li> <input type="checkbox" disabled>  В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013+).</li>
 </ul>
 <p>Игнорировать строки, содержащие:</p><ul>
 <li> <input type="checkbox" checked disabled>  'information (suppress_id = purgedConfiguration):'.</li>
@@ -209,21 +209,12 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <li> <input type="checkbox" checked disabled>  Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
 <li> <input type="checkbox" checked disabled>  Проверка со всеми вариантами макросов (&ndash;force).</li>
 </ul>
-<h2><a class="el" href="a00386.html" title="Класс входит в Проект Version   Главный класс модуля Version. ">Version</a> </h2>
-<p>Надстройка должна обеспечивать:</p><ul>
-<li> <input type="checkbox" checked disabled>  Все .exe и .dll файлы при сборке должны содержать версию исходных файлов + ревизию файлов решения.</li>
-<li> <input type="checkbox" checked disabled>  Макрос, представляющий собой строку текущей версии программы.</li>
-<li> <input type="checkbox" checked disabled>  Формат версии '1.0.0.1234 Build ЧЧ:ММ ДД.ММ.ГГГГ'.</li>
-</ul>
-<h2><a class="el" href="a00309.html" title="Класс входит в Проект Properties   Главный класс модуля Properties. ">Properties</a> </h2>
-<p>Надстройка, подключающая всем проектам решения общий файл .props.</p><ul>
-<li> <input type="checkbox" checked disabled>  Путь к общему файлу свойств берется из настроек.</li>
-<li> <input type="checkbox" checked disabled>  При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
-<li> <input type="checkbox" checked disabled>  При отсутствии файла свойств у проекта он должен подключаться.</li>
-<li> <input type="checkbox" disabled>  При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
-</ul>
+<h2><a class="el" href="a00360.html" title="Класс входит в Проект Version   Главный класс модуля Version. ">Version</a> </h2>
+<p><a class="el" href="a00023.html">Требования модуля Version</a></p>
+<h2><a class="el" href="a00282.html" title="Класс входит в Проект Properties   Главный класс модуля Properties. ">Properties</a> </h2>
+<p><a class="el" href="a00017.html">Требования модуля Properties</a></p>
 <h2>Time Tracker </h2>
-<p><a class="el" href="a00027.html">Требования модуля Time Tracker</a></p>
+<p><a class="el" href="a00020.html">Требования модуля Time Tracker</a></p>
 <h1>Утилиты </h1>
 <h2>Regex Tester </h2>
 <p>Прототип: <a href="https://cacoo.com/diagrams/4AYESADorTeoeyKf">https://cacoo.com/diagrams/4AYESADorTeoeyKf</a></p>
@@ -242,9 +233,9 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <li>При выделении тестовой строки показывать результат обработки только этой строки?</li>
 </ul>
 <h2>Окно статистики о работе над решением </h2>
-<p><a class="el" href="a00040.html">Исходные требования утилиты DevelopmentInfo</a>.</p>
+<p><a class="el" href="a00028.html">Исходные требования утилиты DevelopmentInfo</a>.</p>
 <h2>Список задач проекта </h2>
-<p><a class="el" href="a00043.html">Исходные требования утилиты ProjectTasks</a>.</p>
+<p><a class="el" href="a00031.html">Исходные требования утилиты ProjectTasks</a>.</p>
 <h1>Внешние утилиты </h1>
 <p>Для функционирования продукта требуется установка следующих внешних утилит:</p><ul>
 <li><a href="http://www.stack.nl/~dimitri/doxygen/index.html" title="Doxygen">Doxygen</a>.</li>
@@ -258,7 +249,7 @@ $(document).ready(function(){initNavTree('a00007.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:51. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,7 +1,6 @@
 var a00096 =
 [
-    [ "Введение", "a00096.html#sConfigurationBrief", [
-      [ "Список задач проекта", "a00096.html#ssConfigurationTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00097.html", null ]
+    [ "GetCaption", "a00096.html#a61df3c68c33ecedb181a6f2e1ac411c6", null ],
+    [ "GetId", "a00096.html#ac8b4e4a373cb106bd1f8caedc8ed65b9", null ],
+    [ "IsEnabled", "a00096.html#a4ee0fc4d45c1026f9889916c7145e0a2", null ]
 ];

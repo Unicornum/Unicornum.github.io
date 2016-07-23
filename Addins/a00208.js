@@ -1,5 +1,5 @@
 var a00208 =
 [
-    [ "Extensions", "a00208.html#af7e8b34d6e576e9dafa34d0cb78d1b91", null ],
-    [ "GetData", "a00208.html#a404fffab64b22d81ad51331b5afd835b", null ]
+    [ "GetCaption", "a00208.html#ac855a5cc1f97a3f33236876ff117bc27", null ],
+    [ "IsEnabled", "a00208.html#a0f84648ebe53ac480b8dc61bff5c4e4a", null ]
 ];

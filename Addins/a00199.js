@@ -1,5 +1,4 @@
 var a00199 =
 [
-    [ "Check", "a00199.html#ad56ae2ebe73c809f04cc5bf55eaff4d3", null ],
-    [ "GetProgress", "a00199.html#a32e2bdd187c9fc89d60b4d9afa6749d6", null ]
+    [ "Initialyze", "a00199.html#a6f1110665d1f831f9a87aa113ca15586", null ]
 ];

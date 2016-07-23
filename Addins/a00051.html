@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Проект Common</title>
+<title>Addins: Раздел Utilities</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -102,22 +102,71 @@ $(document).ready(function(){initNavTree('a00051.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Проект Common </div>  </div>
+<div class="title">Раздел Utilities </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="CoreUcCommonBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sUtilitiesBrief"></a>
 Введение</h1>
-<p>Проект классов (не зависящих от используемой версии IDE), используемых всеми командами.</p>
-<h2><a class="anchor" id="CoreUcCommonTasks"></a>
-Список задач проекта</h2>
-<p><a class="el" href="a00052.html">Список задач проекта</a> </p>
+<p>Раздел вспомогательных классов, которые используются в других разделах решения.</p>
+<h1><a class="anchor" id="sUtilitiesDetails"></a>
+Проекты раздела</h1>
+<h2><a class="anchor" id="ssUtilitiesProject"></a>
+Utilities</h2>
+<p>Проект содержит отдельные вспомогательные классы общего характера, используемые в других разделах решения (проект Utilities_x64 включает те же файлы, но собирается как x64 для проектов, которым это нужно - см., например <a class="el" href="a00027.html">Проект DevelopmentInfo</a>).</p>
+<p>Список классов проекта: <a class="el" href="a01451.html#aCoreUtilitiesUtilitiesClasses">aCoreUtilitiesUtilitiesClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00064.html">Проект UtilitiesProject</a></p>
+<h2><a class="anchor" id="ssExecuteProject"></a>
+Execute</h2>
+<p>Проект содержит классы-фасады для запуска внешних программ (утилит), обеспечивающих работу соответствующих команд надстройки:</p><ul>
+<li>Класс запуска программы Svn (экспорт папок из репозитория, получение номера ревизии файлов проекта/библиотек).</li>
+<li>Класс запуска программы Doxygen (генерация документации).</li>
+<li>Класс запуска программы CppCheck (статический анализ кода).</li>
+</ul>
+<p>Список классов проекта: <a class="el" href="a01448.html#aCoreUtilitiesExecuteClasses">aCoreUtilitiesExecuteClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00058.html">Проект Execute</a></p>
+<h2><a class="anchor" id="ssEnvironmentVariablesProject"></a>
+EnvironmentVariables</h2>
+<p>Проект классов для установки значений переменных окружения для программ:</p><ul>
+<li>Doxygen.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Проект предназначен для внутреннего использования в разделе Utilities и поэтому его классы не должны включаться в заголовочный файл раздела.</dd></dl>
+<p>Список классов проекта: <a class="el" href="a01447.html#aCoreUtilitiesEnvironmentVariablesClasses">aCoreUtilitiesEnvironmentVariablesClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00056.html">Проект EnvironmentVariables</a></p>
+<h2><a class="anchor" id="ssFilterProject"></a>
+Filter</h2>
+<p>Проект классов фильтрации полученного от выполняемой программы консольного вывода.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Проект предназначен для внутреннего использования в разделе Utilities и поэтому его классы не должны включаться в заголовочный файл раздела.</dd></dl>
+<p>Список классов проекта: <a class="el" href="a01449.html#aCoreUtilitiesFilterClasses">aCoreUtilitiesFilterClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00060.html">Проект Filter</a></p>
+<h2><a class="anchor" id="ssDialogProject"></a>
+Dialog</h2>
+<p>Проект, содержащий классы диалоговых окон:</p><ul>
+<li>Для отображения прогресса некоего процесса (в процентах и просто 'бегущей' строкой).</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Проект предназначен для внутреннего использования в разделе Utilities и поэтому его классы не должны включаться в заголовочный файл раздела.</dd></dl>
+<p>Список классов проекта: <a class="el" href="a01445.html#aCoreUtilitiesDialogClasses">aCoreUtilitiesDialogClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00052.html">Проект Dialog</a></p>
+<h2><a class="anchor" id="ssDoxygenProject"></a>
+Doxygen</h2>
+<p>Проект классов, специфичных для Doxygen:</p><ul>
+<li>Предварительная обработка документации решения для вставки описаний дочерних разделов/проектов.</li>
+</ul>
+<p>Список классов проекта: <a class="el" href="a01446.html#aCoreUtilitiesDoxygenClasses">aCoreUtilitiesDoxygenClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00054.html">Проект Doxygen</a></p>
+<h2><a class="anchor" id="ssLoggerProject"></a>
+Logger</h2>
+<p>Проект классов, обеспечивающих вывод информации:</p><ul>
+<li>В выводное окно Visual Studio.</li>
+</ul>
+<p>Список классов проекта: <a class="el" href="a01450.html#aCoreUtilitiesLoggerClasses">aCoreUtilitiesLoggerClasses</a></p>
+<p>Страница проекта: <a class="el" href="a00062.html">Проект Logger</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00033.html">Core</a></li><li class="navelem"><a class="el" href="a00050.html">Раздел UsefulCommands</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:49. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00024.html">Core</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:51. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

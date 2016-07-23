@@ -1,6 +1,5 @@
 var a00253 =
 [
-    [ "SetDevelopmentInfo", "a00253.html#a63d80cbe8e7536b4608e870371394d25", null ],
-    [ "SetTitle", "a00253.html#a7e74984281cd804f6e835ff317d48ae6", null ],
-    [ "DoUpdate", "a00253.html#a67150deb963bc35daf58985e5c9e478d", null ]
+    [ "GetCaption", "a00253.html#accc91b280baa5f4bbbd054dd62698b0f", null ],
+    [ "GetId", "a00253.html#aac5d87742b0561e0df8954ae538748e0", null ]
 ];

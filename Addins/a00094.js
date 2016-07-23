@@ -1,7 +1,4 @@
 var a00094 =
 [
-    [ "Введение", "a00094.html#sWrappersCommonBrief", [
-      [ "Список задач проекта", "a00094.html#ssWrappersCommonTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00095.html", null ]
+    [ "operator[]", "a00094.html#a574dd95dde83c6bd52cf73166a88ba67", null ]
 ];

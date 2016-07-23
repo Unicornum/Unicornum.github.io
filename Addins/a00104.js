@@ -1,7 +1,6 @@
 var a00104 =
 [
-    [ "Введение", "a00104.html#sPanesBrief", [
-      [ "Список задач проекта", "a00104.html#ssPanesTasks", null ]
-    ] ],
-    [ "Список задач проекта", "a00105.html", null ]
+    [ "GetCaption", "a00104.html#a00681eac40b5615f32997ca88b7799ce", null ],
+    [ "GetId", "a00104.html#a8768d597224dbeb44e529a89ec6b90ce", null ],
+    [ "IsEnabled", "a00104.html#a97e3720e0e4a4cc5467e5b6cfdbe9d0f", null ]
 ];

@@ -1,6 +1,5 @@
 var a00255 =
 [
-    [ "SetRegexString", "a00255.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
-    [ "SetSourceStrings", "a00255.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
-    [ "UpdateView", "a00255.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
+    [ "GetCaption", "a00255.html#ade76701e06d95dd78419f0e23bd2ea28", null ],
+    [ "GetId", "a00255.html#acf0c3577b07c7ff8fda660b3c331340f", null ]
 ];

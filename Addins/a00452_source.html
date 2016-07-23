@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Command/(Documentation)/ProjectPage.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/ConnectionPoints/Common/Common/IExtension.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.2.2 Revision: 4218 Architecture: x86.64 Build: 12:56 02 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,16 +108,20 @@ $(document).ready(function(){initNavTree('a00452_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ProjectPage.hpp</div>  </div>
+<div class="title">IExtension.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\system\dll\object.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01348.html">connection_points</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="a00200.html">    8</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt; <span class="keyword">class </span><a class="code" href="a00200.html">IExtensions</a>;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TUsingExtensionData&gt;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00199.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00199.html">IExtension</a> :</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">public</span> ::alicorn::system::dll::Object</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a00199.html#a6f1110665d1f831f9a87aa113ca15586">Initialyze</a>(<a class="code" href="a00200.html">IExtensions&lt;TUsingExtensionData&gt;</a> *) = 0;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a00199.html">IExtension</a>(<span class="keywordtype">void</span>) {}</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;} <span class="comment">// namespace connection_points</span></div><div class="ttc" id="a00199_html_a6f1110665d1f831f9a87aa113ca15586"><div class="ttname"><a href="a00199.html#a6f1110665d1f831f9a87aa113ca15586">connection_points::IExtension::Initialyze</a></div><div class="ttdeci">virtual void Initialyze(IExtensions&lt; TUsingExtensionData &gt; *)=0</div><div class="ttdoc">Функция инициализации модуля. </div></div>
+<div class="ttc" id="a01348_html"><div class="ttname"><a href="a01348.html">connection_points</a></div><div class="ttdef"><b>Definition:</b> CommandManager.hpp:4</div></div>
+<div class="ttc" id="a00199_html"><div class="ttname"><a href="a00199.html">connection_points::IExtension</a></div><div class="ttdoc">Класс входит в Проект Common   Интерфейс модулей расширений. </div><div class="ttdef"><b>Definition:</b> IExtension.hpp:36</div></div>
+<div class="ttc" id="a00200_html"><div class="ttname"><a href="a00200.html">connection_points::IExtensions</a></div><div class="ttdoc">Класс входит в Проект Common   Интерфейсный класс списка модулей. </div><div class="ttdef"><b>Definition:</b> IExtension.hpp:8</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_98197c0e13a1f0e8ad204a76c7eb856d.html">Command</a></li><li class="navelem"><a class="el" href="dir_7092ced199349c9ec00ad1a35ea46128.html">(Documentation)</a></li><li class="navelem"><b>ProjectPage.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Июл 2016 12:56:46. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_507a45db08fa34c6d3b352cda19bee73.html">ConnectionPoints</a></li><li class="navelem"><a class="el" href="dir_afba4a3547e150f73d46e23caa3b74e4.html">Common</a></li><li class="navelem"><a class="el" href="dir_b0b0c27ae28d899a90e4f07bda3f77c9.html">Common</a></li><li class="navelem"><b>IExtension.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:48. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

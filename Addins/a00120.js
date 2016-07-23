@@ -1,6 +1,5 @@
 var a00120 =
 [
-    [ "Execute", "a00120.html#aa2f77da93eb654ed2aeb4ddf1a1c511f", null ],
-    [ "GetCaption", "a00120.html#a0b0d942291e1ab69ae14223d823cd3f5", null ],
-    [ "IsEnabled", "a00120.html#a09cd5c74a9dfc90d39eb17ab884353ac", null ]
+    [ "AddPopup", "a00120.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
+    [ "GetCount", "a00120.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
 ];

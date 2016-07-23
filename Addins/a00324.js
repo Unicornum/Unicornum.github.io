@@ -1,4 +1,5 @@
 var a00324 =
 [
-    [ "DoLocalProcess", "a00324.html#a338d994f833f48fd5597d859c40e57c6", null ]
+    [ "TaskPanelDept", "a00324.html#ad8957a14dc0d1211c3e97322257a6a6f", null ],
+    [ "TaskPanelDept", "a00324.html#ad64745638c5972d5cbf3b473c117e816", null ]
 ];

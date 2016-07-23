@@ -6,6 +6,6 @@ var a00009 =
     [ "Исходные требования", "a00007.html", "a00007" ],
     [ "Build", "a00003.html", "a00003" ],
     [ "ConnectionPoints", "a00010.html", "a00010" ],
-    [ "Core", "a00033.html", "a00033" ],
-    [ "Wrappers", "a00088.html", "a00088" ]
+    [ "Core", "a00024.html", "a00024" ],
+    [ "Wrappers", "a00066.html", "a00066" ]
 ];

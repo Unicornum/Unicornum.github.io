@@ -1,4 +1,5 @@
 var a00184 =
 [
-    [ "IsEnabled", "a00184.html#a6656d47586f9c496ed6d61c3173fbe71", null ]
+    [ "Extensions", "a00184.html#af7e8b34d6e576e9dafa34d0cb78d1b91", null ],
+    [ "GetData", "a00184.html#a404fffab64b22d81ad51331b5afd835b", null ]
 ];

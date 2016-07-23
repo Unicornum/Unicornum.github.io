@@ -1,5 +1,5 @@
 var a00351 =
 [
-    [ "TaskPanelDept", "a00351.html#ad8957a14dc0d1211c3e97322257a6a6f", null ],
-    [ "TaskPanelDept", "a00351.html#ad64745638c5972d5cbf3b473c117e816", null ]
+    [ "GetCount", "a00351.html#aa154e70c4f4beb10408ebd7639ddd71e", null ],
+    [ "GetElement", "a00351.html#aa3d0f9502c74d80fa41f920314db0f81", null ]
 ];

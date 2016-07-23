@@ -1,5 +1,11 @@
 var a00225 =
 [
-    [ "Check", "a00225.html#a7b384636712e62b31c577aeb72977365", null ],
-    [ "GetProgress", "a00225.html#a85a1df60506fb28daaeec201925140ef", null ]
+    [ "GetExternalProgramAction", "a00225.html#a189afa06d6bb705979adc31ceb2c04a3", null ],
+    [ "GetText", "a00225.html#a82edf752ec3b33465d3ea64394ba6c91", null ],
+    [ "GetType", "a00225.html#a1551b18e50cfe6c08e35025cd79d62df", null ],
+    [ "GetVersionAction", "a00225.html#a42ab34323f6ea675fca656ad7ac042fd", null ],
+    [ "IsChecked", "a00225.html#aa45e264cea03175160b9ea5397772255", null ],
+    [ "IsEditAvailable", "a00225.html#a96b3866059aca0d1eff944c5ec734706", null ],
+    [ "IsWriteToHistory", "a00225.html#a793c0208230f25bb81adbdeaf8afe085", null ],
+    [ "ShowPanel", "a00225.html#aeb3a4e2d3810e06cfc6e8f54150726d4", null ]
 ];
