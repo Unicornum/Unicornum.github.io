@@ -1,4 +1,5 @@
 var a00188 =
 [
-    [ "IsAlreadyExists", "a00188.html#a355c808ae26654af86b3a21150067904", null ]
+    [ "GetCaption", "a00188.html#abe1eda02fbbb11c967bd65c668e6d2f4", null ],
+    [ "GetId", "a00188.html#ac5d858191e31b36a82c245151e603aa2", null ]
 ];

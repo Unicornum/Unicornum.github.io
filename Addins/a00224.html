@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::ITaskPanelMain</title>
+<title>Addins: Класс view::ITaskPanelData</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.1 Revision: 4421 Architecture: x86.64 Build: 14:39 30 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,52 +110,107 @@ $(document).ready(function(){initNavTree('a00224.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02015.html">Полный список членов класса</a>  </div>
+<a href="a02025.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::ITaskPanelMain<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01419.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01424.html">View</a></div></div>  </div>
+<div class="title">Класс view::ITaskPanelData<div class="ingroups"><a class="el" href="a01426.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01431.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях.  
+ Интерфейсный класс для работы с данными задачи.  
  <a href="a00224.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00789_source.html">ITaskPanelMain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00790_source.html">ITaskPanelData.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::ITaskPanelMain:</div>
+Граф наследования:view::ITaskPanelData:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02016.png" border="0" usemap="#view_1_1_i_task_panel_main_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_task_panel_main_inherit__map" id="view_1_1_i_task_panel_main_inherit__map">
-<area shape="rect" id="node3" href="a00319.html" title="Class TaskPanel. " alt="" coords="5,235,232,415"/>
-<area shape="rect" id="node5" href="a00318.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс панели одной задачи. " alt="" coords="5,465,232,703"/>
+<div class="center"><img src="a02026.png" border="0" usemap="#view_1_1_i_task_panel_data_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_i_task_panel_data_inherit__map" id="view_1_1_i_task_panel_data_inherit__map">
+<area shape="rect" id="node7" href="a00323.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс панели, отображающей задачу в свернутом виде..." alt="" coords="5,374,224,701"/>
+<area shape="rect" id="node9" href="a00328.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс реализации работы с панелью редактирования параметров зада..." alt="" coords="248,396,467,679"/>
+<area shape="rect" id="node2" href="a00226.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для получения данных задачи. " alt="" coords="9,5,228,200"/>
+<area shape="rect" id="node4" href="a00227.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для передачи панели данных задачи..." alt="" coords="253,42,453,163"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::ITaskPanelMain:</div>
+Граф связей класса view::ITaskPanelData:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02017.png" border="0" usemap="#view_1_1_i_task_panel_main_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_i_task_panel_main_coll__map" id="view_1_1_i_task_panel_main_coll__map">
+<div class="center"><img src="a02027.png" border="0" usemap="#view_1_1_i_task_panel_data_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_i_task_panel_data_coll__map" id="view_1_1_i_task_panel_data_coll__map">
+<area shape="rect" id="node2" href="a00226.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для получения данных задачи. " alt="" coords="5,5,224,200"/>
+<area shape="rect" id="node4" href="a00227.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс для передачи панели данных задачи..." alt="" coords="249,42,449,163"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_methods_a00226"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00226')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00226.html">view::ITaskPanelReadData</a></td></tr>
+<tr class="memitem:a82edf752ec3b33465d3ea64394ba6c91 inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82edf752ec3b33465d3ea64394ba6c91"></a>
+virtual wxString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a82edf752ec3b33465d3ea64394ba6c91">GetText</a> (void) const  =0</td></tr>
+<tr class="memdesc:a82edf752ec3b33465d3ea64394ba6c91 inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего текста задачи. <br /></td></tr>
+<tr class="separator:a82edf752ec3b33465d3ea64394ba6c91 inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1551b18e50cfe6c08e35025cd79d62df inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1551b18e50cfe6c08e35025cd79d62df"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a1551b18e50cfe6c08e35025cd79d62df">GetType</a> (void) const  =0</td></tr>
+<tr class="memdesc:a1551b18e50cfe6c08e35025cd79d62df inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего типа задачи. <br /></td></tr>
+<tr class="separator:a1551b18e50cfe6c08e35025cd79d62df inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ab34323f6ea675fca656ad7ac042fd inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42ab34323f6ea675fca656ad7ac042fd"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a42ab34323f6ea675fca656ad7ac042fd">GetVersionAction</a> (void) const  =0</td></tr>
+<tr class="memdesc:a42ab34323f6ea675fca656ad7ac042fd inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего типа действия над версией решения. <br /></td></tr>
+<tr class="separator:a42ab34323f6ea675fca656ad7ac042fd inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a189afa06d6bb705979adc31ceb2c04a3 inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a189afa06d6bb705979adc31ceb2c04a3"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a189afa06d6bb705979adc31ceb2c04a3">GetExternalProgramAction</a> (void) const  =0</td></tr>
+<tr class="memdesc:a189afa06d6bb705979adc31ceb2c04a3 inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего типа запуска внешней программы. <br /></td></tr>
+<tr class="separator:a189afa06d6bb705979adc31ceb2c04a3 inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45e264cea03175160b9ea5397772255 inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa45e264cea03175160b9ea5397772255"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#aa45e264cea03175160b9ea5397772255">IsChecked</a> (void) const  =0</td></tr>
+<tr class="memdesc:aa45e264cea03175160b9ea5397772255 inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения статуса выполненности задачи. <br /></td></tr>
+<tr class="separator:aa45e264cea03175160b9ea5397772255 inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96b3866059aca0d1eff944c5ec734706 inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96b3866059aca0d1eff944c5ec734706"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a96b3866059aca0d1eff944c5ec734706">IsEditAvailable</a> (void) const  =0</td></tr>
+<tr class="memdesc:a96b3866059aca0d1eff944c5ec734706 inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения статуса доступности редактирования задачи. <br /></td></tr>
+<tr class="separator:a96b3866059aca0d1eff944c5ec734706 inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a793c0208230f25bb81adbdeaf8afe085 inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a793c0208230f25bb81adbdeaf8afe085"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#a793c0208230f25bb81adbdeaf8afe085">IsWriteToHistory</a> (void) const  =0</td></tr>
+<tr class="memdesc:a793c0208230f25bb81adbdeaf8afe085 inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения признака необходимости записи в историю изменений. <br /></td></tr>
+<tr class="separator:a793c0208230f25bb81adbdeaf8afe085 inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3a4e2d3810e06cfc6e8f54150726d4 inherit pub_methods_a00226"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb3a4e2d3810e06cfc6e8f54150726d4"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html#aeb3a4e2d3810e06cfc6e8f54150726d4">ShowPanel</a> (bool)=0</td></tr>
+<tr class="memdesc:aeb3a4e2d3810e06cfc6e8f54150726d4 inherit pub_methods_a00226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция отображения/скрытия панели задачи. <br /></td></tr>
+<tr class="separator:aeb3a4e2d3810e06cfc6e8f54150726d4 inherit pub_methods_a00226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00227"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00227')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00227.html">view::ITaskPanelWriteData</a></td></tr>
+<tr class="memitem:a225ddd8e35b2e40a8810acab3754590a inherit pub_methods_a00227"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#a225ddd8e35b2e40a8810acab3754590a">Initialyze</a> (const <a class="el" href="a00144.html">Data_t</a> &amp;_DataTask, bool _IsExistsChildTasks)=0</td></tr>
+<tr class="memdesc:a225ddd8e35b2e40a8810acab3754590a inherit pub_methods_a00227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция инициализации панели задачи.  <a href="#a225ddd8e35b2e40a8810acab3754590a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a225ddd8e35b2e40a8810acab3754590a inherit pub_methods_a00227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3300ee5c79838bd9c650935395161ae inherit pub_methods_a00227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3300ee5c79838bd9c650935395161ae"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#af3300ee5c79838bd9c650935395161ae">SetText</a> (const wxString &amp;)=0</td></tr>
+<tr class="memdesc:af3300ee5c79838bd9c650935395161ae inherit pub_methods_a00227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения текущего текста задачи. <br /></td></tr>
+<tr class="separator:af3300ee5c79838bd9c650935395161ae inherit pub_methods_a00227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea09ba6ad7e48cdc12b87d958796bdc inherit pub_methods_a00227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ea09ba6ad7e48cdc12b87d958796bdc"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#a6ea09ba6ad7e48cdc12b87d958796bdc">SetType</a> (size_t)=0</td></tr>
+<tr class="memdesc:a6ea09ba6ad7e48cdc12b87d958796bdc inherit pub_methods_a00227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения текущего типа задачи. <br /></td></tr>
+<tr class="separator:a6ea09ba6ad7e48cdc12b87d958796bdc inherit pub_methods_a00227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях. </p>
+ Интерфейсный класс для работы с данными задачи. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 2.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>21 Апрель 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>12 Апрель 2016 <br />
+ 21 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00789_source.html">ITaskPanelMain.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00790_source.html">ITaskPanelData.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00224.html">ITaskPanelMain</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:54. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00224.html">ITaskPanelData</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Июл 2016 14:39:54. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

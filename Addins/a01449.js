@@ -1,19 +1,35 @@
 var a01449 =
 [
-    [ "CppCheck", "a00135.html", [
-      [ "Check", "a00135.html#a2cd8b5ee3b04ef8db417d9fb6db50c1d", null ],
-      [ "GetProgress", "a00135.html#a1d5abe814c3015b03078a9301d9b4e6b", null ]
+    [ "AddSelectedTextToUsertypeFile", "a00096.html", [
+      [ "GetCaption", "a00096.html#a61df3c68c33ecedb181a6f2e1ac411c6", null ],
+      [ "GetId", "a00096.html#ac8b4e4a373cb106bd1f8caedc8ed65b9", null ],
+      [ "IsEnabled", "a00096.html#a4ee0fc4d45c1026f9889916c7145e0a2", null ]
     ] ],
-    [ "Doxygen", "a00175.html", [
-      [ "Check", "a00175.html#ad56ae2ebe73c809f04cc5bf55eaff4d3", null ],
-      [ "GetProgress", "a00175.html#a32e2bdd187c9fc89d60b4d9afa6749d6", null ]
+    [ "AStyleProcess", "a00104.html", [
+      [ "GetCaption", "a00104.html#a00681eac40b5615f32997ca88b7799ce", null ],
+      [ "GetId", "a00104.html#a8768d597224dbeb44e529a89ec6b90ce", null ],
+      [ "IsEnabled", "a00104.html#a97e3720e0e4a4cc5467e5b6cfdbe9d0f", null ]
     ] ],
-    [ "Empty", "a00181.html", [
-      [ "Check", "a00181.html#af8fb249031ba9971d14e04253923eb95", null ],
-      [ "GetProgress", "a00181.html#a4aa17f92cd40b98df93522aae5bd26eb", null ]
+    [ "CppCheckSolutionQuickProcess", "a00136.html", [
+      [ "GetCaption", "a00136.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
+      [ "GetId", "a00136.html#a94b81ddae9c900a40584ed91a56fa7a6", null ],
+      [ "IsEnabled", "a00136.html#a006eca46887e662789831772b0c5107a", null ]
     ] ],
-    [ "IFilter", "a00201.html", [
-      [ "Check", "a00201.html#a7b384636712e62b31c577aeb72977365", null ],
-      [ "GetProgress", "a00201.html#a85a1df60506fb28daaeec201925140ef", null ]
+    [ "OpenDevelopmentInfo", "a00256.html", [
+      [ "GetCaption", "a00256.html#abd5a3ad5b334b05b063df592976f87db", null ],
+      [ "GetId", "a00256.html#ae51b0c098ae0a75768acb03c38824c4e", null ]
+    ] ],
+    [ "OpenProjectTasks", "a00259.html", [
+      [ "GetCaption", "a00259.html#a42991b73ff1a1740ecdb5fb3c1ded860", null ],
+      [ "GetId", "a00259.html#a15c7436b047a92eec25dda37d67eb89a", null ],
+      [ "IsEnabled", "a00259.html#a411f5e1d9fcc9fc1a481a36d29b02edb", null ]
+    ] ],
+    [ "OpenRegExWindow", "a00260.html", [
+      [ "GetCaption", "a00260.html#aa7faa727579bf38ea063bda4888be34f", null ],
+      [ "GetId", "a00260.html#a3997bba980d94d67dd6763e82eef705a", null ]
+    ] ],
+    [ "OpenSettings", "a00261.html", [
+      [ "GetCaption", "a00261.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
+      [ "GetId", "a00261.html#a58be1ff4609162de563288f25c25b8ea", null ]
     ] ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::ICompleteTasksPanel</title>
+<title>Addins: Класс core::useful_commands::common::ICommand</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.1 Revision: 4421 Architecture: x86.64 Build: 14:39 30 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,70 +110,130 @@ $(document).ready(function(){initNavTree('a00196.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02000.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01674.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::ICompleteTasksPanel<div class="ingroups"><a class="el" href="a01419.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01424.html">View</a></div></div>  </div>
+<div class="title">Класс core::useful_commands::common::ICommand<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01419.html">Core</a> &raquo; <a class="el" href="a01440.html">UsefulCommands</a> &raquo; <a class="el" href="a01439.html">Common</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Вспомогательный класс для интерфейса панели завершенных задач.  
+<p>Класс входит в <a class="el" href="a00039.html">Проект Common</a> <br />
+ Базовый класс всех команд раздела.  
  <a href="a00196.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00785_source.html">ICompleteTasksPanel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00866_source.html">ICommand.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::ICompleteTasksPanel:</div>
+Граф наследования:core::useful_commands::common::ICommand:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02001.png" border="0" usemap="#view_1_1_i_complete_tasks_panel_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_i_complete_tasks_panel_inherit__map" id="view_1_1_i_complete_tasks_panel_inherit__map">
-<area shape="rect" id="node5" href="a00329.html" title="{view::TasksPanel\&lt; IComplete\lTasksPanel \&gt;\n||+ BeginUpdate()\l+ EndUpdate()\l+ CreateRoot()\l+ TasksPanel()\l}" alt="" coords="5,301,221,437"/>
-<area shape="rect" id="node2" href="a00227.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс панели, содержащей список панелей отдельных з..." alt="" coords="42,6,184,127"/>
+<div class="center"><img src="a01675.png" border="0" usemap="#core_1_1useful__commands_1_1common_1_1_i_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="core_1_1useful__commands_1_1common_1_1_i_command_inherit__map" id="core_1_1useful__commands_1_1common_1_1_i_command_inherit__map">
+<area shape="rect" id="node3" href="a00203.html" title="Класс входит в Проект Common &#160;&#160;Базовый класс всех команд, которые будут исполнятся при выборе строки ..." alt="" coords="2241,169,2444,290"/>
+<area shape="rect" id="node67" href="a00114.html" title="Класс входит в Проект Common &#160;&#160;Класс команды очистки лога. " alt="" coords="2469,161,2651,297"/>
+<area shape="rect" id="node69" href="a00258.html" title="Класс входит в Проект Common &#160;&#160;Класс команды открытия лога. " alt="" coords="2676,161,2860,297"/>
+<area shape="rect" id="node71" href="a00151.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды обработки файла результата построения решения скр..." alt="" coords="2884,147,3065,312"/>
+<area shape="rect" id="node73" href="a00159.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды открытия документации решения. " alt="" coords="3089,161,3268,297"/>
+<area shape="rect" id="node75" href="a00160.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды предварительной обработки документации решения..." alt="" coords="3292,154,3471,305"/>
+<area shape="rect" id="node77" href="a00164.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды генерации документации решения. " alt="" coords="3495,154,3673,305"/>
+<area shape="rect" id="node79" href="a00350.html" title="Класс входит в Проект Version &#160;&#160;Класс команды обновления номеров ревизий кода в файле версии решения..." alt="" coords="3698,161,3917,297"/>
+<area shape="rect" id="node5" href="a00347.html" title="Класс входит в Проект Common &#160;&#160;Класс команды, представляющей собой набор отдельных команд..." alt="" coords="5,382,203,503"/>
+<area shape="rect" id="node9" href="a00333.html" title="Класс входит в Проект Common &#160;&#160;Класс для обкатки работоспособности команд. " alt="" coords="228,367,407,518"/>
+<area shape="rect" id="node11" href="a00092.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды добавления описания функции/класса. " alt="" coords="431,360,617,525"/>
+<area shape="rect" id="node13" href="a00209.html" title="Класс входит в Проект Documentation &#160;&#160;Базовый класс команд увеличения номера версии класса..." alt="" coords="642,367,891,518"/>
+<area shape="rect" id="node21" href="a00187.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды генерации простого подставного класса..." alt="" coords="916,360,1135,525"/>
+<area shape="rect" id="node23" href="a00189.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды генерации подставного класса, использующего прокс..." alt="" coords="1159,360,1405,525"/>
+<area shape="rect" id="node25" href="a00127.html" title="Класс входит в Проект Macros &#160;&#160;Класс команды переноса строки комментария. " alt="" coords="1431,367,1673,518"/>
+<area shape="rect" id="node27" href="a00210.html" title="Класс входит в Проект Macros &#160;&#160;Класс команды вставки строки даты/времени. " alt="" coords="1697,367,1919,518"/>
+<area shape="rect" id="node29" href="a00211.html" title="Класс входит в Проект Macros &#160;&#160;Класс команды вставки сообщения #pragma chMSG(). " alt="" coords="1943,367,2207,518"/>
+<area shape="rect" id="node31" href="a00212.html" title="Класс входит в Проект Macros &#160;&#160;Класс команды вставки заготовки текста. " alt="" coords="2231,367,2453,518"/>
+<area shape="rect" id="node33" href="a00091.html" title="Класс входит в Проект Testing &#160;&#160;Класс команды добавления тестового проекта для класса. " alt="" coords="2479,367,2687,518"/>
+<area shape="rect" id="node35" href="a00095.html" title="Класс входит в Проект Testing &#160;&#160;Класс команды добавления тестового проекта для проекта. " alt="" coords="2711,367,2932,518"/>
+<area shape="rect" id="node37" href="a00098.html" title="Класс входит в Проект Testing &#160;&#160;Класс команды добавления общего тестового проекта всего решения..." alt="" coords="2956,367,3183,518"/>
+<area shape="rect" id="node39" href="a00099.html" title="Класс входит в Проект Testing &#160;&#160;Класс команды добавления заготовки теста. " alt="" coords="3207,367,3441,518"/>
+<area shape="rect" id="node41" href="a00096.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды добавления выделенного текста в файл usertype..." alt="" coords="3465,360,3724,525"/>
+<area shape="rect" id="node43" href="a00104.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды обработки файла программой AStyle. " alt="" coords="3749,367,3963,518"/>
+<area shape="rect" id="node45" href="a00136.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды быстрой обработки решения при помощи CppCheck..." alt="" coords="3988,360,4241,525"/>
+<area shape="rect" id="node47" href="a00365.html" title="Класс входит в Проект Version &#160;&#160;Класс команды отображения текущей версии надстройки. " alt="" coords="4265,375,4476,511"/>
+<area shape="rect" id="node49" href="a00165.html" title="{core::useful_commands\l::vs::common::DoRunUtilities\l\&lt;::core::useful_commands::\lcommon::IMenuCommand \&gt;\n||+ Execute()\l+ IsEnabled()\l+ DoRunUtilities()\l# DoRun()\l}" alt="" coords="4500,360,4716,525"/>
+<area shape="rect" id="node7" href="a00188.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды, генерирующей документацию решения. " alt="" coords="11,588,197,724"/>
+<area shape="rect" id="node15" href="a00206.html" title="Класс входит в Проект Documentation &#160;&#160;Класс увеличения сладшего номера версии в описании класса..." alt="" coords="391,595,632,717"/>
+<area shape="rect" id="node17" href="a00207.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды увеличения номера подверсии в описании класса..." alt="" coords="657,595,876,717"/>
+<area shape="rect" id="node19" href="a00208.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды увеличения номера версии класса. " alt="" coords="900,595,1095,717"/>
+<area shape="rect" id="node51" href="a00254.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды открытия документации надстройки. " alt="" coords="3787,588,3965,724"/>
+<area shape="rect" id="node53" href="a00255.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды открытия документации внешних библиотек..." alt="" coords="3989,588,4168,724"/>
+<area shape="rect" id="node55" href="a00257.html" title="Класс входит в Проект Documentation &#160;&#160;Класс команды открытия документации Doxygen. " alt="" coords="4192,588,4371,724"/>
+<area shape="rect" id="node57" href="a00262.html" title="Класс входит в Раздел UsefulCommands &#160;&#160;Класс команды открытия документации решения. " alt="" coords="4395,588,4573,724"/>
+<area shape="rect" id="node59" href="a00256.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды отображения окна статистики работы над решением..." alt="" coords="4598,588,4863,724"/>
+<area shape="rect" id="node61" href="a00259.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды отображения окна списка задач проекта. " alt="" coords="4887,573,5088,739"/>
+<area shape="rect" id="node63" href="a00260.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды открытия окна утилиты создания регулярных выражений..." alt="" coords="5113,595,5356,717"/>
+<area shape="rect" id="node65" href="a00261.html" title="Класс входит в Проект Utilities &#160;&#160;Класс команды открытия утилиты редактирования настроек. " alt="" coords="5381,595,5589,717"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::ICompleteTasksPanel:</div>
+Граф связей класса core::useful_commands::common::ICommand:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02002.png" border="0" usemap="#view_1_1_i_complete_tasks_panel_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_i_complete_tasks_panel_coll__map" id="view_1_1_i_complete_tasks_panel_coll__map">
-<area shape="rect" id="node2" href="a00227.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс панели, содержащей список панелей отдельных з..." alt="" coords="35,6,177,127"/>
-</map>
+<div class="center"><img src="a01676.png" border="0" usemap="#core_1_1useful__commands_1_1common_1_1_i_command_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pub_methods_a00227"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00227')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00227.html">view::ITasksPanel</a></td></tr>
-<tr class="memitem:a4b573f4e5f8b8471589cf411ea5fe4f1 inherit pub_methods_a00227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b573f4e5f8b8471589cf411ea5fe4f1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#a4b573f4e5f8b8471589cf411ea5fe4f1">BeginUpdate</a> (void)=0</td></tr>
-<tr class="memdesc:a4b573f4e5f8b8471589cf411ea5fe4f1 inherit pub_methods_a00227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция начала обновления панели задач (должна вызываться перед началом создания дочерних элементов общей панели). <br /></td></tr>
-<tr class="separator:a4b573f4e5f8b8471589cf411ea5fe4f1 inherit pub_methods_a00227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc27a730e3d270a9ff89dd381b67de1d inherit pub_methods_a00227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc27a730e3d270a9ff89dd381b67de1d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#afc27a730e3d270a9ff89dd381b67de1d">EndUpdate</a> (void)=0</td></tr>
-<tr class="memdesc:afc27a730e3d270a9ff89dd381b67de1d inherit pub_methods_a00227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция завершения обновления панели задач (должна вызываться после завершения создания дочерних элементов общей панели). <br /></td></tr>
-<tr class="separator:afc27a730e3d270a9ff89dd381b67de1d inherit pub_methods_a00227"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae309b84e8011dc63d4ec043404dcd7be inherit pub_methods_a00227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae309b84e8011dc63d4ec043404dcd7be"></a>
-virtual <a class="el" href="a00232.html">IWriteTaskPanel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00227.html#ae309b84e8011dc63d4ec043404dcd7be">CreateRoot</a> (void)=0</td></tr>
-<tr class="memdesc:ae309b84e8011dc63d4ec043404dcd7be inherit pub_methods_a00227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания панели корневой задачи. <br /></td></tr>
-<tr class="separator:ae309b84e8011dc63d4ec043404dcd7be inherit pub_methods_a00227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac4ad06fa3a0e25d380812917e74f7684"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00196.html#ac4ad06fa3a0e25d380812917e74f7684">IsEnabled</a> (void) const  =0</td></tr>
+<tr class="memdesc:ac4ad06fa3a0e25d380812917e74f7684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки доступности команды.  <a href="#ac4ad06fa3a0e25d380812917e74f7684">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac4ad06fa3a0e25d380812917e74f7684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Вспомогательный класс для интерфейса панели завершенных задач. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00039.html">Проект Common</a> <br />
+ Базовый класс всех команд раздела. </p>
+<ul>
+<li>Не объединяется с <a class="el" href="a00203.html" title="Класс входит в Проект Common   Базовый класс всех команд, которые будут исполнятся при выборе строки ...">IMenuCommand</a>, т.к. команда-наследник этого интерфейса может быть частью составной команды, для которой необходим запрос доступности, но запрос текста которой не имеет смысла.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>09 Апрель 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>13 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00785_source.html">ICompleteTasksPanel.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ac4ad06fa3a0e25d380812917e74f7684"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool core::useful_commands::common::ICommand::IsEnabled </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция проверки доступности команды. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Команда доступна (может быть выполнена). </dd>
+<dd>
+<b>false</b> Команда недоступна (будет отображаться в меню, но не может быть выполнена). </dd></dl>
+
+<p>Замещается в <a class="el" href="a00350.html#adf476033bc2dc4304bac28cba75f3185">core::useful_commands::vs::version::UpdateRevision</a>, <a class="el" href="a00095.html#a95d90310c6e27a505366404af027d20a">core::useful_commands::vs::testing::AddProjectTest</a>, <a class="el" href="a00092.html#af2d6c31fa77b990c4ff7926a7889fe57">core::useful_commands::vs::documentation::doxygen::AddDescription</a>, <a class="el" href="a00151.html#a88291885e5b0b080e3b20483055839da">core::useful_commands::vs::documentation::DoBuildResultToHtml</a>, <a class="el" href="a00164.html#a8b789787c3ded362aef4d8132c06e222">core::useful_commands::vs::documentation::doxygen::DoRun</a>, <a class="el" href="a00209.html#a0f84648ebe53ac480b8dc61bff5c4e4a">core::useful_commands::vs::documentation::doxygen::IncreaseVersionCommon</a>, <a class="el" href="a00091.html#ac49d6ae93e81de6797e228a2ad1ae8db">core::useful_commands::vs::testing::AddClassTest</a>, <a class="el" href="a00347.html#aa3fe397f373ab76354e92e59076de447">core::useful_commands::common::UnionCommand</a>, <a class="el" href="a00098.html#a09cd5c74a9dfc90d39eb17ab884353ac">core::useful_commands::vs::testing::AddSolutionTest</a>, <a class="el" href="a00187.html#a69f217bfd8e6442b93c61774f3604278">core::useful_commands::vs::documentation::GenerateSimpleMockClass</a>, <a class="el" href="a00189.html#adc5ec277acb2140ff89b71fddf15e036">core::useful_commands::vs::documentation::GenerateUsingProxyMockClass</a>, <a class="el" href="a00210.html#aba6f578d01ab23a88e063e5940f63b03">core::useful_commands::vs::macros::InsertDataTime</a>, <a class="el" href="a00211.html#ad385bc3596e1107b7282e76b23e9343f">core::useful_commands::vs::macros::InsertPragmaMessage</a>, <a class="el" href="a00333.html#ad020704272b8e116a3a4ee92f48ee449">core::useful_commands::vs::common::Test</a>, <a class="el" href="a00099.html#aa2226aa9c51fff2a5c7d5030eed0da61">core::useful_commands::vs::testing::AddTemplateTest</a>, <a class="el" href="a00104.html#a97e3720e0e4a4cc5467e5b6cfdbe9d0f">core::useful_commands::vs::utilities::AStyleProcess</a>, <a class="el" href="a00127.html#a3b921ee882fc84f1e68ad73a4ad345a3">core::useful_commands::vs::macros::CommentLineBreak</a>, <a class="el" href="a00212.html#adf7ae5ef3739097507185cd921544dfd">core::useful_commands::vs::macros::InsertTextBlank</a>, <a class="el" href="a00114.html#a6abdecd56b29e29d73bfb331fcb33641">core::useful_commands::vs::common::ClearLog</a>, <a class="el" href="a00258.html#a5a4026226486a3fe367b7f908cf0beb8">core::useful_commands::vs::common::OpenLog</a>, <a class="el" href="a00136.html#a006eca46887e662789831772b0c5107a">core::useful_commands::vs::utilities::CppCheckSolutionQuickProcess</a>, <a class="el" href="a00159.html#a6656d47586f9c496ed6d61c3173fbe71">core::useful_commands::vs::documentation::DoOpen</a>, <a class="el" href="a00160.html#ad249d02e500b54dbb60773bc2e48d48c">core::useful_commands::vs::documentation::doxygen::DoPrefatory</a>, <a class="el" href="a00096.html#a4ee0fc4d45c1026f9889916c7145e0a2">core::useful_commands::vs::utilities::AddSelectedTextToUsertypeFile</a>, <a class="el" href="a00259.html#a411f5e1d9fcc9fc1a481a36d29b02edb">core::useful_commands::vs::utilities::OpenProjectTasks</a> и <a class="el" href="a00365.html#a787eec667e45ffc550976b3f6651a27d">core::useful_commands::vs::version::VersionAddins</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/UsefulCommands/Common/Common/<a class="el" href="a00866_source.html">ICommand.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00196.html">ICompleteTasksPanel</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:53. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="a00196.html">ICommand</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Июл 2016 14:39:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

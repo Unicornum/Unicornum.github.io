@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/wxWidgets.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/MainFrame.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.0 Revision: 4348 Architecture: x86.64 Build: 14:49 23 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.1 Revision: 4421 Architecture: x86.64 Build: 14:39 30 Июль 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,16 +108,22 @@ $(document).ready(function(){initNavTree('a00726_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">wxWidgets.hpp</div>  </div>
+<div class="title">MainFrame.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;wxWidgets\Generated.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//#include &quot;Support.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;View\wxWidgets.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Model\AllTasks.hpp&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01384.html">core</a> { <span class="keyword">namespace </span>utilities { <span class="keyword">class </span>ProjectTasksData ; } }</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01352.html">app</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a00242.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00242.html">MainFrame</a> final :</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00241.html">wx::MainFrame</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">using</span> <a class="code" href="a00283.html">Data_t</a> = <a class="code" href="a00283.html">::core::utilities::ProjectTasksData</a>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">static</span> wxString GetTitle(<span class="keyword">const</span> Data_t &amp;);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="a00102.html">model::AllTasks</a> m_AllTasks;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a00242.html">MainFrame</a>(<span class="keyword">const</span> Data_t &amp;);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace app</span></div><div class="ttc" id="a00242_html"><div class="ttname"><a href="a00242.html">app::MainFrame</a></div><div class="ttdoc">Класс входит в Проект ProjectTasks   Класс главного окна программы. </div><div class="ttdef"><b>Definition:</b> MainFrame.hpp:32</div></div>
+<div class="ttc" id="a00241_html"><div class="ttname"><a href="a00241.html">wx::MainFrame</a></div><div class="ttdoc">Class MainFrame. </div><div class="ttdef"><b>Definition:</b> Generated.h:60</div></div>
+<div class="ttc" id="a01384_html"><div class="ttname"><a href="a01384.html">mock::core</a></div><div class="ttdef"><b>Definition:</b> Commands.mock.hpp:8</div></div>
+<div class="ttc" id="a00283_html"><div class="ttname"><a href="a00283.html">core::utilities::ProjectTasksData</a></div><div class="ttdoc">Класс входит в Проект UtilitiesProject   Класс данных для передачи в качестве параметра командной стр...</div><div class="ttdef"><b>Definition:</b> ProjectTasksData.hpp:32</div></div>
+<div class="ttc" id="a01352_html"><div class="ttname"><a href="a01352.html">app</a></div><div class="ttdef"><b>Definition:</b> AppMain.cpp:13</div></div>
+<div class="ttc" id="a00102_html"><div class="ttname"><a href="a00102.html">model::AllTasks</a></div><div class="ttdoc">Класс входит в Проект ProjectTasks   Класс, содержащий полный список всех задач проекта. </div><div class="ttdef"><b>Definition:</b> AllTasks.hpp:38</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_85f7fbf2e9c1785037c4b5e889adf813.html">View</a></li><li class="navelem"><b>wxWidgets.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 23 Июл 2016 14:49:48. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><b>MainFrame.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Июл 2016 14:39:49. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

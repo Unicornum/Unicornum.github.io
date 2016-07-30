@@ -1,15 +1,28 @@
 var a01437 =
 [
-    [ "AddSolutionPropsToProject", "a00097.html", [
-      [ "WasFoundNext", "a00097.html#abbb3a4c1bca71e9510522a27e5b86e72", null ],
-      [ "WasNoFound", "a00097.html#af6330f00eab5407344d37a1939951a5f", null ]
+    [ "Generated", "a01424.html", "a01424" ],
+    [ "AppFrame", "a00103.html", null ],
+    [ "HtmlAbout", "a00192.html", null ],
+    [ "HtmlHelper", "a00193.html", null ],
+    [ "HtmlResultBuilder", "a00194.html", [
+      [ "Build", "a00194.html#ad313fb0a93cbeb3b1f47e784e808a489", null ],
+      [ "BuildSourceStringInfo", "a00194.html#a12401305a231a61b1fbb71d8f12a8fe9", null ]
     ] ],
-    [ "CheckExistencePropertiesFile", "a00112.html", null ],
-    [ "RemoveSolutionPropsFromProject", "a00294.html", [
-      [ "WasFoundNext", "a00294.html#a094a112ede90e57b8e3504addf0bffb4", null ],
-      [ "WasNoFound", "a00294.html#a91bd97971ab02faae49491dc5f0f558b", null ]
+    [ "PanelMatch", "a00267.html", [
+      [ "SetProcessedData", "a00267.html#acf07909284b3dcc712fd11ecb8bc6496", null ]
     ] ],
-    [ "SettingsValue", "a00301.html", [
-      [ "GetFullPathToPropsFile", "a00301.html#a6111c3f4dd9f7f6a31071127b28002b5", null ]
+    [ "PanelReplace", "a00268.html", [
+      [ "GetReplaceString", "a00268.html#a672429326859357fdab4692dbfbacbef", null ],
+      [ "SetProcessedData", "a00268.html#a133c64c63a2004726817884ea2e59ab8", null ]
+    ] ],
+    [ "PanelSearch", "a00269.html", [
+      [ "SetProcessedData", "a00269.html#a4e19adf4e3c5d667257250ebd0866583", null ]
+    ] ],
+    [ "PanelView", "a00270.html", [
+      [ "GetRegexString", "a00270.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
+      [ "GetReplaceString", "a00270.html#ab265e215ef659098f37618b48281f08e", null ],
+      [ "GetSourseStrings", "a00270.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
+      [ "SetRegexString", "a00270.html#a53e9b7ec5a5357405275d2478965dca1", null ],
+      [ "SetSourceStrings", "a00270.html#a315df15379a49155b32aa8526047ed7b", null ]
     ] ]
 ];

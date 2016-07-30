@@ -1,6 +1,13 @@
 var a00363 =
 [
-    [ "GetCaption", "a00363.html#a213b05e1e799977867081656e3936a23", null ],
-    [ "GetId", "a00363.html#a1480b9ef1063b25a9b3964d4f0786aed", null ],
-    [ "IsEnabled", "a00363.html#a787eec667e45ffc550976b3f6651a27d", null ]
+    [ "Version", "a00363.html#a9e0066b898d4760b64e2e3475bc3c9e3", null ],
+    [ "Version", "a00363.html#a80506108c4362666d649a19b06839888", null ],
+    [ "GetProductDescription", "a00363.html#a5484559b48c51223fff7f6f76507d637", null ],
+    [ "GetProductName", "a00363.html#a944d36f40a3f0cc215b9c1d1f6ba06ed", null ],
+    [ "IncrementSubsubversion", "a00363.html#a69ab735840c92cc43414089bda28c974", null ],
+    [ "IncrementSubversion", "a00363.html#a7b80c7c586010d6d5b6315b5b5991a2a", null ],
+    [ "IncrementVersion", "a00363.html#acfb9b78cbaa3744acbc00da515774b9e", null ],
+    [ "Save", "a00363.html#a14bdd82707835adf52df9f3c5e5f383c", null ],
+    [ "SetRevisionSolution", "a00363.html#af4faadc96b61c3c661b97746e4a54fc0", null ],
+    [ "ToString", "a00363.html#a885e5f5bffd2f3330336057292935b17", null ]
 ];

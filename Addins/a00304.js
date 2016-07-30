@@ -1,6 +1,6 @@
 var a00304 =
 [
-    [ "SolutionDevelopmentInfo", "a00304.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
-    [ "GetInfo", "a00304.html#a61bd18745090e834f86393cbd0ed38fe", null ],
-    [ "UpdateTime", "a00304.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
+    [ "GetActivePlatformName", "a00304.html#a3a5de2684219f84b149e41da839ecf2f", null ],
+    [ "GetName", "a00304.html#ae2fea29770d4277e57a24c17e8c875de", null ],
+    [ "GetPathToFile", "a00304.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
 ];

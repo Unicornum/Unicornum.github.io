@@ -1,7 +1,7 @@
 var a00219 =
 [
-    [ "GetData", "a00219.html#ad3c5511dfdb2310760b337315d6f39fb", null ],
-    [ "GetId", "a00219.html#afe91df10487c8745ce4d06fe3dd2af8b", null ],
-    [ "GetParentId", "a00219.html#a58755b59e1c46e162411d0677b27a61b", null ],
-    [ "GetPosition", "a00219.html#a28f8281425696dab4956788acbb1d76f", null ]
+    [ "GetChildTasks", "a00219.html#afdfd98f8ad70023d5188dda69a5e4dd6", null ],
+    [ "GetRootCompleteTaskId", "a00219.html#ad8a14dd2a18bb8fe9208e5faf335f0d6", null ],
+    [ "GetRootProcessTaskId", "a00219.html#a97a7dac1ca27c28f9d36e5a66c7eb032", null ],
+    [ "Changed", "a00219.html#a9444372a28d6fd34dda9f8b192964c4f", null ]
 ];

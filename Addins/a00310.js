@@ -1,4 +1,5 @@
 var a00310 =
 [
-    [ "GetValue", "a00310.html#ade427871f1f9f26069f7b884fca8f0c1", null ]
+    [ "operator[]", "a00310.html#a83bd33be7f97dff72c030d7f612a9688", null ],
+    [ "operator[]", "a00310.html#a16022abff37528a4226be0f9d6be91b7", null ]
 ];

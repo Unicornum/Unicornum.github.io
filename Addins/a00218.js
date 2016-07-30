@@ -1,7 +1,8 @@
 var a00218 =
 [
-    [ "GetChildTasks", "a00218.html#afdfd98f8ad70023d5188dda69a5e4dd6", null ],
-    [ "GetRootCompleteTaskId", "a00218.html#ad8a14dd2a18bb8fe9208e5faf335f0d6", null ],
-    [ "GetRootProcessTaskId", "a00218.html#a97a7dac1ca27c28f9d36e5a66c7eb032", null ],
-    [ "Changed", "a00218.html#a9444372a28d6fd34dda9f8b192964c4f", null ]
+    [ "GetRegexString", "a00218.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
+    [ "GetReplaceString", "a00218.html#a81029770ef4725794abaa505ad34fc55", null ],
+    [ "GetSourseStrings", "a00218.html#a53b21f1290abceb1fda90789c42f82ee", null ],
+    [ "SetProcessedData", "a00218.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
+    [ "DoProcess", "a00218.html#a5491cd61ba8f067527535004e251f81a", null ]
 ];

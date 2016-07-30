@@ -1,5 +1,5 @@
 var a00364 =
 [
-    [ "VersionResource", "a00364.html#a4f80a6608fed4a60903a4196431c632a", null ],
-    [ "Generate", "a00364.html#a6d209b353d950ff590eadd3fc4f28c35", null ]
+    [ "Version", "a00364.html#a7d2499fa8d9c9662b901025faac90256", null ],
+    [ "DoIncrement", "a00364.html#a2dd372ebbca46fceb191708e0976e340", null ]
 ];

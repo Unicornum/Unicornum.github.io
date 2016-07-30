@@ -1,4 +1,5 @@
 var a00296 =
 [
-    [ "ToLog", "a00296.html#ae23c3dd2c59922ac8994444707812c3f", null ]
+    [ "WasFoundNext", "a00296.html#a094a112ede90e57b8e3504addf0bffb4", null ],
+    [ "WasNoFound", "a00296.html#a91bd97971ab02faae49491dc5f0f558b", null ]
 ];

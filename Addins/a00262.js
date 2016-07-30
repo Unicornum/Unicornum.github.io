@@ -1,4 +1,5 @@
 var a00262 =
 [
-    [ "PROPERTY_GET", "a00262.html#afa48ebec237c545c5484a35fe5270de1", null ]
+    [ "GetCaption", "a00262.html#a2018302a43e1093f0a2e1e9fb47f7ca5", null ],
+    [ "GetId", "a00262.html#a6c13e75efe992c62324fbf3d3bbecfa6", null ]
 ];
