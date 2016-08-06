@@ -8,5 +8,5 @@ var dir_a7c7e64e0e812907f1fa8bc7c1d66110 =
     [ "TimeTracker", "dir_c7662ca867927c439fcbc87e9da6c8c2.html", "dir_c7662ca867927c439fcbc87e9da6c8c2" ],
     [ "UnicornumCodeAssistant", "dir_1caf890cd505407e62537ee96d70550e.html", "dir_1caf890cd505407e62537ee96d70550e" ],
     [ "Version", "dir_251c72bc4a8c881a79b562191833b097.html", "dir_251c72bc4a8c881a79b562191833b097" ],
-    [ "VisualStudio.hpp", "a00646_source.html", null ]
+    [ "VisualStudio.hpp", "a00648_source.html", null ]
 ];

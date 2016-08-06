@@ -1,14 +1,16 @@
 var a01435 =
 [
-    [ "Data", "a00143.html", [
-      [ "ProcessingInfo", "a00275.html", [
-        [ "Groups", "a00275.html#a5e81145a5fcdf590752cb52b753e185f", null ],
-        [ "IsInvalidRegex", "a00275.html#ab125412a0bd7cfe6eec463b740827942", null ],
-        [ "Result", "a00275.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
-      ] ],
-      [ "Dump", "a00143.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
-      [ "ProcessingResults", "a00143.html#a269a4595d146ddae5e2f2d12637822a0", null ],
-      [ "String", "a00143.html#a757d3e341008a41c15c16a180ca27a0c", null ]
+    [ "IView", "a00228.html", [
+      [ "SetDevelopmentInfo", "a00228.html#a63d80cbe8e7536b4608e870371394d25", null ],
+      [ "SetTitle", "a00228.html#a7e74984281cd804f6e835ff317d48ae6", null ],
+      [ "DoUpdate", "a00228.html#a67150deb963bc35daf58985e5c9e478d", null ]
     ] ],
-    [ "Main", "a00238.html", null ]
+    [ "MainFrame", "a00240.html", null ],
+    [ "Diagram", "a00149.html", [
+      [ "Diagram", "a00149.html#af091b9b2c247243c974efba350e3302f", null ]
+    ] ],
+    [ "DiagramPanel", "a00150.html", [
+      [ "SetDevelopmentInfo", "a00150.html#a659e436fe7b29034bb9335ca2672e3f1", null ],
+      [ "SetTitle", "a00150.html#a6e9280ff3760b54ae9db94ecbdb6a237", null ]
+    ] ]
 ];

@@ -1,6 +1,5 @@
 var a00365 =
 [
-    [ "GetCaption", "a00365.html#a213b05e1e799977867081656e3936a23", null ],
-    [ "GetId", "a00365.html#a1480b9ef1063b25a9b3964d4f0786aed", null ],
-    [ "IsEnabled", "a00365.html#a787eec667e45ffc550976b3f6651a27d", null ]
+    [ "Version", "a00365.html#a7d2499fa8d9c9662b901025faac90256", null ],
+    [ "DoIncrement", "a00365.html#a2dd372ebbca46fceb191708e0976e340", null ]
 ];

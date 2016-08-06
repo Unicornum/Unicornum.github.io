@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Шаблон класса view::TasksPanel&lt; TInterface &gt;</title>
+<title>Addins: Класс wx::TaskPanelEditor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.1 Revision: 4421 Architecture: x86.64 Build: 14:39 30 Июль 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,67 +110,47 @@ $(document).ready(function(){initNavTree('a00330.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02075.html">Полный список членов класса</a>  </div>
+<a href="a02363.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса view::TasksPanel&lt; TInterface &gt;<div class="ingroups"><a class="el" href="a01426.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01431.html">View</a></div></div>  </div>
+<div class="title">Класс wx::TaskPanelEditor<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Класс реализации панели, содержащей список панелей отдельных задач.  
+<p>Class <a class="el" href="a00330.html" title="Class TaskPanelEditor. ">TaskPanelEditor</a>.  
  <a href="a00330.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00810_source.html">TasksPanel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00735_source.html">Generated.h</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:view::TasksPanel&lt; TInterface &gt;:</div>
+Граф наследования:wx::TaskPanelEditor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02076.png" border="0" usemap="#view_1_1_tasks_panel_3_01_t_interface_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="view_1_1_tasks_panel_3_01_t_interface_01_4_inherit__map" id="view_1_1_tasks_panel_3_01_t_interface_01_4_inherit__map">
-<area shape="rect" id="node2" href="a00331.html" title="Class TasksPanel. " alt="" coords="19,6,225,157"/>
+<div class="center"><img src="a02364.png" border="0" usemap="#wx_1_1_task_panel_editor_inherit__map" alt="Inheritance graph"/></div>
+<map name="wx_1_1_task_panel_editor_inherit__map" id="wx_1_1_task_panel_editor_inherit__map">
+<area shape="rect" id="node3" href="a00329.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс реализации работы с панелью редактирования параметров зада..." alt="" coords="24,395,243,693"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса view::TasksPanel&lt; TInterface &gt;:</div>
+Граф связей класса wx::TaskPanelEditor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02077.png" border="0" usemap="#view_1_1_tasks_panel_3_01_t_interface_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="view_1_1_tasks_panel_3_01_t_interface_01_4_coll__map" id="view_1_1_tasks_panel_3_01_t_interface_01_4_coll__map">
-<area shape="rect" id="node2" href="a00331.html" title="Class TasksPanel. " alt="" coords="19,6,225,157"/>
+<div class="center"><img src="a02365.png" border="0" usemap="#wx_1_1_task_panel_editor_coll__map" alt="Collaboration graph"/></div>
+<map name="wx_1_1_task_panel_editor_coll__map" id="wx_1_1_task_panel_editor_coll__map">
+<area shape="rect" id="node2" href="a00340.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс для текстового элемента управления с поддержкой отмены изм..." alt="" coords="5,149,144,285"/>
+<area shape="rect" id="node4" href="a00194.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Интерфейсный класс элементов управления, для которых требуется п..." alt="" coords="93,6,240,98"/>
+<area shape="rect" id="node6" href="a00111.html" title="Класс входит в Проект ProjectTasks &#160;&#160;Класс CheckBox&#39;a с поддержкой отмены изменений. " alt="" coords="169,164,289,271"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TInterface&gt;<br />
-class view::TasksPanel&lt; TInterface &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Класс реализации панели, содержащей список панелей отдельных задач. </p>
-<ul>
-<li>Реализовано двойное окно с переключением из-за того, что в функции DestroyChildren() вызываются функции Destroy() всех дочерних окон, которые уничтожают объекты этих окон (через delete this), но указатели на эти окна все еще числятся в обработчиках сообщений и возможна ситуация (редко, но бывает), когда окно уже не существует, но ему приходит сообщение о движении мыши.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TInterface</td><td>Интерфейс, который должен реализовывать класс (<a class="el" href="a00213.html" title="Класс входит в Проект ProjectTasks   Вспомогательный класс для интерфейса панели задач, находящихся в процессе работы. ">IProcessTasksPanel</a> или <a class="el" href="a00197.html" title="Класс входит в Проект ProjectTasks   Вспомогательный класс для интерфейса панели завершенных задач...">ICompleteTasksPanel</a> - чтобы можно было создавать объекты с одной и той же реализацией, но вызывающие разные конструкторы контроллера).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 2.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>10 Апрель 2016 <br />
- 25 Июль 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+<div class="textblock"><p>Class <a class="el" href="a00330.html" title="Class TaskPanelEditor. ">TaskPanelEditor</a>. </p>
 </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00810_source.html">TasksPanel.hpp</a></li>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/TasksPanel.inl</li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/wxWidgets/<a class="el" href="a00735_source.html">Generated.h</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/wxWidgets/Generated.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00330.html">TasksPanel</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 30 Июл 2016 14:39:54. Создано системой
+    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00330.html">TaskPanelEditor</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:17. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

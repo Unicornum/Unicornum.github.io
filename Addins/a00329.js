@@ -1,11 +1,15 @@
 var a00329 =
 [
-    [ "TaskPanelText", "a00329.html#a753ae492d184021fa87c6a914fa260e4", null ],
-    [ "EditModeOff", "a00329.html#a3242753759027ff0a673c42fe1a4a797", null ],
-    [ "EditModeOn", "a00329.html#a71448539913d00f0d7cc06b6dc10be2d", null ],
-    [ "GetText", "a00329.html#a97419ac6961199a04cb2a72b7a5c3d41", null ],
-    [ "GetType", "a00329.html#aa6bc4b00c5d597007ce39c7179670a71", null ],
-    [ "IsChecked", "a00329.html#a38eba13ac81a062cc96287e52a3f3625", null ],
-    [ "IsEditAvailable", "a00329.html#afc87f99baf76d17c993d39d9b038a0b1", null ],
-    [ "ShowPanel", "a00329.html#ae7fb875ba4a263cc5f2b22c1f7a97c1c", null ]
+    [ "GetExternalProgramAction", "a00329.html#abe12c930750948f58ba2bf23c23dc57f", null ],
+    [ "GetText", "a00329.html#a4f24cc57d9c34c43ccbb4bed2167e680", null ],
+    [ "GetType", "a00329.html#a2ff598624e39dc3032abf7c43047494b", null ],
+    [ "GetVersionAction", "a00329.html#a13edbc60ba2ae8aa0a90456c12718336", null ],
+    [ "Initialyze", "a00329.html#a30ed1bd819f5cf8ba666757ec0a23bb4", null ],
+    [ "IsAddParentTaskText", "a00329.html#a8c0afc9455766ced2266f35e35a9fc5b", null ],
+    [ "IsChecked", "a00329.html#ab7469245313803caf6b0542473b9c74b", null ],
+    [ "IsEditAvailable", "a00329.html#a1e94a5adc5bc2e73bc779fe3830639da", null ],
+    [ "IsWriteToHistory", "a00329.html#a21c185798664f5e29f1f093dd579fe22", null ],
+    [ "SetText", "a00329.html#a605131a2bf73147594e824db48a88503", null ],
+    [ "SetType", "a00329.html#ab0dec0f935fe5e084c8c4b8feb7602cf", null ],
+    [ "ShowPanel", "a00329.html#ac35a7f2c87f147ee5166502c28cd0a51", null ]
 ];

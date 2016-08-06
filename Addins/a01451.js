@@ -1,12 +1,18 @@
 var a01451 =
 [
-    [ "Common", "a01441.html", "a01441" ],
-    [ "Documentation", "a01442.html", "a01442" ],
-    [ "Macros", "a01443.html", "a01443" ],
-    [ "Properties", "a01444.html", "a01444" ],
-    [ "StartUp", "a01445.html", "a01445" ],
-    [ "Support", "a01446.html", "a01446" ],
-    [ "Testing", "a01448.html", "a01448" ],
-    [ "Utilities", "a01449.html", "a01449" ],
-    [ "Version", "a01450.html", "a01450" ]
+    [ "ClearLog", "a00114.html", [
+      [ "IsEnabled", "a00114.html#a6abdecd56b29e29d73bfb331fcb33641", null ]
+    ] ],
+    [ "DoRunUtilities", "a00165.html", null ],
+    [ "OpenLog", "a00257.html", [
+      [ "IsEnabled", "a00257.html#a5a4026226486a3fe367b7f908cf0beb8", null ]
+    ] ],
+    [ "Test", "a00335.html", [
+      [ "GetCaption", "a00335.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
+      [ "GetId", "a00335.html#a7385d179fbab96fe54f1614c94f04b4f", null ],
+      [ "IsEnabled", "a00335.html#ad020704272b8e116a3a4ee92f48ee449", null ]
+    ] ],
+    [ "Unknown", "a00351.html", [
+      [ "Unknown", "a00351.html#aa85d6569bfabb3c18f57305ca1fad6dc", null ]
+    ] ]
 ];

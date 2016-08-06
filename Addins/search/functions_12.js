@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['unadvise',['Unadvise',['../a00315.html#adb32e6ea934d4932869c54cf0bad88f1',1,'wrappers::vs::Subscriber']]],
-  ['unknown',['Unknown',['../a00349.html#aa85d6569bfabb3c18f57305ca1fad6dc',1,'core::useful_commands::vs::common::Unknown']]],
-  ['updatecopyrightyear',['UpdateCopyrightYear',['../a00154.html#af819ea33c04761393ed44c212ba0ae33',1,'core::useful_commands::vs::documentation::doxygen::DocumentHelper']]],
-  ['updatetime',['UpdateTime',['../a00100.html#a020351d1edcb9700d2db5cbc407186d7',1,'core::utilities::AllSolutionsDevelopmentInfo::UpdateTime()'],['../a00146.html#a3d8e7bb0dea6850d7a22ebad00c53793',1,'core::utilities::DevelopmentInfo::UpdateTime()'],['../a00306.html#a3e357414c28cd8fbe76fd04d40409c12',1,'core::utilities::SolutionDevelopmentInfo::UpdateTime()']]],
-  ['updateversion',['UpdateVersion',['../a00154.html#a94fb71da43515d70e9d93b813ffc9339',1,'core::useful_commands::vs::documentation::doxygen::DocumentHelper']]]
+  ['version',['Version',['../a00365.html#a7d2499fa8d9c9662b901025faac90256',1,'support::action::Version::Version()'],['../a00366.html#a9e0066b898d4760b64e2e3475bc3c9e3',1,'core::utilities::Version::Version(const Path_t &amp;)'],['../a00366.html#a80506108c4362666d649a19b06839888',1,'core::utilities::Version::Version(const Path_t &amp;, const String_t &amp;, const String_t &amp;=_T(&quot;Unknown&quot;))']]],
+  ['versionresource',['VersionResource',['../a00368.html#ad71aa02f7e46def4256221b7563dc37d',1,'core::utilities::VersionResource']]]
 ];

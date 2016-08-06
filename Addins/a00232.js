@@ -1,7 +1,8 @@
 var a00232 =
 [
-    [ "CreateChild", "a00232.html#ae7b9d569abe192b02d467ab20ed80da0", null ],
-    [ "SetData", "a00232.html#ac7a9fc49923472292827a665e1caba96", null ],
-    [ "SetParent", "a00232.html#aa08f809f970cdb73f473f0012aa5404d", null ],
-    [ "SetPosition", "a00232.html#ae14200ab3f9667789e460dc116d05f0c", null ]
+    [ "CreateChild", "a00232.html#a517383520f8e761bb7317640ba7bb0aa", null ],
+    [ "ChangedData", "a00232.html#a569b97ff58cd75118b3dc23f685a007a", null ],
+    [ "ChangedParent", "a00232.html#aa87f8f4b0d4f18613db3a486006cec2f", null ],
+    [ "ChangedPosition", "a00232.html#a7e48ab48fbd8ea4d0f92fedf3bfc71cd", null ],
+    [ "CreateChildTask", "a00232.html#a2e1d23b6e327df602037a291ac1d637e", null ]
 ];

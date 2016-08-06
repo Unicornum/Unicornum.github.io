@@ -1,35 +1,20 @@
 var a01449 =
 [
-    [ "AddSelectedTextToUsertypeFile", "a00096.html", [
-      [ "GetCaption", "a00096.html#a61df3c68c33ecedb181a6f2e1ac411c6", null ],
-      [ "GetId", "a00096.html#ac8b4e4a373cb106bd1f8caedc8ed65b9", null ],
-      [ "IsEnabled", "a00096.html#a4ee0fc4d45c1026f9889916c7145e0a2", null ]
+    [ "Commands", "a00125.html", [
+      [ "Add", "a00125.html#a89618778c2a8b30d4a8b0b743acd667d", null ],
+      [ "Clear", "a00125.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
+      [ "operator[]", "a00125.html#aceaa3c748e8bce0117a9f6203c1b0af0", null ]
     ] ],
-    [ "AStyleProcess", "a00104.html", [
-      [ "GetCaption", "a00104.html#a00681eac40b5615f32997ca88b7799ce", null ],
-      [ "GetId", "a00104.html#a8768d597224dbeb44e529a89ec6b90ce", null ],
-      [ "IsEnabled", "a00104.html#a97e3720e0e4a4cc5467e5b6cfdbe9d0f", null ]
+    [ "ICommand", "a00195.html", [
+      [ "IsEnabled", "a00195.html#ac4ad06fa3a0e25d380812917e74f7684", null ]
     ] ],
-    [ "CppCheckSolutionQuickProcess", "a00136.html", [
-      [ "GetCaption", "a00136.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
-      [ "GetId", "a00136.html#a94b81ddae9c900a40584ed91a56fa7a6", null ],
-      [ "IsEnabled", "a00136.html#a006eca46887e662789831772b0c5107a", null ]
+    [ "IMenuCommand", "a00202.html", [
+      [ "GetCaption", "a00202.html#a33441fddfee7e81a1ceda13c1ebabb7d", null ],
+      [ "GetId", "a00202.html#a27ab15adb7de2a456a515d6489d400df", null ]
     ] ],
-    [ "OpenDevelopmentInfo", "a00256.html", [
-      [ "GetCaption", "a00256.html#abd5a3ad5b334b05b063df592976f87db", null ],
-      [ "GetId", "a00256.html#ae51b0c098ae0a75768acb03c38824c4e", null ]
-    ] ],
-    [ "OpenProjectTasks", "a00259.html", [
-      [ "GetCaption", "a00259.html#a42991b73ff1a1740ecdb5fb3c1ded860", null ],
-      [ "GetId", "a00259.html#a15c7436b047a92eec25dda37d67eb89a", null ],
-      [ "IsEnabled", "a00259.html#a411f5e1d9fcc9fc1a481a36d29b02edb", null ]
-    ] ],
-    [ "OpenRegExWindow", "a00260.html", [
-      [ "GetCaption", "a00260.html#aa7faa727579bf38ea063bda4888be34f", null ],
-      [ "GetId", "a00260.html#a3997bba980d94d67dd6763e82eef705a", null ]
-    ] ],
-    [ "OpenSettings", "a00261.html", [
-      [ "GetCaption", "a00261.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
-      [ "GetId", "a00261.html#a58be1ff4609162de563288f25c25b8ea", null ]
+    [ "UnionCommand", "a00349.html", [
+      [ "Add", "a00349.html#abcbe83558215e25eb77d58935aad146c", null ],
+      [ "Execute", "a00349.html#a007e3e9ae72f098fa3ee4ee5b0f7e04a", null ],
+      [ "IsEnabled", "a00349.html#aa3fe397f373ab76354e92e59076de447", null ]
     ] ]
 ];

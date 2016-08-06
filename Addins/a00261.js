@@ -1,5 +1,5 @@
 var a00261 =
 [
-    [ "GetCaption", "a00261.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
-    [ "GetId", "a00261.html#a58be1ff4609162de563288f25c25b8ea", null ]
+    [ "GetCaption", "a00261.html#a2018302a43e1093f0a2e1e9fb47f7ca5", null ],
+    [ "GetId", "a00261.html#a6c13e75efe992c62324fbf3d3bbecfa6", null ]
 ];

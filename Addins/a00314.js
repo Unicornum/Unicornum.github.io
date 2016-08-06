@@ -1,5 +1,5 @@
 var a00314 =
 [
-    [ "operator=", "a00314.html#adb712b65047472ac48342b15e7145e68", null ],
-    [ "SetText", "a00314.html#a5a4a4f84774890f55fc0b1b1bd489040", null ]
+    [ "SolutionTasksPage", "a00314.html#a735388683f2111bae2d195bb9ed6ecbf", null ],
+    [ "AddRecord", "a00314.html#ac0521fb2b2f71b6653bc8cc325baac81", null ]
 ];

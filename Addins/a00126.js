@@ -1,6 +1,6 @@
 var a00126 =
 [
-    [ "Add", "a00126.html#a89618778c2a8b30d4a8b0b743acd667d", null ],
-    [ "Clear", "a00126.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
-    [ "operator[]", "a00126.html#aceaa3c748e8bce0117a9f6203c1b0af0", null ]
+    [ "Commands", "a00126.html#a8273ee6ce9732a442b06ed151fca79f0", null ],
+    [ "Add", "a00126.html#a201e7ba9487eeb532555ec2c61e60edb", null ],
+    [ "GetItem", "a00126.html#a9a71fda817a3f6219f411beb7b8aa8c4", null ]
 ];

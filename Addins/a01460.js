@@ -1,19 +1,12 @@
 var a01460 =
 [
-    [ "BuildEvents", "a00108.html", null ],
-    [ "DteEvents", "a00179.html", null ],
-    [ "Events", "a00182.html", [
-      [ "PROPERTY_GET", "a00182.html#a9d4967508675ea05bfbb3c8082d477fb", null ],
-      [ "PROPERTY_GET", "a00182.html#ac8ae3f10390d5c88d2404306c988f140", null ],
-      [ "PROPERTY_GET", "a00182.html#aedd963804c9d8b2fa29197c4b22bacd5", null ],
-      [ "PROPERTY_GET", "a00182.html#a004d305087511f25284f88866b52717a", null ],
-      [ "PROPERTY_GET", "a00182.html#ab5adbc8afb5df593431ee876171b26c5", null ]
+    [ "ConnectVersionResource", "a00131.html", null ],
+    [ "UpdateRevision", "a00352.html", [
+      [ "IsEnabled", "a00352.html#adf476033bc2dc4304bac28cba75f3185", null ]
     ] ],
-    [ "SelectionEvents", "a00301.html", null ],
-    [ "SolutionEvents", "a00307.html", null ],
-    [ "Subscriber", "a00315.html", [
-      [ "Advise", "a00315.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
-      [ "Unadvise", "a00315.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
-    ] ],
-    [ "TextEditorEvents", "a00339.html", null ]
+    [ "VersionAddins", "a00367.html", [
+      [ "GetCaption", "a00367.html#a213b05e1e799977867081656e3936a23", null ],
+      [ "GetId", "a00367.html#a1480b9ef1063b25a9b3964d4f0786aed", null ],
+      [ "IsEnabled", "a00367.html#a787eec667e45ffc550976b3f6651a27d", null ]
+    ] ]
 ];

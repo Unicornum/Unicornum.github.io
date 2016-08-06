@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['loadfromfile',['LoadFromFile',['../a00217.html#af08a2b241ca5445b4ea24ae91393d66b',1,'wrappers::vs::IPropertySheets::LoadFromFile()'],['../a00287.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee',1,'wrappers::vs::PropertySheets::LoadFromFile()'],['../a00288.html#a8b19ca38ab17e34efcba0764f46d842b',1,'wrappers::vs::PropertySheets2012::LoadFromFile()']]],
-  ['locatedindoublefolderprojectname',['LocatedInDoubleFolderProjectName',['../a00277.html#a29c9b253f399f7ef8f9f98f93da9aa8c',1,'wrappers::helper::vs::ProjectImpl']]]
+  ['main',['Main',['../a00238.html#a41fd0853ce2d4dcd5c6c5096352e37a3',1,'core::utilities::environment_variables::Main']]],
+  ['make',['Make',['../a00105.html#a6c540555a66a709a4f21f9bfc3e8dbf5',1,'wrappers::vs::Base::Make(TSource *_pSource)'],['../a00105.html#ae36588f576db9d1dd86e5ae158a165c3',1,'wrappers::vs::Base::Make(void) const '],['../a00105.html#a42cc94ed152690a3fe262eec788ef191',1,'wrappers::vs::Base::Make(void) const ']]],
+  ['mfc',['Mfc',['../a00248.html#ad89207b74c4b8aa29181a95831be33bf',1,'core::utilities::dialog::Mfc']]]
 ];
