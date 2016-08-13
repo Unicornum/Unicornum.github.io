@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs.VS2013: Раздел Build</title>
+<title>Libs: Раздел Alicorn</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,10 +32,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Libs.VS2013
-   &#160;<span id="projectnumber">Версия: 3.5.0 Revision: 1798 Architecture: x86.64 Build: 13:48 18 Июнь 2016</span>
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">Версия: 3.5.1 Revision: 1844 Architecture: x86.64 Build: 14:42 13 Август 2016</span>
    </div>
-   <div id="projectbrief">Libs.VS2013: &lt;добавить описание продукта&gt;</div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
  </tr>
  </tbody>
@@ -102,61 +102,27 @@ $(document).ready(function(){initNavTree('a00011.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Раздел Build </div>  </div>
+<div class="title">Раздел Alicorn </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sAlicornBuildBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sAlicornBrief"></a>
 Введение</h1>
-<p>Раздел проектов для сборки библиотек.</p>
-<h2><a class="anchor" id="ssAlicornBuildProjects"></a>
+<p>Раздел проектов, содержащих универсальный код, который может использоваться в разных проекта. </p><dl class="section note"><dt>Заметки</dt><dd>Для того, чтобы изменения в файлах гарантированно приводили к изменениям библиотек, необходимо, чтобы проекты тестирования проектов зависели от родительских проектов.</dd></dl>
+<h2><a class="anchor" id="ssAlicornProjects"></a>
 Проекты раздела</h2>
-<h3>Раздел Extension</h3>
-<p>Раздел классов, 'расширяющих' возможности стандартной библиотеки и иных внешних библиотек.</p>
-<p>Страница проекта: <a class="el" href="a00016.html">Раздел Extension</a></p>
-<h3>Проект Vs</h3>
-<p>Раздел классов, использующих специфические возможности Visual Studio.</p>
-<p>Страница проекта: <a class="el" href="a00047.html">Проект Visual Studio</a></p>
-<h3>Проект Version</h3>
-<p>Проект обеспечивает установку .exe или .dll файлам версии решения (включая ревизию файлов решения и внешних библиотек), а также макросы версии, которые можно использовать в программе.</p>
-<p>Страница проекта: <a class="el" href="a00043.html">Проект Version</a></p>
-<h3>Проект System</h3>
-<p>Проект вспомогательных классов для работы с системными функциями.</p>
-<p>Страница проекта: <a class="el" href="a00036.html">Проект System</a></p>
-<h3>Проект Testing</h3>
-<p>Проект содержит вспомогательные классы для использования в тестовых проектах.</p>
-<p>Страница проекта: <a class="el" href="a00038.html">Проект Testing</a></p>
-<h3>Проект Testing.App</h3>
-<p>Проект, содержащий реализацию проектов тестирования.</p>
-<p>Страница проекта: <a class="el" href="a00040.html">Проект Testing.App</a></p>
-<h3>Проект Patterns</h3>
-<p>Проект классов реализаций паттернов проектирования.</p>
-<p>Страница проекта: <a class="el" href="a00030.html">Проект Patterns</a></p>
-<h3>Проект Document</h3>
-<p>Проект классов работы с документами. <br />
-  Страница проекта: <a class="el" href="a00014.html">Проект Document</a></p>
-<h3>Проект Settings</h3>
-<p>Проект классов, предоставляющих доступ к текущим настройкам программы.</p>
-<p>Страница проекта: <a class="el" href="a00032.html">Settings</a></p>
-<h3>Проект Settings.App</h3>
-<p>Проект, содержащий реализацию программы манипулирования настройками приложения.</p>
-<p>Страница проекта: <a class="el" href="a00034.html">Проект SettingsApp</a></p>
-<h3>Проект Logger</h3>
-<p>Библиотека логирования программы предназначена для ведения журнала работы программы. <br />
- Запись сообщений в журнал производится путем добавления в код программы записей вида: </p><div class="fragment"><div class="line"><span class="comment">// Записать в лог сообщение &quot;Найдено 5 элементов&quot;</span></div><div class="line"><a class="code" href="a00819.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Warning) &lt;&lt; _T(<span class="stringliteral">&quot;Найдено &quot;</span>) &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; элементов&quot;</span>;</div></div><!-- fragment --><dl class="section pre"><dt>Предусловие</dt><dd>Предполагается, что в настройках проекта, использующего логгер включена подстановка полного пути к файлу для макроса <b>_</b> _ FILE _ _.</dd></dl>
-<p>Страница проекта: <a class="el" href="a00028.html">Проект Logger</a></p>
-<h3>Проект Converter</h3>
-<p>Проект классов для преобразования данных.</p>
-<p>Страница проекта: <a class="el" href="a00012.html">Проект Converter</a></p>
-<h3>Проект Vfs</h3>
-<p>Проект виртуальной файловой системы, реализующей однотипное получение данных, сходное с чтением данных из файлов.</p>
-<p>Страница проекта: <a class="el" href="a00045.html">Проект Vfs</a> </p>
+<h3>Раздел Build</h3>
+<p>Раздел проектов для сборки библиотек.</p>
+<p>Страница раздела: <a class="el" href="a00012.html">Раздел Build</a></p>
+<h3>Раздел Tools</h3>
+<p>Раздел проектов вспомогательных утилит.</p>
+<p>Страница раздела: <a class="el" href="a00051.html">Раздел Tools</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li><li class="navelem"><a class="el" href="a00010.html">Раздел Alicorn</a></li>
-    <li class="footer">Документация по Libs.VS2013. Последние изменения: Сб 18 Июн 2016 13:48:24. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 13 Авг 2016 14:42:54. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,5 +1,5 @@
 var a00091 =
 [
-    [ "GetResultRunTests", "a00091.html#aecda6320dbc9b0521e9116db13a2ca3d", null ],
-    [ "IsExistsFiledTest", "a00091.html#a5a4450538408863afcbfd6766347d36a", null ]
+    [ "WriteRecord", "a00091.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
+    [ "WriteTitle", "a00091.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
 ];

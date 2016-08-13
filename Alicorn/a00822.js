@@ -1,9 +1,9 @@
 var a00822 =
 [
-    [ "BlockingSignal", "a00060.html", [
-      [ "operator()", "a00060.html#aeea3117f12d7c1cd4ab2fe12aee5ffa2", null ]
-    ] ],
-    [ "NonBlockingSignal", "a00145.html", [
-      [ "operator()", "a00145.html#ac1a6020453eb2c5332315e02dc9dcc48", null ]
+    [ "IModel", "a00112.html", null ],
+    [ "Model", "a00145.html", [
+      [ "GetSections", "a00145.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
+      [ "GetSettings", "a00145.html#a14217a4b20565c53ba84cd9958354e3a", null ],
+      [ "SetValue", "a00145.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
     ] ]
 ];

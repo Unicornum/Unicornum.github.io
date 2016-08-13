@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs.VS2013: Шаблон класса alicorn::patterns::command::Data&lt; Pointer * &gt;</title>
+<title>Libs: Класс alicorn::system::CurrentModule</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -32,10 +32,10 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Libs.VS2013
-   &#160;<span id="projectnumber">Версия: 3.5.0 Revision: 1798 Architecture: x86.64 Build: 13:48 18 Июнь 2016</span>
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">Версия: 3.5.1 Revision: 1844 Architecture: x86.64 Build: 14:42 13 Август 2016</span>
    </div>
-   <div id="projectbrief">Libs.VS2013: &lt;добавить описание продукта&gt;</div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
  </tr>
  </tbody>
@@ -110,55 +110,259 @@ $(document).ready(function(){initNavTree('a00080.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01034.html">Полный список членов класса</a>  </div>
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="a01108.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::command::Data&lt; Pointer * &gt;<div class="ingroups"><a class="el" href="a00792.html">Alicorn</a> &raquo; <a class="el" href="a00823.html">Patterns</a></div></div>  </div>
+<div class="title">Класс alicorn::system::CurrentModule<div class="ingroups"><a class="el" href="a00818.html">Alicorn</a> &raquo; <a class="el" href="a00857.html">System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00030.html">Проект Patterns</a> <br />
- Специализация шаблона для указателей.  
+<p>Класс входит в <a class="el" href="a00036.html">Проект System</a> <br />
+ Класс получения информации о текущем модуле.  
  <a href="a00080.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00649_source.html">Data.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00708_source.html">current-module.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::patterns::command::Data&lt; Pointer * &gt;:</div>
+Граф связей класса alicorn::system::CurrentModule:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01035.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map" id="alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map">
+<div class="center"><img src="a01109.png" border="0" usemap="#alicorn_1_1system_1_1_current_module_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1system_1_1_current_module_coll__map" id="alicorn_1_1system_1_1_current_module_coll__map">
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:aa2ead7f4761316eb916b16ddcf992e24"><td class="memItemLeft" align="right" valign="top">static hModule_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html#aa2ead7f4761316eb916b16ddcf992e24">GetHandle</a> (void)</td></tr>
+<tr class="memdesc:aa2ead7f4761316eb916b16ddcf992e24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения хэндла текущего модуля.  <a href="#aa2ead7f4761316eb916b16ddcf992e24">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa2ead7f4761316eb916b16ddcf992e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a260058308984fa58b2294c9bef431cb3"><td class="memItemLeft" align="right" valign="top">static Path_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html#a260058308984fa58b2294c9bef431cb3">GetLocation</a> (void)</td></tr>
+<tr class="memdesc:a260058308984fa58b2294c9bef431cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пути к папке расположения текущего модуля.  <a href="#a260058308984fa58b2294c9bef431cb3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a260058308984fa58b2294c9bef431cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f25419e0f63ad50ffc642163819df8d"><td class="memItemLeft" align="right" valign="top">static Path_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html#a8f25419e0f63ad50ffc642163819df8d">GetName</a> (void)</td></tr>
+<tr class="memdesc:a8f25419e0f63ad50ffc642163819df8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения имени текущего модуля.  <a href="#a8f25419e0f63ad50ffc642163819df8d">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8f25419e0f63ad50ffc642163819df8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3c6a06459c213c52260984dc69d461"><td class="memItemLeft" align="right" valign="top">static Path_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00080.html#ace3c6a06459c213c52260984dc69d461">GetAppDataPath</a> (void)</td></tr>
+<tr class="memdesc:ace3c6a06459c213c52260984dc69d461"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пути к папке, содержащей данные программы для текущего пользователя.  <a href="#ace3c6a06459c213c52260984dc69d461">Подробнее...</a><br /></td></tr>
+<tr class="separator:ace3c6a06459c213c52260984dc69d461"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class Pointer&gt;<br />
-class alicorn::patterns::command::Data&lt; Pointer * &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a00030.html">Проект Patterns</a> <br />
- Специализация шаблона для указателей. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00036.html">Проект System</a> <br />
+ Класс получения информации о текущем модуле. </p>
 <ul>
-<li>В конструкторе проверяет валидность переданного указателя и бросает исключение, если он нулевой.</li>
+<li>Под 'текущим модулем' подразумевается exe или dll файл, внутри кода которого вызывается функция.</li>
 </ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Тип</td><td>хранимого указателя.</td></tr>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>31 Август 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ace3c6a06459c213c52260984dc69d461"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CurrentModule::Path_t CurrentModule::GetAppDataPath </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения пути к папке, содержащей данные программы для текущего пользователя. </p>
+<ul>
+<li>Будет сформировано из пути к папке данных программ текущего пользователя, названий компании и продукта.</li>
+<li>Если такого пути не существует, он будет создан.</li>
+<li>Названия компании и продукта будут извлечены из версии текущего модуля (будут совпадать с макросами _ _ COMPANY_NAME _ _ и _ _ PRODUCT_NAME _ _ текущего решения), поэтому у программы, желающей использовать эту возможность должен быть подключен файл с ресурсом версии программы.</li>
+<li>Если у текущего модуля нет ресурса версии, функция вернет путь к папке расположения модуля. </li>
+</ul>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00080_ace3c6a06459c213c52260984dc69d461_cgraph.png" border="0" usemap="#a00080_ace3c6a06459c213c52260984dc69d461_cgraph" alt=""/></div>
+<map name="a00080_ace3c6a06459c213c52260984dc69d461_cgraph" id="a00080_ace3c6a06459c213c52260984dc69d461_cgraph">
+<area shape="rect" id="node3" href="a00834.html#ga988945ffa59758f6e34022bc7d9696f1" title="Функция получения пути к папке данных программ текущего пользователя. " alt="" coords="261,5,411,46"/>
+<area shape="rect" id="node5" href="a00843.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Класс входит в Проект Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="477,63,619,105"/>
+<area shape="rect" id="node8" href="a00116.html#aea77ed774da02bbaffc1afba165980d0" title="Функция получения значения параметра из блока &#39;StringFileInfo\041904e3&#39; версии. " alt="" coords="255,122,417,163"/>
+<area shape="rect" id="node11" href="a00080.html#a260058308984fa58b2294c9bef431cb3" title="Функция получения пути к папке расположения текущего модуля. " alt="" coords="243,187,429,229"/>
+<area shape="rect" id="node13" href="a00080.html#aa2ead7f4761316eb916b16ddcf992e24" title="Функция получения хэндла текущего модуля. " alt="" coords="243,253,429,294"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00080_ace3c6a06459c213c52260984dc69d461_icgraph.png" border="0" usemap="#a00080_ace3c6a06459c213c52260984dc69d461_icgraph" alt=""/></div>
+<map name="a00080_ace3c6a06459c213c52260984dc69d461_icgraph" id="a00080_ace3c6a06459c213c52260984dc69d461_icgraph">
+<area shape="rect" id="node3" href="a00098.html#a7dcb21db9e1623e84b9c3dee81c12617" title="Конструктор класса. " alt="" coords="243,5,386,46"/>
+<area shape="rect" id="node5" href="a00098.html#ae1eeefb237c2c1965a388681e993bc8b" title="Функция сохранения изменений в файле настроек. " alt="" coords="243,70,386,111"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2ead7f4761316eb916b16ddcf992e24"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CurrentModule::hModule_t CurrentModule::GetHandle </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения хэндла текущего модуля. </p>
+<ul>
+<li>Текущая реализация справедлива для WinXP+.</li>
+</ul>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 май 2014 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00649_source.html">Data.hpp</a></li>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00080_aa2ead7f4761316eb916b16ddcf992e24_icgraph.png" border="0" usemap="#a00080_aa2ead7f4761316eb916b16ddcf992e24_icgraph" alt=""/></div>
+<map name="a00080_aa2ead7f4761316eb916b16ddcf992e24_icgraph" id="a00080_aa2ead7f4761316eb916b16ddcf992e24_icgraph">
+<area shape="rect" id="node3" href="a00080.html#ace3c6a06459c213c52260984dc69d461" title="Функция получения пути к папке, содержащей данные программы для текущего пользователя. " alt="" coords="240,38,429,79"/>
+<area shape="rect" id="node5" href="a00098.html#a7dcb21db9e1623e84b9c3dee81c12617" title="Конструктор класса. " alt="" coords="478,5,621,46"/>
+<area shape="rect" id="node7" href="a00098.html#ae1eeefb237c2c1965a388681e993bc8b" title="Функция сохранения изменений в файле настроек. " alt="" coords="478,70,621,111"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a260058308984fa58b2294c9bef431cb3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CurrentModule::Path_t CurrentModule::GetLocation </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения пути к папке расположения текущего модуля. </p>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00080_a260058308984fa58b2294c9bef431cb3_icgraph.png" border="0" usemap="#a00080_a260058308984fa58b2294c9bef431cb3_icgraph" alt=""/></div>
+<map name="a00080_a260058308984fa58b2294c9bef431cb3_icgraph" id="a00080_a260058308984fa58b2294c9bef431cb3_icgraph">
+<area shape="rect" id="node3" href="a00098.html#a7dcb21db9e1623e84b9c3dee81c12617" title="Конструктор класса. " alt="" coords="501,70,643,111"/>
+<area shape="rect" id="node5" href="a00170.html#a7f9bc78cb9b514f69d1c915376315484" title="Функция сохранения настроек в файл. " alt="" coords="263,7,407,49"/>
+<area shape="rect" id="node9" href="a00080.html#ace3c6a06459c213c52260984dc69d461" title="Функция получения пути к папке, содержащей данные программы для текущего пользователя. " alt="" coords="240,127,429,169"/>
+<area shape="rect" id="node7" href="a00170.html#ad7fb702f4109de1ff4a52f000bc1ddf7" title="Конструктор создания пустого раздела. " alt="" coords="478,5,666,46"/>
+<area shape="rect" id="node12" href="a00098.html#ae1eeefb237c2c1965a388681e993bc8b" title="Функция сохранения изменений в файле настроек. " alt="" coords="501,135,643,177"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f25419e0f63ad50ffc642163819df8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CurrentModule::Path_t CurrentModule::GetName </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения имени текущего модуля. </p>
+<ul>
+<li>Имя файла модуля вместе с расширением.</li>
+</ul>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/system/<a class="el" href="a00708_source.html">current-module.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/system/current-module.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00080.html">Data&lt; Pointer * &gt;</a></li>
-    <li class="footer">Документация по Libs.VS2013. Последние изменения: Сб 18 Июн 2016 13:48:24. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><a class="el" href="a00080.html">CurrentModule</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 13 Авг 2016 14:42:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

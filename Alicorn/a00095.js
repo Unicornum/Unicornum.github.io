@@ -1,7 +1,6 @@
 var a00095 =
 [
-    [ "FormFileName", "a00095.html#a78253bd31454f39e16fb359f206526c1", null ],
-    [ "OpenFile", "a00095.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
-    [ "WriteRecord", "a00095.html#acb716a4ccea948033c64be86775d671d", null ],
-    [ "m_LogFile", "a00095.html#abaf06f0b024ca4033e968df2b5ee9643", null ]
+    [ "OnChanged", "a00095.html#a8f31082d1573122757db0572e9100a93", null ],
+    [ "OnPaint", "a00095.html#ad8351ca940eeac53bdbd81672c52db1d", null ],
+    [ "SetResultRunTests", "a00095.html#a8454b3f179b3136728668033f1f56885", null ]
 ];

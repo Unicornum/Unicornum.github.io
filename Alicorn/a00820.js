@@ -1,15 +1,15 @@
 var a00820 =
 [
-    [ "Data", "a00079.html", null ],
-    [ "ICommand", "a00106.html", null ],
-    [ "IManager", "a00109.html", null ],
-    [ "IUndo", "a00122.html", null ],
-    [ "ManagerCommon", "a00133.html", null ],
-    [ "ManagerUndoRedo", "a00134.html", [
-      [ "IsAllowedRedo", "a00134.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
-      [ "IsAllowedUndo", "a00134.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
-      [ "Redo", "a00134.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
-      [ "Undo", "a00134.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
+    [ "Generated", "a00824.html", "a00824" ],
+    [ "Main", "a00132.html", null ],
+    [ "MainFrame", "a00134.html", null ],
+    [ "HtmlAbout", "a00105.html", null ],
+    [ "SettingsPage", "a00173.html", [
+      [ "GetActiveNameParameter", "a00173.html#a6c426d98cb43c98ace9fdd6f1f51c01a", null ],
+      [ "SetSettings", "a00173.html#a3a39a65878a05a704a6752f812e38384", null ]
     ] ],
-    [ "Manager", "a00820.html#ga8e7b735024f7c889ba90c2087f57aa22", null ]
+    [ "SettingsPanel", "a00174.html", null ],
+    [ "TreeSections", "a00192.html", [
+      [ "SetSections", "a00192.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
+    ] ]
 ];
