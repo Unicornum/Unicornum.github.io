@@ -1,4 +1,5 @@
 var a00096 =
 [
-    [ "DoSpecialAction", "a00096.html#a526dc33d9ad165f8112898e8ec5693f8", null ]
+    [ "File", "a00096.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
+    [ "Save", "a00096.html#ae1eeefb237c2c1965a388681e993bc8b", null ]
 ];

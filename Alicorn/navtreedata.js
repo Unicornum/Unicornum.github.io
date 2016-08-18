@@ -2,7 +2,6 @@ var NAVTREE =
 [
   [ "Libs", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Использование подставных объектов Google Mock", "a00049.html", null ],
     [ "Список задач", "a00001.html", null ],
     [ "Список устаревших определений и описаний", "a00003.html", null ],
     [ "Ошибки", "a00002.html", null ],
@@ -22,6 +21,7 @@ var NAVTREE =
       [ "Файлы", "files.html", "files" ],
       [ "Список членов всех файлов", "globals.html", [
         [ "Указатель", "globals.html", null ],
+        [ "Функции", "globals_func.html", null ],
         [ "Макросы", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -31,11 +31,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00104.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b",
-"a00194.html",
-"a00496.html",
-"a00834.html#ga988945ffa59758f6e34022bc7d9696f1",
-"functions_func_g.html"
+"a00095.html#acb716a4ccea948033c64be86775d671d",
+"a00174.html",
+"a00535_source.html",
+"a00765.html",
+"a01053_source.html",
+"dir_3566b14543774cebe8e9d0956d248fc6.html",
+"functions_p.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

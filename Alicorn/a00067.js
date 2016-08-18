@@ -1,5 +1,5 @@
 var a00067 =
 [
-    [ "Get", "a00067.html#a53722275ba36d7028901a5d30e4b9c10", null ],
-    [ "Set", "a00067.html#a6cb1518cb704c7edeee6bbe73409dfd5", null ]
+    [ "WriteRecord", "a00067.html#aab3352a57302cff220e46d9cea1c12bb", null ],
+    [ "WriteTitle", "a00067.html#a16ff9b02d58211e7be68cc7514755e85", null ]
 ];

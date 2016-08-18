@@ -1,6 +1,8 @@
 var a00142 =
 [
-    [ "Message", "a00142.html#a3d40aeefeba1cf87f0ce3cc251f656f2", null ],
-    [ "DoSpecialAction", "a00142.html#a22780dd83eb6c92232d773cf09536961", null ],
-    [ "GetLevel", "a00142.html#a7e0aa36f88d152d1b6e99a9d1bb2da04", null ]
+    [ "BuildPathToSection", "a00142.html#a0c097f184d0f8008705441c7e8f95f14", null ],
+    [ "GetSection", "a00142.html#a7fa27979818db9ba2e511c5a104fede8", null ],
+    [ "GetSections", "a00142.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
+    [ "GetSettings", "a00142.html#a14217a4b20565c53ba84cd9958354e3a", null ],
+    [ "SetValue", "a00142.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
 ];

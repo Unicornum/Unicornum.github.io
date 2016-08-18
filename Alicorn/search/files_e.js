@@ -1,5 +1,23 @@
 var searchData=
 [
-  ['x86_2d32ban_2ehpp',['x86-32ban.hpp',['../a00689.html',1,'']]],
-  ['x86_2d64ban_2ehpp',['x86-64ban.hpp',['../a00690.html',1,'']]]
+  ['search_5ftest_2ecpp',['Search_test.cpp',['../a00660.html',1,'']]],
+  ['section_5ftest_2ecpp',['Section_test.cpp',['../a00749.html',1,'']]],
+  ['sectionfullaccess_5ftest_2ecpp',['SectionFullAccess_test.cpp',['../a00750.html',1,'']]],
+  ['sectionimpl_5ftest_2ecpp',['SectionImpl_test.cpp',['../a00751.html',1,'']]],
+  ['serialization_5ftest_2ecpp',['Serialization_test.cpp',['../a00652.html',1,'']]],
+  ['setlocale_5ftest_2ecpp',['SetLocale_test.cpp',['../a00661.html',1,'']]],
+  ['settings_2ehpp',['settings.hpp',['../a01011.html',1,'']]],
+  ['settingspage_5ftest_2ecpp',['SettingsPage_test.cpp',['../a00743.html',1,'']]],
+  ['settingspanel_5ftest_2ecpp',['SettingsPanel_test.cpp',['../a00744.html',1,'']]],
+  ['std_2ehpp',['std.hpp',['../a00946.html',1,'']]],
+  ['string_2dcast_2ehpp',['string-cast.hpp',['../a00926.html',1,'']]],
+  ['string_2dcast_2ehpp',['string-cast.hpp',['../a00922.html',1,'']]],
+  ['string_2dcast_2ehpp',['string-cast.hpp',['../a00923.html',1,'']]],
+  ['string_2eforward_2ehpp',['string.forward.hpp',['../a00972.html',1,'']]],
+  ['string_5ftest_2ecpp',['String_test.cpp',['../a00663.html',1,'']]],
+  ['stringcast_5ftest_2ecpp',['StringCast_test.cpp',['../a00665.html',1,'']]],
+  ['summaryinfo_5ftest_2ecpp',['SummaryInfo_test.cpp',['../a00786.html',1,'']]],
+  ['support_2ehpp',['Support.hpp',['../a00806.html',1,'']]],
+  ['system_2ehpp',['system.hpp',['../a01013.html',1,'']]],
+  ['system_2emock_2ehpp',['system.mock.hpp',['../a01089.html',1,'']]]
 ];

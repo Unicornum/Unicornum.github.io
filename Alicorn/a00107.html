@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс alicorn::system::process::ICallBack</title>
+<title>Libs: Класс alicorn::vfs::IConverter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.5.1 Revision: 1844 Architecture: x86.64 Build: 14:42 13 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,47 +110,68 @@ $(document).ready(function(){initNavTree('a00107.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01128.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01704.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::system::process::ICallBack<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a00818.html">Alicorn</a> &raquo; <a class="el" href="a00857.html">System</a></div></div>  </div>
+<div class="title">Класс alicorn::vfs::IConverter<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01258.html">Классы раздела Virtual File System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00036.html">Проект System</a> <br />
- Интерфейсный класс для объекта обратного вызова, используемого при работе класса <a class="el" href="a00154.html" title="Класс входит в Проект System   Класс для запуска других программ. ">Process</a>.  
+<p>Класс входит в <a class="el" href="a00043.html">Проект Vfs</a> <br />
+ Интерфейсный класс преобразователя данных.  
  <a href="a00107.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00721_source.html">call-back.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01137_source.html">iconverter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::system::process::ICallBack:</div>
+Граф наследования:alicorn::vfs::IConverter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01129.png" border="0" usemap="#alicorn_1_1system_1_1process_1_1_i_call_back_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1system_1_1process_1_1_i_call_back_coll__map" id="alicorn_1_1system_1_1process_1_1_i_call_back_coll__map">
+<div class="center"><img src="a01705.png" border="0" usemap="#alicorn_1_1vfs_1_1_i_converter_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1vfs_1_1_i_converter_inherit__map" id="alicorn_1_1vfs_1_1_i_converter_inherit__map">
+<area shape="rect" id="node3" href="a00061.html" title="Класс входит в Проект Vfs &#160;&#160;Класс реализации интерфейса преобразования для сжатия/распаковки данных..." alt="" coords="5,175,176,281"/>
+<area shape="rect" id="node5" href="a00073.html" title="Класс входит в Проект Vfs &#160;&#160;Класс реализации интерфейса преобразования для шифрования данных..." alt="" coords="201,160,385,296"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса alicorn::vfs::IConverter:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01706.png" border="0" usemap="#alicorn_1_1vfs_1_1_i_converter_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1vfs_1_1_i_converter_coll__map" id="alicorn_1_1vfs_1_1_i_converter_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:afcee57e481967ea6987f6247ec4642de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afcee57e481967ea6987f6247ec4642de"></a>
+virtual Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#afcee57e481967ea6987f6247ec4642de">PrePackAction</a> (const Data_t &amp;) const  =0</td></tr>
+<tr class="memdesc:afcee57e481967ea6987f6247ec4642de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования данных перед упаковкой в хранилище. <br /></td></tr>
+<tr class="separator:afcee57e481967ea6987f6247ec4642de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c0d9efab3af183256bb7c2ef1360b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46c0d9efab3af183256bb7c2ef1360b0"></a>
+virtual Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a46c0d9efab3af183256bb7c2ef1360b0">PostUnpackAction</a> (const Data_t &amp;) const  =0</td></tr>
+<tr class="memdesc:a46c0d9efab3af183256bb7c2ef1360b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования данных после распаковки хранилища (должна производить действие, обратное действию функции <a class="el" href="a00107.html#afcee57e481967ea6987f6247ec4642de" title="Функция для преобразования данных перед упаковкой в хранилище. ">PrePackAction()</a>). <br /></td></tr>
+<tr class="separator:a46c0d9efab3af183256bb7c2ef1360b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00036.html">Проект System</a> <br />
- Интерфейсный класс для объекта обратного вызова, используемого при работе класса <a class="el" href="a00154.html" title="Класс входит в Проект System   Класс для запуска других программ. ">Process</a>. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00043.html">Проект Vfs</a> <br />
+ Интерфейсный класс преобразователя данных. </p>
 <ul>
-<li>Функция IsContinue() вызывается постоянно в процессе работы запущенной программы, она должна вернуть false, если работу программы следует прервать.</li>
-<li>Функция Received() вызывается после завершения работы запущенной программы (штатного или принудительного) для каждой отдельной строки ее консольного вывода.</li>
+<li>Предназначен для создания классов промежуточной обработки (например, сжатия и шифрования) данных при упаковке/распаковке файлов классом <a class="el" href="a00146.html" title="Класс входит в Проект Vfs   Класс реализации упаковки файлов в хранилище/получения содержимого файла ...">Pack</a>.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>10 Сентябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Июнь 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/system/process/<a class="el" href="a00721_source.html">call-back.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/vfs/<a class="el" href="a01137_source.html">iconverter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><b>process</b></li><li class="navelem"><a class="el" href="a00107.html">ICallBack</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 13 Авг 2016 14:42:56. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a00107.html">IConverter</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:19. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

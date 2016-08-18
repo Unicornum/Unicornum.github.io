@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс alicorn::document::xml::Node</title>
+<title>Libs: Класс alicorn::vfs::Pack</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.5.1 Revision: 1844 Architecture: x86.64 Build: 14:42 13 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,68 +110,92 @@ $(document).ready(function(){initNavTree('a00146.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a00933.html">Полный список членов класса</a>  </div>
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="a01713.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::document::xml::Node<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00818.html">Alicorn</a> &raquo; <a class="el" href="a00833.html">Document</a> &raquo; <a class="el" href="a00832.html">Xml</a></div></div>  </div>
+<div class="title">Класс alicorn::vfs::Pack<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01258.html">Классы раздела Virtual File System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00015.html">Проект Document</a> <br />
- Вспомогательный класс для манипуляции текущим узлом документа.  
+<p>Класс входит в <a class="el" href="a00043.html">Проект Vfs</a> <br />
+ Класс реализации упаковки файлов в хранилище/получения содержимого файла из упакованного хранилища.  
  <a href="a00146.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00469_source.html">node.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:noncopyable.</p>
+<p><code>#include &lt;<a class="el" href="a01141_source.html">pack.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::document::xml::Node:</div>
+Граф наследования:alicorn::vfs::Pack:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00934.png" border="0" usemap="#alicorn_1_1document_1_1xml_1_1_node_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1document_1_1xml_1_1_node_coll__map" id="alicorn_1_1document_1_1xml_1_1_node_coll__map">
-<area shape="rect" id="node2" href="a00194.html" title="Класс входит в Проект Document &#160;&#160;Вспомогательный класс для доступа к значению узла. " alt="" coords="5,6,160,127"/>
-<area shape="rect" id="node4" href="a00060.html" title="Класс входит в Проект Document &#160;&#160;Вспомогательный класс для доступа к списку атрибутов узла документа ..." alt="" coords="184,13,339,120"/>
+<div class="center"><img src="a01714.png" border="0" usemap="#alicorn_1_1vfs_1_1_pack_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1vfs_1_1_pack_inherit__map" id="alicorn_1_1vfs_1_1_pack_inherit__map">
+<area shape="rect" id="node2" href="a00108.html" title="Класс входит в Проект Vfs &#160;&#160;Интерфейсный класс для реализаций доступа к данным. " alt="" coords="5,6,219,98"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса alicorn::vfs::Pack:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01715.png" border="0" usemap="#alicorn_1_1vfs_1_1_pack_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1vfs_1_1_pack_coll__map" id="alicorn_1_1vfs_1_1_pack_coll__map">
+<area shape="rect" id="node2" href="a00108.html" title="Класс входит в Проект Vfs &#160;&#160;Интерфейсный класс для реализаций доступа к данным. " alt="" coords="5,6,219,98"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00097.html">FileInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс одной записи о файле в хранилище.  <a href="a00097.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00164.html">Record</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:aab381d95bc38753a42ebc7c60fb2ce9a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00146.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#aab381d95bc38753a42ebc7c60fb2ce9a">operator[]</a> (const <a class="el" href="a00176.html">String_t</a> &amp;) const </td></tr>
-<tr class="memdesc:aab381d95bc38753a42ebc7c60fb2ce9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перехода к дочернему узлу текущего по имени.  <a href="#aab381d95bc38753a42ebc7c60fb2ce9a">Подробнее...</a><br /></td></tr>
-<tr class="separator:aab381d95bc38753a42ebc7c60fb2ce9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc41066cbf2787ffb952d199a0640273"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00146.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#afc41066cbf2787ffb952d199a0640273">operator[]</a> (const <a class="el" href="a00176.html">String_t</a> &amp;)</td></tr>
-<tr class="memdesc:afc41066cbf2787ffb952d199a0640273"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перехода к дочернему узлу текущего по имени.  <a href="#afc41066cbf2787ffb952d199a0640273">Подробнее...</a><br /></td></tr>
-<tr class="separator:afc41066cbf2787ffb952d199a0640273"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f8e7fe05286832a146e97352345506e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00146.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a2f8e7fe05286832a146e97352345506e">operator[]</a> (xml::Parent_t) const </td></tr>
-<tr class="memdesc:a2f8e7fe05286832a146e97352345506e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перехода к родительскому узлу текущего.  <a href="#a2f8e7fe05286832a146e97352345506e">Подробнее...</a><br /></td></tr>
-<tr class="separator:a2f8e7fe05286832a146e97352345506e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bfda637ac9887bb9676f301e40861be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00146.html">Node</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a4bfda637ac9887bb9676f301e40861be">operator[]</a> (xml::Parent_t)</td></tr>
-<tr class="memdesc:a4bfda637ac9887bb9676f301e40861be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перехода к родительскому узлу текущего.  <a href="#a4bfda637ac9887bb9676f301e40861be">Подробнее...</a><br /></td></tr>
-<tr class="separator:a4bfda637ac9887bb9676f301e40861be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44ae2217ccac94b6b565701bfd05774e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a44ae2217ccac94b6b565701bfd05774e">operator[]</a> (xml::FirstChild_t) const </td></tr>
-<tr class="memdesc:a44ae2217ccac94b6b565701bfd05774e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перехода к первому дочернему узлу текущего.  <a href="#a44ae2217ccac94b6b565701bfd05774e">Подробнее...</a><br /></td></tr>
-<tr class="separator:a44ae2217ccac94b6b565701bfd05774e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75535c69883d5768f646b92554d745d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a75535c69883d5768f646b92554d745d2">operator[]</a> (xml::Next_t) const </td></tr>
-<tr class="memdesc:a75535c69883d5768f646b92554d745d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор перехода к следующему узлу внутри родительского узла текущего.  <a href="#a75535c69883d5768f646b92554d745d2">Подробнее...</a><br /></td></tr>
-<tr class="separator:a75535c69883d5768f646b92554d745d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9226f6f5ba874e2494e9ba38d8870858"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a9226f6f5ba874e2494e9ba38d8870858">operator+=</a> (const <a class="el" href="a00176.html">String_t</a> &amp;)</td></tr>
-<tr class="memdesc:a9226f6f5ba874e2494e9ba38d8870858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить в текущий узел новый дочерний узел.  <a href="#a9226f6f5ba874e2494e9ba38d8870858">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9226f6f5ba874e2494e9ba38d8870858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6791f722b7917711ea8d8bd42d1f238c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a6791f722b7917711ea8d8bd42d1f238c">operator-=</a> (const <a class="el" href="a00176.html">String_t</a> &amp;)</td></tr>
-<tr class="memdesc:a6791f722b7917711ea8d8bd42d1f238c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить из текущего узела дочерний узел.  <a href="#a6791f722b7917711ea8d8bd42d1f238c">Подробнее...</a><br /></td></tr>
-<tr class="separator:a6791f722b7917711ea8d8bd42d1f238c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbabbe70e7bc1177f6d781ea44784734"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#adbabbe70e7bc1177f6d781ea44784734">GetData</a> (const Path_t &amp;, Data_t &amp;) const  override</td></tr>
+<tr class="memdesc:adbabbe70e7bc1177f6d781ea44784734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения содержимого указанного файла.  <a href="#adbabbe70e7bc1177f6d781ea44784734">Подробнее...</a><br /></td></tr>
+<tr class="separator:adbabbe70e7bc1177f6d781ea44784734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f34549c63ec0f362b9ff30a5a64c4ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec">Build</a> (const Path_t &amp;) const </td></tr>
+<tr class="memdesc:a4f34549c63ec0f362b9ff30a5a64c4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для построения хранилища из файлов в указанной папке.  <a href="#a4f34549c63ec0f362b9ff30a5a64c4ec">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4f34549c63ec0f362b9ff30a5a64c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1715c6b00def1a4864ae4312ede86fa2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a1715c6b00def1a4864ae4312ede86fa2">Pack</a> (const Path_t &amp;, const Converters_t &amp;={})</td></tr>
+<tr class="memdesc:a1715c6b00def1a4864ae4312ede86fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a1715c6b00def1a4864ae4312ede86fa2">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1715c6b00def1a4864ae4312ede86fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a3f5f6bb4882857193ba500156b0d975a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a3f5f6bb4882857193ba500156b0d975a">AddFileToEndStorage</a> (const Path_t &amp;, const Path_t &amp;, File_t &amp;) const </td></tr>
+<tr class="memdesc:a3f5f6bb4882857193ba500156b0d975a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для добавления указанного файла в хранилище.  <a href="#a3f5f6bb4882857193ba500156b0d975a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3f5f6bb4882857193ba500156b0d975a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:af450de4757c89fa83e857e5574ad0d23"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#af450de4757c89fa83e857e5574ad0d23">AddTitleTo</a> (File_t &amp;)</td></tr>
+<tr class="memdesc:af450de4757c89fa83e857e5574ad0d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для добавления заголовка в файл хранилища.  <a href="#af450de4757c89fa83e857e5574ad0d23">Подробнее...</a><br /></td></tr>
+<tr class="separator:af450de4757c89fa83e857e5574ad0d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8d54716c19914858f36b1a01c83254"><td class="memItemLeft" align="right" valign="top">static Path_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html#a2d8d54716c19914858f36b1a01c83254">GetRelativePath</a> (const Path_t &amp;, const Path_t &amp;)</td></tr>
+<tr class="separator:a2d8d54716c19914858f36b1a01c83254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00015.html">Проект Document</a> <br />
- Вспомогательный класс для манипуляции текущим узлом документа. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00043.html">Проект Vfs</a> <br />
+ Класс реализации упаковки файлов в хранилище/получения содержимого файла из упакованного хранилища. </p>
+<ul>
+<li>Хранилище может быть построено из файлов, расположенных в папке при помощи функции <a class="el" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec" title="Функция для построения хранилища из файлов в указанной папке. ">Build()</a>.</li>
+</ul>
+<p>Стркуктура хранилища:</p><ul>
+<li>Заголовок.</li>
+<li>Записи о файлах (каждая из которых представляет собой: простую структуру фиксированного размера, имя файла (в utf8-&gt;base64), содержимое файла).</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>07 Октябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>12 Июнь 2016 <br />
+ 11 Август 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a9226f6f5ba874e2494e9ba38d8870858"></a>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a1715c6b00def1a4864ae4312ede86fa2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -179,34 +203,55 @@ $(document).ready(function(){initNavTree('a00146.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void alicorn::document::xml::Node::operator+= </td>
+          <td class="memname">Pack::Pack </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00176.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToStorageFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const Converters_t &amp;&#160;</td>
+          <td class="paramname"><em>_Converters</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Добавить в текущий узел новый дочерний узел. </p>
-<ul>
-<li>Маркер текущего узла останется на том же узле.</li>
-</ul>
+<p>Конструктор класса. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя добавляемого узла. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToStorageFile</td><td>Путь к файлу хранилища. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Converters</td><td>Список преобразователей данных, которые будут использоваться при упаковке/ распаковке хранилища (при упаковке они будут вызываться в прямом порядке, при распаковке - в обратном). </td></tr>
   </table>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_a1715c6b00def1a4864ae4312ede86fa2_icgraph.png" border="0" usemap="#a00146_a1715c6b00def1a4864ae4312ede86fa2_icgraph" alt=""/></div>
+<map name="a00146_a1715c6b00def1a4864ae4312ede86fa2_icgraph" id="a00146_a1715c6b00def1a4864ae4312ede86fa2_icgraph">
+<area shape="rect" id="node3" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec" title="Функция для построения хранилища из файлов в указанной папке. " alt="" coords="609,6,749,47"/>
+<area shape="rect" id="node5" href="a00146.html#a2d8d54716c19914858f36b1a01c83254" title="alicorn::vfs::Pack\l::GetRelativePath" alt="" coords="195,35,335,77"/>
+<area shape="rect" id="node7" href="a00146.html#a3f5f6bb4882857193ba500156b0d975a" title="Функция для добавления указанного файла в хранилище. " alt="" coords="385,35,559,77"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a6791f722b7917711ea8d8bd42d1f238c"></a>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a3f5f6bb4882857193ba500156b0d975a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -214,43 +259,85 @@ $(document).ready(function(){initNavTree('a00146.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void alicorn::document::xml::Node::operator-= </td>
+          <td class="memname">void Pack::AddFileToEndStorage </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00176.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToSourceFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToSourceDirectory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">File_t &amp;&#160;</td>
+          <td class="paramname"><em>_Pack</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Удалить из текущего узела дочерний узел. </p>
+<p>Функция для добавления указанного файла в хранилище. </p>
 <ul>
-<li>Маркер текущего узла останется на том же узле.</li>
+<li>Функция добавляет запись для указанного файла в конец файла, путь к которому был задан в конструкторе.</li>
+<li>Относительный путь к упаковываемому файлу выводится в консоль.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя удаляемого узла.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToSourceFile</td><td>Добавляемый файл. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToSourceDirectory</td><td>Путь к папке, которая упаковывается (нужен для вычисления относительного пути к файлу внутри хранилища). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Pack</td><td>Открытый для записи файл хранилища.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
-<li>У текущего узла нет узла с указанным именем. </li>
+<li>Исходный файл не существует.</li>
+<li>Исходный файл заблокирован для чтения.</li>
+<li>Невозможно открыть файл хранилища для записи. </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_a3f5f6bb4882857193ba500156b0d975a_cgraph.png" border="0" usemap="#a00146_a3f5f6bb4882857193ba500156b0d975a_cgraph" alt=""/></div>
+<map name="a00146_a3f5f6bb4882857193ba500156b0d975a_cgraph" id="a00146_a3f5f6bb4882857193ba500156b0d975a_cgraph">
+<area shape="rect" id="node3" href="a00146.html#a2d8d54716c19914858f36b1a01c83254" title="alicorn::vfs::Pack\l::GetRelativePath" alt="" coords="230,5,370,46"/>
+<area shape="rect" id="node5" href="a00146.html#a1715c6b00def1a4864ae4312ede86fa2" title="Конструктор класса. " alt="" coords="419,5,559,46"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_a3f5f6bb4882857193ba500156b0d975a_icgraph.png" border="0" usemap="#a00146_a3f5f6bb4882857193ba500156b0d975a_icgraph" alt=""/></div>
+<map name="a00146_a3f5f6bb4882857193ba500156b0d975a_icgraph" id="a00146_a3f5f6bb4882857193ba500156b0d975a_icgraph">
+<area shape="rect" id="node3" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec" title="Функция для построения хранилища из файлов в указанной папке. " alt="" coords="230,5,370,46"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="aab381d95bc38753a42ebc7c60fb2ce9a"></a>
+<a class="anchor" id="af450de4757c89fa83e857e5574ad0d23"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,110 +345,103 @@ $(document).ready(function(){initNavTree('a00146.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="a00146.html">Node</a> &amp; alicorn::document::xml::Node::operator[] </td>
+          <td class="memname">void Pack::AddTitleTo </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00176.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td class="paramtype">File_t &amp;&#160;</td>
+          <td class="paramname"><em>_Pack</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для добавления заголовка в файл хранилища. </p>
+<ul>
+<li>Заголовок будет проверяться на совпадение при распаковке хранилища, поэтому следует распаковывать файлы той же версией класса, что и упаковывались.</li>
+</ul>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Не удалось открыть файл хранилища для добавления в него данных. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_af450de4757c89fa83e857e5574ad0d23_icgraph.png" border="0" usemap="#a00146_af450de4757c89fa83e857e5574ad0d23_icgraph" alt=""/></div>
+<map name="a00146_af450de4757c89fa83e857e5574ad0d23_icgraph" id="a00146_af450de4757c89fa83e857e5574ad0d23_icgraph">
+<area shape="rect" id="node3" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec" title="Функция для построения хранилища из файлов в указанной папке. " alt="" coords="195,5,335,46"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f34549c63ec0f362b9ff30a5a64c4ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Pack::Build </td>
+          <td>(</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToSourceDirectory</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Оператор перехода к дочернему узлу текущего по имени. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя искомого дочернего узла.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>В текущем узле нет дочернего узла с таким именем. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="afc41066cbf2787ffb952d199a0640273"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00146.html">Node</a> &amp; alicorn::document::xml::Node::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00176.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Оператор перехода к дочернему узлу текущего по имени. </p>
+<p>Функция для построения хранилища из файлов в указанной папке. </p>
 <ul>
-<li>Если узла нет, он будет создан.</li>
+<li>Функция переберет все файлы в указанной папке (+ в подпапках рекурсивно) и построит хранилище, данные из которого можно будет извлекать функцией <a class="el" href="a00146.html#adbabbe70e7bc1177f6d781ea44784734" title="Функция получения содержимого указанного файла. ">GetData()</a>.</li>
+<li>Если в конструкторе задан набор преобразователей данных, он будет использован при упаковке (соответственно, для распаковки такого хранилища следует использовать точно такой же набор преобразователей).</li>
+<li>Имена файлов внутри хранилища будут соответствовать путям исходных файлов внутри указанной папки.</li>
+<li>Результат будет сохранен в файл, путь к которому задан в конструкторе.</li>
+<li>Если папка, в которой должно быть создано хранилище, не существует, она будет создана.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя искомого дочернего узла. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToSourceDirectory</td><td>Путь к папке, содержимое которой будет упаковано.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a2f8e7fe05286832a146e97352345506e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00146.html">Node</a> &amp; alicorn::document::xml::Node::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">xml::Parent_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Оператор перехода к родительскому узлу текущего. </p>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
-<li>Переход невозможен (текущий узел - корневой узел документа). </li>
+<li>Попытка упаковать несуществующую папку.</li>
+<li>Файл, указанный в конструкторе, уже существует.</li>
+<li>Не удалось открыть один из упаковываемых файлов.</li>
+<li>Ошибка во время упаковки (подробнее см. описание исключения). </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_a4f34549c63ec0f362b9ff30a5a64c4ec_cgraph.png" border="0" usemap="#a00146_a4f34549c63ec0f362b9ff30a5a64c4ec_cgraph" alt=""/></div>
+<map name="a00146_a4f34549c63ec0f362b9ff30a5a64c4ec_cgraph" id="a00146_a4f34549c63ec0f362b9ff30a5a64c4ec_cgraph">
+<area shape="rect" id="node3" href="a00146.html#a1715c6b00def1a4864ae4312ede86fa2" title="Конструктор класса. " alt="" coords="609,13,749,54"/>
+<area shape="rect" id="node5" href="a00146.html#af450de4757c89fa83e857e5574ad0d23" title="Функция для добавления заголовка в файл хранилища. " alt="" coords="213,26,353,68"/>
+<area shape="rect" id="node7" href="a00146.html#a3f5f6bb4882857193ba500156b0d975a" title="Функция для добавления указанного файла в хранилище. " alt="" coords="195,92,370,133"/>
+<area shape="rect" id="node9" href="a00146.html#a2d8d54716c19914858f36b1a01c83254" title="alicorn::vfs::Pack\l::GetRelativePath" alt="" coords="419,58,559,100"/>
+</map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="a4bfda637ac9887bb9676f301e40861be"></a>
+<a class="anchor" id="adbabbe70e7bc1177f6d781ea44784734"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -369,66 +449,64 @@ $(document).ready(function(){initNavTree('a00146.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00146.html">Node</a> &amp; alicorn::document::xml::Node::operator[] </td>
+          <td class="memname">bool Pack::GetData </td>
           <td>(</td>
-          <td class="paramtype">xml::Parent_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Data_t &amp;&#160;</td>
+          <td class="paramname"><em>_Data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Оператор перехода к родительскому узлу текущего. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Переход невозможен (текущий узел - корневой узел документа). </li>
+<p>Функция получения содержимого указанного файла. </p>
+<ul>
+<li>Функция предназначена извлечения данных конкретного файла из хранилища.</li>
+<li>Хранилище рассматривается как папка, внутри которой расположены файлы (подробнее см. в описании функции <a class="el" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec" title="Функция для построения хранилища из файлов в указанной папке. ">Build()</a>).</li>
 </ul>
-</td></tr>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к искомому файлу внутри хранилища, указанного в конструкторе. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">_Data</td><td>Объект, в который будет записано содержимое файла, если таковой будет найден.</td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a44ae2217ccac94b6b565701bfd05774e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool alicorn::document::xml::Node::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">xml::FirstChild_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Оператор перехода к первому дочернему узлу текущего. </p>
-<ul>
-<li>Если текущий узел не содержит дочерних узлов, маркер останется на текущем узле.</li>
-</ul>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Переход к дочернему узлу выполнен успешно. </dd>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Файл найден, данные прочитаны. </dd>
 <dd>
-<b>false</b> У текущего узла нет дочерних узлов. </dd></dl>
+<b>false</b> <ul>
+<li>Указанного файла нет в текущем хранилище.</li>
+</ul>
+</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Структура хранилища не соответствует ожидаемой (подробнее см. описание исключения).</li>
+<li>Файл хранилища, указанного в конструкторе, не существует или не может быть открыт для чтения. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a00108.html#a378db548677bc086e5164eef5880da60">alicorn::vfs::IImplementation</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a75535c69883d5768f646b92554d745d2"></a>
+<a class="anchor" id="a2d8d54716c19914858f36b1a01c83254"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -436,38 +514,65 @@ $(document).ready(function(){initNavTree('a00146.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool alicorn::document::xml::Node::operator[] </td>
+          <td class="memname">Pack::Path_t Pack::GetRelativePath </td>
           <td>(</td>
-          <td class="paramtype">xml::Next_t&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_From</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_To</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000010">Необходимо сделать:</a></b></dt><dd>Почему не работает <a class="el" href="a01231.html#ga1bd1bcb8aa17149be5ae9ec4c4633900" title="Функция вычисления относительного пути для двух указанных полных путей к папкам. ">irelative()</a>? </dd></dl>
 
-<p>Оператор перехода к следующему узлу внутри родительского узла текущего. </p>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Переход к следующему узлу выполнен успешно. </dd>
-<dd>
-<b>false</b> У родительского узла больше нет дочерних узлов. </dd></dl>
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_a2d8d54716c19914858f36b1a01c83254_cgraph.png" border="0" usemap="#a00146_a2d8d54716c19914858f36b1a01c83254_cgraph" alt=""/></div>
+<map name="a00146_a2d8d54716c19914858f36b1a01c83254_cgraph" id="a00146_a2d8d54716c19914858f36b1a01c83254_cgraph">
+<area shape="rect" id="node3" href="a00146.html#a1715c6b00def1a4864ae4312ede86fa2" title="Конструктор класса. " alt="" coords="195,5,335,46"/>
+</map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00146_a2d8d54716c19914858f36b1a01c83254_icgraph.png" border="0" usemap="#a00146_a2d8d54716c19914858f36b1a01c83254_icgraph" alt=""/></div>
+<map name="a00146_a2d8d54716c19914858f36b1a01c83254_icgraph" id="a00146_a2d8d54716c19914858f36b1a01c83254_icgraph">
+<area shape="rect" id="node3" href="a00146.html#a3f5f6bb4882857193ba500156b0d975a" title="Функция для добавления указанного файла в хранилище. " alt="" coords="195,5,370,46"/>
+<area shape="rect" id="node5" href="a00146.html#a4f34549c63ec0f362b9ff30a5a64c4ec" title="Функция для построения хранилища из файлов в указанной папке. " alt="" coords="419,5,559,46"/>
+</map>
+</div>
+</p>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/document/xml/<a class="el" href="a00469_source.html">node.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/document/xml/node.inl</li>
+<li>Solution/Solution/Alicorn/include/alicorn/vfs/<a class="el" href="a01141_source.html">pack.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/vfs/pack.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>document</b></li><li class="navelem"><b>xml</b></li><li class="navelem"><a class="el" href="a00146.html">Node</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 13 Авг 2016 14:42:55. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a00146.html">Pack</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:19. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

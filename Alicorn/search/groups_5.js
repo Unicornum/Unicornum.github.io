@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fast',['Fast',['../a00836.html',1,'']]],
-  ['factory',['Factory',['../a00852.html',1,'']]]
+  ['fast',['Fast',['../a01233.html',1,'']]],
+  ['factory',['Factory',['../a01250.html',1,'']]]
 ];

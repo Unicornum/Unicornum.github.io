@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Раздел Testing</title>
+<title>Libs: Класс view::AllTestsInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.5.1 Revision: 1844 Architecture: x86.64 Build: 14:42 13 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -49,9 +49,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
-      <li class="current"><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="pages.html"><span>Описания</span></a></li>
       <li><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
       <li><a href="files.html"><span>Файлы</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -69,6 +69,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
           </span>
         </div>
       </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -101,68 +109,66 @@ $(document).ready(function(){initNavTree('a00055.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01783.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Раздел Testing </div>  </div>
+<div class="title">Класс view::AllTestsInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01238.html">Testing.App</a> &raquo; <a class="el" href="a01227.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sTestingPartBrief"></a>
-Введение</h1>
-<p>Раздел содержит программу-обертку над библиотекой <a href="http://code.google.com/p/googletest/">gtest </a> и комплект проектов тестирования. Назначение - удобная работа с отдельными классами и наглядное отображение результатов прогона тестов.</p>
-<h1><a class="anchor" id="sTestingDetails"></a>
-Подробное описание раздела</h1>
-<p>Комплект проектов тестирования содержится в папке Test.Front и включает в себя три проекта:</p><ul>
-<li><b>Test.Solution</b> - единственный проект на все решение. Экспортируется в решение и предназначен для сборки и запуска всех тестов всех проектов решения. Собирается в папку \Result\Test\x86 и зависит ото всех проектов <b>Test.Project</b>. При запуске "пробегается" по всем dll-кам в своей папке, загружает их, выполняет расположенные в них тесты и отображает статистику выполнения тестов. При завершении возвращает 0, если все тесты прошли успешно и число &gt; 0, если хотя бы один провалился.</li>
-<li><b>Test.Project</b> - отдельный тестовый проект для классов каждого проекта решения. Располагается в той же папке, в которой расположена папка проекта, тесты классов которого он будет содержать. 'Project' заменяется на имя того проекта, который будет тестироваться. Собирается как dll в папку \Result\Test\x86.</li>
-<li><b>Test.Class</b> - отдельный тестовый проект одного класса. Располагается в папке проекта <b>Test.Project</b>. Собирается как исполняемый файл для тестов одного класса. 'Class' в имени проекта заменяется на имя класса, тесты которого он будет исполнять.</li>
-</ul>
-<p>Вся информация о прогоне тестов в проектах <b>Test.Solution</b> и <b>Test.Class</b> отображается в диалоговом окне, содержащем три закладки:</p><ul>
-<li>В первой закладке отображается суммарный результат (количество всех/пройденных/проваленных/отключенных тестов) в html-формате.</li>
-<li>Во второй закладке отображается в виде дерева список всех тестов (разделы, содержащие проваленные тесты, помечаются красной иконкой). Иерархия должна содержать имя проекта теста, имя класса теста, имена тестов.</li>
-<li>В третьей закладке отображаются только проваленные тесты. Выделив нужный тест, в нижней части окна можно получить подробное описание причины провала.</li>
-</ul>
-<h1><a class="anchor" id="sTestingInstall"></a>
-Развертывание</h1>
-<p>Подключение проектов тестирования возможно вручную (см. описание ниже) и автоматически - соответствующими командами надстройки UniCA.</p>
-<h2><a class="anchor" id="ssTestingSolution"></a>
-Общий проект тестирования</h2>
-<ul>
-<li>Экспортировать проект Test.Solution в папку Solution решения и подключить к решению.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Предназначен для запуска всех тестов решения.</li>
-<li>Проект должен зависеть ото всех проектов <b>Test.Project</b> решения.</li>
-</ul>
-</dd></dl>
-<h2><a class="anchor" id="ssTestingProject"></a>
-Проект тестирования классов одного проекта</h2>
-<ul>
-<li>В папку, в которой расположена папка проекта экпортировать папку 'Test.Project' и подключить его к решению (в раздел его проекта).</li>
-<li>Заменить 'Project' на имя проекта, тесты классов которого он будет содержать.</li>
-<li>Проекту <b>Test.Solution</b> добавить зависимость от добавленного проекта.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>В этот проект должны добавляться все файлы *_test.cpp всех проектов тестирования одного класса (в раздел Tests\ClassName).</dd></dl>
-<h2><a class="anchor" id="ssTestingClass"></a>
-Проект тестирования одного класса</h2>
-<ul>
-<li>Для каждого теста класса в папку проекта <b>Test.Project</b> экспортируется папка 'Test.Class'.</li>
-<li>Заменить 'Class' на имя тестируемого класса.</li>
-<li>Подключить добавленный проект к решению (в раздел Test.Classes проекта, к которому он относится).</li>
-<li>Файл ClassName_test.cpp переименовать, заменив 'ClassName' на имя класса, после чего подключить его к проектам <b>Test.Class</b> и <b>Test.Project</b>.</li>
-<li>В файле ClassName_test.cpp <b>PathToHeader.hpp</b> заменить на путь к файлу тестируемого класса.</li>
-<li>В файле ClassName_test.cpp <b>ClassName</b> заменить на соответствующее имя класса.</li>
-</ul>
-<h1><a class="anchor" id="sTestingRecommended"></a>
-Рекомендуемая структура решения</h1>
-<div class="image">
-<img src="SolutionStruct.png" alt="SolutionStruct.png"/>
+
+<p>Класс входит в <a class="el" href="a00038.html">Проект Testing.App</a> <br />
+ Класс панели отображения общей информации о прогоне тестов.  
+ <a href="a00055.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00819_source.html">AllTestsInfo.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:view::AllTestsInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01784.png" border="0" usemap="#view_1_1_all_tests_info_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_all_tests_info_inherit__map" id="view_1_1_all_tests_info_inherit__map">
+<area shape="rect" id="node2" href="a00124.html" title="Класс входит в Проект Testing.App &#160;&#160;Интерфейсный класс представления. " alt="" coords="5,13,179,105"/>
+<area shape="rect" id="node4" href="a00147.html" title="Class PanelAllTests. " alt="" coords="203,5,383,112"/>
+</map>
 </div>
- </div></div><!-- contents -->
+<div class="dynheader">
+Граф связей класса view::AllTestsInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01785.png" border="0" usemap="#view_1_1_all_tests_info_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_all_tests_info_coll__map" id="view_1_1_all_tests_info_coll__map">
+<area shape="rect" id="node2" href="a00124.html" title="Класс входит в Проект Testing.App &#160;&#160;Интерфейсный класс представления. " alt="" coords="5,359,179,451"/>
+<area shape="rect" id="node4" href="a00147.html" title="Class PanelAllTests. " alt="" coords="204,352,351,459"/>
+<area shape="rect" id="node6" href="a00193.html" title="Класс входит в Проект Testing.App &#160;&#160;Класс для отображения дерева с информацией о тестах. " alt="" coords="191,5,363,288"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a23e9a44b7deda78006db6f424bea2bad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e9a44b7deda78006db6f424bea2bad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00055.html#a23e9a44b7deda78006db6f424bea2bad">SetResultRunTests</a> (const Info_t &amp;) override</td></tr>
+<tr class="memdesc:a23e9a44b7deda78006db6f424bea2bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция передачи объекту представления информации о результатах прогона тестов. <br /></td></tr>
+<tr class="separator:a23e9a44b7deda78006db6f424bea2bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00038.html">Проект Testing.App</a> <br />
+ Класс панели отображения общей информации о прогоне тестов. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>25 Май 2016 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/View/<a class="el" href="a00819_source.html">AllTestsInfo.hpp</a></li>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/View/AllTestsInfo.cpp</li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 13 Авг 2016 14:42:54. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00055.html">AllTestsInfo</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:19. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

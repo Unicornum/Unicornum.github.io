@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Шаблон класса alicorn::converter::Crypto&lt; Base64 &gt;</title>
+<title>Libs: Шаблон класса alicorn::patterns::command::Data&lt; Pointer * &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.5.1 Revision: 1844 Architecture: x86.64 Build: 14:42 13 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,49 +110,55 @@ $(document).ready(function(){initNavTree('a00079.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a00922.html">Полный список членов класса</a>  </div>
+<a href="a01622.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::converter::Crypto&lt; Base64 &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a00818.html">Alicorn</a> &raquo; <a class="el" href="a00831.html">Converter</a></div></div>  </div>
+<div class="title">Шаблон класса alicorn::patterns::command::Data&lt; Pointer * &gt;<div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01252.html">Patterns</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00013.html">Проект Converter</a> <br />
- Специзация шаблона класса шифрования для Base64.  
+<p>Класс входит в <a class="el" href="a00028.html">Проект Patterns</a> <br />
+ Специализация шаблона для указателей.  
  <a href="a00079.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00449_source.html">base64.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00760_source.html">Data.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::converter::Crypto&lt; Base64 &gt;:</div>
+Граф связей класса alicorn::patterns::command::Data&lt; Pointer * &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00923.png" border="0" usemap="#alicorn_1_1converter_1_1_crypto_3_01_base64_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1converter_1_1_crypto_3_01_base64_01_4_coll__map" id="alicorn_1_1converter_1_1_crypto_3_01_base64_01_4_coll__map">
+<div class="center"><img src="a01623.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map" id="alicorn_1_1patterns_1_1command_1_1_data_3_01_pointer_01_5_01_4_coll__map">
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;&gt;<br />
-class alicorn::converter::Crypto&lt; Base64 &gt;</h3>
+<div class="textblock"><h3>template&lt;class Pointer&gt;<br />
+class alicorn::patterns::command::Data&lt; Pointer * &gt;</h3>
 
-<p>Класс входит в <a class="el" href="a00013.html">Проект Converter</a> <br />
- Специзация шаблона класса шифрования для Base64. </p>
+<p>Класс входит в <a class="el" href="a00028.html">Проект Patterns</a> <br />
+ Специализация шаблона для указателей. </p>
 <ul>
-<li>Используется реализация из Crypto++.</li>
+<li>В конструкторе проверяет валидность переданного указателя и бросает исключение, если он нулевой.</li>
 </ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Тип</td><td>хранимого указателя.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Август 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>11 май 2014 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/converter/<a class="el" href="a00449_source.html">base64.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00760_source.html">Data.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>converter</b></li><li class="navelem"><a class="el" href="a00079.html">Crypto&lt; Base64 &gt;</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 13 Авг 2016 14:42:55. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a00079.html">Data&lt; Pointer * &gt;</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:18. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

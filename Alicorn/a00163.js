@@ -3,6 +3,7 @@ var a00163 =
     [ "AddChildNode", "a00163.html#a5c08bfefb23069ab03adddc449ab00df", null ],
     [ "DeleteChildNode", "a00163.html#a26d9ba3ba00686646e725e3bab40cb2d", null ],
     [ "GetAttribute", "a00163.html#a48a0c20687fb2d813ab5df656993cc65", null ],
+    [ "GetChildNode", "a00163.html#a84e81e2e0045775b7d04466f77e16208", null ],
     [ "GetCurrentNodeName", "a00163.html#a1aca537538e91a54b1a177b60c6e97b8", null ],
     [ "GetValue", "a00163.html#a50dc58df3ac319bab6b646db8fec3e47", null ],
     [ "MoveToChildNode", "a00163.html#a04d0bbeeba0ce1f1e166d890caa20d0b", null ],
