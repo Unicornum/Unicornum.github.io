@@ -1,5 +1,4 @@
 var a00194 =
 [
-    [ "DoActivate", "a00194.html#a29857a47b0b95970ae34c7b42b0f5a20", null ],
-    [ "DoCancel", "a00194.html#a287151415838c3601525537451126f7e", null ]
+    [ "GetId", "a00194.html#ad70034648e674d457eb298b9226b7374", null ]
 ];

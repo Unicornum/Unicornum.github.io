@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Проект ConnectionCommands</title>
+<title>Addins: Требования модуля Version</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -102,33 +102,21 @@ $(document).ready(function(){initNavTree('a00025.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Проект ConnectionCommands </div>  </div>
+<div class="title">Требования модуля <a class="el" href="a00348.html" title="Класс входит в Version   Главный класс модуля Version. ">Version</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sConnectionCommandsBrief"></a>
-Введение</h1>
-<p>Команды, вызываемые точкой подключения:</p><ul>
-<li>Создание объектов команд меню.</li>
-<li>Разрушение объектов команд меню.</li>
-<li>Запрос текущего состояния команды по ее идентификатору.</li>
-<li>Запрос текста меню команды по ее идентификатору с заменой тегов.</li>
-<li>Выполнение команды выбранного пункта меню.</li>
-<li>Выполнение команды напрямую (не связанную с пунктом меню).</li>
+<div class="textblock"><p>Надстройка должна обеспечивать:</p><ul>
+<li> <input type="checkbox" checked disabled>  Все .exe и .dll файлы при сборке должны содержать версию исходных файлов + ревизию файлов решения.</li>
+<li> <input type="checkbox" checked disabled>  Макрос, представляющий собой строку текущей версии программы.</li>
+<li> <input type="checkbox" checked disabled>  Формат версии '1.0.0.1234 Build ЧЧ:ММ ДД.ММ.ГГГГ'. </li>
 </ul>
-<p>Все классы команд должны соответствовать следующим требованиям:</p><ul>
-<li>Шаблоны, принимающие в качестве параметра конструктора указатель на класс используемой точки подключения и передавать его далее, всем классам, которым он потребуется.</li>
-<li>Все содержащиеся в проекте классы должны быть универсальными и не зависеть от конкретной IDE.</li>
-</ul>
-<h2><a class="anchor" id="ssCoreConnectionCommandsClasses"></a>
-Список классов проекта</h2>
-<p><a class="el" href="a01428.html">ConnectionCommands</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00024.html">Core</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:13. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00007.html">Исходные требования</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

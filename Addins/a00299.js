@@ -1,4 +1,5 @@
 var a00299 =
 [
-    [ "DoLocalProcess", "a00299.html#a338d994f833f48fd5597d859c40e57c6", null ]
+    [ "Advise", "a00299.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
+    [ "Unadvise", "a00299.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
 ];

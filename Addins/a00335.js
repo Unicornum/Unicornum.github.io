@@ -1,6 +1,6 @@
 var a00335 =
 [
-    [ "GetCaption", "a00335.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
-    [ "GetId", "a00335.html#a7385d179fbab96fe54f1614c94f04b4f", null ],
-    [ "IsEnabled", "a00335.html#ad020704272b8e116a3a4ee92f48ee449", null ]
+    [ "IsEnabled", "a00335.html#adf476033bc2dc4304bac28cba75f3185", null ],
+    [ "UpdateSolutionRevision", "a00335.html#abf1e0617091414fd1f4044e19a5d24fa", null ],
+    [ "VersionInfoToLog", "a00335.html#a23a4828c0f21ca3c49e8c70a94611171", null ]
 ];

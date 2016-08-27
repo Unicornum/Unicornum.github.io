@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс connection_points::CommandManager</title>
+<title>Addins: Класс support::DataTask</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,51 +110,115 @@ $(document).ready(function(){initNavTree('a00124.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Открытые типы</a> &#124;
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01619.html">Полный список членов класса</a>  </div>
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="a03119.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс connection_points::CommandManager</div>  </div>
+<div class="title">Класс support::DataTask<div class="ingroups"><a class="el" href="a02256.html">Core</a> &raquo; <a class="el" href="a02272.html">Tools</a> &raquo; <a class="el" href="a02274.html">ProjectTasks</a> &raquo; <a class="el" href="a02265.html">Support</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00025.html">Проект ConnectionCommands</a> <br />
- Класс выполнения команд, обеспечивающих базовую функциональность надстройки.  
+<p>Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс, содержащий флаги, указывающие возможности, которые доступны задаче.  
  <a href="a00124.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00450_source.html">CommandManager.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01344_source.html">DataTask.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:connection_points::CommandManager:</div>
+Граф наследования:support::DataTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01620.png" border="0" usemap="#connection__points_1_1_command_manager_inherit__map" alt="Inheritance graph"/></div>
-<map name="connection__points_1_1_command_manager_inherit__map" id="connection__points_1_1_command_manager_inherit__map">
-<area shape="rect" id="node3" href="a00123.html" title="Класс входит в Проект Support &#160;&#160;Класс для исполнения команд, управляющих работой надстройки. " alt="" coords="5,176,171,283"/>
+<div class="center"><img src="a03120.png" border="0" usemap="#support_1_1_data_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="support_1_1_data_task_inherit__map" id="support_1_1_data_task_inherit__map">
+<area shape="rect" id="node5" href="a00303.html" title="Класс входит в ProjectTasks &#160;&#160;Класс для манипуляции информацией одной задачи. " alt="" coords="5,611,235,791"/>
+<area shape="rect" id="node2" href="a00279.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий информацию об одной задаче. " alt="" coords="22,6,217,186"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса connection_points::CommandManager:</div>
+Граф связей класса support::DataTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01621.png" border="0" usemap="#connection__points_1_1_command_manager_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a03121.png" border="0" usemap="#support_1_1_data_task_coll__map" alt="Collaboration graph"/></div>
+<map name="support_1_1_data_task_coll__map" id="support_1_1_data_task_coll__map">
+<area shape="rect" id="node2" href="a00279.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий информацию об одной задаче. " alt="" coords="238,512,433,648"/>
+<area shape="rect" id="node4" href="a00167.html" title="Класс входит в ProjectTasks &#160;&#160;Класс типа действия, выполняемого при запуске внешней программы..." alt="" coords="47,326,237,447"/>
+<area shape="rect" id="node6" href="a00328.html" title="Класс входит в ProjectTasks &#160;&#160;Вспомогательный класс типа. " alt="" coords="352,6,555,274"/>
+<area shape="rect" id="node10" href="a00347.html" title="Класс входит в ProjectTasks &#160;&#160;Класс действия, выполняемого над версией решения при завергении задачи..." alt="" coords="434,333,619,440"/>
+<area shape="rect" id="node15" href="a00316.html" title="Класс входит в ProjectTasks &#160;&#160;Класс типа задачи. " alt="" coords="262,341,409,433"/>
+<area shape="rect" id="node8" href="a00329.html" title="{support::TypeList\&lt;\l ExternalProgram \&gt;\n||+ GetListTypes()\l}" alt="" coords="5,94,155,186"/>
+<area shape="rect" id="node13" href="a00329.html" title="{support::TypeList\&lt;\l Version \&gt;\n||+ GetListTypes()\l}" alt="" coords="579,94,728,186"/>
+<area shape="rect" id="node18" href="a00329.html" title="{support::TypeList\&lt;\l TaskType \&gt;\n||+ GetListTypes()\l}" alt="" coords="179,94,328,186"/>
+</map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Открытые типы</h2></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a6a3b678c3e7328018d99bb48b944ce51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00124.html#a6a3b678c3e7328018d99bb48b944ce51">SetCheckActivate</a> (bool _Value)</td></tr>
-<tr class="separator:a6a3b678c3e7328018d99bb48b944ce51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5af54aba6054ade4288df300b4747c48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5af54aba6054ade4288df300b4747c48"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00124.html#a5af54aba6054ade4288df300b4747c48">GetId</a> (void) const </td></tr>
+<tr class="memdesc:a5af54aba6054ade4288df300b4747c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора задачи. <br /></td></tr>
+<tr class="separator:a5af54aba6054ade4288df300b4747c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e27c0b5db8bd70adf5298e50e47dc56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e27c0b5db8bd70adf5298e50e47dc56"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00124.html#a1e27c0b5db8bd70adf5298e50e47dc56">Is</a> (<a class="el" href="a00124.html#a1aff9703315ef9c956efe99cb62bf994">AllowedFlags</a>) const </td></tr>
+<tr class="memdesc:a1e27c0b5db8bd70adf5298e50e47dc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки того, что указанный флаг установлен. <br /></td></tr>
+<tr class="separator:a1e27c0b5db8bd70adf5298e50e47dc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff285a7e21a4c497e71c8a61c4a37d6a"><td class="memTemplParams" colspan="2">template&lt;class TType &gt; </td></tr>
+<tr class="memitem:aff285a7e21a4c497e71c8a61c4a37d6a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00124.html#aff285a7e21a4c497e71c8a61c4a37d6a">To</a> (void)</td></tr>
+<tr class="memdesc:aff285a7e21a4c497e71c8a61c4a37d6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения типа задачи.  <a href="#aff285a7e21a4c497e71c8a61c4a37d6a">Подробнее...</a><br /></td></tr>
+<tr class="separator:aff285a7e21a4c497e71c8a61c4a37d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691262cf2fe5bef7f91cfc1e90d442f5"><td class="memTemplParams" colspan="2">template&lt;class TType &gt; </td></tr>
+<tr class="memitem:a691262cf2fe5bef7f91cfc1e90d442f5"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a00124.html#a691262cf2fe5bef7f91cfc1e90d442f5">To</a> (const String_t &amp;)</td></tr>
+<tr class="memdesc:a691262cf2fe5bef7f91cfc1e90d442f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения типа задачи.  <a href="#a691262cf2fe5bef7f91cfc1e90d442f5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a691262cf2fe5bef7f91cfc1e90d442f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:ae7cf60983cc23031c7397d47b8ae7fce"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00124.html#ae7cf60983cc23031c7397d47b8ae7fce">CreateId</a> (bool)</td></tr>
+<tr class="memdesc:ae7cf60983cc23031c7397d47b8ae7fce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания уникальных идентификаторов задач.  <a href="#ae7cf60983cc23031c7397d47b8ae7fce">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae7cf60983cc23031c7397d47b8ae7fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00025.html">Проект ConnectionCommands</a> <br />
- Класс выполнения команд, обеспечивающих базовую функциональность надстройки. </p>
-<ul>
-<li>Классы команд, выполняемые менеджером, должны наследоваться от класса command::NeedActivateCommand.</li>
-<li>Команды, не требующие активации, выполняются всегда.</li>
-<li>Команды, требующие активации, выполняются только если активирован менеджер команд.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 2.0.0.0 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>1 июн 2014 18 янв 2015 </dd></dl>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс, содержащий флаги, указывающие возможности, которые доступны задаче. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
+ 26 Март 2016 <br />
+</dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a6a3b678c3e7328018d99bb48b944ce51"></a>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Перечисления</h2>
+<a class="anchor" id="a1aff9703315ef9c956efe99cb62bf994"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="a00124.html#a1aff9703315ef9c956efe99cb62bf994">support::DataTask::AllowedFlags</a> : size_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Флаги для обозначения допустимых действий над задачей. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Элементы перечислений</th></tr><tr><td class="fieldname"><a class="anchor" id="a1aff9703315ef9c956efe99cb62bf994ab296339eb0880b0ce95e5082f6f63c49"></a>Editable&#160;</td><td class="fielddoc">
+<p>Текст задачи может быть изменен. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1aff9703315ef9c956efe99cb62bf994a37ea3f85969618b25d9a8a0f69cdaab2"></a>CreateChild&#160;</td><td class="fielddoc">
+<p>Задаче можно добавлять дочерние подзадачи. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1aff9703315ef9c956efe99cb62bf994a3a004d40b90d1e25db7faa05ed115045"></a>Completed&#160;</td><td class="fielddoc">
+<p>Задача может быть завершена/возвращена. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1aff9703315ef9c956efe99cb62bf994a643b4b773985c35190cf993d5c455bc8"></a>BlockCompleted&#160;</td><td class="fielddoc">
+<p>Задача заблокирована для выполнения, например, это может быть родительская задача, у которй есть не завершенные подзадачи. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="ae7cf60983cc23031c7397d47b8ae7fce"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -162,34 +226,126 @@ $(document).ready(function(){initNavTree('a00124.html','');});
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void connection_points::CommandManager::SetCheckActivate </td>
+          <td class="memname">size_t support::DataTask::CreateId </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>_Value</em></td><td>)</td>
+          <td class="paramname"><em>_IsClear</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Функция устанавливает флаг, определяющий, будет менеджер команд опрашивать команды на необходимость активации или нет. </p>
+
+<p>Функция создания уникальных идентификаторов задач. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsClear</td><td>Признак того, что отсчет нужно начать сначала (используется в тестах).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Очередной идентификатор. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff285a7e21a4c497e71c8a61c4a37d6a"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void support::DataTask::To </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция изменения типа задачи. </p>
+<ul>
+<li>Функция изменяет значение флагов для указанного типа задачи.</li>
+<li>Само изменение флагов реализовано в специализации шаблона для каждого типа.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TType</td><td>Тип задачи, состояние которого объект должен принять (Process или Complete).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Задан неподдерживаемый тип задачи. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a691262cf2fe5bef7f91cfc1e90d442f5"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void support::DataTask::To </td>
+          <td>(</td>
+          <td class="paramtype">const String_t &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция изменения типа задачи. </p>
+<ul>
+<li>Функция изменяет значение флагов для указанного типа задачи.</li>
+<li>Само изменение флагов реализовано в специализации шаблона для каждого типа.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TType</td><td>Тип задачи, состояние которого объект должен принять (ProcessRoot или CompleteRoot). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Текст для корневой задачи (при пустом значении будет создана обычная задача).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Задан неподдерживаемый тип задачи. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/ConnectionPoints/Common/Common/<a class="el" href="a00450_source.html">CommandManager.hpp</a></li>
-<li>Solution/Solution/ConnectionPoints/Common/Common/CommandManager.cpp</li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/<a class="el" href="a01344_source.html">DataTask.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/DataTask.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>connection_points</b></li><li class="navelem"><a class="el" href="a00124.html">CommandManager</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:13. Создано системой
+    <li class="navelem"><b>support</b></li><li class="navelem"><a class="el" href="a00124.html">DataTask</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:03. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

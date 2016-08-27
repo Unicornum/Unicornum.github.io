@@ -1,6 +1,7 @@
 var a00289 =
 [
-    [ "SearchForFullPath", "a00289.html#ac85a4ff36109083a4286198e318fb850", null ],
-    [ "WasFoundNext", "a00289.html#a12db12b83bbbe5025b1b460ed700a6cd", null ],
-    [ "WasNoFound", "a00289.html#abd666cb10b06cc5b2b844ad454ad3c61", null ]
+    [ "SolutionDevelopmentInfo", "a00289.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
+    [ "GetInfo", "a00289.html#a61bd18745090e834f86393cbd0ed38fe", null ],
+    [ "Save", "a00289.html#ad88fc0ffb5ff2b2ac775b9861ecd2b9a", null ],
+    [ "UpdateTime", "a00289.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
 ];

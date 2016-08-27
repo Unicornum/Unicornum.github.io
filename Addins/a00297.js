@@ -1,4 +1,6 @@
 var a00297 =
 [
-    [ "DoLocalProcess", "a00297.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f", null ]
+    [ "SolutionTasksPage", "a00297.html#a735388683f2111bae2d195bb9ed6ecbf", null ],
+    [ "AddRecord", "a00297.html#ac0521fb2b2f71b6653bc8cc325baac81", null ],
+    [ "CreateBlank", "a00297.html#a4932261ba511ebe27021e7cf5789bf44", null ]
 ];

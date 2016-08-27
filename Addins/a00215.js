@@ -1,5 +1,6 @@
 var a00215 =
 [
-    [ "GetPathToFile", "a00215.html#ab1473a7d6d10ec7f4018714a4cc2a28c", null ],
-    [ "Remove", "a00215.html#a952ef4cb92f66af5b7d0678b06a84de3", null ]
+    [ "SetRegexString", "a00215.html#af5040b0aa0f465bb367c6d7b3b827132", null ],
+    [ "SetSourceStrings", "a00215.html#a40111fbde225b3bce8aa1b4ac7c7586f", null ],
+    [ "UpdateView", "a00215.html#a8c80e0235b8dd5fbf242595f6d1911e5", null ]
 ];

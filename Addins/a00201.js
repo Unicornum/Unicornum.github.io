@@ -1,5 +1,7 @@
 var a00201 =
 [
-    [ "Check", "a00201.html#a7b384636712e62b31c577aeb72977365", null ],
-    [ "GetProgress", "a00201.html#a85a1df60506fb28daaeec201925140ef", null ]
+    [ "GetCount", "a00201.html#a79bad819e3756478477a430821e9e575", null ],
+    [ "GetItem", "a00201.html#aca2deef5aed3e1e4598c290ecf48b812", null ],
+    [ "LoadFromFile", "a00201.html#af08a2b241ca5445b4ea24ae91393d66b", null ],
+    [ "Remove", "a00201.html#aac2aa044e6bea3eabf721822e5a28663", null ]
 ];

@@ -1,5 +1,6 @@
 var a00097 =
 [
-    [ "WasFoundNext", "a00097.html#abbb3a4c1bca71e9510522a27e5b86e72", null ],
-    [ "WasNoFound", "a00097.html#af6330f00eab5407344d37a1939951a5f", null ]
+    [ "AddControl", "a00097.html#a86130e59757e2c2e7976498b8ed55cbf", null ],
+    [ "Delete", "a00097.html#afa679db93d2c5c38d056d0a37256d446", null ],
+    [ "SetHotKey", "a00097.html#a400ef4a02584cd6ff91cf1e543513ac6", null ]
 ];

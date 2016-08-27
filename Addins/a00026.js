@@ -1,13 +1,13 @@
 var a00026 =
 [
-    [ "Введение", "a00026.html#sCoreToolsBrief", null ],
-    [ "Утилиты раздела", "a00026.html#sCoreToolsDetails", null ],
-    [ "Проект RegexTester", "a00033.html", "a00033" ],
-    [ "Проект DevelopmentInfo", "a00027.html", "a00027" ],
-    [ "Проект SettingsApp", "a00035.html", [
-      [ "Введение", "a00035.html#sSettingsAppBrief", null ],
-      [ "Подробное описание проекта", "a00035.html#sSettingsAppDetails", null ]
+    [ "Введение", "a00026.html#sCoreBrief", null ],
+    [ "Подробное описание раздела", "a00026.html#sCoreDetails", null ],
+    [ "ConnectionCommands", "a00027.html", [
+      [ "Введение", "a00027.html#sConnectionCommandsBrief", [
+        [ "Список классов проекта", "a00027.html#ssCoreConnectionCommandsClasses", null ]
+      ] ]
     ] ],
-    [ "Проект ProjectTasks", "a00030.html", "a00030" ],
-    [ "Проект Version Updater", "a00036.html", "a00036" ]
+    [ "Useful Commands", "a00036.html", "a00036" ],
+    [ "Utilities", "a00049.html", "a00049" ],
+    [ "Утилиты", "a00028.html", "a00028" ]
 ];

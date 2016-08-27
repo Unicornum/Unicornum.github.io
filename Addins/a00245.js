@@ -1,4 +1,5 @@
 var a00245 =
 [
-    [ "DoLocalProcess", "a00245.html#a395819a068d121a79711847d46e59dc3", null ]
+    [ "GetCaption", "a00245.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
+    [ "GetId", "a00245.html#a58be1ff4609162de563288f25c25b8ea", null ]
 ];

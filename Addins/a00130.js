@@ -1,5 +1,5 @@
 var a00130 =
 [
-    [ "operator[]", "a00130.html#a0036fdc937ebb1ac612c05fa377ea770", null ],
-    [ "operator[]", "a00130.html#a0f43aa74924faf56d69e04dc79ac1f4b", null ]
+    [ "SetDevelopmentInfo", "a00130.html#a659e436fe7b29034bb9335ca2672e3f1", null ],
+    [ "SetTitle", "a00130.html#a6e9280ff3760b54ae9db94ecbdb6a237", null ]
 ];

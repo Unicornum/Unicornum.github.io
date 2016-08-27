@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс model::IModel</title>
+<title>Addins: Класс model::IReadTask</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -111,126 +111,84 @@ $(document).ready(function(){initNavTree('a00203.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01964.html">Полный список членов класса</a>  </div>
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="a03092.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс model::IModel<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01430.html">CoreToolsDevelopmentInfo</a> &raquo; <a class="el" href="a01432.html">Model</a><a class="el" href="a01442.html">RegexTester</a> &raquo;  &#124; <a class="el" href="a01444.html">Model</a></div></div>  </div>
+<div class="title">Класс model::IReadTask<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a02256.html">Core</a> &raquo; <a class="el" href="a02272.html">Tools</a> &raquo; <a class="el" href="a02274.html">ProjectTasks</a> &raquo; <a class="el" href="a02263.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00027.html">Проект DevelopmentInfo</a> <br />
- Интерфейсный класс модели.  
+<p>Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для чтения данных о задаче.  
  <a href="a00203.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00716_source.html">IModel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01338_source.html">IReadTask.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:model::IModel:</div>
+Граф наследования:model::IReadTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01965.png" border="0" usemap="#model_1_1_i_model_inherit__map" alt="Inheritance graph"/></div>
-<map name="model_1_1_i_model_inherit__map" id="model_1_1_i_model_inherit__map">
-<area shape="rect" id="node3" href="a00101.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Класс модели, содержащей информацию обо всех решениях..." alt="" coords="5,248,187,355"/>
-<area shape="rect" id="node5" href="a00128.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс, содержащий общую логику обработки исходных строк..." alt="" coords="211,248,361,355"/>
-<area shape="rect" id="node13" href="a00138.html" title="Класс входит в Проект DevelopmentInfo &#160;&#160;Класс модели, содержащей информацию о текущем решении..." alt="" coords="387,248,587,355"/>
-<area shape="rect" id="node7" href="a00245.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс реализации модели для обработки совпадения строки с регуляр..." alt="" coords="37,403,187,495"/>
-<area shape="rect" id="node9" href="a00297.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс реализации модели для замены в строке с помощью регулярного..." alt="" coords="211,403,361,495"/>
-<area shape="rect" id="node11" href="a00299.html" title="Класс входит в Проект RegexTester &#160;&#160;Класс реализации модели для поиска в строке совпадения с регулярн..." alt="" coords="386,403,536,495"/>
+<div class="center"><img src="a03093.png" border="0" usemap="#model_1_1_i_read_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_i_read_task_inherit__map" id="model_1_1_i_read_task_inherit__map">
+<area shape="rect" id="node3" href="a00207.html" title="Класс входит в ProjectTasks &#160;&#160;&quot;Суммарный&quot; интерфейсный класс одной задачи. " alt="" coords="74,176,181,253"/>
+<area shape="rect" id="node5" href="a00082.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий полный список всех задач проекта. ..." alt="" coords="5,301,251,848"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса model::IModel:</div>
+Граф связей класса model::IReadTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01966.png" border="0" usemap="#model_1_1_i_model_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a03094.png" border="0" usemap="#model_1_1_i_read_task_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_i_read_task_coll__map" id="model_1_1_i_read_task_coll__map">
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a3b23716ff60787c927b882a9cc3e9774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b23716ff60787c927b882a9cc3e9774"></a>
-virtual const String_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a3b23716ff60787c927b882a9cc3e9774">GetViewTitle</a> (void) const  =0</td></tr>
-<tr class="memdesc:a3b23716ff60787c927b882a9cc3e9774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения заголовка окна, отображающего информацию объекта модели. <br /></td></tr>
-<tr class="separator:a3b23716ff60787c927b882a9cc3e9774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcdf4ce9e35ac80e99bcfe1540b3f6eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abcdf4ce9e35ac80e99bcfe1540b3f6eb"></a>
-virtual const <a class="el" href="a00147.html">Info_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb">GetDevelopmentInfo</a> (void) const  =0</td></tr>
-<tr class="memdesc:abcdf4ce9e35ac80e99bcfe1540b3f6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения информации объекта текущей модели. <br /></td></tr>
-<tr class="separator:abcdf4ce9e35ac80e99bcfe1540b3f6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e7c6c501022ada0d35d651ea474cbcc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a8e7c6c501022ada0d35d651ea474cbcc">DoProcess</a> (void)=0</td></tr>
-<tr class="memdesc:a8e7c6c501022ada0d35d651ea474cbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция обработки данных модели.  <a href="#a8e7c6c501022ada0d35d651ea474cbcc">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8e7c6c501022ada0d35d651ea474cbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eb51fafa31fc823f21f8f67347165f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9eb51fafa31fc823f21f8f67347165f2"></a>
-<a class="el" href="a00142.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a9eb51fafa31fc823f21f8f67347165f2">GetData</a> (void)</td></tr>
-<tr class="memdesc:a9eb51fafa31fc823f21f8f67347165f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения данных модели. <br /></td></tr>
-<tr class="separator:a9eb51fafa31fc823f21f8f67347165f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65322a253f89d9f7bfcc4384828d1d3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65322a253f89d9f7bfcc4384828d1d3c"></a>
-const <a class="el" href="a00142.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a65322a253f89d9f7bfcc4384828d1d3c">GetData</a> (void) const </td></tr>
-<tr class="memdesc:a65322a253f89d9f7bfcc4384828d1d3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения данных модели. <br /></td></tr>
-<tr class="separator:a65322a253f89d9f7bfcc4384828d1d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a7dac1ca27c28f9d36e5a66c7eb032"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97a7dac1ca27c28f9d36e5a66c7eb032"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a97a7dac1ca27c28f9d36e5a66c7eb032">GetRootProcessTaskId</a> (void) const  =0</td></tr>
+<tr class="memdesc:a97a7dac1ca27c28f9d36e5a66c7eb032"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи. <br /></td></tr>
+<tr class="separator:a97a7dac1ca27c28f9d36e5a66c7eb032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a14dd2a18bb8fe9208e5faf335f0d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8a14dd2a18bb8fe9208e5faf335f0d6"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#ad8a14dd2a18bb8fe9208e5faf335f0d6">GetRootCompleteTaskId</a> (void) const  =0</td></tr>
+<tr class="memdesc:ad8a14dd2a18bb8fe9208e5faf335f0d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи. <br /></td></tr>
+<tr class="separator:ad8a14dd2a18bb8fe9208e5faf335f0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdfd98f8ad70023d5188dda69a5e4dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdfd98f8ad70023d5188dda69a5e4dd6"></a>
+virtual ChildTasks_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#afdfd98f8ad70023d5188dda69a5e4dd6">GetChildTasks</a> (size_t) const  =0</td></tr>
+<tr class="memdesc:afdfd98f8ad70023d5188dda69a5e4dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка дочерних задач для указанной задачи. <br /></td></tr>
+<tr class="separator:afdfd98f8ad70023d5188dda69a5e4dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a9444372a28d6fd34dda9f8b192964c4f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9444372a28d6fd34dda9f8b192964c4f"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a00207.html">ITask</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html#a9444372a28d6fd34dda9f8b192964c4f">Changed</a></td></tr>
+<tr class="memdesc:a9444372a28d6fd34dda9f8b192964c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должен быть активирован, если изменения требуют обновления представления. <br /></td></tr>
+<tr class="separator:a9444372a28d6fd34dda9f8b192964c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00027.html">Проект DevelopmentInfo</a> <br />
- Интерфейсный класс модели. </p>
-<p>Класс входит в <a class="el" href="a00033.html">Проект RegexTester</a> <br />
- Интерфейс модели.</p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 Февраль 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016</dd></dl>
-<ul>
-<li>Через него контроллер получает доступ к реализации модели.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>27 Ноябрь 2015 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a8e7c6c501022ada0d35d651ea474cbcc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void model::IModel::DoProcess </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция обработки данных модели. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для чтения данных о задаче. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TType</td><td>Класс, обозначающий принадлежность списка задач (Process_t или Complete_t). Нужен для того, чтобы класс списка задач можно было унаследовать от интерфейса 2 раза с возможностью переопределения функций в зависимости от того, со списком каких задач будет работать контроллер.</td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Замещается в <a class="el" href="a00128.html#a0abb8e6669ac19141bc9a1b86216df97">model::Common</a>.</p>
-
-</div>
-</div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Model/<a class="el" href="a00716_source.html">IModel.hpp</a></li>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 2.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
+ 24 Март 2016 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/<a class="el" href="a01338_source.html">IReadTask.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00203.html">IModel</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:14. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00203.html">IReadTask</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:03. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

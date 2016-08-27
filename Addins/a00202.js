@@ -1,5 +1,8 @@
 var a00202 =
 [
-    [ "GetCaption", "a00202.html#a33441fddfee7e81a1ceda13c1ebabb7d", null ],
-    [ "GetId", "a00202.html#a27ab15adb7de2a456a515d6489d400df", null ]
+    [ "GetRegexString", "a00202.html#ac1bb5a657694266fbf218f5ca2de7310", null ],
+    [ "GetReplaceString", "a00202.html#a81029770ef4725794abaa505ad34fc55", null ],
+    [ "GetSourseStrings", "a00202.html#a53b21f1290abceb1fda90789c42f82ee", null ],
+    [ "SetProcessedData", "a00202.html#a9aa2bc91d1e49bfdcf91024887a06b1c", null ],
+    [ "DoProcess", "a00202.html#a5491cd61ba8f067527535004e251f81a", null ]
 ];

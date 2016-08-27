@@ -1,6 +1,6 @@
 var a00349 =
 [
-    [ "Add", "a00349.html#abcbe83558215e25eb77d58935aad146c", null ],
-    [ "Execute", "a00349.html#a007e3e9ae72f098fa3ee4ee5b0f7e04a", null ],
-    [ "IsEnabled", "a00349.html#aa3fe397f373ab76354e92e59076de447", null ]
+    [ "GetCaption", "a00349.html#a213b05e1e799977867081656e3936a23", null ],
+    [ "GetId", "a00349.html#a1480b9ef1063b25a9b3964d4f0786aed", null ],
+    [ "IsEnabled", "a00349.html#a787eec667e45ffc550976b3f6651a27d", null ]
 ];

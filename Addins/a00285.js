@@ -1,5 +1,5 @@
 var a00285 =
 [
-    [ "GetPathToFile", "a00285.html#ab180b7904ac341e4311bbf738353481e", null ],
-    [ "Remove", "a00285.html#a0e283e019a3f0e6b90548465a6c8179f", null ]
+    [ "ServiceProvider", "a00285.html#a9655295867a66190485a61a568947b25", null ],
+    [ "GetDte", "a00285.html#a7076c9166c6a30245972ccddbabb6cfd", null ]
 ];

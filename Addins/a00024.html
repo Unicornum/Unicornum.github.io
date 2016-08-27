@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Core</title>
+<title>Addins: Version</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -102,44 +102,34 @@ $(document).ready(function(){initNavTree('a00024.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Core </div>  </div>
+<div class="title"><a class="el" href="a00348.html" title="Класс входит в Version   Главный класс модуля Version. ">Version</a> </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sCoreBrief"></a>
+<div class="textblock"><p>Список классов проекта: <a class="el" href="a02253.html">Version</a></p>
+<h1><a class="anchor" id="sVersionBrief"></a>
 Введение</h1>
-<p>Содержит классы, выполняющие основную работу надстройки.</p>
-<h1><a class="anchor" id="sCoreDetails"></a>
-Подробное описание раздела</h1>
-<h2>Раздел Connection Commands </h2>
-<p>Команды, вызываемые точкой подключения:</p><ul>
-<li>Создание объектов команд меню.</li>
-<li>Разрушение объектов команд меню.</li>
-<li>Запрос текущего состояния команды по ее идентификатору.</li>
-<li>Запрос текста меню команды по ее идентификатору с заменой тегов.</li>
-<li>Выполнение команды выбранного пункта меню.</li>
-<li>Выполнение команды напрямую (не связанную с пунктом меню).</li>
+<p>Надстройка предназначена для установки .exe и .dll файлам версии решения, включая номер ревизии файлов решения.</p>
+<h1><a class="anchor" id="sVersionDetails"></a>
+Подробное описание проекта</h1>
+<p>Надстройка:</p><ul>
+<li>Подписывается на события построения.</li>
+<li>Перед построением проекта определяет номера ревизий файлов решения (а также текущих даты/времени) и записывает их в файл Version.hpp.</li>
+<li>Перед построением .exe или .dll проекта генерирует для них файл version.rc, содержащий ссылку на общий файл version.rc (это для того, чтобы собранные бинарники содержали текущую версию решения) и подключает его к проекту.</li>
 </ul>
-<p>Все классы команд должны соответствовать следующим требованиям:</p><ul>
-<li>Шаблоны, принимающие в качестве параметра конструктора указатель на класс используемой точки подключения и передавать его далее, всем классам, которым он потребуется.</li>
-<li>Все содержащиеся в проекте классы должны быть универсальными и не зависеть от конкретной IDE.</li>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Расположение файла Version.hpp решения указывается в настройках программы.</li>
+<li>Обрабатываются только .exe и .dll проекты.</li>
+<li>Тестовые проекты игнорируются.</li>
 </ul>
-<p>Страница проекта: <a class="el" href="a00025.html">Проект ConnectionCommands</a></p>
-<h2>Раздел Useful Commands </h2>
-<p>Раздел содержит классы команд, которые будут выполняться при выборе соответствующей им строки меню.</p>
-<p>Страница проекта: <a class="el" href="a00038.html">Раздел UsefulCommands</a></p>
-<h2>Раздел Utilities </h2>
-<p>Раздел вспомогательных классов, которые используются в других разделах решения.</p>
-<p>Страница раздела: <a class="el" href="a00051.html">Раздел Utilities</a></p>
-<h2>Tools </h2>
-<p>Содержит проекты утилит, которые вызываются командами меню.</p>
-<p>Описание раздела <a class="el" href="a00026.html">Утилиты</a> </p>
+</dd></dl>
+<p><a class="el" href="a00025.html">Требования модуля Version</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:13. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00011.html">Connection Points</a></li><li class="navelem"><a class="el" href="a00014.html">Visual Studio</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

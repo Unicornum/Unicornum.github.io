@@ -1,5 +1,5 @@
 var a00310 =
 [
-    [ "operator[]", "a00310.html#a83bd33be7f97dff72c030d7f612a9688", null ],
-    [ "operator[]", "a00310.html#a16022abff37528a4226be0f9d6be91b7", null ]
+    [ "TaskPanelDept", "a00310.html#ad8957a14dc0d1211c3e97322257a6a6f", null ],
+    [ "TaskPanelDept", "a00310.html#ad64745638c5972d5cbf3b473c117e816", null ]
 ];

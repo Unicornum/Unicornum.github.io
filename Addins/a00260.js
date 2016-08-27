@@ -1,5 +1,6 @@
 var a00260 =
 [
-    [ "GetCaption", "a00260.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
-    [ "GetId", "a00260.html#a58be1ff4609162de563288f25c25b8ea", null ]
+    [ "Groups", "a00260.html#a5e81145a5fcdf590752cb52b753e185f", null ],
+    [ "IsInvalidRegex", "a00260.html#ab125412a0bd7cfe6eec463b740827942", null ],
+    [ "Result", "a00260.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
 ];

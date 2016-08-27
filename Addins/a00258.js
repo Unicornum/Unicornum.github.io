@@ -1,6 +1,6 @@
 var a00258 =
 [
-    [ "GetCaption", "a00258.html#a42991b73ff1a1740ecdb5fb3c1ded860", null ],
-    [ "GetId", "a00258.html#a15c7436b047a92eec25dda37d67eb89a", null ],
-    [ "IsEnabled", "a00258.html#a411f5e1d9fcc9fc1a481a36d29b02edb", null ]
+    [ "ToCommandLine", "a00258.html#ae2fb4d077ae8d67751e678c9ea2473d6", null ],
+    [ "ToLog", "a00258.html#a13578a09c2e689167fe7aa0121fbda80", null ],
+    [ "ToString", "a00258.html#a927d4e5e7da7613622258a5c3f5c7f7f", null ]
 ];

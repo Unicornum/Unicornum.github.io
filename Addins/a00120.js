@@ -1,5 +1,7 @@
 var a00120 =
 [
-    [ "AddPopup", "a00120.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
-    [ "GetCount", "a00120.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ]
+    [ "ProcessingInfo", "a00260.html", "a00260" ],
+    [ "Dump", "a00120.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
+    [ "ProcessingResults", "a00120.html#a269a4595d146ddae5e2f2d12637822a0", null ],
+    [ "String", "a00120.html#a757d3e341008a41c15c16a180ca27a0c", null ]
 ];

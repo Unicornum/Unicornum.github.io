@@ -1,4 +1,5 @@
 var a00155 =
 [
-    [ "ForClassUnderCursorExistTestProject", "a00155.html#a1914cae82f2e56d5c0c1483a05d854c0", null ]
+    [ "Doxygen", "a00155.html#a218059ce02f976e8c699b918e6da3534", null ],
+    [ "GetValues", "a00155.html#a521c08b673df10e5d787d26a787163ad", null ]
 ];

@@ -1,7 +1,7 @@
 var a00288 =
 [
-    [ "GetCount", "a00288.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
-    [ "GetItem", "a00288.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
-    [ "LoadFromFile", "a00288.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
-    [ "Remove", "a00288.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
+    [ "SolutionDevelopmentInfo", "a00288.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
+    [ "GetInfo", "a00288.html#a61bd18745090e834f86393cbd0ed38fe", null ],
+    [ "Save", "a00288.html#ad88fc0ffb5ff2b2ac775b9861ecd2b9a", null ],
+    [ "UpdateTime", "a00288.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
 ];

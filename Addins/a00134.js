@@ -1,9 +1,6 @@
 var a00134 =
 [
-    [ "Platform", "a00273.html", "a00273" ],
-    [ "Quick", "a00294.html", null ],
-    [ "Standart", "a00315.html", null ],
-    [ "CppCheck", "a00134.html#a134da6a575e7d70f51d2de7332b461fe", null ],
-    [ "Check", "a00134.html#adc469aac4a6f9ccc91ea6dd754de90ac", null ],
-    [ "GetLogProgress", "a00134.html#a25281b25adf41f6dd46387f38b68703f", null ]
+    [ "AddVersionData", "a00134.html#ab3ca0f779fe4dfc4ab250a0561c72af7", null ],
+    [ "UpdateCopyrightYear", "a00134.html#af819ea33c04761393ed44c212ba0ae33", null ],
+    [ "UpdateVersion", "a00134.html#a94fb71da43515d70e9d93b813ffc9339", null ]
 ];

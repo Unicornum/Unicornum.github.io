@@ -1,4 +1,5 @@
 var a00235 =
 [
-    [ "operator=", "a00235.html#a17780b4769971be6e974544f47de2085", null ]
+    [ "DoSimple", "a00235.html#a901b4216190e2bcf77c84e9fd829ca17", null ],
+    [ "DoUsingProxy", "a00235.html#a28e4eba8bc68f2db38b25624f4b52532", null ]
 ];

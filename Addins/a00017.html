@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Требования модуля Properties</title>
+<title>Addins: MainUI</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -102,22 +102,27 @@ $(document).ready(function(){initNavTree('a00017.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Требования модуля <a class="el" href="a00284.html" title="Класс входит в Проект Properties   Главный класс модуля Properties. ">Properties</a> </div>  </div>
+<div class="title">MainUI </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Надстройка, подключающая всем проектам решения общий файл .props.</p><ul>
-<li> <input type="checkbox" checked disabled>  Путь к общему файлу свойств берется из настроек.</li>
-<li> <input type="checkbox" checked disabled>  При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
-<li> <input type="checkbox" checked disabled>  При отсутствии файла свойств у проекта он должен подключаться.</li>
-<li> <input type="checkbox" disabled>  При удалении проекта из решения, общий файл свойств должен отключаться от проекта. </li>
+<div class="textblock"><h1><a class="anchor" id="sCpVsMainUiBrief"></a>
+Введение</h1>
+<p>Проект dll, содержащей ресурсы, необходимые для работы главного модуля VSPackage.</p>
+<h1><a class="anchor" id="sCpVsMainUiDetails"></a>
+Подробное описание проекта</h1>
+<p>Содержит:</p><ul>
+<li>Описание структуры меню/команд надстройки.</li>
+<li>Иконки команд надстройки.</li>
 </ul>
+<h2>Компиляция .vsct файла </h2>
+<p>VSTC компилятор по умолчанию не получает никаких определений препроцессора, поэтому в свойствах файла PackageCommands.vsct настроена 'ручная' компиляция для корректной раздельной работы RELEASE и DEBUG версий расширения. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00007.html">Исходные требования</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:12. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00011.html">Connection Points</a></li><li class="navelem"><a class="el" href="a00014.html">Visual Studio</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

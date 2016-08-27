@@ -1,5 +1,5 @@
 var a00238 =
 [
-    [ "Main", "a00238.html#a41fd0853ce2d4dcd5c6c5096352e37a3", null ],
-    [ "Set", "a00238.html#a7bb75640e0313e7482d8df39ef523fa2", null ]
+    [ "GetCaption", "a00238.html#a85bf15cdc6c504c9e960b2b206dcc32a", null ],
+    [ "GetId", "a00238.html#ad6a934a38763c92ea29fb69d3168e572", null ]
 ];

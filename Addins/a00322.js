@@ -1,5 +1,5 @@
 var a00322 =
 [
-    [ "TaskPanel", "a00322.html#ab7e0cf73a171c8627313d05b9b54bcc0", null ],
-    [ "TaskPanel", "a00322.html#a4e35dc30d619d70cf5426d1cbdbe6504", null ]
+    [ "DoActivate", "a00322.html#abace35cff7474a0f6304a3cd55b03ff4", null ],
+    [ "DoCancel", "a00322.html#adee960db7a0c2baf758ed0959a59c676", null ]
 ];

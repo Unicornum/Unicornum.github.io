@@ -1,6 +1,14 @@
 var a00125 =
 [
-    [ "Add", "a00125.html#a89618778c2a8b30d4a8b0b743acd667d", null ],
-    [ "Clear", "a00125.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
-    [ "operator[]", "a00125.html#aceaa3c748e8bce0117a9f6203c1b0af0", null ]
+    [ "AllowedFlags", "a00125.html#a1aff9703315ef9c956efe99cb62bf994", [
+      [ "Editable", "a00125.html#a1aff9703315ef9c956efe99cb62bf994ab296339eb0880b0ce95e5082f6f63c49", null ],
+      [ "CreateChild", "a00125.html#a1aff9703315ef9c956efe99cb62bf994a37ea3f85969618b25d9a8a0f69cdaab2", null ],
+      [ "Completed", "a00125.html#a1aff9703315ef9c956efe99cb62bf994a3a004d40b90d1e25db7faa05ed115045", null ],
+      [ "BlockCompleted", "a00125.html#a1aff9703315ef9c956efe99cb62bf994a643b4b773985c35190cf993d5c455bc8", null ]
+    ] ],
+    [ "CreateId", "a00125.html#ae7cf60983cc23031c7397d47b8ae7fce", null ],
+    [ "GetId", "a00125.html#a5af54aba6054ade4288df300b4747c48", null ],
+    [ "Is", "a00125.html#a1e27c0b5db8bd70adf5298e50e47dc56", null ],
+    [ "To", "a00125.html#aff285a7e21a4c497e71c8a61c4a37d6a", null ],
+    [ "To", "a00125.html#a691262cf2fe5bef7f91cfc1e90d442f5", null ]
 ];

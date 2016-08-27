@@ -1,6 +1,8 @@
 var a00127 =
 [
-    [ "GetCaption", "a00127.html#a6d00d75983e24e3816bd5ca377139746", null ],
-    [ "GetId", "a00127.html#a340d8aeea5a9b3028e2030fda573df43", null ],
-    [ "IsEnabled", "a00127.html#a3b921ee882fc84f1e68ad73a4ad345a3", null ]
+    [ "DevelopmentInfo", "a00127.html#a5ac298e8a44deed591d98ad58817e30e", null ],
+    [ "GetTime", "a00127.html#aa800105019a059d761e719d62cfb984e", null ],
+    [ "ReadFrom", "a00127.html#a37f24adf400bf01b396c7ba7cfae56d4", null ],
+    [ "UpdateTime", "a00127.html#a3d8e7bb0dea6850d7a22ebad00c53793", null ],
+    [ "WriteTo", "a00127.html#ad5956ef6784bd16e944e9959aef591f9", null ]
 ];

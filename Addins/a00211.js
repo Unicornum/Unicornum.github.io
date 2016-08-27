@@ -1,6 +1,6 @@
 var a00211 =
 [
-    [ "GetCaption", "a00211.html#aeadc45279201876deba468080f265e90", null ],
-    [ "GetId", "a00211.html#aab7804b24b62b04a9529f5cdf2ce21b4", null ],
-    [ "IsEnabled", "a00211.html#adf7ae5ef3739097507185cd921544dfd", null ]
+    [ "Initialyze", "a00211.html#a225ddd8e35b2e40a8810acab3754590a", null ],
+    [ "SetText", "a00211.html#af3300ee5c79838bd9c650935395161ae", null ],
+    [ "SetType", "a00211.html#a6ea09ba6ad7e48cdc12b87d958796bdc", null ]
 ];

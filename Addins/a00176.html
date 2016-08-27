@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс view::DraggingTaskPanel</title>
+<title>Addins: Класс wx::ICancelControl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -110,42 +110,66 @@ $(document).ready(function(){initNavTree('a00176.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02025.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a03457.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс view::DraggingTaskPanel<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01436.html">CoreToolsProjectTasks</a> &raquo; <a class="el" href="a01441.html">View</a></div></div>  </div>
+<div class="title">Класс wx::ICancelControl<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a02256.html">Core</a> &raquo; <a class="el" href="a02272.html">Tools</a> &raquo; <a class="el" href="a02274.html">ProjectTasks</a> &raquo; <a class="el" href="a02266.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Класс реализации логики перетаскивания панелей задач мышью.  
+<p>Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс элементов управления, для которых требуется поддержка отмены изменений в панели редактирования задачи.  
  <a href="a00176.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00796_source.html">DraggingTaskPanel.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01399_source.html">ICancelControl.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса view::DraggingTaskPanel:</div>
+Граф наследования:wx::ICancelControl:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02026.png" border="0" usemap="#view_1_1_dragging_task_panel_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a03458.png" border="0" usemap="#wx_1_1_i_cancel_control_inherit__map" alt="Inheritance graph"/></div>
+<map name="wx_1_1_i_cancel_control_inherit__map" id="wx_1_1_i_cancel_control_inherit__map">
+<area shape="rect" id="node3" href="a00091.html" title="Класс входит в ProjectTasks &#160;&#160;Класс CheckBox&#39;a с поддержкой отмены изменений. " alt="" coords="5,147,141,283"/>
+<area shape="rect" id="node5" href="a00096.html" title="Класс входит в ProjectTasks &#160;&#160;Класс ComboBox&#39;a с автоматическим заполнением элементов выпадающего спи..." alt="" coords="166,147,321,283"/>
+<area shape="rect" id="node7" href="a00322.html" title="Класс входит в ProjectTasks &#160;&#160;Класс для текстового элемента управления с поддержкой отмены изменений..." alt="" coords="347,147,485,283"/>
+</map>
 </div>
+<div class="dynheader">
+Граф связей класса wx::ICancelControl:</div>
+<div class="dyncontent">
+<div class="center"><img src="a03459.png" border="0" usemap="#wx_1_1_i_cancel_control_coll__map" alt="Collaboration graph"/></div>
+<map name="wx_1_1_i_cancel_control_coll__map" id="wx_1_1_i_cancel_control_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a29857a47b0b95970ae34c7b42b0f5a20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29857a47b0b95970ae34c7b42b0f5a20"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00176.html#a29857a47b0b95970ae34c7b42b0f5a20">DoActivate</a> (void)=0</td></tr>
+<tr class="memdesc:a29857a47b0b95970ae34c7b42b0f5a20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при отображении панели редактирования задачи (в ней нужно запомнить текущее состояние элемента управления). <br /></td></tr>
+<tr class="separator:a29857a47b0b95970ae34c7b42b0f5a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287151415838c3601525537451126f7e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a287151415838c3601525537451126f7e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00176.html#a287151415838c3601525537451126f7e">DoCancel</a> (void)=0</td></tr>
+<tr class="memdesc:a287151415838c3601525537451126f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при закрытии панели редактирования задачи кнопкой "Отменить" (в ней следует вернуть элемент управления в состояние, в котором он находился на момент вызова функции <a class="el" href="a00176.html#a29857a47b0b95970ae34c7b42b0f5a20" title="Функция вызывается при отображении панели редактирования задачи (в ней нужно запомнить текущее состоя...">DoActivate()</a>). <br /></td></tr>
+<tr class="separator:a287151415838c3601525537451126f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00030.html">Проект ProjectTasks</a> <br />
- Класс реализации логики перетаскивания панелей задач мышью. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс элементов управления, для которых требуется поддержка отмены изменений в панели редактирования задачи. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>10 Апрель 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>24 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/<a class="el" href="a00796_source.html">DraggingTaskPanel.hpp</a></li>
-<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/DraggingTaskPanel.cpp</li>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/wxWidgets/<a class="el" href="a01399_source.html">ICancelControl.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a00176.html">DraggingTaskPanel</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:15. Создано системой
+    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00176.html">ICancelControl</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

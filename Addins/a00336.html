@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::useful_commands::vs::testing::TestClassBlank</title>
+<title>Addins: Класс UsingEvents</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.3.2 Revision: 4479 Architecture: x86.64 Build: 13:36 06 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -111,115 +111,178 @@ $(document).ready(function(){initNavTree('a00336.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01832.html">Полный список членов класса</a>  </div>
+<a href="a02728.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::useful_commands::vs::testing::TestClassBlank<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01429.html">Core</a> &raquo; <a class="el" href="a01450.html">UsefulCommands</a> &raquo; <a class="el" href="a01461.html">Visual Studio</a> &raquo; <a class="el" href="a01458.html">Testing</a></div></div>  </div>
+<div class="title">Класс UsingEvents<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00048.html">Проект Testing</a> <br />
- Класс для создания/подключения тестового файла класса.  
+<p>Класс входит в <a class="el" href="a00016.html">Main</a> <br />
+ Класс, содержащий функции, которые будут вызываться при возникновении событий DTE.  
  <a href="a00336.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01008_source.html">TestClassBlank.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01185_source.html">UsingEvents.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:DTEEvents_t, SelectionEvents_t, TextEditorEvents_t, SolutionEvents_t и BuildEvents_t.</p>
 <div class="dynheader">
-Граф связей класса core::useful_commands::vs::testing::TestClassBlank:</div>
+Граф связей класса UsingEvents:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01833.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1testing_1_1_test_class_blank_coll__map" alt="Collaboration graph"/></div>
+<div class="center"><img src="a02729.png" border="0" usemap="#_using_events_coll__map" alt="Collaboration graph"/></div>
+<map name="_using_events_coll__map" id="_using_events_coll__map">
+<area shape="rect" id="node2" href="a00166.html" title="{connection_points::\lExtensions\&lt; Dte_t \&gt;\n|&#45; m_Extensions\l|+ GetData()\l+ Extensions()\l&#45; FRIEND_TEST()\l}" alt="" coords="113,643,271,765"/>
+<area shape="rect" id="node4" href="a00182.html" title="{connection_points::\lIExtensions\&lt; Dte_t \&gt;\n|+ OnConnection\l+ OnDisconnection\l+ OnSelectionChanged\l+ OnTextChanged\l+ OnAfterClosingSolution\l+ OnProjectAdded\l+ OnBeforeBuildStart\l+ OnBeforeProjConfBuildStart\l+ OnQueryCommandStatus\l+ OnQueryCommandCaption\l+ OnExecuteCommand\l|+ GetData()\l+ ~IExtensions()\l}" alt="" coords="5,311,219,564"/>
+<area shape="rect" id="node6" href="a00158.html" title="Класс входит в Ide &#160;&#160;Класс&#45;обертка для EnvDTE80::DTE2. " alt="" coords="243,296,393,579"/>
+<area shape="rect" id="node8" href="a00085.html" title="{wrappers::vs::Base\l\&lt; EnvDTE80::DTE2 \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="237,6,400,245"/>
+</map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:aba8ac09b2b6bde64167dabb5616984d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#aba8ac09b2b6bde64167dabb5616984d1">Create</a> (const <a class="el" href="a00177.html">DTE_t</a> &amp;, const <a class="el" href="a00308.html">SolutionFolder_t</a> &amp;) const </td></tr>
-<tr class="memdesc:aba8ac09b2b6bde64167dabb5616984d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создание тестового файла класса.  <a href="#aba8ac09b2b6bde64167dabb5616984d1">Подробнее...</a><br /></td></tr>
-<tr class="separator:aba8ac09b2b6bde64167dabb5616984d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c46dcb2e8de0f1939a30c41f0b3b34d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c46dcb2e8de0f1939a30c41f0b3b34d"></a>
+HRESULT __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a9c46dcb2e8de0f1939a30c41f0b3b34d">OnStartupComplete</a> (void)</td></tr>
+<tr class="memdesc:a9c46dcb2e8de0f1939a30c41f0b3b34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при завершении загрузки Visual Studio. <br /></td></tr>
+<tr class="separator:a9c46dcb2e8de0f1939a30c41f0b3b34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f3f4bee92ff601a27a1d715d3bdafc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71f3f4bee92ff601a27a1d715d3bdafc"></a>
+HRESULT __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a71f3f4bee92ff601a27a1d715d3bdafc">OnBeginShutdown</a> (void)</td></tr>
+<tr class="memdesc:a71f3f4bee92ff601a27a1d715d3bdafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается перед началом завершения работы Visual Studio. <br /></td></tr>
+<tr class="separator:a71f3f4bee92ff601a27a1d715d3bdafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ffa70983dbd36e4534d677927d57ae1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ffa70983dbd36e4534d677927d57ae1"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a5ffa70983dbd36e4534d677927d57ae1">AfterClosingSolution</a> (void)</td></tr>
+<tr class="memdesc:a5ffa70983dbd36e4534d677927d57ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается сразу после закрытия решения. <br /></td></tr>
+<tr class="separator:a5ffa70983dbd36e4534d677927d57ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c5e9baed00f728db59778694097af1"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#ab1c5e9baed00f728db59778694097af1">ProjectAdded</a> (EnvDTE::Project *)</td></tr>
+<tr class="memdesc:ab1c5e9baed00f728db59778694097af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается после загрузки проекта.  <a href="#ab1c5e9baed00f728db59778694097af1">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab1c5e9baed00f728db59778694097af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32a14c4d689c2b9f4f998a3fe6329d17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32a14c4d689c2b9f4f998a3fe6329d17"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a32a14c4d689c2b9f4f998a3fe6329d17">BeforeBuildStart</a> (EnvDTE::vsBuildScope, EnvDTE::vsBuildAction)</td></tr>
+<tr class="memdesc:a32a14c4d689c2b9f4f998a3fe6329d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается один раз в начале построения группы проектов. <br /></td></tr>
+<tr class="separator:a32a14c4d689c2b9f4f998a3fe6329d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72ba09d681dd8ed7a050e3523ac38786"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a72ba09d681dd8ed7a050e3523ac38786"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a72ba09d681dd8ed7a050e3523ac38786">AfterBuildFinish</a> (EnvDTE::vsBuildScope, EnvDTE::vsBuildAction)</td></tr>
+<tr class="memdesc:a72ba09d681dd8ed7a050e3523ac38786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается один раз в конце построения группы проектов. <br /></td></tr>
+<tr class="separator:a72ba09d681dd8ed7a050e3523ac38786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7008d9003ecc5e6695aae5f0e1da6713"><td class="memItemLeft" align="right" valign="top">void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a7008d9003ecc5e6695aae5f0e1da6713">BeforeProjConfBuildStart</a> (BSTR, BSTR, BSTR, BSTR)</td></tr>
+<tr class="memdesc:a7008d9003ecc5e6695aae5f0e1da6713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается перед построением каждого проекта.  <a href="#a7008d9003ecc5e6695aae5f0e1da6713">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7008d9003ecc5e6695aae5f0e1da6713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a0512ccd82f58c2be5e74446f5ba1f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a0512ccd82f58c2be5e74446f5ba1f2"></a>
+void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a8a0512ccd82f58c2be5e74446f5ba1f2">BuildProjConfFinish</a> (BSTR, BSTR, BSTR, BSTR, bool)</td></tr>
+<tr class="memdesc:a8a0512ccd82f58c2be5e74446f5ba1f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается после завершения построения каждого проекта. <br /></td></tr>
+<tr class="separator:a8a0512ccd82f58c2be5e74446f5ba1f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a878e54abf002372c5845f4be258e0581"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a878e54abf002372c5845f4be258e0581"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#a878e54abf002372c5845f4be258e0581">QueryCommandStatus</a> (DWORD)</td></tr>
+<tr class="memdesc:a878e54abf002372c5845f4be258e0581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при запросе состояния элемента меню, относящегося к этой надстройке. <br /></td></tr>
+<tr class="separator:a878e54abf002372c5845f4be258e0581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb5f10646c298558a923098a0e8826f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb5f10646c298558a923098a0e8826f9"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#afb5f10646c298558a923098a0e8826f9">QueryCommandCaption</a> (DWORD)</td></tr>
+<tr class="memdesc:afb5f10646c298558a923098a0e8826f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при запросе текста элемента меню, относящегося к этой надстройке. <br /></td></tr>
+<tr class="separator:afb5f10646c298558a923098a0e8826f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58ac75cf08c5d11f4a1f994cc8e1e76"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af58ac75cf08c5d11f4a1f994cc8e1e76"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html#af58ac75cf08c5d11f4a1f994cc8e1e76">ExecuteCommand</a> (DWORD)</td></tr>
+<tr class="memdesc:af58ac75cf08c5d11f4a1f994cc8e1e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при выборе элемента меню, относящегося к этой надстройке. <br /></td></tr>
+<tr class="separator:af58ac75cf08c5d11f4a1f994cc8e1e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00048.html">Проект Testing</a> <br />
- Класс для создания/подключения тестового файла класса. </p>
-<ul>
-<li>В конструктор передается объект, содержащий информацию о классе, для которого будет создан файл теста.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00016.html">Main</a> <br />
+ Класс, содержащий функции, которые будут вызываться при возникновении событий DTE. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>16 Май 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>15 Февраль 2016 <br />
+ 04 Май 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="aba8ac09b2b6bde64167dabb5616984d1"></a>
+<a class="anchor" id="a7008d9003ecc5e6695aae5f0e1da6713"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void TestClassBlank::Create </td>
+          <td class="memname">void __stdcall UsingEvents::BeforeProjConfBuildStart </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00177.html">DTE_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_DTE</em>, </td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>_UniqueProjectName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00308.html">SolutionFolder_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_MainProjectFolder</em>&#160;</td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>_ProjectConfig</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>_Platform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BSTR&#160;</td>
+          <td class="paramname"><em>_SolutionConfig</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Создание тестового файла класса. </p>
-<ul>
-<li>Тестовый файл будет подключен к проекту тестирования проекта (в папку/фильтр 'Tests\имя_класса').</li>
-<li>Тестовый файл будет подключен к проекту тестирования класса.</li>
-<li>Тестовый файл будет открыт в VisualStudio (станет активным документом).</li>
-</ul>
+<p>Функция вызывается перед построением каждого проекта. </p>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_DTE</td><td>Объект среды разработки. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_MainProjectFolder</td><td>Папка решения, в которой располагается проект, которому принадлежит класс, для которого создается тестовый файл.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_UniqueProjectName</td><td>Путь к файлу проекта, который будет строится, относительно папки решения. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ProjectConfig</td><td>Конфигурация проекта (Debug или Release). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Platform</td><td>Платформа проекта (Win32 или Win64). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_SolutionConfig</td><td>Активная конфигурация решения (например, 'Debug|Win32'). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00336_aba8ac09b2b6bde64167dabb5616984d1_cgraph.png" border="0" usemap="#a00336_aba8ac09b2b6bde64167dabb5616984d1_cgraph" alt=""/></div>
-<map name="a00336_aba8ac09b2b6bde64167dabb5616984d1_cgraph" id="a00336_aba8ac09b2b6bde64167dabb5616984d1_cgraph">
-<area shape="rect" id="node3" href="a00105.html#af8bd20844e7332406932787c9b5b852d" title="Имя объекта. " alt="" coords="323,5,475,46"/>
-<area shape="rect" id="node5" href="a00362.html#ab059f2bea33c6a0f324c8a7f73f91458" title="Описание функции см. в VCFiles. " alt="" coords="273,71,525,97"/>
-<area shape="rect" id="node9" href="a00177.html#a470bd161e0250124be535f7ff972404d" title="Открыть указанный файл " alt="" coords="319,122,478,163"/>
-<area shape="rect" id="node7" href="a00357.html#a9cb790c03dc1203593affed2333366b0" title="Функция для добавления файла. " alt="" coords="573,71,779,97"/>
-</map>
 </div>
-</p>
+</div>
+<a class="anchor" id="ab1c5e9baed00f728db59778694097af1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void __stdcall UsingEvents::ProjectAdded </td>
+          <td>(</td>
+          <td class="paramtype">EnvDTE::Project *&#160;</td>
+          <td class="paramname"><em>_pProject</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция вызывается после загрузки проекта. </p>
+<p>Вызывается:</p><ul>
+<li>При создании нового проекта.</li>
+<li>При подключении существующего проекта (вручную или надстройкой).</li>
+<li>При загрузке проектов для папки решения.</li>
+<li>VS2013+: для каждого проекта при загрузке решения.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pProject</td><td>Указатель на объект проекта, который загружается. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Testing/Testing/<a class="el" href="a01008_source.html">TestClassBlank.hpp</a></li>
-<li>Solution/Solution/Core/UsefulCommands/VisualStudio/Testing/Testing/TestClassBlank.cpp</li>
+<li>Solution/Solution/ConnectionPoints/VisualStudio/Main/Main/<a class="el" href="a01185_source.html">UsingEvents.hpp</a></li>
+<li>Solution/Solution/ConnectionPoints/VisualStudio/Main/Main/UsingEvents.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>testing</b></li><li class="navelem"><a class="el" href="a00336.html">TestClassBlank</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 6 Авг 2016 13:37:14. Создано системой
+    <li class="navelem"><a class="el" href="a00336.html">UsingEvents</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

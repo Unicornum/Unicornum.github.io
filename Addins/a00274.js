@@ -1,5 +1,7 @@
 var a00274 =
 [
-    [ "GetLogProgress", "a00274.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
-    [ "Process", "a00274.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
+    [ "GetCount", "a00274.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
+    [ "GetItem", "a00274.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
+    [ "LoadFromFile", "a00274.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
+    [ "Remove", "a00274.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
 ];

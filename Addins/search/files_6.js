@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['macros_2ehpp',['Macros.hpp',['../a00940.html',1,'']]],
-  ['macros_2einside_2ehpp',['Macros.inside.hpp',['../a00941.html',1,'']]],
-  ['macros_2emock_2ehpp',['Macros.mock.hpp',['../a00942.html',1,'']]]
+  ['generatesimplemockclass_5ftest_2ecpp',['GenerateSimpleMockClass_test.cpp',['../a01568.html',1,'']]],
+  ['generatesolutiondoc_5ftest_2ecpp',['GenerateSolutionDoc_test.cpp',['../a01569.html',1,'']]],
+  ['generateusingproxymockclass_5ftest_2ecpp',['GenerateUsingProxyMockClass_test.cpp',['../a01570.html',1,'']]]
 ];

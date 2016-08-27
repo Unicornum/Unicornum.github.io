@@ -1,6 +1,7 @@
 var a00129 =
 [
-    [ "GetName", "a00129.html#ada1d4821134087994c4b47174d4a0dc8", null ],
-    [ "GetType", "a00129.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
-    [ "PROPERTY_GET", "a00129.html#a463ae15d09a10d7d00d01e96400d7437", null ]
+    [ "Diagram", "a00129.html#af091b9b2c247243c974efba350e3302f", null ],
+    [ "DrawBackground", "a00129.html#a632f915c09ebff2680225c31de47e208", null ],
+    [ "GetMaxTime", "a00129.html#a7c8ae28aaacfc093878aa1a620aad6dc", null ],
+    [ "GetRect", "a00129.html#ac2776e5e5eb06d3933ec4879d23ae0d2", null ]
 ];

@@ -10,6 +10,6 @@ var dir_68c243c7ca65f1e8337d9c44e9fb488c =
     [ "Testing", "dir_310766a7995957265f686259d0a620ea.html", "dir_310766a7995957265f686259d0a620ea" ],
     [ "Utilities", "dir_3304bc0edd48e3c9939229e3c6ccb5b0.html", "dir_3304bc0edd48e3c9939229e3c6ccb5b0" ],
     [ "Version", "dir_1b50ed21efe638189dc3bf0bc7d3decc.html", "dir_1b50ed21efe638189dc3bf0bc7d3decc" ],
-    [ "VisualStudio.hpp", "a00649.html", null ],
-    [ "VisualStudio.inside.hpp", "a01045.html", null ]
+    [ "VisualStudio.hpp", "a01230.html", null ],
+    [ "VisualStudio.inside.hpp", "a01732.html", null ]
 ];

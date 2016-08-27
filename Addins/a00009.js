@@ -5,7 +5,7 @@ var a00009 =
     ] ],
     [ "Исходные требования", "a00007.html", "a00007" ],
     [ "Build", "a00003.html", "a00003" ],
-    [ "ConnectionPoints", "a00010.html", "a00010" ],
-    [ "Core", "a00024.html", "a00024" ],
-    [ "Wrappers", "a00066.html", "a00066" ]
+    [ "Connection Points", "a00011.html", "a00011" ],
+    [ "Core", "a00026.html", "a00026" ],
+    [ "Wrappers", "a00057.html", "a00057" ]
 ];
