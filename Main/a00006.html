@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnicornumVerum: Документация</title>
+<title>UnicornumVerum: Сборка Boost для Android</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,9 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Главная</span></a></li>
-      <li><a href="a00005.html"><span>Релизы</span></a></li>
-      <li><a href="a00006.html"><span>Документация</span></a></li>
-      <li><a href="a00007.html"><span>Обо&#160;мне</span></a></li>
+      <li><a href="a00007.html"><span>Релизы</span></a></li>
+      <li><a href="a00008.html"><span>Документация</span></a></li>
+      <li><a href="a00009.html"><span>Обо&#160;мне</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -75,28 +75,44 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="a00005.html">Разработка для Android на С++</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Документация </div>  </div>
+<div class="title">Сборка Boost для Android </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Страница со ссылками на документацию проектов, находящихся в разработке.</p>
-<h1>Документация </h1>
-<h2>Alicorn </h2>
-<p>Набор проектов универсальных классов, которые могут быть использованы в различных проектах. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/Alicorn/index.html" title="Alicorn">Alicorn</a></p>
-<h2>Addins </h2>
-<p>Набор надстроек для IDE, предназначенных для автоматизации рутинных операций при работе с кодом. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/Addins/index.html" title="Addins">Addins</a></p>
-<h2>Разработка для Android на С++ </h2>
-<p><a class="el" href="a00004.html">Разработка для Android на С++</a> </p>
+<div class="textblock"><h2>Сборка при помощи Clang </h2>
+<ul>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=.\stage\lib\libboost.a</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android --sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm -I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include -I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -std=c++1y -frtti -fexceptions -O3 -DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -g0 -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%\*.o</div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась для:<ul>
+<li>Android NDK r12.</li>
+<li>Boost 1.61.</li>
+</ul>
+</dd></dl>
+<h2>Сборка при помощи gcc </h2>
+<ul>
+<li>В папке $(BoostRoot)/tools/build/src создать файл с именем user-config.jam, содержащий (заменить путь к Android NDK при необходимости): <div class="fragment"><div class="line">ANDROID_NDK = d:/android/ndk ;</div><div class="line"></div><div class="line"><span class="keyword">using</span> gcc : android : $(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :</div><div class="line">&lt;compileflags&gt;--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward</div><div class="line">&lt;compileflags&gt;-o</div><div class="line">&lt;compileflags&gt;-xc++-header</div><div class="line">&lt;compileflags&gt;-xc++</div><div class="line">&lt;compileflags&gt;-std=c++1y</div><div class="line">&lt;compileflags&gt;-fexceptions</div><div class="line">&lt;compileflags&gt;-O3</div><div class="line">&lt;compileflags&gt;-DNDEBUG</div><div class="line">&lt;compileflags&gt;-D__ANDROID__</div><div class="line">&lt;compileflags&gt;-D__SOFTFP__</div><div class="line">&lt;compileflags&gt;-D__arm__</div><div class="line">&lt;compileflags&gt;-g2</div><div class="line">&lt;compileflags&gt;-lstdc++</div><div class="line">&lt;compileflags&gt;-D__GLIBC__</div><div class="line">&lt;compileflags&gt;-DBOOST_FILESYSTEM_VERSION=3</div><div class="line">&lt;linkflags&gt;-r<span class="stringliteral">&quot;s&quot;</span></div><div class="line">&lt;archiver&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ar</div><div class="line">&lt;ranlib&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ranlib</div><div class="line">;</div></div><!-- fragment --></li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий: <div class="fragment"><div class="line">b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4</div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась для:<ul>
+<li>Android NDK r12.</li>
+<li>Boost 1.60.</li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Для Boost 1.61 сборка при помощи gcc не работает, b2.exe при запуске просто висит безо всякого видимого результата. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пн 27 Июн 2016 12:31:51. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Ср 31 Авг 2016 16:01:56. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
