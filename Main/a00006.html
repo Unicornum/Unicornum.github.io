@@ -88,10 +88,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <div class="textblock"><h2>Сборка при помощи Clang </h2>
 <ul>
 <li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
-<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=.\stage\lib\libboost.a</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android --sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm -I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include -I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include -I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward -std=c++1y -frtti -fexceptions -O3 -DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -g0 -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%\*.o</div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=./stage/lib/libboost.a</div><div class="line">  </div><div class="line">rmdir bin.v2 /s /q</div><div class="line">rmdir stage /s /q</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/llvm/prebuilt/windows/bin;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin;</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">--without-python ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;--sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-std=c++1y -frtti -fexceptions -fshort-wchar -O3 -g0&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%<span class="comment">/*.o</span></div><div class="line"><span class="comment">  </span></div><div class="line"><span class="comment">* </span></div></div><!-- fragment --> и запустить его на исполнение.</li>
 <li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась для:<ul>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
 <li>Android NDK r12.</li>
 <li>Boost 1.61.</li>
 </ul>
@@ -103,7 +104,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий: <div class="fragment"><div class="line">b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4</div></div><!-- fragment --> и запустить его на исполнение.</li>
 <li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась для:<ul>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
 <li>Android NDK r12.</li>
 <li>Boost 1.60.</li>
 </ul>
@@ -112,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Ср 31 Авг 2016 16:01:56. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Пт 2 Сен 2016 12:52:02. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
