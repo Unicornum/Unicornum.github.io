@@ -1,13 +1,22 @@
 var a01257 =
 [
-    [ "Info", "a00114.html", [
-      [ "Info", "a00114.html#adf1ff51360edbfc0c5d43157a76b540b", null ],
-      [ "Info", "a00114.html#a04be24f54850388719f7e4b7d90473b4", null ],
-      [ "GetStringFile", "a00114.html#aea77ed774da02bbaffc1afba165980d0", null ]
+    [ "WxWidgets", "a01256.html", "a01256" ],
+    [ "AllTestsInfo", "a00042.html", [
+      [ "SetResultRunTests", "a00042.html#a23e9a44b7deda78006db6f424bea2bad", null ]
     ] ],
-    [ "__FILE_VERSION__", "a01257.html#ga85f528db31313a13c1976707ebadcf84", null ],
-    [ "__FILE_VERSION_FULL__", "a01257.html#ga0facd32184b2ec0c57501e7d76ce59ca", null ],
-    [ "__FILE_VERSION_SHORT__", "a01257.html#gaca887abf1bed0f12a99431714940c050", null ],
-    [ "__PRODUCT_VERSION__", "a01257.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09", null ],
-    [ "__PRODUCT_VERSION_FULL__", "a01257.html#ga5e07a654741079583f62167c324ce81a", null ]
+    [ "FailedTestsInfo", "a00081.html", [
+      [ "OnChanged", "a00081.html#a8f31082d1573122757db0572e9100a93", null ],
+      [ "OnPaint", "a00081.html#ad8351ca940eeac53bdbd81672c52db1d", null ],
+      [ "SetResultRunTests", "a00081.html#a8454b3f179b3136728668033f1f56885", null ]
+    ] ],
+    [ "IViewTestingApp", "a00112.html", [
+      [ "SetResultRunTests", "a00112.html#afb624f681dc703c77b48d609bb37aa67", null ]
+    ] ],
+    [ "SummaryInfo", "a00169.html", [
+      [ "SetResultRunTests", "a00169.html#aaf09aaafbcd0e1cc598d03d043efab94", null ]
+    ] ],
+    [ "TestProjectInfo", "a00174.html", [
+      [ "GetResult", "a00174.html#a40370349abcd7e28fd0e7b35dc07f7ca", null ],
+      [ "SetResultRunTests", "a00174.html#a4841d4f1542468358b7e9f7c0ee85e03", null ]
+    ] ]
 ];

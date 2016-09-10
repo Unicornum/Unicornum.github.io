@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс alicorn::logger::MessagePoints</title>
+<title>Libs: Класс alicorn::logger::PathToLogDirectory</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,79 +110,60 @@ $(document).ready(function(){initNavTree('a00141.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01572.html">Полный список членов класса</a>  </div>
+<a href="a01606.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::logger::MessagePoints<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01248.html">Logger</a></div></div>  </div>
+<div class="title">Класс alicorn::logger::PathToLogDirectory<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01245.html">Alicorn</a> &raquo; <a class="el" href="a01279.html">Logger</a> &raquo; <a class="el" href="a01276.html">Config</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00026.html">Проект Logger</a> <br />
- Класс, хранящий список всех мест, в которых использовался логгер.  
+<p>Класс входит в <a class="el" href="a00024.html">Logger</a> <br />
+ Имя папки, в которой будут создаваться файлы журнала.  
  <a href="a00141.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01038_source.html">message-points.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01040_source.html">config-value.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::logger::MessagePoints:</div>
+Граф наследования:alicorn::logger::PathToLogDirectory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01573.png" border="0" usemap="#alicorn_1_1logger_1_1_message_points_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1logger_1_1_message_points_coll__map" id="alicorn_1_1logger_1_1_message_points_coll__map">
+<div class="center"><img src="a01607.png" border="0" usemap="#alicorn_1_1logger_1_1_path_to_log_directory_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1logger_1_1_path_to_log_directory_inherit__map" id="alicorn_1_1logger_1_1_path_to_log_directory_inherit__map">
+<area shape="rect" id="node2" href="a00053.html" title="Класс входит в Logger &#160;&#160;Базовый класс&#45;обертка параметров для передачи их значений конфигуратору..." alt="" coords="5,5,211,141"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса alicorn::logger::PathToLogDirectory:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01608.png" border="0" usemap="#alicorn_1_1logger_1_1_path_to_log_directory_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1logger_1_1_path_to_log_directory_coll__map" id="alicorn_1_1logger_1_1_path_to_log_directory_coll__map">
+<area shape="rect" id="node2" href="a00053.html" title="Класс входит в Logger &#160;&#160;Базовый класс&#45;обертка параметров для передачи их значений конфигуратору..." alt="" coords="18,552,224,688"/>
+<area shape="rect" id="node4" href="a00054.html" title="Класс входит в Logger &#160;&#160;Класс для передачи значения параметра конфигуратору. " alt="" coords="5,411,237,488"/>
+<area shape="rect" id="node6" href="a00166.html" title="Класс входит в Std &#160;&#160;Класс&#45;обертка для строк из стандартной библиотеки. " alt="" coords="51,6,191,333"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a2d614dae166ac30dc577efbde0530be4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00141.html#a2d614dae166ac30dc577efbde0530be4">IsExist</a> (const <a class="el" href="a00140.html">MessageImpl</a> &amp;)</td></tr>
-<tr class="memdesc:a2d614dae166ac30dc577efbde0530be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для проверки того, что такое сообщение уже было в текущей сессии.  <a href="#a2d614dae166ac30dc577efbde0530be4">Подробнее...</a><br /></td></tr>
-<tr class="separator:a2d614dae166ac30dc577efbde0530be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_static_methods_a00053"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00053')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="a00053.html">alicorn::logger::ConfigValue</a></td></tr>
+<tr class="memitem:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a00053"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a1bc3db12e58ae1a9990aabe36e87f524">DoComplete</a> (const ConfigValuePtr_t &amp;)</td></tr>
+<tr class="memdesc:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a00053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#a1bc3db12e58ae1a9990aabe36e87f524">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3d153992034d8ba9ec875981e77cdc inherit pub_static_methods_a00053"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#abc3d153992034d8ba9ec875981e77cdc">DoComplete</a> (const ConfigValuePtr_t &amp;, bool)</td></tr>
+<tr class="memdesc:abc3d153992034d8ba9ec875981e77cdc inherit pub_static_methods_a00053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#abc3d153992034d8ba9ec875981e77cdc">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc3d153992034d8ba9ec875981e77cdc inherit pub_static_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00026.html">Проект Logger</a> <br />
- Класс, хранящий список всех мест, в которых использовался логгер. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 июл 2012 <br />
- 28 Октябрь 2015 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2015 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a2d614dae166ac30dc577efbde0530be4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MessagePoints::IsExist </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a00140.html">MessageImpl</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Message</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция для проверки того, что такое сообщение уже было в текущей сессии. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Message</td><td>Добавляемое сообщение. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/logger/<a class="el" href="a01038_source.html">message-points.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/logger/message-points.cpp</li>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00024.html">Logger</a> <br />
+ Имя папки, в которой будут создаваться файлы журнала. </p>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/<a class="el" href="a01040_source.html">config-value.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/config-value.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a00141.html">MessagePoints</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:18. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a00141.html">PathToLogDirectory</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

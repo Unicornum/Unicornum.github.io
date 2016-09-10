@@ -1,17 +1,17 @@
 var a01245 =
 [
-    [ "ConfigValueImpl", "a00066.html", null ],
-    [ "ConfigValue", "a00065.html", [
-      [ "DoComplete", "a00065.html#a1bc3db12e58ae1a9990aabe36e87f524", null ],
-      [ "DoComplete", "a00065.html#abc3d153992034d8ba9ec875981e77cdc", null ]
-    ] ],
-    [ "StringConfigValue", "a00180.html", null ],
-    [ "IntConfigValue", "a00117.html", null ],
-    [ "ProgramName", "a00155.html", null ],
-    [ "ProgramVersion", "a00156.html", null ],
-    [ "PathToLogDirectory", "a00153.html", null ],
-    [ "MaxLogFiles", "a00135.html", null ],
-    [ "MaxLogSize", "a00136.html", null ],
-    [ "Filter", "a00099.html", null ],
-    [ "AllowReplace", "a00054.html", null ]
+    [ "SettingsApp", "a01246.html", "a01246" ],
+    [ "Converter", "a01258.html", "a01258" ],
+    [ "Document", "a01260.html", "a01260" ],
+    [ "Testing.App", "a01269.html", "a01269" ],
+    [ "Extension", "a01275.html", "a01275" ],
+    [ "Logger", "a01279.html", "a01279" ],
+    [ "Patterns", "a01283.html", "a01283" ],
+    [ "Platform", "a01284.html", null ],
+    [ "Settings", "a01285.html", "a01285" ],
+    [ "System", "a01286.html", "a01286" ],
+    [ "Testing", "a01287.html", "a01287" ],
+    [ "Version", "a01288.html", "a01288" ],
+    [ "Virtual File System", "a01289.html", "a01289" ],
+    [ "Visual Studio", "a01290.html", "a01290" ]
 ];

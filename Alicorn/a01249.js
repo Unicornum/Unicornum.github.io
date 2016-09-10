@@ -1,15 +1,11 @@
 var a01249 =
 [
-    [ "Data", "a00078.html", null ],
-    [ "ICommand", "a00106.html", null ],
-    [ "IManager", "a00109.html", null ],
-    [ "IUndo", "a00122.html", null ],
-    [ "ManagerCommon", "a00132.html", null ],
-    [ "ManagerUndoRedo", "a00133.html", [
-      [ "IsAllowedRedo", "a00133.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
-      [ "IsAllowedUndo", "a00133.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
-      [ "Redo", "a00133.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
-      [ "Undo", "a00133.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
-    ] ],
-    [ "Manager", "a01249.html#ga8e7b735024f7c889ba90c2087f57aa22", null ]
+    [ "IModel", "a00098.html", null ],
+    [ "Model", "a00130.html", [
+      [ "BuildPathToSection", "a00130.html#a0c097f184d0f8008705441c7e8f95f14", null ],
+      [ "GetSection", "a00130.html#a7fa27979818db9ba2e511c5a104fede8", null ],
+      [ "GetSections", "a00130.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
+      [ "GetSettings", "a00130.html#a14217a4b20565c53ba84cd9958354e3a", null ],
+      [ "SetValue", "a00130.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
+    ] ]
 ];

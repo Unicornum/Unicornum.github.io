@@ -1,5 +1,5 @@
 var a00178 =
 [
-    [ "serialize", "a00178.html#a525d06040212293da2c8c3eb7006e561", null ],
-    [ "Tokenize", "a00178.html#a22e59a8ecbd629a830dd32f858286d02", null ]
+    [ "WriteRecord", "a00178.html#a487f860fae5255eaa76c988294a764b7", null ],
+    [ "WriteTitle", "a00178.html#a16e5c27860d379682fe582396e14609d", null ]
 ];

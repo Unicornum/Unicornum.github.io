@@ -1,6 +1,5 @@
 var a00049 =
 [
-    [ "Введение", "a00049.html#sToolsSettingsBrief", null ],
-    [ "Подробное описание проекта", "a00049.html#sToolsSettingsDetails", null ],
-    [ "Список задач проекта", "a00050.html", null ]
+    [ "PostUnpackAction", "a00049.html#ab22389db7d42879173555f7f15541fd1", null ],
+    [ "PrePackAction", "a00049.html#a344093145698c562bf803f14a7005c6b", null ]
 ];

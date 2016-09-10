@@ -1,5 +1,7 @@
 var a00121 =
 [
-    [ "WriteRecord", "a00121.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-    [ "WriteTitle", "a00121.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
+    [ "IsAllowedRedo", "a00121.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
+    [ "IsAllowedUndo", "a00121.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
+    [ "Redo", "a00121.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
+    [ "Undo", "a00121.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
 ];

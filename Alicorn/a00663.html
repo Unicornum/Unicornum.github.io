@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.String/String_test.cpp</title>
+<title>Libs: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.Replace/Replace_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -107,627 +107,64 @@ $(document).ready(function(){initNavTree('a00663.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл String_test.cpp</div>  </div>
+<div class="title">Файл Replace_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;boost\format.hpp&gt;</code><br />
-<code>#include &lt;boost\filesystem.hpp&gt;</code><br />
-<code>#include &lt;boost\archive\text_oarchive.hpp&gt;</code><br />
-<code>#include &lt;boost\archive\text_iarchive.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00972_source.html">alicorn\extension\std\string.forward.hpp</a>&gt;</code><br />
+<code>#include &lt;alicorn\extension\std\regex.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\std\string.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\exception.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для String_test.cpp:</div>
+Граф включаемых заголовочных файлов для Replace_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01324.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_2_string__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_2_string__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_2_string__test_8cpp">
-<area shape="rect" id="node3" href="a00432_source.html" title="stdafx.h" alt="" coords="1778,117,1853,144"/>
-<area shape="rect" id="node9" href="a00909_source.html" title="boost\\filesystem.hpp" alt="" coords="1889,472,2049,499"/>
-<area shape="rect" id="node57" href="a00917_source.html" title="boost\\format.hpp" alt="" coords="2539,117,2676,144"/>
-<area shape="rect" id="node60" href="a00979_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="2503,201,2664,242"/>
-<area shape="rect" id="node78" href="a00972.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="2618,382,2779,423"/>
-<area shape="rect" id="node87" href="a00954_source.html" title="alicorn\\extension\\std\l\\exception.hpp" alt="" coords="3367,382,3528,423"/>
-<area shape="rect" id="node5" href="a01146.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="1076,201,1223,242"/>
-<area shape="rect" id="node51" href="a00620_source.html" title="..\\mock.hpp" alt="" coords="1765,208,1867,235"/>
-<area shape="rect" id="node25" href="a00937.html" title="alicorn\\extension\\google.hpp" alt="" coords="117,299,328,325"/>
-<area shape="rect" id="node31" href="a00776.html" title="alicorn\\requirements.hpp" alt="" coords="870,299,1055,325"/>
-<area shape="rect" id="node47" href="a01016.html" title="alicorn\\testing.hpp" alt="" coords="1261,299,1408,325"/>
-<area shape="rect" id="node11" href="a00914_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="2068,555,2244,581"/>
-<area shape="rect" id="node17" href="a00916_source.html" title="filesystem\\irelative.hpp" alt="" coords="1697,555,1871,581"/>
-<area shape="rect" id="node21" href="a00912_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="1895,547,2043,589"/>
-<area shape="rect" id="node13" href="a00908.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="1984,638,2163,679"/>
-<area shape="rect" id="node15" href="a00906_source.html" title="alicorn\\lib&#45;info\\boost.hpp" alt="" coords="1771,645,1959,672"/>
-<area shape="rect" id="node27" href="a00943.html" title="google\\test.hpp" alt="" coords="5,389,131,416"/>
-<area shape="rect" id="node29" href="a00636_source.html" title="google\\mock.hpp" alt="" coords="155,389,289,416"/>
-<area shape="rect" id="node35" href="a01020.html" title="vs.hpp" alt="" coords="479,389,545,416"/>
-<area shape="rect" id="node37" href="a01127_source.html" title="testing\\id.hpp" alt="" coords="569,389,684,416"/>
-<area shape="rect" id="node39" href="a01126_source.html" title="testing\\friend.hpp" alt="" coords="709,389,848,416"/>
-<area shape="rect" id="node41" href="a01131_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="873,389,1052,416"/>
-<area shape="rect" id="node43" href="a01132_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="1077,389,1261,416"/>
-<area shape="rect" id="node45" href="a01099_source.html" title="system\\dump.hpp" alt="" coords="1287,389,1425,416"/>
-<area shape="rect" id="node49" href="a00960_source.html" title="testing\\proxy.hpp" alt="" coords="1449,389,1588,416"/>
-<area shape="rect" id="node62" href="a00978_source.html" title="string\\string.hpp" alt="" coords="2200,299,2331,325"/>
-<area shape="rect" id="node74" href="a00807_source.html" title="string\\support.hpp" alt="" coords="2512,299,2656,325"/>
-<area shape="rect" id="node81" href="a00919.html" title="alicorn\\extension\\boost\l\\lexical&#45;cast.hpp" alt="" coords="2777,291,2953,333"/>
-<area shape="rect" id="node68" href="a00947_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="2179,389,2351,416"/>
-<area shape="rect" id="node70" href="a00982_source.html" title="using&#45;string.hpp" alt="" coords="2375,389,2504,416"/>
-<area shape="rect" id="node72" href="a00974_source.html" title="prefix.hpp" alt="" coords="2526,472,2612,499"/>
-<area shape="rect" id="node100" href="a00922.html" title="string&#45;cast.hpp" alt="" coords="2803,389,2927,416"/>
-<area shape="rect" id="node89" href="a00958_source.html" title="exception\\proxy.hpp" alt="" coords="3273,472,3431,499"/>
-<area shape="rect" id="node95" href="a00955_source.html" title="exception\\message.hpp" alt="" coords="3455,472,3633,499"/>
-<area shape="rect" id="node93" href="a00956_source.html" title="..\\message.hpp" alt="" coords="3382,555,3505,581"/>
+<div class="center"><img src="a01352.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_replace_2_replace__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_replace_2_replace__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_replace_2_replace__test_8cpp">
+<area shape="rect" id="node3" href="a00432_source.html" title="stdafx.h" alt="" coords="2355,117,2431,144"/>
+<area shape="rect" id="node61" href="a00980_source.html" title="alicorn\\extension\\std\l\\regex.hpp" alt="" coords="2771,110,2932,151"/>
+<area shape="rect" id="node68" href="a00995_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="2859,291,3020,333"/>
+<area shape="rect" id="node5" href="a01170.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="1828,201,1975,242"/>
+<area shape="rect" id="node53" href="a00624_source.html" title="..\\mock.hpp" alt="" coords="2343,208,2444,235"/>
+<area shape="rect" id="node9" href="a00918_source.html" title="boost\\filesystem.hpp" alt="" coords="3435,563,3595,589"/>
+<area shape="rect" id="node21" href="a00954.html" title="alicorn\\extension\\google.hpp" alt="" coords="1997,299,2208,325"/>
+<area shape="rect" id="node27" href="a00779.html" title="alicorn\\requirements.hpp" alt="" coords="690,299,875,325"/>
+<area shape="rect" id="node45" href="a01032.html" title="alicorn\\testing.hpp" alt="" coords="1604,299,1751,325"/>
+<area shape="rect" id="node11" href="a00924_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="3796,645,3972,672"/>
+<area shape="rect" id="node13" href="a00926_source.html" title="filesystem\\irelative.hpp" alt="" coords="3231,645,3405,672"/>
+<area shape="rect" id="node15" href="a00921_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="3623,638,3771,679"/>
+<area shape="rect" id="node17" href="a00930_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="3431,638,3599,679"/>
+<area shape="rect" id="node23" href="a00960.html" title="google\\test.hpp" alt="" coords="2127,389,2253,416"/>
+<area shape="rect" id="node25" href="a00639_source.html" title="google\\mock.hpp" alt="" coords="1969,389,2103,416"/>
+<area shape="rect" id="node35" href="a01036.html" title="vs.hpp" alt="" coords="749,389,816,416"/>
+<area shape="rect" id="node37" href="a01147_source.html" title="testing\\id.hpp" alt="" coords="840,389,955,416"/>
+<area shape="rect" id="node39" href="a01146_source.html" title="testing\\friend.hpp" alt="" coords="979,389,1119,416"/>
+<area shape="rect" id="node41" href="a01151_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="1144,389,1323,416"/>
+<area shape="rect" id="node43" href="a01152_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="5,389,189,416"/>
+<area shape="rect" id="node47" href="a00977_source.html" title="testing\\proxy.hpp" alt="" coords="1533,389,1672,416"/>
+<area shape="rect" id="node49" href="a01145_source.html" title="testing\\final.hpp" alt="" coords="1696,389,1827,416"/>
+<area shape="rect" id="node51" href="a01128_source.html" title="testing\\block&#45;file.hpp" alt="" coords="1347,389,1509,416"/>
+<area shape="rect" id="node63" href="a00982_source.html" title="regex\\match.hpp" alt="" coords="2873,208,3007,235"/>
+<area shape="rect" id="node98" href="a00986_source.html" title="regex\\search.hpp" alt="" coords="2545,208,2681,235"/>
+<area shape="rect" id="node105" href="a00984_source.html" title="regex\\replace.hpp" alt="" coords="2707,208,2848,235"/>
+<area shape="rect" id="node70" href="a00994_source.html" title="string\\string.hpp" alt="" coords="3904,389,4035,416"/>
+<area shape="rect" id="node79" href="a00810_source.html" title="string\\support.hpp" alt="" coords="2833,389,2977,416"/>
+<area shape="rect" id="node87" href="a00934.html" title="alicorn\\extension\\boost\l\\lexical&#45;cast.hpp" alt="" coords="3242,382,3419,423"/>
+<area shape="rect" id="node75" href="a00964_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="4074,480,4245,507"/>
+<area shape="rect" id="node77" href="a00998_source.html" title="using&#45;string.hpp" alt="" coords="3786,480,3915,507"/>
+<area shape="rect" id="node85" href="a00989.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="2651,473,2812,514"/>
+<area shape="rect" id="node93" href="a00971_source.html" title="alicorn\\extension\\std\l\\exception.hpp" alt="" coords="3601,473,3761,514"/>
+<area shape="rect" id="node95" href="a00939.html" title="string&#45;cast.hpp" alt="" coords="3453,480,3576,507"/>
 </map>
 </div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Функции</h2></td></tr>
-<tr class="memitem:a7d270e60bcb730199a5cd541454f5d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a7d270e60bcb730199a5cd541454f5d10">TEST_F</a> (String_test, Test_ConstructorRawString)</td></tr>
-<tr class="separator:a7d270e60bcb730199a5cd541454f5d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d8c11dac2691983b996d49693460fb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a9d8c11dac2691983b996d49693460fb1">alicorn::extension::std::TEST_F</a> (String_test, Test_ConstructorStdWString)</td></tr>
-<tr class="separator:a9d8c11dac2691983b996d49693460fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5dbc3e2f0723f9135fae6c963870f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#aad5dbc3e2f0723f9135fae6c963870f7">TEST_F</a> (String_test, Test_CopyConstructor)</td></tr>
-<tr class="separator:aad5dbc3e2f0723f9135fae6c963870f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adbe38faf6e6d848a3b729dad688ea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a2adbe38faf6e6d848a3b729dad688ea8">TEST_F</a> (String_test, Test_OperatorAssignment)</td></tr>
-<tr class="separator:a2adbe38faf6e6d848a3b729dad688ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe0e970b5bac8cef92df0d21cd48e7ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#abe0e970b5bac8cef92df0d21cd48e7ff">TEST_F</a> (String_test, Test_GetLenght)</td></tr>
-<tr class="separator:abe0e970b5bac8cef92df0d21cd48e7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8eb659f9e6375818962ddada6cfeea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a5a8eb659f9e6375818962ddada6cfeea">TEST_F</a> (String_test, Test_IsEmpty)</td></tr>
-<tr class="separator:a5a8eb659f9e6375818962ddada6cfeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b6924d14210a2c826a3dac0ed076f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#aa7b6924d14210a2c826a3dac0ed076f8">TEST_F</a> (String_test, Test_OperatorEq)</td></tr>
-<tr class="separator:aa7b6924d14210a2c826a3dac0ed076f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30431160117aaf0a99e93d5eb6380717"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a30431160117aaf0a99e93d5eb6380717">TEST_F</a> (String_test, Test_OperatorNe)</td></tr>
-<tr class="separator:a30431160117aaf0a99e93d5eb6380717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f2d43cb39b086dc8f72f42482f313f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a04f2d43cb39b086dc8f72f42482f313f">TEST_F</a> (String_test, Test_OperatorLess)</td></tr>
-<tr class="separator:a04f2d43cb39b086dc8f72f42482f313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11809e9435b417b16b1f5d3e61364ec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a11809e9435b417b16b1f5d3e61364ec6">TEST_F</a> (String_test, Test_Addition)</td></tr>
-<tr class="separator:a11809e9435b417b16b1f5d3e61364ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5753212e36a89afeed771f3546b739c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a5753212e36a89afeed771f3546b739c0">TEST_F</a> (String_test, Test_Append)</td></tr>
-<tr class="separator:a5753212e36a89afeed771f3546b739c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc18df9b568426b5c4ed288d5cc3e68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a2fc18df9b568426b5c4ed288d5cc3e68">TEST_F</a> (String_test, Test_Trim)</td></tr>
-<tr class="separator:a2fc18df9b568426b5c4ed288d5cc3e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2024a3564b16340349ea369550df800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#af2024a3564b16340349ea369550df800">TEST_F</a> (String_test, Test_SubString)</td></tr>
-<tr class="separator:af2024a3564b16340349ea369550df800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f22f42c93f81a577a281b4e0e4e2159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a4f22f42c93f81a577a281b4e0e4e2159">TEST_F</a> (String_test, Test_Find)</td></tr>
-<tr class="separator:a4f22f42c93f81a577a281b4e0e4e2159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0876b642c3ecc87dd3ab8744d4226e36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#a0876b642c3ecc87dd3ab8744d4226e36">TEST_F</a> (String_test, Test_Replace)</td></tr>
-<tr class="separator:a0876b642c3ecc87dd3ab8744d4226e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f159a47cf6514ca7f84a66bb52c11b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#ac7f159a47cf6514ca7f84a66bb52c11b">TEST_F</a> (String_test, Test_ToLower)</td></tr>
-<tr class="separator:ac7f159a47cf6514ca7f84a66bb52c11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7ae687f2eb8e2e9a462aeb36a9ba01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00663.html#adf7ae687f2eb8e2e9a462aeb36a9ba01">TEST_F</a> (String_test, Test_Tokenize)</td></tr>
-<tr class="separator:adf7ae687f2eb8e2e9a462aeb36a9ba01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса String. </p>
-</div><h2 class="groupheader">Функции</h2>
-<a class="anchor" id="a7d270e60bcb730199a5cd541454f5d10"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_ConstructorRawString&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ConstructRawString]</p>
-<p>[ConstructRawString] </p>
-
-<p><div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00663_a7d270e60bcb730199a5cd541454f5d10_icgraph.png" border="0" usemap="#a00663_a7d270e60bcb730199a5cd541454f5d10_icgraph" alt=""/></div>
-<map name="a00663_a7d270e60bcb730199a5cd541454f5d10_icgraph" id="a00663_a7d270e60bcb730199a5cd541454f5d10_icgraph">
-<area shape="rect" id="node3" href="a00663.html#a2fc18df9b568426b5c4ed288d5cc3e68" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="file_a9d8c11dac2691983b996d49693460fb1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">alicorn::extension::std::TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_ConstructorStdWString&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ConstructStdString]</p>
-<p>[ConstructStdString] </p>
-
-</div>
-</div>
-<a class="anchor" id="aad5dbc3e2f0723f9135fae6c963870f7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_CopyConstructor&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ConstructString]</p>
-<p>[ConstructString] </p>
-
-</div>
-</div>
-<a class="anchor" id="a2adbe38faf6e6d848a3b729dad688ea8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorAssignment&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[AssignmentString]</p>
-<p>[AssignmentString] </p>
-
-</div>
-</div>
-<a class="anchor" id="abe0e970b5bac8cef92df0d21cd48e7ff"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_GetLenght&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[GetLenght]</p>
-<p>[GetLenght] </p>
-
-</div>
-</div>
-<a class="anchor" id="a5a8eb659f9e6375818962ddada6cfeea"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_IsEmpty&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[IsEmpty]</p>
-<p>[IsEmpty] </p>
-
-</div>
-</div>
-<a class="anchor" id="aa7b6924d14210a2c826a3dac0ed076f8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorEq&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[OperatorEq]</p>
-<p>[OperatorEq] </p>
-
-</div>
-</div>
-<a class="anchor" id="a30431160117aaf0a99e93d5eb6380717"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorNe&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[OperatorNe]</p>
-<p>[OperatorNe] </p>
-
-</div>
-</div>
-<a class="anchor" id="a04f2d43cb39b086dc8f72f42482f313f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorLess&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[OperatorLess]</p>
-<p>[OperatorLess] </p>
-
-</div>
-</div>
-<a class="anchor" id="a11809e9435b417b16b1f5d3e61364ec6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Addition&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Addition]</p>
-<p>[Addition] </p>
-
-</div>
-</div>
-<a class="anchor" id="a5753212e36a89afeed771f3546b739c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Append&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Append]</p>
-<p>[Append] </p>
-
-</div>
-</div>
-<a class="anchor" id="a2fc18df9b568426b5c4ed288d5cc3e68"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Trim&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Trim]</p>
-<p>[Trim] </p>
-
-<p><div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00663_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph.png" border="0" usemap="#a00663_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph" alt=""/></div>
-<map name="a00663_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph" id="a00663_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph">
-<area shape="rect" id="node3" href="a00663.html#a7d270e60bcb730199a5cd541454f5d10" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af2024a3564b16340349ea369550df800"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_SubString&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[SubString]</p>
-<p>[SubString] </p>
-
-</div>
-</div>
-<a class="anchor" id="a4f22f42c93f81a577a281b4e0e4e2159"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Find&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Find]</p>
-<p>[Find] </p>
-
-</div>
-</div>
-<a class="anchor" id="a0876b642c3ecc87dd3ab8744d4226e36"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Replace&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Replace]</p>
-<p>[Replace] </p>
-
-</div>
-</div>
-<a class="anchor" id="ac7f159a47cf6514ca7f84a66bb52c11b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_ToLower&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ToLower]</p>
-<p>[ToLower] </p>
-
-<p><div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00663_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph.png" border="0" usemap="#a00663_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph" alt=""/></div>
-<map name="a00663_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph" id="a00663_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph">
-<area shape="rect" id="node3" href="a00663.html#a7d270e60bcb730199a5cd541454f5d10" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="adf7ae687f2eb8e2e9a462aeb36a9ba01"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Tokenize&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Tokenize]</p>
-<p>[Tokenize] </p>
-
-<p><div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a00663_adf7ae687f2eb8e2e9a462aeb36a9ba01_cgraph.png" border="0" usemap="#a00663_adf7ae687f2eb8e2e9a462aeb36a9ba01_cgraph" alt=""/></div>
-<map name="a00663_adf7ae687f2eb8e2e9a462aeb36a9ba01_cgraph" id="a00663_adf7ae687f2eb8e2e9a462aeb36a9ba01_cgraph">
-<area shape="rect" id="node3" href="a00663.html#a7d270e60bcb730199a5cd541454f5d10" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-</div><!-- contents -->
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса Replace. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_631c43ebb27d3138b15ea189b4d52dd2.html">Test.String</a></li><li class="navelem"><a class="el" href="a00663.html">String_test.cpp</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:16. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_90ae90679dc10847eeefdd3b0aa44753.html">Test.Replace</a></li><li class="navelem"><a class="el" href="a00663.html">Replace_test.cpp</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:55. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

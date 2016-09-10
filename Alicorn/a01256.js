@@ -1,26 +1,22 @@
 var a01256 =
 [
-    [ "Proxy", "a00158.html", null ],
-    [ "ASSERT_DIRECTORY_EQ", "a01256.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
-    [ "ASSERT_EXISTS_FILE_FALSE", "a01256.html#gaf5900286722be76eaf83b881ba160bb1", null ],
-    [ "ASSERT_EXISTS_FILE_TRUE", "a01256.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],
-    [ "ASSERT_FILES_BINARY_EQ", "a01256.html#gadedb8f379e467a385930902dddd6d157", null ],
-    [ "ASSERT_FILES_BINARY_NE", "a01256.html#ga47e03c92d053709b90f83f6b20c9b7ba", null ],
-    [ "ASSERT_FILES_STREQ", "a01256.html#ga69b3a6234d72517ef85674de2cf60d30", null ],
-    [ "ASSERT_STDEXCEPTION", "a01256.html#ga9b6950e02cf07c434b3c9ccc325b9559", null ],
-    [ "BLOCK_FILE", "a01256.html#ga19899edc3a2fc42261218d524c7364db", null ],
-    [ "EXPECT_DIRECTORY_EQ", "a01256.html#ga110902fa9f184c39fc0c095562472c69", null ],
-    [ "EXPECT_EXISTS_FILE_FALSE", "a01256.html#ga548418041138f552c93a97dfb866f9ac", null ],
-    [ "EXPECT_EXISTS_FILE_TRUE", "a01256.html#ga30aa7b117cfbd9a5a2df877a16092f5c", null ],
-    [ "EXPECT_FILES_BINARY_EQ", "a01256.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2", null ],
-    [ "EXPECT_FILES_BINARY_NE", "a01256.html#gaae14802f30c143ba014bc7980d3db7f0", null ],
-    [ "EXPECT_FILES_STREQ", "a01256.html#ga14628cf5a758a8aeec9b5bb69fed767e", null ],
-    [ "EXPECT_STDEXCEPTION", "a01256.html#gae7553b6a2b3b0c4a21e94d06217ef8f3", null ],
-    [ "FRIEND_TEST", "a01256.html#gab92570f53abf3b4fbbd13acaf4265468", null ],
-    [ "THIS_DIRECTORY", "a01256.html#gad33527f0cbd8dabe93ba131e08796e74", null ],
-    [ "GetThisDirectory", "a01256.html#ga7f988e79eeac54f11e080ffbd5196129", null ],
-    [ "IsBinaryEqual", "a01256.html#gac7d4c476b4ca78e9173fd36c42688648", null ],
-    [ "IsExists", "a01256.html#gaba7352a2eed189b48b6cdda86280e0e2", null ],
-    [ "IsMatch", "a01256.html#ga12fae53dd48adfd54cc17b98f46a3def", null ],
-    [ "IsStrEqual", "a01256.html#gac541b5429b4a879c791f2f36b2697046", null ]
+    [ "Generated", "a01255.html", "a01255" ],
+    [ "HtmlAbout", "a00091.html", null ],
+    [ "HtmlTestInfo", "a00092.html", [
+      [ "HtmlTestInfo", "a00092.html#a08b1dd1b8568e8ff8dd5c4202a071cea", null ],
+      [ "BuildSummary", "a00092.html#a55eea01426a8938164fc1ad88a91ec59", null ],
+      [ "GetSeparator", "a00092.html#a93fd23bcad787c20c0ae82304f134fbd", null ],
+      [ "ReplaceExtraSymbols", "a00092.html#aa78d50f4ea77fdedd06e34197510186b", null ],
+      [ "ReplaceHtmlTags", "a00092.html#aa52b96412dab66e229bbb20d65a7dfb8", null ],
+      [ "ReplaceToColorOutput", "a00092.html#ac1d8fae951fccf141bc9030898f153ce", null ],
+      [ "SetDefaultInfo", "a00092.html#ab8230d887215c0149157ed1d609ca607", null ],
+      [ "SetInfo", "a00092.html#af166d8934755b072c1c8bff34acc5e31", null ]
+    ] ],
+    [ "TreeCtrlIcons", "a00180.html", null ],
+    [ "TreeCtrlTests", "a00181.html", [
+      [ "BuildInfoSubTree", "a00181.html#af2fb960a145411873bf4ce84bf3f87de", null ],
+      [ "BuildTestsTree", "a00181.html#ad784b4f74ac46b4a6fc90518e8e5c87e", null ],
+      [ "GetInfo", "a00181.html#a9beaebf1b88dd32287d5ec9cf8cdcb30", null ],
+      [ "SetResultRunTests", "a00181.html#ad0fbdec866076a92feab9f37966f099f", null ]
+    ] ]
 ];

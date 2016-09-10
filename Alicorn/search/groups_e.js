@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wxwidgets',['WxWidgets',['../a01226.html',1,'']]],
-  ['wxwidgets',['wxWidgets',['../a01217.html',1,'']]],
-  ['wxwidgets',['wxWidgets',['../a01243.html',1,'']]]
+  ['wxwidgets',['wxWidgets',['../a01274.html',1,'']]],
+  ['wxwidgets',['wxWidgets',['../a01247.html',1,'']]],
+  ['wxwidgets',['WxWidgets',['../a01256.html',1,'']]]
 ];

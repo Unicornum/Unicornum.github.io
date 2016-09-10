@@ -1,39 +1,15 @@
 var a01247 =
 [
-    [ "Console", "a00067.html", [
-      [ "WriteRecord", "a00067.html#aab3352a57302cff220e46d9cea1c12bb", null ],
-      [ "WriteTitle", "a00067.html#a16ff9b02d58211e7be68cc7514755e85", null ]
+    [ "Generated", "a01251.html", "a01251" ],
+    [ "Main", "a00117.html", null ],
+    [ "MainFrame", "a00118.html", null ],
+    [ "HtmlAbout", "a00091.html", null ],
+    [ "SettingsPage", "a00163.html", [
+      [ "GetActiveNameParameter", "a00163.html#a6c426d98cb43c98ace9fdd6f1f51c01a", null ],
+      [ "SetSettings", "a00163.html#a3a39a65878a05a704a6752f812e38384", null ]
     ] ],
-    [ "Empty", "a00089.html", [
-      [ "WriteRecord", "a00089.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
-      [ "WriteTitle", "a00089.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
-    ] ],
-    [ "File", "a00095.html", [
-      [ "FormFileName", "a00095.html#a78253bd31454f39e16fb359f206526c1", null ],
-      [ "LimitLogSize", "a00095.html#a8543cc0644944d65cd8d277d1e8073a5", null ],
-      [ "OpenFile", "a00095.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
-      [ "RollingLogFiles", "a00095.html#a1c334e9fac26da0d4445802f43beefaf", null ],
-      [ "WriteRecord", "a00095.html#acb716a4ccea948033c64be86775d671d", null ],
-      [ "m_LogFile", "a00095.html#abaf06f0b024ca4033e968df2b5ee9643", null ]
-    ] ],
-    [ "Html", "a00102.html", [
-      [ "WriteRecord", "a00102.html#a7e66035d80654aefc735bc594ded20ef", null ],
-      [ "WriteTitle", "a00102.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b", null ]
-    ] ],
-    [ "IReport", "a00119.html", [
-      [ "WriteRecord", "a00119.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-      [ "WriteTitle", "a00119.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
-    ] ],
-    [ "Report", "a00167.html", [
-      [ "DoComplete", "a00167.html#a9817eab99a8437ba0531ce231a292839", null ],
-      [ "DoComplete", "a00167.html#a9603cd1d3c32b20c4f3549bb780ac6a6", null ]
-    ] ],
-    [ "Text", "a00189.html", [
-      [ "WriteRecord", "a00189.html#a487f860fae5255eaa76c988294a764b7", null ],
-      [ "WriteTitle", "a00189.html#a16e5c27860d379682fe582396e14609d", null ]
-    ] ],
-    [ "VisualStudioOutput", "a00197.html", [
-      [ "WriteRecord", "a00197.html#a36ba11583024bbba693e2998ea4d3668", null ],
-      [ "WriteTitle", "a00197.html#a672763fba708c23851b38be162768bac", null ]
+    [ "SettingsPanel", "a00164.html", null ],
+    [ "TreeSections", "a00182.html", [
+      [ "SetSections", "a00182.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
     ] ]
 ];

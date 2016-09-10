@@ -1,5 +1,4 @@
 var a00096 =
 [
-    [ "File", "a00096.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
-    [ "Save", "a00096.html#ae1eeefb237c2c1965a388681e993bc8b", null ]
+    [ "GetData", "a00096.html#a378db548677bc086e5164eef5880da60", null ]
 ];

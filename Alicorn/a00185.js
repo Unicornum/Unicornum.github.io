@@ -1,5 +1,5 @@
 var a00185 =
 [
-    [ "GetDllObject", "a00185.html#a8951967671138e75cb5fa35a92a3356e", null ],
-    [ "GetInstance", "a00185.html#a4afac6707ae0d53632b97b88f35e5de0", null ]
+    [ "WriteRecord", "a00185.html#a36ba11583024bbba693e2998ea4d3668", null ],
+    [ "WriteTitle", "a00185.html#a672763fba708c23851b38be162768bac", null ]
 ];

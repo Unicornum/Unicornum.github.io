@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс controller::DoUpdateTreeSections</title>
+<title>Libs: Класс alicorn::vfs::FileSystem</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,56 +110,153 @@ $(document).ready(function(){initNavTree('a00086.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01751.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01733.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс controller::DoUpdateTreeSections<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01216.html">SettingsApp</a> &raquo; <a class="el" href="a01218.html">Controller</a></div></div>  </div>
+<div class="title">Класс alicorn::vfs::FileSystem<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01245.html">Alicorn</a> &raquo; <a class="el" href="a01289.html">Virtual File System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00032.html">Проект SettingsApp</a> <br />
- Класс реализации сигнала для обновления дерева разделов.  
+<p>Класс входит в <a class="el" href="a00033.html">Virtual File System</a> <br />
+ Класс реализации получения содержимого файлов с диска.  
  <a href="a00086.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00715_source.html">DoUpdateTreeSections.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00919_source.html">filesystem.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:controller::DoUpdateTreeSections:</div>
+Граф наследования:alicorn::vfs::FileSystem:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01752.png" border="0" usemap="#controller_1_1_do_update_tree_sections_inherit__map" alt="Inheritance graph"/></div>
-<map name="controller_1_1_do_update_tree_sections_inherit__map" id="controller_1_1_do_update_tree_sections_inherit__map">
-<area shape="rect" id="node2" href="a00058.html" title="{alicorn::patterns::\lmvc::controller::BlockingSignal\l\&lt;::view::IView * \&gt;\n||+ operator()()\l}" alt="" coords="5,205,232,312"/>
-<area shape="rect" id="node4" href="a00144.html" title="{alicorn::patterns::\lmvc::controller::NonBlocking\lSignal\&lt; ::view::IView * \&gt;\n||+ operator()()\l+ Execute()\l+ Fail()\l+ ~NonBlockingSignal()\l}" alt="" coords="12,6,225,157"/>
+<div class="center"><img src="a01734.png" border="0" usemap="#alicorn_1_1vfs_1_1_file_system_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1vfs_1_1_file_system_inherit__map" id="alicorn_1_1vfs_1_1_file_system_inherit__map">
+<area shape="rect" id="node2" href="a00096.html" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс для реализаций доступа к данным. " alt="" coords="5,6,219,98"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса controller::DoUpdateTreeSections:</div>
+Граф связей класса alicorn::vfs::FileSystem:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01753.png" border="0" usemap="#controller_1_1_do_update_tree_sections_coll__map" alt="Collaboration graph"/></div>
-<map name="controller_1_1_do_update_tree_sections_coll__map" id="controller_1_1_do_update_tree_sections_coll__map">
-<area shape="rect" id="node2" href="a00058.html" title="{alicorn::patterns::\lmvc::controller::BlockingSignal\l\&lt;::view::IView * \&gt;\n||+ operator()()\l}" alt="" coords="5,216,232,323"/>
-<area shape="rect" id="node4" href="a00144.html" title="{alicorn::patterns::\lmvc::controller::NonBlocking\lSignal\&lt; ::view::IView * \&gt;\n||+ operator()()\l+ Execute()\l+ Fail()\l+ ~NonBlockingSignal()\l}" alt="" coords="12,6,225,157"/>
-<area shape="rect" id="node6" href="a00110.html" title="Класс входит в Проект SettingsApp &#160;&#160;Интерфейсный класс модели. " alt="" coords="256,209,384,330"/>
+<div class="center"><img src="a01735.png" border="0" usemap="#alicorn_1_1vfs_1_1_file_system_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1vfs_1_1_file_system_coll__map" id="alicorn_1_1vfs_1_1_file_system_coll__map">
+<area shape="rect" id="node2" href="a00096.html" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс для реализаций доступа к данным. " alt="" coords="5,6,219,98"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a249ab8914d82ec0dac97cb4905ca3f10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a249ab8914d82ec0dac97cb4905ca3f10">GetData</a> (const Path_t &amp;, Data_t &amp;) const  override</td></tr>
+<tr class="memdesc:a249ab8914d82ec0dac97cb4905ca3f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения содержимого указанного файла.  <a href="#a249ab8914d82ec0dac97cb4905ca3f10">Подробнее...</a><br /></td></tr>
+<tr class="separator:a249ab8914d82ec0dac97cb4905ca3f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2907fd806a57c72e93dfd1872eb791"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00086.html#a2d2907fd806a57c72e93dfd1872eb791">FileSystem</a> (const Path_t &amp;)</td></tr>
+<tr class="memdesc:a2d2907fd806a57c72e93dfd1872eb791"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a2d2907fd806a57c72e93dfd1872eb791">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2d2907fd806a57c72e93dfd1872eb791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00032.html">Проект SettingsApp</a> <br />
- Класс реализации сигнала для обновления дерева разделов. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00033.html">Virtual File System</a> <br />
+ Класс реализации получения содержимого файлов с диска. </p>
+<p><b>Android:</b> </p><ul>
+<li>Для доступа к файлам из assets следует в качестве пути к папке передать в конструктор CurrentModule::GetAppRootPath().</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>26 Декабрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>12 Июнь 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/Controller/<a class="el" href="a00715_source.html">DoUpdateTreeSections.hpp</a></li>
-<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/Controller/DoUpdateTreeSections.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="a2d2907fd806a57c72e93dfd1872eb791"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FileSystem::FileSystem </td>
+          <td>(</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToRootDirectory</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToRootDirectory</td><td>Путь к папке, внутри которой будет производиться поиск файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a249ab8914d82ec0dac97cb4905ca3f10"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FileSystem::GetData </td>
+          <td>(</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Data_t &amp;&#160;</td>
+          <td class="paramname"><em>_Data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения содержимого указанного файла. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к искомому файлу (внутри папки, заданной в конструкторе). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">_Data</td><td>Объект, в который будет записано содержимое файла, если таковой будет найден.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Файл найден, данные прочитаны. </dd>
+<dd>
+<b>false</b> <ul>
+<li>Файл не существует.</li>
+<li>Файл существует, но не может быть открыт для чтения. </li>
+</ul>
+</dd></dl>
+
+<p>Замещает <a class="el" href="a00096.html#a378db548677bc086e5164eef5880da60">alicorn::vfs::IImplementation</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/vfs/<a class="el" href="a00919_source.html">filesystem.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/vfs/filesystem.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a00086.html">DoUpdateTreeSections</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:19. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a00086.html">FileSystem</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:57. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

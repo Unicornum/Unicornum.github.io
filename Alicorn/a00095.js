@@ -1,9 +1,5 @@
 var a00095 =
 [
-    [ "FormFileName", "a00095.html#a78253bd31454f39e16fb359f206526c1", null ],
-    [ "LimitLogSize", "a00095.html#a8543cc0644944d65cd8d277d1e8073a5", null ],
-    [ "OpenFile", "a00095.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
-    [ "RollingLogFiles", "a00095.html#a1c334e9fac26da0d4445802f43beefaf", null ],
-    [ "WriteRecord", "a00095.html#acb716a4ccea948033c64be86775d671d", null ],
-    [ "m_LogFile", "a00095.html#abaf06f0b024ca4033e968df2b5ee9643", null ]
+    [ "PostUnpackAction", "a00095.html#a46c0d9efab3af183256bb7c2ef1360b0", null ],
+    [ "PrePackAction", "a00095.html#afcee57e481967ea6987f6247ec4642de", null ]
 ];

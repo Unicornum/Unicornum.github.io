@@ -1,5 +1,6 @@
 var a00080 =
 [
-    [ "GetNow", "a00080.html#af736a0188d5c880336c8da286cb587e2", null ],
-    [ "GetNowMks", "a00080.html#a8d1f6abe52e706fd652a3f71369b97d2", null ]
+    [ "Create", "a00080.html#ab623e8fecccf0c69bf8a9be11af41b10", null ],
+    [ "GetInstance", "a00080.html#a468c90913a541bf8447db46b62fc7875", null ],
+    [ "Register", "a00080.html#a7fa0f3418698b0f028e84791fc62c421", null ]
 ];

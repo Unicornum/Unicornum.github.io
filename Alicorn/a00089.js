@@ -1,5 +1,4 @@
 var a00089 =
 [
-    [ "WriteRecord", "a00089.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
-    [ "WriteTitle", "a00089.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
+    [ "GTestResult", "a00089.html#a4decb8473a89ba281d8ac5fe5cfbbae6", null ]
 ];

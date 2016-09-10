@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс app::Init</title>
+<title>Libs: Класс alicorn::extension::std::Locale</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.0 Revision: 1872 Architecture: x86.64 Build: 22:09 18 August 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,57 +110,67 @@ $(document).ready(function(){initNavTree('a00116.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01720.html">Полный список членов класса</a>  </div>
+<a href="#nested-classes">Классы</a>  </div>
   <div class="headertitle">
-<div class="title">Класс app::Init<div class="ingroups"><a class="el" href="a01215.html">Alicorn</a> &raquo; <a class="el" href="a01238.html">Testing.App</a></div></div>  </div>
+<div class="title">Класс alicorn::extension::std::Locale<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01245.html">Alicorn</a> &raquo; <a class="el" href="a01275.html">Extension</a> &raquo; <a class="el" href="a01273.html">Std</a> &raquo; <a class="el" href="a01272.html">String</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00038.html">Проект Testing.App</a> <br />
- Класс предварительной инициализации программы.  
+<p>Класс-обертка для классов конкретных кодировок.  
  <a href="a00116.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00938_source.html">AppInit.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00936_source.html">locale.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:app::Init:</div>
+Граф связей класса alicorn::extension::std::Locale:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01721.png" border="0" usemap="#app_1_1_init_inherit__map" alt="Inheritance graph"/></div>
-<map name="app_1_1_init_inherit__map" id="app_1_1_init_inherit__map">
-<area shape="rect" id="node3" href="a00129.html" title="Класс входит в Проект SettingsApp &#160;&#160;Главный класс программы. " alt="" coords="39,131,249,282"/>
-<area shape="rect" id="node5" href="a00183.html" title="Класс входит в Проект Testing.App &#160;&#160;Класс главного объекта программы тестов одного класса..." alt="" coords="5,331,128,408"/>
-<area shape="rect" id="node7" href="a00187.html" title="Класс входит в Проект Testing.App &#160;&#160;Класс главного объекта программы тестов всех классов решения..." alt="" coords="152,331,293,408"/>
+<div class="center"><img src="a01533.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1_locale_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1extension_1_1std_1_1_locale_coll__map" id="alicorn_1_1extension_1_1std_1_1_locale_coll__map">
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса app::Init:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01722.png" border="0" usemap="#app_1_1_init_coll__map" alt="Collaboration graph"/></div>
-<map name="app_1_1_init_coll__map" id="app_1_1_init_coll__map">
-</map>
-</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00059.html">CP1251</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Использовать кодировку Windows (.1251).  <a href="a00059.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00060.html">CP866</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Использовать кодировку DOS (.866).  <a href="a00060.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00069.html">Default</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Использовать кодировку, заданную при помощи функции setlocale().  <a href="a00069.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00170.html">System</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Использовать системную кодировку.  <a href="a00170.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00183.html">UTF8</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование в/из <a class="el" href="a00183.html" title="Преобразование в/из UTF8. ">UTF8</a>.  <a href="a00183.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00038.html">Проект Testing.App</a> <br />
- Класс предварительной инициализации программы. </p>
+<div class="textblock"><p>Класс-обертка для классов конкретных кодировок. </p>
 <ul>
-<li>Сюда вынесены действия, не связанные с wxWidgets.</li>
+<li>Класс предназначен для указания используемой кодовой страницы при преобразовании строк при помощи string_cast&lt;&gt;.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+ 2.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>18 Май 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>16 сен 2013 <br />
+ 12 Сентябрь 2015 <br />
+ 07 Ноябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/extension/google/<a class="el" href="a00938_source.html">AppInit.hpp</a></li>
-<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/AppInit.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2013 - 2015 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/extension/std/string/<a class="el" href="a00936_source.html">locale.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>app</b></li><li class="navelem"><a class="el" href="a00116.html">Init</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Чт 18 Авг 2016 22:10:19. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="a00116.html">Locale</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

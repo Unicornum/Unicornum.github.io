@@ -1,8 +1,10 @@
 var a00036 =
 [
-    [ "Введение", "a00036.html#sTestingBrief", [
-      [ "Список макросов", "a00036.html#ssTestingClasses", null ],
-      [ "Список задач проекта", "a00036.html#ssTestingTasks", null ]
+    [ "Введение", "a00036.html#sToolsBrief", [
+      [ "Проекты раздела", "a00036.html#ssToolsProjects", null ]
     ] ],
-    [ "Список задач проекта", "a00037.html", null ]
+    [ "ToolsSettings", "a00037.html", [
+      [ "Введение", "a00037.html#sToolsSettingsBrief", null ],
+      [ "Подробное описание проекта", "a00037.html#sToolsSettingsDetails", null ]
+    ] ]
 ];
