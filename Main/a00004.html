@@ -135,18 +135,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 <li>Используется вместо Android NDK.</li>
 <li>Работает сборка только при помощи GCC4.9.</li>
 </ul>
-<p>Для статической линковки с CrystaX:</p><ul>
-<li>Добавить в свойствах проекта ("событие перед сборкой") копирование файла libCrystaX.a (простое добавление пути к файлу не поможет!), например: <div class="fragment"><div class="line">copy /B /Y $(VS_NdkRoot)\sources\crystax\libs\$(TargetArchAbi)\libcrystax.a $(TargetDir)</div></div><!-- fragment --></li>
-<li>В свойствах компоновщика "Дополнительные каталоги библиотек" добавить папку результата копирования (<b>$</b>(TargetDir)).</li>
+<dl class="section note"><dt>Заметки</dt><dd>CrystaX требует, чтобы wchar_t была размером 4 байта.</dd></dl>
+<h3>Для статической линковки с CrystaX:</h3>
+<ul>
+<li>Добавить в свойствах проекта ("событие перед сборкой") копирование файла libcrystax.a (простое добавление пути к файлу не поможет!), например: <div class="fragment"><div class="line">copy /B /Y $(VS_NdkRoot)\sources\crystax\libs\$(TargetArchAbi)\libcrystax.a $(TargetDir)</div></div><!-- fragment --></li>
+<li>В свойствах компоновщика "Дополнительные каталоги библиотек" добавить папку результата копирования ($(TargetDir)).</li>
 <li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>CrystaX требует, чтобы wchar_t была размером 4 байта.</dd></dl>
+<h3>Альтернативный вариант использования CrystaX</h3>
+<p>Можно использовать CrystaX совместно с Android NDK - это позволит получить доступ к возможностям, которые отсутствуют в последнем (например, поддержку локалей):</p><ul>
+<li>Установить в настройках Visual Studio путь к Android NDK.</li>
+<li>Скопировать файл libcrystax.a в Externals.</li>
+<li>В свойствах компоновщика в "Дополнительные каталоги библиотек" добавить папку, в которую скопирована библиотека.</li>
+<li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
+</ul>
 <h2>Сторонние библиотеки </h2>
 <p><a class="el" href="a00005.html">Сборка Boost для Android</a> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вт 13 Сен 2016 20:43:06. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Вт 13 Сен 2016 21:13:23. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
