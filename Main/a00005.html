@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnicornumVerum: Разработка для Android на С++</title>
+<title>UnicornumVerum: Сборка Boost для Android</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,9 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Главная</span></a></li>
-      <li><a href="a00007.html"><span>Релизы</span></a></li>
-      <li><a href="a00008.html"><span>Документация</span></a></li>
-      <li><a href="a00009.html"><span>Обо&#160;мне</span></a></li>
+      <li><a href="a00006.html"><span>Релизы</span></a></li>
+      <li><a href="a00007.html"><span>Документация</span></a></li>
+      <li><a href="a00008.html"><span>Обо&#160;мне</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -75,120 +75,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="a00004.html">Разработка для Android на С++</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Разработка для Android на С++ </div>  </div>
+<div class="title">Сборка Boost для Android </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Исследование проводилось в расчете на использование Samsung Galaxy S Duos:</p><ul>
-<li>Android 4.0.4 (API 15).</li>
-<li>Сборка для ARM (armeabi-v7a).</li>
-</ul>
-<h1>Окружение </h1>
+<div class="textblock"><h2>Сборка при помощи Clang </h2>
 <ul>
-<li>Android SDK (устанавливается вместе с Android Studio); путь не должен содержать пробелов, установить переменную окружения <b>ANDROID_SDK</b> как путь к папке расположения.</li>
-<li>Android NDK (путь не должен содержать пробелов, установить переменную окружения <b>ANDROID_NDK</b> как путь к папке расположения).</li>
-<li>JDK (1.6 или 1.7); установить переменную окружения <b>JAVA_HOME</b> как путь к папке расположения.</li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=./stage/lib/libboost.a</div><div class="line">  </div><div class="line">rmdir bin.v2 /s /q</div><div class="line">rmdir stage /s /q</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/llvm/prebuilt/windows/bin;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin;</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">--without-python ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;--sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-std=c++1y -frtti -fexceptions -fshort-wchar -O3 -g0&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%<span class="comment">/*.o</span></div><div class="line"><span class="comment">  </span></div><div class="line"><span class="comment">* </span></div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>Все внешние инструменты ставить x86 версии.</dd>
-<dd>
-Настройка Android SDK производится запуском утилиты SDK Manager.exe в корневой папке SDK (нужно будет докачать содержимое раздела Android 4.0.3 (API 15)).</dd>
-<dd>
-При использовании Android SDK потребуется скопировать папку arm-linux-androideabi-4.9 и переименовать ее в arm-linux-androideabi-gcc4.9.</dd>
-<dd>
-Вместо Android NDK можно использовать CrystaX (в качестве <b>ANDROID_NDK</b> указать путь к папке CrystaX), но в этом случае требуется добавить путь к папке libcrystax в дополнительные зависимости линковщику (см. подробности у конкретных библиотек/инструментов).</dd></dl>
-<p>Тестировалось на:</p><ul>
-<li>Android Studio 2.1.</li>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
 <li>Android NDK r12.</li>
-<li>JDK 1.7 r79.</li>
-<li>CrystaX 10.3.1</li>
-</ul>
-<h1>Предопределенные макросы </h1>
-<ul>
-<li>__ANDROID__ - общий макрос признака, что используется код для Android.</li>
-<li>__ANDROID_API__ - номер текущего используемого API, например, 15.</li>
-</ul>
-<h1>Visual Studio 2015 </h1>
-<h2>Установка </h2>
-<ul>
-<li>Скачать Visual Studio 2015 Community, при установке в настройках указать компоненты для скачивания для разработки под Android (будут скачаны x86 версии всех компонентов, не последние версии; для указания путей к установленным вручную настроить здесь:</li>
-</ul>
-<div class="image">
-<img src="Vs2015.png" alt="Vs2015.png"/>
-</div>
-<h2>Использование </h2>
-<p>Содержит настроенные примеры проектов:</p>
-<div class="image">
-<img src="Vs2015.templates.png" alt="Vs2015.templates.png"/>
-</div>
-<p>Для сборки под Samsung Galaxy Duos настройки проекта *.NativeActivity должны выглядеть так:</p>
-<div class="image">
-<img src="Vs2015.props.png" alt="Vs2015.props.png"/>
-</div>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>В настройках языка можно указать весию стандарта C++ (и получить доступ к std::u32string!). <br />
-</li>
-<li>Образец проекта собирается, запускается на телефоне, но VS2015 не видит телефона и поэтому невозможна отладка на телефоне. <br />
-</li>
-<li>Отладка на эмуляторе нормально работает.</li>
+<li>Boost 1.61.</li>
 </ul>
 </dd></dl>
-<h2>Сторонние библиотеки </h2>
-<p><a class="el" href="a00006.html">Сборка Boost для Android</a></p>
-<h2>CrystaX </h2>
+<h2>Сборка при помощи gcc </h2>
 <ul>
-<li>Для использования CrystaX добавить в свойствах проекта <br />
- Компоновщик -&gt; Общие -&gt; Дополнительные каталоги библиотек <br />
- $(VS_NdkRoot)/sources/crystax/libs/$(TargetArchAbi) <br />
- (после этого программа будет компилироваться (даже Clang'ом)).</li>
-<li>Также нужно, чтобы libcrysto.so попала в .apk файл (для этого нужно создать проект, в события после сбоки которому добавить копирование <br />
- copy /Y $(VS_NdkRoot)\sources\crystax\libs\$(TargetArchAbi)\libcrystax.so  <br />
- и добавить его в Ссылки проекту *.Packaging).</li>
+<li>В папке $(BoostRoot)/tools/build/src создать файл с именем user-config.jam, содержащий (заменить путь к Android NDK при необходимости): <div class="fragment"><div class="line">ANDROID_NDK = d:/android/ndk ;</div><div class="line"></div><div class="line"><span class="keyword">using</span> gcc : android : $(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :</div><div class="line">&lt;compileflags&gt;--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward</div><div class="line">&lt;compileflags&gt;-o</div><div class="line">&lt;compileflags&gt;-xc++-header</div><div class="line">&lt;compileflags&gt;-xc++</div><div class="line">&lt;compileflags&gt;-std=c++1y</div><div class="line">&lt;compileflags&gt;-fexceptions</div><div class="line">&lt;compileflags&gt;-O3</div><div class="line">&lt;compileflags&gt;-DNDEBUG</div><div class="line">&lt;compileflags&gt;-D__ANDROID__</div><div class="line">&lt;compileflags&gt;-D__SOFTFP__</div><div class="line">&lt;compileflags&gt;-D__arm__</div><div class="line">&lt;compileflags&gt;-g2</div><div class="line">&lt;compileflags&gt;-lstdc++</div><div class="line">&lt;compileflags&gt;-D__GLIBC__</div><div class="line">&lt;compileflags&gt;-DBOOST_FILESYSTEM_VERSION=3</div><div class="line">&lt;linkflags&gt;-r<span class="stringliteral">&quot;s&quot;</span></div><div class="line">&lt;archiver&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ar</div><div class="line">&lt;ranlib&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ranlib</div><div class="line">;</div></div><!-- fragment --></li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий: <div class="fragment"><div class="line">b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4</div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<p>Для статической сборки с crystax добавить <br />
- APP_LIBCRYSTAX := shared <br />
- в файл build-all.mk (при этом программа собирается, но не запускается...).</p>
-<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000001">Необходимо сделать:</a></b></dt><dd>Как зарегистрировать внешний .so файл для автоматической подгрузки при старте программы без файла .md???</dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Заставить работать с CrystaX не удалось, при запуске на телефоне программа аварийно завершается.</dd></dl>
-<h1>Android++ </h1>
-<p>Сайт: <a href="http://android-plus-plus.com/" title="Android++">AndroidPlusPlus</a></p>
-<h2>Установка </h2>
-<ul>
-<li>Скачать с github'a архив, распаковать в папку, в пути к которой нет пробелов.</li>
-<li>Запустить в папке Android++ скрипт bootstrap_vs2013.cmd.</li>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
+<li>Android NDK r12.</li>
+<li>Boost 1.60.</li>
 </ul>
-<h2>Использование </h2>
-<p>Примеры кода расположены в папке ...\android++\msbuild\samples.</p>
-<p>Для сборки под Samsung Galaxy Duos настройки должны выглядеть так:</p>
-<div class="image">
-<img src="general.png" alt="general.png"/>
-</div>
-<p>Для использования CrystaX добавить:</p>
-<div class="image">
-<img src="linker.png" alt="linker.png"/>
-</div>
-<ul>
-<li>Все проекты собираются, отладчик видит телефон/эмулятор, загружает программу, она запускается, ждет подключения отладчика, но он завершается с ошибкой:</li>
-</ul>
-<div class="image">
-<img src="android++.png" alt="android++.png"/>
-</div>
-<ul>
-<li>Проект <b>hello-gdbserver</b> собирается и запускается на смартфоне.</li>
-<li>Проект <b>native-activity</b> собирается, но при запуске вылетает с ошибкой.</li>
-<li>Есть проект, использующий SDL.</li>
-</ul>
-<h1>VS-Android </h1>
-<p>Сайт: <a href="https://github.com/gavinpugh/vs-android" title="VsAndroid">VsAndroid</a></p>
-<p>Не удалось скомпилировать пример (не может найти путь к NDK, хотя текущий путь (в описании ошибки) пишет правильно).</p>
-<h1>NVidia CodeWorks for Android </h1>
-<p>Сайт: <a href="https://developer.nvidia.com/nvidia-nsight-tegra" title="CodeWorksForAndroid">CodeWorksForAndroid</a></p>
-<p>Ошибка при установке одного из компонентов, после отключения которого при открытии решения с примерами не грузятся ВСЕ входящие в него решения. </p>
+</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Для Boost 1.61 сборка при помощи gcc не работает, b2.exe при запуске просто висит безо всякого видимого результата. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пт 2 Сен 2016 12:52:02. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Вт 13 Сен 2016 20:43:06. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>

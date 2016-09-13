@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>UnicornumVerum: Список задач всех проектов решения</title>
+<title>UnicornumVerum: Разработка для Android на С++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -40,9 +40,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Главная</span></a></li>
-      <li><a href="a00007.html"><span>Релизы</span></a></li>
-      <li><a href="a00008.html"><span>Документация</span></a></li>
-      <li><a href="a00009.html"><span>Обо&#160;мне</span></a></li>
+      <li><a href="a00006.html"><span>Релизы</span></a></li>
+      <li><a href="a00007.html"><span>Документация</span></a></li>
+      <li><a href="a00008.html"><span>Обо&#160;мне</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -78,14 +78,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Список задач всех проектов решения </div>  </div>
+<div class="title">Разработка для Android на С++ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Список задач всех проектов решения </h1>
+<div class="textblock"><p>Исследование проводилось в расчете на использование Samsung Galaxy S Duos:</p><ul>
+<li>Android 4.0.4 (API 15).</li>
+<li>Сборка для ARM (armeabi-v7a).</li>
+</ul>
+<h1>Окружение </h1>
+<ul>
+<li>Android SDK - устанавливается вместе с Android Studio (путь не должен содержать пробелов).</li>
+<li>Android NDK (путь не должен содержать пробелов).</li>
+<li>JDK.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Все внешние инструменты ставить x86 версии.</dd>
+<dd>
+Настройка Android SDK производится запуском утилиты SDK Manager.exe в корневой папке SDK (нужно будет докачать содержимое раздела Android 4.0.3 (API 15)).</dd></dl>
+<p>Тестировалось на:</p><ul>
+<li>Android Studio 2.1 (Android NDK r12).</li>
+<li>JDK 1.8 r101.</li>
+<li>CrystaX 10.3.2 (эквивалент Android NDK r10e)</li>
+</ul>
+<h1>Предопределенные макросы </h1>
+<ul>
+<li>__ANDROID__ - общий макрос признака, что используется код для Android.</li>
+<li>__ANDROID_API__ - номер текущего используемого API, например, 15.</li>
+</ul>
+<h1>Visual Studio 2015 </h1>
+<h2>Установка </h2>
+<ul>
+<li>Скачать Visual Studio 2015 Community, при установке в настройках указать компоненты для скачивания для разработки под Android (будут скачаны x86 версии всех компонентов, не последние версии; для указания путей к установленным вручную настроить здесь:</li>
+</ul>
+<div class="image">
+<img src="Vs2015.png" alt="Vs2015.png"/>
+</div>
+<h2>Использование </h2>
+<p>Содержит настроенные примеры проектов:</p>
+<div class="image">
+<img src="Vs2015.templates.png" alt="Vs2015.templates.png"/>
+</div>
+<p>Для сборки под Samsung Galaxy Duos настройки проекта *.NativeActivity должны выглядеть так:</p>
+<div class="image">
+<img src="Vs2015.props.png" alt="Vs2015.props.png"/>
+</div>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>"Целевой уровень API" можно указать любой - это не влияет на компиляцию/работу программы (насколько удалось выяснить).</li>
+<li>В настройках языка можно указать версию стандарта C++ (и получить доступ к std::u32string!). <br />
+</li>
+<li>Образец проекта собирается, запускается на телефоне, но VS2015 не видит телефона и поэтому невозможна отладка на телефоне. <br />
+</li>
+<li>Отладка на эмуляторе нормально работает.</li>
+</ul>
+</dd></dl>
+<h2>CrystaX </h2>
+<ul>
+<li>Используется вместо Android NDK.</li>
+<li>Работает сборка только при помощи GCC4.9.</li>
+</ul>
+<p>Для статической линковки с CrystaX:</p><ul>
+<li>Добавить в свойствах проекта ("событие перед сборкой") копирование файла libCrystaX.a (простое добавление пути к файлу не поможет!), например: <div class="fragment"><div class="line">copy /B /Y $(VS_NdkRoot)\sources\crystax\libs\$(TargetArchAbi)\libcrystax.a $(TargetDir)</div></div><!-- fragment --></li>
+<li>В свойствах компоновщика "Дополнительные каталоги библиотек" добавить папку результата копирования (<b>$</b>(TargetDir)).</li>
+<li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>CrystaX требует, чтобы wchar_t была размером 4 байта.</dd></dl>
+<h2>Сторонние библиотеки </h2>
+<p><a class="el" href="a00005.html">Сборка Boost для Android</a> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пт 2 Сен 2016 12:52:02. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Вт 13 Сен 2016 20:43:06. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
