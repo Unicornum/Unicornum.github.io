@@ -1,5 +1,6 @@
 var a00077 =
 [
-    [ "WriteRecord", "a00077.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
-    [ "WriteTitle", "a00077.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
+    [ "Create", "a00077.html#ab623e8fecccf0c69bf8a9be11af41b10", null ],
+    [ "GetInstance", "a00077.html#a468c90913a541bf8447db46b62fc7875", null ],
+    [ "Register", "a00077.html#a7fa0f3418698b0f028e84791fc62c421", null ]
 ];

@@ -1,7 +1,9 @@
 var a00156 =
 [
-    [ "Search", "a00156.html#a845a87338ed627ba32a9893ddbdd2559", null ],
-    [ "Search", "a00156.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
-    [ "GetCoincided", "a00156.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
-    [ "IsSearch", "a00156.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
+    [ "Section", "a00156.html#a53bfb4cb221122d2c66b18659c84df4a", null ],
+    [ "Section", "a00156.html#a49d0ffb2f0b8228d9a6952f4cf3278fa", null ],
+    [ "AddExtra", "a00156.html#ae3c5a0a3bd12c765a813bd89a31acfb7", null ],
+    [ "Get", "a00156.html#a8f0e717f7f49c0550dde81bda8990fc6", null ],
+    [ "operator[]", "a00156.html#ad68da58ac4cdfc8e177417b1c0893d60", null ],
+    [ "SetDefault", "a00156.html#a711532c52ecedd4fc61ed61cf8f9009e", null ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс alicorn::system::Dump</title>
+<title>Libs: Класс model::Executor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,47 +110,66 @@ $(document).ready(function(){initNavTree('a00076.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01701.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a01816.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::system::Dump<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">Класс model::Executor<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01262.html">Alicorn</a> &raquo; <a class="el" href="a01286.html">Testing.App</a> &raquo; <a class="el" href="a01270.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс создания дампа программы при ее "падении".  
+<p>Класс входит в <a class="el" href="a00029.html">Testing.App</a> <br />
+ Класс модели, выполняющей тесты.  
  <a href="a00076.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01119_source.html">dump.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00804_source.html">Executor.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::system::Dump:</div>
+Граф наследования:model::Executor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01702.png" border="0" usemap="#alicorn_1_1system_1_1_dump_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1system_1_1_dump_coll__map" id="alicorn_1_1system_1_1_dump_coll__map">
+<div class="center"><img src="a01817.png" border="0" usemap="#model_1_1_executor_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_executor_inherit__map" id="model_1_1_executor_inherit__map">
+<area shape="rect" id="node2" href="a00097.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,5,195,112"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса model::Executor:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01818.png" border="0" usemap="#model_1_1_executor_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_executor_coll__map" id="model_1_1_executor_coll__map">
+<area shape="rect" id="node2" href="a00097.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,5,195,112"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aecda6320dbc9b0521e9116db13a2ca3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecda6320dbc9b0521e9116db13a2ca3d"></a>
+const Info_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#aecda6320dbc9b0521e9116db13a2ca3d">GetResultRunTests</a> (void) const  override</td></tr>
+<tr class="memdesc:aecda6320dbc9b0521e9116db13a2ca3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения информации о результатах прогона тестов. <br /></td></tr>
+<tr class="separator:aecda6320dbc9b0521e9116db13a2ca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a4450538408863afcbfd6766347d36a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a4450538408863afcbfd6766347d36a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00076.html#a5a4450538408863afcbfd6766347d36a">IsExistsFiledTest</a> (void) const  override</td></tr>
+<tr class="memdesc:a5a4450538408863afcbfd6766347d36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает true, если есть хотя ы один проваленный тест. <br /></td></tr>
+<tr class="separator:a5a4450538408863afcbfd6766347d36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс создания дампа программы при ее "падении". </p>
-<ul>
-<li>Никаких объектов создавать не нужно, достаточно просто включить заголовочный файл класса в проект.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00029.html">Testing.App</a> <br />
+ Класс модели, выполняющей тесты. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>28 окт 2012 <br />
- 05 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>23 Май 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/system/<a class="el" href="a01119_source.html">dump.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/system/dump.cpp</li>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/Model/<a class="el" href="a00804_source.html">Executor.hpp</a></li>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/Model/Executor.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><a class="el" href="a00076.html">Dump</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:57. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a00076.html">Executor</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:15. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

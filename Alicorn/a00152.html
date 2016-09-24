@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс alicorn::vfs::Pack::Record</title>
+<title>Libs: Шаблон класса alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,30 +110,55 @@ $(document).ready(function(){initNavTree('a00152.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01750.html">Полный список членов класса</a>  </div>
+<a href="a01698.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::vfs::Pack::Record</div>  </div>
+<div class="title">Шаблон класса alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;<div class="ingroups"><a class="el" href="a01262.html">Alicorn</a> &raquo; <a class="el" href="a01300.html">Patterns</a> &raquo; <a class="el" href="a01298.html">Factory</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Класс входит в <a class="el" href="a00024.html">Patterns</a> <br />
+ Вспомогательный класс для регистрации классов в фабрике объектов.  
+ <a href="a00152.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01088_source.html">registrator.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::vfs::Pack::Record:</div>
+Граф связей класса alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01751.png" border="0" usemap="#alicorn_1_1vfs_1_1_pack_1_1_record_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1vfs_1_1_pack_1_1_record_coll__map" id="alicorn_1_1vfs_1_1_pack_1_1_record_coll__map">
-</map>
+<div class="center"><img src="a01699.png" border="0" usemap="#alicorn_1_1patterns_1_1factory_1_1_registrator_3_01_t_interface_00_01_t_id_01_4_coll__map" alt="Collaboration graph"/></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс одной записи о файле в таблице файлов хранилища. </p>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/vfs/<a class="el" href="a01164_source.html">pack.hpp</a></li>
+<div class="textblock"><h3>template&lt;class TInterface, class TId = std::string&gt;<br />
+class alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a00024.html">Patterns</a> <br />
+ Вспомогательный класс для регистрации классов в фабрике объектов. </p>
+<ul>
+<li>Унаследовать интерфейсный класс, в указателях на который будут создаваться объекты от этого класса.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TInterface</td><td>Сам интерфейсный класс. </td></tr>
+    <tr><td class="paramname">TId</td><td>Класс идентификатора создаваемых классов.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>07 Сентябрь 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
+<h2>Пример регистрации классов в фабрике: </h2>
+<div class="fragment"><div class="line"></div><div class="line"><span class="keyword">using</span> String_t = <a class="code" href="a00167.html">::alicorn::extension::std::String</a>;</div><div class="line"></div><div class="line"><span class="keyword">class </span>Type</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">enum</span> Value</div><div class="line">  {</div><div class="line">    Der1 = 0,</div><div class="line">    Der2</div><div class="line">  };</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>IBase : </div><div class="line">  <span class="keyword">public</span> <a class="code" href="a00152.html">::alicorn::patterns::factory::Registrator</a>&lt;IBase, Type::Value&gt;</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line">  <span class="keyword">virtual</span> ~IBase() {}</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Base : <span class="keyword">public</span> IBase</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>)<span class="keyword"> const override</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> uT(<span class="stringliteral">&quot;Base::Test()&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der1 final : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>)<span class="keyword"> const override</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> uT(<span class="stringliteral">&quot;Der1::Test()&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a01300.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der1, IBase);</div><div class="line"><a class="code" href="a01300.html#ga1659e9d0ef525996965794c87ced3367">FACTORY_REGISTER</a>(Der1, Type::Der1);</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der2 final : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>)<span class="keyword"> const override</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> uT(<span class="stringliteral">&quot;Der2::Test()&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a01300.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der2, IBase);</div><div class="line"><a class="code" href="a01300.html#ga1659e9d0ef525996965794c87ced3367">FACTORY_REGISTER</a>(Der2, Type::Der2);</div><div class="line"></div></div><!-- fragment --></div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/patterns/factory/<a class="el" href="a01088_source.html">registrator.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a00134.html">Pack</a></li><li class="navelem"><a class="el" href="a00152.html">Record</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:57. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>factory</b></li><li class="navelem"><a class="el" href="a00152.html">Registrator</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:15. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

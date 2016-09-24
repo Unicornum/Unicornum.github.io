@@ -1,9 +1,9 @@
 var a01283 =
 [
-    [ "Command", "a01280.html", "a01280" ],
-    [ "Factory", "a01281.html", "a01281" ],
-    [ "Mvc", "a01282.html", "a01282" ],
-    [ "Data< Pointer * >", "a00067.html", null ],
-    [ "FACTORY_REGISTER", "a01283.html#ga1659e9d0ef525996965794c87ced3367", null ],
-    [ "FACTORY_REGISTER_STRING_NAME", "a01283.html#gae97115dc6635657469b3b97f194afe73", null ]
+    [ "ArcCos", "a01283.html#ga38ce2d7f745c99f41f1a9dcc448d008b", null ],
+    [ "ArcSin", "a01283.html#ga2104517f783b71fdb1123123f8dcba74", null ],
+    [ "ArcTan", "a01283.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb", null ],
+    [ "Cos", "a01283.html#ga4a7357706084145b0cddd05c161ea772", null ],
+    [ "Sin", "a01283.html#ga8ab39ee8cc4acf6b68d38eb34eeab060", null ],
+    [ "Tan", "a01283.html#gabfb194a30a0380dbe3312321b164bca5", null ]
 ];

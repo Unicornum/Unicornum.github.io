@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.ClassInfo/ClassInfo_test.cpp</title>
+<title>Libs: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.Locale/Locale_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,67 +108,65 @@ $(document).ready(function(){initNavTree('a00659.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл ClassInfo_test.cpp</div>  </div>
+<div class="title">Файл Locale_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
 <code>#include &lt;alicorn\extension\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00963_source.html">alicorn\extension\std.hpp</a>&gt;</code><br />
+<code>#include &lt;alicorn\extension\std\string\locale.hpp&gt;</code><br />
+<code>#include &lt;boost\lexical_cast.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для ClassInfo_test.cpp:</div>
+Граф включаемых заголовочных файлов для Locale_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01348.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_class_info_2_class_info__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_class_info_2_class_info__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_class_info_2_class_info__test_8cpp">
-<area shape="rect" id="node3" href="a00428_source.html" title="stdafx.h" alt="" coords="746,208,821,235"/>
-<area shape="rect" id="node47" href="a00690_source.html" title="alicorn\\extension\\google\l\\test\\example.hpp" alt="" coords="2619,110,2801,151"/>
-<area shape="rect" id="node51" href="a00963.html" title="alicorn\\extension\\std.hpp" alt="" coords="2405,117,2595,144"/>
-<area shape="rect" id="node5" href="a01170.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="711,291,857,333"/>
-<area shape="rect" id="node41" href="a00624_source.html" title="..\\mock.hpp" alt="" coords="205,299,307,325"/>
-<area shape="rect" id="node9" href="a00918_source.html" title="boost\\filesystem.hpp" alt="" coords="1473,389,1633,416"/>
-<area shape="rect" id="node21" href="a00954.html" title="alicorn\\extension\\google.hpp" alt="" coords="843,389,1055,416"/>
-<area shape="rect" id="node27" href="a00779.html" title="alicorn\\requirements.hpp" alt="" coords="367,389,552,416"/>
-<area shape="rect" id="node39" href="a01032.html" title="alicorn\\testing.hpp" alt="" coords="577,389,724,416"/>
-<area shape="rect" id="node11" href="a00924_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="1745,480,1921,507"/>
-<area shape="rect" id="node13" href="a00926_source.html" title="filesystem\\irelative.hpp" alt="" coords="1374,480,1548,507"/>
-<area shape="rect" id="node15" href="a00921_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="1573,473,1720,514"/>
-<area shape="rect" id="node17" href="a00930_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="1181,473,1349,514"/>
-<area shape="rect" id="node23" href="a00960.html" title="google\\test.hpp" alt="" coords="929,480,1055,507"/>
-<area shape="rect" id="node25" href="a00639_source.html" title="google\\mock.hpp" alt="" coords="770,480,904,507"/>
-<area shape="rect" id="node35" href="a01036.html" title="vs.hpp" alt="" coords="540,480,607,507"/>
-<area shape="rect" id="node37" href="a01147_source.html" title="testing\\id.hpp" alt="" coords="631,480,745,507"/>
-<area shape="rect" id="node53" href="a01001_source.html" title="std\\text.hpp" alt="" coords="2154,299,2259,325"/>
-<area shape="rect" id="node57" href="a00995_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="1927,382,2088,423"/>
-<area shape="rect" id="node70" href="a00971_source.html" title="alicorn\\extension\\std\l\\exception.hpp" alt="" coords="3006,563,3167,605"/>
-<area shape="rect" id="node78" href="a00973_source.html" title="..\\message.hpp" alt="" coords="2807,728,2931,755"/>
-<area shape="rect" id="node86" href="a00980_source.html" title="std\\regex.hpp" alt="" coords="1869,208,1984,235"/>
-<area shape="rect" id="node100" href="a01003_source.html" title="std\\vector.hpp" alt="" coords="2647,208,2768,235"/>
-<area shape="rect" id="node104" href="a00988_source.html" title="std\\set&#45;locale.hpp" alt="" coords="2428,208,2572,235"/>
-<area shape="rect" id="node107" href="a00969_source.html" title="std\\class&#45;info.hpp" alt="" coords="2319,480,2461,507"/>
-<area shape="rect" id="node111" href="a00965_source.html" title="std\\call&#45;proxy.hpp" alt="" coords="2793,208,2935,235"/>
-<area shape="rect" id="node113" href="a00942_source.html" title="alicorn\\extension\\std\l\\string&#45;cast.hpp" alt="" coords="2959,201,3120,242"/>
-<area shape="rect" id="node84" href="a00979_source.html" title="alicorn\\extension\\std\l\\regex.forward.hpp" alt="" coords="2165,382,2325,423"/>
-<area shape="rect" id="node59" href="a00994_source.html" title="string\\string.hpp" alt="" coords="2164,480,2295,507"/>
-<area shape="rect" id="node66" href="a00810_source.html" title="string\\support.hpp" alt="" coords="1945,480,2089,507"/>
-<area shape="rect" id="node68" href="a00934.html" title="alicorn\\extension\\boost\l\\lexical&#45;cast.hpp" alt="" coords="2538,473,2715,514"/>
-<area shape="rect" id="node64" href="a00964_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="2305,571,2476,597"/>
-<area shape="rect" id="node76" href="a00975_source.html" title="exception\\proxy.hpp" alt="" coords="2791,653,2948,680"/>
-<area shape="rect" id="node80" href="a00972_source.html" title="exception\\message.hpp" alt="" coords="3084,653,3263,680"/>
-<area shape="rect" id="node88" href="a00982_source.html" title="regex\\match.hpp" alt="" coords="1778,299,1912,325"/>
-<area shape="rect" id="node92" href="a00986_source.html" title="regex\\search.hpp" alt="" coords="1617,299,1753,325"/>
-<area shape="rect" id="node96" href="a00984_source.html" title="regex\\replace.hpp" alt="" coords="1937,299,2079,325"/>
-<area shape="rect" id="node115" href="a00941_source.html" title="string\\string&#45;cast.hpp" alt="" coords="2954,299,3120,325"/>
+<div class="center"><img src="a01367.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_locale_2_locale__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_locale_2_locale__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_locale_2_locale__test_8cpp">
+<area shape="rect" id="node3" href="a00410_source.html" title="stdafx.h" alt="" coords="3779,117,3855,144"/>
+<area shape="rect" id="node90" href="a00688_source.html" title="alicorn\\extension\\google\l\\test\\example.hpp" alt="" coords="3879,110,4061,151"/>
+<area shape="rect" id="node94" href="a00939_source.html" title="alicorn\\extension\\std\l\\string\\locale.hpp" alt="" coords="4293,110,4453,151"/>
+<area shape="rect" id="node5" href="a01186.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="2364,201,2511,242"/>
+<area shape="rect" id="node84" href="a00607_source.html" title="..\\mock.hpp" alt="" coords="3787,208,3888,235"/>
+<area shape="rect" id="node9" href="a00921_source.html" title="boost\\filesystem.hpp" alt="" coords="1824,291,1984,317"/>
+<area shape="rect" id="node31" href="a00957.html" title="alicorn\\extension\\google.hpp" alt="" coords="3566,291,3777,317"/>
+<area shape="rect" id="node45" href="a00778.html" title="alicorn\\requirements.hpp" alt="" coords="583,291,768,317"/>
+<area shape="rect" id="node63" href="a01036.html" title="alicorn\\testing.hpp" alt="" coords="2924,291,3071,317"/>
+<area shape="rect" id="node11" href="a00927_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="1719,373,1895,400"/>
+<area shape="rect" id="node17" href="a00929_source.html" title="filesystem\\irelative.hpp" alt="" coords="1347,373,1521,400"/>
+<area shape="rect" id="node21" href="a00924_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="1546,366,1693,407"/>
+<area shape="rect" id="node25" href="a00933_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="1919,366,2087,407"/>
+<area shape="rect" id="node13" href="a00920.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="1728,457,1907,498"/>
+<area shape="rect" id="node15" href="a00918_source.html" title="alicorn\\lib&#45;info\\boost.hpp" alt="" coords="1515,464,1703,491"/>
+<area shape="rect" id="node33" href="a00963.html" title="google\\test.hpp" alt="" coords="3957,373,4083,400"/>
+<area shape="rect" id="node41" href="a00622_source.html" title="google\\mock.hpp" alt="" coords="4175,373,4309,400"/>
+<area shape="rect" id="node39" href="a00964_source.html" title="alicorn\\lib&#45;info\\test.hpp" alt="" coords="3713,464,3892,491"/>
+<area shape="rect" id="node53" href="a01040.html" title="vs.hpp" alt="" coords="376,373,443,400"/>
+<area shape="rect" id="node55" href="a01151_source.html" title="testing\\id.hpp" alt="" coords="467,373,581,400"/>
+<area shape="rect" id="node57" href="a01150_source.html" title="testing\\friend.hpp" alt="" coords="606,373,745,400"/>
+<area shape="rect" id="node59" href="a01155_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="771,373,949,400"/>
+<area shape="rect" id="node61" href="a01156_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="974,373,1159,400"/>
+<area shape="rect" id="node65" href="a00980_source.html" title="testing\\proxy.hpp" alt="" coords="3261,373,3400,400"/>
+<area shape="rect" id="node67" href="a01149_source.html" title="testing\\final.hpp" alt="" coords="3424,373,3555,400"/>
+<area shape="rect" id="node69" href="a01132_source.html" title="testing\\block&#45;file.hpp" alt="" coords="3579,373,3741,400"/>
+<area shape="rect" id="node71" href="a01141_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="3766,373,3932,400"/>
+<area shape="rect" id="node73" href="a01138_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="2111,373,2281,400"/>
+<area shape="rect" id="node75" href="a01154_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="2306,373,2499,400"/>
+<area shape="rect" id="node77" href="a01142_source.html" title="testing\\expect&#45;exception.hpp" alt="" coords="2524,373,2743,400"/>
+<area shape="rect" id="node79" href="a01137_source.html" title="testing\\equal&#45;directories.hpp" alt="" coords="2767,373,2981,400"/>
+<area shape="rect" id="node81" href="a01153_source.html" title="testing\\run&#45;in&#45;multithreads.hpp" alt="" coords="3006,373,3236,400"/>
+<area shape="rect" id="node100" href="a01002_source.html" title="using&#45;string.hpp" alt="" coords="4093,208,4221,235"/>
+<area shape="rect" id="node104" href="a00938_source.html" title="alicorn\\extension\\boost\l\\locale.hpp" alt="" coords="4246,201,4423,242"/>
+<area shape="rect" id="node102" href="a00995_source.html" title="prefix.hpp" alt="" coords="4114,291,4200,317"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса ClassInfo. </p>
+<div class="textblock"><p>Тесты класса Locale. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_a6acce31fbb728672c01d5f546b55bde.html">Test.ClassInfo</a></li><li class="navelem"><a class="el" href="a00659.html">ClassInfo_test.cpp</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:55. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_8b7c208300099afebf5e0485feb856d9.html">Test.Locale</a></li><li class="navelem"><a class="el" href="a00659.html">Locale_test.cpp</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:12. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

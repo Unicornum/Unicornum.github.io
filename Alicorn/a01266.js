@@ -1,9 +1,11 @@
 var a01266 =
 [
-    [ "ArcCos", "a01266.html#ga38ce2d7f745c99f41f1a9dcc448d008b", null ],
-    [ "ArcSin", "a01266.html#ga2104517f783b71fdb1123123f8dcba74", null ],
-    [ "ArcTan", "a01266.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb", null ],
-    [ "Cos", "a01266.html#ga4a7357706084145b0cddd05c161ea772", null ],
-    [ "Sin", "a01266.html#ga8ab39ee8cc4acf6b68d38eb34eeab060", null ],
-    [ "Tan", "a01266.html#gabfb194a30a0380dbe3312321b164bca5", null ]
+    [ "IModel", "a00096.html", null ],
+    [ "Model", "a00128.html", [
+      [ "BuildPathToSection", "a00128.html#a0c097f184d0f8008705441c7e8f95f14", null ],
+      [ "GetSection", "a00128.html#a7fa27979818db9ba2e511c5a104fede8", null ],
+      [ "GetSections", "a00128.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
+      [ "GetSettings", "a00128.html#a14217a4b20565c53ba84cd9958354e3a", null ],
+      [ "SetValue", "a00128.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
+    ] ]
 ];

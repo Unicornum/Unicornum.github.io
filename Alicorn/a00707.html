@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Файл Solution/Solution/Alicorn/Build/Patterns/Test.Patterns/Test.ManagerUndoRedo/ManagerUndoRedo_test.cpp</title>
+<title>Libs: Файл Solution/Solution/Alicorn/Build/Patterns/Test.Patterns/Test.NonBlockingSignal/NonBlockingSignal_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,69 +108,70 @@ $(document).ready(function(){initNavTree('a00707.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл ManagerUndoRedo_test.cpp</div>  </div>
+<div class="title">Файл NonBlockingSignal_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;alicorn\extension\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a01024_source.html">alicorn\patterns.hpp</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a01028_source.html">alicorn\patterns.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для ManagerUndoRedo_test.cpp:</div>
+Граф включаемых заголовочных файлов для NonBlockingSignal_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01372.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_patterns_2_test_8_patterns_2_test_8_manager_undo_redo_2_manager_undo_redo__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_patterns_2_test_8_patterns_2_test_8_manager_undo_redo_2_manager_undo_redo__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_patterns_2_test_8_patterns_2_test_8_manager_undo_redo_2_manager_undo_redo__test_8cpp">
-<area shape="rect" id="node3" href="a00465_source.html" title="stdafx.h" alt="" coords="2033,133,2108,160"/>
-<area shape="rect" id="node71" href="a01024.html" title="alicorn\\patterns.hpp" alt="" coords="4694,133,4849,160"/>
-<area shape="rect" id="node5" href="a01170.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="1997,217,2144,258"/>
-<area shape="rect" id="node61" href="a00628_source.html" title="..\\mock.hpp" alt="" coords="572,224,673,251"/>
-<area shape="rect" id="node9" href="a00918_source.html" title="boost\\filesystem.hpp" alt="" coords="1991,307,2151,333"/>
-<area shape="rect" id="node19" href="a00954.html" title="alicorn\\extension\\google.hpp" alt="" coords="2319,307,2531,333"/>
-<area shape="rect" id="node25" href="a00779.html" title="alicorn\\requirements.hpp" alt="" coords="3179,307,3364,333"/>
-<area shape="rect" id="node43" href="a01032.html" title="alicorn\\testing.hpp" alt="" coords="817,307,964,333"/>
-<area shape="rect" id="node11" href="a00924_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="1597,389,1773,416"/>
-<area shape="rect" id="node13" href="a00926_source.html" title="filesystem\\irelative.hpp" alt="" coords="1798,389,1972,416"/>
-<area shape="rect" id="node15" href="a00921_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="1997,382,2144,423"/>
-<area shape="rect" id="node17" href="a00930_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="2169,382,2337,423"/>
-<area shape="rect" id="node21" href="a00960.html" title="google\\test.hpp" alt="" coords="2362,389,2488,416"/>
-<area shape="rect" id="node23" href="a00639_source.html" title="google\\mock.hpp" alt="" coords="2513,389,2647,416"/>
-<area shape="rect" id="node33" href="a01036.html" title="vs.hpp" alt="" coords="3924,389,3991,416"/>
-<area shape="rect" id="node35" href="a01147_source.html" title="testing\\id.hpp" alt="" coords="2672,389,2787,416"/>
-<area shape="rect" id="node37" href="a01146_source.html" title="testing\\friend.hpp" alt="" coords="2811,389,2951,416"/>
-<area shape="rect" id="node39" href="a01151_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="2976,389,3155,416"/>
-<area shape="rect" id="node41" href="a01152_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="3179,389,3364,416"/>
-<area shape="rect" id="node45" href="a00977_source.html" title="testing\\proxy.hpp" alt="" coords="5,389,144,416"/>
-<area shape="rect" id="node47" href="a01145_source.html" title="testing\\final.hpp" alt="" coords="168,389,299,416"/>
-<area shape="rect" id="node49" href="a01128_source.html" title="testing\\block&#45;file.hpp" alt="" coords="323,389,485,416"/>
-<area shape="rect" id="node51" href="a01137_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="510,389,676,416"/>
-<area shape="rect" id="node53" href="a01134_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="701,389,872,416"/>
-<area shape="rect" id="node55" href="a01150_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="897,389,1089,416"/>
-<area shape="rect" id="node57" href="a01138_source.html" title="testing\\expect&#45;exception.hpp" alt="" coords="1115,389,1333,416"/>
-<area shape="rect" id="node59" href="a01133_source.html" title="testing\\equal&#45;directories.hpp" alt="" coords="1358,389,1572,416"/>
-<area shape="rect" id="node73" href="a01072_source.html" title="patterns\\command.hpp" alt="" coords="4407,224,4581,251"/>
-<area shape="rect" id="node95" href="a01082_source.html" title="patterns\\factory.hpp" alt="" coords="4853,224,5013,251"/>
-<area shape="rect" id="node101" href="a01085_source.html" title="patterns\\mvc.hpp" alt="" coords="5254,224,5393,251"/>
-<area shape="rect" id="node75" href="a01073_source.html" title="command\\ICommand.hpp" alt="" coords="4556,472,4743,499"/>
-<area shape="rect" id="node77" href="a01075_source.html" title="command\\IUndo.hpp" alt="" coords="4571,389,4728,416"/>
-<area shape="rect" id="node80" href="a00763_source.html" title="command\\Data.hpp" alt="" coords="4117,307,4267,333"/>
-<area shape="rect" id="node82" href="a01074_source.html" title="command\\IManager.hpp" alt="" coords="4075,472,4255,499"/>
-<area shape="rect" id="node84" href="a01077_source.html" title="command\\ManagerCommon.hpp" alt="" coords="4225,389,4455,416"/>
-<area shape="rect" id="node87" href="a01076_source.html" title="command\\Manager.hpp" alt="" coords="4291,307,4465,333"/>
-<area shape="rect" id="node91" href="a01080_source.html" title="command\\ManagerUndoRedo.hpp" alt="" coords="4491,307,4731,333"/>
-<area shape="rect" id="node97" href="a01081_source.html" title="factory\\factory.hpp" alt="" coords="4857,307,5009,333"/>
-<area shape="rect" id="node99" href="a01084_source.html" title="factory\\registrator.hpp" alt="" coords="5034,307,5208,333"/>
-<area shape="rect" id="node103" href="a01088_source.html" title="mvc\\non&#45;blocking&#45;signal.hpp" alt="" coords="5282,389,5493,416"/>
-<area shape="rect" id="node105" href="a01086_source.html" title="mvc\\blocking&#45;signal.hpp" alt="" coords="5233,307,5415,333"/>
+<div class="center"><img src="a01391.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_patterns_2_test_8_patterns_2_test_8_non_blocking_signal_2_non_blocking_signal__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_build_2_patterns_2_test_8_patterns_2_test_8_non_blocking_signal_2_non_blocking_signal__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_patterns_2_test_8_patterns_2_test_8_non_blocking_signal_2_non_blocking_signal__test_8cpp">
+<area shape="rect" id="node3" href="a00447_source.html" title="stdafx.h" alt="" coords="3205,133,3280,160"/>
+<area shape="rect" id="node67" href="a00688_source.html" title="alicorn\\extension\\google\l\\test\\example.hpp" alt="" coords="3857,126,4039,167"/>
+<area shape="rect" id="node71" href="a01028.html" title="alicorn\\patterns.hpp" alt="" coords="3677,133,3832,160"/>
+<area shape="rect" id="node5" href="a01186.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="1221,217,1368,258"/>
+<area shape="rect" id="node57" href="a00611_source.html" title="..\\mock.hpp" alt="" coords="3192,224,3293,251"/>
+<area shape="rect" id="node9" href="a00921_source.html" title="boost\\filesystem.hpp" alt="" coords="479,307,639,333"/>
+<area shape="rect" id="node19" href="a00957.html" title="alicorn\\extension\\google.hpp" alt="" coords="885,307,1096,333"/>
+<area shape="rect" id="node25" href="a00778.html" title="alicorn\\requirements.hpp" alt="" coords="1505,307,1689,333"/>
+<area shape="rect" id="node43" href="a01036.html" title="alicorn\\testing.hpp" alt="" coords="2797,307,2944,333"/>
+<area shape="rect" id="node11" href="a00927_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="568,389,744,416"/>
+<area shape="rect" id="node13" href="a00929_source.html" title="filesystem\\irelative.hpp" alt="" coords="5,389,179,416"/>
+<area shape="rect" id="node15" href="a00924_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="203,382,351,423"/>
+<area shape="rect" id="node17" href="a00933_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="376,382,544,423"/>
+<area shape="rect" id="node21" href="a00963.html" title="google\\test.hpp" alt="" coords="927,389,1053,416"/>
+<area shape="rect" id="node23" href="a00622_source.html" title="google\\mock.hpp" alt="" coords="769,389,903,416"/>
+<area shape="rect" id="node33" href="a01040.html" title="vs.hpp" alt="" coords="1449,389,1516,416"/>
+<area shape="rect" id="node35" href="a01151_source.html" title="testing\\id.hpp" alt="" coords="1540,389,1655,416"/>
+<area shape="rect" id="node37" href="a01150_source.html" title="testing\\friend.hpp" alt="" coords="1679,389,1819,416"/>
+<area shape="rect" id="node39" href="a01155_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="1844,389,2023,416"/>
+<area shape="rect" id="node41" href="a01156_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="2047,389,2232,416"/>
+<area shape="rect" id="node45" href="a00980_source.html" title="testing\\proxy.hpp" alt="" coords="3025,389,3164,416"/>
+<area shape="rect" id="node47" href="a01149_source.html" title="testing\\final.hpp" alt="" coords="3188,389,3319,416"/>
+<area shape="rect" id="node49" href="a01132_source.html" title="testing\\block&#45;file.hpp" alt="" coords="3343,389,3505,416"/>
+<area shape="rect" id="node51" href="a01141_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="2421,389,2587,416"/>
+<area shape="rect" id="node53" href="a01138_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="2612,389,2783,416"/>
+<area shape="rect" id="node55" href="a01154_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="2807,389,3000,416"/>
+<area shape="rect" id="node73" href="a01076_source.html" title="patterns\\command.hpp" alt="" coords="4142,224,4316,251"/>
+<area shape="rect" id="node95" href="a01086_source.html" title="patterns\\factory.hpp" alt="" coords="3674,224,3835,251"/>
+<area shape="rect" id="node102" href="a01089_source.html" title="patterns\\mvc.hpp" alt="" coords="4743,224,4883,251"/>
+<area shape="rect" id="node75" href="a01077_source.html" title="command\\ICommand.hpp" alt="" coords="4507,472,4693,499"/>
+<area shape="rect" id="node77" href="a01079_source.html" title="command\\IUndo.hpp" alt="" coords="4521,389,4679,416"/>
+<area shape="rect" id="node80" href="a00762_source.html" title="command\\Data.hpp" alt="" coords="4061,307,4211,333"/>
+<area shape="rect" id="node82" href="a01078_source.html" title="command\\IManager.hpp" alt="" coords="4025,472,4204,499"/>
+<area shape="rect" id="node84" href="a01081_source.html" title="command\\ManagerCommon.hpp" alt="" coords="4095,389,4325,416"/>
+<area shape="rect" id="node87" href="a01080_source.html" title="command\\Manager.hpp" alt="" coords="4235,307,4409,333"/>
+<area shape="rect" id="node91" href="a01084_source.html" title="command\\ManagerUndoRedo.hpp" alt="" coords="4435,307,4675,333"/>
+<area shape="rect" id="node97" href="a01085_source.html" title="factory\\factory.hpp" alt="" coords="3582,307,3735,333"/>
+<area shape="rect" id="node100" href="a01088_source.html" title="factory\\registrator.hpp" alt="" coords="3759,307,3933,333"/>
+<area shape="rect" id="node104" href="a01092_source.html" title="mvc\\non&#45;blocking&#45;signal.hpp" alt="" coords="4818,389,5029,416"/>
+<area shape="rect" id="node106" href="a01090_source.html" title="mvc\\blocking&#45;signal.hpp" alt="" coords="4851,307,5032,333"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса ManagerUndoRedo. </p>
+<div class="textblock"><p>Тесты класса NonBlockingSignal. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_16ec6319bdbe192bd3493b8915d6e5c2.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_f1e27708b820d52f6f010fad3054b66a.html">Test.Patterns</a></li><li class="navelem"><a class="el" href="dir_7a580e6043c6d8ceb1651bfc29f2723e.html">Test.ManagerUndoRedo</a></li><li class="navelem"><a class="el" href="a00707.html">ManagerUndoRedo_test.cpp</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:55. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_16ec6319bdbe192bd3493b8915d6e5c2.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_f1e27708b820d52f6f010fad3054b66a.html">Test.Patterns</a></li><li class="navelem"><a class="el" href="dir_7f55da9b428209205cb1aa582fe601f7.html">Test.NonBlockingSignal</a></li><li class="navelem"><a class="el" href="a00707.html">NonBlockingSignal_test.cpp</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:13. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

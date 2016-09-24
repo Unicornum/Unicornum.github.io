@@ -1,5 +1,5 @@
 var a00184 =
 [
-    [ "operator=", "a00184.html#a36192a1697e4ef5ffdfa35e61f356220", null ],
-    [ "To", "a00184.html#a36becd5fc4b1dbbddad326c67708eae7", null ]
+    [ "WriteRecord", "a00184.html#a36ba11583024bbba693e2998ea4d3668", null ],
+    [ "WriteTitle", "a00184.html#a672763fba708c23851b38be162768bac", null ]
 ];

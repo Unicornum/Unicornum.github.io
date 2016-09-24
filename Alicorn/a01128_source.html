@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Исходный файл Solution/Solution/Alicorn/include/alicorn/testing/block-file.hpp</title>
+<title>Libs: Исходный файл Solution/Solution/Alicorn/include/alicorn/system/process/call-back.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,16 +108,18 @@ $(document).ready(function(){initNavTree('a01128_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">block-file.hpp</div>  </div>
+<div class="title">call-back.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="a01287.html#ga19899edc3a2fc42261218d524c7364db">   23</a></span>&#160;<span class="preprocessor">#define BLOCK_FILE(PathToFile) \</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">  ::std::ofstream BlockFile(PathToFile.wstring(), ::std::ios::app, _SH_DENYRW); \</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">  ASSERT_TRUE(BlockFile.is_open())</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01197.html">alicorn</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>system</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>process</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a00091.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00091.html">ICallBack</a></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> IsContinue(<span class="keywordtype">void</span>) = 0;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Received(<span class="keyword">const</span> std::string &amp;) = 0;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a00091.html">ICallBack</a>(<span class="keywordtype">void</span>) {}</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;} <span class="comment">// namespace process</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;} <span class="comment">// namespace system</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a01197_html"><div class="ttname"><a href="a01197.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> String_test.cpp:76</div></div>
+<div class="ttc" id="a00091_html"><div class="ttname"><a href="a00091.html">alicorn::system::process::ICallBack</a></div><div class="ttdoc">Класс входит в System   Интерфейсный класс для объекта обратного вызова, используемого при работе кла...</div><div class="ttdef"><b>Definition:</b> call-back.hpp:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_da7c20acf68aaddb5f7d59d7e20edd54.html">testing</a></li><li class="navelem"><b>block-file.hpp</b></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:54. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_84dba80d8c4e490b971c241d56a2e320.html">system</a></li><li class="navelem"><a class="el" href="dir_9e2c187a27f6434b836cb6c6c542da32.html">process</a></li><li class="navelem"><b>call-back.hpp</b></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:12. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

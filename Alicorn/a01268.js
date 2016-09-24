@@ -1,4 +1,5 @@
 var a01268 =
 [
-    [ "Math", "a01267.html", "a01267" ]
+    [ "SettingsFrame", "a00163.html", null ],
+    [ "SettingsPanelImpl", "a00166.html", null ]
 ];

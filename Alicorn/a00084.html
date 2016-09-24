@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс alicorn::settings::File</title>
+<title>Libs: Класс alicorn::logger::Filter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,122 +110,60 @@ $(document).ready(function(){initNavTree('a00084.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01681.html">Полный список членов класса</a>  </div>
+<a href="a01609.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::settings::File<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01245.html">Alicorn</a> &raquo; <a class="el" href="a01285.html">Settings</a></div></div>  </div>
+<div class="title">Класс alicorn::logger::Filter<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01262.html">Alicorn</a> &raquo; <a class="el" href="a01296.html">Logger</a> &raquo; <a class="el" href="a01293.html">Config</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00026.html">Settings</a> <br />
- Класс доступа к файлу настроек.  
+<p>Класс входит в <a class="el" href="a00023.html">Logger</a> <br />
+ Фильтр сообщений. Выводиться в лог будут сообщения &gt;= установленного.  
  <a href="a00084.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01063_source.html">file.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01044_source.html">config-value.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::settings::File:</div>
+Граф наследования:alicorn::logger::Filter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01682.png" border="0" usemap="#alicorn_1_1settings_1_1_file_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1settings_1_1_file_coll__map" id="alicorn_1_1settings_1_1_file_coll__map">
+<div class="center"><img src="a01610.png" border="0" usemap="#alicorn_1_1logger_1_1_filter_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1logger_1_1_filter_inherit__map" id="alicorn_1_1logger_1_1_filter_inherit__map">
+<area shape="rect" id="node2" href="a00053.html" title="Класс входит в Logger &#160;&#160;Базовый класс&#45;обертка параметров для передачи их значений конфигуратору..." alt="" coords="5,5,211,141"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса alicorn::logger::Filter:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01611.png" border="0" usemap="#alicorn_1_1logger_1_1_filter_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1logger_1_1_filter_coll__map" id="alicorn_1_1logger_1_1_filter_coll__map">
+<area shape="rect" id="node2" href="a00053.html" title="Класс входит в Logger &#160;&#160;Базовый класс&#45;обертка параметров для передачи их значений конфигуратору..." alt="" coords="18,552,224,688"/>
+<area shape="rect" id="node4" href="a00054.html" title="Класс входит в Logger &#160;&#160;Класс для передачи значения параметра конфигуратору. " alt="" coords="5,411,237,488"/>
+<area shape="rect" id="node6" href="a00167.html" title="Класс входит в Std &#160;&#160;Класс&#45;обертка для строк из стандартной библиотеки. " alt="" coords="51,6,191,333"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:ae1eeefb237c2c1965a388681e993bc8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#ae1eeefb237c2c1965a388681e993bc8b">Save</a> (void) const </td></tr>
-<tr class="memdesc:ae1eeefb237c2c1965a388681e993bc8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сохранения изменений в файле настроек.  <a href="#ae1eeefb237c2c1965a388681e993bc8b">Подробнее...</a><br /></td></tr>
-<tr class="separator:ae1eeefb237c2c1965a388681e993bc8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dcb21db9e1623e84b9c3dee81c12617"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00084.html#a7dcb21db9e1623e84b9c3dee81c12617">File</a> (void)</td></tr>
-<tr class="memdesc:a7dcb21db9e1623e84b9c3dee81c12617"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a7dcb21db9e1623e84b9c3dee81c12617">Подробнее...</a><br /></td></tr>
-<tr class="separator:a7dcb21db9e1623e84b9c3dee81c12617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_static_methods_a00053"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a00053')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="a00053.html">alicorn::logger::ConfigValue</a></td></tr>
+<tr class="memitem:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a00053"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#a1bc3db12e58ae1a9990aabe36e87f524">DoComplete</a> (const ConfigValuePtr_t &amp;)</td></tr>
+<tr class="memdesc:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a00053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#a1bc3db12e58ae1a9990aabe36e87f524">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc3d153992034d8ba9ec875981e77cdc inherit pub_static_methods_a00053"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00053.html#abc3d153992034d8ba9ec875981e77cdc">DoComplete</a> (const ConfigValuePtr_t &amp;, bool)</td></tr>
+<tr class="memdesc:abc3d153992034d8ba9ec875981e77cdc inherit pub_static_methods_a00053"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#abc3d153992034d8ba9ec875981e77cdc">Подробнее...</a><br /></td></tr>
+<tr class="separator:abc3d153992034d8ba9ec875981e77cdc inherit pub_static_methods_a00053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00026.html">Settings</a> <br />
- Класс доступа к файлу настроек. </p>
-<ul>
-<li>Предоставляет доступ к файлу настроек и позволяет абстрагироваться от места расположения этого файла.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Октябрь 2015 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
-<a class="anchor" id="a7dcb21db9e1623e84b9c3dee81c12617"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">File::File </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Конструктор класса. </p>
-<p>Порядок поиска файла настроек:</p><ul>
-<li>Папка хранения данных программ текущего пользователя (C:\Users\{User}\AppData\Roaming\{CompanyName}\{ProductName}).</li>
-<li>Папка, на 2 уровня выше расположения бинарных файлов (предполагается, что бинарные файлы программы располагаются в папках '...\Bin\x86').</li>
-<li>Папка расположения бинарных файлов.</li>
-</ul>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Методы</h2>
-<a class="anchor" id="ae1eeefb237c2c1965a388681e993bc8b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void File::Save </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция сохранения изменений в файле настроек. </p>
-<ul>
-<li>Сохранение всегда производится в папку хранения данных программ текущего пользователя (C:\Users\{User}\AppData\Roaming\{CompanyName}\{ProductName}).</li>
-</ul>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/include/alicorn/settings/<a class="el" href="a01063_source.html">file.hpp</a></li>
-<li>Solution/Solution/Alicorn/include/alicorn/settings/file.cpp</li>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00023.html">Logger</a> <br />
+ Фильтр сообщений. Выводиться в лог будут сообщения &gt;= установленного. </p>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/<a class="el" href="a01044_source.html">config-value.hpp</a></li>
+<li>Solution/Solution/Alicorn/include/alicorn/logger/config-value.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>settings</b></li><li class="navelem"><a class="el" href="a00084.html">File</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:57. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a00084.html">Filter</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:15. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

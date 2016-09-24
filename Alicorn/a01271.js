@@ -1,20 +1,11 @@
 var a01271 =
 [
-    [ "Match", "a00122.html", [
-      [ "Match", "a00122.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
-      [ "Match", "a00122.html#a6771afe48b8f1155f53536b2220e2764", null ],
-      [ "GetGroups", "a00122.html#a25a080222bf760066265b29637242692", null ],
-      [ "IsMatch", "a00122.html#abaaf6788b646b68ad35c6063693f07b3", null ]
+    [ "InfoTestingApp", "a00101.html", null ],
+    [ "IReport", "a00106.html", [
+      [ "GetResult", "a00106.html#af3b06a8f3860ae9f64b3dd8a4bf5d6fe", null ]
     ] ],
-    [ "Replace", "a00154.html", [
-      [ "Replace", "a00154.html#adb87baefad52f5062b8edeba4ca08c03", null ],
-      [ "Replace", "a00154.html#a16563cd9219fb222a79395912e3dc987", null ],
-      [ "DoReplace", "a00154.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
-    ] ],
-    [ "Search", "a00156.html", [
-      [ "Search", "a00156.html#a845a87338ed627ba32a9893ddbdd2559", null ],
-      [ "Search", "a00156.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
-      [ "GetCoincided", "a00156.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
-      [ "IsSearch", "a00156.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
-    ] ]
+    [ "operator==", "a01271.html#ga2b1de01ae80f1214a4f726afd9e3a50d", null ],
+    [ "operator==", "a01271.html#ga00a359a3b95e8cc21123efb4c22130b2", null ],
+    [ "operator==", "a01271.html#ga49f782b060a688cbb902b154a3f72622", null ],
+    [ "operator==", "a01271.html#ga2f6bc0e62ec581d270647905030ade53", null ]
 ];

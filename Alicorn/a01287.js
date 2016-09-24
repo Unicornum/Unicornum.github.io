@@ -1,26 +1,16 @@
 var a01287 =
 [
-    [ "Proxy", "a00146.html", null ],
-    [ "ASSERT_DIRECTORY_EQ", "a01287.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
-    [ "ASSERT_EXISTS_FILE_FALSE", "a01287.html#gaf5900286722be76eaf83b881ba160bb1", null ],
-    [ "ASSERT_EXISTS_FILE_TRUE", "a01287.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],
-    [ "ASSERT_FILES_BINARY_EQ", "a01287.html#gadedb8f379e467a385930902dddd6d157", null ],
-    [ "ASSERT_FILES_BINARY_NE", "a01287.html#ga47e03c92d053709b90f83f6b20c9b7ba", null ],
-    [ "ASSERT_FILES_STREQ", "a01287.html#ga69b3a6234d72517ef85674de2cf60d30", null ],
-    [ "ASSERT_STDEXCEPTION", "a01287.html#ga9b6950e02cf07c434b3c9ccc325b9559", null ],
-    [ "BLOCK_FILE", "a01287.html#ga19899edc3a2fc42261218d524c7364db", null ],
-    [ "EXPECT_DIRECTORY_EQ", "a01287.html#ga110902fa9f184c39fc0c095562472c69", null ],
-    [ "EXPECT_EXISTS_FILE_FALSE", "a01287.html#ga548418041138f552c93a97dfb866f9ac", null ],
-    [ "EXPECT_EXISTS_FILE_TRUE", "a01287.html#ga30aa7b117cfbd9a5a2df877a16092f5c", null ],
-    [ "EXPECT_FILES_BINARY_EQ", "a01287.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2", null ],
-    [ "EXPECT_FILES_BINARY_NE", "a01287.html#gaae14802f30c143ba014bc7980d3db7f0", null ],
-    [ "EXPECT_FILES_STREQ", "a01287.html#ga14628cf5a758a8aeec9b5bb69fed767e", null ],
-    [ "EXPECT_STDEXCEPTION", "a01287.html#gae7553b6a2b3b0c4a21e94d06217ef8f3", null ],
-    [ "FRIEND_TEST", "a01287.html#gab92570f53abf3b4fbbd13acaf4265468", null ],
-    [ "THIS_DIRECTORY", "a01287.html#gad33527f0cbd8dabe93ba131e08796e74", null ],
-    [ "GetThisDirectory", "a01287.html#ga7f988e79eeac54f11e080ffbd5196129", null ],
-    [ "IsBinaryEqual", "a01287.html#ga8ea43b95b81df91082282cd21af937b6", null ],
-    [ "IsExists", "a01287.html#gaba7352a2eed189b48b6cdda86280e0e2", null ],
-    [ "IsMatch", "a01287.html#ga12fae53dd48adfd54cc17b98f46a3def", null ],
-    [ "IsStrEqual", "a01287.html#gac541b5429b4a879c791f2f36b2697046", null ]
+    [ "Locale", "a00113.html", [
+      [ "Russian", "a00154.html", null ]
+    ] ],
+    [ "StringCastProxy", "a00166.html", [
+      [ "string_cast", "a00166.html#acda0aa998e1a3e1d0e9217b2d9b081d7", null ],
+      [ "string_cast", "a00166.html#add2a4f861ab927f202e9e49fc868699d", null ]
+    ] ],
+    [ "String", "a00165.html", [
+      [ "serialize", "a00165.html#a525d06040212293da2c8c3eb7006e561", null ],
+      [ "Tokenize", "a00165.html#a22e59a8ecbd629a830dd32f858286d02", null ]
+    ] ],
+    [ "string_cast", "a01287.html#gafc1bb38569424983a63fbf99ce9f47c1", null ],
+    [ "string_cast", "a01287.html#ga7547d6bee1244042e43ffb63d797c231", null ]
 ];

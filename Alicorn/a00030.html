@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Testing.App</title>
+<title>Libs: Исходные требования</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -102,47 +102,47 @@ $(document).ready(function(){initNavTree('a00030.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Testing.App </div>  </div>
+<div class="title">Исходные требования </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Список классов проекта: <a class="el" href="a01269.html">Testing.App</a></p>
-<h1><a class="anchor" id="sAlicornBuildTestingAppBrief"></a>
-Введение</h1>
-<p>Проект, содержащий реализацию проектов тестирования.</p>
-<h1><a class="anchor" id="sAlicornBuildTestingAppDetails"></a>
-Подробное описание проекта</h1>
-<p><a class="el" href="a00031.html">Исходные требования</a></p>
-<p>Проект реализует программу отображения результат прогона тестов. <br />
- Программа существует в трех версиях:</p><ul>
-<li>Тесты одного класса.</li>
-<li>Тесты всех классов одного проекта.</li>
-<li>Тесты всех классов всех проектов решения.</li>
+<div class="textblock"><h1>Требования первого этапа </h1>
+<ul>
+<li> <input type="checkbox" checked disabled>  Диалоговое окно отображения результатов прогона тестов.</li>
+<li> <input type="checkbox" checked disabled>  Цвет фона всех вкладок окна должен зависеть от результата прогона тестов (зеленый, если все тесты пройдены успешно, красный, если есть хотя бы один проваленный тест).</li>
 </ul>
-<h2>Тестовый проект одного класса </h2>
-<p>Собирается как исполняемый файл, при запуске отображает результат прогона тестов своего класса.</p>
-<h3>Схема взаимодействия классов тестового проекта одного класса</h3>
+<h2>Диалоговое окно отображения результатов прогона тестов </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Вкладка общей статистики.</li>
+<li> <input type="checkbox" checked disabled>  Вкладка со списком всех тестов.</li>
+<li> <input type="checkbox" checked disabled>  Вкладка со списком проваленных тестов.</li>
+</ul>
+<p>### Вкладка общей статистики</p><ul>
+<li> <input type="checkbox" checked disabled>  Общее количество выполненных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество успешно пройденных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество проваленных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество отключенных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Дата/время запуска тестов.</li>
+<li> <input type="checkbox" checked disabled>  Название и версия используемой библиотеки тестирования.</li>
+</ul>
+<p>### Вкладка со списком всех тестов</p><ul>
+<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
+<li> <input type="checkbox" checked disabled>  Узлы дерева должны помечаться иконками успеха/провала.</li>
+</ul>
+<p>### Вкладка со списком проваленных тестов</p><ul>
+<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
+<li> <input type="checkbox" checked disabled>  Отображение подробного описания при выборе проваленного теста.</li>
+</ul>
+<h2>Прототип </h2>
 <div class="image">
-<img src="Testing.App.Classes.TestClass.png" alt="Testing.App.Classes.TestClass.png"/>
-</div>
-<h2>Общий тестовый проект проекта </h2>
-<p>Собирается как dll, предоставляя интерфейс получения результата прогона тестов всех классов одного проекта.</p>
-<h3>Схема взаимодействия классов тестового проекта всех классов проекта</h3>
-<div class="image">
-<img src="Testing.App.Classes.TestProject.png" alt="Testing.App.Classes.TestProject.png"/>
-</div>
-<h2>Тестовый проект всего решения </h2>
-<p>Собирается как исполняемый файл, при запуске собирает и отображает информацию о прогоне тестов всех проектов решения.</p>
-<h3>Схема взаимодействия классов тестового проекта всего решения</h3>
-<div class="image">
-<img src="Testing.App.Classes.TestSolution.png" alt="Testing.App.Classes.TestSolution.png"/>
+<img src="Testing.App.Prototype.png" alt="Testing.App.Prototype.png"/>
 </div>
  </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li><li class="navelem"><a class="el" href="a00011.html">Alicorn</a></li><li class="navelem"><a class="el" href="a00012.html">Build</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:55. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li><li class="navelem"><a class="el" href="a00011.html">Alicorn</a></li><li class="navelem"><a class="el" href="a00012.html">Build</a></li><li class="navelem"><a class="el" href="a00029.html">Testing.App</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:13. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

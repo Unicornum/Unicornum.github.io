@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Исходный файл Solution/Solution/Alicorn/include/alicorn/testing/directory/get-this-directory.hpp</title>
+<title>Libs: Исходный файл Solution/Solution/Alicorn/include/alicorn/testing/block-file.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,19 +108,16 @@ $(document).ready(function(){initNavTree('a01132_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">get-this-directory.hpp</div>  </div>
+<div class="title">block-file.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\lib-info\Testing.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00917.html">alicorn\extension\boost\filesystem.forward.hpp</a>&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01181.html">alicorn</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>testing</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;boost::filesystem::path <a class="code" href="a01287.html#ga7f988e79eeac54f11e080ffbd5196129">GetThisDirectory</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> * _File);</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <span class="comment">// namespace testing</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a01287_html_ga7f988e79eeac54f11e080ffbd5196129"><div class="ttname"><a href="a01287.html#ga7f988e79eeac54f11e080ffbd5196129">alicorn::testing::GetThisDirectory</a></div><div class="ttdeci">boost::filesystem::path GetThisDirectory(const char *_File)</div><div class="ttdoc">Функция входит в Testing   Вспомогательная функция получения пути к текущему .cpp файлу...</div><div class="ttdef"><b>Definition:</b> get-this-directory.cpp:22</div></div>
-<div class="ttc" id="a00917_html"><div class="ttname"><a href="a00917.html">filesystem.forward.hpp</a></div></div>
-<div class="ttc" id="a01181_html"><div class="ttname"><a href="a01181.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> String_test.cpp:76</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#if BOOST_OS_WINDOWS</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define BLOCK_FILE(PathToFile) \</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">  ::std::ofstream BlockFile((PathToFile).wstring(), ::std::ios::app, _SH_DENYRW); \</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">  ASSERT_TRUE(BlockFile.is_open())</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_da7c20acf68aaddb5f7d59d7e20edd54.html">testing</a></li><li class="navelem"><a class="el" href="dir_370cb26e46c004782f59fb55c21f7d48.html">directory</a></li><li class="navelem"><b>get-this-directory.hpp</b></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:54. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_da7c20acf68aaddb5f7d59d7e20edd54.html">testing</a></li><li class="navelem"><b>block-file.hpp</b></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:12. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

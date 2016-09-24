@@ -1,6 +1,5 @@
 var a00081 =
 [
-    [ "OnChanged", "a00081.html#a8f31082d1573122757db0572e9100a93", null ],
-    [ "OnPaint", "a00081.html#ad8351ca940eeac53bdbd81672c52db1d", null ],
-    [ "SetResultRunTests", "a00081.html#a8454b3f179b3136728668033f1f56885", null ]
+    [ "File", "a00081.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
+    [ "Save", "a00081.html#ae1eeefb237c2c1965a388681e993bc8b", null ]
 ];

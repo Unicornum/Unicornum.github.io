@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс wx::HtmlAbout</title>
+<title>Libs: Класс alicorn::system::process::ICallBack</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.1 Revision: 1993 Platform: x64 Build: 12:47 10 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,56 +110,45 @@ $(document).ready(function(){initNavTree('a00091.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01833.html">Полный список членов класса</a>  </div>
+<a href="a01744.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wx::HtmlAbout<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01245.html">Alicorn</a> &raquo; <a class="el" href="a01246.html">SettingsApp</a> &raquo; <a class="el" href="a01250.html">View</a> &raquo; <a class="el" href="a01247.html">wxWidgets</a><a class="el" href="a01245.html">Alicorn</a> &raquo; <a class="el" href="a01269.html">Testing.App</a> &raquo; <a class="el" href="a01257.html">View</a> &raquo;  &#124; <a class="el" href="a01256.html">WxWidgets</a></div></div>  </div>
+<div class="title">Класс alicorn::system::process::ICallBack<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a01262.html">Alicorn</a> &raquo; <a class="el" href="a01303.html">System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00027.html">SettingsApp</a> <br />
- Класс отображения информации о программе в html формате.  
+<p>Класс входит в <a class="el" href="a00027.html">System</a> <br />
+ Интерфейсный класс для объекта обратного вызова, используемого при работе класса <a class="el" href="a00141.html" title="Класс входит в System   Класс для запуска других программ. ">Process</a>.  
  <a href="a00091.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00682_source.html">HtmlAbout.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:HtmlAbout, HtmlAbout и HtmlAbout.</p>
+<p><code>#include &lt;<a class="el" href="a01128_source.html">call-back.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса wx::HtmlAbout:</div>
+Граф связей класса alicorn::system::process::ICallBack:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01834.png" border="0" usemap="#wx_1_1_html_about_coll__map" alt="Collaboration graph"/></div>
-<map name="wx_1_1_html_about_coll__map" id="wx_1_1_html_about_coll__map">
-</map>
+<div class="center"><img src="a01745.png" border="0" usemap="#alicorn_1_1system_1_1process_1_1_i_call_back_coll__map" alt="Collaboration graph"/></div>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00027.html">SettingsApp</a> <br />
- Класс отображения информации о программе в html формате. </p>
-<p>Класс входит в <a class="el" href="a00030.html">Testing.App</a> <br />
- Класс отображения информации о программе в html формате.</p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 2.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>25 Декабрь 2015 <br />
- 14 Май 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016</dd></dl>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00027.html">System</a> <br />
+ Интерфейсный класс для объекта обратного вызова, используемого при работе класса <a class="el" href="a00141.html" title="Класс входит в System   Класс для запуска других программ. ">Process</a>. </p>
+<ul>
+<li>Функция IsContinue() вызывается постоянно в процессе работы запущенной программы, она должна вернуть false, если работу программы следует прервать.</li>
+<li>Функция Received() вызывается после завершения работы запущенной программы (штатного или принудительного) для каждой отдельной строки ее консольного вывода.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>18 Май 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>10 Сентябрь 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Build/Extension/wxWidgets/Test.HtmlAbout/<a class="el" href="a00681_source.html">HtmlAbout.hpp</a></li>
-<li>Solution/Solution/Alicorn/Build/Extension/wxWidgets/Test.HtmlAbout/HtmlAbout.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Alicorn/include/alicorn/system/process/<a class="el" href="a01128_source.html">call-back.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00091.html">HtmlAbout</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 10 Сен 2016 12:47:57. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><b>process</b></li><li class="navelem"><a class="el" href="a00091.html">ICallBack</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:15. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

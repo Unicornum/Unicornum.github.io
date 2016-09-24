@@ -1,12 +1,8 @@
 var a00128 =
 [
-    [ "MessageImpl", "a00128.html#aead43313ff34adde57b4d0f79d535f1c", null ],
-    [ "m_DateTime", "a00128.html#afa58e26786b951a8c796f060d93c13f5", null ],
-    [ "m_FileLine", "a00128.html#a2fcf644acdc70fc17a9ced3f7c206408", null ],
-    [ "m_FullFileLine", "a00128.html#a5488596e9976dd74cd60218ace6b7bfc", null ],
-    [ "m_Hash", "a00128.html#a70dde1057597afe5723ab5e9e776f027", null ],
-    [ "m_Level", "a00128.html#a6e74c8ae0d3d3f5c66a86998c6bc5a9e", null ],
-    [ "m_Message", "a00128.html#a197f88a4e9bd58de9eb043ecb5c23394", null ],
-    [ "m_StrType", "a00128.html#ada6012e1c6046f2287c98380d019a022", null ],
-    [ "m_ThreadInfo", "a00128.html#a35d7fed271b732e9867b8c9fea6617b3", null ]
+    [ "BuildPathToSection", "a00128.html#a0c097f184d0f8008705441c7e8f95f14", null ],
+    [ "GetSection", "a00128.html#a7fa27979818db9ba2e511c5a104fede8", null ],
+    [ "GetSections", "a00128.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
+    [ "GetSettings", "a00128.html#a14217a4b20565c53ba84cd9958354e3a", null ],
+    [ "SetValue", "a00128.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
 ];

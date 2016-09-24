@@ -1,15 +1,9 @@
 var a01280 =
 [
-    [ "Data", "a00066.html", null ],
-    [ "ICommand", "a00094.html", null ],
-    [ "IManager", "a00097.html", null ],
-    [ "IUndo", "a00110.html", null ],
-    [ "ManagerCommon", "a00120.html", null ],
-    [ "ManagerUndoRedo", "a00121.html", [
-      [ "IsAllowedRedo", "a00121.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
-      [ "IsAllowedUndo", "a00121.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
-      [ "Redo", "a00121.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
-      [ "Undo", "a00121.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
-    ] ],
-    [ "Manager", "a01280.html#ga4279689109bf5cff740fd6d25f303379", null ]
+    [ "ArcCos", "a01280.html#gaa1f9a57d13f01fd79928c206f2987771", null ],
+    [ "ArcSin", "a01280.html#gabc9373a8d3f74570f98b2c08f6e0839b", null ],
+    [ "ArcTan", "a01280.html#ga36893ac939107a0f2d2aad5f480e0dbd", null ],
+    [ "Cos", "a01280.html#gac0afab7827edd2f2c712e381ad4c6476", null ],
+    [ "Sin", "a01280.html#ga591de7acd440069d45ccfb5a23cc234b", null ],
+    [ "Tan", "a01280.html#ga941da4c724efde88e2fb9c75112542ed", null ]
 ];

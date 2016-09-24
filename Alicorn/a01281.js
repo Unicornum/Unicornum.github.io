@@ -1,9 +1,9 @@
 var a01281 =
 [
-    [ "Factory", "a00080.html", [
-      [ "Create", "a00080.html#ab623e8fecccf0c69bf8a9be11af41b10", null ],
-      [ "GetInstance", "a00080.html#a468c90913a541bf8447db46b62fc7875", null ],
-      [ "Register", "a00080.html#a7fa0f3418698b0f028e84791fc62c421", null ]
-    ] ],
-    [ "Registrator", "a00153.html", null ]
+    [ "ArcCos", "a01281.html#ga38ce2d7f745c99f41f1a9dcc448d008b", null ],
+    [ "ArcSin", "a01281.html#ga2104517f783b71fdb1123123f8dcba74", null ],
+    [ "ArcTan", "a01281.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb", null ],
+    [ "Cos", "a01281.html#ga4a7357706084145b0cddd05c161ea772", null ],
+    [ "Sin", "a01281.html#ga8ab39ee8cc4acf6b68d38eb34eeab060", null ],
+    [ "Tan", "a01281.html#gabfb194a30a0380dbe3312321b164bca5", null ]
 ];

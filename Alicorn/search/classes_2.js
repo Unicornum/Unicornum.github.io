@@ -14,11 +14,9 @@ var searchData=
   ['controller',['Controller',['../a00056.html',1,'controller']]],
   ['core',['Core',['../a00057.html',1,'alicorn::logger']]],
   ['core',['Core',['../a00058.html',1,'alicorn::vfs']]],
-  ['cp1251',['CP1251',['../a00059.html',1,'alicorn::extension::std::Locale']]],
-  ['cp866',['CP866',['../a00060.html',1,'alicorn::extension::std::Locale']]],
-  ['crypto',['Crypto',['../a00061.html',1,'alicorn::vfs']]],
-  ['crypto',['Crypto',['../a00062.html',1,'alicorn::converter']]],
-  ['crypto_3c_20aes256_20_3e',['Crypto&lt; AES256 &gt;',['../a00063.html',1,'alicorn::converter']]],
-  ['crypto_3c_20base64_20_3e',['Crypto&lt; Base64 &gt;',['../a00064.html',1,'alicorn::converter']]],
-  ['currentmodule',['CurrentModule',['../a00065.html',1,'alicorn::system']]]
+  ['crypto',['Crypto',['../a00059.html',1,'alicorn::vfs']]],
+  ['crypto',['Crypto',['../a00060.html',1,'alicorn::converter']]],
+  ['crypto_3c_20aes256_20_3e',['Crypto&lt; AES256 &gt;',['../a00061.html',1,'alicorn::converter']]],
+  ['crypto_3c_20base64_20_3e',['Crypto&lt; Base64 &gt;',['../a00062.html',1,'alicorn::converter']]],
+  ['currentmodule',['CurrentModule',['../a00063.html',1,'alicorn::system']]]
 ];

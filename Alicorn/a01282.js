@@ -1,9 +1,6 @@
 var a01282 =
 [
-    [ "BlockingSignal", "a00046.html", [
-      [ "operator()", "a00046.html#aeea3117f12d7c1cd4ab2fe12aee5ffa2", null ]
-    ] ],
-    [ "NonBlockingSignal", "a00132.html", [
-      [ "operator()", "a00132.html#ac1a6020453eb2c5332315e02dc9dcc48", null ]
-    ] ]
+    [ "Epsilon", "a01282.html#gada77aeeea8cdfd71e2fc258d2622faa5", null ],
+    [ "Infinity", "a01282.html#ga208a1945eed95cb7d404b0fba3fcbd2b", null ],
+    [ "Min", "a01282.html#ga092d73a3c219d160170528be0957ecf9", null ]
 ];

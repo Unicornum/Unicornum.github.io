@@ -1,9 +1,20 @@
 var a01288 =
 [
-    [ "Info", "a00102.html", null ],
-    [ "__FILE_VERSION__", "a01288.html#ga85f528db31313a13c1976707ebadcf84", null ],
-    [ "__FILE_VERSION_FULL__", "a01288.html#ga0facd32184b2ec0c57501e7d76ce59ca", null ],
-    [ "__FILE_VERSION_SHORT__", "a01288.html#gaca887abf1bed0f12a99431714940c050", null ],
-    [ "__PRODUCT_VERSION__", "a01288.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09", null ],
-    [ "__PRODUCT_VERSION_FULL__", "a01288.html#ga5e07a654741079583f62167c324ce81a", null ]
+    [ "Match", "a00120.html", [
+      [ "Match", "a00120.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
+      [ "Match", "a00120.html#a6771afe48b8f1155f53536b2220e2764", null ],
+      [ "GetGroups", "a00120.html#a25a080222bf760066265b29637242692", null ],
+      [ "IsMatch", "a00120.html#abaaf6788b646b68ad35c6063693f07b3", null ]
+    ] ],
+    [ "Replace", "a00153.html", [
+      [ "Replace", "a00153.html#adb87baefad52f5062b8edeba4ca08c03", null ],
+      [ "Replace", "a00153.html#a16563cd9219fb222a79395912e3dc987", null ],
+      [ "DoReplace", "a00153.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
+    ] ],
+    [ "Search", "a00157.html", [
+      [ "Search", "a00157.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+      [ "Search", "a00157.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+      [ "GetCoincided", "a00157.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+      [ "IsSearch", "a00157.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
+    ] ]
 ];

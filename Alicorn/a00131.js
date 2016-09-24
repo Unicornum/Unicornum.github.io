@@ -1,11 +1,10 @@
 var a00131 =
 [
-    [ "operator+=", "a00131.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
-    [ "operator-=", "a00131.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
-    [ "operator[]", "a00131.html#aab381d95bc38753a42ebc7c60fb2ce9a", null ],
-    [ "operator[]", "a00131.html#afc41066cbf2787ffb952d199a0640273", null ],
-    [ "operator[]", "a00131.html#a2f8e7fe05286832a146e97352345506e", null ],
-    [ "operator[]", "a00131.html#a4bfda637ac9887bb9676f301e40861be", null ],
-    [ "operator[]", "a00131.html#a44ae2217ccac94b6b565701bfd05774e", null ],
-    [ "operator[]", "a00131.html#a75535c69883d5768f646b92554d745d2", null ]
+    [ "Record", "a00150.html", null ],
+    [ "Pack", "a00131.html#a1715c6b00def1a4864ae4312ede86fa2", null ],
+    [ "AddFileToEndStorage", "a00131.html#a3f5f6bb4882857193ba500156b0d975a", null ],
+    [ "AddTitleTo", "a00131.html#af450de4757c89fa83e857e5574ad0d23", null ],
+    [ "Build", "a00131.html#a4f34549c63ec0f362b9ff30a5a64c4ec", null ],
+    [ "GetData", "a00131.html#adbabbe70e7bc1177f6d781ea44784734", null ],
+    [ "GetRelativePath", "a00131.html#a2d8d54716c19914858f36b1a01c83254", null ]
 ];
