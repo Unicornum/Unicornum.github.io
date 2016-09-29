@@ -1,7 +1,7 @@
 var a00120 =
 [
-    [ "Match", "a00120.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
-    [ "Match", "a00120.html#a6771afe48b8f1155f53536b2220e2764", null ],
-    [ "GetGroups", "a00120.html#a25a080222bf760066265b29637242692", null ],
-    [ "IsMatch", "a00120.html#abaaf6788b646b68ad35c6063693f07b3", null ]
+    [ "IsAllowedRedo", "a00120.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
+    [ "IsAllowedUndo", "a00120.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
+    [ "Redo", "a00120.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
+    [ "Undo", "a00120.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
 ];

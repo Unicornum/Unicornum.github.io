@@ -1,5 +1,0 @@
-var dir_f8217a6a924476f19ba41c130c6be4e8 =
-[
-    [ "(Documentation)", "dir_32045464036079b4ca303e36d4215884.html", "dir_32045464036079b4ca303e36d4215884" ],
-    [ "Settings", "dir_31c63be011b55270291e45a4533bb6a0.html", "dir_31c63be011b55270291e45a4533bb6a0" ]
-];

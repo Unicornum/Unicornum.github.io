@@ -1,5 +1,5 @@
 var a00174 =
 [
-    [ "GetResult", "a00174.html#a40370349abcd7e28fd0e7b35dc07f7ca", null ],
-    [ "SetResultRunTests", "a00174.html#a4841d4f1542468358b7e9f7c0ee85e03", null ]
+    [ "GetDllObject", "a00174.html#a8951967671138e75cb5fa35a92a3356e", null ],
+    [ "GetInstance", "a00174.html#a4afac6707ae0d53632b97b88f35e5de0", null ]
 ];

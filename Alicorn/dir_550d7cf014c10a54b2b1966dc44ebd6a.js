@@ -13,6 +13,6 @@ var dir_550d7cf014c10a54b2b1966dc44ebd6a =
     [ "Test.TestProjectInfo", "dir_e377074f5a911ed4322ef3fba601b13e.html", "dir_e377074f5a911ed4322ef3fba601b13e" ],
     [ "Test.TreeCtrlIcons", "dir_d2ff5e26bdedda9707f24f6e57e21733.html", "dir_d2ff5e26bdedda9707f24f6e57e21733" ],
     [ "Test.TreeCtrlTests", "dir_6e0c75b389bc9fc14b131ac1ba67007e.html", "dir_6e0c75b389bc9fc14b131ac1ba67007e" ],
-    [ "mock.hpp", "a00618.html", null ],
-    [ "stdafx.h", "a00500_source.html", null ]
+    [ "mock.hpp", "a00518.html", null ],
+    [ "stdafx.h", "a00362_source.html", null ]
 ];

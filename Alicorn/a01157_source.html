@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Исходный файл Solution/Solution/Alicorn/include/alicorn/version.mock.hpp</title>
+<title>Libs: Исходный файл Solution/Solution/Alicorn/Build/Testing.App/Testing.App/View/AllTestsInfo.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.3 Revision: 2088 Platform: x64 Build: 15:51 29 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,16 +108,21 @@ $(document).ready(function(){initNavTree('a01157_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">version.mock.hpp</div>  </div>
+<div class="title">AllTestsInfo.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;version\info.mock.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IView.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;wxWidgets.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a01298.html">view</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00043.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00043.html">AllTestsInfo</a> final :</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00111.html">IViewTestingApp</a>,</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span> <a class="code" href="a00134.html">wx::PanelAllTests</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// Интерфейс IViewTestingApp:</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a00043.html#a23e9a44b7deda78006db6f424bea2bad">SetResultRunTests</a>(<span class="keyword">const</span> Info_t &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// PanelAllTests events:</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> OnPaint(wxPaintEvent &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="a00043.html">AllTestsInfo</a>(wxWindow *, wxWindowID, <span class="keyword">const</span> wxPoint &amp;, <span class="keyword">const</span> wxSize &amp;, <span class="keywordtype">long</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace view</span></div><div class="ttc" id="a00043_html"><div class="ttname"><a href="a00043.html">view::AllTestsInfo</a></div><div class="ttdoc">Класс входит в Testing.App   Класс панели отображения общей информации о прогоне тестов. </div><div class="ttdef"><b>Definition:</b> AllTestsInfo.hpp:24</div></div>
+<div class="ttc" id="a00043_html_a23e9a44b7deda78006db6f424bea2bad"><div class="ttname"><a href="a00043.html#a23e9a44b7deda78006db6f424bea2bad">view::AllTestsInfo::SetResultRunTests</a></div><div class="ttdeci">void SetResultRunTests(const Info_t &amp;) override</div><div class="ttdoc">Функция передачи объекту представления информации о результатах прогона тестов. </div><div class="ttdef"><b>Definition:</b> AllTestsInfo.cpp:16</div></div>
+<div class="ttc" id="a00134_html"><div class="ttname"><a href="a00134.html">wx::PanelAllTests</a></div><div class="ttdoc">Class PanelAllTests. </div><div class="ttdef"><b>Definition:</b> Generated.h:91</div></div>
+<div class="ttc" id="a00111_html"><div class="ttname"><a href="a00111.html">view::IViewTestingApp</a></div><div class="ttdoc">Класс входит в Testing.App   Интерфейсный класс представления. </div><div class="ttdef"><b>Definition:</b> IView.hpp:24</div></div>
+<div class="ttc" id="a01298_html"><div class="ttname"><a href="a01298.html">view</a></div><div class="ttdef"><b>Definition:</b> AppTestProject.hpp:7</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_3e485b6767415191f62ea634d9473613.html">include</a></li><li class="navelem"><a class="el" href="dir_34f62c79ac0a9d1c62ec4cec2d6b1c99.html">alicorn</a></li><li class="navelem"><b>version.mock.hpp</b></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:12. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_5d1c2c80bed916d20043917303c9546c.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_cad1c512beafda1209274ba9611f9f30.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_6e9e09a7bf05ba0ee45ade01aa36b19c.html">View</a></li><li class="navelem"><b>AllTestsInfo.hpp</b></li>
+    <li class="footer">Документация по Libs. Последние изменения: Чт 29 Сен 2016 15:51:21. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Converter</title>
+<title>Libs: Build</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.3 Revision: 2088 Platform: x64 Build: 15:51 29 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -102,26 +102,72 @@ $(document).ready(function(){initNavTree('a00013.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Converter </div>  </div>
+<div class="title">Build </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Список классов проекта: <a class="el" href="a01275.html">Converter</a></p>
-<h1><a class="anchor" id="sAlicornBuildConverterBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sAlicornBuildBrief"></a>
 Введение</h1>
+<p>Раздел проектов для сборки библиотек.</p>
+<h1><a class="anchor" id="ssAlicornBuildProjects"></a>
+Проекты раздела</h1>
+<h2>Связи между проектами </h2>
+<div class="image">
+<img src="ProjectsDependence.png" alt="ProjectsDependence.png"/>
+</div>
+<h2>Support </h2>
+<h3>Проект Visual Studio</h3>
+<p>Раздел классов, использующих специфические возможности Visual Studio.</p>
+<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000011">Необходимо сделать:</a></b></dt><dd>Изменить название проекта на более точное. </dd></dl>
+<p>Страница проекта: <a class="el" href="a00035.html">Visual Studio</a></p>
+<h3>Проект Testing</h3>
+<p>Проект содержит вспомогательные классы для использования в тестовых проектах.  Страница проекта: <a class="el" href="a00029.html">Testing</a></p>
+<h2>Low level </h2>
+<h3>Раздел Extension</h3>
+<p>Раздел классов, 'расширяющих' возможности стандартной библиотеки и иных внешних библиотек.</p>
+<p>Страница раздела: <a class="el" href="a00016.html">Extension</a></p>
+<h3>Проект Version</h3>
+<p>Проект обеспечивает установку .exe или .dll файлам версии решения (включая ревизию файлов решения и внешних библиотек), а также макросы версии, которые можно использовать в программе.</p>
+<p>Страница проекта: <a class="el" href="a00032.html">Version</a></p>
+<h3>Проект System</h3>
+<p>Проект вспомогательных классов для работы с системными функциями.  Страница проекта: <a class="el" href="a00028.html">System</a></p>
+<h2>Middle level </h2>
+<h3>Проект Converter</h3>
 <p>Проект классов для преобразования данных.</p>
-<h1><a class="anchor" id="sAlicornBuildConverterDetails"></a>
-Подробное описание проекта</h1>
-<p>Проект предназначен для классов-оберток над внешними библиотеками с единым интерфейсом преобразования данных для выполнения следующих операций:</p><ul>
-<li>Кодирование.</li>
-<li>Сжатие. </li>
-</ul>
+<p>Страница проекта: <a class="el" href="a00014.html">Converter</a></p>
+<h3>Проект Document</h3>
+<p>Проект классов работы с документами. <br />
+  Страница проекта: <a class="el" href="a00015.html">Document</a></p>
+<h2>High level </h2>
+<h3>Проект Patterns</h3>
+<p>Проект классов реализаций паттернов проектирования. </p>
+<p>Страница проекта: <a class="el" href="a00025.html">Patterns</a></p>
+<h3>Проект Settings</h3>
+<p>Проект классов, предоставляющих доступ к текущим настройкам программы. </p>
+<p>Страница проекта: <a class="el" href="a00026.html">Settings</a></p>
+<h3>Проект Logger</h3>
+<p>Библиотека логирования программы предназначена для ведения журнала работы программы. <br />
+ Запись сообщений в журнал производится путем добавления в код программы записей вида: </p><div class="fragment"><div class="line"><span class="comment">// Записать в лог сообщение &quot;Найдено 5 элементов&quot;</span></div><div class="line"><a class="code" href="a01322.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Warning) &lt;&lt; uT(<span class="stringliteral">&quot;Найдено &quot;</span>) &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; элементов&quot;</span>;</div></div><!-- fragment --><dl class="section pre"><dt>Предусловие</dt><dd>Предполагается, что в настройках проекта, использующего логгер включена подстановка полного пути к файлу для макроса <b>_</b> _ FILE _ _.</dd></dl>
+<p>Страница проекта: <a class="el" href="a00024.html">Logger</a></p>
+<h3>Проект Vfs</h3>
+<p>Проект виртуальной файловой системы, реализующей однотипное получение данных, сходное с чтением данных из файлов.</p>
+<p>Страница проекта: <a class="el" href="a00034.html">Virtual File System</a></p>
+<h3>Проект Settings.App</h3>
+<p>Проект, содержащий реализацию программы манипулирования настройками приложения.</p>
+<p>Страница проекта: <a class="el" href="a00027.html">SettingsApp</a></p>
+<h3>Проект Testing.App</h3>
+<p>Проект, содержащий реализацию проектов тестирования.</p>
+<p>Страница проекта: <a class="el" href="a00030.html">Testing.App</a></p>
+<h3>Проект Version.App</h3>
+<p>Проект логики работы утилиты, формирующей файл со строками версии решения для включения его в проект Packaging для Android.</p>
+<p><a class="el" href="a00039.html">Использование проекта</a> </p>
+<p>Страница проекта: <a class="el" href="a00033.html">Version.App</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li><li class="navelem"><a class="el" href="a00011.html">Alicorn</a></li><li class="navelem"><a class="el" href="a00012.html">Build</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:13. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li><li class="navelem"><a class="el" href="a00011.html">Alicorn</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Чт 29 Сен 2016 15:51:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

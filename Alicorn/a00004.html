@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.3 Revision: 2088 Platform: x64 Build: 15:51 29 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,7 +108,8 @@ $(document).ready(function(){initNavTree('a00004.html','');});
 <div class="textblock"><h1>Описание раздела </h1>
 <p>Раздел для вспомогательных проектов, собирающих проекты отдельных библиотек.</p>
 <h2>Проект Clean </h2>
-<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом. </p><dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
+<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
 <h2>Проект BuildAll </h2>
 <p>Проект, предназначенный для сборки всех остальных проектов 'одним кликом'.</p><ul>
 <li>Должен зависеть ото всех остальных проектов раздела Build и Test.Solution.</li>
@@ -117,14 +118,18 @@ $(document).ready(function(){initNavTree('a00004.html','');});
 <dl class="section note"><dt>Заметки</dt><dd>Проект BuildAll понадобился потому, что сборка при помощи MsBuild всего решения приводит к сборке выгруженных проектов.</dd></dl>
 <dl class="section warning"><dt>Предупреждения</dt><dd>10.05.2016: Параметры MsBuild '/p:DebugType=none;DebugSymbols=false' не работают для проектов lib, оставлены для ускорения сборки exe и dll.</dd></dl>
 <h2>Проект Alicorn </h2>
-<p>Проект, собирающий все проекты <a class="el" href="a00011.html">Alicorn</a>. </p>
+<p>Проект, собирающий все проекты <a class="el" href="a00011.html">Alicorn</a>.</p>
+<h2>Проект Android </h2>
+<p>Проект сборки всех проектов, предназначенных для использования под Android.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что если Android-проекту добавить в зависимость Windows-проект, то проваливается сборка скриптом всего решения (хотя сборка в Visual Studio работает).</dd></dl>
+<p>Проекту Test.Android/SourceVfsData (который формирует файл .pack, упаковываемый в .apk проектом Test.Android/Packaging) требуется зависимость от Test.Android/PackBuilder'a (который является Windows-проектом, т.к. должен запускаться при сборке решения), что и приводит к ошибке сборки скриптом. В качестве временного решения используется проект Android, который строится отдельной командой в BuildAll.cmd после построения всего остального. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:13. Создано системой
+    <li class="footer">Документация по Libs. Последние изменения: Чт 29 Сен 2016 15:51:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

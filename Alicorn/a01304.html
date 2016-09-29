@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Testing</title>
+<title>Libs: Filesystem</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.2 Revision: 2051 Platform: x64 Build: 14:15 24 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.3 Revision: 2088 Platform: x64 Build: 15:51 29 Сентябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -102,128 +102,54 @@ $(document).ready(function(){initNavTree('a01304.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a> &#124;
-<a href="#define-members">Макросы</a> &#124;
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Testing<div class="ingroups"><a class="el" href="a01262.html">Alicorn</a></div></div>  </div>
+<div class="title">Filesystem<div class="ingroups"><a class="el" href="a01300.html">Alicorn</a> &raquo; <a class="el" href="a01318.html">Extension</a> &raquo; <a class="el" href="a01305.html">Boost</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Testing:</div>
+Граф связей класса Filesystem:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a01304.png" border="0" alt="" usemap="#a01304"/>
 <map name="a01304" id="a01304">
-<area shape="rect" id="node2" href="a01262.html" title="Alicorn" alt="" coords="5,5,72,32"/>
+<area shape="rect" id="node2" href="a01305.html" title="Boost" alt="" coords="5,5,64,32"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00145.html">alicorn::testing::Proxy&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00028.html">Testing</a> <br />
- Базовый класс для построения прокси-классов для проверки вызовов функций подставных классов.  <a href="a00145.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Макросы</h2></td></tr>
-<tr class="memitem:ga110902fa9f184c39fc0c095562472c69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga110902fa9f184c39fc0c095562472c69"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga110902fa9f184c39fc0c095562472c69">EXPECT_DIRECTORY_EQ</a>(Expected,  Result)&#160;&#160;&#160;EXPECT_DIRECTORY_EQ_HELPER(Expected, Result, EXPECT)</td></tr>
-<tr class="memdesc:ga110902fa9f184c39fc0c095562472c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки побайтового совпадения всех файлов в двух папках без прерывания выполнения теста. <br /></td></tr>
-<tr class="separator:ga110902fa9f184c39fc0c095562472c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5114b2eddd505e8e2cc6a3e17699e5b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5114b2eddd505e8e2cc6a3e17699e5b4"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga5114b2eddd505e8e2cc6a3e17699e5b4">ASSERT_DIRECTORY_EQ</a>(Expected,  Result)&#160;&#160;&#160;EXPECT_DIRECTORY_EQ_HELPER(Expected, Result, ASSERT)</td></tr>
-<tr class="memdesc:ga5114b2eddd505e8e2cc6a3e17699e5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки побайтового совпадения всех файлов в двух папках с прерыванием выполнения теста. <br /></td></tr>
-<tr class="separator:ga5114b2eddd505e8e2cc6a3e17699e5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad6bf14bd6aa4179c8a9e0c8d8debd7b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad6bf14bd6aa4179c8a9e0c8d8debd7b2"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2">EXPECT_FILES_BINARY_EQ</a>(Expected,  Result)&#160;&#160;&#160;EXPECT_TRUE(::alicorn::testing::file::IsBinaryEqual(Expected, Result))</td></tr>
-<tr class="memdesc:gad6bf14bd6aa4179c8a9e0c8d8debd7b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки побайтового совпадения двух файлов без прерывания выполнения теста. <br /></td></tr>
-<tr class="separator:gad6bf14bd6aa4179c8a9e0c8d8debd7b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaae14802f30c143ba014bc7980d3db7f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaae14802f30c143ba014bc7980d3db7f0"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gaae14802f30c143ba014bc7980d3db7f0">EXPECT_FILES_BINARY_NE</a>(Expected,  Result)&#160;&#160;&#160;EXPECT_FALSE(::alicorn::testing::file::IsBinaryEqual(Expected, Result))</td></tr>
-<tr class="memdesc:gaae14802f30c143ba014bc7980d3db7f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки не совпадения двух файлов без прерывания выполнения теста. <br /></td></tr>
-<tr class="separator:gaae14802f30c143ba014bc7980d3db7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadedb8f379e467a385930902dddd6d157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gadedb8f379e467a385930902dddd6d157"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gadedb8f379e467a385930902dddd6d157">ASSERT_FILES_BINARY_EQ</a>(Expected,  Result)&#160;&#160;&#160;ASSERT_TRUE(::alicorn::testing::file::IsBinaryEqual(Expected, Result))</td></tr>
-<tr class="memdesc:gadedb8f379e467a385930902dddd6d157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки побайтового совпадения двух файлов с прерыванием выполнения теста. <br /></td></tr>
-<tr class="separator:gadedb8f379e467a385930902dddd6d157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47e03c92d053709b90f83f6b20c9b7ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga47e03c92d053709b90f83f6b20c9b7ba"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga47e03c92d053709b90f83f6b20c9b7ba">ASSERT_FILES_BINARY_NE</a>(Expected,  Result)&#160;&#160;&#160;ASSERT_FALSE(::alicorn::testing::file::IsBinaryEqual(Expected, Result))</td></tr>
-<tr class="memdesc:ga47e03c92d053709b90f83f6b20c9b7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки не совпадения двух файлов с прерыванием выполнения теста. <br /></td></tr>
-<tr class="separator:ga47e03c92d053709b90f83f6b20c9b7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14628cf5a758a8aeec9b5bb69fed767e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga14628cf5a758a8aeec9b5bb69fed767e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga14628cf5a758a8aeec9b5bb69fed767e">EXPECT_FILES_STREQ</a>(Expected,  Result)&#160;&#160;&#160;EXPECT_EQ(-1, ::alicorn::testing::file::IsStrEqual(Expected, Result))</td></tr>
-<tr class="memdesc:ga14628cf5a758a8aeec9b5bb69fed767e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки построчного совпадения двух файлов без прерывания выполнения теста. <br /></td></tr>
-<tr class="separator:ga14628cf5a758a8aeec9b5bb69fed767e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69b3a6234d72517ef85674de2cf60d30"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga69b3a6234d72517ef85674de2cf60d30"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga69b3a6234d72517ef85674de2cf60d30">ASSERT_FILES_STREQ</a>(Expected,  Result)&#160;&#160;&#160;ASSERT_EQ(-1, ::alicorn::testing::file::IsStrEqual(Expected, Result))</td></tr>
-<tr class="memdesc:ga69b3a6234d72517ef85674de2cf60d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки построчного совпадения двух файлов с прерыванием выполнения теста. <br /></td></tr>
-<tr class="separator:ga69b3a6234d72517ef85674de2cf60d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga30aa7b117cfbd9a5a2df877a16092f5c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga30aa7b117cfbd9a5a2df877a16092f5c"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga30aa7b117cfbd9a5a2df877a16092f5c">EXPECT_EXISTS_FILE_TRUE</a>(Path)&#160;&#160;&#160;EXPECT_TRUE(::alicorn::testing::file::IsExists(Path))</td></tr>
-<tr class="memdesc:ga30aa7b117cfbd9a5a2df877a16092f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки существования файла без прерывания выполнения теста. <br /></td></tr>
-<tr class="separator:ga30aa7b117cfbd9a5a2df877a16092f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga548418041138f552c93a97dfb866f9ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga548418041138f552c93a97dfb866f9ac"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga548418041138f552c93a97dfb866f9ac">EXPECT_EXISTS_FILE_FALSE</a>(Path)&#160;&#160;&#160;EXPECT_FALSE(::alicorn::testing::file::IsExists(Path))</td></tr>
-<tr class="memdesc:ga548418041138f552c93a97dfb866f9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки отсутствия файла без прерывания выполнения теста. <br /></td></tr>
-<tr class="separator:ga548418041138f552c93a97dfb866f9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad9fd1b4a23427585be8ae2918f5d05eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad9fd1b4a23427585be8ae2918f5d05eb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gad9fd1b4a23427585be8ae2918f5d05eb">ASSERT_EXISTS_FILE_TRUE</a>(Path)&#160;&#160;&#160;ASSERT_TRUE(::alicorn::testing::file::IsExists(Path))</td></tr>
-<tr class="memdesc:gad9fd1b4a23427585be8ae2918f5d05eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки существования файла с прерыванием выполнения теста. <br /></td></tr>
-<tr class="separator:gad9fd1b4a23427585be8ae2918f5d05eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5900286722be76eaf83b881ba160bb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaf5900286722be76eaf83b881ba160bb1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gaf5900286722be76eaf83b881ba160bb1">ASSERT_EXISTS_FILE_FALSE</a>(Path)&#160;&#160;&#160;ASSERT_FALSE(::alicorn::testing::file::IsExists(Path))</td></tr>
-<tr class="memdesc:gaf5900286722be76eaf83b881ba160bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки отсутствия файла с прерыванием выполнения теста. <br /></td></tr>
-<tr class="separator:gaf5900286722be76eaf83b881ba160bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae7553b6a2b3b0c4a21e94d06217ef8f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gae7553b6a2b3b0c4a21e94d06217ef8f3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gae7553b6a2b3b0c4a21e94d06217ef8f3">EXPECT_STDEXCEPTION</a>(Expression,  ExpectedRegEx)&#160;&#160;&#160;STDEXCEPTION_HELPER(Expression, ExpectedRegEx, EXPECT)</td></tr>
-<tr class="memdesc:gae7553b6a2b3b0c4a21e94d06217ef8f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки того, что при выполнении Expression произошло исключение std::exception с сообщением, совпадающим с ExpectedRegEx без прерывания теста. <br /></td></tr>
-<tr class="separator:gae7553b6a2b3b0c4a21e94d06217ef8f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b6950e02cf07c434b3c9ccc325b9559"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga9b6950e02cf07c434b3c9ccc325b9559"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga9b6950e02cf07c434b3c9ccc325b9559">ASSERT_STDEXCEPTION</a>(Expression,  ExpectedRegEx)&#160;&#160;&#160;STDEXCEPTION_HELPER(Expression, ExpectedRegEx, ASSERT)</td></tr>
-<tr class="memdesc:ga9b6950e02cf07c434b3c9ccc325b9559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос проверки того, что при выполнении Expression произошло исключение std::exception с сообщением, совпадающим с ExpectedRegEx с прерыванием теста. <br /></td></tr>
-<tr class="separator:ga9b6950e02cf07c434b3c9ccc325b9559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab92570f53abf3b4fbbd13acaf4265468"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab92570f53abf3b4fbbd13acaf4265468"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(a,  b)</td></tr>
-<tr class="memdesc:gab92570f53abf3b4fbbd13acaf4265468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00028.html">Testing</a> <br />
- Определение макроса для тестовых функций для того, чтобы исключить из построения лишний код в не тестовом проекте. <br /></td></tr>
-<tr class="separator:gab92570f53abf3b4fbbd13acaf4265468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:ga12fae53dd48adfd54cc17b98f46a3def"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga12fae53dd48adfd54cc17b98f46a3def"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga12fae53dd48adfd54cc17b98f46a3def">alicorn::testing::IsMatch</a> (const char *_Text, const char *_RegEx)</td></tr>
-<tr class="memdesc:ga12fae53dd48adfd54cc17b98f46a3def"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция проверки совпадения строки с регулярным выражением. <br /></td></tr>
-<tr class="separator:ga12fae53dd48adfd54cc17b98f46a3def"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8ea43b95b81df91082282cd21af937b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga8ea43b95b81df91082282cd21af937b6">alicorn::testing::file::IsBinaryEqual</a> (const ::boost::filesystem::path &amp;_PathToExpectedFile, const ::boost::filesystem::path &amp;_PathToResultFile)</td></tr>
-<tr class="memdesc:ga8ea43b95b81df91082282cd21af937b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция побайтового сравнения двух файлов.  <a href="a01304.html#ga8ea43b95b81df91082282cd21af937b6">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga8ea43b95b81df91082282cd21af937b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaba7352a2eed189b48b6cdda86280e0e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gaba7352a2eed189b48b6cdda86280e0e2">alicorn::testing::file::IsExists</a> (const boost::filesystem::path &amp;_Path)</td></tr>
-<tr class="memdesc:gaba7352a2eed189b48b6cdda86280e0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки существования файла.  <a href="a01304.html#gaba7352a2eed189b48b6cdda86280e0e2">Подробнее...</a><br /></td></tr>
-<tr class="separator:gaba7352a2eed189b48b6cdda86280e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadf7ceee89a29ddbf1582bb67ca9f33c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#gadf7ceee89a29ddbf1582bb67ca9f33c5">alicorn::testing::file::IsStrEqual</a> (const ::boost::filesystem::path &amp;_PathToExpectedFile, const ::boost::filesystem::path &amp;_PathToResultFile)</td></tr>
-<tr class="memdesc:gadf7ceee89a29ddbf1582bb67ca9f33c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция построчного сравнения двух файлов.  <a href="a01304.html#gadf7ceee89a29ddbf1582bb67ca9f33c5">Подробнее...</a><br /></td></tr>
-<tr class="separator:gadf7ceee89a29ddbf1582bb67ca9f33c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fa92e35356c3972c96f36365131f096"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga9fa92e35356c3972c96f36365131f096">boost::filesystem::copy_all</a> (const path &amp;_From, const path &amp;_To)</td></tr>
+<tr class="memdesc:ga9fa92e35356c3972c96f36365131f096"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для копирования содержимого папки, включая файлы и дочерние папки.  <a href="a01304.html#ga9fa92e35356c3972c96f36365131f096">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9fa92e35356c3972c96f36365131f096"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bd1bcb8aa17149be5ae9ec4c4633900"><td class="memItemLeft" align="right" valign="top">path&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga1bd1bcb8aa17149be5ae9ec4c4633900">boost::filesystem::irelative</a> (const path &amp;_From, const path &amp;_To)</td></tr>
+<tr class="memdesc:ga1bd1bcb8aa17149be5ae9ec4c4633900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вычисления относительного пути для двух указанных полных путей к папкам.  <a href="a01304.html#ga1bd1bcb8aa17149be5ae9ec4c4633900">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1bd1bcb8aa17149be5ae9ec4c4633900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d47294658794eba35130d437d9c89f8"><td class="memItemLeft" align="right" valign="top">binary::Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga9d47294658794eba35130d437d9c89f8">boost::filesystem::load_binary_file_from_disk</a> (const path &amp;_PathToFile, size_t _BeginPosition, size_t _BytesCount)</td></tr>
+<tr class="memdesc:ga9d47294658794eba35130d437d9c89f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения содержимого файла с диска по указанному пути.  <a href="a01304.html#ga9d47294658794eba35130d437d9c89f8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9d47294658794eba35130d437d9c89f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e6953c39201c848dcfd1e5dc88c6cc5"><td class="memItemLeft" align="right" valign="top">binary::Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01304.html#ga5e6953c39201c848dcfd1e5dc88c6cc5">boost::filesystem::load_binary_file</a> (const path &amp;_PathToFile, size_t _BeginPosition=0, size_t _BytesCount=(size_t)-1)</td></tr>
+<tr class="memdesc:ga5e6953c39201c848dcfd1e5dc88c6cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения содержимого файла по указанному пути.  <a href="a01304.html#ga5e6953c39201c848dcfd1e5dc88c6cc5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5e6953c39201c848dcfd1e5dc88c6cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Раздел макросов/классов для использования в тестах. </p>
+<p>Раздел классов расширений библиотеки Boost::Filesystem. </p>
 <h2 class="groupheader">Функции</h2>
-<a class="anchor" id="ga8ea43b95b81df91082282cd21af937b6"></a>
+<a class="anchor" id="ga9fa92e35356c3972c96f36365131f096"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool alicorn::testing::file::IsBinaryEqual </td>
+          <td class="memname">void boost::filesystem::copy_all </td>
           <td>(</td>
-          <td class="paramtype">const ::boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>_PathToExpectedFile</em>, </td>
+          <td class="paramtype">const path &amp;&#160;</td>
+          <td class="paramname"><em>_From</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ::boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>_PathToResultFile</em>&#160;</td>
+          <td class="paramtype">const path &amp;&#160;</td>
+          <td class="paramname"><em>_To</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -233,25 +159,22 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a013
       </table>
 </div><div class="memdoc">
 
-<p>Функция побайтового сравнения двух файлов. </p>
+<p>Функция для копирования содержимого папки, включая файлы и дочерние папки. </p>
 <ul>
-<li>Вспомогательная функция для работы макросов сравнения двух файлов.</li>
-<li>Функция предназначена для сокрытия ссылки на boost::filesystem.</li>
+<li>Функция рекурсивно копирует содержимое исходной папки в папку результата.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToExpectedFile</td><td>Путь к ожидаемому файлу. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToResultFile</td><td>Путь к проверяемому файлу.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_From</td><td>Исходная папка. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_To</td><td>Папка результата.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Файлы совпадают. </dd>
-<dd>
-<b>false</b> Файлы отличаются.</dd></dl>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
-<li>Один или оба указанные файлы открыть не удалось. </li>
+<li>Путь к исходной папке не существует.</li>
+<li>Исходный путь не является путем к папке. </li>
 </ul>
 </td></tr>
   </table>
@@ -260,62 +183,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a013
 
 </div>
 </div>
-<a class="anchor" id="gaba7352a2eed189b48b6cdda86280e0e2"></a>
+<a class="anchor" id="ga1bd1bcb8aa17149be5ae9ec4c4633900"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool alicorn::testing::file::IsExists </td>
+          <td class="memname">path boost::filesystem::irelative </td>
           <td>(</td>
-          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>_Path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция проверки существования файла. </p>
-<ul>
-<li>Вспомогательная функция для работы макросов проверки существования файлов.</li>
-<li>Функция предназначена для сокрытия ссылки на boost::filesystem.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Path</td><td>Путь к проверяемому файлу.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Файл существует. </dd>
-<dd>
-<b>false</b> Файл не существует. </dd></dl>
-
-<p><div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01304_gaba7352a2eed189b48b6cdda86280e0e2_icgraph.png" border="0" usemap="#a01304_gaba7352a2eed189b48b6cdda86280e0e2_icgraph" alt=""/></div>
-<map name="a01304_gaba7352a2eed189b48b6cdda86280e0e2_icgraph" id="a01304_gaba7352a2eed189b48b6cdda86280e0e2_icgraph">
-<area shape="rect" id="node3" href="a00058.html#a96808c4a811230e4e6aff5963dcf3d14" title="Функция получения данных указанного файла. " alt="" coords="208,5,347,46"/>
-</map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="gadf7ceee89a29ddbf1582bb67ca9f33c5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int alicorn::testing::file::IsStrEqual </td>
-          <td>(</td>
-          <td class="paramtype">const ::boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>_PathToExpectedFile</em>, </td>
+          <td class="paramtype">const path &amp;&#160;</td>
+          <td class="paramname"><em>_From</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const ::boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>_PathToResultFile</em>&#160;</td>
+          <td class="paramtype">const path &amp;&#160;</td>
+          <td class="paramname"><em>_To</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -325,26 +207,119 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a013
       </table>
 </div><div class="memdoc">
 
-<p>Функция построчного сравнения двух файлов. </p>
+<p>Функция вычисления относительного пути для двух указанных полных путей к папкам. </p>
 <ul>
-<li>Вспомогательная функция для работы макросов сравнения двух файлов.</li>
-<li>Функция предназначена для сокрытия ссылки на boost::filesystem.</li>
+<li>Проверка путей регистронезависимая.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToExpectedFile</td><td>Путь к ожидаемому файлу. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToResultFile</td><td>Путь к проверяемому файлу.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_From</td><td>Полный путь к исходной папке. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_To</td><td>Полный путь к папке, к которой будет вычисляться относительный путь. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>-1</b> Файлы совпадают. </dd>
-<dd>
-<b>Line</b> Номер строки, в которой файлы отличаются.</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga5e6953c39201c848dcfd1e5dc88c6cc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">binary::Data_t boost::filesystem::load_binary_file </td>
+          <td>(</td>
+          <td class="paramtype">const path &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_BeginPosition</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_BytesCount</em> = <code>(size_t)-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения содержимого файла по указанному пути. </p>
+<ul>
+<li>Если функции передать только путь к файлу, будет прочитан весь файл целиком.</li>
+<li>Если начальная позиция превышает размер файла, функция вернет пустой набор данных.</li>
+<li>Если (размер блока данных + начальная позиция) окажется за пределами фактического размера файла, функция вернет данные от начальной позиции до конца файла.</li>
+</ul>
+<p><b>Android:</b> </p><ul>
+<li>Если файл существует, функция вернет его содержимое.</li>
+<li>Если файл не существует, функция попытается получить содержимое файла через AAssetManager (валидный путь - относительно папки assets, можно также использовать путь, возвращаемый CurrentModule::GetAppRootPath()).</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к файлу, который будет прочитан. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_BeginPosition</td><td>Начальная позиция для чтения (от начала файла). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_BytesCount</td><td>Размер читаемого блока данных в байтах.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><b>Windows:</b> <ul>
+<li>Указанный файл не существует или недоступен для чтения. <br />
+ <b>Android:</b> </li>
+<li>Указанный файл не существует физически и его нет в .apk файле внутри папки assets.</li>
+<li>Указанный файл существует, но не доступен для чтения. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga9d47294658794eba35130d437d9c89f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">binary::Data_t boost::filesystem::load_binary_file_from_disk </td>
+          <td>(</td>
+          <td class="paramtype">const path &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_BeginPosition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_BytesCount</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения содержимого файла с диска по указанному пути. </p>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
-<li>Один или оба указанные файлы открыть не удалось.</li>
-<li>Не совпадает количество строк в файлах. </li>
+<li>Указанный файл недоступен для чтения.</li>
+<li>Размер файла слишком велик (т.е. для 32-хбитных систем &gt; 4 Гб). </li>
 </ul>
 </td></tr>
   </table>
@@ -358,7 +333,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a013
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 24 Сен 2016 14:16:14. Создано системой
+    <li class="footer">Документация по Libs. Последние изменения: Чт 29 Сен 2016 15:51:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

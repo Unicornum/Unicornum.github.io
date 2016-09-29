@@ -12,6 +12,7 @@ var dir_8474876d6addb29d5cfd67f2cdcf2951 =
     [ "Testing", "dir_5165ddde492b64f3920bd9eacb5e5608.html", "dir_5165ddde492b64f3920bd9eacb5e5608" ],
     [ "Testing.App", "dir_5d1c2c80bed916d20043917303c9546c.html", "dir_5d1c2c80bed916d20043917303c9546c" ],
     [ "Version", "dir_a202fe670f1afbd4c52fb516076e5836.html", "dir_a202fe670f1afbd4c52fb516076e5836" ],
+    [ "Version.App", "dir_99c9698aef5421ae0865f2f2c63b6f22.html", "dir_99c9698aef5421ae0865f2f2c63b6f22" ],
     [ "Vfs", "dir_3f96b858ccd975969bcc57e298519599.html", "dir_3f96b858ccd975969bcc57e298519599" ],
     [ "Vs", "dir_a4c86420309d1806a9881f61dd0e4ad4.html", "dir_a4c86420309d1806a9881f61dd0e4ad4" ]
 ];
