@@ -1,12 +1,19 @@
 var a02288 =
 [
-    [ "Common", "a02278.html", "a02278" ],
-    [ "Documentation", "a02279.html", "a02279" ],
-    [ "Macros", "a02280.html", "a02280" ],
-    [ "Properties", "a02281.html", "a02281" ],
-    [ "StartUp", "a02282.html", "a02282" ],
-    [ "Support", "a02283.html", "a02283" ],
-    [ "Testing", "a02285.html", "a02285" ],
-    [ "Utilities", "a02286.html", "a02286" ],
-    [ "Version", "a02287.html", "a02287" ]
+    [ "ConnectVersionResource", "a00111.html", [
+      [ "DoConnect", "a00111.html#a6353a2e705f51a1afa6d2fe1c30028da", null ],
+      [ "IsBinaryProject", "a00111.html#a5ba6655116b949555c2cfbc3b35e231a", null ],
+      [ "IsCppProject", "a00111.html#a376b495b761140bacebfa9f1babfcf0d", null ],
+      [ "IsTestProject", "a00111.html#ac886ecc4ab03df858ca9ba57a1df9080", null ]
+    ] ],
+    [ "UpdateRevision", "a00335.html", [
+      [ "IsEnabled", "a00335.html#adf476033bc2dc4304bac28cba75f3185", null ],
+      [ "UpdateSolutionRevision", "a00335.html#abf1e0617091414fd1f4044e19a5d24fa", null ],
+      [ "VersionInfoToLog", "a00335.html#a23a4828c0f21ca3c49e8c70a94611171", null ]
+    ] ],
+    [ "VersionAddins", "a00350.html", [
+      [ "GetCaption", "a00350.html#a213b05e1e799977867081656e3936a23", null ],
+      [ "GetId", "a00350.html#a1480b9ef1063b25a9b3964d4f0786aed", null ],
+      [ "IsEnabled", "a00350.html#a787eec667e45ffc550976b3f6651a27d", null ]
+    ] ]
 ];

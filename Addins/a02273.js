@@ -1,11 +1,6 @@
 var a02273 =
 [
-    [ "Controller", "a02257.html", "a02257" ],
-    [ "Model", "a02258.html", "a02258" ],
-    [ "Support", "a02259.html", "a02259" ],
-    [ "View", "a02261.html", "a02261" ],
-    [ "Main", "a00221.html", [
-      [ "OnInit", "a00221.html#a9dc4643506187278287c80ba4e5df438", null ]
-    ] ],
-    [ "HtmlAbout", "a00173.html", null ]
+    [ "DevelopmentInfo", "a02274.html", "a02274" ],
+    [ "ProjectTasks", "a02275.html", "a02275" ],
+    [ "RegexTester", "a02276.html", "a02276" ]
 ];

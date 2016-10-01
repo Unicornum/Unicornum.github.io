@@ -27,10 +27,11 @@ var searchData=
   ['textselection',['TextSelection',['../a00324.html',1,'wrappers::vs']]],
   ['timetracker',['TimeTracker',['../a00325.html',1,'']]],
   ['toolwindows',['ToolWindows',['../a00326.html',1,'wrappers::vs']]],
-  ['type',['Type',['../a00328.html',1,'support']]],
   ['type',['Type',['../a00327.html',1,'wrappers::vs']]],
+  ['type',['Type',['../a00328.html',1,'support']]],
   ['typelist',['TypeList',['../a00329.html',1,'support']]],
   ['typelist_3c_20externalprogram_20_3e',['TypeList&lt; ExternalProgram &gt;',['../a00329.html',1,'support']]],
   ['typelist_3c_20tasktype_20_3e',['TypeList&lt; TaskType &gt;',['../a00329.html',1,'support']]],
-  ['typelist_3c_20version_20_3e',['TypeList&lt; Version &gt;',['../a00329.html',1,'support']]]
+  ['typelist_3c_20version_20_3e',['TypeList&lt; Version &gt;',['../a00329.html',1,'support']]],
+  ['types',['Types',['../a00330.html',1,'wrappers::vs']]]
 ];

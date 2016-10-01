@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Файл Solution/Solution/Wrappers/Helper/Test.Helper/Test.ProjectImpl/ProjectImpl_test.cpp</title>
+<title>Addins: Файл Solution/Solution/Wrappers/Helper/Test.Helper/Test.Interface/Interface_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+   <div id="projectbrief">,</div>
   </td>
  </tr>
  </tbody>
@@ -108,50 +108,63 @@ $(document).ready(function(){initNavTree('a01899.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл ProjectImpl_test.cpp</div>  </div>
+<div class="title">Файл Interface_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
 <code>#include &lt;alicorn\extension\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &quot;..\..\Helper\VisualStudio\ProjectImpl.hpp&quot;</code><br />
+<code>#include &lt;<a class="el" href="a01879_source.html">Wrappers\Helper\Helper.hpp</a>&gt;</code><br />
+<code>#include &quot;Helper.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для ProjectImpl_test.cpp:</div>
+Граф включаемых заголовочных файлов для Interface_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02607.png" border="0" usemap="#_solution_2_solution_2_wrappers_2_helper_2_test_8_helper_2_test_8_project_impl_2_project_impl__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_wrappers_2_helper_2_test_8_helper_2_test_8_project_impl_2_project_impl__test_8cpp" id="_solution_2_solution_2_wrappers_2_helper_2_test_8_helper_2_test_8_project_impl_2_project_impl__test_8cpp">
-<area shape="rect" id="node3" href="a00975_source.html" title="stdafx.h" alt="" coords="1937,117,2012,144"/>
-<area shape="rect" id="node98" href="a01892_source.html" title="..\\..\\Helper\\VisualStudio\l\\ProjectImpl.hpp" alt="" coords="2451,110,2632,151"/>
-<area shape="rect" id="node13" href="a01150_source.html" title="..\\mock.hpp" alt="" coords="2093,208,2195,235"/>
-<area shape="rect" id="node17" href="a02157_source.html" title="Wrappers\\VisualStudio\l\\VisualStudio.mock.hpp" alt="" coords="1516,291,1692,333"/>
-<area shape="rect" id="node82" href="a01704_source.html" title="Core\\Utilities\\Utilities.mock.hpp" alt="" coords="2458,299,2685,325"/>
-<area shape="rect" id="node21" href="a01161_source.html" title="Test.Part\\Mock.hpp" alt="" coords="1749,381,1901,408"/>
-<area shape="rect" id="node63" href="a00457_source.html" title="Common\\Common.mock.hpp" alt="" coords="1926,381,2132,408"/>
-<area shape="rect" id="node65" href="a02063_source.html" title="Panes\\Panes.mock.hpp" alt="" coords="2157,381,2331,408"/>
-<area shape="rect" id="node67" href="a01908_source.html" title="Command\\Command.mock.hpp" alt="" coords="5,381,227,408"/>
-<area shape="rect" id="node70" href="a01958_source.html" title="Configuration\\Configuration.mock.hpp" alt="" coords="271,381,541,408"/>
-<area shape="rect" id="node72" href="a02119_source.html" title="ProjectFiles\\ProjectFiles.mock.hpp" alt="" coords="567,381,815,408"/>
-<area shape="rect" id="node74" href="a02093_source.html" title="Project\\Project.mock.hpp" alt="" coords="839,381,1029,408"/>
-<area shape="rect" id="node76" href="a02153_source.html" title="Solution\\Solution.mock.hpp" alt="" coords="1055,381,1257,408"/>
-<area shape="rect" id="node78" href="a01989_source.html" title="Document\\Document.mock.hpp" alt="" coords="1282,381,1509,408"/>
-<area shape="rect" id="node80" href="a02036_source.html" title="Ide\\Ide.mock.hpp" alt="" coords="1535,381,1673,408"/>
-<area shape="rect" id="node29" href="a02156_source.html" title="Equal.hpp" alt="" coords="558,456,644,483"/>
-<area shape="rect" id="node84" href="a01703_source.html" title="Utilities\\Utilities.mock.hpp" alt="" coords="2588,381,2780,408"/>
-<area shape="rect" id="node86" href="a01837_source.html" title="Logger\\Logger.mock.hpp" alt="" coords="2804,381,2988,408"/>
-<area shape="rect" id="node88" href="a01816_source.html" title="Execute\\Execute.mock.hpp" alt="" coords="3012,381,3215,408"/>
-<area shape="rect" id="node90" href="a01755_source.html" title="Doxygen\\Doxygen.mock.hpp" alt="" coords="2356,381,2564,408"/>
-<area shape="rect" id="node100" href="a01883_source.html" title="..\\IProject.hpp" alt="" coords="2482,208,2600,235"/>
+<div class="center"><img src="a02606.png" border="0" usemap="#_solution_2_solution_2_wrappers_2_helper_2_test_8_helper_2_test_8_interface_2_interface__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_wrappers_2_helper_2_test_8_helper_2_test_8_interface_2_interface__test_8cpp" id="_solution_2_solution_2_wrappers_2_helper_2_test_8_helper_2_test_8_interface_2_interface__test_8cpp">
+<area shape="rect" id="node3" href="a00975_source.html" title="stdafx.h" alt="" coords="3033,117,3108,144"/>
+<area shape="rect" id="node74" href="a01879.html" title="Wrappers\\Helper\\Helper.hpp" alt="" coords="3782,117,3988,144"/>
+<area shape="rect" id="node106" href="a01880_source.html" title="Helper.hpp" alt="" coords="4013,117,4104,144"/>
+<area shape="rect" id="node7" href="a01151_source.html" title="..\\mock.hpp" alt="" coords="3020,208,3121,235"/>
+<area shape="rect" id="node11" href="a02158_source.html" title="Wrappers\\VisualStudio\l\\VisualStudio.mock.hpp" alt="" coords="1524,291,1700,333"/>
+<area shape="rect" id="node58" href="a01705_source.html" title="Core\\Utilities\\Utilities.mock.hpp" alt="" coords="2957,299,3184,325"/>
+<area shape="rect" id="node15" href="a01162_source.html" title="Test.Part\\Mock.hpp" alt="" coords="870,381,1023,408"/>
+<area shape="rect" id="node39" href="a00458_source.html" title="Common\\Common.mock.hpp" alt="" coords="1047,381,1253,408"/>
+<area shape="rect" id="node41" href="a02064_source.html" title="Panes\\Panes.mock.hpp" alt="" coords="1278,381,1452,408"/>
+<area shape="rect" id="node43" href="a01909_source.html" title="Command\\Command.mock.hpp" alt="" coords="623,381,845,408"/>
+<area shape="rect" id="node46" href="a01959_source.html" title="Configuration\\Configuration.mock.hpp" alt="" coords="1477,381,1747,408"/>
+<area shape="rect" id="node48" href="a02120_source.html" title="ProjectFiles\\ProjectFiles.mock.hpp" alt="" coords="1772,381,2020,408"/>
+<area shape="rect" id="node50" href="a02094_source.html" title="Project\\Project.mock.hpp" alt="" coords="2045,381,2235,408"/>
+<area shape="rect" id="node52" href="a02154_source.html" title="Solution\\Solution.mock.hpp" alt="" coords="2260,381,2463,408"/>
+<area shape="rect" id="node54" href="a01990_source.html" title="Document\\Document.mock.hpp" alt="" coords="2487,381,2715,408"/>
+<area shape="rect" id="node56" href="a02037_source.html" title="Ide\\Ide.mock.hpp" alt="" coords="409,381,548,408"/>
+<area shape="rect" id="node23" href="a02157_source.html" title="Equal.hpp" alt="" coords="217,456,303,483"/>
+<area shape="rect" id="node60" href="a01704_source.html" title="Utilities\\Utilities.mock.hpp" alt="" coords="3199,381,3391,408"/>
+<area shape="rect" id="node62" href="a01838_source.html" title="Logger\\Logger.mock.hpp" alt="" coords="3415,381,3599,408"/>
+<area shape="rect" id="node64" href="a01817_source.html" title="Execute\\Execute.mock.hpp" alt="" coords="2740,381,2943,408"/>
+<area shape="rect" id="node66" href="a01756_source.html" title="Doxygen\\Doxygen.mock.hpp" alt="" coords="2967,381,3175,408"/>
+<area shape="rect" id="node76" href="a01885_source.html" title="Helper\\Is.hpp" alt="" coords="3989,208,4099,235"/>
+<area shape="rect" id="node82" href="a01897_source.html" title="Helper\\VisualStudio\l\\SolutionProxy.hpp" alt="" coords="4171,201,4320,242"/>
+<area shape="rect" id="node90" href="a01894_source.html" title="Helper\\VisualStudio\l\\ProjectProxy.hpp" alt="" coords="3620,201,3769,242"/>
+<area shape="rect" id="node98" href="a01891_source.html" title="Helper\\VisualStudio\l\\DocumentProxy.hpp" alt="" coords="3806,201,3964,242"/>
+<area shape="rect" id="node78" href="a01888_source.html" title="Proxy.hpp" alt="" coords="4110,299,4196,325"/>
+<area shape="rect" id="node80" href="a01883_source.html" title="ImplPtr.hpp" alt="" coords="3989,299,4085,325"/>
+<area shape="rect" id="node85" href="a01887_source.html" title="..\\ISolution.hpp" alt="" coords="4275,381,4400,408"/>
+<area shape="rect" id="node87" href="a01896_source.html" title="SolutionImpl.hpp" alt="" coords="4221,299,4352,325"/>
+<area shape="rect" id="node93" href="a01884_source.html" title="..\\IProject.hpp" alt="" coords="3623,381,3741,408"/>
+<area shape="rect" id="node95" href="a01893_source.html" title="ProjectImpl.hpp" alt="" coords="3620,299,3745,325"/>
+<area shape="rect" id="node101" href="a01882_source.html" title="..\\IDocument.hpp" alt="" coords="3795,381,3933,408"/>
+<area shape="rect" id="node103" href="a01890_source.html" title="DocumentImpl.hpp" alt="" coords="3820,299,3964,325"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса ProjectImpl. </p>
+<div class="textblock"><p>Тесты класса Interface. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_dd1513b8718f2f3f9582d5e447816f68.html">Helper</a></li><li class="navelem"><a class="el" href="dir_c62f0665e6246c03486e26dc78834bfc.html">Test.Helper</a></li><li class="navelem"><a class="el" href="dir_0beff09715c704db7ad2cfd0269ea863.html">Test.ProjectImpl</a></li><li class="navelem"><a class="el" href="a01899.html">ProjectImpl_test.cpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:00. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_dd1513b8718f2f3f9582d5e447816f68.html">Helper</a></li><li class="navelem"><a class="el" href="dir_c62f0665e6246c03486e26dc78834bfc.html">Test.Helper</a></li><li class="navelem"><a class="el" href="dir_28df8093effbc4059b4cd3c999776525.html">Test.Interface</a></li><li class="navelem"><a class="el" href="a01899.html">Interface_test.cpp</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:55. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

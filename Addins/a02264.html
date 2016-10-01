@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Action</title>
+<title>Addins: Model</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+   <div id="projectbrief">,</div>
   </td>
  </tr>
  </tbody>
@@ -104,38 +104,46 @@ $(document).ready(function(){initNavTree('a02264.html','');});
   <div class="summary">
 <a href="#nested-classes">Классы</a>  </div>
   <div class="headertitle">
-<div class="title">Action<div class="ingroups"><a class="el" href="a02256.html">Core</a> &raquo; <a class="el" href="a02272.html">Tools</a> &raquo; <a class="el" href="a02274.html">ProjectTasks</a> &raquo; <a class="el" href="a02265.html">Support</a></div></div>  </div>
+<div class="title">Model<div class="ingroups"><a class="el" href="a02257.html">Core</a> &raquo; <a class="el" href="a02273.html">Tools</a> &raquo; <a class="el" href="a02275.html">ProjectTasks</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Action:</div>
+Граф связей класса Model:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a02264.png" border="0" alt="" usemap="#a02264"/>
 <map name="a02264" id="a02264">
-<area shape="rect" id="node2" href="a02265.html" title="Support" alt="" coords="5,5,80,32"/>
+<area shape="rect" id="node1" href="a02275.html" title="ProjectTasks" alt="" coords="5,5,112,32"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00167.html">support::action::ExternalProgram</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00082.html">model::AllTasks</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
- Класс типа действия, выполняемого при запуске внешней программы.  <a href="a00167.html#details">Подробнее...</a><br /></td></tr>
+ Класс, содержащий полный список всех задач проекта.  <a href="a00082.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00347.html">support::action::Version</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00203.html">model::IReadTask</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
- Класс действия, выполняемого над версией решения при завергении задачи.  <a href="a00347.html#details">Подробнее...</a><br /></td></tr>
+ Интерфейсный класс для чтения данных о задаче.  <a href="a00203.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00207.html">model::ITask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ "Суммарный" интерфейсный класс одной задачи.  <a href="a00207.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00216.html">model::IWriteTask</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для изменения данных задачи.  <a href="a00216.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Группа классов, обеспечивающих выполнение дополнительных действий при завершении задачи. </p>
+<p>Группа классов модели. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:01. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

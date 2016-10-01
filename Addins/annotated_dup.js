@@ -42,7 +42,7 @@ var annotated_dup =
           [ "Commands", "a00106.html", "a00106" ],
           [ "ICommand", "a00177.html", "a00177" ],
           [ "IMenuCommand", "a00184.html", "a00184" ],
-          [ "UnionCommand", "a00331.html", "a00331" ]
+          [ "UnionCommand", "a00332.html", "a00332" ]
         ] ],
         [ "vs", null, [
           [ "common", null, [
@@ -50,7 +50,7 @@ var annotated_dup =
             [ "DoRunUtilities", "a00146.html", null ],
             [ "OpenLog", "a00242.html", "a00242" ],
             [ "Test", "a00317.html", "a00317" ],
-            [ "Unknown", "a00333.html", "a00333" ]
+            [ "Unknown", "a00334.html", "a00334" ]
           ] ],
           [ "documentation", null, [
             [ "doxygen", null, [
@@ -62,7 +62,7 @@ var annotated_dup =
               [ "IncreaseSubversion", "a00188.html", "a00188" ],
               [ "IncreaseVersion", "a00189.html", "a00189" ],
               [ "IncreaseVersionCommon", "a00190.html", "a00190" ],
-              [ "UpdateTimeDevelopmentInfo", "a00335.html", null ]
+              [ "UpdateTimeDevelopmentInfo", "a00336.html", null ]
             ] ],
             [ "DoBuildResultToHtml", "a00131.html", "a00131" ],
             [ "DoOpen", "a00140.html", "a00140" ],
@@ -124,8 +124,8 @@ var annotated_dup =
           ] ],
           [ "version", null, [
             [ "ConnectVersionResource", "a00111.html", "a00111" ],
-            [ "UpdateRevision", "a00334.html", "a00334" ],
-            [ "VersionAddins", "a00349.html", "a00349" ]
+            [ "UpdateRevision", "a00335.html", "a00335" ],
+            [ "VersionAddins", "a00350.html", "a00350" ]
           ] ]
         ] ]
       ] ],
@@ -172,8 +172,8 @@ var annotated_dup =
         [ "ProjectTasksData", "a00268.html", null ],
         [ "SolutionDevelopmentInfo", "a00288.html", "a00288" ],
         [ "Text", "a00321.html", null ],
-        [ "Version", "a00346.html", "a00346" ],
-        [ "VersionResource", "a00350.html", "a00350" ]
+        [ "Version", "a00347.html", "a00347" ],
+        [ "VersionResource", "a00351.html", "a00351" ]
       ] ]
     ] ],
     [ "EnvDTE", null, [
@@ -202,7 +202,7 @@ var annotated_dup =
     [ "support", null, [
       [ "action", null, [
         [ "ExternalProgram", "a00167.html", "a00167" ],
-        [ "Version", "a00347.html", "a00347" ]
+        [ "Version", "a00348.html", "a00348" ]
       ] ],
       [ "Data", "a00120.html", "a00120" ],
       [ "DataTask", "a00124.html", "a00124" ],
@@ -241,7 +241,7 @@ var annotated_dup =
       [ "TaskPanelEditor", "a00312.html", "a00312" ],
       [ "TaskPanelText", "a00313.html", "a00313" ],
       [ "TasksPanel", "a00314.html", null ],
-      [ "View", "a00351.html", null ]
+      [ "View", "a00352.html", null ]
     ] ],
     [ "wrappers", null, [
       [ "helper", null, [
@@ -314,17 +314,18 @@ var annotated_dup =
         [ "TextSelection", "a00324.html", "a00324" ],
         [ "ToolWindows", "a00326.html", "a00326" ],
         [ "Type", "a00327.html", null ],
-        [ "VCCollection", "a00337.html", "a00337" ],
-        [ "VCFile", "a00338.html", null ],
-        [ "VCFiles", "a00339.html", "a00339" ],
-        [ "VCFilter", "a00340.html", null ],
-        [ "VCFilterFiles", "a00341.html", "a00341" ],
-        [ "VCFilterFilters", "a00342.html", null ],
-        [ "VCFilters", "a00343.html", "a00343" ],
-        [ "VCProjectFiles", "a00344.html", "a00344" ],
-        [ "VCProjectFilters", "a00345.html", null ],
-        [ "Window", "a00352.html", "a00352" ],
-        [ "Windows", "a00353.html", null ]
+        [ "Types", "a00330.html", null ],
+        [ "VCCollection", "a00338.html", "a00338" ],
+        [ "VCFile", "a00339.html", null ],
+        [ "VCFiles", "a00340.html", "a00340" ],
+        [ "VCFilter", "a00341.html", null ],
+        [ "VCFilterFiles", "a00342.html", "a00342" ],
+        [ "VCFilterFilters", "a00343.html", null ],
+        [ "VCFilters", "a00344.html", "a00344" ],
+        [ "VCProjectFiles", "a00345.html", "a00345" ],
+        [ "VCProjectFilters", "a00346.html", null ],
+        [ "Window", "a00353.html", "a00353" ],
+        [ "Windows", "a00354.html", null ]
       ] ]
     ] ],
     [ "wx", null, [
@@ -355,7 +356,7 @@ var annotated_dup =
     [ "CommandManager", "a00103.html", "a00103" ],
     [ "Properties", "a00269.html", null ],
     [ "TimeTracker", "a00325.html", null ],
-    [ "UnicornumCodeAssistant", "a00330.html", "a00330" ],
-    [ "UsingEvents", "a00336.html", "a00336" ],
-    [ "Version", "a00348.html", null ]
+    [ "UnicornumCodeAssistant", "a00331.html", "a00331" ],
+    [ "UsingEvents", "a00337.html", "a00337" ],
+    [ "Version", "a00349.html", null ]
 ];

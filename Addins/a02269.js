@@ -1,14 +1,28 @@
 var a02269 =
 [
-    [ "Data", "a00120.html", [
-      [ "ProcessingInfo", "a00260.html", [
-        [ "Groups", "a00260.html#a5e81145a5fcdf590752cb52b753e185f", null ],
-        [ "IsInvalidRegex", "a00260.html#ab125412a0bd7cfe6eec463b740827942", null ],
-        [ "Result", "a00260.html#a5bac03996eedb7f52e6735576b3f4f51", null ]
-      ] ],
-      [ "Dump", "a00120.html#aa8d4424f4fa1d5ef9837135127ad78bc", null ],
-      [ "ProcessingResults", "a00120.html#a269a4595d146ddae5e2f2d12637822a0", null ],
-      [ "String", "a00120.html#a757d3e341008a41c15c16a180ca27a0c", null ]
+    [ "Common", "a00108.html", [
+      [ "DoProcess", "a00108.html#a0abb8e6669ac19141bc9a1b86216df97", null ]
     ] ],
-    [ "Main", "a00222.html", null ]
+    [ "Data", "a00122.html", [
+      [ "RegexString", "a00122.html#aac8ba5f0eec96ee70f362f7def83284b", null ],
+      [ "ReplaceString", "a00122.html#ad1cebbfa13abe8036b307698f163c0dc", null ],
+      [ "SourceStrings", "a00122.html#a5b43bb718b3729c19bada2c831ca2297", null ]
+    ] ],
+    [ "IModel", "a00185.html", [
+      [ "DoProcess", "a00185.html#a8e7c6c501022ada0d35d651ea474cbcc", null ],
+      [ "GetData", "a00185.html#a9eb51fafa31fc823f21f8f67347165f2", null ],
+      [ "GetData", "a00185.html#a65322a253f89d9f7bfcc4384828d1d3c", null ],
+      [ "GetDevelopmentInfo", "a00185.html#abcdf4ce9e35ac80e99bcfe1540b3f6eb", null ],
+      [ "GetViewTitle", "a00185.html#a3b23716ff60787c927b882a9cc3e9774", null ]
+    ] ],
+    [ "Match", "a00230.html", [
+      [ "DoLocalProcess", "a00230.html#a395819a068d121a79711847d46e59dc3", null ]
+    ] ],
+    [ "Model", "a00235.html", null ],
+    [ "Replace", "a00280.html", [
+      [ "DoLocalProcess", "a00280.html#a05a7f3f17cc8ad1cfb7d44dd7754d67f", null ]
+    ] ],
+    [ "Search", "a00282.html", [
+      [ "DoLocalProcess", "a00282.html#a338d994f833f48fd5597d859c40e57c6", null ]
+    ] ]
 ];

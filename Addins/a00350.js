@@ -1,6 +1,6 @@
 var a00350 =
 [
-    [ "VersionResource", "a00350.html#ad71aa02f7e46def4256221b7563dc37d", null ],
-    [ "Generate", "a00350.html#a6d209b353d950ff590eadd3fc4f28c35", null ],
-    [ "GetPathToVersionFile", "a00350.html#aa2218759b8ec637fdca1c4c401557a34", null ]
+    [ "GetCaption", "a00350.html#a213b05e1e799977867081656e3936a23", null ],
+    [ "GetId", "a00350.html#a1480b9ef1063b25a9b3964d4f0786aed", null ],
+    [ "IsEnabled", "a00350.html#a787eec667e45ffc550976b3f6651a27d", null ]
 ];

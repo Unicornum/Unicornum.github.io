@@ -1,13 +1,13 @@
 var a02291 =
 [
-    [ "Doxygen", "a00155.html", [
-      [ "Doxygen", "a00155.html#a218059ce02f976e8c699b918e6da3534", null ],
-      [ "GetValues", "a00155.html#a521c08b673df10e5d787d26a787163ad", null ]
-    ] ],
-    [ "Empty", "a00161.html", null ],
-    [ "Main", "a00223.html", [
-      [ "Main", "a00223.html#a41fd0853ce2d4dcd5c6c5096352e37a3", null ],
-      [ "Set", "a00223.html#a7bb75640e0313e7482d8df39ef523fa2", null ],
-      [ "SetEnvironmentVariable", "a00223.html#aaeb43f71b8c606a2e23c161c99093f2a", null ]
+    [ "Prefatory", "a00259.html", [
+      [ "DeleteAutoInsertSection", "a00259.html#a1fa67fec71c72b3a99a0359bbc7f2814", null ],
+      [ "DoProcess", "a00259.html#a4f485a3cc6198b635691f45fe07ce70e", null ],
+      [ "DoProcessFile", "a00259.html#af591389d0a6374bfb74a6fb4c4a349fa", null ],
+      [ "FindInsertedSection", "a00259.html#a96191f6c16c44dafc2924c09a147b185", null ],
+      [ "FindInsertSection", "a00259.html#aec962e297cec8c26c641d2edd15d40ed", null ],
+      [ "GetLogProgress", "a00259.html#a89c8fc6bb10d2f21f1703b4b3791e4bd", null ],
+      [ "InsertSections", "a00259.html#aac502fbe6fc99aa754d57237cef2601d", null ],
+      [ "Process", "a00259.html#a3bc24e8cacc0e599ac82947a32a90e58", null ]
     ] ]
 ];

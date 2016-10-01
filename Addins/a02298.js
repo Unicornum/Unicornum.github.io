@@ -1,10 +1,9 @@
 var a02298 =
 [
-    [ "Dialog", "a02291.html", "a02291" ],
-    [ "Doxygen", "a02292.html", "a02292" ],
-    [ "EnvironmentVariables", "a02293.html", "a02293" ],
-    [ "Execute", "a02294.html", "a02294" ],
-    [ "Filter", "a02295.html", "a02295" ],
-    [ "Logger", "a02296.html", "a02296" ],
-    [ "Utilities", "a02297.html", "a02297" ]
+    [ "IDocument", "a00180.html", null ],
+    [ "ImplPtr", "a00186.html", null ],
+    [ "IProject", "a00198.html", null ],
+    [ "ISolution", "a00205.html", null ],
+    [ "Proxy", "a00274.html", null ],
+    [ "Is", "a02298.html#ga293c54ab8084a7e8666b7d0f3b69075b", null ]
 ];

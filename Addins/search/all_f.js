@@ -1,7 +1,7 @@
 var searchData=
 [
   ['regextester',['RegexTester',['../a00033.html',1,'CoreToolsPage']]],
-  ['regextester',['RegexTester',['../a02275.html',1,'']]],
+  ['regextester',['RegexTester',['../a02276.html',1,'']]],
   ['rawdatatask',['RawDataTask',['../a00279.html',1,'support']]],
   ['read',['Read',['../a00080.html#adcb4fab4aa833946b35d0a4d1cd1fe19',1,'core::utilities::AllSolutionsDevelopmentInfo']]],
   ['readdatafrom',['ReadDataFrom',['../a00303.html#a828606eadccc2469c6b308d439d37f1b',1,'support::Task']]],
@@ -13,13 +13,13 @@ var searchData=
   ['renamefile',['RenameFile',['../a00318.html#ac40a9c34a3508f2fe88a2fda941003da',1,'core::useful_commands::vs::testing::TestClassBlank::RenameFile()'],['../a00319.html#a6c0c1651bba6e42c5ef1a4d164105797',1,'core::useful_commands::vs::testing::TestClassProject::RenameFile()']]],
   ['replace',['Replace',['../a00280.html',1,'model']]],
   ['replace',['Replace',['../a00133.html#ab580ca43598caf88e289b9b2f0e44517',1,'wrappers::vs::Document']]],
-  ['replace_5ftest_2ecpp',['Replace_test.cpp',['../a01471.html',1,'']]],
+  ['replace_5ftest_2ecpp',['Replace_test.cpp',['../a01472.html',1,'']]],
   ['replaceclassname',['ReplaceClassName',['../a00318.html#a180a522c3ea54554aae8ad6188ac87fc',1,'core::useful_commands::vs::testing::TestClassBlank']]],
   ['replacehtmlusingchars',['ReplaceHtmlUsingChars',['../a00175.html#aa4bbb0328e8fd1f68b20f3aea2dddae9',1,'wx::HtmlResultBuilder']]],
   ['replacestring',['ReplaceString',['../a00122.html#ad1cebbfa13abe8036b307698f163c0dc',1,'model::Data']]],
-  ['replacetag_5ftest_2ecpp',['ReplaceTag_test.cpp',['../a01852.html',1,'']]],
+  ['replacetag_5ftest_2ecpp',['ReplaceTag_test.cpp',['../a01853.html',1,'']]],
   ['report',['Report',['../a00281.html',1,'core::utilities::vs']]],
-  ['report_5ftest_2ecpp',['Report_test.cpp',['../a01846.html',1,'']]],
+  ['report_5ftest_2ecpp',['Report_test.cpp',['../a01847.html',1,'']]],
   ['result',['Result',['../a00260.html#a5bac03996eedb7f52e6735576b3f4f51',1,'support::Data::ProcessingInfo']]],
   ['run',['Run',['../a00224.html#a336dbaa620006529ea649ff5c271f0b3',1,'core::utilities::execute::Main']]]
 ];

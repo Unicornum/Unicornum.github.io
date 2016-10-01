@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Controller</title>
+<title>Addins: View</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+   <div id="projectbrief">,</div>
   </td>
  </tr>
  </tbody>
@@ -102,46 +102,163 @@ $(document).ready(function(){initNavTree('a02267.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a>  </div>
   <div class="headertitle">
-<div class="title">Controller<div class="ingroups"><a class="el" href="a02256.html">Core</a> &raquo; <a class="el" href="a02272.html">Tools</a> &raquo; <a class="el" href="a02275.html">RegexTester</a></div></div>  </div>
+<div class="title">View<div class="ingroups"><a class="el" href="a02257.html">Core</a> &raquo; <a class="el" href="a02273.html">Tools</a> &raquo; <a class="el" href="a02275.html">ProjectTasks</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Controller:</div>
+Граф связей класса View:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a02267.png" border="0" alt="" usemap="#a02267"/>
 <map name="a02267" id="a02267">
-<area shape="rect" id="node2" href="a02262.html" title="Controller" alt="" coords="432,5,517,32"/>
-<area shape="rect" id="node3" href="a02257.html" title="Controller" alt="" coords="432,65,517,92"/>
-<area shape="rect" id="node4" href="a02275.html" title="RegexTester" alt="" coords="5,36,109,63"/>
+<area shape="rect" id="node1" href="a02275.html" title="ProjectTasks" alt="" coords="5,31,112,57"/>
+<area shape="rect" id="node2" href="a02274.html" title="DevelopmentInfo" alt="" coords="363,5,496,32"/>
+<area shape="rect" id="node3" href="a02272.html" title="wxWidgets" alt="" coords="383,56,476,83"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00112.html">controller::Controller</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00157.html">view::DraggingTaskPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс реализации логики перетаскивания панелей задач мышью.  <a href="a00157.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00178.html">view::ICompleteTasksPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Вспомогательный класс для интерфейса панели завершенных задач.  <a href="a00178.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00197.html">view::IProcessTasksPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Вспомогательный класс для интерфейса панели задач, находящихся в процессе работы.  <a href="a00197.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00204.html">view::IReadTaskPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс представления для передачи модели измененных данных задачи.  <a href="a00204.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00208.html">view::ITaskPanelData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для работы с данными задачи.  <a href="a00208.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00209.html">view::ITaskPanelMain</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях.  <a href="a00209.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html">view::ITaskPanelReadData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для получения данных задачи.  <a href="a00210.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00211.html">view::ITaskPanelWriteData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс для передачи панели данных задачи.  <a href="a00211.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00212.html">view::ITasksPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс панели, содержащей список панелей отдельных задач.  <a href="a00212.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00217.html">view::IWriteTaskPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс представления для получения данных из модели задачи.  <a href="a00217.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00305.html">view::TaskPanel</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс панели одной задачи.  <a href="a00305.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00306.html">view::TaskPanelBkColor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Вспомогательный класс для установки цвета фона панелей задач.  <a href="a00306.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00308.html">view::TaskPanelBrief</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс панели, отображающей задачу в свернутом виде.  <a href="a00308.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00309.html">view::TaskPanelData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Вспомогательный класс, реализующий интерфейс получения данных задачи.  <a href="a00309.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00310.html">view::TaskPanelDept</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс для работы со смещением дочерних задач.  <a href="a00310.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00312.html">view::TaskPanelEditor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс реализации работы с панелью редактирования параметров задачи.  <a href="a00312.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00313.html">view::TaskPanelText</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс реализации работы с данными задачи.  <a href="a00313.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00314.html">view::TasksPanel&lt; TInterface &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс реализации панели, содержащей список панелей отдельных задач.  <a href="a00314.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html">wx::CheckBox</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс <a class="el" href="a00091.html" title="Класс входит в ProjectTasks   Класс CheckBox&#39;a с поддержкой отмены изменений. ">CheckBox</a>'a с поддержкой отмены изменений.  <a href="a00091.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00096.html">wx::ComboBox&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс <a class="el" href="a00096.html" title="Класс входит в ProjectTasks   Класс ComboBox&#39;a с автоматическим заполнением элементов выпадающего спи...">ComboBox</a>'a с автоматическим заполнением элементов выпадающего списка.  <a href="a00096.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00173.html">wx::HtmlAbout</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00029.html">DevelopmentInfo</a> <br />
- Класс главного объекта контроллера.  <a href="a00112.html#details">Подробнее...</a><br /></td></tr>
+ Класс отображения информации о программе в html формате.  <a href="a00173.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html">controller::DoProcess</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00033.html">RegexTester</a> <br />
- Класс, объекты которого назначаются сигналам обработки введенных данных из представления.  <a href="a00142.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00176.html">wx::ICancelControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Интерфейсный класс элементов управления, для которых требуется поддержка отмены изменений в панели редактирования задачи.  <a href="a00176.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00147.html">controller::DoUpdate</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00029.html">DevelopmentInfo</a> <br />
- Класс, обеспечивающий логику работы сигнала обновления представления.  <a href="a00147.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00322.html">wx::TextCtrl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00031.html">ProjectTasks</a> <br />
+ Класс для текстового элемента управления с поддержкой отмены изменений.  <a href="a00322.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga916461d249e7ba9ead063f26c923730b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02267.html#ga916461d249e7ba9ead063f26c923730b">DECLARE_COMBOBOX</a>(ClassName,  TClassName)</td></tr>
+<tr class="memdesc:ga916461d249e7ba9ead063f26c923730b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос объявления конкретных классов ComboBox'ов для использования в wxFowxFormBuilder'e.  <a href="#ga916461d249e7ba9ead063f26c923730b">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga916461d249e7ba9ead063f26c923730b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Группа классов контроллера. </p>
+<p>Группа классов представления. </p>
+<h2 class="groupheader">Макросы</h2>
+<a class="anchor" id="ga916461d249e7ba9ead063f26c923730b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DECLARE_COMBOBOX</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ClassName, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TClassName&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keyword">class </span>ClassName final : <span class="keyword">public</span> ComboBox&lt;TClassName&gt; \</div><div class="line">  { \</div><div class="line">  public: \</div><div class="line">    inline ClassName(wxWindow * _pParent, wxWindowID _Id, \</div><div class="line">      <span class="keyword">const</span> wxString &amp; _Text, <span class="keyword">const</span> wxPoint &amp; _Point, <span class="keyword">const</span> wxSize &amp; _Size, \</div><div class="line">      <span class="keywordtype">int</span> _Count, <span class="keyword">const</span> wxString * _Choices, <span class="keywordtype">long</span> _Style) : \</div><div class="line">      ComboBox(_pParent, _Id, _Text, _Point, _Size, _Count, _Choices, _Style) {} \</div><div class="line">  };</div></div><!-- fragment -->
+<p>Макрос объявления конкретных классов ComboBox'ов для использования в wxFowxFormBuilder'e. </p>
+<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000008">Необходимо сделать:</a></b></dt><dd>Заменить наследованием конструктора, когда это станет возможно. </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:01. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

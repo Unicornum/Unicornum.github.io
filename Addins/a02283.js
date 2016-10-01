@@ -1,4 +1,5 @@
 var a02283 =
 [
-    [ "Tags", "a02284.html", null ]
+    [ "CopyUsertypeFile", "a00113.html", null ],
+    [ "OutputHostInfo", "a00248.html", null ]
 ];

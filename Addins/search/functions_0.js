@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['activate',['Activate',['../a00352.html#a866e9ba5636efab9ebfac50b7e02180d',1,'wrappers::vs::Window']]],
-  ['add',['Add',['../a00106.html#a89618778c2a8b30d4a8b0b743acd667d',1,'core::useful_commands::common::Commands::Add()'],['../a00331.html#abcbe83558215e25eb77d58935aad146c',1,'core::useful_commands::common::UnionCommand::Add()'],['../a00105.html#a201e7ba9487eeb532555ec2c61e60edb',1,'wrappers::vs::Commands::Add()'],['../a00251.html#a3d43f02811e8098d4aad8e43dede0917',1,'wrappers::vs::OutputWindowPanes::Add()'],['../a00199.html#a70cb54deb2ee7c638d0cb14f6bb0d853',1,'wrappers::vs::IProjects::Add()'],['../a00265.html#a59fdfdd7d7ff5afafe5d649ecb0e9192',1,'wrappers::vs::Projects::Add()'],['../a00266.html#a36221e7e62e513d7f679bb45e402de50',1,'wrappers::vs::ProjectsFolderImpl::Add()'],['../a00267.html#a0012b4e75c23ff1d15dd20b015c382f8',1,'wrappers::vs::ProjectsSolutionImpl::Add()'],['../a00339.html#a9cb790c03dc1203593affed2333366b0',1,'wrappers::vs::VCFiles::Add()'],['../a00341.html#af6b66136a45fa0171864fc9807d18532',1,'wrappers::vs::VCFilterFiles::Add()'],['../a00344.html#ab059f2bea33c6a0f324c8a7f73f91458',1,'wrappers::vs::VCProjectFiles::Add()']]],
+  ['activate',['Activate',['../a00353.html#a866e9ba5636efab9ebfac50b7e02180d',1,'wrappers::vs::Window']]],
+  ['add',['Add',['../a00106.html#a89618778c2a8b30d4a8b0b743acd667d',1,'core::useful_commands::common::Commands::Add()'],['../a00332.html#abcbe83558215e25eb77d58935aad146c',1,'core::useful_commands::common::UnionCommand::Add()'],['../a00105.html#a201e7ba9487eeb532555ec2c61e60edb',1,'wrappers::vs::Commands::Add()'],['../a00251.html#a3d43f02811e8098d4aad8e43dede0917',1,'wrappers::vs::OutputWindowPanes::Add()'],['../a00199.html#a70cb54deb2ee7c638d0cb14f6bb0d853',1,'wrappers::vs::IProjects::Add()'],['../a00265.html#a59fdfdd7d7ff5afafe5d649ecb0e9192',1,'wrappers::vs::Projects::Add()'],['../a00266.html#a36221e7e62e513d7f679bb45e402de50',1,'wrappers::vs::ProjectsFolderImpl::Add()'],['../a00267.html#a0012b4e75c23ff1d15dd20b015c382f8',1,'wrappers::vs::ProjectsSolutionImpl::Add()'],['../a00340.html#a9cb790c03dc1203593affed2333366b0',1,'wrappers::vs::VCFiles::Add()'],['../a00342.html#af6b66136a45fa0171864fc9807d18532',1,'wrappers::vs::VCFilterFiles::Add()'],['../a00345.html#ab059f2bea33c6a0f324c8a7f73f91458',1,'wrappers::vs::VCProjectFiles::Add()']]],
   ['addcontrol',['AddControl',['../a00097.html#a86130e59757e2c2e7976498b8ed55cbf',1,'wrappers::vs::Command']]],
   ['addmessage',['AddMessage',['../a00293.html#ab76749db942a458d857ff32ffe508158',1,'support::SolutionHistoryPage']]],
   ['addpopup',['AddPopup',['../a00100.html#a8fbb2e6cf86f155028496a37aea0cb1a',1,'wrappers::vs::CommandBarControls']]],
@@ -14,8 +14,8 @@ var searchData=
   ['addtotestproject',['AddToTestProject',['../a00318.html#a5e2fa6d28e6bd128b4c5fe0671ca72dc',1,'core::useful_commands::vs::testing::TestClassBlank']]],
   ['addversiondata',['AddVersionData',['../a00134.html#ab3ca0f779fe4dfc4ab250a0561c72af7',1,'core::useful_commands::vs::documentation::doxygen::DocumentHelper']]],
   ['advise',['Advise',['../a00299.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4',1,'wrappers::vs::Subscriber']]],
-  ['afterbuildfinish',['AfterBuildFinish',['../a00336.html#a72ba09d681dd8ed7a050e3523ac38786',1,'UsingEvents']]],
-  ['afterclosingsolution',['AfterClosingSolution',['../a00336.html#a5ffa70983dbd36e4534d677927d57ae1',1,'UsingEvents']]],
+  ['afterbuildfinish',['AfterBuildFinish',['../a00337.html#a72ba09d681dd8ed7a050e3523ac38786',1,'UsingEvents']]],
+  ['afterclosingsolution',['AfterClosingSolution',['../a00337.html#a5ffa70983dbd36e4534d677927d57ae1',1,'UsingEvents']]],
   ['allsolutionsdevelopmentinfo',['AllSolutionsDevelopmentInfo',['../a00080.html#ad5e5489060c281de1bb66452a9b57896',1,'core::utilities::AllSolutionsDevelopmentInfo']]],
   ['allsolutionsinfo',['AllSolutionsInfo',['../a00081.html#aded21bbe2bfba0bdef7080a3ad7d8d10',1,'model::AllSolutionsInfo']]],
   ['alltasks',['AllTasks',['../a00082.html#a1295ce85297e90ba41a755f45feba56b',1,'model::AllTasks']]],

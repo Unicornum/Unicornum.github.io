@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+   <div id="projectbrief">,</div>
   </td>
  </tr>
  </tbody>
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('a00259.html','');});
 <a href="#pri-methods">Закрытые члены</a> &#124;
 <a href="a03026.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::utilities::doxygen::Prefatory<div class="ingroups"><a class="el" href="a02256.html">Core</a> &raquo; <a class="el" href="a02296.html">Utilities</a> &raquo; <a class="el" href="a02290.html">Doxygen</a></div></div>  </div>
+<div class="title">Класс core::utilities::doxygen::Prefatory<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a02257.html">Core</a> &raquo; <a class="el" href="a02297.html">Utilities</a> &raquo; <a class="el" href="a02291.html">Doxygen</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('a00259.html','');});
  Класс для предварительной обработки файлов документации.  
  <a href="a00259.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01759_source.html">Prefatory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01760_source.html">Prefatory.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Граф связей класса core::utilities::doxygen::Prefatory:</div>
 <div class="dyncontent">
@@ -171,12 +171,14 @@ CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
  1.1.0.0 <br />
+ 1.2.0.0 <br />
 </dd></dl>
 <dl class="section date"><dt>Дата</dt><dd>07 Июнь 2015 <br />
  09 Июнь 2015 <br />
+ 30 Сентябрь 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
 <a class="anchor" id="a1fa67fec71c72b3a99a0359bbc7f2814"></a>
 <div class="memitem">
@@ -203,7 +205,7 @@ CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a
 <p>Функция удаления вставленного при предыдущей обработке текста. </p>
 <ul>
 <li>Будет вызвана для всех .hpp файлов, расположенных в папках Documentation.</li>
-<li>Удаляет в указанном файле весь текст между тегами '\begin_auto_insert_section' и '\end_auto_insert_section';</li>
+<li>Удаляет в указанном файле весь текст между тегами '\begin_auto_insert_section' и '\end_auto_insert_section', включая пустую строку после '\end_auto_insert_section' (если такая есть).</li>
 <li>Если найден открывающий тег, но не найден закрывающий, в лог будет добавлена ошибка.</li>
 <li>Не закрытая секция не удаляется.</li>
 <li>Если указанного файла нет или его невозможно открыть, в лог будет добавлена ошибка.</li>
@@ -404,7 +406,7 @@ template&lt;class TFunctor &gt; </div>
 <ul>
 <li>Заполняет в элементах m_SectionInfos для найденного SectionName поле InsertedText.</li>
 <li>Проверяет, что SectionName - это имя тега секции (в противном случае записывает ошибку в лог).</li>
-<li>Извлекается текст от найденной секции до следующей секции, подсекции или завершающих символов комментария (звездочка - слеш).</li>
+<li>Извлекается текст от найденной секции до следующей пустой строки (содержащей тольк звездочку и пробелы), секции, подсекции или завершающих символов комментария (звездочка - слеш).</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
@@ -583,7 +585,7 @@ template&lt;class TFunctor &gt; </div>
 </div>
 </div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/<a class="el" href="a01759_source.html">Prefatory.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/<a class="el" href="a01760_source.html">Prefatory.hpp</a></li>
 <li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/Prefatory.cpp</li>
 <li>Solution/Solution/Core/Utilities/Doxygen/Doxygen/Prefatory.inl</li>
 </ul>
@@ -593,7 +595,7 @@ template&lt;class TFunctor &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>doxygen</b></li><li class="navelem"><a class="el" href="a00259.html">Prefatory</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:54:03. Создано системой
+    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:58. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Файл Solution/Solution/Core/ConnectionCommands/ConnectionCommands.hpp</title>
+<title>Addins: Файл Solution/Solution/Wrappers/VisualStudio/VisualStudio.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+   <div id="projectbrief">,</div>
   </td>
  </tr>
  </tbody>
@@ -108,58 +108,124 @@ $(document).ready(function(){initNavTree('a01232.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл ConnectionCommands.hpp</div>  </div>
+<div class="title">Файл VisualStudio.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;ConnectionCommands\Data.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\NeedActivateCommand.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\CreateCommands.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\DestroyCommands.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\DoQueryCaption.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\DoQueryStatus.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\DoExecute.hpp&quot;</code><br />
-<code>#include &quot;ConnectionCommands\Perform.hpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00454_source.html">Common\Common.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a02035_source.html">Ide\Ide.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a02062_source.html">Panes\Panes.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a02018_source.html">Events\Events.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a01907_source.html">Command\Command.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a02092_source.html">Project\Project.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a01646_source.html">Solution\Solution.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a01988_source.html">Document\Document.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a02118_source.html">ProjectFiles\ProjectFiles.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a01957_source.html">Configuration\Configuration.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для ConnectionCommands.hpp:</div>
+Граф включаемых заголовочных файлов для VisualStudio.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02416.png" border="0" usemap="#_solution_2_solution_2_core_2_connection_commands_2_connection_commands_8hpp" alt=""/></div>
-<map name="_solution_2_solution_2_core_2_connection_commands_2_connection_commands_8hpp" id="_solution_2_solution_2_core_2_connection_commands_2_connection_commands_8hpp">
-<area shape="rect" id="node3" href="a01236_source.html" title="ConnectionCommands\l\\Data.hpp" alt="" coords="5,201,171,242"/>
-<area shape="rect" id="node7" href="a01248_source.html" title="ConnectionCommands\l\\NeedActivateCommand.hpp" alt="" coords="491,201,700,242"/>
-<area shape="rect" id="node11" href="a01234_source.html" title="ConnectionCommands\l\\CreateCommands.hpp" alt="" coords="64,110,235,151"/>
-<area shape="rect" id="node15" href="a01241_source.html" title="ConnectionCommands\l\\DestroyCommands.hpp" alt="" coords="309,110,488,151"/>
-<area shape="rect" id="node18" href="a01245_source.html" title="ConnectionCommands\l\\DoQueryCaption.hpp" alt="" coords="513,110,679,151"/>
-<area shape="rect" id="node21" href="a01247_source.html" title="ConnectionCommands\l\\DoQueryStatus.hpp" alt="" coords="703,110,869,151"/>
-<area shape="rect" id="node24" href="a01243_source.html" title="ConnectionCommands\l\\DoExecute.hpp" alt="" coords="894,110,1060,151"/>
-<area shape="rect" id="node27" href="a01249_source.html" title="ConnectionCommands\l\\Perform.hpp" alt="" coords="1085,110,1251,151"/>
+<div class="center"><img src="a02415.png" border="0" usemap="#_solution_2_solution_2_wrappers_2_visual_studio_2_visual_studio_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_wrappers_2_visual_studio_2_visual_studio_8hpp" id="_solution_2_solution_2_wrappers_2_visual_studio_2_visual_studio_8hpp">
+<area shape="rect" id="node5" href="a00454.html" title="Common\\Common.hpp" alt="" coords="621,96,787,123"/>
+<area shape="rect" id="node23" href="a02035.html" title="Ide\\Ide.hpp" alt="" coords="1928,96,2027,123"/>
+<area shape="rect" id="node38" href="a02062.html" title="Panes\\Panes.hpp" alt="" coords="3041,96,3175,123"/>
+<area shape="rect" id="node54" href="a02018.html" title="Events\\Events.hpp" alt="" coords="4666,96,4812,123"/>
+<area shape="rect" id="node70" href="a01907.html" title="Command\\Command.hpp" alt="" coords="5780,96,5962,123"/>
+<area shape="rect" id="node91" href="a02092.html" title="Project\\Project.hpp" alt="" coords="5986,96,6136,123"/>
+<area shape="rect" id="node97" href="a01646.html" title="Solution\\Solution.hpp" alt="" coords="6162,96,6324,123"/>
+<area shape="rect" id="node99" href="a01988.html" title="Document\\Document.hpp" alt="" coords="6348,96,6538,123"/>
+<area shape="rect" id="node101" href="a02118.html" title="ProjectFiles\\ProjectFiles.hpp" alt="" coords="6562,96,6771,123"/>
+<area shape="rect" id="node103" href="a01957.html" title="Configuration\\Configuration.hpp" alt="" coords="6796,96,7026,123"/>
+<area shape="rect" id="node7" href="a01939_source.html" title="Common\\Common.forward.hpp" alt="" coords="722,171,944,197"/>
+<area shape="rect" id="node9" href="a01942_source.html" title="Common\\Service.hpp" alt="" coords="969,171,1130,197"/>
+<area shape="rect" id="node11" href="a01367_source.html" title="Common\\Types.hpp" alt="" coords="1155,171,1307,197"/>
+<area shape="rect" id="node13" href="a01935_source.html" title="Common\\Base.hpp" alt="" coords="258,245,400,272"/>
+<area shape="rect" id="node15" href="a01937_source.html" title="Common\\Collection.hpp" alt="" coords="32,171,208,197"/>
+<area shape="rect" id="node17" href="a01947_source.html" title="Common\\VCCollection.hpp" alt="" coords="232,171,427,197"/>
+<area shape="rect" id="node20" href="a01944_source.html" title="Common\\SolutionFolderHelper.hpp" alt="" coords="452,171,698,197"/>
+<area shape="rect" id="node25" href="a02049_source.html" title="Ide\\Ide.forward.hpp" alt="" coords="1900,171,2055,197"/>
+<area shape="rect" id="node27" href="a02046_source.html" title="Ide\\DTE.hpp" alt="" coords="2079,171,2183,197"/>
+<area shape="rect" id="node29" href="a02039_source.html" title="Ide\\AddIn.hpp" alt="" coords="2208,171,2323,197"/>
+<area shape="rect" id="node31" href="a02043_source.html" title="Ide\\AddIns.hpp" alt="" coords="1382,171,1504,197"/>
+<area shape="rect" id="node34" href="a02054_source.html" title="Ide\\StatusBar.hpp" alt="" coords="1529,171,1671,197"/>
+<area shape="rect" id="node36" href="a02051_source.html" title="Ide\\ServiceProvider.hpp" alt="" coords="1696,171,1875,197"/>
+<area shape="rect" id="node40" href="a02072_source.html" title="Panes\\Panes.forward.hpp" alt="" coords="2905,171,3095,197"/>
+<area shape="rect" id="node42" href="a02066_source.html" title="Panes\\OutputWindow.hpp" alt="" coords="3120,171,3312,197"/>
+<area shape="rect" id="node44" href="a02068_source.html" title="Panes\\OutputWindowPane.hpp" alt="" coords="3337,171,3562,197"/>
+<area shape="rect" id="node46" href="a02071_source.html" title="Panes\\OutputWindowPanes.hpp" alt="" coords="3587,171,3819,197"/>
+<area shape="rect" id="node48" href="a02074_source.html" title="Panes\\ToolWindows.hpp" alt="" coords="2348,171,2530,197"/>
+<area shape="rect" id="node50" href="a02079_source.html" title="Panes\\Windows.hpp" alt="" coords="2555,171,2710,197"/>
+<area shape="rect" id="node52" href="a02077_source.html" title="Panes\\Window.hpp" alt="" coords="2734,171,2880,197"/>
+<area shape="rect" id="node56" href="a02016_source.html" title="Events\\Events.forward.hpp" alt="" coords="4539,171,4742,197"/>
+<area shape="rect" id="node58" href="a02017_source.html" title="Events\\Events.hpp" alt="" coords="4766,171,4912,197"/>
+<area shape="rect" id="node60" href="a02014_source.html" title="Events\\DteEvents.hpp" alt="" coords="4936,171,5107,197"/>
+<area shape="rect" id="node62" href="a02012_source.html" title="Events\\BuildEvents.hpp" alt="" coords="5132,171,5308,197"/>
+<area shape="rect" id="node64" href="a02024_source.html" title="Events\\SolutionEvents.hpp" alt="" coords="3843,171,4043,197"/>
+<area shape="rect" id="node66" href="a02022_source.html" title="Events\\SelectionEvents.hpp" alt="" coords="4067,171,4275,197"/>
+<area shape="rect" id="node68" href="a02028_source.html" title="Events\\TextEditorEvents.hpp" alt="" coords="4300,171,4514,197"/>
+<area shape="rect" id="node72" href="a01905_source.html" title="Command\\Command.forward.hpp" alt="" coords="6653,171,6891,197"/>
+<area shape="rect" id="node74" href="a01365_source.html" title="Command\\Type.hpp" alt="" coords="6329,245,6482,272"/>
+<area shape="rect" id="node76" href="a01906_source.html" title="Command\\Command.hpp" alt="" coords="7152,171,7334,197"/>
+<area shape="rect" id="node78" href="a01485_source.html" title="Command\\Commands.hpp" alt="" coords="5333,171,5523,197"/>
+<area shape="rect" id="node80" href="a01911_source.html" title="Command\\CommandBar.hpp" alt="" coords="5548,171,5751,197"/>
+<area shape="rect" id="node82" href="a01925_source.html" title="Command\\CommandBars.hpp" alt="" coords="6916,171,7127,197"/>
+<area shape="rect" id="node85" href="a01914_source.html" title="Command\\CommandBarControl.hpp" alt="" coords="5827,171,6078,197"/>
+<area shape="rect" id="node87" href="a01918_source.html" title="Command\\CommandBarControls.hpp" alt="" coords="6102,171,6360,197"/>
+<area shape="rect" id="node89" href="a01921_source.html" title="Command\\CommandBarPopup.hpp" alt="" coords="6385,171,6628,197"/>
+<area shape="rect" id="node93" href="a02090_source.html" title="Project\\Project.forward.hpp" alt="" coords="7533,171,7739,197"/>
+<area shape="rect" id="node95" href="a02091_source.html" title="Project\\Project.hpp" alt="" coords="7358,171,7508,197"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02417.png" border="0" usemap="#_solution_2_solution_2_core_2_connection_commands_2_connection_commands_8hppdep" alt=""/></div>
-<map name="_solution_2_solution_2_core_2_connection_commands_2_connection_commands_8hppdep" id="_solution_2_solution_2_core_2_connection_commands_2_connection_commands_8hppdep">
-<area shape="rect" id="node3" href="a00751_source.html" title="Solution/Solution/Connection\lPoints/Common/Common/stdafx.h" alt="" coords="5,110,248,151"/>
-<area shape="rect" id="node5" href="a00449.html" title="Solution/Solution/Connection\lPoints/Common/Common.hpp" alt="" coords="491,110,705,151"/>
-<area shape="rect" id="node11" href="a00759_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Support\l/Support/stdafx.h" alt="" coords="11,200,225,256"/>
-<area shape="rect" id="node7" href="a00757_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Main\l/Main/StdAfx.h" alt="" coords="250,200,464,256"/>
-<area shape="rect" id="node9" href="a00758_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Properties\l/Properties/stdafx.h" alt="" coords="489,200,708,256"/>
-<area shape="rect" id="node13" href="a00762_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/TimeTracker\l/TimeTracker/stdafx.h" alt="" coords="733,200,968,256"/>
-<area shape="rect" id="node15" href="a00765_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/UnicornumCode\lAssistant/UnicornumCodeAssistant/stdafx.h" alt="" coords="993,200,1303,256"/>
-<area shape="rect" id="node17" href="a00766_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Version\l/Version/stdafx.h" alt="" coords="1327,200,1541,256"/>
+<div class="center"><img src="a02416.png" border="0" usemap="#_solution_2_solution_2_wrappers_2_visual_studio_2_visual_studio_8hppdep" alt=""/></div>
+<map name="_solution_2_solution_2_wrappers_2_visual_studio_2_visual_studio_8hppdep" id="_solution_2_solution_2_wrappers_2_visual_studio_2_visual_studio_8hppdep">
+<area shape="rect" id="node3" href="a00854_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Common/Common/stdafx.h" alt="" coords="1431,200,1655,256"/>
+<area shape="rect" id="node5" href="a00880_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Macros/Macros/stdafx.h" alt="" coords="1679,200,1903,256"/>
+<area shape="rect" id="node7" href="a00898_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Support/Tags/Tags/stdafx.h" alt="" coords="1927,200,2151,256"/>
+<area shape="rect" id="node9" href="a00920_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Utilities/Utilities/stdafx.h" alt="" coords="2175,200,2399,256"/>
+<area shape="rect" id="node11" href="a00952_source.html" title="Solution/Solution/Core\l/Utilities/Logger/Logger\l/stdafx.h" alt="" coords="2972,96,3148,152"/>
+<area shape="rect" id="node13" href="a01700.html" title="Solution/Solution/Core\l/Utilities/Utilities.hpp" alt="" coords="2727,103,2897,145"/>
+<area shape="rect" id="node54" href="a00971_source.html" title="Solution/Solution/Wrappers\l/Helper/Helper/stdafx.h" alt="" coords="3439,207,3641,249"/>
+<area shape="rect" id="node59" href="a02159.html" title="Solution/Solution/Wrappers\l/Wrappers.hpp" alt="" coords="1204,207,1407,249"/>
+<area shape="rect" id="node15" href="a00760_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Support\l/Support/stdafx.h" alt="" coords="2021,432,2235,488"/>
+<area shape="rect" id="node17" href="a01498.html" title="Solution/Solution/Core\l/UsefulCommands/UsefulCommands.hpp" alt="" coords="2671,207,2953,249"/>
+<area shape="rect" id="node35" href="a00861_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Documentation/Documentation\l/stdafx.h" alt="" coords="2177,305,2409,375"/>
+<area shape="rect" id="node40" href="a00888_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Properties/Properties/stdafx.h" alt="" coords="2433,312,2660,368"/>
+<area shape="rect" id="node42" href="a00892_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/StartUp/StartUp/stdafx.h" alt="" coords="2423,200,2647,256"/>
+<area shape="rect" id="node45" href="a00911_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Testing/Testing/stdafx.h" alt="" coords="2684,312,2908,368"/>
+<area shape="rect" id="node48" href="a00925_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Version/Version/stdafx.h" alt="" coords="2932,312,3156,368"/>
+<area shape="rect" id="node50" href="a00969_source.html" title="Solution/Solution/Core\l/Utilities/Utilities/Utilities\l/stdafx.h" alt="" coords="3180,200,3364,256"/>
+<area shape="rect" id="node19" href="a00752_source.html" title="Solution/Solution/Connection\lPoints/Common/Common/stdafx.h" alt="" coords="1897,319,2140,361"/>
+<area shape="rect" id="node21" href="a00450.html" title="Solution/Solution/Connection\lPoints/Common/Common.hpp" alt="" coords="1470,319,1684,361"/>
+<area shape="rect" id="node23" href="a00758_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Main\l/Main/StdAfx.h" alt="" coords="705,432,919,488"/>
+<area shape="rect" id="node25" href="a00759_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Properties\l/Properties/stdafx.h" alt="" coords="943,432,1163,488"/>
+<area shape="rect" id="node28" href="a00763_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/TimeTracker\l/TimeTracker/stdafx.h" alt="" coords="1188,432,1423,488"/>
+<area shape="rect" id="node30" href="a00766_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/UnicornumCode\lAssistant/UnicornumCodeAssistant/stdafx.h" alt="" coords="1447,432,1757,488"/>
+<area shape="rect" id="node32" href="a00767_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Version\l/Version/stdafx.h" alt="" coords="1782,432,1996,488"/>
+<area shape="rect" id="node37" href="a00860_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Documentation/Documentation\l/Doxygen/stdafx.h" alt="" coords="2260,425,2492,495"/>
+<area shape="rect" id="node52" href="a00970_source.html" title="Solution/Solution/Core\l/Utilities/Utilities/Utilities\l/VisualStudio/stdafx.h" alt="" coords="3180,312,3364,368"/>
+<area shape="rect" id="node56" href="a00972_source.html" title="Solution/Solution/Wrappers\l/Helper/Helper/VisualStudio\l/stdafx.h" alt="" coords="3439,312,3641,368"/>
+<area shape="rect" id="node69" href="a00778_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/stdafx.h" alt="" coords="346,312,544,368"/>
+<area shape="rect" id="node71" href="a00776_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/Controller\l/stdafx.h" alt="" coords="5,425,213,495"/>
+<area shape="rect" id="node73" href="a00777_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/Model\l/stdafx.h" alt="" coords="238,425,420,495"/>
+<area shape="rect" id="node75" href="a00779_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/View/stdafx.h" alt="" coords="445,432,680,488"/>
+<area shape="rect" id="node77" href="a00780_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/View/wxWidgets\l/stdafx.h" alt="" coords="436,545,689,615"/>
 </map>
 </div>
 </div>
 <p><a href="a01232_source.html">См. исходные тексты.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов <a class="el" href="a00027.html">ConnectionCommands</a>. </p>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов раздела <a class="el" href="a00059.html">Visual Studio</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_d4bac49fe86bdf17f76c70784b22e76c.html">ConnectionCommands</a></li><li class="navelem"><a class="el" href="a01232.html">ConnectionCommands.hpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:53:59. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="a01232.html">VisualStudio.hpp</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:54. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

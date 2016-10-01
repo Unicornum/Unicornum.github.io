@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/Helper/Helper/IDocument.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/Helper/Helper.mock.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.4.1 Revision: 4559 Platform: x64 Build: 14:53 27 Август 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+   <div id="projectbrief">,</div>
   </td>
  </tr>
  </tbody>
@@ -108,18 +108,16 @@ $(document).ready(function(){initNavTree('a01881_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">IDocument.hpp</div>  </div>
+<div class="title">Helper.mock.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a02221.html">wrappers</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>helper</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a00180.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="a00180.html">IDocument</a></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ContainsClassDeclarationUnderCursor(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ContainsFunctionImplementUnderCursor(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> ForClassUnderCursorExistTestProject(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace wrapper</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace helper</span></div><div class="ttc" id="a02221_html"><div class="ttname"><a href="a02221.html">mock::wrappers</a></div><div class="ttdef"><b>Definition:</b> Data.mock.hpp:10</div></div>
-<div class="ttc" id="a00180_html"><div class="ttname"><a href="a00180.html">wrappers::helper::IDocument</a></div><div class="ttdoc">Класс входит в Helper   Интерфейс, содержащий функции проверки состояния документа. </div><div class="ttdef"><b>Definition:</b> IDocument.hpp:24</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Helper\Is.mock.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_dd1513b8718f2f3f9582d5e447816f68.html">Helper</a></li><li class="navelem"><a class="el" href="dir_93f41890d32b229635509abb3fb4c4fd.html">Helper</a></li><li class="navelem"><b>IDocument.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 27 Авг 2016 14:53:58. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_dd1513b8718f2f3f9582d5e447816f68.html">Helper</a></li><li class="navelem"><b>Helper.mock.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

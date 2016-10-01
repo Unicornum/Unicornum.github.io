@@ -4,7 +4,7 @@ var hierarchy =
     [ "core::utilities::AllSolutionsDevelopmentInfo", "a00080.html", null ],
     [ "wrappers::vs::Base< T >", "a00085.html", [
       [ "wrappers::vs::Subscriber< T >", "a00299.html", null ],
-      [ "wrappers::vs::VCFiles< T >", "a00339.html", null ]
+      [ "wrappers::vs::VCFiles< T >", "a00340.html", null ]
     ] ],
     [ "wrappers::vs::Base< EnvDTE80::Commands2 >", "a00085.html", [
       [ "wrappers::vs::Commands", "a00105.html", null ]
@@ -89,10 +89,10 @@ var hierarchy =
       [ "wrappers::vs::TextSelection", "a00324.html", null ]
     ] ],
     [ "wrappers::vs::Base< EnvDTE::Window >", "a00085.html", [
-      [ "wrappers::vs::Window", "a00352.html", null ]
+      [ "wrappers::vs::Window", "a00353.html", null ]
     ] ],
     [ "wrappers::vs::Base< EnvDTE::Windows >", "a00085.html", [
-      [ "wrappers::vs::Windows", "a00353.html", null ]
+      [ "wrappers::vs::Windows", "a00354.html", null ]
     ] ],
     [ "wrappers::vs::Base< IDispatch >", "a00085.html", [
       [ "wrappers::vs::Configuration", "a00109.html", null ]
@@ -116,7 +116,7 @@ var hierarchy =
       [ "wrappers::vs::CommandBarPopup", "a00101.html", null ]
     ] ],
     [ "wrappers::vs::Base< TParent >", "a00085.html", [
-      [ "wrappers::vs::VCFilters< TParent >", "a00343.html", null ]
+      [ "wrappers::vs::VCFilters< TParent >", "a00344.html", null ]
     ] ],
     [ "wrappers::vs::Base< VCProjectEngineLibrary2012::VCConfiguration >", "a00085.html", [
       [ "wrappers::vs::PropertySheet2012", "a00271.html", null ],
@@ -126,34 +126,34 @@ var hierarchy =
       [ "wrappers::vs::PropertySheet2012", "a00271.html", null ]
     ] ],
     [ "wrappers::vs::Base< VCProjectEngineLibrary::IVCCollection >", "a00085.html", [
-      [ "wrappers::vs::VCCollection", "a00337.html", [
-        [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCFilter >", "a00343.html", [
-          [ "wrappers::vs::VCFilterFilters", "a00342.html", null ]
+      [ "wrappers::vs::VCCollection", "a00338.html", [
+        [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCFilter >", "a00344.html", [
+          [ "wrappers::vs::VCFilterFilters", "a00343.html", null ]
         ] ],
-        [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCProject >", "a00343.html", [
-          [ "wrappers::vs::VCProjectFilters", "a00345.html", null ]
+        [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCProject >", "a00344.html", [
+          [ "wrappers::vs::VCProjectFilters", "a00346.html", null ]
         ] ],
         [ "wrappers::vs::Configurations", "a00110.html", null ],
-        [ "wrappers::vs::VCFilterFiles", "a00341.html", null ],
-        [ "wrappers::vs::VCFilters< TParent >", "a00343.html", null ],
-        [ "wrappers::vs::VCProjectFiles", "a00344.html", null ]
+        [ "wrappers::vs::VCFilterFiles", "a00342.html", null ],
+        [ "wrappers::vs::VCFilters< TParent >", "a00344.html", null ],
+        [ "wrappers::vs::VCProjectFiles", "a00345.html", null ]
       ] ]
     ] ],
     [ "wrappers::vs::Base< VCProjectEngineLibrary::VCFile >", "a00085.html", [
-      [ "wrappers::vs::VCFile", "a00338.html", null ]
+      [ "wrappers::vs::VCFile", "a00339.html", null ]
     ] ],
     [ "wrappers::vs::Base< VCProjectEngineLibrary::VCFilter >", "a00085.html", [
-      [ "wrappers::vs::VCFiles< VCProjectEngineLibrary::VCFilter >", "a00339.html", [
-        [ "wrappers::vs::VCFilterFiles", "a00341.html", null ]
+      [ "wrappers::vs::VCFiles< VCProjectEngineLibrary::VCFilter >", "a00340.html", [
+        [ "wrappers::vs::VCFilterFiles", "a00342.html", null ]
       ] ],
-      [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCFilter >", "a00343.html", null ],
-      [ "wrappers::vs::VCFilter", "a00340.html", null ]
+      [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCFilter >", "a00344.html", null ],
+      [ "wrappers::vs::VCFilter", "a00341.html", null ]
     ] ],
     [ "wrappers::vs::Base< VCProjectEngineLibrary::VCProject >", "a00085.html", [
-      [ "wrappers::vs::VCFiles< VCProjectEngineLibrary::VCProject >", "a00339.html", [
-        [ "wrappers::vs::VCProjectFiles", "a00344.html", null ]
+      [ "wrappers::vs::VCFiles< VCProjectEngineLibrary::VCProject >", "a00340.html", [
+        [ "wrappers::vs::VCProjectFiles", "a00345.html", null ]
       ] ],
-      [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCProject >", "a00343.html", null ]
+      [ "wrappers::vs::VCFilters< VCProjectEngineLibrary::VCProject >", "a00344.html", null ]
     ] ],
     [ "core::utilities::Calendar", "a00089.html", null ],
     [ "core::utilities::dialog::CallBack", "a00090.html", [
@@ -186,15 +186,15 @@ var hierarchy =
     [ "core::utilities::execute::CppCheck", "a00114.html", null ],
     [ "support::Data", "a00120.html", null ],
     [ "core::connection_commands::Data", "a00121.html", [
-      [ "UnicornumCodeAssistant", "a00330.html", null ]
+      [ "UnicornumCodeAssistant", "a00331.html", null ]
     ] ],
     [ "model::Data", "a00122.html", null ],
     [ "core::utilities::vs::Data", "a00123.html", [
       [ "connection_points::vs::Extension", "a00165.html", [
         [ "Properties", "a00269.html", null ],
         [ "TimeTracker", "a00325.html", null ],
-        [ "UnicornumCodeAssistant", "a00330.html", null ],
-        [ "Version", "a00348.html", null ]
+        [ "UnicornumCodeAssistant", "a00331.html", null ],
+        [ "Version", "a00349.html", null ]
       ] ]
     ] ],
     [ "support::DevelopmentInfo", "a00126.html", null ],
@@ -231,7 +231,7 @@ var hierarchy =
     ] ],
     [ "core::useful_commands::common::ICommand", "a00177.html", [
       [ "core::useful_commands::common::IMenuCommand", "a00184.html", [
-        [ "core::useful_commands::common::UnionCommand", "a00331.html", [
+        [ "core::useful_commands::common::UnionCommand", "a00332.html", [
           [ "core::useful_commands::vs::documentation::GenerateSolutionDoc", "a00170.html", null ]
         ] ],
         [ "core::useful_commands::vs::common::Test", "a00317.html", null ],
@@ -259,7 +259,7 @@ var hierarchy =
         [ "core::useful_commands::vs::utilities::AddSelectedTextToUsertypeFile", "a00076.html", null ],
         [ "core::useful_commands::vs::utilities::AStyleProcess", "a00084.html", null ],
         [ "core::useful_commands::vs::utilities::CppCheckSolutionQuickProcess", "a00116.html", null ],
-        [ "core::useful_commands::vs::version::VersionAddins", "a00349.html", null ],
+        [ "core::useful_commands::vs::version::VersionAddins", "a00350.html", null ],
         [ "core::useful_commands::vs::common::DoRunUtilities<::core::useful_commands::common::IMenuCommand >", "a00146.html", [
           [ "core::useful_commands::vs::documentation::OpenAddinsDoc", "a00238.html", null ],
           [ "core::useful_commands::vs::documentation::OpenAlicornDoc", "a00239.html", null ],
@@ -277,7 +277,7 @@ var hierarchy =
       [ "core::useful_commands::vs::documentation::DoOpen", "a00140.html", null ],
       [ "core::useful_commands::vs::documentation::doxygen::DoPrefatory", "a00141.html", null ],
       [ "core::useful_commands::vs::documentation::doxygen::DoRun", "a00145.html", null ],
-      [ "core::useful_commands::vs::version::UpdateRevision", "a00334.html", null ]
+      [ "core::useful_commands::vs::version::UpdateRevision", "a00335.html", null ]
     ] ],
     [ "wx::IDiagramPanel", "a00179.html", [
       [ "wx::DiagramPanel", "a00130.html", null ]
@@ -416,7 +416,7 @@ var hierarchy =
       [ "core::utilities::environment_variables::Empty", "a00161.html", null ]
     ] ],
     [ "support::Main< IView >", "a00222.html", [
-      [ "view::View", "a00351.html", null ]
+      [ "view::View", "a00352.html", null ]
     ] ],
     [ "core::utilities::environment_variables::Main< Version_t >", "a00223.html", [
       [ "core::utilities::environment_variables::Doxygen", "a00155.html", null ]
@@ -493,7 +493,7 @@ var hierarchy =
     [ "wrappers::vs::Type", "a00327.html", null ],
     [ "support::Type", "a00328.html", [
       [ "support::action::ExternalProgram", "a00167.html", null ],
-      [ "support::action::Version", "a00347.html", null ],
+      [ "support::action::Version", "a00348.html", null ],
       [ "support::TaskType", "a00316.html", null ]
     ] ],
     [ "support::TypeList< T >", "a00329.html", null ],
@@ -504,10 +504,11 @@ var hierarchy =
       [ "support::TaskType", "a00316.html", null ]
     ] ],
     [ "support::TypeList< Version >", "a00329.html", [
-      [ "support::action::Version", "a00347.html", null ]
+      [ "support::action::Version", "a00348.html", null ]
     ] ],
-    [ "wrappers::vs::Project::UniqueName", "a00332.html", null ],
-    [ "core::useful_commands::vs::common::Unknown", "a00333.html", [
+    [ "wrappers::vs::Types< T >", "a00330.html", null ],
+    [ "wrappers::vs::Project::UniqueName", "a00333.html", null ],
+    [ "core::useful_commands::vs::common::Unknown", "a00334.html", [
       [ "core::useful_commands::vs::common::ClearLog", "a00094.html", null ],
       [ "core::useful_commands::vs::common::DoRunUtilities< TCommand >", "a00146.html", null ],
       [ "core::useful_commands::vs::common::OpenLog", "a00242.html", null ],
@@ -518,7 +519,7 @@ var hierarchy =
       [ "core::useful_commands::vs::documentation::doxygen::DoPrefatory", "a00141.html", null ],
       [ "core::useful_commands::vs::documentation::doxygen::DoRun", "a00145.html", null ],
       [ "core::useful_commands::vs::documentation::doxygen::IncreaseVersionCommon", "a00190.html", null ],
-      [ "core::useful_commands::vs::documentation::doxygen::UpdateTimeDevelopmentInfo", "a00335.html", null ],
+      [ "core::useful_commands::vs::documentation::doxygen::UpdateTimeDevelopmentInfo", "a00336.html", null ],
       [ "core::useful_commands::vs::documentation::GenerateSimpleMockClass", "a00169.html", null ],
       [ "core::useful_commands::vs::documentation::GenerateUsingProxyMockClass", "a00171.html", null ],
       [ "core::useful_commands::vs::macros::CommentLineBreak", "a00107.html", null ],
@@ -537,11 +538,11 @@ var hierarchy =
       [ "core::useful_commands::vs::utilities::AStyleProcess", "a00084.html", null ],
       [ "core::useful_commands::vs::utilities::CppCheckSolutionQuickProcess", "a00116.html", null ],
       [ "core::useful_commands::vs::version::ConnectVersionResource", "a00111.html", null ],
-      [ "core::useful_commands::vs::version::UpdateRevision", "a00334.html", null ],
-      [ "core::useful_commands::vs::version::VersionAddins", "a00349.html", null ],
+      [ "core::useful_commands::vs::version::UpdateRevision", "a00335.html", null ],
+      [ "core::useful_commands::vs::version::VersionAddins", "a00350.html", null ],
       [ "core::useful_commands::vs::common::DoRunUtilities<::core::useful_commands::common::IMenuCommand >", "a00146.html", null ]
     ] ],
-    [ "UsingEvents", "a00336.html", null ],
-    [ "core::utilities::Version", "a00346.html", null ],
-    [ "core::utilities::VersionResource", "a00350.html", null ]
+    [ "UsingEvents", "a00337.html", null ],
+    [ "core::utilities::Version", "a00347.html", null ],
+    [ "core::utilities::VersionResource", "a00351.html", null ]
 ];

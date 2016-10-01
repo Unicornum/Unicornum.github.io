@@ -6,6 +6,6 @@ var dir_1267e7b0e7fb670913eb21115fbb3a3c =
     [ "Test.ProjectsSolutionImpl", "dir_0e0e146f905dd7184dcfdffd7f833921.html", "dir_0e0e146f905dd7184dcfdffd7f833921" ],
     [ "Test.SolutionFolder", "dir_b7890780e377b0f58790bdf59eaa7e2c.html", "dir_b7890780e377b0f58790bdf59eaa7e2c" ],
     [ "Test.SolutionFolders", "dir_7a1a74d737b80dad8917aad3cfcf9cf4.html", "dir_7a1a74d737b80dad8917aad3cfcf9cf4" ],
-    [ "mock.hpp", "a01158.html", null ],
-    [ "stdafx.h", "a01033_source.html", null ]
+    [ "mock.hpp", "a01159.html", null ],
+    [ "stdafx.h", "a01034_source.html", null ]
 ];
