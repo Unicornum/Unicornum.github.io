@@ -6,6 +6,6 @@ var dir_4c54abfac05362a6440104092c1c621f =
     [ "AppTestClass.hpp", "a00497_source.html", null ],
     [ "AppTestProject.hpp", "a00498_source.html", null ],
     [ "AppTestSolution.hpp", "a00499_source.html", null ],
-    [ "mock.hpp", "a00500.html", null ],
-    [ "test.hpp", "a00525.html", null ]
+    [ "mock.hpp", "a00502.html", null ],
+    [ "test.hpp", "a00527.html", null ]
 ];

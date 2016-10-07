@@ -1,20 +1,22 @@
 var a01314 =
 [
-    [ "Match", "a00121.html", [
-      [ "Match", "a00121.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
-      [ "Match", "a00121.html#a6771afe48b8f1155f53536b2220e2764", null ],
-      [ "GetGroups", "a00121.html#a25a080222bf760066265b29637242692", null ],
-      [ "IsMatch", "a00121.html#abaaf6788b646b68ad35c6063693f07b3", null ]
+    [ "Controller", "a01342.html", "a01342" ],
+    [ "Model", "a01343.html", "a01343" ],
+    [ "Support", "a01344.html", "a01344" ],
+    [ "View", "a01347.html", "a01347" ],
+    [ "Init", "a00106.html", null ],
+    [ "Main", "a00119.html", [
+      [ "GetOptions", "a00119.html#a6034719cbb5aa71f8f592648600a5a75", null ],
+      [ "OnInit", "a00119.html#a0dd1ad93046aa82f7e599351a50e48fd", null ]
     ] ],
-    [ "Replace", "a00154.html", [
-      [ "Replace", "a00154.html#adb87baefad52f5062b8edeba4ca08c03", null ],
-      [ "Replace", "a00154.html#a16563cd9219fb222a79395912e3dc987", null ],
-      [ "DoReplace", "a00154.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
+    [ "TestClass", "a00175.html", null ],
+    [ "TestProject", "a00176.html", [
+      [ "GetDllObject", "a00176.html#a8951967671138e75cb5fa35a92a3356e", null ],
+      [ "GetInstance", "a00176.html#a4afac6707ae0d53632b97b88f35e5de0", null ]
     ] ],
-    [ "Search", "a00158.html", [
-      [ "Search", "a00158.html#a845a87338ed627ba32a9893ddbdd2559", null ],
-      [ "Search", "a00158.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
-      [ "GetCoincided", "a00158.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
-      [ "IsSearch", "a00158.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
-    ] ]
+    [ "TestSolution", "a00178.html", null ],
+    [ "DoxygenReport", "a00076.html", [
+      [ "DoxygenReport", "a00076.html#ae69f3fd567c964f9f4f0fcb10c75a690", null ]
+    ] ],
+    [ "MainFrame", "a00120.html", null ]
 ];

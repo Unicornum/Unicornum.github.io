@@ -1,30 +1,28 @@
 var a01322 =
 [
-    [ "Config", "a01319.html", "a01319" ],
-    [ "Message", "a01320.html", "a01320" ],
-    [ "Report", "a01321.html", "a01321" ],
-    [ "Configurator", "a00053.html", [
-      [ "Get", "a00053.html#a53722275ba36d7028901a5d30e4b9c10", null ],
-      [ "GetDefaultValues", "a00053.html#ad1bf211560613558a30546e625c212ef", null ],
-      [ "GetVersionParam", "a00053.html#a797fe062b60a5edddbf4c8a51f06e0af", null ],
-      [ "LoadFromSettings", "a00053.html#ada6e596ecd75f9718cd7a718be9dc9dc", null ],
-      [ "LoadSettingsValue", "a00053.html#abfa4ee170a7b887eb61bee7775dea0eb", null ],
-      [ "Set", "a00053.html#a6cb1518cb704c7edeee6bbe73409dfd5", null ]
+    [ "MessageImpl", "a00130.html", [
+      [ "MessageImpl", "a00130.html#aead43313ff34adde57b4d0f79d535f1c", null ],
+      [ "m_DateTime", "a00130.html#afa58e26786b951a8c796f060d93c13f5", null ],
+      [ "m_FileLine", "a00130.html#a2fcf644acdc70fc17a9ced3f7c206408", null ],
+      [ "m_FullFileLine", "a00130.html#a5488596e9976dd74cd60218ace6b7bfc", null ],
+      [ "m_Hash", "a00130.html#a70dde1057597afe5723ab5e9e776f027", null ],
+      [ "m_Level", "a00130.html#a6e74c8ae0d3d3f5c66a86998c6bc5a9e", null ],
+      [ "m_Message", "a00130.html#a197f88a4e9bd58de9eb043ecb5c23394", null ],
+      [ "m_StrType", "a00130.html#ada6012e1c6046f2287c98380d019a022", null ],
+      [ "m_ThreadInfo", "a00130.html#a35d7fed271b732e9867b8c9fea6617b3", null ]
     ] ],
-    [ "Core", "a00059.html", [
-      [ "Set", "a00059.html#ab1361aa8875cbd9727192fa433b7fa94", null ],
-      [ "Set", "a00059.html#a47b345730a5268f6f1a8bf52dd02b12c", null ],
-      [ "Set", "a00059.html#ad43ec7c95e2ade9ff45ea2687fcfcd77", null ]
+    [ "Message", "a00128.html", [
+      [ "Message", "a00128.html#a9129c099b58fc8b4b237a2268c40e695", null ],
+      [ "DoComplete", "a00128.html#ad6509fda6ddc2230f986662e5181ab04", null ],
+      [ "DoSpecialAction", "a00128.html#a22780dd83eb6c92232d773cf09536961", null ],
+      [ "GetLevel", "a00128.html#a7e0aa36f88d152d1b6e99a9d1bb2da04", null ],
+      [ "m_Message", "a00128.html#a78424dfc4950ec1529fded759d62c3b6", null ]
     ] ],
-    [ "DateTime", "a00067.html", [
-      [ "GetNow", "a00067.html#af736a0188d5c880336c8da286cb587e2", null ],
-      [ "GetNowMks", "a00067.html#a8d1f6abe52e706fd652a3f71369b97d2", null ]
-    ] ],
-    [ "MessagePoints", "a00128.html", [
-      [ "IsExist", "a00128.html#a2d614dae166ac30dc577efbde0530be4", null ]
-    ] ],
-    [ "Proxy", "a00147.html", null ],
-    [ "ProxyDebug", "a00148.html", null ],
-    [ "LOGGER", "a01322.html#ga8633a5b99dd43399c58206e715e7d29f", null ],
-    [ "LOGGER_MIN_LEVEL", "a01322.html#ga827550edbeb086a4fcf0c8d506614062", null ]
+    [ "Trace", "a00181.html", null ],
+    [ "Info", "a00103.html", null ],
+    [ "Warning", "a00187.html", null ],
+    [ "Error", "a00079.html", null ],
+    [ "Fatal", "a00083.html", [
+      [ "DoSpecialAction", "a00083.html#a526dc33d9ad165f8112898e8ec5693f8", null ]
+    ] ]
 ];

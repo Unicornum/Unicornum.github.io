@@ -1,44 +1,23 @@
 var a01332 =
 [
-    [ "Compress", "a00050.html", [
-      [ "PostUnpackAction", "a00050.html#ab22389db7d42879173555f7f15541fd1", null ],
-      [ "PrePackAction", "a00050.html#a344093145698c562bf803f14a7005c6b", null ]
-    ] ],
-    [ "Core", "a00058.html", [
-      [ "Core", "a00058.html#a1acf734b09cac8bccc8529ad1ab65abd", null ],
-      [ "GetData", "a00058.html#a96808c4a811230e4e6aff5963dcf3d14", null ]
-    ] ],
-    [ "Crypto", "a00060.html", [
-      [ "Crypto", "a00060.html#a2f1084d790c2b5fc8be1fd1fe5d349bb", null ],
-      [ "PostUnpackAction", "a00060.html#a724fe50b41b0ab3b19ab2780e9f92950", null ],
-      [ "PrePackAction", "a00060.html#a25a955f3ce340717b5e0310ca12ffa6c", null ]
-    ] ],
-    [ "FileSystem", "a00084.html", [
-      [ "FileSystem", "a00084.html#a2d2907fd806a57c72e93dfd1872eb791", null ],
-      [ "GetData", "a00084.html#a249ab8914d82ec0dac97cb4905ca3f10", null ]
-    ] ],
-    [ "IConverter", "a00094.html", [
-      [ "PostUnpackAction", "a00094.html#a46c0d9efab3af183256bb7c2ef1360b0", null ],
-      [ "PrePackAction", "a00094.html#afcee57e481967ea6987f6247ec4642de", null ]
-    ] ],
-    [ "IImplementation", "a00095.html", [
-      [ "GetData", "a00095.html#a378db548677bc086e5164eef5880da60", null ]
-    ] ],
-    [ "IPassword", "a00105.html", null ],
-    [ "FileInfo", "a00083.html", [
-      [ "m_FileNameLenght", "a00083.html#ad457e51a9f19394b5a34a159ae3fc60c", null ],
-      [ "m_FileSize", "a00083.html#acdff7a58612385eb36a75881671ede62", null ]
-    ] ],
-    [ "Pack", "a00133.html", [
-      [ "Record", "a00152.html", null ],
-      [ "Pack", "a00133.html#a1715c6b00def1a4864ae4312ede86fa2", null ],
-      [ "AddFileToEndStorage", "a00133.html#a3f5f6bb4882857193ba500156b0d975a", null ],
-      [ "AddTitleTo", "a00133.html#af450de4757c89fa83e857e5574ad0d23", null ],
-      [ "Build", "a00133.html#a4f34549c63ec0f362b9ff30a5a64c4ec", null ],
-      [ "BuildTableFiles", "a00133.html#aca6bbd78329d55fd21f7f4fc757af1d1", null ],
-      [ "GetData", "a00133.html#adbabbe70e7bc1177f6d781ea44784734", null ],
-      [ "GetFileId", "a00133.html#aeea0717f32961c9102da5d6adccd4a20", null ],
-      [ "GetRelativePath", "a00133.html#a7eac9d7bf1c61d771f4f960a978a6c70", null ]
-    ] ],
-    [ "Title", "a01332.html#ga8f3ed8d47fb565fed79e95aab52316e5", null ]
+    [ "Proxy", "a00148.html", null ],
+    [ "ASSERT_DIRECTORY_EQ", "a01332.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
+    [ "ASSERT_EXISTS_FILE_FALSE", "a01332.html#gaf5900286722be76eaf83b881ba160bb1", null ],
+    [ "ASSERT_EXISTS_FILE_TRUE", "a01332.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],
+    [ "ASSERT_FILES_BINARY_EQ", "a01332.html#gadedb8f379e467a385930902dddd6d157", null ],
+    [ "ASSERT_FILES_BINARY_NE", "a01332.html#ga47e03c92d053709b90f83f6b20c9b7ba", null ],
+    [ "ASSERT_FILES_STREQ", "a01332.html#ga69b3a6234d72517ef85674de2cf60d30", null ],
+    [ "ASSERT_STDEXCEPTION", "a01332.html#ga9b6950e02cf07c434b3c9ccc325b9559", null ],
+    [ "EXPECT_DIRECTORY_EQ", "a01332.html#ga110902fa9f184c39fc0c095562472c69", null ],
+    [ "EXPECT_EXISTS_FILE_FALSE", "a01332.html#ga548418041138f552c93a97dfb866f9ac", null ],
+    [ "EXPECT_EXISTS_FILE_TRUE", "a01332.html#ga30aa7b117cfbd9a5a2df877a16092f5c", null ],
+    [ "EXPECT_FILES_BINARY_EQ", "a01332.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2", null ],
+    [ "EXPECT_FILES_BINARY_NE", "a01332.html#gaae14802f30c143ba014bc7980d3db7f0", null ],
+    [ "EXPECT_FILES_STREQ", "a01332.html#ga14628cf5a758a8aeec9b5bb69fed767e", null ],
+    [ "EXPECT_STDEXCEPTION", "a01332.html#gae7553b6a2b3b0c4a21e94d06217ef8f3", null ],
+    [ "FRIEND_TEST", "a01332.html#gab92570f53abf3b4fbbd13acaf4265468", null ],
+    [ "IsBinaryEqual", "a01332.html#ga8ea43b95b81df91082282cd21af937b6", null ],
+    [ "IsExists", "a01332.html#gaba7352a2eed189b48b6cdda86280e0e2", null ],
+    [ "IsMatch", "a01332.html#ga12fae53dd48adfd54cc17b98f46a3def", null ],
+    [ "IsStrEqual", "a01332.html#gadf7ceee89a29ddbf1582bb67ca9f33c5", null ]
 ];

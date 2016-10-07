@@ -1,11 +1,18 @@
 var a01337 =
 [
-    [ "IModel", "a00097.html", null ],
-    [ "Model", "a00129.html", [
-      [ "BuildPathToSection", "a00129.html#a0c097f184d0f8008705441c7e8f95f14", null ],
-      [ "GetSection", "a00129.html#a7fa27979818db9ba2e511c5a104fede8", null ],
-      [ "GetSections", "a00129.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
-      [ "GetSettings", "a00129.html#a14217a4b20565c53ba84cd9958354e3a", null ],
-      [ "SetValue", "a00129.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
+    [ "Generated", "a01341.html", "a01341" ],
+    [ "Main", "a00119.html", [
+      [ "GetOptions", "a00119.html#a6034719cbb5aa71f8f592648600a5a75", null ],
+      [ "OnInit", "a00119.html#a0dd1ad93046aa82f7e599351a50e48fd", null ]
+    ] ],
+    [ "MainFrame", "a00121.html", null ],
+    [ "HtmlAbout", "a00093.html", null ],
+    [ "SettingsPage", "a00168.html", [
+      [ "GetActiveNameParameter", "a00168.html#a6c426d98cb43c98ace9fdd6f1f51c01a", null ],
+      [ "SetSettings", "a00168.html#a3a39a65878a05a704a6752f812e38384", null ]
+    ] ],
+    [ "SettingsPanel", "a00169.html", null ],
+    [ "TreeSections", "a00184.html", [
+      [ "SetSections", "a00184.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
     ] ]
 ];

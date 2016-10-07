@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['scope',['Scope',['../a00157.html',1,'alicorn::extension::std::Locale']]],
-  ['search',['Search',['../a00158.html',1,'alicorn::extension::std::regex']]],
-  ['section',['Section',['../a00159.html',1,'alicorn::settings']]],
-  ['sectionfullaccess',['SectionFullAccess',['../a00160.html',1,'alicorn::settings']]],
-  ['sectionimpl',['SectionImpl',['../a00161.html',1,'alicorn::settings']]],
-  ['sections',['Sections',['../a00162.html',1,'alicorn::settings::SectionImpl']]],
-  ['setdefault',['SetDefault',['../a00163.html',1,'alicorn::extension::std::Locale::Scope']]],
-  ['settingsframe',['SettingsFrame',['../a00164.html',1,'wx']]],
-  ['settingspage',['SettingsPage',['../a00165.html',1,'wx']]],
-  ['settingspanel',['SettingsPanel',['../a00166.html',1,'wx']]],
-  ['settingspanelimpl',['SettingsPanelImpl',['../a00167.html',1,'wx']]],
-  ['string',['String',['../a00168.html',1,'alicorn::extension::std']]],
-  ['stringcastproxy',['StringCastProxy',['../a00169.html',1,'alicorn::extension::std']]],
-  ['stringconfigvalue',['StringConfigValue',['../a00170.html',1,'alicorn::logger']]],
-  ['summaryinfo',['SummaryInfo',['../a00171.html',1,'view']]]
+  ['scope',['Scope',['../a00160.html',1,'alicorn::extension::std::Locale']]],
+  ['search',['Search',['../a00161.html',1,'alicorn::extension::std::regex']]],
+  ['section',['Section',['../a00162.html',1,'alicorn::settings']]],
+  ['sectionfullaccess',['SectionFullAccess',['../a00163.html',1,'alicorn::settings']]],
+  ['sectionimpl',['SectionImpl',['../a00164.html',1,'alicorn::settings']]],
+  ['sections',['Sections',['../a00165.html',1,'alicorn::settings::SectionImpl']]],
+  ['setdefault',['SetDefault',['../a00166.html',1,'alicorn::extension::std::Locale::Scope']]],
+  ['settingsframe',['SettingsFrame',['../a00167.html',1,'wx']]],
+  ['settingspage',['SettingsPage',['../a00168.html',1,'wx']]],
+  ['settingspanel',['SettingsPanel',['../a00169.html',1,'wx']]],
+  ['settingspanelimpl',['SettingsPanelImpl',['../a00170.html',1,'wx']]],
+  ['string',['String',['../a00171.html',1,'alicorn::extension::std']]],
+  ['stringcastproxy',['StringCastProxy',['../a00172.html',1,'alicorn::extension::std']]],
+  ['stringconfigvalue',['StringConfigValue',['../a00173.html',1,'alicorn::logger']]],
+  ['summaryinfo',['SummaryInfo',['../a00174.html',1,'view']]]
 ];

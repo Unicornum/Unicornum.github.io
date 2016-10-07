@@ -11,9 +11,9 @@ var dir_cb0d6849bee05037732c30e8cc823705 =
     [ "final.hpp", "a00734_source.html", null ],
     [ "friend.hpp", "a00735_source.html", null ],
     [ "id.hpp", "a00736_source.html", null ],
-    [ "proxy.hpp", "a00547_source.html", null ],
+    [ "proxy.hpp", "a00549_source.html", null ],
     [ "run-in-multithreads.hpp", "a00738_source.html", null ],
-    [ "stdafx.h", "a00245_source.html", null ],
+    [ "stdafx.h", "a00242_source.html", null ],
     [ "this-directory.hpp", "a00739_source.html", null ],
     [ "using-mock.hpp", "a00740_source.html", null ],
     [ "virtual-mock.hpp", "a00741_source.html", null ]

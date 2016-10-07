@@ -1,9 +1,9 @@
 var a01326 =
 [
-    [ "Command", "a01323.html", "a01323" ],
-    [ "Factory", "a01324.html", "a01324" ],
-    [ "Mvc", "a01325.html", "a01325" ],
-    [ "Data< Pointer * >", "a00066.html", null ],
-    [ "FACTORY_REGISTER", "a01326.html#ga1659e9d0ef525996965794c87ced3367", null ],
-    [ "FACTORY_REGISTER_STRING_NAME", "a01326.html#gae97115dc6635657469b3b97f194afe73", null ]
+    [ "Factory", "a00081.html", [
+      [ "Create", "a00081.html#ab623e8fecccf0c69bf8a9be11af41b10", null ],
+      [ "GetInstance", "a00081.html#a468c90913a541bf8447db46b62fc7875", null ],
+      [ "Register", "a00081.html#a7fa0f3418698b0f028e84791fc62c421", null ]
+    ] ],
+    [ "Registrator", "a00156.html", null ]
 ];

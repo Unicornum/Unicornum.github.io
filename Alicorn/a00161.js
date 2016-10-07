@@ -1,25 +1,7 @@
 var a00161 =
 [
-    [ "Parameters", "a00138.html", "a00138" ],
-    [ "Sections", "a00162.html", null ],
-    [ "SectionImpl", "a00161.html#ae95057df444c99b0ea0fbb5bf9b25ec7", null ],
-    [ "SectionImpl", "a00161.html#ad7fb702f4109de1ff4a52f000bc1ddf7", null ],
-    [ "SectionImpl", "a00161.html#a33d3ad9bdeee84aca865105c2de00006", null ],
-    [ "AddExtraValue", "a00161.html#a1cf06e4a5b1302e1dce4d76be20b39b5", null ],
-    [ "GetChildSectionImpl", "a00161.html#a3df5c9b056b01466c8a70001861867ed", null ],
-    [ "GetChildSectionNames", "a00161.html#aa2494768604698224cb7f4cbc7802da7", null ],
-    [ "GetComment", "a00161.html#afeafe7852bb3b8ed88b3d7c658e50d69", null ],
-    [ "GetParameterNames", "a00161.html#aafff73721fb85b69e4cf33c28dbe10d9", null ],
-    [ "GetRawValue", "a00161.html#a25d311cf8547a1ecb6157b0639116c2e", null ],
-    [ "GetSubstitutionValue", "a00161.html#a0ca3d2ff3c1b9eb98bebdd147e0fd7e4", null ],
-    [ "GetValue", "a00161.html#abc6514e8d3099d69d87c8a6707a1de75", null ],
-    [ "IfExistsChangeParameters", "a00161.html#a3a12b03fae9920a1fc04e393eb6366ac", null ],
-    [ "LoadExtraParameters", "a00161.html#a6f13520fb9921877176797f3dfebb9ab", null ],
-    [ "LoadParametersFromNode", "a00161.html#ad9a52445446c5664e9739840073aec14", null ],
-    [ "MoveToSubNode", "a00161.html#ad148da9a64bf7a788ab0f8199dae05bf", null ],
-    [ "Save", "a00161.html#a7f9bc78cb9b514f69d1c915376315484", null ],
-    [ "SetComment", "a00161.html#abe80d2ac53d50b5093c8fd0d5b5a96e5", null ],
-    [ "SetDefaultValue", "a00161.html#a48c0c99676a4ad985da491cde8960279", null ],
-    [ "SetValue", "a00161.html#a1b5bbfe503c6ec6a69c5c8bafa662095", null ],
-    [ "WriteParametersTo", "a00161.html#aab99b32329b68131fb69b01841f92fac", null ]
+    [ "Search", "a00161.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+    [ "Search", "a00161.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+    [ "GetCoincided", "a00161.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+    [ "IsSearch", "a00161.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
 ];

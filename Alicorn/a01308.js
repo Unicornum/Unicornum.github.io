@@ -1,6 +1,9 @@
 var a01308 =
 [
-    [ "Epsilon", "a01308.html#gada77aeeea8cdfd71e2fc258d2622faa5", null ],
-    [ "Infinity", "a01308.html#ga208a1945eed95cb7d404b0fba3fcbd2b", null ],
-    [ "Min", "a01308.html#ga092d73a3c219d160170528be0957ecf9", null ]
+    [ "ArcCos", "a01308.html#gaa1f9a57d13f01fd79928c206f2987771", null ],
+    [ "ArcSin", "a01308.html#gabc9373a8d3f74570f98b2c08f6e0839b", null ],
+    [ "ArcTan", "a01308.html#ga36893ac939107a0f2d2aad5f480e0dbd", null ],
+    [ "Cos", "a01308.html#gac0afab7827edd2f2c712e381ad4c6476", null ],
+    [ "Sin", "a01308.html#ga591de7acd440069d45ccfb5a23cc234b", null ],
+    [ "Tan", "a01308.html#ga941da4c724efde88e2fb9c75112542ed", null ]
 ];

@@ -1,18 +1,18 @@
 var a01312 =
 [
-    [ "Controller", "a01340.html", "a01340" ],
-    [ "Model", "a01341.html", "a01341" ],
-    [ "Support", "a01342.html", "a01342" ],
-    [ "View", "a01345.html", "a01345" ],
-    [ "Init", "a00103.html", null ],
-    [ "Main", "a00116.html", null ],
-    [ "TestClass", "a00172.html", null ],
-    [ "TestProject", "a00174.html", [
-      [ "GetDllObject", "a00174.html#a8951967671138e75cb5fa35a92a3356e", null ],
-      [ "GetInstance", "a00174.html#a4afac6707ae0d53632b97b88f35e5de0", null ]
-    ] ],
-    [ "TestSolution", "a00176.html", null ],
-    [ "MainFrame", "a00117.html", null ],
-    [ "TestClassMainFrame", "a00173.html", null ],
-    [ "TestSolutionMainFrame", "a00177.html", null ]
+    [ "Degree", "a01308.html", "a01308" ],
+    [ "Fast", "a01309.html", null ],
+    [ "Limits", "a01310.html", "a01310" ],
+    [ "Radian", "a01311.html", "a01311" ],
+    [ "Abs", "a01312.html#ga0628008916134d894ddb2ac3dd3fa659", null ],
+    [ "Ceil", "a01312.html#ga868991a4d42cdfc2fe2da56b814881df", null ],
+    [ "Exponent", "a01312.html#ga7858bfad1a228501aff182e17731ef0d", null ],
+    [ "Exponent", "a01312.html#gaec33e3aeae45212e008595b1b1db3b93", null ],
+    [ "Floor", "a01312.html#gaee0a49283f50659ba7eda7912b382a5b", null ],
+    [ "Log", "a01312.html#gadb112fc83d297afc67bc9f0b11491ffd", null ],
+    [ "Max", "a01312.html#ga46d27f821bb83e671287a91ef04b6f1d", null ],
+    [ "Min", "a01312.html#ga2351e6e5a8a802cb858212f06e6a956c", null ],
+    [ "Mod", "a01312.html#gab870f354ab6165ae21e178d23f6accef", null ],
+    [ "Root", "a01312.html#ga8640e62399009826e69832f22ddbf23e", null ],
+    [ "Sign", "a01312.html#gaa122e3b7d2451c4cd5633b51c74a6fa9", null ]
 ];

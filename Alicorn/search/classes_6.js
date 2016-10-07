@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['global',['Global',['../a00087.html',1,'alicorn::extension::std::Locale']]],
-  ['gtestresult',['GTestResult',['../a00088.html',1,'model']]]
+  ['global',['Global',['../a00090.html',1,'alicorn::extension::std::Locale']]],
+  ['gtestresult',['GTestResult',['../a00091.html',1,'model']]]
 ];

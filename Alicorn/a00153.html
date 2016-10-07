@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Шаблон класса alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;</title>
+<title>Libs: Класс alicorn::system::dll::PtrObject</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.3 Revision: 2088 Platform: x64 Build: 15:51 29 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.4 Revision: 2123 Platform: x64 Build: 22:56 07 Октябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,57 +110,131 @@ $(document).ready(function(){initNavTree('a00153.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01742.html">Полный список членов класса</a>  </div>
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="a01787.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;<div class="ingroups"><a class="el" href="a01300.html">Alicorn</a> &raquo; <a class="el" href="a01326.html">Patterns</a> &raquo; <a class="el" href="a01324.html">Factory</a></div></div>  </div>
+<div class="title">Класс alicorn::system::dll::PtrObject<div class="ingroups"><a class="el" href="a01302.html">Alicorn</a> &raquo; <a class="el" href="a01331.html">System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00025.html">Patterns</a> <br />
- Вспомогательный класс для регистрации классов в фабрике объектов.  
+<p>Класс входит в <a class="el" href="a00029.html">System</a> <br />
+ Класс-обертка, содержащая объект, созданный внутри dll.  
  <a href="a00153.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00671_source.html">registrator.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00704_source.html">ptr-object.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;:</div>
+Граф наследования:alicorn::system::dll::PtrObject:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01743.png" border="0" usemap="#alicorn_1_1patterns_1_1factory_1_1_registrator_3_01_t_interface_00_01_t_id_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1patterns_1_1factory_1_1_registrator_3_01_t_interface_00_01_t_id_01_4_coll__map" id="alicorn_1_1patterns_1_1factory_1_1_registrator_3_01_t_interface_00_01_t_id_01_4_coll__map">
+<div class="center"><img src="a01788.png" border="0" usemap="#alicorn_1_1system_1_1dll_1_1_ptr_object_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1system_1_1dll_1_1_ptr_object_inherit__map" id="alicorn_1_1system_1_1dll_1_1_ptr_object_inherit__map">
+<area shape="rect" id="node3" href="a00152.html" title="Класс входит в System &#160;&#160;Класс&#45;обертка для работы с объектами, созданными в dll. " alt="" coords="5,226,155,347"/>
+<area shape="rect" id="node5" href="a00152.html" title="{alicorn::system::dll\l::Ptr\&lt; alicorn::vfs::\lIPassword \&gt;\n|&#45; m_pTObject\l|+ operator&#45;\&gt;()\l+ operator&#45;\&gt;()\l+ Ptr()\l}" alt="" coords="180,219,335,355"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса alicorn::system::dll::PtrObject:</div>
+<div class="dyncontent">
+<div class="center"><img src="a01789.png" border="0" usemap="#alicorn_1_1system_1_1dll_1_1_ptr_object_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1system_1_1dll_1_1_ptr_object_coll__map" id="alicorn_1_1system_1_1dll_1_1_ptr_object_coll__map">
+<area shape="rect" id="node2" href="a00135.html" title="Класс входит в System &#160;&#160;Базовый класс объектов, создаваемых в dll. " alt="" coords="5,6,155,98"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:aaa646d1840123af9766d41dde7b83766"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00153.html#aaa646d1840123af9766d41dde7b83766">PtrObject</a> (const ::boost::filesystem::path &amp;_DllName, const char *_CreateFunctionName, const char *_DestroyFunctionName)</td></tr>
+<tr class="memdesc:aaa646d1840123af9766d41dde7b83766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#aaa646d1840123af9766d41dde7b83766">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaa646d1840123af9766d41dde7b83766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TInterface, class TId = std::string&gt;<br />
-class alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;</h3>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00029.html">System</a> <br />
+ Класс-обертка, содержащая объект, созданный внутри dll. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>03 Сентябрь 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="aaa646d1840123af9766d41dde7b83766"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PtrObject::PtrObject </td>
+          <td>(</td>
+          <td class="paramtype">const ::boost::filesystem::path &amp;&#160;</td>
+          <td class="paramname"><em>_PathToDll</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_CreateFunctionName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_DestroyFunctionName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
-<p>Класс входит в <a class="el" href="a00025.html">Patterns</a> <br />
- Вспомогательный класс для регистрации классов в фабрике объектов. </p>
+<p>Конструктор класса. </p>
 <ul>
-<li>Унаследовать интерфейсный класс, в указателях на который будут создаваться объекты от этого класса.</li>
+<li>Обращается к указанной dll и извлекает указатель на объект, создаваемый функцией <b>_CreateFunctionName</b> этой dll.</li>
+<li>При разрушении объекта разрушает содержащийся объект, вызывая функцию <b>_DestroyFunctionName</b>.</li>
 </ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TInterface</td><td>Сам интерфейсный класс. </td></tr>
-    <tr><td class="paramname">TId</td><td>Класс идентификатора создаваемых классов.</td></tr>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToDll</td><td>Путь к dll, которая будет создавать объекты (допускается передавать строки, как "", так и L""). <br />
+ Android: путь к .so файлам, включенным в .apk файл должен выглядеть как '/data/data/com.ИМЯ_ПРОГРАММЫ/lib' (именно это путь возвращает функция CurrentModule::GetLocation()). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_CreateFunctionName</td><td>Имя функции, создающей объекты класса, указанного в качестве параметра шаблона. Должна иметь сигнатуру: <br />
+ <a class="el" href="a00135.html" title="Класс входит в System   Базовый класс объектов, создаваемых в dll. ">alicorn::system::dll::Object</a> * Create(void); </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_DestroyFunctionName</td><td>Имя функции, уничтожающей объекты класса, созданные функцией <b>_CreateFunctionName</b>. Должна иметь сигнатуру: <br />
+ void Destroy(alicorn::system::dll::Object *);</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>07 Сентябрь 2015 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
-<h2>Пример регистрации классов в фабрике: </h2>
-<div class="fragment"><div class="line"></div><div class="line"><span class="keyword">using</span> String_t = <a class="code" href="a00168.html">::alicorn::extension::std::String</a>;</div><div class="line"></div><div class="line"><span class="keyword">class </span>Type</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">enum</span> Value</div><div class="line">  {</div><div class="line">    Der1 = 0,</div><div class="line">    Der2</div><div class="line">  };</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>IBase : </div><div class="line">  <span class="keyword">public</span> <a class="code" href="a00153.html">::alicorn::patterns::factory::Registrator</a>&lt;IBase, Type::Value&gt;</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line">  <span class="keyword">virtual</span> ~IBase() {}</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Base : <span class="keyword">public</span> IBase</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>)<span class="keyword"> const override</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> uT(<span class="stringliteral">&quot;Base::Test()&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der1 final : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>)<span class="keyword"> const override</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> uT(<span class="stringliteral">&quot;Der1::Test()&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a01326.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der1, IBase);</div><div class="line"><a class="code" href="a01326.html#ga1659e9d0ef525996965794c87ced3367">FACTORY_REGISTER</a>(Der1, Type::Der1);</div><div class="line"></div><div class="line"><span class="keyword">class </span>Der2 final : <span class="keyword">public</span> Base</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">virtual</span> String_t Test(<span class="keywordtype">void</span>)<span class="keyword"> const override</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> uT(<span class="stringliteral">&quot;Der2::Test()&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line"></div><div class="line"><a class="code" href="a01326.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Der2, IBase);</div><div class="line"><a class="code" href="a01326.html#ga1659e9d0ef525996965794c87ced3367">FACTORY_REGISTER</a>(Der2, Type::Der2);</div><div class="line"></div></div><!-- fragment --></div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/patterns/factory/<a class="el" href="a00671_source.html">registrator.hpp</a></li>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Не существует или невозможно загрузить указанный файл (_DllName) как dll.</li>
+<li>В указанной dll нет функции <b>_CreateFunctionName</b> или <b>_DestroyFunctionName</b>.</li>
+<li>Функция <b>_CreateFunctionName</b> вернула nullptr. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/system/dll/<a class="el" href="a00704_source.html">ptr-object.hpp</a></li>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/system/dll/ptr-object.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>factory</b></li><li class="navelem"><a class="el" href="a00153.html">Registrator</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Чт 29 Сен 2016 15:51:24. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><b>dll</b></li><li class="navelem"><a class="el" href="a00153.html">PtrObject</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Пт 7 Окт 2016 22:56:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

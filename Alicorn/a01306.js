@@ -1,9 +1,7 @@
 var a01306 =
 [
-    [ "ArcCos", "a01306.html#gaa1f9a57d13f01fd79928c206f2987771", null ],
-    [ "ArcSin", "a01306.html#gabc9373a8d3f74570f98b2c08f6e0839b", null ],
-    [ "ArcTan", "a01306.html#ga36893ac939107a0f2d2aad5f480e0dbd", null ],
-    [ "Cos", "a01306.html#gac0afab7827edd2f2c712e381ad4c6476", null ],
-    [ "Sin", "a01306.html#ga591de7acd440069d45ccfb5a23cc234b", null ],
-    [ "Tan", "a01306.html#ga941da4c724efde88e2fb9c75112542ed", null ]
+    [ "copy_all", "a01306.html#ga9fa92e35356c3972c96f36365131f096", null ],
+    [ "irelative", "a01306.html#ga1bd1bcb8aa17149be5ae9ec4c4633900", null ],
+    [ "load_binary_file", "a01306.html#ga5e6953c39201c848dcfd1e5dc88c6cc5", null ],
+    [ "load_binary_file_from_disk", "a01306.html#ga9d47294658794eba35130d437d9c89f8", null ]
 ];

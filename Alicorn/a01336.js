@@ -1,9 +1,7 @@
 var a01336 =
 [
-    [ "Controller", "a00057.html", [
-      [ "Controller", "a00057.html#aa9082ed0b2ac63b021bf7c944be40d87", null ]
-    ] ],
-    [ "DoChangeValue", "a00069.html", null ],
-    [ "DoDrawSettings", "a00071.html", null ],
-    [ "DoUpdateTreeSections", "a00072.html", null ]
+    [ "Controller", "a01338.html", "a01338" ],
+    [ "Model", "a01339.html", "a01339" ],
+    [ "View", "a01340.html", "a01340" ],
+    [ "Info", "a00104.html", null ]
 ];

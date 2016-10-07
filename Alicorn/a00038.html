@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Testing</title>
+<title>Libs: Documentation</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.3 Revision: 2088 Platform: x64 Build: 15:51 29 Сентябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.4 Revision: 2123 Platform: x64 Build: 22:56 07 Октябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -102,62 +102,34 @@ $(document).ready(function(){initNavTree('a00038.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Testing </div>  </div>
+<div class="title">Documentation </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sTestingPartBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sDocumentationBrief"></a>
 Введение</h1>
-<p>Раздел содержит программу-обертку над библиотекой <a href="http://code.google.com/p/googletest/">gtest </a> и комплект проектов тестирования. Назначение - удобная работа с отдельными классами и наглядное отображение результатов прогона тестов.</p>
-<h1><a class="anchor" id="sTestingDetails"></a>
+<p>Раздел содержит файлы настроек для генерации документации, а также образцы документации решения, раздела и проектов.</p>
+<h1><a class="anchor" id="sDocumentationDetails"></a>
 Подробное описание раздела</h1>
-<p>Комплект проектов тестирования содержится в папке Test.Front и включает в себя три проекта:</p><ul>
-<li><b>Test.Solution</b> - единственный проект на все решение. Экспортируется в решение и предназначен для сборки и запуска всех тестов всех проектов решения. Собирается в папку \Result\Test\x86 и зависит ото всех проектов <b>Test.Project</b>. При запуске "пробегается" по всем dll-кам в своей папке, загружает их, выполняет расположенные в них тесты и отображает статистику выполнения тестов. При завершении возвращает 0, если все тесты прошли успешно и число &gt; 0, если хотя бы один провалился.</li>
-<li><b>Test.Project</b> - отдельный тестовый проект для классов каждого проекта решения. Располагается в той же папке, в которой расположена папка проекта, тесты классов которого он будет содержать. 'Project' заменяется на имя того проекта, который будет тестироваться. Собирается как dll в папку \Result\Test\x86.</li>
-<li><b>Test.Class</b> - отдельный тестовый проект одного класса. Располагается в папке проекта <b>Test.Project</b>. Собирается как исполняемый файл для тестов одного класса. 'Class' в имени проекта заменяется на имя класса, тесты которого он будет исполнять.</li>
+<h2><a class="anchor" id="ssDoxygenDirectory"></a>
+Doxygen</h2>
+<p>Папка содержит:</p><ul>
+<li>Файл настроек для генерации документации Doxygen.</li>
+<li>Файл стилей для генерируемой документации Doxygen.</li>
 </ul>
-<p>Вся информация о прогоне тестов в проектах <b>Test.Solution</b> и <b>Test.Class</b> отображается в диалоговом окне, содержащем три закладки:</p><ul>
-<li>В первой закладке отображается суммарный результат (количество всех/пройденных/проваленных/отключенных тестов) в html-формате.</li>
-<li>Во второй закладке отображается в виде дерева список всех тестов (разделы, содержащие проваленные тесты, помечаются красной иконкой). Иерархия должна содержать имя проекта теста, имя класса теста, имена тестов.</li>
-<li>В третьей закладке отображаются только проваленные тесты. Выделив нужный тест, в нижней части окна можно получить подробное описание причины провала.</li>
+<h2><a class="anchor" id="ssPrototypesDirectory"></a>
+Prototypes</h2>
+<p>Папка содержит образцы (рекомедуемая структура + пример документации):</p><ul>
+<li>Решения (Solution).</li>
+<li>Раздела (Part).</li>
+<li>Проекта статической библиотеки (Lib). </li>
 </ul>
-<h1>Развертывание </h1>
-<p>Подключение проектов тестирования возможно вручную (см. описание ниже) и автоматически - соответствующими командами надстройки UniCA.</p>
-<h2>Общий проект тестирования </h2>
-<ul>
-<li>Экспортировать проект Test.Solution в папку Solution решения и подключить к решению.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Предназначен для запуска всех тестов решения.</li>
-<li>Проект должен зависеть ото всех проектов <b>Test.Project</b> решения.</li>
-</ul>
-</dd></dl>
-<h2>Проект тестирования классов одного проекта </h2>
-<ul>
-<li>В папку, в которой расположена папка проекта экпортировать папку 'Test.Project' и подключить его к решению (в раздел его проекта).</li>
-<li>Заменить 'Project' на имя проекта, тесты классов которого он будет содержать.</li>
-<li>Проекту <b>Test.Solution</b> добавить зависимость от добавленного проекта.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>В этот проект должны добавляться все файлы *_test.cpp всех проектов тестирования одного класса (в раздел Tests\ClassName).</dd></dl>
-<h2>Проект тестирования одного класса </h2>
-<ul>
-<li>Для каждого теста класса в папку проекта <b>Test.Project</b> экспортируется папка 'Test.Class'.</li>
-<li>Заменить 'Class' на имя тестируемого класса.</li>
-<li>Подключить добавленный проект к решению (в раздел Test.Classes проекта, к которому он относится).</li>
-<li>Файл <a class="el" href="a01225.html">ClassName_test.cpp</a> переименовать, заменив 'ClassName' на имя класса, после чего подключить его к проектам <b>Test.Class</b> и <b>Test.Project</b>.</li>
-<li>В файле <a class="el" href="a01225.html">ClassName_test.cpp</a> <b>PathToHeader.hpp</b> заменить на путь к файлу тестируемого класса.</li>
-<li>В файле <a class="el" href="a01225.html">ClassName_test.cpp</a> <b>ClassName</b> заменить на соответствующее имя класса.</li>
-</ul>
-<h1>Рекомендуемая структура решения </h1>
-<div class="image">
-<img src="SolutionStruct.png" alt="SolutionStruct.png"/>
-</div>
- </div></div><!-- contents -->
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Libs</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Чт 29 Сен 2016 15:51:23. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00010.html">Libs</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Пт 7 Окт 2016 22:56:51. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>
