@@ -6,6 +6,6 @@ var dir_b1a6fdd312de4995ad1cb2189f584082 =
     [ "Test.SelectionEvents", "dir_78ee81faa4d5b4ce52a2e6c4d8f63b04.html", "dir_78ee81faa4d5b4ce52a2e6c4d8f63b04" ],
     [ "Test.SolutionEvents", "dir_1d70db48231bffb927d32134061d8fb3.html", "dir_1d70db48231bffb927d32134061d8fb3" ],
     [ "Test.TextEditorEvents", "dir_fa0ba62a4316cf27c67aefc0f7674870.html", "dir_fa0ba62a4316cf27c67aefc0f7674870" ],
-    [ "mock.hpp", "a01156.html", null ],
-    [ "stdafx.h", "a01011_source.html", null ]
+    [ "mock.hpp", "a01195.html", null ],
+    [ "stdafx.h", "a01047_source.html", null ]
 ];

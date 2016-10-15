@@ -1,5 +1,5 @@
 var a00253 =
 [
-    [ "GetReplaceString", "a00253.html#a672429326859357fdab4692dbfbacbef", null ],
-    [ "SetProcessedData", "a00253.html#a133c64c63a2004726817884ea2e59ab8", null ]
+    [ "GetCaption", "a00253.html#ade76701e06d95dd78419f0e23bd2ea28", null ],
+    [ "GetId", "a00253.html#acf0c3577b07c7ff8fda660b3c331340f", null ]
 ];

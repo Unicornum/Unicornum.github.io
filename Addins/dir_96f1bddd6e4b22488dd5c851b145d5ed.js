@@ -7,6 +7,6 @@ var dir_96f1bddd6e4b22488dd5c851b145d5ed =
     [ "Test.CommandBarPopup", "dir_f5190918b49e98ea89ead81d8c58b289.html", "dir_f5190918b49e98ea89ead81d8c58b289" ],
     [ "Test.CommandBars", "dir_75ce3aa628a913cb78943e83a7e2eb37.html", "dir_75ce3aa628a913cb78943e83a7e2eb37" ],
     [ "Test.Commands", "dir_626eb9de133dbb9cbcb43e32321a5eec.html", "dir_626eb9de133dbb9cbcb43e32321a5eec" ],
-    [ "mock.hpp", "a01152.html", null ],
-    [ "stdafx.h", "a00979_source.html", null ]
+    [ "mock.hpp", "a01191.html", null ],
+    [ "stdafx.h", "a01015_source.html", null ]
 ];

@@ -1,6 +1,6 @@
 var a00106 =
 [
-    [ "Add", "a00106.html#a89618778c2a8b30d4a8b0b743acd667d", null ],
-    [ "Clear", "a00106.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
-    [ "operator[]", "a00106.html#aceaa3c748e8bce0117a9f6203c1b0af0", null ]
+    [ "AddPopup", "a00106.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
+    [ "GetCount", "a00106.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ],
+    [ "GetItem", "a00106.html#a288539af54a8b40f2b662c071ca4bff5", null ]
 ];

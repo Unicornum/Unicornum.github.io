@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::useful_commands::common::Commands</title>
+<title>Addins: Класс wrappers::vs::CommandBarControls</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -111,142 +111,105 @@ $(document).ready(function(){initNavTree('a00106.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a02801.html">Полный список членов класса</a>  </div>
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="a03370.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::useful_commands::common::Commands<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a02257.html">Core</a> &raquo; <a class="el" href="a02278.html">UsefulCommands</a> &raquo; <a class="el" href="a02277.html">Common</a></div></div>  </div>
+<div class="title">Класс wrappers::vs::CommandBarControls<div class="ingroups"><a class="el" href="a02380.html">Wrappers</a> &raquo; <a class="el" href="a02379.html">VisualStudio</a> &raquo; <a class="el" href="a02369.html">Command</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00037.html">Common</a> <br />
- Класс, содержащий список всех созданных объектов команд.  
+<p>Класс входит в <a class="el" href="a00066.html">Command</a> <br />
+ Класс-обертка для Microsoft_VisualStudio_CommandBars::CommandBarControls.  
  <a href="a00106.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01484_source.html">Commands.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01985_source.html">CommandBarControls.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса core::useful_commands::common::Commands:</div>
+Граф наследования:wrappers::vs::CommandBarControls:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02802.png" border="0" usemap="#core_1_1useful__commands_1_1common_1_1_commands_coll__map" alt="Collaboration graph"/></div>
-<map name="core_1_1useful__commands_1_1common_1_1_commands_coll__map" id="core_1_1useful__commands_1_1common_1_1_commands_coll__map">
+<div class="center"><img src="a03371.png" border="0" usemap="#wrappers_1_1vs_1_1_command_bar_controls_inherit__map" alt="Inheritance graph"/></div>
+<map name="wrappers_1_1vs_1_1_command_bar_controls_inherit__map" id="wrappers_1_1vs_1_1_command_bar_controls_inherit__map">
+<area shape="rect" id="node2" href="a00101.html" title="{wrappers::vs::Collection\l\&lt; CommandBarControl \&gt;\n||+ IsExist()\l+ operator[]()\l+ operator[]()\l+ GetCount()\l# GetItem()\l}" alt="" coords="5,50,189,201"/>
+<area shape="rect" id="node4" href="a00091.html" title="{wrappers::vs::Base\l\&lt; MSVSCB::CommandBarControls \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="214,6,468,245"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса wrappers::vs::CommandBarControls:</div>
+<div class="dyncontent">
+<div class="center"><img src="a03372.png" border="0" usemap="#wrappers_1_1vs_1_1_command_bar_controls_coll__map" alt="Collaboration graph"/></div>
+<map name="wrappers_1_1vs_1_1_command_bar_controls_coll__map" id="wrappers_1_1vs_1_1_command_bar_controls_coll__map">
+<area shape="rect" id="node2" href="a00101.html" title="{wrappers::vs::Collection\l\&lt; CommandBarControl \&gt;\n||+ IsExist()\l+ operator[]()\l+ operator[]()\l+ GetCount()\l# GetItem()\l}" alt="" coords="5,50,189,201"/>
+<area shape="rect" id="node4" href="a00091.html" title="{wrappers::vs::Base\l\&lt; MSVSCB::CommandBarControls \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="214,6,468,245"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a89618778c2a8b30d4a8b0b743acd667d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a89618778c2a8b30d4a8b0b743acd667d">Add</a> (const CommandPtr_t &amp;)</td></tr>
-<tr class="memdesc:a89618778c2a8b30d4a8b0b743acd667d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления команды.  <a href="#a89618778c2a8b30d4a8b0b743acd667d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a89618778c2a8b30d4a8b0b743acd667d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceaa3c748e8bce0117a9f6203c1b0af0"><td class="memItemLeft" align="right" valign="top">CommandPtr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#aceaa3c748e8bce0117a9f6203c1b0af0">operator[]</a> (DWORD) const </td></tr>
-<tr class="memdesc:aceaa3c748e8bce0117a9f6203c1b0af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор получения команды по ее id.  <a href="#aceaa3c748e8bce0117a9f6203c1b0af0">Подробнее...</a><br /></td></tr>
-<tr class="separator:aceaa3c748e8bce0117a9f6203c1b0af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc5c66f4b320ee76cb718b07697084d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a6dc5c66f4b320ee76cb718b07697084d">Clear</a> (void)</td></tr>
-<tr class="memdesc:a6dc5c66f4b320ee76cb718b07697084d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция очистки списка команд.  <a href="#a6dc5c66f4b320ee76cb718b07697084d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a6dc5c66f4b320ee76cb718b07697084d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f4d70fb7cc20bad7698bba0c4e9e2cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f4d70fb7cc20bad7698bba0c4e9e2cb"></a>
+virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb">GetCount</a> (void) const </td></tr>
+<tr class="memdesc:a6f4d70fb7cc20bad7698bba0c4e9e2cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество элементов в коллекции. <br /></td></tr>
+<tr class="separator:a6f4d70fb7cc20bad7698bba0c4e9e2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbb2e6cf86f155028496a37aea0cb1a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fbb2e6cf86f155028496a37aea0cb1a"></a>
+<a class="el" href="a00105.html">CommandBarControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a8fbb2e6cf86f155028496a37aea0cb1a">AddPopup</a> (void) const </td></tr>
+<tr class="memdesc:a8fbb2e6cf86f155028496a37aea0cb1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить элемент в коллекцию. <br /></td></tr>
+<tr class="separator:a8fbb2e6cf86f155028496a37aea0cb1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a00101"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a00101')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a00101.html">wrappers::vs::Collection&lt; CommandBarControl &gt;</a></td></tr>
+<tr class="memitem:a373c590faedafe634836c26ad9419161 inherit pub_methods_a00101"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a373c590faedafe634836c26ad9419161"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html#a373c590faedafe634836c26ad9419161">IsExist</a> (const CString &amp;_Name) const</td></tr>
+<tr class="memdesc:a373c590faedafe634836c26ad9419161 inherit pub_methods_a00101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка того, что объект с указанным именем существует в коллекции. <br /></td></tr>
+<tr class="separator:a373c590faedafe634836c26ad9419161 inherit pub_methods_a00101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a288539af54a8b40f2b662c071ca4bff5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a288539af54a8b40f2b662c071ca4bff5"></a>
+virtual <a class="el" href="a00105.html">CommandBarControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a288539af54a8b40f2b662c071ca4bff5">GetItem</a> (VARIANT _Index) const </td></tr>
+<tr class="memdesc:a288539af54a8b40f2b662c071ca4bff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Описание функции см. <a class="el" href="a00101.html#a212a9fd442dace44367a7d6dcfa3a9f8" title="Функция получения объекта по его имени/индексу. ">Collection::GetItem()</a>. <br /></td></tr>
+<tr class="separator:a288539af54a8b40f2b662c071ca4bff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_methods_a00091"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00091')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00091.html">wrappers::vs::Base&lt; MSVSCB::CommandBarControls &gt;</a></td></tr>
+<tr class="memitem:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bd20844e7332406932787c9b5b852d"></a>
+CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#af8bd20844e7332406932787c9b5b852d">GetName</a> (void) const</td></tr>
+<tr class="memdesc:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта. <br /></td></tr>
+<tr class="separator:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36588f576db9d1dd86e5ae158a165c3"></a>
+Service::MakeProxy&lt; TReturn, MSVSCB::CommandBarControls &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#ae36588f576db9d1dd86e5ae158a165c3">Make</a> (void) const</td></tr>
+<tr class="memdesc:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t. <br /></td></tr>
+<tr class="separator:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42cc94ed152690a3fe262eec788ef191"></a>
+Service::MakeProxy&lt; void *, MSVSCB::CommandBarControls &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a42cc94ed152690a3fe262eec788ef191">Make</a> (void) const</td></tr>
+<tr class="memdesc:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t, не возвращающих значения. <br /></td></tr>
+<tr class="separator:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_a00091"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_a00091')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="a00091.html">wrappers::vs::Base&lt; MSVSCB::CommandBarControls &gt;</a></td></tr>
+<tr class="memitem:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c540555a66a709a4f21f9bfc3e8dbf5"></a>
+static Service::MakeProxy&lt; TReturn, TSource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html#a6c540555a66a709a4f21f9bfc3e8dbf5">Make</a> (TSource *_pSource)</td></tr>
+<tr class="memdesc:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций прототипов. <br /></td></tr>
+<tr class="separator:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00037.html">Common</a> <br />
- Класс, содержащий список всех созданных объектов команд. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00066.html">Command</a> <br />
+ Класс-обертка для Microsoft_VisualStudio_CommandBars::CommandBarControls. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
  2.0.0.0 <br />
+ 2.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 янв 2015 <br />
- 14 Ноябрь 2015 <br />
- 18 Июль 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>??? <br />
+ 21 май 2014 <br />
+ 30 Апрель 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a89618778c2a8b30d4a8b0b743acd667d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Commands::Add </td>
-          <td>(</td>
-          <td class="paramtype">const CommandPtr_t &amp;&#160;</td>
-          <td class="paramname"><em>_Command</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция добавления команды. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Command</td><td>Команда. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000011">Необходимо сделать:</a></b></dt><dd>Проверять валидность полученной команды </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a6dc5c66f4b320ee76cb718b07697084d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Commands::Clear </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция очистки списка команд. </p>
-<ul>
-<li>Все объекты команд будут удалены. </li>
-</ul>
-
-</div>
-</div>
-<a class="anchor" id="aceaa3c748e8bce0117a9f6203c1b0af0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Commands::CommandPtr_t Commands::operator[] </td>
-          <td>(</td>
-          <td class="paramtype">DWORD&#160;</td>
-          <td class="paramname"><em>_CommandId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Оператор получения команды по ее id. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_CommandId</td><td>Идентификатор команды.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Команда, соответствующая указанному id.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Команды с указанным id не существует. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/UsefulCommands/Common/Common/<a class="el" href="a01484_source.html">Commands.hpp</a></li>
-<li>Solution/Solution/Core/UsefulCommands/Common/Common/Commands.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2015 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Wrappers/VisualStudio/Command/Command/<a class="el" href="a01985_source.html">CommandBarControls.hpp</a></li>
+<li>Solution/Solution/Wrappers/VisualStudio/Command/Command/CommandBarControls.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="a00106.html">Commands</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:57. Создано системой
+    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00106.html">CommandBarControls</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:46. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

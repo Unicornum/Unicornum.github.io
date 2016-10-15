@@ -1,6 +1,6 @@
 var modules =
 [
-    [ "ConnectionPoints", "a02248.html", "a02248" ],
-    [ "Core", "a02257.html", "a02257" ],
-    [ "Wrappers", "a02310.html", "a02310" ]
+    [ "ConnectionPoints", "a02316.html", "a02316" ],
+    [ "Core", "a02326.html", "a02326" ],
+    [ "Wrappers", "a02380.html", "a02380" ]
 ];

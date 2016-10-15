@@ -1,4 +1,4 @@
 var a00345 =
 [
-    [ "Add", "a00345.html#ab059f2bea33c6a0f324c8a7f73f91458", null ]
+    [ "OnQueryCommandCaption", "a00345.html#a90889a7d67b02d8c9501fef5ea9361db", null ]
 ];

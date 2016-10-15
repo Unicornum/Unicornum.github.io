@@ -4,6 +4,7 @@ var dir_f468be872bece173943efae191209fc5 =
     [ "Test.DoBuildResultToHtml", "dir_dcff1e6d34b91569132523ad7650e715.html", "dir_dcff1e6d34b91569132523ad7650e715" ],
     [ "Test.DoOpen", "dir_049913f87e84e9385b8ede7cfac80d05.html", "dir_049913f87e84e9385b8ede7cfac80d05" ],
     [ "Test.DoPrefatory", "dir_642a6fac619f742de31a0d73afbbaeaa.html", "dir_642a6fac619f742de31a0d73afbbaeaa" ],
+    [ "Test.DoResultCoverageToHtml", "dir_18880df452e0b8b58f0ebb52ea7f6ffd.html", "dir_18880df452e0b8b58f0ebb52ea7f6ffd" ],
     [ "Test.DoRun", "dir_2fa4a949f0c5cc281dd7d10fbd16b8ba.html", "dir_2fa4a949f0c5cc281dd7d10fbd16b8ba" ],
     [ "Test.GenerateSimpleMockClass", "dir_0fe2aff39c3b13126c0fcba4c139cdd2.html", "dir_0fe2aff39c3b13126c0fcba4c139cdd2" ],
     [ "Test.GenerateSolutionDoc", "dir_b77540763513654d8fab35b7d9b2b97e.html", "dir_b77540763513654d8fab35b7d9b2b97e" ],
@@ -17,6 +18,6 @@ var dir_f468be872bece173943efae191209fc5 =
     [ "Test.OpenDoxygenDoc", "dir_f0c3e173d79e052bc2c89f74424b09e2.html", "dir_f0c3e173d79e052bc2c89f74424b09e2" ],
     [ "Test.OpenSolutionDoc", "dir_bd0ca8e769cf6cfb6804365d480e07e4.html", "dir_bd0ca8e769cf6cfb6804365d480e07e4" ],
     [ "Test.UpdateTimeInfo", "dir_8fe7c2963dace802e663cdce81959527.html", "dir_8fe7c2963dace802e663cdce81959527" ],
-    [ "mock.hpp", "a01135.html", null ],
-    [ "stdafx.h", "a00862_source.html", null ]
+    [ "mock.hpp", "a01173.html", null ],
+    [ "stdafx.h", "a00892_source.html", null ]
 ];

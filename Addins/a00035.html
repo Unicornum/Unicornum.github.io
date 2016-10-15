@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Version Updater</title>
+<title>Addins: Исходные требования утилиты DevelopmentInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -102,23 +102,38 @@ $(document).ready(function(){initNavTree('a00035.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title"><a class="el" href="a00349.html" title="Класс входит в Version   Главный класс модуля Version. ">Version</a> Updater </div>  </div>
+<div class="title">Исходные требования утилиты DevelopmentInfo </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sToolsVersionUpdaterBrief"></a>
-Введение</h1>
-<p>Проект утилиты обновления версии решения в текстовом файле.</p>
-<h1><a class="anchor" id="sToolsVersionUpdaterDetails"></a>
-Подробное описание проекта</h1>
-<p>Получает в качестве параметра путь к файлу, в котором заменяет все строки '<a class="el" href="a00349.html" title="Класс входит в Version   Главный класс модуля Version. ">Version</a>="0.0.0.0"' на строку '<a class="el" href="a00349.html" title="Класс входит в Version   Главный класс модуля Version. ">Version</a>="x.x.x.x"', содержащую текущую версию решения.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>При запуске подгружает системную version.dll, поэтому проект не должен собираться в папку расширений. </dd></dl>
-</div></div><!-- contents -->
+<div class="textblock"><p>Программа представляет собой диалоговое окно со вкладками, отображающими информацию о работе над решениями в виде диаграммы, аналогичной полю 'Обзор на неделю' сервиса PrimaERP.</p>
+<h2>Исходные данные </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Исходные данные для работы программы передаются как параметры командной строки.</li>
+<li> <input type="checkbox" checked disabled>  Имя текущего решения.</li>
+<li> <input type="checkbox" checked disabled>  Путь к файлу, содержащему информацию о работе над текущим решением.</li>
+<li> <input type="checkbox" checked disabled>  Путь к файлу, содержащему информацию о работе над решениями, измененными за последние две недели.</li>
+</ul>
+<h2>Вкладка с информацией о текущем решении </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Имя вкладки - название текущего решения.</li>
+<li> <input type="checkbox" disabled>  Общее количество времени, затраченное на работу над решением.</li>
+<li> <input type="checkbox" checked disabled>  Диаграмма статистики работы над текущим решением за последние две недели.</li>
+</ul>
+<h2>Вкладка с информацией обо всех решениях, измененных за последние две недели </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Диаграмма суммарной статистики работы надо всеми решениями за последние две недели.</li>
+</ul>
+<h2>Образец диаграммы </h2>
+<div class="image">
+<img src="DevelopmentInfo.Diagram.png" alt="DevelopmentInfo.Diagram.png"/>
+</div>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00026.html">Core</a></li><li class="navelem"><a class="el" href="a00028.html">Утилиты</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:56. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00013.html">Addins</a></li><li class="navelem"><a class="el" href="a00008.html">Исходные требования</a></li><li class="navelem"><a class="el" href="a00027.html">Требования модуля Time Tracker</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,6 +1,7 @@
 var a00302 =
 [
-    [ "Tag", "a00302.html#a8029a5b5d55e3e7e41692a89640b43f4", null ],
-    [ "GetCaption", "a00302.html#a21ce3a76b5870765f7b503b4318f4df8", null ],
-    [ "GetValues", "a00302.html#a1ca8d5c64f2e6b781715dc07a587d763", null ]
+    [ "SolutionDevelopmentInfo", "a00302.html#ade167ed53f360c0c02dbac609df1f6aa", null ],
+    [ "GetInfo", "a00302.html#a61bd18745090e834f86393cbd0ed38fe", null ],
+    [ "Save", "a00302.html#ad88fc0ffb5ff2b2ac775b9861ecd2b9a", null ],
+    [ "UpdateTime", "a00302.html#a3e357414c28cd8fbe76fd04d40409c12", null ]
 ];

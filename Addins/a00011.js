@@ -1,10 +1,6 @@
 var a00011 =
 [
-    [ "Введение", "a00011.html#sConnectionPointsBrief", [
-      [ "Схема классов раздела", "a00011.html#ssConnectionPointsClasses", null ]
-    ] ],
-    [ "Common", "a00013.html", [
-      [ "Введение", "a00013.html#sCommonBrief", null ]
-    ] ],
-    [ "Visual Studio", "a00014.html", "a00014" ]
+    [ "Сборка скриптом BuildAll", "a00007.html", null ],
+    [ "Результаты выполнения тестов", "a00012.html", null ],
+    [ "Покрытие кода тестами", "a00009.html", "a00009" ]
 ];

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Data</title>
+<title>Addins: Connection Points</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -102,29 +102,31 @@ $(document).ready(function(){initNavTree('a00015.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Data </div>  </div>
+<div class="title">Connection Points </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sCpVsDataBrief"></a>
+<div class="textblock"><h1><a class="anchor" id="sConnectionPointsBrief"></a>
 Введение</h1>
-<p>Проект содержит файлы, необходимые для работы надстроек (настройки, шаблоны документов и т.п.), которые копируются в папку построения при сборке проекта.</p>
-<h2><a class="anchor" id="ssCpVsDataDecsriptionFiles"></a>
-Описание файлов</h2>
-<ul>
-<li>Main.pkgdef: регистрация главного модуля расширения и вспомогательной dll.</li>
-<li>extension.vsixmanifest: информация о расширении, которую будет отображать установщик VSIX и сама Visual Studio.</li>
-<li>[Content_Types].xml: файл содержит список расширений файлов, которые будут распакованы в папку результата при установке файла .vsix.</li>
-<li>Settings.xml: файл со структурой разделов настроек модулей (определяет дерево зависимостей разделов настроек).</li>
-<li>Templates\VS20??\usertype.dat: файл с пользовательскими ключевыми словами, которые требуется подсвечивать (эти слова добавляются командой из контекстного меню).</li>
-<li>Utilities\AStyle.ini: файл с настройками утилиты astyle. </li>
-</ul>
+<p>Содержит классы подключения компонентов надстройки к конкретной IDE.</p>
+<h2><a class="anchor" id="ssConnectionPointsClasses"></a>
+Схема классов раздела</h2>
+<div class="image">
+<img src="ConnectionPoints.Classes.png" alt="ConnectionPoints.Classes.png"/>
+</div>
+<h1>Структура раздела </h1>
+<h3>Проект Common</h3>
+<p>Проект содержит классы, общие для всех точек подключения и не зависящие от конкретного типа IDE. </p>
+<p>Страница проекта: <a class="el" href="a00017.html">Common</a></p>
+<h3>Раздел Visual Studio</h3>
+<p>Раздел содержит проекты классов подключения к Visual Studio. </p>
+<p>Страница раздела: <a class="el" href="a00018.html">Visual Studio</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00011.html">Connection Points</a></li><li class="navelem"><a class="el" href="a00014.html">Visual Studio</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:56. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00013.html">Addins</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

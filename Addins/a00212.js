@@ -1,6 +1,7 @@
 var a00212 =
 [
-    [ "BeginUpdate", "a00212.html#a4b573f4e5f8b8471589cf411ea5fe4f1", null ],
-    [ "CreateRoot", "a00212.html#ae309b84e8011dc63d4ec043404dcd7be", null ],
-    [ "EndUpdate", "a00212.html#afc27a730e3d270a9ff89dd381b67de1d", null ]
+    [ "GetChildTasks", "a00212.html#afdfd98f8ad70023d5188dda69a5e4dd6", null ],
+    [ "GetRootCompleteTaskId", "a00212.html#ad8a14dd2a18bb8fe9208e5faf335f0d6", null ],
+    [ "GetRootProcessTaskId", "a00212.html#a97a7dac1ca27c28f9d36e5a66c7eb032", null ],
+    [ "Changed", "a00212.html#a9444372a28d6fd34dda9f8b192964c4f", null ]
 ];

@@ -1,6 +1,9 @@
 var a00317 =
 [
-    [ "GetCaption", "a00317.html#a334b94e5ecdfb4bd6773eca26e81b248", null ],
-    [ "GetId", "a00317.html#a7385d179fbab96fe54f1614c94f04b4f", null ],
-    [ "IsEnabled", "a00317.html#ad020704272b8e116a3a4ee92f48ee449", null ]
+    [ "Task", "a00317.html#ac75c69d7af04e37adb7479ebbd8d6a01", null ],
+    [ "DoCompleteAction", "a00317.html#a3d169b8c85d8dac9edacfef3d4741a28", null ],
+    [ "GetSolutionHistoryHtmlText", "a00317.html#aa14c640e727ca5e951e758178d767ea4", null ],
+    [ "ReadDataFrom", "a00317.html#a828606eadccc2469c6b308d439d37f1b", null ],
+    [ "SetData", "a00317.html#a3e47428fe92345f802ba1d2bf7586789", null ],
+    [ "WriteDataTo", "a00317.html#aedf20aaba899f8b08c767d0f371de944", null ]
 ];

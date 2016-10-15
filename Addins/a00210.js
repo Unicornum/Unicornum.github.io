@@ -1,12 +1,7 @@
 var a00210 =
 [
-    [ "GetExternalProgramAction", "a00210.html#a189afa06d6bb705979adc31ceb2c04a3", null ],
-    [ "GetText", "a00210.html#a82edf752ec3b33465d3ea64394ba6c91", null ],
-    [ "GetType", "a00210.html#a1551b18e50cfe6c08e35025cd79d62df", null ],
-    [ "GetVersionAction", "a00210.html#a42ab34323f6ea675fca656ad7ac042fd", null ],
-    [ "IsAddParentTaskText", "a00210.html#a6541673ce8e55ca9ae2f3cc1caf17d0b", null ],
-    [ "IsChecked", "a00210.html#aa45e264cea03175160b9ea5397772255", null ],
-    [ "IsEditAvailable", "a00210.html#a96b3866059aca0d1eff944c5ec734706", null ],
-    [ "IsWriteToHistory", "a00210.html#a793c0208230f25bb81adbdeaf8afe085", null ],
-    [ "ShowPanel", "a00210.html#aeb3a4e2d3810e06cfc6e8f54150726d4", null ]
+    [ "GetCount", "a00210.html#a79bad819e3756478477a430821e9e575", null ],
+    [ "GetItem", "a00210.html#aca2deef5aed3e1e4598c290ecf48b812", null ],
+    [ "LoadFromFile", "a00210.html#af08a2b241ca5445b4ea24ae91393d66b", null ],
+    [ "Remove", "a00210.html#aac2aa044e6bea3eabf721822e5a28663", null ]
 ];

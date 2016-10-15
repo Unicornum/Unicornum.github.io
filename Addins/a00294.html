@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wrappers::helper::vs::SolutionImpl</title>
+<title>Addins: Класс core::utilities::vs::Report</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -110,55 +110,321 @@ $(document).ready(function(){initNavTree('a00294.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a03249.html">Полный список членов класса</a>  </div>
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="a03167.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wrappers::helper::vs::SolutionImpl</div>  </div>
+<div class="title">Класс core::utilities::vs::Report<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a02326.html">Core</a> &raquo; <a class="el" href="a02367.html">Utilities</a> &raquo; <a class="el" href="a02365.html">Logger</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00058.html">Helper</a> <br />
- Реализация интерфейса для решения.  
+<p>Класс входит в <a class="el" href="a00061.html">Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio.  
  <a href="a00294.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01896_source.html">SolutionImpl.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01904_source.html">Report.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:noncopyable.</p>
 <div class="dynheader">
-Граф наследования:wrappers::helper::vs::SolutionImpl:</div>
+Граф связей класса core::utilities::vs::Report:</div>
 <div class="dyncontent">
-<div class="center"><img src="a03250.png" border="0" usemap="#wrappers_1_1helper_1_1vs_1_1_solution_impl_inherit__map" alt="Inheritance graph"/></div>
-<map name="wrappers_1_1helper_1_1vs_1_1_solution_impl_inherit__map" id="wrappers_1_1helper_1_1vs_1_1_solution_impl_inherit__map">
-<area shape="rect" id="node2" href="a00205.html" title="Класс входит в Helper &#160;&#160;Интерфейс, содержащий функции проверки состояния решения. ..." alt="" coords="5,5,208,83"/>
+<div class="center"><img src="a03168.png" border="0" usemap="#core_1_1utilities_1_1vs_1_1_report_coll__map" alt="Collaboration graph"/></div>
+<map name="core_1_1utilities_1_1vs_1_1_report_coll__map" id="core_1_1utilities_1_1vs_1_1_report_coll__map">
+<area shape="rect" id="node2" href="a00262.html" title="Класс входит в Panes &#160;&#160;Класс&#45;обертка для EnvDTE::OutputWindowPane. " alt="" coords="5,347,256,527"/>
+<area shape="rect" id="node4" href="a00091.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::OutputWindowPane \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="9,6,249,245"/>
+<area shape="rect" id="node6" href="a00165.html" title="Класс входит в Ide &#160;&#160;Класс&#45;обертка для EnvDTE80::DTE2. " alt="" coords="281,296,431,579"/>
+<area shape="rect" id="node8" href="a00091.html" title="{wrappers::vs::Base\l\&lt; EnvDTE80::DTE2 \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="275,6,437,245"/>
+<area shape="rect" id="node10" href="a00312.html" title="Класс входит в Ide &#160;&#160;Класс&#45;обертка для EnvDTE::StatusBar. " alt="" coords="457,355,644,520"/>
+<area shape="rect" id="node12" href="a00091.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::StatusBar \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="462,6,639,245"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса wrappers::helper::vs::SolutionImpl:</div>
-<div class="dyncontent">
-<div class="center"><img src="a03251.png" border="0" usemap="#wrappers_1_1helper_1_1vs_1_1_solution_impl_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1helper_1_1vs_1_1_solution_impl_coll__map" id="wrappers_1_1helper_1_1vs_1_1_solution_impl_coll__map">
-<area shape="rect" id="node2" href="a00205.html" title="Класс входит в Helper &#160;&#160;Интерфейс, содержащий функции проверки состояния решения. ..." alt="" coords="5,340,208,417"/>
-<area shape="rect" id="node4" href="a00286.html" title="Класс входит в Solution &#160;&#160;Класс&#45;обертка для EnvDTE::_Solution. " alt="" coords="233,296,436,461"/>
-<area shape="rect" id="node6" href="a00085.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::_Solution \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="248,6,421,245"/>
-</map>
-</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae23c3dd2c59922ac8994444707812c3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#ae23c3dd2c59922ac8994444707812c3f">ToLog</a> (size_t _Flag, const CString &amp;_Text)</td></tr>
+<tr class="memdesc:ae23c3dd2c59922ac8994444707812c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывод сообщения в окно вывода.  <a href="#ae23c3dd2c59922ac8994444707812c3f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae23c3dd2c59922ac8994444707812c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a0634d540fcb68a82c2ed5d8dbaa6ab3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#a0634d540fcb68a82c2ed5d8dbaa6ab3a">Assign</a> (const <a class="el" href="a00165.html">DTE_t</a> &amp;_DTE)</td></tr>
+<tr class="memdesc:a0634d540fcb68a82c2ed5d8dbaa6ab3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Подключиться" к выводному окну указанного объекта DTE.  <a href="#a0634d540fcb68a82c2ed5d8dbaa6ab3a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0634d540fcb68a82c2ed5d8dbaa6ab3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd71308de790cbfd2c36929a4e2a89f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#a0dd71308de790cbfd2c36929a4e2a89f">TitleToLog</a> (const CString &amp;_Text) const </td></tr>
+<tr class="memdesc:a0dd71308de790cbfd2c36929a4e2a89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать сообщение как заголовок.  <a href="#a0dd71308de790cbfd2c36929a4e2a89f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0dd71308de790cbfd2c36929a4e2a89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96d46cba069b4e5e95abff7b32ff2009"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96d46cba069b4e5e95abff7b32ff2009"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#a96d46cba069b4e5e95abff7b32ff2009">ToStatusBar</a> (const CString &amp;_Text) const </td></tr>
+<tr class="memdesc:a96d46cba069b4e5e95abff7b32ff2009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вывести сообщение в статусную строку Visual Studio. <br /></td></tr>
+<tr class="separator:a96d46cba069b4e5e95abff7b32ff2009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6d101a605b47539dec3ab81fbc886e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#ad6d101a605b47539dec3ab81fbc886e3">OpenOutputWindow</a> (const size_t _Type)</td></tr>
+<tr class="memdesc:ad6d101a605b47539dec3ab81fbc886e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Открыть выводное окно Visual Studio.  <a href="#ad6d101a605b47539dec3ab81fbc886e3">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad6d101a605b47539dec3ab81fbc886e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f17365a372790022cb7a46e89ae633"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#a49f17365a372790022cb7a46e89ae633">MessageToLog</a> (const size_t _Type, const CString &amp;_Text)</td></tr>
+<tr class="memdesc:a49f17365a372790022cb7a46e89ae633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать сообщение в лог.  <a href="#a49f17365a372790022cb7a46e89ae633">Подробнее...</a><br /></td></tr>
+<tr class="separator:a49f17365a372790022cb7a46e89ae633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af62c13c66f6dc455a93e50dfa757d0be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html#af62c13c66f6dc455a93e50dfa757d0be">MessageToLog</a> (const CString &amp;_Type, const CString &amp;_Message) const </td></tr>
+<tr class="memdesc:af62c13c66f6dc455a93e50dfa757d0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Записать сообщение в лог.  <a href="#af62c13c66f6dc455a93e50dfa757d0be">Подробнее...</a><br /></td></tr>
+<tr class="separator:af62c13c66f6dc455a93e50dfa757d0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00058.html">Helper</a> <br />
- Реализация интерфейса для решения. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00061.html">Logger</a> <br />
+ Вспомогательный класс для записи сообщений в окно вывода/стасную строку VisualStudio. </p>
+<ul>
+<li>Если имя модуля не задано (параметр Name), выводится оно не будет.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 2.0.0.0 <br />
+ 2.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>07 Май 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>? ??? 2014 <br />
+ 5 янв 2015 <br />
+ 8 фев 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/Helper/Helper/VisualStudio/<a class="el" href="a01896_source.html">SolutionImpl.hpp</a></li>
-<li>Solution/Solution/Wrappers/Helper/Helper/VisualStudio/SolutionImpl.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a0634d540fcb68a82c2ed5d8dbaa6ab3a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::Assign </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00165.html">DTE_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_DTE</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>"Подключиться" к выводному окну указанного объекта DTE. </p>
+<ul>
+<li>Если окно с именем, переданным конструктору, не существует, оно будет создано. </li>
+</ul>
+
+<p><div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00294_a0634d540fcb68a82c2ed5d8dbaa6ab3a_cgraph.png" border="0" usemap="#a00294_a0634d540fcb68a82c2ed5d8dbaa6ab3a_cgraph" alt=""/></div>
+<map name="a00294_a0634d540fcb68a82c2ed5d8dbaa6ab3a_cgraph" id="a00294_a0634d540fcb68a82c2ed5d8dbaa6ab3a_cgraph">
+<area shape="rect" id="node3" href="a00101.html#a373c590faedafe634836c26ad9419161" title="Проверка того, что объект с указанным именем существует в коллекции. " alt="" coords="209,5,394,46"/>
+<area shape="rect" id="node5" href="a00263.html#a3d43f02811e8098d4aad8e43dede0917" title="Добавить окно с указанным именем. " alt="" coords="192,70,411,111"/>
+</map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a49f17365a372790022cb7a46e89ae633"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::MessageToLog </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>_Type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записать сообщение в лог. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Type</td><td>Тип сообщения. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Само сообщение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af62c13c66f6dc455a93e50dfa757d0be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::MessageToLog </td>
+          <td>(</td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записать сообщение в лог. </p>
+<p>Сообщение будет выведено в лог в формате: <br />
+ [ЧЧ:ММ:СС] [ModuleName] Type: <a class="el" href="a00242.html" title="Класс входит в Logger   Класс формирования сообщения. ">Message</a></p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Type</td><td>Строка типа сообщения. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Message</td><td>Само сообщение. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad6d101a605b47539dec3ab81fbc886e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::OpenOutputWindow </td>
+          <td>(</td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>_Type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Открыть выводное окно Visual Studio. </p>
+<ul>
+<li>Окно будет открыто, если будет записано сообщение с типом Fatal, Error, Warning или установлен флаг Open.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Type</td><td>Тип сообщения. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0dd71308de790cbfd2c36929a4e2a89f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::TitleToLog </td>
+          <td>(</td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Записать сообщение как заголовок. </p>
+<ul>
+<li>Слева и справа сообщение будет дополнено знаками '=' до MaxMessageLenght. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ae23c3dd2c59922ac8994444707812c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void core::utilities::vs::Report::ToLog </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Flag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const CString &amp;&#160;</td>
+          <td class="paramname"><em>_Text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вывод сообщения в окно вывода. </p>
+<ul>
+<li>Сообщение будет выведено в окно, имя которого указно в конструкторе.</li>
+<li>Флаг Clear обрабатывается в первую очередь и очищает окно вывода; может использоваться вместе с любыми другими флагами.</li>
+<li>Если установлен флаг Title, то текст будет выведен как заголовок (без указания времени и типа сообщения, а также дополнен символами '=' до длинны MaxMessageLenght), флаги [Fatal ... Debug] игнорируются.</li>
+<li>Если установлен флаг Status, то текст будет выведен в статус-бар Visual Studio.</li>
+<li>Если установлен один из флагов [Fatal ... Debug], будет выведено текущее время, тип сообщения (определяется по флагу) и само сообщение.</li>
+<li>Сообщение с флагом Debug выводится только в отладочной версии программы.</li>
+<li>Сообщение Simple будет выведено без времени и типа, просто указанная строка.</li>
+<li>При выводе сообщений с типом Fatal, Error, Warning или установленном флаге Open будет окрыто выводное окно Visual Studio. </li>
+</ul>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/<a class="el" href="a01904_source.html">Report.hpp</a></li>
+<li>Solution/Solution/Core/Utilities/Logger/Logger/Report.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>helper</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00294.html">SolutionImpl</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:59. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>utilities</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00294.html">Report</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:45. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

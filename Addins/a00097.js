@@ -1,6 +1,5 @@
 var a00097 =
 [
-    [ "AddControl", "a00097.html#a86130e59757e2c2e7976498b8ed55cbf", null ],
-    [ "Delete", "a00097.html#afa679db93d2c5c38d056d0a37256d446", null ],
-    [ "SetHotKey", "a00097.html#a400ef4a02584cd6ff91cf1e543513ac6", null ]
+    [ "DoActivate", "a00097.html#af738bafce09b60d3d283027b392b63d5", null ],
+    [ "DoCancel", "a00097.html#a1971caf3e289c76e53f231949fa47a26", null ]
 ];

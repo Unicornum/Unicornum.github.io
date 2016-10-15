@@ -1,6 +1,5 @@
 var a00247 =
 [
-    [ "Options", "a00247.html#aab2d4317c2c913d4ef542dac0df601d1", null ],
-    [ "Get", "a00247.html#ab12faa7f3ce64f701590d07c13fdf404", null ],
-    [ "Set", "a00247.html#adb55f1d6e74b63d987d946e5b26f01cf", null ]
+    [ "Mp3Player", "a00247.html#ab4b0fdaf1a6c0c54476e367c4359a627", null ],
+    [ "Play", "a00247.html#aa10f3844439409ec9a0d064feb0ae51f", null ]
 ];

@@ -1,11 +1,5 @@
 var a00313 =
 [
-    [ "TaskPanelText", "a00313.html#a753ae492d184021fa87c6a914fa260e4", null ],
-    [ "EditModeOff", "a00313.html#a3242753759027ff0a673c42fe1a4a797", null ],
-    [ "EditModeOn", "a00313.html#a71448539913d00f0d7cc06b6dc10be2d", null ],
-    [ "GetText", "a00313.html#a97419ac6961199a04cb2a72b7a5c3d41", null ],
-    [ "GetType", "a00313.html#aa6bc4b00c5d597007ce39c7179670a71", null ],
-    [ "IsChecked", "a00313.html#a38eba13ac81a062cc96287e52a3f3625", null ],
-    [ "IsEditAvailable", "a00313.html#afc87f99baf76d17c993d39d9b038a0b1", null ],
-    [ "ShowPanel", "a00313.html#ae7fb875ba4a263cc5f2b22c1f7a97c1c", null ]
+    [ "Advise", "a00313.html#a4c2a239dbcef4c55e5e78a9f07fb2ce4", null ],
+    [ "Unadvise", "a00313.html#adb32e6ea934d4932869c54cf0bad88f1", null ]
 ];

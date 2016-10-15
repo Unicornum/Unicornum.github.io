@@ -1,8 +1,5 @@
 var a00265 =
 [
-    [ "Add", "a00265.html#a59fdfdd7d7ff5afafe5d649ecb0e9192", null ],
-    [ "GetRecursive", "a00265.html#aff92a53b2c32aebd5cd839171a7c9e0d", null ],
-    [ "operator[]", "a00265.html#a5b71846ab44f62e1ec8f435172b972c0", null ],
-    [ "operator[]", "a00265.html#a2dbc8a80d89c833cefefbcb6ef068b88", null ],
-    [ "operator[]", "a00265.html#a8d5dc2d1f8379a71ee129f897f8899e8", null ]
+    [ "GetReplaceString", "a00265.html#a672429326859357fdab4692dbfbacbef", null ],
+    [ "SetProcessedData", "a00265.html#a133c64c63a2004726817884ea2e59ab8", null ]
 ];

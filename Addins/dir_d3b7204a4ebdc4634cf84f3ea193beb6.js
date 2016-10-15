@@ -27,6 +27,6 @@ var dir_d3b7204a4ebdc4634cf84f3ea193beb6 =
     [ "Test.TaskType", "dir_f1f60dc4012a5204c8822c5aab31ebb0.html", "dir_f1f60dc4012a5204c8822c5aab31ebb0" ],
     [ "Test.TextCtrl", "dir_e8430c6c6ec88d0a78793381b1093a2c.html", "dir_e8430c6c6ec88d0a78793381b1093a2c" ],
     [ "Test.Version", "dir_3ddcd1e0b8ce0604bae10f66d967b524.html", "dir_3ddcd1e0b8ce0604bae10f66d967b524" ],
-    [ "mock.hpp", "a01130.html", null ],
-    [ "stdafx.h", "a00798_source.html", null ]
+    [ "mock.hpp", "a01168.html", null ],
+    [ "stdafx.h", "a00827_source.html", null ]
 ];

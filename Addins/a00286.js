@@ -1,6 +1,7 @@
 var a00286 =
 [
-    [ "GetActivePlatformName", "a00286.html#a3a5de2684219f84b149e41da839ecf2f", null ],
-    [ "GetName", "a00286.html#ae2fea29770d4277e57a24c17e8c875de", null ],
-    [ "GetPathToFile", "a00286.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
+    [ "GetCount", "a00286.html#a9b1e6fbe03a25e32e14258659e604cce", null ],
+    [ "GetItem", "a00286.html#a7dcdd78de426bfbaf1fc55b43a6e8337", null ],
+    [ "LoadFromFile", "a00286.html#a8b19ca38ab17e34efcba0764f46d842b", null ],
+    [ "Remove", "a00286.html#a07b9a0ea671d2e3dfe4ed3151b9d3135", null ]
 ];

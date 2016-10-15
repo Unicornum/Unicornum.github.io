@@ -6,6 +6,6 @@ var dir_c5e459292afa9f22ab12a3f10b55bf8e =
     [ "Test.VCFilterFilters", "dir_e0ba17e78fc9d0ef4fea0f8e9afb18cc.html", "dir_e0ba17e78fc9d0ef4fea0f8e9afb18cc" ],
     [ "Test.VCProjectFiles", "dir_e70045922dcb3c3503737b78075eb44e.html", "dir_e70045922dcb3c3503737b78075eb44e" ],
     [ "Test.VCProjectFilters", "dir_48caca6d05e09de655e5b66ff0028e9c.html", "dir_48caca6d05e09de655e5b66ff0028e9c" ],
-    [ "mock.hpp", "a01160.html", null ],
-    [ "stdafx.h", "a01042_source.html", null ]
+    [ "mock.hpp", "a01199.html", null ],
+    [ "stdafx.h", "a01078_source.html", null ]
 ];

@@ -1,6 +1,5 @@
 var a00116 =
 [
-    [ "GetCaption", "a00116.html#ab77cd564014c4b14b6b1a35d692aa095", null ],
-    [ "GetId", "a00116.html#a94b81ddae9c900a40584ed91a56fa7a6", null ],
-    [ "IsEnabled", "a00116.html#a006eca46887e662789831772b0c5107a", null ]
+    [ "operator[]", "a00116.html#a0036fdc937ebb1ac612c05fa377ea770", null ],
+    [ "operator[]", "a00116.html#a0f43aa74924faf56d69e04dc79ac1f4b", null ]
 ];

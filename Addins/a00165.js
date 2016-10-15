@@ -1,5 +1,9 @@
 var a00165 =
 [
-    [ "Extension", "a00165.html#aa06c03115924b4201ae21afb17db7aa1", null ],
-    [ "Initialyze", "a00165.html#ae2f58898313a1e649178d8a73ac1448f", null ]
+    [ "Clear", "a00165.html#a684a837d7a9af34d1bde964dcd589016", null ],
+    [ "Execute", "a00165.html#a1d753b3a2304a1f209345bd3bb205808", null ],
+    [ "ExtractFrom", "a00165.html#a2227e23a4e37fde1e744ac72ebf11a64", null ],
+    [ "GetPathToVSExe", "a00165.html#ab51d959df8b6194494b43e14a5439cf4", null ],
+    [ "GetVersion", "a00165.html#a0d3d00caa47c14b97918be3ab927e638", null ],
+    [ "OpenFile", "a00165.html#a470bd161e0250124be535f7ff972404d", null ]
 ];

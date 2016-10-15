@@ -1,11 +1,8 @@
 var a00133 =
 [
-    [ "GetName", "a00133.html#a8c7e6208a41879aeacea4d00e8669c8e", null ],
-    [ "GetPathToFile", "a00133.html#a8903ddf505aee83e2c3700f27e67698e", null ],
-    [ "PROPERTY_GET", "a00133.html#a51b0c3b874ad29fe32dfc2cdf49e2c4f", null ],
-    [ "PROPERTY_GET", "a00133.html#a77f67496dddd92e490bfd41581648963", null ],
-    [ "PROPERTY_GET", "a00133.html#a3b9217f81a4ad455f5dadcd373ffb443", null ],
-    [ "PROPERTY_GET", "a00133.html#a9dc11cf46f9fbc841a5467d950062ce0", null ],
-    [ "Replace", "a00133.html#ab580ca43598caf88e289b9b2f0e44517", null ],
-    [ "Save", "a00133.html#af3141118fde858bacab72ebda1619ffa", null ]
+    [ "DevelopmentInfo", "a00133.html#a5ac298e8a44deed591d98ad58817e30e", null ],
+    [ "GetTime", "a00133.html#aa800105019a059d761e719d62cfb984e", null ],
+    [ "ReadFrom", "a00133.html#a37f24adf400bf01b396c7ba7cfae56d4", null ],
+    [ "UpdateTime", "a00133.html#a3d8e7bb0dea6850d7a22ebad00c53793", null ],
+    [ "WriteTo", "a00133.html#ad5956ef6784bd16e944e9959aef591f9", null ]
 ];

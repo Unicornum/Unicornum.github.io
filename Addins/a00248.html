@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс core::useful_commands::vs::startup::OutputHostInfo</title>
+<title>Addins: Класс core::connection_commands::NeedActivateCommand</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -110,68 +110,55 @@ $(document).ready(function(){initNavTree('a00248.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a02915.html">Полный список членов класса</a>  </div>
+<a href="a02876.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс core::useful_commands::vs::startup::OutputHostInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a02257.html">Core</a> &raquo; <a class="el" href="a02278.html">UsefulCommands</a> &raquo; <a class="el" href="a02289.html">Visual Studio</a> &raquo; <a class="el" href="a02283.html">StartUp</a></div></div>  </div>
+<div class="title">Класс core::connection_commands::NeedActivateCommand<div class="ingroups"><a class="el" href="a02326.html">Core</a> &raquo; <a class="el" href="a02325.html">Connection Commands</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00043.html">StartUp</a> <br />
- Команда вывода в лог информации о загруженной надстройке.  
+<p>Класс входит в <a class="el" href="a00032.html">ConnectionCommands</a> <br />
+ Базовый класс команды, обеспечивающих проверку необходимости выполнения команды на активированном менеджере команд.  
  <a href="a00248.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01628_source.html">OutputHostInfo.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01295_source.html">NeedActivateCommand.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:core::useful_commands::vs::startup::OutputHostInfo:</div>
+Граф наследования:core::connection_commands::NeedActivateCommand:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02916.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1startup_1_1_output_host_info_inherit__map" alt="Inheritance graph"/></div>
-<map name="core_1_1useful__commands_1_1vs_1_1startup_1_1_output_host_info_inherit__map" id="core_1_1useful__commands_1_1vs_1_1startup_1_1_output_host_info_inherit__map">
-<area shape="rect" id="node2" href="a00334.html" title="Класс входит в Common &#160;&#160;Базовый класс команд проекта, предоставляющий доступ к общим данным..." alt="" coords="5,5,259,317"/>
+<div class="center"><img src="a02877.png" border="0" usemap="#core_1_1connection__commands_1_1_need_activate_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="core_1_1connection__commands_1_1_need_activate_command_inherit__map" id="core_1_1connection__commands_1_1_need_activate_command_inherit__map">
+<area shape="rect" id="node3" href="a00123.html" title="Класс входит в ConnectionCommands &#160;&#160;Класс создания команд для меню надстройки. " alt="" coords="5,147,253,298"/>
+<area shape="rect" id="node5" href="a00131.html" title="Класс входит в ConnectionCommands &#160;&#160;Класс уничтожения команд надстройки. " alt="" coords="277,169,491,276"/>
+<area shape="rect" id="node7" href="a00144.html" title="Класс входит в ConnectionCommands &#160;&#160;Класс команды, обабатывающей выполнение команды надстройки..." alt="" coords="515,162,728,283"/>
+<area shape="rect" id="node9" href="a00149.html" title="Класс входит в ConnectionCommands &#160;&#160;Класс команды, обабатывающей запрос текста команды меню..." alt="" coords="752,155,965,291"/>
+<area shape="rect" id="node11" href="a00150.html" title="Класс входит в ConnectionCommands &#160;&#160;Класс команды, обабатывающей запрос статуса команды меню..." alt="" coords="989,155,1203,291"/>
+<area shape="rect" id="node13" href="a00269.html" title="Класс входит в ConnectionCommands &#160;&#160;Класс выполнения команды, не связанной с пунктом меню..." alt="" coords="1227,155,1441,291"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса core::useful_commands::vs::startup::OutputHostInfo:</div>
+Граф связей класса core::connection_commands::NeedActivateCommand:</div>
 <div class="dyncontent">
-<div class="center"><img src="a02917.png" border="0" usemap="#core_1_1useful__commands_1_1vs_1_1startup_1_1_output_host_info_coll__map" alt="Collaboration graph"/></div>
-<map name="core_1_1useful__commands_1_1vs_1_1startup_1_1_output_host_info_coll__map" id="core_1_1useful__commands_1_1vs_1_1startup_1_1_output_host_info_coll__map">
-<area shape="rect" id="node2" href="a00334.html" title="Класс входит в Common &#160;&#160;Базовый класс команд проекта, предоставляющий доступ к общим данным..." alt="" coords="5,843,259,1155"/>
-<area shape="rect" id="node4" href="a00123.html" title="Класс входит в Utilities &#160;&#160;Класс, содержащий данные, передаваемые командам надстройки. " alt="" coords="7,643,256,779"/>
-<area shape="rect" id="node6" href="a00158.html" title="Класс входит в Ide &#160;&#160;Класс&#45;обертка для EnvDTE80::DTE2. " alt="" coords="57,296,207,579"/>
-<area shape="rect" id="node8" href="a00085.html" title="{wrappers::vs::Base\l\&lt; EnvDTE80::DTE2 \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="51,6,213,245"/>
-</map>
+<div class="center"><img src="a02878.png" border="0" usemap="#core_1_1connection__commands_1_1_need_activate_command_coll__map" alt="Collaboration graph"/></div>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pro_methods_a00334"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00334')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00334.html">core::useful_commands::vs::common::Unknown</a></td></tr>
-<tr class="memitem:ab77ff600dae72cbef0c6596c221a149d inherit pro_methods_a00334"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00334.html#ab77ff600dae72cbef0c6596c221a149d">Unknown</a> (<a class="el" href="a00123.html">Data_t</a> *)</td></tr>
-<tr class="memdesc:ab77ff600dae72cbef0c6596c221a149d inherit pro_methods_a00334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#ab77ff600dae72cbef0c6596c221a149d">Подробнее...</a><br /></td></tr>
-<tr class="separator:ab77ff600dae72cbef0c6596c221a149d inherit pro_methods_a00334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00043.html">StartUp</a> <br />
- Команда вывода в лог информации о загруженной надстройке. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00032.html">ConnectionCommands</a> <br />
+ Базовый класс команды, обеспечивающих проверку необходимости выполнения команды на активированном менеджере команд. </p>
 <ul>
-<li>Устанавливает логгеру имя текущей надстройки.</li>
-<li>Выводит в лог полную версию запущенной надстройки.</li>
+<li>Если необходимо, чтобы команда выполнялась в любом случае, в классе- наследнике переопределить функцию IsNeedActivate() и вернуть false.</li>
 </ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>06 Июль 2015 <br />
-</dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>1 июн 2014 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/UsefulCommands/VisualStudio/StartUp/StartUp/<a class="el" href="a01628_source.html">OutputHostInfo.hpp</a></li>
-<li>Solution/Solution/Core/UsefulCommands/VisualStudio/StartUp/StartUp/OutputHostInfo.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/ConnectionCommands/ConnectionCommands/<a class="el" href="a01295_source.html">NeedActivateCommand.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><b>startup</b></li><li class="navelem"><a class="el" href="a00248.html">OutputHostInfo</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:57. Создано системой
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>connection_commands</b></li><li class="navelem"><a class="el" href="a00248.html">NeedActivateCommand</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:44. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

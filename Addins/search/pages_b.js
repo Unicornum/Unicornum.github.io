@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['regextester',['RegexTester',['../a00033.html',1,'CoreToolsPage']]]
+  ['regextester',['RegexTester',['../a00038.html',1,'CoreToolsPage']]]
 ];

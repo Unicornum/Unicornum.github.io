@@ -1,8 +1,6 @@
 var a00255 =
 [
-    [ "GetRegexString", "a00255.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
-    [ "GetReplaceString", "a00255.html#ab265e215ef659098f37618b48281f08e", null ],
-    [ "GetSourseStrings", "a00255.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
-    [ "SetRegexString", "a00255.html#a53e9b7ec5a5357405275d2478965dca1", null ],
-    [ "SetSourceStrings", "a00255.html#a315df15379a49155b32aa8526047ed7b", null ]
+    [ "GetCaption", "a00255.html#a42991b73ff1a1740ecdb5fb3c1ded860", null ],
+    [ "GetId", "a00255.html#a15c7436b047a92eec25dda37d67eb89a", null ],
+    [ "IsEnabled", "a00255.html#a411f5e1d9fcc9fc1a481a36d29b02edb", null ]
 ];

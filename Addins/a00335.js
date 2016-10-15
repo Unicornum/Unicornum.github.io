@@ -1,6 +1,4 @@
 var a00335 =
 [
-    [ "IsEnabled", "a00335.html#adf476033bc2dc4304bac28cba75f3185", null ],
-    [ "UpdateSolutionRevision", "a00335.html#abf1e0617091414fd1f4044e19a5d24fa", null ],
-    [ "VersionInfoToLog", "a00335.html#a23a4828c0f21ca3c49e8c70a94611171", null ]
+    [ "GetValue", "a00335.html#a4af69b0fdcde1de75ccdedcf641c99fe", null ]
 ];

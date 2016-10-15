@@ -1,6 +1,5 @@
 var a00169 =
 [
-    [ "GetCaption", "a00169.html#a22d592317fea82523a6688e9f7c9be70", null ],
-    [ "GetId", "a00169.html#a0274242477469e092cb155fd79764c6a", null ],
-    [ "IsEnabled", "a00169.html#a69f217bfd8e6442b93c61774f3604278", null ]
+    [ "Check", "a00169.html#af8fb249031ba9971d14e04253923eb95", null ],
+    [ "GetProgress", "a00169.html#a4aa17f92cd40b98df93522aae5bd26eb", null ]
 ];

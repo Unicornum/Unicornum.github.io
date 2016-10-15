@@ -1,7 +1,8 @@
 var a00267 =
 [
-    [ "Add", "a00267.html#a0012b4e75c23ff1d15dd20b015c382f8", null ],
-    [ "GetActiveProject", "a00267.html#ab65c3c5fd33d48525282e5a2ee117845", null ],
-    [ "GetCount", "a00267.html#ad3a9bb60ba293784d8c7babbc45aba70", null ],
-    [ "GetProject", "a00267.html#a226a79cb9b399e8d95c23e8c339a979c", null ]
+    [ "GetRegexString", "a00267.html#a395f8efbd68ec8dc4f882ef201ba7d0c", null ],
+    [ "GetReplaceString", "a00267.html#ab265e215ef659098f37618b48281f08e", null ],
+    [ "GetSourseStrings", "a00267.html#ad970eca2f3eaf29ccb5ae4a4fe320fad", null ],
+    [ "SetRegexString", "a00267.html#a53e9b7ec5a5357405275d2478965dca1", null ],
+    [ "SetSourceStrings", "a00267.html#a315df15379a49155b32aa8526047ed7b", null ]
 ];

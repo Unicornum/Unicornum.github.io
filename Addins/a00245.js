@@ -1,5 +1,5 @@
 var a00245 =
 [
-    [ "GetCaption", "a00245.html#ad5875496227c67b5d32b0f2b21a6ee5f", null ],
-    [ "GetId", "a00245.html#a58be1ff4609162de563288f25c25b8ea", null ]
+    [ "DoSimple", "a00245.html#a901b4216190e2bcf77c84e9fd829ca17", null ],
+    [ "DoUsingProxy", "a00245.html#a28e4eba8bc68f2db38b25624f4b52532", null ]
 ];

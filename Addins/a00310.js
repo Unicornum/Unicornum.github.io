@@ -1,5 +1,6 @@
 var a00310 =
 [
-    [ "TaskPanelDept", "a00310.html#ad8957a14dc0d1211c3e97322257a6a6f", null ],
-    [ "TaskPanelDept", "a00310.html#ad64745638c5972d5cbf3b473c117e816", null ]
+    [ "SolutionTasksPage", "a00310.html#a735388683f2111bae2d195bb9ed6ecbf", null ],
+    [ "AddRecord", "a00310.html#ac0521fb2b2f71b6653bc8cc325baac81", null ],
+    [ "CreateBlank", "a00310.html#a20e991cc6fc3e047c353e241874449fa", null ]
 ];

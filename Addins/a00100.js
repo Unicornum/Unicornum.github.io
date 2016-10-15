@@ -1,6 +1,4 @@
 var a00100 =
 [
-    [ "AddPopup", "a00100.html#a8fbb2e6cf86f155028496a37aea0cb1a", null ],
-    [ "GetCount", "a00100.html#a6f4d70fb7cc20bad7698bba0c4e9e2cb", null ],
-    [ "GetItem", "a00100.html#a288539af54a8b40f2b662c071ca4bff5", null ]
+    [ "IsEnabled", "a00100.html#a6abdecd56b29e29d73bfb331fcb33641", null ]
 ];

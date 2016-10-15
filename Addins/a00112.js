@@ -1,7 +1,6 @@
 var a00112 =
 [
-    [ "Controller", "a00112.html#a19b0c47ccb02e40feb2ccc7acbbb264e", null ],
-    [ "Controller", "a00112.html#a3abe5def5ca527d4515537159d3d12af", null ],
-    [ "Controller", "a00112.html#a94a996eec18108afd8da831289c8835b", null ],
-    [ "Controller", "a00112.html#a8e43ca1edbff3faad8cd167b0551155d", null ]
+    [ "Add", "a00112.html#a89618778c2a8b30d4a8b0b743acd667d", null ],
+    [ "Clear", "a00112.html#a6dc5c66f4b320ee76cb718b07697084d", null ],
+    [ "operator[]", "a00112.html#aceaa3c748e8bce0117a9f6203c1b0af0", null ]
 ];

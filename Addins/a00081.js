@@ -1,6 +1,6 @@
 var a00081 =
 [
-    [ "AllSolutionsInfo", "a00081.html#aded21bbe2bfba0bdef7080a3ad7d8d10", null ],
-    [ "GetDevelopmentInfo", "a00081.html#a15f7b23c75c0114957f39f8ded9e963d", null ],
-    [ "GetViewTitle", "a00081.html#a1595757e6c092e9e78fa2d3eeecdba58", null ]
+    [ "GetCaption", "a00081.html#adbc150ac813e9de738dd5635ebdb4d55", null ],
+    [ "GetId", "a00081.html#a9fdf8b66a1a806f774f103575e8f6d48", null ],
+    [ "IsEnabled", "a00081.html#a95d90310c6e27a505366404af027d20a", null ]
 ];

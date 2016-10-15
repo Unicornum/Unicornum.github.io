@@ -7,6 +7,6 @@ var dir_4af344193d7841821024956b79bce0d8 =
     [ "Test.Lines", "dir_f80144f6a147ad9ce1a68467091fe8fb.html", "dir_f80144f6a147ad9ce1a68467091fe8fb" ],
     [ "Test.MockLines", "dir_f0345f97d52edf4e77ebe8f443ce8d59.html", "dir_f0345f97d52edf4e77ebe8f443ce8d59" ],
     [ "Test.TextSelection", "dir_5e773388f799b265e53473364d14eb4e.html", "dir_5e773388f799b265e53473364d14eb4e" ],
-    [ "mock.hpp", "a01155.html", null ],
-    [ "stdafx.h", "a01002_source.html", null ]
+    [ "mock.hpp", "a01194.html", null ],
+    [ "stdafx.h", "a01038_source.html", null ]
 ];

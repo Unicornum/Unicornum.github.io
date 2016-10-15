@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Класс wrappers::vs::DteEvents</title>
+<title>Addins: Класс controller::DoUpdateView</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -110,77 +110,96 @@ $(document).ready(function(){initNavTree('a00160.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a03301.html">Полный список членов класса</a>  </div>
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="a02855.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wrappers::vs::DteEvents<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a02310.html">Wrappers</a> &raquo; <a class="el" href="a02309.html">VisualStudio</a> &raquo; <a class="el" href="a02303.html">Events</a></div></div>  </div>
+<div class="title">Класс controller::DoUpdateView<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a02326.html">Core</a> &raquo; <a class="el" href="a02342.html">Tools</a> &raquo; <a class="el" href="a02344.html">ProjectTasks</a> &raquo; <a class="el" href="a02332.html">Controller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00064.html">Events</a> <br />
- Класс доступа к событиям <a class="el" href="a00158.html" title="Класс входит в Ide   Класс-обертка для EnvDTE80::DTE2. ">DTE</a>.  
+<p>Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
+ Класс, содержащий общую логику работы сигнала обновления представления.  
  <a href="a00160.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02014_source.html">DteEvents.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01382_source.html">DoUpdateView.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:wrappers::vs::DteEvents:</div>
+Граф наследования:controller::DoUpdateView:</div>
 <div class="dyncontent">
-<div class="center"><img src="a03302.png" border="0" usemap="#wrappers_1_1vs_1_1_dte_events_inherit__map" alt="Inheritance graph"/></div>
-<map name="wrappers_1_1vs_1_1_dte_events_inherit__map" id="wrappers_1_1vs_1_1_dte_events_inherit__map">
-<area shape="rect" id="node2" href="a00299.html" title="{wrappers::vs::Subscriber\l\&lt; EnvDTE::_DTEEvents \&gt;\n||+ Advise()\l+ Unadvise()\l+ Subscriber()\l}" alt="" coords="5,294,195,415"/>
-<area shape="rect" id="node4" href="a00085.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::_DTEEvents \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="5,6,195,245"/>
+<div class="center"><img src="a02856.png" border="0" usemap="#controller_1_1_do_update_view_inherit__map" alt="Inheritance graph"/></div>
+<map name="controller_1_1_do_update_view_inherit__map" id="controller_1_1_do_update_view_inherit__map">
+<area shape="rect" id="node3" href="a00155.html" title="Класс входит в ProjectTasks &#160;&#160;Класс реализации обновления панели выполненных задач. " alt="" coords="5,249,256,341"/>
+<area shape="rect" id="node5" href="a00159.html" title="Класс входит в ProjectTasks &#160;&#160;Класс реализации обновления панели задач, находящихся в процессе работы..." alt="" coords="281,249,524,341"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса wrappers::vs::DteEvents:</div>
+Граф связей класса controller::DoUpdateView:</div>
 <div class="dyncontent">
-<div class="center"><img src="a03303.png" border="0" usemap="#wrappers_1_1vs_1_1_dte_events_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1vs_1_1_dte_events_coll__map" id="wrappers_1_1vs_1_1_dte_events_coll__map">
-<area shape="rect" id="node2" href="a00299.html" title="{wrappers::vs::Subscriber\l\&lt; EnvDTE::_DTEEvents \&gt;\n||+ Advise()\l+ Unadvise()\l+ Subscriber()\l}" alt="" coords="5,294,195,415"/>
-<area shape="rect" id="node4" href="a00085.html" title="{wrappers::vs::Base\l\&lt; EnvDTE::_DTEEvents \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="5,6,195,245"/>
+<div class="center"><img src="a02857.png" border="0" usemap="#controller_1_1_do_update_view_coll__map" alt="Collaboration graph"/></div>
+<map name="controller_1_1_do_update_view_coll__map" id="controller_1_1_do_update_view_coll__map">
+<area shape="rect" id="node2" href="a00221.html" title="Класс входит в ProjectTasks &#160;&#160;Интерфейсный класс панели, содержащей список панелей отдельных задач..." alt="" coords="29,6,171,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pro_methods_a00085"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a00085')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a00085.html">wrappers::vs::Base&lt; EnvDTE::_DTEEvents &gt;</a></td></tr>
-<tr class="memitem:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8bd20844e7332406932787c9b5b852d"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#af8bd20844e7332406932787c9b5b852d">GetName</a> (void) const</td></tr>
-<tr class="memdesc:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта. <br /></td></tr>
-<tr class="separator:af8bd20844e7332406932787c9b5b852d inherit pro_methods_a00085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae36588f576db9d1dd86e5ae158a165c3"></a>
-Service::MakeProxy&lt; TReturn, EnvDTE::_DTEEvents &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#ae36588f576db9d1dd86e5ae158a165c3">Make</a> (void) const</td></tr>
-<tr class="memdesc:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t. <br /></td></tr>
-<tr class="separator:ae36588f576db9d1dd86e5ae158a165c3 inherit pro_methods_a00085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a42cc94ed152690a3fe262eec788ef191"></a>
-Service::MakeProxy&lt; void *, EnvDTE::_DTEEvents &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a42cc94ed152690a3fe262eec788ef191">Make</a> (void) const</td></tr>
-<tr class="memdesc:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t, не возвращающих значения. <br /></td></tr>
-<tr class="separator:a42cc94ed152690a3fe262eec788ef191 inherit pro_methods_a00085"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_a00085"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_a00085')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="a00085.html">wrappers::vs::Base&lt; EnvDTE::_DTEEvents &gt;</a></td></tr>
-<tr class="memitem:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00085"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c540555a66a709a4f21f9bfc3e8dbf5"></a>
-static Service::MakeProxy&lt; TReturn, TSource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00085.html#a6c540555a66a709a4f21f9bfc3e8dbf5">Make</a> (TSource *_pSource)</td></tr>
-<tr class="memdesc:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций прототипов. <br /></td></tr>
-<tr class="separator:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a00085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a0d7cfd967b4417c9e229efe0dbf02396"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00160.html#a0d7cfd967b4417c9e229efe0dbf02396">GetRootId</a> (::<a class="el" href="a00216.html">model::ITask</a> *) const  =0</td></tr>
+<tr class="memdesc:a0d7cfd967b4417c9e229efe0dbf02396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи текущей панели.  <a href="#a0d7cfd967b4417c9e229efe0dbf02396">Подробнее...</a><br /></td></tr>
+<tr class="separator:a0d7cfd967b4417c9e229efe0dbf02396"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00064.html">Events</a> <br />
- Класс доступа к событиям <a class="el" href="a00158.html" title="Класс входит в Ide   Класс-обертка для EnvDTE80::DTE2. ">DTE</a>. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
+ Класс, содержащий общую логику работы сигнала обновления представления. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>14 Февраль 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>31 Март 2016 <br />
+ 09 Апрель 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Events/Events/<a class="el" href="a02014_source.html">DteEvents.hpp</a></li>
-<li>Solution/Solution/Wrappers/VisualStudio/Events/Events/DteEvents.cpp</li>
+</div><h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a0d7cfd967b4417c9e229efe0dbf02396"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual size_t controller::DoUpdateView::GetRootId </td>
+          <td>(</td>
+          <td class="paramtype">::<a class="el" href="a00216.html">model::ITask</a> *&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения идентификатора корневой задачи текущей панели. </p>
+<ul>
+<li>Реализуется в классе-наследнике. </li>
+</ul>
+
+<p>Замещается в <a class="el" href="a00155.html#af53852207d69b704bbf0304eb8d1f3dd">controller::DoUpdateCompleteView</a> и <a class="el" href="a00159.html#a1c8166a7e1eb5237c5398fc349cb2bdd">controller::DoUpdateProcessView</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/<a class="el" href="a01382_source.html">DoUpdateView.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/DoUpdateView.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a00160.html">DteEvents</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:29:00. Создано системой
+    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a00160.html">DoUpdateView</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:44. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

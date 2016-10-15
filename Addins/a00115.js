@@ -1,5 +1,7 @@
 var a00115 =
 [
-    [ "Check", "a00115.html#a2cd8b5ee3b04ef8db417d9fb6db50c1d", null ],
-    [ "GetProgress", "a00115.html#a1d5abe814c3015b03078a9301d9b4e6b", null ]
+    [ "GetName", "a00115.html#ada1d4821134087994c4b47174d4a0dc8", null ],
+    [ "GetPlatformName", "a00115.html#a663b79e83d5c7c08522ce05f64022b31", null ],
+    [ "GetType", "a00115.html#a8fd684f3e8da5bc5268d5843d120de76", null ],
+    [ "PROPERTY_GET", "a00115.html#a463ae15d09a10d7d00d01e96400d7437", null ]
 ];

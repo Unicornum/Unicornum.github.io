@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: Описание создания VSPackage на С++</title>
+<title>Addins: Результаты выполнения тестов</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,9 +33,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.1 Revision: 4588 Platform: x64 Build: 12:28 01 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
    </div>
-   <div id="projectbrief">,</div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
  </tr>
  </tbody>
@@ -102,37 +102,32 @@ $(document).ready(function(){initNavTree('a00012.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Описание создания VSPackage на С++ </div>  </div>
+<div class="title">Результаты выполнения тестов </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Описание создания VSPackage на С++ </h1>
-<h2>Создание проекта </h2>
-<p>При создании проекта расширения создаются 3 проекта:</p><ul>
-<li>VSPackage1 - основной модуль расширения. Ключевой класс - CVSPackage1Package.</li>
-<li>VSPackage1UI - вспомогательная dll (задается в файле .pkgdef как <div class="fragment"><div class="line">[$RootKey$\Packages\{f521d44a-05d4-4cf6-bbec-2a47fb6eadab}\SatelliteDll]</div><div class="line"><span class="stringliteral">&quot;DllName&quot;</span>=<span class="stringliteral">&quot;VSPackage1UI.dll&quot;</span></div><div class="line"><span class="stringliteral">&quot;Path&quot;</span>=<span class="stringliteral">&quot;$PackageFolder$&quot;</span></div></div><!-- fragment --> ). Содержит иконки (в формате png) и структуру добавляемых команд (которую можно игнорировать?).</li>
-<li>VSPackage1VSIX (C#). Этот проект, судя по всему, нужен только для хранения файла source.extension.vsixmanifest и создания файла .vsix (см. описание формата ниже).</li>
-</ul>
-<h2>Описание формата .vsix </h2>
-<p>Файл формата .vsix - это zip архив ('ручная' упаковка файлов работает, да), содержащий файлы:</p><ul>
-<li>VSPackage1.dll (главный модуль расширения).</li>
-<li>VSPackage1.pkgdef (регистрация главного модуля расширения и вспомогательной dll).</li>
-<li>extension.vsixmanifest (информация о расширении, которую будет отображать установщик VSIX и сама Visual Studio).</li>
-<li>[Content_Types].xml (список расширений файлов, которые будет копировать установщик VSIX в папку результата при установке расширения).</li>
-<li>1033\VSPackage1UI.dll (вспомогательная dll главного модуля расширения).</li>
-</ul>
-<h2>Автозапуск расширения при старте Visual Studio </h2>
-<p>Добавить в файл .pkgdef строки </p><div class="fragment"><div class="line">[$RootKey$\AutoLoadPackages\{ADFC4E64-0397-11D1-9F4E-00A0C911004F}]</div><div class="line"><span class="stringliteral">&quot;{CURRENT_PACKAGE_GUID}&quot;</span>=dword:00000000</div><div class="line">@=<span class="stringliteral">&quot;UICONTEXT_NoSolution&quot;</span></div></div><!-- fragment --><h2>Получение объекта DTE </h2>
-<p>Использовать в классе C&lt;PackageName&gt;Package следующий код (в конструкторе при автостарте не сработает!): </p><div class="fragment"><div class="line">CComPtr&lt;IServiceProvider&gt; pSP;</div><div class="line">HRESULT hr1 = this-&gt;GetSite(&amp;pSP);</div><div class="line"><span class="keywordflow">if</span> (FAILED(hr1)) MessageBox(NULL, _T(<span class="stringliteral">&quot;Failed1&quot;</span>), NULL, MB_OK);</div><div class="line"></div><div class="line">CComPtr&lt;EnvDTE::_DTE&gt; m_pDTE;</div><div class="line">HRESULT hr2 = pSP-&gt;QueryService(SID_SDTE, IID__DTE, (<span class="keywordtype">void</span> **)&amp;m_pDTE);</div><div class="line"><span class="keywordflow">if</span> (FAILED(hr2)) MessageBox(NULL, _T(<span class="stringliteral">&quot;Failed2&quot;</span>), NULL, MB_OK);</div></div><!-- fragment --><p> Для получения объекта DTE при старте Visual Studio добавить в класс CVSPackage1Package функцию: </p><div class="fragment"><div class="line"><span class="comment">// Вызывается при старте Visual Studio</span></div><div class="line"><span class="keywordtype">void</span> PostSited(IVsPackageEnums::SetSiteResult)</div><div class="line">{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}</div></div><!-- fragment --><p>Завершение работы расширения: </p><div class="fragment"><div class="line"><span class="comment">// Вызывается перед закрытием Visual Studio</span></div><div class="line"><span class="keywordtype">void</span> PreClosing(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}</div></div><!-- fragment --><h2>Запрос состояния и выполнение команды </h2>
-<p>Переопределить функции интерфейса IOleCommandTarget. <br />
- Для этого требуется особая регистрация создаваемых команд?</p>
-<h2>Подписка на событие изменения активного документа </h2>
-<div class="fragment"><div class="line"><span class="comment">// Унаследовать класс от</span></div><div class="line"><span class="keyword">using</span> TextEditorEvents_t = IDispEventImpl&lt;1, CVSPackage1Package,</div><div class="line">  &amp;__uuidof(EnvDTE::_dispTextEditorEvents), &amp;EnvDTE::LIBID_EnvDTE, 8, 0&gt;;</div><div class="line"></div><div class="line"><span class="comment">// Добавить обработчик изменения строки активного документа</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">BEGIN_SINK_MAP(CVSPackage1Package)</div><div class="line">  SINK_ENTRY_EX(1, __uuidof(_dispTextEditorEvents), 1, OnLineChanged)</div><div class="line">END_SINK_MAP()</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> __stdcall OnLineChanged(TextPoint * startPoint, TextPoint * endPoint, <span class="keywordtype">long</span> hint)</div><div class="line">{</div><div class="line">  MessageBox(NULL, _T(<span class="stringliteral">&quot;OnLineChanged&quot;</span>), NULL, MB_OK);</div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Подписаться на события изменения текста активного документа</span></div><div class="line">CComPtr&lt;EnvDTE::_TextEditorEvents&gt; m_pTextEditorEvents;</div><div class="line">hr2 = m_pEvents-&gt;get_TextEditorEvents(<span class="keyword">nullptr</span>, &amp;m_pTextEditorEvents);</div><div class="line"><span class="keywordflow">if</span> (FAILED(hr2))</div><div class="line">{</div><div class="line">  MessageBox(NULL, _T(<span class="stringliteral">&quot;Failed4&quot;</span>), NULL, MB_OK);</div><div class="line">  <span class="keywordflow">return</span>;</div><div class="line">}</div><div class="line"></div><div class="line">DispEventAdvise(m_pTextEditorEvents);</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="textblock"><table  frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td align="center" width="125px"><b>Дата/время</b>  </td><td align="center" width="14%"><b>Конфигурация</b>  </td><td align="center" width="14%"><b>Платформа</b>  </td><td align="center" width="14%"><b>Всего</b>  </td><td align="center" width="14%"><b>Успешно</b>  </td><td align="center" width="14%"><b>Провалено</b>  </td><td align="center" width="14%"><b>Отключено</b>  </td></tr>
+</table>
+<table  frame="void">
+<tr>
+<td></td></tr>
+</table>
+<table  frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td bgcolor="#B8CCE4" align="center" width="125px">18:20 15.10.2016  </td><td bgcolor="#C0FFC0" align="center" width="14%">Release  </td><td bgcolor="#C0FFC0" align="center" width="14%">x64  </td><td bgcolor="#C0FFC0" align="center" width="14%">1111  </td><td bgcolor="#C0FFC0" align="center" width="14%">1111  </td><td bgcolor="#C0FFC0" align="center" width="14%">0  </td><td bgcolor="#C0FFC0" align="center" width="14%">0  </td></tr>
+</table>
+<table  frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td bgcolor="#B8CCE4" align="center" width="125px">18:20 15.10.2016  </td><td bgcolor="#C0FFC0" align="center" width="14%">Debug  </td><td bgcolor="#C0FFC0" align="center" width="14%">x64  </td><td bgcolor="#C0FFC0" align="center" width="14%">1111  </td><td bgcolor="#C0FFC0" align="center" width="14%">1111  </td><td bgcolor="#C0FFC0" align="center" width="14%">0  </td><td bgcolor="#C0FFC0" align="center" width="14%">0  </td></tr>
+</table>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00009.html">Addins</a></li><li class="navelem"><a class="el" href="a00011.html">Connection Points</a></li><li class="navelem"><a class="el" href="a00014.html">Visual Studio</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 1 Окт 2016 12:28:56. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00011.html">Информация о работе над решением</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

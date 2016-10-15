@@ -1,4 +1,5 @@
 var a00108 =
 [
-    [ "DoProcess", "a00108.html#a0abb8e6669ac19141bc9a1b86216df97", null ]
+    [ "GetItem", "a00108.html#a6a54f898d10bd00852b8bc174fdff401", null ],
+    [ "operator[]", "a00108.html#a501bc4c117f8d23ba18e1227fb407c33", null ]
 ];

@@ -1,5 +1,6 @@
 var a00301 =
 [
-    [ "SvnInfo", "a00301.html#afbe6155b781c22ca9970f58db8ba04db", null ],
-    [ "GetRevision", "a00301.html#a4f6216fcd912a1b4216ae5587ce17827", null ]
+    [ "GetActivePlatformName", "a00301.html#a3a5de2684219f84b149e41da839ecf2f", null ],
+    [ "GetName", "a00301.html#ae2fea29770d4277e57a24c17e8c875de", null ],
+    [ "GetPathToFile", "a00301.html#adf28bc43f61c7b1634ad4f8f8af30cd8", null ]
 ];

@@ -1,5 +1,5 @@
 var a00184 =
 [
-    [ "GetCaption", "a00184.html#a33441fddfee7e81a1ceda13c1ebabb7d", null ],
-    [ "GetId", "a00184.html#a27ab15adb7de2a456a515d6489d400df", null ]
+    [ "DoActivate", "a00184.html#a29857a47b0b95970ae34c7b42b0f5a20", null ],
+    [ "DoCancel", "a00184.html#a287151415838c3601525537451126f7e", null ]
 ];
