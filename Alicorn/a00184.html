@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Класс wx::TreeSections</title>
+<title>Libs: Класс wx::TreeCtrlTests</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.4 Revision: 2123 Platform: x64 Build: 22:56 07 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.5 Revision: 2139 Platform: x64 Build: 19:29 12 Ноябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -111,64 +111,110 @@ $(document).ready(function(){initNavTree('a00184.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a01933.html">Полный список членов класса</a>  </div>
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="a01936.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wx::TreeSections<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01302.html">Alicorn</a> &raquo; <a class="el" href="a01336.html">SettingsApp</a> &raquo; <a class="el" href="a01340.html">View</a> &raquo; <a class="el" href="a01337.html">wxWidgets</a></div></div>  </div>
+<div class="title">Класс wx::TreeCtrlTests<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01311.html">Alicorn</a> &raquo; <a class="el" href="a01323.html">Testing.App</a> &raquo; <a class="el" href="a01355.html">View</a> &raquo; <a class="el" href="a01354.html">WxWidgets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00028.html">SettingsApp</a> <br />
- Класс дерева, отображающего разделы настроек программы.  
+<p>Класс входит в <a class="el" href="a00033.html">Testing.App</a> <br />
+ Класс для отображения дерева с информацией о тестах.  
  <a href="a00184.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01080_source.html">TreeSections.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01184_source.html">TreeCtrlTests.hpp</a>&gt;</code></p>
 
 <p>Базовые классы:wxTreeCtrl.</p>
 <div class="dynheader">
-Граф связей класса wx::TreeSections:</div>
+Граф связей класса wx::TreeCtrlTests:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01934.png" border="0" usemap="#wx_1_1_tree_sections_coll__map" alt="Collaboration graph"/></div>
-<map name="wx_1_1_tree_sections_coll__map" id="wx_1_1_tree_sections_coll__map">
+<div class="center"><img src="a01937.png" border="0" usemap="#wx_1_1_tree_ctrl_tests_coll__map" alt="Collaboration graph"/></div>
+<map name="wx_1_1_tree_ctrl_tests_coll__map" id="wx_1_1_tree_ctrl_tests_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a8c150231812d3b9c8642f5a70816c0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#a8c150231812d3b9c8642f5a70816c0d0">SetSections</a> (const Sections_t &amp;)</td></tr>
-<tr class="memdesc:a8c150231812d3b9c8642f5a70816c0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция построения дерева разделов.  <a href="#a8c150231812d3b9c8642f5a70816c0d0">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8c150231812d3b9c8642f5a70816c0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fbdec866076a92feab9f37966f099f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ad0fbdec866076a92feab9f37966f099f">SetResultRunTests</a> (const Infos_t &amp;, bool)</td></tr>
+<tr class="memdesc:ad0fbdec866076a92feab9f37966f099f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания дерева тестов на основе переданной информации.  <a href="#ad0fbdec866076a92feab9f37966f099f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad0fbdec866076a92feab9f37966f099f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9beaebf1b88dd32287d5ec9cf8cdcb30"><td class="memItemLeft" align="right" valign="top">Info_t::Test&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#a9beaebf1b88dd32287d5ec9cf8cdcb30">GetInfo</a> (const wxTreeItemId &amp;) const </td></tr>
+<tr class="memdesc:a9beaebf1b88dd32287d5ec9cf8cdcb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения результата прогона теста для указанного узла дерева тестов.  <a href="#a9beaebf1b88dd32287d5ec9cf8cdcb30">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9beaebf1b88dd32287d5ec9cf8cdcb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ad784b4f74ac46b4a6fc90518e8e5c87e"><td class="memItemLeft" align="right" valign="top">VIRTUAL_MOCK bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#ad784b4f74ac46b4a6fc90518e8e5c87e">BuildTestsTree</a> (const Infos_t &amp;, bool)</td></tr>
+<tr class="memdesc:ad784b4f74ac46b4a6fc90518e8e5c87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция построения дерева тестов.  <a href="#ad784b4f74ac46b4a6fc90518e8e5c87e">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad784b4f74ac46b4a6fc90518e8e5c87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fb960a145411873bf4ce84bf3f87de"><td class="memItemLeft" align="right" valign="top">VIRTUAL_MOCK void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html#af2fb960a145411873bf4ce84bf3f87de">BuildInfoSubTree</a> (const wxTreeItemId &amp;, const <a class="el" href="a00106.html">Info_t</a> &amp;, bool, bool)</td></tr>
+<tr class="memdesc:af2fb960a145411873bf4ce84bf3f87de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция построения поддерева набора результатов прогона тестов.  <a href="#af2fb960a145411873bf4ce84bf3f87de">Подробнее...</a><br /></td></tr>
+<tr class="separator:af2fb960a145411873bf4ce84bf3f87de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a00028.html">SettingsApp</a> <br />
- Класс дерева, отображающего разделы настроек программы. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a00033.html">Testing.App</a> <br />
+ Класс для отображения дерева с информацией о тестах. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>31 Декабрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>27 Май 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><h2 class="groupheader">Методы</h2>
-<a class="anchor" id="a8c150231812d3b9c8642f5a70816c0d0"></a>
+<a class="anchor" id="af2fb960a145411873bf4ce84bf3f87de"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void TreeSections::SetSections </td>
+          <td class="memname">void wx::TreeCtrlTests::BuildInfoSubTree </td>
           <td>(</td>
-          <td class="paramtype">const Sections_t &amp;&#160;</td>
-          <td class="paramname"><em>_Sections</em></td><td>)</td>
+          <td class="paramtype">const wxTreeItemId &amp;&#160;</td>
+          <td class="paramname"><em>_TreeItemId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="a00106.html">Info_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsFailedOnly</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsSingle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Функция построения дерева разделов. </p>
+<p>Функция построения поддерева набора результатов прогона тестов. </p>
 <ul>
-<li>Функция предназначена для &lt;... подробное описание&gt;.</li>
+<li>Единственный объект информации о прогоне тестов добавляется в указанный узел без создания промежуточного узла.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Sections</td><td>Набор путей к разделам, из которых будут построены узлы дерева. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_TreeItemId</td><td>Узел дерева, в котором будет строится поддерево. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Info</td><td>Объект с результатами прогона тестов. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsFailedOnly</td><td>Признак того, что в дерево должны войти только проваленные тесты. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsSingle</td><td>Признак того, что объект _Info единственный в списке обектов. </td></tr>
   </table>
   </dd>
 </dl>
@@ -176,27 +222,143 @@ $(document).ready(function(){initNavTree('a00184.html','');});
 <p><div class="dynheader">
 Граф вызовов:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00184_a8c150231812d3b9c8642f5a70816c0d0_cgraph.png" border="0" usemap="#a00184_a8c150231812d3b9c8642f5a70816c0d0_cgraph" alt=""/></div>
-<map name="a00184_a8c150231812d3b9c8642f5a70816c0d0_cgraph" id="a00184_a8c150231812d3b9c8642f5a70816c0d0_cgraph">
-<area shape="rect" id="node3" href="a01312.html#ga8640e62399009826e69832f22ddbf23e" title="alicorn::extension\l::cpp::math::Root" alt="" coords="286,5,431,46"/>
-<area shape="rect" id="node5" href="a01317.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Функция входит в Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="288,70,429,111"/>
+<div class="center"><img src="a00184_af2fb960a145411873bf4ce84bf3f87de_cgraph.png" border="0" usemap="#a00184_af2fb960a145411873bf4ce84bf3f87de_cgraph" alt=""/></div>
+<map name="a00184_af2fb960a145411873bf4ce84bf3f87de_cgraph" id="a00184_af2fb960a145411873bf4ce84bf3f87de_cgraph">
+<area shape="rect" id="node3" href="a01326.html#gafc1bb38569424983a63fbf99ce9f47c1" title="Функция входит в Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="208,5,349,46"/>
 </map>
 </div>
 </p>
 
 </div>
 </div>
+<a class="anchor" id="ad784b4f74ac46b4a6fc90518e8e5c87e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wx::TreeCtrlTests::BuildTestsTree </td>
+          <td>(</td>
+          <td class="paramtype">const Infos_t &amp;&#160;</td>
+          <td class="paramname"><em>_Infos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsFailedOnly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция построения дерева тестов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Infos</td><td>Информация о прогоне тестов. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsFailedOnly</td><td>Признак того, что в дерево должны войти только проваленные тесты.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Дерево содержит только успешно пройденные тесты. </dd>
+<dd>
+<b>false</b> Дерево содержит хотя бы один проваленный тест. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9beaebf1b88dd32287d5ec9cf8cdcb30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TreeCtrlTests::Info_t::Test wx::TreeCtrlTests::GetInfo </td>
+          <td>(</td>
+          <td class="paramtype">const wxTreeItemId &amp;&#160;</td>
+          <td class="paramname"><em>_TreeItemId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения результата прогона теста для указанного узла дерева тестов. </p>
+<ul>
+<li>Функция предназначена для использования в обработчике выбора мышью узла дерева для получения подробного описания результата прогона тестов.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_TreeItemId</td><td>Идентификатор узла дерева, для которого требуется получить информацию о тесте.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Для указанного узла отсутствует связанная с ним информация. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad0fbdec866076a92feab9f37966f099f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wx::TreeCtrlTests::SetResultRunTests </td>
+          <td>(</td>
+          <td class="paramtype">const Infos_t &amp;&#160;</td>
+          <td class="paramname"><em>_Infos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsFailedOnly</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция создания дерева тестов на основе переданной информации. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Infos</td><td>Результат прогона тестов. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsFailedOnly</td><td>Признак того, что следует построить дерево только для проваленных тестов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/<a class="el" href="a01080_source.html">TreeSections.hpp</a></li>
-<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/TreeSections.cpp</li>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/View/wxWidgets/<a class="el" href="a01184_source.html">TreeCtrlTests.hpp</a></li>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/View/wxWidgets/TreeCtrlTests.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00184.html">TreeSections</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Пт 7 Окт 2016 22:56:53. Создано системой
+    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a00184.html">TreeCtrlTests</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 12 Ноя 2016 19:29:58. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

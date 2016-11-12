@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Шаблон класса alicorn::logger::Proxy&lt; TType &gt;</title>
+<title>Libs: Шаблон класса alicorn::testing::Proxy&lt; T &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.4 Revision: 2123 Platform: x64 Build: 22:56 07 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.5 Revision: 2139 Platform: x64 Build: 19:29 12 Ноябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -110,53 +110,54 @@ $(document).ready(function(){initNavTree('a00150.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a01686.html">Полный список членов класса</a>  </div>
+<a href="a01797.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::logger::Proxy&lt; TType &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a01302.html">Alicorn</a> &raquo; <a class="el" href="a01324.html">Logger</a></div></div>  </div>
+<div class="title">Шаблон класса alicorn::testing::Proxy&lt; T &gt;<div class="ingroups"><a class="el" href="a01311.html">Alicorn</a> &raquo; <a class="el" href="a01341.html">Testing</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a00025.html">Logger</a> <br />
- Вспомогательный класс для обеспечения логики работы макроса <a class="el" href="a01324.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER()</a>.  
+<p>Класс входит в <a class="el" href="a00032.html">Testing</a> <br />
+ Базовый класс для построения прокси-классов для проверки вызовов функций подставных классов.  
  <a href="a00150.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00548_source.html">proxy.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00561_source.html">proxy.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::logger::Proxy&lt; TType &gt;:</div>
+Граф связей класса alicorn::testing::Proxy&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01687.png" border="0" usemap="#alicorn_1_1logger_1_1_proxy_3_01_t_type_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1logger_1_1_proxy_3_01_t_type_01_4_coll__map" id="alicorn_1_1logger_1_1_proxy_3_01_t_type_01_4_coll__map">
+<div class="center"><img src="a01798.png" border="0" usemap="#alicorn_1_1testing_1_1_proxy_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1testing_1_1_proxy_3_01_t_01_4_coll__map" id="alicorn_1_1testing_1_1_proxy_3_01_t_01_4_coll__map">
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TType&gt;<br />
-class alicorn::logger::Proxy&lt; TType &gt;</h3>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class alicorn::testing::Proxy&lt; T &gt;</h3>
 
-<p>Класс входит в <a class="el" href="a00025.html">Logger</a> <br />
- Вспомогательный класс для обеспечения логики работы макроса <a class="el" href="a01324.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER()</a>. </p>
+<p>Класс входит в <a class="el" href="a00032.html">Testing</a> <br />
+ Базовый класс для построения прокси-классов для проверки вызовов функций подставных классов. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Класс не следует использовать для проверки работоспособности в многопоточной среде.</dd></dl>
 <dl class="tparams"><dt>Параметры шаблона</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">TType</td><td>Класс, объект которого будет передаваться 'ядру' логгера (сообщение, параметр настроек или репорт).</td></tr>
+    <tr><td class="paramname">Создаваемый</td><td>прокси-класс.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>18 Ноябрь 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>20 Апрель 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/<a class="el" href="a00548_source.html">proxy.hpp</a></li>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/proxy.inl</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015</dd></dl>
+<h2>Пример использования: </h2>
+<div class="fragment"><div class="line"></div><div class="line"><span class="comment">// Создаем подставной класс с вызовами подставных функций прокси-класса:</span></div><div class="line"><span class="keyword">namespace </span><a class="code" href="a01289.html">mock</a></div><div class="line">{</div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// Создаем прокси-класс с нужными подставными функциями:</span></div><div class="line"><span class="keyword">class </span>ProjectProxy : <span class="keyword">public</span> <a class="code" href="a00150.html">::alicorn::testing::Proxy</a>&lt;ProjectProxy&gt;</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  MOCK_METHOD1(Constructor, <span class="keywordtype">size_t</span>(<span class="keywordtype">int</span>));</div><div class="line">  MOCK_CONST_METHOD1(GetName, CString(<span class="keywordtype">size_t</span>));</div><div class="line">};</div><div class="line"><span class="comment">//</span></div><div class="line"><span class="keyword">class </span>Project</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">size_t</span> m_Id;</div><div class="line"></div><div class="line"><span class="keyword">public</span>:</div><div class="line">  CString GetName(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div><div class="line"><span class="keyword">  </span>{</div><div class="line">    <span class="keywordflow">return</span> ProjectProxy::GetInstance()-&gt;GetName(m_Id);</div><div class="line">  }</div><div class="line"></div><div class="line"><span class="keyword">public</span>:</div><div class="line">  Project(<span class="keywordtype">int</span> _Index) :</div><div class="line">    m_Id(ProjectProxy::GetInstance()-&gt;Constructor(_Index))</div><div class="line">  {</div><div class="line">  }</div><div class="line">};</div><div class="line"><span class="comment">//</span></div><div class="line">} <span class="comment">// namespace mock</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// Тестируемая функция:</span></div><div class="line"><span class="keyword">class </span>Example</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  CString GetProjectNameFromIndex(<span class="keywordtype">int</span> _Index)</div><div class="line">  {</div><div class="line">    <span class="comment">// В тестовом проекте здесь должен использоваться класс mock::Project.</span></div><div class="line">    Project Project(_Index);</div><div class="line">    <span class="keywordflow">return</span> Project.GetName();</div><div class="line">  }</div><div class="line">};</div><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// Использование прокси-класса в тесте:</span></div><div class="line">TEST_F(Test_test, Test_GetName)</div><div class="line">{</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> Index = 1;</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">size_t</span> ProjectId = 1509032221;</div><div class="line">  <span class="keyword">const</span> CString ExpectedName = _T(<span class="stringliteral">&quot;Name&quot;</span>);</div><div class="line"></div><div class="line">  <span class="keyword">typedef</span> mock::ProjectProxy ProjectProxy_t;</div><div class="line">  ProjectProxy_t ProjectProxy;</div><div class="line">  ProjectProxy_t::GetInstance() = &amp;ProjectProxy;</div><div class="line"></div><div class="line">  <span class="keyword">using namespace </span>::testing;</div><div class="line"></div><div class="line">  InSequence Dummy;</div><div class="line"></div><div class="line">  EXPECT_CALL(ProjectProxy, Constructor(Index))</div><div class="line">    .Times(1)</div><div class="line">    .WillOnce(Return(ProjectId));</div><div class="line"></div><div class="line">  EXPECT_CALL(ProjectProxy, GetName(ProjectId))</div><div class="line">    .Times(1)</div><div class="line">    .WillOnce(Return(ExpectedName));</div><div class="line"></div><div class="line">  Example Example;</div><div class="line">  <span class="keyword">const</span> CString Result = Example.GetProjectNameFromIndex(Index);</div><div class="line">  EXPECT_STREQ(ExpectedName, Result);</div><div class="line">}</div><div class="line"></div></div><!-- fragment --></div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/testing/<a class="el" href="a00561_source.html">proxy.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a00150.html">Proxy</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Пт 7 Окт 2016 22:56:52. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>testing</b></li><li class="navelem"><a class="el" href="a00150.html">Proxy</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 12 Ноя 2016 19:29:57. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

@@ -1,39 +1,22 @@
 var a01323 =
 [
-    [ "Empty", "a00078.html", [
-      [ "WriteRecord", "a00078.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
-      [ "WriteTitle", "a00078.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
+    [ "Controller", "a01350.html", "a01350" ],
+    [ "Model", "a01351.html", "a01351" ],
+    [ "Support", "a01352.html", "a01352" ],
+    [ "View", "a01355.html", "a01355" ],
+    [ "Init", "a00107.html", null ],
+    [ "Main", "a00120.html", [
+      [ "GetOptions", "a00120.html#a6034719cbb5aa71f8f592648600a5a75", null ],
+      [ "OnInit", "a00120.html#a0dd1ad93046aa82f7e599351a50e48fd", null ]
     ] ],
-    [ "File", "a00084.html", [
-      [ "FormFileName", "a00084.html#a78253bd31454f39e16fb359f206526c1", null ],
-      [ "LimitLogSize", "a00084.html#a8543cc0644944d65cd8d277d1e8073a5", null ],
-      [ "OpenFile", "a00084.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
-      [ "RollingLogFiles", "a00084.html#a1c334e9fac26da0d4445802f43beefaf", null ],
-      [ "WriteRecord", "a00084.html#acb716a4ccea948033c64be86775d671d", null ],
-      [ "m_LogFile", "a00084.html#a8567d41ffad2072172acfeacb465240b", null ]
+    [ "TestClass", "a00176.html", null ],
+    [ "TestProject", "a00177.html", [
+      [ "GetDllObject", "a00177.html#a8951967671138e75cb5fa35a92a3356e", null ],
+      [ "GetInstance", "a00177.html#a4afac6707ae0d53632b97b88f35e5de0", null ]
     ] ],
-    [ "Html", "a00092.html", [
-      [ "WriteRecord", "a00092.html#a7e66035d80654aefc735bc594ded20ef", null ],
-      [ "WriteTitle", "a00092.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b", null ]
+    [ "TestSolution", "a00179.html", null ],
+    [ "DoxygenReport", "a00077.html", [
+      [ "DoxygenReport", "a00077.html#ae69f3fd567c964f9f4f0fcb10c75a690", null ]
     ] ],
-    [ "IReport", "a00110.html", [
-      [ "WriteRecord", "a00110.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-      [ "WriteTitle", "a00110.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
-    ] ],
-    [ "Report", "a00158.html", [
-      [ "DoComplete", "a00158.html#a9817eab99a8437ba0531ce231a292839", null ],
-      [ "DoComplete", "a00158.html#a9603cd1d3c32b20c4f3549bb780ac6a6", null ]
-    ] ],
-    [ "Text", "a00179.html", [
-      [ "WriteRecord", "a00179.html#a487f860fae5255eaa76c988294a764b7", null ],
-      [ "WriteTitle", "a00179.html#a16e5c27860d379682fe582396e14609d", null ]
-    ] ],
-    [ "Console", "a00057.html", [
-      [ "WriteRecord", "a00057.html#aab3352a57302cff220e46d9cea1c12bb", null ],
-      [ "WriteTitle", "a00057.html#a16ff9b02d58211e7be68cc7514755e85", null ]
-    ] ],
-    [ "VisualStudioOutput", "a00186.html", [
-      [ "WriteRecord", "a00186.html#a36ba11583024bbba693e2998ea4d3668", null ],
-      [ "WriteTitle", "a00186.html#a672763fba708c23851b38be162768bac", null ]
-    ] ]
+    [ "MainFrame", "a00121.html", null ]
 ];

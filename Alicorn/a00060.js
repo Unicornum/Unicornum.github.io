@@ -1,6 +1,5 @@
 var a00060 =
 [
-    [ "Set", "a00060.html#ab1361aa8875cbd9727192fa433b7fa94", null ],
-    [ "Set", "a00060.html#a47b345730a5268f6f1a8bf52dd02b12c", null ],
-    [ "Set", "a00060.html#ad43ec7c95e2ade9ff45ea2687fcfcd77", null ]
+    [ "Core", "a00060.html#a1acf734b09cac8bccc8529ad1ab65abd", null ],
+    [ "GetData", "a00060.html#a96808c4a811230e4e6aff5963dcf3d14", null ]
 ];

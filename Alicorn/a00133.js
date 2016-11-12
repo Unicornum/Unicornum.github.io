@@ -1,11 +1,8 @@
 var a00133 =
 [
-    [ "operator+=", "a00133.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
-    [ "operator-=", "a00133.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
-    [ "operator[]", "a00133.html#aab381d95bc38753a42ebc7c60fb2ce9a", null ],
-    [ "operator[]", "a00133.html#afc41066cbf2787ffb952d199a0640273", null ],
-    [ "operator[]", "a00133.html#a2f8e7fe05286832a146e97352345506e", null ],
-    [ "operator[]", "a00133.html#a4bfda637ac9887bb9676f301e40861be", null ],
-    [ "operator[]", "a00133.html#a44ae2217ccac94b6b565701bfd05774e", null ],
-    [ "operator[]", "a00133.html#a75535c69883d5768f646b92554d745d2", null ]
+    [ "BuildPathToSection", "a00133.html#a0c097f184d0f8008705441c7e8f95f14", null ],
+    [ "GetSection", "a00133.html#a7fa27979818db9ba2e511c5a104fede8", null ],
+    [ "GetSections", "a00133.html#a9e77094e2db570c89ea51d0ff803b81f", null ],
+    [ "GetSettings", "a00133.html#a14217a4b20565c53ba84cd9958354e3a", null ],
+    [ "SetValue", "a00133.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
 ];

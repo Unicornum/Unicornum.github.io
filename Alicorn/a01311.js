@@ -1,9 +1,16 @@
 var a01311 =
 [
-    [ "ArcCos", "a01311.html#ga38ce2d7f745c99f41f1a9dcc448d008b", null ],
-    [ "ArcSin", "a01311.html#ga2104517f783b71fdb1123123f8dcba74", null ],
-    [ "ArcTan", "a01311.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb", null ],
-    [ "Cos", "a01311.html#ga4a7357706084145b0cddd05c161ea772", null ],
-    [ "Sin", "a01311.html#ga8ab39ee8cc4acf6b68d38eb34eeab060", null ],
-    [ "Tan", "a01311.html#gabfb194a30a0380dbe3312321b164bca5", null ]
+    [ "Converter", "a01312.html", "a01312" ],
+    [ "Document", "a01314.html", "a01314" ],
+    [ "Testing.App", "a01323.html", "a01323" ],
+    [ "Extension", "a01329.html", "a01329" ],
+    [ "Logger", "a01333.html", "a01333" ],
+    [ "Patterns", "a01337.html", "a01337" ],
+    [ "Platform", "a01338.html", null ],
+    [ "Settings", "a01339.html", "a01339" ],
+    [ "System", "a01340.html", "a01340" ],
+    [ "Testing", "a01341.html", "a01341" ],
+    [ "Version", "a01342.html", "a01342" ],
+    [ "Virtual File System", "a01343.html", "a01343" ],
+    [ "SettingsApp", "a01344.html", "a01344" ]
 ];

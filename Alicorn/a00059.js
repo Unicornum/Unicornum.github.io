@@ -1,5 +1,4 @@
 var a00059 =
 [
-    [ "Core", "a00059.html#a1acf734b09cac8bccc8529ad1ab65abd", null ],
-    [ "GetData", "a00059.html#a96808c4a811230e4e6aff5963dcf3d14", null ]
+    [ "Controller", "a00059.html#aa9082ed0b2ac63b021bf7c944be40d87", null ]
 ];

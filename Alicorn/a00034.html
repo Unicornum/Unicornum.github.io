@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Libs: Version.App</title>
+<title>Libs: Исходные требования</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.4 Revision: 2123 Platform: x64 Build: 22:56 07 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 3.6.5 Revision: 2139 Platform: x64 Build: 19:29 12 Ноябрь 2016</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -102,20 +102,52 @@ $(document).ready(function(){initNavTree('a00034.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Version.App </div>  </div>
+<div class="title">Исходные требования </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="sAlicornBuildVersionAppBrief"></a>
-Введение</h1>
-<p>Проект логики работы утилиты, формирующей файл со строками версии решения для включения его в проект Packaging для Android.</p>
-<p><a class="el" href="a00040.html">Использование проекта</a> </p>
-</div></div><!-- contents -->
+<div class="textblock"><h1>Требования первого этапа </h1>
+<ul>
+<li> <input type="checkbox" checked disabled>  Диалоговое окно отображения результатов прогона тестов.</li>
+<li> <input type="checkbox" checked disabled>  Цвет фона всех вкладок окна должен зависеть от результата прогона тестов (зеленый, если все тесты пройдены успешно, красный, если есть хотя бы один проваленный тест).</li>
+</ul>
+<h2>Диалоговое окно отображения результатов прогона тестов </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Вкладка общей статистики.</li>
+<li> <input type="checkbox" checked disabled>  Вкладка со списком всех тестов.</li>
+<li> <input type="checkbox" checked disabled>  Вкладка со списком проваленных тестов.</li>
+</ul>
+<p>### Вкладка общей статистики</p><ul>
+<li> <input type="checkbox" checked disabled>  Общее количество выполненных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество успешно пройденных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество проваленных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество отключенных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Дата/время запуска тестов.</li>
+<li> <input type="checkbox" checked disabled>  Название и версия используемой библиотеки тестирования.</li>
+</ul>
+<p>### Вкладка со списком всех тестов</p><ul>
+<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
+<li> <input type="checkbox" checked disabled>  Узлы дерева должны помечаться иконками успеха/провала.</li>
+</ul>
+<p>### Вкладка со списком проваленных тестов</p><ul>
+<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
+<li> <input type="checkbox" checked disabled>  Отображение подробного описания при выборе проваленного теста.</li>
+</ul>
+<h1>Дополнительно </h1>
+<ul>
+<li> <input type="checkbox" checked disabled>  Запуск всех тестов решения без отображения окна результатов прогона тестов.</li>
+<li> <input type="checkbox" checked disabled>  Добавление результата прогона тестов всего решения на страницу статистики работы над решением.</li>
+</ul>
+<h2>Прототип </h2>
+<div class="image">
+<img src="Testing.App.Prototype.png" alt="Testing.App.Prototype.png"/>
+</div>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00010.html">Libs</a></li><li class="navelem"><a class="el" href="a00012.html">Alicorn</a></li><li class="navelem"><a class="el" href="a00014.html">Build</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Пт 7 Окт 2016 22:56:51. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00012.html">Libs</a></li><li class="navelem"><a class="el" href="a00014.html">Alicorn</a></li><li class="navelem"><a class="el" href="a00016.html">Build</a></li><li class="navelem"><a class="el" href="a00033.html">Testing.App</a></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 12 Ноя 2016 19:29:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

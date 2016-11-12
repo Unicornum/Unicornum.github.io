@@ -1,12 +1,9 @@
 var a00163 =
 [
-    [ "SectionFullAccess", "a00163.html#a559559549868bf00850723837cce477d", null ],
-    [ "SectionFullAccess", "a00163.html#a36af9981933fcf7ed983197a12b33faf", null ],
-    [ "Get", "a00163.html#ad4abd7c2d4a27b75c47e915d51254360", null ],
-    [ "GetChildSectionNames", "a00163.html#a0dfa6380c7daee4f01be778650e54ea0", null ],
-    [ "GetComment", "a00163.html#aa145a5857bfe91b0338ed5a8dff9557d", null ],
-    [ "GetParameterNames", "a00163.html#a9ab6fd548602a005d21b1ffa927f01da", null ],
-    [ "operator[]", "a00163.html#aec59b411a094c25e4ebdd314d882dbe0", null ],
-    [ "Set", "a00163.html#a7f4ca4c0296175034a60c9c608480168", null ],
-    [ "SetComment", "a00163.html#a6c17f7e6bedce23523c3326c535761a2", null ]
+    [ "Section", "a00163.html#a53bfb4cb221122d2c66b18659c84df4a", null ],
+    [ "Section", "a00163.html#a49d0ffb2f0b8228d9a6952f4cf3278fa", null ],
+    [ "AddExtra", "a00163.html#ae3c5a0a3bd12c765a813bd89a31acfb7", null ],
+    [ "Get", "a00163.html#a8f0e717f7f49c0550dde81bda8990fc6", null ],
+    [ "operator[]", "a00163.html#ad68da58ac4cdfc8e177417b1c0893d60", null ],
+    [ "SetDefault", "a00163.html#a711532c52ecedd4fc61ed61cf8f9009e", null ]
 ];

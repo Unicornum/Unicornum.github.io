@@ -1,5 +1,6 @@
 var a00158 =
 [
-    [ "DoComplete", "a00158.html#a9817eab99a8437ba0531ce231a292839", null ],
-    [ "DoComplete", "a00158.html#a9603cd1d3c32b20c4f3549bb780ac6a6", null ]
+    [ "Replace", "a00158.html#adb87baefad52f5062b8edeba4ca08c03", null ],
+    [ "Replace", "a00158.html#a16563cd9219fb222a79395912e3dc987", null ],
+    [ "DoReplace", "a00158.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
 ];

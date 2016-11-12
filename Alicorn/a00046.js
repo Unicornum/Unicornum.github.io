@@ -1,6 +1,7 @@
 var a00046 =
 [
-    [ "Attribute", "a00046.html#accacf35e6d74d8200551c88e5ae0dc74", null ],
-    [ "operator=", "a00046.html#aa1d1cd6c6dafe897c02f3e390e321921", null ],
-    [ "To", "a00046.html#a2d469bdba6260a64336e3f17c0ff170c", null ]
+    [ "Get", "a00046.html#afd7fe2b284994c8bed49c85a96871806", null ],
+    [ "GetInstance", "a00046.html#a1bbbcc7969f3750bb918f9004561b16b", null ],
+    [ "GetPackageName", "a00046.html#a7b5bf63f646163413cb695971a627569", null ],
+    [ "Init", "a00046.html#aff3f9f3c93b1509dbbcad44bfb8615d2", null ]
 ];

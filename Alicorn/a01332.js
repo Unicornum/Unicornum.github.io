@@ -1,23 +1,39 @@
 var a01332 =
 [
-    [ "Proxy", "a00148.html", null ],
-    [ "ASSERT_DIRECTORY_EQ", "a01332.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
-    [ "ASSERT_EXISTS_FILE_FALSE", "a01332.html#gaf5900286722be76eaf83b881ba160bb1", null ],
-    [ "ASSERT_EXISTS_FILE_TRUE", "a01332.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],
-    [ "ASSERT_FILES_BINARY_EQ", "a01332.html#gadedb8f379e467a385930902dddd6d157", null ],
-    [ "ASSERT_FILES_BINARY_NE", "a01332.html#ga47e03c92d053709b90f83f6b20c9b7ba", null ],
-    [ "ASSERT_FILES_STREQ", "a01332.html#ga69b3a6234d72517ef85674de2cf60d30", null ],
-    [ "ASSERT_STDEXCEPTION", "a01332.html#ga9b6950e02cf07c434b3c9ccc325b9559", null ],
-    [ "EXPECT_DIRECTORY_EQ", "a01332.html#ga110902fa9f184c39fc0c095562472c69", null ],
-    [ "EXPECT_EXISTS_FILE_FALSE", "a01332.html#ga548418041138f552c93a97dfb866f9ac", null ],
-    [ "EXPECT_EXISTS_FILE_TRUE", "a01332.html#ga30aa7b117cfbd9a5a2df877a16092f5c", null ],
-    [ "EXPECT_FILES_BINARY_EQ", "a01332.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2", null ],
-    [ "EXPECT_FILES_BINARY_NE", "a01332.html#gaae14802f30c143ba014bc7980d3db7f0", null ],
-    [ "EXPECT_FILES_STREQ", "a01332.html#ga14628cf5a758a8aeec9b5bb69fed767e", null ],
-    [ "EXPECT_STDEXCEPTION", "a01332.html#gae7553b6a2b3b0c4a21e94d06217ef8f3", null ],
-    [ "FRIEND_TEST", "a01332.html#gab92570f53abf3b4fbbd13acaf4265468", null ],
-    [ "IsBinaryEqual", "a01332.html#ga8ea43b95b81df91082282cd21af937b6", null ],
-    [ "IsExists", "a01332.html#gaba7352a2eed189b48b6cdda86280e0e2", null ],
-    [ "IsMatch", "a01332.html#ga12fae53dd48adfd54cc17b98f46a3def", null ],
-    [ "IsStrEqual", "a01332.html#gadf7ceee89a29ddbf1582bb67ca9f33c5", null ]
+    [ "Empty", "a00079.html", [
+      [ "WriteRecord", "a00079.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
+      [ "WriteTitle", "a00079.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
+    ] ],
+    [ "File", "a00085.html", [
+      [ "FormFileName", "a00085.html#a78253bd31454f39e16fb359f206526c1", null ],
+      [ "LimitLogSize", "a00085.html#a8543cc0644944d65cd8d277d1e8073a5", null ],
+      [ "OpenFile", "a00085.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
+      [ "RollingLogFiles", "a00085.html#a1c334e9fac26da0d4445802f43beefaf", null ],
+      [ "WriteRecord", "a00085.html#acb716a4ccea948033c64be86775d671d", null ],
+      [ "m_LogFile", "a00085.html#a8567d41ffad2072172acfeacb465240b", null ]
+    ] ],
+    [ "Html", "a00093.html", [
+      [ "WriteRecord", "a00093.html#a7e66035d80654aefc735bc594ded20ef", null ],
+      [ "WriteTitle", "a00093.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b", null ]
+    ] ],
+    [ "IReport", "a00111.html", [
+      [ "WriteRecord", "a00111.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
+      [ "WriteTitle", "a00111.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
+    ] ],
+    [ "Report", "a00159.html", [
+      [ "DoComplete", "a00159.html#a9817eab99a8437ba0531ce231a292839", null ],
+      [ "DoComplete", "a00159.html#a9603cd1d3c32b20c4f3549bb780ac6a6", null ]
+    ] ],
+    [ "Text", "a00180.html", [
+      [ "WriteRecord", "a00180.html#a487f860fae5255eaa76c988294a764b7", null ],
+      [ "WriteTitle", "a00180.html#a16e5c27860d379682fe582396e14609d", null ]
+    ] ],
+    [ "Console", "a00058.html", [
+      [ "WriteRecord", "a00058.html#aab3352a57302cff220e46d9cea1c12bb", null ],
+      [ "WriteTitle", "a00058.html#a16ff9b02d58211e7be68cc7514755e85", null ]
+    ] ],
+    [ "VisualStudioOutput", "a00187.html", [
+      [ "WriteRecord", "a00187.html#a36ba11583024bbba693e2998ea4d3668", null ],
+      [ "WriteTitle", "a00187.html#a672763fba708c23851b38be162768bac", null ]
+    ] ]
 ];

@@ -1,5 +1,4 @@
 var a00110 =
 [
-    [ "WriteRecord", "a00110.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-    [ "WriteTitle", "a00110.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
+    [ "GetResult", "a00110.html#af3b06a8f3860ae9f64b3dd8a4bf5d6fe", null ]
 ];

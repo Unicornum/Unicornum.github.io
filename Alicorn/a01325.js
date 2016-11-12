@@ -1,15 +1,20 @@
 var a01325 =
 [
-    [ "Data", "a00066.html", null ],
-    [ "ICommand", "a00096.html", null ],
-    [ "IManager", "a00099.html", null ],
-    [ "IUndo", "a00112.html", null ],
-    [ "ManagerCommon", "a00122.html", null ],
-    [ "ManagerUndoRedo", "a00123.html", [
-      [ "IsAllowedRedo", "a00123.html#aba31de05f232e77cb07f3ff595fdf19d", null ],
-      [ "IsAllowedUndo", "a00123.html#a1ae8ad925f254d16cb178839a01bbae5", null ],
-      [ "Redo", "a00123.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
-      [ "Undo", "a00123.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
+    [ "Match", "a00125.html", [
+      [ "Match", "a00125.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
+      [ "Match", "a00125.html#a6771afe48b8f1155f53536b2220e2764", null ],
+      [ "GetGroups", "a00125.html#a25a080222bf760066265b29637242692", null ],
+      [ "IsMatch", "a00125.html#abaaf6788b646b68ad35c6063693f07b3", null ]
     ] ],
-    [ "Manager", "a01325.html#ga4279689109bf5cff740fd6d25f303379", null ]
+    [ "Replace", "a00158.html", [
+      [ "Replace", "a00158.html#adb87baefad52f5062b8edeba4ca08c03", null ],
+      [ "Replace", "a00158.html#a16563cd9219fb222a79395912e3dc987", null ],
+      [ "DoReplace", "a00158.html#a7cb15433508d88d4563a1f3e0ed08ef9", null ]
+    ] ],
+    [ "Search", "a00162.html", [
+      [ "Search", "a00162.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+      [ "Search", "a00162.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+      [ "GetCoincided", "a00162.html#a4c72f86a08ae58dd3cfb28a77ae2c1c4", null ],
+      [ "IsSearch", "a00162.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
+    ] ]
 ];
