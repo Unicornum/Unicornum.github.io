@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>TrelloCardsMaker: Исходные требования</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen_1.8.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TrelloCardsMaker
+   &#160;<span id="projectnumber">Версия: 0.0.1 Revision: 97 Platform: ARM Build: 11:20 26 Ноябрь 2016</span>
+   </div>
+   <div id="projectbrief">Android offline client cards maker</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00005.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Исходные требования </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1>Основные требования </h1>
+<p>Программа должна:</p><ul>
+<li> <input type="checkbox" disabled>  Предоставлять выбор доски Trello, для которой создается карточка.</li>
+<li> <input type="checkbox" disabled>  Позволять добавлять/настраивать/удалять доски Trello для отправки карточек.</li>
+<li> <input type="checkbox" disabled>  Позволять вводить текст создаваемой карточки при отсутствии доступа в Интернет с автоматической отправкой карточек при появлении такого доступа.</li>
+<li> <input type="checkbox" disabled>  Хранить неотправленные карточки в месте, доступном в 'ручном' режиме.</li>
+<li> <input type="checkbox" disabled>  Хранить неотправленные карточки в формате, пригодном для вставки в Trello вручную (в случае необходимости).</li>
+<li> <input type="checkbox" disabled>  Корректно работать (масштабироваться) при любых ориентации/разрешениях экрана используемого устройства.</li>
+<li> <input type="checkbox" disabled>  Изменения данных программы должны сохраняться таким образом, чтобы при нажатии кнопки 'Home' в любой момент времени не происходила потеря изменений.</li>
+</ul>
+<h1>Окно выбора доски Trello </h1>
+<ul>
+<li> <input type="checkbox" disabled>  Начальное окно при запуске/активации программы.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа должна возвращать управление Android'y, оставляя рабочий поток, пытающийся отправлять неотправленные карточки в случае их наличия.</li>
+</ul>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" disabled>  Кнопку создания новой доски Trello (при нажатии которой программа переключается на окно создания доски Trello).</li>
+<li> <input type="checkbox" disabled>  Кнопку 'Архив досок' при нажатии которой программа переключается на окно списка архивированных досок.</li>
+<li> <input type="checkbox" disabled>  Доступные доски Trello в виде списка в визуально отделенном от кнопок создания доски/архива разделе.</li>
+</ul>
+<h2>Строка списка выбора доски Trello </h2>
+<ul>
+<li> <input type="checkbox" disabled>  Кнопка с именем доски Trello (при нажатии кнопки программа переключается на окно создания карточки).</li>
+<li> <input type="checkbox" disabled>  Кнопка редактирования доски Trello (при нажатии кнопки программа переключается на окно создания доски Trello).</li>
+<li> <input type="checkbox" disabled>  Кнопка удаления доски Trello (при нажатии кнопки доска переноситься в архивный список).</li>
+</ul>
+<h1>Окно создания доски Trello </h1>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" disabled>  Поле ввода имени доски.</li>
+<li> <input type="checkbox" disabled>  Поле ввода почты, на которую будут отправляться карточки.</li>
+<li> <input type="checkbox" disabled>  Кнопку принятия изменений, при нажатии которой программа должна переключиться на окно выбора доски Trello с внесением изменений.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа должна переключиться на окно выбора доски Trello без внесения изменений.</li>
+<li> <input type="checkbox" disabled>  Если кнопка 'Назад' была нажата после создания новой доски, созданная доска 'по умолчанию' должна быть удалена.</li>
+</ul>
+<h1>Окно списка архивных досок Trello </h1>
+<ul>
+<li> <input type="checkbox" disabled>  Содержит архивные доски в виде списка конопок, при нажатии которых выбранная доска переносится в список досок, доступных для выбора в окне выбора доски Trello.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа переключается на окно выбора доски Trello.</li>
+</ul>
+<h1>Окно создания карточки </h1>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" disabled>  Многострочное поле ввода текста создаваемой карточки.</li>
+<li> <input type="checkbox" disabled>  Кнопку 'Отправить', при нажатии которой карточка с указанным текстом добавляется в список на отправку, а поле ввода текста очищается (чтобы можно было сразу вводить текст следующей карточки).</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа переключается на окно выбора доски Trello. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00007.html">Trello Cards Maker</a></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Сб 26 Ноя 2016 11:21:05. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
