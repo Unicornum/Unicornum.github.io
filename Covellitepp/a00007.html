@@ -1,0 +1,3898 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Covellite++: Не покрытый тестами код</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen_1.8.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Версия: 0.0.1 Revision: 76 Platform: ARM Build: 10:41 17 Декабрь 2016</span>
+   </div>
+   <div id="projectbrief">GUI фреймворк для разработки Android-приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="pages.html"><span>Описания</span></a></li>
+      <li><a href="modules.html"><span>Группы</span></a></li>
+      <li><a href="namespaces.html"><span>Пространства&#160;имен</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a00007.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Не покрытый тестами код </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite\include\covellite\rocket\window.hpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>74</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::Context * m_pContext = nullptr;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.jni\covellite.jni\environment.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>9</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>13</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_pActivity == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>15</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pJavaVM = _pActivity->vm;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>16</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pJavaVM == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>19</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  attachArgs.version = JNI_VERSION_1_6;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>20</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  attachArgs.name = "NativeThread";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>21</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  attachArgs.group = nullptr;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>23</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  const auto Result = m_pJavaVM->AttachCurrentThread(&m_pJniEnv, &attachArgs);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>24</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (Result == JNI_ERR) throw STD_EXCEPTION << "AttachCurrentThread() failed.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>29</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pActivity = _pActivity->clazz;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>30</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>33</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>34</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pJavaVM->DetachCurrentThread();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>35</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>45</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>46</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pJniEnv == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>47</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pActivity == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>49</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassNativeActivity = m_pJniEnv->FindClass("android/app/NativeActivity");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>51</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassWindow = m_pJniEnv->FindClass("android/view/Window");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>52</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodGetWindow = m_pJniEnv->GetMethodID(ClassNativeActivity, </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>54</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto lWindow = m_pJniEnv->CallObjectMethod(m_pActivity, MethodGetWindow);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>56</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassView = m_pJniEnv->FindClass("android/view/View");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>57</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodGetDecorView = m_pJniEnv->GetMethodID(ClassWindow, </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>59</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto lDecorView = m_pJniEnv->CallObjectMethod(lWindow, MethodGetDecorView);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>61</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassRect = m_pJniEnv->FindClass("android/graphics/Rect");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>62</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ConstructorRect = m_pJniEnv->GetMethodID(ClassRect, "<init>", "()V");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>63</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto Rect = m_pJniEnv->NewObject(ClassRect, ConstructorRect);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>65</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodGetWindowVisibleDisplayFrame = m_pJniEnv->GetMethodID(ClassView, </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>67</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pJniEnv->CallVoidMethod(lDecorView, MethodGetWindowVisibleDisplayFrame, Rect);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>69</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto fidTop = m_pJniEnv->GetFieldID(ClassRect, "top", "I");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>70</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return m_pJniEnv->GetIntField(Rect, fidTop);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>71</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>87</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>88</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pJniEnv == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>89</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pActivity == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>91</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassNativeActivity = m_pJniEnv->GetObjectClass(m_pActivity);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>94</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassContext = m_pJniEnv->FindClass("android/content/Context");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>95</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto FieldINPUT_METHOD_SERVICE = m_pJniEnv->GetStaticFieldID(ClassContext,</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>97</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto INPUT_METHOD_SERVICE = m_pJniEnv->GetStaticObjectField(ClassContext,</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>101</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassInputMethodManager = m_pJniEnv->FindClass(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>103</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodGetSystemService = m_pJniEnv->GetMethodID(ClassNativeActivity,</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>105</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto lInputMethodManager = m_pJniEnv->CallObjectMethod(m_pActivity,</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>109</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodGetWindow = m_pJniEnv->GetMethodID(ClassNativeActivity,</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>111</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto lWindow = m_pJniEnv->CallObjectMethod(m_pActivity, MethodGetWindow);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>112</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto ClassWindow = m_pJniEnv->FindClass("android/view/Window");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>113</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodGetDecorView = m_pJniEnv->GetMethodID(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>115</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto lDecorView = m_pJniEnv->CallObjectMethod(lWindow, MethodGetDecorView);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>117</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  jint lFlags = 0;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>120</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto MethodShowSoftInput = m_pJniEnv->GetMethodID(ClassInputMethodManager, </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>122</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pJniEnv->CallBooleanMethod(lInputMethodManager, MethodShowSoftInput,</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>124</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.jni\covellite.jni\environment.hpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>34</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  JavaVM * m_pJavaVM = nullptr;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>35</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  JNIEnv * m_pJniEnv = nullptr;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>36</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  jobject m_pActivity = nullptr;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.rocket\covellite.rocket\file.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>8</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pAssetManager(_pAssetManager)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>9</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>13</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pAssetManager == nullptr) throw STD_EXCEPTION << "Null pointer.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>14</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>22</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>23</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	auto FileHandle = static_cast<Handle_t>(AAssetManager_open(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>26</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_Infos[FileHandle].Position = 0;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>27</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_Infos[FileHandle].Size = AAsset_getLength((AAsset *)FileHandle);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>29</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return FileHandle;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>30</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>37</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>38</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  AAsset_close(static_cast<AAsset *>(_hFile));</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>39</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>46</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>47</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	return AAsset_read(static_cast<AAsset *>(_hFile), _pBuffer, _Size);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>48</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>56</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>57</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_Origin == SEEK_SET)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>59</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    m_Infos[_hFile].Position = _BeginPosition;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>61</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Origin == SEEK_CUR)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>63</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    m_Infos[_hFile].Position = </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>66</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Origin == SEEK_END)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>68</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    m_Infos[_hFile].Position = </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>73</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    AAsset_seek(static_cast<AAsset *>(_hFile), _BeginPosition, _Origin);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>74</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return (Result >= 0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>75</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>82</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>83</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	return m_Infos[_hFile].Position;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>84</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>85</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>???</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.rocket\covellite.rocket\initializer.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>8</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_File(_pAssetManager),</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>9</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_Render(_StatusBarHeight)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>10</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>14</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::SetSystemInterface(&m_System);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>15</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::SetFileInterface(&m_File);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>16</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::SetRenderInterface(&m_Render);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>18</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::Initialise();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>19</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>22</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>23</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::Shutdown();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>24</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::SetRenderInterface(nullptr);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>25</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::SetFileInterface(nullptr);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>26</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Core::SetSystemInterface(nullptr);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>27</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.rocket\covellite.rocket\layer.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>8</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pDocument(_pDocument)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>9</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>13</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pDocument == nullptr) throw ::std::exception();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>15</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  auto * pTitle = m_pDocument->GetElementById("title");</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>16</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (pTitle != nullptr) pTitle->SetInnerRML(m_pDocument->GetTitle());</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>17</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>20</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>21</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pDocument->RemoveReference();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>22</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>25</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>26</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pDocument->Show();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>27</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>30</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>31</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pDocument->Hide();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>32</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.rocket\covellite.rocket\renderopengl.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>8</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_StatusBarHeight(_StatusBarHeight)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>9</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>13</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisable(GL_DEPTH_TEST);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>14</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisable(GL_DITHER);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>15</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisable(GL_LIGHTING);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>17</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_FASTEST);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>18</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glShadeModel(GL_SMOOTH);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>19</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glFrontFace(GL_CCW);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>20</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glEnable(GL_CULL_FACE);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>21</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glCullFace(GL_BACK);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>22</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>29</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>30</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glPushMatrix();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>32</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glTranslatef(_Translation.x, _Translation.y + m_StatusBarHeight, 0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>34</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glVertexPointer(2, GL_FLOAT, sizeof(Rocket::Core::Vertex),</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>36</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glEnableClientState(GL_VERTEX_ARRAY);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>38</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glColorPointer(4, GL_UNSIGNED_BYTE, sizeof(Rocket::Core::Vertex),</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>40</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glEnableClientState(GL_COLOR_ARRAY);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>42</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_pTexture != nullptr)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>44</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    glEnable(GL_TEXTURE_2D);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>45</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    glBindTexture(GL_TEXTURE_2D, reinterpret_cast<GLint>(_pTexture));</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>47</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    glTexCoordPointer(2, GL_FLOAT, sizeof(Rocket::Core::Vertex),</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>49</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    glEnableClientState(GL_TEXTURE_COORD_ARRAY);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>52</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDrawElements(GL_TRIANGLES, _IndicesCount, GL_UNSIGNED_INT, _pIndices);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>54</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisableClientState(GL_VERTEX_ARRAY);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>55</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisableClientState(GL_COLOR_ARRAY);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>56</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisableClientState(GL_TEXTURE_COORD_ARRAY);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>57</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisable(GL_TEXTURE_2D);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>59</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glPopMatrix();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>60</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>66</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>67</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	return nullptr;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>68</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>73</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>74</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>78</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>79</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>82</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>85</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>89</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>91</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>97</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>119</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	auto * _pFileInterface = Rocket::Core::GetFileInterface();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>120</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	auto hFile = _pFileInterface->Open(_PathToTgaFile);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>121</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	if (hFile == nullptr) return false;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>123</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  _pFileInterface->Seek(hFile, 0, SEEK_END);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>124</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	const size_t FileSize = _pFileInterface->Tell(hFile);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>125</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	_pFileInterface->Seek(hFile, 0, SEEK_SET);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>127</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	::std::vector<char> Buffer(FileSize);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>128</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	_pFileInterface->Read(Buffer.data(), Buffer.size(), hFile);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>129</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	_pFileInterface->Close(hFile);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>132</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	memcpy(&Header, Buffer.data(), sizeof(TGAHeader));</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>134</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	const int ColorMode = Header.bitsPerPixel / 8;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>136</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	if (Header.dataType != 2 || ColorMode < 3)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>138</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>		LOGGER(Error) << "Only 24/32bit uncompressed TGAs are supported.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>139</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>		return false;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>142</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  const char * pSrcImage = Buffer.data() + sizeof(TGAHeader);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>144</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  const int ImageSize = Header.width * Header.height * 4; // We always make 32bit textures </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>145</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	::std::vector<unsigned char> DestImage(ImageSize);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>148</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  for (long y = 0; y < Header.height; y++)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>150</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    long SrcIndex = y * Header.width * ColorMode;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>151</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    long DestIndex = ((Header.imageDescriptor & 32) != 0) ?</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>155</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    for (long x = 0; x < Header.width; x++)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>157</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>      DestImage[DestIndex + 0] = pSrcImage[SrcIndex + 2];</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>158</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>      DestImage[DestIndex + 1] = pSrcImage[SrcIndex + 1];</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>159</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>      DestImage[DestIndex + 2] = pSrcImage[SrcIndex + 0];</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>160</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>      DestImage[DestIndex + 3] = (ColorMode == 4) ?</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>163</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>      DestIndex += 4;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>164</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>      SrcIndex += ColorMode;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>165</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    }</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>166</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  }</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>168</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  _TextureDimensions.x = Header.width;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>169</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  _TextureDimensions.y = Header.height;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>172</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    GenerateTexture(_hTexture, DestImage.data(), _TextureDimensions);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>174</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	return IsSuccess;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>175</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>181</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>182</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	GLuint texture_id = 0;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>183</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	glGenTextures(1, &texture_id);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>185</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	glBindTexture(GL_TEXTURE_2D, texture_id);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>187</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glTexParameterx(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>188</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glTexParameterx(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>190</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glTexParameterx(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>191</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glTexParameterx(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>193</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, </code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>197</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  _hTexture = reinterpret_cast<Rocket::Core::TextureHandle>(texture_id);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>199</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return (glGetError() == GL_NO_ERROR);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>200</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>203</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>204</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>	glDeleteTextures(1, reinterpret_cast<GLuint*>(&_hTexture));</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>205</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.rocket\covellite.rocket\system.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>12</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>19</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (!IsStartTimeInit)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>21</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    gettimeofday(&StartTime, nullptr);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>22</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    IsStartTimeInit = true;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>27</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  gettimeofday(&Now, nullptr);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>29</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  double sec = Now.tv_sec - StartTime.tv_sec;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>30</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  double usec = Now.tv_usec - StartTime.tv_usec;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>31</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  double result = sec + (usec / 1000000.0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>33</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return static_cast<float>(result);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>34</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>42</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>43</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_Source == "[HELLO]")</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>45</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    _Translated = u8"Р?С?РёР?Р?С?";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>46</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    return 1;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>50</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return 0;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>51</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>55</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>56</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_Type == Rocket::Core::Log::LT_ERROR)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>58</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    LOGGER(Error) << _Message.CString();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>60</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Type == Rocket::Core::Log::LT_WARNING)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>62</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    LOGGER(Warning) << _Message.CString();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>64</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Type == Rocket::Core::Log::LT_INFO)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>66</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    LOGGER(Info) << _Message.CString();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>68</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Type == Rocket::Core::Log::LT_ASSERT ||</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>71</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    LOGGER(Trace) << _Message.CString();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>73</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Type == Rocket::Core::Log::LT_DEBUG)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>75</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    LOGGER_DEBUG(Trace) << _Message.CString();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>78</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return true;</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>79</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=10 cellspacing=0 width=98%>
+<tr>
+<td><b> solution\solution\covellite.rocket\covellite.rocket\window.cpp: </b></td>
+</tr>
+</table>
+<table frame=void border=0 bordercolor=#FFFFFF cellpadding=2 cellspacing=0 width=98%>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>8</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  covellite::Window(_pAndroidApp),</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>9</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_StatusBarHeight(covellite::jni::Environment(_pAndroidApp->activity).GetStatusBarHeight()),</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>10</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_Initializer(_pAndroidApp->activity->assetManager, m_StatusBarHeight)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>11</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>15</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext = Rocket::Core::CreateContext("main", GetContextSize());</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>16</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (m_pContext == nullptr)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>18</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    throw STD_EXCEPTION << "Create context failed.";</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>22</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->AddEventListener("click", this, false);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>24</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Controls::Initialise();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>25</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  Rocket::Debugger::Initialise(m_pContext);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>31</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  OnDrawWindow.connect(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>33</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  OnWindowRedrawNeeded.connect(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>35</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  OnMotion.connect(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>37</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  OnKeyUp.connect(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>39</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  OnKeyPressed.connect(</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>41</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>44</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>45</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->RemoveReference();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>46</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>49</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>50</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  OnClick(_Event.GetTargetElement()->GetId());</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>51</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>54</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>55</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  return Vector_t(GetWidth(), GetHeight() - m_StatusBarHeight);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>56</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>59</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>60</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glDisable(GL_BLEND);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>62</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glClearColor(0, 0, 1, 1);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>63</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glClear(GL_COLOR_BUFFER_BIT);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>65</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glEnable(GL_BLEND);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>66</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>68</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->Update();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>69</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->Render();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>71</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  SwapBuffers();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>72</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>75</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>76</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glViewport(0, 0, GetWidth(), GetHeight());</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>78</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glMatrixMode(GL_PROJECTION);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>79</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glLoadIdentity();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>81</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glMatrixMode(GL_MODELVIEW);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>82</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glLoadIdentity();</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>84</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  glOrthof(0, GetWidth(), GetHeight(), 0, -1, 1);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>86</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->SetDimensions(GetContextSize());</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>87</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>90</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>91</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->ProcessMouseMove(_X, _Y - m_StatusBarHeight, 0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>93</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_Type == AMOTION_EVENT_ACTION_DOWN)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>95</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    m_pContext->ProcessMouseButtonDown(0, 0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>97</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  else if (_Type == AMOTION_EVENT_ACTION_UP)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>99</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    m_pContext->ProcessMouseButtonUp(0, 0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>101</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>104</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>105</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  if (_KeyCode == AKEYCODE_DEL)</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>108</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>    m_pContext->ProcessKeyDown(::Rocket::Core::Input::KI_BACK, 0);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>110</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>...</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>113</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>{</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>114</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>  m_pContext->ProcessTextInput(_KeyCode);</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>115</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>}</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1>116</font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code>???</code></td>
+</tr>
+<tr>
+<td width=20px></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#B8CCE4 width=10px><font size=1></font></td>
+<td bgcolor=#B8CCE4 width=10px></td>
+<td bgcolor=#FFC0C0 width=10px></td>
+<td bgcolor=#FFC0C0><code></code></td>
+</tr>
+</table>
+<hr width=98%>
+ </div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a00008.html">Информация о работе над решением</a></li><li class="navelem"><a class="el" href="a00006.html">Покрытие кода тестами</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 17 Дек 2016 10:41:57. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+  </ul>
+</div>
+</body>
+</html>
