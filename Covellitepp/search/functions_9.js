@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read',['Read',['../a00030.html#ac21564207a894d4cdec11666e74212a4',1,'covellite::rocket::File']]],
-  ['renderopengl',['RenderOpenGL',['../a00035.html#a25f9e1bfbfd4f8b2ec0d4869e1e00469',1,'covellite::rocket::RenderOpenGL']]],
-  ['run',['Run',['../a00021.html#a9be55ba0c8c09e764764bbad9a97900a',1,'covellite::Application']]]
+  ['seek',['Seek',['../a00032.html#a2c7b984b239a9ff4d02b2ee42ee3d3a8',1,'covellite::rocket::File']]],
+  ['show',['Show',['../a00036.html#ade98b7f19de07bb838be920164345a79',1,'covellite::rocket::Layer']]],
+  ['showsoftkeyboard',['ShowSoftKeyboard',['../a00041.html#af2868d4ef3cfeda818c1fccae6fbaf70',1,'covellite::Window::ShowSoftKeyboard()'],['../a00027.html#a4dfae365d95e81df433bc8c00903b4e9',1,'covellite::jni::Environment::ShowSoftKeyboard()']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['seek',['Seek',['../a00030.html#a2c7b984b239a9ff4d02b2ee42ee3d3a8',1,'covellite::rocket::File']]],
-  ['showsoftkeyboard',['ShowSoftKeyboard',['../a00039.html#af2868d4ef3cfeda818c1fccae6fbaf70',1,'covellite::Window::ShowSoftKeyboard()'],['../a00026.html#a4dfae365d95e81df433bc8c00903b4e9',1,'covellite::jni::Environment::ShowSoftKeyboard()']]],
-  ['swapbuffers',['SwapBuffers',['../a00039.html#a82f70eb83114330ca4af2272f535027d',1,'covellite::Window']]]
+  ['tell',['Tell',['../a00032.html#abd90ccf48fc2c15d251f4b3bde7128fd',1,'covellite::rocket::File']]],
+  ['translate',['Translate',['../a00042.html#afcffdc06542a49f7f29eea2b757fc1d2',1,'covellite::rocket::Window::Translate()'],['../a00031.html#aa4837fa48c84eb982b4b4576c680c199',1,'ExampleWindow::Translate()']]],
+  ['translatestring',['TranslateString',['../a00040.html#a20585d7aabdfb81e2c9beff4d8708b09',1,'covellite::rocket::System']]]
 ];

@@ -1,5 +1,5 @@
 var modules =
 [
-    [ "Covellite++", "a00199.html", "a00199" ],
-    [ "Example", "a00204.html", "a00204" ]
+    [ "Covellite++", "a00228.html", "a00228" ],
+    [ "Example", "a00233.html", "a00233" ]
 ];

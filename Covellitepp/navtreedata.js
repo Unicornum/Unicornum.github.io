@@ -26,7 +26,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"functions.html"
+"dir_23c761be539445bc999d8c9cd7f0d160.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
