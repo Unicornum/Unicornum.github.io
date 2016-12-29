@@ -1,4 +1,5 @@
 var a00038 =
 [
-    [ "LoadTexture", "a00038.html#a5679eabac30daada6df5adadf6216471", null ]
+    [ "Pop", "a00038.html#af176080cf2b8bf6361e891108823227f", null ],
+    [ "Push", "a00038.html#adaa840861e876c0abcfa50172fe9f655", null ]
 ];

@@ -1,10 +1,5 @@
 var a00041 =
 [
-    [ "AddLayer", "a00041.html#a9a556427f48a457812ece8a97a118fee", null ],
-    [ "Exit", "a00041.html#aa30308a08f0eb463bc6337666177d547", null ],
-    [ "GetHeight", "a00041.html#a1d5ccf034c7086cfc626328c88cafe0e", null ],
-    [ "GetWidth", "a00041.html#aa10610eb718fbf71467477d1f8098300", null ],
-    [ "ProcessDrawWindow", "a00041.html#a769fbaa0802153a4f8191578b349ceac", null ],
-    [ "ProcessKeyUp", "a00041.html#ac16a3556067060625e5ade8b3a722330", null ],
-    [ "ShowSoftKeyboard", "a00041.html#af2868d4ef3cfeda818c1fccae6fbaf70", null ]
+    [ "GetElapsedTime", "a00041.html#ac7685f80dfa9fcefa272e3597d229351", null ],
+    [ "TranslateString", "a00041.html#a20585d7aabdfb81e2c9beff4d8708b09", null ]
 ];

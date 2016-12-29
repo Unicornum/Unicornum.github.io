@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['getelapsedtime',['GetElapsedTime',['../a00040.html#ac7685f80dfa9fcefa272e3597d229351',1,'covellite::rocket::System']]],
-  ['getheight',['GetHeight',['../a00041.html#a1d5ccf034c7086cfc626328c88cafe0e',1,'covellite::Window']]],
-  ['getsignal',['GetSignal',['../a00022.html#a7866814a3e0b514f99543490dd49a92b',1,'covellite::Application']]],
-  ['getstatusbarheight',['GetStatusBarHeight',['../a00027.html#ae44125f71cba1686662b12163164ba14',1,'covellite::jni::Environment']]],
-  ['getwidth',['GetWidth',['../a00041.html#aa10610eb718fbf71467477d1f8098300',1,'covellite::Window']]]
+  ['environment',['Environment',['../a00029.html#aec02d8aa481b28b19feba9e0f020b46c',1,'covellite::jni::Environment']]],
+  ['exampleapp',['ExampleApp',['../a00031.html#aa4d80503ecd636c5eab877df3e2dd220',1,'ExampleApp']]],
+  ['examplewindow',['ExampleWindow',['../a00032.html#afb7b23fb6346d7d660eccecffae9c202',1,'ExampleWindow']]],
+  ['exit',['Exit',['../a00045.html#aa30308a08f0eb463bc6337666177d547',1,'covellite::Window']]]
 ];

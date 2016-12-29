@@ -1,8 +1,9 @@
 var a00032 =
 [
-    [ "Close", "a00032.html#a8b3350ac41d32c1dd545c9d09d35187f", null ],
-    [ "Open", "a00032.html#ae25d50ee45068f7f077c65b88110c3a8", null ],
-    [ "Read", "a00032.html#ac21564207a894d4cdec11666e74212a4", null ],
-    [ "Seek", "a00032.html#a2c7b984b239a9ff4d02b2ee42ee3d3a8", null ],
-    [ "Tell", "a00032.html#abd90ccf48fc2c15d251f4b3bde7128fd", null ]
+    [ "TitleLayer", "a00042.html", null ],
+    [ "ExampleWindow", "a00032.html#afb7b23fb6346d7d660eccecffae9c202", null ],
+    [ "ProcessClick", "a00032.html#a11ff8b1a2754a002cca4c698a6341162", null ],
+    [ "ProcessDrawWindow", "a00032.html#ad785027ce412f98e0325ea82214712c6", null ],
+    [ "ProcessError", "a00032.html#ac7a3302cf825f0ff205137311b4f5e03", null ],
+    [ "Translate", "a00032.html#aa4837fa48c84eb982b4b4576c680c199", null ]
 ];

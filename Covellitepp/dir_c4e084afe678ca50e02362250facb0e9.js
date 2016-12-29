@@ -6,6 +6,5 @@ var dir_c4e084afe678ca50e02362250facb0e9 =
     [ "Covellite.Egl", "dir_45709c243562659b29bd287a5f1de537.html", "dir_45709c243562659b29bd287a5f1de537" ],
     [ "Covellite.Jni", "dir_23f6e8711074be148852e537be1cf16f.html", "dir_23f6e8711074be148852e537be1cf16f" ],
     [ "Covellite.Rocket", "dir_15b5849acdd1209908229f98585b7cb5.html", "dir_15b5849acdd1209908229f98585b7cb5" ],
-    [ "Example", "dir_5fcb227df70988948021678e052509ca.html", "dir_5fcb227df70988948021678e052509ca" ],
-    [ "Packaging", "dir_bd3d21ee281f1037a35243ad75d3109f.html", "dir_bd3d21ee281f1037a35243ad75d3109f" ]
+    [ "Example", "dir_5fcb227df70988948021678e052509ca.html", "dir_5fcb227df70988948021678e052509ca" ]
 ];
