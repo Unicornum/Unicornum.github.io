@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['app_5fcmd_5ferror',['APP_CMD_ERROR',['../a00017.html#ade63a3864eacf7654e4864705ec26d64',1,'alicorn::extension::android::Application']]]
+  ['onsend',['OnSend',['../a31035.html#a4027c124384df53af9aa97bd69310955',1,'view::ICreateCard']]],
+  ['onupdate',['OnUpdate',['../a31035.html#a290c7bb3736176f3a2ee6c8a5bc5cbea',1,'view::ICreateCard']]]
 ];

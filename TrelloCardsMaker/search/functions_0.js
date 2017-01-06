@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['getsignal',['GetSignal',['../a00017.html#adc6e6a4274040ca9f00077b8bbb0a438',1,'alicorn::extension::android::Application']]]
+  ['doerror',['DoError',['../a30975.html#a9fe6e1e6628bfefdf3c0355202ce8f64',1,'main::Application']]],
+  ['doinitwindow',['DoInitWindow',['../a30975.html#a01f1e9b184e2f0d65834fdaa6767b95c',1,'main::Application']]]
 ];

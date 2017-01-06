@@ -1,16 +1,14 @@
 var hierarchy =
 [
-    [ "android_app", "a00015.html", null ],
-    [ "android_poll_source", "a00016.html", null ],
-    [ "alicorn::extension::android::Application", "a00017.html", [
-      [ "TrelloCardsMakerApp", "a00024.html", null ]
+    [ "main::Application", "a30975.html", null ],
+    [ "controller::Controller", "a30943.html", null ],
+    [ "controller::DoSendCreateCard", "a30955.html", null ],
+    [ "controller::DoUpdateCreateCard", "a30959.html", null ],
+    [ "model::IBoards", "a31007.html", [
+      [ "model::Boards", "a30995.html", null ]
     ] ],
-    [ "egl::CallProxy", "a00018.html", null ],
-    [ "egl::Config", "a00019.html", null ],
-    [ "egl::Context", "a00020.html", null ],
-    [ "egl::Display", "a00021.html", null ],
-    [ "alicorn::extension::android::EventHandler", "a00022.html", [
-      [ "alicorn::extension::android::Window", "a00025.html", null ]
+    [ "view::ICreateCard", "a31035.html", [
+      [ "view::CreateCard", "a31023.html", null ]
     ] ],
-    [ "egl::Surface", "a00023.html", null ]
+    [ "main::Window", "a30979.html", null ]
 ];

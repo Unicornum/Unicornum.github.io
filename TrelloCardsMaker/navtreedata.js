@@ -2,7 +2,10 @@ var NAVTREE =
 [
   [ "TrelloCardsMaker", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a00001.html", null ],
+    [ "Packaging", "a31081.html", [
+      [ "Введение", "a31081.html#sPackagingBrief", null ]
+    ] ],
+    [ "Список задач", "a30896.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Пространства имен", null, [
       [ "Пространства имен", "namespaces.html", "namespaces" ]
@@ -18,7 +21,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Файлы", null, [
-      [ "Файлы", "files.html", "files" ]
+      [ "Файлы", "files.html", "files" ],
+      [ "Список членов всех файлов", "globals.html", [
+        [ "Указатель", "globals.html", null ],
+        [ "Функции", "globals_func.html", null ]
+      ] ]
     ] ]
   ] ]
 ];

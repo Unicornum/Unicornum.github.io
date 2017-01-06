@@ -1,6 +1,6 @@
 var namespaces =
 [
     [ "com", null, [
-      [ "TrelloCardsMaker", "a00135.html", null ]
+      [ "TrelloCardsMaker", "a30899.html", null ]
     ] ]
 ];

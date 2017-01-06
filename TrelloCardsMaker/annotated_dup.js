@@ -1,23 +1,21 @@
 var annotated_dup =
 [
-    [ "alicorn", null, [
-      [ "extension", null, [
-        [ "android", null, [
-          [ "Application", "a00017.html", "a00017" ],
-          [ "EventHandler", "a00022.html", "a00022" ],
-          [ "Window", "a00025.html", null ]
-        ] ]
-      ] ]
-    ] ],
     [ "com", null, null ],
-    [ "egl", null, [
-      [ "CallProxy", "a00018.html", null ],
-      [ "Config", "a00019.html", null ],
-      [ "Context", "a00020.html", null ],
-      [ "Display", "a00021.html", null ],
-      [ "Surface", "a00023.html", null ]
+    [ "controller", null, [
+      [ "Controller", "a30943.html", null ],
+      [ "DoSendCreateCard", "a30955.html", null ],
+      [ "DoUpdateCreateCard", "a30959.html", null ]
     ] ],
-    [ "android_app", "a00015.html", null ],
-    [ "android_poll_source", "a00016.html", null ],
-    [ "TrelloCardsMakerApp", "a00024.html", "a00024" ]
+    [ "main", null, [
+      [ "Application", "a30975.html", "a30975" ],
+      [ "Window", "a30979.html", null ]
+    ] ],
+    [ "model", null, [
+      [ "Boards", "a30995.html", null ],
+      [ "IBoards", "a31007.html", null ]
+    ] ],
+    [ "view", null, [
+      [ "CreateCard", "a31023.html", "a31023" ],
+      [ "ICreateCard", "a31035.html", "a31035" ]
+    ] ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['process',['Process',['../a00022.html#af92e96aaca130156661d7ebf554162cb',1,'alicorn::extension::android::EventHandler']]]
+  ['setboardname',['SetBoardName',['../a31023.html#a08fb5fa20063d4ae8fae7bbb635627c7',1,'view::CreateCard::SetBoardName()'],['../a31035.html#a94c95e67b782e3f976f73a81b987e80a',1,'view::ICreateCard::SetBoardName()']]]
 ];
