@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Сборка Cocos2d для Android</title>
+<title>UnicornumVerum: Документация</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,55 +58,32 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="a00236.html">Разработка для Android на С++</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Сборка Cocos2d для Android </div>  </div>
+<div class="title">Документация </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Создание проекта </h2>
-<dl class="section pre"><dt>Предусловие</dt><dd>Для сборки требуются установленные Android SDK, NDK и Apache Ant.</dd>
-<dd>
-Сборка производилась:<ul>
-<li>21.10.2016</li>
-<li>Android SDK (Android Studio 2.1).</li>
-<li>Crystax-ndk-10.3.2</li>
-<li>apache-ant-1.9.7</li>
-<li>cocos2d-x-3.13.1</li>
-<li>python-2.7.12</li>
-</ul>
-</dd></dl>
-<p><br />
-</p><ul>
-<li>Скачать <a href="https://www.python.org/downloads/" title="Python download">Python</a>, установить его и добавить путь к файлу python.exe к переменной окружения PATH (<b>ВАЖНО!</b> Cocos2d требует python версий 2.7.x).</li>
-<li>Скачать архив с <a href="http://cocos2d-x.org/download" title="Cocos2d download">Cocos2d</a> и распаковать его.</li>
-<li>Из консоли в папке Cocos2d (запуск из консоли нужен из-за того, что потребуется ввести пути к Android SDK, NDK и Apache Ant; либо можно предварительно установить переменные окружения <b>ANDROID_SDK_ROOT</b>, <b>NDK_ROOT</b> и <b>ANT_ROOT</b>) запустить: <div class="fragment"><div class="line">python setup.py</div></div><!-- fragment --> Будут добавлены переменные окружения для Cocos.</li>
-<li>В консоли (в папке, в которой нужно создать проект; <b>ВАЖНО!</b> В пути не должно быть русских букв!) для сборки библиотеки выполнить: <div class="fragment"><div class="line">cocos <span class="keyword">new</span> Cocos2d -l cpp -d Cocos2dLib</div></div><!-- fragment --></li>
-<li>В сгенерированную папку Cocos2dLib\Cocos2d скопировать содержимое <a href="https://github.com/Unicornum/Android/tree/master/Cocos2d/v3.13.1/Vs2015" title="Visual Studio Cocos Solution">VSSolution</a>.</li>
-</ul>
-<p>Решение в папке Cocos2dLib\Cocos2d\proj.visualstudio можно собрать и использовать для создания приложений.</p>
-<h2>Сборка Cocos2d-x как статической библиотеки </h2>
-<ul>
-<li>В папке Cocos2dLib\Cocos2d\proj.visualstudio открыть решение, у проекта <b>Cocos2dcpp</b> удалить папку jni, формат отладочной информации поставить в <b>Нет</b>, изменить свойства проекта:</li>
-</ul>
-<div class="image">
-<img src="Cocos2dProps.png" alt="Cocos2dProps.png"/>
-</div>
-<p>и собрать Release и Debug версии.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Статическая библиотека таким образом собирается, <b>НО</b>(!), во-первых cpu-features нужно собирать как отдельную библиотеку (и ставить ее после webp), во-вторых - при построении .so файла с использованием такой библиотеки он не задействует файлы, указанные в дополнительных зависимостях компоновщика (libOpenSLES.so, libEGL.so, libz.a), из-за чего приходится подключать libz явным образом (и подхватывается библиотека, конфликтующая с libpng) и файл результата оказывается гораздо меньшего размера и не работает при запуске на Android-устройстве.</dd></dl>
-<p>Содержит собранные для Android библиотеки: chipmunk, curl, freetype2, jpeg, png, tiff, webp, websockets, zlib.</p>
-<p>Источники:</p><ul>
-<li><a href="https://blogs.msdn.microsoft.com/vcblog/2016/07/12/cocos2d-x-visual-studio-android-project/" title="Статья на сайте Microsoft">Cocos2dVSMicrosoft</a></li>
-<li><a href="http://cocos2d-x.org/docs/installation/Android-VisualStudio/" title="Статья на сайте Cocos2d">Cocos2dVsCocos</a> </li>
-</ul>
+<div class="textblock"><p>Страница со ссылками на документацию проектов, находящихся в разработке.</p>
+<h1>Документация </h1>
+<h2>Alicorn </h2>
+<p>Набор проектов универсальных классов, которые могут быть использованы в различных проектах. <br />
+ <br />
+ Страница документации проекта: <a href="http://unicornum.github.io/Alicorn/index.html" title="Alicorn">Alicorn</a></p>
+<h2>Covellite++ </h2>
+<p>GUI фреймворк для разработки Android-приложений на С++. <br />
+ <br />
+ Страница документации проекта: <a href="http://unicornum.github.io/Covellitepp/index.html" title="Covellite++">Covellite++</a></p>
+<h2>Addins </h2>
+<p>Набор надстроек для IDE, предназначенных для автоматизации рутинных операций при работе с кодом. <br />
+ <br />
+ Страница документации проекта: <a href="http://unicornum.github.io/Addins/index.html" title="Addins">Addins</a></p>
+<h2>Разработка для Android на С++ </h2>
+<p><a class="el" href="a00233.html">Разработка для Android на С++</a> </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пт 30 Дек 2016 00:08:43. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Пт 13 Янв 2017 23:31:10. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
