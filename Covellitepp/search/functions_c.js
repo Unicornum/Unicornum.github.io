@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['tell',['Tell',['../a00033.html#abd90ccf48fc2c15d251f4b3bde7128fd',1,'covellite::rocket::File']]],
-  ['translate',['Translate',['../a00036.html#a1c419fbe6642b7c9e1d97bbe1acbc356',1,'covellite::rocket::IStringTranslator::Translate()'],['../a00044.html#afcffdc06542a49f7f29eea2b757fc1d2',1,'covellite::rocket::Window::Translate()'],['../a00032.html#aa4837fa48c84eb982b4b4576c680c199',1,'ExampleWindow::Translate()']]],
-  ['translatestring',['TranslateString',['../a00041.html#a20585d7aabdfb81e2c9beff4d8708b09',1,'covellite::rocket::System']]]
+  ['seek',['Seek',['../a31461.html#a2c7b984b239a9ff4d02b2ee42ee3d3a8',1,'covellite::rocket::File']]],
+  ['show',['Show',['../a31273.html#ade98b7f19de07bb838be920164345a79',1,'covellite::rocket::Layer']]],
+  ['showsoftkeyboard',['ShowSoftKeyboard',['../a31241.html#a14eeedce5208245a8c0c01bd4f2edfa9',1,'covellite::Window::ShowSoftKeyboard()'],['../a31417.html#a4dfae365d95e81df433bc8c00903b4e9',1,'covellite::jni::Environment::ShowSoftKeyboard()']]],
+  ['subscribe',['Subscribe',['../a31261.html#a83df0d472017ef8c273919a5d89442c5',1,'covellite::rocket::ElementEvents']]]
 ];

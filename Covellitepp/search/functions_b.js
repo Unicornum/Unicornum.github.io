@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['seek',['Seek',['../a00033.html#a2c7b984b239a9ff4d02b2ee42ee3d3a8',1,'covellite::rocket::File']]],
-  ['show',['Show',['../a00037.html#ade98b7f19de07bb838be920164345a79',1,'covellite::rocket::Layer']]],
-  ['showsoftkeyboard',['ShowSoftKeyboard',['../a00045.html#af2868d4ef3cfeda818c1fccae6fbaf70',1,'covellite::Window::ShowSoftKeyboard()'],['../a00029.html#a4dfae365d95e81df433bc8c00903b4e9',1,'covellite::jni::Environment::ShowSoftKeyboard()']]],
-  ['subscribe',['Subscribe',['../a00028.html#a83df0d472017ef8c273919a5d89442c5',1,'covellite::rocket::ElementEvents']]]
+  ['read',['Read',['../a31461.html#ac21564207a894d4cdec11666e74212a4',1,'covellite::rocket::File']]],
+  ['run',['Run',['../a31201.html#a9be55ba0c8c09e764764bbad9a97900a',1,'covellite::Application']]]
 ];

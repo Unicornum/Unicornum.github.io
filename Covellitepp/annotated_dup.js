@@ -3,34 +3,34 @@ var annotated_dup =
     [ "com", null, null ],
     [ "covellite", null, [
       [ "egl", null, [
-        [ "CallProxy", "a00023.html", null ],
-        [ "Config", "a00025.html", null ],
-        [ "Context", "a00026.html", null ],
-        [ "Display", "a00027.html", null ],
-        [ "Surface", "a00040.html", null ]
+        [ "CallProxy", "a31345.html", null ],
+        [ "Config", "a31349.html", null ],
+        [ "Context", "a31361.html", null ],
+        [ "Display", "a31373.html", null ],
+        [ "Surface", "a31385.html", null ]
       ] ],
       [ "jni", null, [
-        [ "Environment", "a00029.html", "a00029" ]
+        [ "Environment", "a31417.html", "a31417" ]
       ] ],
       [ "rocket", null, [
-        [ "ElementEvents", "a00028.html", "a00028" ],
-        [ "File", "a00033.html", "a00033" ],
-        [ "Initializer", "a00035.html", null ],
-        [ "IStringTranslator", "a00036.html", "a00036" ],
-        [ "Layer", "a00037.html", "a00037" ],
-        [ "RenderOpenGL", "a00039.html", "a00039" ],
-        [ "System", "a00041.html", "a00041" ],
-        [ "Window", "a00044.html", "a00044" ]
+        [ "ElementEvents", "a31261.html", "a31261" ],
+        [ "File", "a31461.html", "a31461" ],
+        [ "Initializer", "a31473.html", null ],
+        [ "IStringTranslator", "a31269.html", "a31269" ],
+        [ "Layer", "a31273.html", "a31273" ],
+        [ "RenderOpenGL", "a31493.html", "a31493" ],
+        [ "System", "a31497.html", "a31497" ],
+        [ "Window", "a31297.html", "a31297" ]
       ] ],
-      [ "Application", "a00022.html", "a00022" ],
-      [ "EventHandler", "a00030.html", "a00030" ],
-      [ "ILayer", "a00034.html", null ],
-      [ "Layers", "a00038.html", "a00038" ],
-      [ "UserDataHelper", "a00043.html", "a00043" ],
-      [ "Window", "a00045.html", "a00045" ]
+      [ "Application", "a31201.html", "a31201" ],
+      [ "EventHandler", "a31213.html", "a31213" ],
+      [ "ILayer", "a31225.html", null ],
+      [ "Layers", "a31229.html", "a31229" ],
+      [ "UserDataHelper", "a31309.html", "a31309" ],
+      [ "Window", "a31241.html", "a31241" ]
     ] ],
-    [ "android_app", "a00020.html", null ],
-    [ "android_poll_source", "a00021.html", null ],
-    [ "ExampleApp", "a00031.html", "a00031" ],
-    [ "ExampleWindow", "a00032.html", "a00032" ]
+    [ "android_app", "a31193.html", null ],
+    [ "android_poll_source", "a31189.html", null ],
+    [ "ExampleApp", "a31529.html", "a31529" ],
+    [ "ExampleWindow", "a31549.html", "a31549" ]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialise',['Initialise',['../a00043.html#a783688e654e6c90a193517a0255b28c6',1,'covellite::UserDataHelper']]]
+  ['hide',['Hide',['../a31273.html#a4555133e40101645bf4143a8b05c7f32',1,'covellite::rocket::Layer']]]
 ];

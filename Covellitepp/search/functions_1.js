@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['close',['Close',['../a00033.html#a8b3350ac41d32c1dd545c9d09d35187f',1,'covellite::rocket::File']]],
-  ['commandhandler',['CommandHandler',['../a00022.html#a3f0f02fa7ae0c29ecf3a6ef90be18dd7',1,'covellite::Application']]],
-  ['createmainwindow',['CreateMainWindow',['../a00022.html#a3133848217f57668e63f10f43e0453d1',1,'covellite::Application']]]
+  ['back',['Back',['../a31241.html#ad882e042037583e14486f9568b28a709',1,'covellite::Window']]]
 ];
