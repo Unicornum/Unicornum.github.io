@@ -1,5 +1,7 @@
 var modules =
 [
-    [ "Controller", "a30897.html", "a30897" ],
-    [ "Main", "a30898.html", "a30898" ]
+    [ "Controller", "a31011.html", "a31011" ],
+    [ "Main", "a31012.html", "a31012" ],
+    [ "Model", "a31013.html", "a31013" ],
+    [ "View", "a31014.html", "a31014" ]
 ];

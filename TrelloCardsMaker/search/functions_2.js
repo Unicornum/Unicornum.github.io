@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setboardname',['SetBoardName',['../a31023.html#a08fb5fa20063d4ae8fae7bbb635627c7',1,'view::CreateCard::SetBoardName()'],['../a31035.html#a94c95e67b782e3f976f73a81b987e80a',1,'view::ICreateCard::SetBoardName()']]]
+  ['createcard',['CreateCard',['../a31131.html#a107df31b95d54b6afe2789c42a24dfd9',1,'model::Boards::CreateCard()'],['../a31143.html#a29b62b10adba33a71a7571aba9a38ca1',1,'model::IBoards::CreateCard()']]]
 ];

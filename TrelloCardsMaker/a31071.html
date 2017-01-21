@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TrelloCardsMaker: Исходные требования</title>
+<title>TrelloCardsMaker: Класс controller::DoSendCreateCard</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TrelloCardsMaker
-   &#160;<span id="projectnumber">Версия: 0.0.3 Revision: 192 Platform: ARM Build: 23:42 06 Январь 2017</span>
+   &#160;<span id="projectnumber">Версия: 0.0.4 Revision: 247 Platform: ARM Build: 11:48 21 Январь 2017</span>
    </div>
    <div id="projectbrief">Android offline client cards maker</div>
   </td>
@@ -82,68 +82,48 @@ $(document).ready(function(){initNavTree('a31071.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="a31068.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Исходные требования </div>  </div>
+<div class="title">Класс controller::DoSendCreateCard<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a31011.html">Controller</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Прототип </h2>
-<p><a href="https://cacoo.com/diagrams/4AnTaCRibOjfnrco" title="Trello Cards Maker Prototype">Trello Cards Maker Prototype</a></p>
-<h1>Требования первого этапа (версия 0.1.0) </h1>
-<p>Программа должна:</p><ul>
-<li> <input type="checkbox" disabled>  Корректно работать (масштабироваться) при любых ориентации/разрешениях экрана используемого устройства.</li>
-<li> <input type="checkbox" disabled>  Позволять вводить текст создаваемой карточки при отсутствии доступа в Интернет с автоматической отправкой карточек при появлении такого доступа.</li>
-<li> <input type="checkbox" disabled>  Хранить неотправленные карточки в месте, доступном в 'ручном' режиме.</li>
-<li> <input type="checkbox" disabled>  Хранить неотправленные карточки в формате, пригодном для вставки в Trello вручную (в случае необходимости).</li>
-<li> <input type="checkbox" disabled>  Изменения данных программы должны сохраняться таким образом, чтобы при нажатии кнопки 'Home' в любой момент времени не происходила потеря изменений.</li>
+
+<p>Класс входит в проект <a class="el" href="a31274.html">Controller</a> <br />
+ Класс, обеспечивающий логику работы сигнала OnSend интерфейса <a class="el" href="a31207.html" title="Класс входит в проект View   Интерфейсный класс представления, отвечающего за создание карточек...">view::ICreateCard</a>.  
+ <a href="a31071.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00389_source.html">DoSendCreateCard.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:NonBlockingSignal&lt; const ::view::ICreateCard *&gt;.</p>
+<div class="dynheader">
+Граф связей класса controller::DoSendCreateCard:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31069.png" border="0" usemap="#controller_1_1_do_send_create_card_coll__map" alt="Collaboration graph"/></div>
+<map name="controller_1_1_do_send_create_card_coll__map" id="controller_1_1_do_send_create_card_coll__map">
+<area shape="rect" id="node2" href="a31143.html" title="Класс входит в проект Model &#160;&#160;Интерфейсный класс модели. " alt="" coords="21,6,208,157"/>
+</map>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a31274.html">Controller</a> <br />
+ Класс, обеспечивающий логику работы сигнала OnSend интерфейса <a class="el" href="a31207.html" title="Класс входит в проект View   Интерфейсный класс представления, отвечающего за создание карточек...">view::ICreateCard</a>. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>04 Январь 2017 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Controller/Controller/<a class="el" href="a00389_source.html">DoSendCreateCard.hpp</a></li>
+<li>Solution/Solution/Controller/Controller/DoSendCreateCard.cpp</li>
 </ul>
-<h2>Окно создания карточки </h2>
-<p>Содержит:</p><ul>
-<li> <input type="checkbox" disabled>  Многострочное поле ввода текста создаваемой карточки.</li>
-<li> <input type="checkbox" disabled>  Кнопку 'Отправить', при нажатии которой карточка с указанным текстом отправляется, а поле ввода текста очищается (чтобы можно было сразу вводить текст следующей карточки).</li>
-<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа завершает работу.</li>
-</ul>
-<h1>Далее... </h1>
-<p>Программа должна:</p><ul>
-<li> <input type="checkbox" disabled>  Предоставлять выбор доски Trello, для которой создается карточка.</li>
-<li> <input type="checkbox" disabled>  Позволять добавлять/настраивать/удалять доски Trello для отправки карточек.</li>
-<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' в окне создания карточки происходит переход к окну выбора доски Trello.</li>
-</ul>
-<h2>Окно выбора доски Trello </h2>
-<ul>
-<li> <input type="checkbox" disabled>  Начальное окно при запуске/активации программы.</li>
-<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа должна возвращать управление Android'y, оставляя рабочий поток, пытающийся отправлять неотправленные карточки в случае их наличия.</li>
-</ul>
-<p>Содержит:</p><ul>
-<li> <input type="checkbox" disabled>  Кнопку создания новой доски Trello (при нажатии которой программа переключается на окно создания доски Trello).</li>
-<li> <input type="checkbox" disabled>  Кнопку 'Архив досок' при нажатии которой программа переключается на окно списка архивированных досок.</li>
-<li> <input type="checkbox" disabled>  Доступные доски Trello в виде списка в визуально отделенном от кнопок создания доски/архива разделе.</li>
-</ul>
-<h3>Строка списка выбора доски Trello</h3>
-<ul>
-<li> <input type="checkbox" disabled>  Кнопка с именем доски Trello (при нажатии кнопки программа переключается на окно создания карточки).</li>
-<li> <input type="checkbox" disabled>  Кнопка редактирования доски Trello (при нажатии кнопки программа переключается на окно создания доски Trello).</li>
-<li> <input type="checkbox" disabled>  Кнопка удаления доски Trello (при нажатии кнопки доска переноситься в архивный список).</li>
-</ul>
-<h2>Окно создания доски Trello </h2>
-<p>Содержит:</p><ul>
-<li> <input type="checkbox" disabled>  Поле ввода имени доски.</li>
-<li> <input type="checkbox" disabled>  Поле ввода почты, на которую будут отправляться карточки.</li>
-<li> <input type="checkbox" disabled>  Кнопку принятия изменений, при нажатии которой программа должна переключиться на окно выбора доски Trello с внесением изменений.</li>
-<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа должна переключиться на окно выбора доски Trello без внесения изменений.</li>
-<li> <input type="checkbox" disabled>  Если кнопка 'Назад' была нажата после создания новой доски, созданная доска 'по умолчанию' должна быть удалена.</li>
-</ul>
-<h2>Окно списка архивных досок Trello </h2>
-<ul>
-<li> <input type="checkbox" disabled>  Содержит архивные доски в виде списка конопок, при нажатии которых выбранная доска переносится в список досок, доступных для выбора в окне выбора доски Trello.</li>
-<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа переключается на окно выбора доски Trello. </li>
-</ul>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a31076.html">Trello Cards Maker</a></li>
-    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Пт 6 Янв 2017 23:42:43. Создано системой
+    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a31071.html">DoSendCreateCard</a></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Сб 21 Янв 2017 11:48:30. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

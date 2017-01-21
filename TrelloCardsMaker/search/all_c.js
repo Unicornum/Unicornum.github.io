@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['window',['Window',['../a30979.html',1,'main']]],
-  ['window_5ftest_2ecpp',['Window_test.cpp',['../a30797.html',1,'']]]
+  ['view',['View',['../a31014.html',1,'']]],
+  ['version_2ehpp',['Version.hpp',['../a01106.html',1,'']]],
+  ['view_2ehpp',['View.hpp',['../a30995.html',1,'']]],
+  ['view',['View',['../a31277.html',1,'SolutionPage']]]
 ];
