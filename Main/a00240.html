@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Разработка для Android на С++</title>
+<title>UnicornumVerum: Сборка Boost для Android</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,104 +58,46 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="a00239.html">Разработка для Android на С++</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Разработка для Android на С++ </div>  </div>
+<div class="title">Сборка Boost для Android </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Исследование проводилось в расчете на использование Samsung Galaxy S Duos:</p><ul>
-<li>Android 4.0.4 (API 15).</li>
-<li>Сборка для ARM (armeabi-v7a).</li>
-</ul>
-<h1>Окружение </h1>
+<div class="textblock"><h2>Сборка при помощи Clang </h2>
 <ul>
-<li>Android SDK - устанавливается вместе с Android Studio (путь не должен содержать пробелов).</li>
-<li>Android NDK (путь не должен содержать пробелов).</li>
-<li>JDK.</li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=./stage/lib/libboost.a</div><div class="line">  </div><div class="line">rmdir bin.v2 /s /q</div><div class="line">rmdir stage /s /q</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/llvm/prebuilt/windows/bin;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin;</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">--without-python ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;--sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-std=c++1y -frtti -fexceptions -fshort-wchar -O3 -g0&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%<span class="comment">/*.o</span></div><div class="line"><span class="comment">  </span></div><div class="line"><span class="comment">* </span></div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>Все внешние инструменты ставить x86 версии.</dd>
-<dd>
-Настройка Android SDK производится запуском утилиты SDK Manager.exe в корневой папке SDK (нужно будет докачать содержимое раздела Android 4.0.3 (API 15)).</dd></dl>
-<p>Тестировалось на:</p><ul>
-<li>Android Studio 2.1 (Android NDK r12).</li>
-<li>JDK 1.8 r101.</li>
-<li>CrystaX 10.3.2 (эквивалент Android NDK r10e)</li>
-</ul>
-<h1>Предопределенные макросы </h1>
-<ul>
-<li>__ANDROID__ - общий макрос признака, что используется код для Android.</li>
-<li>__ANDROID_API__ - номер текущего используемого API, например, 15.</li>
-</ul>
-<h1>Visual Studio 2015 </h1>
-<h2>Установка </h2>
-<ul>
-<li>Скачать Visual Studio 2015 Community, при установке в настройках указать компоненты для скачивания для разработки под Android (будут скачаны x86 версии всех компонентов, не последние версии; для указания путей к установленным вручную настроить здесь:</li>
-</ul>
-<div class="image">
-<img src="Vs2015.png" alt="Vs2015.png"/>
-</div>
-<h2>Использование </h2>
-<p>Содержит настроенные примеры проектов:</p>
-<div class="image">
-<img src="Vs2015.templates.png" alt="Vs2015.templates.png"/>
-</div>
-<p>Для сборки под Samsung Galaxy Duos настройки проекта *.NativeActivity должны выглядеть так:</p>
-<div class="image">
-<img src="Vs2015.props.png" alt="Vs2015.props.png"/>
-</div>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>"Целевой уровень API" можно указать любой - это не влияет на компиляцию/работу программы (насколько удалось выяснить).</li>
-<li>В настройках языка можно указать версию стандарта C++ (и получить доступ к std::u32string!). <br />
-</li>
-<li>Образец проекта собирается, запускается на телефоне, но VS2015 не видит телефона и поэтому невозможна отладка на телефоне. <br />
-</li>
-<li>Отладка на эмуляторе нормально работает.</li>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
+<li>Android NDK r12.</li>
+<li>Boost 1.61.</li>
 </ul>
 </dd></dl>
-<h2>CrystaX </h2>
+<h2>Сборка при помощи gcc </h2>
 <ul>
-<li>Используется вместо Android NDK.</li>
-<li>Работает сборка только при помощи GCC4.9.</li>
+<li>В папке $(BoostRoot)/tools/build/src создать файл с именем user-config.jam, содержащий (заменить путь к Android NDK при необходимости): <div class="fragment"><div class="line">ANDROID_NDK = d:/android/ndk ;</div><div class="line"></div><div class="line"><span class="keyword">using</span> gcc : android : $(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :</div><div class="line">&lt;compileflags&gt;--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward</div><div class="line">&lt;compileflags&gt;-o</div><div class="line">&lt;compileflags&gt;-xc++-header</div><div class="line">&lt;compileflags&gt;-xc++</div><div class="line">&lt;compileflags&gt;-std=c++1y</div><div class="line">&lt;compileflags&gt;-fexceptions</div><div class="line">&lt;compileflags&gt;-O3</div><div class="line">&lt;compileflags&gt;-DNDEBUG</div><div class="line">&lt;compileflags&gt;-D__ANDROID__</div><div class="line">&lt;compileflags&gt;-D__SOFTFP__</div><div class="line">&lt;compileflags&gt;-D__arm__</div><div class="line">&lt;compileflags&gt;-g2</div><div class="line">&lt;compileflags&gt;-lstdc++</div><div class="line">&lt;compileflags&gt;-D__GLIBC__</div><div class="line">&lt;compileflags&gt;-DBOOST_FILESYSTEM_VERSION=3</div><div class="line">&lt;linkflags&gt;-r<span class="stringliteral">&quot;s&quot;</span></div><div class="line">&lt;archiver&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ar</div><div class="line">&lt;ranlib&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ranlib</div><div class="line">;</div></div><!-- fragment --></li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий: <div class="fragment"><div class="line">b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4</div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>CrystaX требует, чтобы wchar_t была размером 4 байта.</dd></dl>
-<h3>Для статической линковки с CrystaX:</h3>
-<ul>
-<li>Добавить в свойствах проекта ("событие перед сборкой") копирование файла libcrystax.a (простое добавление пути к файлу не поможет!), например: <div class="fragment"><div class="line">copy /B /Y $(VS_NdkRoot)\sources\crystax\libs\$(TargetArchAbi)\libcrystax.a $(TargetDir)</div></div><!-- fragment --></li>
-<li>В свойствах компоновщика "Дополнительные каталоги библиотек" добавить папку результата копирования ($(TargetDir)).</li>
-<li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
+<li>Android NDK r12.</li>
+<li>Boost 1.60.</li>
 </ul>
-<h3>Альтернативный вариант использования CrystaX</h3>
-<p>Можно использовать CrystaX совместно с Android NDK - это позволит получить доступ к возможностям, которые отсутствуют в последнем (например, поддержку локалей):</p><ul>
-<li>Установить в настройках Visual Studio путь к Android NDK.</li>
-<li>Скопировать файл libcrystax.a в Externals.</li>
-<li>В свойствах компоновщика в "Дополнительные каталоги библиотек" добавить папку, в которую скопирована библиотека.</li>
-<li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
-</ul>
-<h1>Сторонние библиотеки </h1>
-<p><a class="el" href="a00241.html">Сборка Boost для Android</a></p>
-<p><a class="el" href="a00242.html">Сборка Cocos2d для Android</a></p>
-<h3>Сборка libRocket</h3>
-<p><a href="https://github.com/Unicornum/Android/tree/master/libRocket" title="libRocket build">Сборка libRocket</a></p>
-<h3>Сборка Crypto++</h3>
-<ul>
-<li>Добавить в Libs проект статической библиотеки для Android.</li>
-<li>Добавить в этот проект все .cpp файлы из папки cryptopp.</li>
-<li>Собрать проект.</li>
-</ul>
-<h3>Сборка OpenFrameworks</h3>
-<ul>
-<li>Собрать не удалось (ссылки на несуществующие функции, двойные определения функций, не найденные функции стандартной библиотеки).</li>
-<li>В целом - ощущение, что работа нативного кода завязана на совместную работу с кодом java.</li>
-<li>Содержит уже собранные под Android (armeabi-v7a и x86) библиотеки: freeimage, freetype, glu, openssl, poco, tess.</li>
-</ul>
-<h1>Проблемы и решения </h1>
-<p><a class="el" href="a00244.html">Ввод русских букв с клавиатуры</a></p>
-<p><a class="el" href="a00243.html">Разные приложения для разных конфигураций проекта</a> </p>
+</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Для Boost 1.61 сборка при помощи gcc не работает, b2.exe при запуске просто висит безо всякого видимого результата. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 18:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 22:58:13. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

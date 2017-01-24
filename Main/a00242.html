@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Сборка Cocos2d для Android</title>
+<title>UnicornumVerum: Разные приложения для разных конфигураций проекта</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,53 +60,37 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00240.html">Разработка для Android на С++</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00239.html">Разработка для Android на С++</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Сборка Cocos2d для Android </div>  </div>
+<div class="title">Разные приложения для разных конфигураций проекта </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Создание проекта </h2>
-<dl class="section pre"><dt>Предусловие</dt><dd>Для сборки требуются установленные Android SDK, NDK и Apache Ant.</dd>
-<dd>
-Сборка производилась:<ul>
-<li>21.10.2016</li>
-<li>Android SDK (Android Studio 2.1).</li>
-<li>Crystax-ndk-10.3.2</li>
-<li>apache-ant-1.9.7</li>
-<li>cocos2d-x-3.13.1</li>
-<li>python-2.7.12</li>
-</ul>
-</dd></dl>
-<p><br />
-</p><ul>
-<li>Скачать <a href="https://www.python.org/downloads/" title="Python download">Python</a>, установить его и добавить путь к файлу python.exe к переменной окружения PATH (<b>ВАЖНО!</b> Cocos2d требует python версий 2.7.x).</li>
-<li>Скачать архив с <a href="http://cocos2d-x.org/download" title="Cocos2d download">Cocos2d</a> и распаковать его.</li>
-<li>Из консоли в папке Cocos2d (запуск из консоли нужен из-за того, что потребуется ввести пути к Android SDK, NDK и Apache Ant; либо можно предварительно установить переменные окружения <b>ANDROID_SDK_ROOT</b>, <b>NDK_ROOT</b> и <b>ANT_ROOT</b>) запустить: <div class="fragment"><div class="line">python setup.py</div></div><!-- fragment --> Будут добавлены переменные окружения для Cocos.</li>
-<li>В консоли (в папке, в которой нужно создать проект; <b>ВАЖНО!</b> В пути не должно быть русских букв!) для сборки библиотеки выполнить: <div class="fragment"><div class="line">cocos <span class="keyword">new</span> Cocos2d -l cpp -d Cocos2dLib</div></div><!-- fragment --></li>
-<li>В сгенерированную папку Cocos2dLib\Cocos2d скопировать содержимое <a href="https://github.com/Unicornum/Android/tree/master/Cocos2d/v3.13.1/Vs2015" title="Visual Studio Cocos Solution">VSSolution</a>.</li>
-</ul>
-<p>Решение в папке Cocos2dLib\Cocos2d\proj.visualstudio можно собрать и использовать для создания приложений.</p>
-<h2>Сборка Cocos2d-x как статической библиотеки </h2>
+<div class="textblock"><h2>Проблема </h2>
+<p>Работа над текущей версией программы происходит в Debug версии проекта, при этом Release версия должна оставаться работоспособной, чтобы ее можно было использовать по назначению (при этом также необходимо обеспечить независимость данных, используемых разными конфигурациями программ).</p>
+<h2>Решение </h2>
+<p>Для того, чтобы Android воспринимал Release и Debug версии программы как два различных (независимых) приложения (включая разные пути к рабочим папкам), необходимо сделать следующее:</p>
 <ul>
-<li>В папке Cocos2dLib\Cocos2d\proj.visualstudio открыть решение, у проекта <b>Cocos2dcpp</b> удалить папку jni, формат отладочной информации поставить в <b>Нет</b>, изменить свойства проекта:</li>
+<li>Добавить в настройках проекта Packaging к уникальному имени приложения имя конфигурации:</li>
 </ul>
 <div class="image">
-<img src="Cocos2dProps.png" alt="Cocos2dProps.png"/>
+<img src="app_unique_name.png" alt="app_unique_name.png"/>
 </div>
-<p>и собрать Release и Debug версии.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Статическая библиотека таким образом собирается, <b>НО</b>(!), во-первых cpu-features нужно собирать как отдельную библиотеку (и ставить ее после webp), во-вторых - при построении .so файла с использованием такой библиотеки он не задействует файлы, указанные в дополнительных зависимостях компоновщика (libOpenSLES.so, libEGL.so, libz.a), из-за чего приходится подключать libz явным образом (и подхватывается библиотека, конфликтующая с libpng) и файл результата оказывается гораздо меньшего размера и не работает при запуске на Android-устройстве.</dd></dl>
-<p>Содержит собранные для Android библиотеки: chipmunk, curl, freetype2, jpeg, png, tiff, webp, websockets, zlib.</p>
-<p>Источники:</p><ul>
-<li><a href="https://blogs.msdn.microsoft.com/vcblog/2016/07/12/cocos2d-x-visual-studio-android-project/" title="Статья на сайте Microsoft">Cocos2dVSMicrosoft</a></li>
-<li><a href="http://cocos2d-x.org/docs/installation/Android-VisualStudio/" title="Статья на сайте Cocos2d">Cocos2dVsCocos</a> </li>
+<ul>
+<li>В AndroidManifest.xml заменить короткое имя запускаемого Activity на полное:</li>
 </ul>
-</div></div><!-- contents -->
+<div class="fragment"><div class="line">&lt;activity android:name=<span class="stringliteral">&quot;com.PackageName.ActivityName&quot;</span> ...</div></div><!-- fragment --><p>где com.PackageName - это имя заданное в java файле как</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.PackageName;</div></div><!-- fragment --><p> , а ActivityName - имя главного класса Activity, объект которого создается при старте программы, т.е.</p>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>ActivityName <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  ...</div></div><!-- fragment --><h3>Различные имена приложения для различных конфигураций</h3>
+<p>В AndroidManifest.xml изменить</p>
+<div class="fragment"><div class="line">&lt;application android:label=<span class="stringliteral">&quot;@string/$(ApplicationName)&quot;</span> ... &gt;</div><div class="line">  &lt;activity android:label=<span class="stringliteral">&quot;@string/$(ApplicationName)&quot;</span> ... &gt;</div><div class="line">    ...</div></div><!-- fragment --><p>В string.xml</p>
+<div class="fragment"><div class="line">&lt;resources&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;UnicornumVerum.Example.Debug&quot;</span>&gt;Example (debug)&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;UnicornumVerum.Example.Release&quot;</span>&gt;Example&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  ...</div></div><!-- fragment --><h3>Запуск приложения в Launcher'e</h3>
+<div class="fragment"><div class="line"><span class="keyword">set</span> PACK_NAME=Example</div><div class="line">  </div><div class="line"><span class="keyword">set</span> RUN_ADB=$(ANDROID_SDK_ROOT)\platform-tools\adb.exe</div><div class="line">  </div><div class="line">%RUN_ADB% install -r $(SolutionDir)$(Configuration)\%PACK_NAME%.apk</div><div class="line">%RUN_ADB% shell am start -n com.UnicornumVerum.%PACK_NAME%.$(Configuration)/com.%PACK_NAME%.%PACK_NAME%</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 18:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 22:58:13. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

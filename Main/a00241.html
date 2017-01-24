@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Сборка Boost для Android</title>
+<title>UnicornumVerum: Сборка Cocos2d для Android</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,44 +60,53 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00240.html">Разработка для Android на С++</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00239.html">Разработка для Android на С++</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Сборка Boost для Android </div>  </div>
+<div class="title">Сборка Cocos2d для Android </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Сборка при помощи Clang </h2>
-<ul>
-<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
-<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=./stage/lib/libboost.a</div><div class="line">  </div><div class="line">rmdir bin.v2 /s /q</div><div class="line">rmdir stage /s /q</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/llvm/prebuilt/windows/bin;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin;</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">--without-python ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;--sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-std=c++1y -frtti -fexceptions -fshort-wchar -O3 -g0&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%<span class="comment">/*.o</span></div><div class="line"><span class="comment">  </span></div><div class="line"><span class="comment">* </span></div></div><!-- fragment --> и запустить его на исполнение.</li>
-<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
-<li>1.09.2016.</li>
-<li>Android NDK r12.</li>
-<li>Boost 1.61.</li>
-</ul>
-</dd></dl>
-<h2>Сборка при помощи gcc </h2>
-<ul>
-<li>В папке $(BoostRoot)/tools/build/src создать файл с именем user-config.jam, содержащий (заменить путь к Android NDK при необходимости): <div class="fragment"><div class="line">ANDROID_NDK = d:/android/ndk ;</div><div class="line"></div><div class="line"><span class="keyword">using</span> gcc : android : $(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :</div><div class="line">&lt;compileflags&gt;--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward</div><div class="line">&lt;compileflags&gt;-o</div><div class="line">&lt;compileflags&gt;-xc++-header</div><div class="line">&lt;compileflags&gt;-xc++</div><div class="line">&lt;compileflags&gt;-std=c++1y</div><div class="line">&lt;compileflags&gt;-fexceptions</div><div class="line">&lt;compileflags&gt;-O3</div><div class="line">&lt;compileflags&gt;-DNDEBUG</div><div class="line">&lt;compileflags&gt;-D__ANDROID__</div><div class="line">&lt;compileflags&gt;-D__SOFTFP__</div><div class="line">&lt;compileflags&gt;-D__arm__</div><div class="line">&lt;compileflags&gt;-g2</div><div class="line">&lt;compileflags&gt;-lstdc++</div><div class="line">&lt;compileflags&gt;-D__GLIBC__</div><div class="line">&lt;compileflags&gt;-DBOOST_FILESYSTEM_VERSION=3</div><div class="line">&lt;linkflags&gt;-r<span class="stringliteral">&quot;s&quot;</span></div><div class="line">&lt;archiver&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ar</div><div class="line">&lt;ranlib&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ranlib</div><div class="line">;</div></div><!-- fragment --></li>
-<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
-<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий: <div class="fragment"><div class="line">b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4</div></div><!-- fragment --> и запустить его на исполнение.</li>
-<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
-<li>1.09.2016.</li>
-<li>Android NDK r12.</li>
-<li>Boost 1.60.</li>
+<div class="textblock"><h2>Создание проекта </h2>
+<dl class="section pre"><dt>Предусловие</dt><dd>Для сборки требуются установленные Android SDK, NDK и Apache Ant.</dd>
+<dd>
+Сборка производилась:<ul>
+<li>21.10.2016</li>
+<li>Android SDK (Android Studio 2.1).</li>
+<li>Crystax-ndk-10.3.2</li>
+<li>apache-ant-1.9.7</li>
+<li>cocos2d-x-3.13.1</li>
+<li>python-2.7.12</li>
 </ul>
 </dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Для Boost 1.61 сборка при помощи gcc не работает, b2.exe при запуске просто висит безо всякого видимого результата. </dd></dl>
+<p><br />
+</p><ul>
+<li>Скачать <a href="https://www.python.org/downloads/" title="Python download">Python</a>, установить его и добавить путь к файлу python.exe к переменной окружения PATH (<b>ВАЖНО!</b> Cocos2d требует python версий 2.7.x).</li>
+<li>Скачать архив с <a href="http://cocos2d-x.org/download" title="Cocos2d download">Cocos2d</a> и распаковать его.</li>
+<li>Из консоли в папке Cocos2d (запуск из консоли нужен из-за того, что потребуется ввести пути к Android SDK, NDK и Apache Ant; либо можно предварительно установить переменные окружения <b>ANDROID_SDK_ROOT</b>, <b>NDK_ROOT</b> и <b>ANT_ROOT</b>) запустить: <div class="fragment"><div class="line">python setup.py</div></div><!-- fragment --> Будут добавлены переменные окружения для Cocos.</li>
+<li>В консоли (в папке, в которой нужно создать проект; <b>ВАЖНО!</b> В пути не должно быть русских букв!) для сборки библиотеки выполнить: <div class="fragment"><div class="line">cocos <span class="keyword">new</span> Cocos2d -l cpp -d Cocos2dLib</div></div><!-- fragment --></li>
+<li>В сгенерированную папку Cocos2dLib\Cocos2d скопировать содержимое <a href="https://github.com/Unicornum/Android/tree/master/Cocos2d/v3.13.1/Vs2015" title="Visual Studio Cocos Solution">VSSolution</a>.</li>
+</ul>
+<p>Решение в папке Cocos2dLib\Cocos2d\proj.visualstudio можно собрать и использовать для создания приложений.</p>
+<h2>Сборка Cocos2d-x как статической библиотеки </h2>
+<ul>
+<li>В папке Cocos2dLib\Cocos2d\proj.visualstudio открыть решение, у проекта <b>Cocos2dcpp</b> удалить папку jni, формат отладочной информации поставить в <b>Нет</b>, изменить свойства проекта:</li>
+</ul>
+<div class="image">
+<img src="Cocos2dProps.png" alt="Cocos2dProps.png"/>
+</div>
+<p>и собрать Release и Debug версии.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Статическая библиотека таким образом собирается, <b>НО</b>(!), во-первых cpu-features нужно собирать как отдельную библиотеку (и ставить ее после webp), во-вторых - при построении .so файла с использованием такой библиотеки он не задействует файлы, указанные в дополнительных зависимостях компоновщика (libOpenSLES.so, libEGL.so, libz.a), из-за чего приходится подключать libz явным образом (и подхватывается библиотека, конфликтующая с libpng) и файл результата оказывается гораздо меньшего размера и не работает при запуске на Android-устройстве.</dd></dl>
+<p>Содержит собранные для Android библиотеки: chipmunk, curl, freetype2, jpeg, png, tiff, webp, websockets, zlib.</p>
+<p>Источники:</p><ul>
+<li><a href="https://blogs.msdn.microsoft.com/vcblog/2016/07/12/cocos2d-x-visual-studio-android-project/" title="Статья на сайте Microsoft">Cocos2dVSMicrosoft</a></li>
+<li><a href="http://cocos2d-x.org/docs/installation/Android-VisualStudio/" title="Статья на сайте Cocos2d">Cocos2dVsCocos</a> </li>
+</ul>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 18:11:37. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 22:58:13. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
