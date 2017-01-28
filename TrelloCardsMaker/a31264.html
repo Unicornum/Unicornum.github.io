@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TrelloCardsMaker: Build</title>
+<title>TrelloCardsMaker: Класс model::IBoards</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,9 +30,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TrelloCardsMaker
-   &#160;<span id="projectnumber">Версия: 0.0.4 Revision: 247 Platform: ARM Build: 11:48 21 Январь 2017</span>
+   &#160;<span id="projectnumber">Версия: 0.1.0 Revision: 273 Platform: ARM Build: 20:10 28 Январь 2017</span>
    </div>
-   <div id="projectbrief">Android offline client cards maker</div>
+   <div id="projectbrief">Android offline client cards maker for Trello</div>
   </td>
  </tr>
  </tbody>
@@ -82,31 +82,79 @@ $(document).ready(function(){initNavTree('a31264.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a31261.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Build </div>  </div>
+<div class="title">Класс model::IBoards<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a31106.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Описание раздела </h1>
-<p>Раздел для проектов, собирающих весь набор компонентов.</p>
-<h2>Проект Clean </h2>
-<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом. </p><dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
-<h2>Проект BuildAll </h2>
-<p>Проект, предназначенный для сборки всех остальных проектов 'одним кликом'.</p><ul>
-<li>Должен зависеть ото всех остальных проектов раздела Build и Test.Solution.</li>
-<li>Используется для автоматической сборки скриптом BuildAll.cmd.</li>
+
+<p>Класс входит в проект <a class="el" href="a31437.html">Model</a> <br />
+ Интерфейсный класс модели.  
+ <a href="a31264.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a30908_source.html">IBoards.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:model::IBoards:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31263.png" border="0" usemap="#model_1_1_i_boards_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_i_boards_inherit__map" id="model_1_1_i_boards_inherit__map">
+<area shape="rect" id="node3" href="a31252.html" title="Класс входит в проект Model &#160;&#160;Класс главной &#39;модели&#39;. " alt="" coords="5,205,192,429"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса model::IBoards:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31262.png" border="0" usemap="#model_1_1_i_boards_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_i_boards_coll__map" id="model_1_1_i_boards_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac0ee51737e9764840d476573680c1a35"><td class="memItemLeft" align="right" valign="top"><a id="ac0ee51737e9764840d476573680c1a35"></a>
+virtual Path_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31264.html#ac0ee51737e9764840d476573680c1a35">GetPathToSourceFile</a> (void) const =0</td></tr>
+<tr class="memdesc:ac0ee51737e9764840d476573680c1a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения пути к файлу, из которого загружается информация о досках Trello. <br /></td></tr>
+<tr class="separator:ac0ee51737e9764840d476573680c1a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5630a0fa2531ee99756f5b7e5256f154"><td class="memItemLeft" align="right" valign="top"><a id="a5630a0fa2531ee99756f5b7e5256f154"></a>
+virtual BoardId_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31264.html#a5630a0fa2531ee99756f5b7e5256f154">GetCurrentBoard</a> (void) const =0</td></tr>
+<tr class="memdesc:a5630a0fa2531ee99756f5b7e5256f154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора текущей выбранной доски Trello. <br /></td></tr>
+<tr class="separator:a5630a0fa2531ee99756f5b7e5256f154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75ce14d1b149dd9671ed963336133e9"><td class="memItemLeft" align="right" valign="top"><a id="ad75ce14d1b149dd9671ed963336133e9"></a>
+virtual String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31264.html#ad75ce14d1b149dd9671ed963336133e9">GetBoardName</a> (BoardId_t) const =0</td></tr>
+<tr class="memdesc:ad75ce14d1b149dd9671ed963336133e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения имени доски Trello с указанным идентификатором. <br /></td></tr>
+<tr class="separator:ad75ce14d1b149dd9671ed963336133e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b62b10adba33a71a7571aba9a38ca1"><td class="memItemLeft" align="right" valign="top"><a id="a29b62b10adba33a71a7571aba9a38ca1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31264.html#a29b62b10adba33a71a7571aba9a38ca1">CreateCard</a> (BoardId_t, const String_t &amp;)=0</td></tr>
+<tr class="memdesc:a29b62b10adba33a71a7571aba9a38ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания карточки для доски с указанным идентификатором и заданным текстом. <br /></td></tr>
+<tr class="separator:a29b62b10adba33a71a7571aba9a38ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cd62a0e9220cd3a2eeb89f60375bc54"><td class="memItemLeft" align="right" valign="top"><a id="a9cd62a0e9220cd3a2eeb89f60375bc54"></a>
+virtual Strings_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31264.html#a9cd62a0e9220cd3a2eeb89f60375bc54">GetErrors</a> (void) const =0</td></tr>
+<tr class="memdesc:a9cd62a0e9220cd3a2eeb89f60375bc54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка ошибок, произошедших при загрузке модели. <br /></td></tr>
+<tr class="separator:a9cd62a0e9220cd3a2eeb89f60375bc54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a31437.html">Model</a> <br />
+ Интерфейсный класс модели. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>04 Январь 2017 <br />
+ 16 Январь 2017 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Model/Model/<a class="el" href="a30908_source.html">IBoards.hpp</a></li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>Проект BuildAll понадобился потому, что сборка при помощи MsBuild всего решения приводит к сборке выгруженных проектов.</dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd>10.05.2016: Параметры MsBuild '/p:DebugType=none;DebugSymbols=false' не работают для проектов lib, оставлены для ускорения сборки exe и dll.</dd></dl>
-<h2>Проект Launcher </h2>
-<p>Проект для установки и запуска собранного .apk файла на устройстве/эмуляторе.</p>
-<p>В проект добавлен не существующий файл, чтобы он собирался заново при каждой сборке (специфика проектов Visual Studio). </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a31272.html">Trello Cards Maker</a></li>
-    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Сб 21 Янв 2017 11:48:29. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a31264.html">IBoards</a></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Сб 28 Янв 2017 20:10:54. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

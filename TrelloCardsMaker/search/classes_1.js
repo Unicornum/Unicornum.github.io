@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['boardinfo',['BoardInfo',['../a31127.html',1,'model::Boards']]],
-  ['boards',['Boards',['../a31131.html',1,'model']]]
+  ['boardinfo',['BoardInfo',['../a31248.html',1,'model']]],
+  ['boards',['Boards',['../a31252.html',1,'model']]]
 ];
