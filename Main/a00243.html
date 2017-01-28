@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Ввод русских букв с клавиатуры</title>
+<title>UnicornumVerum: Сборка Boost для Android</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -60,38 +60,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00239.html">Разработка для Android на С++</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00242.html">Разработка для Android на С++</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Ввод русских букв с клавиатуры </div>  </div>
+<div class="title">Сборка Boost для Android </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Проблема </h2>
-<p>Как оказалось, при нажатии кнопок клавиатуры в русской раскладке нативное приложение получает сообщения <b>AKEY_EVENT_ACTION_MULTIPLE</b> (вместо <b>AKEY_EVENT_ACTION_UP</b> и <b>AKEY_EVENT_ACTION_DOWN</b>). При этом функции AKeyEvent_getKeyCode(), AKeyEvent_getScanCode(), AKeyEvent_getFlags(), AKeyEvent_getMetaState() и AKeyEvent_getRepeatCount() возвращают 0.</p>
-<p>Кроме того, для ASCII символов коды, возвращаемые функцией AKeyEvent_getKeyCode() не являются Unicode символами соответствующих символов и требуют дополнительное преобразование с вызовом функций java.</p>
-<h2>Решение </h2>
-<p>Для того, чтобы в нативном приложении можно было сразу получать Unicode коды нажатых кнопок клавиатуры (включая не ASCII символы), необходимо сделать следующее:</p><ul>
-<li>Проект, создающий результатирующий APK файл программы следует создавать как "Простое приложение Android".</li>
-</ul>
-<div class="image">
-<img src="Vs2015.Simple.png" alt="Vs2015.Simple.png"/>
-</div>
+<div class="textblock"><h2>Сборка при помощи Clang </h2>
 <ul>
-<li>В java коде этого проекта унаследовать класс от NativeActivity и переопределить в нем функцию dispatchKeyEvent(): <div class="fragment"><div class="line"><span class="keyword">package </span>com.Example;</div><div class="line">    </div><div class="line"><span class="keyword">import</span> android.app.NativeActivity;</div><div class="line"><span class="keyword">import</span> android.view.KeyEvent;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">boolean</span> dispatchKeyEvent(KeyEvent event)</div><div class="line">  {</div><div class="line">    <span class="keywordtype">int</span> keyaction = <span class="keyword">event</span>.getAction();</div><div class="line">    <span class="keyword">final</span> <span class="keywordtype">int</span> ACTION_KEY_PRESSED = 32;</div><div class="line">    </div><div class="line">    <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_UP)</div><div class="line">    {</div><div class="line">      <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getUnicodeChar();</div><div class="line">      super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_MULTIPLE)</div><div class="line">    {</div><div class="line">      <span class="keywordflow">if</span> (event.getCharacters().length() == 1)</div><div class="line">      {</div><div class="line">        <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getCharacters().charAt(0);</div><div class="line">        <span class="keywordflow">return</span> super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">      }</div><div class="line">    }</div><div class="line">    </div><div class="line">    <span class="keywordflow">return</span> super.dispatchKeyEvent(event);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --></li>
-<li>В файл <b>AndroidManifest.xml</b> (в раздел <b>activity</b>) проекта добавить имя нативной библиотеки, которая будет загружаться при старте программы (без префикса lib и расширения .so), например для libRocket.so следует добавить: <div class="fragment"><div class="line">&lt;activity ...&gt;</div><div class="line">  &lt;meta-data android:name=<span class="stringliteral">&quot;android.app.lib_name&quot;</span></div><div class="line">             android:value=<span class="stringliteral">&quot;Rocket&quot;</span>/&gt;</div><div class="line">  ...</div><div class="line">&lt;/activity&gt;</div></div><!-- fragment --></li>
-<li>Добавить в ссылки проекту APK проект главной нативной библиотеки (.so).</li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий (<b>ANDROID_NDK</b> задает путь к (сюрприз!) ANDROID NDK, <b>RESULT</b> - к 'суммарному' файлу всех собранных библиотек): <div class="fragment"><div class="line"><span class="keyword">set</span> ANDROID_NDK=d:/android/ndk</div><div class="line"><span class="keyword">set</span> RESULT=./stage/lib/libboost.a</div><div class="line">  </div><div class="line">rmdir bin.v2 /s /q</div><div class="line">rmdir stage /s /q</div><div class="line">  </div><div class="line"><span class="keyword">set</span> PATH=%PATH%;%ANDROID_NDK%/toolchains/llvm/prebuilt/windows/bin;%ANDROID_NDK%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/arm-linux-androideabi/bin;</div><div class="line">  </div><div class="line">b2 toolset=clang-linux target-os=android link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4 ^</div><div class="line">--without-python ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-target armv7a-linux-android&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;--sysroot=%ANDROID_NDK%/platforms/android-15/arch-arm&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-I%ANDROID_NDK%/sources/cxx-stl/gnu-libstdc++/4.9/include/backward&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-std=c++1y -frtti -fexceptions -fshort-wchar -O3 -g0&quot;</span> ^</div><div class="line">cxxflags=<span class="stringliteral">&quot;-DNDEBUG -D__ANDROID__ -D__SOFTFP__ -D__arm__ -DBOOST_FILESYSTEM_VERSION=3&quot;</span></div><div class="line">  </div><div class="line"><span class="keyword">set</span> OUT_TMP_DIR=out_tmp_arm</div><div class="line">  </div><div class="line">rmdir %OUT_TMP_DIR% /s /q</div><div class="line">mkdir %OUT_TMP_DIR%</div><div class="line">cd %OUT_TMP_DIR%</div><div class="line">  </div><div class="line">FOR %%f in (..\stage\lib\*) DO ar xv %%f</div><div class="line">  </div><div class="line">cd ..</div><div class="line">  </div><div class="line">ar qv %RESULT% %OUT_TMP_DIR%<span class="comment">/*.o</span></div><div class="line"><span class="comment">  </span></div><div class="line"><span class="comment">* </span></div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
 </ul>
-<p>После приведенных манипуляций при нажатии кнопок клавиатуры нативное приложение будет получать сообщение, у которого:</p><ul>
-<li>Функция AInputEvent_getType(event) возвращает AINPUT_EVENT_TYPE_KEY.</li>
-<li>Функция AKeyEvent_getAction(event) возвращает ACTION_KEY_PRESSED (это код, заданный в java коде dispatchKeyEvent()).</li>
-<li>Функция AKeyEvent_getKeyCode(event) возвращает Unicode код символа нажатой кнопки. </li>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
+<li>Android NDK r12.</li>
+<li>Boost 1.61.</li>
 </ul>
+</dd></dl>
+<h2>Сборка при помощи gcc </h2>
+<ul>
+<li>В папке $(BoostRoot)/tools/build/src создать файл с именем user-config.jam, содержащий (заменить путь к Android NDK при необходимости): <div class="fragment"><div class="line">ANDROID_NDK = d:/android/ndk ;</div><div class="line"></div><div class="line"><span class="keyword">using</span> gcc : android : $(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-g++ :</div><div class="line">&lt;compileflags&gt;--sysroot=$(ANDROID_NDK)/platforms/android-15/arch-arm</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi-v7a/include</div><div class="line">&lt;compileflags&gt;-I$(ANDROID_NDK)/sources/cxx-stl/gnu-libstdc++/4.9/include/backward</div><div class="line">&lt;compileflags&gt;-o</div><div class="line">&lt;compileflags&gt;-xc++-header</div><div class="line">&lt;compileflags&gt;-xc++</div><div class="line">&lt;compileflags&gt;-std=c++1y</div><div class="line">&lt;compileflags&gt;-fexceptions</div><div class="line">&lt;compileflags&gt;-O3</div><div class="line">&lt;compileflags&gt;-DNDEBUG</div><div class="line">&lt;compileflags&gt;-D__ANDROID__</div><div class="line">&lt;compileflags&gt;-D__SOFTFP__</div><div class="line">&lt;compileflags&gt;-D__arm__</div><div class="line">&lt;compileflags&gt;-g2</div><div class="line">&lt;compileflags&gt;-lstdc++</div><div class="line">&lt;compileflags&gt;-D__GLIBC__</div><div class="line">&lt;compileflags&gt;-DBOOST_FILESYSTEM_VERSION=3</div><div class="line">&lt;linkflags&gt;-r<span class="stringliteral">&quot;s&quot;</span></div><div class="line">&lt;archiver&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ar</div><div class="line">&lt;ranlib&gt;$(ANDROID_NDK)/toolchains/arm-linux-androideabi-4.9/prebuilt/windows/bin/arm-linux-androideabi-ranlib</div><div class="line">;</div></div><!-- fragment --></li>
+<li>В папке $(BoostRoot) запустить bootstrap.bat.</li>
+<li>В папке $(BoostRoot) создать файл BuildAndroid.cmd, содержащий: <div class="fragment"><div class="line">b2 --without-python --without-thread toolset=gcc-android target-os=linux threading=multi link=<span class="keyword">static</span> runtime-link=<span class="keyword">static</span> -j 4</div></div><!-- fragment --> и запустить его на исполнение.</li>
+<li>Результат построения будет в папке $(BoostRoot)/stage/lib.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Сборка производилась:<ul>
+<li>1.09.2016.</li>
+<li>Android NDK r12.</li>
+<li>Boost 1.60.</li>
+</ul>
+</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Для Boost 1.61 сборка при помощи gcc не работает, b2.exe при запуске просто висит безо всякого видимого результата. </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вт 24 Янв 2017 22:58:13. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Сб 28 Янв 2017 20:39:19. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
