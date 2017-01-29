@@ -1,5 +1,5 @@
 var menudata={children:[
 {text:"Главная",url:"index.html"},
-{text:"Релизы",url:"a00247.html"},
-{text:"Документация",url:"a00248.html"},
-{text:"Обо мне",url:"a00249.html"}]}
+{text:"Релизы",url:"a00251.html"},
+{text:"Документация",url:"a00252.html"},
+{text:"Обо мне",url:"a00253.html"}]}
