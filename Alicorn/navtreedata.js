@@ -2,9 +2,9 @@ var NAVTREE =
 [
   [ "Libs", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a00001.html", null ],
-    [ "Список устаревших определений и описаний", "a00003.html", null ],
-    [ "Ошибки", "a00002.html", null ],
+    [ "Список задач", "a33014.html", null ],
+    [ "Список устаревших определений и описаний", "a33016.html", null ],
+    [ "Ошибки", "a33015.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -13,8 +13,7 @@ var NAVTREE =
       [ "Члены классов", "functions.html", [
         [ "Указатель", "functions.html", "functions_dup" ],
         [ "Функции", "functions_func.html", "functions_func" ],
-        [ "Переменные", "functions_vars.html", null ],
-        [ "Относящиеся к классу функции", "functions_rela.html", null ]
+        [ "Переменные", "functions_vars.html", null ]
       ] ]
     ] ],
     [ "Файлы", null, [
@@ -31,13 +30,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00095.html#af166d8934755b072c1c8bff34acc5e31",
-"a00180.html",
-"a00407_source.html",
-"a00667_source.html",
-"a01105.html",
-"dir_14780b88ac27b7aae2948d4c282f7961.html",
-"dir_ebff9f969c20aac9f8e4d10e9de77078.html"
+"a02126.html",
+"a33048.html#ga12fae53dd48adfd54cc17b98f46a3def",
+"a33613.html",
+"a35003.html",
+"a35556_source.html",
+"a36762.html",
+"dir_c4e084afe678ca50e02362250facb0e9.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

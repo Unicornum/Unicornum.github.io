@@ -5,10 +5,9 @@ var indexSectionsWithContent =
   2: "abcdefghilmnprstuvwx",
   3: "abcdefghilmoprstuwx",
   4: "mt",
-  5: "m",
-  6: "s",
-  7: "abcdefglmprstvwx",
-  8: "abcdeglpstvwÐ"
+  5: "mp",
+  6: "abcdefglmprstvwx",
+  7: "abcdeglpstvwÐ"
 };
 
 var indexSectionNames =
@@ -19,9 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "related",
-  7: "groups",
-  8: "pages"
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -32,8 +30,7 @@ var indexSectionLabels =
   3: "Функции",
   4: "Переменные",
   5: "Определения типов",
-  6: "Друзья",
-  7: "Группы",
-  8: "Страницы"
+  6: "Группы",
+  7: "Страницы"
 };
 

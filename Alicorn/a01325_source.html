@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Libs: Исходный файл Solution/Solution/Alicorn/Alicorn/include/alicorn/system/current-module.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Libs
+   &#160;<span id="projectnumber">Версия: 3.6.6 Revision: 2221 Platform: x64 Build: 16:32 04 Февраль 2017</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a01325_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">current-module.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\lib-info\system.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00668.html">alicorn\extension\boost\filesystem.forward.hpp</a>&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="a00881.html">alicorn\extension\std\string.forward.hpp</a>&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="a33063.html">alicorn</a></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>system</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a33761.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="a33761.html">CurrentModule</a> final</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">using</span> <a class="code" href="a33473.html">String_t</a> = <a class="code" href="a33473.html">::alicorn::extension::std::String</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">using</span> hModule_t = <span class="keywordtype">void</span> *;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">static</span> hModule_t <a class="code" href="a33761.html#a6f0d0a52d2721d339e89066c977e734e">GetHandle</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">static</span> Path_t <a class="code" href="a33761.html#a242ee88a2d3971c3d4558d7f888945ea">GetLocation</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <a class="code" href="a33473.html">String_t</a> <a class="code" href="a33761.html#aa7d0e950733e7644f483ce92c478ca73">GetName</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">static</span> Path_t <a class="code" href="a33761.html#a489c2d465f5699ea263d8c3c67c3de62">GetAppDataPath</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> Path_t <a class="code" href="a33761.html#a20d80d251982db969de7961d96ba805e">GetAppRootPath</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace system</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a00668_html"><div class="ttname"><a href="a00668.html">filesystem.forward.hpp</a></div></div>
+<div class="ttc" id="a33761_html_aa7d0e950733e7644f483ce92c478ca73"><div class="ttname"><a href="a33761.html#aa7d0e950733e7644f483ce92c478ca73">alicorn::system::CurrentModule::GetName</a></div><div class="ttdeci">static String_t GetName(void)</div><div class="ttdoc">Функция получения имени текущего модуля. </div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:39</div></div>
+<div class="ttc" id="a33063_html"><div class="ttname"><a href="a33063.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> aes256.hpp:7</div></div>
+<div class="ttc" id="a33761_html"><div class="ttname"><a href="a33761.html">alicorn::system::CurrentModule</a></div><div class="ttdoc">Класс входит в System   Класс получения информации о текущем модуле. </div><div class="ttdef"><b>Definition:</b> current-module.hpp:33</div></div>
+<div class="ttc" id="a33761_html_a242ee88a2d3971c3d4558d7f888945ea"><div class="ttname"><a href="a33761.html#a242ee88a2d3971c3d4558d7f888945ea">alicorn::system::CurrentModule::GetLocation</a></div><div class="ttdeci">static Path_t GetLocation(void)</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:26</div></div>
+<div class="ttc" id="a33761_html_a20d80d251982db969de7961d96ba805e"><div class="ttname"><a href="a33761.html#a20d80d251982db969de7961d96ba805e">alicorn::system::CurrentModule::GetAppRootPath</a></div><div class="ttdeci">static Path_t GetAppRootPath(void)</div><div class="ttdoc">Функция получения пути к корневой папке расположения программы. </div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:65</div></div>
+<div class="ttc" id="a00881_html"><div class="ttname"><a href="a00881.html">string.forward.hpp</a></div></div>
+<div class="ttc" id="a33761_html_a6f0d0a52d2721d339e89066c977e734e"><div class="ttname"><a href="a33761.html#a6f0d0a52d2721d339e89066c977e734e">alicorn::system::CurrentModule::GetHandle</a></div><div class="ttdeci">static hModule_t GetHandle(void)</div><div class="ttdoc">Функция получения хэндла текущего модуля. </div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:16</div></div>
+<div class="ttc" id="a33473_html"><div class="ttname"><a href="a33473.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк. </div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
+<div class="ttc" id="a33761_html_a489c2d465f5699ea263d8c3c67c3de62"><div class="ttname"><a href="a33761.html#a489c2d465f5699ea263d8c3c67c3de62">alicorn::system::CurrentModule::GetAppDataPath</a></div><div class="ttdeci">static Path_t GetAppDataPath(void)</div><div class="ttdoc">Функция получения пути к папке, содержащей рабочие данные программы. </div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:51</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_426ef1d738b7f1b400956ed3e7d64047.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_04fb435d45b5dbed9bbc47d799db3b8d.html">include</a></li><li class="navelem"><a class="el" href="dir_2319c5e3425f9a18d30387244cad830a.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_ccd484771dc7a600353febcf065ce5a3.html">system</a></li><li class="navelem"><b>current-module.hpp</b></li>
+    <li class="footer">Документация по Libs. Последние изменения: Сб 4 Фев 2017 16:32:35. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>
