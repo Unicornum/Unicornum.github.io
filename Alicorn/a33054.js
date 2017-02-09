@@ -1,11 +1,10 @@
 var a33054 =
 [
-    [ "IModel", "a34241.html", null ],
-    [ "Model", "a34245.html", [
-      [ "BuildPathToSection", "a34245.html#a0c097f184d0f8008705441c7e8f95f14", null ],
-      [ "GetSection", "a34245.html#a7fa27979818db9ba2e511c5a104fede8", null ],
-      [ "GetSections", "a34245.html#a1d58c80210dc15ee23204f0e046d63e5", null ],
-      [ "GetSettings", "a34245.html#aaf001e76c055fff1d90a75bb104a21e2", null ],
-      [ "SetValue", "a34245.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
-    ] ]
+    [ "AppData", "a33259.html", [
+      [ "Get", "a33259.html#af22b7d074b4d6cef9b30dfea7f97fe28", null ],
+      [ "GetInstance", "a33259.html#a1bbbcc7969f3750bb918f9004561b16b", null ],
+      [ "Init", "a33259.html#af28a241b36bb1d75d2e63bfb6600a55c", null ],
+      [ "Reset", "a33259.html#a9007f1114103ceb929b52322f25082e2", null ]
+    ] ],
+    [ "Environment", "a33263.html", null ]
 ];

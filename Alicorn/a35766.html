@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Libs: Файл Solution/Solution/Alicorn/Build/Logger/Test.Logger/mock.hpp</title>
+<title>Alicorn: Файл Solution/Solution/Alicorn/Alicorn/include/alicorn/extension/android.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -29,8 +29,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Libs
-   &#160;<span id="projectnumber">Версия: 3.6.6 Revision: 2221 Platform: x64 Build: 16:32 04 Февраль 2017</span>
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Версия: 3.6.7 Revision: 2249 Platform: x64 Build: 09:49 09 Февраль 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,83 +83,41 @@ $(document).ready(function(){initNavTree('a35766.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл mock.hpp</div>  </div>
+<div class="title">Файл android.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;atltime.h&gt;</code><br />
-<code>#include &quot;Mock\Namespaces.hpp&quot;</code><br />
-<code>#include &quot;Mock\TestReport.hpp&quot;</code><br />
-<code>#include &quot;Mock\RollingReport.hpp&quot;</code><br />
-<code>#include &quot;Mock\MultithreadReport.hpp&quot;</code><br />
-<code>#include &lt;<a class="el" href="a01061_source.html">alicorn\logger.hpp</a>&gt;</code><br />
-<code>#include &lt;alicorn\logger\core.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a35895_source.html">alicorn\version\version.hpp</a>&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\string.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00872.html">alicorn\extension\std\string\string.test.inl</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;android\native_activity.h&gt;</code><br />
+<code>#include &quot;android\app-data.hpp&quot;</code><br />
+<code>#include &quot;android\environment.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для mock.hpp:</div>
+Граф включаемых заголовочных файлов для android.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35767.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_logger_2_test_8_logger_2mock_8hpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_logger_2_test_8_logger_2mock_8hpp" id="_solution_2_solution_2_alicorn_2_build_2_logger_2_test_8_logger_2mock_8hpp">
-<area shape="rect" id="node13" href="a01061.html" title="alicorn\\logger.hpp" alt="" coords="1166,117,1305,144"/>
-<area shape="rect" id="node17" href="a00866_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="961,201,1121,242"/>
-<area shape="rect" id="node87" href="a35919_source.html" title="alicorn\\logger\\core.hpp" alt="" coords="426,291,600,317"/>
-<area shape="rect" id="node103" href="a35895.html" title="alicorn\\version\\version.hpp" alt="" coords="1855,117,2055,144"/>
-<area shape="rect" id="node112" href="a00872.html" title="alicorn\\extension\\std\l\\string\\string.test.inl" alt="" coords="2079,110,2240,151"/>
-<area shape="rect" id="node34" href="a01112_source.html" title="logger\\config&#45;value.hpp" alt="" coords="1012,456,1191,483"/>
-<area shape="rect" id="node41" href="a01184_source.html" title="logger\\report.hpp" alt="" coords="1694,208,1831,235"/>
-<area shape="rect" id="node78" href="a35838_source.html" title="logger\\message.hpp" alt="" coords="851,291,1005,317"/>
-<area shape="rect" id="node82" href="a35844_source.html" title="logger\\proxy.hpp" alt="" coords="1265,456,1399,483"/>
-<area shape="rect" id="node85" href="a35877_source.html" title="lib&#45;info\\logger.hpp" alt="" coords="1299,208,1441,235"/>
-<area shape="rect" id="node19" href="a35850_source.html" title="string\\string.hpp" alt="" coords="696,291,827,317"/>
-<area shape="rect" id="node27" href="a35853_source.html" title="string\\support.hpp" alt="" coords="1029,291,1173,317"/>
-<area shape="rect" id="node23" href="a00842_source.html" title="prefix.hpp" alt="" coords="591,712,677,739"/>
-<area shape="rect" id="node25" href="a35826_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="819,373,991,400"/>
-<area shape="rect" id="node31" href="a00881.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="1021,622,1181,663"/>
-<area shape="rect" id="node38" href="a00668.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="1012,531,1191,573"/>
-<area shape="rect" id="node43" href="a01163_source.html" title="report\\empty.hpp" alt="" coords="1945,291,2084,317"/>
-<area shape="rect" id="node52" href="a35868_source.html" title="report\\text.hpp" alt="" coords="1619,291,1743,317"/>
-<area shape="rect" id="node60" href="a01175_source.html" title="report\\html.hpp" alt="" coords="1469,291,1595,317"/>
-<area shape="rect" id="node63" href="a01199_source.html" title="report\\windows.hpp" alt="" coords="1767,291,1920,317"/>
-<area shape="rect" id="node71" href="a35682_source.html" title="report\\android.hpp" alt="" coords="1299,291,1444,317"/>
-<area shape="rect" id="node45" href="a35943_source.html" title="report.hpp" alt="" coords="1604,456,1695,483"/>
-<area shape="rect" id="node47" href="a35937_source.html" title="ireport.hpp" alt="" coords="1602,539,1696,565"/>
-<area shape="rect" id="node54" href="a35931_source.html" title="file.hpp" alt="" coords="1491,373,1561,400"/>
-<area shape="rect" id="node65" href="a01190_source.html" title="windows\\console.hpp" alt="" coords="1587,373,1749,400"/>
-<area shape="rect" id="node68" href="a01196_source.html" title="windows\\visual&#45;studio\l&#45;output.hpp" alt="" coords="1773,366,1941,407"/>
-<area shape="rect" id="node73" href="a01160_source.html" title="android\\logcat.hpp" alt="" coords="1316,373,1463,400"/>
-<area shape="rect" id="node92" href="a01106_source.html" title="config&#45;value&#45;impl.hpp" alt="" coords="540,373,705,400"/>
-<area shape="rect" id="node96" href="a01121_source.html" title="configurator.hpp" alt="" coords="207,373,337,400"/>
-<area shape="rect" id="node100" href="a01148_source.html" title="message&#45;points.hpp" alt="" coords="361,373,516,400"/>
-<area shape="rect" id="node105" href="a00731_source.html" title="alicorn\\extension\\cpp\l\\to&#45;str.hpp" alt="" coords="2078,201,2241,242"/>
-<area shape="rect" id="node109" href="a01463.html" title="alicorn\\version\\default.hpp" alt="" coords="1855,208,2053,235"/>
+<div class="center"><img src="a35767.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2extension_2android_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2extension_2android_8hpp" id="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2extension_2android_8hpp">
+<area shape="rect" id="node5" href="a00599_source.html" title="android\\app&#45;data.hpp" alt="" coords="217,109,383,136"/>
+<area shape="rect" id="node9" href="a00608_source.html" title="android\\environment.hpp" alt="" coords="408,109,595,136"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Граф файлов, в которые включается этот файл:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35768.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_logger_2_test_8_logger_2mock_8hppdep" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_logger_2_test_8_logger_2mock_8hppdep" id="_solution_2_solution_2_alicorn_2_build_2_logger_2_test_8_logger_2mock_8hppdep">
-<area shape="rect" id="node3" href="a35307_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/stdafx.h" alt="" coords="5,109,197,165"/>
-<area shape="rect" id="node5" href="a35310_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/Test.All/stdafx.h" alt="" coords="222,109,415,165"/>
-<area shape="rect" id="node7" href="a35313_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/Test.Configurator/stdafx.h" alt="" coords="439,109,643,165"/>
-<area shape="rect" id="node9" href="a35316_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/Test.DateTime/stdafx.h" alt="" coords="667,109,860,165"/>
-<area shape="rect" id="node11" href="a35319_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/Test.Files/stdafx.h" alt="" coords="885,109,1077,165"/>
-<area shape="rect" id="node13" href="a35322_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/Test.Logger/stdafx.h" alt="" coords="1102,109,1295,165"/>
-<area shape="rect" id="node15" href="a35325_source.html" title="Solution/Solution/Alicorn\l/Build/Logger/Test.Logger\l/Test.Report/stdafx.h" alt="" coords="1319,109,1512,165"/>
+<div class="center"><img src="a35768.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2extension_2android_8hppdep" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2extension_2android_8hppdep" id="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2extension_2android_8hppdep">
+<area shape="rect" id="node3" href="a36144_source.html" title="Solution/Solution/Alicorn\l/Build/System/System.Android/pch.h" alt="" coords="5,110,269,151"/>
+<area shape="rect" id="node5" href="a36162_source.html" title="Solution/Solution/Alicorn\l/Test.Android/Test.Android/pch.h" alt="" coords="295,110,540,151"/>
 </map>
 </div>
 </div>
 <p><a href="a35766_source.html">См. исходные тексты.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Объявления подставных классов. </p>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов раздела <a class="el" href="a35092.html">Android</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_78c4bafb3df9ca36695e62ecf21eeacf.html">Logger</a></li><li class="navelem"><a class="el" href="dir_8f36099cc30659756d864de9b40473fa.html">Test.Logger</a></li><li class="navelem"><a class="el" href="a35766.html">mock.hpp</a></li>
-    <li class="footer">Документация по Libs. Последние изменения: Сб 4 Фев 2017 16:32:37. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_426ef1d738b7f1b400956ed3e7d64047.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_04fb435d45b5dbed9bbc47d799db3b8d.html">include</a></li><li class="navelem"><a class="el" href="dir_2319c5e3425f9a18d30387244cad830a.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_9f191e60892070f58668784bb5d57d49.html">extension</a></li><li class="navelem"><a class="el" href="a35766.html">android.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 9 Фев 2017 09:49:53. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

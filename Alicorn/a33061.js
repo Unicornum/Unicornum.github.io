@@ -1,22 +1,18 @@
 var a33061 =
 [
-    [ "Generated", "a33060.html", "a33060" ],
-    [ "HtmlAbout", "a34033.html", null ],
-    [ "HtmlTestInfo", "a34637.html", [
-      [ "HtmlTestInfo", "a34637.html#a08b1dd1b8568e8ff8dd5c4202a071cea", null ],
-      [ "BuildSummary", "a34637.html#a55eea01426a8938164fc1ad88a91ec59", null ],
-      [ "GetSeparator", "a34637.html#a93fd23bcad787c20c0ae82304f134fbd", null ],
-      [ "ReplaceExtraSymbols", "a34637.html#aa78d50f4ea77fdedd06e34197510186b", null ],
-      [ "ReplaceHtmlTags", "a34637.html#aa52b96412dab66e229bbb20d65a7dfb8", null ],
-      [ "ReplaceToColorOutput", "a34637.html#ac1d8fae951fccf141bc9030898f153ce", null ],
-      [ "SetDefaultInfo", "a34637.html#ab8230d887215c0149157ed1d609ca607", null ],
-      [ "SetInfo", "a34637.html#af166d8934755b072c1c8bff34acc5e31", null ]
-    ] ],
-    [ "TreeCtrlIcons", "a34641.html", null ],
-    [ "TreeCtrlTests", "a34645.html", [
-      [ "BuildInfoSubTree", "a34645.html#af2fb960a145411873bf4ce84bf3f87de", null ],
-      [ "BuildTestsTree", "a34645.html#ad784b4f74ac46b4a6fc90518e8e5c87e", null ],
-      [ "GetInfo", "a34645.html#a09a08523f3f4952dd1d915d41a5d6c36", null ],
-      [ "SetResultRunTests", "a34645.html#ad0fbdec866076a92feab9f37966f099f", null ]
-    ] ]
+    [ "Degree", "a33057.html", "a33057" ],
+    [ "Fast", "a33058.html", null ],
+    [ "Limits", "a33059.html", "a33059" ],
+    [ "Radian", "a33060.html", "a33060" ],
+    [ "Abs", "a33061.html#ga0628008916134d894ddb2ac3dd3fa659", null ],
+    [ "Ceil", "a33061.html#ga868991a4d42cdfc2fe2da56b814881df", null ],
+    [ "Exponent", "a33061.html#ga7858bfad1a228501aff182e17731ef0d", null ],
+    [ "Exponent", "a33061.html#gaec33e3aeae45212e008595b1b1db3b93", null ],
+    [ "Floor", "a33061.html#gaee0a49283f50659ba7eda7912b382a5b", null ],
+    [ "Log", "a33061.html#gadb112fc83d297afc67bc9f0b11491ffd", null ],
+    [ "Max", "a33061.html#ga46d27f821bb83e671287a91ef04b6f1d", null ],
+    [ "Min", "a33061.html#ga2351e6e5a8a802cb858212f06e6a956c", null ],
+    [ "Mod", "a33061.html#gab870f354ab6165ae21e178d23f6accef", null ],
+    [ "Root", "a33061.html#ga8640e62399009826e69832f22ddbf23e", null ],
+    [ "Sign", "a33061.html#gaa122e3b7d2451c4cd5633b51c74a6fa9", null ]
 ];

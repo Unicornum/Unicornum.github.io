@@ -1,11 +1,6 @@
 var a33059 =
 [
-    [ "InfoTestingApp", "a34577.html", null ],
-    [ "IReport", "a34593.html", [
-      [ "GetResult", "a34593.html#af3b06a8f3860ae9f64b3dd8a4bf5d6fe", null ]
-    ] ],
-    [ "operator==", "a33059.html#ga2b1de01ae80f1214a4f726afd9e3a50d", null ],
-    [ "operator==", "a33059.html#ga00a359a3b95e8cc21123efb4c22130b2", null ],
-    [ "operator==", "a33059.html#ga49f782b060a688cbb902b154a3f72622", null ],
-    [ "operator==", "a33059.html#ga2f6bc0e62ec581d270647905030ade53", null ]
+    [ "Epsilon", "a33059.html#gada77aeeea8cdfd71e2fc258d2622faa5", null ],
+    [ "Infinity", "a33059.html#ga208a1945eed95cb7d404b0fba3fcbd2b", null ],
+    [ "Min", "a33059.html#ga092d73a3c219d160170528be0957ecf9", null ]
 ];
