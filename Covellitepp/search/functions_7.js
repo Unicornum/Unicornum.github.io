@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialise',['Initialise',['../a31309.html#a1dee63f89d20c16df859ad3d6855838e',1,'covellite::UserDataHelper']]]
+  ['initialise',['Initialise',['../a31407.html#a1dee63f89d20c16df859ad3d6855838e',1,'covellite::UserDataHelper']]]
 ];
