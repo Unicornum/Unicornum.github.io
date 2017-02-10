@@ -1,4 +1,5 @@
 var a31376 =
 [
-    [ "OnUpdate", "a31376.html#adec597d220b2f4e3d87108076c0de111", null ]
+    [ "GetPathToFile", "a31376.html#abe219ffe4e1174cd24eddfea94e3a970", null ],
+    [ "SetErrors", "a31376.html#ab5d7dec5ddac77c49463946b8c69ef86", null ]
 ];

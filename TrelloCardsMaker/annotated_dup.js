@@ -6,32 +6,32 @@ var annotated_dup =
       ] ]
     ] ],
     [ "controller", null, [
-      [ "Controller", "a31180.html", null ],
-      [ "DoSendCreateCard", "a31192.html", null ],
-      [ "DoUpdateAbout", "a31196.html", null ],
-      [ "DoUpdateCreateCard", "a31200.html", null ],
-      [ "DoUpdateErrors", "a31204.html", null ]
+      [ "Controller", "a31204.html", null ],
+      [ "DoSendCreateCard", "a31216.html", null ],
+      [ "DoUpdateAbout", "a31220.html", null ],
+      [ "DoUpdateCreateCard", "a31224.html", null ],
+      [ "DoUpdateErrors", "a31228.html", null ]
     ] ],
     [ "main", null, [
-      [ "Application", "a31228.html", "a31228" ],
-      [ "Window", "a31232.html", "a31232" ]
+      [ "Application", "a31252.html", "a31252" ],
+      [ "Window", "a31256.html", "a31256" ]
     ] ],
     [ "model", null, [
-      [ "BoardInfo", "a31248.html", null ],
-      [ "Boards", "a31252.html", "a31252" ],
-      [ "IBoards", "a31264.html", "a31264" ],
-      [ "QueueCards", "a31268.html", "a31268" ]
+      [ "BoardInfo", "a31272.html", null ],
+      [ "Boards", "a31276.html", "a31276" ],
+      [ "IBoards", "a31288.html", "a31288" ],
+      [ "QueueCards", "a31292.html", "a31292" ]
     ] ],
     [ "view", null, [
-      [ "About", "a31312.html", "a31312" ],
-      [ "AboutChild", "a31332.html", "a31332" ],
-      [ "AboutMain", "a31336.html", "a31336" ],
-      [ "CreateCard", "a31340.html", "a31340" ],
-      [ "Errors", "a31352.html", "a31352" ],
-      [ "IAbout", "a31364.html", "a31364" ],
-      [ "ICreateCard", "a31368.html", "a31368" ],
-      [ "IErrors", "a31372.html", "a31372" ],
-      [ "IView", "a31376.html", "a31376" ],
-      [ "Layer", "a31380.html", "a31380" ]
+      [ "About", "a31336.html", "a31336" ],
+      [ "AboutChild", "a31356.html", "a31356" ],
+      [ "AboutMain", "a31360.html", "a31360" ],
+      [ "CreateCard", "a31364.html", "a31364" ],
+      [ "Errors", "a31376.html", "a31376" ],
+      [ "IAbout", "a31388.html", "a31388" ],
+      [ "ICreateCard", "a31392.html", "a31392" ],
+      [ "IErrors", "a31396.html", "a31396" ],
+      [ "IView", "a31400.html", "a31400" ],
+      [ "Layer", "a31404.html", "a31404" ]
     ] ]
 ];

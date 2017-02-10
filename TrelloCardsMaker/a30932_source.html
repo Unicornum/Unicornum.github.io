@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TrelloCardsMaker: Исходный файл Solution/Solution/Model/Model.mock.hpp</title>
+<title>TrelloCardsMaker: Исходный файл Solution/Solution/Model/Model/IBoards.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -19,7 +19,7 @@
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen_1.8.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TrelloCardsMaker
-   &#160;<span id="projectnumber">Версия: 0.1.0 Revision: 273 Platform: ARM Build: 20:10 28 Январь 2017</span>
+   &#160;<span id="projectnumber">Версия: 0.1.1 Revision: 283 Platform: ARM Build: 22:53 10 Февраль 2017</span>
    </div>
    <div id="projectbrief">Android offline client cards maker for Trello</div>
   </td>
@@ -83,16 +83,23 @@ $(document).ready(function(){initNavTree('a30932_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Model.mock.hpp</div>  </div>
+<div class="title">IBoards.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Model\Boards.mock.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\extension\std\string.forward.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a31138.html">model</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a31288.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a31288.html">IBoards</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">using</span> BoardId_t = size_t;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">using</span> String_t = ::alicorn::extension::std::String;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">using</span> Strings_t = ::std::vector&lt;String_t&gt;;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">virtual</span> Path_t <a class="code" href="a31288.html#ac0ee51737e9764840d476573680c1a35">GetPathToSourceFile</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> BoardId_t <a class="code" href="a31288.html#a5630a0fa2531ee99756f5b7e5256f154">GetCurrentBoard</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> String_t <a class="code" href="a31288.html#ad75ce14d1b149dd9671ed963336133e9">GetBoardName</a>(BoardId_t) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a31288.html#a29b62b10adba33a71a7571aba9a38ca1">CreateCard</a>(BoardId_t, <span class="keyword">const</span> String_t &amp;) = 0;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">virtual</span> Strings_t <a class="code" href="a31288.html#a9cd62a0e9220cd3a2eeb89f60375bc54">GetErrors</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a31288.html">IBoards</a>(<span class="keywordtype">void</span>) {}</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;} <span class="comment">// namespace model</span></div><div class="ttc" id="a31288_html"><div class="ttname"><a href="a31288.html">model::IBoards</a></div><div class="ttdoc">Класс входит в проект Model   Интерфейсный класс модели. </div><div class="ttdef"><b>Definition:</b> IBoards.hpp:25</div></div>
+<div class="ttc" id="a31288_html_ad75ce14d1b149dd9671ed963336133e9"><div class="ttname"><a href="a31288.html#ad75ce14d1b149dd9671ed963336133e9">model::IBoards::GetBoardName</a></div><div class="ttdeci">virtual String_t GetBoardName(BoardId_t) const =0</div><div class="ttdoc">Функция получения имени доски Trello с указанным идентификатором. </div></div>
+<div class="ttc" id="a31138_html"><div class="ttname"><a href="a31138.html">model</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:4</div></div>
+<div class="ttc" id="a31288_html_a29b62b10adba33a71a7571aba9a38ca1"><div class="ttname"><a href="a31288.html#a29b62b10adba33a71a7571aba9a38ca1">model::IBoards::CreateCard</a></div><div class="ttdeci">virtual void CreateCard(BoardId_t, const String_t &amp;)=0</div><div class="ttdoc">Функция создания карточки для доски с указанным идентификатором и заданным текстом. </div></div>
+<div class="ttc" id="a31288_html_ac0ee51737e9764840d476573680c1a35"><div class="ttname"><a href="a31288.html#ac0ee51737e9764840d476573680c1a35">model::IBoards::GetPathToSourceFile</a></div><div class="ttdeci">virtual Path_t GetPathToSourceFile(void) const =0</div><div class="ttdoc">Функция получения пути к файлу, из которого загружается информация о досках Trello. </div></div>
+<div class="ttc" id="a31288_html_a9cd62a0e9220cd3a2eeb89f60375bc54"><div class="ttname"><a href="a31288.html#a9cd62a0e9220cd3a2eeb89f60375bc54">model::IBoards::GetErrors</a></div><div class="ttdeci">virtual Strings_t GetErrors(void) const =0</div><div class="ttdoc">Функция получения списка ошибок, произошедших при загрузке модели. </div></div>
+<div class="ttc" id="a31288_html_a5630a0fa2531ee99756f5b7e5256f154"><div class="ttname"><a href="a31288.html#a5630a0fa2531ee99756f5b7e5256f154">model::IBoards::GetCurrentBoard</a></div><div class="ttdeci">virtual BoardId_t GetCurrentBoard(void) const =0</div><div class="ttdoc">Функция получения идентификатора текущей выбранной доски Trello. </div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5d52896869278488603063f77cde2165.html">Model</a></li><li class="navelem"><b>Model.mock.hpp</b></li>
-    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Сб 28 Янв 2017 20:10:54. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5d52896869278488603063f77cde2165.html">Model</a></li><li class="navelem"><a class="el" href="dir_fc8ce4bdc20a8a0a0eb9c662d140f434.html">Model</a></li><li class="navelem"><b>IBoards.hpp</b></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Пт 10 Фев 2017 22:53:14. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
