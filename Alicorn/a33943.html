@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс alicorn::vfs::IPassword</title>
+<title>Alicorn: Класс alicorn::logger::Message</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.6.7 Revision: 2249 Platform: x64 Build: 09:49 09 Февраль 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.6.8 Revision: 2332 Platform: x64 Build: 09:40 18 Февраль 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,53 +83,247 @@ $(document).ready(function(){initNavTree('a33943.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="a33940.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::vfs::IPassword<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a33050.html">Alicorn</a> &raquo; <a class="el" href="a33083.html">Virtual File System</a></div></div>  </div>
+<div class="title">Класс alicorn::logger::Message<div class="ingroups"><a class="el" href="a33269.html">Alicorn</a> &raquo; <a class="el" href="a33294.html">Logger</a> &raquo; <a class="el" href="a33292.html">Message</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a35109.html">Virtual File System</a> <br />
- Интерфейсный класс для получения пароля из dll.  
+<p>Класс входит в <a class="el" href="a35436.html">Logger</a> <br />
+ Базовый класс типов сообщений.  
  <a href="a33943.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01523_source.html">ipassword.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a36376_source.html">message.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:alicorn::vfs::IPassword:</div>
+Граф наследования:alicorn::logger::Message:</div>
 <div class="dyncontent">
-<div class="center"><img src="a33942.png" border="0" usemap="#alicorn_1_1vfs_1_1_i_password_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1vfs_1_1_i_password_inherit__map" id="alicorn_1_1vfs_1_1_i_password_inherit__map">
-<area shape="rect" id="node5" href="a34739.html" title="[Example password decryptor] " alt="" coords="27,273,160,394"/>
-<area shape="rect" id="node2" href="a33851.html" title="Класс входит в System &#160;&#160;Базовый класс объектов, создаваемых в dll. " alt="" coords="18,6,168,98"/>
+<div class="center"><img src="a33942.png" border="0" usemap="#alicorn_1_1logger_1_1_message_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1logger_1_1_message_inherit__map" id="alicorn_1_1logger_1_1_message_inherit__map">
+<area shape="rect" id="node3" href="a33959.html" title="Класс входит в Logger &#160;&#160;Класс сообщения. " alt="" coords="5,256,165,333"/>
+<area shape="rect" id="node5" href="a33963.html" title="Класс входит в Logger &#160;&#160;Класс сообщения (наивысший приоритет). " alt="" coords="189,249,352,341"/>
+<area shape="rect" id="node7" href="a33951.html" title="Класс входит в Logger &#160;&#160;Класс сообщения. " alt="" coords="376,256,531,333"/>
+<area shape="rect" id="node9" href="a33947.html" title="Класс входит в Logger &#160;&#160;Класс сообщения (низший приоритет). " alt="" coords="555,256,721,333"/>
+<area shape="rect" id="node11" href="a33955.html" title="Класс входит в Logger &#160;&#160;Класс сообщения. " alt="" coords="746,256,928,333"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса alicorn::vfs::IPassword:</div>
+Граф связей класса alicorn::logger::Message:</div>
 <div class="dyncontent">
-<div class="center"><img src="a33941.png" border="0" usemap="#alicorn_1_1vfs_1_1_i_password_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1vfs_1_1_i_password_coll__map" id="alicorn_1_1vfs_1_1_i_password_coll__map">
-<area shape="rect" id="node2" href="a33851.html" title="Класс входит в System &#160;&#160;Базовый класс объектов, создаваемых в dll. " alt="" coords="18,6,168,98"/>
+<div class="center"><img src="a33941.png" border="0" usemap="#alicorn_1_1logger_1_1_message_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1logger_1_1_message_coll__map" id="alicorn_1_1logger_1_1_message_coll__map">
+<area shape="rect" id="node2" href="a33935.html" title="Класс входит в Logger &#160;&#160;Класс, хранящий информацию одной записи лога. " alt="" coords="5,1061,219,1197"/>
+<area shape="rect" id="node4" href="a33835.html" title="Класс входит в Std &#160;&#160;Класс универсальных Unicode строк. " alt="" coords="42,584,181,925"/>
+<area shape="rect" id="node6" href="a33667.html" title="{alicorn::extension\l::std::PtrWrapper\&lt; IImpl \&gt;\n||+ Get()\l+ Get()\l+ PtrWrapper()\l+ PtrWrapper()\l+ operator=()\l+ operator=()\l+ ~PtrWrapper()\l+ Make()\l&#45; PtrWrapper()\l}" alt="" coords="11,310,212,519"/>
+<area shape="rect" id="node8" href="a33827.html" title="Класс входит в проект Std &#160;&#160;Интерфейсный класс реализации строки. " alt="" coords="37,6,187,245"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4975d38735e7659719be5e8c96865e5f"><td class="memItemLeft" align="right" valign="top"><a id="a4975d38735e7659719be5e8c96865e5f"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33943.html#a4975d38735e7659719be5e8c96865e5f">GetLevel</a> (void) const</td></tr>
+<tr class="memdesc:a4975d38735e7659719be5e8c96865e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает уровень приоритета сообщения. <br /></td></tr>
+<tr class="separator:a4975d38735e7659719be5e8c96865e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Открытые статические члены</h2></td></tr>
+<tr class="memitem:ad6509fda6ddc2230f986662e5181ab04"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33943.html#ad6509fda6ddc2230f986662e5181ab04">DoComplete</a> (MessagePtr_t)</td></tr>
+<tr class="memdesc:ad6509fda6ddc2230f986662e5181ab04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#ad6509fda6ddc2230f986662e5181ab04">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad6509fda6ddc2230f986662e5181ab04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:a60a9316d70a117080c003541bff6b5b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33943.html#a60a9316d70a117080c003541bff6b5b3">DoSpecialAction</a> (void) const</td></tr>
+<tr class="memdesc:a60a9316d70a117080c003541bff6b5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения специфического действия сообщения.  <a href="#a60a9316d70a117080c003541bff6b5b3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a60a9316d70a117080c003541bff6b5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9129c099b58fc8b4b237a2268c40e695"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33943.html#a9129c099b58fc8b4b237a2268c40e695">Message</a> (const <a class="el" href="a33835.html">String_t</a> &amp;, const <a class="el" href="a33835.html">String_t</a> &amp;, int)</td></tr>
+<tr class="memdesc:a9129c099b58fc8b4b237a2268c40e695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#a9129c099b58fc8b4b237a2268c40e695">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9129c099b58fc8b4b237a2268c40e695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a78424dfc4950ec1529fded759d62c3b6"><td class="memItemLeft" align="right" valign="top"><a id="a78424dfc4950ec1529fded759d62c3b6"></a>
+::std::wstringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33943.html#a78424dfc4950ec1529fded759d62c3b6">m_Message</a></td></tr>
+<tr class="memdesc:a78424dfc4950ec1529fded759d62c3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формируемое сообщение. <br /></td></tr>
+<tr class="separator:a78424dfc4950ec1529fded759d62c3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a35109.html">Virtual File System</a> <br />
- Интерфейсный класс для получения пароля из dll. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a35436.html">Logger</a> <br />
+ Базовый класс типов сообщений. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+ 1.2.0.0 <br />
+ 1.2.1.0 <br />
+ 1.2.2.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>16 Июнь 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>29 июл 2012 <br />
+ 26 Октябрь 2015 <br />
+ 18 Ноябрь 2015 <br />
+ 25 Сентябрь 2016 <br />
+ 30 Январь 2017 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/vfs/<a class="el" href="a01523_source.html">ipassword.hpp</a></li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2017 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a9129c099b58fc8b4b237a2268c40e695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9129c099b58fc8b4b237a2268c40e695">&#9670;&nbsp;</a></span>Message()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Message::Message </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a33835.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a33835.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_PathToFileLine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_Count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор. </p>
+<ul>
+<li>Записывает в объект предварительную информацию.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя сообщения в виде строки. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFileLine</td><td>Файл, в котором было записано сообщение + номер строки. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Count</td><td>Имя функции, внутри которой было записано сообщение. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a33943_a9129c099b58fc8b4b237a2268c40e695_icgraph.png" border="0" usemap="#a33943_a9129c099b58fc8b4b237a2268c40e695_icgraph" alt=""/></div>
+<map name="a33943_a9129c099b58fc8b4b237a2268c40e695_icgraph" id="a33943_a9129c099b58fc8b4b237a2268c40e695_icgraph">
+<area shape="rect" id="node3" href="a33943.html#a60a9316d70a117080c003541bff6b5b3" title="Функция для выполнения специфического действия сообщения. " alt="" coords="240,5,427,46"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ad6509fda6ddc2230f986662e5181ab04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6509fda6ddc2230f986662e5181ab04">&#9670;&nbsp;</a></span>DoComplete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Message::DoComplete </td>
+          <td>(</td>
+          <td class="paramtype">MessagePtr_t&#160;</td>
+          <td class="paramname"><em>_pMessage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для выполнения завершающего действия. </p>
+<ul>
+<li>Будет вызвана для передачи объекта сообщения 'ядру' логгера. </li>
+</ul>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a33943_ad6509fda6ddc2230f986662e5181ab04_cgraph.png" border="0" usemap="#a33943_ad6509fda6ddc2230f986662e5181ab04_cgraph" alt=""/></div>
+<map name="a33943_ad6509fda6ddc2230f986662e5181ab04_cgraph" id="a33943_ad6509fda6ddc2230f986662e5181ab04_cgraph">
+<area shape="rect" id="node3" href="a33287.html#ga7547d6bee1244042e43ffb63d797c231" title="Функция входит в Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="240,5,381,46"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60a9316d70a117080c003541bff6b5b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a9316d70a117080c003541bff6b5b3">&#9670;&nbsp;</a></span>DoSpecialAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Message::DoSpecialAction </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для выполнения специфического действия сообщения. </p>
+<ul>
+<li>Функция вызывается после записи сообщения в лог. </li>
+</ul>
+
+<p>Переопределяется в <a class="el" href="a33963.html#aee319a84720a3b08952822aedd918de6">alicorn::logger::Fatal</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a33943_a60a9316d70a117080c003541bff6b5b3_cgraph.png" border="0" usemap="#a33943_a60a9316d70a117080c003541bff6b5b3_cgraph" alt=""/></div>
+<map name="a33943_a60a9316d70a117080c003541bff6b5b3_cgraph" id="a33943_a60a9316d70a117080c003541bff6b5b3_cgraph">
+<area shape="rect" id="node3" href="a33943.html#a9129c099b58fc8b4b237a2268c40e695" title="Конструктор. " alt="" coords="240,5,427,46"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/<a class="el" href="a36376_source.html">message.hpp</a></li>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/message.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a33943.html">IPassword</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 9 Фев 2017 09:49:56. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a33943.html">Message</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 18 Фев 2017 09:40:48. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

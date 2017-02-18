@@ -49,6 +49,9 @@ var menudata={children:[
 {text:"Файлы",url:"files.html",children:[
 {text:"Файлы",url:"files.html"},
 {text:"Список членов всех файлов",url:"globals.html",children:[
-{text:"Указатель",url:"globals.html"},
+{text:"Указатель",url:"globals.html",children:[
+{text:"_",url:"globals.html#index__"},
+{text:"l",url:"globals.html#index_l"},
+{text:"t",url:"globals.html#index_t"}]},
 {text:"Функции",url:"globals_func.html"},
 {text:"Макросы",url:"globals_defs.html"}]}]}]}

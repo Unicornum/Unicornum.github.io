@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['radian',['Radian',['../a33060.html',1,'']]],
-  ['regex',['Regex',['../a33065.html',1,'']]],
-  ['report',['Report',['../a33072.html',1,'']]]
+  ['patterns',['Patterns',['../a33298.html',1,'']]],
+  ['platform',['Platform',['../a33299.html',1,'']]]
 ];

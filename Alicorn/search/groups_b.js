@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['std',['Std',['../a33067.html',1,'']]],
-  ['string',['String',['../a33066.html',1,'']]],
-  ['settingsapp',['SettingsApp',['../a33084.html',1,'']]],
-  ['settings',['Settings',['../a33079.html',1,'']]],
-  ['system',['System',['../a33080.html',1,'']]],
-  ['support',['Support',['../a33092.html',1,'']]]
+  ['radian',['Radian',['../a33281.html',1,'']]],
+  ['regex',['Regex',['../a33286.html',1,'']]],
+  ['report',['Report',['../a33293.html',1,'']]]
 ];

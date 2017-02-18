@@ -1,5 +1,5 @@
 var a34639 =
 [
-    [ "GetResultRunTests", "a34639.html#a3b03b7597488a128afa3810f77e7b752", null ],
-    [ "IsExistsFiledTest", "a34639.html#a7f99564f3d37665ad57067b847c3ac3b", null ]
+    [ "GetActiveNameParameter", "a34639.html#a476e7f18dc30d33e89b29bd2a689ea89", null ],
+    [ "SetSettings", "a34639.html#a3a39a65878a05a704a6752f812e38384", null ]
 ];

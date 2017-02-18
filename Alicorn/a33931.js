@@ -1,5 +1,5 @@
 var a33931 =
 [
-    [ "FileSystem", "a33931.html#a2d2907fd806a57c72e93dfd1872eb791", null ],
-    [ "GetData", "a33931.html#ac77c41eee699ac53a96a4c40bdb46a11", null ]
+    [ "GetNow", "a33931.html#af736a0188d5c880336c8da286cb587e2", null ],
+    [ "GetNowMks", "a33931.html#a8d1f6abe52e706fd652a3f71369b97d2", null ]
 ];
