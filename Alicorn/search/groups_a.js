@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['patterns',['Patterns',['../a33298.html',1,'']]],
-  ['platform',['Platform',['../a33299.html',1,'']]]
+  ['patterns',['Patterns',['../a33204.html',1,'']]],
+  ['platform',['Platform',['../a33205.html',1,'']]]
 ];

@@ -2,9 +2,8 @@ var NAVTREE =
 [
   [ "Alicorn", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Использование текстовых документов", "a35427.html", null ],
-    [ "Список задач", "a33266.html", null ],
-    [ "Список устаревших определений и описаний", "a33268.html", null ],
+    [ "Список задач", "a33173.html", null ],
+    [ "Список устаревших определений и описаний", "a33174.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -30,13 +29,13 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a02141.html#a6dbd0d7067cf3f77fc94ce2ddb9f0f40",
-"a33293.html",
-"a33903.html",
-"a34955.html#ad69bb76645828e5b4a6d11d70f5eaeb6",
-"a35851_source.html",
-"a36538_source.html",
-"dir_84f16c6d488da8e5412f14b8cfb1f5c2.html"
+"a02045.html#a1c87416678737dfec12dddde21023b04",
+"a33194.html#ga3a39ddd2c42082fd7e8611118a020919",
+"a33753.html#ab64c42ab6ec0f4ec1f03c1e4a038993e",
+"a34865.html",
+"a35737_source.html",
+"a36424_source.html",
+"dir_79d51ad509611cc6cd0d100d7f077e3c.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

@@ -1,0 +1,16 @@
+var a33201 =
+[
+    [ "Data", "a33937.html", null ],
+    [ "Data< Pointer * >", "a33941.html", null ],
+    [ "ICommand", "a33945.html", null ],
+    [ "IManager", "a33949.html", null ],
+    [ "IUndo", "a33953.html", null ],
+    [ "ManagerCommon", "a33957.html", null ],
+    [ "ManagerUndoRedo", "a33961.html", [
+      [ "IsAllowedRedo", "a33961.html#a45c4dfac80372ba9fa6f94eb7f545350", null ],
+      [ "IsAllowedUndo", "a33961.html#ad78af1f142326fcb8ea5df55c0ff7f37", null ],
+      [ "Redo", "a33961.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
+      [ "Undo", "a33961.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
+    ] ],
+    [ "Manager", "a33201.html#ga4279689109bf5cff740fd6d25f303379", null ]
+];
