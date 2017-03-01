@@ -1,11 +1,9 @@
 var a33178 =
 [
-    [ "Empty", "a33349.html", null ],
-    [ "IImplementation", "a33353.html", null ],
-    [ "Document", "a33357.html", [
-      [ "Document", "a33357.html#acaae0126ed900fc924d39c3a1fbf2862", null ],
-      [ "GetSubDocument", "a33357.html#a9d329dd8796ca35e6dfa91030e69429d", null ]
-    ] ],
-    [ "RapidXml", "a33365.html", null ],
-    [ "Text", "a33369.html", null ]
+    [ "ArcCos", "a33178.html#ga38ce2d7f745c99f41f1a9dcc448d008b", null ],
+    [ "ArcSin", "a33178.html#ga2104517f783b71fdb1123123f8dcba74", null ],
+    [ "ArcTan", "a33178.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb", null ],
+    [ "Cos", "a33178.html#ga4a7357706084145b0cddd05c161ea772", null ],
+    [ "Sin", "a33178.html#ga8ab39ee8cc4acf6b68d38eb34eeab060", null ],
+    [ "Tan", "a33178.html#gabfb194a30a0380dbe3312321b164bca5", null ]
 ];

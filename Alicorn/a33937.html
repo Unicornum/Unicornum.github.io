@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Шаблон класса alicorn::patterns::command::Data&lt; T &gt;</title>
+<title>Alicorn: Шаблон класса alicorn::patterns::command::IManager&lt; TInterface &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.0 Revision: 2374 Platform: x64 Build: 19:40 25 Февраль 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.1 Revision: 2398 Platform: x64 Build: 16:08 01 Март 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -85,31 +85,43 @@ $(document).ready(function(){initNavTree('a33937.html','');});
   <div class="summary">
 <a href="a33934.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::patterns::command::Data&lt; T &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a33175.html">Alicorn</a> &raquo; <a class="el" href="a33204.html">Patterns</a> &raquo; <a class="el" href="a33201.html">Command</a></div></div>  </div>
+<div class="title">Шаблон класса alicorn::patterns::command::IManager&lt; TInterface &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a33166.html">Alicorn</a> &raquo; <a class="el" href="a33195.html">Patterns</a> &raquo; <a class="el" href="a33192.html">Command</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a35356.html">Patterns</a> <br />
- Вспомогательный класс команды, содержащий используемые данные.  
+<p>Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Интерфейсный класс менеджеров, управляющих выполнением команд.  
  <a href="a33937.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a36064_source.html">Data.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01334_source.html">IManager.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::patterns::command::Data&lt; T &gt;:</div>
+Граф наследования:alicorn::patterns::command::IManager&lt; TInterface &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a33935.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_data_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1patterns_1_1command_1_1_data_3_01_t_01_4_coll__map" id="alicorn_1_1patterns_1_1command_1_1_data_3_01_t_01_4_coll__map">
+<div class="center"><img src="a33936.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_inherit__map" id="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_inherit__map">
+<area shape="rect" id="node3" href="a33945.html" title="Класс входит в Patterns &#160;&#160;Базовый класс менеджеров, управляющих выполнением команд. " alt="" coords="29,177,235,327"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса alicorn::patterns::command::IManager&lt; TInterface &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a33935.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_coll__map" id="alicorn_1_1patterns_1_1command_1_1_i_manager_3_01_t_interface_01_4_coll__map">
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class T&gt;<br />
-class alicorn::patterns::command::Data&lt; T &gt;</h3>
+<div class="textblock"><h3>template&lt;class TInterface&gt;<br />
+class alicorn::patterns::command::IManager&lt; TInterface &gt;</h3>
 
-<p>Класс входит в <a class="el" href="a35356.html">Patterns</a> <br />
- Вспомогательный класс команды, содержащий используемые данные. </p>
+<p>Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Интерфейсный класс менеджеров, управляющих выполнением команд. </p>
+<ul>
+<li>Функция DoExecute(...) должна выполнять действия, необходимые для выполнения команды.</li>
+<li>Функция DoException(...) должна вызываться при перехвате исключения.</li>
+</ul>
 <dl class="tparams"><dt>Параметры шаблона</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">Тип</td><td>хранимых данных.</td></tr>
+    <tr><td class="paramname">Интерфейсный</td><td>класс выполняемых команд.</td></tr>
   </table>
   </dd>
 </dl>
@@ -120,15 +132,15 @@ class alicorn::patterns::command::Data&lt; T &gt;</h3>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/patterns/command/<a class="el" href="a36064_source.html">Data.hpp</a></li>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/patterns/command/<a class="el" href="a01334_source.html">IManager.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a33937.html">Data</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 25 Фев 2017 19:40:38. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a33937.html">IManager</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 1 Мар 2017 16:08:32. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

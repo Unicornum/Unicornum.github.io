@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.0 Revision: 2374 Platform: x64 Build: 19:40 25 Февраль 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.1 Revision: 2398 Platform: x64 Build: 16:08 01 Март 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,25 +83,23 @@ $(document).ready(function(){initNavTree('a33333.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">alicorn::document::data::Data Cписок членов класса</div>  </div>
+<div class="title">alicorn::document::data::IData Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a33333.html">alicorn::document::data::Data</a>, включая наследуемые из базового класса</p>
+<p>Полный список членов класса <a class="el" href="a33333.html">alicorn::document::data::IData</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a33333.html#a56ff9f3a55f092a326713141199a1de8">Clone</a>(const Path_t &amp;) const override</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a33333.html#a3048b967fdeac9ec321abc8ad907c277">Data</a>(const Path_t &amp;, const Data_t &amp;)</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a33333.html#ae96a35063f4e6c63f67720f53123ae5c">GetData</a>(void) const final</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a33333.html#a26849686b7beec4ce7ffdbdc9605bbf5">GetPathToSourceFile</a>(void) const final</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a33333.html#a78de3db1910706fe7be8fa5ba5579dc3">GetSingleLine</a>(void) const final</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a33333.html#aaddf0cf3fa0d73a1b6f5747d0e7b890e">ReadData</a>(size_t, size_t) const</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a33333.html#a81b623142cbdc5c254c57d2b4f3b56fe">Save</a>(const Path_t &amp;, const String_t &amp;) const override</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::Data</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a33333.html#a42263f823f6b5387ffd03d7339bccdfa">Clone</a>(const Path_t &amp;) const =0</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::IData</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a33333.html#adf2402f4c919c531fbe4ffc235108fda">GetData</a>(void) const =0</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::IData</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a33333.html#af6b2861c1660bf0fd0e7632a5efbe330">GetPathToSourceFile</a>(void) const =0</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::IData</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a33333.html#a55722214186a1d09131062441c586265">GetSingleLine</a>(void) const =0</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::IData</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a33333.html#a80f0abea0e4487269353d445c42d27a0">Save</a>(const Path_t &amp;, const String_t &amp;) const =0</td><td class="entry"><a class="el" href="a33333.html">alicorn::document::data::IData</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 25 Фев 2017 19:40:38. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 1 Мар 2017 16:08:31. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

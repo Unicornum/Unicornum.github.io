@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.0 Revision: 2374 Platform: x64 Build: 19:40 25 Февраль 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.1 Revision: 2398 Platform: x64 Build: 16:08 01 Март 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,22 +83,31 @@ $(document).ready(function(){initNavTree('a34057.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">alicorn::system::dll::Ptr&lt; T &gt; Cписок членов класса</div>  </div>
+<div class="title">alicorn::system::Process Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a34057.html">alicorn::system::dll::Ptr&lt; T &gt;</a>, включая наследуемые из базового класса</p>
+<p>Полный список членов класса <a class="el" href="a34057.html">alicorn::system::Process</a>, включая наследуемые из базового класса</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a2f9f74776cb12ed9037d527703094d11">operator-&gt;</a>(void)</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::dll::Ptr&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a34057.html#ab34a06b7a5428c6d6b4e01b822dc93a2">operator-&gt;</a>(void) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::dll::Ptr&lt; T &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a34057.html#ad0ef08c8b525fc86c5aeccd655456e2c">Ptr</a>(const ::boost::filesystem::path &amp;_PathToDll, const char *_CreateFunctionName=&quot;CreateObjectFromDll&quot;, const char *_DestroyFunctionName=&quot;Destroy&quot;)</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::dll::Ptr&lt; T &gt;</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a34053.html#aaa646d1840123af9766d41dde7b83766">PtrObject</a>(const ::boost::filesystem::path &amp;_DllName, const char *_CreateFunctionName, const char *_DestroyFunctionName)</td><td class="entry"><a class="el" href="a34053.html">alicorn::system::dll::PtrObject</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a9a91dcba3b1a5c49ab13d490ecb61c23">FromParams</a>(const String_t &amp;_Value)</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a34057.html#a15c85d53e3079f343aead5930adb4b2a">Process</a>(const Path_t &amp;, const Path_t &amp;=L&quot;&quot;, size_t _PipeReadBufferSize=1024)</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#aebb905db53099a2f9fdae5d42ed0b23c">RunWithoutWaitingCompletion</a>(const Args_t &amp;=Args_t{}) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a34057.html#a0d4cabefd5db952a5021e49f007434a8">RunWithoutWaitingCompletion</a>(const String_t &amp;) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a13baa7b36d59ad50c468f5cf534e9df0">RunWithoutWaitingCompletion</a>(const PocoArgs_t &amp;) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a34057.html#aec83e7b7a14bf1093927e5eff27b6ec9">RunWithReceiveStdout</a>(const Args_t &amp;, process::ICallBack &amp;) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a8d3e62141aea1c7e3b90a309ffde165b">RunWithReceiveStdout</a>(const String_t &amp;, process::ICallBack &amp;) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a34057.html#ab340203b1a8ef054c4d55485a153f37c">RunWithReceiveStdout</a>(const PocoArgs_t &amp;, process::ICallBack &amp;) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a571281c115f4106dd9d979f9656346da">RunWithWaitingCompletion</a>(const Args_t &amp;=Args_t{}, TimeMs_t=TimeMs_t(1000)) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a34057.html#a8c62a860d069a4ebfdfeb0b4c6b50b45">RunWithWaitingCompletion</a>(const String_t &amp;, TimeMs_t=TimeMs_t(1000)) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a200f3778cd1aafdd7401365ba6b3faab">RunWithWaitingCompletion</a>(const PocoArgs_t &amp;, TimeMs_t) const</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a34057.html#ab3a668b5135d1d92c4a2a6b713e7da87">Tokenize</a>(const ::std::string &amp;, process::ICallBack &amp;)</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a34057.html#a9cc5113978708ba27c4335c75825d0e1">ToParams</a>(const TData &amp;_Data)</td><td class="entry"><a class="el" href="a34057.html">alicorn::system::Process</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 25 Фев 2017 19:40:39. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 1 Мар 2017 16:08:32. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

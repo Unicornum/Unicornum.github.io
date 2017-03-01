@@ -1,5 +1,5 @@
 var a33913 =
 [
-    [ "DoComplete", "a33913.html#a9817eab99a8437ba0531ce231a292839", null ],
-    [ "DoComplete", "a33913.html#a9603cd1d3c32b20c4f3549bb780ac6a6", null ]
+    [ "WriteRecord", "a33913.html#a36ba11583024bbba693e2998ea4d3668", null ],
+    [ "WriteTitle", "a33913.html#a672763fba708c23851b38be162768bac", null ]
 ];

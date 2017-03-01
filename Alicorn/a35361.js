@@ -1,6 +1,6 @@
 var a35361 =
 [
-    [ "Введение", "a35361.html#sAlicornBuildTestingAppBrief", null ],
-    [ "Подробное описание проекта", "a35361.html#sAlicornBuildTestingAppDetails", null ],
-    [ "Исходные требования", "a35362.html", null ]
+    [ "Введение", "a35361.html#sDocumentBrief", null ],
+    [ "Использование текстовых документов", "a35362.html", null ],
+    [ "Использование xml документов", "a35363.html", null ]
 ];

@@ -1,5 +1,4 @@
 var a34561 =
 [
-    [ "GetActiveNameParameter", "a34561.html#a476e7f18dc30d33e89b29bd2a689ea89", null ],
-    [ "SetSettings", "a34561.html#a3a39a65878a05a704a6752f812e38384", null ]
+    [ "SetSections", "a34561.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
 ];

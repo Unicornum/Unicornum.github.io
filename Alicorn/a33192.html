@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Regex</title>
+<title>Alicorn: Command</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.0 Revision: 2374 Platform: x64 Build: 19:40 25 Февраль 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.1 Revision: 2398 Platform: x64 Build: 16:08 01 Март 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,44 +83,95 @@ $(document).ready(function(){initNavTree('a33192.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
   <div class="headertitle">
-<div class="title">Regex<div class="ingroups"><a class="el" href="a33175.html">Alicorn</a> &raquo; <a class="el" href="a33196.html">Extension</a> &raquo; <a class="el" href="a33194.html">Std</a></div></div>  </div>
+<div class="title">Command<div class="ingroups"><a class="el" href="a33166.html">Alicorn</a> &raquo; <a class="el" href="a33195.html">Patterns</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Regex:</div>
+Граф связей класса Command:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a33192.png" border="0" alt="" usemap="#a33192"/>
 <map name="a33192" id="a33192">
-<area shape="rect" id="node2" href="a33194.html" title="Std" alt="" coords="5,5,51,32"/>
+<area shape="rect" id="node1" href="a33195.html" title="Patterns" alt="" coords="6,5,85,32"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33589.html">alicorn::extension::std::regex::Match</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35353.html">Std</a> <br />
- Класс проверки совпадения строки текста с регулярным выражением.  <a href="a33589.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33925.html">alicorn::patterns::command::Data&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Вспомогательный класс команды, содержащий используемые данные.  <a href="a33925.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33597.html">alicorn::extension::std::regex::Replace</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35353.html">Std</a> <br />
- Класс для замены по регулярному выражению.  <a href="a33597.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33929.html">alicorn::patterns::command::Data&lt; Pointer * &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Специализация шаблона для указателей.  <a href="a33929.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33605.html">alicorn::extension::std::regex::Search</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35353.html">Std</a> <br />
- Класс поиска в строке совпадения с регулярным выражением.  <a href="a33605.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33933.html">alicorn::patterns::command::ICommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Интерфейсный класс для команд.  <a href="a33933.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33937.html">alicorn::patterns::command::IManager&lt; TInterface &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Интерфейсный класс менеджеров, управляющих выполнением команд.  <a href="a33937.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33941.html">alicorn::patterns::command::IUndo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Интерфейсный класс для команд, поддерживающих отмену последнего действия.  <a href="a33941.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33945.html">alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Базовый класс менеджеров, управляющих выполнением команд.  <a href="a33945.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33949.html">alicorn::patterns::command::ManagerUndoRedo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд.  <a href="a33949.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ga4279689109bf5cff740fd6d25f303379"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33192.html#ga4279689109bf5cff740fd6d25f303379">alicorn::patterns::command::Manager</a> = <a class="el" href="a33945.html">ManagerCommon</a>&lt; <a class="el" href="a33933.html">ICommand</a> &gt;</td></tr>
+<tr class="memdesc:ga4279689109bf5cff740fd6d25f303379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд.  <a href="a33192.html#ga4279689109bf5cff740fd6d25f303379">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4279689109bf5cff740fd6d25f303379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Раздел классов для работы с регулярными выражениями. </p>
+<p>Раздел классов реализации паттерна 'Команда'. </p>
+<h2 class="groupheader">Типы</h2>
+<a id="ga4279689109bf5cff740fd6d25f303379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4279689109bf5cff740fd6d25f303379">&#9670;&nbsp;</a></span>Manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a33192.html#ga4279689109bf5cff740fd6d25f303379">alicorn::patterns::command::Manager</a> = typedef <a class="el" href="a33945.html">ManagerCommon</a>&lt;<a class="el" href="a33933.html">ICommand</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Класс входит в <a class="el" href="a35373.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд. </p>
+<ul>
+<li>Выполняемые команды должны быть унаследованы от интерфейса <a class="el" href="a33933.html" title="Класс входит в Patterns   Интерфейсный класс для команд. ">ICommand</a>.</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 25 Фев 2017 19:40:37. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 1 Мар 2017 16:08:31. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

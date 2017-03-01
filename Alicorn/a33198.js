@@ -1,28 +1,42 @@
 var a33198 =
 [
-    [ "MessageImpl", "a33853.html", [
-      [ "MessageImpl", "a33853.html#aead43313ff34adde57b4d0f79d535f1c", null ],
-      [ "m_DateTime", "a33853.html#afa58e26786b951a8c796f060d93c13f5", null ],
-      [ "m_FileLine", "a33853.html#a2fcf644acdc70fc17a9ced3f7c206408", null ],
-      [ "m_FullFileLine", "a33853.html#a5488596e9976dd74cd60218ace6b7bfc", null ],
-      [ "m_Hash", "a33853.html#a70dde1057597afe5723ab5e9e776f027", null ],
-      [ "m_Level", "a33853.html#a6e74c8ae0d3d3f5c66a86998c6bc5a9e", null ],
-      [ "m_Message", "a33853.html#a197f88a4e9bd58de9eb043ecb5c23394", null ],
-      [ "m_StrType", "a33853.html#ada6012e1c6046f2287c98380d019a022", null ],
-      [ "m_ThreadInfo", "a33853.html#a35d7fed271b732e9867b8c9fea6617b3", null ]
+    [ "CurrentModule", "a34025.html", [
+      [ "GetAppDataPath", "a34025.html#a489c2d465f5699ea263d8c3c67c3de62", null ],
+      [ "GetAppRootPath", "a34025.html#a20d80d251982db969de7961d96ba805e", null ],
+      [ "GetHandle", "a34025.html#a6f0d0a52d2721d339e89066c977e734e", null ],
+      [ "GetLocation", "a34025.html#a242ee88a2d3971c3d4558d7f888945ea", null ],
+      [ "GetName", "a34025.html#aa7d0e950733e7644f483ce92c478ca73", null ]
     ] ],
-    [ "Message", "a33861.html", [
-      [ "Message", "a33861.html#a9129c099b58fc8b4b237a2268c40e695", null ],
-      [ "DoComplete", "a33861.html#ad6509fda6ddc2230f986662e5181ab04", null ],
-      [ "DoSpecialAction", "a33861.html#a60a9316d70a117080c003541bff6b5b3", null ],
-      [ "GetLevel", "a33861.html#a4975d38735e7659719be5e8c96865e5f", null ],
-      [ "m_Message", "a33861.html#a78424dfc4950ec1529fded759d62c3b6", null ]
+    [ "Object", "a34037.html", null ],
+    [ "PtrObject", "a34041.html", [
+      [ "PtrObject", "a34041.html#aaa646d1840123af9766d41dde7b83766", null ]
     ] ],
-    [ "Trace", "a33865.html", null ],
-    [ "Info", "a33869.html", null ],
-    [ "Warning", "a33873.html", null ],
-    [ "Error", "a33877.html", null ],
-    [ "Fatal", "a33881.html", [
-      [ "DoSpecialAction", "a33881.html#aee319a84720a3b08952822aedd918de6", null ]
-    ] ]
+    [ "Ptr", "a34045.html", [
+      [ "Ptr", "a34045.html#ad0ef08c8b525fc86c5aeccd655456e2c", null ],
+      [ "operator->", "a34045.html#a2f9f74776cb12ed9037d527703094d11", null ],
+      [ "operator->", "a34045.html#ab34a06b7a5428c6d6b4e01b822dc93a2", null ]
+    ] ],
+    [ "ICallBack", "a34053.html", null ],
+    [ "Process", "a34057.html", [
+      [ "KilledException", "a34061.html", null ],
+      [ "Process", "a34057.html#a15c85d53e3079f343aead5930adb4b2a", null ],
+      [ "FromParams", "a34057.html#a9a91dcba3b1a5c49ab13d490ecb61c23", null ],
+      [ "RunWithoutWaitingCompletion", "a34057.html#aebb905db53099a2f9fdae5d42ed0b23c", null ],
+      [ "RunWithoutWaitingCompletion", "a34057.html#a0d4cabefd5db952a5021e49f007434a8", null ],
+      [ "RunWithoutWaitingCompletion", "a34057.html#a13baa7b36d59ad50c468f5cf534e9df0", null ],
+      [ "RunWithReceiveStdout", "a34057.html#aec83e7b7a14bf1093927e5eff27b6ec9", null ],
+      [ "RunWithReceiveStdout", "a34057.html#a8d3e62141aea1c7e3b90a309ffde165b", null ],
+      [ "RunWithReceiveStdout", "a34057.html#ab340203b1a8ef054c4d55485a153f37c", null ],
+      [ "RunWithWaitingCompletion", "a34057.html#a571281c115f4106dd9d979f9656346da", null ],
+      [ "RunWithWaitingCompletion", "a34057.html#a8c62a860d069a4ebfdfeb0b4c6b50b45", null ],
+      [ "RunWithWaitingCompletion", "a34057.html#a200f3778cd1aafdd7401365ba6b3faab", null ],
+      [ "Tokenize", "a34057.html#ab3a668b5135d1d92c4a2a6b713e7da87", null ],
+      [ "ToParams", "a34057.html#a9cc5113978708ba27c4335c75825d0e1", null ]
+    ] ],
+    [ "WinapiCallProxy", "a34081.html", [
+      [ "GetMessageText", "a34081.html#a7023a00d30af42e21479960ad63ecc17", null ]
+    ] ],
+    [ "WINAPI_CALL", "a33198.html#gac67366a4782d98fd71f21ecc3981365b", null ],
+    [ "ProcessOutput", "a33198.html#ga9d847c18ebc2abac375a25fbaf95f123", null ],
+    [ "ToPocoArgs", "a33198.html#gabb34099f31487d25c396ec74b6cbbb3f", null ]
 ];

@@ -1,7 +1,7 @@
 var a33211 =
 [
-    [ "Controller", "a33213.html", "a33213" ],
-    [ "Model", "a33214.html", "a33214" ],
-    [ "View", "a33215.html", "a33215" ],
-    [ "Info", "a34545.html", null ]
+    [ "MainFrame", "a34329.html", null ],
+    [ "PanelSummary", "a34921.html", null ],
+    [ "PanelAllTests", "a34925.html", null ],
+    [ "PanelFailedTest", "a34929.html", null ]
 ];

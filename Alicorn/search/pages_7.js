@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['patterns',['Patterns',['../a35356.html',1,'AlicornBuildPage']]]
+  ['patterns',['Patterns',['../a35373.html',1,'AlicornBuildPage']]]
 ];

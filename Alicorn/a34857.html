@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс app::DoxygenReport</title>
+<title>Alicorn: Класс model::Executor</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.0 Revision: 2374 Platform: x64 Build: 19:40 25 Февраль 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.1 Revision: 2398 Platform: x64 Build: 16:08 01 Март 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -86,96 +86,64 @@ $(document).ready(function(){initNavTree('a34857.html','');});
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a34854.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс app::DoxygenReport<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a33175.html">Alicorn</a> &raquo; <a class="el" href="a33190.html">Testing.App</a></div></div>  </div>
+<div class="title">Класс model::Executor<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a33166.html">Alicorn</a> &raquo; <a class="el" href="a33181.html">Testing.App</a> &raquo; <a class="el" href="a33209.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a35361.html">Testing.App</a> <br />
- Класс 'фасада' формирователя отчета о прогоне тестов для документации.  
+<p>Класс входит в <a class="el" href="a35378.html">Testing.App</a> <br />
+ Класс модели, выполняющей тесты.  
  <a href="a34857.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03428_source.html">DoxygenReport.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a03656_source.html">Executor.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса app::DoxygenReport:</div>
+Граф наследования:model::Executor:</div>
 <div class="dyncontent">
-<div class="center"><img src="a34855.png" border="0" usemap="#app_1_1_doxygen_report_coll__map" alt="Collaboration graph"/></div>
-<map name="app_1_1_doxygen_report_coll__map" id="app_1_1_doxygen_report_coll__map">
+<div class="center"><img src="a34856.png" border="0" usemap="#model_1_1_executor_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_executor_inherit__map" id="model_1_1_executor_inherit__map">
+<area shape="rect" id="node2" href="a34865.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,5,195,112"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса model::Executor:</div>
+<div class="dyncontent">
+<div class="center"><img src="a34855.png" border="0" usemap="#model_1_1_executor_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_executor_coll__map" id="model_1_1_executor_coll__map">
+<area shape="rect" id="node2" href="a34865.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,49,195,156"/>
+<area shape="rect" id="node4" href="a34089.html" title="Класс входит в Version &#160;&#160;Класс получения информации о версии модуля. " alt="" coords="219,5,381,200"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:ae69f3fd567c964f9f4f0fcb10c75a690"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34857.html#ae69f3fd567c964f9f4f0fcb10c75a690">DoxygenReport</a> (const IModelPtr_t &amp;, const Path_t &amp;)</td></tr>
-<tr class="memdesc:ae69f3fd567c964f9f4f0fcb10c75a690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#ae69f3fd567c964f9f4f0fcb10c75a690">Подробнее...</a><br /></td></tr>
-<tr class="separator:ae69f3fd567c964f9f4f0fcb10c75a690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83bd59b1eb2484c2f84b62c68524284c"><td class="memItemLeft" align="right" valign="top"><a id="a83bd59b1eb2484c2f84b62c68524284c"></a>
+const Info_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34857.html#a83bd59b1eb2484c2f84b62c68524284c">GetResultRunTests</a> (void) const override</td></tr>
+<tr class="memdesc:a83bd59b1eb2484c2f84b62c68524284c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения информации о результатах прогона тестов. <br /></td></tr>
+<tr class="separator:a83bd59b1eb2484c2f84b62c68524284c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afe33e53a9d142820aff8aaefd7f24b"><td class="memItemLeft" align="right" valign="top"><a id="a9afe33e53a9d142820aff8aaefd7f24b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34857.html#a9afe33e53a9d142820aff8aaefd7f24b">IsExistsFiledTest</a> (void) const override</td></tr>
+<tr class="memdesc:a9afe33e53a9d142820aff8aaefd7f24b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает true, если есть хотя бы один проваленный тест. <br /></td></tr>
+<tr class="separator:a9afe33e53a9d142820aff8aaefd7f24b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a35361.html">Testing.App</a> <br />
- Класс 'фасада' формирователя отчета о прогоне тестов для документации. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a35378.html">Testing.App</a> <br />
+ Класс модели, выполняющей тесты. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>06 Октябрь 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>23 Май 2016 <br />
 </dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="ae69f3fd567c964f9f4f0fcb10c75a690"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae69f3fd567c964f9f4f0fcb10c75a690">&#9670;&nbsp;</a></span>DoxygenReport()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">DoxygenReport::DoxygenReport </td>
-          <td>(</td>
-          <td class="paramtype">const IModelPtr_t &amp;&#160;</td>
-          <td class="paramname"><em>_pModel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Path_t &amp;&#160;</td>
-          <td class="paramname"><em>_PathToReportFile</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Конструктор класса. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_pModel</td><td>Объект модели, содержащий результаты прогона тестов. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToReportFile</td><td>Путь к файлу, в который должен быть добавлен отчет.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/<a class="el" href="a03428_source.html">DoxygenReport.hpp</a></li>
-<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/DoxygenReport.cpp</li>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/Model/<a class="el" href="a03656_source.html">Executor.hpp</a></li>
+<li>Solution/Solution/Alicorn/Build/Testing.App/Testing.App/Model/Executor.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>app</b></li><li class="navelem"><a class="el" href="a34857.html">DoxygenReport</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 25 Фев 2017 19:40:39. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a34857.html">Executor</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 1 Мар 2017 16:08:33. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

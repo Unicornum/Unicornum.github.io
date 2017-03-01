@@ -1,39 +1,27 @@
 var a33199 =
 [
-    [ "Empty", "a33897.html", [
-      [ "WriteRecord", "a33897.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
-      [ "WriteTitle", "a33897.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
-    ] ],
-    [ "File", "a33901.html", [
-      [ "FormFileName", "a33901.html#a78253bd31454f39e16fb359f206526c1", null ],
-      [ "LimitLogSize", "a33901.html#a8543cc0644944d65cd8d277d1e8073a5", null ],
-      [ "OpenFile", "a33901.html#aaaf2c3c72eeff330e433f306a7f547c1", null ],
-      [ "RollingLogFiles", "a33901.html#a1c334e9fac26da0d4445802f43beefaf", null ],
-      [ "WriteRecord", "a33901.html#acb716a4ccea948033c64be86775d671d", null ],
-      [ "m_LogFile", "a33901.html#a8567d41ffad2072172acfeacb465240b", null ]
-    ] ],
-    [ "Html", "a33905.html", [
-      [ "WriteRecord", "a33905.html#a7e66035d80654aefc735bc594ded20ef", null ],
-      [ "WriteTitle", "a33905.html#ac2a4a7ffecb04b2b5fe1fbf34009da1b", null ]
-    ] ],
-    [ "IReport", "a33909.html", [
-      [ "WriteRecord", "a33909.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-      [ "WriteTitle", "a33909.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
-    ] ],
-    [ "Report", "a33913.html", [
-      [ "DoComplete", "a33913.html#a9817eab99a8437ba0531ce231a292839", null ],
-      [ "DoComplete", "a33913.html#a9603cd1d3c32b20c4f3549bb780ac6a6", null ]
-    ] ],
-    [ "Text", "a33917.html", [
-      [ "WriteRecord", "a33917.html#a487f860fae5255eaa76c988294a764b7", null ],
-      [ "WriteTitle", "a33917.html#a16e5c27860d379682fe582396e14609d", null ]
-    ] ],
-    [ "Console", "a33921.html", [
-      [ "WriteRecord", "a33921.html#aab3352a57302cff220e46d9cea1c12bb", null ],
-      [ "WriteTitle", "a33921.html#a16ff9b02d58211e7be68cc7514755e85", null ]
-    ] ],
-    [ "VisualStudioOutput", "a33925.html", [
-      [ "WriteRecord", "a33925.html#a36ba11583024bbba693e2998ea4d3668", null ],
-      [ "WriteTitle", "a33925.html#a672763fba708c23851b38be162768bac", null ]
-    ] ]
+    [ "Proxy", "a34085.html", null ],
+    [ "ASSERT_DIRECTORY_EQ", "a33199.html#ga5114b2eddd505e8e2cc6a3e17699e5b4", null ],
+    [ "ASSERT_EXISTS_FILE_FALSE", "a33199.html#gaf5900286722be76eaf83b881ba160bb1", null ],
+    [ "ASSERT_EXISTS_FILE_TRUE", "a33199.html#gad9fd1b4a23427585be8ae2918f5d05eb", null ],
+    [ "ASSERT_FILES_BINARY_EQ", "a33199.html#gadedb8f379e467a385930902dddd6d157", null ],
+    [ "ASSERT_FILES_BINARY_NE", "a33199.html#ga47e03c92d053709b90f83f6b20c9b7ba", null ],
+    [ "ASSERT_FILES_STREQ", "a33199.html#ga69b3a6234d72517ef85674de2cf60d30", null ],
+    [ "ASSERT_STDEXCEPTION", "a33199.html#ga9b6950e02cf07c434b3c9ccc325b9559", null ],
+    [ "BLOCK_FILE", "a33199.html#ga19899edc3a2fc42261218d524c7364db", null ],
+    [ "EXPECT_DIRECTORY_EQ", "a33199.html#ga110902fa9f184c39fc0c095562472c69", null ],
+    [ "EXPECT_EXISTS_FILE_FALSE", "a33199.html#ga548418041138f552c93a97dfb866f9ac", null ],
+    [ "EXPECT_EXISTS_FILE_TRUE", "a33199.html#ga30aa7b117cfbd9a5a2df877a16092f5c", null ],
+    [ "EXPECT_FILES_BINARY_EQ", "a33199.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2", null ],
+    [ "EXPECT_FILES_BINARY_NE", "a33199.html#gaae14802f30c143ba014bc7980d3db7f0", null ],
+    [ "EXPECT_FILES_STREQ", "a33199.html#ga14628cf5a758a8aeec9b5bb69fed767e", null ],
+    [ "EXPECT_STDEXCEPTION", "a33199.html#gae7553b6a2b3b0c4a21e94d06217ef8f3", null ],
+    [ "FRIEND_TEST", "a33199.html#gab92570f53abf3b4fbbd13acaf4265468", null ],
+    [ "THIS_DIRECTORY", "a33199.html#gad33527f0cbd8dabe93ba131e08796e74", null ],
+    [ "GetThisDirectory", "a33199.html#ga7f988e79eeac54f11e080ffbd5196129", null ],
+    [ "IsBinaryEqual", "a33199.html#ga8ea43b95b81df91082282cd21af937b6", null ],
+    [ "IsExists", "a33199.html#gaba7352a2eed189b48b6cdda86280e0e2", null ],
+    [ "IsMatch", "a33199.html#ga12fae53dd48adfd54cc17b98f46a3def", null ],
+    [ "IsStrEqual", "a33199.html#gadf7ceee89a29ddbf1582bb67ca9f33c5", null ],
+    [ "load_text_file", "a33199.html#ga1c12ba03349639a073faedfa358db4e9", null ]
 ];

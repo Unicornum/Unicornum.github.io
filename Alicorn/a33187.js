@@ -1,9 +1,9 @@
 var a33187 =
 [
-    [ "ArcCos", "a33187.html#ga38ce2d7f745c99f41f1a9dcc448d008b", null ],
-    [ "ArcSin", "a33187.html#ga2104517f783b71fdb1123123f8dcba74", null ],
-    [ "ArcTan", "a33187.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb", null ],
-    [ "Cos", "a33187.html#ga4a7357706084145b0cddd05c161ea772", null ],
-    [ "Sin", "a33187.html#ga8ab39ee8cc4acf6b68d38eb34eeab060", null ],
-    [ "Tan", "a33187.html#gabfb194a30a0380dbe3312321b164bca5", null ]
+    [ "Android", "a33172.html", "a33172" ],
+    [ "Boost", "a33174.html", "a33174" ],
+    [ "C++", "a33180.html", "a33180" ],
+    [ "MFC", "a33182.html", null ],
+    [ "Std", "a33185.html", "a33185" ],
+    [ "wxWidgets", "a33186.html", null ]
 ];

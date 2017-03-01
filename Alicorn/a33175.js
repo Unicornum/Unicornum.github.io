@@ -1,16 +1,9 @@
 var a33175 =
 [
-    [ "Converter", "a33176.html", "a33176" ],
-    [ "Document", "a33180.html", "a33180" ],
-    [ "Testing.App", "a33190.html", "a33190" ],
-    [ "Extension", "a33196.html", "a33196" ],
-    [ "Logger", "a33200.html", "a33200" ],
-    [ "Patterns", "a33204.html", "a33204" ],
-    [ "Platform", "a33205.html", null ],
-    [ "Settings", "a33206.html", "a33206" ],
-    [ "System", "a33207.html", "a33207" ],
-    [ "Testing", "a33208.html", "a33208" ],
-    [ "Version", "a33209.html", "a33209" ],
-    [ "Virtual File System", "a33210.html", "a33210" ],
-    [ "SettingsApp", "a33211.html", "a33211" ]
+    [ "ArcCos", "a33175.html#gaa1f9a57d13f01fd79928c206f2987771", null ],
+    [ "ArcSin", "a33175.html#gabc9373a8d3f74570f98b2c08f6e0839b", null ],
+    [ "ArcTan", "a33175.html#ga36893ac939107a0f2d2aad5f480e0dbd", null ],
+    [ "Cos", "a33175.html#gac0afab7827edd2f2c712e381ad4c6476", null ],
+    [ "Sin", "a33175.html#ga591de7acd440069d45ccfb5a23cc234b", null ],
+    [ "Tan", "a33175.html#ga941da4c724efde88e2fb9c75112542ed", null ]
 ];
