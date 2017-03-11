@@ -3,8 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.11"/>
-<title>Addins: View</title>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Addins: Файл Solution/Solution/Wrappers/VisualStudio/Events/Events.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,15 +15,11 @@
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
   $(document).ready(initResizable);
-  $(window).load(resizeHeight);
 </script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<script type="text/javascript">
-  $(document).ready(function() { init_search(); });
-</script>
-<link href="doxygen_1.8.css" rel="stylesheet" type="text/css" />
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -33,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.2 Revision: 4653 Platform: x64 Build: 19:23 15 Октябрь 2016</span>
+   &#160;<span id="projectnumber">Версия: 2.5.3 Revision: 4818 Platform: Win32 Build: 11:01 11 Март 2017</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -42,35 +39,19 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.11 -->
+<!-- Создано системой Doxygen 1.8.13 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
 </script>
-  <div id="navrow1" class="tabs">
-    <ul class="tablist">
-      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
-      <li><a href="pages.html"><span>Описания</span></a></li>
-      <li class="current"><a href="modules.html"><span>Группы</span></a></li>
-      <li><a href="annotated.html"><span>Классы</span></a></li>
-      <li><a href="files.html"><span>Файлы</span></a></li>
-      <li>
-        <div id="MSearchBox" class="MSearchBoxInactive">
-        <span class="left">
-          <img id="MSearchSelect" src="search/mag_sel.png"
-               onmouseover="return searchBox.OnSearchSelectShow()"
-               onmouseout="return searchBox.OnSearchSelectHide()"
-               alt=""/>
-          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
-               onfocus="searchBox.OnSearchFieldFocus(true)" 
-               onblur="searchBox.OnSearchFieldFocus(false)" 
-               onkeyup="searchBox.OnSearchFieldChange(event)"/>
-          </span><span class="right">
-            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
-          </span>
-        </div>
-      </li>
-    </ul>
-  </div>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -101,166 +82,87 @@ $(document).ready(function(){initNavTree('a02336.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Классы</a> &#124;
-<a href="#define-members">Макросы</a>  </div>
   <div class="headertitle">
-<div class="title">View<div class="ingroups"><a class="el" href="a02326.html">Core</a> &raquo; <a class="el" href="a02342.html">Tools</a> &raquo; <a class="el" href="a02344.html">ProjectTasks</a></div></div>  </div>
+<div class="title">Файл Events.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Граф связей класса View:</div>
+<div class="textblock"><code>#include &quot;Events\Events.forward.hpp&quot;</code><br />
+<code>#include &quot;Events\Events.hpp&quot;</code><br />
+<code>#include &quot;Events\DteEvents.hpp&quot;</code><br />
+<code>#include &quot;Events\BuildEvents.hpp&quot;</code><br />
+<code>#include &quot;Events\SolutionEvents.hpp&quot;</code><br />
+<code>#include &quot;Events\SelectionEvents.hpp&quot;</code><br />
+<code>#include &quot;Events\TextEditorEvents.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Events.hpp:</div>
 <div class="dyncontent">
-<center><table><tr><td><img src="a02336.png" border="0" alt="" usemap="#a02336"/>
-<map name="a02336" id="a02336">
-<area shape="rect" id="node1" href="a02344.html" title="ProjectTasks" alt="" coords="5,31,112,57"/>
-<area shape="rect" id="node2" href="a02343.html" title="DevelopmentInfo" alt="" coords="363,5,496,32"/>
-<area shape="rect" id="node3" href="a02341.html" title="wxWidgets" alt="" coords="383,56,476,83"/>
+<div class="center"><img src="a02337.png" border="0" usemap="#_solution_2_solution_2_wrappers_2_visual_studio_2_events_2_events_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_wrappers_2_visual_studio_2_events_2_events_8hpp" id="_solution_2_solution_2_wrappers_2_visual_studio_2_events_2_events_8hpp">
+<area shape="rect" id="node3" href="a02333_source.html" title="Events\\Events.forward.hpp" alt="" coords="5,96,208,123"/>
+<area shape="rect" id="node5" href="a43067_source.html" title="Events\\Events.hpp" alt="" coords="232,96,379,123"/>
+<area shape="rect" id="node7" href="a02327_source.html" title="Events\\DteEvents.hpp" alt="" coords="403,96,573,123"/>
+<area shape="rect" id="node11" href="a02321_source.html" title="Events\\BuildEvents.hpp" alt="" coords="598,96,775,123"/>
+<area shape="rect" id="node14" href="a02351_source.html" title="Events\\SolutionEvents.hpp" alt="" coords="800,96,1000,123"/>
+<area shape="rect" id="node17" href="a02345_source.html" title="Events\\SelectionEvents.hpp" alt="" coords="1024,96,1232,123"/>
+<area shape="rect" id="node20" href="a02363_source.html" title="Events\\TextEditorEvents.hpp" alt="" coords="1257,96,1471,123"/>
+<area shape="rect" id="node9" href="a02354_source.html" title="Subscriber.hpp" alt="" coords="840,171,960,197"/>
 </map>
-</td></tr></table></center>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00164.html">view::DraggingTaskPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс реализации логики перетаскивания панелей задач мышью.  <a href="a00164.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00186.html">view::ICompleteTasksPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Вспомогательный класс для интерфейса панели завершенных задач.  <a href="a00186.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">view::IProcessTasksPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Вспомогательный класс для интерфейса панели задач, находящихся в процессе работы.  <a href="a00206.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00213.html">view::IReadTaskPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс представления для передачи модели измененных данных задачи.  <a href="a00213.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00217.html">view::ITaskPanelData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс для работы с данными задачи.  <a href="a00217.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00218.html">view::ITaskPanelMain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс для оповещения дочерними панелями родительской панели о произошедших изменениях.  <a href="a00218.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00219.html">view::ITaskPanelReadData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс для получения данных задачи.  <a href="a00219.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00220.html">view::ITaskPanelWriteData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс для передачи панели данных задачи.  <a href="a00220.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00221.html">view::ITasksPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс панели, содержащей список панелей отдельных задач.  <a href="a00221.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html">view::IWriteTaskPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс представления для получения данных из модели задачи.  <a href="a00226.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00319.html">view::TaskPanel</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс панели одной задачи.  <a href="a00319.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00320.html">view::TaskPanelBkColor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Вспомогательный класс для установки цвета фона панелей задач.  <a href="a00320.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00322.html">view::TaskPanelBrief</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс панели, отображающей задачу в свернутом виде.  <a href="a00322.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00323.html">view::TaskPanelData</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Вспомогательный класс, реализующий интерфейс получения данных задачи.  <a href="a00323.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00324.html">view::TaskPanelDept</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс для работы со смещением дочерних задач.  <a href="a00324.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html">view::TaskPanelEditor</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс реализации работы с панелью редактирования параметров задачи.  <a href="a00326.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00327.html">view::TaskPanelText</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс реализации работы с данными задачи.  <a href="a00327.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00329.html">view::TasksPanel&lt; TInterface &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс реализации панели, содержащей список панелей отдельных задач.  <a href="a00329.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00097.html">wx::CheckBox</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс <a class="el" href="a00097.html" title="Класс входит в ProjectTasks   Класс CheckBox&#39;a с поддержкой отмены изменений. ">CheckBox</a>'a с поддержкой отмены изменений.  <a href="a00097.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00102.html">wx::ComboBox&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс <a class="el" href="a00102.html" title="Класс входит в ProjectTasks   Класс ComboBox&#39;a с автоматическим заполнением элементов выпадающего спи...">ComboBox</a>'a с автоматическим заполнением элементов выпадающего списка.  <a href="a00102.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00180.html">wx::HtmlAbout</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00034.html">DevelopmentInfo</a> <br />
- Класс отображения информации о программе в html формате.  <a href="a00180.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00184.html">wx::ICancelControl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Интерфейсный класс элементов управления, для которых требуется поддержка отмены изменений в панели редактирования задачи.  <a href="a00184.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00336.html">wx::TextCtrl</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a00036.html">ProjectTasks</a> <br />
- Класс для текстового элемента управления с поддержкой отмены изменений.  <a href="a00336.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Макросы</h2></td></tr>
-<tr class="memitem:ga916461d249e7ba9ead063f26c923730b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a02336.html#ga916461d249e7ba9ead063f26c923730b">DECLARE_COMBOBOX</a>(ClassName,  TClassName)</td></tr>
-<tr class="memdesc:ga916461d249e7ba9ead063f26c923730b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Макрос объявления конкретных классов ComboBox'ов для использования в wxFowxFormBuilder'e.  <a href="#ga916461d249e7ba9ead063f26c923730b">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga916461d249e7ba9ead063f26c923730b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="a02338.png" border="0" usemap="#_solution_2_solution_2_wrappers_2_visual_studio_2_events_2_events_8hppdep" alt=""/></div>
+<map name="_solution_2_solution_2_wrappers_2_visual_studio_2_events_2_events_8hppdep" id="_solution_2_solution_2_wrappers_2_visual_studio_2_events_2_events_8hppdep">
+<area shape="rect" id="node3" href="a42536.html" title="Solution/Solution/Wrappers\l/VisualStudio/VisualStudio.hpp" alt="" coords="3187,97,3409,138"/>
+<area shape="rect" id="node5" href="a02750.html" title="Solution/Solution/Wrappers\l/Wrappers.hpp" alt="" coords="1197,298,1400,339"/>
+<area shape="rect" id="node54" href="a42833.html" title="Solution/Solution/Core\l/Utilities/Utilities.hpp" alt="" coords="2484,194,2655,235"/>
+<area shape="rect" id="node61" href="a41435_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Common/Common/stdafx.h" alt="" coords="1956,291,2180,347"/>
+<area shape="rect" id="node64" href="a41519_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Macros/Macros/stdafx.h" alt="" coords="3161,291,3385,347"/>
+<area shape="rect" id="node71" href="a41585_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Support/Tags/Tags/stdafx.h" alt="" coords="3409,291,3633,347"/>
+<area shape="rect" id="node74" href="a41651_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Utilities/Utilities/stdafx.h" alt="" coords="3657,291,3881,347"/>
+<area shape="rect" id="node81" href="a41810_source.html" title="Solution/Solution/Wrappers\l/Helper/Helper/stdafx.h" alt="" coords="3905,298,4108,339"/>
+<area shape="rect" id="node89" href="a41747_source.html" title="Solution/Solution/Core\l/Utilities/Logger/Logger\l/stdafx.h" alt="" coords="3463,187,3639,243"/>
+<area shape="rect" id="node7" href="a41117_source.html" title="Solution/Solution/Connection\lPoints/Common/Common/stdafx.h" alt="" coords="514,410,757,451"/>
+<area shape="rect" id="node9" href="a40193.html" title="Solution/Solution/Connection\lPoints/Common/Common.hpp" alt="" coords="935,410,1149,451"/>
+<area shape="rect" id="node11" href="a41135_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Main\l/Main/StdAfx.h" alt="" coords="5,523,219,579"/>
+<area shape="rect" id="node13" href="a41138_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Properties\l/Properties/stdafx.h" alt="" coords="243,523,463,579"/>
+<area shape="rect" id="node15" href="a41141_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Service\l/Service/stdafx.h" alt="" coords="487,523,701,579"/>
+<area shape="rect" id="node17" href="a41144_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Support\l/Support/stdafx.h" alt="" coords="1559,523,1773,579"/>
+<area shape="rect" id="node19" href="a41153_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/TimeTracker\l/TimeTracker/stdafx.h" alt="" coords="727,523,961,579"/>
+<area shape="rect" id="node21" href="a41162_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/UnicornumCode\lAssistant/UnicornumCodeAssistant/stdafx.h" alt="" coords="986,523,1296,579"/>
+<area shape="rect" id="node23" href="a41165_source.html" title="Solution/Solution/Connection\lPoints/VisualStudio/Version\l/Version/stdafx.h" alt="" coords="1321,523,1535,579"/>
+<area shape="rect" id="node32" href="a41198_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/stdafx.h" alt="" coords="1378,403,1576,459"/>
+<area shape="rect" id="node42" href="a41459_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Documentation/Documentation\l/stdafx.h" alt="" coords="1601,395,1833,466"/>
+<area shape="rect" id="node48" href="a41543_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Properties/Properties/stdafx.h" alt="" coords="1857,403,2084,459"/>
+<area shape="rect" id="node50" href="a41624_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Testing/Testing/stdafx.h" alt="" coords="2108,403,2332,459"/>
+<area shape="rect" id="node52" href="a41666_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Version/Version/stdafx.h" alt="" coords="2356,403,2580,459"/>
+<area shape="rect" id="node34" href="a41192_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/Controller\l/stdafx.h" alt="" coords="1799,515,2007,586"/>
+<area shape="rect" id="node36" href="a41195_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/Model\l/stdafx.h" alt="" coords="2031,515,2213,586"/>
+<area shape="rect" id="node38" href="a41201_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/View/stdafx.h" alt="" coords="2238,523,2473,579"/>
+<area shape="rect" id="node40" href="a41204_source.html" title="Solution/Solution/Core\l/Tools/DevelopmentInfo\l/DevelopmentInfo/View/wxWidgets\l/stdafx.h" alt="" coords="2229,635,2483,706"/>
+<area shape="rect" id="node44" href="a41453_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Documentation/Documentation\l/Coverage/stdafx.h" alt="" coords="2499,515,2731,586"/>
+<area shape="rect" id="node46" href="a41456_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Documentation/Documentation\l/Doxygen/stdafx.h" alt="" coords="2755,515,2987,586"/>
+<area shape="rect" id="node56" href="a00899.html" title="Solution/Solution/Core\l/UsefulCommands/UsefulCommands.hpp" alt="" coords="891,298,1173,339"/>
+<area shape="rect" id="node67" href="a41555_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/Service/Service/stdafx.h" alt="" coords="2457,291,2681,347"/>
+<area shape="rect" id="node69" href="a41567_source.html" title="Solution/Solution/Core\l/UsefulCommands/VisualStudio\l/StartUp/StartUp/stdafx.h" alt="" coords="2705,291,2929,347"/>
+<area shape="rect" id="node77" href="a41804_source.html" title="Solution/Solution/Core\l/Utilities/Utilities/Utilities\l/stdafx.h" alt="" coords="2953,291,3137,347"/>
+<area shape="rect" id="node79" href="a41807_source.html" title="Solution/Solution/Core\l/Utilities/Utilities/Utilities\l/VisualStudio/stdafx.h" alt="" coords="2953,403,3137,459"/>
+<area shape="rect" id="node83" href="a41813_source.html" title="Solution/Solution/Wrappers\l/Helper/Helper/VisualStudio\l/stdafx.h" alt="" coords="3905,403,4108,459"/>
+</map>
+</div>
+</div>
+<p><a href="a02336_source.html">См. исходные тексты.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Группа классов представления. </p>
-<h2 class="groupheader">Макросы</h2>
-<a class="anchor" id="ga916461d249e7ba9ead063f26c923730b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DECLARE_COMBOBOX</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">ClassName, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">TClassName&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keyword">class </span>ClassName final : <span class="keyword">public</span> ComboBox&lt;TClassName&gt; \</div><div class="line">  { \</div><div class="line">  public: \</div><div class="line">    inline ClassName(wxWindow * _pParent, wxWindowID _Id, \</div><div class="line">      <span class="keyword">const</span> wxString &amp; _Text, <span class="keyword">const</span> wxPoint &amp; _Point, <span class="keyword">const</span> wxSize &amp; _Size, \</div><div class="line">      <span class="keywordtype">int</span> _Count, <span class="keyword">const</span> wxString * _Choices, <span class="keywordtype">long</span> _Style) : \</div><div class="line">      ComboBox(_pParent, _Id, _Text, _Point, _Size, _Count, _Choices, _Style) {} \</div><div class="line">  };</div></div><!-- fragment -->
-<p>Макрос объявления конкретных классов ComboBox'ов для использования в wxFowxFormBuilder'e. </p>
-<dl class="todo"><dt><b><a class="el" href="a00001.html#_todo000009">Необходимо сделать:</a></b></dt><dd>Заменить наследованием конструктора, когда это станет возможно. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов <a class="el" href="a39919.html">Events</a>. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 15 Окт 2016 19:23:43. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_03982c9addd929f8ee127dc3c352715a.html">Events</a></li><li class="navelem"><a class="el" href="a02336.html">Events.hpp</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 11 Мар 2017 11:01:39. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
 </div>
 </body>

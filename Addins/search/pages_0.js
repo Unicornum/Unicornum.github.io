@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['allvisualstudioaddins',['AllVisualStudioAddins',['../a00004.html',1,'BuildPage']]],
-  ['addins',['Addins',['../a00013.html',1,'index']]]
+  ['allvisualstudioaddins',['AllVisualStudioAddins',['../a39853.html',1,'BuildPage']]],
+  ['addins',['Addins',['../a39862.html',1,'index']]]
 ];
