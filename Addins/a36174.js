@@ -1,4 +1,7 @@
 var a36174 =
 [
-    [ "CommandManager", "a36174.html#af1330ab08f3a49ce9c3d3a6c932dd581", null ]
+    [ "Connection Commands", "a36173.html", "a36173" ],
+    [ "Tools", "a36190.html", "a36190" ],
+    [ "UsefulCommands", "a36195.html", "a36195" ],
+    [ "Utilities", "a36216.html", "a36216" ]
 ];

@@ -6,7 +6,7 @@ var dir_add6444bedfb207e2896180b28d51464 =
     [ "Test.DoQueryCaption", "dir_1ce5f9d89a33805b3f86488f97d92d56.html", "dir_1ce5f9d89a33805b3f86488f97d92d56" ],
     [ "Test.DoQueryStatus", "dir_4e69a30fa9a721df251225d15c24610c.html", "dir_4e69a30fa9a721df251225d15c24610c" ],
     [ "Test.Perform", "dir_064e5f66b4431f2881db58deb259eeb7.html", "dir_064e5f66b4431f2881db58deb259eeb7" ],
-    [ "mock.hpp", "a42287_source.html", null ],
-    [ "stdafx.h", "a41171_source.html", null ],
-    [ "targetver.h", "a42086_source.html", null ]
+    [ "mock.hpp", "a42657_source.html", null ],
+    [ "stdafx.h", "a41508_source.html", null ],
+    [ "targetver.h", "a42453_source.html", null ]
 ];

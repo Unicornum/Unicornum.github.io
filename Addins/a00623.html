@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Файл Solution/Solution/Core/Tools/ProjectTasks/Test.ProjectTasks/Test.CheckBox/CheckBox_test.cpp</title>
+<title>Addins: Файл Solution/Solution/Core/Tools/ProjectTasks/Test.ProjectTasks/Test.AllTasks/AllTasks_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.3 Revision: 4818 Platform: Win32 Build: 11:01 11 Март 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.5.4 Revision: 4924 Platform: Win32 Build: 10:07 18 Март 2017</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -82,49 +82,87 @@ $(document).ready(function(){initNavTree('a00623.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл CheckBox_test.cpp</div>  </div>
+<div class="title">Файл AllTasks_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;alicorn\extension\boost\format.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &quot;..\..\ProjectTasks\View\wxWidgets\CheckBox.hpp&quot;</code><br />
+<code>#include &quot;..\..\ProjectTasks\Model\AllTasks.hpp&quot;</code><br />
+<code>#include &quot;..\..\ProjectTasks\Support.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для CheckBox_test.cpp:</div>
+Граф включаемых заголовочных файлов для AllTasks_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00624.png" border="0" usemap="#_solution_2_solution_2_core_2_tools_2_project_tasks_2_test_8_project_tasks_2_test_8_check_box_2_check_box__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_core_2_tools_2_project_tasks_2_test_8_project_tasks_2_test_8_check_box_2_check_box__test_8cpp" id="_solution_2_solution_2_core_2_tools_2_project_tasks_2_test_8_project_tasks_2_test_8_check_box_2_check_box__test_8cpp">
-<area shape="rect" id="node3" href="a41264_source.html" title="stdafx.h" alt="" coords="706,133,781,160"/>
-<area shape="rect" id="node107" href="a00599_source.html" title="..\\..\\ProjectTasks\l\\View\\wxWidgets\\CheckBox.hpp" alt="" coords="5004,217,5239,258"/>
-<area shape="rect" id="node9" href="a42293_source.html" title="..\\mock.hpp" alt="" coords="3300,224,3401,251"/>
-<area shape="rect" id="node23" href="a01946_source.html" title="Core\\Utilities\\Utilities\l\\Utilities.x64.mock.hpp" alt="" coords="1333,307,1504,349"/>
-<area shape="rect" id="node44" href="a42599_source.html" title="..\\ProjectTasks\\Model.hpp" alt="" coords="6366,315,6561,341"/>
-<area shape="rect" id="node55" href="a42620_source.html" title="..\\ProjectTasks\\View.hpp" alt="" coords="1529,315,1719,341"/>
-<area shape="rect" id="node57" href="a00608_source.html" title="..\\ProjectTasks\\View\l\\wxWidgets\\ICancelControl.hpp" alt="" coords="6586,307,6816,349"/>
-<area shape="rect" id="node63" href="a42494_source.html" title="..\\ProjectTasks\\Support.mock.hpp" alt="" coords="2110,315,2359,341"/>
-<area shape="rect" id="node65" href="a42479_source.html" title="..\\ProjectTasks\\Support.hpp" alt="" coords="2384,315,2595,341"/>
-<area shape="rect" id="node25" href="a42854_source.html" title="Utilities\\Version.mock.hpp" alt="" coords="1561,405,1753,432"/>
-<area shape="rect" id="node28" href="a01889_source.html" title="Utilities\\Calendar.mock.hpp" alt="" coords="1778,405,1979,432"/>
-<area shape="rect" id="node30" href="a42824_source.html" title="Utilities\\ProjectInfo.mock.hpp" alt="" coords="2003,405,2220,432"/>
-<area shape="rect" id="node32" href="a01916_source.html" title="Utilities\\ProjectTasksData.hpp" alt="" coords="2245,405,2467,432"/>
-<area shape="rect" id="node35" href="a01895_source.html" title="Utilities\\DevelopmentInfo\lData.hpp" alt="" coords="2491,398,2677,439"/>
-<area shape="rect" id="node38" href="a01925_source.html" title="Utilities\\SolutionDevelopment\lInfo.mock.hpp" alt="" coords="1062,398,1276,439"/>
-<area shape="rect" id="node41" href="a01880_source.html" title="Utilities\\AllSolutionsDevelopment\lInfo.mock.hpp" alt="" coords="1301,398,1536,439"/>
-<area shape="rect" id="node46" href="a00434_source.html" title="Model\\IReadTask.hpp" alt="" coords="6417,496,6580,523"/>
-<area shape="rect" id="node49" href="a00440_source.html" title="Model\\IWriteTask.hpp" alt="" coords="6226,496,6392,523"/>
-<area shape="rect" id="node51" href="a00437_source.html" title="Model\\ITask.hpp" alt="" coords="6347,405,6477,432"/>
+<div class="center"><img src="a00624.png" border="0" usemap="#_solution_2_solution_2_core_2_tools_2_project_tasks_2_test_8_project_tasks_2_test_8_all_tasks_2_all_tasks__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_core_2_tools_2_project_tasks_2_test_8_project_tasks_2_test_8_all_tasks_2_all_tasks__test_8cpp" id="_solution_2_solution_2_core_2_tools_2_project_tasks_2_test_8_project_tasks_2_test_8_all_tasks_2_all_tasks__test_8cpp">
+<area shape="rect" id="node3" href="a41598_source.html" title="stdafx.h" alt="" coords="3952,133,4027,160"/>
+<area shape="rect" id="node43" href="a42852_source.html" title="..\\ProjectTasks\\Support.hpp" alt="" coords="480,315,691,341"/>
+<area shape="rect" id="node103" href="a00434_source.html" title="..\\..\\ProjectTasks\l\\Model\\AllTasks.hpp" alt="" coords="580,217,735,258"/>
+<area shape="rect" id="node9" href="a42663_source.html" title="..\\mock.hpp" alt="" coords="3939,224,4040,251"/>
+<area shape="rect" id="node23" href="a02060_source.html" title="Core\\Utilities\\Utilities\l\\Utilities.x64.mock.hpp" alt="" coords="6616,307,6787,349"/>
+<area shape="rect" id="node25" href="a42972_source.html" title="..\\ProjectTasks\\Model.hpp" alt="" coords="766,315,962,341"/>
+<area shape="rect" id="node33" href="a42993_source.html" title="..\\ProjectTasks\\View.hpp" alt="" coords="6812,315,7002,341"/>
+<area shape="rect" id="node35" href="a00611_source.html" title="..\\ProjectTasks\\View\l\\wxWidgets\\ICancelControl.hpp" alt="" coords="7026,307,7256,349"/>
+<area shape="rect" id="node41" href="a42867_source.html" title="..\\ProjectTasks\\Support.mock.hpp" alt="" coords="1354,315,1603,341"/>
+<area shape="rect" id="node27" href="a00437_source.html" title="Model\\IReadTask.hpp" alt="" coords="1291,472,1454,499"/>
+<area shape="rect" id="node30" href="a00440_source.html" title="Model\\ITask.hpp" alt="" coords="1204,397,1335,424"/>
+<area shape="rect" id="node45" href="a43080_source.html" title="Support\\Types.hpp" alt="" coords="511,397,660,424"/>
+<area shape="rect" id="node47" href="a00497_source.html" title="Support\\Task.hpp" alt="" coords="24,397,163,424"/>
+<area shape="rect" id="node51" href="a00506_source.html" title="TaskType.hpp" alt="" coords="188,397,303,424"/>
+<area shape="rect" id="node53" href="a00464_source.html" title="Support\\Options.hpp" alt="" coords="328,397,486,424"/>
+<area shape="rect" id="node55" href="a00488_source.html" title="Support\\SolutionTasksPage.hpp" alt="" coords="684,397,916,424"/>
+<area shape="rect" id="node58" href="a00479_source.html" title="Support\\SolutionHistoryPage.hpp" alt="" coords="940,397,1180,424"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса CheckBox. </p>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a4936c89008079e3233f3a8b29cc89294"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00623.html#a4936c89008079e3233f3a8b29cc89294">TEST_F</a> (AllTasks_test, Test_Constructor_InvalidFile)</td></tr>
+<tr class="separator:a4936c89008079e3233f3a8b29cc89294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса AllTasks. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a4936c89008079e3233f3a8b29cc89294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4936c89008079e3233f3a8b29cc89294">&#9670;&nbsp;</a></span>TEST_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype">AllTasks_test&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Test_Constructor_InvalidFile&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="a36161.html#_todo000009">Необходимо сделать:</a></b></dt><dd>"Добавить файл, содержащий валидную структуру, но некорректное описание задачи" ; </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_d3b7204a4ebdc4634cf84f3ea193beb6.html">Test.ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_71fed4388047ccf896d539ae09382431.html">Test.CheckBox</a></li><li class="navelem"><a class="el" href="a00623.html">CheckBox_test.cpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 11 Мар 2017 11:01:38. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_d3b7204a4ebdc4634cf84f3ea193beb6.html">Test.ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_e5e80bdf620e19a28b2c5258d4225936.html">Test.AllTasks</a></li><li class="navelem"><a class="el" href="a00623.html">AllTasks_test.cpp</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 18 Мар 2017 10:07:42. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

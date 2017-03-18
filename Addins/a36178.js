@@ -1,5 +1,7 @@
 var a36178 =
 [
-    [ "Extension", "a36178.html#aa06c03115924b4201ae21afb17db7aa1", null ],
-    [ "Initialyze", "a36178.html#ae2f58898313a1e649178d8a73ac1448f", null ]
+    [ "MenuPanel", "a39345.html", null ],
+    [ "BasePanelMatchSearch", "a37129.html", null ],
+    [ "BasePanelReplace", "a37133.html", null ],
+    [ "MainFrame", "a36525.html", null ]
 ];

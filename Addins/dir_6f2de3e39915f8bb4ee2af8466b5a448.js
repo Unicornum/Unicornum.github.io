@@ -5,6 +5,6 @@ var dir_6f2de3e39915f8bb4ee2af8466b5a448 =
     [ "Test.DTE", "dir_07f3f5bfa6a6535fa28f33569351bf3b.html", "dir_07f3f5bfa6a6535fa28f33569351bf3b" ],
     [ "Test.ServiceProvider", "dir_3b8260c581ac22d46de9b4ec4a5ac43d.html", "dir_3b8260c581ac22d46de9b4ec4a5ac43d" ],
     [ "Test.StatusBar", "dir_c9bcf5ccdeada3c434ac43bb4fed2963.html", "dir_c9bcf5ccdeada3c434ac43bb4fed2963" ],
-    [ "mock.hpp", "a42377.html", null ],
-    [ "stdafx.h", "a41954_source.html", null ]
+    [ "mock.hpp", "a42750.html", null ],
+    [ "stdafx.h", "a42321_source.html", null ]
 ];

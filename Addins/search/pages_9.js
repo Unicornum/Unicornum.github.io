@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['main',['Main',['../a39869.html',1,'ConnectionPointsVisualStudioPage']]],
-  ['mainui',['MainUI',['../a39870.html',1,'ConnectionPointsVisualStudioPage']]],
-  ['macros',['Macros',['../a39895.html',1,'CoreUsefulCommandsVisualStudioPage']]]
+  ['main',['Main',['../a40172.html',1,'ConnectionPointsVisualStudioPage']]],
+  ['mainui',['MainUI',['../a40173.html',1,'ConnectionPointsVisualStudioPage']]],
+  ['macros',['Macros',['../a40198.html',1,'CoreUsefulCommandsVisualStudioPage']]],
+  ['miscellaneous',['Miscellaneous',['../a40199.html',1,'CoreUsefulCommandsVisualStudioPage']]]
 ];

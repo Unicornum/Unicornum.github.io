@@ -13,7 +13,7 @@ var dir_9d64e3399e5fc9ae2d1e82ccdce8b111 =
     [ "Test.Text", "dir_7d0fa69495e1c26165557ad811fc1927.html", "dir_7d0fa69495e1c26165557ad811fc1927" ],
     [ "Test.Version", "dir_0bb3123dce9cdae6a43bd9978f688bee.html", "dir_0bb3123dce9cdae6a43bd9978f688bee" ],
     [ "Test.VersionResource", "dir_38f4975305e24ff3ad4e8c892445032b.html", "dir_38f4975305e24ff3ad4e8c892445032b" ],
-    [ "mock.hpp", "a42356_source.html", null ],
-    [ "stdafx.h", "a41762_source.html", null ],
-    [ "targetver.h", "a42161_source.html", null ]
+    [ "mock.hpp", "a42729_source.html", null ],
+    [ "stdafx.h", "a42129_source.html", null ],
+    [ "targetver.h", "a42531_source.html", null ]
 ];

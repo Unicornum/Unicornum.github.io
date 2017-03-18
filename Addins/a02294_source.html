@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Document/Document.inside.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/IPropertySheet.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.3 Revision: 4818 Platform: Win32 Build: 11:01 11 Март 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.5.4 Revision: 4924 Platform: Win32 Build: 10:07 18 Март 2017</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -83,16 +83,20 @@ $(document).ready(function(){initNavTree('a02294_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Document.inside.hpp</div>  </div>
+<div class="title">IPropertySheet.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a02294.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Document\Documents.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a36291.html">wrappers</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="a38749.html">   25</a></span>&#160;<span class="keyword">class </span><a class="code" href="a38749.html">IPropertySheet</a></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> CString <a class="code" href="a38749.html#a0cf8dfd848f9a05316b193e3a0d20d7f">GetPathToFile</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="a38749.html#a952ef4cb92f66af5b7d0678b06a84de3">Remove</a>(<span class="keywordtype">void</span>) = 0;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a38749.html">IPropertySheet</a>(<span class="keywordtype">void</span>) {}</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} <span class="comment">// namespace wrappers</span></div><div class="ttc" id="a38749_html"><div class="ttname"><a href="a38749.html">wrappers::vs::IPropertySheet</a></div><div class="ttdoc">Класс входит в Configuration   Интерфейс классов работы со страницей свойств. </div><div class="ttdef"><b>Definition:</b> IPropertySheet.hpp:25</div></div>
+<div class="ttc" id="a38749_html_a0cf8dfd848f9a05316b193e3a0d20d7f"><div class="ttname"><a href="a38749.html#a0cf8dfd848f9a05316b193e3a0d20d7f">wrappers::vs::IPropertySheet::GetPathToFile</a></div><div class="ttdeci">virtual CString GetPathToFile(void) const =0</div><div class="ttdoc">Полный путь к файлу страницы свойств. </div></div>
+<div class="ttc" id="a36291_html"><div class="ttname"><a href="a36291.html">mock::wrappers</a></div><div class="ttdef"><b>Definition:</b> Data.mock.hpp:10</div></div>
+<div class="ttc" id="a38749_html_a952ef4cb92f66af5b7d0678b06a84de3"><div class="ttname"><a href="a38749.html#a952ef4cb92f66af5b7d0678b06a84de3">wrappers::vs::IPropertySheet::Remove</a></div><div class="ttdeci">virtual void Remove(void)=0</div><div class="ttdoc">Удаление страницы свойств из родительской конфигурации. </div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_d157d7bfe6141e2aaab6e272ec3ed556.html">Document</a></li><li class="navelem"><a class="el" href="a02294.html">Document.inside.hpp</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 11 Мар 2017 11:01:37. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6286ca65141999c3454cfc128243a7c6.html">Configuration</a></li><li class="navelem"><a class="el" href="dir_f6358a5537d15380207bce6b41615bce.html">Configuration</a></li><li class="navelem"><b>IPropertySheet.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Сб 18 Мар 2017 10:07:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
