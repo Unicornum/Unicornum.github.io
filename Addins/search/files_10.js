@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['tag_5ftest_2ecpp',['Tag_test.cpp',['../a01475.html',1,'']]],
-  ['tags_5ftest_2ecpp',['Tags_test.cpp',['../a01478.html',1,'']]],
+  ['tag_5ftest_2ecpp',['Tag_test.cpp',['../a01490.html',1,'']]],
+  ['tags_5ftest_2ecpp',['Tags_test.cpp',['../a01493.html',1,'']]],
   ['task_5ftest_2ecpp',['Task_test.cpp',['../a00671.html',1,'']]],
   ['taskpanelbkcolor_5ftest_2ecpp',['TaskPanelBkColor_test.cpp',['../a00674.html',1,'']]],
   ['taskpanelbrief_5ftest_2ecpp',['TaskPanelBrief_test.cpp',['../a00677.html',1,'']]],
@@ -11,17 +11,17 @@ var searchData=
   ['taskspanel_5ftest_2ecpp',['TasksPanel_test.cpp',['../a00689.html',1,'']]],
   ['tasktype_5ftest_2ecpp',['TaskType_test.cpp',['../a00692.html',1,'']]],
   ['test_5ftest_2ecpp',['Test_test.cpp',['../a00962.html',1,'']]],
-  ['testclassblank_5ftest_2ecpp',['TestClassBlank_test.cpp',['../a01499.html',1,'']]],
-  ['testclassproject_5ftest_2ecpp',['TestClassProject_test.cpp',['../a01502.html',1,'']]],
-  ['testing_2ehpp',['Testing.hpp',['../a01565.html',1,'']]],
-  ['text_5ftest_2ecpp',['Text_test.cpp',['../a01976.html',1,'']]],
+  ['testclassblank_5ftest_2ecpp',['TestClassBlank_test.cpp',['../a01514.html',1,'']]],
+  ['testclassproject_5ftest_2ecpp',['TestClassProject_test.cpp',['../a01517.html',1,'']]],
+  ['testing_2ehpp',['Testing.hpp',['../a01580.html',1,'']]],
+  ['text_5ftest_2ecpp',['Text_test.cpp',['../a02000.html',1,'']]],
   ['textctrl_5ftest_2ecpp',['TextCtrl_test.cpp',['../a00695.html',1,'']]],
   ['textctrlreplacespace_5ftest_2ecpp',['TextCtrlReplaceSpace_test.cpp',['../a00845.html',1,'']]],
-  ['texteditorevents_5ftest_2ecpp',['TextEditorEvents_test.cpp',['../a02498.html',1,'']]],
-  ['textselection_5ftest_2ecpp',['TextSelection_test.cpp',['../a02429.html',1,'']]],
+  ['texteditorevents_5ftest_2ecpp',['TextEditorEvents_test.cpp',['../a02522.html',1,'']]],
+  ['textselection_5ftest_2ecpp',['TextSelection_test.cpp',['../a02453.html',1,'']]],
   ['tools_2ehpp',['Tools.hpp',['../a00851.html',1,'']]],
   ['tools_2emock_2ehpp',['Tools.mock.hpp',['../a00854.html',1,'']]],
-  ['toolwindows_5ftest_2ecpp',['ToolWindows_test.cpp',['../a02648.html',1,'']]],
-  ['tortoisesvn_5ftest_2ecpp',['TortoiseSvn_test.cpp',['../a01898.html',1,'']]],
-  ['twoyear_2ehpp',['TwoYear.hpp',['../a01982.html',1,'']]]
+  ['toolwindows_5ftest_2ecpp',['ToolWindows_test.cpp',['../a02672.html',1,'']]],
+  ['tortoisesvn_5ftest_2ecpp',['TortoiseSvn_test.cpp',['../a01922.html',1,'']]],
+  ['twoyear_2ehpp',['TwoYear.hpp',['../a02006.html',1,'']]]
 ];

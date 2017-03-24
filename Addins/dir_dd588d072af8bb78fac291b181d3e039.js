@@ -4,5 +4,5 @@ var dir_dd588d072af8bb78fac291b181d3e039 =
     [ "IReadTask.hpp", "a00437_source.html", null ],
     [ "ITask.hpp", "a00440_source.html", null ],
     [ "IWriteTask.hpp", "a00443_source.html", null ],
-    [ "stdafx.h", "a41574_source.html", null ]
+    [ "stdafx.h", "a41688_source.html", null ]
 ];

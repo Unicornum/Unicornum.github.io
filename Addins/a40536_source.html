@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Исходный файл Solution/Solution/ConnectionPoints/VisualStudio/Support/Support/CommandManager.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/UsefulCommands/VisualStudio/Support/Tags/(Documentation)/ProjectPage.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.5.4 Revision: 4924 Platform: Win32 Build: 10:07 18 Март 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.5.5 Revision: 4969 Platform: Win32 Build: 10:12 24 Март 2017</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -83,20 +83,16 @@ $(document).ready(function(){initNavTree('a40536_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">CommandManager.hpp</div>  </div>
+<div class="title">ProjectPage.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="a36377.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36377.html">CommandManager</a> final : </div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span> <a class="code" href="a36317.html">connection_points::CommandManager</a></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">using</span> DTE_t = USING_MOCK(<a class="code" href="a39017.html">wrappers::vs::DTE</a>);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keywordtype">void</span> DoException(<span class="keyword">const</span> std::exception &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">// Функция для логгера</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">inline</span> <span class="keyword">const</span> DTE_t &amp; GetDTE()<span class="keyword"> const </span>{<span class="keywordflow">return</span> m_DteHost;}</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">const</span> DTE_t &amp; m_DteHost;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a36377.html#af1330ab08f3a49ce9c3d3a6c932dd581">CommandManager</a>(<span class="keyword">const</span> DTE_t &amp; _DTE);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div><div class="ttc" id="a36317_html"><div class="ttname"><a href="a36317.html">connection_points::CommandManager</a></div><div class="ttdoc">Класс входит в Common   Класс выполнения команд, обеспечивающих базовую функциональность надстройки...</div><div class="ttdef"><b>Definition:</b> CommandManager.hpp:32</div></div>
-<div class="ttc" id="a39017_html"><div class="ttname"><a href="a39017.html">wrappers::vs::DTE</a></div><div class="ttdoc">Класс входит в Ide   Класс-обертка для EnvDTE80::DTE2. </div><div class="ttdef"><b>Definition:</b> DTE.hpp:51</div></div>
-<div class="ttc" id="a36377_html"><div class="ttname"><a href="a36377.html">CommandManager</a></div><div class="ttdoc">Класс входит в Support   Класс для исполнения команд, управляющих работой надстройки. </div><div class="ttdef"><b>Definition:</b> CommandManager.hpp:22</div></div>
-<div class="ttc" id="a36377_html_af1330ab08f3a49ce9c3d3a6c932dd581"><div class="ttname"><a href="a36377.html#af1330ab08f3a49ce9c3d3a6c932dd581">CommandManager::CommandManager</a></div><div class="ttdeci">CommandManager(const DTE_t &amp;_DTE)</div><div class="ttdef"><b>Definition:</b> CommandManager.cpp:11</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_507a45db08fa34c6d3b352cda19bee73.html">ConnectionPoints</a></li><li class="navelem"><a class="el" href="dir_a7c7e64e0e812907f1fa8bc7c1d66110.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_45170414accc43ee3329e11ac7a48229.html">Support</a></li><li class="navelem"><a class="el" href="dir_f562a5e5683847bc3263644b706df97a.html">Support</a></li><li class="navelem"><b>CommandManager.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 18 Мар 2017 10:07:36. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_2a819047725ad23e43aba6a9c87e3a2d.html">UsefulCommands</a></li><li class="navelem"><a class="el" href="dir_68c243c7ca65f1e8337d9c44e9fb488c.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_1b531eb723a6ba09b90be017428f50fe.html">Support</a></li><li class="navelem"><a class="el" href="dir_3c36480a431ba3931dc84c1e1b20db55.html">Tags</a></li><li class="navelem"><a class="el" href="dir_9fe1218d0239ec805c14ff8591d708a8.html">(Documentation)</a></li><li class="navelem"><b>ProjectPage.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 24 Мар 2017 10:13:06. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

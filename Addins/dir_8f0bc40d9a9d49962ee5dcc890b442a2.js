@@ -14,6 +14,6 @@ var dir_8f0bc40d9a9d49962ee5dcc890b442a2 =
     [ "OpenAlicornDoc.hpp", "a01097_source.html", null ],
     [ "OpenDoxygenDoc.hpp", "a01103_source.html", null ],
     [ "OpenSolutionDoc.hpp", "a01109_source.html", null ],
-    [ "stdafx.h", "a41796_source.html", null ],
-    [ "targetver.h", "a42480_source.html", null ]
+    [ "stdafx.h", "a41910_source.html", null ],
+    [ "targetver.h", "a42600_source.html", null ]
 ];

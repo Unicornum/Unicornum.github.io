@@ -8,6 +8,6 @@ var dir_8754577cbdc5d4a9bf18dc056454a98b =
     [ "InsertTcharTextBlank.hpp", "a01235_source.html", null ],
     [ "InsertTextBlank.hpp", "a01241_source.html", null ],
     [ "InsertWcharTextBlank.hpp", "a01247_source.html", null ],
-    [ "stdafx.h", "a41856_source.html", null ],
-    [ "targetver.h", "a42483_source.html", null ]
+    [ "stdafx.h", "a41970_source.html", null ],
+    [ "targetver.h", "a42603_source.html", null ]
 ];

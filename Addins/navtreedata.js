@@ -2,8 +2,8 @@ var NAVTREE =
 [
   [ "Addins", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a36161.html", null ],
-    [ "Ошибки", "a36162.html", null ],
+    [ "Список задач", "a36242.html", null ],
+    [ "Ошибки", "a36243.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -33,17 +33,17 @@ var NAVTREEINDEX =
 ".html",
 "a01058_source.html",
 "a02105_source.html",
-"a36184.html",
-"a36685.html#a20e991cc6fc3e047c353e241874449fa",
-"a37429.html#a99178c864c484dd9665f9ddb71251bad",
-"a38193.html#a2677023af959d3f206163e262fd9f595",
-"a39093.html",
-"a40296_source.html",
-"a41946_source.html",
-"a42672_source.html",
-"a43458.html",
-"dir_73290f6bc6c6b17f360f12366a7a6ba0.html",
-"dir_f63b2408bb49bc042580c97aa9c72819.html"
+"a36263.html",
+"a36754.html#ae8c545905b031b75f99a612f5054e0d2",
+"a37502.html#a12a213e68caa1e91703a4f1edbf618a0",
+"a38222.html#ab38d4f12cbaedafc55e78364a6521d69",
+"a39138.html",
+"a40377_source.html",
+"a42033_source.html",
+"a42774_source.html",
+"a43530_source.html",
+"dir_6bdf2938ac98f35b4e6273b235e3835d.html",
+"dir_f338cefa425156e9d699e62c7cc99adc.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

@@ -6,6 +6,6 @@ var dir_e737f785d690cb70f4948978e9e07ebc =
     [ "Test.PropertySheet2012", "dir_baeb081cecb7bc58e1939672dedea112.html", "dir_baeb081cecb7bc58e1939672dedea112" ],
     [ "Test.PropertySheets", "dir_24a2bfcc6fe0710bcb7589ce18a61b28.html", "dir_24a2bfcc6fe0710bcb7589ce18a61b28" ],
     [ "Test.PropertySheets2012", "dir_f1880b0a351300d3037634881e6bfe79.html", "dir_f1880b0a351300d3037634881e6bfe79" ],
-    [ "mock.hpp", "a42741.html", null ],
-    [ "stdafx.h", "a42246_source.html", null ]
+    [ "mock.hpp", "a42861.html", null ],
+    [ "stdafx.h", "a42366_source.html", null ]
 ];

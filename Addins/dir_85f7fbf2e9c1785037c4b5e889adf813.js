@@ -11,7 +11,7 @@ var dir_85f7fbf2e9c1785037c4b5e889adf813 =
     [ "ITaskPanelWriteData.hpp", "a00542_source.html", null ],
     [ "ITasksPanel.hpp", "a00545_source.html", null ],
     [ "IWriteTaskPanel.hpp", "a00548_source.html", null ],
-    [ "stdafx.h", "a41586_source.html", null ],
+    [ "stdafx.h", "a41700_source.html", null ],
     [ "TaskPanel.hpp", "a00554_source.html", null ],
     [ "TaskPanelBkColor.hpp", "a00560_source.html", null ],
     [ "TaskPanelBrief.hpp", "a00566_source.html", null ],
@@ -20,5 +20,5 @@ var dir_85f7fbf2e9c1785037c4b5e889adf813 =
     [ "TaskPanelEditor.hpp", "a00584_source.html", null ],
     [ "TaskPanelText.hpp", "a00590_source.html", null ],
     [ "TasksPanel.hpp", "a00593_source.html", null ],
-    [ "wxWidgets.hpp", "a43020_source.html", null ]
+    [ "wxWidgets.hpp", "a43140_source.html", null ]
 ];
