@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Сборка Cocos2d для Android</title>
+<title>UnicornumVerum: Обо мне</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -58,54 +58,60 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="a00245.html">Разработка для Android на С++</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Сборка Cocos2d для Android </div>  </div>
+<div class="title">Обо мне </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Создание проекта </h2>
-<dl class="section pre"><dt>Предусловие</dt><dd>Для сборки требуются установленные Android SDK, NDK и Apache Ant.</dd>
-<dd>
-Сборка производилась:<ul>
-<li>21.10.2016</li>
-<li>Android SDK (Android Studio 2.1).</li>
-<li>Crystax-ndk-10.3.2</li>
-<li>apache-ant-1.9.7</li>
-<li>cocos2d-x-3.13.1</li>
-<li>python-2.7.12</li>
-</ul>
-</dd></dl>
-<p><br />
-</p><ul>
-<li>Скачать <a href="https://www.python.org/downloads/" title="Python download">Python</a>, установить его и добавить путь к файлу python.exe к переменной окружения PATH (<b>ВАЖНО!</b> Cocos2d требует python версий 2.7.x).</li>
-<li>Скачать архив с <a href="http://cocos2d-x.org/download" title="Cocos2d download">Cocos2d</a> и распаковать его.</li>
-<li>Из консоли в папке Cocos2d (запуск из консоли нужен из-за того, что потребуется ввести пути к Android SDK, NDK и Apache Ant; либо можно предварительно установить переменные окружения <b>ANDROID_SDK_ROOT</b>, <b>NDK_ROOT</b> и <b>ANT_ROOT</b>) запустить: <div class="fragment"><div class="line">python setup.py</div></div><!-- fragment --> Будут добавлены переменные окружения для Cocos.</li>
-<li>В консоли (в папке, в которой нужно создать проект; <b>ВАЖНО!</b> В пути не должно быть русских букв!) для сборки библиотеки выполнить: <div class="fragment"><div class="line">cocos <span class="keyword">new</span> Cocos2d -l cpp -d Cocos2dLib</div></div><!-- fragment --></li>
-<li>В сгенерированную папку Cocos2dLib\Cocos2d скопировать содержимое <a href="https://github.com/Unicornum/Android/tree/master/Cocos2d/v3.13.1/Vs2015" title="Visual Studio Cocos Solution">VSSolution</a>.</li>
-</ul>
-<p>Решение в папке Cocos2dLib\Cocos2d\proj.visualstudio можно собрать и использовать для создания приложений.</p>
-<h2>Сборка Cocos2d-x как статической библиотеки </h2>
+<div class="textblock"><h1>Профессиональные навыки </h1>
 <ul>
-<li>В папке Cocos2dLib\Cocos2d\proj.visualstudio открыть решение, у проекта <b>Cocos2dcpp</b> удалить папку jni, формат отладочной информации поставить в <b>Нет</b>, изменить свойства проекта:</li>
+<li>Создание программ на C++ для Windows и Android с использованием MS Visual Studio.</li>
+<li>STL, Boost, WinAPI, MFC, wxWidgets, libRocket, DirectX, многопоточное программирование.</li>
+<li>Cетевое программирование, в том числе web сервисы с помощью библиотеки gsoap.</li>
+<li>Аппаратное/программное декодирование видео (Intel QuickSync, NVidia CUDA, AMD APP, Intel IPP).</li>
+<li>Unit-тесты (Google Test + Google Mock), TDD.</li>
+<li>Работа с использованием системы контроля версий (Subversion).</li>
+<li>Создание документации проекта с использованием программы Doxygen.</li>
+<li>Создание инсталляторов с использованием программы Inno Setup.</li>
 </ul>
+<h2>Вся суть в одной цитате </h2>
 <div class="image">
-<img src="Cocos2dProps.png" alt="Cocos2dProps.png"/>
+<img src="brooks.png" alt="brooks.png"/>
 </div>
-<p>и собрать Release и Debug версии.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Статическая библиотека таким образом собирается, <b>НО</b>(!), во-первых cpu-features нужно собирать как отдельную библиотеку (и ставить ее после webp), во-вторых - при построении .so файла с использованием такой библиотеки он не задействует файлы, указанные в дополнительных зависимостях компоновщика (libOpenSLES.so, libEGL.so, libz.a), из-за чего приходится подключать libz явным образом (и подхватывается библиотека, конфликтующая с libpng) и файл результата оказывается гораздо меньшего размера и не работает при запуске на Android-устройстве.</dd></dl>
-<p>Источники:</p><ul>
-<li><a href="https://blogs.msdn.microsoft.com/vcblog/2016/07/12/cocos2d-x-visual-studio-android-project/" title="Статья на сайте Microsoft">Cocos2dVSMicrosoft</a></li>
-<li><a href="http://cocos2d-x.org/docs/installation/Android-VisualStudio/" title="Статья на сайте Cocos2d">Cocos2dVsCocos</a> </li>
+<h1>Работа </h1>
+<h2>Март 2013 - Январь 2015 </h2>
+<h3>Kraftway Corporation PLC, г. Москва (инженер-программист)</h3>
+<p>Участвовал в разработке системы видеонаблюдения в группе из 4-х человек.</p>
+<p>Разработка/сопровождение ПО:</p><ul>
+<li>Отображение видео (DirectX; zoom, статусы камеры).</li>
+<li>Аппаратное/программное декодирование видео (Intel QuickSync, NVidia CUDA, AMD APP, Intel IPP).</li>
+<li>Управление PTZ камерой из окна просмотра видео (кнопки, мышь, 6-осевой манипулятор).</li>
+<li>Слежение за объектом с переключением на ближайшую к нему камеру.</li>
+<li>Отображение перемещения объекта аналитики на плане местности.</li>
+<li>Отображение удаленного рабочего стола как видео с камеры (VNC).</li>
+<li>Web-сервер, работающий по протоколу ONVIF (с использованием библиотеки gsoap).</li>
+<li>Разработка утилит для тестирования работы видеоаналитики.</li>
+<li>Модуль визуальной настройки параметров подвеса камеры.</li>
+<li>Модули скриптов создания камер/назначения камер раскладкам.</li>
 </ul>
+<h2>Сентябрь 2007 - Февраль 2013 </h2>
+<h3>ООО Савеловский Машиностроительный Завод, г. Кимры (инженер-программист)</h3>
+<p>Разработка/сопровождение ПО:</p><ul>
+<li>Программная оболочка для измерительной установки, предназначенной для измерения трубопроводов сложной конфигурации.</li>
+<li>Программная оболочка установки для испытания сварных швов при сварке рельс.</li>
+<li>Постпроцессоры для станков с ЧПУ сложной конфигурации.</li>
+<li>Программа-эмулятор станка с ЧПУ (модель станка создается из реальных чертежей 'в натуральную величину', имитация резания с удалением материала).</li>
+</ul>
+<h1>Образование </h1>
+<h2>Сентябрь 1992 - Январь 1999 </h2>
+<h3>Московский государственный технологический университет "Станкин"</h3>
+<p>Факультет: ИНТЕХ. <br />
+ Специальность: Автоматизация технологических процессов и производств. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вс 29 Янв 2017 13:32:17. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Пт 31 Мар 2017 23:25:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>

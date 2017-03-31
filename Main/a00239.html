@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>UnicornumVerum: Разработка для Android на С++</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen_1.8.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">UnicornumVerum
+   </div>
+   <div id="projectbrief">-</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Разработка для Android на С++ </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Исследование проводилось в расчете на использование Samsung Galaxy S Duos:</p><ul>
+<li>Android 4.0.4 (API 15).</li>
+<li>Сборка для ARM (armeabi-v7a).</li>
+</ul>
+<h1>Окружение </h1>
+<ul>
+<li>Android SDK - устанавливается вместе с Android Studio (путь не должен содержать пробелов).</li>
+<li>Android NDK (путь не должен содержать пробелов).</li>
+<li>JDK.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Все внешние инструменты ставить x86 версии.</dd>
+<dd>
+Настройка Android SDK производится запуском утилиты SDK Manager.exe в корневой папке SDK (нужно будет докачать содержимое раздела Android 4.0.3 (API 15)).</dd></dl>
+<p>Тестировалось на:</p><ul>
+<li>Android Studio 2.1 (Android NDK r12).</li>
+<li>JDK 1.8 r101.</li>
+<li>CrystaX 10.3.2 (эквивалент Android NDK r10e)</li>
+</ul>
+<h1>Предопределенные макросы </h1>
+<ul>
+<li>__ANDROID__ - общий макрос признака, что используется код для Android.</li>
+<li>__ANDROID_API__ - номер текущего используемого API, например, 15.</li>
+</ul>
+<h1>Visual Studio 2015 </h1>
+<h2>Установка </h2>
+<ul>
+<li>Скачать Visual Studio 2015 Community, при установке в настройках указать компоненты для скачивания для разработки под Android (будут скачаны x86 версии всех компонентов, не последние версии; для указания путей к установленным вручную настроить здесь:</li>
+</ul>
+<div class="image">
+<img src="Vs2015.png" alt="Vs2015.png"/>
+</div>
+<h2>Использование </h2>
+<p>Содержит настроенные примеры проектов:</p>
+<div class="image">
+<img src="Vs2015.templates.png" alt="Vs2015.templates.png"/>
+</div>
+<p>Для сборки под Samsung Galaxy Duos настройки проекта *.NativeActivity должны выглядеть так:</p>
+<div class="image">
+<img src="Vs2015.props.png" alt="Vs2015.props.png"/>
+</div>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>"Целевой уровень API" можно указать любой - это не влияет на компиляцию/работу программы (насколько удалось выяснить).</li>
+<li>В настройках языка можно указать версию стандарта C++ (и получить доступ к std::u32string!). <br />
+</li>
+<li>Образец проекта собирается, запускается на телефоне, но VS2015 не видит телефона и поэтому невозможна отладка на телефоне. <br />
+</li>
+<li>Отладка на эмуляторе нормально работает.</li>
+</ul>
+</dd></dl>
+<h2>CrystaX </h2>
+<ul>
+<li>Используется вместо Android NDK.</li>
+<li>Работает сборка только при помощи GCC4.9.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>CrystaX требует, чтобы wchar_t была размером 4 байта.</dd></dl>
+<h3>Для статической линковки с CrystaX:</h3>
+<ul>
+<li>Добавить в свойствах проекта ("событие перед сборкой") копирование файла libcrystax.a (простое добавление пути к файлу не поможет!), например: <div class="fragment"><div class="line">copy /B /Y $(VS_NdkRoot)\sources\crystax\libs\$(TargetArchAbi)\libcrystax.a $(TargetDir)</div></div><!-- fragment --></li>
+<li>В свойствах компоновщика "Дополнительные каталоги библиотек" добавить папку результата копирования ($(TargetDir)).</li>
+<li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
+</ul>
+<h3>Альтернативный вариант использования CrystaX</h3>
+<p>Можно использовать CrystaX совместно с Android NDK - это позволит получить доступ к возможностям, которые отсутствуют в последнем (например, поддержку локалей):</p><ul>
+<li>Установить в настройках Visual Studio путь к Android NDK.</li>
+<li>Скопировать файл libcrystax.a в Externals.</li>
+<li>В свойствах компоновщика в "Дополнительные каталоги библиотек" добавить папку, в которую скопирована библиотека.</li>
+<li>В <b>Компоновщик</b> -&gt; <b>Ввод</b> -&gt; <b>Зависимости</b> <b>библиотек</b> добавить crystax.</li>
+</ul>
+<h1>Сторонние библиотеки </h1>
+<p><a class="el" href="a00244.html">Список существующих предсобранных для Android библиотек</a></p>
+<p><a class="el" href="a00240.html">Сборка Boost для Android</a></p>
+<p><a class="el" href="a00241.html">Сборка Cocos2d для Android</a></p>
+<h3>Сборка libRocket</h3>
+<p><a href="https://github.com/Unicornum/Android/tree/master/libRocket" title="libRocket build">Сборка libRocket</a></p>
+<h3>Сборка Crypto++</h3>
+<ul>
+<li>Распаковать архив и открыть решение cryptest.sln.</li>
+<li>Добавить проект статической библиотеки для Android.</li>
+<li>Добавить в этот проект все .cpp файлы из папки cryptopp.</li>
+<li>Включить RTTI и исключения, отключить отладочную информацию.</li>
+<li>Собрать нужные конфигурации проекта.</li>
+</ul>
+<h3>Сборка OpenFrameworks</h3>
+<ul>
+<li>Собрать не удалось (ссылки на несуществующие функции, двойные определения функций, не найденные функции стандартной библиотеки).</li>
+<li>В целом - ощущение, что работа нативного кода завязана на совместную работу с кодом java.</li>
+</ul>
+<h1>Проблемы и решения </h1>
+<p><a class="el" href="a00243.html">Ввод русских букв с клавиатуры</a></p>
+<p><a class="el" href="a00242.html">Разные приложения для разных конфигураций проекта</a> </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по UnicornumVerum. Последние изменения: Пт 31 Мар 2017 23:25:30. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
