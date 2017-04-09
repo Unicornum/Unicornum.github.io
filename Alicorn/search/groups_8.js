@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['limits',['Limits',['../a33177.html',1,'']]],
-  ['logger',['Logger',['../a33191.html',1,'']]]
+  ['limits',['Limits',['../a32910.html',1,'']]],
+  ['localization',['Localization',['../a32921.html',1,'']]],
+  ['logger',['Logger',['../a32925.html',1,'']]]
 ];

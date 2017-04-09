@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['testclass',['TestClass',['../a33521.html',1,'app']]],
-  ['testproject',['TestProject',['../a33525.html',1,'app']]],
-  ['testprojectinfo',['TestProjectInfo',['../a34917.html',1,'view']]],
-  ['testsolution',['TestSolution',['../a33529.html',1,'app']]],
-  ['text',['Text',['../a33361.html',1,'alicorn::document::Text'],['../a33905.html',1,'alicorn::logger::report::Text']]],
-  ['trace',['Trace',['../a33853.html',1,'alicorn::logger']]],
-  ['treectrlicons',['TreeCtrlIcons',['../a34937.html',1,'wx']]],
-  ['treectrltests',['TreeCtrlTests',['../a34941.html',1,'wx']]],
-  ['treesections',['TreeSections',['../a34561.html',1,'wx']]]
+  ['testclass',['TestClass',['../a33271.html',1,'app']]],
+  ['testproject',['TestProject',['../a33275.html',1,'app']]],
+  ['testprojectinfo',['TestProjectInfo',['../a34707.html',1,'view']]],
+  ['testsolution',['TestSolution',['../a33279.html',1,'app']]],
+  ['text',['Text',['../a33503.html',1,'alicorn::extension::std::Text'],['../a33107.html',1,'alicorn::document::Text'],['../a33671.html',1,'alicorn::logger::report::Text']]],
+  ['trace',['Trace',['../a33619.html',1,'alicorn::logger']]],
+  ['treectrlicons',['TreeCtrlIcons',['../a34727.html',1,'wx']]],
+  ['treectrltests',['TreeCtrlTests',['../a34731.html',1,'wx']]],
+  ['treesections',['TreeSections',['../a34351.html',1,'wx']]]
 ];

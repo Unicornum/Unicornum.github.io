@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['logger',['Logger',['../a35372.html',1,'AlicornBuildPage']]],
-  ['libs',['Libs',['../a35355.html',1,'index']]]
+  ['localizationapp',['LocalizationApp',['../a35162.html',1,'AlicornBuildPage']]],
+  ['localization',['Localization',['../a35161.html',1,'AlicornBuildPage']]],
+  ['logger',['Logger',['../a35163.html',1,'AlicornBuildPage']]]
 ];

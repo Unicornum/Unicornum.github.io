@@ -4,6 +4,8 @@ var dir_8474876d6addb29d5cfd67f2cdcf2951 =
     [ "Converter", "dir_643d3e1a266ac8df45d775b5221d8e80.html", "dir_643d3e1a266ac8df45d775b5221d8e80" ],
     [ "Document", "dir_4503462b86ca52b28b50702277ce07c1.html", "dir_4503462b86ca52b28b50702277ce07c1" ],
     [ "Extension", "dir_0b18862fbca7419df2afb4c521d2159e.html", "dir_0b18862fbca7419df2afb4c521d2159e" ],
+    [ "Localization", "dir_ba2e6c9b38c39947b817e9df79a86021.html", "dir_ba2e6c9b38c39947b817e9df79a86021" ],
+    [ "Localization.App", "dir_72a7a2b4c92e517ecb908115295cdafb.html", "dir_72a7a2b4c92e517ecb908115295cdafb" ],
     [ "Logger", "dir_78c4bafb3df9ca36695e62ecf21eeacf.html", "dir_78c4bafb3df9ca36695e62ecf21eeacf" ],
     [ "Patterns", "dir_16ec6319bdbe192bd3493b8915d6e5c2.html", "dir_16ec6319bdbe192bd3493b8915d6e5c2" ],
     [ "Settings", "dir_2b7186baaa691dc998717a5a2e6d3b2c.html", "dir_2b7186baaa691dc998717a5a2e6d3b2c" ],
