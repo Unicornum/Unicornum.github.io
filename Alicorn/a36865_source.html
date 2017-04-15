@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alicorn: Исходный файл Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/core.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Версия: 3.7.3 Revision: 2494 Platform: x64 Build: 11:12 15 Апрель 2017</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a36865_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">core.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;mutex&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;config-value-impl.hpp&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;configurator.hpp&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;message-points.hpp&quot;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>Configurator_test;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span><a class="code" href="a33509.html">alicorn</a></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>logger</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>MessageImpl;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>report </div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{ </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span>IReport;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a34174.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="a34174.html">Core</a> final</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">using</span> ReportPtr_t = std::shared_ptr&lt;report::IReport&gt;;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">static</span> <a class="code" href="a34174.html">Core</a> &amp; GetInstance(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keyword">const</span> <a class="code" href="a34182.html">MessageImpl</a> &amp;);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keyword">const</span> <a class="code" href="a34122.html">ConfigValueImpl</a> &amp;);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordtype">void</span> Set(<span class="keyword">const</span> ReportPtr_t &amp;);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="a34170.html">Configurator</a>  m_Configurator;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="a34186.html">MessagePoints</a> m_MessagePoints;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ReportPtr_t   m_pReport;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  std::mutex    m_Mutex;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="a34174.html">Core</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">friend</span> Configurator_test;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="a33494.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Report_test, <span class="comment">/*DISABLED_*/</span>Test_DefaultReport);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="a33494.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Report_test, <span class="comment">/*DISABLED_*/</span>Test_SetReport);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace logger</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a34182_html"><div class="ttname"><a href="a34182.html">alicorn::logger::MessageImpl</a></div><div class="ttdoc">Класс входит в Logger   Класс, хранящий информацию одной записи лога. </div><div class="ttdef"><b>Definition:</b> message-impl.hpp:28</div></div>
+<div class="ttc" id="a34170_html"><div class="ttname"><a href="a34170.html">alicorn::logger::Configurator</a></div><div class="ttdoc">Класс входит в Logger   Конфигуратор. </div><div class="ttdef"><b>Definition:</b> configurator.hpp:40</div></div>
+<div class="ttc" id="a33509_html"><div class="ttname"><a href="a33509.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> aes256.hpp:9</div></div>
+<div class="ttc" id="a34186_html"><div class="ttname"><a href="a34186.html">alicorn::logger::MessagePoints</a></div><div class="ttdoc">Класс входит в Logger   Класс, хранящий список всех мест, в которых использовался логгер...</div><div class="ttdef"><b>Definition:</b> message-points.hpp:30</div></div>
+<div class="ttc" id="a34174_html"><div class="ttname"><a href="a34174.html">alicorn::logger::Core</a></div><div class="ttdoc">Класс входит в Logger   Формирователь отчета. </div><div class="ttdef"><b>Definition:</b> core.hpp:50</div></div>
+<div class="ttc" id="a33494_html_gab92570f53abf3b4fbbd13acaf4265468"><div class="ttname"><a href="a33494.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a></div><div class="ttdeci">#define FRIEND_TEST(a, b)</div><div class="ttdoc">Класс входит в Testing   Определение макроса для тестовых функций для того, чтобы исключить из постро...</div><div class="ttdef"><b>Definition:</b> friend.hpp:14</div></div>
+<div class="ttc" id="a34122_html"><div class="ttname"><a href="a34122.html">alicorn::logger::ConfigValueImpl</a></div><div class="ttdoc">Класс входит в Logger   Класс для передачи значения параметра конфигуратору. </div><div class="ttdef"><b>Definition:</b> config-value-impl.hpp:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_426ef1d738b7f1b400956ed3e7d64047.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_04fb435d45b5dbed9bbc47d799db3b8d.html">include</a></li><li class="navelem"><a class="el" href="dir_2319c5e3425f9a18d30387244cad830a.html">alicorn</a></li><li class="navelem"><a class="el" href="dir_643c66eca6a68b74930d3a6c9453669d.html">logger</a></li><li class="navelem"><b>core.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 15 Апр 2017 11:13:02. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

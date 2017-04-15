@@ -8,5 +8,5 @@ var dir_328f0473d31676a25b7318207ad8f917 =
     [ "fast.hpp", "a00359_source.html", null ],
     [ "limits.hpp", "a00362_source.html", null ],
     [ "radian.hpp", "a00365_source.html", null ],
-    [ "stdafx.h", "a35248_source.html", null ]
+    [ "stdafx.h", "a35866_source.html", null ]
 ];

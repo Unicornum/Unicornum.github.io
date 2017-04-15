@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Alicorn/Alicorn/include/alicorn/vfs.hpp</title>
+<title>Alicorn: Файл Solution/Solution/Alicorn/Alicorn/include/alicorn/system.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.2 Revision: 2463 Platform: x64 Build: 11:57 09 Апрель 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.3 Revision: 2494 Platform: x64 Build: 11:12 15 Апрель 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,56 +83,70 @@ $(document).ready(function(){initNavTree('a00647.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл vfs.hpp</div>  </div>
+<div class="title">Файл system.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;vfs\core.hpp&quot;</code><br />
-<code>#include &quot;vfs\filesystem.hpp&quot;</code><br />
-<code>#include &quot;vfs\pack.hpp&quot;</code><br />
-<code>#include &quot;vfs\compress.hpp&quot;</code><br />
-<code>#include &quot;vfs\crypto.hpp&quot;</code><br />
-<code>#include &quot;vfs\ipassword.hpp&quot;</code><br />
-<code>#include &quot;lib-info\vfs.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;system\dll\ptr.hpp&quot;</code><br />
+<code>#include &quot;system\dll\object.hpp&quot;</code><br />
+<code>#include &quot;system\current-module.hpp&quot;</code><br />
+<code>#include &quot;system\process.hpp&quot;</code><br />
+<code>#include &quot;system\winapi-call.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для vfs.hpp:</div>
+Граф включаемых заголовочных файлов для system.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00648.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2vfs_8hpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2vfs_8hpp" id="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2vfs_8hpp">
-<area shape="rect" id="node3" href="a36214_source.html" title="vfs\\core.hpp" alt="" coords="821,109,928,136"/>
-<area shape="rect" id="node13" href="a35974_source.html" title="vfs\\filesystem.hpp" alt="" coords="953,109,1095,136"/>
-<area shape="rect" id="node18" href="a01058_source.html" title="vfs\\pack.hpp" alt="" coords="611,109,719,136"/>
-<area shape="rect" id="node46" href="a35206_source.html" title="vfs\\compress.hpp" alt="" coords="1120,109,1259,136"/>
-<area shape="rect" id="node52" href="a35212_source.html" title="vfs\\crypto.hpp" alt="" coords="1283,109,1403,136"/>
-<area shape="rect" id="node66" href="a01052_source.html" title="ipassword.hpp" alt="" coords="1338,192,1453,219"/>
-<area shape="rect" id="node73" href="a36196_source.html" title="lib&#45;info\\vfs.hpp" alt="" coords="1477,109,1600,136"/>
-<area shape="rect" id="node5" href="a35917_source.html" title="iimplementation.hpp" alt="" coords="798,192,951,219"/>
-<area shape="rect" id="node11" href="a00314.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="785,275,964,317"/>
-<area shape="rect" id="node24" href="a00518_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="298,185,459,226"/>
-<area shape="rect" id="node26" href="a36139_source.html" title="string\\string.hpp" alt="" coords="205,283,336,309"/>
-<area shape="rect" id="node34" href="a00536_source.html" title="string\\tokenize.hpp" alt="" coords="544,283,693,309"/>
-<area shape="rect" id="node40" href="a36142_source.html" title="string\\support.hpp" alt="" coords="376,283,520,309"/>
-<area shape="rect" id="node28" href="a00491_source.html" title="prefix.hpp" alt="" coords="447,456,533,483"/>
-<area shape="rect" id="node30" href="a00449_source.html" title="..\\ptr&#45;wrapper.hpp" alt="" coords="5,373,152,400"/>
-<area shape="rect" id="node32" href="a36115_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="177,373,348,400"/>
-<area shape="rect" id="node37" href="a00539.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="513,366,673,407"/>
-<area shape="rect" id="node48" href="a01049_source.html" title="iconverter.hpp" alt="" coords="1195,192,1313,219"/>
-<area shape="rect" id="node55" href="a00899_source.html" title="alicorn\\system\\dll\l\\ptr.hpp" alt="" coords="1480,185,1619,226"/>
-<area shape="rect" id="node57" href="a00896_source.html" title="ptr&#45;object.hpp" alt="" coords="1490,283,1608,309"/>
-<area shape="rect" id="node61" href="a00248_source.html" title="alicorn\\extension\\boost\l\\dll.hpp" alt="" coords="1561,366,1737,407"/>
-<area shape="rect" id="node70" href="a00890_source.html" title="alicorn\\system\\dll\l\\object.hpp" alt="" coords="1327,275,1465,317"/>
+<div class="center"><img src="a00648.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2system_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2system_8hpp" id="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2system_8hpp">
+<area shape="rect" id="node3" href="a00917_source.html" title="system\\dll\\ptr.hpp" alt="" coords="122,109,264,136"/>
+<area shape="rect" id="node14" href="a00908_source.html" title="system\\dll\\object.hpp" alt="" coords="975,109,1141,136"/>
+<area shape="rect" id="node16" href="a00899_source.html" title="system\\current&#45;module.hpp" alt="" coords="477,109,683,136"/>
+<area shape="rect" id="node26" href="a00935_source.html" title="system\\process.hpp" alt="" coords="796,109,951,136"/>
+<area shape="rect" id="node40" href="a00950_source.html" title="system\\winapi&#45;call.hpp" alt="" coords="1298,109,1472,136"/>
+<area shape="rect" id="node5" href="a00914_source.html" title="ptr&#45;object.hpp" alt="" coords="34,192,152,219"/>
+<area shape="rect" id="node9" href="a00248_source.html" title="alicorn\\extension\\boost\l\\dll.hpp" alt="" coords="5,275,181,317"/>
+<area shape="rect" id="node18" href="a36832_source.html" title="alicorn\\lib&#45;info\\system.hpp" alt="" coords="177,192,375,219"/>
+<area shape="rect" id="node20" href="a00314.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="400,185,579,226"/>
+<area shape="rect" id="node22" href="a00554.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="603,185,764,226"/>
+<area shape="rect" id="node24" href="a00506_source.html" title="string\\prefix.hpp" alt="" coords="559,283,689,309"/>
+<area shape="rect" id="node36" href="a00929_source.html" title="process\\call&#45;back.hpp" alt="" coords="1243,192,1411,219"/>
+<area shape="rect" id="node42" href="a00947_source.html" title="winapi&#45;call&#45;proxy.hpp" alt="" coords="1435,192,1599,219"/>
+<area shape="rect" id="node46" href="a00419_source.html" title="alicorn\\extension\\std\l\\call&#45;proxy.hpp" alt="" coords="1543,275,1704,317"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00649.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2system_8hppdep" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2system_8hppdep" id="_solution_2_solution_2_alicorn_2_alicorn_2include_2alicorn_2system_8hppdep">
+<area shape="rect" id="node3" href="a36730_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/mock.hpp" alt="" coords="2015,109,2253,165"/>
+<area shape="rect" id="node5" href="a36346_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/stdafx.h" alt="" coords="5,213,243,269"/>
+<area shape="rect" id="node7" href="a36349_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.AllTestsInfo/stdafx.h" alt="" coords="267,213,505,269"/>
+<area shape="rect" id="node9" href="a36352_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.Controller/stdafx.h" alt="" coords="530,213,768,269"/>
+<area shape="rect" id="node11" href="a36355_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.DoDoxygenReport/stdafx.h" alt="" coords="793,213,1057,269"/>
+<area shape="rect" id="node13" href="a36358_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.DoUpdateView/stdafx.h" alt="" coords="1081,213,1324,269"/>
+<area shape="rect" id="node15" href="a36361_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.Executor/stdafx.h" alt="" coords="1349,213,1587,269"/>
+<area shape="rect" id="node17" href="a36364_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.FailedTestsInfo/stdafx.h" alt="" coords="1611,213,1860,269"/>
+<area shape="rect" id="node19" href="a36367_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.GTestResult/stdafx.h" alt="" coords="1885,213,2123,269"/>
+<area shape="rect" id="node21" href="a36370_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.HtmlTestInfo/stdafx.h" alt="" coords="2147,213,2385,269"/>
+<area shape="rect" id="node23" href="a36373_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.Info/stdafx.h" alt="" coords="2410,213,2648,269"/>
+<area shape="rect" id="node25" href="a36376_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.Loader/stdafx.h" alt="" coords="2673,213,2911,269"/>
+<area shape="rect" id="node27" href="a36379_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.SummaryInfo/stdafx.h" alt="" coords="2935,213,3173,269"/>
+<area shape="rect" id="node29" href="a36382_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.TestProjectInfo/stdafx.h" alt="" coords="3199,213,3449,269"/>
+<area shape="rect" id="node31" href="a36385_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.TestSolution/stdafx.h" alt="" coords="3474,213,3712,269"/>
+<area shape="rect" id="node33" href="a36388_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.TreeCtrlIcons/stdafx.h" alt="" coords="3737,213,3975,269"/>
+<area shape="rect" id="node35" href="a36391_source.html" title="Solution/Solution/Alicorn\l/Build/Testing.App/Test.Testing.\lApp/Test.TreeCtrlTests/stdafx.h" alt="" coords="3999,213,4237,269"/>
 </map>
 </div>
 </div>
 <p><a href="a00647_source.html">См. исходные тексты.</a></p>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a35173.html">Virtual File System</a>. </p>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a35767.html">System</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_426ef1d738b7f1b400956ed3e7d64047.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_04fb435d45b5dbed9bbc47d799db3b8d.html">include</a></li><li class="navelem"><a class="el" href="dir_2319c5e3425f9a18d30387244cad830a.html">alicorn</a></li><li class="navelem"><a class="el" href="a00647.html">vfs.hpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вс 9 Апр 2017 11:57:36. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_426ef1d738b7f1b400956ed3e7d64047.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_04fb435d45b5dbed9bbc47d799db3b8d.html">include</a></li><li class="navelem"><a class="el" href="dir_2319c5e3425f9a18d30387244cad830a.html">alicorn</a></li><li class="navelem"><a class="el" href="a00647.html">system.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 15 Апр 2017 11:13:06. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

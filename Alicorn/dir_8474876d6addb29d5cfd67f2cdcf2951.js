@@ -8,6 +8,7 @@ var dir_8474876d6addb29d5cfd67f2cdcf2951 =
     [ "Localization.App", "dir_72a7a2b4c92e517ecb908115295cdafb.html", "dir_72a7a2b4c92e517ecb908115295cdafb" ],
     [ "Logger", "dir_78c4bafb3df9ca36695e62ecf21eeacf.html", "dir_78c4bafb3df9ca36695e62ecf21eeacf" ],
     [ "Patterns", "dir_16ec6319bdbe192bd3493b8915d6e5c2.html", "dir_16ec6319bdbe192bd3493b8915d6e5c2" ],
+    [ "Resource.App", "dir_4f9b47997598cd46150e9ae098b5a755.html", "dir_4f9b47997598cd46150e9ae098b5a755" ],
     [ "Settings", "dir_2b7186baaa691dc998717a5a2e6d3b2c.html", "dir_2b7186baaa691dc998717a5a2e6d3b2c" ],
     [ "Settings.App", "dir_ce42ae0fb6788d92ba25a0219a63bace.html", "dir_ce42ae0fb6788d92ba25a0219a63bace" ],
     [ "System", "dir_e4c66c923d83ea2bdee3f69030086c4d.html", "dir_e4c66c923d83ea2bdee3f69030086c4d" ],

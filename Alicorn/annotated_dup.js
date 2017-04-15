@@ -2,239 +2,242 @@ var annotated_dup =
 [
     [ "alicorn", null, [
       [ "converter", null, [
-        [ "Compress", "a33043.html", null ],
-        [ "Compress< Deflate >", "a33051.html", "a33051" ],
-        [ "Compress< Snappy >", "a33059.html", null ],
-        [ "Crypto", "a33047.html", null ],
-        [ "Crypto< AES256 >", "a33035.html", null ],
-        [ "Crypto< Base64 >", "a33039.html", null ],
-        [ "Crypto< PlantUml64 >", "a33055.html", null ]
+        [ "Compress", "a33610.html", null ],
+        [ "Compress< Deflate >", "a33618.html", "a33618" ],
+        [ "Compress< Snappy >", "a33626.html", null ],
+        [ "Crypto", "a33614.html", null ],
+        [ "Crypto< AES256 >", "a33602.html", null ],
+        [ "Crypto< Base64 >", "a33606.html", null ],
+        [ "Crypto< PlantUml64 >", "a33622.html", null ]
       ] ],
       [ "document", null, [
         [ "data", null, [
-          [ "Data", "a33071.html", "a33071" ],
-          [ "Default", "a33075.html", null ],
-          [ "IData", "a33079.html", "a33079" ],
-          [ "Utf8", "a33083.html", "a33083" ]
+          [ "Data", "a33638.html", "a33638" ],
+          [ "Default", "a33642.html", null ],
+          [ "IData", "a33646.html", "a33646" ],
+          [ "Utf8", "a33650.html", "a33650" ]
         ] ],
         [ "xml", null, [
-          [ "Attribute", "a33139.html", "a33139" ],
-          [ "Attributes", "a33143.html", "a33143" ],
-          [ "IXml", "a33167.html", "a33167" ],
-          [ "Node", "a33171.html", "a33171" ],
-          [ "RapidXml", "a33179.html", "a33179" ],
-          [ "Value", "a33191.html", "a33191" ]
+          [ "Attribute", "a33706.html", "a33706" ],
+          [ "Attributes", "a33710.html", "a33710" ],
+          [ "IXml", "a33734.html", "a33734" ],
+          [ "Node", "a33738.html", "a33738" ],
+          [ "RapidXml", "a33746.html", "a33746" ],
+          [ "Value", "a33758.html", "a33758" ]
         ] ],
-        [ "Attribute", "a33063.html", "a33063" ],
-        [ "Attributes", "a33067.html", "a33067" ],
-        [ "Empty", "a33087.html", null ],
-        [ "IImplementation", "a33091.html", null ],
-        [ "Node", "a33119.html", "a33119" ],
-        [ "RapidXml", "a33103.html", null ],
-        [ "Text", "a33107.html", null ],
-        [ "Universal", "a33123.html", "a33123" ],
-        [ "Utilities", "a33131.html", "a33131" ],
-        [ "Value", "a33135.html", "a33135" ],
-        [ "Xml", "a33195.html", "a33195" ]
+        [ "Attribute", "a33630.html", "a33630" ],
+        [ "Attributes", "a33634.html", "a33634" ],
+        [ "Empty", "a33654.html", null ],
+        [ "IImplementation", "a33658.html", null ],
+        [ "Node", "a33686.html", "a33686" ],
+        [ "RapidXml", "a33670.html", null ],
+        [ "Text", "a33674.html", null ],
+        [ "Universal", "a33690.html", "a33690" ],
+        [ "Utilities", "a33698.html", "a33698" ],
+        [ "Value", "a33702.html", "a33702" ],
+        [ "Xml", "a33762.html", "a33762" ]
       ] ],
       [ "extension", null, [
         [ "android", null, [
-          [ "AppData", "a33199.html", "a33199" ],
-          [ "Environment", "a33203.html", null ]
+          [ "AppData", "a33766.html", "a33766" ],
+          [ "Environment", "a33770.html", null ]
         ] ],
         [ "boost", null, [
-          [ "Format", "a33243.html", null ]
+          [ "Format", "a33810.html", null ]
         ] ],
         [ "std", null, [
           [ "exception", null, [
-            [ "Abort", "a33307.html", null ],
-            [ "Message", "a33311.html", null ],
-            [ "Proxy", "a33315.html", null ]
+            [ "Abort", "a33874.html", null ],
+            [ "Message", "a33878.html", null ],
+            [ "Proxy", "a33882.html", null ]
+          ] ],
+          [ "memory", null, [
+            [ "Pool", "a33886.html", "a33886" ]
           ] ],
           [ "regex", null, [
-            [ "Match", "a33327.html", "a33327" ],
-            [ "Replace", "a33335.html", "a33335" ],
-            [ "Search", "a33343.html", "a33343" ]
+            [ "Match", "a33902.html", "a33902" ],
+            [ "Replace", "a33910.html", "a33910" ],
+            [ "Search", "a33918.html", "a33918" ]
           ] ],
-          [ "CallProxy", "a33291.html", null ],
-          [ "ClassInfo", "a33303.html", "a33303" ],
-          [ "Locale", "a33351.html", [
-            [ "Global", "a33403.html", "a33403" ],
-            [ "Scope", "a33407.html", [
-              [ "SetDefault", "a33411.html", null ]
+          [ "CallProxy", "a33858.html", null ],
+          [ "ClassInfo", "a33870.html", "a33870" ],
+          [ "Locale", "a33926.html", [
+            [ "Global", "a33978.html", "a33978" ],
+            [ "Scope", "a33982.html", [
+              [ "SetDefault", "a33986.html", null ]
             ] ],
-            [ "UCS2", "a33355.html", null ],
-            [ "UTF16", "a33359.html", null ],
-            [ "UTF32", "a33363.html", null ]
+            [ "UCS2", "a33930.html", null ],
+            [ "UTF16", "a33934.html", null ],
+            [ "UTF32", "a33938.html", null ]
           ] ],
-          [ "Message", "a33319.html", null ],
-          [ "PlatformImplementation", "a33371.html", null ],
-          [ "PtrWrapper", "a33323.html", null ],
-          [ "String", "a33491.html", "a33491" ],
-          [ "StringCastProxy", "a33451.html", null ],
-          [ "StringCastProxy< CString, String >", "a33283.html", null ],
-          [ "StringCastProxy< Path_t, String >", "a33247.html", null ],
-          [ "StringCastProxy< String, CString >", "a33287.html", null ],
-          [ "StringCastProxy< String, Path_t >", "a33251.html", null ],
-          [ "StringCastProxyLocale", "a33415.html", null ],
-          [ "Text", "a33503.html", null ]
+          [ "Message", "a33894.html", null ],
+          [ "PlatformImplementation", "a33946.html", null ],
+          [ "PtrWrapper", "a33898.html", null ],
+          [ "String", "a34066.html", "a34066" ],
+          [ "StringCastProxy", "a34026.html", null ],
+          [ "StringCastProxy< CString, String >", "a33850.html", null ],
+          [ "StringCastProxy< Path_t, String >", "a33814.html", null ],
+          [ "StringCastProxy< String, CString >", "a33854.html", null ],
+          [ "StringCastProxy< String, Path_t >", "a33818.html", null ],
+          [ "StringCastProxyLocale", "a33990.html", null ],
+          [ "Text", "a34078.html", null ]
         ] ]
       ] ],
       [ "localization", null, [
-        [ "Localization", "a33535.html", "a33535" ]
+        [ "Localization", "a34110.html", "a34110" ]
       ] ],
       [ "logger", null, [
         [ "report", null, [
           [ "windows", null, [
-            [ "Console", "a33675.html", "a33675" ],
-            [ "VisualStudioOutput", "a33679.html", "a33679" ]
+            [ "Console", "a34250.html", "a34250" ],
+            [ "VisualStudioOutput", "a34254.html", "a34254" ]
           ] ],
-          [ "Empty", "a33651.html", "a33651" ],
-          [ "File", "a33655.html", "a33655" ],
-          [ "Html", "a33659.html", "a33659" ],
-          [ "IReport", "a33663.html", "a33663" ],
-          [ "Report", "a33667.html", "a33667" ],
-          [ "Text", "a33671.html", "a33671" ]
+          [ "Empty", "a34226.html", "a34226" ],
+          [ "File", "a34230.html", "a34230" ],
+          [ "Html", "a34234.html", "a34234" ],
+          [ "IReport", "a34238.html", "a34238" ],
+          [ "Report", "a34242.html", "a34242" ],
+          [ "Text", "a34246.html", "a34246" ]
         ] ],
-        [ "AllowReplace", "a33591.html", null ],
-        [ "Configurator", "a33595.html", "a33595" ],
-        [ "ConfigValue", "a33555.html", "a33555" ],
-        [ "ConfigValueImpl", "a33547.html", null ],
-        [ "Core", "a33599.html", "a33599" ],
-        [ "DateTime", "a33603.html", "a33603" ],
-        [ "Error", "a33631.html", null ],
-        [ "Fatal", "a33635.html", "a33635" ],
-        [ "Filter", "a33587.html", null ],
-        [ "Info", "a33623.html", null ],
-        [ "IntConfigValue", "a33563.html", null ],
-        [ "MaxLogFiles", "a33579.html", null ],
-        [ "MaxLogSize", "a33583.html", null ],
-        [ "Message", "a33615.html", "a33615" ],
-        [ "MessageImpl", "a33607.html", "a33607" ],
-        [ "MessagePoints", "a33611.html", "a33611" ],
-        [ "PathToLogDirectory", "a33575.html", null ],
-        [ "ProgramName", "a33567.html", null ],
-        [ "ProgramVersion", "a33571.html", null ],
-        [ "Proxy", "a33639.html", null ],
-        [ "ProxyDebug", "a33643.html", null ],
-        [ "StringConfigValue", "a33559.html", null ],
-        [ "Trace", "a33619.html", null ],
-        [ "Warning", "a33627.html", null ]
+        [ "AllowReplace", "a34166.html", null ],
+        [ "Configurator", "a34170.html", "a34170" ],
+        [ "ConfigValue", "a34130.html", "a34130" ],
+        [ "ConfigValueImpl", "a34122.html", null ],
+        [ "Core", "a34174.html", "a34174" ],
+        [ "DateTime", "a34178.html", "a34178" ],
+        [ "Error", "a34206.html", null ],
+        [ "Fatal", "a34210.html", "a34210" ],
+        [ "Filter", "a34162.html", null ],
+        [ "Info", "a34198.html", null ],
+        [ "IntConfigValue", "a34138.html", null ],
+        [ "MaxLogFiles", "a34154.html", null ],
+        [ "MaxLogSize", "a34158.html", null ],
+        [ "Message", "a34190.html", "a34190" ],
+        [ "MessageImpl", "a34182.html", "a34182" ],
+        [ "MessagePoints", "a34186.html", "a34186" ],
+        [ "PathToLogDirectory", "a34150.html", null ],
+        [ "ProgramName", "a34142.html", null ],
+        [ "ProgramVersion", "a34146.html", null ],
+        [ "Proxy", "a34214.html", null ],
+        [ "ProxyDebug", "a34218.html", null ],
+        [ "StringConfigValue", "a34134.html", null ],
+        [ "Trace", "a34194.html", null ],
+        [ "Warning", "a34202.html", null ]
       ] ],
       [ "patterns", null, [
         [ "command", null, [
-          [ "Data", "a33691.html", null ],
-          [ "Data< Pointer * >", "a33695.html", null ],
-          [ "ICommand", "a33699.html", null ],
-          [ "IManager", "a33703.html", null ],
-          [ "IUndo", "a33707.html", null ],
-          [ "ManagerCommon", "a33711.html", null ],
-          [ "ManagerUndoRedo", "a33715.html", "a33715" ]
+          [ "Data", "a34266.html", null ],
+          [ "Data< Pointer * >", "a34270.html", null ],
+          [ "ICommand", "a34274.html", null ],
+          [ "IManager", "a34278.html", null ],
+          [ "IUndo", "a34282.html", null ],
+          [ "ManagerCommon", "a34286.html", null ],
+          [ "ManagerUndoRedo", "a34290.html", "a34290" ]
         ] ],
         [ "factory", null, [
-          [ "Factory", "a33719.html", "a33719" ],
-          [ "Registrator", "a33723.html", null ]
+          [ "Factory", "a34294.html", "a34294" ],
+          [ "Registrator", "a34298.html", null ]
         ] ],
         [ "mvc", null, [
           [ "controller", null, [
-            [ "BlockingSignal", "a33727.html", "a33727" ],
-            [ "NonBlockingSignal", "a33739.html", "a33739" ]
+            [ "BlockingSignal", "a34302.html", "a34302" ],
+            [ "NonBlockingSignal", "a34314.html", "a34314" ]
           ] ]
         ] ]
       ] ],
       [ "settings", null, [
-        [ "File", "a33743.html", "a33743" ],
-        [ "ISection", "a33747.html", null ],
-        [ "Section", "a33783.html", "a33783" ],
-        [ "SectionFullAccess", "a33751.html", "a33751" ],
-        [ "SectionImpl", "a33759.html", "a33759" ]
+        [ "File", "a34318.html", "a34318" ],
+        [ "ISection", "a34322.html", null ],
+        [ "Section", "a34358.html", "a34358" ],
+        [ "SectionFullAccess", "a34326.html", "a34326" ],
+        [ "SectionImpl", "a34334.html", "a34334" ]
       ] ],
       [ "system", null, [
         [ "dll", null, [
-          [ "Object", "a33803.html", null ],
-          [ "Ptr", "a33811.html", "a33811" ],
-          [ "PtrObject", "a33807.html", "a33807" ]
+          [ "Object", "a34378.html", null ],
+          [ "Ptr", "a34386.html", "a34386" ],
+          [ "PtrObject", "a34382.html", "a34382" ]
         ] ],
         [ "process", null, [
-          [ "ICallBack", "a33819.html", null ]
+          [ "ICallBack", "a34394.html", null ]
         ] ],
-        [ "CurrentModule", "a33791.html", "a33791" ],
-        [ "Dump", "a33815.html", null ],
-        [ "Process", "a33823.html", "a33823" ],
-        [ "WinapiCallProxy", "a33847.html", "a33847" ]
+        [ "CurrentModule", "a34366.html", "a34366" ],
+        [ "Dump", "a34390.html", null ],
+        [ "Process", "a34398.html", "a34398" ],
+        [ "WinapiCallProxy", "a34422.html", "a34422" ]
       ] ],
       [ "testing", null, [
-        [ "Proxy", "a33851.html", null ]
+        [ "Proxy", "a34426.html", null ]
       ] ],
       [ "version", null, [
-        [ "Info", "a33855.html", "a33855" ]
+        [ "Info", "a34430.html", "a34430" ]
       ] ],
       [ "vfs", null, [
-        [ "Compress", "a33871.html", "a33871" ],
-        [ "Core", "a33875.html", "a33875" ],
-        [ "Crypto", "a33879.html", "a33879" ],
-        [ "FileSystem", "a33883.html", "a33883" ],
-        [ "IConverter", "a33887.html", "a33887" ],
-        [ "IImplementation", "a33891.html", "a33891" ],
-        [ "IPassword", "a33895.html", null ],
-        [ "Pack", "a33903.html", "a33903" ]
+        [ "Compress", "a34446.html", "a34446" ],
+        [ "Core", "a34450.html", "a34450" ],
+        [ "Crypto", "a34454.html", "a34454" ],
+        [ "FileSystem", "a34458.html", "a34458" ],
+        [ "IConverter", "a34462.html", "a34462" ],
+        [ "IImplementation", "a34466.html", "a34466" ],
+        [ "IPassword", "a34470.html", null ],
+        [ "Pack", "a34478.html", "a34478" ]
       ] ]
     ] ],
     [ "app", null, [
-      [ "DoxygenReport", "a34639.html", "a34639" ],
-      [ "Init", "a33259.html", null ],
-      [ "Main", "a33267.html", "a33267" ],
-      [ "MainFrame", "a34643.html", null ],
-      [ "TestClass", "a33271.html", null ],
-      [ "TestProject", "a33275.html", "a33275" ],
-      [ "TestSolution", "a33279.html", null ]
+      [ "DoxygenReport", "a35238.html", "a35238" ],
+      [ "Init", "a33826.html", null ],
+      [ "Main", "a33834.html", "a33834" ],
+      [ "MainFrame", "a35242.html", null ],
+      [ "TestClass", "a33838.html", null ],
+      [ "TestProject", "a33842.html", "a33842" ],
+      [ "TestSolution", "a33846.html", null ]
     ] ],
     [ "controller", null, [
-      [ "Controller", "a34303.html", "a34303" ],
-      [ "DoChangeValue", "a34307.html", null ],
-      [ "DoDrawSettings", "a34311.html", null ],
-      [ "DoUpdateTreeSections", "a34315.html", null ],
-      [ "DoUpdateView", "a34635.html", null ]
+      [ "Controller", "a34894.html", "a34894" ],
+      [ "DoChangeValue", "a34898.html", null ],
+      [ "DoDrawSettings", "a34902.html", null ],
+      [ "DoUpdateTreeSections", "a34906.html", null ],
+      [ "DoUpdateView", "a35234.html", null ]
     ] ],
     [ "example", null, [
-      [ "Der3", "a34187.html", null ]
+      [ "Der3", "a34778.html", null ]
     ] ],
     [ "model", null, [
-      [ "Executor", "a34647.html", "a34647" ],
-      [ "GTestResult", "a34651.html", "a34651" ],
-      [ "IModel", "a34319.html", null ],
-      [ "IModelTestingApp", "a34655.html", "a34655" ],
-      [ "Loader", "a34659.html", "a34659" ],
-      [ "Model", "a34323.html", "a34323" ]
+      [ "Executor", "a35246.html", "a35246" ],
+      [ "GTestResult", "a35250.html", "a35250" ],
+      [ "IModel", "a34910.html", null ],
+      [ "IModelTestingApp", "a35254.html", "a35254" ],
+      [ "Loader", "a35258.html", "a35258" ],
+      [ "Model", "a34914.html", "a34914" ]
     ] ],
     [ "support", null, [
-      [ "Info", "a34327.html", null ],
-      [ "InfoTestingApp", "a34663.html", null ],
-      [ "IReport", "a34679.html", "a34679" ]
+      [ "Info", "a34918.html", null ],
+      [ "InfoTestingApp", "a35262.html", null ],
+      [ "IReport", "a35278.html", "a35278" ]
     ] ],
     [ "view", null, [
-      [ "AllTestsInfo", "a34683.html", "a34683" ],
-      [ "DoDoxygenReport", "a34687.html", "a34687" ],
-      [ "FailedTestsInfo", "a34691.html", "a34691" ],
-      [ "IView", "a34331.html", null ],
-      [ "IViewTestingApp", "a34695.html", "a34695" ],
-      [ "SummaryInfo", "a34699.html", "a34699" ],
-      [ "TestProjectInfo", "a34707.html", "a34707" ]
+      [ "AllTestsInfo", "a35282.html", "a35282" ],
+      [ "DoDoxygenReport", "a35286.html", "a35286" ],
+      [ "FailedTestsInfo", "a35290.html", "a35290" ],
+      [ "IView", "a34922.html", null ],
+      [ "IViewTestingApp", "a35294.html", "a35294" ],
+      [ "SummaryInfo", "a35298.html", "a35298" ],
+      [ "TestProjectInfo", "a35306.html", "a35306" ]
     ] ],
     [ "wx", null, [
-      [ "HtmlAbout", "a34099.html", null ],
-      [ "HtmlTestInfo", "a34723.html", "a34723" ],
-      [ "MainFrame", "a34095.html", null ],
-      [ "PanelAllTests", "a34715.html", null ],
-      [ "PanelFailedTest", "a34719.html", null ],
-      [ "PanelSummary", "a34711.html", null ],
-      [ "SettingsFrame", "a34335.html", null ],
-      [ "SettingsPage", "a34343.html", "a34343" ],
-      [ "SettingsPanel", "a34347.html", null ],
-      [ "SettingsPanelImpl", "a34339.html", null ],
-      [ "TreeCtrlIcons", "a34727.html", null ],
-      [ "TreeCtrlTests", "a34731.html", "a34731" ],
-      [ "TreeSections", "a34351.html", "a34351" ]
+      [ "HtmlAbout", "a34690.html", null ],
+      [ "HtmlTestInfo", "a35322.html", "a35322" ],
+      [ "MainFrame", "a34686.html", null ],
+      [ "PanelAllTests", "a35314.html", null ],
+      [ "PanelFailedTest", "a35318.html", null ],
+      [ "PanelSummary", "a35310.html", null ],
+      [ "SettingsFrame", "a34926.html", null ],
+      [ "SettingsPage", "a34934.html", "a34934" ],
+      [ "SettingsPanel", "a34938.html", null ],
+      [ "SettingsPanelImpl", "a34930.html", null ],
+      [ "TreeCtrlIcons", "a35326.html", null ],
+      [ "TreeCtrlTests", "a35330.html", "a35330" ],
+      [ "TreeSections", "a34942.html", "a34942" ]
     ] ],
-    [ "Password", "a34751.html", null ]
+    [ "Password", "a35350.html", null ]
 ];

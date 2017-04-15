@@ -1,14 +1,17 @@
 var searchData=
 [
-  ['match',['Match',['../a33327.html#aed057b113464ab4f76edbb8d9a01b3b4',1,'alicorn::extension::std::regex::Match::Match(const String &amp;)'],['../a33327.html#a6771afe48b8f1155f53536b2220e2764',1,'alicorn::extension::std::regex::Match::Match(const String &amp;, IgnoreCase)']]],
-  ['max',['Max',['../a32912.html#ga46d27f821bb83e671287a91ef04b6f1d',1,'alicorn::extension::cpp::math']]],
-  ['message',['Message',['../a33615.html#a9129c099b58fc8b4b237a2268c40e695',1,'alicorn::logger::Message']]],
-  ['messageimpl',['MessageImpl',['../a33607.html#aead43313ff34adde57b4d0f79d535f1c',1,'alicorn::logger::MessageImpl']]],
-  ['min',['Min',['../a32912.html#ga2351e6e5a8a802cb858212f06e6a956c',1,'alicorn::extension::cpp::math::Min(Type _Value1, Type _Value2)'],['../a32910.html#ga092d73a3c219d160170528be0957ecf9',1,'alicorn::extension::cpp::math::Min(void)']]],
-  ['mod',['Mod',['../a32912.html#gab870f354ab6165ae21e178d23f6accef',1,'alicorn::extension::cpp::math']]],
-  ['movetochildnode',['MoveToChildNode',['../a33167.html#a92be4896f9248f6ffbf3c3d1eab619eb',1,'alicorn::document::xml::IXml::MoveToChildNode()'],['../a33179.html#a04d0bbeeba0ce1f1e166d890caa20d0b',1,'alicorn::document::xml::RapidXml::MoveToChildNode()']]],
-  ['movetofirstchildnode',['MoveToFirstChildNode',['../a33167.html#a0e52b7246a1ebdb8fb326b009adf49b9',1,'alicorn::document::xml::IXml::MoveToFirstChildNode()'],['../a33179.html#a7b73c1ffb6b49c361f20dbda9169c250',1,'alicorn::document::xml::RapidXml::MoveToFirstChildNode()']]],
-  ['movetonextnode',['MoveToNextNode',['../a33167.html#a2fdec796a96ca25e13bafb2787db59e3',1,'alicorn::document::xml::IXml::MoveToNextNode()'],['../a33179.html#af06f8126e7f039adc585e837b7b81f82',1,'alicorn::document::xml::RapidXml::MoveToNextNode()']]],
-  ['movetoparentnode',['MoveToParentNode',['../a33167.html#a50c6a5adf8ec04d3a4c984c371809e1e',1,'alicorn::document::xml::IXml::MoveToParentNode()'],['../a33179.html#a71869c4c9d018174f02d77f6e3041dcf',1,'alicorn::document::xml::RapidXml::MoveToParentNode()']]],
-  ['movetorootnode',['MoveToRootNode',['../a33167.html#afb470afc227c1d972195d61ce6edde68',1,'alicorn::document::xml::IXml::MoveToRootNode()'],['../a33179.html#ad3e96461fdaf5f39c688cd32fbeff564',1,'alicorn::document::xml::RapidXml::MoveToRootNode()']]]
+  ['make',['Make',['../a33886.html#ae469dd7b78ed8b87033101dba40bfe95',1,'alicorn::extension::std::memory::Pool']]],
+  ['make_5fshared',['make_shared',['../a33477.html#ga66eb9e3ce8d41313e90083d877492841',1,'alicorn::extension::std']]],
+  ['make_5funique',['make_unique',['../a33477.html#gaff3e523fdced44b4366e85efc6e954fc',1,'alicorn::extension::std::make_unique()'],['../a33477.html#ga2b3c61d0d9089e867612a237026040ab',1,'alicorn::extension::std::pool::make_unique()']]],
+  ['match',['Match',['../a33902.html#aed057b113464ab4f76edbb8d9a01b3b4',1,'alicorn::extension::std::regex::Match::Match(const String &amp;)'],['../a33902.html#a6771afe48b8f1155f53536b2220e2764',1,'alicorn::extension::std::regex::Match::Match(const String &amp;, IgnoreCase)']]],
+  ['max',['Max',['../a33473.html#ga46d27f821bb83e671287a91ef04b6f1d',1,'alicorn::extension::cpp::math']]],
+  ['message',['Message',['../a34190.html#a9129c099b58fc8b4b237a2268c40e695',1,'alicorn::logger::Message']]],
+  ['messageimpl',['MessageImpl',['../a34182.html#aead43313ff34adde57b4d0f79d535f1c',1,'alicorn::logger::MessageImpl']]],
+  ['min',['Min',['../a33473.html#ga2351e6e5a8a802cb858212f06e6a956c',1,'alicorn::extension::cpp::math::Min(Type _Value1, Type _Value2)'],['../a33471.html#ga092d73a3c219d160170528be0957ecf9',1,'alicorn::extension::cpp::math::Min(void)']]],
+  ['mod',['Mod',['../a33473.html#gab870f354ab6165ae21e178d23f6accef',1,'alicorn::extension::cpp::math']]],
+  ['movetochildnode',['MoveToChildNode',['../a33734.html#a92be4896f9248f6ffbf3c3d1eab619eb',1,'alicorn::document::xml::IXml::MoveToChildNode()'],['../a33746.html#a04d0bbeeba0ce1f1e166d890caa20d0b',1,'alicorn::document::xml::RapidXml::MoveToChildNode()']]],
+  ['movetofirstchildnode',['MoveToFirstChildNode',['../a33734.html#a0e52b7246a1ebdb8fb326b009adf49b9',1,'alicorn::document::xml::IXml::MoveToFirstChildNode()'],['../a33746.html#a7b73c1ffb6b49c361f20dbda9169c250',1,'alicorn::document::xml::RapidXml::MoveToFirstChildNode()']]],
+  ['movetonextnode',['MoveToNextNode',['../a33734.html#a2fdec796a96ca25e13bafb2787db59e3',1,'alicorn::document::xml::IXml::MoveToNextNode()'],['../a33746.html#af06f8126e7f039adc585e837b7b81f82',1,'alicorn::document::xml::RapidXml::MoveToNextNode()']]],
+  ['movetoparentnode',['MoveToParentNode',['../a33734.html#a50c6a5adf8ec04d3a4c984c371809e1e',1,'alicorn::document::xml::IXml::MoveToParentNode()'],['../a33746.html#a71869c4c9d018174f02d77f6e3041dcf',1,'alicorn::document::xml::RapidXml::MoveToParentNode()']]],
+  ['movetorootnode',['MoveToRootNode',['../a33734.html#afb470afc227c1d972195d61ce6edde68',1,'alicorn::document::xml::IXml::MoveToRootNode()'],['../a33746.html#ad3e96461fdaf5f39c688cd32fbeff564',1,'alicorn::document::xml::RapidXml::MoveToRootNode()']]]
 ];
