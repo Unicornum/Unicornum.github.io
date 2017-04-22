@@ -1,10 +1,9 @@
 var a33466 =
 [
-    [ "AppData", "a33766.html", [
-      [ "Get", "a33766.html#af22b7d074b4d6cef9b30dfea7f97fe28", null ],
-      [ "GetInstance", "a33766.html#a1bbbcc7969f3750bb918f9004561b16b", null ],
-      [ "Init", "a33766.html#af28a241b36bb1d75d2e63bfb6600a55c", null ],
-      [ "Reset", "a33766.html#a9007f1114103ceb929b52322f25082e2", null ]
+    [ "BlockingSignal", "a34290.html", [
+      [ "operator()", "a34290.html#aeea3117f12d7c1cd4ab2fe12aee5ffa2", null ]
     ] ],
-    [ "Environment", "a33770.html", null ]
+    [ "NonBlockingSignal", "a34302.html", [
+      [ "operator()", "a34302.html#ac1a6020453eb2c5332315e02dc9dcc48", null ]
+    ] ]
 ];

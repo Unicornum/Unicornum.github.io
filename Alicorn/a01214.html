@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.String/String_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.Search/Search_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.3 Revision: 2494 Platform: x64 Build: 11:12 15 Апрель 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.4 Revision: 2529 Platform: x64 Build: 20:04 22 Апрель 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -85,103 +85,68 @@ $(document).ready(function(){initNavTree('a01214.html','');});
   <div class="summary">
 <a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл String_test.cpp</div>  </div>
+<div class="title">Файл Search_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;boost\locale.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00554_source.html">alicorn\extension\std\string.forward.hpp</a>&gt;</code><br />
+<code>#include &lt;alicorn\extension\std\regex.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\std\string.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00539.html">alicorn\extension\std\string\string.test.inl</a>&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\exception.hpp&gt;</code><br />
-<code>#include &quot;..\UstrEq.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для String_test.cpp:</div>
+Граф включаемых заголовочных файлов для Search_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01215.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_2_string__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_2_string__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_2_string__test_8cpp">
-<area shape="rect" id="node3" href="a36058_source.html" title="stdafx.h" alt="" coords="2981,117,3056,144"/>
-<area shape="rect" id="node27" href="a00554.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="3265,457,3425,498"/>
-<area shape="rect" id="node65" href="a36619_source.html" title="boost\\locale.hpp" alt="" coords="3341,117,3472,144"/>
-<area shape="rect" id="node71" href="a00533_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="3371,275,3532,317"/>
-<area shape="rect" id="node89" href="a00539.html" title="alicorn\\extension\\std\l\\string\\string.test.inl" alt="" coords="3727,110,3888,151"/>
-<area shape="rect" id="node91" href="a36769_source.html" title="alicorn\\extension\\std\l\\exception.hpp" alt="" coords="3913,110,4073,151"/>
-<area shape="rect" id="node106" href="a01223_source.html" title="..\\UstrEq.hpp" alt="" coords="4098,117,4208,144"/>
-<area shape="rect" id="node5" href="a01826.html" title="Test.Front\\Test.Class.hpp" alt="" coords="2301,200,2496,227"/>
-<area shape="rect" id="node59" href="a36688_source.html" title="..\\mock.hpp" alt="" coords="2968,200,3069,227"/>
-<area shape="rect" id="node9" href="a36613_source.html" title="boost\\filesystem.hpp" alt="" coords="667,283,827,309"/>
-<area shape="rect" id="node31" href="a00413.html" title="alicorn\\extension\\google.hpp" alt="" coords="1462,283,1673,309"/>
-<area shape="rect" id="node37" href="a36895.html" title="alicorn\\requirements.hpp" alt="" coords="2210,283,2395,309"/>
-<area shape="rect" id="node55" href="a00656.html" title="alicorn\\testing.hpp" alt="" coords="2420,283,2567,309"/>
-<area shape="rect" id="node11" href="a00266_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="756,373,932,400"/>
-<area shape="rect" id="node13" href="a00281_source.html" title="filesystem\\irelative.hpp" alt="" coords="957,373,1131,400"/>
-<area shape="rect" id="node15" href="a00287_source.html" title="filesystem\\is&#45;readable.hpp" alt="" coords="5,373,200,400"/>
-<area shape="rect" id="node17" href="a00254_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="225,366,372,407"/>
-<area shape="rect" id="node19" href="a00272_source.html" title="filesystem\\get&#45;file\l&#45;size.hpp" alt="" coords="397,366,539,407"/>
-<area shape="rect" id="node21" href="a00302_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="564,366,732,407"/>
-<area shape="rect" id="node25" href="a00311_source.html" title="filesystem\\load&#45;string\l&#45;file.hpp" alt="" coords="1156,366,1321,407"/>
-<area shape="rect" id="node29" href="a00506_source.html" title="string\\prefix.hpp" alt="" coords="3481,547,3612,573"/>
-<area shape="rect" id="node33" href="a36649.html" title="google\\test.hpp" alt="" coords="1505,373,1631,400"/>
-<area shape="rect" id="node35" href="a36667_source.html" title="google\\mock.hpp" alt="" coords="1346,373,1480,400"/>
-<area shape="rect" id="node45" href="a36640.html" title="extension\\cpp.hpp" alt="" coords="1656,373,1800,400"/>
-<area shape="rect" id="node47" href="a01028_source.html" title="testing\\id.hpp" alt="" coords="1824,373,1939,400"/>
-<area shape="rect" id="node49" href="a01025_source.html" title="testing\\friend.hpp" alt="" coords="1963,373,2103,400"/>
-<area shape="rect" id="node51" href="a01040_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="2128,373,2307,400"/>
-<area shape="rect" id="node53" href="a01043_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="2331,373,2516,400"/>
-<area shape="rect" id="node57" href="a36790_source.html" title="testing\\proxy.hpp" alt="" coords="3076,373,3215,400"/>
-<area shape="rect" id="node73" href="a36793_source.html" title="string\\string.hpp" alt="" coords="3667,373,3797,400"/>
-<area shape="rect" id="node80" href="a00551_source.html" title="string\\tokenize.hpp" alt="" coords="3289,373,3439,400"/>
-<area shape="rect" id="node84" href="a36796_source.html" title="string\\support.hpp" alt="" coords="3463,373,3607,400"/>
-<area shape="rect" id="node76" href="a00464_source.html" title="..\\ptr&#45;wrapper.hpp" alt="" coords="3787,464,3933,491"/>
-<area shape="rect" id="node78" href="a36763_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="3539,464,3711,491"/>
-<area shape="rect" id="node93" href="a36766_source.html" title="exception\\exception.hpp" alt="" coords="3758,200,3943,227"/>
-<area shape="rect" id="node104" href="a00437_source.html" title="exception\\abort.hpp" alt="" coords="3967,200,4123,227"/>
-<area shape="rect" id="node99" href="a36784_source.html" title="proxy.hpp" alt="" coords="3863,283,3949,309"/>
-<area shape="rect" id="node101" href="a36775_source.html" title="message.hpp" alt="" coords="3974,283,4081,309"/>
+<div class="center"><img src="a01215.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_search_2_search__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_search_2_search__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_search_2_search__test_8cpp">
+<area shape="rect" id="node3" href="a36028_source.html" title="stdafx.h" alt="" coords="3593,117,3668,144"/>
+<area shape="rect" id="node75" href="a00491_source.html" title="alicorn\\extension\\std\l\\regex.hpp" alt="" coords="3810,291,3971,333"/>
+<area shape="rect" id="node100" href="a00533_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="4306,291,4467,333"/>
+<area shape="rect" id="node5" href="a01832.html" title="Testing\\Test.Front\l\\Test.Class.hpp" alt="" coords="2680,201,2827,242"/>
+<area shape="rect" id="node65" href="a36664_source.html" title="..\\mock.hpp" alt="" coords="3580,208,3681,235"/>
+<area shape="rect" id="node9" href="a36589_source.html" title="boost\\filesystem.hpp" alt="" coords="2744,299,2904,325"/>
+<area shape="rect" id="node31" href="a00413.html" title="alicorn\\extension\\google.hpp" alt="" coords="3135,299,3347,325"/>
+<area shape="rect" id="node37" href="a36877.html" title="alicorn\\requirements.hpp" alt="" coords="678,299,863,325"/>
+<area shape="rect" id="node55" href="a00656.html" title="alicorn\\testing.hpp" alt="" coords="1799,299,1945,325"/>
+<area shape="rect" id="node11" href="a00266_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="2120,389,2296,416"/>
+<area shape="rect" id="node13" href="a00281_source.html" title="filesystem\\irelative.hpp" alt="" coords="2321,389,2495,416"/>
+<area shape="rect" id="node15" href="a00287_source.html" title="filesystem\\is&#45;readable.hpp" alt="" coords="2519,389,2715,416"/>
+<area shape="rect" id="node17" href="a00254_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="2933,382,3080,423"/>
+<area shape="rect" id="node19" href="a00272_source.html" title="filesystem\\get&#45;file\l&#45;size.hpp" alt="" coords="3105,382,3247,423"/>
+<area shape="rect" id="node21" href="a00302_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="2740,382,2908,423"/>
+<area shape="rect" id="node25" href="a00311_source.html" title="filesystem\\load&#45;string\l&#45;file.hpp" alt="" coords="4067,382,4232,423"/>
+<area shape="rect" id="node27" href="a00554.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="4069,473,4229,514"/>
+<area shape="rect" id="node29" href="a00506_source.html" title="string\\prefix.hpp" alt="" coords="4075,571,4205,597"/>
+<area shape="rect" id="node33" href="a36625.html" title="google\\test.hpp" alt="" coords="3430,389,3556,416"/>
+<area shape="rect" id="node35" href="a36643_source.html" title="google\\mock.hpp" alt="" coords="3271,389,3405,416"/>
+<area shape="rect" id="node45" href="a36616.html" title="extension\\cpp.hpp" alt="" coords="209,389,353,416"/>
+<area shape="rect" id="node47" href="a01028_source.html" title="testing\\id.hpp" alt="" coords="377,389,492,416"/>
+<area shape="rect" id="node49" href="a01025_source.html" title="testing\\friend.hpp" alt="" coords="517,389,656,416"/>
+<area shape="rect" id="node51" href="a01040_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="681,389,860,416"/>
+<area shape="rect" id="node53" href="a01043_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="885,389,1069,416"/>
+<area shape="rect" id="node57" href="a36766_source.html" title="testing\\proxy.hpp" alt="" coords="1803,389,1941,416"/>
+<area shape="rect" id="node59" href="a01022_source.html" title="testing\\final.hpp" alt="" coords="1965,389,2096,416"/>
+<area shape="rect" id="node61" href="a00959_source.html" title="testing\\block&#45;file.hpp" alt="" coords="1424,389,1587,416"/>
+<area shape="rect" id="node63" href="a00992_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="1611,389,1777,416"/>
+<area shape="rect" id="node77" href="a00473_source.html" title="regex\\match.hpp" alt="" coords="3742,389,3876,416"/>
+<area shape="rect" id="node89" href="a00485_source.html" title="regex\\search.hpp" alt="" coords="3581,389,3717,416"/>
+<area shape="rect" id="node96" href="a00479_source.html" title="regex\\replace.hpp" alt="" coords="3901,389,4043,416"/>
+<area shape="rect" id="node82" href="a36775_source.html" title="alicorn\\extension\\std\l\\string\\string.hpp" alt="" coords="3875,473,4036,514"/>
+<area shape="rect" id="node85" href="a00458_source.html" title="alicorn\\extension\\std\l\\memory\\trivial&#45;ptr.hpp" alt="" coords="3672,563,3848,605"/>
+<area shape="rect" id="node87" href="a36739_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="3873,571,4044,597"/>
+<area shape="rect" id="node103" href="a00551_source.html" title="string\\tokenize.hpp" alt="" coords="4256,389,4405,416"/>
+<area shape="rect" id="node107" href="a36778_source.html" title="string\\support.hpp" alt="" coords="4480,389,4624,416"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Функции</h2></td></tr>
-<tr class="memitem:a7d270e60bcb730199a5cd541454f5d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a7d270e60bcb730199a5cd541454f5d10">TEST_F</a> (String_test, Test_ConstructorRawString)</td></tr>
-<tr class="separator:a7d270e60bcb730199a5cd541454f5d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5dbc3e2f0723f9135fae6c963870f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#aad5dbc3e2f0723f9135fae6c963870f7">TEST_F</a> (String_test, Test_CopyConstructor)</td></tr>
-<tr class="separator:aad5dbc3e2f0723f9135fae6c963870f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adbe38faf6e6d848a3b729dad688ea8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a2adbe38faf6e6d848a3b729dad688ea8">TEST_F</a> (String_test, Test_OperatorAssignment)</td></tr>
-<tr class="separator:a2adbe38faf6e6d848a3b729dad688ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe0e970b5bac8cef92df0d21cd48e7ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#abe0e970b5bac8cef92df0d21cd48e7ff">TEST_F</a> (String_test, Test_GetLenght)</td></tr>
-<tr class="separator:abe0e970b5bac8cef92df0d21cd48e7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8eb659f9e6375818962ddada6cfeea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a5a8eb659f9e6375818962ddada6cfeea">TEST_F</a> (String_test, Test_IsEmpty)</td></tr>
-<tr class="separator:a5a8eb659f9e6375818962ddada6cfeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7b6924d14210a2c826a3dac0ed076f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#aa7b6924d14210a2c826a3dac0ed076f8">TEST_F</a> (String_test, Test_OperatorEq)</td></tr>
-<tr class="separator:aa7b6924d14210a2c826a3dac0ed076f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30431160117aaf0a99e93d5eb6380717"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a30431160117aaf0a99e93d5eb6380717">TEST_F</a> (String_test, Test_OperatorNe)</td></tr>
-<tr class="separator:a30431160117aaf0a99e93d5eb6380717"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04f2d43cb39b086dc8f72f42482f313f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a04f2d43cb39b086dc8f72f42482f313f">TEST_F</a> (String_test, Test_OperatorLess)</td></tr>
-<tr class="separator:a04f2d43cb39b086dc8f72f42482f313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11809e9435b417b16b1f5d3e61364ec6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a11809e9435b417b16b1f5d3e61364ec6">TEST_F</a> (String_test, Test_Addition)</td></tr>
-<tr class="separator:a11809e9435b417b16b1f5d3e61364ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5753212e36a89afeed771f3546b739c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a5753212e36a89afeed771f3546b739c0">TEST_F</a> (String_test, Test_Append)</td></tr>
-<tr class="separator:a5753212e36a89afeed771f3546b739c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc18df9b568426b5c4ed288d5cc3e68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a2fc18df9b568426b5c4ed288d5cc3e68">TEST_F</a> (String_test, Test_Trim)</td></tr>
-<tr class="separator:a2fc18df9b568426b5c4ed288d5cc3e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2024a3564b16340349ea369550df800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#af2024a3564b16340349ea369550df800">TEST_F</a> (String_test, Test_SubString)</td></tr>
-<tr class="separator:af2024a3564b16340349ea369550df800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f22f42c93f81a577a281b4e0e4e2159"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a4f22f42c93f81a577a281b4e0e4e2159">TEST_F</a> (String_test, Test_Find)</td></tr>
-<tr class="separator:a4f22f42c93f81a577a281b4e0e4e2159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0876b642c3ecc87dd3ab8744d4226e36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a0876b642c3ecc87dd3ab8744d4226e36">TEST_F</a> (String_test, Test_Replace)</td></tr>
-<tr class="separator:a0876b642c3ecc87dd3ab8744d4226e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7f159a47cf6514ca7f84a66bb52c11b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#ac7f159a47cf6514ca7f84a66bb52c11b">TEST_F</a> (String_test, Test_ToLower)</td></tr>
-<tr class="separator:ac7f159a47cf6514ca7f84a66bb52c11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa00d94ed9d8f65b31b94984edfce909c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#aa00d94ed9d8f65b31b94984edfce909c">TEST_F</a> (String_test, Test_Tokenize_Ucs2)</td></tr>
-<tr class="separator:aa00d94ed9d8f65b31b94984edfce909c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ec4282c9833ce1b870d477ac8f58cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01214.html#a92ec4282c9833ce1b870d477ac8f58cd">TEST_F</a> (Search_test, Test_GetCoincided)</td></tr>
+<tr class="separator:a92ec4282c9833ce1b870d477ac8f58cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса String. </p>
+<div class="textblock"><p>Тесты класса Search. </p>
 </div><h2 class="groupheader">Функции</h2>
-<a id="a7d270e60bcb730199a5cd541454f5d10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d270e60bcb730199a5cd541454f5d10">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/16]</span></h2>
+<a id="a92ec4282c9833ce1b870d477ac8f58cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92ec4282c9833ce1b870d477ac8f58cd">&#9670;&nbsp;</a></span>TEST_F()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,13 +154,13 @@ $(document).ready(function(){initNavTree('a01214.html','');});
         <tr>
           <td class="memname">TEST_F </td>
           <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
+          <td class="paramtype">Search_test&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Test_ConstructorRawString&#160;</td>
+          <td class="paramtype">Test_GetCoincided&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -205,485 +170,8 @@ $(document).ready(function(){initNavTree('a01214.html','');});
         </tr>
       </table>
 </div><div class="memdoc">
-<p>[ConstructRawString]</p>
-<p>[ConstructRawString] </p>
-<div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01214_a7d270e60bcb730199a5cd541454f5d10_icgraph.png" border="0" usemap="#a01214_a7d270e60bcb730199a5cd541454f5d10_icgraph" alt=""/></div>
-<map name="a01214_a7d270e60bcb730199a5cd541454f5d10_icgraph" id="a01214_a7d270e60bcb730199a5cd541454f5d10_icgraph">
-<area shape="rect" id="node3" href="a01214.html#a2fc18df9b568426b5c4ed288d5cc3e68" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aad5dbc3e2f0723f9135fae6c963870f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad5dbc3e2f0723f9135fae6c963870f7">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_CopyConstructor&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ConstructString]</p>
-<p>[ConstructString] </p>
-
-</div>
-</div>
-<a id="a2adbe38faf6e6d848a3b729dad688ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2adbe38faf6e6d848a3b729dad688ea8">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorAssignment&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[AssignmentString]</p>
-<p>[AssignmentString] </p>
-
-</div>
-</div>
-<a id="abe0e970b5bac8cef92df0d21cd48e7ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe0e970b5bac8cef92df0d21cd48e7ff">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_GetLenght&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="a33458.html#_todo000014">Необходимо сделать:</a></b></dt><dd>"Для Utf8 должно быть количество букв, а не символов" ; </dd></dl>
-<p>[GetLenght]</p>
-<p>[GetLenght] </p>
-
-</div>
-</div>
-<a id="a5a8eb659f9e6375818962ddada6cfeea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a8eb659f9e6375818962ddada6cfeea">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_IsEmpty&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[IsEmpty]</p>
-<p>[IsEmpty] </p>
-
-</div>
-</div>
-<a id="aa7b6924d14210a2c826a3dac0ed076f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7b6924d14210a2c826a3dac0ed076f8">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorEq&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[OperatorEq]</p>
-<p>[OperatorEq] </p>
-
-</div>
-</div>
-<a id="a30431160117aaf0a99e93d5eb6380717"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30431160117aaf0a99e93d5eb6380717">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorNe&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[OperatorNe]</p>
-<p>[OperatorNe] </p>
-
-</div>
-</div>
-<a id="a04f2d43cb39b086dc8f72f42482f313f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04f2d43cb39b086dc8f72f42482f313f">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_OperatorLess&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[OperatorLess]</p>
-<p>[OperatorLess] </p>
-
-</div>
-</div>
-<a id="a11809e9435b417b16b1f5d3e61364ec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11809e9435b417b16b1f5d3e61364ec6">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Addition&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Addition]</p>
-<p>[Addition] </p>
-
-</div>
-</div>
-<a id="a5753212e36a89afeed771f3546b739c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5753212e36a89afeed771f3546b739c0">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[10/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Append&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Append]</p>
-<p>[Append] </p>
-
-</div>
-</div>
-<a id="a2fc18df9b568426b5c4ed288d5cc3e68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fc18df9b568426b5c4ed288d5cc3e68">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[11/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Trim&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Trim]</p>
-<p>[Trim] </p>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01214_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph.png" border="0" usemap="#a01214_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph" alt=""/></div>
-<map name="a01214_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph" id="a01214_a2fc18df9b568426b5c4ed288d5cc3e68_cgraph">
-<area shape="rect" id="node3" href="a01214.html#a7d270e60bcb730199a5cd541454f5d10" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="af2024a3564b16340349ea369550df800"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2024a3564b16340349ea369550df800">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[12/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_SubString&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="a33458.html#_todo000015">Необходимо сделать:</a></b></dt><dd>"Для Utf8 должно быть количество букв, а не символов" ; </dd></dl>
-<p>[SubString]</p>
-<p>[SubString] </p>
-
-</div>
-</div>
-<a id="a4f22f42c93f81a577a281b4e0e4e2159"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f22f42c93f81a577a281b4e0e4e2159">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[13/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Find&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="a33458.html#_todo000016">Необходимо сделать:</a></b></dt><dd>"Для Utf8 должно быть количество букв, а не символов" ; </dd></dl>
-<p>[Find]</p>
-<p>[Find] </p>
-
-</div>
-</div>
-<a id="a0876b642c3ecc87dd3ab8744d4226e36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0876b642c3ecc87dd3ab8744d4226e36">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[14/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Replace&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Replace]</p>
-<p>[Replace] </p>
-
-</div>
-</div>
-<a id="ac7f159a47cf6514ca7f84a66bb52c11b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7f159a47cf6514ca7f84a66bb52c11b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[15/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_ToLower&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ToLower]</p>
-<p>[ToLower] </p>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01214_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph.png" border="0" usemap="#a01214_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph" alt=""/></div>
-<map name="a01214_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph" id="a01214_ac7f159a47cf6514ca7f84a66bb52c11b_cgraph">
-<area shape="rect" id="node3" href="a01214.html#a7d270e60bcb730199a5cd541454f5d10" title="TEST_F" alt="" coords="129,5,202,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="aa00d94ed9d8f65b31b94984edfce909c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa00d94ed9d8f65b31b94984edfce909c">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[16/16]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">String_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_Tokenize_Ucs2&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[Tokenize]</p>
-<p>[Tokenize] </p>
+<p>[Regex_Search]</p>
+<p>[Regex_Search] </p>
 
 </div>
 </div>
@@ -692,8 +180,8 @@ $(document).ready(function(){initNavTree('a01214.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_631c43ebb27d3138b15ea189b4d52dd2.html">Test.String</a></li><li class="navelem"><a class="el" href="a01214.html">String_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 15 Апр 2017 11:13:06. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_e0702111caac8a10fc86b681bf206a6c.html">Test.Search</a></li><li class="navelem"><a class="el" href="a01214.html">Search_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 22 Апр 2017 20:04:55. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Xml</title>
+<title>Alicorn: Command</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.3 Revision: 2494 Platform: x64 Build: 11:12 15 Апрель 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.4 Revision: 2529 Platform: x64 Build: 20:04 22 Апрель 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,65 +83,95 @@ $(document).ready(function(){initNavTree('a33464.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
   <div class="headertitle">
-<div class="title">Xml<div class="ingroups"><a class="el" href="a33460.html">Alicorn</a> &raquo; <a class="el" href="a33465.html">Document</a></div></div>  </div>
+<div class="title">Command<div class="ingroups"><a class="el" href="a33436.html">Alicorn</a> &raquo; <a class="el" href="a33467.html">Patterns</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Xml:</div>
+Граф связей класса Command:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a33464.png" border="0" alt="" usemap="#a33464"/>
 <map name="a33464" id="a33464">
-<area shape="rect" id="node1" href="a33465.html" title="Document" alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node1" href="a33467.html" title="Patterns" alt="" coords="6,5,85,32"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33706.html">alicorn::document::xml::Attribute</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Вспомогательный класс для доступа к атрибуту узла документа xml.  <a href="a33706.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34250.html">alicorn::patterns::command::Data&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Вспомогательный класс команды, содержащий используемые данные.  <a href="a34250.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33710.html">alicorn::document::xml::Attributes</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Вспомогательный класс для доступа к списку атрибутов узла документа xml.  <a href="a33710.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34254.html">alicorn::patterns::command::Data&lt; Pointer * &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Специализация шаблона для указателей.  <a href="a34254.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33734.html">alicorn::document::xml::IXml</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Интерфейсный класс для реализаций классов работы с xml документами.  <a href="a33734.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34258.html">alicorn::patterns::command::ICommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Интерфейсный класс для команд.  <a href="a34258.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33738.html">alicorn::document::xml::Node</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Вспомогательный класс для манипуляции текущим узлом документа.  <a href="a33738.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34262.html">alicorn::patterns::command::IManager&lt; TInterface &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Интерфейсный класс менеджеров, управляющих выполнением команд.  <a href="a34262.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33742.html">alicorn::document::xml::RapidXml::Document</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Класс-обертка над xml документом.  <a href="a33742.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34266.html">alicorn::patterns::command::IUndo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Интерфейсный класс для команд, поддерживающих отмену последнего действия.  <a href="a34266.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33746.html">alicorn::document::xml::RapidXml</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Класс-обертка для работы с xml документом при помощи библиотеки <a class="el" href="a33746.html" title="Класс входит в Document   Класс-обертка для работы с xml документом при помощи библиотеки RapidXml...">RapidXml</a>.  <a href="a33746.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34270.html">alicorn::patterns::command::ManagerCommon&lt; TInterface &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Базовый класс менеджеров, управляющих выполнением команд.  <a href="a34270.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33758.html">alicorn::document::xml::Value</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Вспомогательный класс для доступа к значению узла.  <a href="a33758.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34274.html">alicorn::patterns::command::ManagerUndoRedo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд.  <a href="a34274.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33762.html">alicorn::document::Xml&lt; TImpl &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35749.html">Document</a> <br />
- Класс для работы с xml документами.  <a href="a33762.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ga4279689109bf5cff740fd6d25f303379"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33464.html#ga4279689109bf5cff740fd6d25f303379">alicorn::patterns::command::Manager</a> = <a class="el" href="a34270.html">ManagerCommon</a>&lt; <a class="el" href="a34258.html">ICommand</a> &gt;</td></tr>
+<tr class="memdesc:ga4279689109bf5cff740fd6d25f303379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд.  <a href="a33464.html#ga4279689109bf5cff740fd6d25f303379">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga4279689109bf5cff740fd6d25f303379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Классы для работы с документами xml.</p>
-<h2>Пример использования: </h2>
-<div class="fragment"><div class="line">  <span class="comment">// Предварительные объявления</span></div><div class="line">  <span class="keyword">using</span> <a class="code" href="a33690.html">Xml_t</a> = <a class="code" href="a33762.html">::alicorn::document::Xml&lt;XML_IMPLEMENTATION&gt;</a>;</div><div class="line">  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div><div class="line">  <span class="keyword">using</span> Data_t = ::std::vector&lt;boost::uint8_t&gt;;</div><div class="line">  <span class="keyword">using</span> <a class="code" href="a34066.html">String_t</a> = <a class="code" href="a34066.html">::alicorn::extension::std::String</a>;</div></div><!-- fragment --><div class="fragment"><div class="line">  <span class="comment">// Создание документа из строки</span></div><div class="line">  <span class="keyword">const</span> std::string RawData = </div><div class="line">    <span class="stringliteral">&quot;\xEF\xBB\xBF&quot;</span></div><div class="line">    <span class="stringliteral">&quot;&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;utf-8\&quot;?&gt;\r\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;&lt;entity1&gt;\r\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  &lt;entity2/&gt;\r\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  &lt;entity3/&gt;\r\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;  &lt;entity4/&gt;\r\n&quot;</span></div><div class="line">    <span class="stringliteral">&quot;&lt;/entity1&gt;\r\n&quot;</span>; </div><div class="line"></div><div class="line">  <span class="keyword">const</span> Data_t Data(RawData.begin(), RawData.end());</div><div class="line">  <a class="code" href="a33690.html">Xml_t</a> Example(Data);</div><div class="line">  <span class="keyword">const</span> <a class="code" href="a33690.html">Xml_t</a> &amp; ConstExample = Example;</div></div><!-- fragment --><div class="fragment"><div class="line">    <span class="keyword">using namespace </span><a class="code" href="a33516.html">alicorn::document::xml</a>;</div><div class="line"></div><div class="line">    <span class="comment">// Переход к узлу entity1</span></div><div class="line">    Example[<a class="code" href="a33473.html#ga8640e62399009826e69832f22ddbf23e">Root</a>].CurrentNode[<a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;entity1&quot;</span>)];</div><div class="line"></div><div class="line">    <span class="keyword">auto</span> Count = 0;</div><div class="line">    <span class="comment">// Перебор всех дочерних узлов узла entity1</span></div><div class="line">    <span class="keyword">auto</span> &amp; <a class="code" href="a33738.html">Node</a> = Example.CurrentNode;</div><div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">bool</span> <a class="code" href="a33494.html#gaba7352a2eed189b48b6cdda86280e0e2">IsExists</a> = <a class="code" href="a33738.html">Node</a>[FirstChild]; <a class="code" href="a33494.html#gaba7352a2eed189b48b6cdda86280e0e2">IsExists</a>; <a class="code" href="a33494.html#gaba7352a2eed189b48b6cdda86280e0e2">IsExists</a> = <a class="code" href="a33738.html">Node</a>[Next])</div><div class="line">    {</div><div class="line">      Count++;</div><div class="line">    }</div><div class="line">    EXPECT_EQ(3, Count);</div></div><!-- fragment --><div class="fragment"><div class="line">  <span class="comment">// Добавление дочернего узла текущему</span></div><div class="line">  Example.CurrentNode += <a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;entity&quot;</span>);</div></div><!-- fragment --><div class="fragment"><div class="line">  <span class="comment">// Получение значения узла</span></div><div class="line">  <a class="code" href="a34066.html">String_t</a> Empty = Example[<a class="code" href="a33473.html#ga8640e62399009826e69832f22ddbf23e">Root</a>].CurrentNode[<a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;params&quot;</span>)].Value.<a class="code" href="a33702.html#a5594eced34986019d8c1b76cca06233b">To</a>&lt;<a class="code" href="a34066.html">String_t</a>&gt;();</div></div><!-- fragment --><div class="fragment"><div class="line">  <span class="comment">// Изменение значения узла</span></div><div class="line">  Example[<a class="code" href="a33473.html#ga8640e62399009826e69832f22ddbf23e">Root</a>].CurrentNode[<a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;params&quot;</span>)][<a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;param&quot;</span>)].Value = <a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;another_value&quot;</span>);</div></div><!-- fragment --><div class="fragment"><div class="line">  <span class="comment">// Получение значения атрибута с именем param1 у текущего узла</span></div><div class="line">  <a class="code" href="a34066.html">String_t</a> Value1 = Example.CurrentNode.Attributes[<a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;param1&quot;</span>)].To&lt;<a class="code" href="a34066.html">String_t</a>&gt;();</div></div><!-- fragment --><div class="fragment"><div class="line">  <span class="comment">// Изменение значения атрибута с именем param1 у текущего узла</span></div><div class="line">  Example.CurrentNode.Attributes[<a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;param1&quot;</span>)] = <a class="code" href="a33479.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;value0&quot;</span>);</div></div><!-- fragment --></div><!-- contents -->
+<p>Раздел классов реализации паттерна 'Команда'. </p>
+<h2 class="groupheader">Типы</h2>
+<a id="ga4279689109bf5cff740fd6d25f303379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4279689109bf5cff740fd6d25f303379">&#9670;&nbsp;</a></span>Manager</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="a33464.html#ga4279689109bf5cff740fd6d25f303379">alicorn::patterns::command::Manager</a> = typedef <a class="el" href="a34270.html">ManagerCommon</a>&lt;<a class="el" href="a34258.html">ICommand</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Класс входит в <a class="el" href="a35751.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд. </p>
+<ul>
+<li>Выполняемые команды должны быть унаследованы от интерфейса <a class="el" href="a34258.html" title="Класс входит в Patterns   Интерфейсный класс для команд. ">ICommand</a>.</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 15 Апр 2017 11:13:07. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 22 Апр 2017 20:04:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

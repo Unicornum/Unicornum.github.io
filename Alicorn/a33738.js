@@ -1,11 +1,8 @@
 var a33738 =
 [
-    [ "operator+=", "a33738.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
-    [ "operator-=", "a33738.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
-    [ "operator[]", "a33738.html#a1f8be50017684c331630cb30d64098d5", null ],
-    [ "operator[]", "a33738.html#afc41066cbf2787ffb952d199a0640273", null ],
-    [ "operator[]", "a33738.html#a8fd45d6bd8623e3e9cb6ab596ef793c5", null ],
-    [ "operator[]", "a33738.html#a4bfda637ac9887bb9676f301e40861be", null ],
-    [ "operator[]", "a33738.html#a13fb7c75bc86816537184abbd357f988", null ],
-    [ "operator[]", "a33738.html#a89e1d07567203a75fb40e38c597fe431", null ]
+    [ "Xml", "a33738.html#af005b0fd20b7df95f26affbbe0305dbd", null ],
+    [ "Xml", "a33738.html#a8b6986a89d4342552c09211dc712d557", null ],
+    [ "Xml", "a33738.html#a424d50d3c7294a77b8cbc2e37c10f991", null ],
+    [ "operator[]", "a33738.html#ac89ad522f60817a4dd46d73c1c931c5e", null ],
+    [ "Save", "a33738.html#a6249f98309edc9ff313c9e412bd7f2ef", null ]
 ];

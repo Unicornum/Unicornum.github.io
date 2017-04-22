@@ -1,4 +1,5 @@
 var a35294 =
 [
-    [ "SetResultRunTests", "a35294.html#afb624f681dc703c77b48d609bb37aa67", null ]
+    [ "GetResult", "a35294.html#a40370349abcd7e28fd0e7b35dc07f7ca", null ],
+    [ "SetResultRunTests", "a35294.html#a4841d4f1542468358b7e9f7c0ee85e03", null ]
 ];

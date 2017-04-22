@@ -1,4 +1,5 @@
 var a34210 =
 [
-    [ "DoSpecialAction", "a34210.html#aee319a84720a3b08952822aedd918de6", null ]
+    [ "WriteRecord", "a34210.html#a85e8f0a3f9eb6761d72e2aa56c3c115f", null ],
+    [ "WriteTitle", "a34210.html#a6253aaf199d14172d37737d1cc1d7de6", null ]
 ];

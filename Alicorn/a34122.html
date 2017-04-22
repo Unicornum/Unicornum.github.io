@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс alicorn::logger::ConfigValueImpl</title>
+<title>Alicorn: Класс alicorn::logger::IntConfigValue</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.3 Revision: 2494 Platform: x64 Build: 11:12 15 Апрель 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.4 Revision: 2529 Platform: x64 Build: 20:04 22 Апрель 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -85,52 +85,59 @@ $(document).ready(function(){initNavTree('a34122.html','');});
   <div class="summary">
 <a href="a34119.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::logger::ConfigValueImpl<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a33460.html">Alicorn</a> &raquo; <a class="el" href="a33487.html">Logger</a> &raquo; <a class="el" href="a33484.html">Config</a></div></div>  </div>
+<div class="title">Класс alicorn::logger::IntConfigValue<div class="ingroups"><a class="el" href="a33436.html">Alicorn</a> &raquo; <a class="el" href="a33463.html">Logger</a> &raquo; <a class="el" href="a33460.html">Config</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a35762.html">Logger</a> <br />
- Класс для передачи значения параметра конфигуратору.  
+<p>Класс входит в <a class="el" href="a35750.html">Logger</a> <br />
+ Базовый класс для целочисленных параметров.  
  <a href="a34122.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00686_source.html">config-value-impl.hpp</a>&gt;</code></p>
-
-<p>Базовые классы:noncopyable.</p>
+<p><code>#include &lt;<a class="el" href="a00692_source.html">config-value.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::logger::ConfigValueImpl:</div>
+Граф наследования:alicorn::logger::IntConfigValue:</div>
 <div class="dyncontent">
-<div class="center"><img src="a34120.png" border="0" usemap="#alicorn_1_1logger_1_1_config_value_impl_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1logger_1_1_config_value_impl_coll__map" id="alicorn_1_1logger_1_1_config_value_impl_coll__map">
-<area shape="rect" id="node2" href="a34066.html" title="Класс входит в Std &#160;&#160;Класс универсальных Unicode строк. " alt="" coords="51,584,191,925"/>
-<area shape="rect" id="node4" href="a33898.html" title="{alicorn::extension\l::std::PtrWrapper\&lt; IImpl \&gt;\n||+ Get()\l+ Get()\l+ PtrWrapper()\l+ PtrWrapper()\l+ operator=()\l+ operator=()\l+ ~PtrWrapper()\l+ Make()\l&#45; PtrWrapper()\l}" alt="" coords="21,310,221,519"/>
-<area shape="rect" id="node6" href="a34058.html" title="Класс входит в проект Std &#160;&#160;Интерфейсный класс реализации строки. " alt="" coords="46,6,196,245"/>
+<div class="center"><img src="a34121.png" border="0" usemap="#alicorn_1_1logger_1_1_int_config_value_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1logger_1_1_int_config_value_inherit__map" id="alicorn_1_1logger_1_1_int_config_value_inherit__map">
+<area shape="rect" id="node5" href="a34138.html" title="Класс входит в Logger &#160;&#160;Количество файлов журнала лога, которые будут храниться (0 &#45; для отключения р..." alt="" coords="5,347,211,424"/>
+<area shape="rect" id="node7" href="a34142.html" title="Класс входит в Logger &#160;&#160;Максимальный размер файла журнала в байтах (0 &#45; без ограничений). " alt="" coords="236,347,441,424"/>
+<area shape="rect" id="node2" href="a34114.html" title="Класс входит в Logger &#160;&#160;Базовый класс&#45;обертка параметров для передачи их значений конфигуратору..." alt="" coords="119,6,325,127"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса alicorn::logger::IntConfigValue:</div>
+<div class="dyncontent">
+<div class="center"><img src="a34120.png" border="0" usemap="#alicorn_1_1logger_1_1_int_config_value_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1logger_1_1_int_config_value_coll__map" id="alicorn_1_1logger_1_1_int_config_value_coll__map">
+<area shape="rect" id="node2" href="a34114.html" title="Класс входит в Logger &#160;&#160;Базовый класс&#45;обертка параметров для передачи их значений конфигуратору..." alt="" coords="18,1203,224,1325"/>
+<area shape="rect" id="node4" href="a34106.html" title="Класс входит в Logger &#160;&#160;Класс для передачи значения параметра конфигуратору. " alt="" coords="5,1061,237,1139"/>
+<area shape="rect" id="node6" href="a34050.html" title="Класс входит в Std &#160;&#160;Класс универсальных Unicode строк. " alt="" coords="51,643,191,984"/>
+<area shape="rect" id="node8" href="a33878.html" title="{alicorn::extension\l::std::trivial_ptr\&lt;\l IImpl \&gt;\n|&#45; m_pDeleter\l|+ operator&#45;\&gt;()\l+ IsEqual()\l+ ReleasePtr()\l+ ReleaseDeleter()\l+ trivial_ptr()\l+ trivial_ptr()\l+ operator=()\l+ operator=()\l+ operator=()\l+ ~trivial_ptr()\l&#45; Delete()\l&#45; trivial_ptr()\l}" alt="" coords="49,310,193,578"/>
+<area shape="rect" id="node10" href="a34042.html" title="Класс входит в проект Std &#160;&#160;Интерфейсный класс реализации строки. " alt="" coords="46,6,196,245"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_static_methods_a34114"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_a34114')"><img src="closed.png" alt="-"/>&#160;Открытые статические члены унаследованные от <a class="el" href="a34114.html">alicorn::logger::ConfigValue</a></td></tr>
+<tr class="memitem:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a34114"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34114.html#a1bc3db12e58ae1a9990aabe36e87f524">DoComplete</a> (const ConfigValuePtr_t &amp;)</td></tr>
+<tr class="memdesc:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a34114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="a34114.html#a1bc3db12e58ae1a9990aabe36e87f524">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1bc3db12e58ae1a9990aabe36e87f524 inherit pub_static_methods_a34114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a35762.html">Logger</a> <br />
- Класс для передачи значения параметра конфигуратору. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.0.1.0 <br />
- 2.0.0.0 <br />
- 2.1.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>30 июл 2012 <br />
- 24 Октябрь 2015 <br />
- 28 Октябрь 2015 <br />
- 29 Октябрь 2015 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2015 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/<a class="el" href="a00686_source.html">config-value-impl.hpp</a></li>
+<div class="textblock"><p>Класс входит в <a class="el" href="a35750.html">Logger</a> <br />
+ Базовый класс для целочисленных параметров. </p>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/<a class="el" href="a00692_source.html">config-value.hpp</a></li>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/config-value.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a34122.html">ConfigValueImpl</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 15 Апр 2017 11:13:08. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a34122.html">IntConfigValue</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 22 Апр 2017 20:04:57. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

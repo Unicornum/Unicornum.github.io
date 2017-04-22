@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.3 Revision: 2494 Platform: x64 Build: 11:12 15 Апрель 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.4 Revision: 2529 Platform: x64 Build: 20:04 22 Апрель 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -86,31 +86,74 @@ $(document).ready(function(){initNavTree('a35735.html','');});
 <div class="title">Build </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Описание раздела </h1>
-<p>Раздел для вспомогательных проектов, собирающих проекты отдельных библиотек.</p>
-<h2>Проект Clean </h2>
-<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
-<h2>Проект BuildAll </h2>
-<p>Проект, предназначенный для сборки всех остальных проектов 'одним кликом'.</p><ul>
-<li>Должен зависеть ото всех остальных проектов раздела Build и Test.Solution.</li>
-<li>Используется для автоматической сборки скриптом BuildAll.cmd.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>Проект BuildAll понадобился потому, что сборка при помощи MsBuild всего решения приводит к сборке выгруженных проектов.</dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd>10.05.2016: Параметры MsBuild '/p:DebugType=none;DebugSymbols=false' не работают для проектов lib, оставлены для ускорения сборки exe и dll.</dd></dl>
-<h2>Проект Alicorn </h2>
-<p>Проект, собирающий все проекты <a class="el" href="a35746.html">Alicorn</a>.</p>
-<h2>Проект Android </h2>
-<p>Проект сборки всех проектов, предназначенных для использования под Android.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что если Android-проекту добавить в зависимость Windows-проект, то проваливается сборка скриптом всего решения (хотя сборка в Visual Studio работает).</dd></dl>
-<p>Проекту Test.Android/SourceVfsData (который формирует файл .pack, упаковываемый в .apk проектом Test.Android/Packaging) требуется зависимость от Test.Android/PackBuilder'a (который является Windows-проектом, т.к. должен запускаться при сборке решения), что и приводит к ошибке сборки скриптом. В качестве временного решения используется проект Android, который строится отдельной командой в BuildAll.cmd после построения всего остального. </p>
+<div class="textblock"><h1><a class="anchor" id="sAlicornBuildBrief"></a>
+Введение</h1>
+<p>Раздел проектов для сборки библиотек.</p>
+<h1><a class="anchor" id="ssAlicornBuildProjects"></a>
+Проекты раздела</h1>
+<h2>Связи между проектами </h2>
+<div class="image">
+<img src="ProjectsDependence.png" alt="ProjectsDependence.png"/>
+</div>
+<h2>Support </h2>
+<h3>Проект Testing</h3>
+<p>Проект содержит вспомогательные классы для использования в тестовых проектах. </p>
+<p>Страница проекта: <a class="el" href="a35756.html">Testing</a></p>
+<h2>Low level </h2>
+<h3>Раздел Extension</h3>
+<p>Раздел классов, 'расширяющих' возможности стандартной библиотеки и иных внешних библиотек. </p>
+<p>Страница раздела: <a class="el" href="a35740.html">Extension</a></p>
+<h3>Проект Version</h3>
+<p>Проект обеспечивает установку .exe или .dll файлам версии решения (включая ревизию файлов решения и внешних библиотек), а также макросы версии, которые можно использовать в программе. </p>
+<p>Страница проекта: <a class="el" href="a35759.html">Version</a></p>
+<h3>Проект System</h3>
+<p>Проект вспомогательных классов для работы с системными функциями. </p>
+<p>Страница проекта: <a class="el" href="a35755.html">System</a></p>
+<h2>Middle level </h2>
+<h3>Проект Converter</h3>
+<p>Проект классов для преобразования данных. </p>
+<p>Страница проекта: <a class="el" href="a35736.html">Converter</a></p>
+<h3>Проект Document</h3>
+<p>Проект классов работы с документами. </p>
+<p>Страница проекта: <a class="el" href="a35737.html">Document</a></p>
+<h2>High level </h2>
+<h3>Проект Patterns</h3>
+<p>Проект классов реализаций паттернов проектирования. </p>
+<p>Страница проекта: <a class="el" href="a35751.html">Patterns</a></p>
+<h3>Проект Settings</h3>
+<p>Проект классов, предоставляющих доступ к текущим настройкам программы. </p>
+<p>Страница проекта: <a class="el" href="a35753.html">Settings</a></p>
+<h3>Проект Logger</h3>
+<p>Библиотека логирования программы предназначена для ведения журнала работы программы. <br />
+ Запись сообщений в журнал производится путем добавления в код программы записей вида: </p><div class="fragment"><div class="line"><span class="comment">// Записать в лог сообщение &quot;Найдено 5 элементов&quot;</span></div><div class="line"><a class="code" href="a33463.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Warning) &lt;&lt; <a class="code" href="a33455.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;Найдено &quot;</span>) &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; элементов&quot;</span>;</div></div><!-- fragment --> <p>Страница проекта: <a class="el" href="a35750.html">Logger</a></p>
+<h3>Проект Vfs</h3>
+<p>Проект виртуальной файловой системы, реализующей однотипное получение данных, сходное с чтением данных из файлов. </p>
+<p>Страница проекта: <a class="el" href="a35761.html">Virtual File System</a></p>
+<h3>Проект Localization</h3>
+<p>Проект классов локализации программы. </p>
+<p>Страница проекта: <a class="el" href="a35748.html">Localization</a></p>
+<h3>Проект Settings.App</h3>
+<p>Проект, содержащий реализацию программы манипулирования настройками приложения. </p>
+<p>Страница проекта: <a class="el" href="a35754.html">SettingsApp</a></p>
+<h3>Проект Testing.App</h3>
+<p>Проект, содержащий реализацию проектов тестирования. </p>
+<p>Страница проекта: <a class="el" href="a35757.html">Testing.App</a></p>
+<h3>Проект Version.App</h3>
+<p>Проект логики работы утилиты, формирующей файл со строками версии решения для включения его в проект Packaging для Android. </p>
+<p>Страница проекта: <a class="el" href="a35760.html">Version.App</a></p>
+<h3>Проект Localization.App</h3>
+<p>Проект логики работы утилиты, генерирующей заголовочный файл с идентификаторами строк, используемыми для локализации программы. </p>
+<p>Страница проекта: <a class="el" href="a35749.html">LocalizationApp</a></p>
+<h3>Проект Resource.App</h3>
+<p>Проект логики работы утилиты, генерирующей заголовочный файл, содержащий бинарные данные указанного файла. </p>
+<p>Страница проекта: <a class="el" href="a35752.html">ResourceApp</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a35744.html">Alicorn</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 15 Апр 2017 11:13:07. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a35732.html">Alicorn</a></li><li class="navelem"><a class="el" href="a35734.html">Alicorn</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 22 Апр 2017 20:04:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

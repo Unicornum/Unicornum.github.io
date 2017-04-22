@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unique_5fptr',['unique_ptr',['../a33477.html#ga326c72c4d6fe62946fdc5f7d57a89747',1,'alicorn::extension::std']]]
+  ['unique_5fptr',['unique_ptr',['../a33453.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064',1,'alicorn::extension::std']]]
 ];

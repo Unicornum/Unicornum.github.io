@@ -1,9 +1,42 @@
 var a33469 =
 [
-    [ "ArcCos", "a33469.html#gaa1f9a57d13f01fd79928c206f2987771", null ],
-    [ "ArcSin", "a33469.html#gabc9373a8d3f74570f98b2c08f6e0839b", null ],
-    [ "ArcTan", "a33469.html#ga36893ac939107a0f2d2aad5f480e0dbd", null ],
-    [ "Cos", "a33469.html#gac0afab7827edd2f2c712e381ad4c6476", null ],
-    [ "Sin", "a33469.html#ga591de7acd440069d45ccfb5a23cc234b", null ],
-    [ "Tan", "a33469.html#ga941da4c724efde88e2fb9c75112542ed", null ]
+    [ "CurrentModule", "a34354.html", [
+      [ "GetAppDataPath", "a34354.html#a489c2d465f5699ea263d8c3c67c3de62", null ],
+      [ "GetAppRootPath", "a34354.html#a20d80d251982db969de7961d96ba805e", null ],
+      [ "GetHandle", "a34354.html#a6f0d0a52d2721d339e89066c977e734e", null ],
+      [ "GetLocation", "a34354.html#a242ee88a2d3971c3d4558d7f888945ea", null ],
+      [ "GetName", "a34354.html#aa7d0e950733e7644f483ce92c478ca73", null ]
+    ] ],
+    [ "Object", "a34366.html", null ],
+    [ "PtrObject", "a34370.html", [
+      [ "PtrObject", "a34370.html#aaa646d1840123af9766d41dde7b83766", null ]
+    ] ],
+    [ "Ptr", "a34374.html", [
+      [ "Ptr", "a34374.html#ad0ef08c8b525fc86c5aeccd655456e2c", null ],
+      [ "operator->", "a34374.html#a2f9f74776cb12ed9037d527703094d11", null ],
+      [ "operator->", "a34374.html#ab34a06b7a5428c6d6b4e01b822dc93a2", null ]
+    ] ],
+    [ "ICallBack", "a34382.html", null ],
+    [ "Process", "a34386.html", [
+      [ "KilledException", "a34390.html", null ],
+      [ "Process", "a34386.html#a15c85d53e3079f343aead5930adb4b2a", null ],
+      [ "FromParams", "a34386.html#a9a91dcba3b1a5c49ab13d490ecb61c23", null ],
+      [ "RunWithoutWaitingCompletion", "a34386.html#aebb905db53099a2f9fdae5d42ed0b23c", null ],
+      [ "RunWithoutWaitingCompletion", "a34386.html#a0d4cabefd5db952a5021e49f007434a8", null ],
+      [ "RunWithoutWaitingCompletion", "a34386.html#a13baa7b36d59ad50c468f5cf534e9df0", null ],
+      [ "RunWithReceiveStdout", "a34386.html#aec83e7b7a14bf1093927e5eff27b6ec9", null ],
+      [ "RunWithReceiveStdout", "a34386.html#a8d3e62141aea1c7e3b90a309ffde165b", null ],
+      [ "RunWithReceiveStdout", "a34386.html#ab340203b1a8ef054c4d55485a153f37c", null ],
+      [ "RunWithWaitingCompletion", "a34386.html#a571281c115f4106dd9d979f9656346da", null ],
+      [ "RunWithWaitingCompletion", "a34386.html#a8c62a860d069a4ebfdfeb0b4c6b50b45", null ],
+      [ "RunWithWaitingCompletion", "a34386.html#a200f3778cd1aafdd7401365ba6b3faab", null ],
+      [ "Tokenize", "a34386.html#ab3a668b5135d1d92c4a2a6b713e7da87", null ],
+      [ "ToParams", "a34386.html#a9cc5113978708ba27c4335c75825d0e1", null ]
+    ] ],
+    [ "WinapiCallProxy", "a34410.html", [
+      [ "GetMessageText", "a34410.html#a7023a00d30af42e21479960ad63ecc17", null ]
+    ] ],
+    [ "WINAPI_CALL", "a33469.html#gac67366a4782d98fd71f21ecc3981365b", null ],
+    [ "ProcessOutput", "a33469.html#ga9d847c18ebc2abac375a25fbaf95f123", null ],
+    [ "ToPocoArgs", "a33469.html#gabb34099f31487d25c396ec74b6cbbb3f", null ]
 ];

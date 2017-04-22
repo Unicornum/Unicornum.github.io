@@ -1,5 +1,5 @@
 var a34238 =
 [
-    [ "WriteRecord", "a34238.html#a0e0eae5b6d9ed42c6eb8d14bb289eed3", null ],
-    [ "WriteTitle", "a34238.html#a9bf8de2311368a37058659bb9c3ae1da", null ]
+    [ "WriteRecord", "a34238.html#a36ba11583024bbba693e2998ea4d3668", null ],
+    [ "WriteTitle", "a34238.html#a672763fba708c23851b38be162768bac", null ]
 ];
