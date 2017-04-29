@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['ceil',['Ceil',['../a33449.html#ga868991a4d42cdfc2fe2da56b814881df',1,'alicorn::extension::cpp::math']]],
-  ['clone',['Clone',['../a33614.html#a56ff9f3a55f092a326713141199a1de8',1,'alicorn::document::data::Data::Clone()'],['../a33622.html#a42263f823f6b5387ffd03d7339bccdfa',1,'alicorn::document::data::IData::Clone()'],['../a33626.html#ac0dde8b9013543f5cee24b0b2f8f51b1',1,'alicorn::document::data::Utf8::Clone()']]],
-  ['controller',['Controller',['../a34882.html#a40ccbeb3ece39167d54fcd187249ca98',1,'controller::Controller']]],
-  ['copy_5fall',['copy_all',['../a33443.html#ga9fa92e35356c3972c96f36365131f096',1,'boost::filesystem']]],
-  ['core',['Core',['../a34438.html#a1acf734b09cac8bccc8529ad1ab65abd',1,'alicorn::vfs::Core']]],
-  ['cos',['Cos',['../a33445.html#gac0afab7827edd2f2c712e381ad4c6476',1,'alicorn::extension::cpp::math::degree::Cos()'],['../a33448.html#ga4a7357706084145b0cddd05c161ea772',1,'alicorn::extension::cpp::math::radian::Cos()']]],
-  ['crypto',['Crypto',['../a34442.html#a2f1084d790c2b5fc8be1fd1fe5d349bb',1,'alicorn::vfs::Crypto']]]
+  ['ceil',['Ceil',['../a33572.html#ga868991a4d42cdfc2fe2da56b814881df',1,'alicorn::extension::cpp::math']]],
+  ['clone',['Clone',['../a33737.html#a56ff9f3a55f092a326713141199a1de8',1,'alicorn::document::data::Data::Clone()'],['../a33745.html#a42263f823f6b5387ffd03d7339bccdfa',1,'alicorn::document::data::IData::Clone()'],['../a33749.html#ac0dde8b9013543f5cee24b0b2f8f51b1',1,'alicorn::document::data::Utf8::Clone()']]],
+  ['controller',['Controller',['../a35025.html#a40ccbeb3ece39167d54fcd187249ca98',1,'controller::Controller']]],
+  ['copy_5fall',['copy_all',['../a33566.html#ga9fa92e35356c3972c96f36365131f096',1,'boost::filesystem']]],
+  ['core',['Core',['../a34573.html#a1acf734b09cac8bccc8529ad1ab65abd',1,'alicorn::vfs::Core']]],
+  ['cos',['Cos',['../a33568.html#gac0afab7827edd2f2c712e381ad4c6476',1,'alicorn::extension::cpp::math::degree::Cos()'],['../a33571.html#ga4a7357706084145b0cddd05c161ea772',1,'alicorn::extension::cpp::math::radian::Cos()']]],
+  ['crypto',['Crypto',['../a34577.html#a2f1084d790c2b5fc8be1fd1fe5d349bb',1,'alicorn::vfs::Crypto']]]
 ];

@@ -9,6 +9,6 @@ var dir_d5d3cfde2b4450b2a34c925fa151e982 =
     [ "Test.SettingsPage", "dir_fc37dddc412a34a89cca05d2f97aba82.html", "dir_fc37dddc412a34a89cca05d2f97aba82" ],
     [ "Test.SettingsPanel", "dir_da3d26fdac7c9243a444c32c60e9bfc1.html", "dir_da3d26fdac7c9243a444c32c60e9bfc1" ],
     [ "Test.TreeSections", "dir_dc87238b61db05aecf7f7f9c8c1baac3.html", "dir_dc87238b61db05aecf7f7f9c8c1baac3" ],
-    [ "mock.hpp", "a36694.html", null ],
-    [ "stdafx.h", "a36199_source.html", null ]
+    [ "mock.hpp", "a36876.html", null ],
+    [ "stdafx.h", "a36363_source.html", null ]
 ];

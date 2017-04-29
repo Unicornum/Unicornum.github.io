@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Шаблон класса alicorn::converter::Crypto&lt; Base64 &gt;</title>
+<title>Alicorn: Localization</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.4 Revision: 2529 Platform: x64 Build: 20:04 22 Апрель 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.5 Revision: 2548 Platform: x64 Build: 09:45 29 Апрель 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,49 +83,53 @@ $(document).ready(function(){initNavTree('a33582.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="a33579.html">Полный список членов класса</a>  </div>
+<a href="#nested-classes">Классы</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::converter::Crypto&lt; Base64 &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a33436.html">Alicorn</a> &raquo; <a class="el" href="a33437.html">Converter</a></div></div>  </div>
+<div class="title">Localization<div class="ingroups"><a class="el" href="a33559.html">Alicorn</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Класс входит в <a class="el" href="a35736.html">Converter</a> <br />
- Специализация шаблона класса шифрования для Base64.  
- <a href="a33582.html#details">Подробнее...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00050_source.html">base64.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::converter::Crypto&lt; Base64 &gt;:</div>
+Граф связей класса Localization:</div>
 <div class="dyncontent">
-<div class="center"><img src="a33580.png" border="0" usemap="#alicorn_1_1converter_1_1_crypto_3_01_base64_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1converter_1_1_crypto_3_01_base64_01_4_coll__map" id="alicorn_1_1converter_1_1_crypto_3_01_base64_01_4_coll__map">
+<center><table><tr><td><img src="a33582.png" border="0" alt="" usemap="#a33582"/>
+<map name="a33582" id="a33582">
+<area shape="rect" id="node2" href="a33559.html" title="Alicorn" alt="" coords="5,5,72,32"/>
 </map>
+</td></tr></table></center>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34229.html">alicorn::localization::Localization</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a35891.html">Localization</a> <br />
+ Класс получения строки для текущего выбранного языка программы.  <a href="a34229.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;&gt;<br />
-class alicorn::converter::Crypto&lt; Base64 &gt;</h3>
-
-<p>Класс входит в <a class="el" href="a35736.html">Converter</a> <br />
- Специализация шаблона класса шифрования для Base64. </p>
-<ul>
-<li>Используется реализация из Crypto++.</li>
+<p>Раздел классов локализации программы.</p>
+<h2>Локализация программы </h2>
+<p>Модуль локализации программы используется следующим образом:</p><ul>
+<li>В решении создать проект статической библиотеки Localization, в который поместить файлы, содержащие строки для различных языков (English.xml, Russian.xml и т.п.). <dl class="section note"><dt>Заметки</dt><dd>Обязательно должен присуствовать файл Default.xml, который должен задавать иерархию строк и на основе которого будет генерироваться файл, содержащий идентификаторы используемых строк.</dd></dl>
+Пример файла Default.xml:</li>
 </ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Август 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/converter/<a class="el" href="a00050_source.html">base64.hpp</a></li>
+<div class="fragment"><div class="line">&lt;?<span class="keyword">xml</span> <span class="keyword">version</span>=<span class="stringliteral">&quot;1.0&quot;</span> <span class="keyword">encoding</span>=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div><div class="line">&lt;<span class="keywordtype">main</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">path</span>&gt;<span class="keyword">Languages</span>&lt;/<span class="keywordtype">path</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">Text1</span>&gt;<span class="keyword">Example</span> <span class="keyword">text</span> 1&lt;/<span class="keywordtype">Text1</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">Text2</span>&gt;<span class="keyword">Example</span> <span class="keyword">text</span> 2&lt;/<span class="keywordtype">Text2</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">child</span>&gt;</div><div class="line">      &lt;<span class="keywordtype">Text3</span>&gt;<span class="keyword">Example</span> <span class="keyword">text</span> 3&lt;/<span class="keywordtype">Text3</span>&gt;</div><div class="line">  &lt;/<span class="keywordtype">child</span>&gt;</div><div class="line">&lt;/<span class="keywordtype">main</span>&gt;</div></div><!-- fragment --><ul>
+<li>Добавить в решение проект утилиты Extension\Tools\Localization.</li>
+<li>В качестве события после сборки проекту статической библиотеки Localization добавить запуск утилиты Localization, передав ей качестве параметра путь к файлу Default.xml (эта утилита сгенерирует в той же папке файл Localization.hpp, содержащий идентификаторы строк и вспомогательный класс Localized).</li>
+</ul>
+<p>Пример сгенерированного файла:</p>
+<div class="fragment"><div class="line"></div><div class="line"><span class="preprocessor">#pragma once</span></div><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="a36978.html">alicorn\localization.hpp</a>&gt;</span></div><div class="line">  </div><div class="line"><span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ВАЖНО !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div><div class="line"><span class="comment">// Это АВТОМАТИЧЕСКИ сгенерированный файл, все изменения будут перезаписаны</span></div><div class="line"><span class="comment">// при сборке проекта Localization.</span></div><div class="line"><span class="comment">// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! ВАЖНО !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></div><div class="line"></div><div class="line"><span class="keyword">namespace </span><a class="code" href="a33686.html">main</a></div><div class="line">{</div><div class="line">  </div><div class="line">enum : <span class="keywordtype">size_t</span></div><div class="line">{</div><div class="line">  Text1 = 14155219958802156194,</div><div class="line">  Text2 = 2627504610787872273,</div><div class="line">};</div><div class="line">  </div><div class="line"><span class="keyword">namespace </span>child</div><div class="line">{</div><div class="line">  </div><div class="line">enum : <span class="keywordtype">size_t</span></div><div class="line">{</div><div class="line">  Text3 = 8777275511942650506,</div><div class="line">};</div><div class="line">  </div><div class="line">} <span class="comment">// namespace child</span></div><div class="line">  </div><div class="line">} <span class="comment">// namespace main</span></div><div class="line">  </div><div class="line"><span class="keyword">namespace </span><a class="code" href="a33608.html">alicorn</a></div><div class="line">{</div><div class="line">  </div><div class="line"><span class="keyword">namespace </span>localization</div><div class="line">{</div><div class="line">  </div><div class="line"><span class="keyword">class </span>Localized final</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">static</span> <span class="keyword">auto</span> Get(<span class="keywordtype">size_t</span> _StringId) { <span class="keywordflow">return</span> GetInstance().Get(_StringId); }</div><div class="line">  <span class="keyword">static</span> <span class="keywordtype">void</span> Reload(<span class="keywordtype">void</span>) { GetInstance().Load(); }</div><div class="line">    </div><div class="line"><span class="keyword">private</span>:</div><div class="line">  <span class="keyword">static</span> Localization &amp; GetInstance(<span class="keywordtype">void</span>)</div><div class="line">  {</div><div class="line">    <span class="keywordflow">return</span> Localization::GetInstance(L<span class="stringliteral">&quot;Languages&quot;</span>);</div><div class="line">  }</div><div class="line">};</div><div class="line">  </div><div class="line">} <span class="comment">// namespace localization</span></div><div class="line">  </div><div class="line">} <span class="comment">// namespace alicorn</span></div></div><!-- fragment --><ul>
+<li>В качестве события после сборки проекту статической библиотеки Localization добавить копирование xml файлов со строками в папку построения программы (с учетом относительной папки расположения этих файлов, заданной как раздел <b>path</b>).</li>
+<li>В нужном месте программы включить файл Localization.hpp и использовать для получения строки выбранного в настройках языка записи вида</li>
+</ul>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;Localization\Localization.hpp&gt;</span></div><div class="line">  </div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> Text1 = Localized::Get(::main::Text1); <span class="comment">// &quot;Example text 1&quot;</span></div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> Text2 = Localized::Get(::main::Text2); <span class="comment">// &quot;Example text 2&quot;</span></div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> Text3 = Localized::Get(::main::child::Text3); <span class="comment">// &quot;Example text 3&quot;</span></div></div><!-- fragment --><ul>
+<li>В настройках в качестве выбранного языка программы следует указывать (в качестве значения параметра <b>Language</b> раздела <b>Localization</b>) имя файла .xml, содержащего строки нужного языка ("English", "Russian" и т.п.). </li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>converter</b></li><li class="navelem"><a class="el" href="a33582.html">Crypto&lt; Base64 &gt;</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 22 Апр 2017 20:04:57. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 29 Апр 2017 09:45:36. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
