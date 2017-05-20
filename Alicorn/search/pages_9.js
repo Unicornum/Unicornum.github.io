@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['std',['Std',['../a35889.html',1,'ExtensionPage']]],
-  ['settingsapp',['SettingsApp',['../a35897.html',1,'AlicornBuildPage']]],
-  ['settings',['Settings',['../a35896.html',1,'AlicornBuildPage']]],
-  ['system',['System',['../a35898.html',1,'AlicornBuildPage']]]
+  ['std',['Std',['../a36619.html',1,'ExtensionPage']]],
+  ['settingsapp',['SettingsApp',['../a36628.html',1,'AlicornBuildPage']]],
+  ['settings',['Settings',['../a36627.html',1,'AlicornBuildPage']]],
+  ['system',['System',['../a36629.html',1,'AlicornBuildPage']]]
 ];

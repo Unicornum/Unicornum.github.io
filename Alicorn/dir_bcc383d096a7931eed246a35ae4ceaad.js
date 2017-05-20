@@ -14,6 +14,6 @@ var dir_bcc383d096a7931eed246a35ae4ceaad =
     [ "Test.ThisDirectory", "dir_e05e4760303ef75b1a539f364fac5eca.html", "dir_e05e4760303ef75b1a539f364fac5eca" ],
     [ "Test.UsingMock", "dir_acbacefd5aa54794beebdba3e44e394d.html", "dir_acbacefd5aa54794beebdba3e44e394d" ],
     [ "Test.VirtualMock", "dir_bdda58e30f86cc14f1840d31a53b4132.html", "dir_bdda58e30f86cc14f1840d31a53b4132" ],
-    [ "mock.hpp", "a36882.html", null ],
-    [ "stdafx.h", "a36429_source.html", null ]
+    [ "mock.hpp", "a37652.html", null ],
+    [ "stdafx.h", "a37190_source.html", null ]
 ];

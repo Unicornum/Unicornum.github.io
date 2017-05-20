@@ -2,10 +2,12 @@ var dir_43bd221dcb0d746cdea16bf65712c263 =
 [
     [ "aes256.hpp", "a00044_source.html", null ],
     [ "base64.hpp", "a00050_source.html", null ],
-    [ "compress.hpp", "a35952_source.html", null ],
-    [ "crypto.hpp", "a35958_source.html", null ],
+    [ "compress.hpp", "a36683_source.html", null ],
+    [ "crypto.hpp", "a36689_source.html", null ],
     [ "deflate.hpp", "a00062_source.html", null ],
-    [ "plantuml64.hpp", "a00068_source.html", null ],
-    [ "snappy.hpp", "a00074_source.html", null ],
-    [ "stdafx.h", "a35964_source.html", null ]
+    [ "password.hpp", "a36695_source.html", null ],
+    [ "plantuml64.hpp", "a00074_source.html", null ],
+    [ "secure-password.hpp", "a00077_source.html", null ],
+    [ "snappy.hpp", "a00086_source.html", null ],
+    [ "stdafx.h", "a36704_source.html", null ]
 ];
