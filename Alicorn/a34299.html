@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Шаблон класса alicorn::converter::SecurePassword&lt; TChar, TEncryptChar &gt;</title>
+<title>Alicorn: Factory</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.6 Revision: 2620 Platform: x64 Build: 11:44 20 Май 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2654 Platform: x64 Build: 23:08 21 Июнь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,121 +83,342 @@ $(document).ready(function(){initNavTree('a34299.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a34296.html">Полный список членов класса</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::converter::SecurePassword&lt; TChar, TEncryptChar &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a34153.html">Alicorn</a> &raquo; <a class="el" href="a34154.html">Converter</a></div></div>  </div>
+<div class="title">Factory<div class="ingroups"><a class="el" href="a34270.html">Alicorn</a> &raquo; <a class="el" href="a34301.html">Patterns</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Класс входит в проект <a class="el" href="a36609.html">Converter</a> <br />
- Класс для безопасного хранения пароля.  
- <a href="a34299.html#details">Подробнее...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00077_source.html">secure-password.hpp</a>&gt;</code></p>
-
-<p>Производные классы:ClassName_test::UsingSecurePassword.</p>
 <div class="dynheader">
-Граф связей класса alicorn::converter::SecurePassword&lt; TChar, TEncryptChar &gt;:</div>
+Граф связей класса Factory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a34297.png" border="0" usemap="#alicorn_1_1converter_1_1_secure_password_3_01_t_char_00_01_t_encrypt_char_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1converter_1_1_secure_password_3_01_t_char_00_01_t_encrypt_char_01_4_coll__map" id="alicorn_1_1converter_1_1_secure_password_3_01_t_char_00_01_t_encrypt_char_01_4_coll__map">
+<center><table><tr><td><img src="a34299.png" border="0" alt="" usemap="#a34299"/>
+<map name="a34299" id="a34299">
+<area shape="rect" id="node2" href="a34301.html" title="Patterns" alt="" coords="6,5,85,32"/>
 </map>
+</td></tr></table></center>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a595181bf3865750ae9c329407c6a98c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a34323.html">Password</a>&lt; TChar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34299.html#a595181bf3865750ae9c329407c6a98c5">Get</a> (size_t=0, TChar=0x00) const</td></tr>
-<tr class="memdesc:a595181bf3865750ae9c329407c6a98c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция дешифровки пароля.  <a href="#a595181bf3865750ae9c329407c6a98c5">Подробнее...</a><br /></td></tr>
-<tr class="separator:a595181bf3865750ae9c329407c6a98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35185.html">alicorn::patterns::factory::Factory&lt; TInterface, TId &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a36806.html">Patterns</a> <br />
+ Фабрика объектов (создание объектов по идентификатору (строке) класса).  <a href="a35185.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35193.html">alicorn::patterns::factory::Registrator&lt; TInterface, TId &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательный класс для регистрации классов в фабрике объектов.  <a href="a35193.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga1659e9d0ef525996965794c87ced3367"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34299.html#ga1659e9d0ef525996965794c87ced3367">FACTORY_REGISTER</a>(Class,  ClassId)</td></tr>
+<tr class="memdesc:ga1659e9d0ef525996965794c87ced3367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a36806.html">Patterns</a> <br />
+ Макрос для регистрации класса в фабрике объектов.  <a href="#ga1659e9d0ef525996965794c87ced3367">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga1659e9d0ef525996965794c87ced3367"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae97115dc6635657469b3b97f194afe73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34299.html#gae97115dc6635657469b3b97f194afe73">FACTORY_REGISTER_STRING_NAME</a>(Class,  Interface)</td></tr>
+<tr class="memdesc:gae97115dc6635657469b3b97f194afe73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a36806.html">Patterns</a> <br />
+ Макрос для регистрации класса в фабрике объектов по строковому имени.  <a href="#gae97115dc6635657469b3b97f194afe73">Подробнее...</a><br /></td></tr>
+<tr class="separator:gae97115dc6635657469b3b97f194afe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga688b561116c5422d1639701b8df6c5e8"><td class="memTemplParams" colspan="2">template&lt;class TInterface , class TId &gt; </td></tr>
+<tr class="memitem:ga688b561116c5422d1639701b8df6c5e8"><td class="memTemplItemLeft" align="right" valign="top">details::Ptr_t&lt; TInterface &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34299.html#ga688b561116c5422d1639701b8df6c5e8">alicorn::patterns::factory::make_unique</a> (const TId &amp;_Id)</td></tr>
+<tr class="memdesc:ga688b561116c5422d1639701b8df6c5e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов через фабрику, аналогичных unique_ptr&lt;&gt;.  <a href="a34299.html#ga688b561116c5422d1639701b8df6c5e8">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga688b561116c5422d1639701b8df6c5e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ce5675716bac9d4d3468ffd34137484"><td class="memTemplParams" colspan="2">template&lt;class TInterface &gt; </td></tr>
+<tr class="memitem:ga5ce5675716bac9d4d3468ffd34137484"><td class="memTemplItemLeft" align="right" valign="top">details::Ptr_t&lt; TInterface &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34299.html#ga5ce5675716bac9d4d3468ffd34137484">alicorn::patterns::factory::make_unique</a> (const char *_pClassName)</td></tr>
+<tr class="memdesc:ga5ce5675716bac9d4d3468ffd34137484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов через фабрику, аналогичных unique_ptr&lt;&gt;.  <a href="a34299.html#ga5ce5675716bac9d4d3468ffd34137484">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga5ce5675716bac9d4d3468ffd34137484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9ac3f6b179ca3b7be476c73a9d47dd47"><td class="memTemplParams" colspan="2">template&lt;class TInterface , class TId &gt; </td></tr>
+<tr class="memitem:ga9ac3f6b179ca3b7be476c73a9d47dd47"><td class="memTemplItemLeft" align="right" valign="top">static details::Ptr_t&lt; TInterface &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34299.html#ga9ac3f6b179ca3b7be476c73a9d47dd47">alicorn::patterns::factory::pool&lt; TSize &gt;::make_unique</a> (const TId &amp;_Id)</td></tr>
+<tr class="memdesc:ga9ac3f6b179ca3b7be476c73a9d47dd47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов из пула памяти через фабрику.  <a href="#ga9ac3f6b179ca3b7be476c73a9d47dd47">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga9ac3f6b179ca3b7be476c73a9d47dd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga932c85a28d9e13ca69035edb157d07a2"><td class="memTemplParams" colspan="2">template&lt;class TInterface &gt; </td></tr>
+<tr class="memitem:ga932c85a28d9e13ca69035edb157d07a2"><td class="memTemplItemLeft" align="right" valign="top">static details::Ptr_t&lt; TInterface &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34299.html#ga932c85a28d9e13ca69035edb157d07a2">alicorn::patterns::factory::pool&lt; TSize &gt;::make_unique</a> (const char *_pClassName)</td></tr>
+<tr class="memdesc:ga932c85a28d9e13ca69035edb157d07a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов из пула памяти через фабрику.  <a href="#ga932c85a28d9e13ca69035edb157d07a2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ga932c85a28d9e13ca69035edb157d07a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TChar, class TEncryptChar&gt;<br />
-class alicorn::converter::SecurePassword&lt; TChar, TEncryptChar &gt;</h3>
-
-<p>Класс входит в проект <a class="el" href="a36609.html">Converter</a> <br />
- Класс для безопасного хранения пароля. </p>
-<ul>
-<li>Хранит пароль в зашифрованном виде, предоставляя пароль как временный объект, который гарантированно затирает свое содержимое в памяти после разрушения.</li>
-<li>Класс-наследник должен определить функцию DoDecrypt(), которая будет вызвана для каждого символа зашифрованного пароля.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TChar</td><td>Тип элементов, в которых будет возвращен дешифрованный пароль. </td></tr>
-    <tr><td class="paramname">TEncryptChar</td><td>Тип элементов, в которых храниться зашифрованный пароль.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>17 Май 2017 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a595181bf3865750ae9c329407c6a98c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a595181bf3865750ae9c329407c6a98c5">&#9670;&nbsp;</a></span>Get()</h2>
+<p>Раздел классов реализации паттерна 'Фабрика'. </p>
+<h2 class="groupheader">Макросы</h2>
+<a id="ga1659e9d0ef525996965794c87ced3367"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1659e9d0ef525996965794c87ced3367">&#9670;&nbsp;</a></span>FACTORY_REGISTER</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class TChar, class TEncryptChar &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a34323.html">Password</a>&lt; TChar &gt; <a class="el" href="a34299.html">alicorn::converter::SecurePassword</a>&lt; TChar, TEncryptChar &gt;::Get </td>
+          <td class="memname">#define FACTORY_REGISTER</td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_MinSize</em> = <code>0</code>, </td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">TChar&#160;</td>
-          <td class="paramname"><em>_Dummy</em> = <code>0x00</code>&#160;</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ClassId&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Функция дешифровки пароля. </p>
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> IsRegisterId##Class = \</div><div class="line">    Class::Factory_t::Register&lt;Class&gt;(ClassId)</div></div><!-- fragment -->
+<p>Класс входит в <a class="el" href="a36806.html">Patterns</a> <br />
+ Макрос для регистрации класса в фабрике объектов. </p>
 <ul>
-<li>Функция предназначена для формирования пароля заданной длины.</li>
+<li>При использовании этого макроса требуется унаследовать интерфейс от Registrator&lt;&gt;.</li>
+<li>Макрос ОБЯЗАТЕЛЬНО должен быть в заголовочном файле.</li>
+<li>Если регистрируемый класс находится в пространстве имен, макрос также должен располагаться внутри этого пространства имен, а в качестве Class должно быть имя класса без его пространства имен.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_MinSize</td><td>Минимальный размер пароля (если зашифрованный пароль короче, чем это число, он будет увеличен до указанного значения с добавлением заполняющих символов). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Dummy</td><td>Символ-заполнитель для создания длинного пароля.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Class</td><td>Регистрируемый класс. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ClassId</td><td>Идентификатор, по которому будут создаваться объекты класс (именно его следует передавать в функцию Factory&lt;&gt;::Make()). </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/converter/<a class="el" href="a00044_source.html">aes256.hpp</a></li>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/converter/<a class="el" href="a00077_source.html">secure-password.hpp</a></li>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/converter/secure-password.inl</li>
+<a id="gae97115dc6635657469b3b97f194afe73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae97115dc6635657469b3b97f194afe73">&#9670;&nbsp;</a></span>FACTORY_REGISTER_STRING_NAME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FACTORY_REGISTER_STRING_NAME</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Class, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Interface&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Макроопределение:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> IsRegister##Class = \</div><div class="line">    <a class="code" href="a35185.html">::alicorn::patterns::factory::Factory&lt;Interface&gt;::Register</a>&lt;Class&gt;(#Class)</div><div class="ttc" id="a35185_html"><div class="ttname"><a href="a35185.html">alicorn::patterns::factory::Factory</a></div><div class="ttdoc">Класс входит в Patterns   Фабрика объектов (создание объектов по идентификатору (строке) класса)...</div><div class="ttdef"><b>Definition:</b> factory.hpp:60</div></div>
+</div><!-- fragment -->
+<p>Класс входит в <a class="el" href="a36806.html">Patterns</a> <br />
+ Макрос для регистрации класса в фабрике объектов по строковому имени. </p>
+<ul>
+<li>При использовании этого макроса не требуется наследовать интерфейс от Registrator&lt;&gt;.</li>
+<li>Класс будет зарегистрирован под строковым именем, совпадающим с именем класса.</li>
+<li>Макрос ОБЯЗАТЕЛЬНО должен быть в заголовочном файле.</li>
+<li>Если регистрируемый класс находится в пространстве имен, макрос также должен располагаться внутри этого пространства имен, а в качестве Class должно быть имя класса без его пространства имен.</li>
 </ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">Class</td><td>Регистрируемый класс (регистрируется под собственным именем). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Interface</td><td>Интерфейс, в фабрике которого регистрируется класс. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ga688b561116c5422d1639701b8df6c5e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga688b561116c5422d1639701b8df6c5e8">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TInterface , class TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">details::Ptr_t&lt;TInterface&gt; alicorn::patterns::factory::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">const TId &amp;&#160;</td>
+          <td class="paramname"><em>_Id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов через фабрику, аналогичных unique_ptr&lt;&gt;. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TInterface</td><td>Интерфейсный класс, в указателях на который будут создаваться объекты. </td></tr>
+    <tr><td class="paramname">TId</td><td>Класс идентификатора класса, который использовался при его регистрации в фабрике. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a34299_ga688b561116c5422d1639701b8df6c5e8_cgraph.png" border="0" usemap="#a34299_ga688b561116c5422d1639701b8df6c5e8_cgraph" alt=""/></div>
+<map name="a34299_ga688b561116c5422d1639701b8df6c5e8_cgraph" id="a34299_ga688b561116c5422d1639701b8df6c5e8_cgraph">
+<area shape="rect" id="node3" href="a35185.html#acfc36eefdbe472fbfb6457d2f806d652" title="Функция создания объекта в куче. " alt="" coords="222,5,466,46"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga5ce5675716bac9d4d3468ffd34137484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ce5675716bac9d4d3468ffd34137484">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TInterface &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">details::Ptr_t&lt;TInterface&gt; alicorn::patterns::factory::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_pClassName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов через фабрику, аналогичных unique_ptr&lt;&gt;. </p>
+<ul>
+<li>Версия для регистрации класса по его имени.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TInterface</td><td>Интерфейсный класс, в указателях на который будут создаваться объекты. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9ac3f6b179ca3b7be476c73a9d47dd47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9ac3f6b179ca3b7be476c73a9d47dd47">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t TSize = 32&gt; </div>
+<div class="memtemplate">
+template&lt;class TInterface , class TId &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static details::Ptr_t&lt;TInterface&gt; alicorn::patterns::factory::pool&lt; TSize &gt;::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">const TId &amp;&#160;</td>
+          <td class="paramname"><em>_Id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов из пула памяти через фабрику. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TInterface</td><td>Интерфейсный класс, в указателях на который будут создаваться объекты. </td></tr>
+    <tr><td class="paramname">TId</td><td>Класс идентификатора класса, который использовался при его регистрации в фабрике. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a34299_ga9ac3f6b179ca3b7be476c73a9d47dd47_cgraph.png" border="0" usemap="#a34299_ga9ac3f6b179ca3b7be476c73a9d47dd47_cgraph" alt=""/></div>
+<map name="a34299_ga9ac3f6b179ca3b7be476c73a9d47dd47_cgraph" id="a34299_ga9ac3f6b179ca3b7be476c73a9d47dd47_cgraph">
+<area shape="rect" id="node3" href="a35185.html#aa9095b0a901112d2d1e2e3729e588817" title="Функция создания объекта в пуле памяти. " alt="" coords="209,13,447,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga932c85a28d9e13ca69035edb157d07a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga932c85a28d9e13ca69035edb157d07a2">&#9670;&nbsp;</a></span>make_unique() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;size_t TSize = 32&gt; </div>
+<div class="memtemplate">
+template&lt;class TInterface &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static details::Ptr_t&lt;TInterface&gt; alicorn::patterns::factory::pool&lt; TSize &gt;::make_unique </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>_pClassName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция входит в проект <a class="el" href="a36806.html">Patterns</a> <br />
+ Вспомогательная функция создания объектов из пула памяти через фабрику. </p>
+<ul>
+<li>Версия для регистрации класса по его имени.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TInterface</td><td>Интерфейсный класс, в указателях на который будут создаваться объекты. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>converter</b></li><li class="navelem"><a class="el" href="a34299.html">SecurePassword</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 20 Май 2017 11:44:51. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 21 Июн 2017 23:09:12. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

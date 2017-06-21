@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.Chrono/Chrono_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Alicorn/Build/Extension/Boost/Test.Boost/Test.Serialization/Serialization_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.6 Revision: 2620 Platform: x64 Build: 11:44 20 Май 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2654 Platform: x64 Build: 23:08 21 Июнь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,67 +83,70 @@ $(document).ready(function(){initNavTree('a01247.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл Chrono_test.cpp</div>  </div>
+<div class="title">Файл Serialization_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;boost\archive\text_oarchive.hpp&gt;</code><br />
+<code>#include &lt;boost\archive\text_iarchive.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\chrono.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\chrono.cpp&gt;</code><br />
+<code>#include &lt;alicorn\extension\boost\serialization.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Chrono_test.cpp:</div>
+Граф включаемых заголовочных файлов для Serialization_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01248.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_chrono_2_chrono__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_chrono_2_chrono__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_chrono_2_chrono__test_8cpp">
-<area shape="rect" id="node3" href="a36911_source.html" title="stdafx.h" alt="" coords="2361,117,2436,144"/>
-<area shape="rect" id="node102" href="a37676_source.html" title="alicorn\\extension\\google\l\\test\\example.hpp" alt="" coords="3117,110,3299,151"/>
-<area shape="rect" id="node106" href="a00455_source.html" title="alicorn\\extension\\std\l\\chrono.hpp" alt="" coords="3858,110,4019,151"/>
-<area shape="rect" id="node5" href="a01931.html" title="Test.Front\\Test.Class.hpp" alt="" coords="2301,200,2496,227"/>
-<area shape="rect" id="node92" href="a37613_source.html" title="..\\mock.hpp" alt="" coords="515,200,616,227"/>
-<area shape="rect" id="node9" href="a37535_source.html" title="boost\\filesystem.hpp" alt="" coords="892,275,1052,301"/>
-<area shape="rect" id="node41" href="a00440.html" title="alicorn\\extension\\google.hpp" alt="" coords="3287,275,3499,301"/>
-<area shape="rect" id="node49" href="a37829.html" title="alicorn\\requirements.hpp" alt="" coords="4013,275,4197,301"/>
-<area shape="rect" id="node67" href="a00707.html" title="alicorn\\testing.hpp" alt="" coords="2325,275,2472,301"/>
-<area shape="rect" id="node11" href="a00293_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="397,357,573,384"/>
-<area shape="rect" id="node17" href="a00308_source.html" title="filesystem\\irelative.hpp" alt="" coords="598,357,772,384"/>
-<area shape="rect" id="node21" href="a00314_source.html" title="filesystem\\is&#45;readable.hpp" alt="" coords="5,357,200,384"/>
-<area shape="rect" id="node23" href="a00281_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="225,350,372,391"/>
-<area shape="rect" id="node27" href="a00299_source.html" title="filesystem\\get&#45;file\l&#45;size.hpp" alt="" coords="990,350,1132,391"/>
-<area shape="rect" id="node30" href="a00329_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="797,350,965,391"/>
-<area shape="rect" id="node36" href="a00338_source.html" title="filesystem\\load&#45;string\l&#45;file.hpp" alt="" coords="1157,350,1323,391"/>
-<area shape="rect" id="node13" href="a00341.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="792,441,971,482"/>
-<area shape="rect" id="node15" href="a37532_source.html" title="alicorn\\lib&#45;info\\boost.hpp" alt="" coords="485,448,672,475"/>
-<area shape="rect" id="node38" href="a00599.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="1159,441,1320,482"/>
-<area shape="rect" id="node43" href="a37571.html" title="google\\test.hpp" alt="" coords="3485,357,3611,384"/>
-<area shape="rect" id="node47" href="a37592_source.html" title="google\\mock.hpp" alt="" coords="3326,357,3460,384"/>
-<area shape="rect" id="node57" href="a37562.html" title="extension\\cpp.hpp" alt="" coords="3636,357,3780,384"/>
-<area shape="rect" id="node59" href="a01079_source.html" title="testing\\id.hpp" alt="" coords="3804,357,3919,384"/>
-<area shape="rect" id="node61" href="a01076_source.html" title="testing\\friend.hpp" alt="" coords="3943,357,4083,384"/>
-<area shape="rect" id="node63" href="a01091_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="4108,357,4287,384"/>
-<area shape="rect" id="node65" href="a01094_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="4311,357,4496,384"/>
-<area shape="rect" id="node69" href="a37718_source.html" title="testing\\proxy.hpp" alt="" coords="2435,357,2573,384"/>
-<area shape="rect" id="node71" href="a01073_source.html" title="testing\\final.hpp" alt="" coords="2597,357,2728,384"/>
-<area shape="rect" id="node73" href="a01010_source.html" title="testing\\block&#45;file.hpp" alt="" coords="2752,357,2915,384"/>
-<area shape="rect" id="node75" href="a01043_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="2939,357,3105,384"/>
-<area shape="rect" id="node77" href="a01034_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="3131,357,3301,384"/>
-<area shape="rect" id="node79" href="a01088_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="1347,357,1540,384"/>
-<area shape="rect" id="node81" href="a37700_source.html" title="testing\\exception.hpp" alt="" coords="1565,357,1731,384"/>
-<area shape="rect" id="node83" href="a01031_source.html" title="testing\\equal&#45;directories.hpp" alt="" coords="1755,357,1969,384"/>
-<area shape="rect" id="node85" href="a01085_source.html" title="testing\\run&#45;in&#45;multithreads.hpp" alt="" coords="2179,357,2409,384"/>
-<area shape="rect" id="node88" href="a01070_source.html" title="testing\\file\\load&#45;text\l&#45;file.hpp" alt="" coords="1995,350,2155,391"/>
-<area shape="rect" id="node108" href="a00602_source.html" title="utc&#45;offset.hpp" alt="" coords="4038,200,4156,227"/>
+<div class="center"><img src="a01248.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_boost_2_test_8_boost_2_test_8_serialization_2_serialization__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_boost_2_test_8_boost_2_test_8_serialization_2_serialization__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_boost_2_test_8_boost_2_test_8_serialization_2_serialization__test_8cpp">
+<area shape="rect" id="node3" href="a37062_source.html" title="stdafx.h" alt="" coords="2742,133,2817,160"/>
+<area shape="rect" id="node104" href="a37899_source.html" title="alicorn\\extension\\google\l\\test\\example.hpp" alt="" coords="3185,126,3367,167"/>
+<area shape="rect" id="node108" href="a00362_source.html" title="alicorn\\extension\\boost\l\\serialization.hpp" alt="" coords="3598,126,3775,167"/>
+<area shape="rect" id="node5" href="a01958.html" title="Test.Front\\Test.Class.hpp" alt="" coords="3034,216,3229,243"/>
+<area shape="rect" id="node90" href="a37827_source.html" title="..\\mock.hpp" alt="" coords="368,216,469,243"/>
+<area shape="rect" id="node9" href="a37755_source.html" title="boost\\filesystem.hpp" alt="" coords="936,291,1096,317"/>
+<area shape="rect" id="node41" href="a00440.html" title="alicorn\\extension\\google.hpp" alt="" coords="3533,291,3744,317"/>
+<area shape="rect" id="node47" href="a38061.html" title="alicorn\\requirements.hpp" alt="" coords="4298,291,4483,317"/>
+<area shape="rect" id="node65" href="a00710.html" title="alicorn\\testing.hpp" alt="" coords="2552,291,2699,317"/>
+<area shape="rect" id="node11" href="a00293_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="612,373,788,400"/>
+<area shape="rect" id="node17" href="a00308_source.html" title="filesystem\\irelative.hpp" alt="" coords="1033,373,1207,400"/>
+<area shape="rect" id="node21" href="a00314_source.html" title="filesystem\\is&#45;readable.hpp" alt="" coords="813,373,1008,400"/>
+<area shape="rect" id="node23" href="a00281_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="1231,366,1379,407"/>
+<area shape="rect" id="node27" href="a00299_source.html" title="filesystem\\get&#45;file\l&#45;size.hpp" alt="" coords="445,366,587,407"/>
+<area shape="rect" id="node30" href="a00329_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="1404,366,1572,407"/>
+<area shape="rect" id="node36" href="a00338_source.html" title="filesystem\\load&#45;string\l&#45;file.hpp" alt="" coords="255,366,420,407"/>
+<area shape="rect" id="node13" href="a00341.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="1008,457,1187,498"/>
+<area shape="rect" id="node15" href="a37752_source.html" title="alicorn\\lib&#45;info\\boost.hpp" alt="" coords="1211,464,1399,491"/>
+<area shape="rect" id="node38" href="a00599.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="257,457,417,498"/>
+<area shape="rect" id="node43" href="a37791.html" title="google\\test.hpp" alt="" coords="3575,373,3701,400"/>
+<area shape="rect" id="node45" href="a37812_source.html" title="google\\mock.hpp" alt="" coords="3726,373,3860,400"/>
+<area shape="rect" id="node55" href="a37782.html" title="extension\\cpp.hpp" alt="" coords="4089,373,4233,400"/>
+<area shape="rect" id="node57" href="a01106_source.html" title="testing\\id.hpp" alt="" coords="4257,373,4372,400"/>
+<area shape="rect" id="node59" href="a01103_source.html" title="testing\\friend.hpp" alt="" coords="4397,373,4536,400"/>
+<area shape="rect" id="node61" href="a01118_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="4561,373,4740,400"/>
+<area shape="rect" id="node63" href="a01121_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="4765,373,4949,400"/>
+<area shape="rect" id="node67" href="a37941_source.html" title="testing\\proxy.hpp" alt="" coords="3412,373,3551,400"/>
+<area shape="rect" id="node69" href="a01100_source.html" title="testing\\final.hpp" alt="" coords="1596,373,1727,400"/>
+<area shape="rect" id="node71" href="a01037_source.html" title="testing\\block&#45;file.hpp" alt="" coords="1751,373,1913,400"/>
+<area shape="rect" id="node73" href="a01070_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="1938,373,2104,400"/>
+<area shape="rect" id="node75" href="a01061_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="2129,373,2300,400"/>
+<area shape="rect" id="node77" href="a01115_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="2325,373,2517,400"/>
+<area shape="rect" id="node79" href="a37923_source.html" title="testing\\exception.hpp" alt="" coords="2542,373,2708,400"/>
+<area shape="rect" id="node81" href="a01058_source.html" title="testing\\equal&#45;directories.hpp" alt="" coords="2733,373,2947,400"/>
+<area shape="rect" id="node83" href="a01112_source.html" title="testing\\run&#45;in&#45;multithreads.hpp" alt="" coords="3157,373,3387,400"/>
+<area shape="rect" id="node86" href="a01097_source.html" title="testing\\file\\load&#45;text\l&#45;file.hpp" alt="" coords="2972,366,3132,407"/>
+<area shape="rect" id="node92" href="a00272_source.html" title="alicorn\\extension\\android.mock.hpp" alt="" coords="172,291,428,317"/>
+<area shape="rect" id="node94" href="a00260_source.html" title="android\\environment.mock.hpp" alt="" coords="5,373,229,400"/>
+<area shape="rect" id="node110" href="a00359_source.html" title="serialization\\path.hpp" alt="" coords="3605,216,3768,243"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Chrono. </p>
+<div class="textblock"><p>Тесты класса Serialization. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_58f361e0604a051d62411040b8b61919.html">Test.Chrono</a></li><li class="navelem"><a class="el" href="a01247.html">Chrono_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 20 Май 2017 11:44:50. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_8be1f095023f5d879e868788c3548616.html">Boost</a></li><li class="navelem"><a class="el" href="dir_ab8cef738f264e72d1d5030114412126.html">Test.Boost</a></li><li class="navelem"><a class="el" href="dir_c7920a1590660d93f73f6e13e4179588.html">Test.Serialization</a></li><li class="navelem"><a class="el" href="a01247.html">Serialization_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 21 Июн 2017 23:09:10. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
