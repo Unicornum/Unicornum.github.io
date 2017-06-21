@@ -1,5 +1,5 @@
 var index =
 [
-    [ "Построение для Windows", "a30613.html", null ],
-    [ "Построение для Android", "a30608.html", "a30608" ]
+    [ "Построение для Windows", "a31111.html", null ],
+    [ "Построение для Android", "a31106.html", "a31106" ]
 ];
