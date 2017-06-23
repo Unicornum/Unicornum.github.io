@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.StringCast/StringCast_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Alicorn/Build/Extension/Std/Test.Std/Test.TrivialPtr/TrivialPtr_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2654 Platform: x64 Build: 23:08 21 Июнь 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2662 Platform: x64 Build: 16:10 23 Июнь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,71 +83,67 @@ $(document).ready(function(){initNavTree('a01307.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл StringCast_test.cpp</div>  </div>
+<div class="title">Файл TrivialPtr_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;date.h&gt;</code><br />
+<code>#include &lt;alicorn\extension\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\extension\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\string.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\std\string-cast.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\boost\string-cast.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\mfc\string-cast.hpp&gt;</code><br />
-<code>#include &lt;alicorn\extension\wx\string-cast.hpp&gt;</code><br />
-<code>#include &lt;<a class="el" href="a00584.html">alicorn\extension\std\string\string.test.inl</a>&gt;</code><br />
-<code>#include &quot;..\UstrEq.hpp&quot;</code><br />
+<code>#include &lt;<a class="el" href="a00509_source.html">alicorn\extension\std\memory.hpp</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для StringCast_test.cpp:</div>
+Граф включаемых заголовочных файлов для TrivialPtr_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01308.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_cast_2_string_cast__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_cast_2_string_cast__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_string_cast_2_string_cast__test_8cpp">
-<area shape="rect" id="node3" href="a37140_source.html" title="stdafx.h" alt="" coords="1294,133,1369,160"/>
-<area shape="rect" id="node67" href="a00578_source.html" title="alicorn\\extension\\std\l\\string.hpp" alt="" coords="3169,307,3329,349"/>
-<area shape="rect" id="node85" href="a37776_source.html" title="alicorn\\extension\\std\l\\string&#45;cast.hpp" alt="" coords="3531,217,3692,258"/>
-<area shape="rect" id="node97" href="a37767_source.html" title="alicorn\\extension\\boost\l\\string&#45;cast.hpp" alt="" coords="3277,126,3453,167"/>
-<area shape="rect" id="node101" href="a37770_source.html" title="alicorn\\extension\\mfc\l\\string&#45;cast.hpp" alt="" coords="3530,126,3693,167"/>
-<area shape="rect" id="node104" href="a37779_source.html" title="alicorn\\extension\\wx\l\\string&#45;cast.hpp" alt="" coords="4117,126,4275,167"/>
-<area shape="rect" id="node108" href="a00584.html" title="alicorn\\extension\\std\l\\string\\string.test.inl" alt="" coords="4299,126,4460,167"/>
-<area shape="rect" id="node110" href="a01316_source.html" title="..\\UstrEq.hpp" alt="" coords="4485,133,4595,160"/>
-<area shape="rect" id="node5" href="a01958.html" title="Test.Front\\Test.Class.hpp" alt="" coords="1234,224,1429,251"/>
-<area shape="rect" id="node51" href="a37833_source.html" title="..\\mock.hpp" alt="" coords="436,224,537,251"/>
-<area shape="rect" id="node9" href="a37755_source.html" title="boost\\filesystem.hpp" alt="" coords="2219,315,2379,341"/>
-<area shape="rect" id="node31" href="a00440.html" title="alicorn\\extension\\google.hpp" alt="" coords="691,315,903,341"/>
-<area shape="rect" id="node37" href="a38061.html" title="alicorn\\requirements.hpp" alt="" coords="1049,315,1233,341"/>
-<area shape="rect" id="node49" href="a00710.html" title="alicorn\\testing.hpp" alt="" coords="1259,315,1405,341"/>
-<area shape="rect" id="node11" href="a00293_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="1801,405,1977,432"/>
-<area shape="rect" id="node13" href="a00308_source.html" title="filesystem\\irelative.hpp" alt="" coords="2002,405,2176,432"/>
-<area shape="rect" id="node15" href="a00314_source.html" title="filesystem\\is&#45;readable.hpp" alt="" coords="2201,405,2396,432"/>
-<area shape="rect" id="node17" href="a00281_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="2421,398,2568,439"/>
-<area shape="rect" id="node19" href="a00299_source.html" title="filesystem\\get&#45;file\l&#45;size.hpp" alt="" coords="2593,398,2735,439"/>
-<area shape="rect" id="node21" href="a00329_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="1609,398,1777,439"/>
-<area shape="rect" id="node25" href="a00338_source.html" title="filesystem\\load&#45;string\l&#45;file.hpp" alt="" coords="2760,398,2925,439"/>
-<area shape="rect" id="node27" href="a00599.html" title="alicorn\\extension\\std\l\\string.forward.hpp" alt="" coords="2959,489,3120,530"/>
-<area shape="rect" id="node29" href="a00548_source.html" title="string\\prefix.hpp" alt="" coords="3012,587,3143,613"/>
-<area shape="rect" id="node33" href="a37791.html" title="google\\test.hpp" alt="" coords="457,405,583,432"/>
-<area shape="rect" id="node35" href="a37812_source.html" title="google\\mock.hpp" alt="" coords="607,405,741,432"/>
-<area shape="rect" id="node45" href="a37782.html" title="extension\\cpp.hpp" alt="" coords="1441,405,1585,432"/>
-<area shape="rect" id="node47" href="a01106_source.html" title="testing\\id.hpp" alt="" coords="767,405,881,432"/>
-<area shape="rect" id="node69" href="a37950_source.html" title="string\\string.hpp" alt="" coords="3364,496,3495,523"/>
-<area shape="rect" id="node76" href="a00596_source.html" title="string\\tokenize.hpp" alt="" coords="2949,405,3099,432"/>
-<area shape="rect" id="node80" href="a37953_source.html" title="string\\support.hpp" alt="" coords="3123,405,3267,432"/>
-<area shape="rect" id="node72" href="a00500_source.html" title="alicorn\\extension\\std\l\\memory\\trivial&#45;ptr.hpp" alt="" coords="3383,579,3559,621"/>
-<area shape="rect" id="node74" href="a37914_source.html" title="alicorn\\lib&#45;info\\std.hpp" alt="" coords="3186,587,3357,613"/>
-<area shape="rect" id="node87" href="a37773_source.html" title="string\\string&#45;cast.hpp" alt="" coords="3529,315,3695,341"/>
-<area shape="rect" id="node89" href="a00563_source.html" title="string&#45;cast&#45;proxy.hpp" alt="" coords="3578,405,3744,432"/>
-<area shape="rect" id="node93" href="a00557_source.html" title="string&#45;cast&#45;proxy&#45;locale.hpp" alt="" coords="3342,405,3553,432"/>
+<div class="center"><img src="a01308.png" border="0" usemap="#_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_trivial_ptr_2_trivial_ptr__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_trivial_ptr_2_trivial_ptr__test_8cpp" id="_solution_2_solution_2_alicorn_2_build_2_extension_2_std_2_test_8_std_2_test_8_trivial_ptr_2_trivial_ptr__test_8cpp">
+<area shape="rect" id="node3" href="a37057_source.html" title="stdafx.h" alt="" coords="4354,133,4429,160"/>
+<area shape="rect" id="node98" href="a37807_source.html" title="alicorn\\extension\\google\l\\test\\example.hpp" alt="" coords="4458,126,4640,167"/>
+<area shape="rect" id="node102" href="a00509.html" title="alicorn\\extension\\std\l\\memory.hpp" alt="" coords="4874,126,5035,167"/>
+<area shape="rect" id="node5" href="a01955.html" title="Test.Front\\Test.Class.hpp" alt="" coords="1815,216,2011,243"/>
+<area shape="rect" id="node88" href="a37741_source.html" title="..\\mock.hpp" alt="" coords="4341,216,4443,243"/>
+<area shape="rect" id="node9" href="a37663_source.html" title="boost\\filesystem.hpp" alt="" coords="788,291,948,317"/>
+<area shape="rect" id="node39" href="a00440.html" title="alicorn\\extension\\google.hpp" alt="" coords="1458,291,1669,317"/>
+<area shape="rect" id="node45" href="a37969.html" title="alicorn\\requirements.hpp" alt="" coords="2170,291,2355,317"/>
+<area shape="rect" id="node63" href="a00710.html" title="alicorn\\testing.hpp" alt="" coords="3784,291,3931,317"/>
+<area shape="rect" id="node11" href="a00293_source.html" title="filesystem\\copy&#45;all.hpp" alt="" coords="5,373,181,400"/>
+<area shape="rect" id="node17" href="a00308_source.html" title="filesystem\\irelative.hpp" alt="" coords="206,373,380,400"/>
+<area shape="rect" id="node21" href="a00314_source.html" title="filesystem\\is&#45;readable.hpp" alt="" coords="405,373,600,400"/>
+<area shape="rect" id="node23" href="a00281_source.html" title="filesystem\\appdata\l&#45;path.hpp" alt="" coords="625,366,772,407"/>
+<area shape="rect" id="node27" href="a00299_source.html" title="filesystem\\get&#45;file\l&#45;size.hpp" alt="" coords="797,366,939,407"/>
+<area shape="rect" id="node30" href="a00329_source.html" title="filesystem\\load&#45;binary\l&#45;file.hpp" alt="" coords="1153,366,1321,407"/>
+<area shape="rect" id="node36" href="a00338_source.html" title="filesystem\\load&#45;string\l&#45;file.hpp" alt="" coords="964,366,1129,407"/>
+<area shape="rect" id="node13" href="a00341.html" title="alicorn\\extension\\boost\l\\filesystem.forward.hpp" alt="" coords="779,457,957,498"/>
+<area shape="rect" id="node15" href="a37660_source.html" title="alicorn\\lib&#45;info\\boost.hpp" alt="" coords="382,464,569,491"/>
+<area shape="rect" id="node41" href="a37699.html" title="google\\test.hpp" alt="" coords="1346,373,1472,400"/>
+<area shape="rect" id="node43" href="a37720_source.html" title="google\\mock.hpp" alt="" coords="1497,373,1631,400"/>
+<area shape="rect" id="node53" href="a37690.html" title="extension\\cpp.hpp" alt="" coords="2191,373,2335,400"/>
+<area shape="rect" id="node55" href="a01103_source.html" title="testing\\id.hpp" alt="" coords="2359,373,2473,400"/>
+<area shape="rect" id="node57" href="a01100_source.html" title="testing\\friend.hpp" alt="" coords="2498,373,2637,400"/>
+<area shape="rect" id="node59" href="a01115_source.html" title="testing\\using&#45;mock.hpp" alt="" coords="2663,373,2841,400"/>
+<area shape="rect" id="node61" href="a01118_source.html" title="testing\\virtual&#45;mock.hpp" alt="" coords="2866,373,3051,400"/>
+<area shape="rect" id="node65" href="a37849_source.html" title="testing\\proxy.hpp" alt="" coords="3076,373,3215,400"/>
+<area shape="rect" id="node67" href="a01097_source.html" title="testing\\final.hpp" alt="" coords="3239,373,3369,400"/>
+<area shape="rect" id="node69" href="a01034_source.html" title="testing\\block&#45;file.hpp" alt="" coords="3393,373,3556,400"/>
+<area shape="rect" id="node71" href="a01067_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="3581,373,3747,400"/>
+<area shape="rect" id="node73" href="a01058_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="3772,373,3943,400"/>
+<area shape="rect" id="node75" href="a01112_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="3967,373,4160,400"/>
+<area shape="rect" id="node77" href="a37831_source.html" title="testing\\exception.hpp" alt="" coords="4185,373,4351,400"/>
+<area shape="rect" id="node79" href="a01055_source.html" title="testing\\equal&#45;directories.hpp" alt="" coords="4375,373,4589,400"/>
+<area shape="rect" id="node81" href="a01109_source.html" title="testing\\run&#45;in&#45;multithreads.hpp" alt="" coords="4799,373,5029,400"/>
+<area shape="rect" id="node84" href="a01094_source.html" title="testing\\file\\load&#45;text\l&#45;file.hpp" alt="" coords="4615,366,4775,407"/>
+<area shape="rect" id="node104" href="a37852_source.html" title="memory\\make.hpp" alt="" coords="4970,216,5112,243"/>
+<area shape="rect" id="node106" href="a00506_source.html" title="unique&#45;ptr.hpp" alt="" coords="4981,291,5101,317"/>
+<area shape="rect" id="node110" href="a00494_source.html" title="pool.hpp" alt="" coords="5126,291,5204,317"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса StringCast. </p>
+<div class="textblock"><p>Тесты класса TrivialPtr. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_209b77c93b4e9b2244912a8c4bd906ff.html">Test.StringCast</a></li><li class="navelem"><a class="el" href="a01307.html">StringCast_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Ср 21 Июн 2017 23:09:10. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_39476a44edcbf879a5513cb07e660f74.html">Alicorn</a></li><li class="navelem"><a class="el" href="dir_8474876d6addb29d5cfd67f2cdcf2951.html">Build</a></li><li class="navelem"><a class="el" href="dir_0b18862fbca7419df2afb4c521d2159e.html">Extension</a></li><li class="navelem"><a class="el" href="dir_40da31625bd798043a5d0ed69e66f034.html">Std</a></li><li class="navelem"><a class="el" href="dir_77ad837bb722f9d84dfe7cfd8e0ce9cc.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_742b50dcdbb4427de44b3ee7c74c22c4.html">Test.TrivialPtr</a></li><li class="navelem"><a class="el" href="a01307.html">TrivialPtr_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 23 Июн 2017 16:10:58. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

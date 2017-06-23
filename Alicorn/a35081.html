@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс alicorn::logger::Message</title>
+<title>Alicorn: Класс alicorn::patterns::command::ManagerUndoRedo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2654 Platform: x64 Build: 23:08 21 Июнь 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2662 Platform: x64 Build: 16:10 23 Июнь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -84,246 +84,79 @@ $(document).ready(function(){initNavTree('a35081.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
-<a href="#pub-static-methods">Открытые статические члены</a> &#124;
-<a href="#pro-methods">Защищенные члены</a> &#124;
-<a href="#pri-attribs">Закрытые данные</a> &#124;
 <a href="a35078.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::logger::Message<div class="ingroups"><a class="el" href="a34270.html">Alicorn</a> &raquo; <a class="el" href="a34297.html">Logger</a> &raquo; <a class="el" href="a34295.html">Message</a></div></div>  </div>
+<div class="title">Класс alicorn::patterns::command::ManagerUndoRedo<div class="ingroups"><a class="el" href="a34168.html">Alicorn</a> &raquo; <a class="el" href="a34199.html">Patterns</a> &raquo; <a class="el" href="a34196.html">Command</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a36805.html">Logger</a> <br />
- Базовый класс типов сообщений.  
+<p>Класс входит в <a class="el" href="a36714.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд.  
  <a href="a35081.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a37932_source.html">message.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00863_source.html">ManagerUndoRedo.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:alicorn::logger::Message:</div>
+Граф наследования:alicorn::patterns::command::ManagerUndoRedo:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35080.png" border="0" usemap="#alicorn_1_1logger_1_1_message_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1logger_1_1_message_inherit__map" id="alicorn_1_1logger_1_1_message_inherit__map">
-<area shape="rect" id="node3" href="a35097.html" title="Класс входит в Logger &#160;&#160;Класс сообщения. " alt="" coords="5,256,165,333"/>
-<area shape="rect" id="node5" href="a35101.html" title="Класс входит в Logger &#160;&#160;Класс сообщения (наивысший приоритет). " alt="" coords="189,249,352,341"/>
-<area shape="rect" id="node7" href="a35089.html" title="Класс входит в Logger &#160;&#160;Класс сообщения. " alt="" coords="376,256,531,333"/>
-<area shape="rect" id="node9" href="a35085.html" title="Класс входит в Logger &#160;&#160;Класс сообщения (низший приоритет). " alt="" coords="555,256,721,333"/>
-<area shape="rect" id="node11" href="a35093.html" title="Класс входит в Logger &#160;&#160;Класс сообщения. " alt="" coords="746,256,928,333"/>
+<div class="center"><img src="a35080.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_inherit__map" id="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_inherit__map">
+<area shape="rect" id="node2" href="a35077.html" title="{alicorn::patterns::\lcommand::ManagerCommon\l\&lt; IUndo \&gt;\n||+ Execute()\l+ Execute()\l# DoExecute()\l# DoException()\l}" alt="" coords="13,177,219,327"/>
+<area shape="rect" id="node4" href="a35069.html" title="{alicorn::patterns::\lcommand::IManager\&lt; IUndo \&gt;\n||+ ~IManager()\l# DoExecute()\l# DoException()\l}" alt="" coords="5,6,227,127"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса alicorn::logger::Message:</div>
+Граф связей класса alicorn::patterns::command::ManagerUndoRedo:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35079.png" border="0" usemap="#alicorn_1_1logger_1_1_message_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1logger_1_1_message_coll__map" id="alicorn_1_1logger_1_1_message_coll__map">
-<area shape="rect" id="node2" href="a35073.html" title="Класс входит в Logger &#160;&#160;Класс, хранящий информацию одной записи лога. " alt="" coords="5,1077,219,1213"/>
-<area shape="rect" id="node4" href="a34953.html" title="Класс входит в Std &#160;&#160;Класс универсальных Unicode строк. " alt="" coords="42,643,181,941"/>
-<area shape="rect" id="node6" href="a34749.html" title="{alicorn::extension\l::std::trivial_ptr\&lt;\l IImpl \&gt;\n|&#45; m_pDeleter\l|+ operator&#45;\&gt;()\l+ IsEqual()\l+ ReleasePtr()\l+ ReleaseDeleter()\l+ trivial_ptr()\l+ trivial_ptr()\l+ operator=()\l+ operator=()\l+ operator=()\l+ ~trivial_ptr()\l&#45; Delete()\l&#45; trivial_ptr()\l}" alt="" coords="39,310,184,578"/>
-<area shape="rect" id="node8" href="a34945.html" title="Класс входит в проект Std &#160;&#160;Интерфейсный класс реализации строки. " alt="" coords="37,6,187,245"/>
+<div class="center"><img src="a35079.png" border="0" usemap="#alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_coll__map" id="alicorn_1_1patterns_1_1command_1_1_manager_undo_redo_coll__map">
+<area shape="rect" id="node2" href="a35077.html" title="{alicorn::patterns::\lcommand::ManagerCommon\l\&lt; IUndo \&gt;\n||+ Execute()\l+ Execute()\l# DoExecute()\l# DoException()\l}" alt="" coords="13,177,219,327"/>
+<area shape="rect" id="node4" href="a35069.html" title="{alicorn::patterns::\lcommand::IManager\&lt; IUndo \&gt;\n||+ ~IManager()\l# DoExecute()\l# DoException()\l}" alt="" coords="5,6,227,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a4975d38735e7659719be5e8c96865e5f"><td class="memItemLeft" align="right" valign="top"><a id="a4975d38735e7659719be5e8c96865e5f"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#a4975d38735e7659719be5e8c96865e5f">GetLevel</a> (void) const</td></tr>
-<tr class="memdesc:a4975d38735e7659719be5e8c96865e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция возвращает уровень приоритета сообщения. <br /></td></tr>
-<tr class="separator:a4975d38735e7659719be5e8c96865e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Открытые статические члены</h2></td></tr>
-<tr class="memitem:ad6509fda6ddc2230f986662e5181ab04"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#ad6509fda6ddc2230f986662e5181ab04">DoComplete</a> (MessagePtr_t)</td></tr>
-<tr class="memdesc:ad6509fda6ddc2230f986662e5181ab04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения завершающего действия.  <a href="#ad6509fda6ddc2230f986662e5181ab04">Подробнее...</a><br /></td></tr>
-<tr class="separator:ad6509fda6ddc2230f986662e5181ab04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Защищенные члены</h2></td></tr>
-<tr class="memitem:a60a9316d70a117080c003541bff6b5b3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#a60a9316d70a117080c003541bff6b5b3">DoSpecialAction</a> (void) const</td></tr>
-<tr class="memdesc:a60a9316d70a117080c003541bff6b5b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для выполнения специфического действия сообщения.  <a href="#a60a9316d70a117080c003541bff6b5b3">Подробнее...</a><br /></td></tr>
-<tr class="separator:a60a9316d70a117080c003541bff6b5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9129c099b58fc8b4b237a2268c40e695"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#a9129c099b58fc8b4b237a2268c40e695">Message</a> (const <a class="el" href="a34953.html">String_t</a> &amp;, const <a class="el" href="a34953.html">String_t</a> &amp;, int)</td></tr>
-<tr class="memdesc:a9129c099b58fc8b4b237a2268c40e695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор.  <a href="#a9129c099b58fc8b4b237a2268c40e695">Подробнее...</a><br /></td></tr>
-<tr class="separator:a9129c099b58fc8b4b237a2268c40e695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Закрытые данные</h2></td></tr>
-<tr class="memitem:a78424dfc4950ec1529fded759d62c3b6"><td class="memItemLeft" align="right" valign="top"><a id="a78424dfc4950ec1529fded759d62c3b6"></a>
-::std::wstringstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#a78424dfc4950ec1529fded759d62c3b6">m_Message</a></td></tr>
-<tr class="memdesc:a78424dfc4950ec1529fded759d62c3b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Формируемое сообщение. <br /></td></tr>
-<tr class="separator:a78424dfc4950ec1529fded759d62c3b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad78af1f142326fcb8ea5df55c0ff7f37"><td class="memItemLeft" align="right" valign="top"><a id="ad78af1f142326fcb8ea5df55c0ff7f37"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#ad78af1f142326fcb8ea5df55c0ff7f37">IsAllowedUndo</a> (void) const</td></tr>
+<tr class="memdesc:ad78af1f142326fcb8ea5df55c0ff7f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка существования команд, которые можно отменить. <br /></td></tr>
+<tr class="separator:ad78af1f142326fcb8ea5df55c0ff7f37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af563bcd50a28b5fa540ca16cd77921d7"><td class="memItemLeft" align="right" valign="top"><a id="af563bcd50a28b5fa540ca16cd77921d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#af563bcd50a28b5fa540ca16cd77921d7">Undo</a> (void)</td></tr>
+<tr class="memdesc:af563bcd50a28b5fa540ca16cd77921d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отменить последнюю выполненную команду. <br /></td></tr>
+<tr class="separator:af563bcd50a28b5fa540ca16cd77921d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c4dfac80372ba9fa6f94eb7f545350"><td class="memItemLeft" align="right" valign="top"><a id="a45c4dfac80372ba9fa6f94eb7f545350"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#a45c4dfac80372ba9fa6f94eb7f545350">IsAllowedRedo</a> (void) const</td></tr>
+<tr class="memdesc:a45c4dfac80372ba9fa6f94eb7f545350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка существования команд, которые можно повторить. <br /></td></tr>
+<tr class="separator:a45c4dfac80372ba9fa6f94eb7f545350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf7a9e613cbb698cc1ca2c26e554637"><td class="memItemLeft" align="right" valign="top"><a id="a2cf7a9e613cbb698cc1ca2c26e554637"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35081.html#a2cf7a9e613cbb698cc1ca2c26e554637">Redo</a> (void)</td></tr>
+<tr class="memdesc:a2cf7a9e613cbb698cc1ca2c26e554637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повторить последнюю отмененную команду. <br /></td></tr>
+<tr class="separator:a2cf7a9e613cbb698cc1ca2c26e554637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a36805.html">Logger</a> <br />
- Базовый класс типов сообщений. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a36714.html">Patterns</a> <br />
+ Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд. </p>
+<ul>
+<li>Исполняемые команды должны быть унаследованы от интерфейса <a class="el" href="a35073.html" title="Класс входит в Patterns   Интерфейсный класс для команд, поддерживающих отмену последнего действия...">IUndo</a>.</li>
+<li>Если команда не выполнена до конца (например, бросила исключение в процессе выполнения), отменить ее невозможно.</li>
+</ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
- 1.2.0.0 <br />
- 1.2.1.0 <br />
- 1.2.2.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 июл 2012 <br />
- 26 Октябрь 2015 <br />
- 18 Ноябрь 2015 <br />
- 25 Сентябрь 2016 <br />
- 30 Январь 2017 <br />
+<dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2012 - 2017 </dd></dl>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="a9129c099b58fc8b4b237a2268c40e695"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9129c099b58fc8b4b237a2268c40e695">&#9670;&nbsp;</a></span>Message()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Message::Message </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a34953.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a34953.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_PathToFileLine</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_Count</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Конструктор. </p>
-<ul>
-<li>Записывает в объект предварительную информацию.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя сообщения в виде строки. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFileLine</td><td>Файл, в котором было записано сообщение + номер строки. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Count</td><td>Имя функции, внутри которой было записано сообщение. </td></tr>
-  </table>
-  </dd>
-</dl>
-<div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35081_a9129c099b58fc8b4b237a2268c40e695_icgraph.png" border="0" usemap="#a35081_a9129c099b58fc8b4b237a2268c40e695_icgraph" alt=""/></div>
-<map name="a35081_a9129c099b58fc8b4b237a2268c40e695_icgraph" id="a35081_a9129c099b58fc8b4b237a2268c40e695_icgraph">
-<area shape="rect" id="node3" href="a35081.html#a60a9316d70a117080c003541bff6b5b3" title="Функция для выполнения специфического действия сообщения. " alt="" coords="240,5,427,46"/>
-</map>
-</div>
-
-</div>
-</div>
-<h2 class="groupheader">Методы</h2>
-<a id="ad6509fda6ddc2230f986662e5181ab04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6509fda6ddc2230f986662e5181ab04">&#9670;&nbsp;</a></span>DoComplete()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Message::DoComplete </td>
-          <td>(</td>
-          <td class="paramtype">MessagePtr_t&#160;</td>
-          <td class="paramname"><em>_pMessage</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция для выполнения завершающего действия. </p>
-<ul>
-<li>Будет вызвана для передачи объекта сообщения 'ядру' логгера. </li>
-</ul>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35081_ad6509fda6ddc2230f986662e5181ab04_cgraph.png" border="0" usemap="#a35081_ad6509fda6ddc2230f986662e5181ab04_cgraph" alt=""/></div>
-<map name="a35081_ad6509fda6ddc2230f986662e5181ab04_cgraph" id="a35081_ad6509fda6ddc2230f986662e5181ab04_cgraph">
-<area shape="rect" id="node3" href="a34289.html#ga85f365b66942caa215bfc4ad5010f37f" title="Функция входит в Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="240,5,381,46"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a60a9316d70a117080c003541bff6b5b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60a9316d70a117080c003541bff6b5b3">&#9670;&nbsp;</a></span>DoSpecialAction()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Message::DoSpecialAction </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция для выполнения специфического действия сообщения. </p>
-<ul>
-<li>Функция вызывается после записи сообщения в лог. </li>
-</ul>
-
-<p>Переопределяется в <a class="el" href="a35101.html#aee319a84720a3b08952822aedd918de6">alicorn::logger::Fatal</a>.</p>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35081_a60a9316d70a117080c003541bff6b5b3_cgraph.png" border="0" usemap="#a35081_a60a9316d70a117080c003541bff6b5b3_cgraph" alt=""/></div>
-<map name="a35081_a60a9316d70a117080c003541bff6b5b3_cgraph" id="a35081_a60a9316d70a117080c003541bff6b5b3_cgraph">
-<area shape="rect" id="node3" href="a35081.html#a9129c099b58fc8b4b237a2268c40e695" title="Конструктор. " alt="" coords="240,5,427,46"/>
-</map>
-</div>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/<a class="el" href="a37932_source.html">message.hpp</a></li>
-<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/logger/message.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/patterns/command/<a class="el" href="a00863_source.html">ManagerUndoRedo.hpp</a></li>
+<li>Solution/Solution/Alicorn/Alicorn/include/alicorn/patterns/command/ManagerUndoRedo.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>logger</b></li><li class="navelem"><a class="el" href="a35081.html">Message</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Ср 21 Июн 2017 23:09:13. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>patterns</b></li><li class="navelem"><b>command</b></li><li class="navelem"><a class="el" href="a35081.html">ManagerUndoRedo</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 23 Июн 2017 16:11:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

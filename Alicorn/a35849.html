@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс ShellFileInterface</title>
+<title>Alicorn: Класс wx::TreeSections</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2654 Platform: x64 Build: 23:08 21 Июнь 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2662 Platform: x64 Build: 16:10 23 Июнь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -86,57 +86,90 @@ $(document).ready(function(){initNavTree('a35849.html','');});
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a35846.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс ShellFileInterface<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">Класс wx::TreeSections<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34168.html">Alicorn</a> &raquo; <a class="el" href="a34208.html">SettingsApp</a> &raquo; <a class="el" href="a34212.html">View</a> &raquo; <a class="el" href="a34209.html">wxWidgets</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a01448_source.html">ShellFileInterface.h</a>&gt;</code></p>
+<p>Класс входит в <a class="el" href="a36718.html">SettingsApp</a> <br />
+ Класс дерева, отображающего разделы настроек программы.  
+ <a href="a35849.html#details">Подробнее...</a></p>
 
-<p>Базовые классы:FileInterface.</p>
+<p><code>#include &lt;<a class="el" href="a01550_source.html">TreeSections.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:wxTreeCtrl.</p>
 <div class="dynheader">
-Граф связей класса ShellFileInterface:</div>
+Граф связей класса wx::TreeSections:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35847.png" border="0" usemap="#_shell_file_interface_coll__map" alt="Collaboration graph"/></div>
-<map name="_shell_file_interface_coll__map" id="_shell_file_interface_coll__map">
+<div class="center"><img src="a35847.png" border="0" usemap="#wx_1_1_tree_sections_coll__map" alt="Collaboration graph"/></div>
+<map name="wx_1_1_tree_sections_coll__map" id="wx_1_1_tree_sections_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a37da7420fe38991d10c0355ba02a658c"><td class="memItemLeft" align="right" valign="top"><a id="a37da7420fe38991d10c0355ba02a658c"></a>
-Rocket::Core::FileHandle&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35849.html#a37da7420fe38991d10c0355ba02a658c">Open</a> (const String_t &amp;) override</td></tr>
-<tr class="memdesc:a37da7420fe38991d10c0355ba02a658c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a file. <br /></td></tr>
-<tr class="separator:a37da7420fe38991d10c0355ba02a658c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2749e3046778ca187fac050b0c351f12"><td class="memItemLeft" align="right" valign="top"><a id="a2749e3046778ca187fac050b0c351f12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35849.html#a2749e3046778ca187fac050b0c351f12">Close</a> (FileHandle_t) override</td></tr>
-<tr class="memdesc:a2749e3046778ca187fac050b0c351f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes a previously opened file. <br /></td></tr>
-<tr class="separator:a2749e3046778ca187fac050b0c351f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad71e46bb96b72cb4c74a85e6c2c8043a"><td class="memItemLeft" align="right" valign="top"><a id="ad71e46bb96b72cb4c74a85e6c2c8043a"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35849.html#ad71e46bb96b72cb4c74a85e6c2c8043a">Read</a> (void *, size_t, FileHandle_t) override</td></tr>
-<tr class="memdesc:ad71e46bb96b72cb4c74a85e6c2c8043a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from a previously opened file. <br /></td></tr>
-<tr class="separator:ad71e46bb96b72cb4c74a85e6c2c8043a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb77fb8f00303f8e3714d77446e1e8f"><td class="memItemLeft" align="right" valign="top"><a id="a9fb77fb8f00303f8e3714d77446e1e8f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35849.html#a9fb77fb8f00303f8e3714d77446e1e8f">Seek</a> (FileHandle_t, long, int) override</td></tr>
-<tr class="memdesc:a9fb77fb8f00303f8e3714d77446e1e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seeks to a point in a previously opened file. <br /></td></tr>
-<tr class="separator:a9fb77fb8f00303f8e3714d77446e1e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9891560f9daf82d6f8ed76933345c875"><td class="memItemLeft" align="right" valign="top"><a id="a9891560f9daf82d6f8ed76933345c875"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35849.html#a9891560f9daf82d6f8ed76933345c875">Tell</a> (FileHandle_t) override</td></tr>
-<tr class="memdesc:a9891560f9daf82d6f8ed76933345c875"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current position of the file pointer. <br /></td></tr>
-<tr class="separator:a9891560f9daf82d6f8ed76933345c875"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c150231812d3b9c8642f5a70816c0d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35849.html#a8c150231812d3b9c8642f5a70816c0d0">SetSections</a> (const Sections_t &amp;)</td></tr>
+<tr class="memdesc:a8c150231812d3b9c8642f5a70816c0d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция построения дерева разделов.  <a href="#a8c150231812d3b9c8642f5a70816c0d0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8c150231812d3b9c8642f5a70816c0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Rocket file interface for the shell examples. </p><dl class="section author"><dt>Автор</dt><dd>Lloyd Weehuizen </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Alicorn/Build/RocketRenderToFile.App/RocketRenderToFile.App/Shell/<a class="el" href="a01448_source.html">ShellFileInterface.h</a></li>
-<li>Solution/Solution/Alicorn/Build/RocketRenderToFile.App/RocketRenderToFile.App/Shell/ShellFileInterface.cpp</li>
+<div class="textblock"><p>Класс входит в <a class="el" href="a36718.html">SettingsApp</a> <br />
+ Класс дерева, отображающего разделы настроек программы. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>31 Декабрь 2015 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a8c150231812d3b9c8642f5a70816c0d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c150231812d3b9c8642f5a70816c0d0">&#9670;&nbsp;</a></span>SetSections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeSections::SetSections </td>
+          <td>(</td>
+          <td class="paramtype">const Sections_t &amp;&#160;</td>
+          <td class="paramname"><em>_Sections</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция построения дерева разделов. </p>
+<ul>
+<li>Функция предназначена для &lt;... подробное описание&gt;.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Sections</td><td>Набор путей к разделам, из которых будут построены узлы дерева. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35849_a8c150231812d3b9c8642f5a70816c0d0_cgraph.png" border="0" usemap="#a35849_a8c150231812d3b9c8642f5a70816c0d0_cgraph" alt=""/></div>
+<map name="a35849_a8c150231812d3b9c8642f5a70816c0d0_cgraph" id="a35849_a8c150231812d3b9c8642f5a70816c0d0_cgraph">
+<area shape="rect" id="node3" href="a34181.html#ga8640e62399009826e69832f22ddbf23e" title="alicorn::extension\l::cpp::math::Root" alt="" coords="286,5,431,46"/>
+<area shape="rect" id="node5" href="a34187.html#ga85f365b66942caa215bfc4ad5010f37f" title="Функция входит в Std &#160;&#160;Функция преобразования строк из одной кодировки в другую. " alt="" coords="288,70,429,111"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/<a class="el" href="a01550_source.html">TreeSections.hpp</a></li>
+<li>Solution/Solution/Alicorn/Build/Settings.App/Settings.App/View/wxWidgets/TreeSections.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a35849.html">ShellFileInterface</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Ср 21 Июн 2017 23:09:12. Создано системой
+    <li class="navelem"><b>wx</b></li><li class="navelem"><a class="el" href="a35849.html">TreeSections</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 23 Июн 2017 16:11:02. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

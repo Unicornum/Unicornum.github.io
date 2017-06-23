@@ -1,10 +1,11 @@
 var a34465 =
 [
-    [ "Data", "a34465.html#a3048b967fdeac9ec321abc8ad907c277", null ],
-    [ "Clone", "a34465.html#a56ff9f3a55f092a326713141199a1de8", null ],
-    [ "GetData", "a34465.html#ae96a35063f4e6c63f67720f53123ae5c", null ],
-    [ "GetPathToSourceFile", "a34465.html#a26849686b7beec4ce7ffdbdc9605bbf5", null ],
-    [ "GetSingleLine", "a34465.html#a78de3db1910706fe7be8fa5ba5579dc3", null ],
-    [ "ReadData", "a34465.html#aaddf0cf3fa0d73a1b6f5747d0e7b890e", null ],
-    [ "Save", "a34465.html#a81b623142cbdc5c254c57d2b4f3b56fe", null ]
+    [ "operator+=", "a34465.html#a9226f6f5ba874e2494e9ba38d8870858", null ],
+    [ "operator-=", "a34465.html#a6791f722b7917711ea8d8bd42d1f238c", null ],
+    [ "operator[]", "a34465.html#a1f8be50017684c331630cb30d64098d5", null ],
+    [ "operator[]", "a34465.html#afc41066cbf2787ffb952d199a0640273", null ],
+    [ "operator[]", "a34465.html#a8fd45d6bd8623e3e9cb6ab596ef793c5", null ],
+    [ "operator[]", "a34465.html#a4bfda637ac9887bb9676f301e40861be", null ],
+    [ "operator[]", "a34465.html#a13fb7c75bc86816537184abbd357f988", null ],
+    [ "operator[]", "a34465.html#a89e1d07567203a75fb40e38c597fe431", null ]
 ];

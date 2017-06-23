@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alicorn: Раздел Externals</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Версия: 3.7.7 Revision: 2662 Platform: x64 Build: 16:10 23 Июнь 2017</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a36687.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Раздел Externals </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1>Введение </h1>
+<p>Раздел для внешних библиотек.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Папка Externals игнорируется Doxygen при обработке, поэтому файл описания раздела находится в папке документации решения.</dd></dl>
+<h2>Файлы свойств </h2>
+<h3>Solution.props</h3>
+<p>Общая страница свойств решения.</p><ul>
+<li>Все проекты должны включать эту страницу свойств (это обеспечивается надстройкой Properties).</li>
+<li>Рекомендуемое расположение - в папке '\Solution' (путь к папке задается как параметр <b>PathToSolutionProps</b> надстройки в разделе VisualStudio).</li>
+<li>Содержит свойства, специфичные для данного решения.</li>
+<li>Должна включать в качестве дочерней Externals\Externals.Windows.props или Externals\Externals.Android.props.</li>
+</ul>
+<h3>Clean.props</h3>
+<p>Страница свойств, содержащая в качестве события перед построением удаление временных файлов, образующихся при построении проектов решения (должна подключаться к проекту Clean, который используется в скрипте полной сборки решения перед построением всех проектов решения).</p>
+<h3>RunSolutionTests.props</h3>
+<p>Страница свойств, содержащая в качестве события после построения скрипт запуска всех тестов решения в скрытом режиме и выводом результата в документацию решения (должен подключаться во все конфигурации x64 проекта BuildAll, используемого в скрипте построения всех проектов решения).</p>
+<h3>Coverage.props</h3>
+<p>Страница свойств, содержащая в качестве события после построения скрипт запуска всех тестов решения с подсчетом покрытия кода тестами (должна подключаться к конфигурации Debug|x64 проекта BuildAll, используемого в скрипте построения всех проектов решения).</p>
+<p>Должна идти в списке страниц свойств после RunSolutionTests.props.</p>
+<h3>Windows.props и Android.props</h3>
+<p>Страницы свойств, содержащие специфические настройки, присущие только Windows или Android проектам.</p>
+<p>Включают в качестве дочерней страницу свойств Default.props (см. ниже).</p>
+<h3>Default.props</h3>
+<p>Страница свойств, содержащая настройки проектов по умолчанию:</p><ul>
+<li>Макрос $(IsBinary): 'Yes' для проектов Exe и Dll и 'No' для Lib.</li>
+<li>Макрос $(IsTest): 'Yes' для проектов тестирования.</li>
+<li>Макрос $(PartName): имя раздела проекта (состоит из имен папок между папкой решения и проекта, разделенных точками).</li>
+<li>Макрос $(TypeProjectDir): имя вложенной папки для результата построения проекта ('Bin' для Exe и Dll, 'Lib' для Lib и 'Test' для проектов тестирования).</li>
+<li>Путь к выходному каталогу (папка Result в папке решения + тип проекта (Bin, Lib или Test) + имя платформы (x86 или x64)).</li>
+<li>Путь к промежуточному каталогу (в папку Temp в папке решения + промежуточные папки, чтобы исключить конфликт проектов с одинаковыми именами в разных разделах).</li>
+<li>Имя файла результата (к проекту статической библиотеки добавляется имя раздела и имя конфигурации).</li>
+<li>Путь '$(SolutionDir)\Solution\Solution' в качестве дополнительного каталога включения заголовочных файлов.</li>
+<li>Формат отладочной информации установлен в 'База данных программы', чтобы убрать предупреждение 'warning D9007: для "/Gm" требуется "/Zi или /ZI"'.</li>
+<li>Включен 4-й уровень предупреждений (в создаваемых проектах наследовать свойство от родителя явным образом, т.к. по умолчанию установлен 3-й уровень предупреждений).</li>
+<li>Параметр 'Компоновать библиотеки из зависимостей' установлен в 'Нет' для того, чтобы exe-шники, зависящие от dll не требовали соответствующих .lib файлов.</li>
+<li>Создание .pdb файла в папке промежуточного результата.</li>
+</ul>
+<h3>Lib.props</h3>
+<p>Образец страницы свойств для копирования в папки внешних библиотек. Файл следует скопировать в папку библиотеки и добавить его как дочернюю страницу свойств для страницы свойств Externals.props. Содержит:</p><ul>
+<li>Макрос : путь к папке, в которой расположен этот файл.</li>
+<li>Дополнительный каталог включения заголовочных файлов \include.</li>
+<li>Дополнительные каталоги поиска файлов библиотек \Lib\ и \Lib\\vs.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Предполагается, что файлы библиотеки будут расположены в папке со следующей иерархией: <br />
+ ExampleLib <br />
+ |- include // Папка заголовочных файлов <br />
+ |- lib <br />
+ ...|- x86 // Lib'ы x86 для всех версий Visual Studio <br />
+ ...|..|- vs120 // Lib'ы x86 только для VS2013 <br />
+ ...|- x64 // Lib'ы x64 для всех версий Visual Studio <br />
+ ......|- vs120 // Lib'ы x64 только для VS2013 </dd></dl>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a36695.html">Alicorn</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 23 Июн 2017 16:10:59. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

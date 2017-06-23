@@ -1,4 +1,5 @@
 var a35293 =
 [
-    [ "GetData", "a35293.html#ac1c6d298dbc678e8472911c6931e71a2", null ]
+    [ "Core", "a35293.html#a1acf734b09cac8bccc8529ad1ab65abd", null ],
+    [ "GetData", "a35293.html#a89362a8be8b38b14af4a5fe4c0af0de2", null ]
 ];

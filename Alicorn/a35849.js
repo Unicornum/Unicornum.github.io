@@ -1,8 +1,4 @@
 var a35849 =
 [
-    [ "Close", "a35849.html#a2749e3046778ca187fac050b0c351f12", null ],
-    [ "Open", "a35849.html#a37da7420fe38991d10c0355ba02a658c", null ],
-    [ "Read", "a35849.html#ad71e46bb96b72cb4c74a85e6c2c8043a", null ],
-    [ "Seek", "a35849.html#a9fb77fb8f00303f8e3714d77446e1e8f", null ],
-    [ "Tell", "a35849.html#a9891560f9daf82d6f8ed76933345c875", null ]
+    [ "SetSections", "a35849.html#a8c150231812d3b9c8642f5a70816c0d0", null ]
 ];

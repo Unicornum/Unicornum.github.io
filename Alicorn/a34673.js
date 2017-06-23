@@ -1,5 +1,7 @@
 var a34673 =
 [
-    [ "GetOptions", "a34673.html#a0feb62d4e4c1c5e49a723dbbd38c5a98", null ],
-    [ "OnInit", "a34673.html#a0dd1ad93046aa82f7e599351a50e48fd", null ]
+    [ "Search", "a34673.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+    [ "Search", "a34673.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+    [ "GetCoincided", "a34673.html#ac47a0e77307574c8285cd64799f646c0", null ],
+    [ "IsSearch", "a34673.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
 ];
