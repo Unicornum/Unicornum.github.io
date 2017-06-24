@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Externals: Сборка Cocos2d для Android</title>
+<title>Externals: Построение для Windows</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Externals
-   &#160;<span id="projectnumber">Версия: 1.0.0 Revision: 114 Platform: x64 Build: 22:52 21 Июнь 2017</span>
+   &#160;<span id="projectnumber">Версия: 1.0.0 Revision: 117 Platform: x64 Build: 12:05 24 Июнь 2017</span>
    </div>
    <div id="projectbrief">Страница используемых сторонних библиотек/утилит</div>
   </td>
@@ -83,50 +83,70 @@ $(document).ready(function(){initNavTree('a31108.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Сборка Cocos2d для Android </div>  </div>
+<div class="title">Построение для Windows </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Создание проекта </h2>
-<dl class="section pre"><dt>Предусловие</dt><dd>Для сборки требуются установленные Android SDK, NDK и Apache Ant.</dd>
-<dd>
-Сборка производилась:<ul>
-<li>21.10.2016</li>
-<li>Android SDK (Android Studio 2.1).</li>
-<li>Crystax-ndk-10.3.2</li>
-<li>apache-ant-1.9.7</li>
-<li>cocos2d-x-3.13.1</li>
-<li>python-2.7.12</li>
+<div class="textblock"><h2>Boost </h2>
+<p>Домашняя страница: <a href="http://www.boost.org/">Boost</a>.</p>
+<p>Построение всех возможных вариантов: </p><div class="fragment"><div class="line">bootstrap.bat</div><div class="line">b2.exe</div></div><!-- fragment --><p> Построение только нужных библиотек: </p><div class="fragment"><div class="line">bootstrap.bat</div><div class="line">b2.exe --build-type=minimal msvc stage --with-filesystem</div></div><!-- fragment --><p> Построение для конкретной версии Visual Studio: </p><div class="fragment"><div class="line"><span class="comment">// Для VS2008</span></div><div class="line">bootstrap.bat vc9</div><div class="line">b2.exe toolset=msvc-9.0</div></div><!-- fragment --><p> <a href="http://devsql.blogspot.ru/2007/05/building-boost-134-for-x86-x64-and-ia64.html">Построение для x64</a>.</p>
+<h3>Конфликт в DLL, построенной на базе MFC</h3>
+<p>Проявляется как assert'ы в файлах dllinit.cpp и dllmodul.cpp при загрузке DLL.</p>
+<p>Для решения проблемы, закомментировать в файле ./libs/thread/src/win32/tss_pe.cpp строку </p><div class="fragment"><div class="line"><span class="comment">// extern BOOL (WINAPI * const _pRawDllMain)(HANDLE, DWORD, LPVOID)=&amp;dll_callback;</span></div></div><!-- fragment --><p> и пересобрать lib'ы. Также нужно будет при выгрузке библиотеки вызвать </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;boost/thread/detail/tss_hooks.hpp&gt;</span></div><div class="line">on_process_exit();</div></div><!-- fragment --><h2>Poco </h2>
+<p>Домашняя страница <a href="http://pocoproject.org/">Poco</a>.</p>
+<h3>Построение</h3>
+<p>Использование buildwin.cmd: </p><div class="fragment"><div class="line"></div><div class="line">buildwin.cmd</div><div class="line"></div><div class="line">Usage:</div><div class="line">------</div><div class="line">buildwin VS_VERSION [ACTION] [LINKMODE] [CONFIGURATION] [PLATFORM] [SAMPLES] [TESTS] [TOOL]</div><div class="line">VS_VERSION:    <span class="stringliteral">&quot;90|100|110|120&quot;</span></div><div class="line">ACTION:        <span class="stringliteral">&quot;build|rebuild|clean&quot;</span></div><div class="line">LINKMODE:      <span class="stringliteral">&quot;static_mt|static_md|shared|all&quot;</span></div><div class="line">CONFIGURATION: <span class="stringliteral">&quot;release|debug|both&quot;</span></div><div class="line">PLATFORM:      <span class="stringliteral">&quot;Win32|x64|WinCE|WEC2013&quot;</span></div><div class="line">SAMPLES:       <span class="stringliteral">&quot;samples|nosamples&quot;</span></div><div class="line">TESTS:         <span class="stringliteral">&quot;tests|notests&quot;</span></div><div class="line">TOOL:          <span class="stringliteral">&quot;devenv|vcexpress|wdexpress|msbuild&quot;</span></div><div class="line"></div><div class="line">Default is build all.</div></div><!-- fragment --><p> Для построения без отладочной информации открыть нужное решение в папке Foundation, в свойствах проекта в разделе "C\C++" параметр "Формат
+   отладочных данных" установить в "Нет".</p>
+<h2>wxWidgets </h2>
+<p>Домашняя страница: <a href="https://www.wxwidgets.org/">wxWidgets</a>.</p>
+<h3>Построение для Windows</h3>
+<ul>
+<li>Скачать <a href="http://www.wxwidgets.org/downloads/">инсталлятор</a>.</li>
+<li>Установить библиотеку.</li>
+<li>Открыть решение для нужной версии Visual Studio в папке build\msw.</li>
+<li>Отключить UniCA (чтобы она не подключала Version.rc) и собрать все решение (результат построения будет в папке lib).</li>
+<li>Не используемые библиотеки добавить в Lib.props (параметр "Игнорировать библиотеки в разделе Компоновщик -&gt; Ввод).</li>
+</ul>
+<h3>Полезные ссылки</h3>
+<ol type="1">
+<li><a href="http://wx.cdelta.org/">Перевод книги</a>.</li>
+<li><a href="http://sourceforge.net/projects/wxformbuilder/">Визуальный редактор форм</a>.</li>
+</ol>
+<h2>Crypto++ </h2>
+<p>Домашняя страница <a href="https://www.cryptopp.com/">Crypto++</a></p>
+<h3>Построение для Windows</h3>
+<ul>
+<li>Скачать архив, распаковать его и открыть решение cryptest.sln.</li>
+<li>В свойствах проекта cryptlib:<ul>
+<li>C\C++ -&gt; Общее -&gt; Формат отладочной информации поставит в <b>Нет</b>.</li>
+<li>C\C++ -&gt; Создание кода -&gt; Библиотека времени выполнения - в 'Многопоточная (отладка) DLL'.</li>
+</ul>
+</li>
+<li>Собрать нужные конфигурации.</li>
+</ul>
+<h2>FreeImage </h2>
+<p>Домашняя страница <a href="http://freeimage.sourceforge.net/">FreeImage</a></p>
+<h3>Построение для Windows</h3>
+<ul>
+<li>Скачать архив, распаковать его и открыть подходящее решение.</li>
+<li>В свойствах проектов:<ul>
+<li>C\C++ -&gt; Общее -&gt; Формат отладочной информации поставит в <b>Нет</b>.</li>
+<li>C\C++ -&gt; Создание кода -&gt; Библиотека времени выполнения - в 'Многопоточная (отладка) DLL'.</li>
+</ul>
+</li>
+<li>Собрать нужные конфигурации проекта FreeImageLib.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>В версии 3.17.0 в Visual Studio 2015 в случае ошибки при сборке проекта libTIFF4 закомментировать в файле source/libtiff4/tif_config.h строку <div class="fragment"><div class="line"><span class="preprocessor">#define snprintf _snprintf</span></div></div><!-- fragment --></li>
+<li>По умолчанию библиотека собирается для работы с порядком байт BGRA, но при задании макроса <b>FREEIMAGE_BIGENDIAN</b> (для установки порядка байт RGBA) перестает работать чтение файлов .bmp (похоже, что и сигнатуру файла библиотека пытается читать в обратном порядке байт). </li>
 </ul>
 </dd></dl>
-<p><br />
-</p><ul>
-<li>Скачать <a href="https://www.python.org/downloads/" title="Python download">Python</a>, установить его и добавить путь к файлу python.exe к переменной окружения PATH (<b>ВАЖНО!</b> Cocos2d требует python версий 2.7.x).</li>
-<li>Скачать архив с <a href="http://cocos2d-x.org/download" title="Cocos2d download">Cocos2d</a> и распаковать его.</li>
-<li>Из консоли в папке Cocos2d (запуск из консоли нужен из-за того, что потребуется ввести пути к Android SDK, NDK и Apache Ant; либо можно предварительно установить переменные окружения <b>ANDROID_SDK_ROOT</b>, <b>NDK_ROOT</b> и <b>ANT_ROOT</b>) запустить: <div class="fragment"><div class="line">python setup.py</div></div><!-- fragment --> Будут добавлены переменные окружения для Cocos.</li>
-<li>В консоли (в папке, в которой нужно создать проект; <b>ВАЖНО!</b> В пути не должно быть русских букв!) для сборки библиотеки выполнить: <div class="fragment"><div class="line">cocos <span class="keyword">new</span> Cocos2d -l cpp -d Cocos2dLib</div></div><!-- fragment --></li>
-<li>В сгенерированную папку Cocos2dLib\Cocos2d скопировать содержимое <a href="https://github.com/Unicornum/Android/tree/master/Cocos2d/v3.13.1/Vs2015" title="Visual Studio Cocos Solution">VSSolution</a>.</li>
-</ul>
-<p>Решение в папке Cocos2dLib\Cocos2d\proj.visualstudio можно собрать и использовать для создания приложений.</p>
-<h2>Сборка Cocos2d-x как статической библиотеки </h2>
-<ul>
-<li>В папке Cocos2dLib\Cocos2d\proj.visualstudio открыть решение, у проекта <b>Cocos2dcpp</b> удалить папку jni, формат отладочной информации поставить в <b>Нет</b>, изменить свойства проекта:</li>
-</ul>
-<div class="image">
-<img src="Cocos2dProps.png" alt="Cocos2dProps.png"/>
-</div>
-<p>и собрать Release и Debug версии.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Статическая библиотека таким образом собирается, <b>НО</b>(!), во-первых cpu-features нужно собирать как отдельную библиотеку (и ставить ее после webp), во-вторых - при построении .so файла с использованием такой библиотеки он не задействует файлы, указанные в дополнительных зависимостях компоновщика (libOpenSLES.so, libEGL.so, libz.a), из-за чего приходится подключать libz явным образом (и подхватывается библиотека, конфликтующая с libpng) и файл результата оказывается гораздо меньшего размера и не работает при запуске на Android-устройстве.</dd></dl>
-<p>Источники:</p><ul>
-<li><a href="https://blogs.msdn.microsoft.com/vcblog/2016/07/12/cocos2d-x-visual-studio-android-project/" title="Статья на сайте Microsoft">Cocos2dVSMicrosoft</a></li>
-<li><a href="http://cocos2d-x.org/docs/installation/Android-VisualStudio/" title="Статья на сайте Cocos2d">Cocos2dVsCocos</a> </li>
-</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Используемые библиотеки/утилиты</a></li><li class="navelem"><a class="el" href="a31106.html">Построение для Android</a></li>
-    <li class="footer">Документация по Externals. Последние изменения: Ср 21 Июн 2017 22:52:46. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Используемые библиотеки/утилиты</a></li>
+    <li class="footer">Документация по Externals. Последние изменения: Сб 24 Июн 2017 12:05:47. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>
