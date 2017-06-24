@@ -1,6 +1,6 @@
 var namespaces =
 [
     [ "com", null, [
-      [ "Example", "a31233.html", null ]
+      [ "Example", "a31925.html", null ]
     ] ]
 ];

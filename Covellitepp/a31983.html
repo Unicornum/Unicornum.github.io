@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Covellite++: Класс covellite::Application</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Версия: 1.0.3 Revision: 269 Platform: ARM Build: 23:20 24 Июнь 2017</span>
+   </div>
+   <div id="projectbrief">GUI фреймворк для разработки Android-приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a31983.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="a31980.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс covellite::Application<div class="ingroups"><a class="el" href="a31919.html">Covellite++</a> &raquo; <a class="el" href="a31920.html">Core</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс входит в проект <a class="el" href="a32400.html">Covellite.Core</a> <br />
+ Базовый класс приложения для Android.  
+ <a href="a31983.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00053_source.html">Application.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:covellite::Application:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31982.png" border="0" usemap="#covellite_1_1_application_inherit__map" alt="Inheritance graph"/></div>
+<map name="covellite_1_1_application_inherit__map" id="covellite_1_1_application_inherit__map">
+<area shape="rect" id="node3" href="a32327.html" title="Класс входит в проект Example &#160;&#160;Класс главного объекта (точка входа) программы. " alt="" coords="55,499,200,621"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса covellite::Application:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31981.png" border="0" usemap="#covellite_1_1_application_coll__map" alt="Collaboration graph"/></div>
+<map name="covellite_1_1_application_coll__map" id="covellite_1_1_application_coll__map">
+<area shape="rect" id="node2" href="a31975.html" title="{android_app\n|+ userData\l+ onAppCmd\l+ onInputEvent\l+ activity\l+ config\l+ savedState\l+ savedStateSize\l+ looper\l+ inputQueue\l+ window\lи 16 больше...\l|}" alt="" coords="212,5,351,229"/>
+<area shape="rect" id="node4" href="a31971.html" title="{android_poll_source\n|+ id\l+ process\l+ m_Commands\l+ m_Index\l|}" alt="" coords="275,461,427,582"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a3133848217f57668e63f10f43e0453d1"><td class="memTemplParams" colspan="2">template&lt;class TWindow &gt; </td></tr>
+<tr class="memitem:a3133848217f57668e63f10f43e0453d1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a31983.html#a3133848217f57668e63f10f43e0453d1">CreateMainWindow</a> (void)</td></tr>
+<tr class="memdesc:a3133848217f57668e63f10f43e0453d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания главного окна программы.  <a href="#a3133848217f57668e63f10f43e0453d1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3133848217f57668e63f10f43e0453d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c15c2869d387d24b3b9a72844fc92f"><td class="memItemLeft" align="right" valign="top"><a id="aa5c15c2869d387d24b3b9a72844fc92f"></a>
+<a class="el" href="a32031.html">covellite::Window</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#aa5c15c2869d387d24b3b9a72844fc92f">GetMainWindow</a> (void) const</td></tr>
+<tr class="memdesc:aa5c15c2869d387d24b3b9a72844fc92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения объекта главного окна программы. <br /></td></tr>
+<tr class="separator:aa5c15c2869d387d24b3b9a72844fc92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be55ba0c8c09e764764bbad9a97900a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a9be55ba0c8c09e764764bbad9a97900a">Run</a> (bool) noexcept</td></tr>
+<tr class="memdesc:a9be55ba0c8c09e764764bbad9a97900a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция запуска главного цикла программы.  <a href="#a9be55ba0c8c09e764764bbad9a97900a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9be55ba0c8c09e764764bbad9a97900a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ab0bba393bfbd79d7e56017c69bdd73c0"><td class="memItemLeft" align="right" valign="top">VIRTUAL_MOCK bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#ab0bba393bfbd79d7e56017c69bdd73c0">PostCommand</a> (int) const</td></tr>
+<tr class="memdesc:ab0bba393bfbd79d7e56017c69bdd73c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызова сигнала произошедшего события..  <a href="#ab0bba393bfbd79d7e56017c69bdd73c0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab0bba393bfbd79d7e56017c69bdd73c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cf47e5d722079021867876577835da8"><td class="memItemLeft" align="right" valign="top">VIRTUAL_MOCK void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a7cf47e5d722079021867876577835da8">PostCommandDrawWindow</a> (void) const</td></tr>
+<tr class="memdesc:a7cf47e5d722079021867876577835da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызова сигнала отрисовки окна.  <a href="#a7cf47e5d722079021867876577835da8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7cf47e5d722079021867876577835da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad55df1cd554239507e39a31766d48cce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#ad55df1cd554239507e39a31766d48cce">OnLostFocus</a> (void)</td></tr>
+<tr class="memdesc:ad55df1cd554239507e39a31766d48cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при потере программой пользовательского фокуса.  <a href="#ad55df1cd554239507e39a31766d48cce">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad55df1cd554239507e39a31766d48cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceba072db1b8315e9210e011870c0fc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#aceba072db1b8315e9210e011870c0fc7">OnGainedFocus</a> (void)</td></tr>
+<tr class="memdesc:aceba072db1b8315e9210e011870c0fc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при возврате программе пользовательского фокуса.  <a href="#aceba072db1b8315e9210e011870c0fc7">Подробнее...</a><br /></td></tr>
+<tr class="separator:aceba072db1b8315e9210e011870c0fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77b00aefe19cc067d0a2713d546ea536"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a77b00aefe19cc067d0a2713d546ea536">OnStop</a> (void)</td></tr>
+<tr class="memdesc:a77b00aefe19cc067d0a2713d546ea536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при завершении работы NativeActivity.  <a href="#a77b00aefe19cc067d0a2713d546ea536">Подробнее...</a><br /></td></tr>
+<tr class="separator:a77b00aefe19cc067d0a2713d546ea536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e7041713ab3c103a502751bc76116e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a99e7041713ab3c103a502751bc76116e">OnPause</a> (void)</td></tr>
+<tr class="memdesc:a99e7041713ab3c103a502751bc76116e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при переходе программы в режим паузы.  <a href="#a99e7041713ab3c103a502751bc76116e">Подробнее...</a><br /></td></tr>
+<tr class="separator:a99e7041713ab3c103a502751bc76116e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a845b2299ca8012ac9a766f5e01f820b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a845b2299ca8012ac9a766f5e01f820b8">OnResume</a> (void)</td></tr>
+<tr class="memdesc:a845b2299ca8012ac9a766f5e01f820b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при выходе из режима паузы.  <a href="#a845b2299ca8012ac9a766f5e01f820b8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a845b2299ca8012ac9a766f5e01f820b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a687f9fbf9de940ec1db20780c2bb4643"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a687f9fbf9de940ec1db20780c2bb4643">ProcessWindowRedrawNeeded</a> (void)</td></tr>
+<tr class="memdesc:a687f9fbf9de940ec1db20780c2bb4643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при необходимости перерисовки окна.  <a href="#a687f9fbf9de940ec1db20780c2bb4643">Подробнее...</a><br /></td></tr>
+<tr class="separator:a687f9fbf9de940ec1db20780c2bb4643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01903f2a904164b446a959b6d04d369"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#ab01903f2a904164b446a959b6d04d369">OnTerminateWindow</a> (void)</td></tr>
+<tr class="memdesc:ab01903f2a904164b446a959b6d04d369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при необходимости уничтожения окна.  <a href="#ab01903f2a904164b446a959b6d04d369">Подробнее...</a><br /></td></tr>
+<tr class="separator:ab01903f2a904164b446a959b6d04d369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a3f0f02fa7ae0c29ecf3a6ef90be18dd7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a31983.html#a3f0f02fa7ae0c29ecf3a6ef90be18dd7">CommandHandler</a> (<a class="el" href="a31975.html">android_app</a> *, Command_t) noexcept</td></tr>
+<tr class="memdesc:a3f0f02fa7ae0c29ecf3a6ef90be18dd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызова сигнала для полученной команды.  <a href="#a3f0f02fa7ae0c29ecf3a6ef90be18dd7">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3f0f02fa7ae0c29ecf3a6ef90be18dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a32400.html">Covellite.Core</a> <br />
+ Базовый класс приложения для Android. </p>
+<ul>
+<li>Содержит главный цикл приложения и вызов сигналов для полученных сообщений.</li>
+<li>Для создания объекта приложения следует создать класс-наследник от этого класса и в его конструкторе подписаться на сообщения, которые следует обрабатывать.</li>
+<li>Для того, чтобы при смене ориентации устройства программа не завершалась, необходимо в AndroidManifest.xml добавить <div class="fragment"><div class="line">&lt;activity ...</div><div class="line">  android:configChanges=<span class="stringliteral">&quot;keyboardHidden|orientation|screenSize&quot;</span>&gt;</div></div><!-- fragment --> При этом отслеживать изменение ориентации следует по событию <b>APP_CMD_WINDOW_REDRAW_NEEDED</b> (событиями <b>APP_CMD_CONFIG_CHANGED</b> и <b>APP_CMD_CONTENT_RECT_CHANGED</b> лучше не пользоваться, т.к. при получении этого события функции класса <a class="el" href="a32031.html" title="Класс входит в проект Covellite.Core   Базовый класс главного окна программы. ">Window</a> GetWidth() и GetHeight() могут возвращать старые размеры экрана).</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+ </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>17 Ноябрь 2016 <br />
+ 26 Декабрь 2016 <br />
+ </dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a3f0f02fa7ae0c29ecf3a6ef90be18dd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0f02fa7ae0c29ecf3a6ef90be18dd7">&#9670;&nbsp;</a></span>CommandHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::CommandHandler </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a31975.html">android_app</a> *&#160;</td>
+          <td class="paramname"><em>_pApp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Command_t&#160;</td>
+          <td class="paramname"><em>_Command</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызова сигнала для полученной команды. </p>
+<ul>
+<li>Если при вызове сигнала произойдет исключение, будет вызван сигнал с идентификатором APP_CMD_ERROR, в качестве параметра которому будет передано описание произошедшего исключения).</li>
+<li>При первом старте, а также повторном старте после прерывания главной кнопкой программа (в обоих случаях заново запускается функция androi_main()) получает сообщения:<ul>
+<li>APP_CMD_START</li>
+<li>APP_CMD_RESUME</li>
+<li>APP_CMD_INPUT_CHANGED</li>
+<li>APP_CMD_INIT_WINDOW</li>
+<li>APP_CMD_CONTENT_RECT_CHANGED</li>
+<li>APP_CMD_GAINED_FOCUS</li>
+<li>APP_CMD_WINDOW_REDRAW_NEEDED</li>
+</ul>
+</li>
+<li>При активации и разблокировке устройства:<ul>
+<li>APP_CMD_START</li>
+<li>APP_CMD_RESUME</li>
+<li>APP_CMD_GAINED_FOCUS</li>
+</ul>
+</li>
+<li>При отключении экрана:<ul>
+<li>APP_CMD_PAUSE</li>
+<li>APP_CMD_SAVE_STATE</li>
+<li>APP_CMD_STOP</li>
+<li>APP_CMD_LOST_FOCUS</li>
+</ul>
+</li>
+<li>При нажатии HOME во время работы:<ul>
+<li>APP_CMD_PAUSE</li>
+<li>APP_CMD_LOST_FOCUS</li>
+<li>APP_CMD_SAVE_STATE</li>
+<li>APP_CMD_STOP - после этого возникает ошибка рисования</li>
+</ul>
+</li>
+<li>При перекрытии программы другой программой:<ul>
+<li>APP_CMD_PAUSE - после этого возникает ошибка рисования</li>
+<li>APP_CMD_LOST_FOCUS</li>
+<li>APP_CMD_TERM_WINDOW</li>
+</ul>
+</li>
+<li>При вызове ANativeActivity_finish():<ul>
+<li>APP_CMD_PAUSE</li>
+<li>APP_CMD_LOST_FOCUS</li>
+<li>APP_CMD_TERM_WINDOW</li>
+</ul>
+</li>
+<li>При остановке/удалении программы из диспетчера задач никаких сообщений не приходит.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pApp</td><td>Указатель на объект, содержащий информацию о текущей программе (не используется). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Command</td><td>Команда, полученная приложением (см. <a class="el" href="a00044_source.html">android_native_app_glue.h</a>, перечисление, начинающееся с APP_CMD_INPUT_CHANGED). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3133848217f57668e63f10f43e0453d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3133848217f57668e63f10f43e0453d1">&#9670;&nbsp;</a></span>CreateMainWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TWindow &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void covellite::Application::CreateMainWindow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция создания главного окна программы. </p>
+<ul>
+<li>Функция должна быть вызвана в классе главного объекта программы в функции обработки сообщения APP_CMD_INIT_WINDOW.</li>
+<li>Функция создает объект главного окна программы класса, указанного в качестве параметра шаблона.</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TWindow</td><td>Класс главного окна программы (должен быть наследником от класса <a class="el" href="a32031.html" title="Класс входит в проект Covellite.Core   Базовый класс главного окна программы. ">covellite::Window</a>).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31983_a3133848217f57668e63f10f43e0453d1_cgraph.png" border="0" usemap="#a31983_a3133848217f57668e63f10f43e0453d1_cgraph" alt=""/></div>
+<map name="a31983_a3133848217f57668e63f10f43e0453d1_cgraph" id="a31983_a3133848217f57668e63f10f43e0453d1_cgraph">
+<area shape="rect" id="node3" href="a31983.html#a687f9fbf9de940ec1db20780c2bb4643" title="Функция вызывается при необходимости перерисовки окна. " alt="" coords="217,5,450,46"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aceba072db1b8315e9210e011870c0fc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceba072db1b8315e9210e011870c0fc7">&#9670;&nbsp;</a></span>OnGainedFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::OnGainedFocus </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при возврате программе пользовательского фокуса. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_GAINED_FOCUS</b>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ad55df1cd554239507e39a31766d48cce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad55df1cd554239507e39a31766d48cce">&#9670;&nbsp;</a></span>OnLostFocus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::OnLostFocus </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при потере программой пользовательского фокуса. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_LOST_FOCUS</b>. </li>
+</ul>
+
+</div>
+</div>
+<a id="a99e7041713ab3c103a502751bc76116e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99e7041713ab3c103a502751bc76116e">&#9670;&nbsp;</a></span>OnPause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::OnPause </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при переходе программы в режим паузы. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_PAUSE</b>. </li>
+</ul>
+
+</div>
+</div>
+<a id="a845b2299ca8012ac9a766f5e01f820b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a845b2299ca8012ac9a766f5e01f820b8">&#9670;&nbsp;</a></span>OnResume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::OnResume </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при выходе из режима паузы. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_RESUME</b>. </li>
+</ul>
+
+</div>
+</div>
+<a id="a77b00aefe19cc067d0a2713d546ea536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77b00aefe19cc067d0a2713d546ea536">&#9670;&nbsp;</a></span>OnStop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::OnStop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при завершении работы NativeActivity. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_STOP</b>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ab01903f2a904164b446a959b6d04d369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab01903f2a904164b446a959b6d04d369">&#9670;&nbsp;</a></span>OnTerminateWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::OnTerminateWindow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при необходимости уничтожения окна. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_TERM_WINDOW</b>. </li>
+</ul>
+
+</div>
+</div>
+<a id="ab0bba393bfbd79d7e56017c69bdd73c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0bba393bfbd79d7e56017c69bdd73c0">&#9670;&nbsp;</a></span>PostCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Application::PostCommand </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_EventTimeOut</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызова сигнала произошедшего события.. </p>
+<ul>
+<li>При появлении события будет вызвана функция <a class="el" href="a31983.html#a3f0f02fa7ae0c29ecf3a6ef90be18dd7" title="Функция вызова сигнала для полученной команды. ">CommandHandler()</a>, вторым параметром которой будет передан идентификатор произошедшего события.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_EventTimeOut</td><td>Время (в миллисекундах) ожидания события; функция вернет управление вызвавшему потоку через указанное время. <br />
+ -1 - Функция вернет управление вызвавшему потоку только в случае появления события.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> <ul>
+<li>Появилось событие и был вызыван сигнал этого события. </li>
+</ul>
+</dd>
+<dd>
+<b>false</b> <ul>
+<li>События не было (истекло указанное в качестве параметра время ожидания). </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a id="a7cf47e5d722079021867876577835da8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cf47e5d722079021867876577835da8">&#9670;&nbsp;</a></span>PostCommandDrawWindow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::PostCommandDrawWindow </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызова сигнала отрисовки окна. </p>
+<ul>
+<li>Если приложение находится в режиме паузы, функция не будет вызывать сигнал отрисовки окна. </li>
+</ul>
+
+</div>
+</div>
+<a id="a687f9fbf9de940ec1db20780c2bb4643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a687f9fbf9de940ec1db20780c2bb4643">&#9670;&nbsp;</a></span>ProcessWindowRedrawNeeded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::ProcessWindowRedrawNeeded </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вызывается при необходимости перерисовки окна. </p>
+<ul>
+<li>Функция обработки события <b>APP_CMD_WINDOW_REDRAW_NEEDED</b>. </li>
+</ul>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31983_a687f9fbf9de940ec1db20780c2bb4643_icgraph.png" border="0" usemap="#a31983_a687f9fbf9de940ec1db20780c2bb4643_icgraph" alt=""/></div>
+<map name="a31983_a687f9fbf9de940ec1db20780c2bb4643_icgraph" id="a31983_a687f9fbf9de940ec1db20780c2bb4643_icgraph">
+<area shape="rect" id="node3" href="a31983.html#a3133848217f57668e63f10f43e0453d1" title="Функция создания главного окна программы. " alt="" coords="289,5,450,46"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9be55ba0c8c09e764764bbad9a97900a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9be55ba0c8c09e764764bbad9a97900a">&#9670;&nbsp;</a></span>Run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Application::Run </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>_IsContinuousDrawing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция запуска главного цикла программы. </p>
+<ul>
+<li>Обеспечивает извлечение и обработку получаемых программой сообщений APP_CMD_INIT_WINDOW, APP_CMD_TERM_WINDOW и т.д.).</li>
+<li>Появление события приведет к вызову функции <a class="el" href="a31983.html#a3f0f02fa7ae0c29ecf3a6ef90be18dd7" title="Функция вызова сигнала для полученной команды. ">CommandHandler()</a>, которая вызовет соответствующий сигнал.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_IsContinuousDrawing</td><td><b>true</b> - непрерывный вызов сигнала обновления окна программы. <br />
+ <b>false</b> - вызов сигнала обновления окна программы только после полученного события. <br />
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a31983_a9be55ba0c8c09e764764bbad9a97900a_icgraph.png" border="0" usemap="#a31983_a9be55ba0c8c09e764764bbad9a97900a_icgraph" alt=""/></div>
+<map name="a31983_a9be55ba0c8c09e764764bbad9a97900a_icgraph" id="a31983_a9be55ba0c8c09e764764bbad9a97900a_icgraph">
+<area shape="rect" id="node3" href="a31924.html#gae196471a5ed5c949c7e86fc3a1f217e7" title="Функция главной точки входа приложения, которую запускает android_native_app_glue. " alt="" coords="251,5,359,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Covellite/include/Covellite/Core/<a class="el" href="a00053_source.html">Application.hpp</a></li>
+<li>Solution/Solution/Covellite/include/Covellite/Core/Application.inl</li>
+<li>Solution/Solution/Covellite.Core/Covellite.Core/Application.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><a class="el" href="a31983.html">Application</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 24 Июн 2017 23:20:28. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

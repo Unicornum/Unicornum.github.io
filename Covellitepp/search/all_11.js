@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['userdatahelper',['UserDataHelper',['../a31407.html',1,'covellite']]]
+  ['userdatahelper',['UserDataHelper',['../a32111.html',1,'covellite']]]
 ];
