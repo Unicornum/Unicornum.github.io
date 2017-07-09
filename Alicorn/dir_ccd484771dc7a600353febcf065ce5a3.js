@@ -7,7 +7,7 @@ var dir_ccd484771dc7a600353febcf065ce5a3 =
     [ "dump.hpp", "a01001_source.html", null ],
     [ "process.hpp", "a01010_source.html", null ],
     [ "process.mock.hpp", "a01016_source.html", null ],
-    [ "stdafx.h", "a36874_source.html", null ],
+    [ "stdafx.h", "a36973_source.html", null ],
     [ "winapi-call-proxy.hpp", "a01022_source.html", null ],
     [ "winapi-call.hpp", "a01025_source.html", null ]
 ];

@@ -19,7 +19,7 @@ var dir_77ad837bb722f9d84dfe7cfd8e0ce9cc =
     [ "Test.Text", "dir_f22c4372822f61de06b75023c5a8d3b0.html", "dir_f22c4372822f61de06b75023c5a8d3b0" ],
     [ "Test.TrivialPtr", "dir_742b50dcdbb4427de44b3ee7c74c22c4.html", "dir_742b50dcdbb4427de44b3ee7c74c22c4" ],
     [ "Test.Vector", "dir_462d2a06265e566f5b1dbf682cf06387.html", "dir_462d2a06265e566f5b1dbf682cf06387" ],
-    [ "mock.hpp", "a37741.html", null ],
-    [ "stdafx.h", "a37003_source.html", null ],
+    [ "mock.hpp", "a37840.html", null ],
+    [ "stdafx.h", "a37102_source.html", null ],
     [ "UstrEq.hpp", "a01313_source.html", null ]
 ];
