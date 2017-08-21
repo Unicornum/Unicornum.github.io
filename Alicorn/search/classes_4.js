@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['empty',['Empty',['../a34480.html',1,'alicorn::document::Empty&lt; TIndex &gt;'],['../a35116.html',1,'alicorn::logger::report::Empty']]],
-  ['environment',['Environment',['../a34604.html',1,'alicorn::extension::android']]],
-  ['error',['Error',['../a35096.html',1,'alicorn::logger']]],
-  ['executor',['Executor',['../a36272.html',1,'model']]],
-  ['extradata',['ExtraData',['../a35264.html',1,'alicorn::source::image']]]
+  ['empty',['Empty',['../a35571.html',1,'alicorn::source::document::Empty&lt; TIndex &gt;'],['../a35083.html',1,'alicorn::modules::logger::report::Empty']]],
+  ['environment',['Environment',['../a35739.html',1,'alicorn::system::android']]],
+  ['error',['Error',['../a35063.html',1,'alicorn::modules::logger']]],
+  ['executor',['Executor',['../a36179.html',1,'model']]],
+  ['extradata',['ExtraData',['../a35663.html',1,'alicorn::source::image']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['html',['Html',['../a35124.html',1,'alicorn::logger::report']]],
-  ['htmlabout',['HtmlAbout',['../a35672.html',1,'wx']]],
-  ['htmltestinfo',['HtmlTestInfo',['../a36348.html',1,'wx']]]
+  ['html',['Html',['../a35091.html',1,'alicorn::modules::logger::report']]],
+  ['htmlabout',['HtmlAbout',['../a34919.html',1,'wx']]],
+  ['htmltestinfo',['HtmlTestInfo',['../a36255.html',1,'wx']]]
 ];

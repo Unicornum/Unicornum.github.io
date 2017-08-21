@@ -1,5 +1,0 @@
-var dir_83291693750062cb4ce3a4c08d4cfddc =
-[
-    [ "stdafx.h", "a37036_source.html", null ],
-    [ "Xml_test.cpp", "a01211.html", null ]
-];

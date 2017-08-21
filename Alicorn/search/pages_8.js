@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['patterns',['Patterns',['../a36813.html',1,'AlicornBuildPage']]]
+  ['mfc',['Mfc',['../a36612.html',1,'ExtensionPage']]],
+  ['modules',['Modules',['../a36616.html',1,'SolutionPage']]]
 ];

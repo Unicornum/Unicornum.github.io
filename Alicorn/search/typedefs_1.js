@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ptr',['Ptr',['../a34298.html#gad4085dd85e8b2a6a56c59a92f962d8eb',1,'alicorn::patterns::pimpl']]]
+  ['ptr',['Ptr',['../a34226.html#ga26595abd46883c33939a0be82ad2b5a1',1,'alicorn::modules::patterns::pimpl']]]
 ];

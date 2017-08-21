@@ -25,8 +25,7 @@ var menudata={children:[
 {text:"s",url:"functions_s.html#index_s"},
 {text:"t",url:"functions_t.html#index_t"},
 {text:"u",url:"functions_u.html#index_u"},
-{text:"w",url:"functions_w.html#index_w"},
-{text:"x",url:"functions_x.html#index_x"}]},
+{text:"w",url:"functions_w.html#index_w"}]},
 {text:"Функции",url:"functions_func.html",children:[
 {text:"a",url:"functions_func.html#index_a"},
 {text:"b",url:"functions_func_b.html#index_b"},
@@ -45,8 +44,7 @@ var menudata={children:[
 {text:"s",url:"functions_func_s.html#index_s"},
 {text:"t",url:"functions_func_t.html#index_t"},
 {text:"u",url:"functions_func_u.html#index_u"},
-{text:"w",url:"functions_func_w.html#index_w"},
-{text:"x",url:"functions_func_x.html#index_x"}]},
+{text:"w",url:"functions_func_w.html#index_w"}]},
 {text:"Переменные",url:"functions_vars.html"}]}]},
 {text:"Файлы",url:"files.html",children:[
 {text:"Файлы",url:"files.html"},
