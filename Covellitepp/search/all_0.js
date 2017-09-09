@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['addlayer',['AddLayer',['../a32031.html#a9a556427f48a457812ece8a97a118fee',1,'covellite::Window::AddLayer()'],['../a32095.html#aac059fa9dc08b5dd09ea2f61ef041fbd',1,'covellite::rocket::Window::AddLayer()']]],
-  ['android_5fapp',['android_app',['../a31975.html',1,'']]],
+  ['addlayer',['AddLayer',['../a32056.html#a9a556427f48a457812ece8a97a118fee',1,'covellite::Window::AddLayer()'],['../a32120.html#aac059fa9dc08b5dd09ea2f61ef041fbd',1,'covellite::rocket::Window::AddLayer()']]],
+  ['android_5fapp',['android_app',['../a32000.html',1,'']]],
   ['android_5fapp_5fdraw_5fafter_5fmessage',['ANDROID_APP_DRAW_AFTER_MESSAGE',['../a31920.html#ga3bb90da4f341bb1bb64a62ff2cc2420a',1,'AndroidMain.hpp']]],
   ['android_5fapp_5fdraw_5falways',['ANDROID_APP_DRAW_ALWAYS',['../a31920.html#ga0904ae9b7db264c38d8f7ff4786e996c',1,'AndroidMain.hpp']]],
   ['android_5fmain',['android_main',['../a31924.html#gae196471a5ed5c949c7e86fc3a1f217e7',1,'android_main(struct android_app *app):&#160;AndroidMain.cpp'],['../a31924.html#gae196471a5ed5c949c7e86fc3a1f217e7',1,'android_main(struct android_app *_pAndroidApp):&#160;AndroidMain.cpp']]],
-  ['android_5fpoll_5fsource',['android_poll_source',['../a31971.html',1,'']]],
+  ['android_5fpoll_5fsource',['android_poll_source',['../a31996.html',1,'']]],
   ['app_5fcmd_5fconfig_5fchanged',['APP_CMD_CONFIG_CHANGED',['../a31920.html#ggadf764cbdea00d65edcd07bb9953ad2b7a1e522859766d39850cbc3f1c015b632c',1,'android_native_app_glue.h']]],
   ['app_5fcmd_5fcontent_5frect_5fchanged',['APP_CMD_CONTENT_RECT_CHANGED',['../a31920.html#ggadf764cbdea00d65edcd07bb9953ad2b7a867d94e17fcae1afb7a1518b7716f3f4',1,'android_native_app_glue.h']]],
   ['app_5fcmd_5fdestroy',['APP_CMD_DESTROY',['../a31920.html#ggadf764cbdea00d65edcd07bb9953ad2b7af816e28d8f833b5e9597b40ce725974f',1,'android_native_app_glue.h']]],
@@ -22,6 +22,6 @@ var searchData=
   ['app_5fcmd_5fterm_5fwindow',['APP_CMD_TERM_WINDOW',['../a31920.html#ggadf764cbdea00d65edcd07bb9953ad2b7ae4454163b5148d7feb2c1398e87f1bd5',1,'android_native_app_glue.h']]],
   ['app_5fcmd_5fwindow_5fredraw_5fneeded',['APP_CMD_WINDOW_REDRAW_NEEDED',['../a31920.html#ggadf764cbdea00d65edcd07bb9953ad2b7a1b0e01d7dd6e8ca91e8a51033ca3e59a',1,'android_native_app_glue.h']]],
   ['app_5fcmd_5fwindow_5fresized',['APP_CMD_WINDOW_RESIZED',['../a31920.html#ggadf764cbdea00d65edcd07bb9953ad2b7a448514d4220320ec7a7e7324e019f42c',1,'android_native_app_glue.h']]],
-  ['application',['Application',['../a31983.html',1,'covellite']]],
-  ['application_5ftest_2ecpp',['Application_test.cpp',['../a00155.html',1,'']]]
+  ['application',['Application',['../a32008.html',1,'covellite']]],
+  ['application_5ftest_2ecpp',['Application_test.cpp',['../a00161.html',1,'']]]
 ];
