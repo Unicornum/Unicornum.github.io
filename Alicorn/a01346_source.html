@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходный файл Solution/Solution/System/Application/TestDll/Real.hpp</title>
+<title>Alicorn: Исходный файл Solution/Solution/System/Application/Test.Application/Test.CurrentModule/module-name.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.0 Revision: 2788 Platform: x64 Build: 20:47 21 Август 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2832 Platform: x64 Build: 13:47 09 Сентябрь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,17 +83,17 @@ $(document).ready(function(){initNavTree('a01346_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Real.hpp</div>  </div>
+<div class="title">module-name.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\application\dll\object.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;IReal.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>Real : </div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="keyword">public</span> <a class="code" href="a35807.html">alicorn::system::application::dll::Object</a>,</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <span class="keyword">public</span> IReal</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetValue(<span class="keywordtype">int</span> _Value);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">int</span> GetValue(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  Real(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">virtual</span> ~Real(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div><div class="ttc" id="a35807_html"><div class="ttname"><a href="a35807.html">alicorn::system::application::dll::Object</a></div><div class="ttdoc">Класс входит в Application   Базовый класс объектов, создаваемых в dll. </div><div class="ttdef"><b>Definition:</b> object.hpp:33</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once </span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; <span class="keyword">static</span> <span class="keyword">auto</span> CURRENT_MODULE_NAME = <a class="code" href="a34390.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;System.Application.Test.Application.dll&quot;</span>); </div><div class="ttc" id="a34390_html_ga68c84efa84957c5f819d243a4cb84de9"><div class="ttname"><a href="a34390.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a></div><div class="ttdeci">#define uT(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Ucs2. </div><div class="ttdef"><b>Definition:</b> prefix.hpp:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_c05a346be7573aa13c9f006efe1bd67a.html">TestDll</a></li><li class="navelem"><b>Real.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 21 Авг 2017 20:47:53. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_ada4d8658d320f5d22844142b6fd491d.html">Test.Application</a></li><li class="navelem"><a class="el" href="dir_016e69ce8e24337aba0d958ad628a4aa.html">Test.CurrentModule</a></li><li class="navelem"><b>module-name.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 9 Сен 2017 13:47:38. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

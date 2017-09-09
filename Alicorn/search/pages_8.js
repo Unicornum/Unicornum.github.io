@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mfc',['Mfc',['../a36612.html',1,'ExtensionPage']]],
-  ['modules',['Modules',['../a36616.html',1,'SolutionPage']]]
+  ['mfc',['Mfc',['../a36854.html',1,'ExtensionPage']]],
+  ['modules',['Modules',['../a36858.html',1,'SolutionPage']]]
 ];

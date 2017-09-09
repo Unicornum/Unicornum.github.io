@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходный файл Solution/Solution/System/Windows/Windows/winapi-call.hpp</title>
+<title>Alicorn: Исходный файл Solution/Solution/System/Windows/Windows/dump.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.0 Revision: 2788 Platform: x64 Build: 20:47 21 Август 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2832 Platform: x64 Build: 13:47 09 Сентябрь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,16 +83,18 @@ $(document).ready(function(){initNavTree('a01436_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">winapi-call.hpp</div>  </div>
+<div class="title">dump.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;winapi-call-proxy.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a34240.html#gac67366a4782d98fd71f21ecc3981365b">   36</a></span>&#160;<span class="preprocessor">#define WINAPI_CALL \</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">  CALL_PROXY(::alicorn::system::windows::WinapiCallProxy)</span></div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\lib-info\windows.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a34437.html">alicorn</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>system</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>windows</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="a36109.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36109.html">Dump</a> final</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> Register(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="a36109.html">Dump</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// Создаем тот самый единственный объект класса, который регистрирует</span></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// функцию создания дампа.</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">bool</span> IsDumpRegister = Dump::Register();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace windows</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace system</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a36109_html"><div class="ttname"><a href="a36109.html">alicorn::system::windows::Dump</a></div><div class="ttdoc">Класс входит в Windows   Класс создания дампа программы при ее &quot;падении&quot;. </div><div class="ttdef"><b>Definition:</b> dump.hpp:34</div></div>
+<div class="ttc" id="a34437_html"><div class="ttname"><a href="a34437.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> format.hpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_d84b5d15cfbeae622636776d15695057.html">Windows</a></li><li class="navelem"><a class="el" href="dir_b61495cd5b2a691c61fa356f8146bae0.html">Windows</a></li><li class="navelem"><b>winapi-call.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 21 Авг 2017 20:47:53. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_d84b5d15cfbeae622636776d15695057.html">Windows</a></li><li class="navelem"><a class="el" href="dir_b61495cd5b2a691c61fa356f8146bae0.html">Windows</a></li><li class="navelem"><b>dump.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 9 Сен 2017 13:47:39. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

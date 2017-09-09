@@ -18,7 +18,7 @@ var dir_d9e1277ce6eb969a50c70679da524949 =
     [ "Test.StringCast.Console", "dir_be996b01fa5ebc1da9c21f44eda96cb5.html", "dir_be996b01fa5ebc1da9c21f44eda96cb5" ],
     [ "Test.TrivialPtr", "dir_6849b098b73c7d0d365a4202c427dd7a.html", "dir_6849b098b73c7d0d365a4202c427dd7a" ],
     [ "Test.Vector", "dir_e0d76473a311d3eade704696b3e06faa.html", "dir_e0d76473a311d3eade704696b3e06faa" ],
-    [ "mock.hpp", "a38148.html", null ],
-    [ "stdafx.h", "a36834_source.html", null ],
+    [ "mock.hpp", "a38458.html", null ],
+    [ "stdafx.h", "a37084_source.html", null ],
     [ "UstrEq.hpp", "a00461_source.html", null ]
 ];

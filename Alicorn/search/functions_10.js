@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['undo',['Undo',['../a35171.html#af563bcd50a28b5fa540ca16cd77921d7',1,'alicorn::modules::patterns::command::ManagerUndoRedo']]],
-  ['universal',['Universal',['../a35607.html#a3b783c763f55ddf63d4dadbaf04f7090',1,'alicorn::source::document::Universal::Universal(const T &amp;)'],['../a35607.html#afdb7a96a4f1ee1f0d0ccc902a836404b',1,'alicorn::source::document::Universal::Universal(const Path_t &amp;=L&quot;&quot;)'],['../a35607.html#a5da450f6bfaf88751c399d36d260e5e9',1,'alicorn::source::document::Universal::Universal(const Universal &amp;, Empty)']]],
-  ['unpack',['Unpack',['../a35507.html#a42f4e26a2a2bf77864bec74e640f5550',1,'alicorn::source::converter::Compress&lt; Deflate &gt;']]]
+  ['undo',['Undo',['../a35353.html#af563bcd50a28b5fa540ca16cd77921d7',1,'alicorn::modules::patterns::command::ManagerUndoRedo']]],
+  ['universal',['Universal',['../a35805.html#a1e06b693b8f29a79a585f4fc764bf95e',1,'alicorn::source::document::Universal']]],
+  ['unpack',['Unpack',['../a35677.html#a27bb0b1ae852292c190cc25ac50bf88b',1,'alicorn::source::compress::Deflate']]]
 ];

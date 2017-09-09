@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Cписок членов класса</title>
+<title>Alicorn: Список задач</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.0 Revision: 2788 Platform: x64 Build: 20:47 21 Август 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2832 Platform: x64 Build: 13:47 09 Сентябрь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('a34379.html','');});
+$(document).ready(function(){initNavTree('a34376.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,18 +83,41 @@ $(document).ready(function(){initNavTree('a34379.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">alicorn::extension::std::StringCastProxy&lt; String, Path_t &gt; Cписок членов класса</div>  </div>
+<div class="title">Список задач </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Полный список членов класса <a class="el" href="a34379.html">alicorn::extension::std::StringCastProxy&lt; String, Path_t &gt;</a>, включая наследуемые из базового класса</p>
-<table class="directory">
-</table></div><!-- contents -->
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000003"></a>Класс <a class="el" href="a34713.html">alicorn::extension::std::Locale</a>  </dt>
+<dd>Locale::Default::Get() сделать шаблонной (int) и при вызове в качестве параметра шаблона указывать id потока? </dd>
+<dt><a class="anchor" id="_todo000008"></a>Член <a class="el" href="a35169.html#a9c992f5fc22fa0ab83436228e2f8c8d6">alicorn::modules::logger::ConfigValue::ConfigValue</a>  (const String_t &amp;)</dt>
+<dd>"Использовать trivial-ptr?" ;  </dd>
+<dt><a class="anchor" id="_todo000009"></a>Член <a class="el" href="a35269.html#a78253bd31454f39e16fb359f206526c1">alicorn::modules::logger::report::File::FormFileName</a>  (const String_t &amp;, const String_t &amp;)</dt>
+<dd>"Класс File не должен обращаться к конфигуратору напрямую!" ;  </dd>
+<dt><a class="anchor" id="_todo000010"></a>Член <a class="el" href="a35517.html#ac56ea6653b92f98ef36a33121e02088f">alicorn::modules::settings::SectionImpl::GetSubstitutionValue</a>  (const String_t &amp;) const</dt>
+<dd>"Если IsContainedNotExistsName == false и нет родительского раздела, бросать исключение?" ;  </dd>
+<dt><a class="anchor" id="_todo000012"></a>Член <a class="el" href="a35665.html#a8c36da4f06bc1b9c8b9d9824d64f46fc">alicorn::modules::vfs::Pack::AddFileToEndStorage</a>  (const Path_t &amp;, const Path_t &amp;, File_t &amp;) const</dt>
+<dd>"WARNING!!! ::std::locale!!!" ;  </dd>
+<dt><a class="anchor" id="_todo000013"></a>Член <a class="el" href="a35665.html#aca6bbd78329d55fd21f7f4fc757af1d1">alicorn::modules::vfs::Pack::BuildTableFiles</a>  (const Path_t &amp;)</dt>
+<dd>"В 32-хбитной версии тут может быть проблема" ;  </dd>
+<dt><a class="anchor" id="_todo000011"></a>Член <a class="el" href="a35665.html#a5adc96638eafab54ee6d001d71c832d3">alicorn::modules::vfs::Pack::GetData</a>  (const Path_t &amp;, Data_t &amp;) const override</dt>
+<dd>"В 32-хбитной версии тут может быть проблема" ;  </dd>
+<dt><a class="anchor" id="_todo000014"></a>Член <a class="el" href="a35793.html#a585c4e16c2aa0d118b477466b2697286">alicorn::source::document::Node&lt; TIndex &gt;::Iterator&lt; TIndex &gt;::operator==</a>  (const <a class="el" href="a35793.html" title="Класс входит в проект Document   Вспомогательный класс для обхода дочерних узлов текущего узла...">Iterator</a> &amp;) const</dt>
+<dd>"Здесь должны сравниваться не указатели, а объекты, на которые они указывают" ;  </dd>
+<dt><a class="anchor" id="_todo000015"></a>Член <a class="el" href="a35093.html#a0dd1ad93046aa82f7e599351a50e48fd">app::Main::OnInit</a>  (void) override</dt>
+<dd>"Класс перестал быть тривиальным и требует тестов!" ;  </dd>
+<dt><a class="anchor" id="_todo000005"></a>Член <a class="el" href="a00449.html#abe0e970b5bac8cef92df0d21cd48e7ff">TEST_F</a>  (String_test, Test_GetLenght)</dt>
+<dd>"Для Utf8 должно быть количество букв, а не символов" ;  </dd>
+<dt><a class="anchor" id="_todo000007"></a>Член <a class="el" href="a00449.html#a4f22f42c93f81a577a281b4e0e4e2159">TEST_F</a>  (String_test, Test_Find)</dt>
+<dd>"Для Utf8 должно быть количество букв, а не символов" ;  </dd>
+<dt><a class="anchor" id="_todo000006"></a>Член <a class="el" href="a00449.html#af2024a3564b16340349ea369550df800">TEST_F</a>  (String_test, Test_SubString)</dt>
+<dd>"Для Utf8 должно быть количество букв, а не символов" ; </dd>
+</dl>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 21 Авг 2017 20:47:55. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 9 Сен 2017 13:47:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

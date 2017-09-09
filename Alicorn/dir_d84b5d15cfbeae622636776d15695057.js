@@ -6,6 +6,6 @@ var dir_d84b5d15cfbeae622636776d15695057 =
     [ "Test.CrushDll", "dir_b3dbefb337c0a02c72143f5ead191683.html", "dir_b3dbefb337c0a02c72143f5ead191683" ],
     [ "Test.Windows", "dir_58fed59024e3e9d58d523b39adb33924.html", "dir_58fed59024e3e9d58d523b39adb33924" ],
     [ "Windows", "dir_b61495cd5b2a691c61fa356f8146bae0.html", "dir_b61495cd5b2a691c61fa356f8146bae0" ],
-    [ "windows.hpp", "a38439.html", null ],
-    [ "windows.mock.hpp", "a01439.html", null ]
+    [ "windows.hpp", "a38740.html", null ],
+    [ "windows.mock.hpp", "a01463.html", null ]
 ];

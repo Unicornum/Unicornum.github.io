@@ -1,15 +1,16 @@
 var searchData=
 [
-  ['make_5flocal_5ftime',['make_local_time',['../a34214.html#ga5631c3094a7bf8107687376dbf826a88',1,'alicorn::extension::std::chrono']]],
-  ['make_5fshared',['make_shared',['../a34211.html#ga66eb9e3ce8d41313e90083d877492841',1,'alicorn::extension::std']]],
-  ['make_5ftrivial',['make_trivial',['../a34211.html#ga1dbbfefb9898ccdd2373586221e9b240',1,'alicorn::extension::std::pool::make_trivial()'],['../a34211.html#ga5f9c37bd9b4ca4bafeb36261de35e63d',1,'alicorn::extension::std::make_trivial()']]],
-  ['make_5funique',['make_unique',['../a34491.html#aa15f82f12da4497ee34f901edf418ccf',1,'alicorn::extension::std::pool::make_unique()'],['../a34224.html#gad13e45c04576edd5ce7b2af94149c3ed',1,'alicorn::modules::patterns::factory::pool::make_unique(const TId &amp;_Id)'],['../a34224.html#ga63a3503c7a8b1a57c69e09cc2d4d337a',1,'alicorn::modules::patterns::factory::pool::make_unique(const char *_pClassName)'],['../a34211.html#ga4249699a1a22bc45d6103e95c4491d68',1,'alicorn::extension::std::make_unique()'],['../a34224.html#ga3e50cf137ff32ab5bdd5b9302005347b',1,'alicorn::modules::patterns::factory::make_unique(const TId &amp;_Id)'],['../a34224.html#ga8753c51ee7a55f4f41d96a21e6452d8a',1,'alicorn::modules::patterns::factory::make_unique(const char *_pClassName)']]],
-  ['makefromheap',['MakeFromHeap',['../a35175.html#a8dd5e8125b256d18c797179aba914517',1,'alicorn::modules::patterns::factory::Factory']]],
-  ['makefrompool',['MakeFromPool',['../a35175.html#ad45dbeab9a9c227a3cb24821c1e41472',1,'alicorn::modules::patterns::factory::Factory']]],
-  ['match',['Match',['../a34507.html#aed057b113464ab4f76edbb8d9a01b3b4',1,'alicorn::extension::std::regex::Match::Match(const String &amp;)'],['../a34507.html#a6771afe48b8f1155f53536b2220e2764',1,'alicorn::extension::std::regex::Match::Match(const String &amp;, IgnoreCase)']]],
-  ['max',['Max',['../a34207.html#ga46d27f821bb83e671287a91ef04b6f1d',1,'alicorn::extension::cpp::math']]],
-  ['message',['Message',['../a35047.html#a9129c099b58fc8b4b237a2268c40e695',1,'alicorn::modules::logger::Message']]],
-  ['messageimpl',['MessageImpl',['../a35039.html#aead43313ff34adde57b4d0f79d535f1c',1,'alicorn::modules::logger::MessageImpl']]],
-  ['min',['Min',['../a34207.html#ga2351e6e5a8a802cb858212f06e6a956c',1,'alicorn::extension::cpp::math::Min(Type _Value1, Type _Value2)'],['../a34205.html#ga092d73a3c219d160170528be0957ecf9',1,'alicorn::extension::cpp::math::Min(void)']]],
-  ['mod',['Mod',['../a34207.html#gab870f354ab6165ae21e178d23f6accef',1,'alicorn::extension::cpp::math']]]
+  ['make_5flocal_5ftime',['make_local_time',['../a34391.html#ga5631c3094a7bf8107687376dbf826a88',1,'alicorn::extension::std::chrono']]],
+  ['make_5fshared',['make_shared',['../a34388.html#ga66eb9e3ce8d41313e90083d877492841',1,'alicorn::extension::std']]],
+  ['make_5fsource',['make_source',['../a34408.html#ga36d243bca9b4bd11c7af51f3af5cda76',1,'alicorn::source::details']]],
+  ['make_5ftrivial',['make_trivial',['../a34388.html#ga1dbbfefb9898ccdd2373586221e9b240',1,'alicorn::extension::std::pool::make_trivial()'],['../a34388.html#ga5f9c37bd9b4ca4bafeb36261de35e63d',1,'alicorn::extension::std::make_trivial()']]],
+  ['make_5funique',['make_unique',['../a34673.html#aa15f82f12da4497ee34f901edf418ccf',1,'alicorn::extension::std::pool::make_unique()'],['../a34401.html#gad13e45c04576edd5ce7b2af94149c3ed',1,'alicorn::modules::patterns::factory::pool::make_unique(const TId &amp;_Id)'],['../a34401.html#ga63a3503c7a8b1a57c69e09cc2d4d337a',1,'alicorn::modules::patterns::factory::pool::make_unique(const char *_pClassName)'],['../a34388.html#ga4249699a1a22bc45d6103e95c4491d68',1,'alicorn::extension::std::make_unique()'],['../a34401.html#ga3e50cf137ff32ab5bdd5b9302005347b',1,'alicorn::modules::patterns::factory::make_unique(const TId &amp;_Id)'],['../a34401.html#ga8753c51ee7a55f4f41d96a21e6452d8a',1,'alicorn::modules::patterns::factory::make_unique(const char *_pClassName)']]],
+  ['makefromheap',['MakeFromHeap',['../a35357.html#a8dd5e8125b256d18c797179aba914517',1,'alicorn::modules::patterns::factory::Factory']]],
+  ['makefrompool',['MakeFromPool',['../a35357.html#ad45dbeab9a9c227a3cb24821c1e41472',1,'alicorn::modules::patterns::factory::Factory']]],
+  ['match',['Match',['../a34689.html#aed057b113464ab4f76edbb8d9a01b3b4',1,'alicorn::extension::std::regex::Match::Match(const String &amp;)'],['../a34689.html#a6771afe48b8f1155f53536b2220e2764',1,'alicorn::extension::std::regex::Match::Match(const String &amp;, IgnoreCase)']]],
+  ['max',['Max',['../a34384.html#ga46d27f821bb83e671287a91ef04b6f1d',1,'alicorn::extension::cpp::math']]],
+  ['message',['Message',['../a35229.html#a9129c099b58fc8b4b237a2268c40e695',1,'alicorn::modules::logger::Message']]],
+  ['messageimpl',['MessageImpl',['../a35221.html#aead43313ff34adde57b4d0f79d535f1c',1,'alicorn::modules::logger::MessageImpl']]],
+  ['min',['Min',['../a34384.html#ga2351e6e5a8a802cb858212f06e6a956c',1,'alicorn::extension::cpp::math::Min(Type _Value1, Type _Value2)'],['../a34382.html#ga092d73a3c219d160170528be0957ecf9',1,'alicorn::extension::cpp::math::Min(void)']]],
+  ['mod',['Mod',['../a34384.html#gab870f354ab6165ae21e178d23f6accef',1,'alicorn::extension::cpp::math']]]
 ];
