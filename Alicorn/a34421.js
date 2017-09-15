@@ -1,9 +1,7 @@
 var a34421 =
 [
-    [ "Controller", "a36185.html", [
-      [ "Controller", "a36185.html#a40ccbeb3ece39167d54fcd187249ca98", null ]
+    [ "Deflate", "a35690.html", [
+      [ "Unpack", "a35690.html#a27bb0b1ae852292c190cc25ac50bf88b", null ]
     ] ],
-    [ "DoChangeValue", "a36189.html", null ],
-    [ "DoDrawSettings", "a36193.html", null ],
-    [ "DoUpdateTreeSections", "a36197.html", null ]
+    [ "Snappy", "a35694.html", null ]
 ];

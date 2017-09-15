@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходные требования</title>
+<title>Alicorn: System</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2832 Platform: x64 Build: 13:47 09 Сентябрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2865 Platform: x64 Build: 11:42 15 Сентябрь 2017</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -83,52 +83,34 @@ $(document).ready(function(){initNavTree('a36885.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Исходные требования </div>  </div>
+<div class="title">System </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Требования первого этапа </h1>
-<ul>
-<li> <input type="checkbox" checked disabled>  Диалоговое окно отображения результатов прогона тестов.</li>
-<li> <input type="checkbox" checked disabled>  Цвет фона всех вкладок окна должен зависеть от результата прогона тестов (зеленый, если все тесты пройдены успешно, красный, если есть хотя бы один проваленный тест).</li>
-</ul>
-<h2>Диалоговое окно отображения результатов прогона тестов </h2>
-<ul>
-<li> <input type="checkbox" checked disabled>  Вкладка общей статистики.</li>
-<li> <input type="checkbox" checked disabled>  Вкладка со списком всех тестов.</li>
-<li> <input type="checkbox" checked disabled>  Вкладка со списком проваленных тестов.</li>
-</ul>
-<p>### Вкладка общей статистики</p><ul>
-<li> <input type="checkbox" checked disabled>  Общее количество выполненных тестов.</li>
-<li> <input type="checkbox" checked disabled>  Количество успешно пройденных тестов.</li>
-<li> <input type="checkbox" checked disabled>  Количество проваленных тестов.</li>
-<li> <input type="checkbox" checked disabled>  Количество отключенных тестов.</li>
-<li> <input type="checkbox" checked disabled>  Дата/время запуска тестов.</li>
-<li> <input type="checkbox" checked disabled>  Название и версия используемой библиотеки тестирования.</li>
-</ul>
-<p>### Вкладка со списком всех тестов</p><ul>
-<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
-<li> <input type="checkbox" checked disabled>  Узлы дерева должны помечаться иконками успеха/провала.</li>
-</ul>
-<p>### Вкладка со списком проваленных тестов</p><ul>
-<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
-<li> <input type="checkbox" checked disabled>  Отображение подробного описания при выборе проваленного теста.</li>
-</ul>
-<h1>Дополнительно </h1>
-<ul>
-<li> <input type="checkbox" checked disabled>  Запуск всех тестов решения без отображения окна результатов прогона тестов.</li>
-<li> <input type="checkbox" checked disabled>  Добавление результата прогона тестов всего решения на страницу статистики работы над решением.</li>
-</ul>
-<h2>Прототип </h2>
-<div class="image">
-<img src="Testing.App.Prototype.png" alt="Testing.App.Prototype.png"/>
-</div>
- </div></div><!-- contents -->
+<div class="textblock"><h1><a class="anchor" id="sSystemBrief"></a>
+Введение</h1>
+<p>Раздел классов взаимодействия программы с операционной системой.</p>
+<h2>Проекты раздела </h2>
+<h3>Проект Application</h3>
+<p>Проект классов для работы с модулем приложения. </p>
+<p>Страница проекта: <a class="el" href="a36886.html">Application</a></p>
+<h3>Проект Version</h3>
+<p>Проект обеспечивает установку .exe или .dll файлам версии решения (включая ревизию файлов решения и внешних библиотек), а также макросы версии, которые можно использовать в программе. </p>
+<p>Страница проекта: <a class="el" href="a36888.html">Version</a></p>
+<h3>Проект Windows</h3>
+<p>Проект классов для использования в программах для Windows. </p>
+<p>Страница проекта: <a class="el" href="a36889.html">Windows</a></p>
+<h3>Проект Android</h3>
+<p>Страница проекта: <a class="el" href="a36887.html">Platform</a></p>
+<h3>Проект Platform</h3>
+<p>Проект классов специфических для Windows и Android. </p>
+<p>Страница проекта: <a class="el" href="a36887.html">Platform</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a36847.html">Alicorn</a></li><li class="navelem"><a class="el" href="a36877.html">Tools</a></li><li class="navelem"><a class="el" href="a36884.html">Testing.App</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 9 Сен 2017 13:47:41. Создано системой
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a36860.html">Alicorn</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 15 Сен 2017 11:42:40. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

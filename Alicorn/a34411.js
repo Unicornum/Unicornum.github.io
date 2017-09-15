@@ -1,9 +1,28 @@
 var a34411 =
 [
-    [ "Pixel24", "a35877.html", null ],
-    [ "RGB", "a35881.html", null ],
-    [ "BGR", "a35885.html", null ],
-    [ "Pixel32", "a35889.html", null ],
-    [ "RGBA", "a35893.html", null ],
-    [ "BGRA", "a35897.html", null ]
+    [ "MessageImpl", "a35234.html", [
+      [ "MessageImpl", "a35234.html#aead43313ff34adde57b4d0f79d535f1c", null ],
+      [ "m_DateTime", "a35234.html#a3478e6b6fece12b0d3225c6fb4be63c9", null ],
+      [ "m_FileLine", "a35234.html#a185385cc0a2189215182e6e3cbbefc37", null ],
+      [ "m_FullFileLine", "a35234.html#a9e2a87c136b107ff03bff542856487b1", null ],
+      [ "m_Hash", "a35234.html#a12994dea55762aaa17bfab60b9e91b93", null ],
+      [ "m_Level", "a35234.html#a30452f3453b2d4450022800822315a61", null ],
+      [ "m_Message", "a35234.html#a8437da35798cc3af078e482edd029bf3", null ],
+      [ "m_StrType", "a35234.html#ae42a7efef51f9ecb529792b7db1c7f52", null ],
+      [ "m_ThreadInfo", "a35234.html#ad3f3ecde55f6d67c8d993d8f3061b896", null ]
+    ] ],
+    [ "Message", "a35242.html", [
+      [ "Message", "a35242.html#a9129c099b58fc8b4b237a2268c40e695", null ],
+      [ "DoComplete", "a35242.html#ad6509fda6ddc2230f986662e5181ab04", null ],
+      [ "DoSpecialAction", "a35242.html#a60a9316d70a117080c003541bff6b5b3", null ],
+      [ "GetLevel", "a35242.html#a4975d38735e7659719be5e8c96865e5f", null ],
+      [ "m_Message", "a35242.html#a727816858479d735c36fdbf2b7600aaf", null ]
+    ] ],
+    [ "Trace", "a35246.html", null ],
+    [ "Info", "a35250.html", null ],
+    [ "Warning", "a35254.html", null ],
+    [ "Error", "a35258.html", null ],
+    [ "Fatal", "a35262.html", [
+      [ "DoSpecialAction", "a35262.html#aee319a84720a3b08952822aedd918de6", null ]
+    ] ]
 ];
