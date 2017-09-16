@@ -81,16 +81,21 @@ $(function() {
 <ul>
 <li>В AndroidManifest.xml заменить короткое имя запускаемого Activity на полное:</li>
 </ul>
-<div class="fragment"><div class="line">&lt;activity android:name=<span class="stringliteral">&quot;com.PackageName.ActivityName&quot;</span> ...</div></div><!-- fragment --><p>где com.PackageName - это имя заданное в java файле как</p>
-<div class="fragment"><div class="line"><span class="keyword">package </span>com.PackageName;</div></div><!-- fragment --><p> , а ActivityName - имя главного класса Activity, объект которого создается при старте программы, т.е.</p>
-<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>ActivityName <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  ...</div></div><!-- fragment --><h3>Различные имена приложения для различных конфигураций</h3>
-<p>В AndroidManifest.xml изменить</p>
-<div class="fragment"><div class="line">&lt;application android:label=<span class="stringliteral">&quot;@string/$(ApplicationName)&quot;</span> ... &gt;</div><div class="line">  &lt;activity android:label=<span class="stringliteral">&quot;@string/$(ApplicationName)&quot;</span> ... &gt;</div><div class="line">    ...</div></div><!-- fragment --><p>В string.xml</p>
-<div class="fragment"><div class="line">&lt;resources&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;UnicornumVerum.Example.Debug&quot;</span>&gt;Example (debug)&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;UnicornumVerum.Example.Release&quot;</span>&gt;Example&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  ...</div></div><!-- fragment --><h3>Запуск приложения в Launcher'e</h3>
-<div class="fragment"><div class="line"><span class="keyword">set</span> PACK_NAME=Example</div><div class="line">  </div><div class="line"><span class="keyword">set</span> RUN_ADB=$(ANDROID_SDK_ROOT)\platform-tools\adb.exe</div><div class="line">  </div><div class="line">%RUN_ADB% install -r $(SolutionDir)$(Configuration)\%PACK_NAME%.apk</div><div class="line">%RUN_ADB% shell am start -n com.UnicornumVerum.%PACK_NAME%.$(Configuration)/com.%PACK_NAME%.%PACK_NAME%</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="fragment"><div class="line">&lt;activity android:name=<span class="stringliteral">&quot;com.PackageName.Example&quot;</span> ...</div></div><!-- fragment --><p>где <b>com.PackageName</b> - это имя заданное в java файле как</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.PackageName;</div></div><!-- fragment --><p> , а <b>Example</b> - имя главного класса Activity, объект которого создается при старте программы, т.е.</p>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>Example <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  ...</div></div><!-- fragment --><h3>Различные имена приложения для различных конфигураций</h3>
+<ul>
+<li>Добавить в решение проект Externals/Tools/Version (который генерирует xml-файл, содержащий название/версию текущего решения).</li>
+<li>Один из проектов, от которого зависит проект <b>Packaging</b> должен зависеть от проекта Version и запускать его в качестве события после сборки проекта.</li>
+<li>Добавить в проект <b>Packaging</b> генерируемый файл res/values/version.auto.xml.</li>
+<li>В файле AndroidManifest.xml изменить (первая строка - название программы в Диспетчере задач, второе - название, отображаемое под иконкой программы):</li>
+</ul>
+<div class="fragment"><div class="line">&lt;application android:label=<span class="stringliteral">&quot;@string/ApplicationName&quot;</span> ... &gt;</div><div class="line">  &lt;activity android:label=<span class="stringliteral">&quot;@string/ApplicationName&quot;</span> ... &gt;</div><div class="line">    ...</div></div><!-- fragment --><h3>Запуск приложения в Launcher'e</h3>
+<p>В качестве события после сборки проекта добавить скрипт:</p>
+<div class="fragment"><div class="line"><span class="keyword">set</span> ROOT_NAMESPACE=Example</div><div class="line"><span class="keyword">set</span> _ACTIVITY_NAME=com.PackageName.Example</div><div class="line"><span class="keyword">set</span> APPLICATION_NAME=UnicornumVerum.%ROOT_NAMESPACE%.$(Configuration)</div><div class="line"><span class="keyword">set</span> PACKAGE=com.%APPLICATION_NAME%</div><div class="line">  </div><div class="line"><span class="keyword">set</span> RUN_ADB=$(ANDROID_SDK_ROOT)\platform-tools\adb.exe</div><div class="line">  </div><div class="line">%RUN_ADB% install -r $(SolutionDir)$(Configuration)\%ROOT_NAMESPACE%.apk</div><div class="line">%RUN_ADB% shell am start -n %PACKAGE%/%_ACTIVITY_NAME%</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вт 22 Авг 2017 13:01:44. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Сб 16 Сен 2017 12:34:47. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
