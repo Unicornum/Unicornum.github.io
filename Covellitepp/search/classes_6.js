@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['layer',['Layer',['../a31821.html',1,'covellite::rocket']]],
-  ['layers',['Layers',['../a31597.html',1,'covellite']]]
+  ['keypressed',['KeyPressed',['../a31877.html',1,'covellite::params']]],
+  ['keyup',['KeyUp',['../a31881.html',1,'covellite::params']]]
 ];
