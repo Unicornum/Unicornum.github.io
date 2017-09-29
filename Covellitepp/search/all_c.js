@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['mock_2ehpp',['mock.hpp',['../a32458.html',1,'(Глобальное пространство имён)'],['../a32461.html',1,'(Глобальное пространство имён)'],['../a32464.html',1,'(Глобальное пространство имён)'],['../a32467.html',1,'(Глобальное пространство имён)']]],
-  ['motion',['Motion',['../a31873.html',1,'covellite::params::Motion'],['../a31841.html#a962df43f04ad3b0ba27b89387d494844a89fca082014c8ef4d3f9cd7d601b7c5e',1,'covellite::Event::Motion()']]]
+  ['makerenderinterface',['MakeRenderInterface',['../a31942.html#aa62e59b33a7430884f40fa1badde58e2',1,'covellite::api::Window']]],
+  ['makewindow',['MakeWindow',['../a31990.html#afe88b7ad14b8f256c9cff4676def6a51',1,'covellite::core::Application']]],
+  ['mock_2ehpp',['mock.hpp',['../a32662.html',1,'(Глобальное пространство имён)'],['../a32665.html',1,'(Глобальное пространство имён)'],['../a32668.html',1,'(Глобальное пространство имён)'],['../a32671.html',1,'(Глобальное пространство имён)'],['../a32674.html',1,'(Глобальное пространство имён)'],['../a32677.html',1,'(Глобальное пространство имён)']]],
+  ['motion',['Motion',['../a32018.html',1,'covellite::core::params::Motion'],['../a32002.html#a070c82dd58e7ee7662ec39feab47ccf5ae44497ca22b4b4b4680e9c716fd0d24b',1,'covellite::core::Event::Motion()']]]
 ];

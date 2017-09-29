@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['Y',['../a31873.html#a0040b62185ab1bef502dce436972081b',1,'covellite::params::Motion']]]
+  ['y',['Y',['../a32018.html#ab2ea0905303136eeac3fd484ea581bad',1,'covellite::core::params::Motion']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init',['Init',['../a31841.html#af2573b3cada160b846524357be809215affc3f4b7f3c1a3afad4702dea18f2033',1,'covellite::Event']]]
+  ['finishdrawing',['FinishDrawing',['../a32002.html#ae07ea214fa6193b69c9986cbb17c8e7ca330605db352ba0b22d6fb281c7b61572',1,'covellite::core::Event']]]
 ];

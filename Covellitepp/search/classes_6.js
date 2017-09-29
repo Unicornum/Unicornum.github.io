@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['keypressed',['KeyPressed',['../a31877.html',1,'covellite::params']]],
-  ['keyup',['KeyUp',['../a31881.html',1,'covellite::params']]]
+  ['keypressed',['KeyPressed',['../a32022.html',1,'covellite::core::params']]],
+  ['keyup',['KeyUp',['../a32026.html',1,'covellite::core::params']]]
 ];

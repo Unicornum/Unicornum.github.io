@@ -1,7 +1,9 @@
 var searchData=
 [
-  ['tell',['Tell',['../a32061.html#abd90ccf48fc2c15d251f4b3bde7128fd',1,'covellite::rocket::File']]],
-  ['test_5ff',['TEST_F',['../a00146.html#a79f034f89596928b2ad6650b7e7f81d2',1,'EventHandler_test.cpp']]],
-  ['translate',['Translate',['../a32093.html#a1c419fbe6642b7c9e1d97bbe1acbc356',1,'covellite::rocket::IStringTranslator::Translate()'],['../a32133.html#afcffdc06542a49f7f29eea2b757fc1d2',1,'covellite::rocket::Window::Translate()'],['../a32201.html#aa4837fa48c84eb982b4b4576c680c199',1,'ExampleWindow::Translate()']]],
-  ['translatestring',['TranslateString',['../a32129.html#a20585d7aabdfb81e2c9beff4d8708b09',1,'covellite::rocket::System']]]
+  ['seek',['Seek',['../a32214.html#a6bc7e1b554002766e937ab2961814f03',1,'covellite::rocket::File']]],
+  ['setfontsize',['SetFontSize',['../a32250.html#a1081a38f07b167bfac632d529c70a24e',1,'covellite::rocket::Layer']]],
+  ['show',['Show',['../a32250.html#ade98b7f19de07bb838be920164345a79',1,'covellite::rocket::Layer']]],
+  ['showsoftkeyboard',['ShowSoftKeyboard',['../a32126.html#a4dfae365d95e81df433bc8c00903b4e9',1,'covellite::jni::Environment']]],
+  ['subscribe',['Subscribe',['../a32206.html#a83df0d472017ef8c273919a5d89442c5',1,'covellite::rocket::ElementEvents::Subscribe()'],['../a32346.html#a60b6d1fce8dc8c23b893aba04feafa3f',1,'ExampleWindow::Subscribe()']]],
+  ['swapbuffers',['SwapBuffers',['../a31942.html#a714bcd24b043d223de21be93ee06c422',1,'covellite::api::Window']]]
 ];

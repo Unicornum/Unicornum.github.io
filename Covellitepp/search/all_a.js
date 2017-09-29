@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['keypressed',['KeyPressed',['../a31877.html',1,'covellite::params::KeyPressed'],['../a31841.html#a962df43f04ad3b0ba27b89387d494844ac06fb0be9fb51f915201b55ee7899e4b',1,'covellite::Event::KeyPressed()']]],
-  ['keyup',['KeyUp',['../a31881.html',1,'covellite::params::KeyUp'],['../a31841.html#a962df43f04ad3b0ba27b89387d494844aa1a08c38f5a8ff0fa1abcb808c176ee3',1,'covellite::Event::KeyUp()']]]
+  ['keypressed',['KeyPressed',['../a32022.html',1,'covellite::core::params::KeyPressed'],['../a32002.html#a070c82dd58e7ee7662ec39feab47ccf5a479acae39dfd3a485a3c8507c9e068b6',1,'covellite::core::Event::KeyPressed()']]],
+  ['keyup',['KeyUp',['../a32026.html',1,'covellite::core::params::KeyUp'],['../a32002.html#a070c82dd58e7ee7662ec39feab47ccf5a67e6d6e8c8e5d5b48f6e787ea8d9ee30',1,'covellite::core::Event::KeyUp()']]]
 ];

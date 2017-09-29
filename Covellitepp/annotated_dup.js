@@ -6,45 +6,54 @@ var annotated_dup =
       ] ]
     ] ],
     [ "covellite", null, [
+      [ "api", null, [
+        [ "IWindow", "a31934.html", null ],
+        [ "RenderOpenGL", "a31938.html", null ],
+        [ "Window", "a31942.html", "a31942" ]
+      ] ],
+      [ "core", null, [
+        [ "params", null, [
+          [ "Empty", "a32014.html", null ],
+          [ "Error", "a32030.html", null ],
+          [ "KeyPressed", "a32022.html", null ],
+          [ "KeyUp", "a32026.html", null ],
+          [ "Motion", "a32018.html", "a32018" ]
+        ] ],
+        [ "Application", "a31990.html", "a31990" ],
+        [ "Event", "a32002.html", "a32002" ],
+        [ "Events", "a32006.html", "a32006" ],
+        [ "IWindow", "a32010.html", null ],
+        [ "Params", "a32034.html", null ],
+        [ "UserDataHelper", "a32038.html", "a32038" ]
+      ] ],
       [ "egl", null, [
-        [ "CallProxy", "a31945.html", null ],
-        [ "Config", "a31949.html", null ],
-        [ "Context", "a31961.html", null ],
-        [ "Display", "a31973.html", null ],
-        [ "Surface", "a31985.html", null ]
+        [ "CallProxy", "a32054.html", null ],
+        [ "Config", "a32058.html", null ],
+        [ "Context", "a32070.html", null ],
+        [ "Display", "a32082.html", null ],
+        [ "Surface", "a32094.html", null ]
       ] ],
       [ "jni", null, [
-        [ "Environment", "a32017.html", "a32017" ]
+        [ "Environment", "a32126.html", "a32126" ]
       ] ],
-      [ "params", null, [
-        [ "Empty", "a31869.html", null ],
-        [ "Error", "a31885.html", null ],
-        [ "KeyPressed", "a31877.html", null ],
-        [ "KeyUp", "a31881.html", null ],
-        [ "Motion", "a31873.html", "a31873" ]
+      [ "os", null, [
+        [ "Configuration", "a32158.html", "a32158" ],
+        [ "ILayer", "a32166.html", null ],
+        [ "Layers", "a32170.html", "a32170" ],
+        [ "Window", "a32182.html", "a32182" ]
       ] ],
       [ "rocket", null, [
-        [ "ElementEvents", "a32053.html", "a32053" ],
-        [ "File", "a32061.html", "a32061" ],
-        [ "Initializer", "a32073.html", null ],
-        [ "IStringTranslator", "a32093.html", "a32093" ],
-        [ "Layer", "a32097.html", "a32097" ],
-        [ "RenderOpenGL", "a32121.html", null ],
-        [ "System", "a32129.html", "a32129" ],
-        [ "Window", "a32133.html", "a32133" ]
-      ] ],
-      [ "Application", "a31821.html", "a31821" ],
-      [ "Configuration", "a31833.html", "a31833" ],
-      [ "Event", "a31841.html", "a31841" ],
-      [ "Events", "a31845.html", null ],
-      [ "IEventHandler", "a31849.html", null ],
-      [ "ILayer", "a31853.html", null ],
-      [ "Layers", "a31857.html", "a31857" ],
-      [ "UserDataHelper", "a31889.html", "a31889" ],
-      [ "Window", "a31893.html", "a31893" ]
+        [ "ElementEvents", "a32206.html", "a32206" ],
+        [ "File", "a32214.html", "a32214" ],
+        [ "Initializer", "a32226.html", null ],
+        [ "IStringTranslator", "a32246.html", "a32246" ],
+        [ "Layer", "a32250.html", "a32250" ],
+        [ "System", "a32278.html", "a32278" ],
+        [ "Window", "a32282.html", "a32282" ]
+      ] ]
     ] ],
-    [ "android_app", "a31813.html", null ],
-    [ "android_poll_source", "a31809.html", null ],
-    [ "ExampleApp", "a32181.html", "a32181" ],
-    [ "ExampleWindow", "a32201.html", "a32201" ]
+    [ "android_app", "a31978.html", null ],
+    [ "android_poll_source", "a31982.html", null ],
+    [ "ExampleApp", "a32326.html", "a32326" ],
+    [ "ExampleWindow", "a32346.html", "a32346" ]
 ];
