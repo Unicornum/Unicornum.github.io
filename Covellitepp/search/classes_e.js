@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window',['Window',['../a31942.html',1,'covellite::api::Window'],['../a32182.html',1,'covellite::os::Window'],['../a32282.html',1,'covellite::rocket::Window']]]
+  ['window',['Window',['../a32357.html',1,'covellite::rocket::Window'],['../a32105.html',1,'covellite::core::Window'],['../a32005.html',1,'covellite::api::Window'],['../a32245.html',1,'covellite::os::Window']]]
 ];
