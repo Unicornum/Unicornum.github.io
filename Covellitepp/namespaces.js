@@ -3,8 +3,8 @@ var namespaces =
     [ "com", null, [
       [ "UnicornumVerum", null, [
         [ "Example", null, [
-          [ "Debug", "a31914.html", null ],
-          [ "Release", "a31919.html", null ]
+          [ "Debug", "a31905.html", null ],
+          [ "Release", "a31910.html", null ]
         ] ]
       ] ]
     ] ]

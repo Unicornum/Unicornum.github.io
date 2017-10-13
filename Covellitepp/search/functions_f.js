@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window',['Window',['../a32357.html#a473d4ac33cd69e63eb65faef34ce89ba',1,'covellite::rocket::Window']]]
+  ['unsubscribe',['Unsubscribe',['../a32068.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7',1,'covellite::core::EventHandler']]]
 ];

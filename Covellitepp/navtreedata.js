@@ -2,7 +2,7 @@ var NAVTREE =
 [
   [ "Covellite++", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a31904.html", null ],
+    [ "Список задач", "a31895.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Пространства имен", null, [
       [ "Пространства имен", "namespaces.html", "namespaces" ]
@@ -28,7 +28,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a32349.html#a0d5e83b5fedcdb13cd05e9e58603241f"
+"a32336.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

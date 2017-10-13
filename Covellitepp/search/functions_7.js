@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['initialise',['Initialise',['../a32101.html#a1dee63f89d20c16df859ad3d6855838e',1,'covellite::core::UserDataHelper']]],
-  ['inputhandler',['InputHandler',['../a32053.html#afe01fe0d0fa37b8c2c5aacfcfeee4278',1,'covellite::core::Application']]]
+  ['inputhandler',['InputHandler',['../a32068.html#a4fdb570db0de2bbc4c1fd974017f315e',1,'covellite::core::EventHandler']]]
 ];
