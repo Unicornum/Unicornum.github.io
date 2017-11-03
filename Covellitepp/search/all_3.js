@@ -1,19 +1,15 @@
 var searchData=
 [
-  ['deactivatekeyboard',['DeactivateKeyboard',['../a32356.html#a72ce86059198acb6c3c000cded9e7063',1,'covellite::rocket::System']]],
-  ['demolayer1',['DemoLayer1',['../a32420.html',1,'ExampleWindow']]],
-  ['demolayer2',['DemoLayer2',['../a32424.html',1,'ExampleWindow']]],
-  ['destroy',['Destroy',['../a32064.html#ae07ea214fa6193b69c9986cbb17c8e7cac9d30c13c37bdb75de3c240660bdf665',1,'covellite::core::Event']]],
-  ['display',['Display',['../a32176.html',1,'covellite::egl']]],
-  ['display_5ftest_2ecpp',['Display_test.cpp',['../a00221.html',1,'']]],
-  ['docommand',['DoCommand',['../a32068.html#a578c178a57772bc992ff93d85365869c',1,'covellite::core::EventHandler']]],
-  ['dodrawwindow',['DoDrawWindow',['../a32360.html#abe2a64351ac7d3195a1ff2d51ecf0651',1,'covellite::rocket::Window']]],
-  ['doerror',['DoError',['../a32416.html#a966a4eff069452a1845c155642ac34df',1,'ExampleApp']]],
-  ['doinitwindow',['DoInitWindow',['../a32416.html#aaddf7b9a3ba89e61506f87d2ca3c149d',1,'ExampleApp']]],
-  ['dokeypressed',['DoKeyPressed',['../a32360.html#af3b0b38e487b80f19bd639a5ea9637aa',1,'covellite::rocket::Window']]],
-  ['dokeyup',['DoKeyUp',['../a32360.html#a389e0d8df8a1191d08f06066747d0835',1,'covellite::rocket::Window']]],
-  ['domotion',['DoMotion',['../a32360.html#ab8a155fa770340f6c246876788aad89f',1,'covellite::rocket::Window']]],
-  ['doresize',['DoResize',['../a32020.html#a9afdf41f3429779c9cb597599faf457f',1,'covellite::api::Window::DoResize()'],['../a32360.html#a9afdf41f3429779c9cb597599faf457f',1,'covellite::rocket::Window::DoResize()']]],
-  ['drawing',['Drawing',['../a32064.html#ae07ea214fa6193b69c9986cbb17c8e7cafc245a046e83f39e5e7fcd9b12f14d87',1,'covellite::core::Event']]],
-  ['drawingmode',['DrawingMode',['../a32048.html#afe2acaafc76ec292060c505182b22c9f',1,'covellite::core::Application']]]
+  ['deactivatekeyboard',['DeactivateKeyboard',['../a32596.html#a72ce86059198acb6c3c000cded9e7063',1,'covellite::rocket::System']]],
+  ['demolayer1',['DemoLayer1',['../a32660.html',1,'ExampleWindow']]],
+  ['demolayer2',['DemoLayer2',['../a32664.html',1,'ExampleWindow']]],
+  ['destroy',['Destroy',['../a32276.html#ae07ea214fa6193b69c9986cbb17c8e7cac9d30c13c37bdb75de3c240660bdf665',1,'covellite::core::Event']]],
+  ['display',['Display',['../a32416.html',1,'covellite::egl']]],
+  ['display_5ftest_2ecpp',['Display_test.cpp',['../a00305.html',1,'']]],
+  ['docommand',['DoCommand',['../a32280.html#a9048a8be9fc95c74e446eab5ee755e9e',1,'covellite::core::EventHandler']]],
+  ['dodrawwindow',['DoDrawWindow',['../a32600.html#abe2a64351ac7d3195a1ff2d51ecf0651',1,'covellite::rocket::Window']]],
+  ['doinitwindow',['DoInitWindow',['../a32656.html#aaddf7b9a3ba89e61506f87d2ca3c149d',1,'ExampleApp']]],
+  ['dokeyup',['DoKeyUp',['../a32600.html#a389e0d8df8a1191d08f06066747d0835',1,'covellite::rocket::Window']]],
+  ['doresize',['DoResize',['../a32200.html#a26922c367c0c92cee2b8cb5c297ab31d',1,'covellite::api::OpenGLES']]],
+  ['drawing',['Drawing',['../a32276.html#ae07ea214fa6193b69c9986cbb17c8e7cafc245a046e83f39e5e7fcd9b12f14d87',1,'covellite::core::Event']]]
 ];

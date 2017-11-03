@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['params',['Params',['../a32116.html',1,'covellite::core']]]
+  ['opengl',['OpenGL',['../a32196.html',1,'covellite::api']]],
+  ['opengles',['OpenGLES',['../a32200.html',1,'covellite::api']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['error',['Error',['../a32064.html#a7d0fc3ebaa0aa1c104a42980a318e719a62abea54a963b2315dcedc0ab0b64d11',1,'covellite::core::Event']]],
-  ['eventbased',['EventBased',['../a32048.html#afe2acaafc76ec292060c505182b22c9faa8276ec82d02d33730293e4d04370bb0',1,'covellite::core::Application']]]
+  ['destroy',['Destroy',['../a32276.html#ae07ea214fa6193b69c9986cbb17c8e7cac9d30c13c37bdb75de3c240660bdf665',1,'covellite::core::Event']]],
+  ['drawing',['Drawing',['../a32276.html#ae07ea214fa6193b69c9986cbb17c8e7cafc245a046e83f39e5e7fcd9b12f14d87',1,'covellite::core::Event']]]
 ];

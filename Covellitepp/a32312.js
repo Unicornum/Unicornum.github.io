@@ -1,4 +1,5 @@
 var a32312 =
 [
-    [ "Translate", "a32312.html#a1c419fbe6642b7c9e1d97bbe1acbc356", null ]
+    [ "X", "a32312.html#a16c13641fc4c37a5b43cf71c76b2db35", null ],
+    [ "Y", "a32312.html#a6b766cee1f1ee5383adffd4ade922f88", null ]
 ];

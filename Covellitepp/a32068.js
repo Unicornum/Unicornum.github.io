@@ -1,17 +1,24 @@
 var a32068 =
 [
-    [ "CommandHandler", "a32068.html#a0c2efa40c6bb6fe123057b97afc3c005", null ],
-    [ "DoCommand", "a32068.html#a578c178a57772bc992ff93d85365869c", null ],
-    [ "InputHandler", "a32068.html#a4fdb570db0de2bbc4c1fd974017f315e", null ],
-    [ "OnDestroy", "a32068.html#a91a274bec9263bbd5443c231a7f01ac1", null ],
-    [ "OnPause", "a32068.html#a671d9c264144f3eba137e23485c9b568", null ],
-    [ "OnResume", "a32068.html#a45b6fce57dde55588548b2c122c4fba5", null ],
-    [ "operator[]", "a32068.html#a6fb51f39c27c58bbc037d11d7ae0ab33", null ],
-    [ "operator[]", "a32068.html#afdf9120d10b79c8cdd2056da92a890f4", null ],
-    [ "operator[]", "a32068.html#a5376a9e1092aed7954b9541f040f00d8", null ],
-    [ "operator[]", "a32068.html#a97f91ff19919552af12c418066f52cac", null ],
-    [ "operator[]", "a32068.html#a053c27fac3d68b44d2be2d0de2558f15", null ],
-    [ "PostCommandDrawWindow", "a32068.html#a20e6d941c667e86c4dd218cd456fab24", null ],
-    [ "Subscribe", "a32068.html#aa7d1c4e6aea810196d8756c1008f5b62", null ],
-    [ "Unsubscribe", "a32068.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7", null ]
+    [ "IWindow", "a32192.html", null ],
+    [ "OpenGL", "a32196.html", [
+      [ "Clear", "a32196.html#aa86da86a2b7bf37ff30d64a34db0598e", null ],
+      [ "GetHeight", "a32196.html#a2f3ebb395e1c92df494fc3d2c070d4f8", null ],
+      [ "GetUsingApi", "a32196.html#ab800461149da95c26de067b4272f9c9d", null ],
+      [ "GetWidth", "a32196.html#a69260aeb9e15665ef36f8a02bb687111", null ],
+      [ "MakeRenderInterface", "a32196.html#a0cbd8919484aae958437b822c9bf8c92", null ],
+      [ "Subscribe", "a32196.html#aad85f7a3a98580cc86488e6e7914e1ec", null ],
+      [ "UpdateScreen", "a32196.html#aa59e10be225102f8f97a9ca50b36427b", null ]
+    ] ],
+    [ "OpenGLES", "a32200.html", [
+      [ "Clear", "a32200.html#ac6d740b193aea8f15267dd31ce3fec7e", null ],
+      [ "DoResize", "a32200.html#a26922c367c0c92cee2b8cb5c297ab31d", null ],
+      [ "GetHeight", "a32200.html#a40773b6f5292f1151e287712f000297b", null ],
+      [ "GetUsingApi", "a32200.html#a21ca9f128f888c3734f466ba27c55625", null ],
+      [ "GetWidth", "a32200.html#a8c29c24f4bda4dbd31801009d6aec4a8", null ],
+      [ "MakeRenderInterface", "a32200.html#af62d1272f4540999b1900a8e3a32631f", null ],
+      [ "Subscribe", "a32200.html#ab4b5598e269ba3d6cccf817b42f7a302", null ]
+    ] ],
+    [ "RenderOpenGL", "a32204.html", null ],
+    [ "Window", "a32208.html", null ]
 ];
