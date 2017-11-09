@@ -5,9 +5,10 @@ var annotated_dup =
         [ "Example", null, null ]
       ] ]
     ] ],
-    [ "covellite", "a32087.html", "a32087" ],
-    [ "android_app", "a32172.html", null ],
-    [ "android_poll_source", "a32176.html", null ],
-    [ "ExampleApp", "a32656.html", "a32656" ],
-    [ "ExampleWindow", "a32676.html", "a32676" ]
+    [ "covellite", "a32144.html", "a32144" ],
+    [ "android_app", "a32231.html", null ],
+    [ "android_poll_source", "a32235.html", null ],
+    [ "ExampleApp", "a32731.html", "a32731" ],
+    [ "ExampleWindow", "a32751.html", "a32751" ],
+    [ "ExtraWindow", "a32755.html", null ]
 ];

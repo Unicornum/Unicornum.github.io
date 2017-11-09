@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['asciikeycode',['AsciiKeyCode',['../a32320.html#a02862dbdbb09d1354c99aa90cd5b8a8c',1,'covellite::core::params::KeyUp']]]
+  ['asciikeycode',['AsciiKeyCode',['../a32387.html#ac037a4ceccbe487401babc65d2dfafa7',1,'covellite::core::params::KeyCode']]]
 ];
