@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TrelloCardsMaker: Исходные требования</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TrelloCardsMaker
+   &#160;<span id="projectnumber">Версия: 0.1.2 Revision: 341 Platform: ARM Build: 13:36 24 Ноябрь 2017</span>
+   </div>
+   <div id="projectbrief">Android offline client cards maker for Trello</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('a32254.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Исходные требования </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2>Прототип </h2>
+<p><a href="https://cacoo.com/diagrams/4AnTaCRibOjfnrco" title="Trello Cards Maker Prototype">Trello Cards Maker Prototype</a></p>
+<h1>Требования первого этапа (версия 0.1.0) </h1>
+<p>Программа должна:</p><ul>
+<li> <input type="checkbox" checked disabled>  Корректно работать (масштабироваться) при любых ориентации/разрешениях экрана используемого устройства.</li>
+<li> <input type="checkbox" checked disabled>  Хранить неотправленные карточки в месте, доступном в 'ручном' режиме.</li>
+<li> <input type="checkbox" checked disabled>  Хранить неотправленные карточки в формате, пригодном для вставки в Trello вручную (в случае необходимости).</li>
+<li> <input type="checkbox" checked disabled>  Изменения данных программы должны сохраняться таким образом, чтобы при нажатии кнопки 'Home' в любой момент времени не происходила потеря изменений.</li>
+<li> <input type="checkbox" checked disabled>  При первом запуске программы (когда нет ни одной доски в списке досок Trello) должно отображаться окно 'О программе'.</li>
+<li> <input type="checkbox" checked disabled>  Если при запуске программы в списке досок есть хотя бы одна запись, должно отображаться окно создания карточки для первой доски в списке.</li>
+<li> <input type="checkbox" checked disabled>  Позволять вводить текст создаваемой карточки при отсутствии доступа в Интернет с автоматической отправкой карточек при появлении такого доступа.</li>
+</ul>
+<h2>Окно создания карточки </h2>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" checked disabled>  Многострочное поле ввода текста создаваемой карточки.</li>
+<li> <input type="checkbox" checked disabled>  Кнопку перехода к окну 'О программе'.</li>
+<li> <input type="checkbox" checked disabled>  При нажатии стандартной кнопки 'Назад' программа завершает работу.</li>
+<li> <input type="checkbox" checked disabled>  Кнопку 'Отправить', при нажатии которой карточка с указанным текстом отправляется, а поле ввода текста очищается (чтобы можно было сразу вводить текст следующей карточки).</li>
+<li> <input type="checkbox" checked disabled>  Кнопку перехода к окну со списком ошибок, обнаруженных во время загрузки модели (которая должна быть активна, только если ошибки имеются).</li>
+</ul>
+<h2>Окно 'О программе' </h2>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" checked disabled>  Название программы.</li>
+<li> <input type="checkbox" checked disabled>  Версию программы.</li>
+<li> <input type="checkbox" checked disabled>  Путь к файлу списка досок Trello с предложением добавить в него содержимое.</li>
+<li> <input type="checkbox" checked disabled>  Лицензию на использование программы.</li>
+<li> <input type="checkbox" checked disabled>  Copyright.</li>
+<li> <input type="checkbox" checked disabled>  При нажатии стандартной кнопки 'Назад' программа возвращается к предыдущему окну (в котором данное окно было вызывано) или завершает работу (при первом запуске программы).</li>
+</ul>
+<h2>Окно списка ошибок, обнаруженных при загрузке модели </h2>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" checked disabled>  Список ошибок, обнаруженных при загрузке модели.</li>
+<li> <input type="checkbox" checked disabled>  При нажатии стандартной кнопки 'Назад' программа возвращается к предыдущему окну.</li>
+</ul>
+<h1>Далее... </h1>
+<p>Программа должна:</p><ul>
+<li> <input type="checkbox" disabled>  Предоставлять выбор доски Trello, для которой создается карточка.</li>
+<li> <input type="checkbox" disabled>  Позволять добавлять/настраивать/удалять доски Trello для отправки карточек.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' в окне создания карточки происходит переход к окну выбора доски Trello.</li>
+</ul>
+<h2>Окно выбора доски Trello </h2>
+<ul>
+<li> <input type="checkbox" disabled>  Начальное окно при запуске/активации программы.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа должна возвращать управление Android'y, оставляя рабочий поток, пытающийся отправлять неотправленные карточки в случае их наличия.</li>
+</ul>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" disabled>  Кнопку создания новой доски Trello (при нажатии которой программа переключается на окно создания доски Trello).</li>
+<li> <input type="checkbox" disabled>  Кнопку 'Архив досок' при нажатии которой программа переключается на окно списка архивированных досок.</li>
+<li> <input type="checkbox" disabled>  Доступные доски Trello в виде списка в визуально отделенном от кнопок создания доски/архива разделе.</li>
+</ul>
+<h3>Строка списка выбора доски Trello</h3>
+<ul>
+<li> <input type="checkbox" disabled>  Кнопка с именем доски Trello (при нажатии кнопки программа переключается на окно создания карточки).</li>
+<li> <input type="checkbox" disabled>  Кнопка редактирования доски Trello (при нажатии кнопки программа переключается на окно создания доски Trello).</li>
+<li> <input type="checkbox" disabled>  Кнопка удаления доски Trello (при нажатии кнопки доска переноситься в архивный список).</li>
+</ul>
+<h2>Окно создания доски Trello </h2>
+<p>Содержит:</p><ul>
+<li> <input type="checkbox" disabled>  Поле ввода имени доски.</li>
+<li> <input type="checkbox" disabled>  Поле ввода почты, на которую будут отправляться карточки.</li>
+<li> <input type="checkbox" disabled>  Кнопку принятия изменений, при нажатии которой программа должна переключиться на окно выбора доски Trello с внесением изменений.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа должна переключиться на окно выбора доски Trello без внесения изменений.</li>
+<li> <input type="checkbox" disabled>  Если кнопка 'Назад' была нажата после создания новой доски, созданная доска 'по умолчанию' должна быть удалена.</li>
+</ul>
+<h2>Окно списка архивных досок Trello </h2>
+<ul>
+<li> <input type="checkbox" disabled>  Содержит архивные доски в виде списка конопок, при нажатии которых выбранная доска переносится в список досок, доступных для выбора в окне выбора доски Trello.</li>
+<li> <input type="checkbox" disabled>  При нажатии стандартной кнопки 'Назад' программа переключается на окно выбора доски Trello. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">Главная страница документации</a></li><li class="navelem"><a class="el" href="a32259.html">Trello Cards Maker</a></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Пт 24 Ноя 2017 13:36:18. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -2,7 +2,7 @@ var NAVTREE =
 [
   [ "TrelloCardsMaker", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a31127.html", null ],
+    [ "Список задач", "a31856.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Пространства имен", null, [
       [ "Пространства имен", "namespaces.html", "namespaces" ]
@@ -25,7 +25,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-".html"
+".html",
+"dir_9638fad7c5a2927c87d724efbecd51c4.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

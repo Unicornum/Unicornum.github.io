@@ -6,32 +6,35 @@ var annotated_dup =
       ] ]
     ] ],
     [ "controller", null, [
-      [ "Controller", "a31204.html", null ],
-      [ "DoSendCreateCard", "a31216.html", null ],
-      [ "DoUpdateAbout", "a31220.html", null ],
-      [ "DoUpdateCreateCard", "a31224.html", null ],
-      [ "DoUpdateErrors", "a31228.html", null ]
+      [ "Controller", "a31934.html", null ],
+      [ "DoCloseCreateCard", "a31946.html", null ],
+      [ "DoSendCreateCard", "a31950.html", null ],
+      [ "DoUpdateAbout", "a31954.html", null ],
+      [ "DoUpdateCreateCard", "a31958.html", null ],
+      [ "DoUpdateErrors", "a31962.html", null ]
     ] ],
     [ "main", null, [
-      [ "Application", "a31252.html", "a31252" ],
-      [ "Window", "a31256.html", "a31256" ]
+      [ "Application", "a31986.html", "a31986" ],
+      [ "Window", "a31990.html", "a31990" ]
     ] ],
     [ "model", null, [
-      [ "BoardInfo", "a31272.html", null ],
-      [ "Boards", "a31276.html", "a31276" ],
-      [ "IBoards", "a31288.html", "a31288" ],
-      [ "QueueCards", "a31292.html", "a31292" ]
+      [ "BoardInfo", "a32026.html", null ],
+      [ "Boards", "a32030.html", "a32030" ],
+      [ "FileSystem", "a32042.html", "a32042" ],
+      [ "IBoards", "a32046.html", "a32046" ],
+      [ "IRepository", "a32050.html", "a32050" ],
+      [ "QueueCards", "a32054.html", "a32054" ]
     ] ],
     [ "view", null, [
-      [ "About", "a31336.html", "a31336" ],
-      [ "AboutChild", "a31356.html", "a31356" ],
-      [ "AboutMain", "a31360.html", "a31360" ],
-      [ "CreateCard", "a31364.html", "a31364" ],
-      [ "Errors", "a31376.html", "a31376" ],
-      [ "IAbout", "a31388.html", "a31388" ],
-      [ "ICreateCard", "a31392.html", "a31392" ],
-      [ "IErrors", "a31396.html", "a31396" ],
-      [ "IView", "a31400.html", "a31400" ],
-      [ "Layer", "a31404.html", "a31404" ]
+      [ "About", "a32110.html", "a32110" ],
+      [ "AboutChild", "a32130.html", null ],
+      [ "AboutMain", "a32134.html", null ],
+      [ "CreateCard", "a32138.html", "a32138" ],
+      [ "Errors", "a32150.html", "a32150" ],
+      [ "IAbout", "a32162.html", "a32162" ],
+      [ "ICreateCard", "a32166.html", "a32166" ],
+      [ "IErrors", "a32170.html", "a32170" ],
+      [ "IView", "a32174.html", "a32174" ],
+      [ "Layer", "a32178.html", null ]
     ] ]
 ];

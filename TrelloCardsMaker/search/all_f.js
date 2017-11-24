@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['window',['Window',['../a31256.html',1,'main']]],
-  ['window_5ftest_2ecpp',['Window_test.cpp',['../a30911.html',1,'']]]
+  ['usingerrorlayer',['UsingErrorLayer',['../a32138.html#a26adcdd601ff0bc5c96a415ce794dcfc',1,'view::CreateCard::UsingErrorLayer()'],['../a32166.html#a11f63c479b116e56553f4144b5512385',1,'view::ICreateCard::UsingErrorLayer()']]]
 ];
