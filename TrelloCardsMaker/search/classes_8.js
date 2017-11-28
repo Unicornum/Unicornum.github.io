@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['queuecards',['QueueCards',['../a32054.html',1,'model']]]
+  ['queuecards',['QueueCards',['../a32066.html',1,'model']]]
 ];

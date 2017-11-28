@@ -1,9 +1,12 @@
 var a32042 =
 [
-    [ "FileSystem", "a32042.html#a2d2907fd806a57c72e93dfd1872eb791", null ],
-    [ "GetBoards", "a32042.html#a5f87dac5452e81d97cd5fff2dad30fe3", null ],
-    [ "GetCards", "a32042.html#adb68947c93c74e7662012fc0a57db22a", null ],
-    [ "GetErrors", "a32042.html#a6425380976dcb418d85896c71eaef5c6", null ],
-    [ "GetPathToBoardsFile", "a32042.html#a74a74ec1992f22b9fe7485a08e1f48f9", null ],
-    [ "SetCards", "a32042.html#a7b2dc690195ba1578bfd3e2cc2381c13", null ]
+    [ "Boards", "a32042.html#a2d2e541cd481b010f49eea62b1b6f424", null ],
+    [ "CreateCard", "a32042.html#a107df31b95d54b6afe2789c42a24dfd9", null ],
+    [ "GetBoardName", "a32042.html#a94f49757ec3fcdf9cefe262ad9dae53e", null ],
+    [ "GetCurrentBoard", "a32042.html#a6b885125f992d55df29c9abad82163d7", null ],
+    [ "GetErrors", "a32042.html#aab2c45f9cab03a872b1f4b68e243a8ff", null ],
+    [ "GetInstance", "a32042.html#ad2a04bb595db252e861a15eadcf862a2", null ],
+    [ "GetLastCardText", "a32042.html#a6853eb7495e8473a0e5a72a9bf9d7b29", null ],
+    [ "GetPathToSourceFile", "a32042.html#aa3b6c7200568c831a2b2dfe1a4a5bc42", null ],
+    [ "IsEmpty", "a32042.html#a41ca2a93e94b74c7ee20b203f6eb94dd", null ]
 ];
