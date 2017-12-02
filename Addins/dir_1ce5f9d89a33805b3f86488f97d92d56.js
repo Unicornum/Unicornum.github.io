@@ -1,5 +1,5 @@
 var dir_1ce5f9d89a33805b3f86488f97d92d56 =
 [
     [ "DoQueryCaption_test.cpp", "a00278.html", null ],
-    [ "stdafx.h", "a41634_source.html", null ]
+    [ "stdafx.h", "a42248_source.html", null ]
 ];

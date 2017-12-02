@@ -1,8 +1,8 @@
 var dir_c72d2b2a5631f36241c66cad385823e1 =
 [
     [ "ProjectFiles.forward.hpp", "a02768_source.html", null ],
-    [ "stdafx.h", "a42507_source.html", null ],
-    [ "targetver.h", "a42744_source.html", null ],
+    [ "stdafx.h", "a43121_source.html", null ],
+    [ "targetver.h", "a43358_source.html", null ],
     [ "VCFile.hpp", "a02774_source.html", null ],
     [ "VCFiles.hpp", "a02777_source.html", null ],
     [ "VCFilter.hpp", "a02786_source.html", null ],

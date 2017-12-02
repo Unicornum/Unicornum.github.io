@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['window',['Window',['../a39202.html',1,'wrappers::vs']]],
-  ['windows',['Windows',['../a39206.html',1,'wrappers::vs']]]
+  ['window',['Window',['../a39808.html',1,'wrappers::vs']]],
+  ['windows',['Windows',['../a39812.html',1,'wrappers::vs']]]
 ];

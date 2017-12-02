@@ -11,6 +11,6 @@ var dir_238ef32e6f469011f517079d480ab206 =
     [ "OpenSettings.hpp", "a01667_source.html", null ],
     [ "RevertDocument.hpp", "a01673_source.html", null ],
     [ "RevertProjectFiles.hpp", "a01679_source.html", null ],
-    [ "stdafx.h", "a42135_source.html", null ],
-    [ "targetver.h", "a42627_source.html", null ]
+    [ "stdafx.h", "a42749_source.html", null ],
+    [ "targetver.h", "a43241_source.html", null ]
 ];

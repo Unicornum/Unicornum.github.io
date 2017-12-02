@@ -6,5 +6,5 @@ var dir_97d91fff6e94bf317981cd22f2e2c67d =
     [ "ProjectProxy.hpp", "a02123_source.html", null ],
     [ "SolutionImpl.hpp", "a02129_source.html", null ],
     [ "SolutionProxy.hpp", "a02132_source.html", null ],
-    [ "stdafx.h", "a42300_source.html", null ]
+    [ "stdafx.h", "a42914_source.html", null ]
 ];

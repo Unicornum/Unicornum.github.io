@@ -1,5 +1,10 @@
 var a36862 =
 [
-    [ "TaskPanel", "a36862.html#ab7e0cf73a171c8627313d05b9b54bcc0", null ],
-    [ "TaskPanel", "a36862.html#a4e35dc30d619d70cf5426d1cbdbe6504", null ]
+    [ "Controller", "a37176.html", [
+      [ "Controller", "a37176.html#a19b0c47ccb02e40feb2ccc7acbbb264e", null ],
+      [ "Controller", "a37176.html#a3abe5def5ca527d4515537159d3d12af", null ],
+      [ "Controller", "a37176.html#a94a996eec18108afd8da831289c8835b", null ],
+      [ "Controller", "a37176.html#a8e43ca1edbff3faad8cd167b0551155d", null ]
+    ] ],
+    [ "DoUpdate", "a37180.html", null ]
 ];
