@@ -6,5 +6,5 @@ var dir_7a33c6797156d5c7ddd4d238c8942903 =
     [ "Patterns", "dir_1cfe0627f7c75f218b0761dfdad9e26d.html", "dir_1cfe0627f7c75f218b0761dfdad9e26d" ],
     [ "Settings", "dir_79c2019f3b3b7395d40dda08fc012258.html", "dir_79c2019f3b3b7395d40dda08fc012258" ],
     [ "Vfs", "dir_c66237fe9a6c0c7c1e41f5b2c00f5183.html", "dir_c66237fe9a6c0c7c1e41f5b2c00f5183" ],
-    [ "modules.hpp", "a00830.html", null ]
+    [ "modules.hpp", "a00839.html", null ]
 ];

@@ -12,13 +12,14 @@ var dir_d9e1277ce6eb969a50c70679da524949 =
     [ "Test.Pool", "dir_a73a3a6f37310c72b23d680e949748c4.html", "dir_a73a3a6f37310c72b23d680e949748c4" ],
     [ "Test.Replace", "dir_2b102583dcac85683f028afc65007a7e.html", "dir_2b102583dcac85683f028afc65007a7e" ],
     [ "Test.Search", "dir_0833735499c4bd702bc1a2daaf8a6ef2.html", "dir_0833735499c4bd702bc1a2daaf8a6ef2" ],
+    [ "Test.Singleton", "dir_451ce0bf9ad5ec3ebe319948a997e14e.html", "dir_451ce0bf9ad5ec3ebe319948a997e14e" ],
     [ "Test.String", "dir_b0096af7fdee281cc70a8a6715152396.html", "dir_b0096af7fdee281cc70a8a6715152396" ],
     [ "Test.String.Console", "dir_19a502ffe9d3241a955b8cf4b142edd1.html", "dir_19a502ffe9d3241a955b8cf4b142edd1" ],
     [ "Test.StringCast", "dir_8219595e7e48cf6f5f945cc3a5ce7887.html", "dir_8219595e7e48cf6f5f945cc3a5ce7887" ],
     [ "Test.StringCast.Console", "dir_be996b01fa5ebc1da9c21f44eda96cb5.html", "dir_be996b01fa5ebc1da9c21f44eda96cb5" ],
     [ "Test.TrivialPtr", "dir_6849b098b73c7d0d365a4202c427dd7a.html", "dir_6849b098b73c7d0d365a4202c427dd7a" ],
     [ "Test.Vector", "dir_e0d76473a311d3eade704696b3e06faa.html", "dir_e0d76473a311d3eade704696b3e06faa" ],
-    [ "mock.hpp", "a38477.html", null ],
-    [ "stdafx.h", "a37097_source.html", null ],
-    [ "UstrEq.hpp", "a00461_source.html", null ]
+    [ "mock.hpp", "a38721.html", null ],
+    [ "stdafx.h", "a37335_source.html", null ],
+    [ "UstrEq.hpp", "a00470_source.html", null ]
 ];

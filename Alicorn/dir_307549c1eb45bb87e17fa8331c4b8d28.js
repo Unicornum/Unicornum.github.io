@@ -5,6 +5,6 @@ var dir_307549c1eb45bb87e17fa8331c4b8d28 =
     [ "Test.Logger", "dir_5cba0a3c0ae9552d67993a8d2db50ff5.html", "dir_5cba0a3c0ae9552d67993a8d2db50ff5" ],
     [ "Test.Logger.2", "dir_ed9674e6e7cf664636f62d3c77766a24.html", "dir_ed9674e6e7cf664636f62d3c77766a24" ],
     [ "Test.LoggerSpeed", "dir_49dbd51a00e322b28794fd9feff49b95.html", "dir_49dbd51a00e322b28794fd9feff49b95" ],
-    [ "logger.hpp", "a00800.html", "a00800" ],
-    [ "logger.mock.hpp", "a00803_source.html", null ]
+    [ "logger.hpp", "a00809.html", "a00809" ],
+    [ "logger.mock.hpp", "a00812_source.html", null ]
 ];

@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходный файл Solution/Solution/Modules/Patterns/Patterns/pimpl.hpp</title>
+<title>Alicorn: Исходный файл Solution/Solution/Modules/Patterns/Patterns/mvc/non-blocking-signal.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2865 Platform: x64 Build: 11:42 15 Сентябрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.8.2 Revision: 2898 Platform: x64 Build: 17:02 13 Январь 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a00887_source.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,20 +89,22 @@ $(document).ready(function(){initNavTree('a00887_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">pimpl.hpp</div>  </div>
+<div class="title">non-blocking-signal.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\std\memory\trivial-ptr.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a34452.html">alicorn</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>modules</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>patterns</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>pimpl</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a34418.html#ga26595abd46883c33939a0be82ad2b5a1">   26</a></span>&#160;<span class="keyword">using</span> <a class="code" href="a34694.html">Ptr</a> = <a class="code" href="a34694.html">::alicorn::extension::std::trivial_ptr&lt;T&gt;</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;} <span class="comment">// namespace pimpl</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;} <span class="comment">// namespace patterns</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;} <span class="comment">// namespace modules</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a34452_html"><div class="ttname"><a href="a34452.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> format.hpp:6</div></div>
-<div class="ttc" id="a34694_html"><div class="ttname"><a href="a34694.html">alicorn::extension::std::trivial_ptr</a></div><div class="ttdoc">Класс входит в проект Std   Простой класс-обертка для указателя. </div><div class="ttdef"><b>Definition:</b> trivial-ptr.hpp:62</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a34674.html">alicorn</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>modules</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>patterns</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>mvc</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span><a class="code" href="a34777.html">controller</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TParam&gt;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a35632.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="a35632.html">NonBlockingSignal</a></div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a35632.html#af076a355dacebdb9939d236b2ecbac36">operator() </a>(TParam);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Execute(TParam) = 0;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Fail(const ::std::string &amp;) = 0;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a35632.html">NonBlockingSignal</a>(<span class="keywordtype">void</span>) {}</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace controller</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace mvc</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace patterns</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace modules</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#include &quot;non-blocking-signal.inl&quot;</span></div><div class="ttc" id="a35632_html"><div class="ttname"><a href="a35632.html">alicorn::modules::patterns::mvc::controller::NonBlockingSignal</a></div><div class="ttdoc">Класс входит в Patterns   Базовый класс неблокирующего сигнала. </div><div class="ttdef"><b>Definition:</b> non-blocking-signal.hpp:41</div></div>
+<div class="ttc" id="a34674_html"><div class="ttname"><a href="a34674.html">alicorn</a></div><div class="ttdef"><b>Definition:</b> format.hpp:6</div></div>
+<div class="ttc" id="a34777_html"><div class="ttname"><a href="a34777.html">controller</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:13</div></div>
+<div class="ttc" id="a35632_html_af076a355dacebdb9939d236b2ecbac36"><div class="ttname"><a href="a35632.html#af076a355dacebdb9939d236b2ecbac36">alicorn::modules::patterns::mvc::controller::NonBlockingSignal::operator()</a></div><div class="ttdeci">void operator()(TParam)</div><div class="ttdoc">Оператор выполнения действия сигнала. </div><div class="ttdef"><b>Definition:</b> non-blocking-signal.inl:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_1cfe0627f7c75f218b0761dfdad9e26d.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_b245c5d747bfebb339f4e4e4a979f544.html">Patterns</a></li><li class="navelem"><b>pimpl.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 15 Сен 2017 11:42:37. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_1cfe0627f7c75f218b0761dfdad9e26d.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_b245c5d747bfebb339f4e4e4a979f544.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_c02562142ce6f734b379d362c3cd8f37.html">mvc</a></li><li class="navelem"><b>non-blocking-signal.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 13 Янв 2018 17:03:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

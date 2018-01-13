@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Extension/Std/Test.Std/Test.ClassInfo/ClassInfo_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Extension/Std/Test.Std/Test.CallProxy/CallProxy_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.1 Revision: 2865 Platform: x64 Build: 11:42 15 Сентябрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 3.8.2 Revision: 2898 Platform: x64 Build: 17:02 13 Январь 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a00422.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,33 +89,34 @@ $(document).ready(function(){initNavTree('a00422.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл ClassInfo_test.cpp</div>  </div>
+<div class="title">Файл CallProxy_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
 <code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\std.hpp&gt;</code><br />
+<code>#include &lt;alicorn\std\call-proxy.hpp&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для ClassInfo_test.cpp:</div>
+Граф включаемых заголовочных файлов для CallProxy_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00423.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_class_info_2_class_info__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_class_info_2_class_info__test_8cpp" id="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_class_info_2_class_info__test_8cpp">
-<area shape="rect" id="node3" href="a37106_source.html" title="stdafx.h" alt="" coords="151,117,227,144"/>
-<area shape="rect" id="node7" href="a38477_source.html" title="..\\mock.hpp" alt="" coords="225,200,327,227"/>
+<div class="center"><img src="a00423.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_call_proxy_2_call_proxy__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_call_proxy_2_call_proxy__test_8cpp" id="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_call_proxy_2_call_proxy__test_8cpp">
+<area shape="rect" id="node3" href="a37338_source.html" title="stdafx.h" alt="" coords="159,117,235,144"/>
+<area shape="rect" id="node7" href="a38721_source.html" title="..\\mock.hpp" alt="" coords="221,208,323,235"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса ClassInfo. </p>
+<div class="textblock"><p>Тесты класса CallProxy. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_d9e1277ce6eb969a50c70679da524949.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_26852fa8d531cd87186f6ba1784383af.html">Test.ClassInfo</a></li><li class="navelem"><a class="el" href="a00422.html">ClassInfo_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 15 Сен 2017 11:42:39. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_d9e1277ce6eb969a50c70679da524949.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_08942dc9b1c9474987ecc9762faf5c78.html">Test.CallProxy</a></li><li class="navelem"><a class="el" href="a00422.html">CallProxy_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 13 Янв 2018 17:03:25. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

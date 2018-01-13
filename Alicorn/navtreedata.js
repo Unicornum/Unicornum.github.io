@@ -1,8 +1,31 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "Alicorn", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a34391.html", null ],
+    [ "Список задач", "a34613.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -14,8 +37,8 @@ var NAVTREE =
         [ "Переменные", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Файлы", null, [
-      [ "Файлы", "files.html", "files" ],
+    [ "Файлы", "files.html", [
+      [ "Файлы", "files.html", "files_dup" ],
       [ "Список членов всех файлов", "globals.html", [
         [ "Указатель", "globals.html", null ],
         [ "Функции", "globals_func.html", null ],
@@ -28,14 +51,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"a00863_source.html",
-"a34397.html#ga092d73a3c219d160170528be0957ecf9",
-"a35234.html#aead43313ff34adde57b4d0f79d535f1c",
-"a36182.html",
-"a37055_source.html",
-"a38384_source.html",
-"dir_0b0e36c9699ba1138c7645cbe472b96b.html",
-"dir_db423771c2a89a7e8ed97beb6881518a.html"
+"a00866_source.html",
+"a34618.html",
+"a35472.html#a8437da35798cc3af078e482edd029bf3",
+"a36380.html",
+"a37281_source.html",
+"a38613_source.html",
+"dir_06e848a426461a7249d9b49e1430f5b0.html",
+"dir_d57755bdaf7b0d5fbf223ad8500ef0b1.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
