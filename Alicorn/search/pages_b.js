@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['std',['Std',['../a37106.html',1,'ExtensionPage']]],
-  ['settings',['Settings',['../a37113.html',1,'ModulesPage']]],
-  ['source',['Source',['../a37115.html',1,'SolutionPage']]],
-  ['system',['System',['../a37123.html',1,'SolutionPage']]],
-  ['settingsapp',['SettingsApp',['../a37133.html',1,'ToolsPage']]]
+  ['std',['Std',['../a37281.html',1,'ExtensionPage']]],
+  ['settings',['Settings',['../a37288.html',1,'ModulesPage']]],
+  ['source',['Source',['../a37290.html',1,'SolutionPage']]],
+  ['system',['System',['../a37298.html',1,'SolutionPage']]],
+  ['settings_2eapp',['Settings.App',['../a37309.html',1,'ToolsPage']]]
 ];

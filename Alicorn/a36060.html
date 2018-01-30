@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс alicorn::source::document::Utilities</title>
+<title>Alicorn: Класс alicorn::modules::vfs::IConverter</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.2 Revision: 2898 Platform: x64 Build: 17:02 13 Январь 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.3 Revision: 2946 Platform: x64 Build: 00:06 31 Январь 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,262 +89,68 @@ $(document).ready(function(){initNavTree('a36060.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Открытые статические члены</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a36057.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::source::document::Utilities<div class="ingroups"><a class="el" href="a34614.html">Alicorn</a> &raquo; <a class="el" href="a34650.html">Source</a> &raquo; <a class="el" href="a34647.html">Document</a></div></div>  </div>
+<div class="title">Класс alicorn::modules::vfs::IConverter<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a34773.html">Alicorn</a> &raquo; <a class="el" href="a34795.html">Modules</a> &raquo; <a class="el" href="a34801.html">Virtual File System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a37119.html">Document</a> <br />
- Класс вспомогательных функций.  
+<p>Класс входит в <a class="el" href="a37289.html">Virtual File System</a> <br />
+ Интерфейсный класс преобразователя данных.  
  <a href="a36060.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01223_source.html">utilities.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01055_source.html">iconverter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::source::document::Utilities:</div>
+Граф наследования:alicorn::modules::vfs::IConverter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a36058.png" border="0" usemap="#alicorn_1_1source_1_1document_1_1_utilities_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1source_1_1document_1_1_utilities_coll__map" id="alicorn_1_1source_1_1document_1_1_utilities_coll__map">
+<div class="center"><img src="a36059.png" border="0" usemap="#alicorn_1_1modules_1_1vfs_1_1_i_converter_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1modules_1_1vfs_1_1_i_converter_inherit__map" id="alicorn_1_1modules_1_1vfs_1_1_i_converter_inherit__map">
+<area shape="rect" id="node3" href="a36044.html" title="Класс входит в Virtual File System &#160;&#160;Класс реализации интерфейса преобразования для сжатия/распаковки..." alt="" coords="5,184,203,291"/>
+<area shape="rect" id="node5" href="a36052.html" title="Класс входит в Virtual File System &#160;&#160;Класс реализации интерфейса преобразования для шифрования данных..." alt="" coords="227,177,467,298"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса alicorn::modules::vfs::IConverter:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36058.png" border="0" usemap="#alicorn_1_1modules_1_1vfs_1_1_i_converter_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1modules_1_1vfs_1_1_i_converter_coll__map" id="alicorn_1_1modules_1_1vfs_1_1_i_converter_coll__map">
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Открытые статические члены</h2></td></tr>
-<tr class="memitem:aa5c890e6ac0f9a8f58880c7469901031"><td class="memTemplParams" colspan="2">template&lt;class TSource , class T &gt; </td></tr>
-<tr class="memitem:aa5c890e6ac0f9a8f58880c7469901031"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a36060.html#aa5c890e6ac0f9a8f58880c7469901031">Replace</a> (const <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt; &amp;, const <a class="el" href="a35124.html">String_t</a> &amp;, const T &amp;)</td></tr>
-<tr class="memdesc:aa5c890e6ac0f9a8f58880c7469901031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция замены во всем документе указанной строки на заданное значение.  <a href="#aa5c890e6ac0f9a8f58880c7469901031">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa5c890e6ac0f9a8f58880c7469901031"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b3d563fa229e4201ff44707ad33e640"><td class="memTemplParams" colspan="2">template&lt;class TSource , class TPredicate &gt; </td></tr>
-<tr class="memitem:a6b3d563fa229e4201ff44707ad33e640"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a36060.html#a6b3d563fa229e4201ff44707ad33e640">Insert</a> (const <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt; &amp;, const Strings_t &amp;, TPredicate)</td></tr>
-<tr class="memdesc:a6b3d563fa229e4201ff44707ad33e640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вставки набора строк в текстовый документ.  <a href="#a6b3d563fa229e4201ff44707ad33e640">Подробнее...</a><br /></td></tr>
-<tr class="separator:a6b3d563fa229e4201ff44707ad33e640"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae59e45200c1c8057e5f92824882093c4"><td class="memTemplParams" colspan="2">template&lt;class TSource , class TPredicate &gt; </td></tr>
-<tr class="memitem:ae59e45200c1c8057e5f92824882093c4"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a36060.html#ae59e45200c1c8057e5f92824882093c4">Remove</a> (const <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt; &amp;, TPredicate)</td></tr>
-<tr class="memdesc:ae59e45200c1c8057e5f92824882093c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция удаления строк из текстового документа.  <a href="#ae59e45200c1c8057e5f92824882093c4">Подробнее...</a><br /></td></tr>
-<tr class="separator:ae59e45200c1c8057e5f92824882093c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8f85b8c98182aa0987fbc5f98d2f4c9c"><td class="memItemLeft" align="right" valign="top"><a id="a8f85b8c98182aa0987fbc5f98d2f4c9c"></a>
+virtual Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36060.html#a8f85b8c98182aa0987fbc5f98d2f4c9c">PrePackAction</a> (const Data_t &amp;) const =0</td></tr>
+<tr class="memdesc:a8f85b8c98182aa0987fbc5f98d2f4c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования данных перед упаковкой в хранилище. <br /></td></tr>
+<tr class="separator:a8f85b8c98182aa0987fbc5f98d2f4c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835b7d13054ed583db5dc2fd81273356"><td class="memItemLeft" align="right" valign="top"><a id="a835b7d13054ed583db5dc2fd81273356"></a>
+virtual Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36060.html#a835b7d13054ed583db5dc2fd81273356">PostUnpackAction</a> (const Data_t &amp;) const =0</td></tr>
+<tr class="memdesc:a835b7d13054ed583db5dc2fd81273356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования данных после распаковки хранилища (должна производить действие, обратное действию функции <a class="el" href="a36060.html#a8f85b8c98182aa0987fbc5f98d2f4c9c" title="Функция для преобразования данных перед упаковкой в хранилище. ">PrePackAction()</a>). <br /></td></tr>
+<tr class="separator:a835b7d13054ed583db5dc2fd81273356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a37119.html">Document</a> <br />
- Класс вспомогательных функций. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a37289.html">Virtual File System</a> <br />
+ Интерфейсный класс преобразователя данных. </p>
 <ul>
-<li>Примеры использования функций см. <a class="el" href="a34647.html">Document</a>.</li>
+<li>Предназначен для создания классов промежуточной обработки (например, сжатия и шифрования) данных при упаковке/распаковке файлов классом <a class="el" href="a36076.html" title="Класс входит в Virtual File System   Класс реализации упаковки файлов в хранилище/получения содержимо...">Pack</a>.</li>
 </ul>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>16 Февраль 2017 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Июнь 2016 <br />
 </dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a6b3d563fa229e4201ff44707ad33e640"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b3d563fa229e4201ff44707ad33e640">&#9670;&nbsp;</a></span>Insert()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TSource , class TPredicate &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a36004.html">Utilities::Text_t</a>&lt; TSource &gt; alicorn::source::document::Utilities::Insert </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_Text</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Strings_t &amp;&#160;</td>
-          <td class="paramname"><em>_Inserted</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TPredicate&#160;</td>
-          <td class="paramname"><em>_Predicate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция вставки набора строк в текстовый документ. </p>
-<ul>
-<li>Результат будет возвращен в том же формате, что и исходный документ.</li>
-<li>Исходный документ не будет изменен.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текстовый документ. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Predicate</td><td>Предикат, который определяет, после какой строки будет вставлен указанный набор строк. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Inserted</td><td>Набор вставляемых строк.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Текстовый документ, в котором после каждой строки исходного документа, для которой предикат вернет <b>true</b>, будет вставлен указанны набор строк.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae59e45200c1c8057e5f92824882093c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae59e45200c1c8057e5f92824882093c4">&#9670;&nbsp;</a></span>Remove()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TSource , class TPredicate &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a36004.html">Utilities::Text_t</a>&lt; TSource &gt; alicorn::source::document::Utilities::Remove </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_Text</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TPredicate&#160;</td>
-          <td class="paramname"><em>_Predicate</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция удаления строк из текстового документа. </p>
-<ul>
-<li>Результат будет возвращен в том же формате, что и исходный документ.</li>
-<li>Исходный документ не будет изменен.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текстовый документ. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Predicate</td><td>Предикат, который определяет, какие строки будут удалены.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Текстовый документ, в котором будут отсутствовать строки, для которых предикат вернул <b>true</b>.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa5c890e6ac0f9a8f58880c7469901031"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5c890e6ac0f9a8f58880c7469901031">&#9670;&nbsp;</a></span>Replace()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TSource , class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a36004.html">Utilities::Text_t</a>&lt; TSource &gt; alicorn::source::document::Utilities::Replace </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a36004.html">Text_t</a>&lt; TSource &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_Text</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a35124.html">String_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>_Change</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция замены во всем документе указанной строки на заданное значение. </p>
-<ul>
-<li>Результат будет возвращен в том же формате, что и исходный документ.</li>
-<li>Исходный документ не будет изменен.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Text</td><td>Исходный текстовый документ. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Pattern</td><td>Текст, который следует заменить. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Change</td><td>Значение (любого типа, который поддерживает преобразование в String при помощи boost::lexical_cast&lt;&gt;()), на которое будет заменен искомый текст.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd>Текстовый документ, в котором произведены замены.</dd></dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Source/Document/Document/<a class="el" href="a01223_source.html">utilities.hpp</a></li>
-<li>Solution/Solution/Source/Document/Document/utilities.inl</li>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Modules/Vfs/Vfs/<a class="el" href="a01055_source.html">iconverter.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>document</b></li><li class="navelem"><a class="el" href="a36060.html">Utilities</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 13 Янв 2018 17:03:27. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>modules</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a36060.html">IConverter</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 31 Янв 2018 00:07:10. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

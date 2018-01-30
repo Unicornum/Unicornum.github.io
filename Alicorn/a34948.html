@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Шаблон класса alicorn::extension::std::Singleton&lt; TUsing &gt;</title>
+<title>Alicorn: Класс alicorn::extension::boost::Format</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.2 Revision: 2898 Platform: x64 Build: 17:02 13 Январь 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.3 Revision: 2946 Platform: x64 Build: 00:06 31 Январь 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,67 +89,46 @@ $(document).ready(function(){initNavTree('a34948.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
 <a href="a34945.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::extension::std::Singleton&lt; TUsing &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34614.html">Alicorn</a> &raquo; <a class="el" href="a34623.html">Extension</a> &raquo; <a class="el" href="a34628.html">Std</a></div></div>  </div>
+<div class="title">Класс alicorn::extension::boost::Format<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34773.html">Alicorn</a> &raquo; <a class="el" href="a34782.html">Extension</a> &raquo; <a class="el" href="a34775.html">Boost</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a37106.html">Std</a> <br />
- Класс доступа к общему для всей программы объекту.  
+<p>Класс входит в <a class="el" href="a37277.html">Boost</a> <br />
+ Обертка над boost::format для работы с классом <a class="el" href="a35284.html" title="Класс входит в Std   Класс универсальных Unicode строк. ">alicorn::extension::std::String</a>.  
  <a href="a34948.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00341_source.html">singleton.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00128_source.html">format.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса alicorn::extension::std::Singleton&lt; TUsing &gt;:</div>
+Граф связей класса alicorn::extension::boost::Format:</div>
 <div class="dyncontent">
-<div class="center"><img src="a34946.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1_singleton_3_01_t_using_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1extension_1_1std_1_1_singleton_3_01_t_using_01_4_coll__map" id="alicorn_1_1extension_1_1std_1_1_singleton_3_01_t_using_01_4_coll__map">
+<div class="center"><img src="a34946.png" border="0" usemap="#alicorn_1_1extension_1_1boost_1_1_format_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1extension_1_1boost_1_1_format_coll__map" id="alicorn_1_1extension_1_1boost_1_1_format_coll__map">
 </map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Закрытые статические члены</h2></td></tr>
-<tr class="memitem:ac4179fa44b7e7f145546669d04925353"><td class="memItemLeft" align="right" valign="top"><a id="ac4179fa44b7e7f145546669d04925353"></a>
-static UsingPtr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34948.html#ac4179fa44b7e7f145546669d04925353">Make</a> (void)</td></tr>
-<tr class="memdesc:ac4179fa44b7e7f145546669d04925353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания общего используемого объекта. <br /></td></tr>
-<tr class="separator:ac4179fa44b7e7f145546669d04925353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TUsing&gt;<br />
-class alicorn::extension::std::Singleton&lt; TUsing &gt;</h3>
-
-<p>Класс входит в проект <a class="el" href="a37106.html">Std</a> <br />
- Класс доступа к общему для всей программы объекту. </p>
-<p>Предназначен для доступа из любой точки программы к единственному общему объекту:</p><ul>
-<li>Настроек программы (<a class="el" href="a37113.html">Settings</a>).</li>
-<li>Виртуальной файловой системы (<a class="el" href="a37114.html">Virtual File System</a>). В программу, использующую этот класс следует добавить реализацию функции создания общего используемого объекта (эта функция вызывается один раз при первом обращении к объекту).</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TUsing</td><td>Класс общего используемого объекта.</td></tr>
-  </table>
-  </dd>
-</dl>
+<div class="textblock"><p>Класс входит в <a class="el" href="a37277.html">Boost</a> <br />
+ Обертка над boost::format для работы с классом <a class="el" href="a35284.html" title="Класс входит в Std   Класс универсальных Unicode строк. ">alicorn::extension::std::String</a>. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.0.1.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Январь 2018 <br />
+<dl class="section date"><dt>Дата</dt><dd>16 Сентябрь 2015 <br />
+ 10 Август 2016 <br />
 </dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2018 </dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2016 </dd></dl>
 </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Extension/Std/Std/<a class="el" href="a00341_source.html">singleton.hpp</a></li>
-<li>Solution/Solution/Extension/Std/Std/singleton.inl</li>
-<li>Solution/Solution/Extension/Std/Test.Std/Test.Singleton/<a class="el" href="a00455.html">Singleton_test.cpp</a></li>
+<li>Solution/Solution/Extension/Boost/Boost/<a class="el" href="a00128_source.html">format.hpp</a></li>
+<li>Solution/Solution/Extension/Boost/Boost/format.inl</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="a34948.html">Singleton</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 13 Янв 2018 17:03:26. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>boost</b></li><li class="navelem"><a class="el" href="a34948.html">Format</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 31 Янв 2018 00:07:09. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

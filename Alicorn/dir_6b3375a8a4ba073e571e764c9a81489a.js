@@ -8,5 +8,5 @@ var dir_6b3375a8a4ba073e571e764c9a81489a =
     [ "Std", "dir_e9404d5ca9c03f29e90659e23ef5b234.html", "dir_e9404d5ca9c03f29e90659e23ef5b234" ],
     [ "Testing", "dir_e87471de3dac63677f7cb2dd5765acbf.html", "dir_e87471de3dac63677f7cb2dd5765acbf" ],
     [ "wxWidgets", "dir_7ebb1a87177cedef3fa4b25334fb1686.html", "dir_7ebb1a87177cedef3fa4b25334fb1686" ],
-    [ "extension.hpp", "a00233.html", null ]
+    [ "extension.hpp", "a00242.html", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Source/Document/Test.Document/Test.Using/UsingXml_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Source/Document/Test.Document/Test.Universal/Universal_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.2 Revision: 2898 Platform: x64 Build: 17:02 13 Январь 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.3 Revision: 2946 Platform: x64 Build: 00:06 31 Январь 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,215 +88,37 @@ $(document).ready(function(){initNavTree('a01256.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл UsingXml_test.cpp</div>  </div>
+<div class="title">Файл Universal_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
 <code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\document.hpp&gt;</code><br />
+<code>#include &lt;alicorn\document\universal.hpp&gt;</code><br />
+<code>#include &lt;alicorn\document\universal.inl&gt;</code><br />
+<code>#include &lt;alicorn\document\node-iterator.hpp&gt;</code><br />
+<code>#include &lt;alicorn\lib-info\document.hpp&gt;</code><br />
+<code>#include &quot;Implementation.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для UsingXml_test.cpp:</div>
+Граф включаемых заголовочных файлов для Universal_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01257.png" border="0" usemap="#_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_using_2_using_xml__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_using_2_using_xml__test_8cpp" id="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_using_2_using_xml__test_8cpp">
-<area shape="rect" id="node3" href="a37674_source.html" title="stdafx.h" alt="" coords="167,117,243,144"/>
-<area shape="rect" id="node7" href="a38760_source.html" title="..\\mock.hpp" alt="" coords="229,208,331,235"/>
+<div class="center"><img src="a01257.png" border="0" usemap="#_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_universal_2_universal__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_universal_2_universal__test_8cpp" id="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_universal_2_universal__test_8cpp">
+<area shape="rect" id="node3" href="a37847_source.html" title="stdafx.h" alt="" coords="167,133,243,160"/>
+<area shape="rect" id="node27" href="a39251_source.html" title="Implementation.hpp" alt="" coords="1553,133,1705,160"/>
+<area shape="rect" id="node7" href="a38960_source.html" title="..\\mock.hpp" alt="" coords="229,224,331,251"/>
 </map>
 </div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Функции</h2></td></tr>
-<tr class="memitem:a1c8e8614d4eb32d9a7e0403ea61791a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01256.html#a1c8e8614d4eb32d9a7e0403ea61791a2">TEST_F</a> (UsingXml_test, Test_BanUsingDefaultLocale)</td></tr>
-<tr class="separator:a1c8e8614d4eb32d9a7e0403ea61791a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74e999e146c05b1c9a855a4d61a39b1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01256.html#a74e999e146c05b1c9a855a4d61a39b1b">TEST_F</a> (UsingXml_test, Test_CreateNewDocument)</td></tr>
-<tr class="separator:a74e999e146c05b1c9a855a4d61a39b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add7c97d784a2adaf03803c6e4743b899"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01256.html#add7c97d784a2adaf03803c6e4743b899">TEST_F</a> (UsingXml_test, Test_ValidNodeAfterDeleteDocument)</td></tr>
-<tr class="separator:add7c97d784a2adaf03803c6e4743b899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d0d82f1e3cdeded2eeb7f55a8cd3c38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01256.html#a8d0d82f1e3cdeded2eeb7f55a8cd3c38">TEST_F</a> (UsingXml_test, Test_ReadDocument)</td></tr>
-<tr class="separator:a8d0d82f1e3cdeded2eeb7f55a8cd3c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0fe86ab56c795127c0f4af4b1081544"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a01256.html#ac0fe86ab56c795127c0f4af4b1081544">TEST_F</a> (UsingXml_test, Test_FindNode)</td></tr>
-<tr class="separator:ac0fe86ab56c795127c0f4af4b1081544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Using. </p>
-</div><h2 class="groupheader">Функции</h2>
-<a id="a1c8e8614d4eb32d9a7e0403ea61791a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c8e8614d4eb32d9a7e0403ea61791a2">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">UsingXml_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_BanUsingDefaultLocale&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[BanUsingDefaultLocale]</p>
-<p>[BanUsingDefaultLocale] </p>
-
-</div>
-</div>
-<a id="a74e999e146c05b1c9a855a4d61a39b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74e999e146c05b1c9a855a4d61a39b1b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">UsingXml_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_CreateNewDocument&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[CreateNewDocument]</p>
-<p>[CreateNewDocument] </p>
-
-</div>
-</div>
-<a id="add7c97d784a2adaf03803c6e4743b899"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add7c97d784a2adaf03803c6e4743b899">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">UsingXml_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_ValidNodeAfterDeleteDocument&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[UsingNodeAfterDeleteDocument]</p>
-<p>[UsingNodeAfterDeleteDocument] </p>
-
-</div>
-</div>
-<a id="a8d0d82f1e3cdeded2eeb7f55a8cd3c38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d0d82f1e3cdeded2eeb7f55a8cd3c38">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">UsingXml_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_ReadDocument&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[ReadDocument]</p>
-<p>[ReadDocument] </p>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01256_a8d0d82f1e3cdeded2eeb7f55a8cd3c38_cgraph.png" border="0" usemap="#a01256_a8d0d82f1e3cdeded2eeb7f55a8cd3c38_cgraph" alt=""/></div>
-<map name="a01256_a8d0d82f1e3cdeded2eeb7f55a8cd3c38_cgraph" id="a01256_a8d0d82f1e3cdeded2eeb7f55a8cd3c38_cgraph">
-<area shape="rect" id="node3" href="a34621.html#ga8640e62399009826e69832f22ddbf23e" title="alicorn::extension\l::cpp::math::Root" alt="" coords="129,5,274,46"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac0fe86ab56c795127c0f4af4b1081544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0fe86ab56c795127c0f4af4b1081544">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">UsingXml_test&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Test_FindNode&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>[FindNode]</p>
-<p>[FindNode] </p>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a01256_ac0fe86ab56c795127c0f4af4b1081544_cgraph.png" border="0" usemap="#a01256_ac0fe86ab56c795127c0f4af4b1081544_cgraph" alt=""/></div>
-<map name="a01256_ac0fe86ab56c795127c0f4af4b1081544_cgraph" id="a01256_ac0fe86ab56c795127c0f4af4b1081544_cgraph">
-<area shape="rect" id="node3" href="a34621.html#ga8640e62399009826e69832f22ddbf23e" title="alicorn::extension\l::cpp::math::Root" alt="" coords="129,5,274,46"/>
-</map>
-</div>
-
-</div>
-</div>
-</div><!-- contents -->
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса Universal. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_9b7a7cc36b85820c41a89a179cfe5dd7.html">Document</a></li><li class="navelem"><a class="el" href="dir_80005dfa0ec67e2df12d1bc9f9b5a935.html">Test.Document</a></li><li class="navelem"><a class="el" href="dir_82c31384d6119d12940827ce4e332a5c.html">Test.Using</a></li><li class="navelem"><a class="el" href="a01256.html">UsingXml_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Сб 13 Янв 2018 17:03:25. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_9b7a7cc36b85820c41a89a179cfe5dd7.html">Document</a></li><li class="navelem"><a class="el" href="dir_80005dfa0ec67e2df12d1bc9f9b5a935.html">Test.Document</a></li><li class="navelem"><a class="el" href="dir_0c4b30945a767be4b88457713f90670d.html">Test.Universal</a></li><li class="navelem"><a class="el" href="a01256.html">Universal_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Ср 31 Янв 2018 00:07:08. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

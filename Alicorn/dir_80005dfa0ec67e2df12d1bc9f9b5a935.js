@@ -8,6 +8,6 @@ var dir_80005dfa0ec67e2df12d1bc9f9b5a935 =
     [ "Test.Using", "dir_82c31384d6119d12940827ce4e332a5c.html", "dir_82c31384d6119d12940827ce4e332a5c" ],
     [ "Test.Using.Text.Console", "dir_f0f1b6fbf10a0e92e6b13cb44882eb30.html", "dir_f0f1b6fbf10a0e92e6b13cb44882eb30" ],
     [ "Test.Using.Xml.Console", "dir_bd76d824b77f5b12252a83982320c49a.html", "dir_bd76d824b77f5b12252a83982320c49a" ],
-    [ "mock.hpp", "a38760.html", null ],
-    [ "stdafx.h", "a37656_source.html", null ]
+    [ "mock.hpp", "a38960.html", null ],
+    [ "stdafx.h", "a37835_source.html", null ]
 ];
