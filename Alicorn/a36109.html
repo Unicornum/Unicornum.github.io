@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Cписок членов класса</title>
+<title>Alicorn: Шаблон класса alicorn::source::image::Universal&lt; TPixel &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.3 Revision: 2946 Platform: x64 Build: 00:06 31 Январь 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.4 Revision: 2961 Platform: x64 Build: 17:31 09 Февраль 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a36112.html','');});
+$(document).ready(function(){initNavTree('a36109.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,19 +88,76 @@ $(document).ready(function(){initNavTree('a36112.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a36106.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">alicorn::source::crypto::PlantUml64 Cписок членов класса</div>  </div>
+<div class="title">Шаблон класса alicorn::source::image::Universal&lt; TPixel &gt;<div class="ingroups"><a class="el" href="a34566.html">Alicorn</a> &raquo; <a class="el" href="a34602.html">Source</a> &raquo; <a class="el" href="a34601.html">Image</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a36112.html">alicorn::source::crypto::PlantUml64</a>, включая наследуемые из базового класса</p>
-<table class="directory">
-</table></div><!-- contents -->
+<p>Класс входит в проект <a class="el" href="a37090.html">Image</a> <br />
+ Класс реализации формирования данных изображения с указанными модификаторами.  
+ <a href="a36109.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a39137_source.html">universal.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса alicorn::source::image::Universal&lt; TPixel &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36107.png" border="0" usemap="#alicorn_1_1source_1_1image_1_1_universal_3_01_t_pixel_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1source_1_1image_1_1_universal_3_01_t_pixel_01_4_coll__map" id="alicorn_1_1source_1_1image_1_1_universal_3_01_t_pixel_01_4_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ac1c6d298dbc678e8472911c6931e71a2"><td class="memItemLeft" align="right" valign="top"><a id="ac1c6d298dbc678e8472911c6931e71a2"></a>
+const <a class="el" href="a36065.html">Data</a>&lt; TPixel &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36109.html#ac1c6d298dbc678e8472911c6931e71a2">GetData</a> (void) const</td></tr>
+<tr class="memdesc:ac1c6d298dbc678e8472911c6931e71a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения сформированных данных изображения. <br /></td></tr>
+<tr class="separator:ac1c6d298dbc678e8472911c6931e71a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;class TPixel&gt;<br />
+class alicorn::source::image::Universal&lt; TPixel &gt;</h3>
+
+<p>Класс входит в проект <a class="el" href="a37090.html">Image</a> <br />
+ Класс реализации формирования данных изображения с указанными модификаторами. </p>
+<ul>
+<li>В коде использовать alicorn::source::image::Universal_t&lt;TPixel&gt;.</li>
+<li>Класс предназначен для формирования данных изображения в заданном формате.</li>
+<li>'Нормальным' форматом расположения пикселей в буфере (т.е. результатом, который получается без использования модификаторов) считается расположение байт, при котором отсчет начинается от верхнего левого угла изображения, а байты одного пикселя идут в порядке BGRA (0...3).</li>
+<li>Порядок следования байт в пикселе задается при помощи классов <a class="el" href="a36085.html" title="Класс входит в проект Image   Класс пикселя в формате RGB. ">pixel::RGB</a>, <a class="el" href="a36089.html" title="Класс входит в проект Image   Класс пикселя в формате BGR. ">pixel::BGR</a>, <a class="el" href="a36097.html" title="Класс входит в проект Image   Класс пикселя в формате RGBA. ">pixel::RGBA</a>, <a class="el" href="a36101.html" title="Класс входит в проект Image   Класс пикселя в формате BGRA. ">pixel::BGRA</a>.</li>
+<li>Поддерживаются следующие модификации изображения:<ul>
+<li>Порядок следования строк изображения (класс <a class="el" href="a36077.html" title="Класс входит в проект Image   Вспомогательный класс для указания того, что следует инвертировать поря...">InvertLine</a>).</li>
+<li>Выравнивание строк изображения (класс <a class="el" href="a36105.html" title="Класс входит в проект Image   Вспомогательный класс для указания размера выравниваняи строк изображен...">Stride</a>).</li>
+</ul>
+</li>
+</ul>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TPixel</td><td>Формат пикселя, в которых будет сформировано изображение (Pixel24, Pixel32).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 2.0.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>11 Июнь 2017 <br />
+ 29 Август 2017 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Source/Image/Image/<a class="el" href="a39137_source.html">universal.hpp</a></li>
+<li>Solution/Solution/Source/Image/Image/universal.inl</li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Ср 31 Янв 2018 00:07:10. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>image</b></li><li class="navelem"><a class="el" href="a36109.html">Universal</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Фев 2018 17:32:17. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

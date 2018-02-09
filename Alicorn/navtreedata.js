@@ -25,8 +25,7 @@ var NAVTREE =
 [
   [ "Alicorn", "index.html", [
     [ "Главная страница документации", "index.html", "index" ],
-    [ "Вычисление метрик кода в решении", "a37265.html", null ],
-    [ "Список задач", "a34772.html", null ],
+    [ "Список задач", "a34565.html", null ],
     [ "Группы", "modules.html", "modules" ],
     [ "Классы", "annotated.html", [
       [ "Классы", "annotated.html", "annotated_dup" ],
@@ -53,12 +52,12 @@ var NAVTREEINDEX =
 [
 ".html",
 "a00860_source.html",
-"a34778.html",
-"a35632.html#a8437da35798cc3af078e482edd029bf3",
-"a36540.html",
-"a37427_source.html",
-"a38177_source.html",
-"a39497_source.html",
+"a34571.html",
+"a35425.html#a8437da35798cc3af078e482edd029bf3",
+"a36333.html",
+"a37220_source.html",
+"a37970_source.html",
+"a39290_source.html",
 "dir_bec253580a07b8283332f39832ef354b.html"
 ];
 

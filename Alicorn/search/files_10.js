@@ -1,7 +1,7 @@
 var searchData=
 [
   ['universal_5ftest_2ecpp',['Universal_test.cpp',['../a01256.html',1,'']]],
-  ['using_5ftest_2ecpp',['Using_test.cpp',['../a39365.html',1,'(Глобальное пространство имён)'],['../a39368.html',1,'(Глобальное пространство имён)'],['../a39374.html',1,'(Глобальное пространство имён)'],['../a39377.html',1,'(Глобальное пространство имён)']]],
+  ['using_5ftest_2ecpp',['Using_test.cpp',['../a39158.html',1,'(Глобальное пространство имён)'],['../a39161.html',1,'(Глобальное пространство имён)'],['../a39167.html',1,'(Глобальное пространство имён)'],['../a39170.html',1,'(Глобальное пространство имён)']]],
   ['usingmock_5ftest_2ecpp',['UsingMock_test.cpp',['../a00521.html',1,'']]],
   ['usingtext_5ftest_2ecpp',['UsingText_test.cpp',['../a01259.html',1,'']]],
   ['usingutf8string_5ftest_2ecpp',['UsingUtf8String_test.cpp',['../a00644.html',1,'']]],

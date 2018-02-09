@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['localization',['Localization',['../a37285.html',1,'ModulesPage']]],
-  ['logger',['Logger',['../a37286.html',1,'ModulesPage']]],
-  ['localization_2eapp',['Localization.App',['../a37305.html',1,'ToolsPage']]]
+  ['localization',['Localization',['../a37078.html',1,'ModulesPage']]],
+  ['logger',['Logger',['../a37079.html',1,'ModulesPage']]],
+  ['localization_2eapp',['Localization.App',['../a37098.html',1,'ToolsPage']]]
 ];
