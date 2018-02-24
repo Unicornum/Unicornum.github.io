@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['window',['Window',['../a32275.html',1,'covellite::api::Window&lt; TApiImpl &gt;'],['../a32579.html',1,'covellite::os::Window'],['../a32411.html',1,'covellite::core::Window'],['../a32675.html',1,'covellite::rocket::Window'],['../a32343.html#ae07ea214fa6193b69c9986cbb17c8e7c',1,'covellite::core::Event::Window()']]],
-  ['window_2eandroid_5ftest_2ecpp',['Window.android_test.cpp',['../a33325.html',1,'(Глобальное пространство имён)'],['../a33328.html',1,'(Глобальное пространство имён)']]],
-  ['window_2ewindows_5ftest_2ecpp',['Window.windows_test.cpp',['../a33331.html',1,'(Глобальное пространство имён)'],['../a33334.html',1,'(Глобальное пространство имён)']]],
-  ['window_5ftest_2ecpp',['Window_test.cpp',['../a33304.html',1,'(Глобальное пространство имён)'],['../a33307.html',1,'(Глобальное пространство имён)']]]
+  ['unsubscribe',['Unsubscribe',['../a32557.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7',1,'covellite::core::EventHandler']]],
+  ['updatewindow',['UpdateWindow',['../a32461.html#ac8f157d79f481745d41febe9d38828f4',1,'covellite::api::OpenGLCommon']]]
 ];

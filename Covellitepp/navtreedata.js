@@ -1,39 +1,41 @@
+/*
+@ @licstart  The following is the entire license notice for the
+JavaScript code in this file.
+
+Copyright (C) 1997-2017 by Dimitri van Heesch
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+@licend  The above is the entire license notice
+for the JavaScript code in this file
+*/
 var NAVTREE =
 [
   [ "Covellite++", "index.html", [
-    [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a32123.html", null ],
-    [ "Группы", "modules.html", "modules" ],
-    [ "Пространства имен", null, [
-      [ "Пространства имен", "namespaces.html", "namespaces" ]
-    ] ],
-    [ "Классы", "annotated.html", [
-      [ "Классы", "annotated.html", "annotated_dup" ],
-      [ "Алфавитный указатель классов", "classes.html", null ],
-      [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
-      [ "Члены классов", "functions.html", [
-        [ "Указатель", "functions.html", null ],
-        [ "Функции", "functions_func.html", null ],
-        [ "Переменные", "functions_vars.html", null ],
-        [ "Перечисления", "functions_enum.html", null ],
-        [ "Элементы перечислений", "functions_eval.html", null ]
-      ] ]
-    ] ],
-    [ "Файлы", null, [
-      [ "Файлы", "files.html", "files" ],
-      [ "Список членов всех файлов", "globals.html", [
-        [ "Указатель", "globals.html", null ],
-        [ "Функции", "globals_func.html", null ]
-      ] ]
-    ] ]
+    [ "Manual", "a33108.html", "a33108" ],
+    [ "Скачать", "a33102.html", null ],
+    [ "История изменений", "a33103.html", null ],
+    [ "Структура решения", "a33106.html", "a33106" ],
+    [ "Исходные требования", "a33105.html", null ],
+    [ "Группы", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-".html",
-"a32395.html#af6029e7df52743c28f5bb6eb1233b479",
-"dir_c46b8dc0e6eabdf45104b39cc53a1315.html"
+"a32352.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

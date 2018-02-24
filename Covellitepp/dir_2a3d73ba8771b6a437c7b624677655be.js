@@ -1,4 +1,0 @@
-var dir_2a3d73ba8771b6a437c7b624677655be =
-[
-    [ "(Documentation)", "dir_97b59274002600a703998b4162b904d1.html", "dir_97b59274002600a703998b4162b904d1" ]
-];
