@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Ввод русских букв с клавиатуры</title>
+<title>Covellite++: Example</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Версия: 2.1.1 Revision: 578 Platform: x64 Build: 22:13 24 Февраль 2018</span>
+   &#160;<span id="projectnumber">Версия: 2.1.2 Revision: 611 Platform: x64 Build: 13:12 02 Март 2018</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -89,40 +89,42 @@ $(document).ready(function(){initNavTree('a33104.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Ввод русских букв с клавиатуры </div>  </div>
+<div class="title">Example </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Проблема </h2>
-<p>Как оказалось, при нажатии кнопок клавиатуры в русской раскладке нативное приложение получает сообщения <b>AKEY_EVENT_ACTION_MULTIPLE</b> (вместо <b>AKEY_EVENT_ACTION_UP</b> и <b>AKEY_EVENT_ACTION_DOWN</b>). При этом функции AKeyEvent_getKeyCode(), AKeyEvent_getScanCode(), AKeyEvent_getFlags(), AKeyEvent_getMetaState() и AKeyEvent_getRepeatCount() возвращают 0.</p>
-<p>Кроме того, для ASCII символов коды, возвращаемые функцией AKeyEvent_getKeyCode() не являются Unicode символами соответствующих символов и требуют дополнительное преобразование с вызовом функций java.</p>
-<h2>Решение </h2>
-<p>Для того, чтобы в нативном приложении можно было сразу получать Unicode коды нажатых кнопок клавиатуры (включая не ASCII символы), необходимо сделать следующее:</p><ul>
-<li>Проект, создающий результатирующий APK файл программы следует создавать как "Простое приложение Android":</li>
-</ul>
+<div class="textblock"><h1><a class="anchor" id="sExampleBrief"></a>
+Введение</h1>
+<p>Раздел примера использования фреймворка.</p>
+<h2>Проект Packaging </h2>
+<p>Проект сборки .apk файла примера программы.</p>
+<h2>Проект Example </h2>
+<p>Список классов проекта <a class="el" href="a32357.html">Example</a></p>
+<p>Проект главного запускаемого модуля примера программы ('точка входа').</p>
+<h2>Проект Version </h2>
+<p>Генерирует файл version.xml, содержащий текущую версию решения и устанвливает android:versionCode в файле AndroidManifest.xml.</p>
+<p>Сам проект экспортируется из Externals.</p>
+<h2>Проект VersionSetup </h2>
+<p>Запускает программу, построенную проектом Version таким образом, чтобы файл version.xml был сформирован в папке Packaging\res\values.</p>
+<p>Специально располагается в папке проекта Packaging, чтобы можно было передать программе Version.exe путь к этой папке.</p>
+<h1>Пример использования </h1>
+<h2>Скриншоты </h2>
 <div class="image">
-<img src="Vs2015.Android.png" alt="Vs2015.Android.png"/>
+<img src="ExampleH.png" alt="ExampleH.png"/>
 </div>
-<ul>
-<li>В java коде этого проекта унаследовать класс от NativeActivity и переопределить в нем функцию dispatchKeyEvent():</li>
-</ul>
-<div class="fragment"><div class="line"><span class="keyword">import</span> android.app.NativeActivity;</div><div class="line"><span class="keyword">import</span> android.view.KeyEvent;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">boolean</span> dispatchKeyEvent(KeyEvent event)</div><div class="line">  {</div><div class="line">    <span class="keywordtype">int</span> keyaction = <span class="keyword">event</span>.getAction();</div><div class="line">    <span class="keyword">final</span> <span class="keywordtype">int</span> ACTION_KEY_PRESSED = 32;</div><div class="line">      </div><div class="line">    <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_UP)</div><div class="line">    {</div><div class="line">      <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getUnicodeChar();</div><div class="line">      super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_MULTIPLE)</div><div class="line">    {</div><div class="line">      <span class="keywordflow">if</span> (event.getCharacters().length() == 1)</div><div class="line">      {</div><div class="line">        <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getCharacters().charAt(0);</div><div class="line">        <span class="keywordflow">return</span> super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">      }</div><div class="line">    }</div><div class="line">      </div><div class="line">    <span class="keywordflow">return</span> super.dispatchKeyEvent(event);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><ul>
-<li>В файл <b>AndroidManifest.xml</b> (в раздел <b>activity</b>) проекта добавить имя нативной библиотеки, которая будет загружаться при старте программы (без префикса lib и расширения .so), например для libRocket.so следует добавить:</li>
-</ul>
-<div class="fragment"><div class="line">&lt;activity ...&gt;</div><div class="line">  &lt;meta-data android:name=<span class="stringliteral">&quot;android.app.lib_name&quot;</span></div><div class="line">             android:value=<span class="stringliteral">&quot;Rocket&quot;</span>/&gt;</div><div class="line">  ...</div><div class="line">&lt;/activity&gt;</div></div><!-- fragment --><ul>
-<li>Добавить в ссылки проекту APK проект главной нативной библиотеки (.so).</li>
-</ul>
-<p>После приведенных манипуляций при нажатии кнопок экранной клавиатуры Android нативное приложение будет получать сообщение, у которого:</p><ul>
-<li>Функция AInputEvent_getType(event) возвращает AINPUT_EVENT_TYPE_KEY.</li>
-<li>Функция AKeyEvent_getAction(event) возвращает ACTION_KEY_PRESSED (это код, заданный в java коде dispatchKeyEvent()).</li>
-<li>Функция AKeyEvent_getKeyCode(event) возвращает Unicode код символа нажатой кнопки. </li>
-</ul>
-</div></div><!-- contents -->
+<p> <br />
+</p><div class="image">
+<img src="ExampleW.png" alt="ExampleW.png"/>
+</div>
+<h2>Образцы используемых .rml файлов </h2>
+<h3>Layer 1</h3>
+<div class="fragment"><div class="line">&lt;rml&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;title&gt;libRocket example layer 1&lt;/title&gt;</div><div class="line">    &lt;link type=&quot;text/template&quot; href=&quot;window.rml&quot; /&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">      div#title_bar div#icon</div><div class="line">      {</div><div class="line">      display: none;</div><div class="line">      }</div><div class="line"></div><div class="line">      div#content</div><div class="line">      {</div><div class="line">      text-align: left;</div><div class="line">      }</div><div class="line">    &lt;/style&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body template=&quot;window&quot; id=&quot;demo&quot;&gt;</div><div class="line">    &lt;span id=&quot;id_header&quot;&gt;&lt;h1&gt;Layer 1&lt;/h1&gt;&lt;/span&gt;</div><div class="line">    &lt;button id=&quot;button1&quot;&gt;Layer 2 &gt;&gt;&lt;/button&gt;</div><div class="line">    &lt;button id=&quot;button2&quot;&gt;Table &gt;&gt;&lt;/button&gt;</div><div class="line">    &lt;button id=&quot;button3&quot;&gt;Scroll &gt;&gt;&lt;/button&gt;</div><div class="line">    &lt;form name=&quot;xxx&quot; style=&quot;display:block; border: 4px double black;&quot;&gt;</div><div class="line">      &lt;input type=&quot;text&quot;</div><div class="line">             id=&quot;main_text&quot;</div><div class="line">             value=&quot;Name ***&quot;/&gt;&lt;br/&gt;</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioA&quot;/&gt;1</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioA&quot;/&gt;2&lt;br/&gt;</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioB&quot;/&gt;3</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioB&quot;/&gt;4&lt;br/&gt;</div><div class="line">      &lt;input type=&quot;checkbox&quot;</div><div class="line">             name=&quot;check1&quot;/&gt;1</div><div class="line">      &lt;input type=&quot;checkbox&quot;</div><div class="line">             name=&quot;check1&quot;/&gt;2&lt;br/&gt;</div><div class="line">    &lt;/form&gt;</div><div class="line">    &lt;button id=&quot;exit&quot;&gt;Пока-пока!&lt;/button&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/rml&gt;</div></div><!-- fragment --><h3>Layer 2</h3>
+<div class="fragment"><div class="line">&lt;rml&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;link type=&quot;text/rcss&quot;</div><div class="line">          href=&quot;rkt.rcss&quot;/&gt;</div><div class="line">    &lt;link type=&quot;text/rcss&quot;</div><div class="line">          href=&quot;invader.rcss&quot;/&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body id=&quot;demo2&quot;&gt;</div><div class="line">    &lt;h1&gt;Layer 2&lt;/h1&gt;</div><div class="line">    &lt;textarea id=&quot;multiline_text&quot;&gt;Много</div><div class="line">строчный </div><div class="line">текст&lt;/textarea&gt;</div><div class="line">    &lt;button id=&quot;id_hello&quot;&gt;[HELLO]&lt;/button&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/rml&gt;</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a33108.html">Manual</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 24 Фев 2018 22:13:30. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a33095.html">Структура решения</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пт 2 Мар 2018 13:13:04. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

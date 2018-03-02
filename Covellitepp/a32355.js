@@ -1,19 +1,11 @@
 var a32355 =
 [
-    [ "Empty", "a32585.html", null ],
-    [ "Motion", "a32589.html", [
-      [ "X", "a32589.html#a16c13641fc4c37a5b43cf71c76b2db35", null ],
-      [ "Y", "a32589.html#a6b766cee1f1ee5383adffd4ade922f88", null ]
+    [ "Configuration", "a32770.html", [
+      [ "GetSystemLanguage", "a32770.html#a092f62890e0e484e02c423d9830ee338", null ]
     ] ],
-    [ "KeyPressed", "a32593.html", null ],
-    [ "KeyCode", "a32597.html", [
-      [ "ToRocketKeyCode", "a32597.html#a326cfacdb366f56880b9b32fab3f1dcb", null ],
-      [ "AsciiKeyCode", "a32597.html#ac037a4ceccbe487401babc65d2dfafa7", null ]
-    ] ],
-    [ "Error", "a32601.html", null ],
-    [ "Click", "a32605.html", [
-      [ "m_DocumentId", "a32605.html#ada04fc91dd8e9e3ab3e79c3a939a885d", null ],
-      [ "m_Tag", "a32605.html#af6029e7df52743c28f5bb6eb1233b479", null ],
-      [ "m_Type", "a32605.html#ab7ce1cc95a70fb58080d60d945e37b83", null ]
+    [ "IWindow", "a32778.html", null ],
+    [ "Window", "a32782.html", [
+      [ "GetConfiguration", "a32782.html#aba3176a8d0fa2bdbec5b38b37d7a59a8", null ],
+      [ "GetHandle", "a32782.html#af5a6776f3e4602d4c32b2d9d70170eef", null ]
     ] ]
 ];

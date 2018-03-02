@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unsubscribe',['Unsubscribe',['../a32557.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7',1,'covellite::core::EventHandler']]],
-  ['updatewindow',['UpdateWindow',['../a32461.html#ac8f157d79f481745d41febe9d38828f4',1,'covellite::api::OpenGLCommon']]]
+  ['unsubscribe',['Unsubscribe',['../a32554.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7',1,'covellite::core::EventHandler']]],
+  ['updatewindow',['UpdateWindow',['../a32458.html#ac8f157d79f481745d41febe9d38828f4',1,'covellite::api::OpenGLCommon']]]
 ];
