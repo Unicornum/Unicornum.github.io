@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Cписок членов класса</title>
+<title>Alicorn: Класс alicorn::system::platform::Environment</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.4 Revision: 2961 Platform: x64 Build: 17:31 09 Февраль 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a36401.html','');});
+$(document).ready(function(){initNavTree('a36398.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,20 +88,50 @@ $(document).ready(function(){initNavTree('a36401.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="a36395.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">controller::Controller Cписок членов класса</div>  </div>
+<div class="title">Класс alicorn::system::platform::Environment<div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34771.html">System</a> &raquo; <a class="el" href="a34769.html">Android</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a36401.html">controller::Controller</a>, включая наследуемые из базового класса</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a36401.html#a40ccbeb3ece39167d54fcd187249ca98">Controller</a>(::model::IModelTestingApp *, ::view::IViewTestingApp *)</td><td class="entry"><a class="el" href="a36401.html">controller::Controller</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Класс входит в проект <a class="el" href="a37266.html">Platform</a> <br />
+ Вспомогательный класс-обертка для вызовов функций java из кода С++.  
+ <a href="a36398.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01394_source.html">environment.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса alicorn::system::platform::Environment:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36396.png" border="0" usemap="#alicorn_1_1system_1_1platform_1_1_environment_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1system_1_1platform_1_1_environment_coll__map" id="alicorn_1_1system_1_1platform_1_1_environment_coll__map">
+</map>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a37266.html">Platform</a> <br />
+ Вспомогательный класс-обертка для вызовов функций java из кода С++. </p>
+<ul>
+<li>Для использования java кода ледует в классе-наследнике реализовать нужные функции, используя указатели класса.</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>30 Январь 2017 <br />
+ </dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017</dd></dl>
+<h2>Пример использования </h2>
+<h3>Функция получения высоты статус-бара Android:</h3>
+<div class="fragment"><div class="line"><span class="keyword">class </span>Environment final :</div><div class="line">  <span class="keyword">public</span> <a class="code" href="a36398.html">alicorn::system::platform::Environment</a></div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  int32_t GetStatusBarHeight(<span class="keywordtype">void</span>)</div><div class="line">  {</div><div class="line">    <span class="keyword">auto</span> ClassNativeActivity = m_pJniEnv-&gt;FindClass(<span class="stringliteral">&quot;platform/app/NativeActivity&quot;</span>);</div><div class="line">    <span class="comment">// Можно также</span></div><div class="line">    <span class="comment">// auto ClassNativeActivity = m_pJniEnv-&gt;GetObjectClass(m_pActivity);</span></div><div class="line">    </div><div class="line">    <span class="keyword">auto</span> ClassWindow = m_pJniEnv-&gt;FindClass(<span class="stringliteral">&quot;platform/view/Window&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> MethodGetWindow = m_pJniEnv-&gt;GetMethodID(ClassNativeActivity,</div><div class="line">      <span class="stringliteral">&quot;getWindow&quot;</span>, <span class="stringliteral">&quot;()Landroid/view/Window;&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> lWindow = m_pJniEnv-&gt;CallObjectMethod(m_pActivity, MethodGetWindow);</div><div class="line">    </div><div class="line">    <span class="keyword">auto</span> ClassView = m_pJniEnv-&gt;FindClass(<span class="stringliteral">&quot;platform/view/View&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> MethodGetDecorView = m_pJniEnv-&gt;GetMethodID(ClassWindow,</div><div class="line">      <span class="stringliteral">&quot;getDecorView&quot;</span>, <span class="stringliteral">&quot;()Landroid/view/View;&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> lDecorView = m_pJniEnv-&gt;CallObjectMethod(lWindow, MethodGetDecorView);</div><div class="line">    </div><div class="line">    <span class="keyword">auto</span> ClassRect = m_pJniEnv-&gt;FindClass(<span class="stringliteral">&quot;platform/graphics/Rect&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> ConstructorRect = m_pJniEnv-&gt;GetMethodID(ClassRect, <span class="stringliteral">&quot;&lt;init&gt;&quot;</span>, <span class="stringliteral">&quot;()V&quot;</span>);</div><div class="line">    <span class="keyword">auto</span> Rect = m_pJniEnv-&gt;NewObject(ClassRect, ConstructorRect);</div><div class="line">    </div><div class="line">    <span class="keyword">auto</span> MethodGetWindowVisibleDisplayFrame = m_pJniEnv-&gt;GetMethodID(ClassView,</div><div class="line">      <span class="stringliteral">&quot;getWindowVisibleDisplayFrame&quot;</span>, <span class="stringliteral">&quot;(Landroid/graphics/Rect;)V&quot;</span>);</div><div class="line">    m_pJniEnv-&gt;CallVoidMethod(lDecorView, MethodGetWindowVisibleDisplayFrame, Rect);</div><div class="line">    </div><div class="line">    <span class="keyword">auto</span> fidTop = m_pJniEnv-&gt;GetFieldID(ClassRect, <span class="stringliteral">&quot;top&quot;</span>, <span class="stringliteral">&quot;I&quot;</span>);</div><div class="line">    <span class="keywordflow">return</span> m_pJniEnv-&gt;GetIntField(Rect, fidTop);</div><div class="line">  }</div><div class="line">};</div></div><!-- fragment --> </div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/System/Platform/Platform/<a class="el" href="a01394_source.html">environment.hpp</a></li>
+<li>Solution/Solution/System/Platform/Platform/environment.cpp</li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Фев 2018 17:32:17. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>system</b></li><li class="navelem"><b>platform</b></li><li class="navelem"><a class="el" href="a36398.html">Environment</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

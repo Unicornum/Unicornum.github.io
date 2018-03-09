@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['testing',['Testing',['../a37075.html',1,'ExtensionPage']]],
-  ['test_2eandroid',['Test.Android',['../a37107.html',1,'SolutionPage']]],
-  ['testing',['Testing',['../a37103.html',1,'SolutionPage']]],
-  ['tools',['Tools',['../a37096.html',1,'SolutionPage']]],
-  ['testing_2eapp',['Testing.App',['../a37104.html',1,'ToolsPage']]]
+  ['std',['Std',['../a37247.html',1,'ExtensionPage']]],
+  ['settings',['Settings',['../a37254.html',1,'ModulesPage']]],
+  ['source',['Source',['../a37256.html',1,'SolutionPage']]],
+  ['system',['System',['../a37264.html',1,'SolutionPage']]],
+  ['settings_2eapp',['Settings.App',['../a37275.html',1,'ToolsPage']]]
 ];

@@ -24,41 +24,19 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Alicorn", "index.html", [
-    [ "Главная страница документации", "index.html", "index" ],
-    [ "Список задач", "a34565.html", null ],
-    [ "Группы", "modules.html", "modules" ],
-    [ "Классы", "annotated.html", [
-      [ "Классы", "annotated.html", "annotated_dup" ],
-      [ "Алфавитный указатель классов", "classes.html", null ],
-      [ "Иерархия классов", "hierarchy.html", "hierarchy" ],
-      [ "Члены классов", "functions.html", [
-        [ "Указатель", "functions.html", "functions_dup" ],
-        [ "Функции", "functions_func.html", "functions_func" ],
-        [ "Переменные", "functions_vars.html", null ]
-      ] ]
-    ] ],
-    [ "Файлы", "files.html", [
-      [ "Файлы", "files.html", "files_dup" ],
-      [ "Список членов всех файлов", "globals.html", [
-        [ "Указатель", "globals.html", null ],
-        [ "Функции", "globals_func.html", null ],
-        [ "Макросы", "globals_defs.html", null ]
-      ] ]
-    ] ]
+    [ "Manual", "a37237.html", null ],
+    [ "Скачать", "a37234.html", null ],
+    [ "История изменений", "a37236.html", "a37236" ],
+    [ "Структура решения", "a37239.html", "a37239" ],
+    [ "Группы", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-".html",
-"a00860_source.html",
-"a34571.html",
-"a35425.html#a8437da35798cc3af078e482edd029bf3",
-"a36333.html",
-"a37220_source.html",
-"a37970_source.html",
-"a39290_source.html",
-"dir_bec253580a07b8283332f39832ef354b.html"
+"a34731.html",
+"a35590.html#a30452f3453b2d4450022800822315a61",
+"a36442.html#a7023a00d30af42e21479960ad63ecc17"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
