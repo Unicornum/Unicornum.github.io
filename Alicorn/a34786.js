@@ -1,25 +1,44 @@
 var a34786 =
 [
-    [ "WxWidgets", "a34785.html", "a34785" ],
-    [ "AllTestsInfo", "a36822.html", [
-      [ "SetResultRunTests", "a36822.html#a23e9a44b7deda78006db6f424bea2bad", null ]
+    [ "Compress", "a36053.html", [
+      [ "PostUnpackAction", "a36053.html#ad7e2cbdbdd9a4417b92c443c214dfc0b", null ],
+      [ "PrePackAction", "a36053.html#ac95dbc23b673898390244c78e6ed87f3", null ]
     ] ],
-    [ "DoDoxygenReport", "a36826.html", [
-      [ "SetResultRunTests", "a36826.html#a54c03684c52e8126374dbf170842259f", null ]
+    [ "Core", "a36057.html", [
+      [ "Core", "a36057.html#a1acf734b09cac8bccc8529ad1ab65abd", null ],
+      [ "GetData", "a36057.html#a89362a8be8b38b14af4a5fe4c0af0de2", null ]
     ] ],
-    [ "FailedTestsInfo", "a36830.html", [
-      [ "OnChanged", "a36830.html#a8f31082d1573122757db0572e9100a93", null ],
-      [ "OnPaint", "a36830.html#ad8351ca940eeac53bdbd81672c52db1d", null ],
-      [ "SetResultRunTests", "a36830.html#a8454b3f179b3136728668033f1f56885", null ]
+    [ "Crypto", "a36061.html", [
+      [ "Crypto", "a36061.html#a652fb7644e1ba096f45c4433e1814515", null ],
+      [ "PostUnpackAction", "a36061.html#a8de30e0e047495678957fdb4b026b7ae", null ],
+      [ "PrePackAction", "a36061.html#a285e869c178d6ba7324e2c5323f7f125", null ]
     ] ],
-    [ "IViewTestingApp", "a36834.html", [
-      [ "SetResultRunTests", "a36834.html#afb624f681dc703c77b48d609bb37aa67", null ]
+    [ "FileSystem", "a36065.html", [
+      [ "FileSystem", "a36065.html#a2d2907fd806a57c72e93dfd1872eb791", null ],
+      [ "GetData", "a36065.html#ac77c41eee699ac53a96a4c40bdb46a11", null ]
     ] ],
-    [ "SummaryInfo", "a36838.html", [
-      [ "SetResultRunTests", "a36838.html#aaf09aaafbcd0e1cc598d03d043efab94", null ]
+    [ "IConverter", "a36069.html", [
+      [ "PostUnpackAction", "a36069.html#a835b7d13054ed583db5dc2fd81273356", null ],
+      [ "PrePackAction", "a36069.html#a8f85b8c98182aa0987fbc5f98d2f4c9c", null ]
     ] ],
-    [ "TestProjectInfo", "a36846.html", [
-      [ "GetResult", "a36846.html#a40370349abcd7e28fd0e7b35dc07f7ca", null ],
-      [ "SetResultRunTests", "a36846.html#a4841d4f1542468358b7e9f7c0ee85e03", null ]
-    ] ]
+    [ "IImplementation", "a36073.html", [
+      [ "GetData", "a36073.html#ab583a4bef004916737a4e1e21b47337e", null ]
+    ] ],
+    [ "IPassword", "a36077.html", null ],
+    [ "FileInfo", "a36081.html", [
+      [ "m_FileNameLenght", "a36081.html#a05a017f767213242f84aaa2fcedcd8c2", null ],
+      [ "m_FileSize", "a36081.html#a1806908f8f64dda89f08b96fd3cd20f7", null ]
+    ] ],
+    [ "Pack", "a36085.html", [
+      [ "Record", "a36089.html", null ],
+      [ "Pack", "a36085.html#a1715c6b00def1a4864ae4312ede86fa2", null ],
+      [ "AddFileToEndStorage", "a36085.html#a8c36da4f06bc1b9c8b9d9824d64f46fc", null ],
+      [ "AddTitleTo", "a36085.html#af450de4757c89fa83e857e5574ad0d23", null ],
+      [ "Build", "a36085.html#ab06edf56596c9cf8bdf2ec48d7decfe2", null ],
+      [ "BuildTableFiles", "a36085.html#aca6bbd78329d55fd21f7f4fc757af1d1", null ],
+      [ "GetData", "a36085.html#a5adc96638eafab54ee6d001d71c832d3", null ],
+      [ "GetFileId", "a36085.html#aeea0717f32961c9102da5d6adccd4a20", null ]
+    ] ],
+    [ "Source", "a36093.html", null ],
+    [ "Title", "a34786.html#ga8f3ed8d47fb565fed79e95aab52316e5", null ]
 ];

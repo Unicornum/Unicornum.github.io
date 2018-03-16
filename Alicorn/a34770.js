@@ -1,24 +1,20 @@
 var a34770 =
 [
-    [ "Dump", "a36394.html", null ],
-    [ "ICallBack", "a36414.html", null ],
-    [ "Process", "a36418.html", [
-      [ "KilledException", "a36422.html", null ],
-      [ "Process", "a36418.html#a15c85d53e3079f343aead5930adb4b2a", null ],
-      [ "FromParams", "a36418.html#a17adcea020f4ce40183cb648b0889895", null ],
-      [ "RunWithoutWaitingCompletion", "a36418.html#aebb905db53099a2f9fdae5d42ed0b23c", null ],
-      [ "RunWithoutWaitingCompletion", "a36418.html#a13baa7b36d59ad50c468f5cf534e9df0", null ],
-      [ "RunWithReceiveStdout", "a36418.html#aec83e7b7a14bf1093927e5eff27b6ec9", null ],
-      [ "RunWithReceiveStdout", "a36418.html#ab340203b1a8ef054c4d55485a153f37c", null ],
-      [ "RunWithWaitingCompletion", "a36418.html#a571281c115f4106dd9d979f9656346da", null ],
-      [ "RunWithWaitingCompletion", "a36418.html#a200f3778cd1aafdd7401365ba6b3faab", null ],
-      [ "Tokenize", "a36418.html#ab3a668b5135d1d92c4a2a6b713e7da87", null ],
-      [ "ToParams", "a36418.html#acdd3f6e7417eb767d46417018e1383da", null ]
+    [ "Match", "a35069.html", [
+      [ "Match", "a35069.html#aed057b113464ab4f76edbb8d9a01b3b4", null ],
+      [ "Match", "a35069.html#a6771afe48b8f1155f53536b2220e2764", null ],
+      [ "GetGroups", "a35069.html#a5a3b6d12a716a34a7003fca6f956f5a5", null ],
+      [ "IsMatch", "a35069.html#abaaf6788b646b68ad35c6063693f07b3", null ]
     ] ],
-    [ "WinapiCallProxy", "a36442.html", [
-      [ "GetMessageText", "a36442.html#a7023a00d30af42e21479960ad63ecc17", null ]
+    [ "Replace", "a35077.html", [
+      [ "Replace", "a35077.html#adb87baefad52f5062b8edeba4ca08c03", null ],
+      [ "Replace", "a35077.html#a16563cd9219fb222a79395912e3dc987", null ],
+      [ "DoReplace", "a35077.html#aaf8356753abb959b61593edbdee4e1fc", null ]
     ] ],
-    [ "WINAPI_CALL", "a34770.html#gac67366a4782d98fd71f21ecc3981365b", null ],
-    [ "ProcessOutput", "a34770.html#ga9d847c18ebc2abac375a25fbaf95f123", null ],
-    [ "ToPocoArgs", "a34770.html#gabb34099f31487d25c396ec74b6cbbb3f", null ]
+    [ "Search", "a35085.html", [
+      [ "Search", "a35085.html#a845a87338ed627ba32a9893ddbdd2559", null ],
+      [ "Search", "a35085.html#a37232739a36919ae5793fb3ac4dbdb06", null ],
+      [ "GetCoincided", "a35085.html#ac47a0e77307574c8285cd64799f646c0", null ],
+      [ "IsSearch", "a35085.html#a3e8292a479ee0a7ce4d42c38dbb51e25", null ]
+    ] ]
 ];

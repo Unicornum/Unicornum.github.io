@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс alicorn::source::document::Text</title>
+<title>Alicorn: Cписок членов класса</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a36158.html','');});
+$(document).ready(function(){initNavTree('a36161.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,66 +88,19 @@ $(document).ready(function(){initNavTree('a36158.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="a36155.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::source::document::Text<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34767.html">Source</a> &raquo; <a class="el" href="a34764.html">Document</a> &raquo; <a class="el" href="a34763.html">Implementation</a></div></div>  </div>
+<div class="title">alicorn::source::details::ISource Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a37260.html">Document</a> <br />
- Класс реализации для работы с простыми текстовыми документами.  
- <a href="a36158.html#details">Подробнее...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a39175_source.html">text.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:alicorn::source::document::Text:</div>
-<div class="dyncontent">
-<div class="center"><img src="a36157.png" border="0" usemap="#alicorn_1_1source_1_1document_1_1_text_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1source_1_1document_1_1_text_inherit__map" id="alicorn_1_1source_1_1document_1_1_text_inherit__map">
-<area shape="rect" id="node2" href="a36142.html" title="{alicorn::source::document\l::IImplementation\&lt; size_t \&gt;\n||+ Save()\l+ GetChildCount()\l+ GetId()\l+ GetParentNode()\l+ GetChildNode()\l+ AddChildNode()\l+ RemoveChildNode()\l+ GetValue()\l+ SetValue()\l+ IsContainsAttribute()\l+ GetAttribute()\l+ SetAttribute()\l+ GetFirstChild()\l+ GetNextSibling()\l+ ~IImplementation()\l}" alt="" coords="5,5,212,303"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса alicorn::source::document::Text:</div>
-<div class="dyncontent">
-<div class="center"><img src="a36156.png" border="0" usemap="#alicorn_1_1source_1_1document_1_1_text_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1source_1_1document_1_1_text_coll__map" id="alicorn_1_1source_1_1document_1_1_text_coll__map">
-<area shape="rect" id="node2" href="a36142.html" title="{alicorn::source::document\l::IImplementation\&lt; size_t \&gt;\n||+ Save()\l+ GetChildCount()\l+ GetId()\l+ GetParentNode()\l+ GetChildNode()\l+ AddChildNode()\l+ RemoveChildNode()\l+ GetValue()\l+ SetValue()\l+ IsContainsAttribute()\l+ GetAttribute()\l+ SetAttribute()\l+ GetFirstChild()\l+ GetNextSibling()\l+ ~IImplementation()\l}" alt="" coords="5,5,212,303"/>
-</map>
-</div>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a37260.html">Document</a> <br />
- Класс реализации для работы с простыми текстовыми документами. </p>
-<ul>
-<li>Используется в качестве параметра шаблона класса <a class="el" href="a36174.html" title="Класс входит в проект Document   Класс-обертка для унифицированной работы с различными типами докумен...">alicorn::source::document::Universal</a>.</li>
-<li>Документ текстового файла представляет собой дерево, содержаще отдельные строки файла как дочерние узлы корневого узла (объекта документа), попытка использования дочерних узлов уровнем ниже первого приведет к исключению.</li>
-<li>Доступ к отдельным строкам файла производится через <b><a class="el" href="a36182.html" title="Класс входит в проект Document   Вспомогательный класс для доступа к значению узла. ">Value</a></b>, идентификатором узла является индекс строки, а атрибуты не имеют смысла (попытка чтения/записи атрибута узла приведет к исключению).</li>
-<li>Примеры использования см. <a class="el" href="a34764.html">Document</a>.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
- 1.2.0.0 <br />
- 1.3.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>14 Февраль 2017 <br />
- 17 Февраль 2017 <br />
- 28 Февраль 2017 <br />
- 01 Сентябрь 2017 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Source/Document/Document/implementation/<a class="el" href="a39175_source.html">text.hpp</a></li>
-<li>Solution/Solution/Source/Document/Document/implementation/text.cpp</li>
-</ul>
-</div><!-- contents -->
+<p>Полный список членов класса <a class="el" href="a36161.html">alicorn::source::details::ISource</a>, включая наследуемые из базового класса</p>
+<table class="directory">
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>document</b></li><li class="navelem"><a class="el" href="a36158.html">Text</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:05. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Controller</title>
+<title>Alicorn: Config</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -91,47 +91,75 @@ $(document).ready(function(){initNavTree('a34776.html','');});
   <div class="summary">
 <a href="#nested-classes">Классы</a>  </div>
   <div class="headertitle">
-<div class="title">Controller<div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34787.html">Tools</a> &raquo; <a class="el" href="a34774.html">SettingsApp</a></div></div>  </div>
+<div class="title">Config<div class="ingroups"><a class="el" href="a34758.html">Alicorn</a> &raquo; <a class="el" href="a34780.html">Modules</a> &raquo; <a class="el" href="a34779.html">Logger</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса Controller:</div>
+Граф связей класса Config:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a34776.png" border="0" alt="" usemap="#a34776"/>
 <map name="a34776" id="a34776">
-<area shape="rect" id="node3" href="a34780.html" title="Controller" alt="" coords="428,7,513,33"/>
-<area shape="rect" id="node2" href="a34774.html" title="SettingsApp" alt="" coords="5,7,108,33"/>
+<area shape="rect" id="node1" href="a34779.html" title="Logger" alt="" coords="5,5,72,32"/>
 </map>
 </td></tr></table></center>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36566.html">controller::Controller</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37275.html">Settings.App</a> <br />
- Класс главного объекта контроллера.  <a href="a36566.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35561.html">alicorn::modules::logger::ConfigValueImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Класс для передачи значения параметра конфигуратору.  <a href="a35561.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36570.html">controller::DoChangeValue</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37275.html">Settings.App</a> <br />
- Класс реализации сигнала имзменения значения параметра.  <a href="a36570.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35569.html">alicorn::modules::logger::ConfigValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Базовый класс-обертка параметров для передачи их значений конфигуратору.  <a href="a35569.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36574.html">controller::DoDrawSettings</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37275.html">Settings.App</a> <br />
- Класс реализации сигнала для отрисовки настроек выбранного раздела.  <a href="a36574.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35573.html">alicorn::modules::logger::StringConfigValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Базовый класс для строковых параметров.  <a href="a35573.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36578.html">controller::DoUpdateTreeSections</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37275.html">Settings.App</a> <br />
- Класс реализации сигнала для обновления дерева разделов.  <a href="a36578.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35577.html">alicorn::modules::logger::IntConfigValue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Базовый класс для целочисленных параметров.  <a href="a35577.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35581.html">alicorn::modules::logger::ProgramName</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Имя программы (по умолчанию берется из ресурсов текущего модуля).  <a href="a35581.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35585.html">alicorn::modules::logger::ProgramVersion</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Строка версии программы (по умолчанию берется из ресурсов текущего модуля).  <a href="a35585.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35589.html">alicorn::modules::logger::PathToLogDirectory</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Имя папки, в которой будут создаваться файлы журнала.  <a href="a35589.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35593.html">alicorn::modules::logger::MaxLogFiles</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Количество файлов журнала лога, которые будут храниться (0 - для отключения роллинга).  <a href="a35593.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35597.html">alicorn::modules::logger::MaxLogSize</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Максимальный размер файла журнала в байтах (0 - без ограничений).  <a href="a35597.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35601.html">alicorn::modules::logger::Filter</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Фильтр сообщений. Выводиться в лог будут сообщения &gt;= установленного.  <a href="a35601.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35605.html">alicorn::modules::logger::AllowReplace</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37351.html">Logger</a> <br />
+ Включить/выключить разрешение повторов сообщений из одного и того же места.  <a href="a35605.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Группа классов контроллера. </p>
+<p>Раздел классов параметров настроек логгера. <br />
+</p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:04. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:21. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

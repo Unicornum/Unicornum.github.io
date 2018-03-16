@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Шаблон класса alicorn::extension::std::trivial_ptr&lt; T &gt;</title>
+<title>Alicorn: Cписок членов класса</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a35034.html','');});
+$(document).ready(function(){initNavTree('a35037.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,66 +88,19 @@ $(document).ready(function(){initNavTree('a35034.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="a35031.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::extension::std::trivial_ptr&lt; T &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34740.html">Extension</a> &raquo; <a class="el" href="a34745.html">Std</a> &raquo; <a class="el" href="a34742.html">Memory</a></div></div>  </div>
+<div class="title">alicorn::extension::std::exception::Message Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Простой класс-обертка для указателя.  
- <a href="a35034.html#details">Подробнее...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00326_source.html">trivial-ptr.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса alicorn::extension::std::trivial_ptr&lt; T &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35032.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1trivial__ptr_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1extension_1_1std_1_1trivial__ptr_3_01_t_01_4_coll__map" id="alicorn_1_1extension_1_1std_1_1trivial__ptr_3_01_t_01_4_coll__map">
-</map>
-</div>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class T&gt;<br />
-class alicorn::extension::std::trivial_ptr&lt; T &gt;</h3>
-
-<p>Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Простой класс-обертка для указателя. </p>
-<ul>
-<li>Простая обертка над указателем, который инициализируется в конструкторе и гарантированно уничтожается в деструкторе.</li>
-<li>Понадобился из-за того, что при использовании std::unique_ptr&lt;&gt; нужно указывать в заголовочном файле "#include &lt;memory&gt;";</li>
-<li>Должен использоваться только в особых случаях (создавался для реализации паттерна pimpl).</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Класс объекта, который будет содержаться внутри объекта класса. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section note"><dt>Заметки</dt><dd>Если требуется поддержка копирования, должен содержать функцию Clone(), возвращающую <b>копию</b> объекта (создание копий объектов должно производиться тем же способом, что и создание исходных объектов, т.е. если исходный объект был создан из пула памяти, то и копия должна создаваться в том же пуле) <div class="fragment"><div class="line"><span class="keyword">class </span>RealClass</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  trivial_ptr&lt;RealClass&gt; Clone(<span class="keywordtype">void</span>)<span class="keyword"> const </span></div><div class="line"><span class="keyword">  </span>{ </div><div class="line">    <span class="keywordflow">return</span> make_trivial&lt;RealClass&gt;(*this);</div><div class="line">  }</div><div class="line">  ...</div></div><!-- fragment --></dd></dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
- 1.2.0.0 <br />
- 2.0.0.0 <br />
- </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>31 Январь 2017 <br />
- 02 Февраль 2017 <br />
- 07 Февраль 2017 <br />
- 16 Апрель 2017 <br />
- </dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Extension/Std/Std/memory/<a class="el" href="a00326_source.html">trivial-ptr.hpp</a></li>
-<li>Solution/Solution/Extension/Std/Std/memory/trivial-ptr.inl</li>
-</ul>
-</div><!-- contents -->
+<p>Полный список членов класса <a class="el" href="a35037.html">alicorn::extension::std::exception::Message</a>, включая наследуемые из базового класса</p>
+<table class="directory">
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><a class="el" href="a35034.html">trivial_ptr</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:04. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

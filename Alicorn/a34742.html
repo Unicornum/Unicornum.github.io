@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Memory</title>
+<title>Alicorn: Файл Solution/Test.Android/Test.Android/System_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,268 +88,37 @@ $(document).ready(function(){initNavTree('a34742.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Классы</a> &#124;
-<a href="#typedef-members">Определения типов</a> &#124;
-<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Memory<div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34740.html">Extension</a> &raquo; <a class="el" href="a34745.html">Std</a></div></div>  </div>
+<div class="title">Файл System_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Граф связей класса Memory:</div>
+<div class="textblock"><code>#include &quot;Common.hpp&quot;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;boost\filesystem.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\application.hpp&gt;</code><br />
+<code>#include &lt;alicorn\logger.hpp&gt;</code><br />
+<code>#include &lt;alicorn\android.hpp&gt;</code><br />
+<code>#include &quot;..\System.Shared\RealClassObject.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для System_test.cpp:</div>
 <div class="dyncontent">
-<center><table><tr><td><img src="a34742.png" border="0" alt="" usemap="#a34742"/>
-<map name="a34742" id="a34742">
-<area shape="rect" id="node2" href="a34745.html" title="Std" alt="" coords="5,5,51,32"/>
+<div class="center"><img src="a34743.png" border="0" usemap="#_solution_2_test_8_android_2_test_8_android_2_system__test_8cpp" alt=""/></div>
+<map name="_solution_2_test_8_android_2_test_8_android_2_system__test_8cpp" id="_solution_2_test_8_android_2_test_8_android_2_system__test_8cpp">
+<area shape="rect" id="node2" href="a39532_source.html" title="Common.hpp" alt="" coords="131,117,238,143"/>
+<area shape="rect" id="node12" href="a34706_source.html" title="..\\System.Shared\\RealClass\lObject.hpp" alt="" coords="1410,109,1615,151"/>
 </map>
-</td></tr></table></center>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35026.html">alicorn::extension::std::pool&lt; TSize &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательный класс, эмулирующий шаблон пространства имен.  <a href="a35026.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35030.html">alicorn::extension::std::memory::Pool&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Класс создания объектов из пула памяти.  <a href="a35030.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35034.html">alicorn::extension::std::trivial_ptr&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Простой класс-обертка для указателя.  <a href="a35034.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Определения типов</h2></td></tr>
-<tr class="memitem:ga0c97cb236edf6ff6a6fa3a5ae5cea064"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ga0c97cb236edf6ff6a6fa3a5ae5cea064"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">alicorn::extension::std::unique_ptr</a> = ::<a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">std::unique_ptr</a>&lt; T, void(*)(void *)&gt;</td></tr>
-<tr class="memdesc:ga0c97cb236edf6ff6a6fa3a5ae5cea064"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательное определение аналога std::unique_ptr&lt;&gt; для захвата ресурсов.  <a href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga0c97cb236edf6ff6a6fa3a5ae5cea064"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Функции</h2></td></tr>
-<tr class="memitem:ga5f9c37bd9b4ca4bafeb36261de35e63d"><td class="memTemplParams" colspan="2">template&lt;class T , class ... TArgs&gt; </td></tr>
-<tr class="memitem:ga5f9c37bd9b4ca4bafeb36261de35e63d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a35034.html">trivial_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34742.html#ga5f9c37bd9b4ca4bafeb36261de35e63d">alicorn::extension::std::make_trivial</a> (TArgs &amp;&amp;... _Args)</td></tr>
-<tr class="memdesc:ga5f9c37bd9b4ca4bafeb36261de35e63d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов trivial_ptr&lt;&gt;.  <a href="a34742.html#ga5f9c37bd9b4ca4bafeb36261de35e63d">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga5f9c37bd9b4ca4bafeb36261de35e63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4249699a1a22bc45d6103e95c4491d68"><td class="memTemplParams" colspan="2">template&lt;class T , class ... TArgs&gt; </td></tr>
-<tr class="memitem:ga4249699a1a22bc45d6103e95c4491d68"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">unique_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34742.html#ga4249699a1a22bc45d6103e95c4491d68">alicorn::extension::std::make_unique</a> (TArgs &amp;&amp;... _Args)</td></tr>
-<tr class="memdesc:ga4249699a1a22bc45d6103e95c4491d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов, аналогичных std::unique_ptr&lt;&gt;.  <a href="a34742.html#ga4249699a1a22bc45d6103e95c4491d68">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga4249699a1a22bc45d6103e95c4491d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga66eb9e3ce8d41313e90083d877492841"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:ga66eb9e3ce8d41313e90083d877492841"><td class="memTemplItemLeft" align="right" valign="top">inline ::std::shared_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34742.html#ga66eb9e3ce8d41313e90083d877492841">alicorn::extension::std::make_shared</a> (<a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">unique_ptr</a>&lt; T &gt; &amp;_pPointer)</td></tr>
-<tr class="memdesc:ga66eb9e3ce8d41313e90083d877492841"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов std::shared_ptr&lt;&gt; из.  <a href="a34742.html#ga66eb9e3ce8d41313e90083d877492841">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga66eb9e3ce8d41313e90083d877492841"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1dbbfefb9898ccdd2373586221e9b240"><td class="memTemplParams" colspan="2">template&lt;class T , class ... TArgs&gt; </td></tr>
-<tr class="memitem:ga1dbbfefb9898ccdd2373586221e9b240"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="a35034.html">trivial_ptr</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a34742.html#ga1dbbfefb9898ccdd2373586221e9b240">alicorn::extension::std::pool&lt; TSize &gt;::make_trivial</a> (TArgs &amp;&amp;... _Args)</td></tr>
-<tr class="memdesc:ga1dbbfefb9898ccdd2373586221e9b240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов trivial_ptr&lt;&gt;.  <a href="#ga1dbbfefb9898ccdd2373586221e9b240">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga1dbbfefb9898ccdd2373586221e9b240"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Раздел классов работы с памятью. </p>
-<h2 class="groupheader">Типы</h2>
-<a id="ga0c97cb236edf6ff6a6fa3a5ae5cea064"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0c97cb236edf6ff6a6fa3a5ae5cea064">&#9670;&nbsp;</a></span>unique_ptr</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">alicorn::extension::std::unique_ptr</a> = typedef ::<a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">std::unique_ptr</a>&lt;T, void(*)(void *)&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Класс входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательное определение аналога std::unique_ptr&lt;&gt; для захвата ресурсов. </p>
-<ul>
-<li>В качестве deleter'a можно задавать лямбда-выражение (std::function&lt;void(T *)&gt; не используется, т.к. в этом случае вызывается его оператор присваивания при создании объекта unique_ptr&lt;&gt;, что существенно сказывается на времени создания объекта из пула).</li>
-<li>Если при создании объекта будет возвращен nullptr, deleter вызван не будет.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Класс, в указателе на который будут храниться созданные объекты.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>12 Апрель 2017 <br />
- </dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017</dd></dl>
-<h2>Пример использования: </h2>
-<div class="fragment"><div class="line"><a class="code" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">::alicorn::extension::std::unique_ptr&lt;FILE&gt;</a> Example{ fopen(<span class="stringliteral">&quot;file.txt&quot;</span>, <span class="stringliteral">&quot;r&quot;</span>),</div><div class="line">  [](FILE * f) { fclose(f); } };</div></div><!-- fragment --> 
-</div>
-</div>
-<h2 class="groupheader">Функции</h2>
-<a id="ga66eb9e3ce8d41313e90083d877492841"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga66eb9e3ce8d41313e90083d877492841">&#9670;&nbsp;</a></span>make_shared()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">inline ::std::shared_ptr&lt;T&gt; alicorn::extension::std::make_shared </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">unique_ptr</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_pPointer</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов std::shared_ptr&lt;&gt; из. </p>
-<ul>
-<li>Позволяет создавать корректные объекты 'обычных' std::shared_ptr&lt;&gt; из специализированной версии unique_ptr&lt;&gt;.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Класс, в указателе на который должен храниться объект.</td></tr>
-  </table>
-  </dd>
-</dl>
-<h2>Пример использования: </h2>
-<div class="fragment"><div class="line"><span class="keyword">using namespace </span>::<a class="code" href="a34796.html">alicorn::extension::std</a>;</div><div class="line"></div><div class="line"><span class="keyword">auto</span> pExample = make_unique&lt;Test&gt;(); <span class="comment">// uinique_ptr&lt;Test&gt;</span></div><div class="line"></div><div class="line"><span class="keyword">auto</span> pIExample = <a class="code" href="a34742.html#ga66eb9e3ce8d41313e90083d877492841">make_shared</a>(pExample); <span class="comment">// ::std::shared_ptr&lt;Test&gt;</span></div><div class="line"></div><div class="line"><span class="comment">// Или, если нужен указатель на интерфейс...</span></div><div class="line"><span class="comment">// ::std::shared_ptr&lt;ITest&gt; pIExample = make_shared(pExample);</span></div><div class="line"></div><div class="line"><span class="comment">// Здесь pExample уже равен nullptr</span></div></div><!-- fragment --> 
-</div>
-</div>
-<a id="ga5f9c37bd9b4ca4bafeb36261de35e63d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5f9c37bd9b4ca4bafeb36261de35e63d">&#9670;&nbsp;</a></span>make_trivial() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class ... TArgs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a35034.html">trivial_ptr</a>&lt;T&gt; alicorn::extension::std::make_trivial </td>
-          <td>(</td>
-          <td class="paramtype">TArgs &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>_Args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов trivial_ptr&lt;&gt;. </p>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Класс, объект которого должен быть создан. </td></tr>
-    <tr><td class="paramname">TArgs</td><td>Аргументы, которые будут передаваться конструктору создаваемого объекта. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga1dbbfefb9898ccdd2373586221e9b240"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1dbbfefb9898ccdd2373586221e9b240">&#9670;&nbsp;</a></span>make_trivial() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;size_t TSize&gt; </div>
-<div class="memtemplate">
-template&lt;class T , class ... TArgs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="a35034.html">trivial_ptr</a>&lt;T&gt; <a class="el" href="a35026.html">alicorn::extension::std::pool</a>&lt; TSize &gt;::make_trivial </td>
-          <td>(</td>
-          <td class="paramtype">TArgs &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>_Args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов trivial_ptr&lt;&gt;. </p>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Класс, объект которого должен быть создан. </td></tr>
-    <tr><td class="paramname">TArgs</td><td>Аргументы, которые будут передаваться конструктору создаваемого объекта. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga4249699a1a22bc45d6103e95c4491d68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4249699a1a22bc45d6103e95c4491d68">&#9670;&nbsp;</a></span>make_unique()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T , class ... TArgs&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a34742.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">unique_ptr</a>&lt;T&gt; alicorn::extension::std::make_unique </td>
-          <td>(</td>
-          <td class="paramtype">TArgs &amp;&amp;...&#160;</td>
-          <td class="paramname"><em>_Args</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция входит в проект <a class="el" href="a37247.html">Std</a> <br />
- Вспомогательная функция создания объектов, аналогичных std::unique_ptr&lt;&gt;. </p>
-<ul>
-<li>Фактически, создана исключительно для того, чтобы быть задействованной в фабрике объектов (т.к. та требует две функции (создание объектов в куче и пуле), которые должны возвращать однотипные объекты).</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Класс, объект которого должен быть создан. </td></tr>
-    <tr><td class="paramname">TArgs</td><td>Аргументы, которые будут передаваться конструктору создаваемого объекта. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса System. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:03. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_2f1d301b89f7e85f7d78aa42c81240fe.html">Test.Android</a></li><li class="navelem"><a class="el" href="dir_6021c754cf3cb8a327131719cf78d18a.html">Test.Android</a></li><li class="navelem"><a class="el" href="a34742.html">System_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Source/Document/Test.Document/Test.Universal/Universal_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Source/Document/Test.Document/Test.RapidXml/RapidXml_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,36 +89,35 @@ $(document).ready(function(){initNavTree('a01268.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл Universal_test.cpp</div>  </div>
+<div class="title">Файл RapidXml_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;alicorn\boost\filesystem\copy-all.hpp&gt;</code><br />
 <code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\document\universal.hpp&gt;</code><br />
-<code>#include &lt;alicorn\document\universal.inl&gt;</code><br />
-<code>#include &lt;alicorn\document\node-iterator.hpp&gt;</code><br />
-<code>#include &lt;alicorn\lib-info\document.hpp&gt;</code><br />
-<code>#include &quot;Implementation.hpp&quot;</code><br />
+<code>#include &lt;alicorn\document\implementation\rapidxml.hpp&gt;</code><br />
+<code>#include &lt;alicorn\document\implementation\rapidxml.test.inl&gt;</code><br />
+<code>#include &lt;alicorn\details\source.inl&gt;</code><br />
+<code>#include &lt;alicorn\details\from-file.inl&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Universal_test.cpp:</div>
+Граф включаемых заголовочных файлов для RapidXml_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01269.png" border="0" usemap="#_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_universal_2_universal__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_universal_2_universal__test_8cpp" id="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_universal_2_universal__test_8cpp">
-<area shape="rect" id="node2" href="a37816_source.html" title="stdafx.h" alt="" coords="168,131,244,158"/>
-<area shape="rect" id="node14" href="a39226_source.html" title="Implementation.hpp" alt="" coords="1554,131,1706,158"/>
-<area shape="rect" id="node4" href="a38935_source.html" title="..\\mock.hpp" alt="" coords="230,221,331,247"/>
+<div class="center"><img src="a01269.png" border="0" usemap="#_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_rapid_xml_2_rapid_xml__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_rapid_xml_2_rapid_xml__test_8cpp" id="_solution_2_solution_2_source_2_document_2_test_8_document_2_test_8_rapid_xml_2_rapid_xml__test_8cpp">
+<area shape="rect" id="node2" href="a37909_source.html" title="stdafx.h" alt="" coords="168,131,244,158"/>
+<area shape="rect" id="node4" href="a39040_source.html" title="..\\mock.hpp" alt="" coords="230,221,331,247"/>
 </map>
 </div>
 </div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Universal. </p>
+<div class="textblock"><p>Тесты класса RapidXml. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_9b7a7cc36b85820c41a89a179cfe5dd7.html">Document</a></li><li class="navelem"><a class="el" href="dir_80005dfa0ec67e2df12d1bc9f9b5a935.html">Test.Document</a></li><li class="navelem"><a class="el" href="dir_0c4b30945a767be4b88457713f90670d.html">Test.Universal</a></li><li class="navelem"><a class="el" href="a01268.html">Universal_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:02. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_9b7a7cc36b85820c41a89a179cfe5dd7.html">Document</a></li><li class="navelem"><a class="el" href="dir_80005dfa0ec67e2df12d1bc9f9b5a935.html">Test.Document</a></li><li class="navelem"><a class="el" href="dir_0353a69b13819964c66d1fc9ba94fd19.html">Test.RapidXml</a></li><li class="navelem"><a class="el" href="a01268.html">RapidXml_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

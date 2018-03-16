@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Command</title>
+<title>Alicorn: Файл Solution/Test.Android/Test.Android/Vfs_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,96 +88,36 @@ $(document).ready(function(){initNavTree('a34754.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Классы</a> &#124;
-<a href="#typedef-members">Определения типов</a>  </div>
   <div class="headertitle">
-<div class="title">Command<div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34753.html">Modules</a> &raquo; <a class="el" href="a34757.html">Patterns</a></div></div>  </div>
+<div class="title">Файл Vfs_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Граф связей класса Command:</div>
+<div class="textblock"><code>#include &quot;Common.hpp&quot;</code><br />
+<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\vfs.hpp&gt;</code><br />
+<code>#include &lt;alicorn\application.hpp&gt;</code><br />
+<code>#include &lt;alicorn\crypto.hpp&gt;</code><br />
+<code>#include &quot;..\Password.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Vfs_test.cpp:</div>
 <div class="dyncontent">
-<center><table><tr><td><img src="a34754.png" border="0" alt="" usemap="#a34754"/>
-<map name="a34754" id="a34754">
-<area shape="rect" id="node2" href="a34757.html" title="Patterns" alt="" coords="5,5,84,32"/>
+<div class="center"><img src="a34755.png" border="0" usemap="#_solution_2_test_8_android_2_test_8_android_2_vfs__test_8cpp" alt=""/></div>
+<map name="_solution_2_test_8_android_2_test_8_android_2_vfs__test_8cpp" id="_solution_2_test_8_android_2_test_8_android_2_vfs__test_8cpp">
+<area shape="rect" id="node2" href="a39532_source.html" title="Common.hpp" alt="" coords="131,102,238,129"/>
+<area shape="rect" id="node10" href="a39349_source.html" title="..\\Password.hpp" alt="" coords="1001,102,1131,129"/>
+<area shape="rect" id="node11" href="a39340_source.html" title="Protect\\Seed.hpp" alt="" coords="1059,184,1198,211"/>
 </map>
-</td></tr></table></center>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Классы</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35698.html">alicorn::modules::patterns::command::Data&lt; T &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Вспомогательный класс команды, содержащий используемые данные.  <a href="a35698.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35702.html">alicorn::modules::patterns::command::Data&lt; Pointer * &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Специализация шаблона для указателей.  <a href="a35702.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35706.html">alicorn::modules::patterns::command::ICommand</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Интерфейсный класс для команд.  <a href="a35706.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35710.html">alicorn::modules::patterns::command::IManager&lt; TInterface &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Интерфейсный класс менеджеров, управляющих выполнением команд.  <a href="a35710.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35714.html">alicorn::modules::patterns::command::IUndo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Интерфейсный класс для команд, поддерживающих отмену последнего действия.  <a href="a35714.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35718.html">alicorn::modules::patterns::command::ManagerCommon&lt; TInterface &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Базовый класс менеджеров, управляющих выполнением команд.  <a href="a35718.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35722.html">alicorn::modules::patterns::command::ManagerUndoRedo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Класс, управляющий выполнением команд с поддержкой отмены/повторения выполнения команд.  <a href="a35722.html#details">Подробнее...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Определения типов</h2></td></tr>
-<tr class="memitem:ga4275f7d3ae368fe8d92fae58ee504303"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34754.html#ga4275f7d3ae368fe8d92fae58ee504303">alicorn::modules::patterns::command::Manager</a> = <a class="el" href="a35718.html">ManagerCommon</a>&lt; <a class="el" href="a35706.html">ICommand</a> &gt;</td></tr>
-<tr class="memdesc:ga4275f7d3ae368fe8d92fae58ee504303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Класс, управляющий выполнением команд.  <a href="a34754.html#ga4275f7d3ae368fe8d92fae58ee504303">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga4275f7d3ae368fe8d92fae58ee504303"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<p>Раздел классов реализации паттерна 'Команда'. </p>
-<h2 class="groupheader">Типы</h2>
-<a id="ga4275f7d3ae368fe8d92fae58ee504303"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4275f7d3ae368fe8d92fae58ee504303">&#9670;&nbsp;</a></span>Manager</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="a34754.html#ga4275f7d3ae368fe8d92fae58ee504303">alicorn::modules::patterns::command::Manager</a> = typedef <a class="el" href="a35718.html">ManagerCommon</a>&lt;<a class="el" href="a35706.html">ICommand</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Класс входит в <a class="el" href="a37253.html">Patterns</a> <br />
- Класс, управляющий выполнением команд. </p>
-<ul>
-<li>Выполняемые команды должны быть унаследованы от интерфейса <a class="el" href="a35706.html" title="Класс входит в Patterns   Интерфейсный класс для команд. ">ICommand</a>.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>9 май 2014 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса Vfs. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:03. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_2f1d301b89f7e85f7d78aa42c81240fe.html">Test.Android</a></li><li class="navelem"><a class="el" href="dir_6021c754cf3cb8a327131719cf78d18a.html">Test.Android</a></li><li class="navelem"><a class="el" href="a34754.html">Vfs_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

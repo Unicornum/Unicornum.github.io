@@ -1,6 +1,7 @@
 var a34787 =
 [
-    [ "ProcessingMetrics", "a34773.html", "a34773" ],
-    [ "SettingsApp", "a34774.html", "a34774" ],
-    [ "Testing.App", "a34781.html", "a34781" ]
+    [ "Deflate", "a36097.html", [
+      [ "Unpack", "a36097.html#a27bb0b1ae852292c190cc25ac50bf88b", null ]
+    ] ],
+    [ "Snappy", "a36101.html", null ]
 ];

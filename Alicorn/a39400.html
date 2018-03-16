@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/System/Version/Version/version.hpp</title>
+<title>Alicorn: Файл Solution/Solution/Source/Details/details.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,57 +88,37 @@ $(document).ready(function(){initNavTree('a39400.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Макросы</a>  </div>
   <div class="headertitle">
-<div class="title">Файл version.hpp</div>  </div>
+<div class="title">Файл details.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;alicorn\cpp\to-str.hpp&gt;</code><br />
-<code>#include &lt;solution\version.hpp&gt;</code><br />
-<code>#include &lt;alicorn\version\default.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;details\make-source.hpp&quot;</code><br />
+<code>#include &quot;details\empty.hpp&quot;</code><br />
+<code>#include &quot;details\default.hpp&quot;</code><br />
+<code>#include &quot;details\utf8.hpp&quot;</code><br />
+<code>#include &quot;details\from-file.hpp&quot;</code><br />
+<code>#include &quot;details\universal.hpp&quot;</code><br />
+<code>#include &quot;lib-info\details.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для version.hpp:</div>
+Граф включаемых заголовочных файлов для details.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a39401.png" border="0" usemap="#_solution_2_solution_2_system_2_version_2_version_2version_8hpp" alt=""/></div>
-<map name="_solution_2_solution_2_system_2_version_2_version_2version_8hpp" id="_solution_2_solution_2_system_2_version_2_version_2version_8hpp">
+<div class="center"><img src="a39401.png" border="0" usemap="#_solution_2_solution_2_source_2_details_2details_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_source_2_details_2details_8hpp" id="_solution_2_solution_2_source_2_details_2details_8hpp">
+<area shape="rect" id="node2" href="a01172_source.html" title="details\\make&#45;source.hpp" alt="" coords="5,95,191,121"/>
+<area shape="rect" id="node9" href="a01160_source.html" title="details\\from&#45;file.hpp" alt="" coords="1170,95,1325,121"/>
 </map>
 </div>
 </div>
 <p><a href="a39400_source.html">См. исходные тексты.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Макросы</h2></td></tr>
-<tr class="memitem:ga85f528db31313a13c1976707ebadcf84"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34772.html#ga85f528db31313a13c1976707ebadcf84">__FILE_VERSION__</a>&#160;&#160;&#160;VERSION,SUBVERSION,SUBSUBVERSION,REVISION_SOLUTION</td></tr>
-<tr class="memdesc:ga85f528db31313a13c1976707ebadcf84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вид версии exe/dll файла. <br /></td></tr>
-<tr class="separator:ga85f528db31313a13c1976707ebadcf84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6d003e5e0fe1fca21ede1e4f8ce6da09"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34772.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09">__PRODUCT_VERSION__</a>&#160;&#160;&#160;VERSION.SUBVERSION.SUBSUBVERSION.YEAR</td></tr>
-<tr class="memdesc:ga6d003e5e0fe1fca21ede1e4f8ce6da09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вид версии exe/dll продукта. <br /></td></tr>
-<tr class="separator:ga6d003e5e0fe1fca21ede1e4f8ce6da09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca887abf1bed0f12a99431714940c050"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34772.html#gaca887abf1bed0f12a99431714940c050">__FILE_VERSION_SHORT__</a></td></tr>
-<tr class="memdesc:gaca887abf1bed0f12a99431714940c050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка короткой версии exe/dll файла. <br /></td></tr>
-<tr class="separator:gaca887abf1bed0f12a99431714940c050"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0facd32184b2ec0c57501e7d76ce59ca"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34772.html#ga0facd32184b2ec0c57501e7d76ce59ca">__FILE_VERSION_FULL__</a></td></tr>
-<tr class="memdesc:ga0facd32184b2ec0c57501e7d76ce59ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка полной версии exe/dll файла. <br /></td></tr>
-<tr class="separator:ga0facd32184b2ec0c57501e7d76ce59ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e07a654741079583f62167c324ce81a"><td class="memItemLeft" align="right" valign="top">
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34772.html#ga5e07a654741079583f62167c324ce81a">__PRODUCT_VERSION_FULL__</a>&#160;&#160;&#160;<a class="el" href="a34772.html#ga0facd32184b2ec0c57501e7d76ce59ca">__FILE_VERSION_FULL__</a></td></tr>
-<tr class="memdesc:ga5e07a654741079583f62167c324ce81a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка полной версии exe/dll продукта. <br /></td></tr>
-<tr class="separator:ga5e07a654741079583f62167c324ce81a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Заголовочный файл с макросами, задающими способ формирования версии программы. </p>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a37358.html">Converter</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_6ad1dcbf6dd9b6cc20ba7172c7c77f84.html">Version</a></li><li class="navelem"><a class="el" href="dir_1764fac1ecfa1ad1ff668d90521099ff.html">Version</a></li><li class="navelem"><a class="el" href="a39400.html">version.hpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:02. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_7a64a03b269ef25e47c77e54a9ba6e07.html">Details</a></li><li class="navelem"><a class="el" href="a39400.html">details.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

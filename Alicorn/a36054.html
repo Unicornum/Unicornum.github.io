@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Шаблон класса alicorn::source::crypto::SecurePassword&lt; TChar, TEncryptChar &gt;</title>
+<title>Alicorn: Cписок членов класса</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.5 Revision: 2989 Platform: x64 Build: 17:23 09 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a36054.html','');});
+$(document).ready(function(){initNavTree('a36057.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,120 +88,21 @@ $(document).ready(function(){initNavTree('a36054.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a36051.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Шаблон класса alicorn::source::crypto::SecurePassword&lt; TChar, TEncryptChar &gt;<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a34731.html">Alicorn</a> &raquo; <a class="el" href="a34767.html">Source</a> &raquo; <a class="el" href="a34761.html">Crypto</a></div></div>  </div>
+<div class="title">alicorn::modules::vfs::Core Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a37258.html">Crypto</a> <br />
- Класс для безопасного хранения пароля.  
- <a href="a36054.html#details">Подробнее...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a01133_source.html">secure-password.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Граф связей класса alicorn::source::crypto::SecurePassword&lt; TChar, TEncryptChar &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="a36052.png" border="0" usemap="#alicorn_1_1source_1_1crypto_1_1_secure_password_3_01_t_char_00_01_t_encrypt_char_01_4_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1source_1_1crypto_1_1_secure_password_3_01_t_char_00_01_t_encrypt_char_01_4_coll__map" id="alicorn_1_1source_1_1crypto_1_1_secure_password_3_01_t_char_00_01_t_encrypt_char_01_4_coll__map">
-</map>
-</div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:a13a8b849801ab8761b3c14d8f15e8a2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a36066.html">Password</a>&lt; TChar &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36054.html#a13a8b849801ab8761b3c14d8f15e8a2d">Get</a> (size_t=0, TChar=0x00) const</td></tr>
-<tr class="memdesc:a13a8b849801ab8761b3c14d8f15e8a2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция дешифровки пароля.  <a href="#a13a8b849801ab8761b3c14d8f15e8a2d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a13a8b849801ab8761b3c14d8f15e8a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><h3>template&lt;class TChar, class TEncryptChar&gt;<br />
-class alicorn::source::crypto::SecurePassword&lt; TChar, TEncryptChar &gt;</h3>
-
-<p>Класс входит в проект <a class="el" href="a37258.html">Crypto</a> <br />
- Класс для безопасного хранения пароля. </p>
-<ul>
-<li>Хранит пароль в зашифрованном виде, предоставляя пароль как временный объект, который гарантированно затирает свое содержимое в памяти после разрушения.</li>
-<li>Класс-наследник должен определить функцию DoDecrypt(), которая будет вызвана для каждого символа зашифрованного пароля.</li>
-</ul>
-<dl class="tparams"><dt>Параметры шаблона</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">TChar</td><td>Тип элементов, в которых будет возвращен дешифрованный пароль. </td></tr>
-    <tr><td class="paramname">TEncryptChar</td><td>Тип элементов, в которых храниться зашифрованный пароль.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>17 Май 2017 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a13a8b849801ab8761b3c14d8f15e8a2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13a8b849801ab8761b3c14d8f15e8a2d">&#9670;&nbsp;</a></span>Get()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class TChar, class TEncryptChar &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a36066.html">Password</a>&lt; TChar &gt; <a class="el" href="a36054.html">alicorn::source::crypto::SecurePassword</a>&lt; TChar, TEncryptChar &gt;::Get </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>_MinSize</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TChar&#160;</td>
-          <td class="paramname"><em>_Dummy</em> = <code>0x00</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Функция дешифровки пароля. </p>
-<ul>
-<li>Функция предназначена для формирования пароля заданной длины.</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_MinSize</td><td>Минимальный размер пароля (если зашифрованный пароль короче, чем это число, он будет увеличен до указанного значения с добавлением заполняющих символов). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Dummy</td><td>Символ-заполнитель для создания длинного пароля.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Действие невозможно (подробнее см. описание исключения). </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Source/Crypto/Crypto/<a class="el" href="a01112_source.html">aes256.hpp</a></li>
-<li>Solution/Solution/Source/Crypto/Crypto/<a class="el" href="a01133_source.html">secure-password.hpp</a></li>
-<li>Solution/Solution/Source/Crypto/Crypto/secure-password.inl</li>
-</ul>
-</div><!-- contents -->
+<p>Полный список членов класса <a class="el" href="a36057.html">alicorn::modules::vfs::Core</a>, включая наследуемые из базового класса</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a36057.html#a1acf734b09cac8bccc8529ad1ab65abd">Core</a>(const ::std::vector&lt; ImplPtr_t &gt; &amp;)</td><td class="entry"><a class="el" href="a36057.html">alicorn::modules::vfs::Core</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a36057.html#a89362a8be8b38b14af4a5fe4c0af0de2">GetData</a>(const Path_t &amp;) const</td><td class="entry"><a class="el" href="a36057.html">alicorn::modules::vfs::Core</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>crypto</b></li><li class="navelem"><a class="el" href="a36054.html">SecurePassword</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 9 Мар 2018 17:24:05. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

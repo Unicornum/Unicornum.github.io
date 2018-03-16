@@ -1,18 +1,15 @@
 var a34782 =
 [
-    [ "Executor", "a36786.html", [
-      [ "GetResultRunTests", "a36786.html#a83bd59b1eb2484c2f84b62c68524284c", null ],
-      [ "IsExistsFiledTest", "a36786.html#a9afe33e53a9d142820aff8aaefd7f24b", null ]
+    [ "Factory", "a35757.html", [
+      [ "GetInstance", "a35757.html#af6524f8e306f3943350be3c68acb7587", null ],
+      [ "MakeFromHeap", "a35757.html#abd541d695ace3507ef2aefdb4707dd8e", null ],
+      [ "MakeFromPool", "a35757.html#a097bd65d4d835fb9c2a4af02be25317d", null ],
+      [ "Register", "a35757.html#a9655af04b535e7f51c659295250d1d96", null ]
     ] ],
-    [ "GTestResult", "a36790.html", [
-      [ "GTestResult", "a36790.html#a6520df12eaf543dbbafeca075036dd49", null ]
-    ] ],
-    [ "IModelTestingApp", "a36794.html", [
-      [ "GetResultRunTests", "a36794.html#a3b03b7597488a128afa3810f77e7b752", null ],
-      [ "IsExistsFiledTest", "a36794.html#a7f99564f3d37665ad57067b847c3ac3b", null ]
-    ] ],
-    [ "Loader", "a36798.html", [
-      [ "GetResultRunTests", "a36798.html#abece1b58edde7f0b5404e48eae84e555", null ],
-      [ "IsExistsFiledTest", "a36798.html#ad69bb76645828e5b4a6d11d70f5eaeb6", null ]
-    ] ]
+    [ "Registrator", "a35765.html", null ],
+    [ "__FACTORY_REGISTER", "a34782.html#ga33cedef3ec2f0014d60cd2e5d1763cd8", null ],
+    [ "FACTORY_REGISTER", "a34782.html#ga1659e9d0ef525996965794c87ced3367", null ],
+    [ "FACTORY_REGISTER_STRING_NAME", "a34782.html#gac2f30b7601818f70751234bb6be721bd", null ],
+    [ "make_unique", "a34782.html#ga7e437321660a850c71b450cdbc10e05c", null ],
+    [ "make_unique", "a34782.html#ga3cf40bb0891caae8bef5dce8fb8f19b1", null ]
 ];

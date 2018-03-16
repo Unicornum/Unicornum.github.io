@@ -1,22 +1,53 @@
 var a34785 =
 [
-    [ "Generated", "a34784.html", "a34784" ],
-    [ "HtmlAbout", "a35470.html", null ],
-    [ "HtmlTestInfo", "a36862.html", [
-      [ "HtmlTestInfo", "a36862.html#a08b1dd1b8568e8ff8dd5c4202a071cea", null ],
-      [ "BuildSummary", "a36862.html#a55eea01426a8938164fc1ad88a91ec59", null ],
-      [ "GetSeparator", "a36862.html#a93fd23bcad787c20c0ae82304f134fbd", null ],
-      [ "ReplaceExtraSymbols", "a36862.html#aa78d50f4ea77fdedd06e34197510186b", null ],
-      [ "ReplaceHtmlTags", "a36862.html#aa52b96412dab66e229bbb20d65a7dfb8", null ],
-      [ "ReplaceToColorOutput", "a36862.html#ac1d8fae951fccf141bc9030898f153ce", null ],
-      [ "SetDefaultInfo", "a36862.html#ab8230d887215c0149157ed1d609ca607", null ],
-      [ "SetInfo", "a36862.html#af166d8934755b072c1c8bff34acc5e31", null ]
+    [ "File", "a35921.html", [
+      [ "File", "a35921.html#a7dcb21db9e1623e84b9c3dee81c12617", null ],
+      [ "Save", "a35921.html#a88b3b94949186c5c0e0a45c6b4a78428", null ]
     ] ],
-    [ "TreeCtrlIcons", "a36866.html", null ],
-    [ "TreeCtrlTests", "a36870.html", [
-      [ "BuildInfoSubTree", "a36870.html#af2fb960a145411873bf4ce84bf3f87de", null ],
-      [ "BuildTestsTree", "a36870.html#ad784b4f74ac46b4a6fc90518e8e5c87e", null ],
-      [ "GetInfo", "a36870.html#a09a08523f3f4952dd1d915d41a5d6c36", null ],
-      [ "SetResultRunTests", "a36870.html#ad0fbdec866076a92feab9f37966f099f", null ]
+    [ "ISection", "a35925.html", null ],
+    [ "SectionFullAccess", "a35929.html", [
+      [ "SectionFullAccess", "a35929.html#a559559549868bf00850723837cce477d", null ],
+      [ "SectionFullAccess", "a35929.html#a36af9981933fcf7ed983197a12b33faf", null ],
+      [ "Get", "a35929.html#a507d44d5dba17fc222cd874d69450b83", null ],
+      [ "GetChildSectionNames", "a35929.html#aa1dfff0a937d611ae13a1d12f3f7cafe", null ],
+      [ "GetComment", "a35929.html#ab2c894740f0e2c1310c0dc9f186a0e00", null ],
+      [ "GetParameterNames", "a35929.html#aed67aea2c59a39b6584b15c2ddde40f7", null ],
+      [ "operator[]", "a35929.html#a101c916468ea3e0c4a3deabf34219f82", null ],
+      [ "Set", "a35929.html#a72c4f25e09f0c7c1c825c0e1fdf17125", null ],
+      [ "SetComment", "a35929.html#a6c17f7e6bedce23523c3326c535761a2", null ]
+    ] ],
+    [ "SectionImpl", "a35937.html", [
+      [ "Parameters", "a35945.html", [
+        [ "Parameter", "a35949.html", null ]
+      ] ],
+      [ "Sections", "a35941.html", null ],
+      [ "SectionImpl", "a35937.html#ae95057df444c99b0ea0fbb5bf9b25ec7", null ],
+      [ "SectionImpl", "a35937.html#ad7fb702f4109de1ff4a52f000bc1ddf7", null ],
+      [ "SectionImpl", "a35937.html#a2dcb71aa9131e57fa3d084a47618106a", null ],
+      [ "AddExtraValue", "a35937.html#a1cf06e4a5b1302e1dce4d76be20b39b5", null ],
+      [ "GetChildSectionImpl", "a35937.html#a3df5c9b056b01466c8a70001861867ed", null ],
+      [ "GetChildSectionNames", "a35937.html#a553d49a67fbfc48be64a8bdfdbb68fdc", null ],
+      [ "GetComment", "a35937.html#a1e0f63d2c6925c9f3b7437d4049711ff", null ],
+      [ "GetParameterNames", "a35937.html#a64c472150665ac8195e4c3978edc570f", null ],
+      [ "GetRawValue", "a35937.html#a048b71769e3d9acd973c89b94f3321b6", null ],
+      [ "GetSubNode", "a35937.html#a2687dc184e82663f786b3df27f76165a", null ],
+      [ "GetSubstitutionValue", "a35937.html#ac56ea6653b92f98ef36a33121e02088f", null ],
+      [ "GetValue", "a35937.html#a8d8683935fc8b5b0a3537e8998f89bc1", null ],
+      [ "IfExistsChangeParameters", "a35937.html#a663fed31a770dc5f095e1c78af7fe32a", null ],
+      [ "LoadExtraParameters", "a35937.html#a6f13520fb9921877176797f3dfebb9ab", null ],
+      [ "LoadParametersFromNode", "a35937.html#ad94d44280d418e06aa177dce526edd80", null ],
+      [ "Save", "a35937.html#a7f9bc78cb9b514f69d1c915376315484", null ],
+      [ "SetComment", "a35937.html#abe80d2ac53d50b5093c8fd0d5b5a96e5", null ],
+      [ "SetDefaultValue", "a35937.html#ae4c7a86e070b361d48350f66466d6db0", null ],
+      [ "SetValue", "a35937.html#a1b5bbfe503c6ec6a69c5c8bafa662095", null ],
+      [ "WriteParametersTo", "a35937.html#ad92c3e6825d913ebd7baf2cbca3d7ce5", null ]
+    ] ],
+    [ "Section", "a35961.html", [
+      [ "Section", "a35961.html#a53bfb4cb221122d2c66b18659c84df4a", null ],
+      [ "Section", "a35961.html#a49d0ffb2f0b8228d9a6952f4cf3278fa", null ],
+      [ "AddExtra", "a35961.html#a0afd4cb7ca9dd46b11d72ea8d1143b83", null ],
+      [ "Get", "a35961.html#a198b4b8686e4e6a3892311a73feb35af", null ],
+      [ "operator[]", "a35961.html#a13b9a9e3fcda9d34bc2e78896ed878fe", null ],
+      [ "SetDefault", "a35961.html#adc88051d83dd647718609709a1ee344f", null ]
     ] ]
 ];
