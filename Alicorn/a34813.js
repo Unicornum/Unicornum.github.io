@@ -1,25 +1,14 @@
 var a34813 =
 [
-    [ "WxWidgets", "a34812.html", "a34812" ],
-    [ "AllTestsInfo", "a36909.html", [
-      [ "SetResultRunTests", "a36909.html#a23e9a44b7deda78006db6f424bea2bad", null ]
+    [ "Factory", "a35839.html", [
+      [ "MakeFromHeap", "a35839.html#abd541d695ace3507ef2aefdb4707dd8e", null ],
+      [ "MakeFromPool", "a35839.html#a097bd65d4d835fb9c2a4af02be25317d", null ],
+      [ "Register", "a35839.html#a9655af04b535e7f51c659295250d1d96", null ]
     ] ],
-    [ "DoDoxygenReport", "a36913.html", [
-      [ "SetResultRunTests", "a36913.html#a54c03684c52e8126374dbf170842259f", null ]
-    ] ],
-    [ "FailedTestsInfo", "a36917.html", [
-      [ "OnChanged", "a36917.html#a8f31082d1573122757db0572e9100a93", null ],
-      [ "OnPaint", "a36917.html#ad8351ca940eeac53bdbd81672c52db1d", null ],
-      [ "SetResultRunTests", "a36917.html#a8454b3f179b3136728668033f1f56885", null ]
-    ] ],
-    [ "IViewTestingApp", "a36921.html", [
-      [ "SetResultRunTests", "a36921.html#afb624f681dc703c77b48d609bb37aa67", null ]
-    ] ],
-    [ "SummaryInfo", "a36925.html", [
-      [ "SetResultRunTests", "a36925.html#aaf09aaafbcd0e1cc598d03d043efab94", null ]
-    ] ],
-    [ "TestProjectInfo", "a36933.html", [
-      [ "GetResult", "a36933.html#a40370349abcd7e28fd0e7b35dc07f7ca", null ],
-      [ "SetResultRunTests", "a36933.html#a4841d4f1542468358b7e9f7c0ee85e03", null ]
-    ] ]
+    [ "Registrator", "a35847.html", null ],
+    [ "__FACTORY_REGISTER", "a34813.html#ga33cedef3ec2f0014d60cd2e5d1763cd8", null ],
+    [ "FACTORY_REGISTER", "a34813.html#ga1659e9d0ef525996965794c87ced3367", null ],
+    [ "FACTORY_REGISTER_STRING_NAME", "a34813.html#gac2f30b7601818f70751234bb6be721bd", null ],
+    [ "make_unique", "a34813.html#ga7e437321660a850c71b450cdbc10e05c", null ],
+    [ "make_unique", "a34813.html#ga3cf40bb0891caae8bef5dce8fb8f19b1", null ]
 ];

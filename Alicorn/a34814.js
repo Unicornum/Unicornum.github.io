@@ -1,6 +1,9 @@
 var a34814 =
 [
-    [ "ProcessingMetrics", "a34800.html", "a34800" ],
-    [ "SettingsApp", "a34801.html", "a34801" ],
-    [ "Testing.App", "a34808.html", "a34808" ]
+    [ "BlockingSignal", "a35851.html", [
+      [ "operator()", "a35851.html#accbbeba32c801d573264697f6494e0cb", null ]
+    ] ],
+    [ "NonBlockingSignal", "a35863.html", [
+      [ "operator()", "a35863.html#af076a355dacebdb9939d236b2ecbac36", null ]
+    ] ]
 ];

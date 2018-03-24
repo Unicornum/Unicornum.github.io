@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Extension/Std/Test.Std/Test.Exception/Exception_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Extension/Std/std.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.7 Revision: 3096 Platform: x64 Build: 12:55 24 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,31 +89,51 @@ $(document).ready(function(){initNavTree('a00452.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл Exception_test.cpp</div>  </div>
+<div class="title">Файл std.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\std\exception.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;std\regex.hpp&quot;</code><br />
+<code>#include &quot;std\check.hpp&quot;</code><br />
+<code>#include &quot;std\string.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00335_source.html">std\memory.hpp</a>&quot;</code><br />
+<code>#include &quot;std\vector.hpp&quot;</code><br />
+<code>#include &quot;std\message.hpp&quot;</code><br />
+<code>#include &quot;std\exception.hpp&quot;</code><br />
+<code>#include &quot;std\singleton.hpp&quot;</code><br />
+<code>#include &quot;std\class-info.hpp&quot;</code><br />
+<code>#include &quot;std\call-proxy.hpp&quot;</code><br />
+<code>#include &quot;std\string-cast.hpp&quot;</code><br />
+<code>#include &quot;std\singleton-thread-local.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Exception_test.cpp:</div>
+Граф включаемых заголовочных файлов для std.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00453.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_exception_2_exception__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_exception_2_exception__test_8cpp" id="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_exception_2_exception__test_8cpp">
-<area shape="rect" id="node2" href="a37594_source.html" title="stdafx.h" alt="" coords="152,117,228,143"/>
-<area shape="rect" id="node4" href="a39001_source.html" title="..\\mock.hpp" alt="" coords="226,199,327,225"/>
+<div class="center"><img src="a00453.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_2std_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_extension_2_std_2std_8hpp" id="_solution_2_solution_2_extension_2_std_2std_8hpp">
+<area shape="rect" id="node2" href="a00362_source.html" title="std\\regex.hpp" alt="" coords="258,117,373,143"/>
+<area shape="rect" id="node10" href="a00278_source.html" title="std\\check.hpp" alt="" coords="705,117,822,143"/>
+<area shape="rect" id="node25" href="a00335.html" title="std\\memory.hpp" alt="" coords="3129,117,3259,143"/>
+<area shape="rect" id="node31" href="a00449_source.html" title="std\\vector.hpp" alt="" coords="3385,117,3507,143"/>
+<area shape="rect" id="node39" href="a00374_source.html" title="std\\singleton.hpp" alt="" coords="4768,117,4905,143"/>
+<area shape="rect" id="node42" href="a00296_source.html" title="std\\class&#45;info.hpp" alt="" coords="1653,117,1796,143"/>
+<area shape="rect" id="node44" href="a00272_source.html" title="std\\call&#45;proxy.hpp" alt="" coords="4929,117,5072,143"/>
+<area shape="rect" id="node50" href="a00365_source.html" title="std\\singleton&#45;thread\l&#45;local.hpp" alt="" coords="6225,109,6384,151"/>
+<area shape="rect" id="node3" href="a00344_source.html" title="regex\\match.hpp" alt="" coords="167,213,301,240"/>
+<area shape="rect" id="node7" href="a00356_source.html" title="regex\\search.hpp" alt="" coords="5,213,143,240"/>
+<area shape="rect" id="node8" href="a00350_source.html" title="regex\\replace.hpp" alt="" coords="326,213,467,240"/>
+<area shape="rect" id="node26" href="a39246_source.html" title="memory\\make.hpp" alt="" coords="2949,213,3092,240"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Exception. </p>
+</div>
+<p><a href="a00452_source.html">См. исходные тексты.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a37440.html">Std</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_d9e1277ce6eb969a50c70679da524949.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_c7dfabf562790523d639050e3d360b0f.html">Test.Exception</a></li><li class="navelem"><a class="el" href="a00452.html">Exception_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:19. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="a00452.html">std.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 24 Мар 2018 12:56:35. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

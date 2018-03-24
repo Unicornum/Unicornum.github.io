@@ -1,5 +1,7 @@
 var a34806 =
 [
-    [ "SettingsFrame", "a36677.html", null ],
-    [ "SettingsPanelImpl", "a36681.html", null ]
+    [ "Localization", "a35623.html", [
+      [ "Localization", "a35623.html#ac5c201a27b06b095d425cbe41f74acc6", null ],
+      [ "Get", "a35623.html#a51b61b2c76bc5c767a9db28a8e76b683", null ]
+    ] ]
 ];

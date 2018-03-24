@@ -1,21 +1,28 @@
 var a34808 =
 [
-    [ "Controller", "a34807.html", "a34807" ],
-    [ "Model", "a34809.html", "a34809" ],
-    [ "Support", "a34810.html", "a34810" ],
-    [ "View", "a34813.html", "a34813" ],
-    [ "DoxygenReport", "a36845.html", [
-      [ "DoxygenReport", "a36845.html#a5de91c77da4e819236d988234d55cdd0", null ]
+    [ "MessageImpl", "a35703.html", [
+      [ "MessageImpl", "a35703.html#aead43313ff34adde57b4d0f79d535f1c", null ],
+      [ "m_DateTime", "a35703.html#a3478e6b6fece12b0d3225c6fb4be63c9", null ],
+      [ "m_FileLine", "a35703.html#a185385cc0a2189215182e6e3cbbefc37", null ],
+      [ "m_FullFileLine", "a35703.html#a9e2a87c136b107ff03bff542856487b1", null ],
+      [ "m_Hash", "a35703.html#a12994dea55762aaa17bfab60b9e91b93", null ],
+      [ "m_Level", "a35703.html#a30452f3453b2d4450022800822315a61", null ],
+      [ "m_Message", "a35703.html#a8437da35798cc3af078e482edd029bf3", null ],
+      [ "m_StrType", "a35703.html#ae42a7efef51f9ecb529792b7db1c7f52", null ],
+      [ "m_ThreadInfo", "a35703.html#ad3f3ecde55f6d67c8d993d8f3061b896", null ]
     ] ],
-    [ "Init", "a36849.html", null ],
-    [ "Main", "a35493.html", [
-      [ "GetOptions", "a35493.html#a0feb62d4e4c1c5e49a723dbbd38c5a98", null ]
+    [ "Message", "a35711.html", [
+      [ "Message", "a35711.html#a9129c099b58fc8b4b237a2268c40e695", null ],
+      [ "DoComplete", "a35711.html#ad6509fda6ddc2230f986662e5181ab04", null ],
+      [ "DoSpecialAction", "a35711.html#a60a9316d70a117080c003541bff6b5b3", null ],
+      [ "GetLevel", "a35711.html#a4975d38735e7659719be5e8c96865e5f", null ],
+      [ "m_Message", "a35711.html#a727816858479d735c36fdbf2b7600aaf", null ]
     ] ],
-    [ "TestClass", "a36857.html", null ],
-    [ "TestProject", "a36861.html", [
-      [ "GetDllObject", "a36861.html#a2dea45130aabd14af0f725da7b651e4f", null ],
-      [ "GetInstance", "a36861.html#a4afac6707ae0d53632b97b88f35e5de0", null ]
-    ] ],
-    [ "TestSolution", "a36865.html", null ],
-    [ "MainFrame", "a36869.html", null ]
+    [ "Trace", "a35715.html", null ],
+    [ "Info", "a35719.html", null ],
+    [ "Warning", "a35723.html", null ],
+    [ "Error", "a35727.html", null ],
+    [ "Fatal", "a35731.html", [
+      [ "DoSpecialAction", "a35731.html#aee319a84720a3b08952822aedd918de6", null ]
+    ] ]
 ];

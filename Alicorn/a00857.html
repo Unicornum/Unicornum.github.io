@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Modules/Logger/Test.Logger.2/Test.Reports/Reports_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Modules/Logger/logger.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.7 Revision: 3096 Platform: x64 Build: 12:55 24 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,34 +88,45 @@ $(document).ready(function(){initNavTree('a00857.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a>  </div>
   <div class="headertitle">
-<div class="title">Файл Reports_test.cpp</div>  </div>
+<div class="title">Файл logger.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\logger\report.hpp&gt;</code><br />
-<code>#include &lt;alicorn\logger\message-impl.hpp&gt;</code><br />
-<code>#include &quot;..\..\logger\report\android\logcat.cpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;alicorn\std\string.hpp&gt;</code><br />
+<code>#include &quot;logger\config-value.hpp&quot;</code><br />
+<code>#include &quot;logger\report.hpp&quot;</code><br />
+<code>#include &quot;logger\message.hpp&quot;</code><br />
+<code>#include &quot;logger\proxy.hpp&quot;</code><br />
+<code>#include &quot;lib-info\logger.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Reports_test.cpp:</div>
+Граф включаемых заголовочных файлов для logger.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00858.png" border="0" usemap="#_solution_2_solution_2_modules_2_logger_2_test_8_logger_82_2_test_8_reports_2_reports__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_modules_2_logger_2_test_8_logger_82_2_test_8_reports_2_reports__test_8cpp" id="_solution_2_solution_2_modules_2_logger_2_test_8_logger_82_2_test_8_reports_2_reports__test_8cpp">
-<area shape="rect" id="node2" href="a37777_source.html" title="stdafx.h" alt="" coords="1555,117,1631,143"/>
-<area shape="rect" id="node4" href="a39019_source.html" title="..\\mock.hpp" alt="" coords="1617,206,1719,233"/>
+<div class="center"><img src="a00858.png" border="0" usemap="#_solution_2_solution_2_modules_2_logger_2logger_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_modules_2_logger_2logger_8hpp" id="_solution_2_solution_2_modules_2_logger_2logger_8hpp">
+<area shape="rect" id="node3" href="a00758_source.html" title="logger\\config&#45;value.hpp" alt="" coords="245,117,423,143"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Reports. </p>
+</div>
+<p><a href="a00857_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga8633a5b99dd43399c58206e715e7d29f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34810.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Type)</td></tr>
+<tr class="separator:ga8633a5b99dd43399c58206e715e7d29f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga827550edbeb086a4fcf0c8d506614062"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34810.html#ga827550edbeb086a4fcf0c8d506614062">LOGGER_MIN_LEVEL</a>(Type)&#160;&#160;&#160;::alicorn::modules::logger::Type(<a class="el" href="a34802.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(#Type), <a class="el" href="a34802.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(&quot;&quot;))</td></tr>
+<tr class="separator:ga827550edbeb086a4fcf0c8d506614062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a37446.html">Logger</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_307549c1eb45bb87e17fa8331c4b8d28.html">Logger</a></li><li class="navelem"><a class="el" href="dir_ed9674e6e7cf664636f62d3c77766a24.html">Test.Logger.2</a></li><li class="navelem"><a class="el" href="dir_a2cdbc9b8cd5c4e32e262e81c0cbadac.html">Test.Reports</a></li><li class="navelem"><a class="el" href="a00857.html">Reports_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:19. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_307549c1eb45bb87e17fa8331c4b8d28.html">Logger</a></li><li class="navelem"><a class="el" href="a00857.html">logger.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 24 Мар 2018 12:56:35. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

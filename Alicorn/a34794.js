@@ -1,8 +1,6 @@
 var a34794 =
 [
-    [ "Compress", "a34787.html", "a34787" ],
-    [ "Crypto", "a34788.html", "a34788" ],
-    [ "Details", "a34789.html", "a34789" ],
-    [ "Document", "a34791.html", "a34791" ],
-    [ "Image", "a34793.html", "a34793" ]
+    [ "Epsilon", "a34794.html#gada77aeeea8cdfd71e2fc258d2622faa5", null ],
+    [ "Infinity", "a34794.html#ga208a1945eed95cb7d404b0fba3fcbd2b", null ],
+    [ "Min", "a34794.html#ga092d73a3c219d160170528be0957ecf9", null ]
 ];

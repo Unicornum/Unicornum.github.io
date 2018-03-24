@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Extension/wxWidgets/Test.wxWidgets/Test.TempImageFile/TempImageFile_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Extension/Testing/testing.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.6 Revision: 3035 Platform: x64 Build: 17:24 16 Март 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.7 Revision: 3096 Platform: x64 Build: 12:55 24 Март 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,31 +89,50 @@ $(document).ready(function(){initNavTree('a00659.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл TempImageFile_test.cpp</div>  </div>
+<div class="title">Файл testing.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;boost\filesystem.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;testing\proxy.hpp&quot;</code><br />
+<code>#include &quot;testing\final.hpp&quot;</code><br />
+<code>#include &quot;testing\block-file.hpp&quot;</code><br />
+<code>#include &quot;testing\exists-file.hpp&quot;</code><br />
+<code>#include &quot;testing\equal-files.hpp&quot;</code><br />
+<code>#include &quot;testing\this-directory.hpp&quot;</code><br />
+<code>#include &quot;testing\exception.hpp&quot;</code><br />
+<code>#include &quot;testing\equal-directories.hpp&quot;</code><br />
+<code>#include &quot;testing\run-in-multithreads.hpp&quot;</code><br />
+<code>#include &quot;testing\file\load-text-file.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для TempImageFile_test.cpp:</div>
+Граф включаемых заголовочных файлов для testing.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00660.png" border="0" usemap="#_solution_2_solution_2_extension_2wx_widgets_2_test_8wx_widgets_2_test_8_temp_image_file_2_temp_image_file__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_extension_2wx_widgets_2_test_8wx_widgets_2_test_8_temp_image_file_2_temp_image_file__test_8cpp" id="_solution_2_solution_2_extension_2wx_widgets_2_test_8wx_widgets_2_test_8_temp_image_file_2_temp_image_file__test_8cpp">
-<area shape="rect" id="node2" href="a37726_source.html" title="stdafx.h" alt="" coords="525,131,601,158"/>
-<area shape="rect" id="node4" href="a39010_source.html" title="..\\mock.hpp" alt="" coords="587,221,689,247"/>
+<div class="center"><img src="a00660.png" border="0" usemap="#_solution_2_solution_2_extension_2_testing_2testing_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_extension_2_testing_2testing_8hpp" id="_solution_2_solution_2_extension_2_testing_2testing_8hpp">
+<area shape="rect" id="node3" href="a00632_source.html" title="testing\\final.hpp" alt="" coords="168,117,299,143"/>
+<area shape="rect" id="node4" href="a00563_source.html" title="testing\\block&#45;file.hpp" alt="" coords="323,117,485,143"/>
+<area shape="rect" id="node5" href="a00602_source.html" title="testing\\exists&#45;file.hpp" alt="" coords="510,117,677,143"/>
+<area shape="rect" id="node8" href="a00593_source.html" title="testing\\equal&#45;files.hpp" alt="" coords="940,117,1111,143"/>
+<area shape="rect" id="node12" href="a00650_source.html" title="testing\\this&#45;directory.hpp" alt="" coords="1135,117,1329,143"/>
+<area shape="rect" id="node16" href="a00590_source.html" title="testing\\equal&#45;directories.hpp" alt="" coords="701,117,915,143"/>
+<area shape="rect" id="node18" href="a00647_source.html" title="testing\\run&#45;in&#45;multithreads.hpp" alt="" coords="1829,117,2059,143"/>
+<area shape="rect" id="node22" href="a00629_source.html" title="testing\\file\\load&#45;text\l&#45;file.hpp" alt="" coords="1399,213,1559,255"/>
+<area shape="rect" id="node6" href="a00617_source.html" title="file\\is&#45;exists.hpp" alt="" coords="455,221,585,247"/>
+<area shape="rect" id="node9" href="a00611_source.html" title="file\\is&#45;binary&#45;equal.hpp" alt="" coords="1035,221,1210,247"/>
+<area shape="rect" id="node11" href="a00623_source.html" title="file\\is&#45;string&#45;equal.hpp" alt="" coords="839,221,1011,247"/>
+<area shape="rect" id="node13" href="a00587_source.html" title="directory\\get&#45;this\l&#45;directory.hpp" alt="" coords="1234,213,1374,255"/>
+<area shape="rect" id="node17" href="a00581_source.html" title="directory\\compare&#45;files.hpp" alt="" coords="609,221,815,247"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса TempImageFile. </p>
+</div>
+<p><a href="a00659_source.html">См. исходные тексты.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a37442.html">Testing</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_7ebb1a87177cedef3fa4b25334fb1686.html">wxWidgets</a></li><li class="navelem"><a class="el" href="dir_99b73703c676d5edb84c49a7203ff47b.html">Test.wxWidgets</a></li><li class="navelem"><a class="el" href="dir_3b7dd5f89f97c27a100282bf5181e51a.html">Test.TempImageFile</a></li><li class="navelem"><a class="el" href="a00659.html">TempImageFile_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 16 Мар 2018 17:25:19. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e87471de3dac63677f7cb2dd5765acbf.html">Testing</a></li><li class="navelem"><a class="el" href="a00659.html">testing.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 24 Мар 2018 12:56:35. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
