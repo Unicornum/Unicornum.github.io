@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['warning',['Warning',['../a35723.html',1,'alicorn::modules::logger']]],
-  ['winapicallproxy',['WinapiCallProxy',['../a36575.html',1,'alicorn::system::platform']]]
+  ['warning',['Warning',['../a35900.html',1,'alicorn::modules::logger']]],
+  ['winapicheckproxy',['WinapiCheckProxy',['../a36752.html',1,'alicorn::system::platform']]]
 ];

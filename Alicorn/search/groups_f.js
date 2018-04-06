@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['wxwidgets',['wxWidgets',['../a34805.html',1,'']]],
-  ['wxwidgets',['WxWidgets',['../a34843.html',1,'']]],
-  ['windows',['Windows',['../a34828.html',1,'']]],
-  ['wxwidgets',['wxWidgets',['../a34833.html',1,'']]]
+  ['wxwidgets',['wxWidgets',['../a34979.html',1,'']]],
+  ['windows',['Windows',['../a35002.html',1,'']]],
+  ['wxwidgets',['wxWidgets',['../a35007.html',1,'']]],
+  ['wxwidgets',['WxWidgets',['../a35017.html',1,'']]]
 ];

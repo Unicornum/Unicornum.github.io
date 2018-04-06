@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manager',['Manager',['../a34812.html#ga4275f7d3ae368fe8d92fae58ee504303',1,'alicorn::modules::patterns::command']]]
+  ['callproxy',['CallProxy',['../a34977.html#gac15290de7ee008e04a9ce0e8a2e67deb',1,'alicorn::extension::std']]]
 ];

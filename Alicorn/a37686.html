@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alicorn: Logger</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Версия: 3.8.8 Revision: 3176 Platform: x64 Build: 19:15 06 Апрель 2018</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a37686.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Logger </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Список классов проекта: <a class="el" href="a34984.html">Logger</a></p>
+<h1>Введение </h1>
+<p>Библиотека логирования программы предназначена для ведения журнала работы программы.</p>
+<p><br />
+ Запись сообщений в журнал производится путем добавления в код программы записей вида: </p><div class="fragment"><div class="line"><span class="comment">// Записать в лог сообщение &quot;Найдено 5 элементов&quot;</span></div><div class="line"><a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Warning) &lt;&lt; <a class="code" href="a34976.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a>(<span class="stringliteral">&quot;Найдено &quot;</span>) &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; элементов&quot;</span>;</div></div><!-- fragment --><dl class="section pre"><dt>Предусловие</dt><dd>Предполагается, что в настройках проекта, использующего логгер включена подстановка полного пути к файлу для макроса <b>_</b> _ FILE _ _.</dd></dl>
+<h1>Подробное описание </h1>
+<ol type="1">
+<li>Простое добавление в сообщения журнала значений переменных произвольных типов (поддерживаются все типы, для которых определен оператор &lt;&lt; (std::wostream &amp;)).</li>
+<li>Несколько типов сообщений с различным приоритетом.</li>
+<li>Выполнение дополнительного действия для каждого типа сообщения.</li>
+<li>Формирование журнала событий в различных форматах.</li>
+<li>"Роллинг" файлов журнала (хранится заданное число журналов, при создании нового самый старый удаляется).</li>
+<li>Задание ограничения размера файла журнала (при превышении заданного значения текущий файл журнала будет закрыт и создан новый).</li>
+<li>Фильтрация выводимых сообщений по заданному приоритету.</li>
+<li>Настройка работы логгера в программе или файле настроек программы.</li>
+<li>В случае совпадения имени файла создаваемого журнала с уже существующим к имени файла будет добавлен порядковый номер в виде "_xxxx".</li>
+<li>Логгер является потокобезопасным для всех выполняемых им действий.</li>
+</ol>
+<h3>Используемые типы сообщений</h3>
+<p>По убыванию приоритета:</p><ul>
+<li><b>Fatal</b> - фатальная ошибка (после записи сообщения в журнал будет брошено исключение <a class="el" href="a35248.html" title="Класс входит в Std   Класс исключения, предназначенный для сигнализирования о том, что работа программы должна быть завершена. ">alicorn::extension::std::exception::Abort</a>).</li>
+<li><b>Error</b> - серьезная ошибка (нет дополнительного действия).</li>
+<li><b>Warning</b> - предупреждение (нет дополнительного действия).</li>
+<li><b>Info</b> - информационное сообщение (нет дополнительного действия).</li>
+<li><b>Trace</b> - сообщение (нет дополнительного действия).</li>
+</ul>
+<h3>В выходной лог записывается</h3>
+<ul>
+<li>Имя и полная версия запущенной программы (один раз в заголовок лога).</li>
+<li>Дата/время (с микросекундами) записи события.</li>
+<li>Идентификатор потока, из которого производилась запись.</li>
+<li>Тип события.</li>
+<li>Сообщение, установленное для события.</li>
+<li>Место (имя файла/номер строки) записи события (полный путь к файлу будет урезан до папки расположения файла).</li>
+</ul>
+<h3>Форматы ведения журнала</h3>
+<ul>
+<li>Вывод сообщений в консоль.</li>
+<li>Текстовый файл.</li>
+<li>HTML файл (подЦВЕТка разных типов сообщений).</li>
+<li>Окно "Вывод" Visual Studio (формат вывода сделан таким, чтобы по двойному клику на сообщении можно было сразу перейти к месту, где это сообщение было записано).</li>
+</ul>
+<h2>Подключение </h2>
+<p>Для использованя логгера в файл stdafx.h добавить строку </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;alicorn\logger.hpp&gt;</span></div></div><!-- fragment --><p>До первой записи в лог следует установить формат ведения журнала: </p><div class="fragment"><div class="line"><span class="comment">// Вывод в текстовый файл.</span></div><div class="line"><a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(report::Text);</div></div><!-- fragment --><h1>Использование </h1>
+<p>Запись сообщения в лог производится при помощи макросов <b><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER()</a></b>, <b>LOGGER_DEBUG()</b> (только в отладочной версии программы) и оператора &lt;&lt;. <br />
+ В цепочке операторов &lt;&lt; может быть сколько угодно значений (причем могут быть использованы любые типы, для которых определен оператор &lt;&lt; вывода в wostream), в качестве сообщения в журнал будет записана вся цепочка до точки с запятой.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Поскольку логгер для работы использует статические объекты, запись в лог нельзя производить в деструкторах статических объектов.</dd></dl>
+<h3>Пример</h3>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;stdafx.h&quot;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;conio.h&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keywordtype">int</span> _tmain(<span class="keywordtype">int</span> argc, _TCHAR * argv[])</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  <span class="comment">// Вывод в консоль</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  <a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(report::Console);</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Error) &lt;&lt; <span class="stringliteral">&quot;Message: &quot;</span> &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; items.&quot;</span>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Warning) &lt;&lt; <span class="stringliteral">&quot;Message: &quot;</span> &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; items.&quot;</span>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Info) &lt;&lt; <span class="stringliteral">&quot;Message: &quot;</span> &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; items.&quot;</span>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Trace) &lt;&lt; <span class="stringliteral">&quot;Message: &quot;</span> &lt;&lt; 5 &lt;&lt; <span class="stringliteral">&quot; items.&quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Trace) &lt;&lt; L<span class="stringliteral">&quot;It&#39;s &quot;</span> &lt;&lt; <span class="keyword">true</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div><div class="ttc" id="a34984_html_ga8633a5b99dd43399c58206e715e7d29f"><div class="ttname"><a href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a></div><div class="ttdeci">#define LOGGER(Type)</div><div class="ttdef"><b>Definition:</b> logger.hpp:28</div></div>
+</div><!-- fragment --><h3>Результат работы программы</h3>
+<div class="fragment"><div class="line">[2012.08.15 15<span class="stringliteral">&#39;00&#39;</span>46] Unknown: Unknown</div><div class="line">[15:00:46.000000] [0xff34] Error:   Message: 5 items. .\Example.cpp(10)</div><div class="line">[15:00:46.000000] [0xff34] Warning: Message: 5 items. .\Example.cpp(11)</div><div class="line">[15:00:46.000000] [0xff34] Info:    Message: 5 items. .\Example.cpp(12)</div><div class="line">[15:00:46.000000] [0xff34] Trace:   Message: 5 items. .\Example.cpp(13)</div><div class="line">[15:00:46.000000] [0xff34] Trace:   It<span class="stringliteral">&#39;s true         .\Example.cpp(14)</span></div></div><!-- fragment --><h2>Конфигурирование </h2>
+<p>Установка параметров логирования производится в следующем порядке:</p><ol type="1">
+<li>Настройки по умолчанию.</li>
+<li>Установка параметров в программе (это как бы настройки по умолчанию для этой программы).</li>
+<li>Загрузка параметров из файла настроек программы (подробности см. <a class="el" href="a34990.html">Settings</a>).</li>
+</ol>
+<h3>Параметры по умолчанию</h3>
+<ul>
+<li>Имя программы - берется из ресурса версии ('ProductName').</li>
+<li>Версия программы - берется из ресурса версии ('ProductVersion').</li>
+<li>Папка журналов - папка с именем <b>Logs</b> в папке данных программы (см. alicorn::system::CurrentModule::GetAppDataPath()).</li>
+<li>Количество файлов журнала не ограничено.</li>
+<li>Размер файла журнала не ограничен.</li>
+<li>Выводятся сообщения <b>Warning</b> и выше.</li>
+<li>Разрешена повторная запись сообщений из одного и того же места (файла/строки).</li>
+<li>Тип вывода журнала не задан.</li>
+</ul>
+<h3>Конфигурирование в программе</h3>
+<p>Настройка логгера в программе производится при помощи макроса <b><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER()</a></b>; в качестве параметра ему передается тип задаемого параметра, а значение - при помощи оператора &lt;&lt; и макроса <b><a class="el" href="a34984.html#ga827550edbeb086a4fcf0c8d506614062">LOGGER_MIN_LEVEL()</a></b>, например: </p><div class="fragment"><div class="line"><span class="comment">// Использовать вывод в простом текстовом формате.</span></div><div class="line"><a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(report::Text);</div><div class="line"><span class="comment">// Выводить в лог только ошибки типов Fatal и Error.</span></div><div class="line"><a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(Filter) &lt;&lt; <a class="code" href="a34984.html#ga827550edbeb086a4fcf0c8d506614062">LOGGER_MIN_LEVEL</a>(Error);</div><div class="line"><span class="comment">// Хранить 10 последних журналов.</span></div><div class="line"><a class="code" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a>(MaxLogFiles) &lt;&lt; 10;</div></div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Изменение настроек логирования может производиться в любой момент работы программы, однако значения, прочитанные из файла настроек программы перезаписаны не будут.</li>
+<li>При установке нового типа журнала предыдущий будет удален.</li>
+</ul>
+</dd></dl>
+<h3>Таблица параметров настройки и их допустимых значений</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Параметр  </th><th class="markdownTableHeadLeft">Значение  </th><th class="markdownTableHeadLeft">Пример использов�   </th></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">ProgramName  </td><td class="markdownTableBodyLeft"><b>Строка</b> (имя программы).  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(ProgramName)</a> &lt;&lt; "My program";   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ProgramVersion  </td><td class="markdownTableBodyLeft"><b>Строка</b> (версия программы).  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(ProgramVersion)</a> &lt;&lt; "1.0.21.1232";   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">PathToLogDirectory  </td><td class="markdownTableBodyLeft"><b>Строка</b> (путь к папке хранения журналов,  </td><td class="markdownTableBodyLeft">// Хранить журналы в папке LogDir   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft">относительный - относительно папки программы).  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(PathToLogDirectory)</a> &lt;&lt; "LogDir";   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">MaxLogFiles  </td><td class="markdownTableBodyLeft"><b>0</b> - не использовать роллинг <br />
+  </td><td class="markdownTableBodyLeft">// Хранить 30 последних журналов   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>Число &gt; 0</b> - количество хранимых файлов журнала.  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(MaxLogFiles)</a> &lt;&lt; 30;   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">MaxLogSize  </td><td class="markdownTableBodyLeft"><b>0</b> - не ограничивать размер журнала.  </td><td class="markdownTableBodyLeft">// Ограничить файл журнала 10-ю Мб   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>Число &gt; 0</b> - максимальный размер файла журнала в байтах.  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(MaxLogSize)</a> &lt;&lt; 10 * 1024 * 1024;   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">Filter  </td><td class="markdownTableBodyLeft"><b>Fatal, Error, Warning, Info, Trace</b>  </td><td class="markdownTableBodyLeft">// В лог будут выводиться только Fatal и Error   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft">(фильтр выводимых сообщений).  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(Filter)</a> &lt;&lt; <a class="el" href="a34984.html#ga827550edbeb086a4fcf0c8d506614062">LOGGER_MIN_LEVEL(Error)</a>;   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft">AllowReplace  </td><td class="markdownTableBodyLeft"><b>true/false</b> (включить/выключить разрешение  </td><td class="markdownTableBodyLeft">// Сообщение из одного файла/строки   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft">повторной записи в лог сообщения из того же файла/строки).  </td><td class="markdownTableBodyLeft">// будет записано в лог только один раз   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(AllowReplace)</a> &lt;&lt; false;   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft">ReportType  </td><td class="markdownTableBodyLeft"><b>report::Empty</b> - не использовать журнал.  </td><td class="markdownTableBodyLeft">// В качестве текущего типа отчета   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>report::windows::Console</b> - использовать вывод в консоль.  </td><td class="markdownTableBodyLeft">// будет установлен вывод в html-файл   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>report::Text</b> - использовать вывод в текстовый файл.  </td><td class="markdownTableBodyLeft">// (отчет может быть только один)   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>report::Html</b> - использовать вывод в html файл.  </td><td class="markdownTableBodyLeft"><a class="el" href="a34984.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER(report::Html)</a>;   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>report::windows::VisualStudioOutput</b> - использовать вывод в окно  </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft">"Вывод" Visual Studio.  </td><td class="markdownTableBodyLeft"></td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"></td><td class="markdownTableBodyLeft"><b>report::android::LogCat</b> - использовать вывод в LogCat.  </td><td class="markdownTableBodyLeft"></td></tr>
+</table>
+<h3>Создание собственного типа журнала</h3>
+<ul>
+<li>Создать класс, унаследованный от класса alicorn::logger::report::Report и определить для него функции интерфейса alicorn::logger::report::IReport. <br />
+</li>
+<li>Разместить его впространстве имен alicorn::logger::report.</li>
+</ul>
+<h3>Конфигурирование в файле настроек программы</h3>
+<p>Пример задания настроек в разделе <b>Logger</b> в файле <b>Settings.xml</b> </p><div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div><div class="line">&lt;root&gt;</div><div class="line">  &lt;settings&gt;</div><div class="line">    &lt;Logger parent=<span class="stringliteral">&quot;&quot;</span>&gt;</div><div class="line">      &lt;PathToLogDirectory&gt;Logs&lt;/PathToLogDirectory&gt;</div><div class="line">      &lt;MaxLogFiles&gt;10&lt;/MaxLogFiles&gt;</div><div class="line">      &lt;MaxLogSize&gt;10000000&lt;/MaxLogSize&gt;</div><div class="line">      &lt;Filter&gt;0&lt;/Filter&gt;</div><div class="line">      &lt;AllowReplace&gt;<span class="keyword">true</span>&lt;/AllowReplace&gt;</div><div class="line">    &lt;/Logger&gt;</div><div class="line">  &lt;/settings&gt;</div><div class="line">&lt;/root&gt;</div></div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37661.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37682.html">Modules</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 6 Апр 2018 19:16:08. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>
