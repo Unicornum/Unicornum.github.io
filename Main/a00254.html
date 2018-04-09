@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Обо мне</title>
+<title>UnicornumVerum: Ввод русских букв с клавиатуры</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,60 +61,40 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="a00257.html">Документация</a></li><li class="navelem"><a class="el" href="a00251.html">Разработка для Android на С++</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Обо мне </div>  </div>
+<div class="title">Ввод русских букв с клавиатуры </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Профессиональные навыки </h1>
-<ul>
-<li>Создание программ на C++ для Windows и Android с использованием MS Visual Studio.</li>
-<li>STL, Boost, WinAPI, MFC, wxWidgets, libRocket, DirectX, многопоточное программирование.</li>
-<li>Cетевое программирование, в том числе web сервисы с помощью библиотеки gsoap.</li>
-<li>Аппаратное/программное декодирование видео (Intel QuickSync, NVidia CUDA, AMD APP, Intel IPP).</li>
-<li>Unit-тесты (Google Test + Google Mock), TDD.</li>
-<li>Работа с использованием системы контроля версий (Subversion).</li>
-<li>Создание документации проекта с использованием программы Doxygen.</li>
-<li>Создание инсталляторов с использованием программы Inno Setup.</li>
+<div class="textblock"><h2>Проблема </h2>
+<p>Как оказалось, при нажатии кнопок клавиатуры в русской раскладке нативное приложение получает сообщения <b>AKEY_EVENT_ACTION_MULTIPLE</b> (вместо <b>AKEY_EVENT_ACTION_UP</b> и <b>AKEY_EVENT_ACTION_DOWN</b>). При этом функции AKeyEvent_getKeyCode(), AKeyEvent_getScanCode(), AKeyEvent_getFlags(), AKeyEvent_getMetaState() и AKeyEvent_getRepeatCount() возвращают 0.</p>
+<p>Кроме того, для ASCII символов коды, возвращаемые функцией AKeyEvent_getKeyCode() не являются Unicode символами соответствующих символов и требуют дополнительное преобразование с вызовом функций java.</p>
+<h2>Решение </h2>
+<p>Для того, чтобы в нативном приложении можно было сразу получать Unicode коды нажатых кнопок клавиатуры (включая не ASCII символы), необходимо сделать следующее:</p><ul>
+<li>Проект, создающий результатирующий APK файл программы следует создавать как "Простое приложение Android".</li>
 </ul>
-<h2>Вся суть в одной цитате </h2>
 <div class="image">
-<img src="brooks.png" alt="brooks.png"/>
+<img src="Vs2015.Simple.png" alt="Vs2015.Simple.png"/>
 </div>
-<h1>Работа </h1>
-<h2>Март 2013 - Январь 2015 </h2>
-<h3>Kraftway Corporation PLC, г. Москва (инженер-программист)</h3>
-<p>Участвовал в разработке системы видеонаблюдения в группе из 4-х человек.</p>
-<p>Разработка/сопровождение ПО:</p><ul>
-<li>Отображение видео (DirectX; zoom, статусы камеры).</li>
-<li>Аппаратное/программное декодирование видео (Intel QuickSync, NVidia CUDA, AMD APP, Intel IPP).</li>
-<li>Управление PTZ камерой из окна просмотра видео (кнопки, мышь, 6-осевой манипулятор).</li>
-<li>Слежение за объектом с переключением на ближайшую к нему камеру.</li>
-<li>Отображение перемещения объекта аналитики на плане местности.</li>
-<li>Отображение удаленного рабочего стола как видео с камеры (VNC).</li>
-<li>Web-сервер, работающий по протоколу ONVIF (с использованием библиотеки gsoap).</li>
-<li>Разработка утилит для тестирования работы видеоаналитики.</li>
-<li>Модуль визуальной настройки параметров подвеса камеры.</li>
-<li>Модули скриптов создания камер/назначения камер раскладкам.</li>
+<ul>
+<li>В java коде этого проекта унаследовать класс от NativeActivity и переопределить в нем функцию dispatchKeyEvent(): <div class="fragment"><div class="line"><span class="keyword">package </span>com.Example;</div><div class="line">    </div><div class="line"><span class="keyword">import</span> android.app.NativeActivity;</div><div class="line"><span class="keyword">import</span> android.view.KeyEvent;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">boolean</span> dispatchKeyEvent(KeyEvent event)</div><div class="line">  {</div><div class="line">    <span class="keywordtype">int</span> keyaction = <span class="keyword">event</span>.getAction();</div><div class="line">    <span class="keyword">final</span> <span class="keywordtype">int</span> ACTION_KEY_PRESSED = 32;</div><div class="line">    </div><div class="line">    <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_UP)</div><div class="line">    {</div><div class="line">      <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getUnicodeChar();</div><div class="line">      super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_MULTIPLE)</div><div class="line">    {</div><div class="line">      <span class="keywordflow">if</span> (event.getCharacters().length() == 1)</div><div class="line">      {</div><div class="line">        <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getCharacters().charAt(0);</div><div class="line">        <span class="keywordflow">return</span> super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">      }</div><div class="line">    }</div><div class="line">    </div><div class="line">    <span class="keywordflow">return</span> super.dispatchKeyEvent(event);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --></li>
+<li>В файл <b>AndroidManifest.xml</b> (в раздел <b>activity</b>) проекта добавить имя нативной библиотеки, которая будет загружаться при старте программы (без префикса lib и расширения .so), например для libRocket.so следует добавить: <div class="fragment"><div class="line">&lt;activity ...&gt;</div><div class="line">  &lt;meta-data android:name=<span class="stringliteral">&quot;android.app.lib_name&quot;</span></div><div class="line">             android:value=<span class="stringliteral">&quot;Rocket&quot;</span>/&gt;</div><div class="line">  ...</div><div class="line">&lt;/activity&gt;</div></div><!-- fragment --></li>
+<li>Добавить в ссылки проекту APK проект главной нативной библиотеки (.so).</li>
 </ul>
-<h2>Сентябрь 2007 - Февраль 2013 </h2>
-<h3>ООО Савеловский Машиностроительный Завод, г. Кимры (инженер-программист)</h3>
-<p>Разработка/сопровождение ПО:</p><ul>
-<li>Программная оболочка для измерительной установки, предназначенной для измерения трубопроводов сложной конфигурации.</li>
-<li>Программная оболочка установки для испытания сварных швов при сварке рельс.</li>
-<li>Постпроцессоры для станков с ЧПУ сложной конфигурации.</li>
-<li>Программа-эмулятор станка с ЧПУ (модель станка создается из реальных чертежей 'в натуральную величину', имитация резания с удалением материала).</li>
+<p>После приведенных манипуляций при нажатии кнопок клавиатуры нативное приложение будет получать сообщение, у которого:</p><ul>
+<li>Функция AInputEvent_getType(event) возвращает AINPUT_EVENT_TYPE_KEY.</li>
+<li>Функция AKeyEvent_getAction(event) возвращает ACTION_KEY_PRESSED (это код, заданный в java коде dispatchKeyEvent()).</li>
+<li>Функция AKeyEvent_getKeyCode(event) возвращает Unicode код символа нажатой кнопки. </li>
 </ul>
-<h1>Образование </h1>
-<h2>Сентябрь 1992 - Январь 1999 </h2>
-<h3>Московский государственный технологический университет "Станкин"</h3>
-<p>Факультет: ИНТЕХ. <br />
- Специальность: Автоматизация технологических процессов и производств. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пн 26 Фев 2018 10:47:54. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Пн 9 Апр 2018 11:56:06. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -23,6 +23,6 @@ for the JavaScript code in this file
 */
 var menudata={children:[
 {text:"Главная",url:"index.html"},
-{text:"Релизы",url:"a00252.html"},
-{text:"Документация",url:"a00253.html"},
-{text:"Обо мне",url:"a00254.html"}]}
+{text:"Релизы",url:"a00256.html"},
+{text:"Документация",url:"a00257.html"},
+{text:"Обо мне",url:"a00258.html"}]}

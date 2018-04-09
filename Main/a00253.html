@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Документация</title>
+<title>UnicornumVerum: Разные приложения для разных конфигураций проекта</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,41 +61,44 @@ $(function() {
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="a00257.html">Документация</a></li><li class="navelem"><a class="el" href="a00251.html">Разработка для Android на С++</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Документация </div>  </div>
+<div class="title">Разные приложения для разных конфигураций проекта </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Страница со ссылками на документацию проектов, находящихся в разработке.</p>
-<h1>Документация </h1>
-<h2>Externals </h2>
-<p>Используемые сторонние библиотеки/утилиты. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/Externals/index.html" title="Externals">Externals</a></p>
-<h2>Alicorn </h2>
-<p>Набор проектов универсальных классов, которые могут быть использованы в различных проектах. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/Alicorn/index.html" title="Alicorn">Alicorn</a></p>
-<h2>Covellite++ </h2>
-<p>GUI фреймворк для разработки Windows и Android-приложений на С++. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/Covellitepp/index.html" title="Covellite++">Covellite++</a></p>
-<h2>Trello Cards Maker </h2>
-<p>Android приложение создания карточек на доске <a href="https://trello.com/" title="Trello">Trello</a>. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/TrelloCardsMaker/index.html" title="Trello Cards Maker">TrelloCardsMaker</a></p>
-<h2>Addins </h2>
-<p>Набор надстроек для IDE, предназначенных для автоматизации рутинных операций при работе с кодом. <br />
- <br />
- Страница документации проекта: <a href="http://unicornum.github.io/Addins/index.html" title="Addins">Addins</a></p>
-<h1>Дополнительно </h1>
-<p><a class="el" href="a00251.html">Работа над кодом</a></p>
-<p><a class="el" href="a00248.html">Разработка для Android на С++</a> </p>
-</div></div><!-- contents -->
+<div class="textblock"><h2>Проблема </h2>
+<p>Работа над текущей версией программы происходит в Debug версии проекта, при этом Release версия должна оставаться работоспособной, чтобы ее можно было использовать по назначению (при этом также необходимо обеспечить независимость данных, используемых разными конфигурациями программ).</p>
+<h2>Решение </h2>
+<p>Для того, чтобы Android воспринимал Release и Debug версии программы как два различных (независимых) приложения (включая разные пути к рабочим папкам), необходимо сделать следующее:</p>
+<ul>
+<li>Добавить в настройках проекта Packaging к уникальному имени приложения имя конфигурации:</li>
+</ul>
+<div class="image">
+<img src="app_unique_name.png" alt="app_unique_name.png"/>
+</div>
+<ul>
+<li>В AndroidManifest.xml заменить короткое имя запускаемого Activity на полное:</li>
+</ul>
+<div class="fragment"><div class="line">&lt;activity android:name=<span class="stringliteral">&quot;com.PackageName.Example&quot;</span> ...</div></div><!-- fragment --><p>где <b>com.PackageName</b> - это имя заданное в java файле как</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.PackageName;</div></div><!-- fragment --><p> , а <b>Example</b> - имя главного класса Activity, объект которого создается при старте программы, т.е.</p>
+<div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>Example <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  ...</div></div><!-- fragment --><h3>Различные имена приложения для различных конфигураций</h3>
+<ul>
+<li>Добавить в решение проект Externals/Tools/Version (который генерирует xml-файл, содержащий название/версию текущего решения).</li>
+<li>Один из проектов, от которого зависит проект <b>Packaging</b> должен зависеть от проекта Version и запускать его в качестве события после сборки проекта.</li>
+<li>Добавить в проект <b>Packaging</b> генерируемый файл res/values/version.auto.xml.</li>
+<li>В файле AndroidManifest.xml изменить (первая строка - название программы в Диспетчере задач, второе - название, отображаемое под иконкой программы):</li>
+</ul>
+<div class="fragment"><div class="line">&lt;application android:label=<span class="stringliteral">&quot;@string/ApplicationName&quot;</span> ... &gt;</div><div class="line">  &lt;activity android:label=<span class="stringliteral">&quot;@string/ApplicationName&quot;</span> ... &gt;</div><div class="line">    ...</div></div><!-- fragment --><h3>Запуск приложения в Launcher'e</h3>
+<p>В качестве события после сборки проекта добавить скрипт:</p>
+<div class="fragment"><div class="line"><span class="keyword">set</span> ROOT_NAMESPACE=Example</div><div class="line"><span class="keyword">set</span> _ACTIVITY_NAME=com.PackageName.Example</div><div class="line"><span class="keyword">set</span> APPLICATION_NAME=UnicornumVerum.%ROOT_NAMESPACE%.$(Configuration)</div><div class="line"><span class="keyword">set</span> PACKAGE=com.%APPLICATION_NAME%</div><div class="line">  </div><div class="line"><span class="keyword">set</span> RUN_ADB=$(ANDROID_SDK_ROOT)\platform-tools\adb.exe</div><div class="line">  </div><div class="line">%RUN_ADB% install -r $(SolutionDir)$(Configuration)\%ROOT_NAMESPACE%.apk</div><div class="line">%RUN_ADB% shell am start -n %PACKAGE%/%_ACTIVITY_NAME%</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пн 26 Фев 2018 10:47:54. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Пн 9 Апр 2018 11:56:06. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
