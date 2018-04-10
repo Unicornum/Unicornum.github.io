@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Tools/Testing.App/Testing.App/Externals/test.solution.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Tools/Testing.App/Testing.App/Externals/test.class.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.8 Revision: 3176 Platform: x64 Build: 19:15 06 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,22 +89,27 @@ $(document).ready(function(){initNavTree('a01865.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл test.solution.cpp</div>  </div>
+<div class="title">Файл test.class.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;alicorn\testing.app\AppTestSolution.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;tchar.h&gt;</code><br />
+<code>#include &lt;boost\filesystem.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google.hpp&gt;</code><br />
+<code>#include &lt;alicorn\requirements.hpp&gt;</code><br />
+<code>#include &lt;alicorn\testing.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для test.solution.cpp:</div>
+Граф включаемых заголовочных файлов для test.class.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01866.png" border="0" usemap="#_solution_2_solution_2_tools_2_testing_8_app_2_testing_8_app_2_externals_2test_8solution_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_tools_2_testing_8_app_2_testing_8_app_2_externals_2test_8solution_8cpp" id="_solution_2_solution_2_tools_2_testing_8_app_2_testing_8_app_2_externals_2test_8solution_8cpp">
+<div class="center"><img src="a01866.png" border="0" usemap="#_solution_2_solution_2_tools_2_testing_8_app_2_testing_8_app_2_externals_2test_8class_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_tools_2_testing_8_app_2_testing_8_app_2_externals_2test_8class_8hpp" id="_solution_2_solution_2_tools_2_testing_8_app_2_testing_8_app_2_externals_2test_8class_8hpp">
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+</div>
+<p><a href="a01865_source.html">См. исходные тексты.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
 <div class="textblock"><ul>
-<li>Файл предназначен для 'развязывания' проекта Test.All (т.к. проект копируется в каждое решение) и конкретной реализации логики работы проекта.</li>
-<li>Этот файл include'тся в файле stdafx.cpp проекта Test.All, поэтому он должен содержать все файлы реализации, необходимые для работы этого проекта.</li>
+<li>Файл предназначен для 'развязывания' проекта Test.Class (т.к. проект копируется в каждое решение) и конкретной реализации логики работы проекта.</li>
+<li>Этот файл include'тся в файле stdafx.h проекта Test.Class, поэтому он должен содержать все заголовочные файлы, необходимые для работы этого проекта.</li>
 <li>Содержимое файла может меняться (это затронет все тестовые проекты всех решений, которые его используют), но имя файла и его расположение меняться не должно. </li>
 </ul>
 </div></div><!-- contents -->
@@ -112,8 +117,8 @@ $(document).ready(function(){initNavTree('a01865.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_1aa9641e777de4cd286713037f1cf86e.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_251a9a051396a8a1940a9bc4bed961b0.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_dbe92506f58fa1c37280157b5b8c31d8.html">Externals</a></li><li class="navelem"><a class="el" href="a01865.html">test.solution.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 6 Апр 2018 19:16:07. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_1aa9641e777de4cd286713037f1cf86e.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_251a9a051396a8a1940a9bc4bed961b0.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_dbe92506f58fa1c37280157b5b8c31d8.html">Externals</a></li><li class="navelem"><a class="el" href="a01865.html">test.class.hpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:57. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
