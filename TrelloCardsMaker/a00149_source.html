@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>TrelloCardsMaker: Исходный файл Solution/Solution/Model/Model/FileSystem.hpp</title>
+<title>TrelloCardsMaker: Исходный файл Solution/Solution/Main/Main.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">TrelloCardsMaker
-   &#160;<span id="projectnumber">Версия: 0.1.2 Revision: 344 Platform: ARM Build: 13:22 28 Ноябрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 0.1.3 Revision: 371 Platform: x64 Build: 13:38 13 Апрель 2018</span>
    </div>
    <div id="projectbrief">Android offline client cards maker for Trello</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a00149_source.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,27 +89,18 @@ $(document).ready(function(){initNavTree('a00149_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">FileSystem.hpp</div>  </div>
+<div class="title">Main.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IRepository.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a31879.html">model</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a32054.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="a32054.html">FileSystem</a> final :</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span> <a class="code" href="a32062.html">IRepository</a></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// Интерфейс IRepository:</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  Cards_t <a class="code" href="a32054.html#adb68947c93c74e7662012fc0a57db22a">GetCards</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a32054.html#a7b2dc690195ba1578bfd3e2cc2381c13">SetCards</a>(<span class="keyword">const</span> Cards_t &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  Path_t <a class="code" href="a32054.html#a74a74ec1992f22b9fe7485a08e1f48f9">GetPathToBoardsFile</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  Boards_t <a class="code" href="a32054.html#a5f87dac5452e81d97cd5fff2dad30fe3">GetBoards</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  Strings_t <a class="code" href="a32054.html#a6425380976dcb418d85896c71eaef5c6">GetErrors</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Boards_t LoadBoardsInfo(<span class="keyword">const</span> Path_t &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> CreatePrototype(<span class="keyword">const</span> Path_t &amp;);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> Path_t m_PathToDataDirectory;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">mutable</span> Strings_t m_Errors;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a32054.html#a2d2907fd806a57c72e93dfd1872eb791">FileSystem</a>(<span class="keyword">const</span> Path_t &amp;);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace model</span></div><div class="ttc" id="a32054_html_adb68947c93c74e7662012fc0a57db22a"><div class="ttname"><a href="a32054.html#adb68947c93c74e7662012fc0a57db22a">model::FileSystem::GetCards</a></div><div class="ttdeci">Cards_t GetCards(void) const override</div><div class="ttdoc">Функция получения списка неотправленных карточек. </div><div class="ttdef"><b>Definition:</b> FileSystem.cpp:23</div></div>
-<div class="ttc" id="a32062_html"><div class="ttname"><a href="a32062.html">model::IRepository</a></div><div class="ttdoc">Класс входит в проект Model   Интерфейсный класс доступа к сохраненным данным. </div><div class="ttdef"><b>Definition:</b> IRepository.hpp:25</div></div>
-<div class="ttc" id="a31879_html"><div class="ttname"><a href="a31879.html">model</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:4</div></div>
-<div class="ttc" id="a32054_html_a6425380976dcb418d85896c71eaef5c6"><div class="ttname"><a href="a32054.html#a6425380976dcb418d85896c71eaef5c6">model::FileSystem::GetErrors</a></div><div class="ttdeci">Strings_t GetErrors(void) const override</div><div class="ttdoc">Функция получения списка ошибок, произошедших при загрузке данных. </div><div class="ttdef"><b>Definition:</b> FileSystem.cpp:136</div></div>
-<div class="ttc" id="a32054_html_a74a74ec1992f22b9fe7485a08e1f48f9"><div class="ttname"><a href="a32054.html#a74a74ec1992f22b9fe7485a08e1f48f9">model::FileSystem::GetPathToBoardsFile</a></div><div class="ttdeci">Path_t GetPathToBoardsFile(void) const override</div><div class="ttdoc">Функция получения пути к файлу списка досок Trello. </div><div class="ttdef"><b>Definition:</b> FileSystem.cpp:107</div></div>
-<div class="ttc" id="a32054_html"><div class="ttname"><a href="a32054.html">model::FileSystem</a></div><div class="ttdoc">Класс входит в проект Model   Реализация класса хранения данных модели в файле. </div><div class="ttdef"><b>Definition:</b> FileSystem.hpp:29</div></div>
-<div class="ttc" id="a32054_html_a2d2907fd806a57c72e93dfd1872eb791"><div class="ttname"><a href="a32054.html#a2d2907fd806a57c72e93dfd1872eb791">model::FileSystem::FileSystem</a></div><div class="ttdeci">FileSystem(const Path_t &amp;)</div><div class="ttdoc">Конструктор класса. </div><div class="ttdef"><b>Definition:</b> FileSystem.cpp:17</div></div>
-<div class="ttc" id="a32054_html_a7b2dc690195ba1578bfd3e2cc2381c13"><div class="ttname"><a href="a32054.html#a7b2dc690195ba1578bfd3e2cc2381c13">model::FileSystem::SetCards</a></div><div class="ttdeci">void SetCards(const Cards_t &amp;) override</div><div class="ttdoc">Функция сохранения списка карточек в файл. </div><div class="ttdef"><b>Definition:</b> FileSystem.cpp:79</div></div>
-<div class="ttc" id="a32054_html_a5f87dac5452e81d97cd5fff2dad30fe3"><div class="ttname"><a href="a32054.html#a5f87dac5452e81d97cd5fff2dad30fe3">model::FileSystem::GetBoards</a></div><div class="ttdeci">Boards_t GetBoards(void) const override</div><div class="ttdoc">Функция получения списка доступных для использования досок Trello. </div><div class="ttdef"><b>Definition:</b> FileSystem.cpp:112</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<a href="a00149.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5d52896869278488603063f77cde2165.html">Model</a></li><li class="navelem"><a class="el" href="dir_fc8ce4bdc20a8a0a0eb9c662d140f434.html">Model</a></li><li class="navelem"><b>FileSystem.hpp</b></li>
-    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Вт 28 Ноя 2017 13:22:18. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_864314914b5557c6cc0af8b5a80e07cf.html">Main</a></li><li class="navelem"><a class="el" href="a00149.html">Main.hpp</a></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Пт 13 Апр 2018 13:38:36. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

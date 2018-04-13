@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TrelloCardsMaker: Исходный файл Solution/Solution/Model/Model/Boards.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TrelloCardsMaker
+   &#160;<span id="projectnumber">Версия: 0.1.3 Revision: 371 Platform: x64 Build: 13:38 13 Апрель 2018</span>
+   </div>
+   <div id="projectbrief">Android offline client cards maker for Trello</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00197_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Boards.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;IBoards.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span>Boards_test;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a32185.html">model</a></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>BoardInfo;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>IRepository;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>QueueCards;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a32385.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a32385.html">Boards</a> final :</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">public</span> <a class="code" href="a32337.html">IBoards</a></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> RepositoryPtr_t = ::std::shared_ptr&lt;IRepository&gt;;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> QueueCardsPtr_t = ::std::shared_ptr&lt;model::QueueCards&gt;;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <a class="code" href="a32337.html">IBoards</a> &amp; <a class="code" href="a32385.html#ad2a04bb595db252e861a15eadcf862a2">GetInstance</a>(<span class="keyword">const</span> Path_t &amp;);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="comment">// Интерфейс IBoards:</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Path_t <a class="code" href="a32385.html#aa3b6c7200568c831a2b2dfe1a4a5bc42">GetPathToSourceFile</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a32385.html#a41ca2a93e94b74c7ee20b203f6eb94dd">IsEmpty</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  BoardId_t <a class="code" href="a32385.html#a6b885125f992d55df29c9abad82163d7">GetCurrentBoard</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  String_t <a class="code" href="a32385.html#a94f49757ec3fcdf9cefe262ad9dae53e">GetBoardName</a>(BoardId_t) <span class="keyword">const override</span>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  String_t <a class="code" href="a32385.html#a6853eb7495e8473a0e5a72a9bf9d7b29">GetLastCardText</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a32385.html#a107df31b95d54b6afe2789c42a24dfd9">CreateCard</a>(BoardId_t, <span class="keyword">const</span> String_t &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  Strings_t <a class="code" href="a32385.html#aab2c45f9cab03a872b1f4b68e243a8ff">GetErrors</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">void</span> SaveCards(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  RepositoryPtr_t                   m_pRepository;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  QueueCardsPtr_t                   m_pQueueCards;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ::std::map&lt;BoardId_t, BoardInfo&gt;  m_Boards;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  String_t                          m_LastCardText;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a32385.html#a2d2e541cd481b010f49eea62b1b6f424">Boards</a>(<span class="keyword">const</span> RepositoryPtr_t &amp;);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">friend</span> Boards_test;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  FRIEND_TEST(Boards_test, <span class="comment">/*DISABLED_*/</span>Test_GetInstance);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace model</span></div><div class="ttc" id="a32385_html_a107df31b95d54b6afe2789c42a24dfd9"><div class="ttname"><a href="a32385.html#a107df31b95d54b6afe2789c42a24dfd9">model::Boards::CreateCard</a></div><div class="ttdeci">void CreateCard(BoardId_t, const String_t &amp;) override</div><div class="ttdoc">Функция создания карточки. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:113</div></div>
+<div class="ttc" id="a32385_html_ad2a04bb595db252e861a15eadcf862a2"><div class="ttname"><a href="a32385.html#ad2a04bb595db252e861a15eadcf862a2">model::Boards::GetInstance</a></div><div class="ttdeci">static IBoards &amp; GetInstance(const Path_t &amp;)</div><div class="ttdoc">Функция доступа к единственному объекту модели. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:60</div></div>
+<div class="ttc" id="a32385_html_a41ca2a93e94b74c7ee20b203f6eb94dd"><div class="ttname"><a href="a32385.html#a41ca2a93e94b74c7ee20b203f6eb94dd">model::Boards::IsEmpty</a></div><div class="ttdeci">bool IsEmpty(void) const override</div><div class="ttdoc">Признак того, что модель не содержит информации ни об одной доске Trello. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:72</div></div>
+<div class="ttc" id="a32385_html_a6b885125f992d55df29c9abad82163d7"><div class="ttname"><a href="a32385.html#a6b885125f992d55df29c9abad82163d7">model::Boards::GetCurrentBoard</a></div><div class="ttdeci">BoardId_t GetCurrentBoard(void) const override</div><div class="ttdoc">Функция получения идентификатора текущей выбранной доски Trello. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:77</div></div>
+<div class="ttc" id="a32337_html"><div class="ttname"><a href="a32337.html">model::IBoards</a></div><div class="ttdoc">Класс входит в проект Model   Интерфейсный класс модели. </div><div class="ttdef"><b>Definition:</b> TestCommand.hpp:6</div></div>
+<div class="ttc" id="a32385_html_a2d2e541cd481b010f49eea62b1b6f424"><div class="ttname"><a href="a32385.html#a2d2e541cd481b010f49eea62b1b6f424">model::Boards::Boards</a></div><div class="ttdeci">Boards(const RepositoryPtr_t &amp;)</div><div class="ttdoc">Конструктор класса. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:23</div></div>
+<div class="ttc" id="a32385_html_aa3b6c7200568c831a2b2dfe1a4a5bc42"><div class="ttname"><a href="a32385.html#aa3b6c7200568c831a2b2dfe1a4a5bc42">model::Boards::GetPathToSourceFile</a></div><div class="ttdeci">Path_t GetPathToSourceFile(void) const override</div><div class="ttdoc">Функция получения пути к файлу, из которого загружается информация о досках Trello. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:67</div></div>
+<div class="ttc" id="a32385_html"><div class="ttname"><a href="a32385.html">model::Boards</a></div><div class="ttdoc">Класс входит в проект Model   Главный класс &amp;#39;модели&amp;#39;. </div><div class="ttdef"><b>Definition:</b> Boards.hpp:37</div></div>
+<div class="ttc" id="a32185_html"><div class="ttname"><a href="a32185.html">model</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:4</div></div>
+<div class="ttc" id="a32385_html_aab2c45f9cab03a872b1f4b68e243a8ff"><div class="ttname"><a href="a32385.html#aab2c45f9cab03a872b1f4b68e243a8ff">model::Boards::GetErrors</a></div><div class="ttdeci">Strings_t GetErrors(void) const override</div><div class="ttdoc">Функция получения списка ошибок, произошедших при загрузке модели. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:131</div></div>
+<div class="ttc" id="a32385_html_a94f49757ec3fcdf9cefe262ad9dae53e"><div class="ttname"><a href="a32385.html#a94f49757ec3fcdf9cefe262ad9dae53e">model::Boards::GetBoardName</a></div><div class="ttdeci">String_t GetBoardName(BoardId_t) const override</div><div class="ttdoc">Функция получения имени доски Trello с указанным идентификатором. </div><div class="ttdef"><b>Definition:</b> Boards.cpp:82</div></div>
+<div class="ttc" id="a32385_html_a6853eb7495e8473a0e5a72a9bf9d7b29"><div class="ttname"><a href="a32385.html#a6853eb7495e8473a0e5a72a9bf9d7b29">model::Boards::GetLastCardText</a></div><div class="ttdeci">String_t GetLastCardText(void) const override</div><div class="ttdoc">Функция получения последнего введенного текста карточки, для которого не была нажата кнопка &amp;#39;Отправит...</div><div class="ttdef"><b>Definition:</b> Boards.cpp:93</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5d52896869278488603063f77cde2165.html">Model</a></li><li class="navelem"><a class="el" href="dir_fc8ce4bdc20a8a0a0eb9c662d140f434.html">Model</a></li><li class="navelem"><b>Boards.hpp</b></li>
+    <li class="footer">Документация по TrelloCardsMaker. Последние изменения: Пт 13 Апр 2018 13:38:36. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>
