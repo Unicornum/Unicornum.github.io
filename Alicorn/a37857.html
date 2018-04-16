@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Вычисление метрик кода в решении</title>
+<title>Alicorn: Список задач всех проектов решения</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,60 +89,159 @@ $(document).ready(function(){initNavTree('a37857.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Вычисление метрик кода в решении </div>  </div>
+<div class="title">Список задач всех проектов решения </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section note"><dt>Заметки</dt><dd>Для вычисления метрик кода С++ используется утилита <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>.</dd></dl>
-<p>Для вычисления метрик кода при сборке решения скриптом необходимо:</p><ul>
-<li>Создать и настроить проект <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>.</li>
-<li>Подключить к решению проект <b>ProcessingMetrics</b>.</li>
-<li>Подключить к проекту BuildAll файл страницы свойств <b>Metrics.props</b>.</li>
-<li>Добавить в документацию решения страницу с рультатами подсчета метрик.</li>
-</ul>
-<h2>Настройка проекта SourceMonitor </h2>
-<p>Запустить <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>, создать новый проект, в первом окне мастера выбрать С++, в качестве <b>Include</b> вставить '*.cpp;*.h;*.hpp;*.inl', в качестве <b>Exclude</b> - '*.mock.hpp;*.mock.inl;stdafx.*;pch.h;targetver.h;*.forward.hpp'.</p>
-<div class="image">
-<img src="SelectLanguage.png" alt="SelectLanguage.png"/>
+<div class="textblock"><p><a class="el" href="a35057.html">Список задач</a></p>
+<p>bug</p>
+<h1>Список задач всех проектов решения </h1>
+<h2>Список задач проекта Version </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Info.png" alt="Info.png"/>
 </div>
-<p>Во втором окне мастера указать в качестве имени проекта <b>Metrics</b> (проект именно с этим именем будет запускать скрипт), а в качестве пути к папке проекта - полный путь к папке Solution решения ($(SolutionDir)\Solution).</p>
-<div class="image">
-<img src="ProjectName.png" alt="ProjectName.png"/>
+ </td><td bgcolor="#C0FFC0">Вспомогательные.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
 </div>
-<p>В третьем окне мастера указать в качестве пути для обработки вложенную папку Solution.</p>
-<div class="image">
-<img src="SelectMainDirectory.png" alt="SelectMainDirectory.png"/>
+ </td><td bgcolor="#FFFFFF">Завершение спринта.  </td></tr>
+</table>
+<h2>Список задач проекта Vfs </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Green.png" alt="Green.png"/>
 </div>
-<p>Настроить вложенные папки для обработки, исключив папки тестовых проектов и документации.</p>
-<div class="image">
-<img src="SelectSubdirectories.png" alt="SelectSubdirectories.png"/>
+ </td><td bgcolor="#C0FFC0">Реализация получения данных из ресурсов программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Green.png" alt="Green.png"/>
 </div>
-<p>В четвертом окне мастера указать особые параметры проекта.</p>
-<div class="image">
-<img src="SpecifyOptions.png" alt="SpecifyOptions.png"/>
+ </td><td bgcolor="#FFFFFF">Реализация получения данных из БД.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Green.png" alt="Green.png"/>
 </div>
-<p>В пятом окне мастера указать формат проекта.</p>
-<div class="image">
-<img src="ProjectFormat.png" alt="ProjectFormat.png"/>
+ </td><td bgcolor="#C0FFC0">Pack: фильтры для добавления/исключения файлов при упаковке.  </td></tr>
+</table>
+<h2>Список задач проекта Document </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Green.png" alt="Green.png"/>
 </div>
-<p>В шестом окне мастера настроить создание первой контрольной точки.</p>
-<div class="image">
-<img src="CreateFirstCheckpoint.png" alt="CreateFirstCheckpoint.png"/>
+ </td><td bgcolor="#C0FFC0">Документ Json.  </td></tr>
+</table>
+<h2>Список задач проекта Testing.App </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Orange.png" alt="Orange.png"/>
 </div>
-<h2>Подключение проекта ProcessingMetrics </h2>
-<p>Подключить к решению (в любую папку) проект Metrics из папки $(SolutionDir)\Solution\Solution\Externals\Tools\ProcessingMetrics и добавить проекту BuildAll зависимость от этого проекта.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Эта утилита обрабатывает результат расчета метрик кода и формирует файл отчета для включения в документацию <b>Doxygen</b>.</dd></dl>
-<h2>Подключение страницы свойств Metrics.props </h2>
-<p>К конфигурации Debug|x64 проекта BuildAll подключить страницу свойств $(SolutionDir)\Solution\Solution\Externals\Metrics.props</p>
-<dl class="section note"><dt>Заметки</dt><dd>Эта страница свойств содержит скрипт подсчета метрик кода и запуск утилиты обработки результата.</dd></dl>
-<h2>Страница документации с результатами расчета метрик кода </h2>
-<p>В документацию решения добавить страницу с именем <b>SolutionMetricsPage</b>, содержащую включение файла <b>Metrics.result.html</b> </p><div class="fragment"><div class="line">\page SolutionMetricsPage Метрики кода в решении</div><div class="line">\subpage SolutionMetricsFilesPage</div><div class="line">  </div><div class="line">Статистика расчета метрик кода</div><div class="line">------------------------------</div><div class="line">  </div><div class="line">\htmlinclude <span class="stringliteral">&quot;Solution\(Documentation)\Metrics.result.html&quot;</span></div></div><!-- fragment --><p>Также добавить страницу <b>SolutionMetricsFilesPage</b>, содержащую список наиболее проблемных мест в коде для каждой метрики.</p>
-<div class="fragment"><div class="line">\page SolutionMetricsFilesPage Проблемные места</div><div class="line">\htmlinclude <span class="stringliteral">&quot;Solution\(Documentation)\Metrics.result.warning.html&quot;</span></div></div><!-- fragment --> </div></div><!-- contents -->
+ </td><td bgcolor="#C0FFC0">Дополнить тесты классов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#FFFFFF"><a class="el" href="a35907.html" title="Класс входит в Settings.App   Главный класс программы. ">app::Main</a>.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0"><a class="el" href="a37339.html" title="Класс входит в Testing.App   Класс главного окна программы. ">app::MainFrame</a>.  </td></tr>
+</table>
+<h2>Список задач проекта Std </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Orange.png" alt="Orange.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0">Пул памяти.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#FFFFFF">Удаление блоков, состоящих исключительно из свободных объектов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0">Внутренний объект строки.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#FFFFFF">Содержимое строк.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Green.png" alt="Green.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0">Функция получения полного имени класса.  </td></tr>
+</table>
+<h2>Список задач проекта RocketRenderToFile.App </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Orange.png" alt="Orange.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0">Дополнить тесты классов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#FFFFFF"><a class="el" href="a35907.html" title="Класс входит в Settings.App   Главный класс программы. ">app::Main</a>.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0"><a class="el" href="a37339.html" title="Класс входит в Testing.App   Класс главного окна программы. ">app::MainFrame</a>.  </td></tr>
+</table>
+<h2>Список задач проекта Image </h2>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="1px"><div class="image">
+<img src="Orange.png" alt="Orange.png"/>
+</div>
+ </td><td bgcolor="#C0FFC0">Унификация кода проекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td width="1px"><div class="image">
+<img src="None.png" alt="None.png"/>
+</div>
+ </td><td bgcolor="#FFFFFF">Использование унифицированного источника данных.  </td></tr>
+</table>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37858.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37848.html">Используемые библиотеки/утилиты</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

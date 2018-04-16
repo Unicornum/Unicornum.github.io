@@ -1,7 +1,8 @@
 var a35094 =
 [
-    [ "Command", "a35091.html", "a35091" ],
-    [ "Factory", "a35092.html", "a35092" ],
-    [ "Mvc", "a35093.html", "a35093" ],
-    [ "Ptr", "a35094.html#ga26595abd46883c33939a0be82ad2b5a1", null ]
+    [ "Compress", "a35087.html", "a35087" ],
+    [ "Crypto", "a35088.html", "a35088" ],
+    [ "Details", "a35089.html", "a35089" ],
+    [ "Document", "a35091.html", "a35091" ],
+    [ "Image", "a35093.html", "a35093" ]
 ];

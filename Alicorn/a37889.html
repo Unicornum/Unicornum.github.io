@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Virtual File System</title>
+<title>Alicorn: Source</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,29 +89,39 @@ $(document).ready(function(){initNavTree('a37889.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Virtual File System </div>  </div>
+<div class="title">Source </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Список классов проекта: <a class="el" href="a35096.html">Virtual File System</a></p>
-<h1>Введение </h1>
-<p>Проект виртуальной файловой системы, реализующей однотипное получение данных, сходное с чтением данных из файлов.</p>
-<h1>Подробное описание проекта </h1>
-<p>Виртуальная файловая система позволяет абстрагироваться от способа хранения данных, предоставляя интерфейс получения этих данных, а также добавлять необходимые реализации доступа к данным. <br />
- Также, виртуальная файловая система позволяет получать данные из различных источников (например, ее можно настроить таким образом, чтобы в отладочной версии программа получала данные с диска, а в релизе - из БД).</p>
-<h2>Доступные реализации </h2>
-<ul>
-<li> <input type="checkbox" checked disabled>  Чтение файлов с диска.</li>
-<li> <input type="checkbox" checked disabled>  Получение данных из файлов, упакованных и зашифрованных в специальное хранилище.</li>
-</ul>
-<h3>Пример использования</h3>
-<p><a class="el" href="a35096.html#ModulesVfsExample">ModulesVfsExample</a> </p>
+<div class="textblock"><h1>Введение </h1>
+<p>Раздел классов доступа к данным, которые будет использовать программа.</p>
+<h1>Подробное описание раздела </h1>
+<h2>Структура классов раздела </h2>
+<div class="image">
+<img src="SourceClasses.png" alt="SourceClasses.png"/>
+</div>
+<h2>Проекты раздела </h2>
+<h3>Проект <a class="el" href="a37071.html" title="Класс входит в проект ProcessingMetrics.App   Класс обработки детального результата вычисления метрик...">Details</a></h3>
+<p>Проект вспомогательных классов, используемых во всех проектах раздела.</p>
+<p>Страница проекта: <a class="el" href="a37895.html">Details</a></p>
+<h3>Проект Compress</h3>
+<p>Проект классов для сжатия данных.</p>
+<p>Страница проекта: <a class="el" href="a37891.html">Compress</a></p>
+<h3>Проект Crypto</h3>
+<p>Проект классов для шифрования данных.</p>
+<p>Страница проекта: <a class="el" href="a37893.html">Crypto</a></p>
+<h3>Проект Document</h3>
+<p>Проект классов работы с документами.</p>
+<p>Страница проекта: <a class="el" href="a37897.html">Document</a></p>
+<h3>Проект Image</h3>
+<p>Проект классов для доступа к содержимому изображений.</p>
+<p>Страница проекта: <a class="el" href="a37901.html">Image</a> </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37858.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37879.html">Modules</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

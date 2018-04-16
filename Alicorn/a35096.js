@@ -1,44 +1,33 @@
 var a35096 =
 [
-    [ "Compress", "a36477.html", [
-      [ "PostUnpackAction", "a36477.html#ad7e2cbdbdd9a4417b92c443c214dfc0b", null ],
-      [ "PrePackAction", "a36477.html#ac95dbc23b673898390244c78e6ed87f3", null ]
+    [ "Info", "a36891.html", null ],
+    [ "AppInfo", "a36851.html", [
+      [ "AppInfo", "a36851.html#aa9d19397816028ce3f0874cc2f1647f9", null ],
+      [ "Get", "a36851.html#ac09d587974f59cd1bcde909a576ad19d", null ]
     ] ],
-    [ "Core", "a36481.html", [
-      [ "Core", "a36481.html#a1acf734b09cac8bccc8529ad1ab65abd", null ],
-      [ "GetData", "a36481.html#a89362a8be8b38b14af4a5fe4c0af0de2", null ]
+    [ "Eq< void >", "a36871.html", null ],
+    [ "Eq< int32_t >", "a36875.html", null ],
+    [ "Impl", "a36863.html", [
+      [ "BuildParams", "a36863.html#a271d0a6f3964c4db232964ee5cbd0685", null ],
+      [ "BuildParams", "a36863.html#acf3a07007f15c9da81d17cb1acd20780", null ],
+      [ "CallStaticMethod", "a36863.html#a0dbc241cfa207d8f099822e3ab19dcee", null ],
+      [ "CallStaticMethod", "a36863.html#a54cfce538b46b91809b29d3f976ce124", null ],
+      [ "CallStaticMethod", "a36863.html#a14285ff5a63c94e4cf47fe0381268f45", null ],
+      [ "GetStaticMethodID", "a36863.html#ad7369a272402685cd84929b385a94129", null ],
+      [ "GetSystemPlatformClass", "a36863.html#aa70070a7de627d9810c699403dc07ce9", null ],
+      [ "To", "a36863.html#aaf8dafef4e899c9a8a4e32dad6490334", null ],
+      [ "To", "a36863.html#a9b742d2455001ffc9c9a32cd6e001516", null ],
+      [ "To", "a36863.html#afe94ce96327318d6cc1d54cf9015da00", null ],
+      [ "To", "a36863.html#a71c954f6da29b267864d90efecbb64fa", null ]
     ] ],
-    [ "Crypto", "a36485.html", [
-      [ "Crypto", "a36485.html#a652fb7644e1ba096f45c4433e1814515", null ],
-      [ "PostUnpackAction", "a36485.html#a8de30e0e047495678957fdb4b026b7ae", null ],
-      [ "PrePackAction", "a36485.html#a285e869c178d6ba7324e2c5323f7f125", null ]
-    ] ],
-    [ "FileSystem", "a36489.html", [
-      [ "FileSystem", "a36489.html#a2d2907fd806a57c72e93dfd1872eb791", null ],
-      [ "GetData", "a36489.html#ac77c41eee699ac53a96a4c40bdb46a11", null ]
-    ] ],
-    [ "IConverter", "a36493.html", [
-      [ "PostUnpackAction", "a36493.html#a835b7d13054ed583db5dc2fd81273356", null ],
-      [ "PrePackAction", "a36493.html#a8f85b8c98182aa0987fbc5f98d2f4c9c", null ]
-    ] ],
-    [ "IImplementation", "a36497.html", [
-      [ "GetData", "a36497.html#ab583a4bef004916737a4e1e21b47337e", null ]
-    ] ],
-    [ "IPassword", "a36501.html", null ],
-    [ "FileInfo", "a36505.html", [
-      [ "m_FileNameLenght", "a36505.html#a05a017f767213242f84aaa2fcedcd8c2", null ],
-      [ "m_FileSize", "a36505.html#a1806908f8f64dda89f08b96fd3cd20f7", null ]
-    ] ],
-    [ "Pack", "a36509.html", [
-      [ "Record", "a36513.html", null ],
-      [ "Pack", "a36509.html#a1715c6b00def1a4864ae4312ede86fa2", null ],
-      [ "AddFileToEndStorage", "a36509.html#a8c36da4f06bc1b9c8b9d9824d64f46fc", null ],
-      [ "AddTitleTo", "a36509.html#af450de4757c89fa83e857e5574ad0d23", null ],
-      [ "Build", "a36509.html#ab06edf56596c9cf8bdf2ec48d7decfe2", null ],
-      [ "BuildTableFiles", "a36509.html#aca6bbd78329d55fd21f7f4fc757af1d1", null ],
-      [ "GetData", "a36509.html#a5adc96638eafab54ee6d001d71c832d3", null ],
-      [ "GetFileId", "a36509.html#aeea0717f32961c9102da5d6adccd4a20", null ]
-    ] ],
-    [ "Source", "a36517.html", null ],
-    [ "Title", "a35096.html#ga8f3ed8d47fb565fed79e95aab52316e5", null ]
+    [ "Eq<::std::string >", "a36879.html", null ],
+    [ "Environment", "a36883.html", [
+      [ "GetAbi", "a36883.html#a54ef1257b692198febf84c27d6f0180a", null ],
+      [ "GetApplicationDirectory", "a36883.html#ad18797ad756d9ab15a9adcb2cd2049ce", null ],
+      [ "GetExternalStorageDirectory", "a36883.html#a25a5536c559fbaf6c76bc155ca7064f5", null ],
+      [ "GetPackageName", "a36883.html#a5c140178229b88ceefe3f9862787232a", null ],
+      [ "GetResourceString", "a36883.html#a5c4a1c9234af643fb190b0c703821992", null ],
+      [ "GetStatusBarHeight", "a36883.html#a4984594882431993666741c14ba19eb7", null ],
+      [ "ShowSoftKeyboard", "a36883.html#ae0f8a278159e867ed2b41c5402521af5", null ]
+    ] ]
 ];

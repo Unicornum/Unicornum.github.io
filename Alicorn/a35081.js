@@ -1,21 +1,16 @@
 var a35081 =
 [
-    [ "Locale", "a35493.html", [
-      [ "UCS2", "a35497.html", null ],
-      [ "UTF16", "a35501.html", null ],
-      [ "UTF32", "a35505.html", null ]
+    [ "Data", "a36143.html", null ],
+    [ "Data< Pointer * >", "a36147.html", null ],
+    [ "ICommand", "a36151.html", null ],
+    [ "IManager", "a36155.html", null ],
+    [ "IUndo", "a36159.html", null ],
+    [ "ManagerCommon", "a36163.html", null ],
+    [ "ManagerUndoRedo", "a36167.html", [
+      [ "IsAllowedRedo", "a36167.html#a45c4dfac80372ba9fa6f94eb7f545350", null ],
+      [ "IsAllowedUndo", "a36167.html#ad78af1f142326fcb8ea5df55c0ff7f37", null ],
+      [ "Redo", "a36167.html#a2cf7a9e613cbb698cc1ca2c26e554637", null ],
+      [ "Undo", "a36167.html#af563bcd50a28b5fa540ca16cd77921d7", null ]
     ] ],
-    [ "StringCastProxyLocale", "a35557.html", null ],
-    [ "StringCastProxy", "a35617.html", null ],
-    [ "IImpl", "a35661.html", null ],
-    [ "Impl", "a35665.html", null ],
-    [ "String", "a35669.html", [
-      [ "serialize", "a35669.html#a525d06040212293da2c8c3eb7006e561", null ]
-    ] ],
-    [ "u16T", "a35081.html#ga83f26975e8758aa5116f3bee22ea089c", null ],
-    [ "u32T", "a35081.html#ga1054c5f519d3b216496b5ca941d90a95", null ],
-    [ "u8T", "a35081.html#gadd4ef8b31465f73455d43a2eb631e6da", null ],
-    [ "uT", "a35081.html#ga68c84efa84957c5f819d243a4cb84de9", null ],
-    [ "string_cast", "a35081.html#ga85f365b66942caa215bfc4ad5010f37f", null ],
-    [ "string_cast", "a35081.html#gafc1bb38569424983a63fbf99ce9f47c1", null ]
+    [ "Manager", "a35081.html#ga4275f7d3ae368fe8d92fae58ee504303", null ]
 ];

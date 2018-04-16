@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: $title</title>
+<title>Alicorn: Использование утилит</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,14 +87,140 @@ $(document).ready(function(){initNavTree('a37915.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">Использование утилит </div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Раздел классов вспомогательных утилит. </p>
-</div></div><!-- contents -->
+<div class="textblock"><ul>
+<li>Проекты этого раздела, которые строят исполняемые файлы, содержатся в папке Externals\Tools и при необходимости использования должны подключаться к решению, чтобы содержать правильное содержимое в ресурсе версии.</li>
+<li>Для возможности подключения этих проектов необходимо, чтобы в папке расположения файла страницы свойств Solution.x64.props располагался файл пустой страницы свойств Tools.props (это плата за возможность использования каскадных ссылок на разделы внутри Alicorn).</li>
+</ul>
+<h2>Localization </h2>
+<p>Проект утилиты генерации заголовочного файла с идентификаторами строк, используемыми для получения у модуля локализации программы текста выбранного языка программы.</p>
+<ul>
+<li>Утилита генерирует заголовочный файл из xml файла, переданного в качестве параметра.</li>
+<li>Значение узла <b>path</b> будет интерпретироваться как путь к папке расположения файлов локализации программы (относительно корневой папки расположения exe файла программы).</li>
+<li>Узлы, не содержащие значений будут интерпретироваться как указание создать пространство имен с именем узла.</li>
+<li>Узлы, содержащие значения, будут интерпретироваться как строки, которые будет использовать программа (для них будут сгенерированы идентификаторы).</li>
+<li>При обработке переданного файла утилита также будет сравнивать с указанным файлом все xml файлы в той же папке с выводом найденных расхождений в консоль.</li>
+</ul>
+<p><a class="el" href="a35075.html">Использование утилиты для локализации программы</a></p>
+<h2>ProcessingMetrics </h2>
+<p>Проект утилиты обработки результата вычисления метрик кода в решении и генерации файлов отчетов для включения в документацию. Используется совместно с утилитой <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a> в скрипте, запускаемом после сборки проекта на странице свойств .../Externals/Metrics.props.</p>
+<p>Генерирует (в той же папке, что и исходные файлы) два файла:</p><ul>
+<li>Файл Metrics.result.html, содержащий результаты вычисления метрик для кода решения в целом (история 10 последних измерений).</li>
+<li>Файл Metrics.result.warning.html, содержащий список самых проблемных мест в коде решения при последнем измерении для каждой метрики в отдельности.</li>
+</ul>
+<p>Параметры запуска программы:</p><ul>
+<li><b>path</b> (&ndash;path="path/to/...") - путь к папке, в которой располагаются файлы результата вычисления метрик кода в решении (Metrics.common.xml и Metrics.details.xml).</li>
+<li><b>count</b> (&ndash;count=10) - количество проблемных мест в коде, которое будет выводиться для каждой метрики (по умолчанию - 10).</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Для того, чтобы исключить из файла отчета определенные файлы, можно добавить в папку с исходными файлами файл с именем Metrics.exclude.txt, содержащий регулярные выражения исключаемых файлов (по одному в каждой строке).</dd></dl>
+<h2>Resource </h2>
+<p>Проект утилиты генерации заголовочного файла, содержащего бинарные данные указанного файла. Назначение - хранение непосредственно в программе ресурсов небольшого размера (иконок, курсоров и т.п.).</p><ul>
+<li>Если в качестве пути (&ndash;path="path/to/...") задан путь к файлу, заголовочный файл генерируется только для него, если путь к папке - то для всех файлов в этой папке, исключая файлы .hpp.</li>
+<li>Сгенерированный заголовочный файл будет располагаться в той же папке, что и исходный файл и будет иметь то же имя (с расширением .hpp).</li>
+<li>Имя объекта в созданном файле будет совпадать с именем исходного файла.</li>
+</ul>
+<h3>Использование утилиты</h3>
+<ul>
+<li>Подключить к решению проект <b>Resource</b> из Externals/Tools.</li>
+<li>Создать проект служебной программы, в который добавить необходимые файлы ресурсов, добавить ему зависимость от проекта <b>Resource</b> и добавить в качестве события после сборки <div class="fragment"><div class="line">$(ResultDir)Resource.exe $(ProjectDir)</div><div class="line">%(Command)</div></div><!-- fragment --></li>
+</ul>
+<h2>RocketRenderToFile </h2>
+<ul>
+<li>Добавить в решение проект Externals/Tools/RocketRenderToFile.</li>
+<li>Добавить проекту тестирования зависимость от проекта RocketRenderToFile.</li>
+<li>В тестах подготовить файлы, используемые в тестируемом .rml файле (стилей, изображений, шрифтов) с учетом их взаимного расположения.</li>
+<li>Запустить с требуемыми параметрами утилиту "$(SolutionDir)/$(Configuration)/Bin/x64/RocketRenderToFile.exe", проверяя совпадение полученного скриншота с ожидаемым изображением.</li>
+</ul>
+<h2>Settings </h2>
+<p>Проект утилиты редактирования настроек программы.</p><ul>
+<li>При запуске программа открывает настройки решения, в рамках которого была собрана и позволяет изменять значения параметров.</li>
+</ul>
+<h2>Test.&lt;...&gt; </h2>
+<p><a class="el" href="a37933.html">Testing</a></p>
+<h2>Version </h2>
+<p>Проект утилиты манипуляции версией решения.</p>
+<p>Предназначен для:</p><ul>
+<li>Обновления номера ревизии в файле версии решения.</li>
+<li>Увеличения на 1 указанного номера версии в файле версии решения.</li>
+<li>Формирование заголовочного файла версии решения для включения в состав библиотеки.</li>
+<li>Обновление ревизии файлов решения в файле AndroidManifest.xml. <div class="fragment"><div class="line">&lt;manifest ...</div><div class="line">  android:versionCode=<span class="stringliteral">&quot;CURRENT_REVISION&quot;</span>&gt;</div><div class="line">  ...</div></div><!-- fragment --></li>
+<li>Формирование xml файла версии решения для включения в Android package (должен располагаться в папке Packaging\res\values). Образец формируемого файла: <div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div><div class="line">&lt;resources&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;CompanyName&quot;</span>&gt;UnicornumVerum&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileDescription&quot;</span>&gt;Набор вспомогательных библиотек&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileVersion&quot;</span>&gt;3.8.0 Revision: 2831 Platform: x64 Build: 01:29 09 Сентябрь 2017&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileVersionShort&quot;</span>&gt;3.8.0.2831 x64&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;LegalCopyright&quot;</span>&gt;© UnicornumVerum 2007 - 2017 (unicornum.verum@gmail.ru)&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductName&quot;</span>&gt;Alicorn&lt;/string&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ApplicationName&quot;</span>&gt;Alicorn&lt;/string&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersion&quot;</span>&gt;3.8.0 Revision: 2831 Platform: x64 Build: 01:29 09 Сентябрь 2017&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionYear&quot;</span>&gt;3.8.0.2017&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionMajor&quot;</span>&gt;3&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionMinor&quot;</span>&gt;8&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionService&quot;</span>&gt;0&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductRevision&quot;</span>&gt;2831&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">&lt;/resources&gt;</div></div><!-- fragment --> Строки версий решения можно использовать следующим образом - в файле AndroidManifest.xml изменить: <div class="fragment"><div class="line">&lt;manifest ...</div><div class="line">  android:versionName=<span class="stringliteral">&quot;@string/ProductVersionYear&quot;</span></div><div class="line">  ...</div></div><!-- fragment --></li>
+</ul>
+<h2>Использование утилиты </h2>
+<ul>
+<li>Подключить к решению проект Version из папки Externals\Tools\Version.</li>
+<li>Одному из проектов решения нужно установить зависимость от проекта Version и в качестве события после построения добавить запуск Version.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+</ul>
+<h3>Команды</h3>
+<dl class="section note"><dt>Заметки</dt><dd>Если задано несколько команд, они будут выполнятьсяв указанном порядке.</dd></dl>
+<ul>
+<li><b>&ndash;help</b> - выводит в консоль список доступных команд (исключает все остальные команды).</li>
+<li><b>&ndash;file=path</b> - путь к файлу Version.hpp с версией решения (обязательный параметр для всех последующих команд).</li>
+<li><b>&ndash;configuration</b> - собираемая конфигурация (x64, Win32 и т.п.).</li>
+<li><b>&ndash;update</b> - в файле версии решения следует обновить номер ревизии файлов решения, время/дату, а также установить переменную окружения VERSION_SOLUTION, содержащую версию решения без ревизии решения (если файл, указанный в <b>&ndash;file</b> не существует, от будет создан со значениями по умолчанию).</li>
+<li><b>&ndash;increment=value</b> - в файле версии решения следует увеличить на 1 указанный номер версии решения (<b>service</b> - увеличивает 0.0.x).</li>
+<li><b>&ndash;set-environment-variables</b> - в консоль выводятся команды установки переменных окружения, <a class="el" href="a37938.html#ToolsVersionEnvironmentVariablesAnchor">устанавливающие</a> значения версии решения:<ul>
+<li><b>VERSION_SOLUTION</b> - версия решения вида '1.2.3'.</li>
+</ul>
+</li>
+<li><b>&ndash;build-header-version=path</b> - path задает путь к файлу, который должен быть перезаписан с учетом текущей версии решения.</li>
+<li><b>&ndash;update-android-manifest=path</b> ** - path задает путь к файлу AndroidManifest.xml, в котором следует установить текущий номер ревизии файлов решения.</li>
+<li><b>&ndash;build-android-version=path</b> - path задает путь к файлу версии Android package (version.auto.xml), который будет перезаписан с учетом версии решения.</li>
+</ul>
+<p><a class="anchor" id="ToolsVersionEnvironmentVariablesAnchor"></a> </p><h3>Использование переменных окружения</h3>
+<p>Т.к. при установке переменных окружения внутри процесса они будут доступны только самому процессу, утилита выводит в консоль набор команд, которые можно использовать в командном файле следующим образом:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span> /f <span class="stringliteral">&quot;usebackq delims=;&quot;</span> %%a in (`version.exe --<span class="keyword">set</span>-environment-variables`) <span class="keywordflow">do</span> (</div><div class="line">%%a</div><div class="line">)</div><div class="line">  </div><div class="line">echo VERSION_SOLUTION: %VERSION_SOLUTION%</div></div><!-- fragment --><h2>Documentation </h2>
+<p>Проект утилиты предварительной обработки файлов решения.</p>
+<p>Предназначен для:</p><ul>
+<li>Обработки файла лога сборки решения скриптом.</li>
+<li>Обработки файла покрытия кода тестами.</li>
+<li>Обработки лога сборки документации.</li>
+<li>Установки переменных окружения, необходимых для построения документации.</li>
+</ul>
+<h2>Использование утилиты </h2>
+<ul>
+<li>Подключить к решению проект Documentation из папки Externals\Tools\Documentation.</li>
+<li>Одному из проектов решения установить зависимость от проекта Documentation и в качестве события после построения добавить запуск Documentation.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+</ul>
+<h3>Параметры</h3>
+<ul>
+<li><b>&ndash;file=path</b> - путь к исходному файлу (трактуется в зависимости от указанной команды).</li>
+<li><b>&ndash;path-to-solution=path</b> - полный путь к папке решения, которое обрабатывается (используется совместно с командами <b>&ndash;process-report=build</b> и <b>&ndash;process-report=coverage</b>).</li>
+<li><b>&ndash;max-records</b> - максимальное количество записей в отчете о покрытии кода тестами (при добавлении новых записей самые старые будут удаляться; используется совместно с командой <b>&ndash;process-report=coverage</b>).</li>
+<li><b>&ndash;configuration</b> - текущая собираемая платформа (используется совместно с командой <b>&ndash;set-environment-variables</b>).</li>
+</ul>
+<h3>Команды</h3>
+<dl class="section note"><dt>Заметки</dt><dd>Команды исключают использование друг друга.</dd></dl>
+<ul>
+<li><b>&ndash;help</b> - выводит в консоль список доступных команд.</li>
+<li><b>&ndash;process-report=type</b> - обработка файла, заданного как параметр <b>&ndash;file:</b> <ul>
+<li><b>build</b> - обработка файла лога сборки скриптом (генерируется файл, группирующий и подсвечивающий цветом ошибки и предупреждения по проектам).</li>
+<li><b>coverage</b> - обработка файла отчета покрытия кода тестами (из xml файла отчета генерируется html файлы, пригодные для включения в документацию Doxygen).</li>
+<li><b>documentation</b> - обработка файла лога сборки документации решения (исключаются вспомогательные сообщения, не несущие полезной информации).</li>
+</ul>
+</li>
+<li><b>&ndash;set-environment-variables</b> - в консоль выводятся команды установки переменных окружения, <a class="el" href="a37917.html#ToolsDocumentationEnvironmentVariablesAnchor">устанавливающие</a> значения версии решения:<ul>
+<li><b>DOXYGEN_NAME</b> - название продукта.</li>
+<li><b>DOXYGEN_VERSION</b> - полная версия продукта.</li>
+<li><b>DOXYGEN_BRIEF</b> - краткое описание продукта.</li>
+<li><b>DOXYGEN_INPUT</b> - путь к папке, для которой следует построить документацию.</li>
+<li><b>DOXYGEN_COPYRIGHT</b> - строка copyright'a продукта.</li>
+</ul>
+</li>
+</ul>
+<p><a class="anchor" id="ToolsDocumentationEnvironmentVariablesAnchor"></a> </p><h3>Использование переменных окружения</h3>
+<p>Т.к. при установке переменных окружения внутри процесса они будут доступны только самому процессу, утилита выводит в консоль набор команд, которые можно использовать в командном файле следующим образом:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span> /f <span class="stringliteral">&quot;usebackq delims=;&quot;</span> %%a in (`documentation.exe --file=version.hpp --<span class="keyword">set</span>-environment-variables`) <span class="keywordflow">do</span> (</div><div class="line">%%a</div><div class="line">)</div><div class="line">  </div><div class="line">echo DOXYGEN_NAME: %DOXYGEN_NAME%</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37914.html">Tools</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

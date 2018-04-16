@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: $title</title>
+<title>Alicorn: Testing</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,16 +87,21 @@ $(document).ready(function(){initNavTree('a37873.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">Testing </div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock"><h3>Объявление класса</h3>
-<div class="fragment"><div class="line"><span class="keyword">class </span>Example</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keywordtype">int</span> GetValue(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Value; }</div><div class="line">    </div><div class="line"><span class="keyword">private</span>:</div><div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> m_Value;</div><div class="line">    </div><div class="line"><span class="keyword">private</span>:</div><div class="line">  <span class="keyword">explicit</span> Example(<span class="keywordtype">int</span> _Value) : m_Value(_Value) {} <span class="comment">// Закрытый!</span></div><div class="line">  friend ::alicorn::extension::std::Singleton&lt;Example&gt;;</div><div class="line">};</div></div><!-- fragment --><h3>Специализация функции создания объекта</h3>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span><a class="code" href="a35138.html">alicorn</a></div><div class="line">{</div><div class="line">  </div><div class="line"><span class="keyword">namespace </span>extension</div><div class="line">{</div><div class="line">  </div><div class="line"><span class="keyword">namespace </span><a class="code" href="a35175.html">std</a></div><div class="line">{</div><div class="line">  </div><div class="line">::std::unique_ptr&lt;Example&gt; <a class="code" href="a35473.html#a7dacbda73f87f5290f9ecebd950f3149">Singleton&lt;Example&gt;::Make</a>(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  return ::std::unique_ptr&lt;Example&gt;{ <span class="keyword">new</span> Example{ 1803221845 } };</div><div class="line">}</div><div class="line">  </div><div class="line">} <span class="comment">// namespace std</span></div><div class="line">  </div><div class="line">} <span class="comment">// namespace extension</span></div><div class="line">  </div><div class="line">} <span class="comment">// namespace alicorn</span></div></div><!-- fragment --><h3>Использование единственного объекта</h3>
-<div class="fragment"><div class="line"><span class="keyword">using</span> Example_t = <a class="code" href="a35473.html">::alicorn::extension::std::Singleton&lt;const Example &amp;&gt;</a>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> Result1 = Example_t::GetInstance().GetValue();</div><div class="line">  </div><div class="line"><span class="keyword">using</span> ExamplePtr_t = <a class="code" href="a35473.html">::alicorn::extension::std::Singleton&lt;Example *&gt;</a>;</div><div class="line"><span class="keyword">const</span> <span class="keyword">auto</span> Result2 = ExamplePtr_t::GetInstance()-&gt;GetValue();</div></div><!-- fragment --> </div></div><!-- contents -->
+<div class="textblock"><p>Список классов проекта: <a class="el" href="a35073.html">Testing</a></p>
+<h1>Введение </h1>
+<p>Проект содержит вспомогательные функции и классы для использования в тестовых проектах. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37860.html">Extension</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

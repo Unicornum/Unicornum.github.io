@@ -1,33 +1,14 @@
 var a35082 =
 [
-    [ "Memory", "a35079.html", "a35079" ],
-    [ "Regex", "a35080.html", "a35080" ],
-    [ "String", "a35081.html", "a35081" ],
-    [ "CheckProxy", "a35385.html", null ],
-    [ "local_time_point", "a35393.html", null ],
-    [ "ClassInfo", "a35409.html", [
-      [ "GetPureName", "a35409.html#a30bc3f0e9ea1ab0cdd0b82a4b5795b22", null ],
-      [ "GetPureName", "a35409.html#adc7ceeb2c73da4bc2b9dc55df64861f6", null ]
+    [ "Factory", "a36171.html", [
+      [ "MakeFromHeap", "a36171.html#abd541d695ace3507ef2aefdb4707dd8e", null ],
+      [ "MakeFromPool", "a36171.html#a097bd65d4d835fb9c2a4af02be25317d", null ],
+      [ "Register", "a36171.html#a9655af04b535e7f51c659295250d1d96", null ]
     ] ],
-    [ "Abort", "a35413.html", null ],
-    [ "Proxy", "a35417.html", null ],
-    [ "Message", "a35441.html", null ],
-    [ "SingletonLocalThread", "a35469.html", null ],
-    [ "Singleton", "a35473.html", [
-      [ "GetInstance", "a35473.html#a32253724b94cd2270ac998e304337e03", null ],
-      [ "Make", "a35473.html#a7dacbda73f87f5290f9ecebd950f3149", null ]
-    ] ],
-    [ "Container", "a35477.html", null ],
-    [ "Support", "a35481.html", null ],
-    [ "CALL_PROXY", "a35082.html#ga3a39ddd2c42082fd7e8611118a020919", null ],
-    [ "CHECK_EXPECT", "a35082.html#ga1d084b9047705e96e35ed52884ccf59c", null ],
-    [ "CHECK_PROXY", "a35082.html#gac9367df462e2148c6d0ba788c9530f19", null ],
-    [ "CHECK_THROW", "a35082.html#gab3541e6b6b4c27cdbf24f2df99b273e3", null ],
-    [ "EXCEPTION", "a35082.html#ga18c80e0bf61e9c8f9efa6d60e9be4718", null ],
-    [ "EXCEPTION_NO_FILE_LINE", "a35082.html#ga548754b3aa0a4a77f1eeff2fd63e99dc", null ],
-    [ "STD_EXCEPTION", "a35082.html#gaf7d39f5abf0ad8116e1d17097baa6ac4", null ],
-    [ "CallProxy", "a35082.html#gac15290de7ee008e04a9ce0e8a2e67deb", null ],
-    [ "make_local_time", "a35082.html#ga5631c3094a7bf8107687376dbf826a88", null ],
-    [ "operator+", "a35082.html#gacf75b325e7728ebd4d1b717187ad0f0f", null ],
-    [ "operator+=", "a35082.html#ga7c544b803ac7a105af7ac2df44d3f0de", null ]
+    [ "Registrator", "a36179.html", null ],
+    [ "__FACTORY_REGISTER", "a35082.html#ga33cedef3ec2f0014d60cd2e5d1763cd8", null ],
+    [ "FACTORY_REGISTER", "a35082.html#ga1659e9d0ef525996965794c87ced3367", null ],
+    [ "FACTORY_REGISTER_STRING_NAME", "a35082.html#gac2f30b7601818f70751234bb6be721bd", null ],
+    [ "make_unique", "a35082.html#ga7e437321660a850c71b450cdbc10e05c", null ],
+    [ "make_unique", "a35082.html#ga3cf40bb0891caae8bef5dce8fb8f19b1", null ]
 ];

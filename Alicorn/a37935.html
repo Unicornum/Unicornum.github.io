@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Testing</title>
+<title>Alicorn: Testing.App</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,60 +89,45 @@ $(document).ready(function(){initNavTree('a37935.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Testing </div>  </div>
+<div class="title">Testing.App </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Введение </h1>
-<p>Раздел содержит программу-обертку над библиотекой <a href="http://code.google.com/p/googletest/">gtest </a> и комплект проектов тестирования. Назначение - удобная работа с отдельными классами и наглядное отображение результатов прогона тестов.</p>
-<h1>Подробное описание раздела </h1>
-<p>Комплект проектов тестирования содержится в папке Test.Front и включает в себя три проекта:</p><ul>
-<li><b>Test.Solution</b> - единственный проект на все решение. Экспортируется в решение и предназначен для сборки и запуска всех тестов всех проектов решения. Собирается в папку \Result\Test\x64 и зависит ото всех проектов <b>Test.Project</b>. При запуске "пробегается" по всем dll-кам в своей папке, загружает их, выполняет расположенные в них тесты и отображает статистику выполнения тестов. При завершении возвращает 0, если все тесты прошли успешно и число &gt; 0, если хотя бы один провалился.</li>
-<li><b>Test.Project</b> - отдельный тестовый проект для классов каждого проекта решения. Располагается в той же папке, в которой расположена папка проекта, тесты классов которого он будет содержать. 'Project' заменяется на имя того проекта, который будет тестироваться. Собирается как dll в папку \Result\Test\x86.</li>
-<li><b>Test.Class</b> - отдельный тестовый проект одного класса. Располагается в папке проекта <b>Test.Project</b>. Собирается как исполняемый файл для тестов одного класса. 'Class' в имени проекта заменяется на имя класса, тесты которого он будет исполнять.</li>
+<div class="textblock"><p>Список классов проекта: <a class="el" href="a35108.html">Testing.App</a></p>
+<h1>Введение </h1>
+<p>Проект, содержащий реализацию проектов тестирования.</p>
+<h1>Подробное описание проекта </h1>
+<p><a class="el" href="a37936.html">Исходные требования</a></p>
+<p>Проект реализует программу отображения результат прогона тестов. <br />
+ Программа существует в трех версиях:</p><ul>
+<li>Тесты одного класса.</li>
+<li>Тесты всех классов одного проекта.</li>
+<li>Тесты всех классов всех проектов решения.</li>
 </ul>
-<p>Вся информация о прогоне тестов в проектах <b>Test.Solution</b> и <b>Test.Class</b> отображается в диалоговом окне, содержащем три закладки:</p><ul>
-<li>В первой закладке отображается суммарный результат (количество всех/пройденных/проваленных/отключенных тестов) в html-формате.</li>
-<li>Во второй закладке отображается в виде дерева список всех тестов (разделы, содержащие проваленные тесты, помечаются красной иконкой). Иерархия должна содержать имя проекта теста, имя класса теста, имена тестов.</li>
-<li>В третьей закладке отображаются только проваленные тесты. Выделив нужный тест, в нижней части окна можно получить подробное описание причины провала.</li>
-</ul>
-<h1>Развертывание </h1>
-<p>Подключение проектов тестирования возможно вручную (см. описание ниже) и автоматически - соответствующими командами надстройки UniCA.</p>
-<h2>Общий проект тестирования </h2>
-<ul>
-<li>Экспортировать проект Test.Solution в папку Solution решения и подключить к решению.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Предназначен для запуска всех тестов решения.</li>
-<li>Проект должен зависеть ото всех проектов <b>Test.Project</b> решения.</li>
-</ul>
-</dd></dl>
-<h2>Проект тестирования классов одного проекта </h2>
-<ul>
-<li>В папку, в которой расположена папка проекта экпортировать папку 'Test.Project' и подключить его к решению (в раздел его проекта).</li>
-<li>Заменить 'Project' на имя проекта, тесты классов которого он будет содержать.</li>
-<li>Проекту <b>Test.Solution</b> добавить зависимость от добавленного проекта.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>В этот проект должны добавляться все файлы *_test.cpp всех проектов тестирования одного класса (в раздел Tests\ClassName).</dd></dl>
-<h2>Проект тестирования одного класса </h2>
-<ul>
-<li>Для каждого теста класса в папку проекта <b>Test.Project</b> экспортируется папка 'Test.Class'.</li>
-<li>Заменить 'Class' на имя тестируемого класса.</li>
-<li>Подключить добавленный проект к решению (в раздел Test.Classes проекта, к которому он относится).</li>
-<li>Файл ClassName_test.cpp переименовать, заменив 'ClassName' на имя класса, после чего подключить его к проектам <b>Test.Class</b> и <b>Test.Project</b>.</li>
-<li>В файле ClassName_test.cpp <b>PathToHeader.hpp</b> заменить на путь к файлу тестируемого класса.</li>
-<li>В файле ClassName_test.cpp <b>ClassName</b> заменить на соответствующее имя класса.</li>
-</ul>
-<h1>Рекомендуемая структура решения </h1>
+<h2>Тестовый проект одного класса </h2>
+<p>Собирается как исполняемый файл, при запуске отображает результат прогона тестов своего класса.</p>
+<h3>Схема взаимодействия классов тестового проекта одного класса</h3>
 <div class="image">
-<img src="SolutionStruct.png" alt="SolutionStruct.png"/>
+<img src="Testing.App.Classes.TestClass.png" alt="Testing.App.Classes.TestClass.png"/>
+</div>
+<h2>Общий тестовый проект проекта </h2>
+<p>Собирается как dll, предоставляя интерфейс получения результата прогона тестов всех классов одного проекта.</p>
+<h3>Схема взаимодействия классов тестового проекта всех классов проекта</h3>
+<div class="image">
+<img src="Testing.App.Classes.TestProject.png" alt="Testing.App.Classes.TestProject.png"/>
+</div>
+<h2>Тестовый проект всего решения </h2>
+<p>Собирается как исполняемый файл, при запуске собирает и отображает информацию о прогоне тестов всех проектов решения.</p>
+<h3>Схема взаимодействия классов тестового проекта всего решения</h3>
+<div class="image">
+<img src="Testing.App.Classes.TestSolution.png" alt="Testing.App.Classes.TestSolution.png"/>
 </div>
  </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37858.html">Структура решения</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37914.html">Tools</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

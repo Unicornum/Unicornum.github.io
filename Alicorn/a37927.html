@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: $title</title>
+<title>Alicorn: Resource.App</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,14 +87,31 @@ $(document).ready(function(){initNavTree('a37927.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">Resource.App </div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Проект логики работы утилиты, генерирующей заголовочный файл, содержащий бинарные данные указанного файла. </p>
+<div class="textblock"><h1>Введение </h1>
+<p>Проект логики работы утилиты, генерирующей заголовочный файл, содержащий бинарные данные указанного файла.</p>
+<h2>Утилита Resource </h2>
+<p>Проект утилиты генерации заголовочного файла, содержащего бинарные данные указанного файла. Назначение - хранение непосредственно в программе ресурсов небольшого размера (иконок, курсоров и т.п.).</p><ul>
+<li>Если в качестве пути (&ndash;path="path/to/...") задан путь к файлу, заголовочный файл генерируется только для него, если путь к папке - то для всех файлов в этой папке, исключая файлы .hpp.</li>
+<li>Сгенерированный заголовочный файл будет располагаться в той же папке, что и исходный файл и будет иметь то же имя (с расширением .hpp).</li>
+<li>Имя объекта в созданном файле будет совпадать с именем исходного файла.</li>
+</ul>
+<h3>Использование утилиты</h3>
+<ul>
+<li>Подключить к решению проект <b>Resource</b> из Externals/Tools.</li>
+<li>Создать проект служебной программы, в который добавить необходимые файлы ресурсов, добавить ему зависимость от проекта <b>Resource</b> и добавить в качестве события после сборки <div class="fragment"><div class="line">$(ResultDir)Resource.exe $(ProjectDir)</div><div class="line">%(Command)</div></div><!-- fragment --> </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37914.html">Tools</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

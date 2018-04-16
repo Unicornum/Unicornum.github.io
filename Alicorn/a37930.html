@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: $title</title>
+<title>Alicorn: RocketRenderToFile.App</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,14 +87,41 @@ $(document).ready(function(){initNavTree('a37930.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">RocketRenderToFile.App </div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Проект предназначен для тестирования созданных .rml и .rss файлов при создании программ на основе <a href="https://github.com/libRocket/libRocket" title="libRocket">libRocket</a>. </p>
+<div class="textblock"><h1>Введение </h1>
+<p>Проект предназначен для тестирования созданных .rml и .rss файлов при создании программ на основе <a href="https://github.com/libRocket/libRocket" title="libRocket">libRocket</a>.</p>
+<h1>Описание программы </h1>
+<p>Утилита генерирует для указанного .rml файла скриншот окна программы.</p>
+<h2>Исходные требования </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  При запуске без параметров программа должна выводить в консоль описания параметров командной строки.</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>help</b> - вывод в консоль описания параметров командной строки.</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>source-file</b> - путь к тестируемому .rml файлу.</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>dest-file</b> - путь к .png файлу, в который будет сохранен скриншот экрана для указанного .rml файла.</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>width</b> - ширина генерируемого изображения (по умолчанию - 400).</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>height</b> - высота генерируемого изображения (по умолчанию - 800).</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>bkcolor</b> - цвет фона, поверх которого будет рендериться полученный .rml файл (по умолчанию - 0xE30B5C (малиновый)).</li>
+<li> <input type="checkbox" checked disabled>  Параметр командной строки <b>fonts-dir</b> - путь к папке, из которой должны быть загружены .ttf шрифты, используемые в указанном .rml файле.</li>
+<li> <input type="checkbox" checked disabled>  Ошибки/предупреждения при рендеринге указанного .rml файла должны выводиться в консоль.</li>
+</ul>
+<h2>Использование утилиты RocketRenderToFile </h2>
+<ul>
+<li>Добавить в решение проект Externals/Tools/RocketRenderToFile.</li>
+<li>Добавить проекту тестирования зависимость от проекта RocketRenderToFile.</li>
+<li>В тестах подготовить файлы, используемые в тестируемом .rml файле (стилей, изображений, шрифтов) с учетом их взаимного расположения.</li>
+<li>Запустить с требуемыми параметрами утилиту "$(SolutionDir)/$(Configuration)/Bin/x64/RocketRenderToFile.exe", проверяя совпадение полученного скриншота с ожидаемым изображением. </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37914.html">Tools</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

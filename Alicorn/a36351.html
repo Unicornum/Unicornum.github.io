@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alicorn: Класс alicorn::modules::settings::SectionImpl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a36351.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
+<a href="a36348.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс alicorn::modules::settings::SectionImpl<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a35058.html">Alicorn</a> &raquo; <a class="el" href="a35080.html">Modules</a> &raquo; <a class="el" href="a35085.html">Settings</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс входит в <a class="el" href="a37885.html">Settings</a> <br />
+ Класс реализации доступа к разделу настроек программы.  
+ <a href="a36351.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01004_source.html">section-impl.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:alicorn::modules::settings::SectionImpl:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36350.png" border="0" usemap="#alicorn_1_1modules_1_1settings_1_1_section_impl_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1modules_1_1settings_1_1_section_impl_inherit__map" id="alicorn_1_1modules_1_1settings_1_1_section_impl_inherit__map">
+<area shape="rect" id="node2" href="a36339.html" title="Класс входит в Settings &#160;&#160;Интерфейсный класс для реализации работы с настройками программы. " alt="" coords="19,5,214,259"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса alicorn::modules::settings::SectionImpl:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36349.png" border="0" usemap="#alicorn_1_1modules_1_1settings_1_1_section_impl_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1modules_1_1settings_1_1_section_impl_coll__map" id="alicorn_1_1modules_1_1settings_1_1_section_impl_coll__map">
+<area shape="rect" id="node2" href="a36339.html" title="Класс входит в Settings &#160;&#160;Интерфейсный класс для реализации работы с настройками программы. " alt="" coords="5,659,200,913"/>
+<area shape="rect" id="node3" href="a36355.html" title="Класс списка разделов " alt="" coords="224,696,443,876"/>
+<area shape="rect" id="node4" href="a35659.html" title="Класс входит в Std &#160;&#160;Класс универсальных Unicode строк. " alt="" coords="467,637,607,935"/>
+<area shape="rect" id="node5" href="a35427.html" title="{alicorn::extension\l::std::trivial_ptr\&lt;\l IImpl \&gt;\n|&#45; m_pDeleter\l|+ operator&#45;\&gt;()\l+ IsEqual()\l+ ReleasePtr()\l+ ReleaseDeleter()\l+ trivial_ptr()\l+ trivial_ptr()\l+ operator=()\l+ operator=()\l+ operator=()\l+ ~trivial_ptr()\l&#45; Delete()\l&#45; trivial_ptr()\l}" alt="" coords="465,307,610,575"/>
+<area shape="rect" id="node6" href="a35651.html" title="Класс входит в проект Std &#160;&#160;Интерфейсный класс реализации строки. " alt="" coords="462,5,613,244"/>
+<area shape="rect" id="node7" href="a36359.html" title="Класс списка параметров. " alt="" coords="632,645,829,927"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36359.html">Parameters</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс списка параметров.  <a href="a36359.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36355.html">Sections</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс списка разделов  <a href="a36355.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a3df5c9b056b01466c8a70001861867ed"><td class="memItemLeft" align="right" valign="top">Ptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a3df5c9b056b01466c8a70001861867ed">GetChildSectionImpl</a> (const <a class="el" href="a35659.html">String_t</a> &amp;_Name) override</td></tr>
+<tr class="memdesc:a3df5c9b056b01466c8a70001861867ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения дочернего раздела настроек.  <a href="#a3df5c9b056b01466c8a70001861867ed">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3df5c9b056b01466c8a70001861867ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8683935fc8b5b0a3537e8998f89bc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35659.html">String_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a8d8683935fc8b5b0a3537e8998f89bc1">GetValue</a> (const <a class="el" href="a35659.html">String_t</a> &amp;) const override</td></tr>
+<tr class="memdesc:a8d8683935fc8b5b0a3537e8998f89bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения значения параметра из текущего раздела с заменой тегов.  <a href="#a8d8683935fc8b5b0a3537e8998f89bc1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a8d8683935fc8b5b0a3537e8998f89bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048b71769e3d9acd973c89b94f3321b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35659.html">String_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a048b71769e3d9acd973c89b94f3321b6">GetRawValue</a> (const <a class="el" href="a35659.html">String_t</a> &amp;) const override</td></tr>
+<tr class="memdesc:a048b71769e3d9acd973c89b94f3321b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения значения параметра из текущего раздела без замены тегов.  <a href="#a048b71769e3d9acd973c89b94f3321b6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a048b71769e3d9acd973c89b94f3321b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0f63d2c6925c9f3b7437d4049711ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35659.html">String_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a1e0f63d2c6925c9f3b7437d4049711ff">GetComment</a> (const <a class="el" href="a35659.html">String_t</a> &amp;) const override</td></tr>
+<tr class="memdesc:a1e0f63d2c6925c9f3b7437d4049711ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения описания параметра.  <a href="#a1e0f63d2c6925c9f3b7437d4049711ff">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1e0f63d2c6925c9f3b7437d4049711ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b5bbfe503c6ec6a69c5c8bafa662095"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a1b5bbfe503c6ec6a69c5c8bafa662095">SetValue</a> (const <a class="el" href="a35659.html">String_t</a> &amp;, const <a class="el" href="a35659.html">String_t</a> &amp;) override</td></tr>
+<tr class="memdesc:a1b5bbfe503c6ec6a69c5c8bafa662095"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция установки значений параметров.  <a href="#a1b5bbfe503c6ec6a69c5c8bafa662095">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1b5bbfe503c6ec6a69c5c8bafa662095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cf06e4a5b1302e1dce4d76be20b39b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a1cf06e4a5b1302e1dce4d76be20b39b5">AddExtraValue</a> (const <a class="el" href="a35659.html">String_t</a> &amp;, const <a class="el" href="a35659.html">String_t</a> &amp;) override</td></tr>
+<tr class="memdesc:a1cf06e4a5b1302e1dce4d76be20b39b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создать особый параметр.  <a href="#a1cf06e4a5b1302e1dce4d76be20b39b5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1cf06e4a5b1302e1dce4d76be20b39b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe80d2ac53d50b5093c8fd0d5b5a96e5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#abe80d2ac53d50b5093c8fd0d5b5a96e5">SetComment</a> (const <a class="el" href="a35659.html">String_t</a> &amp;, const <a class="el" href="a35659.html">String_t</a> &amp;) override</td></tr>
+<tr class="memdesc:abe80d2ac53d50b5093c8fd0d5b5a96e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения описания параметра.  <a href="#abe80d2ac53d50b5093c8fd0d5b5a96e5">Подробнее...</a><br /></td></tr>
+<tr class="separator:abe80d2ac53d50b5093c8fd0d5b5a96e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c7a86e070b361d48350f66466d6db0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#ae4c7a86e070b361d48350f66466d6db0">SetDefaultValue</a> (const <a class="el" href="a35659.html">String_t</a> &amp;, const <a class="el" href="a35659.html">String_t</a> &amp;, const <a class="el" href="a35659.html">String_t</a> &amp;=<a class="el" href="a35071.html#gadd4ef8b31465f73455d43a2eb631e6da">u8T</a>(&quot;&quot;)) override</td></tr>
+<tr class="memdesc:ae4c7a86e070b361d48350f66466d6db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция установки значений параметров по умолчанию.  <a href="#ae4c7a86e070b361d48350f66466d6db0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae4c7a86e070b361d48350f66466d6db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a553d49a67fbfc48be64a8bdfdbb68fdc"><td class="memItemLeft" align="right" valign="top"><a id="a553d49a67fbfc48be64a8bdfdbb68fdc"></a>
+Names_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a553d49a67fbfc48be64a8bdfdbb68fdc">GetChildSectionNames</a> (void) const override</td></tr>
+<tr class="memdesc:a553d49a67fbfc48be64a8bdfdbb68fdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка имен дочерних разделов текущего раздела. <br /></td></tr>
+<tr class="separator:a553d49a67fbfc48be64a8bdfdbb68fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64c472150665ac8195e4c3978edc570f"><td class="memItemLeft" align="right" valign="top">Names_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a64c472150665ac8195e4c3978edc570f">GetParameterNames</a> (void) const override</td></tr>
+<tr class="memdesc:a64c472150665ac8195e4c3978edc570f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка имен параметров текущего раздела.  <a href="#a64c472150665ac8195e4c3978edc570f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a64c472150665ac8195e4c3978edc570f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9bc78cb9b514f69d1c915376315484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a7f9bc78cb9b514f69d1c915376315484">Save</a> (void) override</td></tr>
+<tr class="memdesc:a7f9bc78cb9b514f69d1c915376315484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция сохранения настроек в файл.  <a href="#a7f9bc78cb9b514f69d1c915376315484">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7f9bc78cb9b514f69d1c915376315484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae95057df444c99b0ea0fbb5bf9b25ec7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#ae95057df444c99b0ea0fbb5bf9b25ec7">SectionImpl</a> (void)</td></tr>
+<tr class="memdesc:ae95057df444c99b0ea0fbb5bf9b25ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор создания объекта корневого раздела.  <a href="#ae95057df444c99b0ea0fbb5bf9b25ec7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae95057df444c99b0ea0fbb5bf9b25ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Защищенные члены</h2></td></tr>
+<tr class="memitem:ad7fb702f4109de1ff4a52f000bc1ddf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#ad7fb702f4109de1ff4a52f000bc1ddf7">SectionImpl</a> (const <a class="el" href="a36351.html">SectionImpl</a> *, const <a class="el" href="a35659.html">String_t</a> &amp;)</td></tr>
+<tr class="memdesc:ad7fb702f4109de1ff4a52f000bc1ddf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор создания пустого раздела.  <a href="#ad7fb702f4109de1ff4a52f000bc1ddf7">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad7fb702f4109de1ff4a52f000bc1ddf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dcb71aa9131e57fa3d084a47618106a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a2dcb71aa9131e57fa3d084a47618106a">SectionImpl</a> (const <a class="el" href="a36351.html">SectionImpl</a> *, <a class="el" href="a36635.html">Node_t</a>, <a class="el" href="a36635.html">Node_t</a>)</td></tr>
+<tr class="memdesc:a2dcb71aa9131e57fa3d084a47618106a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор создания дочернего раздела.  <a href="#a2dcb71aa9131e57fa3d084a47618106a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2dcb71aa9131e57fa3d084a47618106a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:aa948d34ffd5e8adced4e2c2d4b555154"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#aa948d34ffd5e8adced4e2c2d4b555154">LoadParametersFromNodes</a> (<a class="el" href="a36635.html">Node_t</a>, <a class="el" href="a36635.html">Node_t</a>)</td></tr>
+<tr class="memdesc:aa948d34ffd5e8adced4e2c2d4b555154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения параметров из указанного узла xml.  <a href="#aa948d34ffd5e8adced4e2c2d4b555154">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa948d34ffd5e8adced4e2c2d4b555154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f13520fb9921877176797f3dfebb9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a6f13520fb9921877176797f3dfebb9ab">LoadExtraParameters</a> (void)</td></tr>
+<tr class="memdesc:a6f13520fb9921877176797f3dfebb9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания особых параметров.  <a href="#a6f13520fb9921877176797f3dfebb9ab">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6f13520fb9921877176797f3dfebb9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac56ea6653b92f98ef36a33121e02088f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a35659.html">String_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#ac56ea6653b92f98ef36a33121e02088f">GetSubstitutionValue</a> (const <a class="el" href="a35659.html">String_t</a> &amp;) const</td></tr>
+<tr class="memdesc:ac56ea6653b92f98ef36a33121e02088f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция замены ссылки на параметр значением этого параметра.  <a href="#ac56ea6653b92f98ef36a33121e02088f">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac56ea6653b92f98ef36a33121e02088f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92c3e6825d913ebd7baf2cbca3d7ce5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#ad92c3e6825d913ebd7baf2cbca3d7ce5">WriteParametersTo</a> (<a class="el" href="a36635.html">Node_t</a>)</td></tr>
+<tr class="memdesc:ad92c3e6825d913ebd7baf2cbca3d7ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для записи измененных значений параметров в указнный узел.  <a href="#ad92c3e6825d913ebd7baf2cbca3d7ce5">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad92c3e6825d913ebd7baf2cbca3d7ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a663fed31a770dc5f095e1c78af7fe32a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a663fed31a770dc5f095e1c78af7fe32a">IfExistsChangeParameters</a> (void) const</td></tr>
+<tr class="memdesc:a663fed31a770dc5f095e1c78af7fe32a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки существования измененных параметров.  <a href="#a663fed31a770dc5f095e1c78af7fe32a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a663fed31a770dc5f095e1c78af7fe32a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a2687dc184e82663f786b3df27f76165a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a36635.html">Node_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36351.html#a2687dc184e82663f786b3df27f76165a">GetSubNode</a> (<a class="el" href="a36635.html">Node_t</a>, const <a class="el" href="a35659.html">String_t</a> &amp;)</td></tr>
+<tr class="memdesc:a2687dc184e82663f786b3df27f76165a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для перехода к указанному подузлу текущего узла xml документа.  <a href="#a2687dc184e82663f786b3df27f76165a">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2687dc184e82663f786b3df27f76165a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a37885.html">Settings</a> <br />
+ Класс реализации доступа к разделу настроек программы. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
+ 1.2.0.0 <br />
+ 1.3.0.0 <br />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>08 Октябрь 2015 <br />
+ 21 Декабрь 2015 <br />
+ 27 Декабрь 2015 <br />
+ 19 Февраль 2017 <br />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2017 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ae95057df444c99b0ea0fbb5bf9b25ec7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae95057df444c99b0ea0fbb5bf9b25ec7">&#9670;&nbsp;</a></span>SectionImpl() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SectionImpl::SectionImpl </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор создания объекта корневого раздела. </p>
+<ul>
+<li>Читает из xml-файла настроек значения параметров и рекурсивно создает иерархию вложенных разделов.</li>
+<li>Если нет файла настроек или раздела с указанным именем, создает пустой раздел. </li>
+</ul>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_ae95057df444c99b0ea0fbb5bf9b25ec7_icgraph.png" border="0" usemap="#a36351_ae95057df444c99b0ea0fbb5bf9b25ec7_icgraph" alt=""/></div>
+<map name="a36351_ae95057df444c99b0ea0fbb5bf9b25ec7_icgraph" id="a36351_ae95057df444c99b0ea0fbb5bf9b25ec7_icgraph">
+<area shape="rect" id="node2" href="a36351.html#a3df5c9b056b01466c8a70001861867ed" title="Функция получения дочернего раздела настроек. " alt="" coords="253,5,508,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad7fb702f4109de1ff4a52f000bc1ddf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7fb702f4109de1ff4a52f000bc1ddf7">&#9670;&nbsp;</a></span>SectionImpl() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SectionImpl::SectionImpl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a36351.html">SectionImpl</a> *&#160;</td>
+          <td class="paramname"><em>_pParentSection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор создания пустого раздела. </p>
+<ul>
+<li>В дочернем разделе корневого раздела создает параметр 'ModuleLocation', который представляет собой полный путь к текущему модулю программы.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pParentSection</td><td>Объект родительского раздела. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя текущего раздела настроек. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_ad7fb702f4109de1ff4a52f000bc1ddf7_cgraph.png" border="0" usemap="#a36351_ad7fb702f4109de1ff4a52f000bc1ddf7_cgraph" alt=""/></div>
+<map name="a36351_ad7fb702f4109de1ff4a52f000bc1ddf7_cgraph" id="a36351_ad7fb702f4109de1ff4a52f000bc1ddf7_cgraph">
+<area shape="rect" id="node2" href="a36351.html#a6f13520fb9921877176797f3dfebb9ab" title="Функция создания особых параметров. " alt="" coords="253,5,516,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2dcb71aa9131e57fa3d084a47618106a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dcb71aa9131e57fa3d084a47618106a">&#9670;&nbsp;</a></span>SectionImpl() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SectionImpl::SectionImpl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a36351.html">SectionImpl</a> *&#160;</td>
+          <td class="paramname"><em>_pParentSection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a36635.html">Node_t</a>&#160;</td>
+          <td class="paramname"><em>_ParentSection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a36635.html">Node_t</a>&#160;</td>
+          <td class="paramname"><em>_Section</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор создания дочернего раздела. </p>
+<ul>
+<li>Читает параметры из текущего узла xml-файла и рекурсивно создает иерархию вложенных разделов.</li>
+<li>В дочернем разделе корневого раздела создает параметр 'ModuleLocation', который представляет собой полный путь к текущему модулю программы.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_pParentSection</td><td>Объект родительского раздела. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ParentSection</td><td>Родительский узел для _Section. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Section</td><td>Узел текущего раздела настроек. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_a2dcb71aa9131e57fa3d084a47618106a_cgraph.png" border="0" usemap="#a36351_a2dcb71aa9131e57fa3d084a47618106a_cgraph" alt=""/></div>
+<map name="a36351_a2dcb71aa9131e57fa3d084a47618106a_cgraph" id="a36351_a2dcb71aa9131e57fa3d084a47618106a_cgraph">
+<area shape="rect" id="node2" href="a36351.html#aa948d34ffd5e8adced4e2c2d4b555154" title="Функция чтения параметров из указанного узла xml. " alt="" coords="253,5,553,47"/>
+<area shape="rect" id="node3" href="a36351.html#a6f13520fb9921877176797f3dfebb9ab" title="Функция создания особых параметров. " alt="" coords="272,71,535,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a1cf06e4a5b1302e1dce4d76be20b39b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cf06e4a5b1302e1dce4d76be20b39b5">&#9670;&nbsp;</a></span>AddExtraValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::AddExtraValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создать особый параметр. </p>
+<ul>
+<li>Назначение особых параметров - использование в качестве тегов для замены у других параметров.</li>
+<li>Значения особых параметров можно установить только один раз и невозможно изменить (их можно только прочитать).</li>
+<li>Особые параметры не будут сохранены в файле настроек.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Value</td><td>Значение параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Попытка добавить параметр, имя которого совпадает с именем уже существующего параметра. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="a3df5c9b056b01466c8a70001861867ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df5c9b056b01466c8a70001861867ed">&#9670;&nbsp;</a></span>GetChildSectionImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SectionImpl::Ptr_t SectionImpl::GetChildSectionImpl </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения дочернего раздела настроек. </p>
+<ul>
+<li>Если раздела с указанным именем нет, он должен быть создан.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя искомого раздела. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_a3df5c9b056b01466c8a70001861867ed_cgraph.png" border="0" usemap="#a36351_a3df5c9b056b01466c8a70001861867ed_cgraph" alt=""/></div>
+<map name="a36351_a3df5c9b056b01466c8a70001861867ed_cgraph" id="a36351_a3df5c9b056b01466c8a70001861867ed_cgraph">
+<area shape="rect" id="node2" href="a36351.html#ae95057df444c99b0ea0fbb5bf9b25ec7" title="Конструктор создания объекта корневого раздела. " alt="" coords="308,5,508,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1e0f63d2c6925c9f3b7437d4049711ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e0f63d2c6925c9f3b7437d4049711ff">&#9670;&nbsp;</a></span>GetComment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35659.html">SectionImpl::String_t</a> SectionImpl::GetComment </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения описания параметра. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Подробное описание предназначения параметра.</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Нет параметра с указанным именем. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="a64c472150665ac8195e4c3978edc570f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64c472150665ac8195e4c3978edc570f">&#9670;&nbsp;</a></span>GetParameterNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SectionImpl::Names_t SectionImpl::GetParameterNames </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения списка имен параметров текущего раздела. </p>
+<ul>
+<li>Исключая особые параметры. </li>
+</ul>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="a048b71769e3d9acd973c89b94f3321b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048b71769e3d9acd973c89b94f3321b6">&#9670;&nbsp;</a></span>GetRawValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35659.html">SectionImpl::String_t</a> SectionImpl::GetRawValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения значения параметра из текущего раздела без замены тегов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Параметра с таким именем в разделе не существует. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="a2687dc184e82663f786b3df27f76165a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2687dc184e82663f786b3df27f76165a">&#9670;&nbsp;</a></span>GetSubNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a36635.html">SectionImpl::Node_t</a> SectionImpl::GetSubNode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a36635.html">Node_t</a>&#160;</td>
+          <td class="paramname"><em>_Node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для перехода к указанному подузлу текущего узла xml документа. </p>
+<ul>
+<li>Если такого подузла нет, он будет создан.</li>
+<li>Созданному узлу будет добавлен пустой атрибут 'parent'.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Node</td><td>Текущий узел. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя подузла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac56ea6653b92f98ef36a33121e02088f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac56ea6653b92f98ef36a33121e02088f">&#9670;&nbsp;</a></span>GetSubstitutionValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35659.html">SectionImpl::String_t</a> SectionImpl::GetSubstitutionValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Value</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция замены ссылки на параметр значением этого параметра. </p>
+<ul>
+<li>В переданном значении строка вида '{Name}' будет заменена значением параметра с именем Name из этого же или (если в этом разделе нет параметра с таким именем) родительского раздела.</li>
+<li>Ссылки на несуществующие параметры заменены не будут.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Value</td><td>Строка, которая должна быть обработана.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Обработанная строка. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="a35057.html#_todo000011">Необходимо сделать:</a></b></dt><dd>"Если IsContainedNotExistsName == false и нет родительского раздела, бросать исключение?" ; </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_ac56ea6653b92f98ef36a33121e02088f_cgraph.png" border="0" usemap="#a36351_ac56ea6653b92f98ef36a33121e02088f_cgraph" alt=""/></div>
+<map name="a36351_ac56ea6653b92f98ef36a33121e02088f_cgraph" id="a36351_ac56ea6653b92f98ef36a33121e02088f_cgraph">
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_ac56ea6653b92f98ef36a33121e02088f_icgraph.png" border="0" usemap="#a36351_ac56ea6653b92f98ef36a33121e02088f_icgraph" alt=""/></div>
+<map name="a36351_ac56ea6653b92f98ef36a33121e02088f_icgraph" id="a36351_ac56ea6653b92f98ef36a33121e02088f_icgraph">
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8d8683935fc8b5b0a3537e8998f89bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8683935fc8b5b0a3537e8998f89bc1">&#9670;&nbsp;</a></span>GetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a35659.html">SectionImpl::String_t</a> SectionImpl::GetValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения значения параметра из текущего раздела с заменой тегов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Параметра с таким именем в разделе не существует. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="a663fed31a770dc5f095e1c78af7fe32a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a663fed31a770dc5f095e1c78af7fe32a">&#9670;&nbsp;</a></span>IfExistsChangeParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SectionImpl::IfExistsChangeParameters </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция проверки существования измененных параметров. </p>
+<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Если в текущем разделе или одно из его дочерних есть измненные параметры. </dd>
+<dd>
+<b>false</b> Угадайте! </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_a663fed31a770dc5f095e1c78af7fe32a_icgraph.png" border="0" usemap="#a36351_a663fed31a770dc5f095e1c78af7fe32a_icgraph" alt=""/></div>
+<map name="a36351_a663fed31a770dc5f095e1c78af7fe32a_icgraph" id="a36351_a663fed31a770dc5f095e1c78af7fe32a_icgraph">
+<area shape="rect" id="node2" href="a36351.html#ad92c3e6825d913ebd7baf2cbca3d7ce5" title="Функция для записи измененных значений параметров в указнный узел. " alt="" coords="348,5,597,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6f13520fb9921877176797f3dfebb9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f13520fb9921877176797f3dfebb9ab">&#9670;&nbsp;</a></span>LoadExtraParameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::LoadExtraParameters </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция создания особых параметров. </p>
+<ul>
+<li>Особые парметры создаются только в разделах, дочерних корневому. </li>
+</ul>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_a6f13520fb9921877176797f3dfebb9ab_icgraph.png" border="0" usemap="#a36351_a6f13520fb9921877176797f3dfebb9ab_icgraph" alt=""/></div>
+<map name="a36351_a6f13520fb9921877176797f3dfebb9ab_icgraph" id="a36351_a6f13520fb9921877176797f3dfebb9ab_icgraph">
+<area shape="rect" id="node2" href="a36351.html#a2dcb71aa9131e57fa3d084a47618106a" title="Конструктор создания дочернего раздела. " alt="" coords="316,5,516,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa948d34ffd5e8adced4e2c2d4b555154"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa948d34ffd5e8adced4e2c2d4b555154">&#9670;&nbsp;</a></span>LoadParametersFromNodes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::LoadParametersFromNodes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a36635.html">Node_t</a>&#160;</td>
+          <td class="paramname"><em>_ParentSection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a36635.html">Node_t</a>&#160;</td>
+          <td class="paramname"><em>_Section</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция чтения параметров из указанного узла xml. </p>
+<ul>
+<li>После выхода из функции маркер xml документа будет стоять на том же узле, что и перед вызовом функции.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ParentSection</td><td>Родительский узел для _Section. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Section</td><td>Узел xml документа, из которого следует прочитать параметры. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_aa948d34ffd5e8adced4e2c2d4b555154_icgraph.png" border="0" usemap="#a36351_aa948d34ffd5e8adced4e2c2d4b555154_icgraph" alt=""/></div>
+<map name="a36351_aa948d34ffd5e8adced4e2c2d4b555154_icgraph" id="a36351_aa948d34ffd5e8adced4e2c2d4b555154_icgraph">
+<area shape="rect" id="node2" href="a36351.html#a2dcb71aa9131e57fa3d084a47618106a" title="Конструктор создания дочернего раздела. " alt="" coords="353,5,553,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7f9bc78cb9b514f69d1c915376315484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9bc78cb9b514f69d1c915376315484">&#9670;&nbsp;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::Save </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция сохранения настроек в файл. </p>
+<ul>
+<li>Выполняется только для корневого раздела настроек и рекурсивно сохраняет параметры дочерних разделов. Сохраняет настройки:</li>
+<li>Которым были успешно установлены значения по умолчанию.</li>
+<li>Измененные параметры.</li>
+</ul>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="abe80d2ac53d50b5093c8fd0d5b5a96e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe80d2ac53d50b5093c8fd0d5b5a96e5">&#9670;&nbsp;</a></span>SetComment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::SetComment </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Comment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция изменения описания параметра. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Comment</td><td>Новое подробное описание параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Параметра с указанным именем не существует. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="ae4c7a86e070b361d48350f66466d6db0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4c7a86e070b361d48350f66466d6db0">&#9670;&nbsp;</a></span>SetDefaultValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::SetDefaultValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Comment</em> = <code><a class="el" href="a35071.html#gadd4ef8b31465f73455d43a2eb631e6da">u8T</a>(&quot;&quot;)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция установки значений параметров по умолчанию. </p>
+<ul>
+<li>Функция устанавливает значения параметров, которые не существуют в файле настроек (т.е. фактически - это функция создания параметров).</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Value</td><td>Значений параметра по умолчанию. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Comment</td><td>Подробное описание параметра. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="a1b5bbfe503c6ec6a69c5c8bafa662095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b5bbfe503c6ec6a69c5c8bafa662095">&#9670;&nbsp;</a></span>SetValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SectionImpl::SetValue </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a35659.html">String_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция установки значений параметров. </p>
+<ul>
+<li>Устанавливаются только существующие параметры.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Name</td><td>Имя параметра. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Value</td><td>Новое значение параметра.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>В данном разделе нет параметра с указанным именем.</li>
+<li>Имя параметра является именем особого параметра (их нельзя менять). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="a36339.html">alicorn::modules::settings::ISection</a>.</p>
+
+</div>
+</div>
+<a id="ad92c3e6825d913ebd7baf2cbca3d7ce5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92c3e6825d913ebd7baf2cbca3d7ce5">&#9670;&nbsp;</a></span>WriteParametersTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SectionImpl::WriteParametersTo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a36635.html">Node_t</a>&#160;</td>
+          <td class="paramname"><em>_Section</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для записи измененных значений параметров в указнный узел. </p>
+<ul>
+<li>Записывает значения текущего узла и всех дочерних (рекурсивно).</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Section</td><td>Узел xml документа, соответствующий текущему разделу. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36351_ad92c3e6825d913ebd7baf2cbca3d7ce5_cgraph.png" border="0" usemap="#a36351_ad92c3e6825d913ebd7baf2cbca3d7ce5_cgraph" alt=""/></div>
+<map name="a36351_ad92c3e6825d913ebd7baf2cbca3d7ce5_cgraph" id="a36351_ad92c3e6825d913ebd7baf2cbca3d7ce5_cgraph">
+<area shape="rect" id="node2" href="a36351.html#a663fed31a770dc5f095e1c78af7fe32a" title="Функция проверки существования измененных параметров. " alt="" coords="303,5,597,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Modules/Settings/Settings/<a class="el" href="a01004_source.html">section-impl.hpp</a></li>
+<li>Solution/Solution/Modules/Settings/Settings/section-impl.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>modules</b></li><li class="navelem"><b>settings</b></li><li class="navelem"><a class="el" href="a36351.html">SectionImpl</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:13. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

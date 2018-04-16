@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Documentation.App</title>
+<title>Alicorn: $title</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,61 +87,22 @@ $(document).ready(function(){initNavTree('a37920.html','');});
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle">
-<div class="title">Documentation.App </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Введение </h1>
-<p>Проект логики работы утилиты предварительной обработки решения перед построением документации.</p>
-<h2>Утилита Documentation </h2>
-<p>Проект утилиты предварительной обработки файлов решения.</p>
-<p>Предназначен для:</p><ul>
-<li>Обработки файла лога сборки решения скриптом.</li>
-<li>Обработки файла покрытия кода тестами.</li>
-<li>Обработки лога сборки документации.</li>
-<li>Установки переменных окружения, необходимых для построения документации.</li>
-</ul>
-<h2>Использование утилиты </h2>
+<div class="textblock"><p>Проект утилиты генерации заголовочного файла с идентификаторами строк, используемыми для получения у модуля локализации программы текста выбранного языка программы.</p>
 <ul>
-<li>Подключить к решению проект Documentation из папки Externals\Tools\Documentation.</li>
-<li>Одному из проектов решения установить зависимость от проекта Documentation и в качестве события после построения добавить запуск Documentation.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+<li>Утилита генерирует заголовочный файл из xml файла, переданного в качестве параметра.</li>
+<li>Значение узла <b>path</b> будет интерпретироваться как путь к папке расположения файлов локализации программы (относительно корневой папки расположения exe файла программы).</li>
+<li>Узлы, не содержащие значений будут интерпретироваться как указание создать пространство имен с именем узла.</li>
+<li>Узлы, содержащие значения, будут интерпретироваться как строки, которые будет использовать программа (для них будут сгенерированы идентификаторы).</li>
+<li>При обработке переданного файла утилита также будет сравнивать с указанным файлом все xml файлы в той же папке с выводом найденных расхождений в консоль.</li>
 </ul>
-<h3>Параметры</h3>
-<ul>
-<li><b>&ndash;file=path</b> - путь к исходному файлу (трактуется в зависимости от указанной команды).</li>
-<li><b>&ndash;path-to-solution=path</b> - полный путь к папке решения, которое обрабатывается (используется совместно с командами <b>&ndash;process-report=build</b> и <b>&ndash;process-report=coverage</b>).</li>
-<li><b>&ndash;max-records</b> - максимальное количество записей в отчете о покрытии кода тестами (при добавлении новых записей самые старые будут удаляться; используется совместно с командой <b>&ndash;process-report=coverage</b>).</li>
-<li><b>&ndash;configuration</b> - текущая собираемая платформа (используется совместно с командой <b>&ndash;set-environment-variables</b>).</li>
-</ul>
-<h3>Команды</h3>
-<dl class="section note"><dt>Заметки</dt><dd>Команды исключают использование друг друга.</dd></dl>
-<ul>
-<li><b>&ndash;help</b> - выводит в консоль список доступных команд.</li>
-<li><b>&ndash;process-report=type</b> - обработка файла, заданного как параметр <b>&ndash;file:</b> <ul>
-<li><b>build</b> - обработка файла лога сборки скриптом (генерируется файл, группирующий и подсвечивающий цветом ошибки и предупреждения по проектам).</li>
-<li><b>coverage</b> - обработка файла отчета покрытия кода тестами (из xml файла отчета генерируется html файлы, пригодные для включения в документацию Doxygen).</li>
-<li><b>documentation</b> - обработка файла лога сборки документации решения (исключаются вспомогательные сообщения, не несущие полезной информации).</li>
-</ul>
-</li>
-<li><b>&ndash;set-environment-variables</b> - в консоль выводятся команды установки переменных окружения, <a class="el" href="a37919.html#ToolsDocumentationEnvironmentVariablesAnchor">устанавливающие</a> значения версии решения:<ul>
-<li><b>DOXYGEN_NAME</b> - название продукта.</li>
-<li><b>DOXYGEN_VERSION</b> - полная версия продукта.</li>
-<li><b>DOXYGEN_BRIEF</b> - краткое описание продукта.</li>
-<li><b>DOXYGEN_INPUT</b> - путь к папке, для которой следует построить документацию.</li>
-<li><b>DOXYGEN_COPYRIGHT</b> - строка copyright'a продукта.</li>
-</ul>
-</li>
-</ul>
-<p><a class="anchor" id="ToolsDocumentationEnvironmentVariablesAnchor"></a> </p><h3>Использование переменных окружения</h3>
-<p>Т.к. при установке переменных окружения внутри процесса они будут доступны только самому процессу, утилита выводит в консоль набор команд, которые можно использовать в командном файле следующим образом:</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span> /f <span class="stringliteral">&quot;usebackq delims=;&quot;</span> %%a in (`documentation.exe --file=version.hpp --<span class="keyword">set</span>-environment-variables`) <span class="keywordflow">do</span> (</div><div class="line">%%a</div><div class="line">)</div><div class="line">  </div><div class="line">echo DOXYGEN_NAME: %DOXYGEN_NAME%</div></div><!-- fragment --> </div></div><!-- contents -->
+<p><a class="el" href="a35075.html">Использование утилиты для локализации программы</a> </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37858.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37916.html">Tools</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

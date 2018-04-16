@@ -1,8 +1,11 @@
 var a35104 =
 [
-    [ "Compress", "a35097.html", "a35097" ],
-    [ "Crypto", "a35098.html", "a35098" ],
-    [ "Details", "a35099.html", "a35099" ],
-    [ "Document", "a35101.html", "a35101" ],
-    [ "Image", "a35103.html", "a35103" ]
+    [ "IModel", "a37123.html", null ],
+    [ "Model", "a37127.html", [
+      [ "BuildPathToSection", "a37127.html#a0c097f184d0f8008705441c7e8f95f14", null ],
+      [ "GetSection", "a37127.html#a7fa27979818db9ba2e511c5a104fede8", null ],
+      [ "GetSections", "a37127.html#a1d58c80210dc15ee23204f0e046d63e5", null ],
+      [ "GetSettings", "a37127.html#aaf001e76c055fff1d90a75bb104a21e2", null ],
+      [ "SetValue", "a37127.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
+    ] ]
 ];

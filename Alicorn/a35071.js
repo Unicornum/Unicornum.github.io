@@ -1,9 +1,21 @@
 var a35071 =
 [
-    [ "ArcCos", "a35071.html#gaa1f9a57d13f01fd79928c206f2987771", null ],
-    [ "ArcSin", "a35071.html#gabc9373a8d3f74570f98b2c08f6e0839b", null ],
-    [ "ArcTan", "a35071.html#ga36893ac939107a0f2d2aad5f480e0dbd", null ],
-    [ "Cos", "a35071.html#gac0afab7827edd2f2c712e381ad4c6476", null ],
-    [ "Sin", "a35071.html#ga591de7acd440069d45ccfb5a23cc234b", null ],
-    [ "Tan", "a35071.html#ga941da4c724efde88e2fb9c75112542ed", null ]
+    [ "Locale", "a35483.html", [
+      [ "UCS2", "a35487.html", null ],
+      [ "UTF16", "a35491.html", null ],
+      [ "UTF32", "a35495.html", null ]
+    ] ],
+    [ "StringCastProxyLocale", "a35547.html", null ],
+    [ "StringCastProxy", "a35607.html", null ],
+    [ "IImpl", "a35651.html", null ],
+    [ "Impl", "a35655.html", null ],
+    [ "String", "a35659.html", [
+      [ "serialize", "a35659.html#a525d06040212293da2c8c3eb7006e561", null ]
+    ] ],
+    [ "u16T", "a35071.html#ga83f26975e8758aa5116f3bee22ea089c", null ],
+    [ "u32T", "a35071.html#ga1054c5f519d3b216496b5ca941d90a95", null ],
+    [ "u8T", "a35071.html#gadd4ef8b31465f73455d43a2eb631e6da", null ],
+    [ "uT", "a35071.html#ga68c84efa84957c5f819d243a4cb84de9", null ],
+    [ "string_cast", "a35071.html#ga85f365b66942caa215bfc4ad5010f37f", null ],
+    [ "string_cast", "a35071.html#gafc1bb38569424983a63fbf99ce9f47c1", null ]
 ];

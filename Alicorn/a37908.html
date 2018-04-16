@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,13 +88,22 @@ $(document).ready(function(){initNavTree('a37908.html','');});
 </div>
 
 <div class="contents">
-<div class="textblock"><p>Проект классов специфических для Windows и Android. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Для опеспечения работоспособности класса необходима его предварительная инициализация.</p>
+<h3>Проект Packaging</h3>
+<ul>
+<li>Добавить папку src/externals как свойство svn:externals с путем <div class="fragment"><div class="line">https:<span class="comment">//svn/svn/Prebuilt.no.backup/Solution/Properties/Utilities/Externals/Alicorn/_Root/Android</span></div></div><!-- fragment --></li>
+<li>Подключить к проекту файлы из этой папки.</li>
+<li>Добавить класс главной activity и загрузку главного модуля программы (предполагается, что главный модуль программы будет иметь имя файлa libExample.so): <div class="fragment"><div class="line"><span class="keyword">package </span>com.example;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> <a class="code" href="a35116.html">com</a>.<a class="code" href="a35128.html">alicorn</a>.MainActivity</div><div class="line">{</div><div class="line">  <span class="keyword">static</span></div><div class="line">  {</div><div class="line">    System.loadLibrary(<span class="stringliteral">&quot;Example&quot;</span>);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --></li>
+<li>В файл AndroidManifest.xml добавить соответствующие записи: <div class="fragment"><div class="line">&lt;activity android:name=<span class="stringliteral">&quot;com.example.MainActivity&quot;</span> ...&gt;</div><div class="line">  &lt;meta-data android:name=<span class="stringliteral">&quot;android.app.lib_name&quot;</span> android:value=<span class="stringliteral">&quot;Example&quot;</span>/&gt;</div></div><!-- fragment --></li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>При инициализации сервиса необходимо вручную создать объект класса com.alicorn.system.platform.Context, передав ему результат вызова функции getBaseContext(): <div class="fragment"><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>BackgroundService <span class="keyword">extends</span> Service</div><div class="line">{</div><div class="line">  <span class="keyword">static</span></div><div class="line">  {</div><div class="line">    System.loadLibrary(<span class="stringliteral">&quot;Example&quot;</span>);</div><div class="line">  }</div><div class="line">    </div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">void</span> onCreate()</div><div class="line">  {</div><div class="line">    <span class="keyword">new</span> <a class="code" href="a35116.html">com</a>.<a class="code" href="a35121.html">alicorn</a>.<a class="code" href="a35122.html">system</a>.<a class="code" href="a35120.html">platform</a>.<a class="code" href="a35267.html">Context</a>(getBaseContext());</div><div class="line">    ...</div></div><!-- fragment --></dd></dl>
+<h3>Проект главного модуля программы</h3>
+<p>При старте программы инициализировать указатель на объект JavaVM: </p><div class="fragment"><div class="line">const ::alicorn::system::platform::AppInfo Info{ _pActivity-&gt;vm };</div></div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

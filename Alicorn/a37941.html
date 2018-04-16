@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Version.App</title>
+<title>Alicorn: Test.Android</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -89,57 +89,33 @@ $(document).ready(function(){initNavTree('a37941.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Version.App </div>  </div>
+<div class="title">Test.Android </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1>Введение </h1>
-<p>Проект логики работы утилиты, формирующей файл со строками версии решения для включения его в проект Packaging для Android.</p>
-<h2>Утилита Version </h2>
-<p>Проект утилиты манипуляции версией решения.</p>
-<p>Предназначен для:</p><ul>
-<li>Обновления номера ревизии в файле версии решения.</li>
-<li>Увеличения на 1 указанного номера версии в файле версии решения.</li>
-<li>Формирование заголовочного файла версии решения для включения в состав библиотеки.</li>
-<li>Обновление ревизии файлов решения в файле AndroidManifest.xml. <div class="fragment"><div class="line">&lt;manifest ...</div><div class="line">  android:versionCode=<span class="stringliteral">&quot;CURRENT_REVISION&quot;</span>&gt;</div><div class="line">  ...</div></div><!-- fragment --></li>
-<li>Формирование xml файла версии решения для включения в Android package (должен располагаться в папке Packaging\res\values). Образец формируемого файла: <div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div><div class="line">&lt;resources&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;CompanyName&quot;</span>&gt;UnicornumVerum&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileDescription&quot;</span>&gt;Набор вспомогательных библиотек&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileVersion&quot;</span>&gt;3.8.0 Revision: 2831 Platform: x64 Build: 01:29 09 Сентябрь 2017&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileVersionShort&quot;</span>&gt;3.8.0.2831 x64&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;LegalCopyright&quot;</span>&gt;© UnicornumVerum 2007 - 2017 (unicornum.verum@gmail.ru)&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductName&quot;</span>&gt;Alicorn&lt;/string&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ApplicationName&quot;</span>&gt;Alicorn&lt;/string&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersion&quot;</span>&gt;3.8.0 Revision: 2831 Platform: x64 Build: 01:29 09 Сентябрь 2017&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionYear&quot;</span>&gt;3.8.0.2017&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionMajor&quot;</span>&gt;3&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionMinor&quot;</span>&gt;8&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionService&quot;</span>&gt;0&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductRevision&quot;</span>&gt;2831&lt;/<span class="keywordtype">string</span>&gt;</div><div class="line">&lt;/resources&gt;</div></div><!-- fragment --> Строки версий решения можно использовать следующим образом - в файле AndroidManifest.xml изменить: <div class="fragment"><div class="line">&lt;manifest ...</div><div class="line">  android:versionName=<span class="stringliteral">&quot;@string/ProductVersionYear&quot;</span></div><div class="line">  ...</div></div><!-- fragment --></li>
-</ul>
-<h2>Использование утилиты </h2>
+<p>Тестовый проект всех классов Alicorn для запуска на Android-устройстве.</p>
+<h1>Подробное описание проекта </h1>
 <ul>
-<li>Подключить к решению проект Version из папки Externals\Tools\Version.</li>
-<li>Одному из проектов решения нужно установить зависимость от проекта Version и в качестве события после построения добавить запуск Version.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+<li>В файле AndroidManifest.xml заменено '' на имя модуля, т.к. у макроса обрезается окончание '.Android'.</li>
 </ul>
-<h3>Команды</h3>
-<dl class="section note"><dt>Заметки</dt><dd>Если задано несколько команд, они будут выполнятьсяв указанном порядке.</dd></dl>
-<ul>
-<li><b>&ndash;help</b> - выводит в консоль список доступных команд (исключает все остальные команды).</li>
-<li><b>&ndash;file=path</b> - путь к файлу Version.hpp с версией решения (обязательный параметр для всех последующих команд).</li>
-<li><b>&ndash;configuration</b> - собираемая конфигурация (x64, Win32 и т.п.).</li>
-<li><b>&ndash;update</b> - в файле версии решения следует обновить номер ревизии файлов решения, время/дату, а также установить переменную окружения VERSION_SOLUTION, содержащую версию решения без ревизии решения (если файл, указанный в <b>&ndash;file</b> не существует, от будет создан со значениями по умолчанию).</li>
-<li><b>&ndash;increment=value</b> - в файле версии решения следует увеличить на 1 указанный номер версии решения (<b>service</b> - увеличивает 0.0.x).</li>
-<li><b>&ndash;set-environment-variables</b> - в консоль выводятся команды установки переменных окружения, <a class="el" href="a37940.html#ToolsVersionEnvironmentVariablesAnchor">устанавливающие</a> значения версии решения:<ul>
-<li><b>VERSION_SOLUTION</b> - версия решения вида '1.2.3'.</li>
-</ul>
-</li>
-<li><b>&ndash;build-header-version=path</b> - path задает путь к файлу, который должен быть перезаписан с учетом текущей версии решения.</li>
-<li><b>&ndash;update-android-manifest=path</b> ** - path задает путь к файлу AndroidManifest.xml, в котором следует установить текущий номер ревизии файлов решения.</li>
-<li><b>&ndash;build-android-version=path</b> - path задает путь к файлу версии Android package (version.auto.xml), который будет перезаписан с учетом версии решения.</li>
-</ul>
-<p><a class="anchor" id="ToolsVersionEnvironmentVariablesAnchor"></a> </p><h3>Использование переменных окружения</h3>
-<p>Т.к. при установке переменных окружения внутри процесса они будут доступны только самому процессу, утилита выводит в консоль набор команд, которые можно использовать в командном файле следующим образом:</p>
-<div class="fragment"><div class="line"><span class="keywordflow">for</span> /f <span class="stringliteral">&quot;usebackq delims=;&quot;</span> %%a in (`version.exe --<span class="keyword">set</span>-environment-variables`) <span class="keywordflow">do</span> (</div><div class="line">%%a</div><div class="line">)</div><div class="line">  </div><div class="line">echo VERSION_SOLUTION: %VERSION_SOLUTION%</div></div><!-- fragment --><h2>Устаревший способ использования </h2>
-<dl class="deprecated"><dt><b><a class="el" href="a35067.html#_deprecated000008">Уст.:</a></b></dt><dd>Поддержка данного способа работы будет удалена в следующей стабильной версии.</dd></dl>
-<ul>
-<li>Один из проектов, от которого зависит Packaging, должен в качестве события после построения запускать утилиту, передавая ей в качестве параметра командной строки путь к папке, в которой расположен файл AndroidManifest.xml проекта.</li>
-<li>В файл AndroidManifest.xml утилита будет вписывать текущую ревизию решения.</li>
-<li>Во вложенной папке res/values утилита будет формировать файл version.auto.xml, содержащий параметры версии решения (его необходимо включить в проект Packaging, в папку res/values). </li>
-</ul>
+<h2>Вспомогательные проекты </h2>
+<h3>Packaging</h3>
+<p>Проект упаковки результата построения в единый .apk файл.</p>
+<h3>PackBuilder</h3>
+<p>Проект для построения pack'a, который используется для тестирования работы с виртуальной файловой системой.</p>
+<h3>Protect.Windows и Protect.Android</h3>
+<p>Проекты dll, предоставляющие пароль pack'a, создаваемого проектом PackBuilder.</p>
+<h3>SourceVfsData</h3>
+<p>Проект, содержащий исходные файлы для упаковки в .pack и упаковывающий их в файл assets/vfs/simple.pack проекта Packaging.</p>
+<h3>System.Shared</h3>
+<p>Проект dll для тестирования классов раздела <b>System</b>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37858.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37916.html">Tools</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a37856.html">Структура решения</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

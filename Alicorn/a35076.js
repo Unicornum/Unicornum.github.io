@@ -1,9 +1,16 @@
 var a35076 =
 [
-    [ "Math", "a35075.html", "a35075" ],
-    [ "__TO_STR", "a35076.html#gac46b79d4c0ba029db9e1d774414e6024", null ],
-    [ "ALICORN_UNUSED", "a35076.html#ga225aaed6f044bc6f6cdb7deb0906ef97", null ],
-    [ "PROPERTY_GET", "a35076.html#ga7010edbf4d3ce07a7ed9155132819750", null ],
-    [ "PROPERTY_SET", "a35076.html#ga695ae1effb01f6fba137af0ef6d34c10", null ],
-    [ "TODO", "a35076.html#gaba14ee3a68c07fe13e2a69c94ddc1743", null ]
+    [ "ConfigValueImpl", "a35975.html", null ],
+    [ "ConfigValue", "a35983.html", [
+      [ "DoComplete", "a35983.html#a1bc3db12e58ae1a9990aabe36e87f524", null ]
+    ] ],
+    [ "StringConfigValue", "a35987.html", null ],
+    [ "IntConfigValue", "a35991.html", null ],
+    [ "ProgramName", "a35995.html", null ],
+    [ "ProgramVersion", "a35999.html", null ],
+    [ "PathToLogDirectory", "a36003.html", null ],
+    [ "MaxLogFiles", "a36007.html", null ],
+    [ "MaxLogSize", "a36011.html", null ],
+    [ "Filter", "a36015.html", null ],
+    [ "AllowReplace", "a36019.html", null ]
 ];

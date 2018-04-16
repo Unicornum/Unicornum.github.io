@@ -24,19 +24,19 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Alicorn", "index.html", [
-    [ "Manual", "a37856.html", null ],
-    [ "Скачать", "a37853.html", null ],
-    [ "История изменений", "a37855.html", "a37855" ],
-    [ "Структура решения", "a37858.html", "a37858" ],
+    [ "Manual", "a37854.html", null ],
+    [ "Скачать", "a37851.html", null ],
+    [ "История изменений", "a37853.html", "a37853" ],
+    [ "Структура решения", "a37856.html", "a37856" ],
     [ "Группы", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"a35068.html",
-"a36033.html#ada6e596ecd75f9718cd7a718be9dc9dc",
-"a36893.html#a4984594882431993666741c14ba19eb7"
+"a35058.html",
+"a36027.html#ad43ec7c95e2ade9ff45ea2687fcfcd77",
+"a36863.html#aa70070a7de627d9810c699403dc07ce9"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

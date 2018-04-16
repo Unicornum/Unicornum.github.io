@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: MFC</title>
+<title>Alicorn: Report</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.8.9 Revision: 3205 Platform: x64 Build: 10:16 10 Апрель 2018</span>
+   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -88,26 +88,66 @@ $(document).ready(function(){initNavTree('a35078.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a>  </div>
   <div class="headertitle">
-<div class="title">MFC<div class="ingroups"><a class="el" href="a35068.html">Alicorn</a> &raquo; <a class="el" href="a35077.html">Extension</a></div></div>  </div>
+<div class="title">Report<div class="ingroups"><a class="el" href="a35058.html">Alicorn</a> &raquo; <a class="el" href="a35080.html">Modules</a> &raquo; <a class="el" href="a35079.html">Logger</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
-Граф связей класса MFC:</div>
+Граф связей класса Report:</div>
 <div class="dyncontent">
 <center><table><tr><td><img src="a35078.png" border="0" alt="" usemap="#a35078"/>
 <map name="a35078" id="a35078">
-<area shape="rect" id="node1" href="a35077.html" title="Extension" alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node1" href="a35079.html" title="Logger" alt="" coords="5,5,72,32"/>
 </map>
 </td></tr></table></center>
 </div>
-<p>Раздел классов расширений библиотеки MFC. </p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36079.html">alicorn::modules::logger::report::Empty</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Класс-заглушка, используемая в качестве формирователя отчета по умолчанию.  <a href="a36079.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36083.html">alicorn::modules::logger::report::File</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Базовый класс формирователей отчета на основе файла.  <a href="a36083.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36087.html">alicorn::modules::logger::report::Html</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Класс вывода сообщений журнала в html файл.  <a href="a36087.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36091.html">alicorn::modules::logger::report::IReport</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Интерфейсный класс конкретных формирователей отчетов.  <a href="a36091.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36095.html">alicorn::modules::logger::report::Report</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Вспомогательный класс для обеспечения интерфейса, необходимого для установки формирователя отчета через макрос <a class="el" href="a35079.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER()</a>.  <a href="a36095.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36099.html">alicorn::modules::logger::report::Text</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Класс вывода сообщений журнала в текстовый файл.  <a href="a36099.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36103.html">alicorn::modules::logger::report::windows::Console</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Класс вывода сообщений журнала в консоль.  <a href="a36103.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36107.html">alicorn::modules::logger::report::windows::VisualStudioOutput</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в <a class="el" href="a37881.html">Logger</a> <br />
+ Класс вывода сообщений журнала в окно вывода Visual Studio.  <a href="a36107.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<p>Раздел классов формирователей отчетов логгера. <br />
+</p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Вт 10 Апр 2018 10:16:58. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:11. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
