@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>UnicornumVerum: Ввод русских букв с клавиатуры</title>
+<title>UnicornumVerum: Список задач</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -61,40 +61,24 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="a00257.html">Документация</a></li><li class="navelem"><a class="el" href="a00251.html">Разработка для Android на С++</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Ввод русских букв с клавиатуры </div>  </div>
+<div class="title">Список задач </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Проблема </h2>
-<p>Как оказалось, при нажатии кнопок клавиатуры в русской раскладке нативное приложение получает сообщения <b>AKEY_EVENT_ACTION_MULTIPLE</b> (вместо <b>AKEY_EVENT_ACTION_UP</b> и <b>AKEY_EVENT_ACTION_DOWN</b>). При этом функции AKeyEvent_getKeyCode(), AKeyEvent_getScanCode(), AKeyEvent_getFlags(), AKeyEvent_getMetaState() и AKeyEvent_getRepeatCount() возвращают 0.</p>
-<p>Кроме того, для ASCII символов коды, возвращаемые функцией AKeyEvent_getKeyCode() не являются Unicode символами соответствующих символов и требуют дополнительное преобразование с вызовом функций java.</p>
-<h2>Решение </h2>
-<p>Для того, чтобы в нативном приложении можно было сразу получать Unicode коды нажатых кнопок клавиатуры (включая не ASCII символы), необходимо сделать следующее:</p><ul>
-<li>Проект, создающий результатирующий APK файл программы следует создавать как "Простое приложение Android".</li>
-</ul>
-<div class="image">
-<img src="Vs2015.Simple.png" alt="Vs2015.Simple.png"/>
-</div>
-<ul>
-<li>В java коде этого проекта унаследовать класс от NativeActivity и переопределить в нем функцию dispatchKeyEvent(): <div class="fragment"><div class="line"><span class="keyword">package </span>com.Example;</div><div class="line">    </div><div class="line"><span class="keyword">import</span> android.app.NativeActivity;</div><div class="line"><span class="keyword">import</span> android.view.KeyEvent;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">boolean</span> dispatchKeyEvent(KeyEvent event)</div><div class="line">  {</div><div class="line">    <span class="keywordtype">int</span> keyaction = <span class="keyword">event</span>.getAction();</div><div class="line">    <span class="keyword">final</span> <span class="keywordtype">int</span> ACTION_KEY_PRESSED = 32;</div><div class="line">    </div><div class="line">    <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_UP)</div><div class="line">    {</div><div class="line">      <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getUnicodeChar();</div><div class="line">      super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">    }</div><div class="line">    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(keyaction == KeyEvent.ACTION_MULTIPLE)</div><div class="line">    {</div><div class="line">      <span class="keywordflow">if</span> (event.getCharacters().length() == 1)</div><div class="line">      {</div><div class="line">        <span class="keywordtype">int</span> keyCode = <span class="keyword">event</span>.getCharacters().charAt(0);</div><div class="line">        <span class="keywordflow">return</span> super.dispatchKeyEvent(<span class="keyword">new</span> KeyEvent(ACTION_KEY_PRESSED, keyCode));</div><div class="line">      }</div><div class="line">    }</div><div class="line">    </div><div class="line">    <span class="keywordflow">return</span> super.dispatchKeyEvent(event);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --></li>
-<li>В файл <b>AndroidManifest.xml</b> (в раздел <b>activity</b>) проекта добавить имя нативной библиотеки, которая будет загружаться при старте программы (без префикса lib и расширения .so), например для libRocket.so следует добавить: <div class="fragment"><div class="line">&lt;activity ...&gt;</div><div class="line">  &lt;meta-data android:name=<span class="stringliteral">&quot;android.app.lib_name&quot;</span></div><div class="line">             android:value=<span class="stringliteral">&quot;Rocket&quot;</span>/&gt;</div><div class="line">  ...</div><div class="line">&lt;/activity&gt;</div></div><!-- fragment --></li>
-<li>Добавить в ссылки проекту APK проект главной нативной библиотеки (.so).</li>
-</ul>
-<p>После приведенных манипуляций при нажатии кнопок клавиатуры нативное приложение будет получать сообщение, у которого:</p><ul>
-<li>Функция AInputEvent_getType(event) возвращает AINPUT_EVENT_TYPE_KEY.</li>
-<li>Функция AKeyEvent_getAction(event) возвращает ACTION_KEY_PRESSED (это код, заданный в java коде dispatchKeyEvent()).</li>
-<li>Функция AKeyEvent_getKeyCode(event) возвращает Unicode код символа нажатой кнопки. </li>
-</ul>
+<div class="textblock"><dl class="reflist">
+<dt><a class="anchor" id="_todo000001"></a>Страница <a class="el" href="a00266.html">Externals</a>  </dt>
+<dd><p class="startdd">Добавить ссылку на страницу документации Properties.</p>
+<p>Добавить ссылку на страницу документации Utilities.</p>
+<p>Добавить ссылку на страницу документации Externals.wxWidgets.</p>
+<p class="enddd">Добавить ссылку на страницу документации Externals.Rocket.</p>
+</dd>
+</dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Пн 9 Апр 2018 11:56:06. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Пн 30 Апр 2018 12:39:56. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
