@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Externals: Используемые библиотеки/утилиты</title>
+<title>Externals: Титульная страница</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Externals
-   &#160;<span id="projectnumber">Версия: 1.0.0 Revision: 120 Platform: x64 Build: 10:55 22 Январь 2018</span>
+   &#160;<span id="projectnumber">Версия: 0.1.1 Revision: 363 Platform: x64 Build: 13:24 09 Май 2018</span>
    </div>
-   <div id="projectbrief">Страница используемых сторонних библиотек/утилит</div>
+   <div id="projectbrief">Решение для сборки сторонних библиотек</div>
   </td>
  </tr>
  </tbody>
@@ -87,63 +87,36 @@ $(document).ready(function(){initNavTree('index.html','');});
 </iframe>
 </div>
 
-<div class="header">
-  <div class="headertitle">
-<div class="title">Используемые библиотеки/утилиты </div>  </div>
-</div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Используемые внешние библиотеки </h1>
-<h2>Библиотеки общего назначения </h2>
-<p>Используются внутри собственных библиотек и экпортируются во все внешние проекты.</p>
+<div class="textblock"><h1>Описание решения </h1>
+<h2>Externals </h2>
+<h3>Назначение</h3>
+<p>Решение предназначено для сборки сторонних библиотек, используемых в других проектах.</p>
+<h3>Подробное описание</h3>
 <ul>
-<li><a href="http://www.boost.org/" title="Boost main page">Boost</a></li>
-<li><a href="http://pocoproject.org/" title="Poco main page">Poco</a></li>
-<li><a href="http://utfcpp.sourceforge.net/" title="Utf8cpp main page">Utf8cpp</a></li>
-<li><a href="https://github.com/HowardHinnant/date" title="Date github page">Date</a></li>
-<li><a href="https://www.crystax.net/ru" title="CrystaX main page">CrystaX</a></li>
+<li>При полной сборке решения строятся библиотеки Debug/Release конфигураций для <b>Windows</b> (x86/x64) и <b>Android</b> (ARM) платформ.</li>
+<li>Построение библиотек (а также копирование заголовочных файлов и .props файла для подключения библиотеки к проекту) производится в папку с именем библиотеки внутри папки Externals, которая является ссылкой на репозиторий предсобранных библиотек.</li>
 </ul>
-<h2>GUI </h2>
-<ul>
-<li><a href="https://www.wxwidgets.org/" title="wxWidgets main page">wxWidgets</a></li>
-<li><a href="https://github.com/libRocket" title="libRocket github page">libRocket</a></li>
+<dl class="section note"><dt>Заметки</dt><dd>Общая идея построения библиотек заключается в том, что:<ul>
+<li>Исходный код из ее репозитория (метки версии) подтягивается в папку Externals как свойство svn:externals папки проекта, а в сам проект файлы библиотеки подключаются путем указания шаблона вида "..\Externals\src\*.cpp" (особые случаи конкретных библиотек см. на странице описания конкретной библиотеки).</li>
+<li>Заголовочные файлы из папки include библиотеки копируются в папку Externals/LibName/include/LibName.</li>
+<li>В папку Externals/LibName копируется страница свойств, подключение которой к проекту предоставит доступ к коду библиотеки.</li>
 </ul>
-<h2>Тестирование </h2>
-<ul>
-<li><a href="https://github.com/google/googletest" title="Google Test on GitHub">Google Test</a></li>
-<li><a href="https://github.com/google/googlemock" title="Google Test on GitHub">Google Mock</a></li>
-</ul>
-<h2>Внутренние библиотеки </h2>
-<p>Используются для обеспечения выполнения внутренней логики работы собственных библиотек, но в остальные проекты не экспортируются.</p>
-<ul>
-<li><a href="https://github.com/google/snappy" title="Snappy on GitHub">Snappy</a></li>
-<li><a href="https://www.cryptopp.com/" title="Cryptopp main page">Crypto++</a></li>
-<li><a href="http://rapidxml.sourceforge.net/" title="RapidXml main page">RapidXml</a></li>
-<li><a href="https://www.freetype.org/" title="Freetype main page">Freetype</a></li>
-<li><a href="http://freeimage.sourceforge.net/" title="FreeImage page">FreeImage</a></li>
-</ul>
-<h1>Используемые программы </h1>
-<p>Сторонние вспомогательные утилиты.</p>
-<ul>
-<li><a href="http://www.7-zip.org/" title="7Zip main page">7Zip</a></li>
-<li><a href="https://curl.haxx.se/" title="CUrl main page">CUrl</a></li>
-<li><a href="http://astyle.sourceforge.net/" title="AStyle main page">AStyle</a></li>
-<li><a href="http://www.stack.nl/~dimitri/doxygen/" title="Doxygen main page">Doxygen</a></li>
-<li><a href="http://cppcheck.sourceforge.net/" title="CppCheck main page">CppCheck</a></li>
-<li><a href="http://www.graphviz.org/" title="Graphviz main page">Graphviz</a></li>
-<li><a href="https://tortoisesvn.net/" title="TortoiseSVN main page">TortoiseSVN</a></li>
-<li><a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor page">SourceMonitor</a></li>
-<li><a href="https://opencppcoverage.codeplex.com/" title="OpenCppCoverage main page">OpenCppCoverage</a></li>
-<li><a href="https://vld.codeplex.com/" title="Visual Leak Detector main page">Visual Leak Detector</a></li>
-</ul>
-<h1>Построение библиотек </h1>
-<p><a class="el" href="a31108.html">Построение для Windows</a></p>
-<p><a class="el" href="a31103.html">Построение для Android</a> </p>
+</dd></dl>
+<h2></h2>
+<p><a class="el" href="a53019.html">Сборка и использование</a></p>
+<p><a class="el" href="a53017.html">История изменений</a></p>
+<p><a class="el" href="a53022.html">Библиотеки</a></p>
+<h2>Лицензия </h2>
+<p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost Software License</a></p>
+<h2>Автор(ы) </h2>
+<p> © UnicornumVerum 2018 (unicornum.verum@gmail.ru)  </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Externals. Последние изменения: Пн 22 Янв 2018 10:56:06. Создано системой
+    <li class="footer">Документация по Externals. Последние изменения: Ср 9 Май 2018 13:24:46. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
