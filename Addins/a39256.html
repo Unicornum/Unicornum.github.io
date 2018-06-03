@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Класс wrappers::vs::CommandBarControl</title>
+<title>Addins: Класс wrappers::vs::IPropertySheets</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.6.0 Revision: 5024 Platform: Win32 Build: 20:51 02 Декабрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.6.1 Revision: 5105 Platform: Win32 Build: 11:22 03 Июнь 2018</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a39256.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,85 +89,74 @@ $(document).ready(function(){initNavTree('a39256.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a39253.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс wrappers::vs::CommandBarControl<div class="ingroups"><a class="el" href="a36916.html">Wrappers</a> &raquo; <a class="el" href="a36915.html">VisualStudio</a> &raquo; <a class="el" href="a36905.html">Command</a></div></div>  </div>
+<div class="title">Класс wrappers::vs::IPropertySheets<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a36768.html">Wrappers</a> &raquo; <a class="el" href="a36767.html">VisualStudio</a> &raquo; <a class="el" href="a36759.html">Configuration</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a40929.html">Command</a> <br />
- Класс-обертка для MSVSCB::CommandBarControl.  
+<p>Класс входит в <a class="el" href="a40794.html">Configuration</a> <br />
+ Интерфейсный класс для классов работы со списком страниц свойств.  
  <a href="a39256.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02177_source.html">CommandBarControl.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02285_source.html">IPropertySheets.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:wrappers::vs::CommandBarControl:</div>
+Граф наследования:wrappers::vs::IPropertySheets:</div>
 <div class="dyncontent">
-<div class="center"><img src="a39255.png" border="0" usemap="#wrappers_1_1vs_1_1_command_bar_control_inherit__map" alt="Inheritance graph"/></div>
-<map name="wrappers_1_1vs_1_1_command_bar_control_inherit__map" id="wrappers_1_1vs_1_1_command_bar_control_inherit__map">
-<area shape="rect" id="node2" href="a39356.html" title="{wrappers::vs::Base\l\&lt; MSVSCB::CommandBarControl \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="5,6,253,245"/>
+<div class="center"><img src="a39255.png" border="0" usemap="#wrappers_1_1vs_1_1_i_property_sheets_inherit__map" alt="Inheritance graph"/></div>
+<map name="wrappers_1_1vs_1_1_i_property_sheets_inherit__map" id="wrappers_1_1vs_1_1_i_property_sheets_inherit__map">
+<area shape="rect" id="node2" href="a39288.html" title="Класс входит в Configuration &#160;&#160;Класс реализации работы со списком страниц свойств для VS2012..." alt="" coords="5,189,260,340"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса wrappers::vs::CommandBarControl:</div>
+Граф связей класса wrappers::vs::IPropertySheets:</div>
 <div class="dyncontent">
-<div class="center"><img src="a39254.png" border="0" usemap="#wrappers_1_1vs_1_1_command_bar_control_coll__map" alt="Collaboration graph"/></div>
-<map name="wrappers_1_1vs_1_1_command_bar_control_coll__map" id="wrappers_1_1vs_1_1_command_bar_control_coll__map">
-<area shape="rect" id="node2" href="a39356.html" title="{wrappers::vs::Base\l\&lt; MSVSCB::CommandBarControl \&gt;\n|# m_pPointer\l|# GetName()\l# Assign()\l# ExtractFrom()\l# Make()\l# Make()\l# Base()\l# Make()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l&#45; FRIEND_TEST()\l}" alt="" coords="5,6,253,245"/>
+<div class="center"><img src="a39254.png" border="0" usemap="#wrappers_1_1vs_1_1_i_property_sheets_coll__map" alt="Collaboration graph"/></div>
+<map name="wrappers_1_1vs_1_1_i_property_sheets_coll__map" id="wrappers_1_1vs_1_1_i_property_sheets_coll__map">
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pro_methods_a39356"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a39356')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a39356.html">wrappers::vs::Base&lt; MSVSCB::CommandBarControl &gt;</a></td></tr>
-<tr class="memitem:a5bde730a945138a0bed7de3c2aa7fed0 inherit pro_methods_a39356"><td class="memItemLeft" align="right" valign="top"><a id="a5bde730a945138a0bed7de3c2aa7fed0"></a>
-CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39356.html#a5bde730a945138a0bed7de3c2aa7fed0">GetName</a> (void) const</td></tr>
-<tr class="memdesc:a5bde730a945138a0bed7de3c2aa7fed0 inherit pro_methods_a39356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Имя объекта. <br /></td></tr>
-<tr class="separator:a5bde730a945138a0bed7de3c2aa7fed0 inherit pro_methods_a39356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa24004d311ec03f3115d5937b39fadd0 inherit pro_methods_a39356"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39356.html#aa24004d311ec03f3115d5937b39fadd0">Assign</a> (const ComPtr_t &amp;_pPointer)</td></tr>
-<tr class="memdesc:aa24004d311ec03f3115d5937b39fadd0 inherit pro_methods_a39356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначить объекту класса-обертки другой родительский объект.  <a href="a39356.html#aa24004d311ec03f3115d5937b39fadd0">Подробнее...</a><br /></td></tr>
-<tr class="separator:aa24004d311ec03f3115d5937b39fadd0 inherit pro_methods_a39356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab54b209b934b622fd1523fdc61a846 inherit pro_methods_a39356"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39356.html#a7ab54b209b934b622fd1523fdc61a846">ExtractFrom</a> (IDispatch *_pDispatch)</td></tr>
-<tr class="memdesc:a7ab54b209b934b622fd1523fdc61a846 inherit pro_methods_a39356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Назначить классу-обертке родительский объект, принадлежащий указанному объекту.  <a href="a39356.html#a7ab54b209b934b622fd1523fdc61a846">Подробнее...</a><br /></td></tr>
-<tr class="separator:a7ab54b209b934b622fd1523fdc61a846 inherit pro_methods_a39356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f5466aae4e4c804e5de3e3cbbd75456 inherit pro_methods_a39356"><td class="memItemLeft" align="right" valign="top"><a id="a9f5466aae4e4c804e5de3e3cbbd75456"></a>
-Service::MakeProxy&lt; TReturn, MSVSCB::CommandBarControl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39356.html#a9f5466aae4e4c804e5de3e3cbbd75456">Make</a> (void) const</td></tr>
-<tr class="memdesc:a9f5466aae4e4c804e5de3e3cbbd75456 inherit pro_methods_a39356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t. <br /></td></tr>
-<tr class="separator:a9f5466aae4e4c804e5de3e3cbbd75456 inherit pro_methods_a39356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3179028be47049baadcbc3b81c2092e4 inherit pro_methods_a39356"><td class="memItemLeft" align="right" valign="top"><a id="a3179028be47049baadcbc3b81c2092e4"></a>
-Service::MakeProxy&lt; void *, MSVSCB::CommandBarControl &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39356.html#a3179028be47049baadcbc3b81c2092e4">Make</a> (void) const</td></tr>
-<tr class="memdesc:a3179028be47049baadcbc3b81c2092e4 inherit pro_methods_a39356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций Type_t, не возвращающих значения. <br /></td></tr>
-<tr class="separator:a3179028be47049baadcbc3b81c2092e4 inherit pro_methods_a39356"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_static_methods_a39356"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_a39356')"><img src="closed.png" alt="-"/>&#160;Защищенные статические члены унаследованные от <a class="el" href="a39356.html">wrappers::vs::Base&lt; MSVSCB::CommandBarControl &gt;</a></td></tr>
-<tr class="memitem:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a39356"><td class="memItemLeft" align="right" valign="top"><a id="a6c540555a66a709a4f21f9bfc3e8dbf5"></a>
-static Service::MakeProxy&lt; TReturn, TSource &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39356.html#a6c540555a66a709a4f21f9bfc3e8dbf5">Make</a> (TSource *_pSource)</td></tr>
-<tr class="memdesc:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a39356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для вызова функций прототипов. <br /></td></tr>
-<tr class="separator:a6c540555a66a709a4f21f9bfc3e8dbf5 inherit pro_static_methods_a39356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a3af81f0517b3ab364e4c4bfb40d208d1"><td class="memItemLeft" align="right" valign="top"><a id="a3af81f0517b3ab364e4c4bfb40d208d1"></a>
+virtual long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39256.html#a3af81f0517b3ab364e4c4bfb40d208d1">GetCount</a> (void) const =0</td></tr>
+<tr class="memdesc:a3af81f0517b3ab364e4c4bfb40d208d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Количество страниц свойств в коллекции. <br /></td></tr>
+<tr class="separator:a3af81f0517b3ab364e4c4bfb40d208d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3600b9ef64a19594faf2a5a1e52ca439"><td class="memItemLeft" align="right" valign="top"><a id="a3600b9ef64a19594faf2a5a1e52ca439"></a>
+virtual PropertySheetPtr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39256.html#a3600b9ef64a19594faf2a5a1e52ca439">GetItem</a> (const _variant_t &amp;) const =0</td></tr>
+<tr class="memdesc:a3600b9ef64a19594faf2a5a1e52ca439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение объекта страницы свойств по ее имени/индексу. <br /></td></tr>
+<tr class="separator:a3600b9ef64a19594faf2a5a1e52ca439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af08a2b241ca5445b4ea24ae91393d66b"><td class="memItemLeft" align="right" valign="top"><a id="af08a2b241ca5445b4ea24ae91393d66b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39256.html#af08a2b241ca5445b4ea24ae91393d66b">LoadFromFile</a> (const CString &amp;)=0</td></tr>
+<tr class="memdesc:af08a2b241ca5445b4ea24ae91393d66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить страницу свойств по указанному пути. <br /></td></tr>
+<tr class="separator:af08a2b241ca5445b4ea24ae91393d66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2aa044e6bea3eabf721822e5a28663"><td class="memItemLeft" align="right" valign="top"><a id="aac2aa044e6bea3eabf721822e5a28663"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a39256.html#aac2aa044e6bea3eabf721822e5a28663">Remove</a> (const _variant_t &amp;)=0</td></tr>
+<tr class="memdesc:aac2aa044e6bea3eabf721822e5a28663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить страницу свойств по ее имени/индексу. <br /></td></tr>
+<tr class="separator:aac2aa044e6bea3eabf721822e5a28663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a40929.html">Command</a> <br />
- Класс-обертка для MSVSCB::CommandBarControl. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a40794.html">Configuration</a> <br />
+ Интерфейсный класс для классов работы со списком страниц свойств. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>6 дек 2014 <br />
- 29 Апрель 2015 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Июль 2015 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2015 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Wrappers/VisualStudio/Command/Command/<a class="el" href="a02177_source.html">CommandBarControl.hpp</a></li>
-<li>Solution/Solution/Wrappers/VisualStudio/Command/Command/CommandBarControl.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/<a class="el" href="a02285_source.html">IPropertySheets.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a39256.html">CommandBarControl</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Дек 2017 20:52:05. Создано системой
+    <li class="navelem"><b>wrappers</b></li><li class="navelem"><b>vs</b></li><li class="navelem"><a class="el" href="a39256.html">IPropertySheets</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вс 3 Июн 2018 11:23:45. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/SolutionTasksPage.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/Action.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.6.0 Revision: 5024 Platform: Win32 Build: 20:51 02 Декабрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.6.1 Revision: 5105 Platform: Win32 Build: 11:22 03 Июнь 2018</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a00488_source.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,24 +89,18 @@ $(document).ready(function(){initNavTree('a00488_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">SolutionTasksPage.hpp</div>  </div>
+<div class="title">Action.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;RawDataTask.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\document.forward.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a36929.html">support</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a37372.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="a37372.html">SolutionTasksPage</a> final</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">using</span> String_t = ::alicorn::extension::std::String;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">using</span> Text_t = ::alicorn::source::document::Text_t;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> TextPtr_t = ::std::unique_ptr&lt;Text_t&gt;;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> Locale_t = ::alicorn::extension::std::Locale;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a37372.html#ac0521fb2b2f71b6653bc8cc325baac81">AddRecord</a>(<span class="keyword">const</span> <a class="code" href="a37356.html">RawDataTask</a> &amp;, <span class="keywordtype">int</span> = 0);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> TextPtr_t <a class="code" href="a37372.html#a20e991cc6fc3e047c353e241874449fa">CreateBlank</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  String_t GetProjectTasksPartTitle(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> String_t GetCommonTitleUnderLine(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> String_t GetProjectTitleUnderLine(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordtype">void</span> ClearProjectTasksPart(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">void</span> AddReferenceToTodoPage(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordtype">void</span> AddReferenceToBugPage(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> AddProjectTasksPart(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  String_t GetTextRecord(<span class="keyword">const</span> <a class="code" href="a37356.html">RawDataTask</a> &amp;, <span class="keywordtype">int</span>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">const</span> Locale_t::Scope::SetDefault&lt;Locale_t::Russian::CP1251&gt; m_DefaultLocale;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">const</span> Path_t    m_PathToSolutionTasksPage;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">const</span> Path_t    m_PathToTaskIconsDirectory;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">const</span> String_t  m_ProjectName;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  TextPtr_t       m_pText;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  String_t        m_PreparedTasks;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordtype">int</span>             m_ColorIndex = 0;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="a37372.html#abcc4ecfbfbc9ae4c1b456fdb31377809">SolutionTasksPage</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> String_t &amp;);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ~<a class="code" href="a37372.html">SolutionTasksPage</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;} <span class="comment">// namespace support</span></div><div class="ttc" id="a36929_html"><div class="ttname"><a href="a36929.html">support</a></div><div class="ttdef"><b>Definition:</b> IModel.hpp:4</div></div>
-<div class="ttc" id="a37372_html"><div class="ttname"><a href="a37372.html">support::SolutionTasksPage</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс формирования общего списка текущих задач всех проектов решения...</div><div class="ttdef"><b>Definition:</b> SolutionTasksPage.hpp:35</div></div>
-<div class="ttc" id="a37356_html"><div class="ttname"><a href="a37356.html">support::RawDataTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, содержащий информацию об одной задаче. </div><div class="ttdef"><b>Definition:</b> RawDataTask.hpp:29</div></div>
-<div class="ttc" id="a37372_html_a20e991cc6fc3e047c353e241874449fa"><div class="ttname"><a href="a37372.html#a20e991cc6fc3e047c353e241874449fa">support::SolutionTasksPage::CreateBlank</a></div><div class="ttdeci">static TextPtr_t CreateBlank(void)</div><div class="ttdoc">Функция создания пустой страницы списка задач. </div><div class="ttdef"><b>Definition:</b> SolutionTasksPage.cpp:72</div></div>
-<div class="ttc" id="a37372_html_ac0521fb2b2f71b6653bc8cc325baac81"><div class="ttname"><a href="a37372.html#ac0521fb2b2f71b6653bc8cc325baac81">support::SolutionTasksPage::AddRecord</a></div><div class="ttdeci">void AddRecord(const RawDataTask &amp;, int=0)</div><div class="ttdoc">Функция добавления записи одной задачи. </div><div class="ttdef"><b>Definition:</b> SolutionTasksPage.cpp:60</div></div>
-<div class="ttc" id="a37372_html_abcc4ecfbfbc9ae4c1b456fdb31377809"><div class="ttname"><a href="a37372.html#abcc4ecfbfbc9ae4c1b456fdb31377809">support::SolutionTasksPage::SolutionTasksPage</a></div><div class="ttdeci">SolutionTasksPage(const Path_t &amp;, const Path_t &amp;, const String_t &amp;)</div><div class="ttdoc">Конструктор класса. </div><div class="ttdef"><b>Definition:</b> SolutionTasksPage.cpp:23</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;Action\Version.hpp&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;Action\ExternalProgram.hpp&quot;</span></div></div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_f48436476a0e85ee68756bb5c9a064b0.html">Support</a></li><li class="navelem"><b>SolutionTasksPage.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Дек 2017 20:51:57. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_f48436476a0e85ee68756bb5c9a064b0.html">Support</a></li><li class="navelem"><b>Action.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вс 3 Июн 2018 11:23:29. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

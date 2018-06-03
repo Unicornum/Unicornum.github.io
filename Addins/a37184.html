@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Класс model::AllSolutionsInfo</title>
+<title>Addins: Класс model::IWriteTask</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.6.0 Revision: 5024 Platform: Win32 Build: 20:51 02 Декабрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.6.1 Revision: 5105 Platform: Win32 Build: 11:22 03 Июнь 2018</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a37184.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -86,73 +92,61 @@ $(document).ready(function(){initNavTree('a37184.html','');});
 <a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a37181.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс model::AllSolutionsInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a36861.html">Core</a> &raquo; <a class="el" href="a36877.html">Tools</a> &raquo; <a class="el" href="a36878.html">DevelopmentInfo</a> &raquo; <a class="el" href="a36863.html">Model</a></div></div>  </div>
+<div class="title">Класс model::IWriteTask<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a36714.html">Core</a> &raquo; <a class="el" href="a36730.html">Tools</a> &raquo; <a class="el" href="a36732.html">ProjectTasks</a> &raquo; <a class="el" href="a36721.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a40896.html">DevelopmentInfo</a> <br />
- Класс модели, содержащей информацию обо всех решениях.  
+<p>Класс входит в <a class="el" href="a40729.html">ProjectTasks</a> <br />
+ Интерфейсный класс для изменения данных задачи.  
  <a href="a37184.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00308_source.html">AllSolutionsInfo.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00479_source.html">IWriteTask.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:model::AllSolutionsInfo:</div>
+Граф наследования:model::IWriteTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a37183.png" border="0" usemap="#model_1_1_all_solutions_info_inherit__map" alt="Inheritance graph"/></div>
-<map name="model_1_1_all_solutions_info_inherit__map" id="model_1_1_all_solutions_info_inherit__map">
-<area shape="rect" id="node2" href="a37192.html" title="Класс входит в DevelopmentInfo &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,5,187,200"/>
+<div class="center"><img src="a37183.png" border="0" usemap="#model_1_1_i_write_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_i_write_task_inherit__map" id="model_1_1_i_write_task_inherit__map">
+<area shape="rect" id="node2" href="a37180.html" title="Класс входит в ProjectTasks &#160;&#160;&quot;Суммарный&quot; интерфейсный класс одной задачи. " alt="" coords="75,189,183,267"/>
+<area shape="rect" id="node3" href="a37164.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий полный список всех задач проекта. ..." alt="" coords="5,315,252,861"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса model::AllSolutionsInfo:</div>
+Граф связей класса model::IWriteTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a37182.png" border="0" usemap="#model_1_1_all_solutions_info_coll__map" alt="Collaboration graph"/></div>
-<map name="model_1_1_all_solutions_info_coll__map" id="model_1_1_all_solutions_info_coll__map">
-<area shape="rect" id="node2" href="a37192.html" title="Класс входит в DevelopmentInfo &#160;&#160;Интерфейсный класс модели. " alt="" coords="5,345,187,540"/>
-<area shape="rect" id="node4" href="a37760.html" title="Класс входит в RegexTester &#160;&#160;Класс данных, которые обрабатываются классом модели. ..." alt="" coords="32,35,160,141"/>
-<area shape="rect" id="node6" href="a38996.html" title="Класс входит в Utilities &#160;&#160;Класс доступа к статистике работы над всеми решениями, которые были измене..." alt="" coords="212,235,457,650"/>
-<area shape="rect" id="node8" href="a39012.html" title="Класс входит в Utilities &#160;&#160;Класс для работы с календарными датами. " alt="" coords="227,5,441,171"/>
+<div class="center"><img src="a37182.png" border="0" usemap="#model_1_1_i_write_task_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_i_write_task_coll__map" id="model_1_1_i_write_task_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a2846a6a62fc9b4f9dbd13657ec3fa13a"><td class="memItemLeft" align="right" valign="top"><a id="a2846a6a62fc9b4f9dbd13657ec3fa13a"></a>
-const String_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#a2846a6a62fc9b4f9dbd13657ec3fa13a">GetViewTitle</a> (void) const override</td></tr>
-<tr class="memdesc:a2846a6a62fc9b4f9dbd13657ec3fa13a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения заголовка окна, отображающего информацию объекта модели. <br /></td></tr>
-<tr class="separator:a2846a6a62fc9b4f9dbd13657ec3fa13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe4a5104c26c515b51b036c34c8ad715"><td class="memItemLeft" align="right" valign="top"><a id="abe4a5104c26c515b51b036c34c8ad715"></a>
-const <a class="el" href="a37196.html">Info_t</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#abe4a5104c26c515b51b036c34c8ad715">GetDevelopmentInfo</a> (void) const override</td></tr>
-<tr class="memdesc:abe4a5104c26c515b51b036c34c8ad715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения информации объекта текущей модели. <br /></td></tr>
-<tr class="separator:abe4a5104c26c515b51b036c34c8ad715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aded21bbe2bfba0bdef7080a3ad7d8d10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#aded21bbe2bfba0bdef7080a3ad7d8d10">AllSolutionsInfo</a> (const <a class="el" href="a39028.html">Data_t</a> &amp;)</td></tr>
-<tr class="memdesc:aded21bbe2bfba0bdef7080a3ad7d8d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#aded21bbe2bfba0bdef7080a3ad7d8d10">Подробнее...</a><br /></td></tr>
-<tr class="separator:aded21bbe2bfba0bdef7080a3ad7d8d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a37192"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a37192')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a37192.html">model::IModel</a></td></tr>
-<tr class="memitem:a8e7c6c501022ada0d35d651ea474cbcc inherit pub_methods_a37192"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37192.html#a8e7c6c501022ada0d35d651ea474cbcc">DoProcess</a> (void)=0</td></tr>
-<tr class="memdesc:a8e7c6c501022ada0d35d651ea474cbcc inherit pub_methods_a37192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция обработки данных модели.  <a href="a37192.html#a8e7c6c501022ada0d35d651ea474cbcc">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8e7c6c501022ada0d35d651ea474cbcc inherit pub_methods_a37192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eb51fafa31fc823f21f8f67347165f2 inherit pub_methods_a37192"><td class="memItemLeft" align="right" valign="top"><a id="a9eb51fafa31fc823f21f8f67347165f2"></a>
-<a class="el" href="a37760.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37192.html#a9eb51fafa31fc823f21f8f67347165f2">GetData</a> (void)</td></tr>
-<tr class="memdesc:a9eb51fafa31fc823f21f8f67347165f2 inherit pub_methods_a37192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения данных модели. <br /></td></tr>
-<tr class="separator:a9eb51fafa31fc823f21f8f67347165f2 inherit pub_methods_a37192"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c207b35c5e7aa4de448f5add9ae246b inherit pub_methods_a37192"><td class="memItemLeft" align="right" valign="top"><a id="a2c207b35c5e7aa4de448f5add9ae246b"></a>
-const <a class="el" href="a37760.html">Data</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37192.html#a2c207b35c5e7aa4de448f5add9ae246b">GetData</a> (void) const</td></tr>
-<tr class="memdesc:a2c207b35c5e7aa4de448f5add9ae246b inherit pub_methods_a37192"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения данных модели. <br /></td></tr>
-<tr class="separator:a2c207b35c5e7aa4de448f5add9ae246b inherit pub_methods_a37192"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a9fc49923472292827a665e1caba96"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#ac7a9fc49923472292827a665e1caba96">SetData</a> (size_t _Id, const <a class="el" href="a37212.html">RawDataTask_t</a> &amp;_Data)=0</td></tr>
+<tr class="memdesc:ac7a9fc49923472292827a665e1caba96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения данных текущей задачи.  <a href="#ac7a9fc49923472292827a665e1caba96">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac7a9fc49923472292827a665e1caba96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa08f809f970cdb73f473f0012aa5404d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#aa08f809f970cdb73f473f0012aa5404d">SetParent</a> (size_t _Id, size_t _ParentId)=0</td></tr>
+<tr class="memdesc:aa08f809f970cdb73f473f0012aa5404d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция переноса текущей задачи в другую родительскую задачу.  <a href="#aa08f809f970cdb73f473f0012aa5404d">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa08f809f970cdb73f473f0012aa5404d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14200ab3f9667789e460dc116d05f0c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#ae14200ab3f9667789e460dc116d05f0c">SetPosition</a> (size_t _Id, size_t _Position)=0</td></tr>
+<tr class="memdesc:ae14200ab3f9667789e460dc116d05f0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения позиции текущей задачи.  <a href="#ae14200ab3f9667789e460dc116d05f0c">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae14200ab3f9667789e460dc116d05f0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b9d569abe192b02d467ab20ed80da0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37184.html#ae7b9d569abe192b02d467ab20ed80da0">CreateChild</a> (size_t _Id)=0</td></tr>
+<tr class="memdesc:ae7b9d569abe192b02d467ab20ed80da0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления дочерней задачи для указанной.  <a href="#ae7b9d569abe192b02d467ab20ed80da0">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae7b9d569abe192b02d467ab20ed80da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a40896.html">DevelopmentInfo</a> <br />
- Класс модели, содержащей информацию обо всех решениях. </p>
+<div class="textblock"><p>Класс входит в <a class="el" href="a40729.html">ProjectTasks</a> <br />
+ Интерфейсный класс для изменения данных задачи. </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 1.1.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>02 Март 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
+ 24 Март 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="aded21bbe2bfba0bdef7080a3ad7d8d10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aded21bbe2bfba0bdef7080a3ad7d8d10">&#9670;&nbsp;</a></span>AllSolutionsInfo()</h2>
+</div><h2 class="groupheader">Методы</h2>
+<a id="ae7b9d569abe192b02d467ab20ed80da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7b9d569abe192b02d467ab20ed80da0">&#9670;&nbsp;</a></span>CreateChild()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -161,63 +155,233 @@ const <a class="el" href="a37760.html">Data</a> &amp;&#160;</td><td class="memIt
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">AllSolutionsInfo::AllSolutionsInfo </td>
+          <td class="memname">virtual void model::IWriteTask::CreateChild </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="a39028.html">Data_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Data</em></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Id</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Конструктор класса. </p>
+<p>Функция добавления дочерней задачи для указанной. </p>
 <ul>
-<li>Формирует суммарную информацию обо всех решениях из указанного файла.</li>
+<li>Новая задача должна быть добавлена в конец списка дочерних задач указанной задачи.</li>
 </ul>
 <dl class="params"><dt>Аргументы</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Исходные данные программы.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор задачи, в список дочерних которой будет добавлена задача.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Исключения</dt><dd>
   <table class="exception">
     <tr><td class="paramname">std::exception</td><td><ul>
-<li>Указанный файл имеет невалидную структуру. </li>
+<li>Задачи с указанным идентификатором не существует. </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a37184_aded21bbe2bfba0bdef7080a3ad7d8d10_cgraph.png" border="0" usemap="#a37184_aded21bbe2bfba0bdef7080a3ad7d8d10_cgraph" alt=""/></div>
-<map name="a37184_aded21bbe2bfba0bdef7080a3ad7d8d10_cgraph" id="a37184_aded21bbe2bfba0bdef7080a3ad7d8d10_cgraph">
-<area shape="rect" id="node3" href="a38996.html#a0af92e54267a21ad855c02cf53622b7c" title="Функция получения статистики для указанного решения и недели. " alt="" coords="227,5,424,46"/>
-</map>
-</div>
+
+<p>Замещается в <a class="el" href="a37164.html#a4ce7efcf971b5130c44ea4990565abc8">model::AllTasks</a>.</p>
 
 </div>
 </div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Model/<a class="el" href="a00308_source.html">AllSolutionsInfo.hpp</a></li>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Model/AllSolutionsInfo.cpp</li>
+<a id="ac7a9fc49923472292827a665e1caba96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a9fc49923472292827a665e1caba96">&#9670;&nbsp;</a></span>SetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void model::IWriteTask::SetData </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a37212.html">RawDataTask_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>_Data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция изменения данных текущей задачи. </p>
+<ul>
+<li>Данные, которые не могут быть изменены у данной конкретной задачи должны игнорироваться.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор изменяемой задачи. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Задачи с указанным идентификатором не существует. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="a37164.html#a0ccf5c650914eb55ab3547fb13a103a2">model::AllTasks</a>.</p>
+
+</div>
+</div>
+<a id="aa08f809f970cdb73f473f0012aa5404d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa08f809f970cdb73f473f0012aa5404d">&#9670;&nbsp;</a></span>SetParent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void model::IWriteTask::SetParent </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_ParentId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция переноса текущей задачи в другую родительскую задачу. </p>
+<ul>
+<li>При переносе задача должна быть добавлена в конец спсика указнной родительской задачи.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор переносимой задачи. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ParentId</td><td>Идентификатор родительской задачи, в которую должна быть перенесена текущая.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Задач с указанными идентификаторами не существует. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="a37164.html#a7473c602ca6065bf0dc10510b86c9a46">model::AllTasks</a>.</p>
+
+</div>
+</div>
+<a id="ae14200ab3f9667789e460dc116d05f0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14200ab3f9667789e460dc116d05f0c">&#9670;&nbsp;</a></span>SetPosition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void model::IWriteTask::SetPosition </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>_Position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция изменения позиции текущей задачи. </p>
+<ul>
+<li>Если позиция превышает количесво дочерних задач у родительской задачи текущей, переместить задачу в конец списка.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Id</td><td>Идентификатор переносимой задачи. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Position</td><td>Позиция в списке родительской задачи, в которую должна быть установлена текущая (отсчет - от нуля).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Задачи с указанным идентификатором не существует. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещается в <a class="el" href="a37164.html#a7a3ec9d909b90ec06f818cc64192e138">model::AllTasks</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/<a class="el" href="a00479_source.html">IWriteTask.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a37184.html">AllSolutionsInfo</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Дек 2017 20:52:04. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a37184.html">IWriteTask</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вс 3 Июн 2018 11:23:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

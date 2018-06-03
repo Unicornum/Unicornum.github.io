@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Addins: Исходные требования</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Addins
+   &#160;<span id="projectnumber">Версия: 2.6.1 Revision: 5105 Platform: Win32 Build: 11:22 03 Июнь 2018</span>
+   </div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a40686.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Исходные требования </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Общие требования:</p><ul>
+<li>Полезная информация о работе продукта, ошибки и предупреждения должны выводиться в окно "Вывод" IDE, с открытием этого окна при появлении в нем новой записи об ошибке/предупреждении.</li>
+</ul>
+<h1>Команды </h1>
+<h2>Раздел Macros </h2>
+<p>Раздел команд в общем меню для ввода типичных кусков кода и назначающая им "горячие" клавиши:</p><ul>
+<li> <input type="checkbox" checked disabled>  Добавление строки "TODO()" (ALT + M).</li>
+<li> <input type="checkbox" checked disabled>  Перевод строки в комментарии (ALT + 8).</li>
+<li> <input type="checkbox" checked disabled>  Добавление заготовки текста _T("") (ALT + T).</li>
+<li> <input type="checkbox" checked disabled>  Добавление заготовки текста L"" (ALT + W).</li>
+<li> <input type="checkbox" checked disabled>  Добавление заготовки текста uT("") (ALT + U).</li>
+<li> <input type="checkbox" checked disabled>  Добавление строки даты/времени (в виде 1602061200) (ALT + D).</li>
+</ul>
+<h2>CppCheck </h2>
+<p>Проверка кода статическим анализатором CppCheck.</p>
+<h3>Общие требования</h3>
+<ul>
+<li> <input type="checkbox" checked disabled>  Шаблон выводных сообщений: '{file}({line}): {severity} (suppress_id = {id}): {message}'.</li>
+<li> <input type="checkbox" checked disabled>  Включены все сообщения (&ndash;enable=all).</li>
+<li> <input type="checkbox" checked disabled>  Игнорирование помеченных специальным комментарием строк (&ndash;inline-suppr).</li>
+<li> <input type="checkbox" checked disabled>  Показывать подозрительные места (&ndash;inconclusive).</li>
+<li> <input type="checkbox" checked disabled>  Игнорировать папку внешних библиотек.</li>
+<li> <input type="checkbox" disabled>  В разных версиях Visual Studio должны производиться проверки с учетом соответствующих стандартов (&ndash;std=c++03 для VS2008 или &ndash;std=c++11 для VS2013+).</li>
+</ul>
+<p>Игнорировать строки, содержащие:</p><ul>
+<li> <input type="checkbox" checked disabled>  'information (suppress_id = purgedConfiguration):'.</li>
+</ul>
+<h3>Быстрая проверка</h3>
+<ul>
+<li> <input type="checkbox" checked disabled>  Запуск CppCheck с заданием в качестве путей include только пути "&lt;SolutionPath&gt;\Solution\Solution".</li>
+<li> <input type="checkbox" checked disabled>  Проверка со всеми вариантами макросов (&ndash;force).</li>
+</ul>
+<h1>Модули </h1>
+<h2><a class="el" href="a36960.html" title="Класс входит в Version   Главный класс модуля Version. ">Version</a> </h2>
+<p>Надстройка должна обеспечивать:</p><ul>
+<li> <input type="checkbox" checked disabled>  Все .exe и .dll файлы при сборке должны содержать версию исходных файлов + ревизию файлов решения.</li>
+<li> <input type="checkbox" checked disabled>  Макрос, представляющий собой строку текущей версии программы.</li>
+<li> <input type="checkbox" checked disabled>  Формат версии '1.0.0.1234 Build ЧЧ:ММ ДД.ММ.ГГГГ'.</li>
+</ul>
+<h2><a class="el" href="a36912.html" title="Класс входит в Properties   Главный класс модуля Properties. ">Properties</a> </h2>
+<p>Надстройка, подключающая всем проектам решения общий файл .props.</p><ul>
+<li> <input type="checkbox" checked disabled>  Путь к общему файлу свойств берется из настроек.</li>
+<li> <input type="checkbox" checked disabled>  При открытии решения надстройка должна для всех проектов проверять наличие общего файла свойств.</li>
+<li> <input type="checkbox" checked disabled>  При отсутствии файла свойств у проекта он должен подключаться.</li>
+<li> <input type="checkbox" disabled>  При удалении проекта из решения, общий файл свойств должен отключаться от проекта.</li>
+</ul>
+<h2>Time Tracker </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  <b>Ключевое</b> <b>требование!</b> Все действия должны происходить автоматически, пользователь вообще не должен участвовать в процессе учета времени.</li>
+<li> <input type="checkbox" checked disabled>  Затраченное время учитывается по действиям пользователя во время работы с Visual Studio (изменение текста открытого документа, выбор другого элемента в обозревателе решений, переключение активного окна).</li>
+<li> <input type="checkbox" checked disabled>  Учтенное время работы должно записываться на специальную страницу документации в виде отчета в формате Doxygen.</li>
+<li> <input type="checkbox" checked disabled>  Команда вызова окна просмотра отчета за две недели (для текущего решения и суммарный для всех решений, в которые вносились исправления).</li>
+</ul>
+<h2>Учет времени </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Промежутки веремени между событиями более (параметр IgnoreTime в разделе DevelopmentInfo настроек) не должны учитываться.</li>
+<li> <input type="checkbox" checked disabled>  Запись времени работы в файлы через промежутки времени, заданные параметром TimeSaveChange в разделе DevelopmentInfo настроек.</li>
+</ul>
+<h2>Страница информации о времени работы с решением </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Содержит информацию о общем времени, потраченном на разработку решения.</li>
+<li> <input type="checkbox" checked disabled>  Содержит сгенерированный отчет для Doxygen.</li>
+</ul>
+<h2>Страница информации обо всех решениях, измененных за последние 2 недели </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Содержит статистику времени работы с решениями за последние две недели (раздельно по дням недели).</li>
+</ul>
+<h2>Отчет за неделю </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Отдельная утилита, получающая в качестве параметра пути к файлам, содержащим статистику работы с текущим решением и со всеми решениями, измененными за последние две недели.</li>
+</ul>
+<p><a class="el" href="a40726.html">Исходные требования утилиты DevelopmentInfo</a></p>
+<h1>Утилиты </h1>
+<p><a class="el" href="a40734.html">Исходные требования утилиты RegexTester</a></p>
+<p><a class="el" href="a40726.html">Исходные требования утилиты DevelopmentInfo</a>.</p>
+<p><a class="el" href="a40730.html">Исходные требования утилиты ProjectTasks</a>.</p>
+<h1>Внешние утилиты </h1>
+<p>Для функционирования продукта требуется установка следующих внешних утилит:</p><ul>
+<li><a href="http://www.stack.nl/~dimitri/doxygen/index.html">Doxygen</a>.</li>
+<li><a href="http://tortoisesvn.net/">TortoiseSVN</a>.</li>
+<li><a href="http://astyle.sourceforge.net/">AStyle</a>.</li>
+<li><a href="http://cppcheck.sourceforge.net/">CppCheck</a>. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вс 3 Июн 2018 11:23:39. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

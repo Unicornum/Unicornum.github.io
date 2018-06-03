@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Configuration/Configuration/PropertySheets.hpp</title>
+<title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Document/Document/Cursor.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.6.0 Revision: 5024 Platform: Win32 Build: 20:51 02 Декабрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.6.1 Revision: 5105 Platform: Win32 Build: 11:22 03 Июнь 2018</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a02342_source.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -83,25 +89,25 @@ $(document).ready(function(){initNavTree('a02342_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">PropertySheets.hpp</div>  </div>
+<div class="title">Cursor.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a36978.html">wrappers</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">class </span>IPropertySheets;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>PropertySheet;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a39480.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="a39480.html">PropertySheets</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">using</span> PropertySheetsPtr_t = ::std::shared_ptr&lt;IPropertySheets&gt;;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">// Интерфейс IPropertySheets:</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">long</span> <a class="code" href="a39480.html#a268b30b7bce35fadb24cb2ae49ae0232">GetCount</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <a class="code" href="a39464.html">PropertySheet</a> <a class="code" href="a39480.html#a01747be961881a7b08e4a3ed649ae5bb">operator[] </a>(<span class="keyword">const</span> CString &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="a39464.html">PropertySheet</a> <a class="code" href="a39480.html#a01747be961881a7b08e4a3ed649ae5bb">operator[] </a>(<span class="keywordtype">long</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39480.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee">LoadFromFile</a>(<span class="keyword">const</span> CString &amp;);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39480.html#acf74f6d63cbd4f8cb649ebf3404117db">Remove</a>(<span class="keyword">const</span> CString &amp;);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  PropertySheetsPtr_t m_pImpl;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="a39480.html">PropertySheets</a>(PropertySheetsPtr_t _pPointer);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  FRIEND_TEST(Configuration_test, <span class="comment">/*DISABLED_*/</span>Test_GetPropertySheets2012);</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace wrappers</span></div><div class="ttc" id="a39480_html_acf74f6d63cbd4f8cb649ebf3404117db"><div class="ttname"><a href="a39480.html#acf74f6d63cbd4f8cb649ebf3404117db">wrappers::vs::PropertySheets::Remove</a></div><div class="ttdeci">void Remove(const CString &amp;)</div><div class="ttdoc">Удалить страницу свойств по ее имени. </div><div class="ttdef"><b>Definition:</b> PropertySheets.cpp:74</div></div>
-<div class="ttc" id="a36978_html"><div class="ttname"><a href="a36978.html">mock::wrappers</a></div><div class="ttdef"><b>Definition:</b> Data.mock.hpp:10</div></div>
-<div class="ttc" id="a39480_html"><div class="ttname"><a href="a39480.html">wrappers::vs::PropertySheets</a></div><div class="ttdoc">Класс входит в Configuration   Класс-обертка для работы с коллекцией станиц свойств. </div><div class="ttdef"><b>Definition:</b> PropertySheets.hpp:33</div></div>
-<div class="ttc" id="a39480_html_aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee"><div class="ttname"><a href="a39480.html#aaaa0d3d8a45ddd2fd576a0bb0a6ed7ee">wrappers::vs::PropertySheets::LoadFromFile</a></div><div class="ttdeci">void LoadFromFile(const CString &amp;)</div><div class="ttdoc">Добавить страницу свойств из файла. </div><div class="ttdef"><b>Definition:</b> PropertySheets.cpp:62</div></div>
-<div class="ttc" id="a39480_html_a268b30b7bce35fadb24cb2ae49ae0232"><div class="ttname"><a href="a39480.html#a268b30b7bce35fadb24cb2ae49ae0232">wrappers::vs::PropertySheets::GetCount</a></div><div class="ttdeci">long GetCount(void) const</div><div class="ttdoc">Количество страниц свойств в коллекции. </div><div class="ttdef"><b>Definition:</b> PropertySheets.cpp:21</div></div>
-<div class="ttc" id="a39464_html"><div class="ttname"><a href="a39464.html">wrappers::vs::PropertySheet</a></div><div class="ttdoc">Класс входит в Configuration   Класс-обертка для объекта страницы свойств (зависящего от версии Visua...</div><div class="ttdef"><b>Definition:</b> PropertySheet.hpp:28</div></div>
-<div class="ttc" id="a39480_html_a01747be961881a7b08e4a3ed649ae5bb"><div class="ttname"><a href="a39480.html#a01747be961881a7b08e4a3ed649ae5bb">wrappers::vs::PropertySheets::operator[]</a></div><div class="ttdeci">PropertySheet operator[](const CString &amp;) const</div><div class="ttdoc">Оператор доступа к странице свойств по ее имени. </div><div class="ttdef"><b>Definition:</b> PropertySheets.cpp:34</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="a36834.html">wrappers</a></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>vs</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>selection</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="a39328.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="a39328.html">Cursor</a> : <span class="keyword">public</span> <a class="code" href="a39152.html">Base</a>&lt;EnvDTE::TextSelection&gt;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39328.html#a7e0f6a324b0e4cf06f80a581253df051">CharLeft</a>(<span class="keywordtype">long</span> _Count = 1) <span class="keyword">const</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39328.html#a45f4d49f032942a853b9142c7e26a191">CharRight</a>(<span class="keywordtype">long</span> _Count = 1) <span class="keyword">const</span>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">long</span> <a class="code" href="a39328.html#aff0ecd77c85716b7243a3ac12586fd74">GetCurrentColumn</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39328.html#a22131636a043963ad223015ce72d8ac2">Backspace</a>(<span class="keywordtype">long</span> _Count = 1) <span class="keyword">const</span>;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="a39328.html">Cursor</a>(<span class="keyword">const</span> ComPtr_t &amp; _pPointer);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ~<a class="code" href="a39328.html">Cursor</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace selection</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;} <span class="comment">// namespace vs</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;} <span class="comment">// namespace wrappers</span></div><div class="ttc" id="a39328_html_a7e0f6a324b0e4cf06f80a581253df051"><div class="ttname"><a href="a39328.html#a7e0f6a324b0e4cf06f80a581253df051">wrappers::vs::selection::Cursor::CharLeft</a></div><div class="ttdeci">void CharLeft(long _Count=1) const</div><div class="ttdoc">Функция для перемещения курсора влево. </div><div class="ttdef"><b>Definition:</b> Cursor.cpp:27</div></div>
+<div class="ttc" id="a36834_html"><div class="ttname"><a href="a36834.html">mock::wrappers</a></div><div class="ttdef"><b>Definition:</b> Data.mock.hpp:10</div></div>
+<div class="ttc" id="a39328_html_a45f4d49f032942a853b9142c7e26a191"><div class="ttname"><a href="a39328.html#a45f4d49f032942a853b9142c7e26a191">wrappers::vs::selection::Cursor::CharRight</a></div><div class="ttdeci">void CharRight(long _Count=1) const</div><div class="ttdoc">Функция для перемещения курсора вправо. </div><div class="ttdef"><b>Definition:</b> Cursor.cpp:42</div></div>
+<div class="ttc" id="a39152_html"><div class="ttname"><a href="a39152.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Common   Базовый класс для оберток объектов надстройки. </div><div class="ttdef"><b>Definition:</b> Base.hpp:35</div></div>
+<div class="ttc" id="a39328_html"><div class="ttname"><a href="a39328.html">wrappers::vs::selection::Cursor</a></div><div class="ttdoc">Класс входит в Document   Класс для перемещения курсора ввода внутри документа. </div><div class="ttdef"><b>Definition:</b> Cursor.hpp:32</div></div>
+<div class="ttc" id="a39328_html_a22131636a043963ad223015ce72d8ac2"><div class="ttname"><a href="a39328.html#a22131636a043963ad223015ce72d8ac2">wrappers::vs::selection::Cursor::Backspace</a></div><div class="ttdeci">void Backspace(long _Count=1) const</div><div class="ttdoc">Функция удаления символов слева от курсора. </div><div class="ttdef"><b>Definition:</b> Cursor.cpp:71</div></div>
+<div class="ttc" id="a39328_html_aff0ecd77c85716b7243a3ac12586fd74"><div class="ttname"><a href="a39328.html#aff0ecd77c85716b7243a3ac12586fd74">wrappers::vs::selection::Cursor::GetCurrentColumn</a></div><div class="ttdeci">long GetCurrentColumn(void) const</div><div class="ttdoc">Функция получения текущего столбца курсора. </div><div class="ttdef"><b>Definition:</b> Cursor.cpp:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_6286ca65141999c3454cfc128243a7c6.html">Configuration</a></li><li class="navelem"><a class="el" href="dir_f6358a5537d15380207bce6b41615bce.html">Configuration</a></li><li class="navelem"><b>PropertySheets.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Дек 2017 20:52:00. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_d157d7bfe6141e2aaab6e272ec3ed556.html">Document</a></li><li class="navelem"><a class="el" href="dir_317725232a7802027b94f1a327f4b7d3.html">Document</a></li><li class="navelem"><b>Cursor.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вс 3 Июн 2018 11:23:34. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>

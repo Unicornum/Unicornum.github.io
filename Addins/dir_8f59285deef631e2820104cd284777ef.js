@@ -1,8 +1,0 @@
-var dir_8f59285deef631e2820104cd284777ef =
-[
-    [ "wxWidgets", "dir_ad4d69678c2f673e63de30eee8690093.html", "dir_ad4d69678c2f673e63de30eee8690093" ],
-    [ "IView.hpp", "a43733_source.html", null ],
-    [ "MainFrame.hpp", "a43745_source.html", null ],
-    [ "stdafx.h", "a42266_source.html", null ],
-    [ "wxWidgets.hpp", "a43751_source.html", null ]
-];

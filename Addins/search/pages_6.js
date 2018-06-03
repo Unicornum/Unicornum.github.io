@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['helper',['Helper',['../a40927.html',1,'WrappersPage']]]
+  ['ide',['Ide',['../a40800.html',1,'WrappersVisualStudioPage']]]
 ];

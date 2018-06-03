@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['unicornumcodeassistant',['UnicornumCodeAssistant',['../a36857.html',1,'']]],
-  ['usefulcommands',['UsefulCommands',['../a36882.html',1,'']]],
-  ['utilities',['Utilities',['../a36893.html',1,'']]],
-  ['utilities',['Utilities',['../a36903.html',1,'']]],
-  ['utilities',['Utilities',['../a36902.html',1,'']]]
+  ['unicornumcodeassistant',['UnicornumCodeAssistant',['../a36710.html',1,'']]],
+  ['usefulcommands',['UsefulCommands',['../a36735.html',1,'']]],
+  ['utilities',['Utilities',['../a36746.html',1,'']]],
+  ['utilities',['Utilities',['../a36755.html',1,'']]],
+  ['utilities',['Utilities',['../a36754.html',1,'']]]
 ];

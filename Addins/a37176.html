@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Addins: Класс controller::Controller</title>
+<title>Addins: Класс model::IReadTask</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -14,8 +14,9 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
-</script>
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -30,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Версия: 2.6.0 Revision: 5024 Platform: Win32 Build: 20:51 02 Декабрь 2017</span>
+   &#160;<span id="projectnumber">Версия: 2.6.1 Revision: 5105 Platform: Win32 Build: 11:22 03 Июнь 2018</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -39,18 +40,21 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.13 -->
+<!-- Создано системой Doxygen 1.8.14 -->
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(function() {
   initMenu('',true,false,'search.php','Поиск');
   $(document).ready(function() { init_search(); });
 });
-</script>
+/* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -64,7 +68,9 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 $(document).ready(function(){initNavTree('a37176.html','');});
+/* @license-end */
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -84,257 +90,86 @@ $(document).ready(function(){initNavTree('a37176.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
 <a href="a37173.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс controller::Controller<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a36861.html">Core</a> &raquo; <a class="el" href="a36877.html">Tools</a> &raquo; <a class="el" href="a36878.html">DevelopmentInfo</a> &raquo; <a class="el" href="a36862.html">Controller</a><a class="el" href="a36861.html">Core</a> &raquo; <a class="el" href="a36877.html">Tools</a> &raquo; <a class="el" href="a36879.html">ProjectTasks</a> &raquo;  &#124; <a class="el" href="a36867.html">Controller</a><a class="el" href="a36861.html">Core</a> &raquo; <a class="el" href="a36877.html">Tools</a> &raquo; <a class="el" href="a36880.html">RegexTester</a> &raquo;  &#124; <a class="el" href="a36872.html">Controller</a></div></div>  </div>
+<div class="title">Класс model::IReadTask<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a36714.html">Core</a> &raquo; <a class="el" href="a36730.html">Tools</a> &raquo; <a class="el" href="a36732.html">ProjectTasks</a> &raquo; <a class="el" href="a36721.html">Model</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a40896.html">DevelopmentInfo</a> <br />
- Класс главного объекта контроллера.  
+<p>Класс входит в <a class="el" href="a40729.html">ProjectTasks</a> <br />
+ Интерфейсный класс для чтения данных о задаче.  
  <a href="a37176.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a43676_source.html">Controller.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00473_source.html">IReadTask.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса controller::Controller:</div>
+Граф наследования:model::IReadTask:</div>
 <div class="dyncontent">
-<div class="center"><img src="a37174.png" border="0" usemap="#controller_1_1_controller_coll__map" alt="Collaboration graph"/></div>
-<map name="controller_1_1_controller_coll__map" id="controller_1_1_controller_coll__map">
+<div class="center"><img src="a37175.png" border="0" usemap="#model_1_1_i_read_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="model_1_1_i_read_task_inherit__map" id="model_1_1_i_read_task_inherit__map">
+<area shape="rect" id="node2" href="a37180.html" title="Класс входит в ProjectTasks &#160;&#160;&quot;Суммарный&quot; интерфейсный класс одной задачи. " alt="" coords="75,175,183,252"/>
+<area shape="rect" id="node3" href="a37164.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий полный список всех задач проекта. ..." alt="" coords="5,300,252,847"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса model::IReadTask:</div>
+<div class="dyncontent">
+<div class="center"><img src="a37174.png" border="0" usemap="#model_1_1_i_read_task_coll__map" alt="Collaboration graph"/></div>
+<map name="model_1_1_i_read_task_coll__map" id="model_1_1_i_read_task_coll__map">
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Открытые члены</h2></td></tr>
-<tr class="memitem:a19b0c47ccb02e40feb2ccc7acbbb264e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#a19b0c47ccb02e40feb2ccc7acbbb264e">Controller</a> (const Models_t &amp;, const Views_t &amp;)</td></tr>
-<tr class="memdesc:a19b0c47ccb02e40feb2ccc7acbbb264e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="#a19b0c47ccb02e40feb2ccc7acbbb264e">Подробнее...</a><br /></td></tr>
-<tr class="separator:a19b0c47ccb02e40feb2ccc7acbbb264e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3abe5def5ca527d4515537159d3d12af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#a3abe5def5ca527d4515537159d3d12af">Controller</a> (<a class="el" href="a37320.html">IReadTask_t</a> &amp;, <a class="el" href="a37436.html">IProcessTasksPanel_t</a> *)</td></tr>
-<tr class="memdesc:a3abe5def5ca527d4515537159d3d12af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор инициализации сигнала обновления представления для задач, находящихся в процессе работы.  <a href="#a3abe5def5ca527d4515537159d3d12af">Подробнее...</a><br /></td></tr>
-<tr class="separator:a3abe5def5ca527d4515537159d3d12af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94a996eec18108afd8da831289c8835b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#a94a996eec18108afd8da831289c8835b">Controller</a> (<a class="el" href="a37320.html">IReadTask_t</a> &amp;, <a class="el" href="a37432.html">ICompleteTasksPanel_t</a> *)</td></tr>
-<tr class="memdesc:a94a996eec18108afd8da831289c8835b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор инициализации сигнала обновления представления для завершенных задач.  <a href="#a94a996eec18108afd8da831289c8835b">Подробнее...</a><br /></td></tr>
-<tr class="separator:a94a996eec18108afd8da831289c8835b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e43ca1edbff3faad8cd167b0551155d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#a8e43ca1edbff3faad8cd167b0551155d">Controller</a> (<a class="el" href="a37328.html">IWriteTask_t</a> *, <a class="el" href="a37464.html">IWriteTaskPanel_t</a> *)</td></tr>
-<tr class="memdesc:a8e43ca1edbff3faad8cd167b0551155d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор инициализации сигналов обновления модели.  <a href="#a8e43ca1edbff3faad8cd167b0551155d">Подробнее...</a><br /></td></tr>
-<tr class="separator:a8e43ca1edbff3faad8cd167b0551155d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186f6320d476c0fd9b36e9f8c67123cf"><td class="memItemLeft" align="right" valign="top"><a id="a186f6320d476c0fd9b36e9f8c67123cf"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#a186f6320d476c0fd9b36e9f8c67123cf">GetRootProcessTaskId</a> (void) const =0</td></tr>
+<tr class="memdesc:a186f6320d476c0fd9b36e9f8c67123cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи. <br /></td></tr>
+<tr class="separator:a186f6320d476c0fd9b36e9f8c67123cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce86a51984f642577a15fc4f645ebf2"><td class="memItemLeft" align="right" valign="top"><a id="acce86a51984f642577a15fc4f645ebf2"></a>
+virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#acce86a51984f642577a15fc4f645ebf2">GetRootCompleteTaskId</a> (void) const =0</td></tr>
+<tr class="memdesc:acce86a51984f642577a15fc4f645ebf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора корневой задачи. <br /></td></tr>
+<tr class="separator:acce86a51984f642577a15fc4f645ebf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeab616da674646d51609a657eedd03ff"><td class="memItemLeft" align="right" valign="top"><a id="aeab616da674646d51609a657eedd03ff"></a>
+virtual ChildTasks_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#aeab616da674646d51609a657eedd03ff">GetChildTasks</a> (size_t) const =0</td></tr>
+<tr class="memdesc:aeab616da674646d51609a657eedd03ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения списка дочерних задач для указанной задачи. <br /></td></tr>
+<tr class="separator:aeab616da674646d51609a657eedd03ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a9444372a28d6fd34dda9f8b192964c4f"><td class="memItemLeft" align="right" valign="top"><a id="a9444372a28d6fd34dda9f8b192964c4f"></a>
+::boost::signals2::signal&lt; void(<a class="el" href="a37180.html">ITask</a> *)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37176.html#a9444372a28d6fd34dda9f8b192964c4f">Changed</a></td></tr>
+<tr class="memdesc:a9444372a28d6fd34dda9f8b192964c4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект сигнала, который должен быть активирован, если изменения требуют обновления представления. <br /></td></tr>
+<tr class="separator:a9444372a28d6fd34dda9f8b192964c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a40896.html">DevelopmentInfo</a> <br />
- Класс главного объекта контроллера. </p>
-<p>Класс входит в <a class="el" href="a40900.html">RegexTester</a> <br />
- Класс главного объекта контроллера.</p>
-<p>Класс входит в <a class="el" href="a40898.html">ProjectTasks</a> <br />
- Класс главного объекта контроллера.</p>
-<ul>
-<li>Предназначен для обеспечения связи между моделью и представлением.</li>
-</ul>
+<div class="textblock"><p>Класс входит в <a class="el" href="a40729.html">ProjectTasks</a> <br />
+ Интерфейсный класс для чтения данных о задаче. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TType</td><td>Класс, обозначающий принадлежность списка задач (Process_t или Complete_t). Нужен для того, чтобы класс списка задач можно было унаследовать от интерфейса 2 раза с возможностью переопределения функций в зависимости от того, со списком каких задач будет работать контроллер.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+ 2.0.0.0 <br />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 Февраль 2016 <br />
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br />
+ 24 Март 2016 <br />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016</dd></dl>
-<ul>
-<li>Предназначен для обеспечения связи между моделью и представлением.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>31 Март 2016 <br />
- 09 Апрель 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016</dd></dl>
-<ul>
-<li>Связывает между собой модель и представление, назначая сигналам объектов представления объекты соответствующих классов.</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 Ноябрь 2015 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 </dd></dl>
-</div><h2 class="groupheader">Конструктор(ы)</h2>
-<a id="a19b0c47ccb02e40feb2ccc7acbbb264e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19b0c47ccb02e40feb2ccc7acbbb264e">&#9670;&nbsp;</a></span>Controller() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Controller::Controller </td>
-          <td>(</td>
-          <td class="paramtype">const Models_t &amp;&#160;</td>
-          <td class="paramname"><em>_Models</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Views_t &amp;&#160;</td>
-          <td class="paramname"><em>_Views</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Конструктор класса. </p>
-<ul>
-<li>Связывает между собой объекты модели и представления (попарно).</li>
-</ul>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Models</td><td>Список объектов моделей. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Views</td><td>Список объектов представлений.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Количество объектов моделей не равно количеству объектов представлений.</li>
-<li>Один или более из переданных указателей - нулевые. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3abe5def5ca527d4515537159d3d12af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3abe5def5ca527d4515537159d3d12af">&#9670;&nbsp;</a></span>Controller() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Controller::Controller </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a37320.html">IReadTask_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Model</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a37436.html">IProcessTasksPanel_t</a> *&#160;</td>
-          <td class="paramname"><em>_pView</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Конструктор инициализации сигнала обновления представления для задач, находящихся в процессе работы. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Передан нулевой указатель для объекта представления. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a94a996eec18108afd8da831289c8835b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94a996eec18108afd8da831289c8835b">&#9670;&nbsp;</a></span>Controller() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Controller::Controller </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a37320.html">IReadTask_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>_Model</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a37432.html">ICompleteTasksPanel_t</a> *&#160;</td>
-          <td class="paramname"><em>_pView</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Конструктор инициализации сигнала обновления представления для завершенных задач. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Передан нулевой указатель для объекта представления. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8e43ca1edbff3faad8cd167b0551155d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e43ca1edbff3faad8cd167b0551155d">&#9670;&nbsp;</a></span>Controller() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Controller::Controller </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a37328.html">IWriteTask_t</a> *&#160;</td>
-          <td class="paramname"><em>_pModel</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a37464.html">IWriteTaskPanel_t</a> *&#160;</td>
-          <td class="paramname"><em>_pView</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Конструктор инициализации сигналов обновления модели. </p>
-<dl class="exception"><dt>Исключения</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">std::exception</td><td><ul>
-<li>Передан нулевой указатель для объектов модели или представления. </li>
-</ul>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Controller/<a class="el" href="a43676_source.html">Controller.hpp</a></li>
-<li>Solution/Solution/Core/Tools/DevelopmentInfo/DevelopmentInfo/Controller/Controller.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/<a class="el" href="a00473_source.html">IReadTask.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>controller</b></li><li class="navelem"><a class="el" href="a37176.html">Controller</a></li>
-    <li class="footer">Документация по Addins. Последние изменения: Сб 2 Дек 2017 20:52:03. Создано системой
+    <li class="navelem"><b>model</b></li><li class="navelem"><a class="el" href="a37176.html">IReadTask</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вс 3 Июн 2018 11:23:43. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
 </body>
