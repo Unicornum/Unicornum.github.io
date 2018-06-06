@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Documentation: Исходные требования</title>
+<title>Documentation: PrintParams</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,9 +31,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentation
-   &#160;<span id="projectnumber">Version: 2.1.0 Revision: 396 Platform: x64 Build: 12:01 06.06.2018</span>
+   &#160;<span id="projectnumber">Version: 2.1.0 Revision: 396 Platform: x64 Build: 12:17 06.06.2018</span>
    </div>
-   <div id="projectbrief">������ documentation solution architecture.</div>
+   <div id="projectbrief">?????? documentation solution architecture.</div>
   </td>
  </tr>
  </tbody>
@@ -89,32 +89,20 @@ $(document).ready(function(){initNavTree('a30841.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Исходные требования </div>  </div>
+<div class="title">PrintParams </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Требования </h1>
-<h2>Обеспечить </h2>
-<ul>
-<li> <input type="checkbox" checked disabled>  Командный файл, генерирующий документацию решения.</li>
-<li> <input type="checkbox" checked disabled>  Соответствие стандартной структуре решения.</li>
-<li> <input type="checkbox" checked disabled>  Все необходимые для полного описания решения файлы документации.</li>
-<li> <input type="checkbox" checked disabled>  Все примеры должны быть доступны на одной странице (странице описания решения).</li>
-</ul>
-<h2>Список требуемых примеров </h2>
-<ul>
-<li> <input type="checkbox" disabled>  Используемых тегов Doxygen.</li>
-<li> <input type="checkbox" disabled>  Описание класса.</li>
-<li> <input type="checkbox" disabled>  Описание функции.</li>
-<li> <input type="checkbox" disabled>  Описание файла.</li>
-<li> <input type="checkbox" disabled>  Объединение классов в группы. </li>
-</ul>
+<div class="textblock"><h2>Введение </h2>
+<p>Проект вспомогательной программы тестирования запуска утилит.</p>
+<h2>Подробное описание </h2>
+<p>При запуске программа выводит в файл AppName.Params.txt в папке расположения список (по одному в каждой строке) полученных параметров командной строки (исключая путь к самой программе).</p>
+<p>Для использования нужному проекту поставить зависимость от проекта PrintParams, в события сборки добавить копирование PrintParams.exe в нужную папку с переименованием в тестируемую утилиту. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li>
-    <li class="footer">Документация по Documentation. Последние изменения: Ср 6 Июн 2018 12:01:34. Создано системой
+    <li class="footer">Документация по Documentation. Последние изменения: Ср 6 Июн 2018 12:17:47. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
