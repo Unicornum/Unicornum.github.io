@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Documentation: $title</title>
+<title>Documentation: PrintParams</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentation
-   &#160;<span id="projectnumber">Version: 2.1.0 Revision: 396 Platform: Win32 Build: 11:30 06.06.2018</span>
+   &#160;<span id="projectnumber">Version: 2.1.0 Revision: 396 Platform: x64 Build: 11:43 06.06.2018</span>
    </div>
    <div id="projectbrief">Sample documentation solution architecture.</div>
   </td>
@@ -87,14 +87,22 @@ $(document).ready(function(){initNavTree('a30838.html','');});
 </iframe>
 </div>
 
+<div class="header">
+  <div class="headertitle">
+<div class="title">PrintParams </div>  </div>
+</div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Краткое описание раздела. </p>
+<div class="textblock"><h2>Введение </h2>
+<p>Проект вспомогательной программы тестирования запуска утилит.</p>
+<h2>Подробное описание </h2>
+<p>При запуске программа выводит в файл AppName.Params.txt в папке расположения список (по одному в каждой строке) полученных параметров командной строки (исключая путь к самой программе).</p>
+<p>Для использования нужному проекту поставить зависимость от проекта PrintParams, в события сборки добавить копирование PrintParams.exe в нужную папку с переименованием в тестируемую утилиту. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Documentation. Последние изменения: Ср 6 Июн 2018 11:31:10. Создано системой
+    <li class="footer">Документация по Documentation. Последние изменения: Ср 6 Июн 2018 11:43:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
