@@ -24,18 +24,19 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Covellite++", "index.html", [
-    [ "Manual", "a32843.html", "a32843" ],
-    [ "Скачать", "a32837.html", null ],
-    [ "История изменений", "a32838.html", null ],
-    [ "Структура решения", "a32841.html", "a32841" ],
-    [ "Исходные требования", "a32840.html", null ],
+    [ "Manual", "a33338.html", "a33338" ],
+    [ "Скачать", "a33332.html", null ],
+    [ "История изменений", "a33333.html", null ],
+    [ "Структура решения", "a33336.html", "a33336" ],
+    [ "Исходные требования", "a33335.html", null ],
     [ "Группы", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"a32070.html"
+"a32374.html",
+"a32974.html#a7123de44615a647d763eb6826dadbed0"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';

@@ -1,20 +1,11 @@
 var searchData=
 [
-  ['seek',['Seek',['../a32499.html#a6bc7e1b554002766e937ab2961814f03',1,'covellite::rocket::File']]],
-  ['set',['Set',['../a32579.html#a0d5e83b5fedcdb13cd05e9e58603241f',1,'covellite::rocket::StringTranslator::Set()'],['../a32587.html#a38150e9e955443f9e51c8fa20e705f2b',1,'covellite::rocket::Window::Set()']]],
-  ['setfontsize',['SetFontSize',['../a32543.html#a1081a38f07b167bfac632d529c70a24e',1,'covellite::rocket::Layer']]],
-  ['settings_5ft',['Settings_t',['../a32072.html#ga6e1231c59268ed78f30d84773ebf9d27',1,'covellite::core']]],
-  ['settings_5ftest_2ecpp',['Settings_test.cpp',['../a00266.html',1,'']]],
-  ['show',['Show',['../a32543.html#ade98b7f19de07bb838be920164345a79',1,'covellite::rocket::Layer']]],
-  ['startdrawing',['StartDrawing',['../a32287.html#ae07ea214fa6193b69c9986cbb17c8e7ca00c1a958e4a592fead4d26012fa6301a',1,'covellite::core::Event']]],
-  ['stop',['Stop',['../a32287.html#af7e220598f5801f149c9100263aa61eea73be80141b384a174f6d70229b545ea1',1,'covellite::core::Event']]],
-  ['stringtranslator',['StringTranslator',['../a32579.html',1,'covellite::rocket']]],
-  ['stringtranslator_5ftest_2ecpp',['StringTranslator_test.cpp',['../a00476.html',1,'']]],
-  ['subscribe',['Subscribe',['../a32191.html#aad85f7a3a98580cc86488e6e7914e1ec',1,'covellite::api::OpenGL::Subscribe()'],['../a32203.html#ab4b5598e269ba3d6cccf817b42f7a302',1,'covellite::api::OpenGLES::Subscribe()'],['../a32291.html#aa7d1c4e6aea810196d8756c1008f5b62',1,'covellite::core::EventHandler::Subscribe()'],['../a32663.html#a144da68a59de1a2a05f4ff70acaec216',1,'ExampleWindow::Subscribe()']]],
-  ['surface',['Surface',['../a32439.html',1,'covellite::egl']]],
-  ['surface_5ftest_2ecpp',['Surface_test.cpp',['../a00335.html',1,'']]],
-  ['system',['System',['../a32583.html',1,'covellite::rocket::System'],['../a32287.html#af7e220598f5801f149c9100263aa61ee',1,'covellite::core::Event::System()']]],
-  ['system_2eandroid_5ftest_2ecpp',['System.android_test.cpp',['../a00479.html',1,'']]],
-  ['system_2ewindows_5ftest_2ecpp',['System.windows_test.cpp',['../a00482.html',1,'']]],
-  ['system_5ftest_2ecpp',['System_test.cpp',['../a00485.html',1,'']]]
+  ['tablelayer',['TableLayer',['../a33162.html',1,'ExampleWindow']]],
+  ['tag',['Tag',['../a32974.html#a7123de44615a647d763eb6826dadbed0',1,'covellite::events::Click_t::Info']]],
+  ['tell',['Tell',['../a32982.html#a44b740b8e691f6563f71894b153212cb',1,'covellite::rocket::File']]],
+  ['torocketkeycode',['ToRocketKeyCode',['../a32726.html#a326cfacdb366f56880b9b32fab3f1dcb',1,'covellite::core::params::KeyCode']]],
+  ['touch',['Touch',['../a32686.html#a070c82dd58e7ee7662ec39feab47ccf5a0d6f9187cd66294f1b14eff447f773d5',1,'covellite::core::Event::Touch()'],['../a32866.html#a861e24f5f013e549f81a601548188022aaf33461ac3a4512d3838474a609e86a1',1,'covellite::events::Input_t::Touch()'],['../a32926.html#a38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c',1,'covellite::events::Cursor_t::Touch()']]],
+  ['translate',['Translate',['../a33018.html#a1c419fbe6642b7c9e1d97bbe1acbc356',1,'covellite::rocket::IStringTranslator::Translate()'],['../a33066.html#a3b84302db2cc840b5d4247deb86d7322',1,'covellite::rocket::StringTranslator::Translate()']]],
+  ['translatestring',['TranslateString',['../a33070.html#a66f1511920f507e895dbb9842089361d',1,'covellite::rocket::System']]],
+  ['type',['Type',['../a32974.html#a1c696f8f495e33b2a69ae255c22d9ee7',1,'covellite::events::Click_t::Info']]]
 ];

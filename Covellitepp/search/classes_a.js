@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['opengl',['OpenGL',['../a32191.html',1,'covellite::api']]],
-  ['openglcommon',['OpenGLCommon',['../a32195.html',1,'covellite::api']]],
-  ['opengles',['OpenGLES',['../a32203.html',1,'covellite::api']]]
+  ['params',['Params',['../a32738.html',1,'covellite::core::Params'],['../a32878.html',1,'covellite::events::Params']]],
+  ['position',['Position',['../a32930.html',1,'covellite::events::Cursor_t']]]
 ];

@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['deactivatekeyboard',['DeactivateKeyboard',['../a32583.html#a72ce86059198acb6c3c000cded9e7063',1,'covellite::rocket::System']]],
-  ['demolayer1',['DemoLayer1',['../a32647.html',1,'ExampleWindow']]],
-  ['demolayer2',['DemoLayer2',['../a32651.html',1,'ExampleWindow']]],
-  ['destroy',['Destroy',['../a32287.html#af7e220598f5801f149c9100263aa61eeac9d30c13c37bdb75de3c240660bdf665',1,'covellite::core::Event']]],
-  ['display',['Display',['../a32427.html',1,'covellite::egl']]],
-  ['display_5ftest_2ecpp',['Display_test.cpp',['../a00332.html',1,'']]],
-  ['docommand',['DoCommand',['../a32291.html#a9048a8be9fc95c74e446eab5ee755e9e',1,'covellite::core::EventHandler']]],
-  ['dodrawwindow',['DoDrawWindow',['../a32587.html#abe2a64351ac7d3195a1ff2d51ecf0651',1,'covellite::rocket::Window']]],
-  ['doinitwindow',['DoInitWindow',['../a32643.html#aaddf7b9a3ba89e61506f87d2ca3c149d',1,'ExampleApp']]],
-  ['drawing',['Drawing',['../a32287.html#ae07ea214fa6193b69c9986cbb17c8e7cafc245a046e83f39e5e7fcd9b12f14d87',1,'covellite::core::Event']]]
+  ['deactivatekeyboard',['DeactivateKeyboard',['../a33070.html#a72ce86059198acb6c3c000cded9e7063',1,'covellite::rocket::System']]],
+  ['demolayer1',['DemoLayer1',['../a33154.html',1,'ExampleWindow']]],
+  ['demolayer2',['DemoLayer2',['../a33158.html',1,'ExampleWindow']]],
+  ['description',['Description',['../a32380.html#ga32b71ec64cf1813aff1e59092b852f39',1,'covellite::events::Error_t']]],
+  ['destroy',['Destroy',['../a32686.html#af7e220598f5801f149c9100263aa61eeac9d30c13c37bdb75de3c240660bdf665',1,'covellite::core::Event']]],
+  ['display',['Display',['../a32798.html',1,'covellite::egl']]],
+  ['display_5ftest_2ecpp',['Display_test.cpp',['../a00347.html',1,'']]],
+  ['do',['Do',['../a32506.html#a6289708dc610154fc0d4572a4c27b279afc5c8b6e9d1b35a1acb76a6f738f43fc',1,'covellite::events::Drawing_t']]],
+  ['docommand',['DoCommand',['../a32690.html#a9048a8be9fc95c74e446eab5ee755e9e',1,'covellite::core::EventHandler']]],
+  ['document',['Document',['../a32966.html',1,'covellite::events::Click_t']]],
+  ['documentid',['DocumentId',['../a32962.html#a20ea6d9f20c78752acf9511cb77c8f20',1,'covellite::events::Click_t']]],
+  ['dodrawwindow',['DoDrawWindow',['../a33074.html#abe2a64351ac7d3195a1ff2d51ecf0651',1,'covellite::rocket::Window']]],
+  ['doinitwindow',['DoInitWindow',['../a33146.html#aaddf7b9a3ba89e61506f87d2ca3c149d',1,'ExampleApp']]],
+  ['down',['Down',['../a32934.html#a56e5f58c24b4bd22a7d463dffa027f0bafcd6175e85ceac72d7550c6bd3b41e16',1,'covellite::events::Key_t']]],
+  ['drawing',['Drawing',['../a32686.html#ae07ea214fa6193b69c9986cbb17c8e7cafc245a046e83f39e5e7fcd9b12f14d87',1,'covellite::core::Event::Drawing()'],['../a32890.html#a7c051e93e1837c87e8b08334edb4a3cca7aef2b7694118cefab14203badfb47e2',1,'covellite::events::Window_t::Drawing()']]],
+  ['drawing_5ft',['Drawing_t',['../a32506.html',1,'covellite::events']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['settings_5ft',['Settings_t',['../a32072.html#ga6e1231c59268ed78f30d84773ebf9d27',1,'covellite::core']]]
+  ['code',['Code',['../a32380.html#ga7c927e0343c1152130ce370060442f2e',1,'covellite::events::Key_t']]]
 ];

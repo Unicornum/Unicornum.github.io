@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['empty',['Empty',['../a32319.html',1,'covellite::core::params']]],
-  ['error',['Error',['../a32335.html',1,'covellite::core::params']]],
-  ['event',['Event',['../a32287.html',1,'covellite::core']]],
-  ['eventbased',['EventBased',['../a32259.html',1,'covellite::core::Application']]],
-  ['eventhandler',['EventHandler',['../a32291.html',1,'covellite::core']]],
-  ['exampleapp',['ExampleApp',['../a32643.html',1,'']]],
-  ['examplewindow',['ExampleWindow',['../a32663.html',1,'']]],
-  ['extrawindow',['ExtraWindow',['../a32667.html',1,'']]]
+  ['element',['Element',['../a32970.html',1,'covellite::events::Click_t::Document']]],
+  ['empty',['Empty',['../a32714.html',1,'covellite::core::params']]],
+  ['error',['Error',['../a32730.html',1,'covellite::core::params']]],
+  ['error_5ft',['Error_t',['../a32846.html',1,'covellite::events']]],
+  ['event',['Event',['../a32686.html',1,'covellite::core']]],
+  ['eventbased',['EventBased',['../a32586.html',1,'covellite::app::Application::EventBased'],['../a32662.html',1,'covellite::core::Application::EventBased']]],
+  ['eventhandler',['EventHandler',['../a32690.html',1,'covellite::core']]],
+  ['events',['Events',['../a32850.html',1,'covellite::events']]],
+  ['example_5ft',['Example_t',['../a33150.html',1,'']]],
+  ['exampleapp',['ExampleApp',['../a33146.html',1,'']]],
+  ['examplewindow',['ExampleWindow',['../a33170.html',1,'']]],
+  ['extrawindow',['ExtraWindow',['../a33174.html',1,'']]]
 ];
