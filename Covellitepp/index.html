@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.3 Revision: 772 Platform: x64 Build: 12:03 29.07.2018</span>
+   &#160;<span id="projectnumber">Version: 2.1.4 Revision: 897 Platform: x64 Build: 14:57 01.09.2018</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -109,16 +109,31 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Позволяет встраивать код дополнительной отрисовки кадра, поверх которого будет отображаться GUI.</li>
 <li>Быстрый (Windows версия выдает ~1500 fps в режиме непрерывной отрисовки на ноутбуке, купленном в 2013-м году).</li>
 </ul>
+<h3>Доступные реализации</h3>
+<p>Задаются как параметр настроек <b>GraphicsApi</b> в разделе <b>Window</b>.</p>
+<ul>
+<li><b>DirectX12</b> - требует Windows 10 и выше + поддержка со стороны железа (не реализовано).</li>
+<li><b>DirectX11</b> - требует Windows 7 и выше + поддержка со стороны железа.</li>
+<li><b>DirectX9</b> и <b>DirectX10</b> - 'наивные' реализации, не тестируются и не будут поддерживатся в будущем, используйте на свой страх и риск.</li>
+<li><b>OpenGL</b> - требует Windows 7 и выше + поддержака со стороны железа.</li>
+<li><b>Vulkan</b> - не реализовано.</li>
+<li><b>OpenGLES</b> - требует Android 4.0+.</li>
+<li><b>Auto</b> - будет использоваться графический Api, максимально доступный на данном устройстве:<ul>
+<li>DirectX12//DirectX11//Vulkan//OpenGL для Windows.</li>
+<li>Vulkan//OpenGLES для Android.</li>
+</ul>
+</li>
+</ul>
 <h2>Скриншоты </h2>
 <div class="image">
 <img src="Covellitepp.png" alt="Covellitepp.png"/>
 </div>
 <h2></h2>
-<p><a class="el" href="a33338.html">Manual</a></p>
-<p><a class="el" href="a33332.html">Скачать</a></p>
-<p><a class="el" href="a33333.html">История изменений</a></p>
-<p><a class="el" href="a33336.html">Структура решения</a></p>
-<p><a class="el" href="a33335.html">Исходные требования</a></p>
+<p><a class="el" href="a33806.html">Manual</a></p>
+<p><a class="el" href="a33800.html">Скачать</a></p>
+<p><a class="el" href="a33801.html">История изменений</a></p>
+<p><a class="el" href="a33804.html">Структура решения</a></p>
+<p><a class="el" href="a33803.html">Исходные требования</a></p>
 <h2>Лицензия </h2>
 <p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost Software License</a></p>
 <h2>Автор(ы) </h2>
@@ -128,7 +143,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Covellite++. Последние изменения: Вс 29 Июл 2018 12:03:42. Создано системой
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 1 Сен 2018 14:58:12. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

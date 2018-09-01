@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tag',['Tag',['../a32974.html#a7123de44615a647d763eb6826dadbed0',1,'covellite::events::Click_t::Info']]],
-  ['type',['Type',['../a32974.html#a1c696f8f495e33b2a69ae255c22d9ee7',1,'covellite::events::Click_t::Info']]]
+  ['isfullscreen',['IsFullScreen',['../a32850.html#a29d4cef0c13a29f6f3ce9d3ad31ff7a7',1,'covellite::api::render::IRender::Data']]]
 ];

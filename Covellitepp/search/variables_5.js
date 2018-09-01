@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['Y',['../a32718.html#a6b766cee1f1ee5383adffd4ade922f88',1,'covellite::core::params::Motion::Y()'],['../a32870.html#a207b78c2dfc4ae802852bdf3939c02f4',1,'covellite::events::params::Motion::Y()']]]
+  ['run',['Run',['../a32950.html#a6e7e6ddca1772be558b824a865bef71e',1,'covellite::app::Application::Run()'],['../a33026.html#ab5435e96c1693c7d05ea2fe538f3fd70',1,'covellite::core::Application::Run()']]]
 ];
