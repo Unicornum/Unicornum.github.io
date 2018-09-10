@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Example</title>
+<title>Covellite++: Структура решения</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.4 Revision: 897 Platform: x64 Build: 14:57 01.09.2018</span>
+   &#160;<span id="projectnumber">Version: 2.1.5 Revision: 934 Platform: x64 Build: 13:54 10.09.2018</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -89,41 +89,56 @@ $(document).ready(function(){initNavTree('a33825.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Example </div>  </div>
+<div class="title">Структура решения </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Введение </h2>
-<p>Раздел примера использования фреймворка.</p>
-<h2>Проект Packaging </h2>
-<p>Проект сборки .apk файла примера программы.</p>
-<h2>Проект Example </h2>
-<p>Список классов проекта <a class="el" href="a32607.html">Example</a></p>
-<p>Проект главного запускаемого модуля примера программы ('точка входа').</p>
-<h2>Проект Version </h2>
-<p>Генерирует файл version.xml, содержащий текущую версию решения и устанвливает android:versionCode в файле AndroidManifest.xml.</p>
-<p>Сам проект экспортируется из Externals.</p>
-<h2>Проект VersionSetup </h2>
-<p>Запускает программу, построенную проектом Version таким образом, чтобы файл version.xml был сформирован в папке Packaging\res\values.</p>
-<p>Специально располагается в папке проекта Packaging, чтобы можно было передать программе Version.exe путь к этой папке.</p>
-<h1>Пример использования </h1>
-<h2>Скриншоты </h2>
+<div class="textblock"><p><a class="el" href="a33817.html">Информация о работе над решением</a></p>
+<p><a class="el" href="a33826.html">Список задач всех проектов решения</a></p>
+<h2>Структура проектов решения </h2>
 <div class="image">
-<img src="ExampleH.png" alt="ExampleH.png"/>
+<img src="CovelliteProjects.png" alt="CovelliteProjects.png"/>
 </div>
-<p> <br />
-</p><div class="image">
-<img src="ExampleW.png" alt="ExampleW.png"/>
-</div>
-<h2>Образцы используемых .rml файлов </h2>
-<h3>Layer 1</h3>
-<div class="fragment"><div class="line">&lt;rml&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;title&gt;libRocket example layer 1&lt;/title&gt;</div><div class="line">    &lt;link type=&quot;text/template&quot; href=&quot;window.rml&quot; /&gt;</div><div class="line">    &lt;style&gt;</div><div class="line">      div#title_bar div#icon</div><div class="line">      {</div><div class="line">      display: none;</div><div class="line">      }</div><div class="line"></div><div class="line">      div#content</div><div class="line">      {</div><div class="line">      text-align: left;</div><div class="line">      }</div><div class="line">    &lt;/style&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body template=&quot;window&quot; id=&quot;demo&quot;&gt;</div><div class="line">    &lt;span id=&quot;id_header&quot;&gt;&lt;h1&gt;Layer 1&lt;/h1&gt;&lt;/span&gt;</div><div class="line">    &lt;button id=&quot;button1&quot;&gt;Layer 2 &gt;&gt;&lt;/button&gt;</div><div class="line">    &lt;button id=&quot;button2&quot;&gt;Table &gt;&gt;&lt;/button&gt;</div><div class="line">    &lt;button id=&quot;button3&quot;&gt;Scroll &gt;&gt;&lt;/button&gt;</div><div class="line">    &lt;form name=&quot;xxx&quot; style=&quot;display:block; border: 4px double black;&quot;&gt;</div><div class="line">      &lt;input type=&quot;text&quot;</div><div class="line">             id=&quot;main_text&quot;</div><div class="line">             value=&quot;Name ***&quot;/&gt;&lt;br/&gt;</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioA&quot;/&gt;1</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioA&quot;/&gt;2&lt;br/&gt;</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioB&quot;/&gt;3</div><div class="line">      &lt;input type=&quot;radio&quot;</div><div class="line">             name=&quot;radioB&quot;/&gt;4&lt;br/&gt;</div><div class="line">      &lt;input type=&quot;checkbox&quot;</div><div class="line">             name=&quot;check1&quot;/&gt;1</div><div class="line">      &lt;input type=&quot;checkbox&quot;</div><div class="line">             name=&quot;check1&quot;/&gt;2&lt;br/&gt;</div><div class="line">    &lt;/form&gt;</div><div class="line">    &lt;button id=&quot;exit&quot;&gt;Пока-пока!&lt;/button&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/rml&gt;</div></div><!-- fragment --><h3>Layer 2</h3>
-<div class="fragment"><div class="line">&lt;rml&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;link type=&quot;text/rcss&quot;</div><div class="line">          href=&quot;rkt.rcss&quot;/&gt;</div><div class="line">    &lt;link type=&quot;text/rcss&quot;</div><div class="line">          href=&quot;invader.rcss&quot;/&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body id=&quot;demo2&quot;&gt;</div><div class="line">    &lt;h1&gt;Layer 2&lt;/h1&gt;</div><div class="line">    &lt;textarea id=&quot;multiline_text&quot;&gt;Много</div><div class="line">строчный </div><div class="line">текст&lt;/textarea&gt;</div><div class="line">    &lt;button id=&quot;id_hello&quot;&gt;[HELLO]&lt;/button&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/rml&gt;</div></div><!-- fragment --> </div></div><!-- contents -->
+<h2>Раздел Build </h2>
+<p>Описание раздела <a class="el" href="a33808.html">Build</a></p>
+<h2>Проекты решения </h2>
+<h3>Covellite.Rocket</h3>
+<p>Проект реализации работы с GUI при помощи <a href="https://github.com/libRocket/libRocket" title="libRocket">libRocket</a>.</p>
+<p>Страница проекта <a class="el" href="a33844.html">Covellite.Rocket</a></p>
+<h3>Covellite.Gui</h3>
+<p>Проект реализации работы с GUI при помощи <a href="https://github.com/libRocket/libRocket" title="libRocket">libRocket</a>.</p>
+<p>Страница проекта <a class="el" href="a33840.html">Covellite.Gui</a></p>
+<h3>Covellite.Api</h3>
+<p>Проект классов-оберток для графического API.</p>
+<p>Страница проекта <a class="el" href="a33829.html">Covellite.Api</a></p>
+<h3>Covellite.Egl</h3>
+<p>Проект классов-оберток для функций EGL.</p>
+<p>Страница проекта <a class="el" href="a33835.html">Covellite.Egl</a></p>
+<h3>Covellite.Os</h3>
+<p>Проект классов, обеспечивающих взаимодействие с операционной системой.</p>
+<p>Страница проекта <a class="el" href="a33842.html">Covellite.Os</a></p>
+<h3>Covellite.Core</h3>
+<p>Проект для кода ядра фреймворка.</p>
+<dl class="deprecated"><dt><b><a class="el" href="a32606.html#_deprecated000005">Уст.:</a></b></dt><dd>Код проекта устарел и будет удален в следующей стабильной версии, вместо него использовать код из проекта <a class="el" href="a33831.html">Covellite.App</a>. </dd></dl>
+<p>Страница проекта <a class="el" href="a33833.html">Covellite.Core</a></p>
+<h3>Covellite.App</h3>
+<p>Проект для кода уровня приложения.</p>
+<p>Страница проекта <a class="el" href="a33831.html">Covellite.App</a></p>
+<h3>Covellite.Events</h3>
+<p>Проект для кода работы с событиями фреймворка.</p>
+<p>Страница проекта <a class="el" href="a33837.html">Covellite.Events</a></p>
+<h3>Example</h3>
+<p>Раздел примера использования фреймворка.</p>
+<p>Страница проекта <a class="el" href="a33846.html">Example</a></p>
+<h2>Дополнительно </h2>
+<p><a class="el" href="a33811.html">Оформление кода</a></p>
+<p><a class="el" href="a33816.html">Используемые библиотеки/утилиты</a> </p><hr/>
+ </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a33804.html">Структура решения</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 1 Сен 2018 14:58:11. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пн 10 Сен 2018 13:54:33. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
