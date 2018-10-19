@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['opengl',['OpenGL',['../a32871.html',1,'covellite::api::render']]],
-  ['openglcommon',['OpenGLCommon',['../a32883.html',1,'covellite::api::render']]],
-  ['opengles',['OpenGLES',['../a32887.html',1,'covellite::api::render']]]
+  ['opengl',['OpenGL',['../a32936.html',1,'covellite::api::renderer']]],
+  ['openglcommon',['OpenGLCommon',['../a32948.html',1,'covellite::api::renderer']]],
+  ['opengles',['OpenGLES',['../a32952.html',1,'covellite::api::renderer']]]
 ];
