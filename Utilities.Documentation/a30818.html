@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Documentation: Оформление кода</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentation
-   &#160;<span id="projectnumber">Version: 2.1.1 Revision: 399 Platform: x64 Build: 21:14 07.06.2018</span>
+   &#160;<span id="projectnumber">Version: 2.1.1 Revision: 401 Platform: x64 Build: 11:49 02.01.2019</span>
    </div>
    <div id="projectbrief">Пример структуры документации решения.</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('a30818.html','');});
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">Оформление кода </div>  </div>
 </div><!--header-->
@@ -164,8 +164,10 @@ $(document).ready(function(){initNavTree('a30818.html','');});
 <li>Деструктору всегда явным образом указывать noexcept.</li>
 </ul>
 <h1>Примеры </h1>
-<p><a class="anchor" id="Example1Anchor"></a> </p><h2>Пример 1 </h2>
-<div class="fragment"><div class="line"><span class="comment">// Объявление:</span></div><div class="line"><span class="keyword">class </span>Status</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">enum</span> Value : <span class="keywordtype">size_t</span></div><div class="line">  {</div><div class="line">    Unknown = 0,</div><div class="line">    Play,</div><div class="line">    Pause,</div><div class="line">    Stop,</div><div class="line">      </div><div class="line">    Illegal</div><div class="line">  };</div><div class="line">};</div><div class="line">  </div><div class="line"><span class="comment">// Использование</span></div><div class="line">Status::Value CurrentStatatus = Status::Stop;</div></div><!-- fragment --><p><a class="anchor" id="Example2Anchor"></a> </p><h2>Пример 2 </h2>
+<p><a class="anchor" id="Example1Anchor"></a></p>
+<h2>Пример 1 </h2>
+<div class="fragment"><div class="line"><span class="comment">// Объявление:</span></div><div class="line"><span class="keyword">class </span>Status</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">enum</span> Value : <span class="keywordtype">size_t</span></div><div class="line">  {</div><div class="line">    Unknown = 0,</div><div class="line">    Play,</div><div class="line">    Pause,</div><div class="line">    Stop,</div><div class="line">      </div><div class="line">    Illegal</div><div class="line">  };</div><div class="line">};</div><div class="line">  </div><div class="line"><span class="comment">// Использование</span></div><div class="line">Status::Value CurrentStatatus = Status::Stop;</div></div><!-- fragment --><p><a class="anchor" id="Example2Anchor"></a></p>
+<h2>Пример 2 </h2>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSsuccess = CalculateSomething(InterestingValue,</div><div class="line">  10,</div><div class="line">  <span class="keyword">false</span>,</div><div class="line">  NULL); <span class="comment">// Что означают все эти аргументы??</span></div></div><!-- fragment --><p>вместо:</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div><div class="line">  10,       <span class="comment">// Базовое значение по умолчанию</span></div><div class="line">  <span class="keyword">false</span>,    <span class="comment">// Функция вызывается не в первый раз.</span></div><div class="line">  <span class="keyword">nullptr</span>); <span class="comment">// Без возвратной функции.</span></div></div><!-- fragment --><p>Или, в качестве альтернативы, используя константы или само-описывающие переменные:</p>
 <div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> DefaultBaseValue = 10;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsFirstTimeCalling = <span class="keyword">false</span>;</div><div class="line">Callback * fnNullCallback = <span class="keyword">nullptr</span>;</div><div class="line">  </div><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div><div class="line">  DefaultBaseValue,</div><div class="line">  IsFirstTimeCalling,</div><div class="line">  fnNullCallback);</div></div><!-- fragment --><h1>Под вопросом </h1>
@@ -189,15 +191,16 @@ $(document).ready(function(){initNavTree('a30818.html','');});
 <li>Функциональные объекты должны содержать константный operator().</li>
 <li>Побочные подзадачи выделять в отдельный код. </li>
 </ul>
-</div></div><!-- contents -->
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a30833.html">Структура решения</a></li>
-    <li class="footer">Документация по Documentation. Последние изменения: Чт 7 Июн 2018 21:14:54. Создано системой
+    <li class="footer">Документация по Documentation. Последние изменения: Ср 2 Янв 2019 11:49:25. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>
