@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['signal',['Signal',['../a33351.html',1,'covellite::events::Events']]],
-  ['signals',['Signals',['../a33355.html',1,'covellite::events::Events']]],
-  ['stringtranslator',['StringTranslator',['../a33707.html',1,'covellite::rocket::StringTranslator'],['../a33499.html',1,'covellite::gui::StringTranslator']]],
-  ['surface',['Surface',['../a33291.html',1,'covellite::egl']]],
-  ['system',['System',['../a33503.html',1,'covellite::gui::System'],['../a33711.html',1,'covellite::rocket::System']]]
+  ['renderer',['Renderer',['../a34566.html',1,'covellite::gui::Renderer'],['../a34006.html',1,'covellite::api::renderer::Renderer']]],
+  ['renderinterface',['RenderInterface',['../a34018.html',1,'covellite::api']]],
+  ['renders',['Renders',['../a34022.html',1,'covellite::api::Component']]]
 ];
