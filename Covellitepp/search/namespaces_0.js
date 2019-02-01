@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['covellite',['covellite',['../a33711.html',1,'']]],
-  ['debug',['Debug',['../a33701.html',1,'com::UnicornumVerum::Example']]],
-  ['release',['Release',['../a33709.html',1,'com::UnicornumVerum::Example']]]
+  ['covellite',['covellite',['../a33862.html',1,'']]],
+  ['debug',['Debug',['../a33852.html',1,'com::UnicornumVerum::Example']]],
+  ['release',['Release',['../a33860.html',1,'com::UnicornumVerum::Example']]]
 ];
