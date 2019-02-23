@@ -1,18 +1,21 @@
 var a33881 =
 [
-    [ "Common", "a35014.html", [
-      [ "LoadTexture", "a35014.html#af0297d4e21e9cb0fc51ec699a8283269", null ]
+    [ "Application", "a34362.html", [
+      [ "Continuous", "a34366.html", null ],
+      [ "EventBased", "a34370.html", null ],
+      [ "Application", "a34362.html#a45275b561810afd1c9d65b75b80e4fb7", null ],
+      [ "Application", "a34362.html#adb1c72660af09ca9aaaf73ae6c2bf2a3", null ],
+      [ "Application", "a34362.html#afa274b047696d42d6e246f0656ac0dbb", null ],
+      [ "GetCommandLine", "a34362.html#af22e58365f376664c3eb5c712e04f125", null ],
+      [ "Main", "a34362.html#a5cce64879c899f1843a28e0396123e3d", null ],
+      [ "Main", "a34362.html#a5e0babd9f4b467bce874e6eb159d91cf", null ],
+      [ "MakeWindow", "a34362.html#a9d15e0d4516ee2024c6ba275dbe2daa8", null ],
+      [ "MakeWindow", "a34362.html#adb452d4c4b29c87ebf8941c294ba1662", null ],
+      [ "PostCommand", "a34362.html#a6fc13377c18145e53ecb49fcf925df0d", null ],
+      [ "Run", "a34362.html#a6e7e6ddca1772be558b824a865bef71e", null ]
     ] ],
-    [ "Dummy", "a35022.html", null ],
-    [ "IBasement", "a35030.html", null ],
-    [ "Simple2DGame", "a35038.html", [
-      [ "Vertex_t", "a35038.html#ab23e13f23a6d58204190373aed42e4b5", null ],
-      [ "VertexData_t", "a35038.html#a1eb08c6023edf6eeeb7041229f48b9ba", null ],
-      [ "AddCamera", "a35038.html#a7b71555fd26d3f1c9cc4b144620d82b2", null ],
-      [ "AddCommonComponents", "a35038.html#aac083a9d2716045dfccd81d460cf7206", null ],
-      [ "BuildRectangle", "a35038.html#a8ab9a4eae4c6f8151cdb2a1a488c05cf", null ],
-      [ "BuildRectangle", "a35038.html#ae9eaa5fc0152d4a567aaded2e9bd62cb", null ],
-      [ "BuildRectangle", "a35038.html#a3e1c81b9cfe9b69ae2d8a0362ee1da57", null ]
-    ] ],
-    [ "Simple3DObject", "a35058.html", null ]
+    [ "IApplication", "a34398.html", null ],
+    [ "IWindow", "a34402.html", null ],
+    [ "APPLICATION_ENTRY_POINT", "a33881.html#gad03011d9bf6bfcedf9031a4d7cddebfd", null ],
+    [ "Settings_t", "a33881.html#ga1d031ef8fb59e4c609567e9d32ea0e51", null ]
 ];

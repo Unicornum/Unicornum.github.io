@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Класс covellite::events::Application_t</title>
+<title>Covellite++: Класс covellite::app::Application::Continuous</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.10 Revision: 1331 Platform: x64 Build: 01:49 16.02.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.11 Revision: 1369 Platform: x64 Build: 23:33 23.02.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -88,56 +88,35 @@ $(document).ready(function(){initNavTree('a34366.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-types">Открытые типы</a> &#124;
-<a href="a34363.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс covellite::events::Application_t<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a33865.html">Covellite++</a> &raquo; <a class="el" href="a33873.html">Events</a> &raquo; <a class="el" href="a33874.html">Type</a></div></div>  </div>
+<div class="title">Класс covellite::app::Application::Continuous</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a35332.html">Covellite.App</a> <br />
- Класс событий уровня приложения.  
+<p>Непрерывная отрисовка экрана (режим работы игры).  
  <a href="a34366.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a35458_source.html">Events.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a36168_source.html">Application.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса covellite::events::Application_t:</div>
+Граф связей класса covellite::app::Application::Continuous:</div>
 <div class="dyncontent">
-<div class="center"><img src="a34364.png" border="0" usemap="#covellite_1_1events_1_1_application__t_coll__map" alt="Collaboration graph"/></div>
-<map name="covellite_1_1events_1_1_application__t_coll__map" id="covellite_1_1events_1_1_application__t_coll__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.App &#160;&#160;ÐÐ»Ð°ÑÑ ÑÐ¾Ð±ÑÑÐ¸Ð¹ ÑÑÐ¾Ð²Ð½Ñ Ð¿ÑÐ¸Ð»Ð¾Ð¶ÐµÐ½Ð¸Ñ." alt="" coords="5,5,152,97"/>
+<div class="center"><img src="a34364.png" border="0" usemap="#covellite_1_1app_1_1_application_1_1_continuous_coll__map" alt="Collaboration graph"/></div>
+<map name="covellite_1_1app_1_1_application_1_1_continuous_coll__map" id="covellite_1_1app_1_1_application_1_1_continuous_coll__map">
+<area shape="rect"  title="ÐÐµÐ¿ÑÐµÑÑÐ²Ð½Ð°Ñ Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ° ÑÐºÑÐ°Ð½Ð° (ÑÐµÐ¶Ð¸Ð¼ ÑÐ°Ð±Ð¾ÑÑ Ð¸Ð³ÑÑ)." alt="" coords="5,5,203,97"/>
 </map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Открытые типы</h2></td></tr>
-<tr class="memitem:ga6dc58d1f78db12dfbb053e6a9f62c76d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a33875.html#ga6dc58d1f78db12dfbb053e6a9f62c76d">Id</a> { <a class="el" href="a33875.html#gga6dc58d1f78db12dfbb053e6a9f62c76da031e03b257611cf2e60651d876ba705a">Start</a> = 0, 
-<a class="el" href="a33875.html#gga6dc58d1f78db12dfbb053e6a9f62c76daf3543c5c13a92cc974a9e59dc642fc4d">Update</a>, 
-<a class="el" href="a33875.html#gga6dc58d1f78db12dfbb053e6a9f62c76da1f1dcab3cc39db9fe46be08d5f53ae74">Exit</a>
- }</td></tr>
-<tr class="memdesc:ga6dc58d1f78db12dfbb053e6a9f62c76d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Идентификаторы событий.  <a href="a33875.html#ga6dc58d1f78db12dfbb053e6a9f62c76d">Подробнее...</a><br /></td></tr>
-<tr class="separator:ga6dc58d1f78db12dfbb053e6a9f62c76d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a35332.html">Covellite.App</a> <br />
- Класс событий уровня приложения. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>16 Июнь 2018 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2018 </dd></dl>
+<div class="textblock"><p>Непрерывная отрисовка экрана (режим работы игры). </p>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Covellite.App/Covellite.App/<a class="el" href="a35458_source.html">Events.hpp</a></li>
+<li>Solution/Solution/Covellite.App/Covellite.App/<a class="el" href="a36168_source.html">Application.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a33892.html">covellite</a></li><li class="navelem"><b>events</b></li><li class="navelem"><a class="el" href="a34366.html">Application_t</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 16 Фев 2019 01:50:13. Создано системой
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>app</b></li><li class="navelem"><a class="el" href="a34362.html">Application</a></li><li class="navelem"><a class="el" href="a34366.html">Continuous</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Фев 2019 23:34:13. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

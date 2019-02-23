@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run',['Run',['../a34334.html#a6e7e6ddca1772be558b824a865bef71e',1,'covellite::app::Application::Run()'],['../a34410.html#ab5435e96c1693c7d05ea2fe538f3fd70',1,'covellite::core::Application::Run()']]]
+  ['run',['Run',['../a34362.html#a6e7e6ddca1772be558b824a865bef71e',1,'covellite::app::Application::Run()'],['../a34438.html#ab5435e96c1693c7d05ea2fe538f3fd70',1,'covellite::core::Application::Run()']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Covellite.Rocket</title>
+<title>Covellite++: Фоновое выполнение задач в коде С++</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.10 Revision: 1331 Platform: x64 Build: 01:49 16.02.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.11 Revision: 1369 Platform: x64 Build: 23:33 23.02.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -89,26 +89,38 @@ $(document).ready(function(){initNavTree('a35345.html','');});
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Covellite.Rocket </div>  </div>
+<div class="title">Фоновое выполнение задач в коде С++ </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Список классов проекта <a class="el" href="a33879.html">Rocket</a></p>
-<h2>Введение </h2>
-<p>Проект реализации работы с GUI при помощи <a href="https://github.com/libRocket/libRocket" title="libRocket">libRocket</a>.</p>
-<dl class="deprecated"><dt><b><a class="el" href="a33864.html#_deprecated000019">Уст.:</a></b></dt><dd>Код проекта устарел и будет удален в следующей стабильной версии, вместо него использовать код из проекта <a class="el" href="a35341.html">Covellite.Gui</a>.</dd></dl>
-<h2>Подробнее </h2>
-<ul>
-<li>Классы проекта представляют собой универсальный код, зависящий только от кода <a href="https://github.com/libRocket/libRocket" title="libRocket">libRocket</a>.</li>
+<div class="textblock"><h2>Проблема </h2>
+<p>Если из кода С++ запустить дополнительный поток (boost::thread), то при деактивации программы возможна одна из двух ситуаций (причем заранее предсказать это невозможно):</p><ul>
+<li>Полная и окончательная остановка работы этого потока через несколько секунд работы (вероятно, из-за выгрузки главного .so файла).</li>
+<li>Переход потока в режим работы, при котором ему передается управление очень редко (раз в 20-30 минут, даже если выставлена задержка в 1 сек., видимо, понижается приоритет потока).</li>
 </ul>
-<dl class="deprecated"><dt><b><a class="el" href="a33864.html#_deprecated000020">Уст.:</a></b></dt><dd>Проект устарел и будет удален в следующей стабильной версии, вместо него использовать классы из <a class="el" href="a33877.html">Gui</a>.</dd></dl>
+<h2>Решение </h2>
+<p>Для гарантированной работы фонового потока С++ с указанным интервалом времени при неактивном приложении, необходимо:</p>
+<ul>
+<li>Добавить в проект <b>Packaging</b> класс сервиса, который при старте будет загружать главный .so файл С++ программы и выполнять в фоновом потоке любое тривиальное действие (этот фоновый поток необходим, чтобы система не 'убивала' сервис):</li>
+</ul>
+<h3>BackgroundService.java</h3>
+<div class="fragment"><div class="line">  </div><div class="line"><span class="keyword">package </span>com.Simple;</div><div class="line">  </div><div class="line"><span class="keyword">import</span> android.app.Service;</div><div class="line"><span class="keyword">import</span> android.content.Intent;</div><div class="line"><span class="keyword">import</span> android.os.IBinder;</div><div class="line"><span class="keyword">import</span> android.util.Log;</div><div class="line"><span class="keyword">import</span> android.os.SystemClock;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>BackgroundService <span class="keyword">extends</span> Service</div><div class="line">{</div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">void</span> onCreate() </div><div class="line">  {</div><div class="line">    System.loadLibrary(<span class="stringliteral">&quot;Simple&quot;</span>);</div><div class="line">      </div><div class="line">    Thread BackgroundThread = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() </div><div class="line">    {</div><div class="line">      @Override</div><div class="line">      <span class="keyword">public</span> <span class="keywordtype">void</span> run() </div><div class="line">      {</div><div class="line">        <span class="keywordtype">int</span> Index = 0;</div><div class="line">                  </div><div class="line">        <span class="keywordflow">while</span>(<span class="keyword">true</span>) </div><div class="line">        {</div><div class="line">          Log.v(<span class="stringliteral">&quot;Service&quot;</span>, <span class="stringliteral">&quot;Index: &quot;</span> + Index);</div><div class="line">          Index++;</div><div class="line">                    </div><div class="line">          SystemClock.sleep(1000);</div><div class="line">        }</div><div class="line">      }</div><div class="line">    });</div><div class="line">          </div><div class="line">    BackgroundThread.setPriority(Thread.MAX_PRIORITY);</div><div class="line">    BackgroundThread.start();</div><div class="line">  }</div><div class="line">    </div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">int</span> onStartCommand(Intent intent, <span class="keywordtype">int</span> flags, <span class="keywordtype">int</span> startId) </div><div class="line">  {</div><div class="line">    <span class="keywordflow">return</span> START_STICKY;</div><div class="line">  }</div><div class="line">    </div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> IBinder onBind(Intent intent) </div><div class="line">  {</div><div class="line">    <span class="keywordflow">return</span> <span class="keyword">null</span>;</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><ul>
+<li>Зарегистрировать в <b>AndroidManifest.xml</b> созданный класс как сервис:</li>
+</ul>
+<div class="fragment"><div class="line">&lt;application ...&gt;</div><div class="line">  &lt;service android:name=<span class="stringliteral">&quot;com.Simple.BackgroundService&quot;</span> android:exported=<span class="stringliteral">&quot;false&quot;</span>/&gt;</div><div class="line">  ...</div></div><!-- fragment --><ul>
+<li>В классе, наследуемом от <b>NativeActivity</b>, добавить запуск сервиса (будет запущен при первой активации программы):</li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">import</span> android.os.Bundle;</div><div class="line"><span class="keyword">import</span> android.content.Intent;</div><div class="line">    </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>Simple <span class="keyword">extends</span> NativeActivity</div><div class="line">{</div><div class="line">  @Override</div><div class="line">  <span class="keyword">public</span> <span class="keywordtype">void</span> onCreate(Bundle savedInstanceState)</div><div class="line">  {</div><div class="line">    super.onCreate(savedInstanceState);</div><div class="line">    startService(<span class="keyword">new</span> Intent(<span class="keyword">this</span>, BackgroundService.class));</div><div class="line">  }</div></div><!-- fragment --><ul>
+<li>В коде С++ добавить функцию, которая будет вызываться при загрузке .so файла при старте сервиса и в ней запустить рабочий фоновый поток:</li>
+</ul>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span></div><div class="line">{</div><div class="line">  </div><div class="line">jint JNI_OnLoad(JavaVM *, <span class="keywordtype">void</span> *)</div><div class="line">{</div><div class="line">  <span class="comment">// Здесь можно запустить поток</span></div><div class="line">  </div><div class="line">  <span class="keywordflow">return</span> JNI_VERSION_1_6;</div><div class="line">}</div><div class="line">  </div><div class="line">} <span class="comment">// extern &quot;C&quot;</span></div></div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd>Важно понимать, что сервис может быть остановлен и перезапущен в любой момент времени (.so файл будет выгружен и рабочий поток прекратит работу), поэтому следует озаботиться сохранением данных, полученных через параметр (ANativeActivity *) при активации программы. </dd></dl>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a35325.html">Структура решения</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 16 Фев 2019 01:50:13. Создано системой
+    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a35355.html">Manual</a></li><li class="navelem"><a class="el" href="a35347.html">Создание базового проекта приложения</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Фев 2019 23:34:12. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

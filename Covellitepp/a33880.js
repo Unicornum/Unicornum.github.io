@@ -1,23 +1,33 @@
 var a33880 =
 [
-    [ "Basement", "a33881.html", "a33881" ],
-    [ "ExampleApp", "a35062.html", [
-      [ "ExampleApp", "a35062.html#a3dd1c639961a5e122c07f15ce0041771", null ],
-      [ "DoInitWindow", "a35062.html#aaddf7b9a3ba89e61506f87d2ca3c149d", null ]
+    [ "CapturingServiceComponent", "a34058.html", [
+      [ "Add", "a34058.html#a92cba36ca156af6f63bf2a084876a40a", null ],
+      [ "Get", "a34058.html#a2d96e831604cf5846ad7b37cd5d9303f", null ],
+      [ "Process", "a34058.html#af55b3d80e809c7269c7a598971d74f1e", null ]
     ] ],
-    [ "ExampleWindow", "a35066.html", [
-      [ "ExampleWindow", "a35066.html#ac57ba51e6971d20e34c0f78989ef55d8", null ]
+    [ "Component", "a34062.html", null ],
+    [ "DirectX", "a34086.html", null ],
+    [ "DirectX10", "a34126.html", [
+      [ "CreateLight", "a34126.html#a475b7b0572a25f30c56cb02f238f878a", null ]
     ] ],
-    [ "ExtraWindow", "a35070.html", null ],
-    [ "Controls", "a35074.html", null ],
-    [ "Demo", "a35078.html", null ],
-    [ "Description", "a35086.html", null ],
-    [ "Draw3DObject", "a35090.html", null ],
-    [ "Simple2DGame", "a35094.html", null ],
-    [ "Layer", "a35102.html", null ],
-    [ "MainScreen", "a35106.html", [
-      [ "MainScreen", "a35106.html#a07a6c9c4e019e0688d19f9cb28c851a7", null ],
-      [ "Subscribe", "a35106.html#a72722131e275cf123872884bfc89559c", null ]
+    [ "DirectX11", "a34162.html", [
+      [ "CreateLight", "a34162.html#a21747db485bb68381ba0fefa15919bcc", null ]
     ] ],
-    [ "Text", "a35110.html", null ]
+    [ "DirectX9", "a34166.html", null ],
+    [ "DxCheck", "a34170.html", null ],
+    [ "OpenGL", "a34206.html", null ],
+    [ "OpenGLCommon", "a34222.html", [
+      [ "CreateLight", "a34222.html#a594bc44e061fbe1ae78646fa2cf341cb", null ]
+    ] ],
+    [ "OpenGLES", "a34226.html", null ],
+    [ "Renderer", "a34230.html", [
+      [ "Data", "a34234.html", [
+        [ "BkColor", "a34234.html#ae04cfc5a24f76310701741932e041587", null ],
+        [ "Handle", "a34234.html#a1768736b7c35f9608d4fb19200b3639a", null ],
+        [ "IsFullScreen", "a34234.html#ad47da49bf1894e706e82dbed958f1c5d", null ],
+        [ "Top", "a34234.html#a27de4cd19724f273aeed9593e412b409", null ]
+      ] ],
+      [ "Renderer", "a34230.html#a5c558fc5416bb076d909853570d83db9", null ]
+    ] ],
+    [ "DX_CHECK", "a33880.html#ga921220da29ad2c7b7839fb033fc8158f", null ]
 ];
