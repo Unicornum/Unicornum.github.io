@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/IGameObject.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.1.12 Revision: 1512 Platform: x64 Build: 00:52 06.04.2019</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00800_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">IGameObject.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Defines.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a34144.html">basement</a></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>model</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a35364.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a35364.html">IGameObject</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">class </span>Type final</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">enum</span> Value</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <a class="code" href="a35276.html">Camera</a> = 0,</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <a class="code" href="a35380.html">Loader</a>,</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      None,</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      Tree,</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      Bush,</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      Rock,</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      Grass,</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      Sand,</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      <a class="code" href="a35392.html">Water</a>,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <a class="code" href="a35280.html">Compass</a>,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> Type::Value <a class="code" href="a35364.html#ae9b4fd72949ec38d03f14d590092f0d1">GetType</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">virtual</span> Object_t <a class="code" href="a35364.html#a1cb90c7cf601d8417914c0f994e8048f">GetObject</a>(<span class="keyword">const</span> Any_t &amp; = {}) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a35364.html">IGameObject</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;} <span class="comment">// namespace model</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;} <span class="comment">// namespace basement</span></div><div class="ttc" id="a35392_html"><div class="ttname"><a href="a35392.html">basement::model::Water</a></div><div class="ttdoc">Класс входит в проект Example   Класс объекта отрисовки воды.</div><div class="ttdef"><b>Definition:</b> Water.hpp:26</div></div>
+<div class="ttc" id="a35380_html"><div class="ttname"><a href="a35380.html">basement::model::Loader</a></div><div class="ttdoc">Класс входит в проект Example   Класс загрузчика сцены.</div><div class="ttdef"><b>Definition:</b> Loader.hpp:26</div></div>
+<div class="ttc" id="a35280_html"><div class="ttname"><a href="a35280.html">basement::model::Compass</a></div><div class="ttdoc">Класс входит в проект Example   Класс объекта компаса.</div><div class="ttdef"><b>Definition:</b> Compass.hpp:26</div></div>
+<div class="ttc" id="a35364_html_ae9b4fd72949ec38d03f14d590092f0d1"><div class="ttname"><a href="a35364.html#ae9b4fd72949ec38d03f14d590092f0d1">basement::model::IGameObject::GetType</a></div><div class="ttdeci">virtual Type::Value GetType(void) const =0</div><div class="ttdoc">Функция получения типа игрового объекта.</div></div>
+<div class="ttc" id="a35276_html"><div class="ttname"><a href="a35276.html">basement::model::Camera</a></div><div class="ttdoc">Класс входит в проект Example   Класс главной камеры сцены.</div><div class="ttdef"><b>Definition:</b> Camera.hpp:26</div></div>
+<div class="ttc" id="a35364_html"><div class="ttname"><a href="a35364.html">basement::model::IGameObject</a></div><div class="ttdoc">Класс входит в проект Example   Интерфейсный класс игрового объекта.</div><div class="ttdef"><b>Definition:</b> IGameObject.hpp:26</div></div>
+<div class="ttc" id="a35364_html_a1cb90c7cf601d8417914c0f994e8048f"><div class="ttname"><a href="a35364.html#a1cb90c7cf601d8417914c0f994e8048f">basement::model::IGameObject::GetObject</a></div><div class="ttdeci">virtual Object_t GetObject(const Any_t &amp;={}) const =0</div><div class="ttdoc">Функция получения уникального набора компонентов игрового объекта.</div></div>
+<div class="ttc" id="a34144_html"><div class="ttname"><a href="a34144.html">basement</a></div><div class="ttdef"><b>Definition:</b> Common.hpp:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>IGameObject.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 6 Апр 2019 00:53:19. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>

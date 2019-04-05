@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['handle',['Handle',['../a34234.html#a1768736b7c35f9608d4fb19200b3639a',1,'covellite::api::renderer::Renderer::Data']]]
+  ['doaddobject',['DoAddObject',['../a35356.html#ac43a9b1ccbd97ef663de9e6058543076',1,'basement::model::IDbComponents']]],
+  ['doremoveobject',['DoRemoveObject',['../a35356.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91',1,'basement::model::IDbComponents']]]
 ];

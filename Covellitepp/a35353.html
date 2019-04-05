@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Создание кода панелей GUI</title>
+<title>Covellite++: Cписок членов класса</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.11 Revision: 1369 Platform: x64 Build: 23:33 23.02.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.12 Revision: 1512 Platform: x64 Build: 00:52 06.04.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a35353.html','');});
+$(document).ready(function(){initNavTree('a35356.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,45 +87,24 @@ $(document).ready(function(){initNavTree('a35353.html','');});
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
   <div class="headertitle">
-<div class="title">Создание кода панелей GUI </div>  </div>
+<div class="title">basement::model::IDbComponents Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li>Создать .rcss и .rml файлы описания отдельных <a class="el" href="a35353.html#ScreenDescriptionUsingFrameworkAnchor">экранов программы</a>.</li>
-<li>Создать <a class="el" href="a35353.html#ScreenClassesUsingFrameworkAnchor">классы</a> отдельных экранов программы.</li>
-<li>Создать <a class="el" href="a35353.html#MainWindowClassUsingFrameworkAnchor">класс</a> главного окна программы.</li>
-</ul>
-<p><a class="anchor" id="ScreenDescriptionUsingFrameworkAnchor"></a> </p><h2>Создание .rcss и .rml файлов описания отдельных экранов программы </h2>
-<p>Как это делается см. в документации/примерах <a href="https://barotto.github.io/libRocketDoc/">libRocket</a>.</p>
-<p><a href="https://barotto.github.io/libRocketDoc/pages/rcss/property_index.html">Доступные css свойства</a>.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Внешний вид элементов управления можно задавать при помощи либо стилей css, либо изображений из заранее подготовленной текстуры - во втором случае .rml файл грузится быстрее.</dd></dl>
-<p>Все файлы (.rml, .rcss, .png) следует поместить в папку (Windows - корневая папка программы, Android - папка assets проекта Packaging), пути к этим файлам в программе задаются относительно этой папки, а в самом файле - относительно папки расположения этого файла.</p>
-<p>Файлы .rml могут содержать в качестве текста не ASCII символы, но в этом случае их следует сохранять как utf8, а используемые шрифты должны поддерживать соответствующие Unicode символы.</p>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Файлы .rcss не должны сохраняться как utf8, т.к. они включаются целиком в состав файлов .rml при парсинге, что приводит к появлению Assert'ов при запуске Debug версии программы.</dd></dl>
-<p><a class="anchor" id="ScreenClassesUsingFrameworkAnchor"></a> </p><h2>Создать классы отдельных экранов программы </h2>
-<p>Для каждого экрана программы необходимо создать класс-наследник от класса <a class="el" href="a34982.html" title="Класс входит в проект Covellite.Rocket   Класс одного слоя (пользовательского экрана) программы.">covellite::rocket::Layer</a>, передав ему в качестве второго параметра конструктора путь к соответствующему .rml файлу.</p>
-<div class="fragment"><div class="line"><span class="keyword">class </span>MainScreen final :</div><div class="line">  <span class="keyword">public</span> <a class="code" href="a34762.html">::covellite::gui::Layer</a></div><div class="line">{</div></div><!-- fragment --><div class="fragment"><div class="line">MainScreen::MainScreen(IWindowGui_t &amp; _Window) :</div><div class="line">  Layer(_Window, <span class="stringliteral">&quot;data/main.rml&quot;</span>)</div><div class="line">{</div></div><!-- fragment --><p> Если необходим экран с заголовком, содержащим текст, заданный в заголовке .rml файла, создать класс наследник слоя, в конструкторе которого передать базовому классу идентификатор заголовка из его объявления в .rml файле.</p>
-<dl class="todo"><dt><b><a class="el" href="a33875.html#_todo000004">Необходимо сделать:</a></b></dt><dd>Добавить пример использования панели с заголовком.</dd></dl>
-<p><a class="anchor" id="MainWindowClassUsingFrameworkAnchor"></a> </p><h2>Создание класса главного окна программы </h2>
-<p>Класс главного окна программы отвечает за переключение пользовательских экранов и обработку пользовательского ввода.</p>
-<p>Создать класс-наследник от класса <a class="el" href="a34402.html" title="Класс входит в проект Covellite.App   Интерфейсный класс для классов окон фреймворка.">covellite::app::IWindow</a>, в конструкторе котрого установить набор строк для локализации приложения, добавить стартовый экран программы и подписаться на требующие обработки на уровне окна приложения события.</p>
-<div class="fragment"><div class="line"><a class="code" href="a35098.html#ac57ba51e6971d20e34c0f78989ef55d8">ExampleWindow::ExampleWindow</a>(WindowGui_t &amp; _WindowGui) :</div><div class="line">  m_WindowGui(_WindowGui),</div><div class="line">  m_Events(_WindowGui)</div><div class="line">{</div><div class="line">  <span class="comment">// Набор строк локализации приложения в данном случае используется для </span></div><div class="line">  <span class="comment">// вывода различного текста на различных платформах).</span></div><div class="line">  m_WindowGui.Set(</div><div class="line">  {</div><div class="line"><span class="preprocessor"># if BOOST_OS_WINDOWS</span></div><div class="line">    { u8<span class="stringliteral">&quot;[BACK]&quot;</span>, u8<span class="stringliteral">&quot;ALT + LEFT&quot;</span> },</div><div class="line">    { u8<span class="stringliteral">&quot;[EXIT]&quot;</span>, u8<span class="stringliteral">&quot;кнопку закрытия окна программы&quot;</span> },</div><div class="line"><span class="preprocessor"># elif BOOST_OS_ANDROID</span></div><div class="line">    { u8<span class="stringliteral">&quot;[BACK]&quot;</span>, u8<span class="stringliteral">&quot;кнопку BACK устройства&quot;</span> },</div><div class="line">    { u8<span class="stringliteral">&quot;[EXIT]&quot;</span>, u8<span class="stringliteral">&quot;кнопку HOME устройства&quot;</span> },</div><div class="line"><span class="preprocessor"># endif</span></div><div class="line">  });</div><div class="line">    </div><div class="line">  <span class="comment">// Экран, который будет отображаться при старте программы.</span></div><div class="line">  m_WindowGui.PushLayer&lt;<a class="code" href="a35138.html">::layers::MainScreen</a>&gt;();</div><div class="line">    </div><div class="line">  <span class="comment">// Подписка на события перехода к другим слоям (события объекта Button</span></div><div class="line">  <span class="comment">// активируются в классе layers::MainScreen при нажатии на соответствующую</span></div><div class="line">  <span class="comment">// кнопку).</span></div><div class="line">  m_Events[::layers::Button.Back]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.Back(); });</div><div class="line">  m_Events[::layers::Button.Help]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.PushLayer&lt;<a class="code" href="a35118.html">::layers::Description</a>&gt;(); });</div><div class="line">  m_Events[::layers::Button.Controls]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.PushLayer&lt;<a class="code" href="a35106.html">::layers::Controls</a>&gt;(); });</div><div class="line">  m_Events[::layers::Button.Text]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.PushLayer&lt;<a class="code" href="a35142.html">::layers::Text</a>&gt;(); });</div><div class="line">  m_Events[::layers::Button.Draw3DObject]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.PushLayer&lt;<a class="code" href="a35122.html">::layers::Draw3DObject</a>&gt;(); });</div><div class="line">  m_Events[::layers::Button.Simple2DGame]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.PushLayer&lt;<a class="code" href="a35126.html">::layers::Simple2DGame</a>&gt;(); });</div><div class="line">  m_Events[::layers::Button.Demo]</div><div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) { m_WindowGui.PushLayer&lt;<a class="code" href="a35110.html">::layers::Demo</a>&gt;(); });</div><div class="line">}</div></div><!-- fragment --> <dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Идентификаторы элементов управления передаются в функцию-обработчик события Click_t в нижнем регистре независимо от того, каким образом они были заданы в .rml файле.</li>
-<li>Цвет фона можно задавать как поле <b>background-color</b> для body в .rcss файле, но в этом случае для заполнения всего окна следует в стилях rml и body поставить <div class="fragment"><div class="line">rml,</div><div class="line">body</div><div class="line">{</div><div class="line">  top: 0px;</div><div class="line">  left: 0px;</div><div class="line">  width: 100%;</div><div class="line">  height: 100%;</div><div class="line">}</div><div class="line">  </div><div class="line">body</div><div class="line">{</div><div class="line">  background-color: blue;</div><div class="line">  ...</div></div><!-- fragment --></li>
-</ul>
-</dd></dl>
-<p>В классе окна событие Click_t будет вызываться для всех элементов управления всех активных пользовательских экранов, при этом здесь имеет смысл обрабатывать события, непосредственно связанные с работой окна (переход к другому слою или выход из программы).</p>
-<p><a class="el" href="a33887.html">События</a>, которые может обрабатывать окно. </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+
+<p>Полный список членов класса <a class="el" href="a35356.html">basement::model::IDbComponents</a>, включая наследуемые из базового класса</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a35356.html#ac43a9b1ccbd97ef663de9e6058543076">DoAddObject</a></td><td class="entry"><a class="el" href="a35356.html">basement::model::IDbComponents</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="a35356.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91">DoRemoveObject</a></td><td class="entry"><a class="el" href="a35356.html">basement::model::IDbComponents</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a35356.html#adf5e3bffb49c54e820d43cfa6a199d79">GetComponent</a>(const ComponentId_t &amp;) const =0</td><td class="entry"><a class="el" href="a35356.html">basement::model::IDbComponents</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a35356.html#a2e9eabfd586b1110838219a4b3ada24a">GetObject</a>(const Id_t) const =0</td><td class="entry"><a class="el" href="a35356.html">basement::model::IDbComponents</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a35355.html">Manual</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Фев 2019 23:34:12. Создано системой
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 6 Апр 2019 00:53:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

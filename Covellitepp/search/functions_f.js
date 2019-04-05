@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unsubscribe',['Unsubscribe',['../a34474.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7',1,'covellite::core::EventHandler']]]
+  ['unsubscribe',['Unsubscribe',['../a34676.html#a221a8b2a07e5a8283f5e0cc8a5e4a0b7',1,'covellite::core::EventHandler']]]
 ];

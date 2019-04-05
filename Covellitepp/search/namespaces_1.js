@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['light',['Light',['../a33911.html',1,'']]]
+  ['debug',['Debug',['../a34087.html',1,'com::UnicornumVerum::Example']]],
+  ['release',['Release',['../a34095.html',1,'com::UnicornumVerum::Example']]]
 ];

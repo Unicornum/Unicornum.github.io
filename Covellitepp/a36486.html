@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Файл Solution/Solution/Covellite.Rocket/Test.Covellite.Rocket/Test.File/File_test.cpp</title>
+<title>Covellite++: Файл Solution/Solution/Covellite.Rocket/Test.Covellite.Rocket/mock.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.11 Revision: 1369 Platform: x64 Build: 23:33 23.02.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.12 Revision: 1512 Platform: x64 Build: 00:52 06.04.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -88,78 +88,112 @@ $(document).ready(function(){initNavTree('a36486.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#namespaces">Пространства имен</a>  </div>
   <div class="headertitle">
-<div class="title">Файл File_test.cpp</div>  </div>
+<div class="title">Файл mock.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;Covellite\Rocket\File.hpp&gt;</code><br />
-<code>#include &lt;alicorn\std\vector.hpp&gt;</code><br />
-<code>#include &lt;alicorn\std\singleton.hpp&gt;</code><br />
-<code>#include &lt;alicorn\vfs.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;alicorn\std\exception.hpp&gt;</code><br />
+<code>#include &lt;alicorn\std\string.hpp&gt;</code><br />
+<code>#include &lt;alicorn\std\chrono.mock.hpp&gt;</code><br />
+<code>#include &lt;alicorn\platform\app-info.hpp&gt;</code><br />
+<code>#include &lt;alicorn\platform\environment.mock.hpp&gt;</code><br />
+<code>#include &lt;alicorn\logger.mock.hpp&gt;</code><br />
+<code>#include &lt;alicorn\settings.mock.hpp&gt;</code><br />
+<code>#include &lt;Rocket\Rocket.mock.hpp&gt;</code><br />
+<code>#include &lt;Platform\Android.mock.hpp&gt;</code><br />
+<code>#include &lt;alicorn\application\current-module.mock.hpp&gt;</code><br />
+<code>#include &quot;Mock\Namespaces.hpp&quot;</code><br />
+<code>#include &lt;Covellite\Core.mock.hpp&gt;</code><br />
+<code>#include &lt;Covellite\Core\Settings.mock.hpp&gt;</code><br />
+<code>#include &lt;Covellite\Rocket.inside.mock.hpp&gt;</code><br />
+<code>#include &quot;Mock\Time.hpp&quot;</code><br />
+<code>#include &quot;Mock\StringTranslator.hpp&quot;</code><br />
+<code>#include &quot;Mock\RocketInterfaces.hpp&quot;</code><br />
+<code>#include &quot;Mock\SystemToRocketKeyCode.inl&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для File_test.cpp:</div>
+Граф включаемых заголовочных файлов для mock.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a36487.png" border="0" usemap="#_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2_test_8_file_2_file__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2_test_8_file_2_file__test_8cpp" id="_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2_test_8_file_2_file__test_8cpp">
-<area shape="rect"  title=" " alt="" coords="2211,5,2425,61"/>
-<area shape="rect"  href="a35754_source.html" title=" " alt="" coords="1775,117,1851,143"/>
-<area shape="rect"  title=" " alt="" coords="1875,109,2022,151"/>
-<area shape="rect"  title=" " alt="" coords="2046,109,2201,151"/>
-<area shape="rect"  title=" " alt="" coords="2225,117,2411,143"/>
-<area shape="rect"  title=" " alt="" coords="2435,117,2606,143"/>
-<area shape="rect"  title=" " alt="" coords="2630,117,2817,143"/>
-<area shape="rect"  title=" " alt="" coords="2841,117,2961,143"/>
-<area shape="rect"  title=" " alt="" coords="1526,206,1715,233"/>
-<area shape="rect"  title=" " alt="" coords="1739,199,1886,240"/>
-<area shape="rect"  href="a36108_source.html" title=" " alt="" coords="1910,206,2011,233"/>
-<area shape="rect"  title=" " alt="" coords="5,295,79,322"/>
-<area shape="rect"  title=" " alt="" coords="103,295,194,322"/>
-<area shape="rect"  title=" " alt="" coords="219,295,409,322"/>
-<area shape="rect"  title=" " alt="" coords="433,295,597,322"/>
-<area shape="rect"  title=" " alt="" coords="622,295,833,322"/>
-<area shape="rect"  title=" " alt="" coords="857,288,1011,329"/>
-<area shape="rect"  title=" " alt="" coords="1035,295,1315,322"/>
-<area shape="rect"  title=" " alt="" coords="1339,295,1518,322"/>
-<area shape="rect"  title=" " alt="" coords="1542,295,1734,322"/>
-<area shape="rect"  href="a00704_source.html" title=" " alt="" coords="1758,295,1945,322"/>
-<area shape="rect"  href="a00806_source.html" title=" " alt="" coords="1969,295,2168,322"/>
-<area shape="rect"  title=" " alt="" coords="2193,288,2390,329"/>
-<area shape="rect"  title=" " alt="" coords="2414,295,2587,322"/>
-<area shape="rect"  title=" " alt="" coords="2612,295,2795,322"/>
-<area shape="rect"  title=" " alt="" coords="2819,295,3062,322"/>
-<area shape="rect"  title=" " alt="" coords="3087,295,3325,322"/>
-<area shape="rect"  title=" " alt="" coords="3350,295,3473,322"/>
-<area shape="rect"  title=" " alt="" coords="3497,295,3694,322"/>
-<area shape="rect"  title=" " alt="" coords="3719,295,3923,322"/>
-<area shape="rect"  title=" " alt="" coords="3947,295,4196,322"/>
-<area shape="rect"  href="a36360_source.html" title=" " alt="" coords="1213,377,1465,404"/>
-<area shape="rect"  href="a36390_source.html" title=" " alt="" coords="1489,377,1667,404"/>
-<area shape="rect"  href="a36084_source.html" title=" " alt="" coords="1755,377,1947,404"/>
-<area shape="rect"  title=" " alt="" coords="1173,452,1378,479"/>
-<area shape="rect"  title=" " alt="" coords="1403,452,1623,479"/>
-<area shape="rect"  title=" " alt="" coords="1647,452,1723,479"/>
-<area shape="rect"  title=" " alt="" coords="1747,452,1956,479"/>
-<area shape="rect"  title=" " alt="" coords="1981,452,2210,479"/>
-<area shape="rect"  title=" " alt="" coords="2235,452,2473,479"/>
-<area shape="rect"  title=" " alt="" coords="1971,377,2158,404"/>
-<area shape="rect"  href="a35505_source.html" title=" " alt="" coords="2182,377,2278,404"/>
-<area shape="rect"  href="a36276_source.html" title=" " alt="" coords="2303,377,2392,404"/>
-<area shape="rect"  href="a00809_source.html" title=" " alt="" coords="2457,377,2531,404"/>
-<area shape="rect"  title=" " alt="" coords="2498,452,2570,479"/>
+<div class="center"><img src="a36487.png" border="0" usemap="#_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2mock_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2mock_8hpp" id="_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2mock_8hpp">
+<area shape="rect"  title=" " alt="" coords="1852,5,2067,61"/>
+<area shape="rect"  title=" " alt="" coords="5,117,79,143"/>
+<area shape="rect"  title=" " alt="" coords="103,117,194,143"/>
+<area shape="rect"  title=" " alt="" coords="219,117,409,143"/>
+<area shape="rect"  title=" " alt="" coords="433,117,597,143"/>
+<area shape="rect"  title=" " alt="" coords="622,117,833,143"/>
+<area shape="rect"  title=" " alt="" coords="857,109,1011,151"/>
+<area shape="rect"  title=" " alt="" coords="1035,117,1315,143"/>
+<area shape="rect"  title=" " alt="" coords="1339,117,1518,143"/>
+<area shape="rect"  title=" " alt="" coords="1542,117,1734,143"/>
+<area shape="rect"  href="a00707_source.html" title=" " alt="" coords="1758,117,1945,143"/>
+<area shape="rect"  href="a00926_source.html" title=" " alt="" coords="1969,117,2168,143"/>
+<area shape="rect"  title=" " alt="" coords="2193,109,2390,151"/>
+<area shape="rect"  title=" " alt="" coords="2414,117,2587,143"/>
+<area shape="rect"  title=" " alt="" coords="2612,117,2795,143"/>
+<area shape="rect"  title=" " alt="" coords="2819,117,3062,143"/>
+<area shape="rect"  title=" " alt="" coords="3087,117,3325,143"/>
+<area shape="rect"  title=" " alt="" coords="3350,117,3473,143"/>
+<area shape="rect"  title=" " alt="" coords="3497,117,3694,143"/>
+<area shape="rect"  title=" " alt="" coords="3719,117,3923,143"/>
+<area shape="rect"  title=" " alt="" coords="3947,117,4196,143"/>
+<area shape="rect"  href="a36738_source.html" title=" " alt="" coords="1213,199,1465,225"/>
+<area shape="rect"  href="a36768_source.html" title=" " alt="" coords="1489,199,1667,225"/>
+<area shape="rect"  href="a36462_source.html" title=" " alt="" coords="1755,199,1947,225"/>
+<area shape="rect"  title=" " alt="" coords="1173,273,1378,300"/>
+<area shape="rect"  title=" " alt="" coords="1403,273,1623,300"/>
+<area shape="rect"  title=" " alt="" coords="1647,273,1723,300"/>
+<area shape="rect"  title=" " alt="" coords="1747,273,1956,300"/>
+<area shape="rect"  title=" " alt="" coords="1981,273,2210,300"/>
+<area shape="rect"  title=" " alt="" coords="2235,273,2473,300"/>
+<area shape="rect"  title=" " alt="" coords="1971,199,2158,225"/>
+<area shape="rect"  href="a35880_source.html" title=" " alt="" coords="2182,199,2278,225"/>
+<area shape="rect"  href="a36654_source.html" title=" " alt="" coords="2303,199,2392,225"/>
+<area shape="rect"  href="a00929_source.html" title=" " alt="" coords="2457,199,2531,225"/>
+<area shape="rect"  title=" " alt="" coords="2498,273,2570,300"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса File. </p>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="a36488.png" border="0" usemap="#_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2mock_8hppdep" alt=""/></div>
+<map name="_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2mock_8hppdep" id="_solution_2_solution_2_covellite_8_rocket_2_test_8_covellite_8_rocket_2mock_8hppdep">
+<area shape="rect"  title=" " alt="" coords="1488,5,1703,61"/>
+<area shape="rect"  href="a36123_source.html" title=" " alt="" coords="5,117,220,173"/>
+<area shape="rect"  href="a36126_source.html" title=" " alt="" coords="245,117,487,173"/>
+<area shape="rect"  href="a36129_source.html" title=" " alt="" coords="512,117,727,173"/>
+<area shape="rect"  href="a36132_source.html" title=" " alt="" coords="751,117,965,173"/>
+<area shape="rect"  href="a36135_source.html" title=" " alt="" coords="989,117,1204,173"/>
+<area shape="rect"  href="a36138_source.html" title=" " alt="" coords="1229,117,1463,173"/>
+<area shape="rect"  href="a36141_source.html" title=" " alt="" coords="1488,117,1703,173"/>
+<area shape="rect"  href="a36144_source.html" title=" " alt="" coords="1727,117,1941,173"/>
+<area shape="rect"  href="a36147_source.html" title=" " alt="" coords="1965,117,2180,173"/>
+<area shape="rect"  href="a36150_source.html" title=" " alt="" coords="2205,117,2434,173"/>
+<area shape="rect"  href="a36153_source.html" title=" " alt="" coords="2459,117,2673,173"/>
+<area shape="rect"  href="a36156_source.html" title=" " alt="" coords="2697,109,2928,180"/>
+<area shape="rect"  href="a36159_source.html" title=" " alt="" coords="2952,117,3167,173"/>
+</map>
+</div>
+</div>
+<p><a href="a36486_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:a34138"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a34138.html">testing</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Объявления подставных классов. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_15b5849acdd1209908229f98585b7cb5.html">Covellite.Rocket</a></li><li class="navelem"><a class="el" href="dir_4f6ea2b4ca4095ab628a8ae5d3cb2f86.html">Test.Covellite.Rocket</a></li><li class="navelem"><a class="el" href="dir_17335412af742b7a7f6723825cf8a8c7.html">Test.File</a></li><li class="navelem"><a class="el" href="a36486.html">File_test.cpp</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Фев 2019 23:34:11. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_15b5849acdd1209908229f98585b7cb5.html">Covellite.Rocket</a></li><li class="navelem"><a class="el" href="dir_4f6ea2b4ca4095ab628a8ae5d3cb2f86.html">Test.Covellite.Rocket</a></li><li class="navelem"><a class="el" href="a36486.html">mock.hpp</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 6 Апр 2019 00:53:19. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>

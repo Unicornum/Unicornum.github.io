@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['run',['Run',['../a34362.html#a6e7e6ddca1772be558b824a865bef71e',1,'covellite::app::Application::Run()'],['../a34438.html#ab5435e96c1693c7d05ea2fe538f3fd70',1,'covellite::core::Application::Run()']]]
+  ['m_5fdocumentid',['m_DocumentId',['../a34720.html#ada04fc91dd8e9e3ab3e79c3a939a885d',1,'covellite::core::params::Click']]],
+  ['m_5ftag',['m_Tag',['../a34720.html#af6029e7df52743c28f5bb6eb1233b479',1,'covellite::core::params::Click']]],
+  ['m_5ftype',['m_Type',['../a34720.html#ab7ce1cc95a70fb58080d60d945e37b83',1,'covellite::core::params::Click']]]
 ];

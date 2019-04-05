@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Компонентная система</title>
+<title>Covellite++: Класс basement::view::IDbRenders</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.1.11 Revision: 1369 Platform: x64 Build: 23:33 23.02.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.12 Revision: 1512 Platform: x64 Build: 00:52 06.04.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -87,286 +87,56 @@ $(document).ready(function(){initNavTree('a35360.html','');});
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="a35357.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Компонентная система </div>  </div>
+<div class="title">Класс basement::view::IDbRenders<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a34084.html">Example</a> &raquo; <a class="el" href="a34086.html">Basement</a> &raquo; <a class="el" href="a34085.html">Basement</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Используемые термины </h1>
-<ul>
-<li><b>Компонент</b> - объект, содержащий информацию об одном аспекте игрового объекта (таких как текстура, меш, положение и т.п.).</li>
-<li><b>Игровой</b> <b>объект</b> - объект в игровом мире, содержащий информацию в виде набора компонентов.</li>
-<li><b>Игровой</b> <b>мир</b> - набор игровых объектов, разбитый на иерархическую структуру из ячеек, каждая из которых содержит несколько игровых объектов; назначение - оптимизация подгрузки и выгрузки игровых объектов (сразу ячейками).</li>
-<li><b>Игровая</b> <b>сцена</b> - набор игровых объектов, непосредственно участвующих в игровом процессе; объекты подгружаются (по мере необходимости) из игрового мира и это именно те объекты, которые должны обновляться в процессе игры.</li>
-<li><b>Рендер</b> - объект, предназначенный для отображения игровых объектов в 3D сцене, создается на основе одного или набора нескольких компонентов.</li>
-<li><b>Объект</b> <b>3D</b> <b>сцены</b> - объект (набор рендеров), из которых состоит 3D сцена.</li>
-<li><b>3D</b> <b>сцена</b> - набор объектов 3D сцены, которые отображаются в окне программы; является 'зеркалом' той части объектов игровой сцены, которые попадают в поле зрения камеры.</li>
-</ul>
-<h1>Исходные требования </h1>
-<ul>
-<li>Не должно производиться никаких лишних действий (вызовов пустых функций), для каждого объекта (игрового и 3D сцены) должен выполнятся набор только ему необходимых действий.</li>
-<li>Отсутствие дублирования информации (все объекты, отрисовываемые при помощи одного меша, должны содержать ссылку на единую область памяти с информацией об этом меше).</li>
-</ul>
-<h1>Компоненты </h1>
-<p>Фреймворк предоставляет класс компонента <a class="el" href="a34026.html">Component</a>, а также механизм создания рендеров для этих компонентов с учетом активного графического Api (рендеры создаются через объект класса <a class="el" href="a34246.html">Renders</a>, который может быть получен при помощи функции GetRenders() класса <a class="el" href="a34262.html">Window</a>).</p>
-<p>Класс компонента:</p><ul>
-<li>Содержит и предоставляет доступ к параметрам, которые используются для создания рендеров.</li>
-<li>Параметры (кроме обязательных) могут отсутствовать, для таких параметров предусмотрено задание значений по умолчанию.</li>
-<li>Обязательный параметр <b>id</b> - идентификатор компонента. Для компонентов с одним и тем же идентификатором будет использоваться один и тот же рендер, поэтому объекты, содержащие один и тот же меш, могут содержать компоненты, у которых задан только (один и тот же) идентификатор, а развернутое описание этого компонента можно сделать в другом месте и создать его рендер заранее.</li>
-<li>Обязательный параметр <b>type</b> - тип компонента, который определяет способ отрисовки этого компонента.</li>
-<li>Параметр <b>kind</b> - дочерний подтип компонента; у некоторых типов не используется.</li>
-<li>Первоначальная информация может загружаться в виде строк, в дальнейшем (для ускорения рендеринга) при обновлении игровых объектов значения параметров следует устанавливать того же типа, какой используют рендеры (подробнее см. в описании параметорв компонентов).</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>Предполагается, что исходная информация о компоненте будет хранится в узлах xml файла, из которых параметры будут загружаться как атрибуты, у которых имя атрибута будет названием параметра, а значение атрибута - значением параметра.</dd></dl>
-<h2>Типы компонентов </h2>
-<h3>Data</h3>
-<p>Вспомогательный компонент, предназначенный для передачи информации рендерам других типов.</p>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Для этого компонента не создается рендера, вместо этого он захватывается и используется следующим рендером, который будет создан (какие данные нужны конкретным рендерам см. в описании соответствующих компонентов).</li>
-<li>Идентификатор этого компонента не используется.</li>
-</ul>
-</dd></dl>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Параметры  </th><th class="markdownTableHeadNone">Тип параметра  </th><th class="markdownTableHeadNone">Описание параметра   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Position (<a class="el" href="a35360.html#Footnote">1</a>)  </td><td class="markdownTableBodyNone">x, y, z  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Положение (координаты) в пространстве   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Rotation (<a class="el" href="a35360.html#Footnote">1</a>)  </td><td class="markdownTableBodyNone">x, y, z  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Ориентация (углы поворота вокруг соответствующей оси в радианах) в пространстве   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Scale (<a class="el" href="a35360.html#Footnote">1</a>)  </td><td class="markdownTableBodyNone">x, y, z  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Масштабирующие коэффициенты по соответствующим осям   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Direction (<a class="el" href="a35360.html#Footnote">1</a>)  </td><td class="markdownTableBodyNone">x, y, z  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Вектор направления (из указанной точки в начало координат) в пространстве   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Attenuation (<a class="el" href="a35360.html#Footnote">1</a>)  </td><td class="markdownTableBodyNone">const, linear, exponent  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Настройки затухания для точечного источника света   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Rect (<a class="el" href="a35360.html#Footnote">1</a>)  </td><td class="markdownTableBodyNone">left, top, right, bottom  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">Границы прямоугольника   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone" rowspan="3">Texture  </td><td class="markdownTableBodyNone">data  </td><td class="markdownTableBodyNone">const uint8_t *  </td><td class="markdownTableBodyNone">Бинарные данные текстуры в формате R8G8B8A8   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">width  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">Ширина изображения в пикселях   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">height  </td><td class="markdownTableBodyNone">int  </td><td class="markdownTableBodyNone">Высота изображения в пикселях   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone" rowspan="4">Shader.HLSL  </td><td class="markdownTableBodyNone">data  </td><td class="markdownTableBodyNone">const uint8_t *  </td><td class="markdownTableBodyNone">Содержимое текстового файла шейдера DirectX в бинарном виде   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">count  </td><td class="markdownTableBodyNone">size_t  </td><td class="markdownTableBodyNone">Размер данных шейдера в байтах   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">version  </td><td class="markdownTableBodyNone">std::string  </td><td class="markdownTableBodyNone">Версия шейдера (вида 'ps_4_0')   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">entry  </td><td class="markdownTableBodyNone">std::string  </td><td class="markdownTableBodyNone">Имя функции точки входа шейдера   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone" rowspan="4">Buffer  </td><td class="markdownTableBodyNone" rowspan="3">data  </td><td class="markdownTableBodyNone">const <a class="el" href="a34254.html">Vertex::Polygon</a> *  </td><td class="markdownTableBodyNone">Данные вертексного буфера для отрисовки плоских объектов (<a class="el" href="a35360.html#Footnote">2</a>)   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">const <a class="el" href="a34258.html">Vertex::Polyhedron</a> *  </td><td class="markdownTableBodyNone">Данные вертексного буфера для отрисовки объемных объектов   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">const int *  </td><td class="markdownTableBodyNone">Данные индексного буфера   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">count  </td><td class="markdownTableBodyNone">size_t  </td><td class="markdownTableBodyNone">Размер данных буфера в байтах   </td></tr>
-</table>
-<dl class="todo"><dt><b><a class="el" href="a33875.html#_todo000005">Необходимо сделать:</a></b></dt><dd>Для шейдеров, текстур, вертексных и индексных буферов добавить параметр - имя файла, из которого должны быть загружены данные.</dd></dl>
-<h3>Камера</h3>
-<p>Камера определяет способ отрисовки сцены и ее рендер должен быть первым в списке 3D сцены.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)  </th><th class="markdownTableHeadNone">Параметры  </th><th class="markdownTableHeadNone">Тип параметра  </th><th class="markdownTableHeadNone">Описание параметра   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Orthographic  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone" rowspan="5">Perspective  </td><td class="markdownTableBodyNone" rowspan="5">Position, Rotation  </td><td class="markdownTableBodyNone">distance  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Расстояние от позиции, заданной компонентом Data.Position до камеры   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">angle  </td><td class="markdownTableBodyNone">float  </td><td class="markdownTableBodyNone">Угол поля зрения по вертикали в градусах   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone" rowspan="3">dept  </td><td class="markdownTableBodyNone" rowspan="3">String  </td><td class="markdownTableBodyNone">Отсутствует - отключает использование буфера глубины   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Enabled - включает использование буфера глубины без очистки   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Clear - включает использование буфера глубины и очищает его   </td></tr>
-</table>
-<p><b>Ортографическа</b> камера определяет систему координат, в которой:</p><ul>
-<li>Начало координат находится в левом верхнем углу экрана (viewport'ом в Windows является вся клиентская часть окна, в Android - все за исключением заголовка окна).</li>
-<li>Координаты вдоль оси X увеличиваются слева направо.</li>
-<li>Координаты вдоль оси Y увеличиваются сверху вниз.</li>
-<li>Координаты вдоль оси Z увеличиваются от дальних к ближним.</li>
-<li>Одному пикселю соответствует изменение координаты на 1.0f.</li>
-</ul>
-<dl class="todo"><dt><b><a class="el" href="a33875.html#_todo000006">Необходимо сделать:</a></b></dt><dd><ul>
-<li>Добавить картинку с осями координат для Windows и Android.</li>
-</ul>
-</dd></dl>
-<p><b>Перспективная</b> камера:</p><ul>
-<li>'Смотрит' в точку, заданную компонентом Data.Position с расстояния <b>distance</b> с учетом ориентации, заданной компонентом Data.Rotation (если нужен вид 'от первого лица', установить distance в ноль).</li>
-<li>Отсутствие компонента Data.Rotation или нулевые значения углов ориентации соответствуют направлению взгляда из точки, смещенной от Data.Position на distance вдоль оси X.</li>
-</ul>
-<h3>State</h3>
-<p>Компонент изменения состояния конвеера рендеринга.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)  </th><th class="markdownTableHeadNone">Параметры  </th><th class="markdownTableHeadNone">Тип параметра  </th><th class="markdownTableHeadNone">Описание параметра   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Blend  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Sampler  </td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td><td class="markdownTableBodyNone"></td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Scissor  </td><td class="markdownTableBodyNone">Rect  </td><td class="markdownTableBodyNone">is_enabled  </td><td class="markdownTableBodyNone">bool  </td><td class="markdownTableBodyNone">В случае false Data.Rect не нужен   </td></tr>
-</table>
-<dl class="section note"><dt>Заметки</dt><dd>Каждая камера при рендеринге отключает блендинг.</dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd>Компонент <b>Sampler</b> следует устанавливать после компонента текстуры, иначе возможно некорректное отображение при использовании реализаций OpenGL|OpenGLES.</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="a33875.html#_todo000007">Необходимо сделать:</a></b></dt><dd>Получение параметров Blend и Sampler - через компонент Data.</dd></dl>
-<h3><a class="el" href="a33911.html" title="Входит в проект Covellite.Api   Пространство имен структур для передачи шейдеру информации об источни...">Light</a></h3>
-<p>Компонент источника света.</p>
-<p>Логика использования источников света предполагает:</p><ul>
-<li>Активация рендера камеры создает новую сцену, в которой по умолчанию источники света отсутствуют (поэтому, если - например - требуется отрисовать несколько объектов без использования освещения, следует выделить их в отдельную сцену со своей уникальной камерой).</li>
-<li>Компоненты источников света могут располагаться в любом месте списка объектов при создании рендеров (при этом необходимо учитывать, что рендеры источников света добавляют информацию о себе в список источников света текущей сцены (другими словами - активной камеры), а при рендеринге текущего кадра используются источники света, установленные во время рендеринга предыдущего кадра).</li>
-</ul>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)  </th><th class="markdownTableHeadNone">Параметры  </th><th class="markdownTableHeadNone">Тип параметра  </th><th class="markdownTableHeadNone">Описание параметра   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Ambient  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">color  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет (ambient) в формате ARGB (0xFF00FF00)   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">Direction  </td><td class="markdownTableBodyNone">Direction  </td><td class="markdownTableBodyNone">color  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет (diffuse и specular) в формате ARGB (0xFF00FF00)   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Point  </td><td class="markdownTableBodyNone">Position, Attenuation  </td><td class="markdownTableBodyNone">color  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет (diffuse и specular) в формате ARGB (0xFF00FF00)   </td></tr>
-</table>
-<p>При использовании точечных источников света следует учитывать, что реализации, использующие статический конвеер (с этим ничего нельзя сделать), а также шейдеры, предоставляемые фреймворком по умолчанию (для унификации результата отрисовки на разных устройствах) реализуют расчет освещения по Гуро (вычисляются цвета вершин, промежуточные получаются путем интерполяции). Т.е. источник света рядом с большой поверхностью, заданной четырьмя вершинами (факел на стене) не даст реалистичного круглого пятна света - вместо этого будет получена однотонная слабо освещенная поверхность, т.к. вершины расположены далеко и (скорее всего) будут иметь черный цвет. В этом случае следует использовать карты освещения или написать собственный шейдер, реализующий другой метод расчета освещения.</p>
-<p>Пример использования разных типов расчета освещения применительно к одной и той же плоскости, заданной четырьмя вершинами:</p>
-<div class="image">
-<img src="Lights.png" alt="Lights.png"/>
+
+<p>Класс входит в проект <a class="el" href="a35748.html">Example</a> <br />
+ Интерфейсный класс базы данных рендеров.  
+ <a href="a35360.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00797_source.html">IDbRenders.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:basement::view::IDbRenders:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35359.png" border="0" usemap="#basement_1_1view_1_1_i_db_renders_inherit__map" alt="Inheritance graph"/></div>
+<map name="basement_1_1view_1_1_i_db_renders_inherit__map" id="basement_1_1view_1_1_i_db_renders_inherit__map">
+<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ½ÑÐµÑÑÐµÐ¹ÑÐ½ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð±Ð°Ð·Ñ Ð´Ð°Ð½Ð½ÑÑ ÑÐµÐ½Ð´ÐµÑÐ¾Ð²." alt="" coords="109,5,324,112"/>
+<area shape="rect"  href="a35312.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ»Ð°ÑÑ ÑÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð±Ð°Ð·Ñ Ð´Ð°Ð½Ð½ÑÑ ÑÐµÐ½Ð´ÐµÑÐ¾Ð²." alt="" coords="5,160,215,311"/>
+<area shape="rect"  href="a35388.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ»Ð°ÑÑ ÑÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð¿ÑÐµÐ´ÑÑÐ°Ð²Ð»ÐµÐ½Ð¸Ñ Ð¿Ð°ÑÑÐµÑÐ½Ð° MVC." alt="" coords="239,160,410,311"/>
+</map>
 </div>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Фоновых и направленных источников света может быть не более одного, точечных может быть несколько.</li>
-<li>Пропущенные параметры устанавливаются в 0xFF000000.</li>
-<li>Параметры компонента Data.Attenuation используются следующим образом: <br />
- bright = color / (const + (linear + exponent * distance) * distance).</li>
-<li>При удалении точечных источников света из 3D сцены следует учитывать, что источник света, не попадающий в поле зрения камеры тем не менее может освещать объекты, попадающие в поле зрения камеры.</li>
-<li>Если используется рендеринг при помощи шейдеров (DirectX10/11), то информация об источниках света просто передается пиксельному шейдеру и необходимо самостоятельно задействовать эту информацию в шейдере (форматы передачи данных шейдерам см. <a class="el" href="a33879.html">Fx</a>); также для рендеринга сцены без источников света следует использовать пиксельный шейдер, который не использует информацию об источниках света.</li>
-</ul>
+<div class="dynheader">
+Граф связей класса basement::view::IDbRenders:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35358.png" border="0" usemap="#basement_1_1view_1_1_i_db_renders_coll__map" alt="Collaboration graph"/></div>
+<map name="basement_1_1view_1_1_i_db_renders_coll__map" id="basement_1_1view_1_1_i_db_renders_coll__map">
+<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ½ÑÐµÑÑÐµÐ¹ÑÐ½ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð±Ð°Ð·Ñ Ð´Ð°Ð½Ð½ÑÑ ÑÐµÐ½Ð´ÐµÑÐ¾Ð²." alt="" coords="5,5,220,112"/>
+</map>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a35748.html">Example</a> <br />
+ Интерфейсный класс базы данных рендеров. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
 </dd></dl>
-<h3><a class="el" href="a34178.html" title="Класс входит в проект Covellite.Api   Структура для передачи шейдеру данных материала.">Material</a></h3>
-<p>Компонент материала (нужен для расчета освещения).</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">Параметры  </th><th class="markdownTableHeadNone">Тип параметра  </th><th class="markdownTableHeadNone">Описание параметра   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">ambient  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет в формате ARGB (0xFF00FF00)   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">diffuse  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет в формате ARGB (0xFF00FF00)   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">specular  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет в формате ARGB (0xFF00FF00)   </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">emission  </td><td class="markdownTableBodyNone">uint32_t  </td><td class="markdownTableBodyNone">Цвет в формате ARGB (0xFF00FF00)   </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">shininess  </td><td class="markdownTableBodyNone">int32_t  </td><td class="markdownTableBodyNone">Значение в диапазоне 0...0x80   </td></tr>
-</table>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Материал должен устанавливаться для каждого объекта 3D сцены, которому требуется рассчет освещения.</li>
-<li>Рекомендуется заранее подготовить набор используемых в сцене рендеров материалов (дерево, металл, камень, пластик и т.п.) и в дальнейшем использовать рендеры этих компонентов.</li>
-<li>Пропущенные параметры устанавливаются в 0xFF000000.</li>
-<li>Если используется рендеринг при помощи шейдеров (DirectX10/11):<ul>
-<li>Информация о материале объекта просто передается шейдеру и необходимо самостоятельно задействовать эту информацию в пиксельном шейдере (форматы передачи данных шейдерам см. <a class="el" href="a33879.html">Fx</a>).</li>
-<li>Компонент материала при создании рендеров должен располагаться после пиксельного шейдера.</li>
-</ul>
-</li>
-</ul>
+<dl class="section date"><dt>Дата</dt><dd>10 Март 2019 <br />
 </dd></dl>
-<h3>Texture</h3>
-<p>Компонент текстуры.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)  </th><th class="markdownTableHeadNone">Параметры  </th><th class="markdownTableHeadNone">Тип параметра  </th><th class="markdownTableHeadNone">Описание параметра   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">Texture (<a class="el" href="a35360.html#Footnote">3</a>)  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">-   </td></tr>
-</table>
-<dl class="todo"><dt><b><a class="el" href="a33875.html#_todo000008">Необходимо сделать:</a></b></dt><dd>Параметр для указания индекса текстуры при мультитекстурировании.</dd></dl>
-<h3>Shader</h3>
-<p>Компонент шейдера.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)  </th><th class="markdownTableHeadNone">Параметры   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">Shader.HLSL (<a class="el" href="a35360.html#Footnote">3</a>)  </td><td class="markdownTableBodyNone">-   </td></tr>
-</table>
-<dl class="section note"><dt>Заметки</dt><dd>Тип создаваемого шейдера выводится автоматически из входного типа данных указанной функции точки входа.</dd></dl>
-<p>Всем шейдерам в качестве заголовочных файлов передаются:</p><ul>
-<li>Файл, содержащий описания структур для передачи данных шейдеру (<a class="el" href="a33879.html">Fx</a>).</li>
-<li>Файл, содержащий описания форматов входных данных шейдеров</li>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2019 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Example/Example/Basements/Demo/<a class="el" href="a00797_source.html">IDbRenders.hpp</a></li>
 </ul>
-<div class="fragment"><div class="line"></div><div class="line">// Входные данные вертексного шейдера (используется совместно с форматом</div><div class="line">// буфера для отрисовки плоских объектов).</div><div class="line">struct Polygon</div><div class="line">{</div><div class="line">  float2 Position : POSITION;</div><div class="line">  uint Color : COLOR;</div><div class="line">  float2 TexCoord : TEXCOORD;</div><div class="line">};</div><div class="line">  </div><div class="line">// Входные данные вертексного шейдера (используется совместно с форматом</div><div class="line">// буфера для отрисовки объемных объектов).</div><div class="line">struct Polyhedron</div><div class="line">{</div><div class="line">  float3 Position : POSITION;</div><div class="line">  float3 Normal : NORMAL;</div><div class="line">  float2 Texture : TEXCOORD;</div><div class="line">};</div><div class="line">  </div><div class="line">// Входные данные пиксельного шейдера</div><div class="line">struct Pixel</div><div class="line">{</div><div class="line">  float4 ScreenPos : SV_POSITION;</div><div class="line">  float4 Color : COLOR;</div><div class="line">  float3 Normal : NORMAL;</div><div class="line">  float2 TexCoord : TEXCOORD0;</div><div class="line">  float4 WorldPos : TEXCOORD1;</div><div class="line">};</div><div class="line"></div></div><!-- fragment --><p> Если не указаны бинарные данные шейдера (параметры <b>data</b> и <b>count</b>), вместо них будут использоваться шейдеры по умолчанию (те, что использует фреймворк для рендеринга Gui):</p>
-<div class="fragment"><div class="line"></div><div class="line">Pixel VS(Polygon _Value)</div><div class="line">{</div><div class="line">  Pixel Result = (Pixel)0;</div><div class="line"></div><div class="line">  float4x4 WorldViewProj = mul(MatricesData.World, </div><div class="line">    mul(MatricesData.View, MatricesData.Projection));</div><div class="line">  float4 Pos = float4(_Value.Position, 0.0f, 1.0f);</div><div class="line"></div><div class="line">  float A = ((_Value.Color &amp; 0xFF000000) &gt;&gt; 24) / 255.0f;</div><div class="line">  float B = ((_Value.Color &amp; 0x00FF0000) &gt;&gt; 16) / 255.0f;</div><div class="line">  float G = ((_Value.Color &amp; 0x0000FF00) &gt;&gt; 8) / 255.0f;</div><div class="line">  float R = (_Value.Color &amp; 0x000000FF) / 255.0f;</div><div class="line"></div><div class="line">  Result.ScreenPos = mul(Pos, WorldViewProj);</div><div class="line">  Result.Color = float4(R, G, B, A);</div><div class="line">  Result.TexCoord = _Value.TexCoord;</div><div class="line"></div><div class="line">  return Result;</div><div class="line">}</div><div class="line"></div><div class="line">float4 CalcPointLight(Light::Point _Light, float4 _Position, float3 _Normal)</div><div class="line">{</div><div class="line">  float4 Direction = _Light.Position - _Position;</div><div class="line"></div><div class="line">  float LightFactor = max(dot(_Normal, normalize(Direction.xyz)), 0.0f);</div><div class="line">  float4 Color = GetRGBAColor(_Light.ARGBColor) * LightFactor;</div><div class="line">  float Distance = length(Direction);</div><div class="line"></div><div class="line">  float Attenuation = </div><div class="line">    _Light.Attenuation.x +</div><div class="line">    _Light.Attenuation.y * Distance +</div><div class="line">    _Light.Attenuation.z * Distance * Distance;</div><div class="line"></div><div class="line">  return Color / Attenuation;</div><div class="line">}</div><div class="line"></div><div class="line">float4 SyncSaturate(float4 _Color)</div><div class="line">{</div><div class="line">  float MaxXYZ = max(max(_Color.x, _Color.y), _Color.z);</div><div class="line">  if (MaxXYZ &lt; 1.0f) return _Color;</div><div class="line"></div><div class="line">  return _Color / MaxXYZ;</div><div class="line">}</div><div class="line"></div><div class="line">float4 GetGouraudLightsColor(float4 _WorldPos, float3 _Normal)</div><div class="line">{</div><div class="line">  // Полноценную реализацию, включающую specular и материал, см</div><div class="line">  // https://habr.com/ru/post/338254/</div><div class="line"></div><div class="line">  // Ambient</div><div class="line"></div><div class="line">  float4 AmbientColor = GetRGBAColor(LightsData.Ambient.ARGBColor);</div><div class="line"></div><div class="line">  // Direction</div><div class="line"></div><div class="line">  float3 Direction = normalize(LightsData.Direction.Direction.xyz);</div><div class="line">  float4 DirectColor = GetRGBAColor(LightsData.Direction.ARGBColor) * </div><div class="line">    max(dot(_Normal, Direction), 0.0f);</div><div class="line"></div><div class="line">  // Points</div><div class="line"></div><div class="line">  uint PointLightSlotCount = </div><div class="line">    min(LightsData.Points.UsedSlotCount, MAX_LIGHT_POINT_COUNT);</div><div class="line"></div><div class="line">  float4 PointsColor = float4(0.0f, 0.0f, 0.0f, 0.0f);</div><div class="line"></div><div class="line">  for (uint i = 0; i &lt; PointLightSlotCount; i++)</div><div class="line">  {</div><div class="line">    PointsColor +=</div><div class="line">      CalcPointLight(LightsData.Points.Lights[i], _WorldPos, _Normal);</div><div class="line">  }</div><div class="line"></div><div class="line">  // Result</div><div class="line"></div><div class="line">  return saturate(AmbientColor + DirectColor + PointsColor);</div><div class="line">}</div><div class="line"></div><div class="line">Pixel vsTextured(Polyhedron _Value)</div><div class="line">{</div><div class="line">  Pixel Result = (Pixel)0;</div><div class="line"></div><div class="line">  float4x4 WorldViewProj = mul(MatricesData.World, </div><div class="line">    mul(MatricesData.View, MatricesData.Projection));</div><div class="line">  float4 Pos = float4(_Value.Position, 1.0f);</div><div class="line">  float3 Normal = normalize(mul(_Value.Normal, (float3x3)MatricesData.World));</div><div class="line">  float4 WorldPos = mul(Pos, MatricesData.World);</div><div class="line"></div><div class="line">  Result.ScreenPos = mul(Pos,  WorldViewProj);</div><div class="line">  Result.Color = GetGouraudLightsColor(WorldPos, Normal);</div><div class="line">  Result.Normal = Normal;</div><div class="line">  Result.TexCoord = _Value.Texture;</div><div class="line">  Result.WorldPos = WorldPos;</div><div class="line"></div><div class="line">  return Result;</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line"></div><div class="line">Texture2D diffuseMap : register(t0);</div><div class="line">SamplerState diffuseSampler : register(s0);</div><div class="line"></div><div class="line">float4 psColored(Pixel _Value) : SV_Target</div><div class="line">{</div><div class="line">  return _Value.Color; </div><div class="line">}</div><div class="line"></div><div class="line">float4 psTextured(Pixel _Value) : SV_Target</div><div class="line">{</div><div class="line">  return diffuseMap.Sample(diffuseSampler, _Value.TexCoord) * _Value.Color;</div><div class="line">}</div></div><!-- fragment --><h3>Buffer</h3>
-<p>Компонент буферов геометрии меша.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">-  </td><td class="markdownTableBodyNone">Buffer (<a class="el" href="a35360.html#Footnote">3</a>)   </td></tr>
-</table>
-<h3>Present</h3>
-<p>Компонент отправки информации в конвеер рендеринга.</p>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadNone">kind  </th><th class="markdownTableHeadNone">Требуется Data (kind)   </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">Geometry  </td><td class="markdownTableBodyNone">Position, Rotation, Scale (<a class="el" href="a35360.html#Footnote">4</a>)   </td></tr>
-</table>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Компонент должен завершать набор компонентов каждого объекта 3D сцены и должен иметь уникальный id для каждого конкретного объекта.</li>
-</ul>
-</dd></dl>
-<h2>Сноски </h2>
-<p><a class="anchor" id="Footnote"></a></p><ol type="1">
-<li>Параметры этих компонентов могут изменяться во время работы программы (т.е. для изменения положения объекта в пространстве не нужно его пересоздавать, достаточно установить новые координаты комопоненту его положения), для изменения остальных (например замены 3D модели объекта) необходимо создать новый набор компонентов, удалить из 3D сцены старый и создать новый объект.</li>
-<li><a class="el" href="a34254.html">Vertex::Polygon</a> создан специально для рендеринга элементов Gui и соответствует формату данных, получаемых от libRocket.</li>
-<li>Параметр <b>file</b> можно передавать ТОЛЬКО через компонента Data, все остальные параметры можно указывать непосредственно основному компоненту, без использования компонента Data.</li>
-<li>Может быть несколько компонентов, что можно использовать для привязки (совместного движения) объектов друг к другу (в этом случае необходимо гарантировать, чтобы в качестве общего компонента использовался ОДИН И ТОТ ЖЕ объект, совпадения идентификаторов компонентов недостаточно!).</li>
-</ol>
-<h1>Общая концепция использования компонентов </h1>
-<p>Основная идея работы с 3D объектами предполагает использование архитектуры программы на основе паттерна MVC.</p>
-<h2>Модель </h2>
-<ul>
-<li>Загружает игровой мир как набор ячеек, каждая из которых ссылается на место хранения информации о содержащихся в ячейке объектах.</li>
-<li>Содержит базу данных игровых объектов и функции, которые позволяют получать набор компонентов (для обновления и рендеринга) игрового объекта по его идентификатору.</li>
-<li>Содержит игровую сцену(ы), которая включает идентификаторы камеры, а также источников света и объектов, находящихся рядом с камерой.</li>
-<li>При перемещениях игрока добавляются приблизившиеся к камере и удаляются удалившиеся объекты (группами в ячейках).</li>
-<li>На стадии обновления обновляются объекты игровой сцены (можно обновлять объекты постепенно удаляясь от камеры пока не выйдет заданное на обновление время).</li>
-<li>Состояние 3D сцены является отражением состояния игрового мира, поэтому компоненты рендеров удаляются из 3D сцены при удалении из игрового мира ячеек, содержащих описания этих компонентов.</li>
-</ul>
-<h2>Представление </h2>
-<ul>
-<li>Класс окна, которое создается между окнами Api и Gui.</li>
-<li>Содержит, создает и удаляет объекты 3D сцены на основе информации, полученной от модели.</li>
-<li>При построении/обновлении 3D сцены первой должна идти камера.</li>
-<li>Изменение геометрии/материала производится удалением/добавлением игрового объекта.</li>
-</ul>
-<h2>Взаимодействие частей кода игры </h2>
-<ul>
-<li>Панель GUI с кнопками действий игрока (View) подписывается на события нажатия кнопок, при нажатии которых вызывает соответствующие функции модели, после чего активирует событие обновления 3D сцены.</li>
-<li>Игровая сцена (Model) при действии игрока:<ul>
-<li>Очищается от объектов, ранее помеченных для удаления.</li>
-<li>Обновляет состояние оставшихся объектов.</li>
-<li>Объекты, которые выпадают из зоны действия камеры, помечаются на удаление.</li>
-<li>Добавляются объекты, которые теперь попадают в зону действия камеры.</li>
-</ul>
-</li>
-<li>По событию обновления 3D сцены, она:<ul>
-<li>Запрашивает у модели изменения набора активных объектов.</li>
-<li>Удаляет объекты, которые больше не попадают в поле зрения камеры.</li>
-<li>Добавляет объекты, которые попали в поле зрения камеры.</li>
-<li>Рендерит актуальный набор объектов.</li>
-</ul>
-</li>
-</ul>
-<h1>Примеры использования компонентов </h1>
-<p><a class="el" href="a35349.html">Отрисовка 2D объектов</a></p>
-<p><a class="el" href="a35351.html">Отрисовка 3D объектов</a> </p>
-</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a35357.html">Структура решения</a></li><li class="navelem"><a class="el" href="a35362.html">Covellite.Api</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Фев 2019 23:34:12. Создано системой
+    <li class="navelem"><a class="el" href="a34144.html">basement</a></li><li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a35360.html">IDbRenders</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 6 Апр 2019 00:53:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
