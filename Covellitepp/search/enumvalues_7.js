@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['keydown',['KeyDown',['../a34890.html#a070c82dd58e7ee7662ec39feab47ccf5a1108600bdb8149909eef87a270f9abbe',1,'covellite::core::Event']]],
-  ['keypressed',['KeyPressed',['../a34890.html#a070c82dd58e7ee7662ec39feab47ccf5a479acae39dfd3a485a3c8507c9e068b6',1,'covellite::core::Event']]],
-  ['keyup',['KeyUp',['../a34890.html#a070c82dd58e7ee7662ec39feab47ccf5a67e6d6e8c8e5d5b48f6e787ea8d9ee30',1,'covellite::core::Event']]]
+  ['start',['Start',['../a34019.html#gga6dc58d1f78db12dfbb053e6a9f62c76da031e03b257611cf2e60651d876ba705a',1,'covellite::events::Application_t']]]
 ];

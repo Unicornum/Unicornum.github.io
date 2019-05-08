@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bkcolor',['BkColor',['../a34654.html#ae04cfc5a24f76310701741932e041587',1,'covellite::api::renderer::Renderer::Data']]]
+  ['handle',['Handle',['../a34350.html#a987e90b45408ac417db583e166b56316',1,'covellite::api::renderer::SettingsData']]]
 ];

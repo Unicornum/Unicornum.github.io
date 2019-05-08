@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['asciikeycode',['AsciiKeyCode',['../a34930.html#ac037a4ceccbe487401babc65d2dfafa7',1,'covellite::core::params::KeyCode']]]
+  ['doaddobject',['DoAddObject',['../a35082.html#ac43a9b1ccbd97ef663de9e6058543076',1,'basement::model::IDbComponents']]],
+  ['doremoveobject',['DoRemoveObject',['../a35082.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91',1,'basement::model::IDbComponents']]]
 ];

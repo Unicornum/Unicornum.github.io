@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['click',['Click',['../a34890.html#a2d87943752134e3205965579658dd347aea25868e24b84d4bcc76d98d3c01675f',1,'covellite::core::Event']]],
-  ['close',['Close',['../a34890.html#ae07ea214fa6193b69c9986cbb17c8e7ca3583a3565a25223e970f949565e0dd55',1,'covellite::core::Event']]],
-  ['create',['Create',['../a34890.html#ae07ea214fa6193b69c9986cbb17c8e7caf5a29e83fd44c23c388c6ddd6b69971f',1,'covellite::core::Event']]]
+  ['deactivate',['Deactivate',['../a34019.html#gga7c051e93e1837c87e8b08334edb4a3cca3be42db01da55dc7857dde73f70c3dac',1,'covellite::events::Window_t']]],
+  ['do',['Do',['../a34019.html#gga6289708dc610154fc0d4572a4c27b279afc5c8b6e9d1b35a1acb76a6f738f43fc',1,'covellite::events::Drawing_t']]],
+  ['down',['Down',['../a34019.html#gga56e5f58c24b4bd22a7d463dffa027f0bafcd6175e85ceac72d7550c6bd3b41e16',1,'covellite::events::Key_t']]]
 ];
