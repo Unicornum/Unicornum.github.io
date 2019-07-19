@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['view',['View',['../a32630.html',1,'SolutionPage']]]
+  ['screenshots',['ScreenShots',['../a32375.html',1,'']]]
 ];

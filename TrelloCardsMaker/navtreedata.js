@@ -24,18 +24,18 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "TrelloCardsMaker", "index.html", [
-    [ "Manual", "a32619.html", null ],
-    [ "Скачать", "a32617.html", null ],
-    [ "История изменений", "a32618.html", null ],
-    [ "Структура решения", "a32621.html", "a32621" ],
-    [ "Исходные требования", "a32620.html", null ],
+    [ "Manual", "a32377.html", null ],
+    [ "Скачать", "a32373.html", null ],
+    [ "История изменений", "a32374.html", null ],
+    [ "Структура решения", "a32379.html", "a32379" ],
+    [ "Исходные требования", "a32378.html", null ],
     [ "Группы", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"a32172.html"
+"a31899.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
