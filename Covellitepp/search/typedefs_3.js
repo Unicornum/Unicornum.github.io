@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['vertex_5ft',['Vertex_t',['../a35216.html#a480a956bbe865f1152f920696ee195b9',1,'basement::Simple2DGame']]],
-  ['vertexdata_5ft',['VertexData_t',['../a35216.html#a1eb08c6023edf6eeeb7041229f48b9ba',1,'basement::Simple2DGame']]]
+  ['settings_5ft',['Settings_t',['../a34799.html#ga1d031ef8fb59e4c609567e9d32ea0e51',1,'covellite::app']]],
+  ['skeleton_5ft',['Skeleton_t',['../a34808.html#gaf606590897bb0ced48dd0f8ac710ad38',1,'basement::model::animation']]],
+  ['skin_5ft',['Skin_t',['../a34808.html#ga335ca3212c27923ef2052512c1781637',1,'basement::model::animation']]]
 ];

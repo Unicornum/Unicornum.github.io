@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Использование событий фреймворка</title>
+<title>Covellite++: Cписок членов класса</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.0 Revision: 1644 Platform: x64 Build: 14:50 09.05.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a35508.html','');});
+$(document).ready(function(){initNavTree('a35511.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,33 +87,19 @@ $(document).ready(function(){initNavTree('a35508.html','');});
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
   <div class="headertitle">
-<div class="title">Использование событий фреймворка </div>  </div>
+<div class="title">covellite::egl::CallProxy Cписок членов класса</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h3>Создание нового типа событий</h3>
-<p>Для создания пользовательского типа событий следует создать класс типа событий (в котором определить идентификаторы событий этого типа) и объявить объект нового типа событий (для удобства использования в этом же классе можно определить класс-контейнер параметров, передаваемых этому событию).</p>
-<div class="fragment"><div class="line"><span class="comment">// Класс типа события.</span></div><div class="line"><span class="keyword">class </span>UserType_t final</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="comment">// Идентификаторы событий.</span></div><div class="line">  <span class="keyword">enum</span> Id</div><div class="line">  {</div><div class="line">    Error = 0,</div><div class="line">  };</div><div class="line">    </div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="comment">// Класс параметров события Error.</span></div><div class="line">  <span class="keyword">class </span>Error final</div><div class="line">  {</div><div class="line">  <span class="keyword">public</span>:</div><div class="line">    <span class="keywordtype">int</span> Code;</div><div class="line">    ::std::string Description;</div><div class="line">  };</div><div class="line">};</div><div class="line">  </div><div class="line"><span class="comment">// Вспомогательный объект для использования события UserType.Error (таким </span></div><div class="line"><span class="comment">// способом достигается уникальность событий, имеющих одинаковые </span></div><div class="line"><span class="comment">// имена/численные значения в разных классах, если же использовать просто</span></div><div class="line"><span class="comment">// UserType_t::Error, тип события будет соответствовать типу перечисления и </span></div><div class="line"><span class="comment">// не будет являться уникальным).</span></div><div class="line"><span class="keyword">namespace </span>{ UserType_t UserType; }</div></div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd>Разные типы событий могут иметь одинаковые идентификаторы (как имена, так и значения), события с такими идентификаторами будут считаться разными событиями.</dd></dl>
-<h3>Создание класса, который должен реагировать на события</h3>
-<p>Классу, который должен реагировать на события, необходимо добавить объект класса <a class="el" href="a34692.html" title="Класс входит в проект Covellite.Events   Класс для работы с событиями фреймворка.">covellite::events::Events</a> и проинициализировать его в конструкторе, параметром которого может быть один из интерфейсных классов разделов (<a class="el" href="a34572.html" title="Класс входит в проект Covellite.App   Интерфейсный класс приложения.">covellite::app::IApplication</a>, <a class="el" href="a35004.html" title="Класс входит в проект Covellite.Os   Интерфейсный класс окна операционной системы программы.">covellite::os::IWindow</a>, <a class="el" href="a34240.html" title="Класс входит в проект Covellite.Api   Интерфейсный класс для всех окон, реализующих различные графиче...">covellite::api::IWindow</a>, covellite::rocket::IWindow).</p>
-<p>В случае необходимости 'передать дальше' объект событий (например, если требуется встроить клиентсткий код между окнами графического Api и окном Rocket, который должен отрисовывать что-либо перед отрисовкой GUI), класс cледует унаследовать от <a class="el" href="a34704.html" title="Класс входит в проект Covellite.Events   Интерфейсный класс для классов, которые должны использовать ...">covellite::events::IEvents</a> и реализовать его виртуальный оператор, вернув объект событий.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Объект событий в классе хранит все созданные в нем соединения и разрывает их при уничтожении объекта класса (в случае необходимости изменения логики работы программы следует удалить существующий объект событий и создать новый, установив ему новые обработчики событий).</dd></dl>
-<div class="fragment"><div class="line"><span class="keyword">class </span>Window final</div><div class="line">{</div><div class="line"><span class="keyword">private</span>:</div><div class="line">  <a class="code" href="a34692.html">covellite::events::Events</a> m_Events;</div><div class="line">    </div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">explicit</span> Window(<span class="keyword">const</span> <a class="code" href="a34240.html">covellite::api::IWindow</a> &amp; _Window) :</div><div class="line">    m_Events(_Window)</div><div class="line">  {</div><div class="line">    m_Events[UserType.Error].Connect([](<span class="keyword">const</span> UserType_t::Error &amp;)</div><div class="line">    {</div><div class="line">      <span class="comment">// Сюда поместить код обработки события UserType.Error.</span></div><div class="line">    });</div><div class="line">  }</div><div class="line">};</div></div><!-- fragment --><h3>Активация события</h3>
-<p>Для активации события необходимо вызвать оператор () из функции любого класса, содержащего объект класса событий. В качестве параметра (который предусмотрен только один) может быть передан объект любого класса (тип должен совпадать с типом, указанным у обработчика, в противном случае будет сгенерировано исключение).</p>
-<div class="fragment"><div class="line"><a class="code" href="a34448.html">covellite::api::Window</a> ApiWindow{ ... };</div><div class="line">Window Window{ ApiWindow };</div><div class="line">  </div><div class="line"><span class="keyword">const</span> UserType_t::Error Description = { 5, <span class="stringliteral">&quot;Error description&quot;</span> }.</div><div class="line">  </div><div class="line">Window[UserType.Error](Description);</div></div><!-- fragment --><h3>Рекомендации</h3>
-<ul>
-<li>Большая часть событий самого фреймворка предназначены для обеспечения логики работы фреймворка и не должны активироваться из клиентского кода (клиентский код может только подписываться и реагировать на них, за редким исключением, например, события завершения работы программы Application.Exit), подробнее см. описание конкретных <a class="el" href="a34073.html">событий</a>.</li>
-<li>Допускается из обработчика события активировать другие события, однако поскольку при этом возможно зацикливание программы (например, когда обработчик события активирует то же самое событие), рекомендуется из обработчика события активировать события более высокого уровня.</li>
-<li>Структура классов фреймворка создавалась в предположении, что каждый отдельный экран (слой, класс-наследник от covellite::rocket::Layer) программы будет являться отдельным <b>View</b> в рамках паттерна MVC и будет получать необходимые ему данные через <b>Model</b>, тем не менее (для прогресс-бара, например) возможна передача информации посредством специально для этого созданных сообщений, у которых эти данные будут передаваться в качестве параметров. </li>
-</ul>
-</div></div><!-- PageDoc -->
+
+<p>Полный список членов класса <a class="el" href="a35511.html">covellite::egl::CallProxy</a>, включая наследуемые из базового класса</p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Covellite++. Последние изменения: Чт 9 Май 2019 14:51:04. Создано системой
+    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:52. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
