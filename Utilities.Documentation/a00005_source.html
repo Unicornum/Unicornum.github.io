@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Documentation: Исходный файл Solution/Solution/(Documentation)/Common/Solution.codestyle.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentation
-   &#160;<span id="projectnumber">Version: 2.1.1 Revision: 401 Platform: x64 Build: 11:49 02.01.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.1 Revision: 405 Platform: x64 Build: 00:19 04.09.2019</span>
    </div>
    <div id="projectbrief">Пример структуры документации решения.</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -92,15 +92,207 @@ $(document).ready(function(){initNavTree('a00005_source.html','');});
 <div class="title">Solution.codestyle.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// ...</span></div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  </div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">/*static*/</span> <span class="keywordtype">void</span> ClassName::DoProcess(<span class="keywordtype">void</span>) </div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// ...</span></div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;* \endcode</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;*  - В определении функции сначала ставить входные, затем выходные параметры.</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;*  - Параметры, являющиеся результатом работы функции должны передаваться через </div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;*  указатели(ссылки - только константные!).</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;*  - Параметры, являющиеся результатом работы функции, должны быть помечены </div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;*  комментарием \b out</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;* \code</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">void</span> GetValue(<span class="comment">/*out*/</span> <span class="keywordtype">int</span> * _pValue);</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;* \endcode</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;*  </div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;*  Правила именования переменных/функций/классов/файлов</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;*  ----------------------------------------------------</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;*  </div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;*  - Имена переменных должны быть существительными, функций - </div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;*  глаголами/командами.</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;*  - Имена файлов должны совпадать с именами объявленных в них классов (включая </div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;*  пространство имен).</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;*  - \ref IdentifiersAnchor <span class="stringliteral">&quot;Правила именования идентификаторов&quot;</span>.</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;*  </div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;*  Пространства имен</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;*  -----------------</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;*  </div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;*  - Каждый отдельный модуль программы должен иметь свое пространство имен.</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;*  - Не использовать директиву <span class="keyword">using namespace </span>вне функций.</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;*  - Пространство имен должно завершаться комментарием <span class="stringliteral">&quot;} // namespace &lt;name&gt;&quot;</span>.</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;*  - Код внутри пространства имен должен идти по левому краю.</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;*  - Вместо статических констант использовать константы в не именованных </div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;*  пространствах имен (использовать их в заголовочных файлах только для </div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;*  объявления констант!).</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;*  </div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;*  Конструкторы/деструкторы</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;*  ------------------------</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;*  </div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;*  - Всегда явным образом определять конструктор по умолчанию, инициирующий </div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;*  внутренние переменные класса.</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;*  - Использовать ключевое слово <span class="keyword">explicit</span> для конструкторов с одним аргументом.</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;*  - Если класс не имеет явного конструктора копирования, наследовать его от </div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;*  boost::noncopyable.</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;*  - Деструктору всегда явным образом указывать noexcept.</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;*  </div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;*  Примеры</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;*  =======</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;*  </div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;* \anchor Example1Anchor</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;*  </div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;*  Пример 1</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;*  --------</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;*  </div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;* \code</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">// Объявление:</span></div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">class </span>Status</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">enum</span> Value : <span class="keywordtype">size_t</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  {</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    Unknown = 0,</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    Play,</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    Pause,</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    Stop,</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      </div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    Illegal</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  };</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;};</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  </div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">// Использование</span></div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;Status::Value CurrentStatatus = Status::Stop;</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;* \endcode</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;*  </div><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;* \anchor Example2Anchor</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;*  </div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;*  Пример 2</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;*  --------</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;*  </div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;* \code</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsSsuccess = CalculateSomething(InterestingValue,</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;  10,</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keyword">false</span>,</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  NULL); <span class="comment">// Что означают все эти аргументы??</span></div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;* \endcode</div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;*  </div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;*  вместо:</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;*  </div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;* \code</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;  10,       <span class="comment">// Базовое значение по умолчанию</span></div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  <span class="keyword">false</span>,    <span class="comment">// Функция вызывается не в первый раз.</span></div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;  <span class="keyword">nullptr</span>); <span class="comment">// Без возвратной функции.</span></div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;* \endcode</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;*  </div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;*  Или, в качестве альтернативы, используя константы или само-описывающие переменные:</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;*  </div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;* \code</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> DefaultBaseValue = 10;</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsFirstTimeCalling = <span class="keyword">false</span>;</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;Callback * fnNullCallback = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  </div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  DefaultBaseValue,</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  IsFirstTimeCalling,</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  fnNullCallback);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;* \endcode</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;*  </div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;*  Под вопросом</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;*  ============</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;*  </div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;*  - Запятые в списке инициализации переменных в конструкторе ставить после </div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;*  переменной.</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;*  - Вместо \&lt;iostream\&gt; в заголовочных файлах писать \&lt;iosfwd\&gt; для ускорения </div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;*  компиляции.</div><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;*  - Для быстрого копирования потоков ввода - вывода(из одного в другой), </div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;*  использовать функцию потока .rdbuf() (cout &lt;&lt; file.rdbuf()).</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;*  - С помощью функции std::uncaught_exception можно проверить, как завершает </div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;*  работу функция: это нормальный возврат или было выброшено исключение.</div><div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;*  - Преобразовывайте тип числа с плавающей точкой в целочисленный тип </div><div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;*  исключительно через функции стандартной библиотеки(«round», «floor», «ceil» </div><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;*  и т.п.)</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;*  - Для инициализации переменных использовать списки инициализации (они не </div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;*  позволяют сужение типов: <span class="keywordtype">int</span> x1 = { 7.3 }; <span class="comment">//compilation error).</span></div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;*  - Профайлер не может подсказать, какие <span class="keyword">inline</span> функции не должны быть </div><div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;*  встраиваемыми!</div><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;*  - Строки хранить в отдельном файле (лучше.cpp).</div><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;*  - Исключение не должно покидать деструктор (особенно это касается работы </div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;*  с контейнерами STL).</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;*  - Для класса предоставлять функцию swap() (она должна быть бессбойной!), </div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;*  которую можно использовать для присваивания со строгими гарантиями </div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;*  безопасности (для примитивных типов использовать std::swap())</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;* \code</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;T &amp; T::operator= (T Temp) <span class="comment">// По значению!</span></div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;  swap(Temp);</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;}</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;* \endcode</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;*  - Для отсортированного набора объектов можно использовать индексные </div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;*  контейнеры, содержащие итераторы на основной контейнер.</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;*  - Для добавления элементов в контейнер предпочтительнее использовать операции </div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;*  с диапазонами.</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;*  - container&lt;T&gt;(c).swap(c); <span class="comment">// Удаление всей лишней (зарезервированной) </span></div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;*  емкости контейнера.</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;*  - container&lt;T&gt;().swap(c); <span class="comment">// Удаление всех элементов и очистка памяти </span></div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;*  контейнера.</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;*  - find / find_if и count / count_if - поиск в неотсортированном диапазоне.</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;*  - lower_bound, upper_bound, equal_range(реже binary_search) - поиск </div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;*  в отсортированном диапазоне.</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;*  - Функциональные объекты должны содержать константный operator().</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;*  - Побочные подзадачи выделять в отдельный код.</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;*/</div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="comment">// ...</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">/*static*/</span> <span class="keywordtype">void</span> ClassName::DoProcess(<span class="keywordtype">void</span>) </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="comment">// ...</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;* \endcode</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;*  - В определении функции сначала ставить входные, затем выходные параметры.</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;*  - Параметры, являющиеся результатом работы функции должны передаваться через </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;*  указатели(ссылки - только константные!).</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;*  - Параметры, являющиеся результатом работы функции, должны быть помечены </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;*  комментарием \b out</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;* \code</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keywordtype">void</span> GetValue(<span class="comment">/*out*/</span> <span class="keywordtype">int</span> * _pValue);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;* \endcode</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;*  </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;*  Правила именования переменных/функций/классов/файлов</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;*  ----------------------------------------------------</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;*  </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;*  - Имена переменных должны быть существительными, функций - </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;*  глаголами/командами.</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;*  - Имена файлов должны совпадать с именами объявленных в них классов (включая </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;*  пространство имен).</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;*  - \ref IdentifiersAnchor <span class="stringliteral">&quot;Правила именования идентификаторов&quot;</span>.</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;*  </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;*  Пространства имен</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;*  -----------------</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;*  </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;*  - Каждый отдельный модуль программы должен иметь свое пространство имен.</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;*  - Не использовать директиву <span class="keyword">using namespace </span>вне функций.</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;*  - Пространство имен должно завершаться комментарием <span class="stringliteral">&quot;} // namespace &lt;name&gt;&quot;</span>.</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;*  - Код внутри пространства имен должен идти по левому краю.</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;*  - Вместо статических констант использовать константы в не именованных </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;*  пространствах имен (использовать их в заголовочных файлах только для </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;*  объявления констант!).</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;*  </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;*  Конструкторы/деструкторы</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;*  ------------------------</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;*  </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;*  - Всегда явным образом определять конструктор по умолчанию, инициирующий </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;*  внутренние переменные класса.</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;*  - Использовать ключевое слово <span class="keyword">explicit</span> для конструкторов с одним аргументом.</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;*  - Если класс не имеет явного конструктора копирования, наследовать его от </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;*  boost::noncopyable.</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;*  - Деструктору всегда явным образом указывать noexcept.</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;*  </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;*  Примеры</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;*  =======</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;*  </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;* \anchor Example1Anchor</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;*  </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;*  Пример 1: Перечисления</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;*  ----------------------</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;*  </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;* \code</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">// Объявление:</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">class </span>Status</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;  <span class="keyword">enum</span> Value : <span class="keywordtype">size_t</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;  {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    Unknown = 0,</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    Play,</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    Pause,</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    Stop,</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    Illegal</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  };</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;};</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  </div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment">// Использование</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;Status::Value CurrentStatatus = Status::Stop;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;* \endcode</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;*  </div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;*  Пример 2: Константы</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;*  -------------------</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;*  </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;* \code</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="keyword">namespace </span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;{</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;  </div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment">// Объявление</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="keyword">class </span>Constant final</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;{</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;  <span class="keyword">static</span> constexpr T PI = static_cast&lt;T&gt;(math::PI);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;};</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;  </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;} <span class="comment">// unnamed namespace</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment">// Использование</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="keyword">auto</span> DoublePI = 2.0f * Constant&lt;float&gt;::PI;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;* \endcode</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;*  </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;* \anchor Example2Anchor</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;*</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;*  Пример 3: Именование параметров</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;*  -------------------------------</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;*  </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;* \code</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsSsuccess = CalculateSomething(InterestingValue,</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;  10,</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <span class="keyword">false</span>,</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  NULL); <span class="comment">// Что означают все эти аргументы??</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;* \endcode</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;*  </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;*  вместо:</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;*  </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;* \code</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  10,       <span class="comment">// Базовое значение по умолчанию</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  <span class="keyword">false</span>,    <span class="comment">// Функция вызывается не в первый раз.</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keyword">nullptr</span>); <span class="comment">// Без возвратной функции.</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;* \endcode</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;*  </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;*  Или, в качестве альтернативы, используя константы или само-описывающие переменные:</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;*  </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;* \code</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="keyword">const</span> <span class="keywordtype">int</span> DefaultBaseValue = 10;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsFirstTimeCalling = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;Callback * fnNullCallback = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;<span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;  DefaultBaseValue,</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  IsFirstTimeCalling,</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  fnNullCallback);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;* \endcode</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;*  </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;*  Под вопросом</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;*  ============</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;*  </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;*  - Запятые в списке инициализации переменных в конструкторе ставить после </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;*  переменной.</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;*  - Вместо \&lt;iostream\&gt; в заголовочных файлах писать \&lt;iosfwd\&gt; для ускорения </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;*  компиляции.</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;*  - Для быстрого копирования потоков ввода - вывода(из одного в другой), </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;*  использовать функцию потока .rdbuf() (cout &lt;&lt; file.rdbuf()).</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;*  - С помощью функции std::uncaught_exception можно проверить, как завершает </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;*  работу функция: это нормальный возврат или было выброшено исключение.</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;*  - Преобразовывайте тип числа с плавающей точкой в целочисленный тип </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;*  исключительно через функции стандартной библиотеки(«round», «floor», «ceil» </div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;*  и т.п.)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;*  - Для инициализации переменных использовать списки инициализации (они не </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;*  позволяют сужение типов: <span class="keywordtype">int</span> x1 = { 7.3 }; <span class="comment">//compilation error).</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;*  - Профайлер не может подсказать, какие <span class="keyword">inline</span> функции не должны быть </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;*  встраиваемыми!</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;*  - Строки хранить в отдельном файле (лучше.cpp).</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;*  - Исключение не должно покидать деструктор (особенно это касается работы </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;*  с контейнерами STL).</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;*  - Для класса предоставлять функцию swap() (она должна быть бессбойной!), </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;*  которую можно использовать для присваивания со строгими гарантиями </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;*  безопасности (для примитивных типов использовать std::swap())</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;* \code</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;T &amp; T::operator= (T Temp) <span class="comment">// По значению!</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;{</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;  swap(Temp);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;* \endcode</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;*  - Для отсортированного набора объектов можно использовать индексные </div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;*  контейнеры, содержащие итераторы на основной контейнер.</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;*  - Для добавления элементов в контейнер предпочтительнее использовать операции </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;*  с диапазонами.</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;*  - container&lt;T&gt;(c).swap(c); <span class="comment">// Удаление всей лишней (зарезервированной) </span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;*  емкости контейнера.</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;*  - container&lt;T&gt;().swap(c); <span class="comment">// Удаление всех элементов и очистка памяти </span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;*  контейнера.</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;*  - find / find_if и count / count_if - поиск в неотсортированном диапазоне.</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;*  - lower_bound, upper_bound, equal_range(реже binary_search) - поиск </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;*  в отсортированном диапазоне.</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;*  - Функциональные объекты должны содержать константный operator().</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;*  - Побочные подзадачи выделять в отдельный код.</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;*/</div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_f169203f9160b4f581997312b2df3a24.html">(Documentation)</a></li><li class="navelem"><a class="el" href="dir_d767bb5a52bee631b07bdcfad38db66e.html">Common</a></li><li class="navelem"><b>Solution.codestyle.hpp</b></li>
-    <li class="footer">Документация по Documentation. Последние изменения: Ср 2 Янв 2019 11:49:24. Создано системой
+    <li class="footer">Документация по Documentation. Последние изменения: Ср 4 Сен 2019 00:19:35. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>
