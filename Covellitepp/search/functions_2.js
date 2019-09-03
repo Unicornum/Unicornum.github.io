@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['close',['Close',['../a35675.html#aa04a6366e1feda0e1b96329d9fca508d',1,'covellite::gui::File']]],
-  ['component',['Component',['../a34955.html#a3d64a46f0f63596d53a19f3e46ea5270',1,'covellite::api::Component']]],
-  ['connect',['Connect',['../a35611.html#a42ef3a9e9cd42b8b80a59f6cd2f34e54',1,'covellite::events::Events::Signal::Connect(const FnVoid_t &amp;)'],['../a35611.html#aed2d9715cfac2853292bb51ff6b9ad28',1,'covellite::events::Events::Signal::Connect(const FnParams_t &amp;)']]],
-  ['convert',['Convert',['../a35723.html#a7f311fe89e2a0606010c38eaeb3dc2f6',1,'covellite::gui::Layer']]],
-  ['create',['Create',['../a36055.html#acca9ccb33c2ef8c0ef213f638662acf8',1,'basement::model::GameObject']]],
-  ['createlight',['CreateLight',['../a35079.html#a475b7b0572a25f30c56cb02f238f878a',1,'covellite::api::renderer::DirectX10::CreateLight()'],['../a35119.html#a21747db485bb68381ba0fefa15919bcc',1,'covellite::api::renderer::DirectX11::CreateLight()'],['../a35187.html#a594bc44e061fbe1ae78646fa2cf341cb',1,'covellite::api::renderer::OpenGLCommon::CreateLight()']]]
+  ['close_496',['Close',['../a35927.html#aa04a6366e1feda0e1b96329d9fca508d',1,'covellite::gui::File']]],
+  ['component_497',['Component',['../a35111.html#a3d64a46f0f63596d53a19f3e46ea5270',1,'covellite::api::Component']]],
+  ['connect_498',['Connect',['../a35863.html#a42ef3a9e9cd42b8b80a59f6cd2f34e54',1,'covellite::events::Events::Signal::Connect(const FnVoid_t &amp;)'],['../a35863.html#aed2d9715cfac2853292bb51ff6b9ad28',1,'covellite::events::Events::Signal::Connect(const FnParams_t &amp;)']]],
+  ['convert_499',['Convert',['../a35975.html#a7f311fe89e2a0606010c38eaeb3dc2f6',1,'covellite::gui::Layer']]],
+  ['create_500',['Create',['../a36319.html#acca9ccb33c2ef8c0ef213f638662acf8',1,'basement::model::GameObject']]]
 ];

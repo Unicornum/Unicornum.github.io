@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['updater',['Updater',['../a35195.html',1,'covellite::api::renderer']]]
+  ['vertex_423',['Vertex',['../a35547.html',1,'covellite::api']]],
+  ['view_424',['View',['../a36431.html',1,'basement::view']]]
 ];

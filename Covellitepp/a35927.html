@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Класс basement::Common</title>
+<title>Covellite++: Класс covellite::gui::File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1961 Platform: x64 Build: 21:24 03.09.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,120 +89,89 @@ $(document).ready(function(){initNavTree('a35927.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pro-methods">Защищенные члены</a> &#124;
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-static-methods">Закрытые статические члены</a> &#124;
 <a href="a35924.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс basement::Common<div class="ingroups"><a class="el" href="a34807.html">Example</a> &raquo; <a class="el" href="a34809.html">Basement</a></div></div>  </div>
+<div class="title">Класс covellite::gui::File<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34951.html">Covellite++</a> &raquo; <a class="el" href="a34961.html">Gui</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a36539.html">Example</a> <br />
- Класс общей логики отрисовки 3D сцены.  
+<p>Класс входит в проект <a class="el" href="a36812.html">Covellite.Gui</a> <br  />
+ Реализация интерфейса libRocket для чтения файлов.  
  <a href="a35927.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00650_source.html">Common.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00506_source.html">File.hpp</a>&gt;</code></p>
+
+<p>Базовые классы:FileInterface.</p>
 <div class="dynheader">
-Граф наследования:basement::Common:</div>
+Граф связей класса covellite::gui::File:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35926.png" border="0" usemap="#basement_1_1_common_inherit__map" alt="Inheritance graph"/></div>
-<map name="basement_1_1_common_inherit__map" id="basement_1_1_common_inherit__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ»Ð°ÑÑ Ð¾Ð±ÑÐµÐ¹ Ð»Ð¾Ð³Ð¸ÐºÐ¸ Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ¸ 3D ÑÑÐµÐ½Ñ." alt="" coords="145,160,299,296"/>
-<area shape="rect"  href="a36195.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ»Ð°ÑÑ Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ¸ Ð¿ÑÐ¾ÑÑÐ¾Ð¹ 2D Ð¸Ð³ÑÑ Ð´Ð»Ñ ÑÐ»Ð¾Ñ layers::Simple2DGame." alt="" coords="5,344,212,788"/>
-<area shape="rect"  href="a36219.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ»Ð°ÑÑ Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ¸ Ð¿ÑÐ¾ÑÑÐ¾Ð³Ð¾ 3D Ð¾Ð±ÑÐµÐºÑÐ° Ð´Ð»Ñ ÑÐ»Ð¾Ñ Draw3DObject." alt="" coords="236,461,437,671"/>
-<area shape="rect"  href="a36187.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ½ÑÐµÑÑÐµÐ¹ÑÐ½ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ ÐºÐ»Ð°ÑÑÐ¾Ð² Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ¸ 3D ÑÑÐµÐ½Ñ." alt="" coords="139,5,305,112"/>
-</map>
-</div>
-<div class="dynheader">
-Граф связей класса basement::Common:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35925.png" border="0" usemap="#basement_1_1_common_coll__map" alt="Collaboration graph"/></div>
-<map name="basement_1_1_common_coll__map" id="basement_1_1_common_coll__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ»Ð°ÑÑ Ð¾Ð±ÑÐµÐ¹ Ð»Ð¾Ð³Ð¸ÐºÐ¸ Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ¸ 3D ÑÑÐµÐ½Ñ." alt="" coords="12,160,165,296"/>
-<area shape="rect"  href="a36187.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Example &#160;&#160;ÐÐ½ÑÐµÑÑÐµÐ¹ÑÐ½ÑÐ¹ ÐºÐ»Ð°ÑÑ Ð´Ð»Ñ ÐºÐ»Ð°ÑÑÐ¾Ð² Ð¾ÑÑÐ¸ÑÐ¾Ð²ÐºÐ¸ 3D ÑÑÐµÐ½Ñ." alt="" coords="5,5,172,112"/>
+<div class="center"><img src="a35925.png" border="0" usemap="#covellite_1_1gui_1_1_file_coll__map" alt="Collaboration graph"/></div>
+<map name="covellite_1_1gui_1_1_file_coll__map" id="covellite_1_1gui_1_1_file_coll__map">
+<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Реализация интерфейса libRocket для чтения файлов." alt="" coords="5,5,173,171"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Защищенные члены</h2></td></tr>
-<tr class="memitem:a5858d7d3b75e7af082e6ade82f118f00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#a5858d7d3b75e7af082e6ade82f118f00">LoadTexture</a> (const Path_t &amp;, const String_t &amp;, const String_t &amp;=uT(&quot;albedo&quot;))</td></tr>
-<tr class="separator:a5858d7d3b75e7af082e6ade82f118f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:af128b2d7b2a1cff725f6bf8d0c76a416"><td class="memItemLeft" align="right" valign="top"><a id="af128b2d7b2a1cff725f6bf8d0c76a416"></a>
+Handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#af128b2d7b2a1cff725f6bf8d0c76a416">Open</a> (const Path_t &amp;) override</td></tr>
+<tr class="memdesc:af128b2d7b2a1cff725f6bf8d0c76a416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция открытия указанного файла. <br /></td></tr>
+<tr class="separator:af128b2d7b2a1cff725f6bf8d0c76a416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04a6366e1feda0e1b96329d9fca508d"><td class="memItemLeft" align="right" valign="top"><a id="aa04a6366e1feda0e1b96329d9fca508d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#aa04a6366e1feda0e1b96329d9fca508d">Close</a> (Handle_t) override</td></tr>
+<tr class="memdesc:aa04a6366e1feda0e1b96329d9fca508d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция закрытия ранее открытого файла. <br /></td></tr>
+<tr class="separator:aa04a6366e1feda0e1b96329d9fca508d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f9b9244be54098b8d4d5d86f2080cd5"><td class="memItemLeft" align="right" valign="top"><a id="a5f9b9244be54098b8d4d5d86f2080cd5"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#a5f9b9244be54098b8d4d5d86f2080cd5">Read</a> (void *, size_t, Handle_t) override</td></tr>
+<tr class="memdesc:a5f9b9244be54098b8d4d5d86f2080cd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения данных из ранее открытого файла. <br /></td></tr>
+<tr class="separator:a5f9b9244be54098b8d4d5d86f2080cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9163a7ac44540c661cac66b63afca20"><td class="memItemLeft" align="right" valign="top"><a id="ad9163a7ac44540c661cac66b63afca20"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#ad9163a7ac44540c661cac66b63afca20">Seek</a> (Handle_t, long, int) override</td></tr>
+<tr class="memdesc:ad9163a7ac44540c661cac66b63afca20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция установки позиции чтения из ранее открытого файла. <br /></td></tr>
+<tr class="separator:ad9163a7ac44540c661cac66b63afca20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a40cf8b599a81b66a74a8bc684dc4b4"><td class="memItemLeft" align="right" valign="top"><a id="a2a40cf8b599a81b66a74a8bc684dc4b4"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#a2a40cf8b599a81b66a74a8bc684dc4b4">Tell</a> (Handle_t) override</td></tr>
+<tr class="memdesc:a2a40cf8b599a81b66a74a8bc684dc4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущей позиции чтения указанного файла. <br /></td></tr>
+<tr class="separator:a2a40cf8b599a81b66a74a8bc684dc4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9d93c4865f73104c8b084db1c079af"><td class="memItemLeft" align="right" valign="top"><a id="add9d93c4865f73104c8b084db1c079af"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#add9d93c4865f73104c8b084db1c079af">Length</a> (Handle_t) override</td></tr>
+<tr class="memdesc:add9d93c4865f73104c8b084db1c079af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения размера в байтах указанного файла. <br /></td></tr>
+<tr class="separator:add9d93c4865f73104c8b084db1c079af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
+Закрытые статические члены</h2></td></tr>
+<tr class="memitem:a2c99802fb8e55de0ac287749a46cf1f5"><td class="memItemLeft" align="right" valign="top"><a id="a2c99802fb8e55de0ac287749a46cf1f5"></a>
+static Handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35927.html#a2c99802fb8e55de0ac287749a46cf1f5">MakeUniqueHandle</a> (void)</td></tr>
+<tr class="memdesc:a2c99802fb8e55de0ac287749a46cf1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция создания уникального идентификатора для открываемого файла. <br /></td></tr>
+<tr class="separator:a2c99802fb8e55de0ac287749a46cf1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a36539.html">Example</a> <br />
- Класс общей логики отрисовки 3D сцены. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a36812.html">Covellite.Gui</a> <br  />
+ Реализация интерфейса libRocket для чтения файлов. </p>
+<dl class="todo"><dt><b><a class="el" href="a34949.html#_todo000018">Необходимо сделать:</a></b></dt><dd>Класс используется для внутренней реализации и не должен попадать в Externals.</dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ 1.1.0.0 <br  />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>29 Январь 2019 <br />
+<dl class="section date"><dt>Дата</dt><dd>07 Декабрь 2016 <br  />
+ 18 Декабрь 2016 <br  />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2019 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a5858d7d3b75e7af082e6ade82f118f00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5858d7d3b75e7af082e6ade82f118f00">&#9670;&nbsp;</a></span>LoadTexture()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Common::LoadTexture </td>
-          <td>(</td>
-          <td class="paramtype">const Path_t &amp;&#160;</td>
-          <td class="paramname"><em>_RelativePathToSourceFile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const String_t &amp;&#160;</td>
-          <td class="paramname"><em>_Id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const String_t &amp;&#160;</td>
-          <td class="paramname"><em>_Destination</em> = <code>uT(&quot;albedo&quot;)</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>[Load texture]</p>
-<p>[Load texture] </p>
-<div class="dynheader">
-Граф вызова функции:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35927_a5858d7d3b75e7af082e6ade82f118f00_icgraph.png" border="0" usemap="#a35927_a5858d7d3b75e7af082e6ade82f118f00_icgraph" alt=""/></div>
-<map name="a35927_a5858d7d3b75e7af082e6ade82f118f00_icgraph" id="a35927_a5858d7d3b75e7af082e6ade82f118f00_icgraph">
-<area shape="rect"  title=" " alt="" coords="248,13,495,39"/>
-<area shape="rect"  href="a36195.html#aac083a9d2716045dfccd81d460cf7206" title=" " alt="" coords="5,5,200,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Example/Example/Basements/<a class="el" href="a00650_source.html">Common.hpp</a></li>
-<li>Solution/Solution/Example/Example/Basements/Common.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Covellite.Gui/Covellite.Gui/<a class="el" href="a00506_source.html">File.hpp</a></li>
+<li>Solution/Solution/Covellite.Gui/Covellite.Gui/File.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a34870.html">basement</a></li><li class="navelem"><a class="el" href="a35927.html">Common</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:52. Создано системой
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>gui</b></li><li class="navelem"><a class="el" href="a35927.html">File</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 3 Сен 2019 21:24:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

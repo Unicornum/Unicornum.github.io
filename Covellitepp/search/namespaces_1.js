@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['debug',['Debug',['../a34810.html',1,'com::UnicornumVerum::Example']]],
-  ['release',['Release',['../a34818.html',1,'com::UnicornumVerum::Example']]]
+  ['debug_429',['Debug',['../a34966.html',1,'com::UnicornumVerum::Example']]],
+  ['release_430',['Release',['../a34974.html',1,'com::UnicornumVerum::Example']]]
 ];

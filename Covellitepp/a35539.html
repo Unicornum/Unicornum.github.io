@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Класс covellite::egl::Display</title>
+<title>Covellite++: Класс covellite::api::vertex::Polygon</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1961 Platform: x64 Build: 21:24 03.09.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -91,48 +91,40 @@ $(document).ready(function(){initNavTree('a35539.html','');});
   <div class="summary">
 <a href="a35536.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс covellite::egl::Display<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34795.html">Covellite++</a> &raquo; <a class="el" href="a34800.html">Egl</a></div></div>  </div>
+<div class="title">Класс covellite::api::vertex::Polygon</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a36528.html">Covellite.Egl</a> <br />
- Класс-обетка для EGLDisplay.  
+<p>Описание одной вершины меша для рендеринга плоских объектов.  
  <a href="a35539.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00383_source.html">display.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00251_source.html">Vertex.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса covellite::egl::Display:</div>
+Граф связей класса covellite::api::vertex::Polygon:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35537.png" border="0" usemap="#covellite_1_1egl_1_1_display_coll__map" alt="Collaboration graph"/></div>
-<map name="covellite_1_1egl_1_1_display_coll__map" id="covellite_1_1egl_1_1_display_coll__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Egl &#160;&#160;ÐÐ»Ð°ÑÑ&#45;Ð¾Ð±ÐµÑÐºÐ° Ð´Ð»Ñ EGLDisplay." alt="" coords="5,5,172,97"/>
+<div class="center"><img src="a35537.png" border="0" usemap="#covellite_1_1api_1_1vertex_1_1_polygon_coll__map" alt="Collaboration graph"/></div>
+<map name="covellite_1_1api_1_1vertex_1_1_polygon_coll__map" id="covellite_1_1api_1_1vertex_1_1_polygon_coll__map">
+<area shape="rect" title="Описание одной вершины меша для рендеринга плоских объектов." alt="" coords="5,5,168,156"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a36528.html">Covellite.Egl</a> <br />
- Класс-обетка для EGLDisplay. </p>
+<div class="textblock"><p>Описание одной вершины меша для рендеринга плоских объектов. </p>
+<dl class="deprecated"><dt><b><a class="el" href="a34950.html#_deprecated000002">Уст.:</a></b></dt><dd>Класс устарел и будет удален в следующей стабильной версии, вместо него следует использовать класс <a class="el" href="a35547.html" title="Класс входит в проект Covellite.Api   Класс формата вертексного буфера.">covellite::api::Vertex</a>. </dd></dl>
 <ul>
-<li>Предназначен для гарантированного корректного уничтожения созданного объекта.</li>
+<li>Формат вершины для минимизации операций копирования данных буфера (должнен соответствовать формату Rocket::Core::Vertex). </li>
 </ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>18 Ноябрь 2016 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Covellite.Egl/Covellite.Egl/<a class="el" href="a00383_source.html">display.hpp</a></li>
-<li>Solution/Solution/Covellite.Egl/Covellite.Egl/display.cpp</li>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Covellite.Api/Covellite.Api/<a class="el" href="a00251_source.html">Vertex.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>egl</b></li><li class="navelem"><a class="el" href="a35539.html">Display</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:53. Создано системой
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>api</b></li><li class="navelem"><b>vertex</b></li><li class="navelem"><a class="el" href="a35539.html">Polygon</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 3 Сен 2019 21:24:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

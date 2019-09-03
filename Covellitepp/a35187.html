@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Класс covellite::api::renderer::OpenGLCommon</title>
+<title>Covellite++: Класс covellite::api::renderer::DirectX</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1961 Platform: x64 Build: 21:24 03.09.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,107 +89,46 @@ $(document).ready(function(){initNavTree('a35187.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pri-methods">Закрытые члены</a> &#124;
 <a href="a35184.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс covellite::api::renderer::OpenGLCommon<div class="ingroups"><a class="el" href="a34795.html">Covellite++</a> &raquo; <a class="el" href="a34796.html">Api</a> &raquo; <a class="el" href="a34798.html">Renderer</a></div></div>  </div>
+<div class="title">Класс covellite::api::renderer::DirectX<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34951.html">Covellite++</a> &raquo; <a class="el" href="a34952.html">Api</a> &raquo; <a class="el" href="a34953.html">Renderer</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a36524.html">Covellite.Api</a> <br />
- Вспомогательный класс, содержащий код <a class="el" href="a35171.html" title="Класс входит в проект Covellite.Api   Реализация рендера графического API для Windows/OpenGL.">OpenGL</a>, общий для Windows и Android версий.  
+<p>Класс входит в проект <a class="el" href="a36802.html">Covellite.Api</a> <br  />
+ класс общей логики реализаций <a class="el" href="a35187.html" title="Класс входит в проект Covellite.Api   класс общей логики реализаций DirectX.">DirectX</a>.  
  <a href="a35187.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00191_source.html">OpenGLCommon.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00122_source.html">DirectX.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:covellite::api::renderer::OpenGLCommon:</div>
+Граф связей класса covellite::api::renderer::DirectX:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35186.png" border="0" usemap="#covellite_1_1api_1_1renderer_1_1_open_g_l_common_inherit__map" alt="Inheritance graph"/></div>
-<map name="covellite_1_1api_1_1renderer_1_1_open_g_l_common_inherit__map" id="covellite_1_1api_1_1renderer_1_1_open_g_l_common_inherit__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Api &#160;&#160;ÐÑÐ¿Ð¾Ð¼Ð¾Ð³Ð°ÑÐµÐ»ÑÐ½ÑÐ¹ ÐºÐ»Ð°ÑÑ, ÑÐ¾Ð´ÐµÑÐ¶Ð°ÑÐ¸Ð¹ ÐºÐ¾Ð´ OpenGL,..." alt="" coords="65,5,317,479"/>
-<area shape="rect"  href="a35171.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Api &#160;&#160;Ð ÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ñ ÑÐµÐ½Ð´ÐµÑÐ° Ð³ÑÐ°ÑÐ¸ÑÐµÑÐºÐ¾Ð³Ð¾ API Ð´Ð»Ñ Windows/OpenGL." alt="" coords="5,534,180,685"/>
-<area shape="rect"  href="a35191.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Api &#160;&#160;Ð ÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ñ ÑÐµÐ½Ð´ÐµÑÐ° Ð³ÑÐ°ÑÐ¸ÑÐµÑÐºÐ¾Ð³Ð¾ API Ð´Ð»Ñ Android/OpenGL." alt="" coords="204,527,379,692"/>
+<div class="center"><img src="a35185.png" border="0" usemap="#covellite_1_1api_1_1renderer_1_1_direct_x_coll__map" alt="Collaboration graph"/></div>
+<map name="covellite_1_1api_1_1renderer_1_1_direct_x_coll__map" id="covellite_1_1api_1_1renderer_1_1_direct_x_coll__map">
+<area shape="rect" title="Класс входит в проект Covellite.Api &#160;&#160;класс общей логики реализаций DirectX." alt="" coords="5,5,180,97"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса covellite::api::renderer::OpenGLCommon:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35185.png" border="0" usemap="#covellite_1_1api_1_1renderer_1_1_open_g_l_common_coll__map" alt="Collaboration graph"/></div>
-<map name="covellite_1_1api_1_1renderer_1_1_open_g_l_common_coll__map" id="covellite_1_1api_1_1renderer_1_1_open_g_l_common_coll__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Api &#160;&#160;ÐÑÐ¿Ð¾Ð¼Ð¾Ð³Ð°ÑÐµÐ»ÑÐ½ÑÐ¹ ÐºÐ»Ð°ÑÑ, ÑÐ¾Ð´ÐµÑÐ¶Ð°ÑÐ¸Ð¹ ÐºÐ¾Ð´ OpenGL,..." alt="" coords="100,219,352,663"/>
-<area shape="rect"  href="a34991.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Api &#160;&#160;ÐÐ»Ð°ÑÑ Ð´Ð»Ñ ÑÐ°Ð±Ð¾ÑÑ ÑÐ¾ Ð²ÑÐ¿Ð¾Ð¼Ð¾Ð³Ð°ÑÐµÐ»ÑÐ½ÑÐ¼Ð¸ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½ÑÐ°Ð¼Ð¸." alt="" coords="5,20,225,141"/>
-<area shape="rect"  href="a35195.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Api &#160;&#160;ÐÐ»Ð°ÑÑ ÑÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ð¸ Ð»Ð¾Ð³Ð¸Ðº ÑÐ°Ð±Ð¾ÑÑ ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½ÑÐ° Updater." alt="" coords="249,5,424,156"/>
-</map>
-</div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Закрытые члены</h2></td></tr>
-<tr class="memitem:a594bc44e061fbe1ae78646fa2cf341cb"><td class="memItemLeft" align="right" valign="top">Render_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a35187.html#a594bc44e061fbe1ae78646fa2cf341cb">CreateLight</a> (const ComponentPtr_t &amp;)</td></tr>
-<tr class="separator:a594bc44e061fbe1ae78646fa2cf341cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a36524.html">Covellite.Api</a> <br />
- Вспомогательный класс, содержащий код <a class="el" href="a35171.html" title="Класс входит в проект Covellite.Api   Реализация рендера графического API для Windows/OpenGL.">OpenGL</a>, общий для Windows и Android версий. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 2.0.0.0 <br />
- 2.1.0.0 <br />
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a36802.html">Covellite.Api</a> <br  />
+ класс общей логики реализаций <a class="el" href="a35187.html" title="Класс входит в проект Covellite.Api   класс общей логики реализаций DirectX.">DirectX</a>. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>06 Ноябрь 2017 <br />
- 27 Август 2018 <br />
- 26 Декабрь 2018 <br />
+<dl class="section date"><dt>Дата</dt><dd>16 Февраль 2019 <br  />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 - 2018 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a594bc44e061fbe1ae78646fa2cf341cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a594bc44e061fbe1ae78646fa2cf341cb">&#9670;&nbsp;</a></span>CreateLight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto covellite::api::renderer::OpenGLCommon::CreateLight </td>
-          <td>(</td>
-          <td class="paramtype">const ComponentPtr_t &amp;&#160;</td>
-          <td class="paramname"><em>_pComponent</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="a34793.html#_todo000009">Необходимо сделать:</a></b></dt><dd>"Запись в лог информации об избыточных источниках света." ; </dd></dl>
-<div class="dynheader">
-Граф вызовов:</div>
-<div class="dyncontent">
-<div class="center"><img src="a35187_a594bc44e061fbe1ae78646fa2cf341cb_cgraph.png" border="0" usemap="#a35187_a594bc44e061fbe1ae78646fa2cf341cb_cgraph" alt=""/></div>
-<map name="a35187_a594bc44e061fbe1ae78646fa2cf341cb_cgraph" id="a35187_a594bc44e061fbe1ae78646fa2cf341cb_cgraph">
-<area shape="rect"  title=" " alt="" coords="5,5,232,47"/>
-<area shape="rect"  href="a34955.html#a76ccfe83ee721560c67afed1eea60ddb" title="Ð¤ÑÐ½ÐºÑÐ¸Ñ ÑÐ¾Ð·Ð´Ð°Ð½Ð¸Ñ Ð¾Ð±ÑÐµÐºÑÐ¾Ð² ÐºÐ¾Ð¼Ð¿Ð¾Ð½ÐµÐ½ÑÐ¾Ð²." alt="" coords="280,5,475,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Covellite.Api/Covellite.Api/Renderer/<a class="el" href="a00191_source.html">OpenGLCommon.hpp</a></li>
-<li>Solution/Solution/Covellite.Api/Covellite.Api/Renderer/OpenGLCommon.cpp</li>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2018 - 2019 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Covellite.Api/Covellite.Api/Renderer/<a class="el" href="a00122_source.html">DirectX.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>api</b></li><li class="navelem"><b>renderer</b></li><li class="navelem"><a class="el" href="a35187.html">OpenGLCommon</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:52. Создано системой
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>api</b></li><li class="navelem"><b>renderer</b></li><li class="navelem"><a class="el" href="a35187.html">DirectX</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 3 Сен 2019 21:24:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

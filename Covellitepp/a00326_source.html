@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Исходный файл Solution/Solution/Covellite.App/Covellite.App/IApplication.hpp</title>
+<title>Covellite++: Исходный файл Solution/Solution/Covellite.Api/Test.Covellite.Api/Updater_test.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1961 Platform: x64 Build: 21:24 03.09.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,20 +89,200 @@ $(document).ready(function(){initNavTree('a00326_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">IApplication.hpp</div>  </div>
+<div class="title">Updater_test.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Covellite/Events/IEvents.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>covellite</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>app</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a35471.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a35471.html">IApplication</a> :</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span> <a class="code" href="a35603.html">::covellite::events::IEvents</a></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// namespace app</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <span class="comment">// namespace covellite</span></div><div class="ttc" id="a35471_html"><div class="ttname"><a href="a35471.html">covellite::app::IApplication</a></div><div class="ttdoc">Класс входит в проект Covellite.App   Интерфейсный класс приложения.</div><div class="ttdef"><b>Definition:</b> IApplication.hpp:26</div></div>
-<div class="ttc" id="a35603_html"><div class="ttname"><a href="a35603.html">covellite::events::IEvents</a></div><div class="ttdoc">Класс входит в проект Covellite.Events   Интерфейсный класс для классов, которые должны использовать ...</div><div class="ttdef"><b>Definition:</b> IEvents.hpp:32</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<a class="code" href="a00296.html#ad7581dd10e90a08c3025d4a1e3f308ff">TEST_F</a>(Updater_test, <span class="comment">/*DISABLED_*/</span>Test_Updater_NoFunction)</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  Tested_t oExample{ Data_t{} };</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;  ITested_t &amp; IExample = oExample;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keyword">auto</span> itCreator = IExample.GetCreators().find(uT(<span class="stringliteral">&quot;Updater&quot;</span>));</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  ASSERT_NE(IExample.GetCreators().end(), itCreator);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">auto</span> Render = itCreator-&gt;second(Component_t::Make({}));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  ASSERT_NE(<span class="keyword">nullptr</span>, Render);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  EXPECT_NO_THROW(Render());</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="a00296.html#ad7581dd10e90a08c3025d4a1e3f308ff">TEST_F</a>(Updater_test, <span class="comment">/*DISABLED_*/</span>Test_Updater)</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">using</span> Time_t = ::std::chrono::microseconds;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">class </span>Proxy :</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span> ::alicorn::extension::testing::Proxy&lt;Proxy&gt;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    MOCK_METHOD1(Update, <span class="keywordtype">void</span>(<span class="keywordtype">float</span>));</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  };</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  Proxy theProxy;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  Proxy::GetInstance() = &amp;theProxy;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">using</span> SystemClockProxy_t = ::mock::std::chrono::system_clock::Proxy;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  SystemClockProxy_t SystemClockProxy;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  SystemClockProxy_t::GetInstance() = &amp;SystemClockProxy;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> BeginTime = 1907232116;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  const ::covellite::api::Updater_t Updater = [&amp;](<span class="keyword">const</span> <span class="keywordtype">float</span> _Time)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    theProxy.Update(_Time);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> pComponent = Component_t::Make(</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      { uT(<span class="stringliteral">&quot;function&quot;</span>), Updater },</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    });</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">using namespace </span>::<a class="code" href="a35022.html">testing</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  InSequence Dummy;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  EXPECT_CALL(SystemClockProxy, Now())</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    .Times(1)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    .WillOnce(Return(Time_t{ BeginTime }));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  Tested_t oExample{ Data_t{} };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  ITested_t &amp; IExample = oExample;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keyword">auto</span> itCreator = IExample.GetCreators().find(uT(<span class="stringliteral">&quot;Updater&quot;</span>));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  ASSERT_NE(IExample.GetCreators().end(), itCreator);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">auto</span> Render = itCreator-&gt;second(pComponent);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  ASSERT_NE(<span class="keyword">nullptr</span>, Render);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  EXPECT_CALL(theProxy, Update(0.0f))</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    .Times(1);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  Render();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  EXPECT_CALL(SystemClockProxy, Now())</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    .Times(1)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    .WillOnce(Return(Time_t{ BeginTime + 1000000 }));</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  IExample.PresentFrame();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  EXPECT_CALL(theProxy, Update(1.0f))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    .Times(1);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  Render();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">// ************************************************************************** //</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="a00296.html#ad7581dd10e90a08c3025d4a1e3f308ff">TEST_F</a>(Updater_test, <span class="comment">/*DISABLED_*/</span>Test_Updater_ReplaceFunction)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">class </span>Proxy :</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">public</span> ::alicorn::extension::testing::Proxy&lt;Proxy&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    MOCK_METHOD1(Update, <span class="keywordtype">void</span>(<span class="keywordtype">int</span>));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  };</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  Proxy theProxy;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  Proxy::GetInstance() = &amp;theProxy;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">const</span> <span class="keyword">auto</span> pComponent = Component_t::Make({ });</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  const ::covellite::api::Updater_t Updater2 = [&amp;](<span class="keyword">const</span> float)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    theProxy.Update(2);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  const ::covellite::api::Updater_t Updater1 = [&amp;](<span class="keyword">const</span> float)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    pComponent-&gt;SetValue(uT(<span class="stringliteral">&quot;function&quot;</span>), Updater2);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    theProxy.Update(1);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  };</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  const ::covellite::api::Updater_t Updater0 = [&amp;](<span class="keyword">const</span> float)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    theProxy.Update(0);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  };</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  Tested_t oExample{ Data_t{} };</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  ITested_t &amp; IExample = oExample;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">auto</span> itCreator = IExample.GetCreators().find(uT(<span class="stringliteral">&quot;Updater&quot;</span>));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  ASSERT_NE(IExample.GetCreators().end(), itCreator);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">auto</span> Render = itCreator-&gt;second(pComponent);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  ASSERT_NE(<span class="keyword">nullptr</span>, Render);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  <span class="keyword">using namespace </span>::<a class="code" href="a35022.html">testing</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  InSequence Dummy;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  EXPECT_CALL(theProxy, Update(_))</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    .Times(0);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  Render();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  pComponent-&gt;SetValue(uT(<span class="stringliteral">&quot;function&quot;</span>), Updater0);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  EXPECT_CALL(theProxy, Update(0))</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    .Times(1);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  Render();</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;  pComponent-&gt;SetValue(uT(<span class="stringliteral">&quot;function&quot;</span>), Updater1);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  EXPECT_CALL(theProxy, Update(1))</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    .Times(1);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;  Render();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="comment">// Новый updater устанавливается внутри предыдущего.</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;  EXPECT_CALL(theProxy, Update(2))</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    .Times(1);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;  Render();</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa35303_html_a86d1ada0513d841b93d10aa789ea29f1"><div class="ttname"><a href="a35303.html#a86d1ada0513d841b93d10aa789ea29f1">covellite::api::renderer::SettingsData::Top</a></div><div class="ttdeci">int Top</div><div class="ttdoc">Смещение верхнего края клиентской части окна.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:65</div></div>
+<div class="ttc" id="aa34954_html_ga49a25209d9beedf18b4fa02ddd85eddc"><div class="ttname"><a href="a34954.html#ga49a25209d9beedf18b4fa02ddd85eddc">MAX_LIGHT_POINT_COUNT</a></div><div class="ttdeci">#define MAX_LIGHT_POINT_COUNT</div><div class="ttdoc">Класс входит в проект Covellite.Api   Макрос максимального количества точечных источников света.</div><div class="ttdef"><b>Definition:</b> Data.hpp:152</div></div>
+<div class="ttc" id="aa35539_html"><div class="ttname"><a href="a35539.html">covellite::api::vertex::Polygon</a></div><div class="ttdoc">Описание одной вершины меша для рендеринга плоских объектов.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:22</div></div>
+<div class="ttc" id="aa35547_html"><div class="ttname"><a href="a35547.html">covellite::api::Vertex</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс формата вертексного буфера.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:67</div></div>
+<div class="ttc" id="aa36035_html"><div class="ttname"><a href="a36035.html">covellite::gui::Window</a></div><div class="ttdoc">Класс входит в проект Covellite.Gui   Класс окна, отрисовывающий GUI при помощи libRocket.</div><div class="ttdef"><b>Definition:</b> Window.hpp:47</div></div>
+<div class="ttc" id="aa00296_html_ad7581dd10e90a08c3025d4a1e3f308ff"><div class="ttname"><a href="a00296.html#ad7581dd10e90a08c3025d4a1e3f308ff">TEST_F</a></div><div class="ttdeci">TEST_F(Fx_test, Test_vsLights)</div><div class="ttdef"><b>Definition:</b> Fx_test.cpp:130</div></div>
+<div class="ttc" id="aa35727_html"><div class="ttname"><a href="a35727.html">covellite::app::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.App   Интерфейсный класс для классов окон фреймворка.</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:31</div></div>
+<div class="ttc" id="aa35415_html"><div class="ttname"><a href="a35415.html">covellite::api::Component::Renders</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс создания рендеров компонентов.</div><div class="ttdef"><b>Definition:</b> Renders.hpp:27</div></div>
+<div class="ttc" id="aa35143_html"><div class="ttname"><a href="a35143.html">covellite::api::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Интерфейсный класс для всех окон, реализующих различные графиче...</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:35</div></div>
+<div class="ttc" id="aa35843_html"><div class="ttname"><a href="a35843.html">covellite::events::Events</a></div><div class="ttdoc">Класс входит в проект Covellite.Events   Класс для работы с событиями фреймворка.</div><div class="ttdef"><b>Definition:</b> Events.hpp:35</div></div>
+<div class="ttc" id="aa35543_html"><div class="ttname"><a href="a35543.html">covellite::api::vertex::Polyhedron</a></div><div class="ttdoc">Описание одной вершины для рендеринга объемных моделей.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:35</div></div>
+<div class="ttc" id="aa35303_html_a384dd28f6c48dee4d4a26316cae59b36"><div class="ttname"><a href="a35303.html#a384dd28f6c48dee4d4a26316cae59b36">covellite::api::renderer::SettingsData::IsFullScreen</a></div><div class="ttdeci">bool IsFullScreen</div><div class="ttdoc">Признак работы программы в полноэкранном режиме.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:66</div></div>
+<div class="ttc" id="aa35371_html"><div class="ttname"><a href="a35371.html">covellite::api::renderer::OpenGLES</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Реализация рендера графического API для Android/OpenGL ES1.</div><div class="ttdef"><b>Definition:</b> OpenGLES.hpp:43</div></div>
+<div class="ttc" id="aa35271_html"><div class="ttname"><a href="a35271.html">covellite::api::renderer::DirectX11</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Реализация рендера графического API для Windows/DirectX11.</div><div class="ttdef"><b>Definition:</b> DirectX11.hpp:47</div></div>
+<div class="ttc" id="aa35307_html"><div class="ttname"><a href="a35307.html">covellite::api::renderer::OpenGL</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Реализация рендера графического API для Windows/OpenGL.</div><div class="ttdef"><b>Definition:</b> OpenGL.hpp:37</div></div>
+<div class="ttc" id="aa35971_html"><div class="ttname"><a href="a35971.html">covellite::gui::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.Gui   Интерфесный класс окна, отображающего элементы GUI.</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:27</div></div>
+<div class="ttc" id="aa35303_html"><div class="ttname"><a href="a35303.html">covellite::api::renderer::SettingsData</a></div><div class="ttdoc">Класс для передачи значений настроек программы реализации рендера.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:61</div></div>
+<div class="ttc" id="aa35299_html"><div class="ttname"><a href="a35299.html">covellite::api::renderer::IGraphicApi</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Интерфейсный класс реализации рендеринга GUI при помощи графиче...</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:41</div></div>
+<div class="ttc" id="aa35303_html_a987e90b45408ac417db583e166b56316"><div class="ttname"><a href="a35303.html#a987e90b45408ac417db583e166b56316">covellite::api::renderer::SettingsData::Handle</a></div><div class="ttdeci">Any_t Handle</div><div class="ttdoc">Хэнд окна операционной системы.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:64</div></div>
+<div class="ttc" id="aa35379_html"><div class="ttname"><a href="a35379.html">covellite::api::renderer::OpenGLES3</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Реализация рендера графического API для Android/OpenGL ES3.</div><div class="ttdef"><b>Definition:</b> OpenGLES3.hpp:41</div></div>
+<div class="ttc" id="aa35022_html"><div class="ttname"><a href="a35022.html">testing</a></div><div class="ttdef"><b>Definition:</b> mock.hpp:48</div></div>
+<div class="ttc" id="aa35679_html"><div class="ttname"><a href="a35679.html">android_app</a></div><div class="ttdef"><b>Definition:</b> android_native_app_glue.h:111</div></div>
+<div class="ttc" id="aa35559_html"><div class="ttname"><a href="a35559.html">covellite::api::Window</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс окна-фасада для скрытия реализаций конкретных графических...</div><div class="ttdef"><b>Definition:</b> Window.hpp:40</div></div>
+<div class="ttc" id="aa35975_html"><div class="ttname"><a href="a35975.html">covellite::gui::Layer</a></div><div class="ttdoc">Класс входит в проект Covellite.Gui   Класс одного слоя (пользовательского экрана) программы.</div><div class="ttdef"><b>Definition:</b> Layer.hpp:38</div></div>
+<div class="ttc" id="aa36175_html"><div class="ttname"><a href="a36175.html">covellite::os::Window</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс окна операционной системы программы.</div><div class="ttdef"><b>Definition:</b> Window.hpp:39</div></div>
+<div class="ttc" id="aa34953_html_ga921220da29ad2c7b7839fb033fc8158f"><div class="ttname"><a href="a34953.html#ga921220da29ad2c7b7839fb033fc8158f">DX_CHECK</a></div><div class="ttdeci">#define DX_CHECK</div><div class="ttdoc">Класс входит в проект Covellite.Api   Макрос проверок вызова функций DirectX.</div><div class="ttdef"><b>Definition:</b> DxCheck.hpp:59</div></div>
+<div class="ttc" id="aa36167_html"><div class="ttname"><a href="a36167.html">covellite::os::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Интерфейсный класс окна операционной системы программы.</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:30</div></div>
+<div class="ttc" id="aa35111_html"><div class="ttname"><a href="a35111.html">covellite::api::Component</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс компонента.</div><div class="ttdef"><b>Definition:</b> Component.hpp:34</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_f1dcc93ef96703058c58cd3861f6656a.html">Covellite.App</a></li><li class="navelem"><a class="el" href="dir_64f833890ef4e933317e8d65a69c140e.html">Covellite.App</a></li><li class="navelem"><b>IApplication.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:49. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_9982cfe164c7f3d9c35c78ca5ef6afd2.html">Covellite.Api</a></li><li class="navelem"><a class="el" href="dir_8ab5232fd7ba66cd41abe24efdb1fa3b.html">Test.Covellite.Api</a></li><li class="navelem"><b>Updater_test.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 3 Сен 2019 21:24:37. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

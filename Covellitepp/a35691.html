@@ -3,9 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Класс covellite::gui::Initializer</title>
+<title>Covellite++: Класс covellite::app::Application::Continuous</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1961 Platform: x64 Build: 21:24 03.09.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -88,57 +88,37 @@ $(document).ready(function(){initNavTree('a35691.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="a35688.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс covellite::gui::Initializer<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34795.html">Covellite++</a> &raquo; <a class="el" href="a34805.html">Gui</a></div></div>  </div>
+<div class="title">Класс covellite::app::Application::Continuous</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a36533.html">Covellite.Gui</a> <br />
- Класс, инкапсулирующий инициализацию/разрушение библиотеки libRocket.  
+<p>Непрерывная отрисовка экрана (режим работы игры).  
  <a href="a35691.html#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00473_source.html">Initializer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00344_source.html">Application.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф связей класса covellite::gui::Initializer:</div>
+Граф связей класса covellite::app::Application::Continuous:</div>
 <div class="dyncontent">
-<div class="center"><img src="a35689.png" border="0" usemap="#covellite_1_1gui_1_1_initializer_coll__map" alt="Collaboration graph"/></div>
-<map name="covellite_1_1gui_1_1_initializer_coll__map" id="covellite_1_1gui_1_1_initializer_coll__map">
-<area shape="rect"  title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Gui &#160;&#160;ÐÐ»Ð°ÑÑ, Ð¸Ð½ÐºÐ°Ð¿ÑÑÐ»Ð¸ÑÑÑÑÐ¸Ð¹ Ð¸Ð½Ð¸ÑÐ¸Ð°Ð»Ð¸Ð·Ð°ÑÐ¸Ñ/ÑÐ°Ð·ÑÑÑÐµÐ½Ð¸Ðµ Ð±Ð¸Ð±Ð»Ð¸Ð¾ÑÐµÐºÐ¸ libR..." alt="" coords="105,233,284,325"/>
-<area shape="rect"  href="a35775.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Gui &#160;&#160;ÐÐ»Ð°ÑÑ ÑÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ð¸ ÑÐ¸ÑÑÐµÐ¼Ð½Ð¾Ð³Ð¾ Ð¸Ð½ÑÐµÑÑÐµÐ¹ÑÐ° libRocket." alt="" coords="5,13,187,163"/>
-<area shape="rect"  href="a35675.html" title="ÐÐ»Ð°ÑÑ Ð²ÑÐ¾Ð´Ð¸Ñ Ð² Ð¿ÑÐ¾ÐµÐºÑ Covellite.Gui &#160;&#160;Ð ÐµÐ°Ð»Ð¸Ð·Ð°ÑÐ¸Ñ Ð¸Ð½ÑÐµÑÑÐµÐ¹ÑÐ° libRocket Ð´Ð»Ñ ÑÑÐµÐ½Ð¸Ñ ÑÐ°Ð¹Ð»Ð¾Ð²." alt="" coords="211,5,379,171"/>
+<div class="center"><img src="a35689.png" border="0" usemap="#covellite_1_1app_1_1_application_1_1_continuous_coll__map" alt="Collaboration graph"/></div>
+<map name="covellite_1_1app_1_1_application_1_1_continuous_coll__map" id="covellite_1_1app_1_1_application_1_1_continuous_coll__map">
+<area shape="rect" title="Непрерывная отрисовка экрана (режим работы игры)." alt="" coords="5,5,203,97"/>
 </map>
 </div>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a36533.html">Covellite.Gui</a> <br />
- Класс, инкапсулирующий инициализацию/разрушение библиотеки libRocket. </p>
-<dl class="todo"><dt><b><a class="el" href="a34793.html#_todo000018">Необходимо сделать:</a></b></dt><dd>Класс используется для внутренней реализации и не должен попадать в Externals.</dd></dl>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 1.1.0.0 <br />
- 1.2.0.0 <br />
- 1.3.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>19 Декабрь 2016 <br />
- 26 Декабрь 2016 <br />
- 29 Сентябрь 2017 <br />
- 08 Октябрь 2017 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span style="display: none;">.nosp@m.</span>rnum<span style="display: none;">.nosp@m.</span>.veru<span style="display: none;">.nosp@m.</span>m@gm<span style="display: none;">.nosp@m.</span>ail.c<span style="display: none;">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 - 2017 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Covellite.Gui/Covellite.Gui/<a class="el" href="a00473_source.html">Initializer.hpp</a></li>
-<li>Solution/Solution/Covellite.Gui/Covellite.Gui/Initializer.cpp</li>
+<div class="textblock"><p>Непрерывная отрисовка экрана (режим работы игры). </p>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Covellite.App/Covellite.App/<a class="el" href="a00344_source.html">Application.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>gui</b></li><li class="navelem"><a class="el" href="a35691.html">Initializer</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:53. Создано системой
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>app</b></li><li class="navelem"><a class="el" href="a35687.html">Application</a></li><li class="navelem"><a class="el" href="a35691.html">Continuous</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 3 Сен 2019 21:24:41. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

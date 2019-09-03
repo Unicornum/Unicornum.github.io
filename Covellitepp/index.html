@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Covellite++: Титульная страница</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.1 Revision: 1817 Platform: x64 Build: 22:20 07.08.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1961 Platform: x64 Build: 21:24 03.09.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -102,8 +102,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h3>Основные характеристики</h3>
 <ul>
 <li>Кросс-платформенный:<ul>
-<li>Windows (тестируется на Windows 7 x64).</li>
-<li>Android (тестируется на ARM API15 и ARM64 API24).</li>
+<li>Windows (тестируется на Windows 7/10 x64).</li>
+<li>Android (тестируется на устройствах с ARM API15 и ARM64 API24).</li>
 </ul>
 </li>
 <li>Позволяет встраивать код дополнительной отрисовки кадра, поверх которого будет отображаться GUI.</li>
@@ -112,43 +112,191 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h3>Доступные реализации</h3>
 <p>Задаются как параметр настроек <b>GraphicsApi</b> в разделе <b>Window</b>.</p>
 <ul>
-<li>DirectX12 (шейдеры) - требует Windows 10 и выше + поддержка со стороны железа (не реализовано).</li>
 <li><b>DirectX11</b> (шейдеры) - требует Windows 7 и выше + поддержка со стороны железа.</li>
-<li><b>DirectX10</b> (шейдеры) и DirectX9 (статический конвеер) - 'наивные' реализации, предназначенные для внутренних экпериментов; не тестируются и не будут поддерживатся в будущем, используйте на свой страх и риск.</li>
-<li><b>OpenGL</b> (статический конвеер) - требует Windows 7 и выше + поддержка со стороны железа.</li>
-<li>Vulkan - не реализовано.</li>
+<li><b>OpenGL</b> (шейдеры) - требует Windows 7 и выше + поддержка со стороны железа.</li>
+<li><b>OpenGLES3</b> (шейдеры) - требует Android 4.3+.</li>
 <li><b>OpenGLES</b> (статический конвеер) - требует Android 4.0+.</li>
 <li><b>Auto</b> - будет использоваться графический Api, максимально доступный на данном устройстве:<ul>
-<li>Windows: DirectX12//DirectX11//Vulkan//OpenGL.</li>
-<li>Android: Vulkan//OpenGLES.</li>
+<li>Windows: DirectX11//OpenGL.</li>
+<li>Android: OpenGLES3//OpenGLES.</li>
 </ul>
 </li>
 </ul>
+<dl class="section note"><dt>Заметки</dt><dd>Все реализации со статическим конвеером оставлены для обратной совместимости, расширятся и исправляться не будут; будут удалены впоследствии.</dd></dl>
+<h2>Видео </h2>
+<p><a href="https://www.youtube.com/watch?v=ZlwrSg_TVN0">Демонстрация рендеринга перемещения по бесконечному случайно генерируемому ландшафту</a></p>
+<p><a href="https://www.youtube.com/watch?v=t6BJoWVIIZA">Рендеринг анимированных объектов</a></p>
+<p><a href="https://www.youtube.com/watch?v=8lqK8l__3D0">Поддержка использования PBR-материалов</a></p>
 <h2>Скриншоты </h2>
-<p> <style>div.image img[src="Covellitepp.png"]{width:90%;}</style>  </p><div class="image">
-<img src="Covellitepp.png" alt="Covellitepp.png"/>
+<h3>Windows</h3>
+<p> 
+
+<img class="PreviewImage" src="Covellitepp_v2.10.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.11.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.12.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.13.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.14.jpg">
+
+  </p>
+<p> 
+
+<img class="PreviewImage" src="Covellitepp_v2.15.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.16.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.17.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.18.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.19.jpg">
+
+  </p>
+<h3>Android</h3>
+<p> 
+
+<img class="PreviewImage" src="Covellitepp_v2.20.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.21.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.22.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.23.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.24.jpg">
+
+  </p>
+<p> 
+
+<img class="PreviewImage" src="Covellitepp_v2.25.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.26.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.27.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.28.jpg">
+<img class="PreviewImage" src="Covellitepp_v2.29.jpg">
+
+    
+
+<style>
+
+.PreviewImage {
+  width:100%;
+  max-width:200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.PreviewImage:hover {
+  opacity: 0.7;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 100px;
+  left : 0;
+  top : 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+  margin: auto;
+  display: block;
+  height: 80%;
+}
+
+#caption{
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption{
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom{
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+.close{
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close : focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content{
+    width: 100 % ;
+  }
+}
+</style>
+
+<!-- Окно предварительного просмотра -->
+<div id="PreviewWindow" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="FullSizeImage">
 </div>
-<p><a class="el" href="a36540.html">Еще скриншоты</a></p>
-<h2>- </h2>
-<p><a class="el" href="a36517.html">Manual</a></p>
-<p><a class="el" href="a36504.html">Скачать</a></p>
-<p><a class="el" href="a36506.html">История изменений</a></p>
-<p><a class="el" href="a36519.html">Структура решения</a></p>
-<p><a class="el" href="a36518.html">Исходные требования</a></p>
+
+<script>
+
+// Для всех изображений...
+var Images = document.getElementsByClassName('PreviewImage');
+
+for (i = 0; i < Images.length; i++)
+{
+  Images[i].onclick = function()
+  {
+    document.getElementById('PreviewWindow').style.display = "block";
+    document.getElementById("FullSizeImage").src = this.src;
+  };
+}
+
+// Для элемента, закрывающего окно предпросмотра...
+var Close = document.getElementsByClassName("close")[0];
+
+Close.onclick = function()
+{
+  document.getElementById('PreviewWindow').style.display = "none";
+}
+
+</script>
+
+  </p>
+<hr  />
+<p><a class="el" href="a36795.html">Manual</a></p>
+<p><a class="el" href="a36780.html">Скачать</a></p>
+<p><a class="el" href="a36782.html">История изменений</a></p>
+<p><a class="el" href="a36797.html">Структура решения</a></p>
+<p><a class="el" href="a36796.html">Исходные требования</a></p>
 <h2>Лицензия </h2>
 <p><a href="http://www.boost.org/LICENSE_1_0.txt">Boost Software License</a></p>
 <h2>Автор(ы) </h2>
 <p> © UnicornumVerum 2016 - 2019 (unicornum.verum@gmail.ru) </p>
-<hr/>
+<hr  />
  </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 7 Авг 2019 22:20:54. Создано системой
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 3 Сен 2019 21:24:42. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>
