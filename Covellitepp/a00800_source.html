@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/IGameWorld.hpp</title>
+<title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/I3DScene.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1964 Platform: x64 Build: 00:36 04.09.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.3 Revision: 2191 Platform: x64 Build: 01:48 28.10.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,21 +89,19 @@ $(document).ready(function(){initNavTree('a00800_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">IGameWorld.hpp</div>  </div>
+<div class="title">I3DScene.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Defines.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;IGameObject.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a35515.html">basement</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>model</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span>CubeCoords;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a36884.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36884.html">IGameWorld</a></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">virtual</span> GameScenePtr_t CreateGameScene(<span class="keywordtype">void</span>) = 0;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">float</span> GetLandscapeHeight(<span class="keyword">const</span> <a class="code" href="a36784.html">CubeCoords</a> &amp;) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> IGameObject::Landscape::Value GetGameObjectType(<span class="keyword">const</span> <a class="code" href="a36784.html">CubeCoords</a> &amp;) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a36884.html">IGameWorld</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace model</span></div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;} <span class="comment">// namespace basement</span></div><div class="ttc" id="a35515_html"><div class="ttname"><a href="a35515.html">basement</a></div><div class="ttdef"><b>Definition:</b> Common.hpp:9</div></div>
-<div class="ttc" id="a36884_html"><div class="ttname"><a href="a36884.html">basement::model::IGameWorld</a></div><div class="ttdoc">Класс входит в проект Example   Интерфейсный класс игрового мира. </div><div class="ttdef"><b>Definition:</b> IGameWorld.hpp:29</div></div>
-<div class="ttc" id="a36784_html"><div class="ttname"><a href="a36784.html">basement::model::CubeCoords</a></div><div class="ttdoc">Класс входит в проект Example   Класс манипуляции кубическими координатами. </div><div class="ttdef"><b>Definition:</b> CubeCoords.hpp:25</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Defines.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>basement</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>view</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a36502.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36502.html">I3DScene</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> SetGameScene(<span class="keyword">const</span> GameScenePtr_t &amp;) = 0;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> Render(<span class="keywordtype">void</span>) = 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a36502.html">I3DScene</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;} <span class="comment">// namespace view</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;} <span class="comment">// namespace basement</span></div><div class="ttc" id="a36502_html"><div class="ttname"><a href="a36502.html">basement::view::I3DScene</a></div><div class="ttdoc">Класс входит в проект Example   Интерфейсный класс 3D сцены.</div><div class="ttdef"><b>Definition:</b> I3DScene.hpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>IGameWorld.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 4 Сен 2019 00:36:48. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>I3DScene.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пн 28 Окт 2019 01:49:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>

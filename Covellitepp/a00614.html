@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Файл Solution/Solution/Covellite.Gui/Test.Covellite.Gui/Test.IStringTranslator/IStringTranslator_test.cpp</title>
+<title>Covellite++: Файл Solution/Solution/Covellite.Gui/Gui.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.2 Revision: 1964 Platform: x64 Build: 00:36 04.09.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.3 Revision: 2191 Platform: x64 Build: 01:48 28.10.2019</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,37 +89,72 @@ $(document).ready(function(){initNavTree('a00614.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Файл IStringTranslator_test.cpp</div>  </div>
+<div class="title">Файл Gui.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;Covellite\Gui\IStringTranslator.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;Gui\Events.hpp&quot;</code><br />
+<code>#include &quot;Gui\ILayer.hpp&quot;</code><br />
+<code>#include &quot;Gui\Layer.hpp&quot;</code><br />
+<code>#include &quot;Gui\Layers.hpp&quot;</code><br />
+<code>#include &quot;Gui\IWindow.hpp&quot;</code><br />
+<code>#include &quot;Gui\Window.hpp&quot;</code><br />
+<code>#include &quot;Gui\Window.inl&quot;</code><br />
+<code>#include &quot;Gui\Vfs.hpp&quot;</code><br />
+<code>#include &quot;Covellite.Gui.lib.hpp&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для IStringTranslator_test.cpp:</div>
+Граф включаемых заголовочных файлов для Gui.hpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00615.png" border="0" usemap="#_solution_2_solution_2_covellite_8_gui_2_test_8_covellite_8_gui_2_test_8_i_string_translator_2_i_string_translator__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_covellite_8_gui_2_test_8_covellite_8_gui_2_test_8_i_string_translator_2_i_string_translator__test_8cpp" id="_solution_2_solution_2_covellite_8_gui_2_test_8_covellite_8_gui_2_test_8_i_string_translator_2_i_string_translator__test_8cpp">
-<area shape="rect" id="node2" href="a37595_source.html" title="stdafx.h" alt="" coords="1909,117,1985,143"/>
-<area shape="rect" id="node5" href="a37880_source.html" title="..\\mock.hpp" alt="" coords="2045,206,2146,233"/>
-<area shape="rect" id="node18" href="a00938_source.html" title="Platform/Android.mock.hpp" alt="" coords="2105,295,2304,322"/>
-<area shape="rect" id="node20" href="a37445_source.html" title="Events.hpp" alt="" coords="2098,377,2194,404"/>
-<area shape="rect" id="node21" href="a00941_source.html" title="Event.hpp" alt="" coords="2219,377,2308,404"/>
-<area shape="rect" id="node22" href="a00944_source.html" title="Log.hpp" alt="" coords="2333,377,2407,404"/>
+<div class="center"><img src="a00615.png" border="0" usemap="#_solution_2_solution_2_covellite_8_gui_2_gui_8hpp" alt=""/></div>
+<map name="_solution_2_solution_2_covellite_8_gui_2_gui_8hpp" id="_solution_2_solution_2_covellite_8_gui_2_gui_8hpp">
+<area shape="rect"  title=" " alt="" coords="1861,5,2062,47"/>
+<area shape="rect"  href="a37160_source.html" title=" " alt="" coords="279,95,401,121"/>
+<area shape="rect"  href="a00530_source.html" title=" " alt="" coords="862,95,981,121"/>
+<area shape="rect"  href="a37646_source.html" title=" " alt="" coords="1005,95,1118,121"/>
+<area shape="rect"  href="a00566_source.html" title=" " alt="" coords="2027,95,2147,121"/>
+<area shape="rect"  href="a37175_source.html" title=" " alt="" coords="2375,95,2508,121"/>
+<area shape="rect"  href="a37568_source.html" title=" " alt="" coords="1773,95,1901,121"/>
+<area shape="rect"  href="a37637_source.html" title=" " alt="" coords="2532,95,2631,121"/>
+<area shape="rect"  title=" " alt="" coords="2655,95,2806,121"/>
+<area shape="rect"  title=" " alt="" coords="5,169,64,196"/>
+<area shape="rect"  title=" " alt="" coords="88,169,307,196"/>
+<area shape="rect"  title=" " alt="" coords="799,169,1063,196"/>
+<area shape="rect"  title=" " alt="" coords="331,169,570,196"/>
+<area shape="rect"  title=" " alt="" coords="1087,169,1297,196"/>
+<area shape="rect"  title=" " alt="" coords="594,169,774,196"/>
+<area shape="rect"  title=" " alt="" coords="1321,169,1516,196"/>
+<area shape="rect"  title=" " alt="" coords="2347,169,2413,196"/>
+<area shape="rect"  title=" " alt="" coords="2437,169,2651,196"/>
+<area shape="rect"  title=" " alt="" coords="2675,169,2914,196"/>
+<area shape="rect"  title=" " alt="" coords="1951,169,2001,196"/>
+<area shape="rect"  title=" " alt="" coords="2025,169,2098,196"/>
+<area shape="rect"  title=" " alt="" coords="2123,169,2323,196"/>
+<area shape="rect"  title=" " alt="" coords="1541,169,1723,196"/>
+<area shape="rect"  title=" " alt="" coords="1747,169,1927,196"/>
+<area shape="rect"  title=" " alt="" coords="2939,169,3104,196"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса IStringTranslator. </p>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00616.png" border="0" usemap="#_solution_2_solution_2_covellite_8_gui_2_gui_8hppdep" alt=""/></div>
+<map name="_solution_2_solution_2_covellite_8_gui_2_gui_8hppdep" id="_solution_2_solution_2_covellite_8_gui_2_gui_8hppdep">
+<area shape="rect"  title=" " alt="" coords="5,5,207,47"/>
+<area shape="rect"  href="a00608_source.html" title=" " alt="" coords="5,95,207,136"/>
+</map>
+</div>
+</div>
+<p><a href="a00614_source.html">См. исходные тексты.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a37022.html">Covellite.Gui</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6ce93875a20983baeea08fc80583274d.html">Covellite.Gui</a></li><li class="navelem"><a class="el" href="dir_daf07b64fa8a44f018ed0c0488878f88.html">Test.Covellite.Gui</a></li><li class="navelem"><a class="el" href="dir_e329e0d988b6640d97fe47d25ee94995.html">Test.IStringTranslator</a></li><li class="navelem"><a class="el" href="a00614.html">IStringTranslator_test.cpp</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 4 Сен 2019 00:36:49. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6ce93875a20983baeea08fc80583274d.html">Covellite.Gui</a></li><li class="navelem"><a class="el" href="a00614.html">Gui.hpp</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пн 28 Окт 2019 01:49:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>

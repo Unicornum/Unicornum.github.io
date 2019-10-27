@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/Animation.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.2.3 Revision: 2191 Platform: x64 Build: 01:48 28.10.2019</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00731_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Animation.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;GLMath.hpp&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Covellite/Covellite.hpp&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;Covellite/Api/robin_hood.hpp&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>basement</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>model</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>animation</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a36366.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36366.html">Bone</a> final</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">using</span> Index_t = ::std::size_t;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> Index_t iNonexistent = static_cast&lt;Bone::Index_t&gt;(-1);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  ::std::string Name;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  Index_t iParent;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  ::glm::mat4 Global;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  ::glm::mat4 Local;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="a35039.html#gaf606590897bb0ced48dd0f8ac710ad38">   64</a></span>&#160;<span class="keyword">using</span> <a class="code" href="a35039.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> = ::std::vector&lt;Bone&gt;;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="a36370.html">   81</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36370.html">SkinVertex</a> final</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">using</span> iVertex_t = ::std::size_t;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  ::glm::vec4 Position;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  ::glm::vec4 Normal;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  ::std::vector&lt;iVertex_t&gt; iCompleteVertexes;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  ::std::vector&lt;::std::pair&lt;Bone::Index_t, float&gt;&gt; WeightBones;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="a35039.html#ga335ca3212c27923ef2052512c1781637">  110</a></span>&#160;<span class="keyword">using</span> <a class="code" href="a35039.html#ga335ca3212c27923ef2052512c1781637">Skin_t</a> = ::std::vector&lt;SkinVertex&gt;;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">class </span>Mat4 final</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="comment">// Это нужно для того, чтобы для несуществующих компонентов анимации</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  <span class="comment">// возвращались единичные матрицы.</span></div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  ::glm::mat4 Value = ::glm::mat4{ 1.0f };</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">using</span> <a class="code" href="a35039.html#ga226e5aa340ef9332df387020275af1e8">Frames_t</a> = ::std::vector&lt;::std::pair&lt;float,</div><div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a35039.html#ga226e5aa340ef9332df387020275af1e8">  139</a></span>&#160;  ::robin_hood::unordered_map&lt;::std::string, Mat4&gt;&gt;&gt;;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;} <span class="comment">// namespace animation</span></div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div><div class="line"><a name="l00158"></a><span class="lineno"><a class="line" href="a36378.html">  158</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36378.html">Animation</a> final</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keyword">using</span> Frame_t = ::std::vector&lt;::glm::mat4&gt;;</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  <span class="keyword">using</span> ComponentPtr_t = ::std::shared_ptr&lt;::covellite::api::Component&gt;;</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  ::std::size_t GetFrameIndex(<span class="keyword">const</span> <span class="keywordtype">float</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  Frame_t GetFrame(const ::std::size_t, <span class="keyword">const</span> <a class="code" href="a35039.html#gaf606590897bb0ced48dd0f8ac710ad38">animation::Skeleton_t</a> &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;  ::glm::mat4 Get(::std::size_t, const ::std::string &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_TicksPerSecond;</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keyword">const</span> <a class="code" href="a35039.html#ga226e5aa340ef9332df387020275af1e8">animation::Frames_t</a> m_RawFrames;</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;  mutable ::std::vector&lt;Frame_t&gt; m_Frames;</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;  <a class="code" href="a36378.html">Animation</a>(<span class="keyword">const</span> <span class="keywordtype">float</span>, <span class="keyword">const</span> <a class="code" href="a35039.html#ga226e5aa340ef9332df387020275af1e8">animation::Frames_t</a> &amp;);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;};</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;} <span class="comment">// namespace model</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;} <span class="comment">// namespace basement</span></div><div class="ttc" id="a35039_html_ga226e5aa340ef9332df387020275af1e8"><div class="ttname"><a href="a35039.html#ga226e5aa340ef9332df387020275af1e8">basement::model::animation::Frames_t</a></div><div class="ttdeci">::std::vector&lt;::std::pair&lt; float, ::robin_hood::unordered_map&lt;::std::string, Mat4 &gt; &gt;&gt; Frames_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных набора кадров одной анимации.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:139</div></div>
+<div class="ttc" id="a36378_html"><div class="ttname"><a href="a36378.html">basement::model::Animation</a></div><div class="ttdoc">Класс входит в проект Example   Тип для доступа к данным одной анимации.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:158</div></div>
+<div class="ttc" id="a36366_html"><div class="ttname"><a href="a36366.html">basement::model::animation::Bone</a></div><div class="ttdoc">Класс входит в проект Example   Класс информации об одной кости скелета анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:33</div></div>
+<div class="ttc" id="a35039_html_ga335ca3212c27923ef2052512c1781637"><div class="ttname"><a href="a35039.html#ga335ca3212c27923ef2052512c1781637">basement::model::animation::Skin_t</a></div><div class="ttdeci">::std::vector&lt; SkinVertex &gt; Skin_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных набора вершин анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:110</div></div>
+<div class="ttc" id="a35039_html_gaf606590897bb0ced48dd0f8ac710ad38"><div class="ttname"><a href="a35039.html#gaf606590897bb0ced48dd0f8ac710ad38">basement::model::animation::Skeleton_t</a></div><div class="ttdeci">::std::vector&lt; Bone &gt; Skeleton_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных скелета.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:64</div></div>
+<div class="ttc" id="a36370_html"><div class="ttname"><a href="a36370.html">basement::model::animation::SkinVertex</a></div><div class="ttdoc">Класс входит в проект Example   Класс исходных данных об одной вершине анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:81</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>Animation.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пн 28 Окт 2019 01:49:22. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+  </ul>
+</div>
+</body>
+</html>
