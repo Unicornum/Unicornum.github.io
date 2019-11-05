@@ -23,7 +23,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Utilities.Documentation", "index.html", [
+  [ "Documentation", "index.html", [
     [ "Manual", "a30894.html", null ],
     [ "Скачать", "a30891.html", null ],
     [ "История изменений", "a30893.html", "a30893" ],
