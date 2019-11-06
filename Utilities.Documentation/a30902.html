@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.15" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Documentation: Структура решения</title>
+    <title>Documentation: $title</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -40,7 +40,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentation
-   &#160;<span id="projectnumber">Version: 2.1.1 Revision: 419 Platform: x64 Build: 18:57 05.11.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.1 Revision: 427 Platform: x64 Build: 21:33 06.11.2019</span>
    </div>
    <div id="projectbrief">Пример структуры документации решения.</div>
   </td>
@@ -96,38 +96,32 @@ $(document).ready(function(){initNavTree('a30902.html','');});
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
-  <div class="headertitle">
-<div class="title">Структура решения </div>  </div>
-</div><!--header-->
-<div class="contents">
-<div class="textblock"><p><a class="el" href="a30890.html">Информация о работе над решением</a></p>
-<p><a class="el" href="a30903.html">Список задач всех проектов решения</a></p>
-<h2>Общая структура решения </h2>
-<div class="fragment"><div class="line"></div><div class="line">| -*.sln          <span class="comment">// Файл решения Visual Studio.</span></div><div class="line">  |- Config       <span class="comment">// Папка, в которой помещается результат построения проектов.</span></div><div class="line">  |   |- Bin      <span class="comment">// .exe, .dll</span></div><div class="line">  |   |- Lib      <span class="comment">// .lib</span></div><div class="line">  |   |- Test     <span class="comment">// Сюда строятся тестовые проекты.</span></div><div class="line">  |</div><div class="line">  |- Solution</div><div class="line">    |- Build                  <span class="comment">// Папка проектов для пакетного построения проектов.</span></div><div class="line">    |- Test.Solution          <span class="comment">// Папка тестового проекта всего решения.</span></div><div class="line">    |- Solution               <span class="comment">// Папка разделов проектов решения.</span></div><div class="line">    |   |- (Documentation)    <span class="comment">// Документация решения.</span></div><div class="line">    |   |   |- html           <span class="comment">// Сюда генерируется документация Doxygen.</span></div><div class="line">    |   |   |- Title.png      <span class="comment">// Картинка, которая будет отображаться в заголовке документации.</span></div><div class="line">    |   |   |- MainPage.hpp   <span class="comment">// Главная страница документации решения.</span></div><div class="line">    |   |   |- License.txt    <span class="comment">// Файл с лицензией решения.</span></div><div class="line">    |   |   |- History.hpp    <span class="comment">// Страница с историей изменений решения.</span></div><div class="line">    |   |   |- ...</div><div class="line">    |   |</div><div class="line">    |   |- Part1                      <span class="comment">// Первый раздел решения.</span></div><div class="line">    |   |   |- (Documentation)        <span class="comment">// Папка документации первого раздела.</span></div><div class="line">    |   |   |  |- PartPage.hpp        <span class="comment">// Страница описания первого раздела.</span></div><div class="line">    |   |   |</div><div class="line">    |   |   |- Project1               <span class="comment">// Папка первого проекта первого раздела.</span></div><div class="line">    |   |   |  |- Project1            <span class="comment">// Первый проект.</span></div><div class="line">    |   |   |  |- Test.Project1       <span class="comment">// Тестовый проект первого проекта.</span></div><div class="line">    |   |   |  |- (Documentation)     <span class="comment">// Документация первого проекта.</span></div><div class="line">    |   |   |     |- ProjectPage.hpp  <span class="comment">// Страница описания проекта.</span></div><div class="line">    |   |   |     |- Task.hpp         <span class="comment">// Список задач проекта.</span></div><div class="line">    |   |   |</div><div class="line">    |   |   |- Project2</div><div class="line">    |   |   |- Project2</div><div class="line">    |   |   |- Test.Project2</div><div class="line">    |   |   |- (Documentation)</div><div class="line">    |   |      |- ...</div><div class="line">    |   |</div><div class="line">    |   |- Part2</div><div class="line">    |   |  |- ...</div><div class="line">    |   |</div><div class="line">    |   |- Externals            <span class="comment">// Папка внешних используемых библиотек/утилит.</span></div><div class="line">    |   |  |- ...</div><div class="line">    |</div><div class="line">    |- Version.hpp              <span class="comment">// Файл с макросами версии решения.</span></div><div class="line">    |- CppCheck.suppress.hpp    <span class="comment">// Файл со строками, который будут исключены из обработки CppCheck.</span></div><div class="line">    |- Metrics.smproj           <span class="comment">// Файл проекта для вычисления метрик кода в решении.</span></div><div class="line">    |- Tools.props              <span class="comment">// Пустой файл свойств (компромисс для возможности вложения страниц свойств разделов Alicorn).</span></div><div class="line">    |- Solution.*.props         <span class="comment">// Файлы свойств для конкретных конфигураций проектов.</span></div></div><!-- fragment --><h2>Ограничения и допущения </h2>
-<ul>
-<li>Раз.</li>
-<li>Два.</li>
-<li>Три.</li>
-</ul>
-<h2>Разделы решения </h2>
-<h3>Раздел 1</h3>
-<p>Краткое описание раздела.</p>
-<p>Страница раздела: <a class="el" href="a30905.html">Раздел Part1</a></p>
-<h3>Раздел 2</h3>
-<p>Страница раздела: Part2Page</p>
-<h2>Дополнительно </h2>
-<p><a class="el" href="a30884.html">Оформление кода</a></p>
-<p><a class="el" href="a30889.html">Используемые библиотеки/утилиты</a></p>
-<hr/>
- </div></div><!-- PageDoc -->
+<div class="PageDoc"><div class="contents">
+<div class="textblock"><p> 
+
+<style>
+
+img.preview {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 250px;
+}
+
+img.preview:hover{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  opacity: 0.7;
+}
+
+</style>
+
+   </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li>
-    <li class="footer">Документация по Documentation. Последние изменения: Вт 5 Ноя 2019 18:58:00. Создано системой
+    <li class="footer">Документация по Documentation. Последние изменения: Ср 6 Ноя 2019 21:33:39. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
