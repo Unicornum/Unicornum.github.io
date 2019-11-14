@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wxwidgets',['wxWidgets',['../a53033.html',1,'SolutionPage']]]
+  ['notitle',['notitle',['../index.html',1,'']]]
 ];
