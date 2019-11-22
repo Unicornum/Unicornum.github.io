@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('a01358_source.html','');});
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>Object;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a36195.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36195.html">PtrObject</a> : </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a36660.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36660.html">PtrObject</a> : </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span> ::boost::noncopyable</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div>
@@ -120,13 +120,13 @@ $(document).ready(function(){initNavTree('a01358_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  ::boost::dll::shared_library      m_Dll;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ::std::function&lt;<a class="code" href="a36191.html">Object</a> * (void)&gt;  m_fnCreate;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ::std::function&lt;void (<a class="code" href="a36191.html">Object</a> *)&gt;  m_fnDestroy;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a36191.html">Object</a>                          * m_pObject;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  ::std::function&lt;<a class="code" href="a36656.html">Object</a> * (void)&gt;  m_fnCreate;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  ::std::function&lt;void (<a class="code" href="a36656.html">Object</a> *)&gt;  m_fnDestroy;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a36656.html">Object</a>                          * m_pObject;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a36195.html#a20d6e0d738903f53e76b9a915577a279">PtrObject</a>(const ::boost::filesystem::path &amp;, <span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  ~<a class="code" href="a36195.html">PtrObject</a>(<span class="keywordtype">void</span>) noexcept;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a36660.html#a20d6e0d738903f53e76b9a915577a279">PtrObject</a>(const ::boost::filesystem::path &amp;, <span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  ~<a class="code" href="a36660.html">PtrObject</a>(<span class="keywordtype">void</span>) noexcept;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace dll</span></div>
@@ -138,15 +138,15 @@ $(document).ready(function(){initNavTree('a01358_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace alicorn</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa34530_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
-<div class="ttc" id="aa36195_html_a20d6e0d738903f53e76b9a915577a279"><div class="ttname"><a href="a36195.html#a20d6e0d738903f53e76b9a915577a279">alicorn::system::application::dll::PtrObject::PtrObject</a></div><div class="ttdeci">PtrObject(const ::boost::filesystem::path &amp;, const char *, const char *)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition:</b> ptr-object.cpp:39</div></div>
-<div class="ttc" id="aa36191_html"><div class="ttname"><a href="a36191.html">alicorn::system::application::dll::Object</a></div><div class="ttdoc">Класс входит в Application   Базовый класс объектов, создаваемых в dll.</div><div class="ttdef"><b>Definition:</b> object.hpp:33</div></div>
-<div class="ttc" id="aa36195_html"><div class="ttname"><a href="a36195.html">alicorn::system::application::dll::PtrObject</a></div><div class="ttdoc">Класс входит в Application   Класс-обертка, содержащая объект, созданный внутри dll.</div><div class="ttdef"><b>Definition:</b> ptr-object.hpp:37</div></div>
+<div class="ttc" id="aa34956_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
+<div class="ttc" id="aa36656_html"><div class="ttname"><a href="a36656.html">alicorn::system::application::dll::Object</a></div><div class="ttdoc">Класс входит в Application   Базовый класс объектов, создаваемых в dll.</div><div class="ttdef"><b>Definition:</b> object.hpp:33</div></div>
+<div class="ttc" id="aa36660_html_a20d6e0d738903f53e76b9a915577a279"><div class="ttname"><a href="a36660.html#a20d6e0d738903f53e76b9a915577a279">alicorn::system::application::dll::PtrObject::PtrObject</a></div><div class="ttdeci">PtrObject(const ::boost::filesystem::path &amp;, const char *, const char *)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition:</b> ptr-object.cpp:39</div></div>
+<div class="ttc" id="aa36660_html"><div class="ttname"><a href="a36660.html">alicorn::system::application::dll::PtrObject</a></div><div class="ttdoc">Класс входит в Application   Класс-обертка, содержащая объект, созданный внутри dll.</div><div class="ttdef"><b>Definition:</b> ptr-object.hpp:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_e6ca52160bd83cd3ce75eeeb2b07a02a.html">Application</a></li><li class="navelem"><a class="el" href="dir_1cb7b5985cb17cb994701cafd1b90b1e.html">dll</a></li><li class="navelem"><b>ptr-object.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:53. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

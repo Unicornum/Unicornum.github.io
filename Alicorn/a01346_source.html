@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -137,17 +137,17 @@ $(document).ready(function(){initNavTree('a01346_source.html','');});
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">class </span>CurrentModule</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">using</span> <a class="code" href="a35055.html">String_t</a> = <a class="code" href="a35055.html">::alicorn::extension::std::String</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">using</span> <a class="code" href="a35520.html">String_t</a> = <a class="code" href="a35520.html">::alicorn::extension::std::String</a>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">using</span> hModule_t = <span class="keywordtype">void</span> *;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">class </span>Proxy :</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span> <a class="code" href="a35303.html">::alicorn::extension::testing::Proxy</a>&lt;Proxy&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">public</span> <a class="code" href="a35768.html">::alicorn::extension::testing::Proxy</a>&lt;Proxy&gt;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  {</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    MOCK_METHOD0(GetHandle, hModule_t(<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    MOCK_METHOD0(GetLocation, Path_t(<span class="keywordtype">void</span>));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    MOCK_METHOD0(GetName, <a class="code" href="a35055.html">String_t</a>(<span class="keywordtype">void</span>));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    MOCK_METHOD0(GetName, <a class="code" href="a35520.html">String_t</a>(<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    MOCK_METHOD0(GetAppDataPath, Path_t(<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    MOCK_METHOD0(GetAppRootPath, Path_t(<span class="keywordtype">void</span>));</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  };</div>
@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('a01346_source.html','');});
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> Proxy::GetInstance()-&gt;GetLocation();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">static</span> <a class="code" href="a35055.html">String_t</a> GetName(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">static</span> <a class="code" href="a35520.html">String_t</a> GetName(<span class="keywordtype">void</span>)</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> Proxy::GetInstance()-&gt;GetName();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
@@ -194,13 +194,13 @@ $(document).ready(function(){initNavTree('a01346_source.html','');});
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <span class="comment">// namespace mock</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa35303_html"><div class="ttname"><a href="a35303.html">alicorn::extension::testing::Proxy</a></div><div class="ttdoc">Класс входит в Testing   Базовый класс для построения прокси-классов для проверки вызовов функций под...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:45</div></div>
-<div class="ttc" id="aa35055_html"><div class="ttname"><a href="a35055.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
+<div class="ttc" id="aa35768_html"><div class="ttname"><a href="a35768.html">alicorn::extension::testing::Proxy</a></div><div class="ttdoc">Класс входит в Testing   Базовый класс для построения прокси-классов для проверки вызовов функций под...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:45</div></div>
+<div class="ttc" id="aa35520_html"><div class="ttname"><a href="a35520.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_e6ca52160bd83cd3ce75eeeb2b07a02a.html">Application</a></li><li class="navelem"><b>current-module.mock.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:53. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

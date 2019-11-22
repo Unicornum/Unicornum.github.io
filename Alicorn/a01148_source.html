@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -106,25 +106,25 @@ $(document).ready(function(){initNavTree('a01148_source.html','');});
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>crypto</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a35931.html">   15</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>, <span class="keyword">class</span>&gt; <span class="keyword">class </span><a class="code" href="a35931.html">SecurePassword</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="a36396.html">   15</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span>, <span class="keyword">class</span>&gt; <span class="keyword">class </span><a class="code" href="a36396.html">SecurePassword</a>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a35935.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="a35935.html">AES256</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a36400.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36400.html">AES256</a></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> <a class="code" href="a35931.html">SecurePassword_t</a> = <a class="code" href="a35931.html">SecurePassword&lt;uint8_t, int32_t&gt;</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> <a class="code" href="a36396.html">SecurePassword_t</a> = <a class="code" href="a36396.html">SecurePassword&lt;uint8_t, int32_t&gt;</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">using</span> SourcePtr_t = ::std::shared_ptr&lt;details::Empty&lt;Data_t&gt;&gt;;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">using</span> Empty_t = bool;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Data_t Encode(<span class="keyword">const</span> <a class="code" href="a35931.html">SecurePassword_t</a> &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  Data_t Decode(<span class="keyword">const</span> <a class="code" href="a35931.html">SecurePassword_t</a> &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Data_t Encode(<span class="keyword">const</span> <a class="code" href="a36396.html">SecurePassword_t</a> &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  Data_t Decode(<span class="keyword">const</span> <a class="code" href="a36396.html">SecurePassword_t</a> &amp;) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">const</span> SourcePtr_t m_pSource;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a35935.html">AES256</a>(<span class="keyword">const</span> SourcePtr_t &amp;);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a36400.html">AES256</a>(<span class="keyword">const</span> SourcePtr_t &amp;);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace crypto</span></div>
@@ -134,14 +134,14 @@ $(document).ready(function(){initNavTree('a01148_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace alicorn</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa35935_html"><div class="ttname"><a href="a35935.html">alicorn::source::crypto::AES256</a></div><div class="ttdoc">Класс входит в Crypto   Реализация класса шифрования данных алгоритмом AES256.</div><div class="ttdef"><b>Definition:</b> aes256.hpp:39</div></div>
-<div class="ttc" id="aa35943_html"><div class="ttname"><a href="a35943.html">alicorn::source::crypto::Password</a></div><div class="ttdoc">Класс входит в проект Crypto   Класс-контейнер для передачи пароля.</div><div class="ttdef"><b>Definition:</b> password.hpp:36</div></div>
-<div class="ttc" id="aa35931_html"><div class="ttname"><a href="a35931.html">alicorn::source::crypto::SecurePassword</a></div><div class="ttdoc">Класс входит в проект Crypto   Класс для безопасного хранения пароля.</div><div class="ttdef"><b>Definition:</b> aes256.hpp:15</div></div>
+<div class="ttc" id="aa36396_html"><div class="ttname"><a href="a36396.html">alicorn::source::crypto::SecurePassword</a></div><div class="ttdoc">Класс входит в проект Crypto   Класс для безопасного хранения пароля.</div><div class="ttdef"><b>Definition:</b> aes256.hpp:15</div></div>
+<div class="ttc" id="aa36400_html"><div class="ttname"><a href="a36400.html">alicorn::source::crypto::AES256</a></div><div class="ttdoc">Класс входит в Crypto   Реализация класса шифрования данных алгоритмом AES256.</div><div class="ttdef"><b>Definition:</b> aes256.hpp:39</div></div>
+<div class="ttc" id="aa36408_html"><div class="ttname"><a href="a36408.html">alicorn::source::crypto::Password</a></div><div class="ttdoc">Класс входит в проект Crypto   Класс-контейнер для передачи пароля.</div><div class="ttdef"><b>Definition:</b> password.hpp:36</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_460f271f1936f0ecb85d4d26fcafb3ca.html">Crypto</a></li><li class="navelem"><a class="el" href="dir_02699cb4e9e97edff9e8b0e9b790a6eb.html">Crypto</a></li><li class="navelem"><b>aes256.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:53. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:22. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

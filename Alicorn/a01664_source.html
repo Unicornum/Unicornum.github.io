@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -125,45 +125,45 @@ $(document).ready(function(){initNavTree('a01664_source.html','');});
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;Rocket/Core/String.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;Rocket/Core/FileInterface.h&gt;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a36503.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36503.html">ShellFileInterface</a> final :</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a36968.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36968.html">ShellFileInterface</a> final :</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span> Rocket::Core::FileInterface</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">using</span> String_t = Rocket::Core::String;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">using</span> FileHandle_t = Rocket::Core::FileHandle;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Rocket::Core::FileHandle <a class="code" href="a36503.html#a37da7420fe38991d10c0355ba02a658c">Open</a>(<span class="keyword">const</span> String_t &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Rocket::Core::FileHandle <a class="code" href="a36968.html#a37da7420fe38991d10c0355ba02a658c">Open</a>(<span class="keyword">const</span> String_t &amp;) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a36503.html#a2749e3046778ca187fac050b0c351f12">Close</a>(FileHandle_t) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a36968.html#a2749e3046778ca187fac050b0c351f12">Close</a>(FileHandle_t) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a36503.html#ad71e46bb96b72cb4c74a85e6c2c8043a">Read</a>(<span class="keywordtype">void</span> *, <span class="keywordtype">size_t</span>, FileHandle_t) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a36968.html#ad71e46bb96b72cb4c74a85e6c2c8043a">Read</a>(<span class="keywordtype">void</span> *, <span class="keywordtype">size_t</span>, FileHandle_t) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a36503.html#a9fb77fb8f00303f8e3714d77446e1e8f">Seek</a>(FileHandle_t, <span class="keywordtype">long</span>, <span class="keywordtype">int</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a36968.html#a9fb77fb8f00303f8e3714d77446e1e8f">Seek</a>(FileHandle_t, <span class="keywordtype">long</span>, <span class="keywordtype">int</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a36503.html#a9891560f9daf82d6f8ed76933345c875">Tell</a>(FileHandle_t) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a36968.html#a9891560f9daf82d6f8ed76933345c875">Tell</a>(FileHandle_t) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  String_t root;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a36503.html">ShellFileInterface</a>(<span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a36968.html">ShellFileInterface</a>(<span class="keyword">const</span> String_t &amp;);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa36503_html_a9fb77fb8f00303f8e3714d77446e1e8f"><div class="ttname"><a href="a36503.html#a9fb77fb8f00303f8e3714d77446e1e8f">ShellFileInterface::Seek</a></div><div class="ttdeci">bool Seek(FileHandle_t, long, int) override</div><div class="ttdoc">Seeks to a point in a previously opened file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:64</div></div>
-<div class="ttc" id="aa36503_html_a9891560f9daf82d6f8ed76933345c875"><div class="ttname"><a href="a36503.html#a9891560f9daf82d6f8ed76933345c875">ShellFileInterface::Tell</a></div><div class="ttdeci">size_t Tell(FileHandle_t) override</div><div class="ttdoc">Returns the current position of the file pointer.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:71</div></div>
-<div class="ttc" id="aa36503_html_a2749e3046778ca187fac050b0c351f12"><div class="ttname"><a href="a36503.html#a2749e3046778ca187fac050b0c351f12">ShellFileInterface::Close</a></div><div class="ttdeci">void Close(FileHandle_t) override</div><div class="ttdoc">Closes a previously opened file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:52</div></div>
-<div class="ttc" id="aa36503_html"><div class="ttname"><a href="a36503.html">ShellFileInterface</a></div><div class="ttdef"><b>Definition:</b> ShellFileInterface.h:38</div></div>
-<div class="ttc" id="aa36503_html_a37da7420fe38991d10c0355ba02a658c"><div class="ttname"><a href="a36503.html#a37da7420fe38991d10c0355ba02a658c">ShellFileInterface::Open</a></div><div class="ttdeci">Rocket::Core::FileHandle Open(const String_t &amp;) override</div><div class="ttdoc">Opens a file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:37</div></div>
-<div class="ttc" id="aa36503_html_ad71e46bb96b72cb4c74a85e6c2c8043a"><div class="ttname"><a href="a36503.html#ad71e46bb96b72cb4c74a85e6c2c8043a">ShellFileInterface::Read</a></div><div class="ttdeci">size_t Read(void *, size_t, FileHandle_t) override</div><div class="ttdoc">Reads data from a previously opened file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:58</div></div>
-<div class="ttc" id="aa35055_html"><div class="ttname"><a href="a35055.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
+<div class="ttc" id="aa36968_html"><div class="ttname"><a href="a36968.html">ShellFileInterface</a></div><div class="ttdef"><b>Definition:</b> ShellFileInterface.h:38</div></div>
+<div class="ttc" id="aa36968_html_a2749e3046778ca187fac050b0c351f12"><div class="ttname"><a href="a36968.html#a2749e3046778ca187fac050b0c351f12">ShellFileInterface::Close</a></div><div class="ttdeci">void Close(FileHandle_t) override</div><div class="ttdoc">Closes a previously opened file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:52</div></div>
+<div class="ttc" id="aa36968_html_a37da7420fe38991d10c0355ba02a658c"><div class="ttname"><a href="a36968.html#a37da7420fe38991d10c0355ba02a658c">ShellFileInterface::Open</a></div><div class="ttdeci">Rocket::Core::FileHandle Open(const String_t &amp;) override</div><div class="ttdoc">Opens a file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:37</div></div>
+<div class="ttc" id="aa35520_html"><div class="ttname"><a href="a35520.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
+<div class="ttc" id="aa36968_html_ad71e46bb96b72cb4c74a85e6c2c8043a"><div class="ttname"><a href="a36968.html#ad71e46bb96b72cb4c74a85e6c2c8043a">ShellFileInterface::Read</a></div><div class="ttdeci">size_t Read(void *, size_t, FileHandle_t) override</div><div class="ttdoc">Reads data from a previously opened file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:58</div></div>
+<div class="ttc" id="aa36968_html_a9fb77fb8f00303f8e3714d77446e1e8f"><div class="ttname"><a href="a36968.html#a9fb77fb8f00303f8e3714d77446e1e8f">ShellFileInterface::Seek</a></div><div class="ttdeci">bool Seek(FileHandle_t, long, int) override</div><div class="ttdoc">Seeks to a point in a previously opened file.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:64</div></div>
+<div class="ttc" id="aa36968_html_a9891560f9daf82d6f8ed76933345c875"><div class="ttname"><a href="a36968.html#a9891560f9daf82d6f8ed76933345c875">ShellFileInterface::Tell</a></div><div class="ttdeci">size_t Tell(FileHandle_t) override</div><div class="ttdoc">Returns the current position of the file pointer.</div><div class="ttdef"><b>Definition:</b> ShellFileInterface.cpp:71</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_6d21771682d6f948250a5496f5d1bb2d.html">RocketRenderToFile.App</a></li><li class="navelem"><a class="el" href="dir_12e611e0d32dcfbac27a2b7203b0ed8b.html">RocketRenderToFile.App</a></li><li class="navelem"><a class="el" href="dir_0fba3b9745568a635b300913fda259a1.html">Shell</a></li><li class="navelem"><b>ShellFileInterface.h</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:54. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

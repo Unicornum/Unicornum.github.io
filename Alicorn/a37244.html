@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Build</title>
+<title>Alicorn: Класс view::FailedTestsInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,37 +87,79 @@ $(document).ready(function(){initNavTree('a37244.html','');});
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a37241.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Build </div>  </div>
+<div class="title">Класс view::FailedTestsInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34996.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Описание раздела </h1>
-<p>Раздел для вспомогательных проектов, собирающих проекты отдельных библиотек.</p>
-<h2>Проект Clean </h2>
-<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
-<h2>Проект BuildAll </h2>
-<p>Проект, предназначенный для сборки всех остальных проектов 'одним кликом'.</p><ul>
-<li>Должен зависеть ото всех остальных проектов раздела Build и Test.Solution.</li>
-<li>Используется для автоматической сборки скриптом BuildAll.cmd.</li>
+
+<p>Класс входит в <a class="el" href="a37784.html">Testing.App</a> <br  />
+ Класс панели отображения информации о проваленных тестах.  
+ <a href="a37244.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01904_source.html">FailedTestsInfo.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:view::FailedTestsInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="a37243.png" border="0" usemap="#view_1_1_failed_tests_info_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_failed_tests_info_inherit__map" id="view_1_1_failed_tests_info_inherit__map">
+<area shape="rect" title="Класс входит в Testing.App &#160;&#160;Класс панели отображения информации о проваленных тестах." alt="" coords="109,248,281,369"/>
+<area shape="rect" href="a37248.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс представления." alt="" coords="5,57,180,149"/>
+<area shape="rect" href="a37272.html" title="Class PanelFailedTest." alt="" coords="205,5,394,200"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса view::FailedTestsInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="a37242.png" border="0" usemap="#view_1_1_failed_tests_info_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_failed_tests_info_coll__map" id="view_1_1_failed_tests_info_coll__map">
+<area shape="rect" title="Класс входит в Testing.App &#160;&#160;Класс панели отображения информации о проваленных тестах." alt="" coords="63,764,235,885"/>
+<area shape="rect" href="a37248.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс представления." alt="" coords="5,586,180,678"/>
+<area shape="rect" href="a37272.html" title="Class PanelFailedTest." alt="" coords="205,549,367,715"/>
+<area shape="rect" href="a37276.html" title="Класс входит в Testing.App &#160;&#160;Класс для отображения подробной информации о проваленном тесте." alt="" coords="88,219,281,413"/>
+<area shape="rect" href="a37284.html" title="Класс входит в Testing.App &#160;&#160;Класс для отображения дерева с информацией о тестах." alt="" coords="305,145,477,487"/>
+<area shape="rect" href="a37280.html" title="Класс входит в Testing.App &#160;&#160;Класс списка иконок для отображения в дереве тестов результата их прогон..." alt="" coords="321,5,462,83"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a8454b3f179b3136728668033f1f56885"><td class="memItemLeft" align="right" valign="top"><a id="a8454b3f179b3136728668033f1f56885"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37244.html#a8454b3f179b3136728668033f1f56885">SetResultRunTests</a> (const Info_t &amp;) override</td></tr>
+<tr class="memdesc:a8454b3f179b3136728668033f1f56885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при обновлении представления. <br /></td></tr>
+<tr class="separator:a8454b3f179b3136728668033f1f56885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8351ca940eeac53bdbd81672c52db1d"><td class="memItemLeft" align="right" valign="top"><a id="ad8351ca940eeac53bdbd81672c52db1d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37244.html#ad8351ca940eeac53bdbd81672c52db1d">OnPaint</a> (wxPaintEvent &amp;) override</td></tr>
+<tr class="memdesc:ad8351ca940eeac53bdbd81672c52db1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при переключении на вкладку этой панели. <br /></td></tr>
+<tr class="separator:ad8351ca940eeac53bdbd81672c52db1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f31082d1573122757db0572e9100a93"><td class="memItemLeft" align="right" valign="top"><a id="a8f31082d1573122757db0572e9100a93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37244.html#a8f31082d1573122757db0572e9100a93">OnChanged</a> (wxTreeEvent &amp;) override</td></tr>
+<tr class="memdesc:a8f31082d1573122757db0572e9100a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при выборе мышью узла дерева тестов. <br /></td></tr>
+<tr class="separator:a8f31082d1573122757db0572e9100a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a37784.html">Testing.App</a> <br  />
+ Класс панели отображения информации о проваленных тестах. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>26 Май 2016 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Tools/Testing.App/Testing.App/View/<a class="el" href="a01904_source.html">FailedTestsInfo.hpp</a></li>
+<li>Solution/Solution/Tools/Testing.App/Testing.App/View/FailedTestsInfo.cpp</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd>Проект BuildAll понадобился потому, что сборка при помощи MsBuild всего решения приводит к сборке выгруженных проектов.</dd></dl>
-<dl class="section warning"><dt>Предупреждения</dt><dd>10.05.2016: Параметры MsBuild '/p:DebugType=none;DebugSymbols=false' не работают для проектов lib, оставлены для ускорения сборки exe и dll.</dd></dl>
-<h2>Проект Alicorn </h2>
-<p>Проект сборки всех проектов, предназначенных для использования в Windows.</p>
-<h2>Проект Android </h2>
-<p>Проект сборки всех проектов, предназначенных для использования под Android.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что если Android-проекту добавить в зависимость Windows-проект, то проваливается сборка скриптом всего решения (хотя сборка в Visual Studio работает).</dd></dl>
-<p>Проекту Test.Android/SourceVfsData (который формирует файл .pack, упаковываемый в .apk проектом Test.Android/Packaging) требуется зависимость от Test.Android/PackBuilder'a (который является Windows-проектом, т.к. должен запускаться при сборке решения), что и приводит к ошибке сборки скриптом. В качестве временного решения используется проект Android, который строится отдельной командой в BuildAll.cmd после построения всего остального. </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="a37261.html">Структура решения</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:56. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a37244.html">FailedTestsInfo</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:31. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

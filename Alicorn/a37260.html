@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Вычисление метрик кода в решении</title>
+<title>Alicorn: Класс view::TestProjectInfo</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -87,71 +87,74 @@ $(document).ready(function(){initNavTree('a37260.html','');});
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="header">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a37257.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Вычисление метрик кода в решении </div>  </div>
+<div class="title">Класс view::TestProjectInfo<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a34996.html">View</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="section note"><dt>Заметки</dt><dd>Для вычисления метрик кода С++ используется утилита <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>.</dd></dl>
-<p>Для вычисления метрик кода при сборке решения скриптом необходимо:</p><ul>
-<li>Создать и настроить проект <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>.</li>
-<li>Подключить к решению проект <b>ProcessingMetrics</b>.</li>
-<li>Подключить к проекту BuildAll файл страницы свойств <b>Metrics.props</b>.</li>
-<li>Добавить в документацию решения страницу с рультатами подсчета метрик.</li>
+
+<p>Класс входит в <a class="el" href="a37784.html">Testing.App</a> <br  />
+ Класс для передачи информации о результате прогона тестов одного проекта.  
+ <a href="a37260.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01916_source.html">TestProjectInfo.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:view::TestProjectInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="a37259.png" border="0" usemap="#view_1_1_test_project_info_inherit__map" alt="Inheritance graph"/></div>
+<map name="view_1_1_test_project_info_inherit__map" id="view_1_1_test_project_info_inherit__map">
+<area shape="rect" title="Класс входит в Testing.App &#160;&#160;Класс для передачи информации о результате прогона тестов одного проекта..." alt="" coords="95,285,267,407"/>
+<area shape="rect" href="a37248.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс представления." alt="" coords="5,145,180,237"/>
+<area shape="rect" href="a37232.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс для передачи результатов прогона тестов из dll вызыва..." alt="" coords="204,153,336,230"/>
+<area shape="rect" href="a36656.html" title="Класс входит в Application &#160;&#160;Базовый класс объектов, создаваемых в dll." alt="" coords="167,5,373,97"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса view::TestProjectInfo:</div>
+<div class="dyncontent">
+<div class="center"><img src="a37258.png" border="0" usemap="#view_1_1_test_project_info_coll__map" alt="Collaboration graph"/></div>
+<map name="view_1_1_test_project_info_coll__map" id="view_1_1_test_project_info_coll__map">
+<area shape="rect" title="Класс входит в Testing.App &#160;&#160;Класс для передачи информации о результате прогона тестов одного проекта..." alt="" coords="95,285,267,407"/>
+<area shape="rect" href="a37248.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс представления." alt="" coords="5,145,180,237"/>
+<area shape="rect" href="a37232.html" title="Класс входит в Testing.App &#160;&#160;Интерфейсный класс для передачи результатов прогона тестов из dll вызыва..." alt="" coords="204,153,336,230"/>
+<area shape="rect" href="a36656.html" title="Класс входит в Application &#160;&#160;Базовый класс объектов, создаваемых в dll." alt="" coords="167,5,373,97"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4841d4f1542468358b7e9f7c0ee85e03"><td class="memItemLeft" align="right" valign="top"><a id="a4841d4f1542468358b7e9f7c0ee85e03"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37260.html#a4841d4f1542468358b7e9f7c0ee85e03">SetResultRunTests</a> (const IViewTestingApp::Info_t &amp;) override</td></tr>
+<tr class="memdesc:a4841d4f1542468358b7e9f7c0ee85e03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается при обновлении представления. <br /></td></tr>
+<tr class="separator:a4841d4f1542468358b7e9f7c0ee85e03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40370349abcd7e28fd0e7b35dc07f7ca"><td class="memItemLeft" align="right" valign="top"><a id="a40370349abcd7e28fd0e7b35dc07f7ca"></a>
+const IReport::Info_t &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a37260.html#a40370349abcd7e28fd0e7b35dc07f7ca">GetResult</a> (void) override</td></tr>
+<tr class="memdesc:a40370349abcd7e28fd0e7b35dc07f7ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вызывается программой тестирования решения при загрузке информации о тестах из dll. <br /></td></tr>
+<tr class="separator:a40370349abcd7e28fd0e7b35dc07f7ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a37784.html">Testing.App</a> <br  />
+ Класс для передачи информации о результате прогона тестов одного проекта. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>26 Май 2016 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Tools/Testing.App/Testing.App/View/<a class="el" href="a01916_source.html">TestProjectInfo.hpp</a></li>
+<li>Solution/Solution/Tools/Testing.App/Testing.App/View/TestProjectInfo.cpp</li>
 </ul>
-<h2>Настройка проекта SourceMonitor </h2>
-<p>Запустить <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>, создать новый проект, в первом окне мастера выбрать С++, в качестве <b>Include</b> вставить '*.cpp;*.h;*.hpp;*.inl', в качестве <b>Exclude</b> - '*.mock.hpp;*.mock.inl;stdafx.*;pch.h;targetver.h;*.forward.hpp'.</p>
-<div class="image">
-<img src="SelectLanguage.png" alt=""/>
-</div>
-<p>Во втором окне мастера указать в качестве имени проекта <b>Metrics</b> (проект именно с этим именем будет запускать скрипт), а в качестве пути к папке проекта - полный путь к папке Solution решения ($(SolutionDir)\Solution).</p>
-<div class="image">
-<img src="ProjectName.png" alt=""/>
-</div>
-<p>В третьем окне мастера указать в качестве пути для обработки вложенную папку Solution.</p>
-<div class="image">
-<img src="SelectMainDirectory.png" alt=""/>
-</div>
-<p>Настроить вложенные папки для обработки, исключив папки тестовых проектов и документации.</p>
-<div class="image">
-<img src="SelectSubdirectories.png" alt=""/>
-</div>
-<p>В четвертом окне мастера указать особые параметры проекта.</p>
-<div class="image">
-<img src="SpecifyOptions.png" alt=""/>
-</div>
-<p>В пятом окне мастера указать формат проекта.</p>
-<div class="image">
-<img src="ProjectFormat.png" alt=""/>
-</div>
-<p>В шестом окне мастера настроить создание первой контрольной точки.</p>
-<div class="image">
-<img src="CreateFirstCheckpoint.png" alt=""/>
-</div>
-<h2>Подключение проекта ProcessingMetrics </h2>
-<p>Подключить к решению (в любую папку) проект Metrics из папки $(SolutionDir)\Solution\Solution\Externals\Tools\ProcessingMetrics и добавить проекту BuildAll зависимость от этого проекта.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Эта утилита обрабатывает результат расчета метрик кода и формирует файл отчета для включения в документацию <b>Doxygen</b>.</dd></dl>
-<h2>Подключение страницы свойств Metrics.props </h2>
-<p>К конфигурации Debug|x64 проекта BuildAll подключить страницу свойств $(SolutionDir)\Solution\Solution\Externals\Metrics.props</p>
-<dl class="section note"><dt>Заметки</dt><dd>Эта страница свойств содержит скрипт подсчета метрик кода и запуск утилиты обработки результата.</dd></dl>
-<h2>Страница документации с результатами расчета метрик кода </h2>
-<p>В документацию решения добавить страницу с именем <b>SolutionMetricsPage</b>, содержащую включение файла <b>Metrics.result.html</b> </p><div class="fragment"><div class="line">\page SolutionMetricsPage Метрики кода в решении</div>
-<div class="line">\subpage SolutionMetricsFilesPage</div>
-<div class="line">  </div>
-<div class="line">Статистика расчета метрик кода</div>
-<div class="line">------------------------------</div>
-<div class="line">  </div>
-<div class="line">\htmlinclude <span class="stringliteral">&quot;Solution\(Documentation)\Metrics.result.html&quot;</span></div>
-</div><!-- fragment --><p>Также добавить страницу <b>SolutionMetricsFilesPage</b>, содержащую список наиболее проблемных мест в коде для каждой метрики.</p>
-<div class="fragment"><div class="line">\page SolutionMetricsFilesPage Проблемные места</div>
-<div class="line">\htmlinclude <span class="stringliteral">&quot;Solution\(Documentation)\Metrics.result.warning.html&quot;</span></div>
-</div><!-- fragment --> </div></div><!-- contents -->
-</div><!-- PageDoc -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:57. Создано системой
+    <li class="navelem"><b>view</b></li><li class="navelem"><a class="el" href="a37260.html">TestProjectInfo</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:31. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

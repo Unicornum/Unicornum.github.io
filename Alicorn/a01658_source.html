@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('a01658_source.html','');});
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;Rocket\Core\Context.h&gt;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;Rocket\Core\SystemInterface.h&gt;</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="a36507.html">ShellRenderInterfaceExtensions</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span><a class="code" href="a36972.html">ShellRenderInterfaceExtensions</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">class </span>Shell final</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
@@ -138,11 +138,11 @@ $(document).ready(function(){initNavTree('a01658_source.html','');});
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> Initialise(<span class="keyword">const</span> Rocket::Core::String &amp;);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> Shutdown(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> LoadFonts(<span class="keyword">const</span> Path_t &amp;);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> OpenWindow(<span class="keyword">const</span> TCHAR *, <a class="code" href="a36507.html">ShellRenderInterfaceExtensions</a> *,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">bool</span> OpenWindow(<span class="keyword">const</span> TCHAR *, <a class="code" href="a36972.html">ShellRenderInterfaceExtensions</a> *,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>, <span class="keywordtype">bool</span>, <span class="keywordtype">bool</span>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> CloseWindow(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> DisplayError(<span class="keyword">const</span> <span class="keywordtype">char</span> *, ...);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a34523.html#gadb112fc83d297afc67bc9f0b11491ffd">Log</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *, ...);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a34949.html#gadb112fc83d297afc67bc9f0b11491ffd">Log</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *, ...);</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">float</span> GetElapsedTime(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">using</span> ShellIdleFunction = ::std::function&lt;void(<span class="keywordtype">void</span>)&gt;;</div>
@@ -156,14 +156,14 @@ $(document).ready(function(){initNavTree('a01658_source.html','');});
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa34530_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
-<div class="ttc" id="aa34523_html_gadb112fc83d297afc67bc9f0b11491ffd"><div class="ttname"><a href="a34523.html#gadb112fc83d297afc67bc9f0b11491ffd">alicorn::extension::cpp::math::Log</a></div><div class="ttdeci">Type Log(Type)</div><div class="ttdef"><b>Definition:</b> exponent.hpp:109</div></div>
-<div class="ttc" id="aa36507_html"><div class="ttname"><a href="a36507.html">ShellRenderInterfaceExtensions</a></div><div class="ttdef"><b>Definition:</b> ShellRenderInterfaceExtensions.h:38</div></div>
+<div class="ttc" id="aa34956_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
+<div class="ttc" id="aa34949_html_gadb112fc83d297afc67bc9f0b11491ffd"><div class="ttname"><a href="a34949.html#gadb112fc83d297afc67bc9f0b11491ffd">alicorn::extension::cpp::math::Log</a></div><div class="ttdeci">Type Log(Type)</div><div class="ttdef"><b>Definition:</b> exponent.hpp:109</div></div>
+<div class="ttc" id="aa36972_html"><div class="ttname"><a href="a36972.html">ShellRenderInterfaceExtensions</a></div><div class="ttdef"><b>Definition:</b> ShellRenderInterfaceExtensions.h:38</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_6d21771682d6f948250a5496f5d1bb2d.html">RocketRenderToFile.App</a></li><li class="navelem"><a class="el" href="dir_12e611e0d32dcfbac27a2b7203b0ed8b.html">RocketRenderToFile.App</a></li><li class="navelem"><a class="el" href="dir_0fba3b9745568a635b300913fda259a1.html">Shell</a></li><li class="navelem"><b>Shell.h</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:54. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:24. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

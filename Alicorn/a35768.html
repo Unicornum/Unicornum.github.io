@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Cписок членов класса</title>
+<title>Alicorn: Шаблон класса alicorn::extension::testing::Proxy&lt; T &gt;</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a35771.html','');});
+$(document).ready(function(){initNavTree('a35768.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -88,18 +88,134 @@ $(document).ready(function(){initNavTree('a35771.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="a35765.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">alicorn::modules::settings::SectionImpl::Parameters Cписок членов класса</div>  </div>
+<div class="title">Шаблон класса alicorn::extension::testing::Proxy&lt; T &gt;<div class="ingroups"><a class="el" href="a34942.html">Alicorn</a> &raquo; <a class="el" href="a34951.html">Extension</a> &raquo; <a class="el" href="a34957.html">Testing</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a35771.html">alicorn::modules::settings::SectionImpl::Parameters</a>, включая наследуемые из базового класса</p>
+<p>Класс входит в <a class="el" href="a37723.html">Testing</a> <br  />
+ Базовый класс для построения прокси-классов для проверки вызовов функций подставных классов.  
+ <a href="a35768.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a39592_source.html">proxy.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса alicorn::extension::testing::Proxy&lt; T &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a35766.png" border="0" usemap="#alicorn_1_1extension_1_1testing_1_1_proxy_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1extension_1_1testing_1_1_proxy_3_01_t_01_4_coll__map" id="alicorn_1_1extension_1_1testing_1_1_proxy_3_01_t_01_4_coll__map">
+<area shape="rect" title="Класс входит в Testing &#160;&#160;Базовый класс для построения прокси&#45;классов для проверки вызовов функций под..." alt="" coords="5,5,176,156"/>
+</map>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><h3>template&lt;class T&gt;<br />
+class alicorn::extension::testing::Proxy&lt; T &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a37723.html">Testing</a> <br  />
+ Базовый класс для построения прокси-классов для проверки вызовов функций подставных классов. </p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Класс не следует использовать для проверки работоспособности в многопоточной среде.</dd></dl>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Создаваемый</td><td>прокси-класс.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ 1.1.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>20 Апрель 2015 <br  />
+ 16 Ноябрь 2019 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2015 - 2019</dd></dl>
+<h2>Пример использования </h2>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="comment">// Создаем подставной класс с вызовами подставных функций прокси-класса:</span></div>
+<div class="line"><span class="keyword">namespace </span>mock</div>
+<div class="line">{</div>
+<div class="line">  </div>
+<div class="line"><span class="keyword">class </span>Project</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  <span class="comment">// Прокси-класс с нужными подставными функциями:</span></div>
+<div class="line">  <span class="keyword">class </span>Proxy :</div>
+<div class="line">    <span class="keyword">public</span> <a class="code" href="a35768.html">::alicorn::extension::testing::Proxy</a>&lt;Proxy&gt;</div>
+<div class="line">  {</div>
+<div class="line">  <span class="keyword">public</span>:</div>
+<div class="line">    MOCK_METHOD1(Constructor, <span class="keywordtype">size_t</span>(<span class="keywordtype">int</span>));</div>
+<div class="line">    MOCK_CONST_METHOD1(GetName, CString(<span class="keywordtype">size_t</span>));</div>
+<div class="line">  };</div>
+<div class="line">    </div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">size_t</span> m_Id;</div>
+<div class="line">    </div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  CString GetName(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><span class="keyword">  </span>{</div>
+<div class="line">    <span class="keywordflow">return</span> Proxy::GetInstance()-&gt;GetName(m_Id);</div>
+<div class="line">  }</div>
+<div class="line">    </div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  Project(<span class="keywordtype">int</span> _Index) :</div>
+<div class="line">    m_Id(Proxy::GetInstance()-&gt;Constructor(_Index))</div>
+<div class="line">  {</div>
+<div class="line">  }</div>
+<div class="line">};</div>
+<div class="line">  </div>
+<div class="line">} <span class="comment">// namespace mock</span></div>
+<div class="line">  </div>
+<div class="line"><span class="comment">// Тестируемая функция:</span></div>
+<div class="line"><span class="keyword">class </span>Example</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  CString GetProjectNameFromIndex(<span class="keywordtype">int</span> _Index)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="comment">// В тестовом проекте здесь должен использоваться класс ::mock::Project.</span></div>
+<div class="line">    Project Project(_Index);</div>
+<div class="line">    <span class="keywordflow">return</span> Project.GetName();</div>
+<div class="line">  }</div>
+<div class="line">};</div>
+<div class="line">  </div>
+<div class="line"><span class="comment">// Использование прокси-класса в тесте:</span></div>
+<div class="line">TEST_F(Test_test, Test_GetName)</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">using</span> ProjectProxy_t = ::mock::Project::Proxy;</div>
+<div class="line">  ProjectProxy_t ProjectProxy;</div>
+<div class="line">  ProjectProxy_t::GetInstance() = &amp;ProjectProxy; <span class="comment">// Не обязательно</span></div>
+<div class="line">    </div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">int</span> Index = 1;</div>
+<div class="line">  <span class="keyword">const</span> <span class="keywordtype">size_t</span> ProjectId = 1509032221;</div>
+<div class="line">  <span class="keyword">const</span> CString ExpectedName = _T(<span class="stringliteral">&quot;Name&quot;</span>);</div>
+<div class="line">    </div>
+<div class="line">  <span class="keyword">using namespace </span>::testing;</div>
+<div class="line">    </div>
+<div class="line">  InSequence Dummy;</div>
+<div class="line">    </div>
+<div class="line">  EXPECT_CALL(ProjectProxy, Constructor(Index))</div>
+<div class="line">    .Times(1)</div>
+<div class="line">    .WillOnce(Return(ProjectId));</div>
+<div class="line">    </div>
+<div class="line">  EXPECT_CALL(ProjectProxy, GetName(ProjectId))</div>
+<div class="line">    .Times(1)</div>
+<div class="line">    .WillOnce(Return(ExpectedName));</div>
+<div class="line"> </div>
+<div class="line">  Example Example;</div>
+<div class="line">  <span class="keyword">const</span> CString Result = Example.GetProjectNameFromIndex(Index);</div>
+<div class="line">  EXPECT_STREQ(ExpectedName, Result);</div>
+<div class="line">}</div>
+<div class="line"> </div>
+</div><!-- fragment --></div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Extension/Testing/Testing/<a class="el" href="a39592_source.html">proxy.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa35768_html"><div class="ttname"><a href="a35768.html">alicorn::extension::testing::Proxy</a></div><div class="ttdoc">Класс входит в Testing   Базовый класс для построения прокси-классов для проверки вызовов функций под...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:45</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:59. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>testing</b></li><li class="navelem"><a class="el" href="a35768.html">Proxy</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:29. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>

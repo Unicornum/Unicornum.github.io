@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -132,11 +132,11 @@ $(document).ready(function(){initNavTree('a00080_source.html','');});
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> UsingSize = static_cast&lt;binary::Data_t::size_type&gt;(Size);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// 26 Сентябрь 2016 13:46 (CTAPOBEP@mail.ru)</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a34524.html#gaba14ee3a68c07fe13e2a69c94ddc1743">TODO</a>(<span class="stringliteral">&quot;Это условие НИКОГДА не выполняется!&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a34950.html#gaba14ee3a68c07fe13e2a69c94ddc1743">TODO</a>(<span class="stringliteral">&quot;Это условие НИКОГДА не выполняется!&quot;</span>);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (UsingSize &gt; binary::Data_t().max_size())</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;Too big file: &quot;</span> &lt;&lt; Size;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;Too big file: &quot;</span> &lt;&lt; Size;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (_BeginPosition &gt;= UsingSize || _BytesCount == 0)</div>
@@ -147,7 +147,7 @@ $(document).ready(function(){initNavTree('a00080_source.html','');});
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> SeekResult = AAsset_seek(m_pFile, _BeginPosition, SEEK_SET);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (SeekResult &lt; 0)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;AAsset_seek fail: &quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;AAsset_seek fail: &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="stringliteral">&quot;[_BeginPosition: &quot;</span> &lt;&lt; _BeginPosition &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="stringliteral">&quot;[UsingSize: &quot;</span> &lt;&lt; UsingSize &lt;&lt; <span class="stringliteral">&quot;].&quot;</span>;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
@@ -158,7 +158,7 @@ $(document).ready(function(){initNavTree('a00080_source.html','');});
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ReadResult = AAsset_read(m_pFile, Buffer.data(), Buffer.size());</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (ReadResult &lt; 0)</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;AAsset_seek fail: &quot;</span> &lt;&lt;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;AAsset_seek fail: &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="stringliteral">&quot;[_BeginPosition: &quot;</span> &lt;&lt; _BeginPosition &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="stringliteral">&quot;[ReadSize: &quot;</span> &lt;&lt; ReadSize &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="stringliteral">&quot;[UsingSize: &quot;</span> &lt;&lt; UsingSize &lt;&lt; <span class="stringliteral">&quot;].&quot;</span>;</div>
@@ -173,19 +173,19 @@ $(document).ready(function(){initNavTree('a00080_source.html','');});
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">explicit</span> AssetFile(<span class="keyword">const</span> path &amp; _PathToFile)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">using</span> AppInfo_t = <a class="code" href="a36263.html">::alicorn::system::platform::AppInfo</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">using</span> AppInfo_t = <a class="code" href="a36728.html">::alicorn::system::platform::AppInfo</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">auto</span> * pAssetManager = AppInfo_t::Get&lt;ANativeActivity&gt;().assetManager;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (pAssetManager == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;Invalid asset manager.&quot;</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;Invalid asset manager.&quot;</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_pFile = AAssetManager_open(pAssetManager, _PathToFile.string().c_str(),</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      AASSET_MODE_UNKNOWN);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (m_pFile == <span class="keyword">nullptr</span>)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;File not exists: &quot;</span> &lt;&lt; _PathToFile.string();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      <span class="keywordflow">throw</span> <a class="code" href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; <span class="stringliteral">&quot;File not exists: &quot;</span> &lt;&lt; _PathToFile.string();</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  ~AssetFile(<span class="keywordtype">void</span>) noexcept</div>
@@ -201,14 +201,14 @@ $(document).ready(function(){initNavTree('a00080_source.html','');});
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa34530_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
-<div class="ttc" id="aa36263_html"><div class="ttname"><a href="a36263.html">alicorn::system::platform::AppInfo</a></div><div class="ttdoc">Класс входит в проект Platform   Класс доступа к данным, передаваемым нативному приложению запускающи...</div><div class="ttdef"><b>Definition:</b> app-info.hpp:77</div></div>
-<div class="ttc" id="aa34524_html_gaba14ee3a68c07fe13e2a69c94ddc1743"><div class="ttname"><a href="a34524.html#gaba14ee3a68c07fe13e2a69c94ddc1743">TODO</a></div><div class="ttdeci">#define TODO(text)</div><div class="ttdoc">Макрос входит в Cpp   Макрос для вывода сообщения в окно вывода Visual Studio.</div><div class="ttdef"><b>Definition:</b> todo.hpp:53</div></div>
+<div class="ttc" id="aa34956_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
+<div class="ttc" id="aa36728_html"><div class="ttname"><a href="a36728.html">alicorn::system::platform::AppInfo</a></div><div class="ttdoc">Класс входит в проект Platform   Класс доступа к данным, передаваемым нативному приложению запускающи...</div><div class="ttdef"><b>Definition:</b> app-info.hpp:77</div></div>
+<div class="ttc" id="aa34950_html_gaba14ee3a68c07fe13e2a69c94ddc1743"><div class="ttname"><a href="a34950.html#gaba14ee3a68c07fe13e2a69c94ddc1743">TODO</a></div><div class="ttdeci">#define TODO(text)</div><div class="ttdoc">Макрос входит в Cpp   Макрос для вывода сообщения в окно вывода Visual Studio.</div><div class="ttdef"><b>Definition:</b> todo.hpp:53</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_1bf3fa76aa491c2b994f586b6f232a3a.html">Boost</a></li><li class="navelem"><a class="el" href="dir_c8c01bff6ee59c9d4f4594416b78cd36.html">Boost</a></li><li class="navelem"><a class="el" href="dir_ce17fae9287c7591dc91bceb672037fb.html">filesystem</a></li><li class="navelem"><b>asset-file.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:49. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:18. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
