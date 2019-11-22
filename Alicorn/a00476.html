@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Файл Solution/Solution/Extension/Std/Test.Std/Test.Memory/Memory_test.cpp</title>
+<title>Alicorn: Файл Solution/Solution/Extension/Std/Test.Std/Test.Match/Match_test.cpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -88,35 +88,82 @@ $(document).ready(function(){initNavTree('a00476.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
   <div class="headertitle">
-<div class="title">Файл Memory_test.cpp</div>  </div>
+<div class="title">Файл Match_test.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
 <code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\std\memory.hpp&gt;</code><br />
+<code>#include &lt;alicorn\std\regex.hpp&gt;</code><br />
+<code>#include &lt;alicorn\std\string.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Memory_test.cpp:</div>
+Граф включаемых заголовочных файлов для Match_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a00477.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_memory_2_memory__test_8cpp" alt=""/></div>
-<map name="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_memory_2_memory__test_8cpp" id="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_memory_2_memory__test_8cpp">
-<area shape="rect" id="node2" href="a38243_source.html" title="stdafx.h" alt="" coords="160,117,236,143"/>
-<area shape="rect" id="node4" href="a39680_source.html" title="..\\mock.hpp" alt="" coords="222,206,323,233"/>
+<div class="center"><img src="a00477.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_match_2_match__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_match_2_match__test_8cpp" id="_solution_2_solution_2_extension_2_std_2_test_8_std_2_test_8_match_2_match__test_8cpp">
+<area shape="rect" title=" " alt="" coords="327,5,530,61"/>
+<area shape="rect" href="a37551_source.html" title=" " alt="" coords="160,117,236,143"/>
+<area shape="rect" title=" " alt="" coords="261,109,415,151"/>
+<area shape="rect" title=" " alt="" coords="439,117,602,143"/>
+<area shape="rect" title=" " alt="" coords="627,117,791,143"/>
+<area shape="rect" title=" " alt="" coords="51,199,198,240"/>
+<area shape="rect" href="a38991_source.html" title=" " alt="" coords="222,206,323,233"/>
+<area shape="rect" title=" " alt="" coords="5,288,76,315"/>
+<area shape="rect" title=" " alt="" coords="101,288,274,315"/>
+<area shape="rect" title=" " alt="" coords="299,288,420,315"/>
+<area shape="rect" title=" " alt="" coords="445,288,669,315"/>
 </map>
 </div>
-</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Memory. </p>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a364f76f33e94c9d09e5ca20aea87aac2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00476.html#a364f76f33e94c9d09e5ca20aea87aac2">TEST_F</a> (Match_test, Test_GetGroups)</td></tr>
+<tr class="separator:a364f76f33e94c9d09e5ca20aea87aac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса Match. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a364f76f33e94c9d09e5ca20aea87aac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a364f76f33e94c9d09e5ca20aea87aac2">&#9670;&nbsp;</a></span>TEST_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype">Match_test&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Test_GetGroups&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>[Regex_Match]</p>
+<p>[Regex_Match]</p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_d9e1277ce6eb969a50c70679da524949.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_a545d4bef5bbf7f16f375a2045f3ced1.html">Test.Memory</a></li><li class="navelem"><a class="el" href="a00476.html">Memory_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:10. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_d9e1277ce6eb969a50c70679da524949.html">Test.Std</a></li><li class="navelem"><a class="el" href="dir_b74c11e3bdb09234524efcb8228cbbd2.html">Test.Match</a></li><li class="navelem"><a class="el" href="a00476.html">Match_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:55. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

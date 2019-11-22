@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alicorn: Исходный файл Solution/Solution/Extension/Std/Test.Std/UstrEq.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.16 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00512_source.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">UstrEq.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>testing</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// Функция для проверок вида:</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// EXPECT_USTREQ(u8&quot;Текст Text&quot;, ExampleUtf8);</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// EXPECT_USTREQ(L&quot;Текст Text&quot;, ExampleUcs2);</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// EXPECT_USTREQ(u&quot;Текст Text&quot;, ExampleUtf16);</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// EXPECT_USTREQ(U&quot;Текст Text&quot;, ExampleUtf32);</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TChar&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">void</span> Expect_UStrEq(<span class="keyword">const</span> TChar * _pExpected, </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  const ::alicorn::extension::std::String &amp; _Source,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="comment">/*_File*/</span>, <span class="keywordtype">int</span> <span class="comment">/*_Line*/</span>)</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="keyword">using</span> StdString_t = ::std::basic_string&lt;TChar&gt;;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  EXPECT_EQ(StdString_t(_pExpected), _Source.ToRawString&lt;TChar&gt;());</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace testing</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define EXPECT_USTREQ(Expected, Result) \</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">  ::testing::Expect_UStrEq(Expected, Result, __FILE__, __LINE__);</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa34879_html"><div class="ttname"><a href="a34879.html">alicorn::extension::std::Locale</a></div><div class="ttdoc">Класс входит в Std   Класс-обертка для классов конкретных кодировок.</div><div class="ttdef"><b>Definition:</b> locale.hpp:53</div></div>
+<div class="ttc" id="aa34779_html"><div class="ttname"><a href="a34779.html">alicorn::extension::std::chrono::local_time_point</a></div><div class="ttdoc">Класс входит в проект Std   Класс хранения локального момента времени.</div><div class="ttdef"><b>Definition:</b> chrono.hpp:35</div></div>
+<div class="ttc" id="aa34531_html_gae7553b6a2b3b0c4a21e94d06217ef8f3"><div class="ttname"><a href="a34531.html#gae7553b6a2b3b0c4a21e94d06217ef8f3">EXPECT_STDEXCEPTION</a></div><div class="ttdeci">#define EXPECT_STDEXCEPTION(Expression, ExpectedRegEx)</div><div class="ttdoc">Макрос проверки того, что при выполнении Expression произошло исключение std::exception с сообщением,...</div><div class="ttdef"><b>Definition:</b> exception.hpp:26</div></div>
+<div class="ttc" id="aa34795_html"><div class="ttname"><a href="a34795.html">alicorn::extension::std::ClassInfo</a></div><div class="ttdoc">Класс входит в Std   Вспомогательный класс для получения информации о классе объекта.</div><div class="ttdef"><b>Definition:</b> class-info.hpp:30</div></div>
+<div class="ttc" id="aa34859_html"><div class="ttname"><a href="a34859.html">alicorn::extension::std::Singleton</a></div><div class="ttdoc">Класс входит в проект Std   Класс доступа к общему для всей программы объекту.</div><div class="ttdef"><b>Definition:</b> singleton.forward.hpp:14</div></div>
+<div class="ttc" id="aa34530_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34530.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
+<div class="ttc" id="aa34831_html"><div class="ttname"><a href="a34831.html">alicorn::extension::std::regex::Match</a></div><div class="ttdoc">Класс входит в Std   Класс проверки совпадения строки текста с регулярным выражением.</div><div class="ttdef"><b>Definition:</b> match.hpp:37</div></div>
+<div class="ttc" id="aa00491_html_a92ec4282c9833ce1b870d477ac8f58cd"><div class="ttname"><a href="a00491.html#a92ec4282c9833ce1b870d477ac8f58cd">TEST_F</a></div><div class="ttdeci">TEST_F(Search_test, Test_GetCoincided)</div><div class="ttdef"><b>Definition:</b> Search_test.cpp:96</div></div>
+<div class="ttc" id="aa34855_html"><div class="ttname"><a href="a34855.html">alicorn::extension::std::SingletonLocalThread</a></div><div class="ttdoc">Класс входит в проект Std   Класс для использования синглетона, уникального для каждого потока.</div><div class="ttdef"><b>Definition:</b> singleton-thread-local.hpp:68</div></div>
+<div class="ttc" id="aa34859_html_a7dacbda73f87f5290f9ecebd950f3149"><div class="ttname"><a href="a34859.html#a7dacbda73f87f5290f9ecebd950f3149">alicorn::extension::std::Singleton::Make</a></div><div class="ttdeci">static ::std::unique_ptr&lt; TUsing &gt; Make(void)</div><div class="ttdoc">Функция создания объекта синглетона.</div><div class="ttdef"><b>Definition:</b> singleton.inl:126</div></div>
+<div class="ttc" id="aa00476_html_a364f76f33e94c9d09e5ca20aea87aac2"><div class="ttname"><a href="a00476.html#a364f76f33e94c9d09e5ca20aea87aac2">TEST_F</a></div><div class="ttdeci">TEST_F(Match_test, Test_GetGroups)</div><div class="ttdef"><b>Definition:</b> Match_test.cpp:91</div></div>
+<div class="ttc" id="aa34529_html_ga1054c5f519d3b216496b5ca941d90a95"><div class="ttname"><a href="a34529.html#ga1054c5f519d3b216496b5ca941d90a95">u32T</a></div><div class="ttdeci">#define u32T(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Utf32.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:38</div></div>
+<div class="ttc" id="aa34527_html_ga66eb9e3ce8d41313e90083d877492841"><div class="ttname"><a href="a34527.html#ga66eb9e3ce8d41313e90083d877492841">alicorn::extension::std::make_shared</a></div><div class="ttdeci">inline ::std::shared_ptr&lt; T &gt; make_shared(unique_ptr&lt; T &gt; &amp;_pPointer)</div><div class="ttdoc">Функция входит в проект Std   Вспомогательная функция создания объектов std::shared_ptr&lt;&gt; из.</div><div class="ttdef"><b>Definition:</b> make.hpp:88</div></div>
+<div class="ttc" id="aa34530_html_ga5631c3094a7bf8107687376dbf826a88"><div class="ttname"><a href="a34530.html#ga5631c3094a7bf8107687376dbf826a88">alicorn::extension::std::chrono::make_local_time</a></div><div class="ttdeci">detail::local_point make_local_time(const detail::time_point &amp;)</div><div class="ttdoc">Функция входит в проект Std   Функция получения локального времени для указанного системного времени.</div><div class="ttdef"><b>Definition:</b> chrono.inl:51</div></div>
+<div class="ttc" id="aa34839_html"><div class="ttname"><a href="a34839.html">alicorn::extension::std::regex::Replace</a></div><div class="ttdoc">Класс входит в Std   Класс для замены по регулярному выражению.</div><div class="ttdef"><b>Definition:</b> replace.hpp:33</div></div>
+<div class="ttc" id="aa35307_html"><div class="ttname"><a href="a35307.html">alicorn::extension::testing::Multithreads</a></div><div class="ttdoc">Класс входит в проект Testing   Класс для проверки работы классов в многопоточном режиме.</div><div class="ttdef"><b>Definition:</b> run-in-multithreads.hpp:35</div></div>
+<div class="ttc" id="aa34530_html_ga548754b3aa0a4a77f1eeff2fd63e99dc"><div class="ttname"><a href="a34530.html#ga548754b3aa0a4a77f1eeff2fd63e99dc">EXCEPTION_NO_FILE_LINE</a></div><div class="ttdeci">#define EXCEPTION_NO_FILE_LINE(Type)</div><div class="ttdoc">Макрос, выводящий только сообщение, без вывода имени файла и номера строки.</div><div class="ttdef"><b>Definition:</b> exception.hpp:57</div></div>
+<div class="ttc" id="aa34819_html"><div class="ttname"><a href="a34819.html">alicorn::extension::std::memory::Pool</a></div><div class="ttdoc">Класс входит в проект Std   Класс создания объектов из пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.hpp:56</div></div>
+<div class="ttc" id="aa34847_html"><div class="ttname"><a href="a34847.html">alicorn::extension::std::regex::Search</a></div><div class="ttdoc">Класс входит в Std   Класс поиска в строке совпадения с регулярным выражением.</div><div class="ttdef"><b>Definition:</b> search.hpp:40</div></div>
+<div class="ttc" id="aa35307_html_a60611bcf504487178c8b2feed5ac5a2a"><div class="ttname"><a href="a35307.html#a60611bcf504487178c8b2feed5ac5a2a">alicorn::extension::testing::Multithreads::Run</a></div><div class="ttdeci">void Run(const ::std::function&lt; void(void)&gt; &amp;)</div><div class="ttdoc">Функция запуска в многопоточном режиме.</div><div class="ttdef"><b>Definition:</b> run-in-multithreads.cpp:35</div></div>
+<div class="ttc" id="aa34530_html_ga18c80e0bf61e9c8f9efa6d60e9be4718"><div class="ttname"><a href="a34530.html#ga18c80e0bf61e9c8f9efa6d60e9be4718">EXCEPTION</a></div><div class="ttdeci">#define EXCEPTION(Type)</div><div class="ttdoc">Макрос входит в Std   Макрос для &quot;бросания&quot; исключения, содержащего расширенное описание ошибки.</div><div class="ttdef"><b>Definition:</b> exception.hpp:48</div></div>
+<div class="ttc" id="aa35303_html"><div class="ttname"><a href="a35303.html">alicorn::extension::testing::Proxy</a></div><div class="ttdoc">Класс входит в Testing   Базовый класс для построения прокси-классов для проверки вызовов функций под...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:45</div></div>
+<div class="ttc" id="aa34524_html_gaba14ee3a68c07fe13e2a69c94ddc1743"><div class="ttname"><a href="a34524.html#gaba14ee3a68c07fe13e2a69c94ddc1743">TODO</a></div><div class="ttdeci">#define TODO(text)</div><div class="ttdoc">Макрос входит в Cpp   Макрос для вывода сообщения в окно вывода Visual Studio.</div><div class="ttdef"><b>Definition:</b> todo.hpp:53</div></div>
+<div class="ttc" id="aa34827_html"><div class="ttname"><a href="a34827.html">alicorn::extension::std::Message</a></div><div class="ttdoc">Класс входит в Std   Базовый класс формирования сообщения.</div><div class="ttdef"><b>Definition:</b> message.hpp:37</div></div>
+<div class="ttc" id="aa00500_html_a7d270e60bcb730199a5cd541454f5d10"><div class="ttname"><a href="a00500.html#a7d270e60bcb730199a5cd541454f5d10">TEST_F</a></div><div class="ttdeci">TEST_F(String_test, Test_ConstructorRawString)</div><div class="ttdef"><b>Definition:</b> String_test.cpp:73</div></div>
+<div class="ttc" id="aa34529_html_gadd4ef8b31465f73455d43a2eb631e6da"><div class="ttname"><a href="a34529.html#gadd4ef8b31465f73455d43a2eb631e6da">u8T</a></div><div class="ttdeci">#define u8T(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Utf8.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:14</div></div>
+<div class="ttc" id="aa34771_html"><div class="ttname"><a href="a34771.html">alicorn::extension::std::CheckProxy</a></div><div class="ttdoc">Класс входит в Std   Базовый класс для проверки кода ошибки.</div><div class="ttdef"><b>Definition:</b> check-proxy.hpp:90</div></div>
+<div class="ttc" id="aa34530_html_gab3541e6b6b4c27cdbf24f2df99b273e3"><div class="ttname"><a href="a34530.html#gab3541e6b6b4c27cdbf24f2df99b273e3">CHECK_THROW</a></div><div class="ttdeci">#define CHECK_THROW(Condition)</div><div class="ttdoc">Макрос входит в проект Std   Макрос для проверки состояний в Debug версии программы.</div><div class="ttdef"><b>Definition:</b> check.hpp:38</div></div>
+<div class="ttc" id="aa34823_html"><div class="ttname"><a href="a34823.html">alicorn::extension::std::trivial_ptr</a></div><div class="ttdoc">Класс входит в проект Std   Простой класс-обертка для указателя.</div><div class="ttdef"><b>Definition:</b> trivial-ptr.hpp:62</div></div>
+<div class="ttc" id="aa34530_html_ga1d084b9047705e96e35ed52884ccf59c"><div class="ttname"><a href="a34530.html#ga1d084b9047705e96e35ed52884ccf59c">CHECK_EXPECT</a></div><div class="ttdeci">#define CHECK_EXPECT(Condition)</div><div class="ttdoc">Макрос входит в проект Std   Макрос для проверки состояний в Debug версии программы.</div><div class="ttdef"><b>Definition:</b> check.hpp:105</div></div>
+<div class="ttc" id="aa34529_html_ga68c84efa84957c5f819d243a4cb84de9"><div class="ttname"><a href="a34529.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a></div><div class="ttdeci">#define uT(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Ucs2.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:22</div></div>
+<div class="ttc" id="aa34529_html_ga83f26975e8758aa5116f3bee22ea089c"><div class="ttname"><a href="a34529.html#ga83f26975e8758aa5116f3bee22ea089c">u16T</a></div><div class="ttdeci">#define u16T(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Utf16.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:30</div></div>
+<div class="ttc" id="aa34799_html"><div class="ttname"><a href="a34799.html">alicorn::extension::std::exception::Abort</a></div><div class="ttdoc">Класс входит в Std   Класс исключения, предназначенный для сигнализирования о том,...</div><div class="ttdef"><b>Definition:</b> abort.hpp:78</div></div>
+<div class="ttc" id="aa35055_html"><div class="ttname"><a href="a35055.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_d9e1277ce6eb969a50c70679da524949.html">Test.Std</a></li><li class="navelem"><b>UstrEq.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:51. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+  </ul>
+</div>
+</body>
+</html>

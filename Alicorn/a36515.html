@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Класс alicorn::source::compress::Snappy</title>
+<title>Alicorn: Класс ShellSystemInterface</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,51 +89,112 @@ $(document).ready(function(){initNavTree('a36515.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a36512.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Класс alicorn::source::compress::Snappy<div class="ingroups"><a class="el" href="a35058.html">Alicorn</a> &raquo; <a class="el" href="a35094.html">Source</a> &raquo; <a class="el" href="a35087.html">Compress</a></div></div>  </div>
+<div class="title">Класс ShellSystemInterface<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в <a class="el" href="a37891.html">Compress</a> <br />
- Реализация сжатия/распаковки данных при помощи библиотеки [<a class="el" href="a36515.html" title="Класс входит в Compress   Реализация сжатия/распаковки данных при помощи библиотеки [Snappy]...">Snappy</a>].  
- <a href="a36515.html#details">Подробнее...</a></p>
+<p><code>#include &lt;<a class="el" href="a01682_source.html">ShellSystemInterface.h</a>&gt;</code></p>
 
-<p><code>#include &lt;<a class="el" href="a01130_source.html">snappy.hpp</a>&gt;</code></p>
+<p>Базовые классы:SystemInterface.</p>
 <div class="dynheader">
-Граф связей класса alicorn::source::compress::Snappy:</div>
+Граф связей класса ShellSystemInterface:</div>
 <div class="dyncontent">
-<div class="center"><img src="a36513.png" border="0" usemap="#alicorn_1_1source_1_1compress_1_1_snappy_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1source_1_1compress_1_1_snappy_coll__map" id="alicorn_1_1source_1_1compress_1_1_snappy_coll__map">
+<div class="center"><img src="a36513.png" border="0" usemap="#_shell_system_interface_coll__map" alt="Collaboration graph"/></div>
+<map name="_shell_system_interface_coll__map" id="_shell_system_interface_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,168,97"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab84e65c9440be962d66ba12f58f4d316"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36515.html#ab84e65c9440be962d66ba12f58f4d316">GetElapsedTime</a> (void) override</td></tr>
+<tr class="separator:ab84e65c9440be962d66ba12f58f4d316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d655a55303a3b063c8a6f55b5da146"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a36515.html#a38d655a55303a3b063c8a6f55b5da146">LogMessage</a> (Rocket::Core::Log::Type, const Rocket::Core::String &amp;) override</td></tr>
+<tr class="separator:a38d655a55303a3b063c8a6f55b5da146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a37891.html">Compress</a> <br />
- Реализация сжатия/распаковки данных при помощи библиотеки [<a class="el" href="a36515.html" title="Класс входит в Compress   Реализация сжатия/распаковки данных при помощи библиотеки [Snappy]...">Snappy</a>]. </p>
-<ul>
-<li>В коде использовать alicorn::source::compress::Snappy_t;</li>
-</ul>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br />
- 2.0.0.0 <br />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>15 Июнь 2016 <br />
- 27 Август 2017 <br />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 - 2017 </dd></dl>
-</div><hr/>Объявления и описания членов классов находятся в файлах:<ul>
-<li>Solution/Solution/Source/Compress/Compress/<a class="el" href="a01130_source.html">snappy.hpp</a></li>
-<li>Solution/Solution/Source/Compress/Compress/snappy.cpp</li>
+<div class="textblock"><p>A custom system interface for Rocket. This provides timing information. </p><dl class="section author"><dt>Автор</dt><dd>Lloyd Weehuizen </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="ab84e65c9440be962d66ba12f58f4d316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab84e65c9440be962d66ba12f58f4d316">&#9670;&nbsp;</a></span>GetElapsedTime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float ShellSystemInterface::GetElapsedTime </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the number of seconds elapsed since the start of the application </p><dl class="section return"><dt>Возвращает</dt><dd>Seconds elapsed </dd></dl>
+
+</div>
+</div>
+<a id="a38d655a55303a3b063c8a6f55b5da146"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38d655a55303a3b063c8a6f55b5da146">&#9670;&nbsp;</a></span>LogMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ShellSystemInterface::LogMessage </td>
+          <td>(</td>
+          <td class="paramtype">Rocket::Core::Log::Type&#160;</td>
+          <td class="paramname"><em>_Type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Rocket::Core::String &amp;&#160;</td>
+          <td class="paramname"><em>_Message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Log the specified message. </p><dl class="section return"><dt>Возвращает</dt><dd>True to continue execution, false to break into the debugger. </dd></dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Tools/RocketRenderToFile.App/RocketRenderToFile.App/Shell/<a class="el" href="a01682_source.html">ShellSystemInterface.h</a></li>
+<li>Solution/Solution/Tools/RocketRenderToFile.App/RocketRenderToFile.App/Shell/ShellSystemInterface.cpp</li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>compress</b></li><li class="navelem"><a class="el" href="a36515.html">Snappy</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:13. Создано системой
+    <li class="navelem"><a class="el" href="a36515.html">ShellSystemInterface</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:58. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

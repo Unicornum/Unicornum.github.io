@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходный файл Solution/Solution/Tools/Testing.App/Testing.App/View/AllTestsInfo.hpp</title>
+<title>Alicorn: Исходный файл Solution/Solution/Tools/Testing.App/Testing.App/View/SummaryInfo.hpp</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,23 +89,72 @@ $(document).ready(function(){initNavTree('a01910_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">AllTestsInfo.hpp</div>  </div>
+<div class="title">SummaryInfo.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IView.hpp&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;wxWidgets.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="a35235.html">view</a></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a37379.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="a37379.html">AllTestsInfo</a> final :</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">public</span> <a class="code" href="a37391.html">IViewTestingApp</a>,</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span> <a class="code" href="a37411.html">wx::PanelAllTests</a></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// Интерфейс IViewTestingApp:</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a37379.html#a23e9a44b7deda78006db6f424bea2bad">SetResultRunTests</a>(<span class="keyword">const</span> Info_t &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// PanelAllTests events:</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> OnPaint(wxPaintEvent &amp;) <span class="keyword">override</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <a class="code" href="a37379.html">AllTestsInfo</a>(wxWindow *, wxWindowID, <span class="keyword">const</span> wxPoint &amp;, <span class="keyword">const</span> wxSize &amp;, <span class="keywordtype">long</span>);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <span class="comment">// namespace view</span></div><div class="ttc" id="a37411_html"><div class="ttname"><a href="a37411.html">wx::PanelAllTests</a></div><div class="ttdoc">Class PanelAllTests. </div><div class="ttdef"><b>Definition:</b> Generated.h:91</div></div>
-<div class="ttc" id="a37379_html_a23e9a44b7deda78006db6f424bea2bad"><div class="ttname"><a href="a37379.html#a23e9a44b7deda78006db6f424bea2bad">view::AllTestsInfo::SetResultRunTests</a></div><div class="ttdeci">void SetResultRunTests(const Info_t &amp;) override</div><div class="ttdoc">Функция передачи объекту представления информации о результатах прогона тестов. </div><div class="ttdef"><b>Definition:</b> AllTestsInfo.cpp:16</div></div>
-<div class="ttc" id="a37391_html"><div class="ttname"><a href="a37391.html">view::IViewTestingApp</a></div><div class="ttdoc">Класс входит в Testing.App   Интерфейсный класс представления. </div><div class="ttdef"><b>Definition:</b> IView.hpp:24</div></div>
-<div class="ttc" id="a35235_html"><div class="ttname"><a href="a35235.html">view</a></div><div class="ttdef"><b>Definition:</b> Controller.hpp:5</div></div>
-<div class="ttc" id="a37379_html"><div class="ttname"><a href="a37379.html">view::AllTestsInfo</a></div><div class="ttdoc">Класс входит в Testing.App   Класс панели отображения общей информации о прогоне тестов. </div><div class="ttdef"><b>Definition:</b> AllTestsInfo.hpp:24</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;IView.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;wxWidgets.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>view</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="a36787.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36787.html">SummaryInfo</a> final :</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keyword">public</span> <a class="code" href="a36783.html">IViewTestingApp</a>,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span> <a class="code" href="a36799.html">wx::PanelSummary</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// Интерфейс IViewTestingApp:</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a36787.html#aaf09aaafbcd0e1cc598d03d043efab94">SetResultRunTests</a>(<span class="keyword">const</span> Info_t &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="comment">// PanelSummary events</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keywordtype">void</span> OnPaint(wxPaintEvent &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">class </span>Info</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span>     TotalTestCount = 0;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span>     SuccessfulTestCount = 0;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">int</span>     FailedTestCount = 0;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span>     DisabledTestCount = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">size_t</span>  ProcessedModules = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a34531.html#ga327755d364e40ce237a22cc4772e51f1">VIRTUAL_MOCK</a> Info GetSummaryInfo(<span class="keyword">const</span> Info_t &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="a34531.html#ga327755d364e40ce237a22cc4772e51f1">VIRTUAL_MOCK</a> wxString BuildHtmlPage(<span class="keyword">const</span> Info &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="a36787.html">SummaryInfo</a>(wxWindow *, wxWindowID, <span class="keyword">const</span> wxPoint &amp;, <span class="keyword">const</span> wxSize &amp;, <span class="keywordtype">long</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  FRIEND_TEST(SummaryInfo_test, <span class="comment">/*DISABLED_*/</span>Test_GetSummaryInfo);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  FRIEND_TEST(SummaryInfo_test, <span class="comment">/*DISABLED_*/</span>Test_BuildHtmlPage);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  FRIEND_TEST(SummaryInfo_test, <span class="comment">/*DISABLED_*/</span>Test_BuildHtmlPage_ZeroFailed);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  FRIEND_TEST(SummaryInfo_test, <span class="comment">/*DISABLED_*/</span>Test_BuildHtmlPage_NullValues);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  FRIEND_TEST(SummaryInfo_test, <span class="comment">/*DISABLED_*/</span>Test_BuildHtmlPage_AddingInfo);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;} <span class="comment">// namespace view</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa36783_html"><div class="ttname"><a href="a36783.html">view::IViewTestingApp</a></div><div class="ttdoc">Класс входит в Testing.App   Интерфейсный класс представления.</div><div class="ttdef"><b>Definition:</b> IView.hpp:24</div></div>
+<div class="ttc" id="aa34529_html_ga85f365b66942caa215bfc4ad5010f37f"><div class="ttname"><a href="a34529.html#ga85f365b66942caa215bfc4ad5010f37f">alicorn::extension::std::string_cast</a></div><div class="ttdeci">TTarget string_cast(const TSource &amp;_Source, TArgs &amp;&amp;... _Args)</div><div class="ttdoc">Функция входит в Std   Функция преобразования строк из одной кодировки в другую.</div><div class="ttdef"><b>Definition:</b> string-cast.hpp:101</div></div>
+<div class="ttc" id="aa34530_html_ga5631c3094a7bf8107687376dbf826a88"><div class="ttname"><a href="a34530.html#ga5631c3094a7bf8107687376dbf826a88">alicorn::extension::std::chrono::make_local_time</a></div><div class="ttdeci">detail::local_point make_local_time(const detail::time_point &amp;)</div><div class="ttdoc">Функция входит в проект Std   Функция получения локального времени для указанного системного времени.</div><div class="ttdef"><b>Definition:</b> chrono.inl:51</div></div>
+<div class="ttc" id="aa36787_html_aaf09aaafbcd0e1cc598d03d043efab94"><div class="ttname"><a href="a36787.html#aaf09aaafbcd0e1cc598d03d043efab94">view::SummaryInfo::SetResultRunTests</a></div><div class="ttdeci">void SetResultRunTests(const Info_t &amp;) override</div><div class="ttdoc">Функция передачи объекту представления информации о результатах прогона тестов.</div><div class="ttdef"><b>Definition:</b> SummaryInfo.cpp:158</div></div>
+<div class="ttc" id="aa34531_html_ga327755d364e40ce237a22cc4772e51f1"><div class="ttname"><a href="a34531.html#ga327755d364e40ce237a22cc4772e51f1">VIRTUAL_MOCK</a></div><div class="ttdeci">#define VIRTUAL_MOCK</div><div class="ttdoc">Макрос входит в Testing   Макрос для объявления функций, которые должны быть виртуальными в тестовых ...</div><div class="ttdef"><b>Definition:</b> virtual-mock.hpp:20</div></div>
+<div class="ttc" id="aa36799_html"><div class="ttname"><a href="a36799.html">wx::PanelSummary</a></div><div class="ttdoc">Class PanelSummary.</div><div class="ttdef"><b>Definition:</b> Generated.h:70</div></div>
+<div class="ttc" id="aa36787_html"><div class="ttname"><a href="a36787.html">view::SummaryInfo</a></div><div class="ttdoc">Класс входит в Testing.App   Класс панели отображения общей информации о прогоне тестов.</div><div class="ttdef"><b>Definition:</b> SummaryInfo.hpp:24</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_1aa9641e777de4cd286713037f1cf86e.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_251a9a051396a8a1940a9bc4bed961b0.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_ab747c24d9cbb400b9563c6a2b8c166d.html">View</a></li><li class="navelem"><b>AllTestsInfo.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:09. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_1aa9641e777de4cd286713037f1cf86e.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_251a9a051396a8a1940a9bc4bed961b0.html">Testing.App</a></li><li class="navelem"><a class="el" href="dir_ab747c24d9cbb400b9563c6a2b8c166d.html">View</a></li><li class="navelem"><b>SummaryInfo.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:55. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>

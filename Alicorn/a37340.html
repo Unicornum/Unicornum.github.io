@@ -1,11 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="generator" content="Doxygen 1.8.16"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Cписок членов класса</title>
+<title>Alicorn: Исходные требования</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Версия: 3.9.0 Revision: 3225 Platform: x64 Build: 09:05 16 Апрель 2018</span>
+   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 07:26 22.11.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.14 -->
+<!-- Создано системой Doxygen 1.8.16 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -69,7 +69,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a37343.html','');});
+$(document).ready(function(){initNavTree('a37340.html','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,24 +87,60 @@ $(document).ready(function(){initNavTree('a37343.html','');});
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">model::Executor Cписок членов класса</div>  </div>
+<div class="title">Исходные требования </div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Полный список членов класса <a class="el" href="a37343.html">model::Executor</a>, включая наследуемые из базового класса</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a37343.html#a83bd59b1eb2484c2f84b62c68524284c">GetResultRunTests</a>(void) const override</td><td class="entry"><a class="el" href="a37343.html">model::Executor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr><td class="entry"><a class="el" href="a37343.html#a9afe33e53a9d142820aff8aaefd7f24b">IsExistsFiledTest</a>(void) const override</td><td class="entry"><a class="el" href="a37343.html">model::Executor</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h1>Требования первого этапа </h1>
+<ul>
+<li> <input type="checkbox" checked disabled>  Диалоговое окно отображения результатов прогона тестов.</li>
+<li> <input type="checkbox" checked disabled>  Цвет фона всех вкладок окна должен зависеть от результата прогона тестов (зеленый, если все тесты пройдены успешно, красный, если есть хотя бы один проваленный тест).</li>
+</ul>
+<h2>Диалоговое окно отображения результатов прогона тестов </h2>
+<ul>
+<li> <input type="checkbox" checked disabled>  Вкладка общей статистики.</li>
+<li> <input type="checkbox" checked disabled>  Вкладка со списком всех тестов.</li>
+<li> <input type="checkbox" checked disabled>  Вкладка со списком проваленных тестов.</li>
+</ul>
+<h3>Вкладка общей статистики</h3>
+<ul>
+<li> <input type="checkbox" checked disabled>  Общее количество выполненных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество успешно пройденных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество проваленных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Количество отключенных тестов.</li>
+<li> <input type="checkbox" checked disabled>  Дата/время запуска тестов.</li>
+<li> <input type="checkbox" checked disabled>  Название и версия используемой библиотеки тестирования.</li>
+</ul>
+<h3>Вкладка со списком всех тестов</h3>
+<ul>
+<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
+<li> <input type="checkbox" checked disabled>  Узлы дерева должны помечаться иконками успеха/провала.</li>
+</ul>
+<h3>Вкладка со списком проваленных тестов</h3>
+<ul>
+<li> <input type="checkbox" checked disabled>  В виде иерархического дерева: модули/классы/тесты.</li>
+<li> <input type="checkbox" checked disabled>  Отображение подробного описания при выборе проваленного теста.</li>
+</ul>
+<h1>Дополнительно </h1>
+<ul>
+<li> <input type="checkbox" checked disabled>  Запуск всех тестов решения без отображения окна результатов прогона тестов.</li>
+<li> <input type="checkbox" checked disabled>  Добавление результата прогона тестов всего решения на страницу статистики работы над решением.</li>
+</ul>
+<h2>Прототип </h2>
+<div class="image">
+<img src="Testing.App.Prototype.png" alt=""/>
+</div>
+ </div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 16 Апр 2018 09:06:14. Создано системой
+    <li class="navelem"><a class="el" href="a37261.html">Структура решения</a></li><li class="navelem"><a class="el" href="a37318.html">Tools</a></li><li class="navelem"><a class="el" href="a37339.html">Testing.App</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 07:26:58. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
   </ul>
 </div>
 </body>
