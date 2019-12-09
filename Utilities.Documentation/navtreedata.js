@@ -24,18 +24,18 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Documentation", "index.html", [
-    [ "Manual", "a35730.html", null ],
-    [ "Скачать", "a35727.html", null ],
-    [ "История изменений", "a35729.html", "a35729" ],
-    [ "Структура решения", "a35735.html", "a35735" ],
-    [ "Исходные требования", "a35734.html", null ],
+    [ "Manual", "a35733.html", null ],
+    [ "Скачать", "a35730.html", null ],
+    [ "История изменений", "a35732.html", "a35732" ],
+    [ "Структура решения", "a35738.html", "a35738" ],
+    [ "Исходные требования", "a35737.html", null ],
     [ "Группы", "modules.html", "modules" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"a35706.html"
+"a35709.html"
 ];
 
 var SYNCONMSG = 'нажмите на выключить для синхронизации панелей';
