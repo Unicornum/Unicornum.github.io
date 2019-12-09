@@ -1,15 +1,24 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.16"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходный файл Solution/Solution/Source/Compress/compress.forward.hpp</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Исходный файл Solution/Solution/Modules/Vfs/Vfs/pack.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
@@ -17,10 +26,10 @@
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
 /* @license-end */</script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -31,7 +40,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.2 Revision: 3325 Platform: x64 Build: 02:49 09.12.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -40,7 +49,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.16 -->
+<!-- Создано системой Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,46 +98,33 @@ $(document).ready(function(){initNavTree('a01142_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">compress.forward.hpp</div>  </div>
+<div class="title">pack.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\details.forward.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>alicorn</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>source</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>compress</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span>Snappy;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span>Deflate;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// Объявления допустимых типов для непосредственного использования.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using</span> Snappy_t = <a class="code" href="a36464.html">details::Universal&lt;details::Empty&lt;Data_t&gt;</a>, Snappy&gt;;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">using</span> Deflate_t = <a class="code" href="a36464.html">details::Universal&lt;details::Empty&lt;Data_t&gt;</a>, Deflate&gt;;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;} <span class="comment">// namespace compress</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;} <span class="comment">// namespace source</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;} <span class="comment">// namespace alicorn</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;boost\filesystem\fstream.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;alicorn\std\string.hpp&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;iimplementation.hpp&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>alicorn</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>modules</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vfs</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">class </span>IConverter;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="a40868.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="a40868.html">Pack</a> final :</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keyword">public</span> <a class="code" href="a40856.html">IImplementation</a></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">class </span><a class="code" href="a40864.html">FileInfo</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="a40872.html">   55</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a40872.html">Record</a></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    uint64_t m_FileSize = 0;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    uint64_t m_OffsetFromBeginSorageFile = 0;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  };</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">using</span> File_t = ::boost::filesystem::ofstream;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">using</span> <a class="code" href="a40016.html">FileId_t</a> = <a class="code" href="a40016.html">::alicorn::extension::std::String</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">using</span> TableFiles_t = ::std::map&lt;FileId_t, Record&gt;;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">using</span> TableFilesPtr_t = ::std::unique_ptr&lt;TableFiles_t&gt;;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">using</span> ConverterPtr_t = ::std::shared_ptr&lt;IConverter&gt;;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">using</span> Converters_t = ::std::vector&lt;ConverterPtr_t&gt;;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Интерфейс IImplementation:</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a40868.html#a5adc96638eafab54ee6d001d71c832d3">GetData</a>(<span class="keyword">const</span> Path_t &amp;, Data_t &amp;) <span class="keyword">const override</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a40868.html#af3fca437f7cbe469c3fa9cfcfca51f23">IsExists</a>(<span class="keyword">const</span> Path_t &amp;) <span class="keyword">const override</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a40868.html#ad707efeb9241d0565d76d0ae8e116274">BrowsingFiles</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Callback_t &amp;) <span class="keyword">const override</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a40868.html#ad956f59a9e73119c6cc9b664a99c4096">BrowsingDirectories</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Callback_t &amp;) <span class="keyword">const override</span>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a40868.html#ab06edf56596c9cf8bdf2ec48d7decfe2">Build</a>(<span class="keyword">const</span> Path_t &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a40868.html#af450de4757c89fa83e857e5574ad0d23">AddTitleTo</a>(File_t &amp;);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a40868.html#a8c36da4f06bc1b9c8b9d9824d64f46fc">AddFileToEndStorage</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Path_t &amp;, File_t &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">static</span> <a class="code" href="a40016.html">FileId_t</a> <a class="code" href="a40868.html#aeea0717f32961c9102da5d6adccd4a20">GetFileId</a>(<span class="keyword">const</span> Path_t &amp;) noexcept;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keyword">static</span> TableFilesPtr_t <a class="code" href="a40868.html#aca6bbd78329d55fd21f7f4fc757af1d1">BuildTableFiles</a>(<span class="keyword">const</span> Path_t &amp;);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">const</span> Path_t            m_PathToStorageFile;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">const</span> Converters_t      m_Converters;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">mutable</span> TableFilesPtr_t m_pTableFiles;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="a40868.html">Pack</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a40868.html">Pack</a> &amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a40868.html#a1715c6b00def1a4864ae4312ede86fa2">Pack</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Converters_t &amp; = {});</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;} <span class="comment">// namespace vfs</span></div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;} <span class="comment">// namespace modules</span></div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a40868_html_ad956f59a9e73119c6cc9b664a99c4096"><div class="ttname"><a href="a40868.html#ad956f59a9e73119c6cc9b664a99c4096">alicorn::modules::vfs::Pack::BrowsingDirectories</a></div><div class="ttdeci">void BrowsingDirectories(const Path_t &amp;, const Callback_t &amp;) const override</div><div class="ttdoc">Функция нерекурсивного перебора вложенных папок в указанной папке.</div><div class="ttdef"><b>Definition:</b> pack.cpp:156</div></div>
+<div class="ttc" id="a40868_html_aca6bbd78329d55fd21f7f4fc757af1d1"><div class="ttname"><a href="a40868.html#aca6bbd78329d55fd21f7f4fc757af1d1">alicorn::modules::vfs::Pack::BuildTableFiles</a></div><div class="ttdeci">static TableFilesPtr_t BuildTableFiles(const Path_t &amp;)</div><div class="ttdef"><b>Definition:</b> pack.cpp:341</div></div>
+<div class="ttc" id="a40872_html"><div class="ttname"><a href="a40872.html">alicorn::modules::vfs::Pack::Record</a></div><div class="ttdef"><b>Definition:</b> pack.hpp:55</div></div>
+<div class="ttc" id="a40868_html_a1715c6b00def1a4864ae4312ede86fa2"><div class="ttname"><a href="a40868.html#a1715c6b00def1a4864ae4312ede86fa2">alicorn::modules::vfs::Pack::Pack</a></div><div class="ttdeci">Pack(const Path_t &amp;, const Converters_t &amp;={})</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition:</b> pack.cpp:45</div></div>
+<div class="ttc" id="a40016_html"><div class="ttname"><a href="a40016.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
+<div class="ttc" id="a40868_html_ab06edf56596c9cf8bdf2ec48d7decfe2"><div class="ttname"><a href="a40868.html#ab06edf56596c9cf8bdf2ec48d7decfe2">alicorn::modules::vfs::Pack::Build</a></div><div class="ttdeci">void Build(const Path_t &amp;) const</div><div class="ttdoc">Функция для построения хранилища из файлов в указанной папке.</div><div class="ttdef"><b>Definition:</b> pack.cpp:210</div></div>
+<div class="ttc" id="a40868_html"><div class="ttname"><a href="a40868.html">alicorn::modules::vfs::Pack</a></div><div class="ttdoc">Класс входит в Virtual File System   Класс реализации упаковки файлов в хранилище/получения содержимо...</div><div class="ttdef"><b>Definition:</b> pack.hpp:47</div></div>
+<div class="ttc" id="a40868_html_a5adc96638eafab54ee6d001d71c832d3"><div class="ttname"><a href="a40868.html#a5adc96638eafab54ee6d001d71c832d3">alicorn::modules::vfs::Pack::GetData</a></div><div class="ttdeci">bool GetData(const Path_t &amp;, Data_t &amp;) const override</div><div class="ttdoc">Функция получения содержимого указанного файла.</div><div class="ttdef"><b>Definition:</b> pack.cpp:75</div></div>
+<div class="ttc" id="a40856_html"><div class="ttname"><a href="a40856.html">alicorn::modules::vfs::IImplementation</a></div><div class="ttdoc">Класс входит в Virtual File System   Интерфейсный класс для реализаций доступа к данным.</div><div class="ttdef"><b>Definition:</b> iimplementation.hpp:31</div></div>
+<div class="ttc" id="a40868_html_af3fca437f7cbe469c3fa9cfcfca51f23"><div class="ttname"><a href="a40868.html#af3fca437f7cbe469c3fa9cfcfca51f23">alicorn::modules::vfs::Pack::IsExists</a></div><div class="ttdeci">bool IsExists(const Path_t &amp;) const override</div><div class="ttdoc">Функция проверки существования указанного файла.</div><div class="ttdef"><b>Definition:</b> pack.cpp:121</div></div>
+<div class="ttc" id="a40864_html"><div class="ttname"><a href="a40864.html">alicorn::modules::vfs::Pack::FileInfo</a></div><div class="ttdoc">Класс одной записи о файле в хранилище.</div><div class="ttdef"><b>Definition:</b> pack.cpp:27</div></div>
+<div class="ttc" id="a40868_html_af450de4757c89fa83e857e5574ad0d23"><div class="ttname"><a href="a40868.html#af450de4757c89fa83e857e5574ad0d23">alicorn::modules::vfs::Pack::AddTitleTo</a></div><div class="ttdeci">static void AddTitleTo(File_t &amp;)</div><div class="ttdoc">Функция для добавления заголовка в файл хранилища.</div><div class="ttdef"><b>Definition:</b> pack.cpp:260</div></div>
+<div class="ttc" id="a40868_html_aeea0717f32961c9102da5d6adccd4a20"><div class="ttname"><a href="a40868.html#aeea0717f32961c9102da5d6adccd4a20">alicorn::modules::vfs::Pack::GetFileId</a></div><div class="ttdeci">static FileId_t GetFileId(const Path_t &amp;) noexcept</div><div class="ttdoc">Функция получения уникального идентификатора для пути к файлу.</div><div class="ttdef"><b>Definition:</b> pack.cpp:332</div></div>
+<div class="ttc" id="a40868_html_a8c36da4f06bc1b9c8b9d9824d64f46fc"><div class="ttname"><a href="a40868.html#a8c36da4f06bc1b9c8b9d9824d64f46fc">alicorn::modules::vfs::Pack::AddFileToEndStorage</a></div><div class="ttdeci">void AddFileToEndStorage(const Path_t &amp;, const Path_t &amp;, File_t &amp;) const</div><div class="ttdoc">Функция для добавления указанного файла в хранилище.</div><div class="ttdef"><b>Definition:</b> pack.cpp:286</div></div>
+<div class="ttc" id="a40868_html_ad707efeb9241d0565d76d0ae8e116274"><div class="ttname"><a href="a40868.html#ad707efeb9241d0565d76d0ae8e116274">alicorn::modules::vfs::Pack::BrowsingFiles</a></div><div class="ttdeci">void BrowsingFiles(const Path_t &amp;, const Callback_t &amp;) const override</div><div class="ttdoc">Функция перебора 'файлов' в указанной папке.</div><div class="ttdef"><b>Definition:</b> pack.cpp:133</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa34956_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a34956.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
-<div class="ttc" id="aa35520_html"><div class="ttname"><a href="a35520.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:62</div></div>
-<div class="ttc" id="aa36464_html"><div class="ttname"><a href="a36464.html">alicorn::source::details::Universal</a></div><div class="ttdoc">Класс входит в проект Details   Класс фасада всех проектов раздела.</div><div class="ttdef"><b>Definition:</b> universal.hpp:36</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_b2e2934d262ea9205161fdb3c6b74d8b.html">Compress</a></li><li class="navelem"><b>compress.forward.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:22. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_c66237fe9a6c0c7c1e41f5b2c00f5183.html">Vfs</a></li><li class="navelem"><a class="el" href="dir_068fe833c7f8d2a92d99f8ab00f028c9.html">Vfs</a></li><li class="navelem"><b>pack.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 9 Дек 2019 02:50:01. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>

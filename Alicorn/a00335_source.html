@@ -1,15 +1,24 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.16"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Alicorn: Исходный файл Solution/Solution/Extension/Std/Std/memory/unique-ptr.hpp</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Исходный файл Solution/Solution/Extension/Std/Std/memory/pool.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
@@ -17,10 +26,10 @@
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
 /* @license-end */</script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -31,7 +40,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.1 Revision: 3288 Platform: x64 Build: 19:18 22.11.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.2 Revision: 3325 Platform: x64 Build: 02:49 09.12.2019</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -40,7 +49,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.16 -->
+<!-- Создано системой Doxygen 1.8.15 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -89,40 +98,25 @@ $(document).ready(function(){initNavTree('a00335_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">unique-ptr.hpp</div>  </div>
+<div class="title">pool.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>alicorn</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>extension</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>std</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a34953.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">   39</a></span>&#160;<span class="keyword">using</span> <a class="code" href="a34953.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">unique_ptr</a> = <a class="code" href="a34953.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">::std::unique_ptr</a>&lt;T, void(*)(<span class="keywordtype">void</span> *)&gt;;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace std</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace extension</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace alicorn</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\std\singleton-thread-local.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>alicorn</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>extension</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>std</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>memory</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div><div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a39696.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="a39696.html">Pool</a> final</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">class </span>Chunk;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">class </span>Block;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">using</span> Blocks_t = ::std::vector&lt;::std::unique_ptr&lt;Block&gt;&gt;;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class </span>... TArgs&gt;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  T * Allocate(<span class="keywordtype">size_t</span>, TArgs &amp;&amp; ...);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39696.html#a8df3f5d93d76810097613c59203e66dc">Deallocate</a>(T *) noexcept;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a39696.html#a391b49c50ee60058b67ae8e0952cfe88">Release</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a39696.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">GetFreeObjects</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a39696.html#a87260e30e3e5a240e5e6cee018d50f4f">GetPoolSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  Chunk *  m_pHeaderFreeChunks = <span class="keyword">nullptr</span>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  Blocks_t m_Blocks;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="a39696.html">Pool</a>(<span class="keywordtype">void</span>) { }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="a39696.html">Pool</a>(<span class="keyword">const</span> <a class="code" href="a39696.html">Pool</a> &amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="a39696.html">Pool</a>(<a class="code" href="a39696.html">Pool</a> &amp;&amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="a39696.html">Pool</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a39696.html">Pool</a> &amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="a39696.html">Pool</a> &amp; operator= (<a class="code" href="a39696.html">Pool</a> &amp;&amp;) = <span class="keyword">delete</span>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">friend</span> <a class="code" href="a39732.html">SingletonLocalThread&lt;Pool&lt;T&gt;</a>&gt;;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="a39400.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Pool_test, <span class="comment">/*DISABLED_*/</span>Test_Release_FromDestructor);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace memory</span></div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;} <span class="comment">// namespace std</span></div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;} <span class="comment">// namespace extension</span></div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#include &quot;pool.inl&quot;</span></div><div class="ttc" id="a39696_html_a7edd5a08ff1d7befcd5d9c4ec8c3c040"><div class="ttname"><a href="a39696.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">alicorn::extension::std::memory::Pool::GetFreeObjects</a></div><div class="ttdeci">size_t GetFreeObjects(void) const</div><div class="ttdoc">Функция получения количества свободных объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:116</div></div>
+<div class="ttc" id="a39732_html"><div class="ttname"><a href="a39732.html">alicorn::extension::std::SingletonLocalThread</a></div><div class="ttdoc">Класс входит в проект Std   Класс для использования синглетона, уникального для каждого потока.</div><div class="ttdef"><b>Definition:</b> singleton-thread-local.hpp:68</div></div>
+<div class="ttc" id="a39400_html_gab92570f53abf3b4fbbd13acaf4265468"><div class="ttname"><a href="a39400.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a></div><div class="ttdeci">#define FRIEND_TEST(a, b)</div><div class="ttdoc">Класс входит в Testing   Определение макроса для тестовых функций для того, чтобы исключить из постро...</div><div class="ttdef"><b>Definition:</b> friend.hpp:16</div></div>
+<div class="ttc" id="a39696_html_a87260e30e3e5a240e5e6cee018d50f4f"><div class="ttname"><a href="a39696.html#a87260e30e3e5a240e5e6cee018d50f4f">alicorn::extension::std::memory::Pool::GetPoolSize</a></div><div class="ttdeci">size_t GetPoolSize(void) const</div><div class="ttdoc">Функция получения общего количества объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:136</div></div>
+<div class="ttc" id="a39696_html_a391b49c50ee60058b67ae8e0952cfe88"><div class="ttname"><a href="a39696.html#a391b49c50ee60058b67ae8e0952cfe88">alicorn::extension::std::memory::Pool::Release</a></div><div class="ttdeci">void Release(void)</div><div class="ttdoc">Функция удаления всей выделенной для пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.inl:100</div></div>
+<div class="ttc" id="a39696_html_a8df3f5d93d76810097613c59203e66dc"><div class="ttname"><a href="a39696.html#a8df3f5d93d76810097613c59203e66dc">alicorn::extension::std::memory::Pool::Deallocate</a></div><div class="ttdeci">void Deallocate(T *) noexcept</div><div class="ttdoc">Функция для освобождения ранее выделенного объекта.</div><div class="ttdef"><b>Definition:</b> pool.inl:75</div></div>
+<div class="ttc" id="a39696_html"><div class="ttname"><a href="a39696.html">alicorn::extension::std::memory::Pool</a></div><div class="ttdoc">Класс входит в проект Std   Класс создания объектов из пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.hpp:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa34953_html_ga0c97cb236edf6ff6a6fa3a5ae5cea064"><div class="ttname"><a href="a34953.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">alicorn::extension::std::unique_ptr</a></div><div class="ttdeci">::std::unique_ptr&lt; T, void(*)(void *)&gt; unique_ptr</div><div class="ttdoc">Класс входит в проект Std   Вспомогательное определение аналога std::unique_ptr&lt;&gt; для захвата ресурсо...</div><div class="ttdef"><b>Definition:</b> unique-ptr.hpp:39</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_771b027eac4ba67ab77054589959325c.html">Std</a></li><li class="navelem"><a class="el" href="dir_5c1c21fe2dfc542db8ac22687f41bc73.html">memory</a></li><li class="navelem"><b>unique-ptr.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пт 22 Ноя 2019 19:19:20. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_771b027eac4ba67ab77054589959325c.html">Std</a></li><li class="navelem"><a class="el" href="dir_5c1c21fe2dfc542db8ac22687f41bc73.html">memory</a></li><li class="navelem"><b>pool.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Пн 9 Дек 2019 02:49:59. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.16 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
   </ul>
 </div>
 </body>

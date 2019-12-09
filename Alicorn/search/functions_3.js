@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['deallocate_1193',['Deallocate',['../a35284.html#ad290215ca7aa7f9d67d82eb800e43705',1,'alicorn::extension::std::memory::Pool']]],
-  ['detachfromnative_1194',['DetachFromNative',['../a36972.html#ad4d54ae174ff55202f22580a7632672f',1,'ShellRenderInterfaceExtensions::DetachFromNative()'],['../a36976.html#a4b5fd8732c2fb9900eb23410540de82d',1,'ShellRenderInterfaceOpenGL::DetachFromNative()']]],
-  ['docomplete_1195',['DoComplete',['../a35852.html#a1bc3db12e58ae1a9990aabe36e87f524',1,'alicorn::modules::logger::ConfigValue::DoComplete()'],['../a35912.html#ad6509fda6ddc2230f986662e5181ab04',1,'alicorn::modules::logger::Message::DoComplete()'],['../a35964.html#a9817eab99a8437ba0531ce231a292839',1,'alicorn::modules::logger::report::Report::DoComplete()']]],
-  ['document_1196',['Document',['../a36488.html#a97ebbd15a97eeb5745f671c7c2b47a68',1,'alicorn::source::document::RapidXml::Document']]],
-  ['doreplace_1197',['DoReplace',['../a35304.html#aaf8356753abb959b61593edbdee4e1fc',1,'alicorn::extension::std::regex::Replace']]],
-  ['dospecialaction_1198',['DoSpecialAction',['../a35912.html#a60a9316d70a117080c003541bff6b5b3',1,'alicorn::modules::logger::Message::DoSpecialAction()'],['../a35932.html#aee319a84720a3b08952822aedd918de6',1,'alicorn::modules::logger::Fatal::DoSpecialAction()']]],
-  ['doxygenreport_1199',['DoxygenReport',['../a37192.html#a5de91c77da4e819236d988234d55cdd0',1,'app::DoxygenReport']]]
+  ['deallocate',['Deallocate',['../a39696.html#a8df3f5d93d76810097613c59203e66dc',1,'alicorn::extension::std::memory::Pool']]],
+  ['detachfromnative',['DetachFromNative',['../a41464.html#ad4d54ae174ff55202f22580a7632672f',1,'ShellRenderInterfaceExtensions::DetachFromNative()'],['../a41468.html#a4b5fd8732c2fb9900eb23410540de82d',1,'ShellRenderInterfaceOpenGL::DetachFromNative()']]],
+  ['docomplete',['DoComplete',['../a40348.html#a1bc3db12e58ae1a9990aabe36e87f524',1,'alicorn::modules::logger::ConfigValue::DoComplete()'],['../a40408.html#ad6509fda6ddc2230f986662e5181ab04',1,'alicorn::modules::logger::Message::DoComplete()'],['../a40460.html#a9817eab99a8437ba0531ce231a292839',1,'alicorn::modules::logger::report::Report::DoComplete()']]],
+  ['document',['Document',['../a40980.html#a97ebbd15a97eeb5745f671c7c2b47a68',1,'alicorn::source::document::RapidXml::Document']]],
+  ['doreplace',['DoReplace',['../a39716.html#aaf8356753abb959b61593edbdee4e1fc',1,'alicorn::extension::std::regex::Replace']]],
+  ['dospecialaction',['DoSpecialAction',['../a40408.html#a60a9316d70a117080c003541bff6b5b3',1,'alicorn::modules::logger::Message::DoSpecialAction()'],['../a40428.html#aee319a84720a3b08952822aedd918de6',1,'alicorn::modules::logger::Fatal::DoSpecialAction()']]],
+  ['doxygenreport',['DoxygenReport',['../a41684.html#a5de91c77da4e819236d988234d55cdd0',1,'app::DoxygenReport']]]
 ];
