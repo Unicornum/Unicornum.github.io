@@ -12,7 +12,7 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Documentation: Оформление кода</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -22,10 +22,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -40,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Documentation
-   &#160;<span id="projectnumber">Version: 2.1.2 Revision: 489 Platform: x64 Build: 18:12 09.12.2019</span>
+   &#160;<span id="projectnumber">Version: 2.1.2 Revision: 491 Platform: x64 Build: 16:56 14.04.2020</span>
    </div>
    <div id="projectbrief">Пример структуры документации решения.</div>
   </td>
@@ -49,7 +45,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.18 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -78,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a35720.html','');});
+$(document).ready(function(){initNavTree('a35720.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,8 +99,51 @@ $(document).ready(function(){initNavTree('a35720.html','');});
 <div class="contents">
 <div class="textblock"><h2>Форматирование кода </h2>
 <h3>Файл настроек AStyle для форматирования кода</h3>
-<div class="fragment"><div class="line">--suffix=none</div><div class="line">--exclude=.svn --exclude=(Documentation) --exclude=Externals --ignore-exclude-errors</div><div class="line"></div><div class="line">--style=allman</div><div class="line">--indent=spaces=2</div><div class="line">--indent-switches</div><div class="line">--indent-preproc-block</div><div class="line">--indent-col1-comments</div><div class="line">--min-conditional-indent=0</div><div class="line">--max-continuation-indent=80</div><div class="line">--break-blocks</div><div class="line">--pad-oper</div><div class="line">--pad-header</div><div class="line">--unpad-paren</div><div class="line">--align-pointer=middle</div><div class="line">--align-reference=middle</div><div class="line">--add-braces</div><div class="line">--keep-one-line-blocks</div><div class="line">--close-templates</div><div class="line">--max-code-length=80</div><div class="line">--break-after-logical</div><div class="line">--lineend=windows</div></div><!-- fragment --><p><a class="anchor" id="IdentifiersAnchor"></a> </p><h3>Правила именования идентификаторов</h3>
-<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code" href="a35718.html">ClassName</a></div><div class="line">class IInterfaceName</div><div class="line">template&lt;class TTemplateParam&gt;</div><div class="line">using Name_t = ...</div><div class="line">  </div><div class="line">ClassFunctionName</div><div class="line">GlobalFunctionName</div><div class="line">IsFunctionReturnBool</div><div class="line">(*fnCallBackFunction)</div><div class="line">  </div><div class="line">m_ClassMemberVariable</div><div class="line">_FunctionParamVariable</div><div class="line">LocalVariable</div><div class="line">IsBoolVariable</div><div class="line">pPointerName</div><div class="line">itIterator(ritReverseIterator)</div><div class="line">iIndexValue</div><div class="line">  </div><div class="line">MemberEnum</div><div class="line">Constant::ConstantVariable</div><div class="line">FUCKING_DEFINE_MACROS</div></div><!-- fragment --><h2>Общие </h2>
+<div class="fragment"><div class="line">--suffix=none</div>
+<div class="line">--exclude=.svn --exclude=(Documentation) --exclude=Externals --ignore-exclude-errors</div>
+<div class="line"> </div>
+<div class="line">--style=allman</div>
+<div class="line">--indent=spaces=2</div>
+<div class="line">--indent-switches</div>
+<div class="line">--indent-preproc-block</div>
+<div class="line">--indent-col1-comments</div>
+<div class="line">--min-conditional-indent=0</div>
+<div class="line">--max-continuation-indent=80</div>
+<div class="line">--break-blocks</div>
+<div class="line">--pad-oper</div>
+<div class="line">--pad-header</div>
+<div class="line">--unpad-paren</div>
+<div class="line">--align-pointer=middle</div>
+<div class="line">--align-reference=middle</div>
+<div class="line">--add-braces</div>
+<div class="line">--keep-one-line-blocks</div>
+<div class="line">--close-templates</div>
+<div class="line">--max-code-length=80</div>
+<div class="line">--break-after-logical</div>
+<div class="line">--lineend=windows</div>
+</div><!-- fragment --><p><a class="anchor" id="IdentifiersAnchor"></a> </p><h3>Правила именования идентификаторов</h3>
+<div class="fragment"><div class="line"><span class="keyword">class </span><a class="code" href="a35718.html">ClassName</a></div>
+<div class="line">class IInterfaceName</div>
+<div class="line">template&lt;class TTemplateParam&gt;</div>
+<div class="line">using Name_t = ...</div>
+<div class="line">  </div>
+<div class="line">ClassFunctionName</div>
+<div class="line">GlobalFunctionName</div>
+<div class="line">IsFunctionReturnBool</div>
+<div class="line">(*fnCallBackFunction)</div>
+<div class="line">  </div>
+<div class="line">m_ClassMemberVariable</div>
+<div class="line">_FunctionParamVariable</div>
+<div class="line">LocalVariable</div>
+<div class="line">IsBoolVariable</div>
+<div class="line">pPointerName</div>
+<div class="line">itIterator(ritReverseIterator)</div>
+<div class="line">iIndexValue</div>
+<div class="line">  </div>
+<div class="line">MemberEnum</div>
+<div class="line">Constant::ConstantVariable</div>
+<div class="line">FUCKING_DEFINE_MACROS</div>
+</div><!-- fragment --><h2>Общие </h2>
 <ul>
 <li>Использовать RTTI исключительно в тестах или для логирования работы программы.</li>
 <li>В качестве целых типов использовать типы, определенные в &lt;cstdint&gt; и size_t.</li>
@@ -146,10 +185,20 @@ $(document).ready(function(){initNavTree('a35720.html','');});
 <li>Порядок следования заголовочных файлов: библиотеки C, библиотеки C++, .hpp файлы других библиотек, .hpp файлы текущего проекта.</li>
 <li>Определение вложенного класса должно находиться в отдельном .cpp файле.</li>
 <li>В .cpp файле первыми должны идти конструкторы и деструктор, затем все остальные функции в порядке их объявления.</li>
-<li>В определении функции, объявленной как override (virtual, static) ставить <div class="fragment"><div class="line"><span class="keywordtype">int</span> ClassName::GetValue(<span class="keywordtype">void</span>) <span class="comment">/*override*/</span></div><div class="line">{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}</div><div class="line">  </div><div class="line"><span class="comment">/*static*/</span> <span class="keywordtype">void</span> ClassName::DoProcess(<span class="keywordtype">void</span>) </div><div class="line">{</div><div class="line">  <span class="comment">// ...</span></div><div class="line">}</div></div><!-- fragment --></li>
+<li>В определении функции, объявленной как override (virtual, static) ставить <div class="fragment"><div class="line"><span class="keywordtype">int</span> ClassName::GetValue(<span class="keywordtype">void</span>) <span class="comment">/*override*/</span></div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// ...</span></div>
+<div class="line">}</div>
+<div class="line">  </div>
+<div class="line"><span class="comment">/*static*/</span> <span class="keywordtype">void</span> ClassName::DoProcess(<span class="keywordtype">void</span>) </div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// ...</span></div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
 <li>В определении функции сначала ставить входные, затем выходные параметры.</li>
 <li>Параметры, являющиеся результатом работы функции должны передаваться через указатели(ссылки - только константные!).</li>
-<li>Параметры, являющиеся результатом работы функции, должны быть помечены комментарием <b>out</b> <div class="fragment"><div class="line"><span class="keywordtype">void</span> GetValue(<span class="comment">/*out*/</span> <span class="keywordtype">int</span> * _pValue);</div></div><!-- fragment --></li>
+<li>Параметры, являющиеся результатом работы функции, должны быть помечены комментарием <b>out</b> <div class="fragment"><div class="line"><span class="keywordtype">void</span> GetValue(<span class="comment">/*out*/</span> <span class="keywordtype">int</span> * _pValue);</div>
+</div><!-- fragment --></li>
 </ul>
 <h2>Правила именования переменных/функций/классов/файлов </h2>
 <ul>
@@ -173,13 +222,60 @@ $(document).ready(function(){initNavTree('a35720.html','');});
 <li>Деструктору всегда явным образом указывать noexcept.</li>
 </ul>
 <h1>Примеры </h1>
-<p><a class="anchor" id="Example1Anchor"></a></p>
-<h2>Пример 1: Перечисления </h2>
-<div class="fragment"><div class="line"><span class="comment">// Объявление:</span></div><div class="line"><span class="keyword">class </span>Status</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">enum</span> Value : <span class="keywordtype">size_t</span></div><div class="line">  {</div><div class="line">    Unknown = 0,</div><div class="line">    Play,</div><div class="line">    Pause,</div><div class="line">    Stop,</div><div class="line">      </div><div class="line">    Illegal</div><div class="line">  };</div><div class="line">};</div><div class="line">  </div><div class="line"><span class="comment">// Использование</span></div><div class="line">Status::Value CurrentStatatus = Status::Stop;</div></div><!-- fragment --><h2>Пример 2: Константы </h2>
-<div class="fragment"><div class="line"><span class="keyword">namespace </span></div><div class="line">{</div><div class="line">  </div><div class="line"><span class="comment">// Объявление</span></div><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div><div class="line"><span class="keyword">class </span>Constant final</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  <span class="keyword">static</span> constexpr T PI = static_cast&lt;T&gt;(math::PI);</div><div class="line">};</div><div class="line">  </div><div class="line">} <span class="comment">// unnamed namespace</span></div><div class="line">  </div><div class="line"><span class="comment">// Использование</span></div><div class="line"><span class="keyword">auto</span> DoublePI = 2.0f * Constant&lt;float&gt;::PI;</div></div><!-- fragment --><p><a class="anchor" id="Example2Anchor"></a> </p><h2>Пример 3: Именование параметров </h2>
-<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSsuccess = CalculateSomething(InterestingValue,</div><div class="line">  10,</div><div class="line">  <span class="keyword">false</span>,</div><div class="line">  NULL); <span class="comment">// Что означают все эти аргументы??</span></div></div><!-- fragment --><p>вместо:</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div><div class="line">  10,       <span class="comment">// Базовое значение по умолчанию</span></div><div class="line">  <span class="keyword">false</span>,    <span class="comment">// Функция вызывается не в первый раз.</span></div><div class="line">  <span class="keyword">nullptr</span>); <span class="comment">// Без возвратной функции.</span></div></div><!-- fragment --><p>Или, в качестве альтернативы, используя константы или само-описывающие переменные:</p>
-<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> DefaultBaseValue = 10;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsFirstTimeCalling = <span class="keyword">false</span>;</div><div class="line">Callback * fnNullCallback = <span class="keyword">nullptr</span>;</div><div class="line">  </div><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div><div class="line">  DefaultBaseValue,</div><div class="line">  IsFirstTimeCalling,</div><div class="line">  fnNullCallback);</div></div><!-- fragment --><h1>Под вопросом </h1>
+<p><a class="anchor" id="Example1Anchor"></a> </p><h2>Пример 1: Перечисления </h2>
+<div class="fragment"><div class="line"><span class="comment">// Объявление:</span></div>
+<div class="line"><span class="keyword">class </span>Status</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  <span class="keyword">enum</span> Value : <span class="keywordtype">size_t</span></div>
+<div class="line">  {</div>
+<div class="line">    Unknown = 0,</div>
+<div class="line">    Play,</div>
+<div class="line">    Pause,</div>
+<div class="line">    Stop,</div>
+<div class="line">      </div>
+<div class="line">    Illegal</div>
+<div class="line">  };</div>
+<div class="line">};</div>
+<div class="line">  </div>
+<div class="line"><span class="comment">// Использование</span></div>
+<div class="line">Status::Value CurrentStatatus = Status::Stop;</div>
+</div><!-- fragment --><h2>Пример 2: Константы </h2>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span></div>
+<div class="line">{</div>
+<div class="line">  </div>
+<div class="line"><span class="comment">// Объявление</span></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><span class="keyword">class </span>Constant final</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  <span class="keyword">static</span> constexpr T PI = <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(math::PI);</div>
+<div class="line">};</div>
+<div class="line">  </div>
+<div class="line">} <span class="comment">// unnamed namespace</span></div>
+<div class="line">  </div>
+<div class="line"><span class="comment">// Использование</span></div>
+<div class="line"><span class="keyword">auto</span> DoublePI = 2.0f * Constant&lt;float&gt;::PI;</div>
+</div><!-- fragment --><p><a class="anchor" id="Example2Anchor"></a> </p><h2>Пример 3: Именование параметров </h2>
+<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSsuccess = CalculateSomething(InterestingValue,</div>
+<div class="line">  10,</div>
+<div class="line">  <span class="keyword">false</span>,</div>
+<div class="line">  NULL); <span class="comment">// Что означают все эти аргументы??</span></div>
+</div><!-- fragment --><p>вместо:</p>
+<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div>
+<div class="line">  10,       <span class="comment">// Базовое значение по умолчанию</span></div>
+<div class="line">  <span class="keyword">false</span>,    <span class="comment">// Функция вызывается не в первый раз.</span></div>
+<div class="line">  <span class="keyword">nullptr</span>); <span class="comment">// Без возвратной функции.</span></div>
+</div><!-- fragment --><p>Или, в качестве альтернативы, используя константы или само-описывающие переменные:</p>
+<div class="fragment"><div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> DefaultBaseValue = 10;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsFirstTimeCalling = <span class="keyword">false</span>;</div>
+<div class="line">Callback * fnNullCallback = <span class="keyword">nullptr</span>;</div>
+<div class="line">  </div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">bool</span> IsSuccess = CalculateSomething(InterestingValue,</div>
+<div class="line">  DefaultBaseValue,</div>
+<div class="line">  IsFirstTimeCalling,</div>
+<div class="line">  fnNullCallback);</div>
+</div><!-- fragment --><h1>Под вопросом </h1>
 <ul>
 <li>Запятые в списке инициализации переменных в конструкторе ставить после переменной.</li>
 <li>Вместо &lt;iostream&gt; в заголовочных файлах писать &lt;iosfwd&gt; для ускорения компиляции.</li>
@@ -190,7 +286,12 @@ $(document).ready(function(){initNavTree('a35720.html','');});
 <li>Профайлер не может подсказать, какие inline функции не должны быть встраиваемыми!</li>
 <li>Строки хранить в отдельном файле (лучше.cpp).</li>
 <li>Исключение не должно покидать деструктор (особенно это касается работы с контейнерами STL).</li>
-<li>Для класса предоставлять функцию swap() (она должна быть бессбойной!), которую можно использовать для присваивания со строгими гарантиями безопасности (для примитивных типов использовать std::swap()) <div class="fragment"><div class="line">T &amp; T::operator= (T Temp) <span class="comment">// По значению!</span></div><div class="line">{</div><div class="line">  swap(Temp);</div><div class="line">  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line">}</div></div><!-- fragment --></li>
+<li>Для класса предоставлять функцию swap() (она должна быть бессбойной!), которую можно использовать для присваивания со строгими гарантиями безопасности (для примитивных типов использовать std::swap()) <div class="fragment"><div class="line">T &amp; T::operator= (T Temp) <span class="comment">// По значению!</span></div>
+<div class="line">{</div>
+<div class="line">  swap(Temp);</div>
+<div class="line">  <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
 <li>Для отсортированного набора объектов можно использовать индексные контейнеры, содержащие итераторы на основной контейнер.</li>
 <li>Для добавления элементов в контейнер предпочтительнее использовать операции с диапазонами.</li>
 <li>container&lt;T&gt;(c).swap(c); // Удаление всей лишней (зарезервированной) емкости контейнера.</li>
@@ -200,16 +301,17 @@ $(document).ready(function(){initNavTree('a35720.html','');});
 <li>Функциональные объекты должны содержать константный operator().</li>
 <li>Побочные подзадачи выделять в отдельный код. </li>
 </ul>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa35718_html"><div class="ttname"><a href="a35718.html">ClassName</a></div><div class="ttdoc">Класс входит в проект Проект первый   &lt; Краткое описание класса &gt;</div><div class="ttdef"><b>Definition:</b> Project1.cpp:82</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">notitle</a></li><li class="navelem"><a class="el" href="a35738.html">Структура решения</a></li>
-    <li class="footer">Документация по Documentation. Последние изменения: Пн 9 Дек 2019 18:13:16. Создано системой
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a35738.html">Структура решения</a></li>
+    <li class="footer">Документация по Documentation. Последние изменения: Вт 14 Апр 2020 16:56:26. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
 </div>
 </body>
