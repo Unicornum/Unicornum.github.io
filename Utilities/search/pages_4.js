@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notitle',['notitle',['../index.html',1,'']]]
+  ['metrics_2eprops_32',['Metrics.props',['../a00752.html',1,'SolutionPage']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['runsolutiontests_2eprops',['RunSolutionTests.props',['../a00545.html',1,'index']]]
+  ['printparams_34',['PrintParams',['../a00758.html',1,'SolutionPage']]],
+  ['processingbuildlog_2eprops_35',['ProcessingBuildLog.props',['../a00754.html',1,'SolutionPage']]]
 ];
