@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['snappy',['Snappy',['../a66190.html',1,'SolutionPage']]]
+  ['snappy_286',['Snappy',['../a59586.html',1,'']]]
 ];

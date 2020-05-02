@@ -1,0 +1,156 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Externals: Исходный файл Solution/Solution/Rocket/Rocket.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Externals
+   &#160;<span id="projectnumber">Version: 0.1.4 Revision: 541 Platform: x86 Build: 14:26 02.05.2020</span>
+   </div>
+   <div id="projectbrief">Решение для сборки сторонних библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00173_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Rocket.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define ROCKET_STATIC_LIB</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#if BOOST_COMP_MSVC </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"># pragma warning(push)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"># pragma warning(disable: 4458)</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"># pragma warning(disable: 4996)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if BOOST_COMP_GNUC</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"># pragma GCC diagnostic push</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"># pragma GCC diagnostic ignored &quot;-Wunused-local-typedefs&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;Rocket\Core.h&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;Rocket\Controls.h&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;Rocket\Debugger.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#if BOOST_COMP_MSVC </span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"># pragma warning(pop)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if BOOST_COMP_GNUC</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"># pragma GCC diagnostic pop</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;Rocket\Rocket.lib.hpp&gt;</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa59398_html_a3d4b0e79fb1cc87aecf74e7d29e2e35e"><div class="ttname"><a href="a59398.html#a3d4b0e79fb1cc87aecf74e7d29e2e35e">Rocket::CircularBar::ElementCircularBar::OnRender</a></div><div class="ttdeci">virtual void OnRender()</div><div class="ttdoc">Called during render after backgrounds, borders, decorators, but before children, are rendered.</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:33</div></div>
+<div class="ttc" id="aa59434_html_a8a7899018e5bc9bc795adb38b428f0e7"><div class="ttname"><a href="a59434.html#a8a7899018e5bc9bc795adb38b428f0e7">Rocket::ProgressBar::ElementProgressBar::ElementProgressBar</a></div><div class="ttdeci">ElementProgressBar(const Rocket::Core::String &amp;)</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:18</div></div>
+<div class="ttc" id="aa59434_html_a93a4af55c203c8e5f82ee67ccd7a81a8"><div class="ttname"><a href="a59434.html#a93a4af55c203c8e5f82ee67ccd7a81a8">Rocket::ProgressBar::ElementProgressBar::OnRender</a></div><div class="ttdeci">void OnRender(void) override</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:46</div></div>
+<div class="ttc" id="aa59434_html_abbb197491b55232a693fac10d910a157"><div class="ttname"><a href="a59434.html#abbb197491b55232a693fac10d910a157">Rocket::ProgressBar::ElementProgressBar::GetValue</a></div><div class="ttdeci">Core::String GetValue() const override</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:32</div></div>
+<div class="ttc" id="aa59398_html_a681e947302229670a84e4a5fcc9cae09"><div class="ttname"><a href="a59398.html#a681e947302229670a84e4a5fcc9cae09">Rocket::CircularBar::ElementCircularBar::OnAttributeChange</a></div><div class="ttdeci">virtual void OnAttributeChange(const Core::AttributeNameList &amp;changed_attributes)</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:42</div></div>
+<div class="ttc" id="aa59434_html_a68ccc2f70d53b56d340853696706fdf4"><div class="ttname"><a href="a59434.html#a68ccc2f70d53b56d340853696706fdf4">Rocket::ProgressBar::ElementProgressBar::OnPropertyChange</a></div><div class="ttdeci">void OnPropertyChange(const Core::PropertyNameList &amp;) override</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:86</div></div>
+<div class="ttc" id="aa59398_html_a1f3142d735a5e965ad0b45d3a4a2be0b"><div class="ttname"><a href="a59398.html#a1f3142d735a5e965ad0b45d3a4a2be0b">Rocket::CircularBar::ElementCircularBar::GetValue</a></div><div class="ttdeci">Core::String GetValue() const override</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:21</div></div>
+<div class="ttc" id="aa59434_html_a92b8d18e8d71a27acb8424c1f7ccfde5"><div class="ttname"><a href="a59434.html#a92b8d18e8d71a27acb8424c1f7ccfde5">Rocket::ProgressBar::ElementProgressBar::GenerateGeometry</a></div><div class="ttdeci">void GenerateGeometry()</div><div class="ttdoc">Called when value has changed.</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:144</div></div>
+<div class="ttc" id="aa59434_html_a0b28a3b38863b79b70d80961551fcae7"><div class="ttname"><a href="a59434.html#a0b28a3b38863b79b70d80961551fcae7">Rocket::ProgressBar::ElementProgressBar::SetValue</a></div><div class="ttdeci">void SetValue(const Core::String &amp;) override</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:39</div></div>
+<div class="ttc" id="aa59398_html_a9cef9783b11789b8e611250dccae7045"><div class="ttname"><a href="a59398.html#a9cef9783b11789b8e611250dccae7045">Rocket::CircularBar::ElementCircularBar::ElementCircularBar</a></div><div class="ttdeci">ElementCircularBar(const Rocket::Core::String &amp;tag)</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:10</div></div>
+<div class="ttc" id="aa59434_html_ac2ee95b4a719449d24afad08d761676a"><div class="ttname"><a href="a59434.html#ac2ee95b4a719449d24afad08d761676a">Rocket::ProgressBar::ElementProgressBar::LoadTexture</a></div><div class="ttdeci">void LoadTexture(int)</div><div class="ttdoc">Called when source texture has changed.</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:343</div></div>
+<div class="ttc" id="aa59398_html_aefb8f0d7e2c229f4c607d074147e0587"><div class="ttname"><a href="a59398.html#aefb8f0d7e2c229f4c607d074147e0587">Rocket::CircularBar::ElementCircularBar::LoadTexture</a></div><div class="ttdeci">void LoadTexture()</div><div class="ttdoc">Called when source texture has changed.</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:292</div></div>
+<div class="ttc" id="aa59398_html_a6a5b5b6b10f17592b7b33a10750621bb"><div class="ttname"><a href="a59398.html#a6a5b5b6b10f17592b7b33a10750621bb">Rocket::CircularBar::ElementCircularBar::OnPropertyChange</a></div><div class="ttdeci">virtual void OnPropertyChange(const Core::PropertyNameList &amp;changed_properties)</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:60</div></div>
+<div class="ttc" id="aa59398_html_a9ea1048021502338b2fa5d83ba0ac169"><div class="ttname"><a href="a59398.html#a9ea1048021502338b2fa5d83ba0ac169">Rocket::CircularBar::ElementCircularBar::SetValue</a></div><div class="ttdeci">void SetValue(const Core::String &amp;) override</div><div class="ttdef"><b>Definition:</b> ElementCircularBar.cpp:27</div></div>
+<div class="ttc" id="aa59434_html_a1856255b5c372999b3463a40259419f8"><div class="ttname"><a href="a59434.html#a1856255b5c372999b3463a40259419f8">Rocket::ProgressBar::ElementProgressBar::OnAttributeChange</a></div><div class="ttdeci">void OnAttributeChange(const Core::AttributeNameList &amp;) override</div><div class="ttdef"><b>Definition:</b> ElementProgressBar.cpp:60</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_b8f9138012e529e9ee6e4d8100e824f9.html">Rocket</a></li><li class="navelem"><b>Rocket.hpp</b></li>
+    <li class="footer">Документация по Externals. Последние изменения: Сб 2 Май 2020 14:26:27. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>
