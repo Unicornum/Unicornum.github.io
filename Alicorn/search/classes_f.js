@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['rapidxml',['RapidXml',['../a40988.html',1,'alicorn::source::document']]],
-  ['record',['Record',['../a40872.html',1,'alicorn::modules::vfs::Pack']]],
-  ['registrator',['Registrator',['../a40548.html',1,'alicorn::modules::patterns::factory']]],
-  ['replace',['Replace',['../a39716.html',1,'alicorn::extension::std::regex']]],
-  ['report',['Report',['../a40460.html',1,'alicorn::modules::logger::report']]],
-  ['reportparser',['ReportParser',['../a41420.html',1,'']]],
-  ['rgb',['RGB',['../a41084.html',1,'alicorn::source::image::pixel']]],
-  ['rgba',['RGBA',['../a41096.html',1,'alicorn::source::image::pixel']]]
+  ['rapidxml_939',['RapidXml',['../a44432.html',1,'alicorn::source::document']]],
+  ['record_940',['Record',['../a44316.html',1,'alicorn::modules::vfs::Pack']]],
+  ['registrator_941',['Registrator',['../a43992.html',1,'alicorn::modules::patterns::factory']]],
+  ['replace_942',['Replace',['../a43128.html',1,'alicorn::extension::std::regex']]],
+  ['report_943',['Report',['../a43904.html',1,'alicorn::modules::logger::report']]],
+  ['reportparser_944',['ReportParser',['../a44864.html',1,'']]],
+  ['rgb_945',['RGB',['../a44528.html',1,'alicorn::source::image::pixel']]],
+  ['rgba_946',['RGBA',['../a44540.html',1,'alicorn::source::image::pixel']]]
 ];

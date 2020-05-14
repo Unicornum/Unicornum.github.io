@@ -12,9 +12,9 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Tools/Documentation.App/Documentation.App/DoResultCoverageToHtml.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/System/Version/version.mock.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -40,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.2 Revision: 3325 Platform: x64 Build: 02:49 09.12.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -49,7 +45,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.18 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -78,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a01616_source.html','');});
+$(document).ready(function(){initNavTree('a01616_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,18 +94,29 @@ $(document).ready(function(){initNavTree('a01616_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">DoResultCoverageToHtml.hpp</div>  </div>
+<div class="title">version.mock.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;boost\filesystem\path.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>coverage { <span class="keyword">class </span>Info; }</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>DoResultCoverageToHtml final</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">void</span> DoProcess(<span class="keyword">const</span> <span class="keywordtype">size_t</span>) <span class="keyword">const</span>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  <span class="keyword">const</span> Path_t m_PathToSourceFile;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">const</span> Path_t m_PathToSolution;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  DoResultCoverageToHtml(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Path_t &amp;);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;version\info.mock.hpp&quot;</span></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa42865_html_gaca887abf1bed0f12a99431714940c050"><div class="ttname"><a href="a42865.html#gaca887abf1bed0f12a99431714940c050">__FILE_VERSION_SHORT__</a></div><div class="ttdeci">#define __FILE_VERSION_SHORT__</div><div class="ttdoc">Строка короткой версии exe/dll файла.</div><div class="ttdef"><b>Definition:</b> macros.hpp:45</div></div>
+<div class="ttc" id="aa42865_html_ga5e07a654741079583f62167c324ce81a"><div class="ttname"><a href="a42865.html#ga5e07a654741079583f62167c324ce81a">__PRODUCT_VERSION_FULL__</a></div><div class="ttdeci">#define __PRODUCT_VERSION_FULL__</div><div class="ttdoc">Строка полной версии exe/dll продукта.</div><div class="ttdef"><b>Definition:</b> macros.hpp:65</div></div>
+<div class="ttc" id="aa42831_html_gac46b79d4c0ba029db9e1d774414e6024"><div class="ttname"><a href="a42831.html#gac46b79d4c0ba029db9e1d774414e6024">__TO_STR</a></div><div class="ttdeci">#define __TO_STR(t)</div><div class="ttdoc">Макрос входит в Cpp   Макрос преобразования значения в строку.</div><div class="ttdef"><b>Definition:</b> to-str.hpp:38</div></div>
+<div class="ttc" id="aa01586_html"><div class="ttname"><a href="a01586.html">version.hpp</a></div></div>
+<div class="ttc" id="aa42835_html_ga68c84efa84957c5f819d243a4cb84de9"><div class="ttname"><a href="a42835.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a></div><div class="ttdeci">#define uT(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Ucs2.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:22</div></div>
+<div class="ttc" id="aa42865_html_ga6d003e5e0fe1fca21ede1e4f8ce6da09"><div class="ttname"><a href="a42865.html#ga6d003e5e0fe1fca21ede1e4f8ce6da09">__PRODUCT_VERSION__</a></div><div class="ttdeci">#define __PRODUCT_VERSION__</div><div class="ttdoc">Вид версии exe/dll продукта.</div><div class="ttdef"><b>Definition:</b> macros.hpp:34</div></div>
+<div class="ttc" id="aa42865_html_ga85f528db31313a13c1976707ebadcf84"><div class="ttname"><a href="a42865.html#ga85f528db31313a13c1976707ebadcf84">__FILE_VERSION__</a></div><div class="ttdeci">#define __FILE_VERSION__</div><div class="ttdoc">Вид версии exe/dll файла.</div><div class="ttdef"><b>Definition:</b> macros.hpp:26</div></div>
+<div class="ttc" id="aa42865_html_ga0facd32184b2ec0c57501e7d76ce59ca"><div class="ttname"><a href="a42865.html#ga0facd32184b2ec0c57501e7d76ce59ca">__FILE_VERSION_FULL__</a></div><div class="ttdeci">#define __FILE_VERSION_FULL__</div><div class="ttdoc">Строка полной версии exe/dll файла.</div><div class="ttdef"><b>Definition:</b> macros.hpp:54</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_ea9fcbd7d3cb562ad4d7e1d453803fa4.html">Documentation.App</a></li><li class="navelem"><a class="el" href="dir_7744ed186d8433a5a84ff63b6448c422.html">Documentation.App</a></li><li class="navelem"><b>DoResultCoverageToHtml.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 9 Дек 2019 02:50:03. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_6ad1dcbf6dd9b6cc20ba7172c7c77f84.html">Version</a></li><li class="navelem"><b>version.mock.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:31. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
 </div>
 </body>

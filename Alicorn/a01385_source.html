@@ -12,9 +12,9 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/System/Application/Application/dll/ptr-object.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Source/Image/Image/pixel.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -40,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.2 Revision: 3325 Platform: x64 Build: 02:49 09.12.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -49,7 +45,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.18 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -78,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a01385_source.html','');});
+$(document).ready(function(){initNavTree('a01385_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -98,21 +94,111 @@ $(document).ready(function(){initNavTree('a01385_source.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">ptr-object.hpp</div>  </div>
+<div class="title">pixel.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;boost\noncopyable.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\boost\dll.hpp&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>alicorn</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>system</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>application</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">namespace </span>dll</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">class </span>Object;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a41152.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a41152.html">PtrObject</a> : </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span> ::boost::noncopyable</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">inline</span> T * GetPtr(<span class="keywordtype">void</span>) </div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#   if BOOST_COMP_MSVC || BOOST_COMP_GNUC</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> dynamic_cast&lt;T*&gt;(m_pObject);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#   elif BOOST_COMP_CLANG</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// При использовании dynamic_cast&lt;&gt;() при сборке Clang&#39;ом для объекта,</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// созданного в dll преобразование всегда дает nullptr (см.</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// https://github.com/android/ndk/issues/533).</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Не помогло (Android NDK r16b):</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// - Добавление интерфейсному классу ключевой функции.</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// - Добавление интерфесному классу атрибута</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// __attribute__((visibility(&quot;default&quot;))).</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// - Добавление проектам параметра линковщика -Wl,-export-dynamic.</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// - Использование различных типов стандартных библиотек C++.</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// - Предварительная загрузка библиотек в MainActivity через</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// System.loadLibrary(&quot;System.Shared&quot;).</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> static_cast&lt;T *&gt;(m_pObject);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#   else</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#     error &quot;Unknown compiler type&quot;</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#   endif</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  ::boost::dll::shared_library      m_Dll;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  ::std::function&lt;<a class="code" href="a41148.html">Object</a> * (void)&gt;  m_fnCreate;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  ::std::function&lt;void (<a class="code" href="a41148.html">Object</a> *)&gt;  m_fnDestroy;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="a41148.html">Object</a>                          * m_pObject;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="a41152.html#a20d6e0d738903f53e76b9a915577a279">PtrObject</a>(const ::boost::filesystem::path &amp;, <span class="keyword">const</span> <span class="keywordtype">char</span> *, <span class="keyword">const</span> <span class="keywordtype">char</span> *);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  ~<a class="code" href="a41152.html">PtrObject</a>(<span class="keywordtype">void</span>) noexcept;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace dll</span></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// namespace application</span></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <span class="comment">// namespace system</span></div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <span class="comment">// namespace alicorn</span></div><div class="ttc" id="a41152_html"><div class="ttname"><a href="a41152.html">alicorn::system::application::dll::PtrObject</a></div><div class="ttdoc">Класс входит в Application   Класс-обертка, содержащая объект, созданный внутри dll.</div><div class="ttdef"><b>Definition:</b> ptr-object.hpp:37</div></div>
-<div class="ttc" id="a41148_html"><div class="ttname"><a href="a41148.html">alicorn::system::application::dll::Object</a></div><div class="ttdoc">Класс входит в Application   Базовый класс объектов, создаваемых в dll.</div><div class="ttdef"><b>Definition:</b> object.hpp:33</div></div>
-<div class="ttc" id="a41152_html_a20d6e0d738903f53e76b9a915577a279"><div class="ttname"><a href="a41152.html#a20d6e0d738903f53e76b9a915577a279">alicorn::system::application::dll::PtrObject::PtrObject</a></div><div class="ttdeci">PtrObject(const ::boost::filesystem::path &amp;, const char *, const char *)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition:</b> ptr-object.cpp:39</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cstring&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>source</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>image</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>pixel</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a44524.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44524.html">Pixel24</a></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  uint8_t _0<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  uint8_t _1<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  uint8_t _2<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="a44528.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44528.html">RGB</a> final :</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44524.html">Pixel24</a></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsChangesOrder(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Copy(<span class="keyword">const</span> uint8_t * _pSource, uint8_t * _pDest)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    _pDest[0] = _pSource[2];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    _pDest[1] = _pSource[1];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    _pDest[2] = _pSource[0];</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="a44532.html">   89</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44532.html">BGR</a> final :</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44524.html">Pixel24</a></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsChangesOrder(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Copy(<span class="keyword">const</span> uint8_t * _pSource, uint8_t * _pDest)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    ::std::memcpy(_pDest, _pSource, <span class="keyword">sizeof</span>(<a class="code" href="a44524.html">Pixel24</a>));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="a44536.html">  115</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44536.html">Pixel32</a></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  uint8_t _0<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  uint8_t _1<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  uint8_t _2<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  uint8_t _3<span class="comment">/* = 0x00*/</span>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="a44540.html">  139</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44540.html">RGBA</a> final :</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44536.html">Pixel32</a></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;{</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsChangesOrder(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Copy(<span class="keyword">const</span> uint8_t * _pSource, uint8_t * _pDest)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;  {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    RGB::Copy(_pSource, _pDest);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    _pDest[3] = _pSource[3];</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno"><a class="line" href="a44544.html">  166</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44544.html">BGRA</a> final :</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44536.html">Pixel32</a></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> IsChangesOrder(<span class="keywordtype">void</span>) { <span class="keywordflow">return</span> <span class="keyword">false</span>; }</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keywordtype">void</span> Copy(<span class="keyword">const</span> uint8_t * _pSource, uint8_t * _pDest)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    ::std::memcpy(_pDest, _pSource, <span class="keyword">sizeof</span>(<a class="code" href="a44536.html">Pixel32</a>));</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;  }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;} <span class="comment">// namespace pixel</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;} <span class="comment">// namespace image</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;} <span class="comment">// namespace source</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;} <span class="comment">// namespace alicorn</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa44540_html"><div class="ttname"><a href="a44540.html">alicorn::source::image::pixel::RGBA</a></div><div class="ttdoc">Класс входит в проект Image   Класс пикселя в формате RGBA.</div><div class="ttdef"><b>Definition:</b> pixel.hpp:141</div></div>
+<div class="ttc" id="aa44536_html"><div class="ttname"><a href="a44536.html">alicorn::source::image::pixel::Pixel32</a></div><div class="ttdoc">Класс входит в проект Image   Класс пикселя размером в 4 байта.</div><div class="ttdef"><b>Definition:</b> pixel.hpp:116</div></div>
+<div class="ttc" id="aa44528_html"><div class="ttname"><a href="a44528.html">alicorn::source::image::pixel::RGB</a></div><div class="ttdoc">Класс входит в проект Image   Класс пикселя в формате RGB.</div><div class="ttdef"><b>Definition:</b> pixel.hpp:63</div></div>
+<div class="ttc" id="aa44544_html"><div class="ttname"><a href="a44544.html">alicorn::source::image::pixel::BGRA</a></div><div class="ttdoc">Класс входит в проект Image   Класс пикселя в формате BGRA.</div><div class="ttdef"><b>Definition:</b> pixel.hpp:168</div></div>
+<div class="ttc" id="aa44524_html"><div class="ttname"><a href="a44524.html">alicorn::source::image::pixel::Pixel24</a></div><div class="ttdoc">Класс входит в проект Image   Класс пикселя размером в 3 байта.</div><div class="ttdef"><b>Definition:</b> pixel.hpp:39</div></div>
+<div class="ttc" id="aa44532_html"><div class="ttname"><a href="a44532.html">alicorn::source::image::pixel::BGR</a></div><div class="ttdoc">Класс входит в проект Image   Класс пикселя в формате BGR.</div><div class="ttdef"><b>Definition:</b> pixel.hpp:91</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_e6ca52160bd83cd3ce75eeeb2b07a02a.html">Application</a></li><li class="navelem"><a class="el" href="dir_1cb7b5985cb17cb994701cafd1b90b1e.html">dll</a></li><li class="navelem"><b>ptr-object.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 9 Дек 2019 02:50:02. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_a16930318217d32108ff0341167fd3b5.html">Image</a></li><li class="navelem"><a class="el" href="dir_96f7df0dfd5d1337ab33c3b4f3a9e57c.html">Image</a></li><li class="navelem"><b>pixel.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:31. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
 </div>
 </body>

@@ -1,8 +1,8 @@
 var modules =
 [
-    [ "Alicorn", "a39385.html", "a39385" ],
-    [ "Controller", "a39434.html", "a39434" ],
-    [ "Model", "a39435.html", "a39435" ],
-    [ "Support", "a39436.html", "a39436" ],
-    [ "View", "a39439.html", "a39439" ]
+    [ "Alicorn", "a42823.html", "a42823" ],
+    [ "Controller", "a42873.html", "a42873" ],
+    [ "Model", "a42874.html", "a42874" ],
+    [ "Support", "a42875.html", "a42875" ],
+    [ "View", "a42878.html", "a42878" ]
 ];

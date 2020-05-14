@@ -12,9 +12,9 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Файл Solution/Solution/Source/Crypto/crypto.hpp</title>
+    <title>Alicorn: Шаблон класса alicorn::modules::vfs::Crypto&lt; TCrypto, TPassword &gt;</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,6 @@
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -40,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.2 Revision: 3325 Platform: x64 Build: 02:49 09.12.2019</span>
+   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -49,7 +45,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.18 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -78,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a44288.html','');});
+$(document).ready(function(){initNavTree('a44288.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -97,50 +93,137 @@ $(document).ready(function(){initNavTree('a44288.html','');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a44285.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">Файл crypto.hpp</div>  </div>
+<div class="title">Шаблон класса alicorn::modules::vfs::Crypto&lt; TCrypto, TPassword &gt;<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a42823.html">Alicorn</a> &raquo; <a class="el" href="a42846.html">Modules</a> &raquo; <a class="el" href="a42852.html">Virtual File System</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;crypto.forward.hpp&quot;</code><br />
-<code>#include &quot;crypto\password.hpp&quot;</code><br />
-<code>#include &quot;crypto\secure-password.hpp&quot;</code><br />
-<code>#include &quot;crypto\aes256.hpp&quot;</code><br />
-<code>#include &quot;crypto\base64.hpp&quot;</code><br />
-<code>#include &quot;crypto\plantuml64.hpp&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для crypto.hpp:</div>
+
+<p>Класс входит в <a class="el" href="a45650.html">Virtual File System</a> <br  />
+ Класс реализации интерфейса преобразования для шифрования данных.  
+ <a href="a44288.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a47736_source.html">crypto.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:alicorn::modules::vfs::Crypto&lt; TCrypto, TPassword &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a44289.png" border="0" usemap="#_solution_2_solution_2_source_2_crypto_2crypto_8hpp" alt=""/></div>
-<map name="_solution_2_solution_2_source_2_crypto_2crypto_8hpp" id="_solution_2_solution_2_source_2_crypto_2crypto_8hpp">
-<area shape="rect"  title=" " alt="" coords="585,5,771,47"/>
-<area shape="rect"  href="a01202_source.html" title=" " alt="" coords="30,95,179,121"/>
-<area shape="rect"  title=" " alt="" coords="203,95,366,121"/>
-<area shape="rect"  title=" " alt="" coords="391,95,464,121"/>
-<area shape="rect"  title=" " alt="" coords="488,95,553,121"/>
-<area shape="rect"  title=" " alt="" coords="577,95,779,121"/>
-<area shape="rect"  href="a01196_source.html" title=" " alt="" coords="803,95,1017,121"/>
-<area shape="rect"  href="a01175_source.html" title=" " alt="" coords="1041,95,1187,121"/>
-<area shape="rect"  href="a01181_source.html" title=" " alt="" coords="1211,95,1358,121"/>
-<area shape="rect"  href="a01193_source.html" title=" " alt="" coords="1382,95,1553,121"/>
-<area shape="rect"  title=" " alt="" coords="5,177,204,203"/>
-<area shape="rect"  title=" " alt="" coords="828,169,992,211"/>
-<area shape="rect"  title=" " alt="" coords="1128,177,1271,203"/>
-<area shape="rect"  title=" " alt="" coords="1295,177,1458,203"/>
+<div class="center"><img src="a44287.png" border="0" usemap="#alicorn_1_1modules_1_1vfs_1_1_crypto_3_01_t_crypto_00_01_t_password_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="alicorn_1_1modules_1_1vfs_1_1_crypto_3_01_t_crypto_00_01_t_password_01_4_inherit__map" id="alicorn_1_1modules_1_1vfs_1_1_crypto_3_01_t_crypto_00_01_t_password_01_4_inherit__map">
+<area shape="rect" title="Класс входит в Virtual File System &#160;&#160;Класс реализации интерфейса преобразования для шифрования данных..." alt="" coords="5,175,245,296"/>
+<area shape="rect" href="a44296.html" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс преобразователя данных." alt="" coords="42,5,209,127"/>
 </map>
 </div>
+<div class="dynheader">
+Граф связей класса alicorn::modules::vfs::Crypto&lt; TCrypto, TPassword &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="a44286.png" border="0" usemap="#alicorn_1_1modules_1_1vfs_1_1_crypto_3_01_t_crypto_00_01_t_password_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1modules_1_1vfs_1_1_crypto_3_01_t_crypto_00_01_t_password_01_4_coll__map" id="alicorn_1_1modules_1_1vfs_1_1_crypto_3_01_t_crypto_00_01_t_password_01_4_coll__map">
+<area shape="rect" title="Класс входит в Virtual File System &#160;&#160;Класс реализации интерфейса преобразования для шифрования данных..." alt="" coords="31,572,271,693"/>
+<area shape="rect" href="a44296.html" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс преобразователя данных." alt="" coords="5,381,172,502"/>
+<area shape="rect" href="a44600.html" title=" " alt="" coords="196,373,403,509"/>
+<area shape="rect" href="a44596.html" title="Класс входит в Application &#160;&#160;Класс&#45;обертка, содержащая объект, созданный внутри dll." alt="" coords="49,160,256,311"/>
+<area shape="rect" href="a44592.html" title="Класс входит в Application &#160;&#160;Базовый класс объектов, создаваемых в dll." alt="" coords="167,5,373,97"/>
+<area shape="rect" href="a44304.html" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс для получения пароля из dll." alt="" coords="281,189,443,281"/>
+</map>
 </div>
-<p><a href="a44288_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a285e869c178d6ba7324e2c5323f7f125"><td class="memItemLeft" align="right" valign="top"><a id="a285e869c178d6ba7324e2c5323f7f125"></a>
+Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44288.html#a285e869c178d6ba7324e2c5323f7f125">PrePackAction</a> (const Data_t &amp;) const override</td></tr>
+<tr class="memdesc:a285e869c178d6ba7324e2c5323f7f125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования данных перед упаковкой в хранилище. <br /></td></tr>
+<tr class="separator:a285e869c178d6ba7324e2c5323f7f125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8de30e0e047495678957fdb4b026b7ae"><td class="memItemLeft" align="right" valign="top"><a id="a8de30e0e047495678957fdb4b026b7ae"></a>
+Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44288.html#a8de30e0e047495678957fdb4b026b7ae">PostUnpackAction</a> (const Data_t &amp;) const override</td></tr>
+<tr class="memdesc:a8de30e0e047495678957fdb4b026b7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для преобразования данных после распаковки хранилища (должна производить действие, обратное действию функции <a class="el" href="a44288.html#a285e869c178d6ba7324e2c5323f7f125" title="Функция для преобразования данных перед упаковкой в хранилище.">PrePackAction()</a>). <br /></td></tr>
+<tr class="separator:a8de30e0e047495678957fdb4b026b7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652fb7644e1ba096f45c4433e1814515"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44288.html#a652fb7644e1ba096f45c4433e1814515">Crypto</a> (const Path_t &amp;)</td></tr>
+<tr class="memdesc:a652fb7644e1ba096f45c4433e1814515"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <a href="a44288.html#a652fb7644e1ba096f45c4433e1814515">Подробнее...</a><br /></td></tr>
+<tr class="separator:a652fb7644e1ba096f45c4433e1814515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Общий заголовочный файл для всех заголовочных файлов проекта <a class="el" href="a42211.html">Crypto</a>. </p>
-</div></div><!-- contents -->
+<div class="textblock"><h3>template&lt;class TCrypto, class TPassword&gt;<br />
+class alicorn::modules::vfs::Crypto&lt; TCrypto, TPassword &gt;</h3>
+
+<p>Класс входит в <a class="el" href="a45650.html">Virtual File System</a> <br  />
+ Класс реализации интерфейса преобразования для шифрования данных. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TCrypto</td><td>Класс, производящий преобразование данных (одна из специализаций класса alicorn::converter::Crypto). </td></tr>
+    <tr><td class="paramname">TPassword</td><td>Класс для преобразования пароля (должен содержать статическую функцию Decrypt(), производящую преобразование пароля, обратное тому, что производит Encryptor внутри указанной в конструкторе dll).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>16 Июнь 2016 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a652fb7644e1ba096f45c4433e1814515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a652fb7644e1ba096f45c4433e1814515">&#9670;&nbsp;</a></span>Crypto()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TCrypto , class TPassword &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a44288.html">alicorn::modules::vfs::Crypto</a>&lt; TCrypto, TPassword &gt;::<a class="el" href="a44288.html">Crypto</a> </td>
+          <td>(</td>
+          <td class="paramtype">const Path_t &amp;&#160;</td>
+          <td class="paramname"><em>_PathToProtectDll</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Конструктор класса. </p>
+<ul>
+<li>Подробнее о реализации dll с паролем см. <a class="el" href="a42852.html#ModulesVfsExample">ModulesVfsExample</a>.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToProtectDll</td><td>Путь к файлу dll, которая хранит пароль, который будет использоваться для шифрования/дешифрования данных.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Modules/Vfs/Vfs/<a class="el" href="a47736_source.html">crypto.hpp</a></li>
+<li>Solution/Solution/Modules/Vfs/Vfs/crypto.inl</li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_460f271f1936f0ecb85d4d26fcafb3ca.html">Crypto</a></li><li class="navelem"><a class="el" href="a44288.html">crypto.hpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Пн 9 Дек 2019 02:50:05. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>modules</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a44288.html">Crypto</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:34. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
 </div>
 </body>

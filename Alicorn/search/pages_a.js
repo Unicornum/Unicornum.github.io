@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['patterns',['Patterns',['../a42201.html',1,'ModulesPage']]],
-  ['platform',['Platform',['../a42225.html',1,'SystemPage']]],
-  ['processingmetrics_2eapp',['ProcessingMetrics.App',['../a42241.html',1,'ToolsPage']]]
+  ['patterns_1515',['Patterns',['../a45646.html',1,'ModulesPage']]],
+  ['platform_1516',['Platform',['../a45670.html',1,'SystemPage']]],
+  ['processingmetrics_2eapp_1517',['ProcessingMetrics.App',['../a45686.html',1,'ToolsPage']]]
 ];

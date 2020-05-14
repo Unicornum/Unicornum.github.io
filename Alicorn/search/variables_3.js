@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stride',['Stride',['../a41064.html#af9497ca67273efcd360d2df5c1b08d23',1,'alicorn::source::image::Data']]]
+  ['stride_1430',['Stride',['../a44508.html#af9497ca67273efcd360d2df5c1b08d23',1,'alicorn::source::image::Data']]]
 ];

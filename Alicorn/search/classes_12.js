@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['ucs2',['UCS2',['../a39760.html',1,'alicorn::extension::std::Encoding::UCS2'],['../a39804.html',1,'alicorn::extension::std::Locale::UCS2']]],
-  ['universal',['Universal',['../a41008.html',1,'alicorn::source::document::Universal&lt; TImplementation &gt;'],['../a41108.html',1,'alicorn::source::image::Universal&lt; TPixel &gt;'],['../a40956.html',1,'alicorn::source::details::Universal&lt; TSource, TImpl &gt;']]],
-  ['utf16',['UTF16',['../a39808.html',1,'alicorn::extension::std::Locale::UTF16'],['../a39764.html',1,'alicorn::extension::std::Encoding::UTF16']]],
-  ['utf32',['UTF32',['../a39768.html',1,'alicorn::extension::std::Encoding::UTF32'],['../a39812.html',1,'alicorn::extension::std::Locale::UTF32']]],
-  ['utf8',['Utf8',['../a40960.html',1,'alicorn::source::details']]],
-  ['utilities',['Utilities',['../a41012.html',1,'alicorn::source::document']]]
+  ['ucs2_988',['UCS2',['../a43172.html',1,'alicorn::extension::std::Encoding::UCS2'],['../a43216.html',1,'alicorn::extension::std::Locale::UCS2']]],
+  ['universal_989',['Universal',['../a44552.html',1,'alicorn::source::image::Universal&lt; TPixel &gt;'],['../a44400.html',1,'alicorn::source::details::Universal&lt; TSource, TImpl &gt;'],['../a44452.html',1,'alicorn::source::document::Universal&lt; TImplementation &gt;']]],
+  ['utf16_990',['UTF16',['../a43220.html',1,'alicorn::extension::std::Locale::UTF16'],['../a43176.html',1,'alicorn::extension::std::Encoding::UTF16']]],
+  ['utf32_991',['UTF32',['../a43224.html',1,'alicorn::extension::std::Locale::UTF32'],['../a43180.html',1,'alicorn::extension::std::Encoding::UTF32']]],
+  ['utf8_992',['Utf8',['../a44404.html',1,'alicorn::source::details']]],
+  ['utilities_993',['Utilities',['../a44456.html',1,'alicorn::source::document']]]
 ];

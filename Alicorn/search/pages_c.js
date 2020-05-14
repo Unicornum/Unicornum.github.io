@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['std',['Std',['../a42188.html',1,'ExtensionPage']]],
-  ['settings',['Settings',['../a42203.html',1,'ModulesPage']]],
-  ['source',['Source',['../a42207.html',1,'SolutionPage']]],
-  ['system',['System',['../a42221.html',1,'SolutionPage']]],
-  ['settings_2eapp',['Settings.App',['../a42249.html',1,'ToolsPage']]]
+  ['std_1520',['Std',['../a45632.html',1,'ExtensionPage']]],
+  ['std_2ememory_1521',['Std.Memory',['../a45634.html',1,'ExtensionPage']]],
+  ['std_1522',['Std',['../a45629.html',1,'ExtensionPage']]],
+  ['settings_1523',['Settings',['../a45648.html',1,'ModulesPage']]],
+  ['source_1524',['Source',['../a45652.html',1,'SolutionPage']]],
+  ['system_1525',['System',['../a45666.html',1,'SolutionPage']]],
+  ['settings_2eapp_1526',['Settings.App',['../a45694.html',1,'ToolsPage']]]
 ];

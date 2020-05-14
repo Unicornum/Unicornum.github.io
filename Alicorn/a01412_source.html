@@ -1,0 +1,151 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Исходный файл Solution/Solution/System/Application/Application/dll/object.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a01412_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">object.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>system</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>application</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>dll</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a44592.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44592.html">Object</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a44592.html">Object</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;} <span class="comment">// namespace dll</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;} <span class="comment">// namespace application</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;} <span class="comment">// namespace system</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;} <span class="comment">// namespace alicorn</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa42835_html_ga68c84efa84957c5f819d243a4cb84de9"><div class="ttname"><a href="a42835.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a></div><div class="ttdeci">#define uT(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Ucs2.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:22</div></div>
+<div class="ttc" id="aa44816_html_a263a193de3aaf492046afb680dbea58f"><div class="ttname"><a href="a44816.html#a263a193de3aaf492046afb680dbea58f">alicorn::system::version::Info::GetValue</a></div><div class="ttdeci">String_t GetValue(const String_t &amp;) const</div><div class="ttdoc">Функция получения значения параметра версии.</div><div class="ttdef"><b>Definition:</b> info.android.cpp:23</div></div>
+<div class="ttc" id="aa42863_html_gab11096c0288142259e1de15c52c6623d"><div class="ttname"><a href="a42863.html#gab11096c0288142259e1de15c52c6623d">WINAPI_CHECK</a></div><div class="ttdeci">#define WINAPI_CHECK</div><div class="ttdoc">Класс входит в Platform   Макрос предназначен для работы с функциями WinApi.</div><div class="ttdef"><b>Definition:</b> winapi-check.hpp:38</div></div>
+<div class="ttc" id="aa44592_html"><div class="ttname"><a href="a44592.html">alicorn::system::application::dll::Object</a></div><div class="ttdoc">Класс входит в Application   Базовый класс объектов, создаваемых в dll.</div><div class="ttdef"><b>Definition:</b> object.hpp:34</div></div>
+<div class="ttc" id="aa44816_html"><div class="ttname"><a href="a44816.html">alicorn::system::version::Info</a></div><div class="ttdoc">Класс входит в Version   Класс получения информации о версии модуля.</div><div class="ttdef"><b>Definition:</b> info.hpp:67</div></div>
+<div class="ttc" id="aa44580_html_a1b0bd083a2005825ce103b2a5c4c9c79"><div class="ttname"><a href="a44580.html#a1b0bd083a2005825ce103b2a5c4c9c79">alicorn::system::application::CurrentModule::GetLocation</a></div><div class="ttdeci">static Path_t GetLocation(void)</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:26</div></div>
+<div class="ttc" id="aa42835_html_ga85f365b66942caa215bfc4ad5010f37f"><div class="ttname"><a href="a42835.html#ga85f365b66942caa215bfc4ad5010f37f">alicorn::extension::std::string_cast</a></div><div class="ttdeci">TTarget string_cast(const TSource &amp;_Source, TArgs &amp;&amp;... _Args)</div><div class="ttdoc">Функция входит в Std   Функция преобразования строк из одной кодировки в другую.</div><div class="ttdef"><b>Definition:</b> string-cast.hpp:101</div></div>
+<div class="ttc" id="aa44580_html_a5792a05d441d816e9f29a8b9811fcb53"><div class="ttname"><a href="a44580.html#a5792a05d441d816e9f29a8b9811fcb53">alicorn::system::application::CurrentModule::GetAppRootPath</a></div><div class="ttdeci">static Path_t GetAppRootPath(void)</div><div class="ttdoc">Функция получения пути к корневой папке расположения программы.</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:70</div></div>
+<div class="ttc" id="aa44580_html_a90c79554ac0604cf36e3c85b06729c23"><div class="ttname"><a href="a44580.html#a90c79554ac0604cf36e3c85b06729c23">alicorn::system::application::CurrentModule::GetHandle</a></div><div class="ttdeci">static hModule_t GetHandle(void)</div><div class="ttdoc">Функция получения хэндла текущего модуля.</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:16</div></div>
+<div class="ttc" id="aa44580_html_ab3adbfd581bb0e54511d91534f3efaef"><div class="ttname"><a href="a44580.html#ab3adbfd581bb0e54511d91534f3efaef">alicorn::system::application::CurrentModule::GetName</a></div><div class="ttdeci">static String_t GetName(void)</div><div class="ttdoc">Функция получения имени текущего модуля.</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:35</div></div>
+<div class="ttc" id="aa44580_html_a4e5dbec8845c35a6965dc3477a2454f9"><div class="ttname"><a href="a44580.html#a4e5dbec8845c35a6965dc3477a2454f9">alicorn::system::application::CurrentModule::GetAppDataPath</a></div><div class="ttdeci">static Path_t GetAppDataPath(void)</div><div class="ttdoc">Функция получения пути к папке, содержащей рабочие данные программы.</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:47</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_e6ca52160bd83cd3ce75eeeb2b07a02a.html">Application</a></li><li class="navelem"><a class="el" href="dir_1cb7b5985cb17cb994701cafd1b90b1e.html">dll</a></li><li class="navelem"><b>object.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:31. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>
