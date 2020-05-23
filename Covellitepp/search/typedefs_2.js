@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frames_5ft',['Frames_t',['../a35039.html#ga226e5aa340ef9332df387020275af1e8',1,'basement::model::animation']]]
+  ['frames_5ft_592',['Frames_t',['../a41423.html#ga57c86892ac7323d5707a77baaee8878e',1,'basement::model::animation']]]
 ];

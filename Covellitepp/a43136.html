@@ -1,0 +1,144 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Manual</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.2.4 Revision: 2246 Platform: x64 Build: 22:57 23.05.2020</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a43136.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Manual </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2>Подключение фреймворка к решению </h2>
+<ul>
+<li>Установить свойство svn:externals с именем Externals и путем <div class="fragment"><div class="line">https:<span class="comment">//svn/svn/Prebuilt.no.backup/Solution/Properties/Utilities/Externals/Alicorn/Covellite/_Root</span></div>
+</div><!-- fragment --></li>
+<li>Подключить к страницам свойств решения файл Covellite.props из папки Externals/Covellite.</li>
+</ul>
+<h2>Создание базового проекта приложения </h2>
+<ul>
+<li>Создать проект сборки основного модуля программы (<a class="el" href="a43128.html#MainModuleWindowsUsingFrameworkAnchor">Windows</a>/ <a class="el" href="a43128.html#MainModuleAndroidUsingFrameworkAnchor">Android</a>).</li>
+</ul>
+<p>Создать <a class="el" href="a43128.html#MainApplicationClassUsingFrameworkAnchor">класс</a> программы.</p><ul>
+<li>Добавить рализациию функции установки <a class="el" href="a43128.html#SettingsUsingFrameworkAnchor">параметров</a> фреймворка по умолчанию.</li>
+<li><p class="startli">Добавить реализацию функции создания <a class="el" href="a43128.html#ReadFileDataUsingFrameworkAnchor">объекта виртуальной файловой системы</a>, который будет использоваться программой для чтения данных из файлов.</p>
+<p class="startli"><a class="el" href="a43128.html">Создание базового проекта приложения</a></p>
+</li>
+</ul>
+<h2>Создание кода панелей GUI </h2>
+<ul>
+<li>Создать .rcss и .rml файлы описания отдельных <a class="el" href="a43134.html#ScreenDescriptionUsingFrameworkAnchor">экранов программы</a>.</li>
+</ul>
+<p>Создать <a class="el" href="a43134.html#ScreenClassesUsingFrameworkAnchor">классы</a> отдельных экранов программы.</p><ul>
+<li><p class="startli">Создать <a class="el" href="a43134.html#MainWindowClassUsingFrameworkAnchor">класс</a> главного окна программы.</p>
+<p class="startli"><a class="el" href="a43134.html">Создание кода панелей GUI</a></p>
+</li>
+</ul>
+<h2>Отрисовка сцены из 2D объектов </h2>
+<p>Описание отрисовки в окне программы плоских объектов с использованием <a class="el" href="a43142.html">компонентной системы</a>.</p>
+<p><a class="el" href="a43130.html">Отрисовка 2D объектов</a></p>
+<h2>Отрисовка сцены из 3D объектов </h2>
+<p>Описание отрисовки 3D объектов в окне с использованием <a class="el" href="a43142.html">компонентной системы</a>.</p>
+<p><a class="el" href="a43132.html">Отрисовка 3D объектов</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">index</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Май 2020 22:58:24. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

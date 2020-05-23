@@ -1,26 +1,31 @@
+<!-- HTML header for doxygen 1.8.15-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.15"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Simple2DGame.hpp</title>
-<link href="tabs.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Simple2DGame.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -31,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.3 Revision: 2192 Platform: x64 Build: 16:21 28.10.2019</span>
+   &#160;<span id="projectnumber">Version: 2.2.4 Revision: 2246 Platform: x64 Build: 22:57 23.05.2020</span>
    </div>
    <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
   </td>
@@ -40,7 +45,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.18 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -69,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00887_source.html','');});
+$(document).ready(function(){initNavTree('a00887_source.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -92,22 +97,144 @@ $(document).ready(function(){initNavTree('a00887_source.html','');});
 <div class="title">Simple2DGame.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Covellite/Covellite.hpp&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Common.hpp&quot;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>events</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>Simple2DGame_t</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">enum</span> Id</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Rect = 0,</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Start,</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Finish,</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  };</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>{ Simple2DGame_t Simple2DGame; }</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace events</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>basement</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a36634.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="a36634.html">Simple2DGame</a> final :</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">public</span> <a class="code" href="a36330.html">Common</a></div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a36634.html#a6f2b39cad3a6389f0f67776f62ba5252">   46</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="a35678.html">Vertex_t</a> = <a class="code" href="a35678.html">::covellite::api::Vertex</a>;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a36634.html#a1eb08c6023edf6eeeb7041229f48b9ba">   48</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="a36634.html#a1eb08c6023edf6eeeb7041229f48b9ba">VertexData_t</a> = ::std::vector&lt;Vertex_t&gt;;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> Object_t = ::std::vector&lt;Component_t::ComponentPtr_t&gt;;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">using</span> <a class="code" href="a35982.html">Events_t</a> = <a class="code" href="a35982.html">::covellite::events::Events</a>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">using</span> Updater_t = ::std::function&lt;void(<span class="keywordtype">void</span>)&gt;;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">using</span> TimePoint_t = ::std::chrono::system_clock::time_point;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">class </span>Rect final</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">float</span> Left;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">float</span> Top;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> Right;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">float</span> Bottom;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> Render(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">class </span>GameUnit final</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">class </span>Info</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordtype">float</span> Position;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordtype">float</span> Size;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">float</span> SpeedFactor;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">inline</span> <span class="keywordtype">float</span> GetMin(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Position - Size / 2.0f; }</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">inline</span> <span class="keywordtype">float</span> GetMax(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Position + Size / 2.0f; }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span>);</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> IsIntersect(<span class="keyword">const</span> GameUnit &amp;) <span class="keyword">const</span>;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span>);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Info X, Y;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> Component_t::ComponentPtr_t m_pPosition;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    GameUnit(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  };</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a36634.html#aac083a9d2716045dfccd81d460cf7206">AddCommonComponents</a>(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a36634.html#ac3458bc8a4c0e4ac1a80fe943813f1be">AddCamera</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> AddBackground(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> AddClock(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> AddActors(<span class="keywordtype">void</span>);</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Object_t &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keyword">const</span> String_t &amp;);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Object_t &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Rect &amp;, <span class="keyword">const</span> Rect &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>,</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">const</span> String_t &amp;, <span class="keyword">const</span> Object_t &amp;);</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Rect &amp;, <span class="keyword">const</span> Rect &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>,</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">const</span> Object_t &amp;, <span class="keyword">const</span> Object_t &amp;);</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  Events_t m_Events;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">bool</span> m_IsTouch = <span class="keyword">false</span>;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">float</span> m_MouseX = 0.0f;</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">float</span> m_MouseY = 0.0f;</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_Width;</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_Height;</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_GameFieldSize;</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  GameUnit                  m_UserUnit;</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  ::std::vector&lt;GameUnit&gt;   m_Enemies;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">float</span>                     m_EnemiesSpeed = 0.1f;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  Updater_t                 m_ClockUpdater;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  ::std::vector&lt;Updater_t&gt;  m_Updaters;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  TimePoint_t               m_LastTime;</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  TimePoint_t               m_BeginRenderFrameTime;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  TimePoint_t               m_BeginGameTime;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  Simple2DGame(<span class="keyword">const</span> Events_t &amp;, <span class="keyword">const</span> RendersPtr_t &amp;, <span class="keyword">const</span> Rect &amp;);</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  ~Simple2DGame(<span class="keywordtype">void</span>) noexcept;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace basement</span></div><div class="ttc" id="a36634_html_ac3458bc8a4c0e4ac1a80fe943813f1be"><div class="ttname"><a href="a36634.html#ac3458bc8a4c0e4ac1a80fe943813f1be">basement::Simple2DGame::AddCamera</a></div><div class="ttdeci">void AddCamera(float, float)</div><div class="ttdef"><b>Definition:</b> Simple2DGame.cpp:189</div></div>
-<div class="ttc" id="a36634_html"><div class="ttname"><a href="a36634.html">basement::Simple2DGame</a></div><div class="ttdoc">Класс входит в проект Example   Класс отрисовки простой 2D игры для слоя layers::Simple2DGame.</div><div class="ttdef"><b>Definition:</b> Simple2DGame.hpp:42</div></div>
-<div class="ttc" id="a35678_html"><div class="ttname"><a href="a35678.html">covellite::api::Vertex</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс формата вертексного буфера.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:67</div></div>
-<div class="ttc" id="a36634_html_aac083a9d2716045dfccd81d460cf7206"><div class="ttname"><a href="a36634.html#aac083a9d2716045dfccd81d460cf7206">basement::Simple2DGame::AddCommonComponents</a></div><div class="ttdeci">void AddCommonComponents(void)</div><div class="ttdef"><b>Definition:</b> Simple2DGame.cpp:142</div></div>
-<div class="ttc" id="a36634_html_a1eb08c6023edf6eeeb7041229f48b9ba"><div class="ttname"><a href="a36634.html#a1eb08c6023edf6eeeb7041229f48b9ba">basement::Simple2DGame::VertexData_t</a></div><div class="ttdeci">::std::vector&lt; Vertex_t &gt; VertexData_t</div><div class="ttdoc">[Vertex format]</div><div class="ttdef"><b>Definition:</b> Simple2DGame.hpp:48</div></div>
-<div class="ttc" id="a36330_html"><div class="ttname"><a href="a36330.html">basement::Common</a></div><div class="ttdoc">Класс входит в проект Example   Класс общей логики отрисовки 3D сцены.</div><div class="ttdef"><b>Definition:</b> Common.hpp:27</div></div>
-<div class="ttc" id="a35982_html"><div class="ttname"><a href="a35982.html">covellite::events::Events</a></div><div class="ttdoc">Класс входит в проект Covellite.Events   Класс для работы с событиями фреймворка.</div><div class="ttdef"><b>Definition:</b> Events.hpp:35</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;Covellite/Covellite.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Common.hpp&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>events</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span>Simple2DGame_t</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">enum</span> Id</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    Rect = 0,</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Start,</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    Finish,</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  };</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>{ Simple2DGame_t Simple2DGame; }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;} <span class="comment">// namespace events</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span><a class="code" href="a41478.html">basement</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a42884.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42884.html">Simple2DGame</a> final :</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">public</span> <a class="code" href="a42576.html">Common</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="a42884.html#a6f2b39cad3a6389f0f67776f62ba5252">   46</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="a41928.html">Vertex_t</a> = <a class="code" href="a41928.html">::covellite::api::Vertex</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a42884.html#a1eb08c6023edf6eeeb7041229f48b9ba">   48</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="a42884.html#a1eb08c6023edf6eeeb7041229f48b9ba">VertexData_t</a> = ::std::vector&lt;Vertex_t&gt;;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">using</span> Object_t = ::std::vector&lt;Component_t::ComponentPtr_t&gt;;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">using</span> <a class="code" href="a42228.html">Events_t</a> = <a class="code" href="a42228.html">::covellite::events::Events</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">using</span> Updater_t = ::std::function&lt;void(<span class="keywordtype">void</span>)&gt;;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">using</span> TimePoint_t = ::std::chrono::system_clock::time_point;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">class </span>Rect final</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">float</span> Left;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">float</span> Top;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">float</span> Right;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">float</span> Bottom;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> Render(<span class="keywordtype">void</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">class </span>GameUnit final</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">class </span>Info</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="keywordtype">float</span> Position;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="keywordtype">float</span> Size;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <span class="keywordtype">float</span> SpeedFactor;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keyword">inline</span> <span class="keywordtype">float</span> GetMin(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Position - Size / 2.0f; }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keyword">inline</span> <span class="keywordtype">float</span> GetMax(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> Position + Size / 2.0f; }</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> IsIntersect(<span class="keyword">const</span> GameUnit &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> Update(<span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    Info X, Y;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> Component_t::ComponentPtr_t m_pPosition;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    GameUnit(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  };</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a42884.html#aac083a9d2716045dfccd81d460cf7206">AddCommonComponents</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a42884.html#ac3458bc8a4c0e4ac1a80fe943813f1be">AddCamera</a>(<span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordtype">void</span> AddBackground(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordtype">void</span> AddClock(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordtype">void</span> AddActors(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Object_t &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Object_t &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Rect &amp;, <span class="keyword">const</span> Rect &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">const</span> String_t &amp;, <span class="keyword">const</span> Object_t &amp;);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  Id BuildRectangle(<span class="keyword">const</span> Rect &amp;, <span class="keyword">const</span> Rect &amp;, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>, <span class="keywordtype">float</span>,</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">const</span> Object_t &amp;, <span class="keyword">const</span> Object_t &amp;);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  Events_t m_Events;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <span class="keywordtype">bool</span> m_IsTouch = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordtype">float</span> m_MouseX = 0.0f;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">float</span> m_MouseY = 0.0f;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_Width;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_Height;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keyword">const</span> <span class="keywordtype">float</span> m_GameFieldSize;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  GameUnit                  m_UserUnit;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  ::std::vector&lt;GameUnit&gt;   m_Enemies;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  <span class="keywordtype">float</span>                     m_EnemiesSpeed = 0.1f;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;  Updater_t                 m_ClockUpdater;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;  ::std::vector&lt;Updater_t&gt;  m_Updaters;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  TimePoint_t               m_LastTime;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  TimePoint_t               m_BeginRenderFrameTime;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  TimePoint_t               m_BeginGameTime;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  Simple2DGame(<span class="keyword">const</span> Events_t &amp;, <span class="keyword">const</span> RendersPtr_t &amp;, <span class="keyword">const</span> Rect &amp;);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  ~Simple2DGame(<span class="keywordtype">void</span>) noexcept;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;} <span class="comment">// namespace basement</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa42576_html"><div class="ttname"><a href="a42576.html">basement::Common</a></div><div class="ttdoc">Класс входит в проект Example   Класс общей логики отрисовки 3D сцены.</div><div class="ttdef"><b>Definition:</b> Common.hpp:29</div></div>
+<div class="ttc" id="aa41560_html_a76ccfe83ee721560c67afed1eea60ddb"><div class="ttname"><a href="a41560.html#a76ccfe83ee721560c67afed1eea60ddb">covellite::api::Component::Make</a></div><div class="ttdeci">static ComponentPtr_t Make(const SourceParams_t &amp;)</div><div class="ttdoc">Функция создания объектов компонентов.</div><div class="ttdef"><b>Definition:</b> Component.inl:29</div></div>
+<div class="ttc" id="aa42884_html"><div class="ttname"><a href="a42884.html">basement::Simple2DGame</a></div><div class="ttdoc">Класс входит в проект Example   Класс отрисовки простой 2D игры для слоя layers::Simple2DGame.</div><div class="ttdef"><b>Definition:</b> Simple2DGame.hpp:44</div></div>
+<div class="ttc" id="aa42884_html_a1eb08c6023edf6eeeb7041229f48b9ba"><div class="ttname"><a href="a42884.html#a1eb08c6023edf6eeeb7041229f48b9ba">basement::Simple2DGame::VertexData_t</a></div><div class="ttdeci">::std::vector&lt; Vertex_t &gt; VertexData_t</div><div class="ttdoc">[Vertex format]</div><div class="ttdef"><b>Definition:</b> Simple2DGame.hpp:48</div></div>
+<div class="ttc" id="aa42884_html_aac083a9d2716045dfccd81d460cf7206"><div class="ttname"><a href="a42884.html#aac083a9d2716045dfccd81d460cf7206">basement::Simple2DGame::AddCommonComponents</a></div><div class="ttdeci">void AddCommonComponents(void)</div><div class="ttdef"><b>Definition:</b> Simple2DGame.cpp:142</div></div>
+<div class="ttc" id="aa41478_html"><div class="ttname"><a href="a41478.html">basement</a></div><div class="ttdef"><b>Definition:</b> Common.hpp:10</div></div>
+<div class="ttc" id="aa42576_html_a5858d7d3b75e7af082e6ade82f118f00"><div class="ttname"><a href="a42576.html#a5858d7d3b75e7af082e6ade82f118f00">basement::Common::LoadTexture</a></div><div class="ttdeci">void LoadTexture(const Path_t &amp;, const String_t &amp;, const String_t &amp;=uT(&quot;albedo&quot;))</div><div class="ttdef"><b>Definition:</b> Common.cpp:53</div></div>
+<div class="ttc" id="aa41928_html"><div class="ttname"><a href="a41928.html">covellite::api::Vertex</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс формата вертексного буфера.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:68</div></div>
+<div class="ttc" id="aa42228_html"><div class="ttname"><a href="a42228.html">covellite::events::Events</a></div><div class="ttdoc">Класс входит в проект Covellite.Events   Класс для работы с событиями фреймворка.</div><div class="ttdef"><b>Definition:</b> Events.hpp:36</div></div>
+<div class="ttc" id="aa42884_html_ac3458bc8a4c0e4ac1a80fe943813f1be"><div class="ttname"><a href="a42884.html#ac3458bc8a4c0e4ac1a80fe943813f1be">basement::Simple2DGame::AddCamera</a></div><div class="ttdeci">void AddCamera(float, float)</div><div class="ttdef"><b>Definition:</b> Simple2DGame.cpp:189</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><b>Simple2DGame.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Пн 28 Окт 2019 16:22:10. Создано системой
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Май 2020 22:58:23. Создано системой
     <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.15 </li>
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
 </div>
 </body>

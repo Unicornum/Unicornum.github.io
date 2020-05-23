@@ -1,0 +1,185 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Исходный файл Solution/Solution/Covellite.Api/Covellite.Api/Window.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.2.4 Revision: 2246 Platform: x64 Build: 22:57 23.05.2020</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a43699_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Window.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;Covellite/Events/Events.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;Covellite/App/IWindow.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;Covellite/Api/IWindow.hpp&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>covellite</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>os { <span class="keyword">class </span>IWindow; }</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>api</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>renderer { <span class="keyword">class </span>IGraphicApi; }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span>renderer { <span class="keyword">class </span>SettingsData; }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a41940.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="a41940.html">Window</a> final :</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keyword">public</span> <a class="code" href="a42112.html">::covellite::app::IWindow</a>,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">public</span> <a class="code" href="a41632.html">::covellite::api::IWindow</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">using</span> String_t = ::alicorn::extension::std::String;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keyword">using</span> <a class="code" href="a42552.html">WindowOs_t</a> = <a class="code" href="a42552.html">::covellite::os::IWindow</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">using</span> IGraphicApiPtr_t = </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ::alicorn::extension::std::unique_ptr&lt;renderer::IGraphicApi&gt;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="comment">// Интерфейс events::IEvents:</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">operator</span> <a class="code" href="a42228.html">Events_t</a> (<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="comment">// Интерфейс api::IWindow:</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  Rect_t <a class="code" href="a41940.html#a3b65e691fe18319b891b4b45864cc61a">GetClientRect</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  RendersPtr_t <a class="code" href="a41940.html#aace92aee97f30e08c8a36e390248ae7f">GetRenders</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">static</span> IGraphicApiPtr_t MakeImpl(<span class="keyword">const</span> <a class="code" href="a42552.html">WindowOs_t</a> &amp;);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> IGraphicApiPtr_t MakeImpl(<span class="keyword">const</span> String_t &amp;, <span class="keyword">const</span> <a class="code" href="a41820.html">renderer::SettingsData</a> &amp;);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  static ::std::vector&lt;String_t&gt; GetRenderers(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">const</span> <a class="code" href="a42552.html">WindowOs_t</a> &amp;      m_WindowOs;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="a42228.html">Events_t</a>                m_Events;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">const</span> IGraphicApiPtr_t  m_pImpl;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a41940.html">Window</a>(<span class="keyword">const</span> <a class="code" href="a42552.html">WindowOs_t</a> &amp;);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  ~<a class="code" href="a41940.html">Window</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// namespace api</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <span class="comment">// namespace covellite</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa41632_html"><div class="ttname"><a href="a41632.html">covellite::api::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Интерфейсный класс для всех окон, реализующих различные графиче...</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:36</div></div>
+<div class="ttc" id="aa42560_html_a99779b90cd761a7c9f61ddb908d7620c"><div class="ttname"><a href="a42560.html#a99779b90cd761a7c9f61ddb908d7620c">covellite::os::Window::GetClientRect</a></div><div class="ttdeci">Rect GetClientRect(void) const override</div><div class="ttdoc">Функция получения размеров клиентской области окна.</div><div class="ttdef"><b>Definition:</b> Window.android.cpp:45</div></div>
+<div class="ttc" id="aa42560_html_a9c3e9d8a41e49b82cac75020f89e4e05"><div class="ttname"><a href="a42560.html#a9c3e9d8a41e49b82cac75020f89e4e05">covellite::os::Window::GetHandle</a></div><div class="ttdeci">Any_t GetHandle(void) const override</div><div class="ttdoc">Функция получения хэндла окна для конкретной операционной системы.</div><div class="ttdef"><b>Definition:</b> Window.cpp:17</div></div>
+<div class="ttc" id="aa42112_html"><div class="ttname"><a href="a42112.html">covellite::app::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.App   Интерфейсный класс для классов окон фреймворка.</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:32</div></div>
+<div class="ttc" id="aa41940_html"><div class="ttname"><a href="a41940.html">covellite::api::Window</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс окна-фасада для скрытия реализаций конкретных графических...</div><div class="ttdef"><b>Definition:</b> Window.hpp:43</div></div>
+<div class="ttc" id="aa42560_html_aba3176a8d0fa2bdbec5b38b37d7a59a8"><div class="ttname"><a href="a42560.html#aba3176a8d0fa2bdbec5b38b37d7a59a8">covellite::os::Window::GetConfiguration</a></div><div class="ttdeci">const Configuration_t &amp; GetConfiguration(void) const override</div><div class="ttdoc">Функция получения объекта доступа к параметрам системы.</div><div class="ttdef"><b>Definition:</b> Window.cpp:26</div></div>
+<div class="ttc" id="aa42064_html"><div class="ttname"><a href="a42064.html">android_app</a></div><div class="ttdef"><b>Definition:</b> android_native_app_glue.h:111</div></div>
+<div class="ttc" id="aa41820_html"><div class="ttname"><a href="a41820.html">covellite::api::renderer::SettingsData</a></div><div class="ttdoc">Класс для передачи значений настроек программы реализации рендера.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:62</div></div>
+<div class="ttc" id="aa41820_html_a384dd28f6c48dee4d4a26316cae59b36"><div class="ttname"><a href="a41820.html#a384dd28f6c48dee4d4a26316cae59b36">covellite::api::renderer::SettingsData::IsFullScreen</a></div><div class="ttdeci">bool IsFullScreen</div><div class="ttdoc">Признак работы программы в полноэкранном режиме.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:66</div></div>
+<div class="ttc" id="aa41820_html_a86d1ada0513d841b93d10aa789ea29f1"><div class="ttname"><a href="a41820.html#a86d1ada0513d841b93d10aa789ea29f1">covellite::api::renderer::SettingsData::Top</a></div><div class="ttdeci">int Top</div><div class="ttdoc">Смещение верхнего края клиентской части окна.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:65</div></div>
+<div class="ttc" id="aa42392_html"><div class="ttname"><a href="a42392.html">covellite::gui::Renderer</a></div><div class="ttdoc">Класс входит в проект Covellite.Gui   Класс обобщенной логики рендеринга GUI.</div><div class="ttdef"><b>Definition:</b> Renderer.hpp:44</div></div>
+<div class="ttc" id="aa42228_html"><div class="ttname"><a href="a42228.html">covellite::events::Events</a></div><div class="ttdoc">Класс входит в проект Covellite.Events   Класс для работы с событиями фреймворка.</div><div class="ttdef"><b>Definition:</b> Events.hpp:36</div></div>
+<div class="ttc" id="aa42528_html"><div class="ttname"><a href="a42528.html">covellite::os::Configuration</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс доступа к текущим настройкам системы.</div><div class="ttdef"><b>Definition:</b> Configuration.hpp:29</div></div>
+<div class="ttc" id="aa42408_html"><div class="ttname"><a href="a42408.html">covellite::gui::StringTranslator</a></div><div class="ttdoc">Класс входит в проект Covellite.Gui   Класс преобразователя строк.</div><div class="ttdef"><b>Definition:</b> StringTranslator.hpp:34</div></div>
+<div class="ttc" id="aa41820_html_a987e90b45408ac417db583e166b56316"><div class="ttname"><a href="a41820.html#a987e90b45408ac417db583e166b56316">covellite::api::renderer::SettingsData::Handle</a></div><div class="ttdeci">Any_t Handle</div><div class="ttdoc">Хэнд окна операционной системы.</div><div class="ttdef"><b>Definition:</b> IGraphicApi.hpp:64</div></div>
+<div class="ttc" id="aa41940_html_a3b65e691fe18319b891b4b45864cc61a"><div class="ttname"><a href="a41940.html#a3b65e691fe18319b891b4b45864cc61a">covellite::api::Window::GetClientRect</a></div><div class="ttdeci">Rect_t GetClientRect(void) const override</div><div class="ttdoc">Функция получения размеров клиентской области окна.</div><div class="ttdef"><b>Definition:</b> Window.cpp:66</div></div>
+<div class="ttc" id="aa41940_html_aace92aee97f30e08c8a36e390248ae7f"><div class="ttname"><a href="a41940.html#aace92aee97f30e08c8a36e390248ae7f">covellite::api::Window::GetRenders</a></div><div class="ttdeci">RendersPtr_t GetRenders(void) const override</div><div class="ttdoc">Функция получения объекта для созданий рендеров компонентов объектов 3D сцены.</div><div class="ttdef"><b>Definition:</b> Window.cpp:83</div></div>
+<div class="ttc" id="aa42552_html"><div class="ttname"><a href="a42552.html">covellite::os::IWindow</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Интерфейсный класс окна операционной системы программы.</div><div class="ttdef"><b>Definition:</b> IWindow.hpp:32</div></div>
+<div class="ttc" id="aa41419_html_ga7c927e0343c1152130ce370060442f2e"><div class="ttname"><a href="a41419.html#ga7c927e0343c1152130ce370060442f2e">covellite::events::Key_t::Code</a></div><div class="ttdeci">int32_t Code</div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс параметра для передачи сигналу координат курсора.</div><div class="ttdef"><b>Definition:</b> Events.hpp:159</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_9982cfe164c7f3d9c35c78ca5ef6afd2.html">Covellite.Api</a></li><li class="navelem"><a class="el" href="dir_ec5e2b26872af5b36273b6dc387812f5.html">Covellite.Api</a></li><li class="navelem"><b>Window.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Май 2020 22:58:20. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>
