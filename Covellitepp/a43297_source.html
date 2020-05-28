@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Исходный файл Solution/Solution/Covellite.Os/Covellite.Os/Events.hpp</title>
+    <title>Covellite++: Исходный файл Solution/Solution/Covellite.Api/(Documentation)/Shaders.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,9 +36,9 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.4 Revision: 2246 Platform: x64 Build: 22:57 23.05.2020</span>
+   &#160;<span id="projectnumber">Version: 2.2.5 Revision: 2280 Platform: x64 Build: 23:17 28.05.2020</span>
    </div>
-   <div id="projectbrief">Кроссплатформенный (Windows/Android) GUI фреймворк для разработки приложений на С++</div>
+   <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
  </tr>
  </tbody>
@@ -94,108 +94,17 @@ $(document).ready(function(){initNavTree('a43297_source.html',''); initResizable
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Events.hpp</div>  </div>
+<div class="title">Shaders.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>covellite</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>events</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="a42536.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42536.html">Window_t</a> final</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="a41418.html#ga7c051e93e1837c87e8b08334edb4a3cc">   35</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="a41418.html#ga7c051e93e1837c87e8b08334edb4a3cc">Id</a></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a41418.html#gga7c051e93e1837c87e8b08334edb4a3cca508c416ea55417cfbce2100b846a5fcc">Activate</a> = 0, </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a41418.html#gga7c051e93e1837c87e8b08334edb4a3cca3be42db01da55dc7857dde73f70c3dac">Deactivate</a>,   </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a41418.html#gga7c051e93e1837c87e8b08334edb4a3ccac8b7b1ca008fecbce8b480bec006264c">Resize</a>,       </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">namespace </span>{ Window_t Window; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="a42540.html">   74</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42540.html">Cursor_t</a> final</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="a41418.html#ga38817e2b66efd8c334c051014139c298">   82</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="a41418.html#ga38817e2b66efd8c334c051014139c298">Id</a></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="a41418.html#gga38817e2b66efd8c334c051014139c298a423c3c877625c2f3940876eed13ffa90">Motion</a> = 0, </div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="a41418.html#gga38817e2b66efd8c334c051014139c298a423c3c877625c2f3940876eed13ffa90">   85</a></span>&#160;    <a class="code" href="a41418.html#gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c">Touch</a>,      </div>
-<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="a41418.html#gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c">   87</a></span>&#160;    <a class="code" href="a41418.html#gga38817e2b66efd8c334c051014139c298a7f9f92e40a70f03ac92311ee33580d98">Release</a>,    </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  };</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="a42544.html">   98</a></span>&#160;  <span class="keyword">class </span><a class="code" href="a42544.html">Position</a> final</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> int32_t X;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">const</span> int32_t Y;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="a42544.html">Position</a>(int32_t _X, int32_t _Y) : X(_X), Y(_Y) {}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  };</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">namespace </span>{ <a class="code" href="a42540.html">Cursor_t</a> Cursor; }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="a42548.html">  126</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42548.html">Key_t</a> final</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="a41418.html#ga56e5f58c24b4bd22a7d463dffa027f0b">  134</a></span>&#160;  <span class="keyword">enum</span> <a class="code" href="a41418.html#ga56e5f58c24b4bd22a7d463dffa027f0b">Id</a></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba693f1a56c4530f283af42c5718246281">Pressed</a> = 0,  </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0bafcd6175e85ceac72d7550c6bd3b41e16">Down</a>,         </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba140e725f669fa70b7fba091aa89e1ca6">Up</a>,           </div>
-<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba140e725f669fa70b7fba091aa89e1ca6">  144</a></span>&#160;    <a class="code" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba7f0189061cb586a816352a64f294528d">Menu</a>,         </div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba7f0189061cb586a816352a64f294528d">  146</a></span>&#160;    <a class="code" href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba3170ec59801cac220ab377b9d8c3b70e">Back</a>,         </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  };</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="a41419.html#ga7c927e0343c1152130ce370060442f2e">  159</a></span>&#160;  <span class="keyword">using</span> <a class="code" href="a41419.html#ga7c927e0343c1152130ce370060442f2e">Code</a> = int32_t;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;  <span class="comment">// 32 - это код, который генерирует java код при нажатии кнопки на </span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="comment">// клавиатуре (понадобилось из-за того, что в нативном коде невозможно </span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;  <span class="comment">// получить код нажатой клавиши за пределами ASCII кодировки).</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keyword">static</span> <span class="keyword">const</span> int32_t APP_CMD_KEY_PRESSED = 32;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;};</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">namespace </span>{ <a class="code" href="a42548.html">Key_t</a> Key; }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;} <span class="comment">// namespace events</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;} <span class="comment">// namespace covellite</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa41418_html_gga56e5f58c24b4bd22a7d463dffa027f0bafcd6175e85ceac72d7550c6bd3b41e16"><div class="ttname"><a href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0bafcd6175e85ceac72d7550c6bd3b41e16">covellite::events::Key_t::Down</a></div><div class="ttdeci">@ Down</div><div class="ttdef"><b>Definition:</b> Events.hpp:139</div></div>
-<div class="ttc" id="aa41418_html_gga56e5f58c24b4bd22a7d463dffa027f0ba693f1a56c4530f283af42c5718246281"><div class="ttname"><a href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba693f1a56c4530f283af42c5718246281">covellite::events::Key_t::Pressed</a></div><div class="ttdeci">@ Pressed</div><div class="ttdef"><b>Definition:</b> Events.hpp:136</div></div>
-<div class="ttc" id="aa41418_html_gga56e5f58c24b4bd22a7d463dffa027f0ba3170ec59801cac220ab377b9d8c3b70e"><div class="ttname"><a href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba3170ec59801cac220ab377b9d8c3b70e">covellite::events::Key_t::Back</a></div><div class="ttdeci">@ Back</div><div class="ttdef"><b>Definition:</b> Events.hpp:147</div></div>
-<div class="ttc" id="aa42540_html"><div class="ttname"><a href="a42540.html">covellite::events::Cursor_t</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс событий курсора.</div><div class="ttdef"><b>Definition:</b> Events.hpp:75</div></div>
-<div class="ttc" id="aa41418_html_gga7c051e93e1837c87e8b08334edb4a3cca3be42db01da55dc7857dde73f70c3dac"><div class="ttname"><a href="a41418.html#gga7c051e93e1837c87e8b08334edb4a3cca3be42db01da55dc7857dde73f70c3dac">covellite::events::Window_t::Deactivate</a></div><div class="ttdeci">@ Deactivate</div><div class="ttdef"><b>Definition:</b> Events.hpp:40</div></div>
-<div class="ttc" id="aa41418_html_gga56e5f58c24b4bd22a7d463dffa027f0ba140e725f669fa70b7fba091aa89e1ca6"><div class="ttname"><a href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba140e725f669fa70b7fba091aa89e1ca6">covellite::events::Key_t::Up</a></div><div class="ttdeci">@ Up</div><div class="ttdef"><b>Definition:</b> Events.hpp:143</div></div>
-<div class="ttc" id="aa41418_html_ga56e5f58c24b4bd22a7d463dffa027f0b"><div class="ttname"><a href="a41418.html#ga56e5f58c24b4bd22a7d463dffa027f0b">covellite::events::Key_t::Id</a></div><div class="ttdeci">Id</div><div class="ttdoc">Идентификаторы событий.</div><div class="ttdef"><b>Definition:</b> Events.hpp:135</div></div>
-<div class="ttc" id="aa41418_html_gga38817e2b66efd8c334c051014139c298a423c3c877625c2f3940876eed13ffa90"><div class="ttname"><a href="a41418.html#gga38817e2b66efd8c334c051014139c298a423c3c877625c2f3940876eed13ffa90">covellite::events::Cursor_t::Motion</a></div><div class="ttdeci">@ Motion</div><div class="ttdef"><b>Definition:</b> Events.hpp:84</div></div>
-<div class="ttc" id="aa42548_html"><div class="ttname"><a href="a42548.html">covellite::events::Key_t</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс событий кнопок клавиатуры.</div><div class="ttdef"><b>Definition:</b> Events.hpp:127</div></div>
-<div class="ttc" id="aa42536_html"><div class="ttname"><a href="a42536.html">covellite::events::Window_t</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс событий окна операционной системы.</div><div class="ttdef"><b>Definition:</b> Events.hpp:28</div></div>
-<div class="ttc" id="aa41418_html_gga56e5f58c24b4bd22a7d463dffa027f0ba7f0189061cb586a816352a64f294528d"><div class="ttname"><a href="a41418.html#gga56e5f58c24b4bd22a7d463dffa027f0ba7f0189061cb586a816352a64f294528d">covellite::events::Key_t::Menu</a></div><div class="ttdeci">@ Menu</div><div class="ttdef"><b>Definition:</b> Events.hpp:145</div></div>
-<div class="ttc" id="aa42544_html"><div class="ttname"><a href="a42544.html">covellite::events::Cursor_t::Position</a></div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс параметра для передачи сигналу координат курсора.</div><div class="ttdef"><b>Definition:</b> Events.hpp:99</div></div>
-<div class="ttc" id="aa41418_html_gga38817e2b66efd8c334c051014139c298a7f9f92e40a70f03ac92311ee33580d98"><div class="ttname"><a href="a41418.html#gga38817e2b66efd8c334c051014139c298a7f9f92e40a70f03ac92311ee33580d98">covellite::events::Cursor_t::Release</a></div><div class="ttdeci">@ Release</div><div class="ttdoc">Отпускание курсора (без параметров).</div><div class="ttdef"><b>Definition:</b> Events.hpp:88</div></div>
-<div class="ttc" id="aa41418_html_gga7c051e93e1837c87e8b08334edb4a3cca508c416ea55417cfbce2100b846a5fcc"><div class="ttname"><a href="a41418.html#gga7c051e93e1837c87e8b08334edb4a3cca508c416ea55417cfbce2100b846a5fcc">covellite::events::Window_t::Activate</a></div><div class="ttdeci">@ Activate</div><div class="ttdef"><b>Definition:</b> Events.hpp:37</div></div>
-<div class="ttc" id="aa41418_html_gga7c051e93e1837c87e8b08334edb4a3ccac8b7b1ca008fecbce8b480bec006264c"><div class="ttname"><a href="a41418.html#gga7c051e93e1837c87e8b08334edb4a3ccac8b7b1ca008fecbce8b480bec006264c">covellite::events::Window_t::Resize</a></div><div class="ttdeci">@ Resize</div><div class="ttdef"><b>Definition:</b> Events.hpp:43</div></div>
-<div class="ttc" id="aa41418_html_ga7c051e93e1837c87e8b08334edb4a3cc"><div class="ttname"><a href="a41418.html#ga7c051e93e1837c87e8b08334edb4a3cc">covellite::events::Window_t::Id</a></div><div class="ttdeci">Id</div><div class="ttdoc">Идентификаторы событий.</div><div class="ttdef"><b>Definition:</b> Events.hpp:36</div></div>
-<div class="ttc" id="aa41419_html_ga7c927e0343c1152130ce370060442f2e"><div class="ttname"><a href="a41419.html#ga7c927e0343c1152130ce370060442f2e">covellite::events::Key_t::Code</a></div><div class="ttdeci">int32_t Code</div><div class="ttdoc">Класс входит в проект Covellite.Os   Класс параметра для передачи сигналу координат курсора.</div><div class="ttdef"><b>Definition:</b> Events.hpp:159</div></div>
-<div class="ttc" id="aa41418_html_ga38817e2b66efd8c334c051014139c298"><div class="ttname"><a href="a41418.html#ga38817e2b66efd8c334c051014139c298">covellite::events::Cursor_t::Id</a></div><div class="ttdeci">Id</div><div class="ttdoc">Идентификаторы событий.</div><div class="ttdef"><b>Definition:</b> Events.hpp:83</div></div>
-<div class="ttc" id="aa41418_html_gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c"><div class="ttname"><a href="a41418.html#gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c">covellite::events::Cursor_t::Touch</a></div><div class="ttdeci">@ Touch</div><div class="ttdef"><b>Definition:</b> Events.hpp:86</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_95cdc8634ce979e0805410c7ca0d7072.html">Covellite.Os</a></li><li class="navelem"><a class="el" href="dir_464b9f4733011fc3a7e73711b7e21a3e.html">Covellite.Os</a></li><li class="navelem"><b>Events.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 23 Май 2020 22:58:20. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_9982cfe164c7f3d9c35c78ca5ef6afd2.html">Covellite.Api</a></li><li class="navelem"><a class="el" href="dir_949fe2629834587da2d66cb75d31a351.html">(Documentation)</a></li><li class="navelem"><b>Shaders.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Чт 28 Май 2020 23:17:56. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

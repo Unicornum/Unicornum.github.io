@@ -1,0 +1,209 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/IGameObject.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.2.5 Revision: 2280 Platform: x64 Build: 23:17 28.05.2020</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00812_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">IGameObject.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Defines.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span><a class="code" href="a41512.html">basement</a></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>model</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="a42786.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42786.html">IGameObject</a></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keyword">using</span> Objects_t = ::std::vector&lt;Object_t&gt;;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">class </span>Support final</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">enum</span> Value</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;      <a class="code" href="a42874.html">Skybox</a> = 0, <span class="comment">// Перед камерой основной сцены!</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;      <a class="code" href="a42682.html">Camera</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      Invalid,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">class </span>Landscape final</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">enum</span> Value</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="comment">// Объекты поверхности, не содержащие прозрачных пикселей</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      None = Support::Invalid, <span class="comment">// После камеры!</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;      Sand,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      Rock,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      Well,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="comment">// Объекты поверхности, содержащие прозрачные пиксели</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      Grass,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      Bush,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      Tree,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      Invalid,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">class </span>Extra final</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">enum</span> Value</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="a42890.html">Water</a> = Landscape::Invalid, <span class="comment">// Вода - после объектов поверхности!</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="a42822.html">Loader</a>,  <span class="comment">// Должен рендерится последним, т.к. его updater удаляет</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;               <span class="comment">// объекты, которые еще находятся в списке рендеринга.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      Invalid,</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  };</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">class </span>Another final</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">enum</span> Value</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <a class="code" href="a42618.html">Animated</a> = Extra::Invalid,</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      <a class="code" href="a42830.html">Particles</a>,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <a class="code" href="a42854.html">Shadows</a>,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      Invalid,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  };</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="a42786.html#ad50680139cacc8f3d9f7c7c5d547bbfb">   95</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">size_t</span> <a class="code" href="a42786.html#ad50680139cacc8f3d9f7c7c5d547bbfb">GetType</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="a42786.html#a5a04a2465abfb66dec472c4933a48adf">  101</a></span>&#160;  <span class="keyword">virtual</span> Objects_t <a class="code" href="a42786.html#a5a04a2465abfb66dec472c4933a48adf">GetObject</a>(<span class="keyword">const</span> Any_t &amp; = {}) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="a42786.html">IGameObject</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;} <span class="comment">// namespace model</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;} <span class="comment">// namespace basement</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa42890_html"><div class="ttname"><a href="a42890.html">basement::model::Water</a></div><div class="ttdoc">Класс входит в проект Example   Класс объекта отрисовки воды.</div><div class="ttdef"><b>Definition:</b> Water.hpp:28</div></div>
+<div class="ttc" id="aa41512_html"><div class="ttname"><a href="a41512.html">basement</a></div><div class="ttdef"><b>Definition:</b> Common.hpp:10</div></div>
+<div class="ttc" id="aa42682_html"><div class="ttname"><a href="a42682.html">basement::model::Camera</a></div><div class="ttdoc">Класс входит в проект Example   Класс главной камеры сцены.</div><div class="ttdef"><b>Definition:</b> Camera.hpp:28</div></div>
+<div class="ttc" id="aa42786_html_ad50680139cacc8f3d9f7c7c5d547bbfb"><div class="ttname"><a href="a42786.html#ad50680139cacc8f3d9f7c7c5d547bbfb">basement::model::IGameObject::GetType</a></div><div class="ttdeci">virtual size_t GetType(void) const =0</div><div class="ttdoc">Функция получения типа игрового объекта.</div></div>
+<div class="ttc" id="aa42786_html"><div class="ttname"><a href="a42786.html">basement::model::IGameObject</a></div><div class="ttdoc">Класс входит в проект Example   Интерфейсный класс игрового объекта.</div><div class="ttdef"><b>Definition:</b> IGameObject.hpp:27</div></div>
+<div class="ttc" id="aa42874_html"><div class="ttname"><a href="a42874.html">basement::model::Skybox</a></div><div class="ttdoc">Класс входит в проект Example   Класс скайбокса.</div><div class="ttdef"><b>Definition:</b> Skybox.hpp:28</div></div>
+<div class="ttc" id="aa42830_html"><div class="ttname"><a href="a42830.html">basement::model::Particles</a></div><div class="ttdoc">Класс входит в проект Example   Класс системы частиц.</div><div class="ttdef"><b>Definition:</b> Particles.hpp:44</div></div>
+<div class="ttc" id="aa42822_html"><div class="ttname"><a href="a42822.html">basement::model::Loader</a></div><div class="ttdoc">Класс входит в проект Example   Класс загрузчика сцены.</div><div class="ttdef"><b>Definition:</b> Loader.hpp:28</div></div>
+<div class="ttc" id="aa42854_html"><div class="ttname"><a href="a42854.html">basement::model::Shadows</a></div><div class="ttdoc">Класс входит в проект Example   Класс рендеринга сцены с тенями.</div><div class="ttdef"><b>Definition:</b> Shadows.hpp:33</div></div>
+<div class="ttc" id="aa42786_html_a5a04a2465abfb66dec472c4933a48adf"><div class="ttname"><a href="a42786.html#a5a04a2465abfb66dec472c4933a48adf">basement::model::IGameObject::GetObject</a></div><div class="ttdeci">virtual Objects_t GetObject(const Any_t &amp;={}) const =0</div><div class="ttdoc">Функция получения уникального набора компонентов игрового объекта.</div></div>
+<div class="ttc" id="aa42618_html"><div class="ttname"><a href="a42618.html">basement::model::Animated</a></div><div class="ttdoc">Класс входит в проект Example   Класс рендеринга анимированного объекта.</div><div class="ttdef"><b>Definition:</b> Animated.hpp:31</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>IGameObject.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Чт 28 Май 2020 23:18:01. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>
