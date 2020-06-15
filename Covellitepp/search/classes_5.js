@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['file_379',['File',['../a42236.html',1,'covellite::gui']]]
+  ['file_380',['File',['../a42359.html',1,'covellite::gui']]]
 ];
