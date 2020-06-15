@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vertex_435',['Vertex',['../a41962.html',1,'covellite::api']]],
-  ['view_436',['View',['../a42886.html',1,'basement::view']]]
+  ['vertex_434',['Vertex',['../a41848.html',1,'covellite::api']]],
+  ['view_435',['View',['../a42772.html',1,'basement::view']]]
 ];
