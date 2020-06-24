@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['seek_571',['Seek',['../a42359.html#ad9163a7ac44540c661cac66b63afca20',1,'covellite::gui::File']]],
-  ['set_572',['Set',['../a42447.html#a0d5e83b5fedcdb13cd05e9e58603241f',1,'covellite::gui::StringTranslator::Set()'],['../a42459.html#a38150e9e955443f9e51c8fa20e705f2b',1,'covellite::gui::Window::Set()']]],
-  ['setclassstyle_573',['SetClassStyle',['../a42411.html#a9a2452882a2dde87808a6bbd0951a943',1,'covellite::gui::Layer::Element']]],
-  ['setfocus_574',['SetFocus',['../a42411.html#ab674a1f2f7822d80de08c234dc1c4eef',1,'covellite::gui::Layer::Element']]],
-  ['setmeaning_575',['SetMeaning',['../a42411.html#acda1b0e50a315c41089d00706b9685ec',1,'covellite::gui::Layer::Element::SetMeaning(const float)'],['../a42411.html#a38e7d669d072da51e9a09d9a46c47d95',1,'covellite::gui::Layer::Element::SetMeaning(const String_t &amp;)']]],
-  ['setvalue_576',['SetValue',['../a41603.html#a65be7f2e39eaa7b6d32ddc1014bebd81',1,'covellite::api::Component::SetValue(const Name_t &amp;, const T &amp;)'],['../a41603.html#a9ec3bdee7f193ed722982c90c50c6042',1,'covellite::api::Component::SetValue(const size_t, const T &amp;)']]],
-  ['show_577',['Show',['../a42407.html#ade98b7f19de07bb838be920164345a79',1,'covellite::gui::Layer']]],
-  ['systemtoguikeycode_578',['SystemToGuiKeyCode',['../a41465.html#gab57a7f90af68f19bb949608a1e5d37dd',1,'covellite::gui']]]
+  ['read_604',['Read',['../a42499.html#a5f9b9244be54098b8d4d5d86f2080cd5',1,'covellite::gui::File']]],
+  ['remove_605',['Remove',['../a42019.html#a2e6125fd8d1c07ca3efb5ccfeffed4e5',1,'covellite::api::Component::Renders::Remove(const ComponentPtr_t &amp;)'],['../a42019.html#a2c3860e6656c2c44c5c29537f246f648',1,'covellite::api::Component::Renders::Remove(const Object_t &amp;)'],['../a42383.html#af5ac488baecc0f9459f8153b449045b4',1,'covellite::expanse::C3DScene::Remove()'],['../a42407.html#a386c24626d46949977f5ca4008c80023',1,'covellite::expanse::IProduce3DObject::Remove()']]],
+  ['removeobject_606',['RemoveObject',['../a42391.html#a5549e0b9df7a6bd9f200d77520b8b7c5',1,'covellite::expanse::GameScene']]],
+  ['render_607',['Render',['../a42383.html#adb48ae5ab88511e58d4a35bd75e7b3b4',1,'covellite::expanse::C3DScene']]],
+  ['renders_608',['Renders',['../a42019.html#ac4c2fb7587545f425f9da945a74e988b',1,'covellite::api::Component::Renders']]]
 ];

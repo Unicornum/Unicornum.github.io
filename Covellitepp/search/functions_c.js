@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['read_568',['Read',['../a42359.html#a5f9b9244be54098b8d4d5d86f2080cd5',1,'covellite::gui::File']]],
-  ['remove_569',['Remove',['../a41959.html#a2e6125fd8d1c07ca3efb5ccfeffed4e5',1,'covellite::api::Component::Renders::Remove(const ComponentPtr_t &amp;)'],['../a41959.html#a2c3860e6656c2c44c5c29537f246f648',1,'covellite::api::Component::Renders::Remove(const Object_t &amp;)']]],
-  ['renders_570',['Renders',['../a41959.html#ac4c2fb7587545f425f9da945a74e988b',1,'covellite::api::Component::Renders']]]
+  ['pop_598',['Pop',['../a42567.html#af176080cf2b8bf6361e891108823227f',1,'covellite::gui::Layers']]],
+  ['postcommand_599',['PostCommand',['../a42175.html#a6fc13377c18145e53ecb49fcf925df0d',1,'covellite::app::Application']]],
+  ['presentframe_600',['PresentFrame',['../a42015.html#ad28086212ea55e02ae1023d678f111c4',1,'covellite::api::renderer::OpenGLES3']]],
+  ['process_601',['Process',['../a41915.html#ab35b037af35e4b147a726cf72173c438',1,'covellite::api::renderer::GraphicApi::CapturingServiceComponent']]],
+  ['push_602',['Push',['../a42567.html#a15ddba845b9457dc36bcf5a6c1032c5c',1,'covellite::gui::Layers']]],
+  ['pushlayer_603',['PushLayer',['../a42599.html#a798612c8d9cc0893aab05fedbb1983e7',1,'covellite::gui::Window::PushLayer(void)'],['../a42599.html#a4201f6af603b9801ccee1954e972885d',1,'covellite::gui::Window::PushLayer(const LayerPtr_t &amp;)']]]
 ];

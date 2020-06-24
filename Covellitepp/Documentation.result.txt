@@ -8,13 +8,33 @@ warning: Tag 'MSCGEN_PATH' at line 2209 of file 'P:\projects\Covellitepp\Solutio
 warning: The selected output language "russian" has not been updated
 since release 1.8.15.  As a result some sentences may appear in English.
 
-P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/BaseProject.hpp (28): warning: Invalid list item found
+P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/3DScene.cpp (20): warning: no uniquely matching class member found for 
+  void C3DScene::Add(const ObjectId_t _Id, const C3DObject_t &_Object)
+Possible candidates:
+  'void covellite::expanse::C3DScene::Add(const ObjectId_t, const C3DObject_t &) override' at line 38 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/3DScene.impl.hpp
+  'void covellite::expanse::C3DScene::Add(const size_t, const ObjectId_t, const size_t=0) override' at line 43 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/3DScene.impl.hpp
+
+P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/3DScene.cpp (71): warning: no uniquely matching class member found for 
+  void C3DScene::Add(const size_t _Pass, const ObjectId_t _Id, const size_t _HashForSort)
+Possible candidates:
+  'void covellite::expanse::C3DScene::Add(const ObjectId_t, const C3DObject_t &) override' at line 38 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/3DScene.impl.hpp
+  'void covellite::expanse::C3DScene::Add(const size_t, const ObjectId_t, const size_t=0) override' at line 43 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/3DScene.impl.hpp
+
+P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/GameScene.cpp (19): warning: no uniquely matching class member found for 
+  GameScene::GameScene(const RendersPtr_t &_pRenders, IProduce3DObject &_Produce3DObject)
+Possible candidates:
+  'covellite::expanse::GameScene::GameScene(const RendersPtr_t &, IProduce3DObject &) noexcept' at line 53 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/GameScene.impl.hpp
+  'covellite::expanse::GameScene::GameScene(const GameScene &)=delete' at line 54 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/GameScene.impl.hpp
+  'covellite::expanse::GameScene::GameScene(GameScene &&)=delete' at line 55 of file P:/projects/Covellitepp/Solution/Solution/Covellite.Expanse/Covellite.Expanse/GameScene.impl.hpp
+
+P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/BaseProject.hpp (27): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/Draw2DScene.hpp (28): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/Draw3DScene.hpp (28): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/GuiCode.hpp (24): warning: Invalid list item found
+P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/InputRussianLetters.hpp (26): warning: image file .\Solution\(Documentation)\Manual\Vs2015.Android.png is not found in IMAGE_PATH: assuming external image.
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/Manual.hpp (29): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/Manual.hpp (49): warning: Invalid list item found
-P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/BaseProject.hpp (28): warning: Invalid list item found
+P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/BaseProject.hpp (27): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/GuiCode.hpp (24): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/Draw2DScene.hpp (28): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Manual/Draw3DScene.hpp (28): warning: Invalid list item found
@@ -23,18 +43,14 @@ P:/projects/Covellitepp/Solution/Solution/Covellite.Api/(Documentation)/Componen
 P:/projects/Covellitepp/Solution/Solution/(Documentation)/Tasks.hpp (5): warning: unable to resolve reference to 'bug' for \ref command
 P:/projects/Covellitepp/Solution/Solution/Covellite.Api/(Documentation)/ComponentSystem.hpp (37): warning: Invalid list item found
 P:/projects/Covellitepp/Solution/Solution/Covellite.Api/(Documentation)/ComponentSystem.hpp (37): warning: Invalid list item found
-a41453 (44): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-a41453 (45): warning: Unexpected html tag </dd> found within <dt> context
-a41453 (50): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-a41453 (54): warning: Unexpected html tag </dd> found within <dt> context
-a41453 (61): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-a41453 (63): warning: Unexpected html tag </dd> found within <dt> context
-a41453 (91): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-a41453 (93): warning: Unexpected html tag </dd> found within <dt> context
-a41453 (98): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-a41453 (101): warning: Unexpected html tag </dd> found within <dt> context
-a41454 (37): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
-P:/projects/Covellitepp/Solution/Solution/Covellite.Api/Covellite.Api/Renderer/GraphicApi.hpp (99): warning: The following parameter of covellite::api::renderer::GraphicApi::CapturingServiceComponent::Get(const ComponentPtr_t &_pMainComponent, const Expected_t &_Expected) is not documented:
-  parameter '_pMainComponent'
-P:/projects/Covellitepp/Solution/Solution/Covellite.Api/Covellite.Api/Renderer/GraphicApi.hpp (100): warning: The following parameter of covellite::api::renderer::GraphicApi::CapturingServiceComponent::Process(const ComponentPtr_t &_pMainComponent, const Handlers_t &_PreRenders) is not documented:
-  parameter '_pMainComponent'
+a41510 (44): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
+a41510 (45): warning: Unexpected html tag </dd> found within <dt> context
+a41510 (50): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
+a41510 (54): warning: Unexpected html tag </dd> found within <dt> context
+a41510 (61): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
+a41510 (63): warning: Unexpected html tag </dd> found within <dt> context
+a41510 (91): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
+a41510 (93): warning: Unexpected html tag </dd> found within <dt> context
+a41510 (98): warning: unexpected token TK_COMMAND_BS as the argument of _internalref
+a41510 (101): warning: Unexpected html tag </dd> found within <dt> context
+a41511 (37): warning: unexpected token TK_COMMAND_BS as the argument of _internalref

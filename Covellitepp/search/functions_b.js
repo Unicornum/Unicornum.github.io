@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['pop_562',['Pop',['../a42427.html#af176080cf2b8bf6361e891108823227f',1,'covellite::gui::Layers']]],
-  ['postcommand_563',['PostCommand',['../a42115.html#a6fc13377c18145e53ecb49fcf925df0d',1,'covellite::app::Application']]],
-  ['presentframe_564',['PresentFrame',['../a41955.html#ad28086212ea55e02ae1023d678f111c4',1,'covellite::api::renderer::OpenGLES3']]],
-  ['process_565',['Process',['../a41855.html#ab35b037af35e4b147a726cf72173c438',1,'covellite::api::renderer::GraphicApi::CapturingServiceComponent']]],
-  ['push_566',['Push',['../a42427.html#a15ddba845b9457dc36bcf5a6c1032c5c',1,'covellite::gui::Layers']]],
-  ['pushlayer_567',['PushLayer',['../a42459.html#a798612c8d9cc0893aab05fedbb1983e7',1,'covellite::gui::Window::PushLayer(void)'],['../a42459.html#a4201f6af603b9801ccee1954e972885d',1,'covellite::gui::Window::PushLayer(const LayerPtr_t &amp;)']]]
+  ['obtain_593',['Obtain',['../a42019.html#a22d4e5d41214c6af8c42b504fd39075b',1,'covellite::api::Component::Renders::Obtain(const ComponentPtr_t &amp;)'],['../a42019.html#ab538a9320ba544772d22d722999b026b',1,'covellite::api::Component::Renders::Obtain(const Object_t &amp;)']]],
+  ['open_594',['Open',['../a42499.html#af128b2d7b2a1cff725f6bf8d0c76a416',1,'covellite::gui::File']]],
+  ['operator_20events_5ft_595',['operator Events_t',['../a42599.html#aedcb691f436373a2f31eed923f9664f3',1,'covellite::gui::Window']]],
+  ['operator_28_29_596',['operator()',['../a42351.html#ab5918f2f32a8973d6ce6ed6967dc8b8e',1,'covellite::events::Events::Signal::operator()(void)'],['../a42351.html#a269442be0187c199c2b25327055edac7',1,'covellite::events::Events::Signal::operator()(const Params &amp;)']]],
+  ['operator_5b_5d_597',['operator[]',['../a41663.html#a582aa5b09f671db1305fff9fc04c97d7',1,'covellite::api::Component::operator[](const Name_t &amp;)'],['../a41663.html#a8177b7894e66555eaac2d29c96e21460',1,'covellite::api::Component::operator[](const size_t &amp;)'],['../a41663.html#ac6d7f5f27eb0b0e7c9ba2339a71bdce9',1,'covellite::api::Component::operator[](const Name_t &amp;) const'],['../a41663.html#a997189e5ac0ec5d6b22131545978bc4a',1,'covellite::api::Component::operator[](const size_t &amp;) const'],['../a42331.html#ac2ee3224a50d83a577021de0258def93',1,'covellite::events::Events::operator[]()']]]
 ];

@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['i3dscene_386',['I3DScene',['../a42783.html',1,'basement::view']]],
-  ['iapplication_387',['IApplication',['../a42151.html',1,'covellite::app']]],
-  ['ibasement_388',['IBasement',['../a42915.html',1,'basement']]],
-  ['idbcomponents_389',['IDbComponents',['../a42787.html',1,'basement::model']]],
-  ['idbrenders_390',['IDbRenders',['../a42791.html',1,'basement::view']]],
-  ['ievents_391',['IEvents',['../a42283.html',1,'covellite::events']]],
-  ['igameobject_392',['IGameObject',['../a42795.html',1,'basement::model']]],
-  ['igameworld_393',['IGameWorld',['../a42815.html',1,'basement::model']]],
-  ['igraphicapi_394',['IGraphicApi',['../a41859.html',1,'covellite::api::renderer']]],
-  ['ilayer_395',['ILayer',['../a42367.html',1,'covellite::gui']]],
-  ['initializer_396',['Initializer',['../a42375.html',1,'covellite::gui']]],
-  ['istringtranslator_397',['IStringTranslator',['../a42395.html',1,'covellite::gui']]],
-  ['iwindow_398',['IWindow',['../a42591.html',1,'covellite::os::IWindow'],['../a41675.html',1,'covellite::api::IWindow'],['../a42155.html',1,'covellite::app::IWindow'],['../a42403.html',1,'covellite::gui::IWindow']]]
+  ['i3dscene_406',['I3DScene',['../a42395.html',1,'covellite::expanse::I3DScene'],['../a42919.html',1,'basement::view::I3DScene']]],
+  ['iapplication_407',['IApplication',['../a42211.html',1,'covellite::app']]],
+  ['ibasement_408',['IBasement',['../a43055.html',1,'basement']]],
+  ['id_409',['Id',['../a42399.html',1,'covellite::expanse']]],
+  ['idbcomponents_410',['IDbComponents',['../a42923.html',1,'basement::model']]],
+  ['idbrenders_411',['IDbRenders',['../a42927.html',1,'basement::view']]],
+  ['ievents_412',['IEvents',['../a42343.html',1,'covellite::events']]],
+  ['igameobject_413',['IGameObject',['../a42931.html',1,'basement::model']]],
+  ['igamescene_414',['IGameScene',['../a42403.html',1,'covellite::expanse']]],
+  ['igameworld_415',['IGameWorld',['../a42951.html',1,'basement::model']]],
+  ['igraphicapi_416',['IGraphicApi',['../a41919.html',1,'covellite::api::renderer']]],
+  ['ilayer_417',['ILayer',['../a42507.html',1,'covellite::gui']]],
+  ['initializer_418',['Initializer',['../a42515.html',1,'covellite::gui']]],
+  ['iproduce3dobject_419',['IProduce3DObject',['../a42407.html',1,'covellite::expanse']]],
+  ['istringtranslator_420',['IStringTranslator',['../a42535.html',1,'covellite::gui']]],
+  ['iwindow_421',['IWindow',['../a42731.html',1,'covellite::os::IWindow'],['../a41735.html',1,'covellite::api::IWindow'],['../a42215.html',1,'covellite::app::IWindow'],['../a42411.html',1,'covellite::expanse::IWindow'],['../a42543.html',1,'covellite::gui::IWindow']]]
 ];
