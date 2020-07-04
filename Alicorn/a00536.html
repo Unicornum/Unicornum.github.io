@@ -1,0 +1,232 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Файл Solution/Solution/Extension/Std.Fast/Test.Std.Fast/Test.TestSpeed/TestSpeed_test.cpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00536.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл TestSpeed_test.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn/cpp/disable-all-warnings.hpp&gt;</code><br />
+<code>#include &lt;alicorn/platform/windows.hpp&gt;</code><br />
+<code>#include &lt;sysinfoapi.h&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;boost/container/map.hpp&gt;</code><br />
+<code>#include &lt;boost/container/flat_map.hpp&gt;</code><br />
+<code>#include &lt;boost/lexical_cast.hpp&gt;</code><br />
+<code>#include &lt;boost/format.hpp&gt;</code><br />
+<code>#include &lt;boost/spirit/include/karma.hpp&gt;</code><br />
+<code>#include &lt;eastl/eastl.hpp&gt;</code><br />
+<code>#include &lt;eastl/map.h&gt;</code><br />
+<code>#include &lt;eastl/vector_map.h&gt;</code><br />
+<code>#include &lt;eastl/fixed_map.h&gt;</code><br />
+<code>#include &lt;eastl/hash_map.h&gt;</code><br />
+<code>#include &lt;eastl/unordered_map.h&gt;</code><br />
+<code>#include &lt;eastl/fixed_hash_map.h&gt;</code><br />
+<code>#include &lt;fmt/core.h&gt;</code><br />
+<code>#include &lt;fmt/format.h&gt;</code><br />
+<code>#include &lt;fmt/format-inl.h&gt;</code><br />
+<code>#include &lt;alicorn/cpp/restore-warnings.hpp&gt;</code><br />
+<code>#include &lt;alicorn/std.fast.hpp&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;boost/function.hpp&gt;</code><br />
+<code>#include &lt;boost/signals2.hpp&gt;</code><br />
+<code>#include &lt;EASTL/functional.h&gt;</code><br />
+<code>#include &lt;any&gt;</code><br />
+<code>#include &lt;boost/any.hpp&gt;</code><br />
+<code>#include &lt;eastl/any.h&gt;</code><br />
+<code>#include &lt;alicorn/std/string/string.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для TestSpeed_test.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a00537.png" border="0" usemap="#_solution_2_solution_2_extension_2_std_8_fast_2_test_8_std_8_fast_2_test_8_test_speed_2_test_speed__test_8cpp" alt=""/></div>
+<map name="_solution_2_solution_2_extension_2_std_8_fast_2_test_8_std_8_fast_2_test_8_test_speed_2_test_speed__test_8cpp" id="_solution_2_solution_2_extension_2_std_8_fast_2_test_8_std_8_fast_2_test_8_test_speed_2_test_speed__test_8cpp">
+<area shape="rect" title=" " alt="" coords="2573,5,2784,76"/>
+<area shape="rect" href="a45939_source.html" title=" " alt="" coords="285,131,361,158"/>
+<area shape="rect" title=" " alt="" coords="5,213,152,255"/>
+<area shape="rect" title=" " alt="" coords="473,213,621,255"/>
+<area shape="rect" title=" " alt="" coords="436,131,503,158"/>
+<area shape="rect" title=" " alt="" coords="527,124,673,165"/>
+<area shape="rect" title=" " alt="" coords="697,124,852,165"/>
+<area shape="rect" title=" " alt="" coords="876,131,1092,158"/>
+<area shape="rect" title=" " alt="" coords="1117,131,1217,158"/>
+<area shape="rect" title=" " alt="" coords="1241,131,1290,158"/>
+<area shape="rect" title=" " alt="" coords="1315,131,1437,158"/>
+<area shape="rect" title=" " alt="" coords="1461,131,1651,158"/>
+<area shape="rect" title=" " alt="" coords="1675,124,1829,165"/>
+<area shape="rect" title=" " alt="" coords="1853,131,2024,158"/>
+<area shape="rect" href="a00143_source.html" title=" " alt="" coords="2049,131,2186,158"/>
+<area shape="rect" title=" " alt="" coords="2235,124,2384,165"/>
+<area shape="rect" title=" " alt="" coords="2409,131,2530,158"/>
+<area shape="rect" title=" " alt="" coords="2554,131,2654,158"/>
+<area shape="rect" title=" " alt="" coords="2678,131,2829,158"/>
+<area shape="rect" title=" " alt="" coords="2853,131,2992,158"/>
+<area shape="rect" title=" " alt="" coords="3016,131,3155,158"/>
+<area shape="rect" title=" " alt="" coords="3179,131,3354,158"/>
+<area shape="rect" title=" " alt="" coords="3379,131,3557,158"/>
+<area shape="rect" title=" " alt="" coords="3582,131,3674,158"/>
+<area shape="rect" title=" " alt="" coords="3699,131,3805,158"/>
+<area shape="rect" title=" " alt="" coords="3830,131,3957,158"/>
+<area shape="rect" title=" " alt="" coords="3981,131,4133,158"/>
+<area shape="rect" title=" " alt="" coords="4158,131,4245,158"/>
+<area shape="rect" title=" " alt="" coords="4269,131,4417,158"/>
+<area shape="rect" title=" " alt="" coords="4441,131,4588,158"/>
+<area shape="rect" title=" " alt="" coords="4613,131,4761,158"/>
+<area shape="rect" title=" " alt="" coords="4785,131,4831,158"/>
+<area shape="rect" title=" " alt="" coords="4855,131,4974,158"/>
+<area shape="rect" title=" " alt="" coords="4998,131,5095,158"/>
+<area shape="rect" title=" " alt="" coords="5119,124,5254,165"/>
+<area shape="rect" title=" " alt="" coords="176,213,323,255"/>
+<area shape="rect" href="a47463_source.html" title=" " alt="" coords="347,221,448,247"/>
+<area shape="rect" title=" " alt="" coords="311,303,484,329"/>
+<area shape="rect" title=" " alt="" coords="2008,221,2227,247"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aa97a0e5b9c69e22382298b58948248d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00536.html#aa97a0e5b9c69e22382298b58948248d9">TEST_F</a> (TestSpeed_test, Test_UnorderedMap)</td></tr>
+<tr class="separator:aa97a0e5b9c69e22382298b58948248d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса TestSpeed. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="aa97a0e5b9c69e22382298b58948248d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa97a0e5b9c69e22382298b58948248d9">&#9670;&nbsp;</a></span>TEST_F()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype">TestSpeed_test&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Test_UnorderedMap&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="a42863.html#_todo000010">Необходимо сделать:</a></b></dt><dd>"8.05.2020: Скомпилировать код, использующий Abseil, не удалось." ; </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_159f180a5438be890b19005a5c3d1df9.html">Std.Fast</a></li><li class="navelem"><a class="el" href="dir_c0cd4e77a63996e474ae99d570068ae6.html">Test.Std.Fast</a></li><li class="navelem"><a class="el" href="dir_f119895996aca687abcbb976f2a4bdd6.html">Test.TestSpeed</a></li><li class="navelem"><a class="el" href="a00536.html">TestSpeed_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:04. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Исходный файл Solution/Solution/Extension/Std.Memory/Std.Memory/trivial-ptr.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a00572_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">trivial-ptr.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>extension</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>std</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="a43621.html">   62</a></span>&#160;<span class="keyword">class </span><a class="code" href="a43621.html">trivial_ptr</a> final</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">using</span> DeleterPtr_t = void(*)(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  T * operator-&gt;(<span class="keywordtype">void</span>) <span class="keyword">const</span> noexcept;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="comment">// Вспомогательные функции</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T2&gt;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordtype">bool</span> IsEqual(T2 *) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  T * ReleasePtr(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  DeleterPtr_t ReleaseDeleter(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordtype">void</span> Delete(<span class="keywordtype">void</span>) noexcept;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  T *          m_pImpl = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  DeleterPtr_t m_pDeleter = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <a class="code" href="a43621.html">trivial_ptr</a>(T *, DeleterPtr_t) noexcept;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <a class="code" href="a43621.html">trivial_ptr</a>(<span class="keyword">const</span> <a class="code" href="a43621.html">trivial_ptr</a> &amp;);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T2&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <a class="code" href="a43621.html">trivial_ptr</a>(<a class="code" href="a43621.html">trivial_ptr&lt;T2&gt;</a> &amp;&amp;);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <a class="code" href="a43621.html">trivial_ptr</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a43621.html">trivial_ptr</a> &amp;);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> T2&gt;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <a class="code" href="a43621.html">trivial_ptr</a> &amp; operator= (<a class="code" href="a43621.html">trivial_ptr&lt;T2&gt;</a> &amp;&amp;);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  ~<a class="code" href="a43621.html">trivial_ptr</a>(<span class="keywordtype">void</span>) noexcept;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class </span>TImp, <span class="keyword">class </span>... TArgs&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">friend</span> <a class="code" href="a43621.html">trivial_ptr&lt;TImp&gt;</a> make_trivial(TArgs &amp;&amp; ...);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">template</span>&lt;<span class="keywordtype">size_t</span>&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a43613.html">pool</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;} <span class="comment">// namespace std</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <span class="comment">// namespace extension</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;} <span class="comment">// namespace alicorn</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aa42878_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a42878.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition:</b> exception.hpp:66</div></div>
+<div class="ttc" id="aa43617_html_a87260e30e3e5a240e5e6cee018d50f4f"><div class="ttname"><a href="a43617.html#a87260e30e3e5a240e5e6cee018d50f4f">alicorn::extension::std::memory::Pool::GetPoolSize</a></div><div class="ttdeci">size_t GetPoolSize(void) const</div><div class="ttdoc">Функция получения общего количества объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:146</div></div>
+<div class="ttc" id="aa43621_html"><div class="ttname"><a href="a43621.html">alicorn::extension::std::trivial_ptr</a></div><div class="ttdoc">Класс входит в проект Std   Простой класс-обертка для указателя.</div><div class="ttdef"><b>Definition:</b> trivial-ptr.hpp:63</div></div>
+<div class="ttc" id="aa43617_html"><div class="ttname"><a href="a43617.html">alicorn::extension::std::memory::Pool</a></div><div class="ttdoc">Класс входит в проект Std   Класс создания объектов из пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.hpp:57</div></div>
+<div class="ttc" id="aa43617_html_a8df3f5d93d76810097613c59203e66dc"><div class="ttname"><a href="a43617.html#a8df3f5d93d76810097613c59203e66dc">alicorn::extension::std::memory::Pool::Deallocate</a></div><div class="ttdeci">void Deallocate(T *) noexcept</div><div class="ttdoc">Функция для освобождения ранее выделенного объекта.</div><div class="ttdef"><b>Definition:</b> pool.inl:75</div></div>
+<div class="ttc" id="aa43613_html"><div class="ttname"><a href="a43613.html">alicorn::extension::std::pool</a></div><div class="ttdoc">Класс входит в проект Std   Вспомогательный класс, эмулирующий шаблон пространства имен.</div><div class="ttdef"><b>Definition:</b> make.hpp:14</div></div>
+<div class="ttc" id="aa43617_html_a391b49c50ee60058b67ae8e0952cfe88"><div class="ttname"><a href="a43617.html#a391b49c50ee60058b67ae8e0952cfe88">alicorn::extension::std::memory::Pool::Release</a></div><div class="ttdeci">void Release(void)</div><div class="ttdoc">Функция удаления всей выделенной для пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.inl:110</div></div>
+<div class="ttc" id="aa43617_html_a7edd5a08ff1d7befcd5d9c4ec8c3c040"><div class="ttname"><a href="a43617.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">alicorn::extension::std::memory::Pool::GetFreeObjects</a></div><div class="ttdeci">size_t GetFreeObjects(void) const</div><div class="ttdoc">Функция получения количества свободных объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:126</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_4537bd4e55ba6365963602639fd3b2c2.html">Std.Memory</a></li><li class="navelem"><a class="el" href="dir_b3c0c39a5a9640dc21b1f2c02ff6b8cd.html">Std.Memory</a></li><li class="navelem"><b>trivial-ptr.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:01. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

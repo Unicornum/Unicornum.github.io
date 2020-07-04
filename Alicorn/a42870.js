@@ -1,11 +1,6 @@
 var a42870 =
 [
-    [ "IModel", "a44940.html", null ],
-    [ "Model", "a44944.html", [
-      [ "BuildPathToSection", "a44944.html#a0c097f184d0f8008705441c7e8f95f14", null ],
-      [ "GetSection", "a44944.html#a7fa27979818db9ba2e511c5a104fede8", null ],
-      [ "GetSections", "a44944.html#a1d58c80210dc15ee23204f0e046d63e5", null ],
-      [ "GetSettings", "a44944.html#aaf001e76c055fff1d90a75bb104a21e2", null ],
-      [ "SetValue", "a44944.html#a5fcc0e4bca097a6bbfe07dc1e9b5492b", null ]
-    ] ]
+    [ "Epsilon", "a42870.html#gada77aeeea8cdfd71e2fc258d2622faa5", null ],
+    [ "Infinity", "a42870.html#ga208a1945eed95cb7d404b0fba3fcbd2b", null ],
+    [ "Min", "a42870.html#ga092d73a3c219d160170528be0957ecf9", null ]
 ];

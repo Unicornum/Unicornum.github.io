@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Cписок членов класса</title>
+    <title>Alicorn: Класс alicorn::source::compress::Deflate</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -74,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a44380.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('a44377.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -93,18 +93,92 @@ $(document).ready(function(){initNavTree('a44380.html',''); initResizable(); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a44374.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">alicorn::source::details::Empty&lt; TData &gt; Cписок членов класса</div>  </div>
+<div class="title">Класс alicorn::source::compress::Deflate<div class="ingroups"><a class="el" href="a42865.html">Alicorn</a> &raquo; <a class="el" href="a42902.html">Source</a> &raquo; <a class="el" href="a42895.html">Compress</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a44380.html">alicorn::source::details::Empty&lt; TData &gt;</a>, включая наследуемые из базового класса</p>
+<p>Класс входит в <a class="el" href="a45699.html">Compress</a> <br  />
+ Реализация сжатия/распаковки данных при помощи алгоритма <a href="https://ru.wikipedia.org/wiki/Deflate" title="Deflate">Deflate</a>.  
+ <a href="a44377.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01214_source.html">deflate.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса alicorn::source::compress::Deflate:</div>
+<div class="dyncontent">
+<div class="center"><img src="a44375.png" border="0" usemap="#alicorn_1_1source_1_1compress_1_1_deflate_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1source_1_1compress_1_1_deflate_coll__map" id="alicorn_1_1source_1_1compress_1_1_deflate_coll__map">
+<area shape="rect" title="Класс входит в Compress &#160;&#160;Реализация сжатия/распаковки данных при помощи алгоритма Deflate." alt="" coords="5,5,200,127"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a27bb0b1ae852292c190cc25ac50bf88b"><td class="memItemLeft" align="right" valign="top">Data_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44377.html#a27bb0b1ae852292c190cc25ac50bf88b">Unpack</a> (void) const =delete</td></tr>
+<tr class="memdesc:a27bb0b1ae852292c190cc25ac50bf88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для распаковки данных, сжатых функцией Pack.  <a href="a44377.html#a27bb0b1ae852292c190cc25ac50bf88b">Подробнее...</a><br /></td></tr>
+<tr class="separator:a27bb0b1ae852292c190cc25ac50bf88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a45699.html">Compress</a> <br  />
+ Реализация сжатия/распаковки данных при помощи алгоритма <a href="https://ru.wikipedia.org/wiki/Deflate" title="Deflate">Deflate</a>. </p>
+<ul>
+<li>Используется реализация из <a href="http://www.cryptopp.com/" title="Crypto++">Crypto++</a>.</li>
+<li>В коде использовать alicorn::source::compress::Deflate_t;</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ 2.0.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>21 Март 2017 <br  />
+ 27 Август 2017 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2017 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a27bb0b1ae852292c190cc25ac50bf88b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bb0b1ae852292c190cc25ac50bf88b">&#9670;&nbsp;</a></span>Unpack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Data_t alicorn::source::compress::Deflate::Unpack </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция для распаковки данных, сжатых функцией Pack. </p>
+<ul>
+<li>Реализация удалена, т.к. в Crypto++ v5.6.4 вызывает утечку памяти. </li>
+</ul>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Source/Compress/Compress/<a class="el" href="a01214_source.html">deflate.hpp</a></li>
+<li>Solution/Solution/Source/Compress/Compress/deflate.cpp</li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:35. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>source</b></li><li class="navelem"><b>compress</b></li><li class="navelem"><a class="el" href="a44377.html">Deflate</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:07. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

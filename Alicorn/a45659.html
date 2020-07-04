@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: $title</title>
+    <title>Alicorn: Вычисление метрик кода в решении</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -92,15 +92,71 @@ $(document).ready(function(){initNavTree('a45659.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="contents">
-<div class="textblock"><p>Проект классов работы с документами. </p>
-</div></div><!-- contents -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Вычисление метрик кода в решении </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><dl class="section note"><dt>Заметки</dt><dd>Для вычисления метрик кода С++ используется утилита <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>.</dd></dl>
+<p>Для вычисления метрик кода при сборке решения скриптом необходимо:</p><ul>
+<li>Создать и настроить проект <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>.</li>
+<li>Подключить к решению проект <b>ProcessingMetrics</b>.</li>
+<li>Подключить к проекту BuildAll файл страницы свойств <b>Metrics.props</b>.</li>
+<li>Добавить в документацию решения страницу с рультатами подсчета метрик.</li>
+</ul>
+<h2>Настройка проекта SourceMonitor </h2>
+<p>Запустить <a href="http://www.campwoodsw.com/sourcemonitor.html" title="SourceMonitor">SourceMonitor</a>, создать новый проект, в первом окне мастера выбрать С++, в качестве <b>Include</b> вставить '*.cpp;*.h;*.hpp;*.inl', в качестве <b>Exclude</b> - '*.mock.hpp;*.mock.inl;stdafx.*;pch.h;targetver.h;*.forward.hpp'.</p>
+<div class="image">
+<img src="SelectLanguage.png" alt=""/>
+</div>
+<p>Во втором окне мастера указать в качестве имени проекта <b>Metrics</b> (проект именно с этим именем будет запускать скрипт), а в качестве пути к папке проекта - полный путь к папке Solution решения ($(SolutionDir)\Solution).</p>
+<div class="image">
+<img src="ProjectName.png" alt=""/>
+</div>
+<p>В третьем окне мастера указать в качестве пути для обработки вложенную папку Solution.</p>
+<div class="image">
+<img src="SelectMainDirectory.png" alt=""/>
+</div>
+<p>Настроить вложенные папки для обработки, исключив папки тестовых проектов и документации.</p>
+<div class="image">
+<img src="SelectSubdirectories.png" alt=""/>
+</div>
+<p>В четвертом окне мастера указать особые параметры проекта.</p>
+<div class="image">
+<img src="SpecifyOptions.png" alt=""/>
+</div>
+<p>В пятом окне мастера указать формат проекта.</p>
+<div class="image">
+<img src="ProjectFormat.png" alt=""/>
+</div>
+<p>В шестом окне мастера настроить создание первой контрольной точки.</p>
+<div class="image">
+<img src="CreateFirstCheckpoint.png" alt=""/>
+</div>
+<h2>Подключение проекта ProcessingMetrics </h2>
+<p>Подключить к решению (в любую папку) проект Metrics из папки $(SolutionDir)\Solution\Solution\Externals\Tools\ProcessingMetrics и добавить проекту BuildAll зависимость от этого проекта.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Эта утилита обрабатывает результат расчета метрик кода и формирует файл отчета для включения в документацию <b>Doxygen</b>.</dd></dl>
+<h2>Подключение страницы свойств Metrics.props </h2>
+<p>К конфигурации Debug|x64 проекта BuildAll подключить страницу свойств $(SolutionDir)\Solution\Solution\Externals\Metrics.props</p>
+<dl class="section note"><dt>Заметки</dt><dd>Эта страница свойств содержит скрипт подсчета метрик кода и запуск утилиты обработки результата.</dd></dl>
+<h2>Страница документации с результатами расчета метрик кода </h2>
+<p>В документацию решения добавить страницу с именем <b>SolutionMetricsPage</b>, содержащую включение файла <b>Metrics.result.html</b> </p><div class="fragment"><div class="line">\page SolutionMetricsPage Метрики кода в решении</div>
+<div class="line">\subpage SolutionMetricsFilesPage</div>
+<div class="line">  </div>
+<div class="line">Статистика расчета метрик кода</div>
+<div class="line">------------------------------</div>
+<div class="line">  </div>
+<div class="line">\htmlinclude <span class="stringliteral">&quot;Solution\&zwj;(Documentation)\Metrics.result.html&quot;</span></div>
+</div><!-- fragment --><p>Также добавить страницу <b>SolutionMetricsFilesPage</b>, содержащую список наиболее проблемных мест в коде для каждой метрики.</p>
+<div class="fragment"><div class="line">\page SolutionMetricsFilesPage Проблемные места</div>
+<div class="line">\htmlinclude <span class="stringliteral">&quot;Solution\&zwj;(Documentation)\Metrics.result.warning.html&quot;</span></div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:33. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

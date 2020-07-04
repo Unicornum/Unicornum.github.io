@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Localization</title>
+    <title>Alicorn: Build</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -94,20 +94,40 @@ $(document).ready(function(){initNavTree('a45642.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Localization </div>  </div>
+<div class="title">Build </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Список классов проекта: <a class="el" href="a42841.html">Localization</a></p>
-<h1>Введение </h1>
-<p>Проект классов локализации программы. </p>
+<div class="textblock"><h1>Описание раздела </h1>
+<p>Раздел для вспомогательных проектов, собирающих проекты отдельных библиотек.</p>
+<h2>Проект Alicorn </h2>
+<p>Проект сборки всех проектов, предназначенных для использования в Windows.</p>
+<h2>Проект Android </h2>
+<p>Проект сборки всех проектов, предназначенных для использования под Android.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что если Android-проекту добавить в зависимость Windows-проект, то проваливается сборка скриптом всего решения (хотя сборка в Visual Studio работает).</dd></dl>
+<p>Проекту Test.Android/SourceVfsData (который формирует файл .pack, упаковываемый в .apk проектом Test.Android/Packaging) требуется зависимость от Test.Android/PackBuilder'a (который является Windows-проектом, т.к. должен запускаться при сборке решения), что и приводит к ошибке сборки скриптом. В качестве временного решения используется проект Android, который строится отдельной командой в BuildAll.cmd после построения всего остального.</p>
+<h2>Проект BuildAll </h2>
+<p>Проект, предназначенный для сборки всех остальных проектов 'одним кликом'.</p><ul>
+<li>Должен зависеть ото всех остальных проектов раздела Build и Test.Solution.</li>
+<li>Используется для автоматической сборки скриптом BuildAll.cmd.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Проект BuildAll понадобился потому, что сборка при помощи MsBuild всего решения приводит к сборке выгруженных проектов.</dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>10.05.2016: Параметры MsBuild '/p:DebugType=none;DebugSymbols=false' не работают для проектов lib, оставлены для ускорения сборки exe и dll.</dd></dl>
+<h2>Проект Clean </h2>
+<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
+<h2>Проект Launcher </h2>
+<p>Проект запуска тестовых проектов:</p><ul>
+<li>Для платформы x64 - Test.Solution в Windows.</li>
+<li>Для платформ ARM/ARM64 - Test.Android на подключенном устройстве с Android. </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a45615.html">Структура решения</a></li><li class="navelem"><a class="el" href="a45640.html">Modules</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:33. Создано системой
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a45660.html">Структура решения</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

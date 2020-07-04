@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Cписок членов класса</title>
+    <title>Alicorn: Класс alicorn::extension::std::exception::Abort</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -74,7 +74,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a43152.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('a43149.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -93,18 +93,82 @@ $(document).ready(function(){initNavTree('a43152.html',''); initResizable(); });
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="a43146.html">Полный список членов класса</a>  </div>
   <div class="headertitle">
-<div class="title">alicorn::extension::std::details::Container&lt; T &gt; Cписок членов класса</div>  </div>
+<div class="title">Класс alicorn::extension::std::exception::Abort<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a42865.html">Alicorn</a> &raquo; <a class="el" href="a42874.html">Extension</a> &raquo; <a class="el" href="a42878.html">Std</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Полный список членов класса <a class="el" href="a43152.html">alicorn::extension::std::details::Container&lt; T &gt;</a>, включая наследуемые из базового класса</p>
+<p>Класс входит в <a class="el" href="a45674.html">Std</a> <br  />
+ Класс исключения, предназначенный для сигнализирования о том, что работа программы должна быть завершена.  
+ <a href="a43149.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00329_source.html">abort.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса alicorn::extension::std::exception::Abort:</div>
+<div class="dyncontent">
+<div class="center"><img src="a43147.png" border="0" usemap="#alicorn_1_1extension_1_1std_1_1exception_1_1_abort_coll__map" alt="Collaboration graph"/></div>
+<map name="alicorn_1_1extension_1_1std_1_1exception_1_1_abort_coll__map" id="alicorn_1_1extension_1_1std_1_1exception_1_1_abort_coll__map">
+<area shape="rect" title="Класс входит в Std &#160;&#160;Класс исключения, предназначенный для сигнализирования о том,..." alt="" coords="5,5,184,112"/>
+</map>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a45674.html">Std</a> <br  />
+ Класс исключения, предназначенный для сигнализирования о том, что работа программы должна быть завершена. </p>
+<ul>
+<li>Класс намеренно не наследуется от std::exception, чтобы исключение не перехватывалось 'попутно'.</li>
+<li>Используется для завершения программы из любого места программы (например, это исключение бросает логгер при записи сообщения, помеченного как Fatal.</li>
+<li>Предполагается, что программа в главном цикле будет перехватывать это исключение и завершать работу корректным образом.</li>
+</ul>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>25 Сентябрь 2016 <br  />
+ </dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016</dd></dl>
+<h2>Пример обработки исключения при использовании wxWidgets </h2>
+<div class="fragment"><div class="line"><span class="keyword">namespace </span>app</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">class </span>Main final :</div>
+<div class="line">  <span class="keyword">public</span> wxApp</div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// ... другой код</span></div>
+<div class="line">  </div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">  <span class="keywordtype">bool</span> OnExceptionInMainLoop(<span class="keywordtype">void</span>)<span class="keyword"> override</span></div>
+<div class="line"><span class="keyword">  </span>{</div>
+<div class="line">    <span class="keywordflow">try</span></div>
+<div class="line">    {</div>
+<div class="line">      <span class="comment">// Повторяем произошедшее исключение.</span></div>
+<div class="line">      <span class="keywordflow">throw</span>;</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">catch</span> (const ::alicorn::extension::std::exception::Abort &amp;)</div>
+<div class="line">    {</div>
+<div class="line">      <span class="comment">// Завершаем работу программы</span></div>
+<div class="line">      wxExit();</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">catch</span>(...)</div>
+<div class="line">    {</div>
+<div class="line">      <span class="keywordflow">return</span> wxApp::OnExceptionInMainLoop();</div>
+<div class="line">    }</div>
+<div class="line">    </div>
+<div class="line">    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line">  }</div>
+<div class="line">  </div>
+<div class="line">  <span class="comment">// ... другой код</span></div>
+<div class="line">};</div>
+<div class="line">} <span class="comment">// namespace app</span></div>
+</div><!-- fragment --> </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Extension/Std/Std/exception/<a class="el" href="a00329_source.html">abort.hpp</a></li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:34. Создано системой
+    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>extension</b></li><li class="navelem"><b>std</b></li><li class="navelem"><b>exception</b></li><li class="navelem"><a class="el" href="a43149.html">Abort</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:06. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: $title</title>
+    <title>Alicorn: Std.Memory</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -92,49 +92,24 @@ $(document).ready(function(){initNavTree('a45679.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="PageDoc"><div class="contents">
-<div class="textblock"><p>Проект утилиты предварительной обработки файлов решения.</p>
-<p>Предназначен для:</p><ul>
-<li>Обработки файла лога сборки решения скриптом.</li>
-<li>Обработки файла покрытия кода тестами.</li>
-<li>Обработки файла расчета метрик кода в решении.</li>
-<li>Генерации документации.</li>
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Std.Memory </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Список классов проекта:</p><ul>
+<li>Группа <a class="el" href="a42880.html">Std.Memory</a>.</li>
 </ul>
-<h2>Использование утилиты </h2>
-<ul>
-<li>Подключить к решению проект Documentation из папки Externals\Tools\Documentation.</li>
-<li>Одному из проектов решения установить зависимость от проекта Documentation и в качестве события после построения добавить запуск Documentation.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
-</ul>
-<h3>Вспомогательные параметры</h3>
-<ul>
-<li><b>&ndash;file=path</b> - путь к исходному файлу (трактуется в зависимости от указанной команды).</li>
-<li><b>&ndash;path-to-solution=path</b> - полный путь к папке решения, которое обрабатывается (используется совместно с командой <b>&ndash;process-report</b>).</li>
-<li><b>&ndash;max-records</b> - максимальное количество записей в отчете (при добавлении новых записей самые старые будут удаляться; используется совместно с командой <b>&ndash;process-report</b>).</li>
-<li><b>&ndash;platform</b> - текущая собираемая платформа (используется совместно с командой <b>&ndash;make</b>).</li>
-</ul>
-<h3>Команды</h3>
-<dl class="section note"><dt>Заметки</dt><dd>Команды исключают использование друг друга.</dd></dl>
-<ul>
-<li><b>&ndash;help</b> - выводит в консоль список доступных команд.</li>
-<li><b>&ndash;process-report=type</b> - обработка файла, заданного как параметр <b>&ndash;file</b> (также требуется параметр <b>&ndash;path-to-solution</b>):<ul>
-<li><b>build</b> - обработка файла лога сборки скриптом (в той же папке и с тем же именем, но с расширением .html генерируется файл, группирующий и подсвечивающий цветом ошибки и предупреждения с разбиением оных на группы по проектам).</li>
-<li><b>coverage</b> - обработка файла отчета покрытия кода тестами (из xml файла отчета генерируется html файлы, пригодные для включения в документацию Doxygen).</li>
-<li><b>metrics</b> - обработка результата вычисления метрик кода в решении (<b>&ndash;file</b> задает путь к папке, где располагаются файлы отчета SourceMonitor, <b>&ndash;max-records</b> задает количество проблемных мест в коде, которое будет выводиться для каждой метрики).</li>
-</ul>
-</li>
-<li><b>&ndash;make</b> - команда построения документации (например, 'doxygen.exe PathToConfigFile% &gt; PathToReport'), требуются параметры:<ul>
-<li><b>&ndash;file</b> - путь к файлу версии решения.</li>
-<li><b>&ndash;platform</b> - собираемая платформа. </li>
-</ul>
-</li>
-</ul>
+<h1>Введение </h1>
+<p>Проект классов и объявлений, аналогичных (но работающих быстрее) классам стандартной библиотеки C++. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:33. Создано системой
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a45660.html">Структура решения</a></li><li class="navelem"><a class="el" href="a45664.html">Extension</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

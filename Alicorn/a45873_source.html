@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Extension/Cpp/Test.Cpp/Test.Property/stdafx.h</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Modules/Vfs/Vfs/filesystem.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -94,21 +94,60 @@ $(document).ready(function(){initNavTree('a45873_source.html',''); initResizable
 
 <div class="header">
   <div class="headertitle">
-<div class="title">stdafx.h</div>  </div>
+<div class="title">filesystem.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\testing.app\test.class.hpp&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;..\mock.hpp&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;iimplementation.hpp&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;boost\filesystem\path.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>modules</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">namespace </span>vfs</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a44345.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44345.html">FileSystem</a> final :</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44353.html">IImplementation</a></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="comment">// Интерфейс IImplementation:</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a44345.html#ac77c41eee699ac53a96a4c40bdb46a11">GetData</a>(<span class="keyword">const</span> Path_t &amp;, Data_t &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="a44345.html#a1107745c116036ff2db9605335c725e5">IsExists</a>(<span class="keyword">const</span> Path_t &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a44345.html#a3e12b1d48f15470238cb429905971a90">BrowsingFiles</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Callback_t &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a44345.html#ac455ccea8affccf0d08d4b138bb2dd44">BrowsingDirectories</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Callback_t &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keyword">const</span> Path_t m_PathToRootDirectory;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="a44345.html">FileSystem</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a44345.html">FileSystem</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a44345.html#a2d2907fd806a57c72e93dfd1872eb791">FileSystem</a>(<span class="keyword">const</span> Path_t &amp;);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;} <span class="comment">// namespace vfs</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace modules</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace alicorn</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aa44345_html_a2d2907fd806a57c72e93dfd1872eb791"><div class="ttname"><a href="a44345.html#a2d2907fd806a57c72e93dfd1872eb791">alicorn::modules::vfs::FileSystem::FileSystem</a></div><div class="ttdeci">FileSystem(const Path_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition:</b> filesystem.cpp:16</div></div>
+<div class="ttc" id="aa44345_html_a3e12b1d48f15470238cb429905971a90"><div class="ttname"><a href="a44345.html#a3e12b1d48f15470238cb429905971a90">alicorn::modules::vfs::FileSystem::BrowsingFiles</a></div><div class="ttdeci">void BrowsingFiles(const Path_t &amp;, const Callback_t &amp;) const override</div><div class="ttdoc">Функция перебора 'файлов' в указанной папке.</div><div class="ttdef"><b>Definition:</b> filesystem.cpp:58</div></div>
+<div class="ttc" id="aa44345_html_a1107745c116036ff2db9605335c725e5"><div class="ttname"><a href="a44345.html#a1107745c116036ff2db9605335c725e5">alicorn::modules::vfs::FileSystem::IsExists</a></div><div class="ttdeci">bool IsExists(const Path_t &amp;) const override</div><div class="ttdoc">Функция проверки существования 'файла'.</div><div class="ttdef"><b>Definition:</b> filesystem.cpp:50</div></div>
+<div class="ttc" id="aa44345_html_ac77c41eee699ac53a96a4c40bdb46a11"><div class="ttname"><a href="a44345.html#ac77c41eee699ac53a96a4c40bdb46a11">alicorn::modules::vfs::FileSystem::GetData</a></div><div class="ttdeci">bool GetData(const Path_t &amp;, Data_t &amp;) const override</div><div class="ttdoc">Функция получения содержимого указанного файла.</div><div class="ttdef"><b>Definition:</b> filesystem.cpp:37</div></div>
+<div class="ttc" id="aa44353_html"><div class="ttname"><a href="a44353.html">alicorn::modules::vfs::IImplementation</a></div><div class="ttdoc">Класс входит в Virtual File System   Интерфейсный класс для реализаций доступа к данным.</div><div class="ttdef"><b>Definition:</b> iimplementation.hpp:32</div></div>
+<div class="ttc" id="aa44345_html"><div class="ttname"><a href="a44345.html">alicorn::modules::vfs::FileSystem</a></div><div class="ttdoc">Класс входит в Virtual File System   Класс реализации получения содержимого файлов с диска.</div><div class="ttdef"><b>Definition:</b> filesystem.hpp:38</div></div>
+<div class="ttc" id="aa44345_html_ac455ccea8affccf0d08d4b138bb2dd44"><div class="ttname"><a href="a44345.html#ac455ccea8affccf0d08d4b138bb2dd44">alicorn::modules::vfs::FileSystem::BrowsingDirectories</a></div><div class="ttdeci">void BrowsingDirectories(const Path_t &amp;, const Callback_t &amp;) const override</div><div class="ttdoc">Функция нерекурсивного перебора вложенных папок в указанной папке.</div><div class="ttdef"><b>Definition:</b> filesystem.cpp:78</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_a1c7f362031574707fb8b9183bd599cf.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_8bd51ee8d434a83702b3860b72e63376.html">Test.Cpp</a></li><li class="navelem"><a class="el" href="dir_50bfc8e4e86e3c45b041a709a3ed09e0.html">Test.Property</a></li><li class="navelem"><b>stdafx.h</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:29. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_c66237fe9a6c0c7c1e41f5b2c00f5183.html">Vfs</a></li><li class="navelem"><a class="el" href="dir_068fe833c7f8d2a92d99f8ab00f028c9.html">Vfs</a></li><li class="navelem"><b>filesystem.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:00. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

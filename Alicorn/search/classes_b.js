@@ -1,17 +1,17 @@
 var searchData=
 [
-  ['main_889',['Main',['../a43720.html',1,'app']]],
-  ['mainframe_890',['MainFrame',['../a45136.html',1,'app::MainFrame'],['../a43724.html',1,'wx::MainFrame']]],
-  ['managercommon_891',['ManagerCommon',['../a43972.html',1,'alicorn::modules::patterns::command']]],
-  ['managercommon_3c_20iundo_20_3e_892',['ManagerCommon&lt; IUndo &gt;',['../a43972.html',1,'alicorn::modules::patterns::command']]],
-  ['managerundoredo_893',['ManagerUndoRedo',['../a43976.html',1,'alicorn::modules::patterns::command']]],
-  ['match_894',['Match',['../a43120.html',1,'alicorn::extension::std::regex']]],
-  ['maxlogfiles_895',['MaxLogFiles',['../a43816.html',1,'alicorn::modules::logger']]],
-  ['maxlogsize_896',['MaxLogSize',['../a43820.html',1,'alicorn::modules::logger']]],
-  ['message_897',['Message',['../a43852.html',1,'alicorn::modules::logger::Message'],['../a43116.html',1,'alicorn::extension::std::Message&lt; TStream &gt;']]],
-  ['messageimpl_898',['MessageImpl',['../a43844.html',1,'alicorn::modules::logger']]],
-  ['messagepoints_899',['MessagePoints',['../a43848.html',1,'alicorn::modules::logger']]],
-  ['missedcodehtml_900',['MissedCodeHtml',['../a44844.html',1,'coverage']]],
-  ['model_901',['Model',['../a44944.html',1,'model']]],
-  ['multithreads_902',['Multithreads',['../a43716.html',1,'alicorn::extension::testing']]]
+  ['main_895',['Main',['../a43773.html',1,'app']]],
+  ['mainframe_896',['MainFrame',['../a45189.html',1,'app::MainFrame'],['../a43777.html',1,'wx::MainFrame']]],
+  ['managercommon_897',['ManagerCommon',['../a44025.html',1,'alicorn::modules::patterns::command']]],
+  ['managercommon_3c_20iundo_20_3e_898',['ManagerCommon&lt; IUndo &gt;',['../a44025.html',1,'alicorn::modules::patterns::command']]],
+  ['managerundoredo_899',['ManagerUndoRedo',['../a44029.html',1,'alicorn::modules::patterns::command']]],
+  ['match_900',['Match',['../a43161.html',1,'alicorn::extension::std::regex']]],
+  ['maxlogfiles_901',['MaxLogFiles',['../a43869.html',1,'alicorn::modules::logger']]],
+  ['maxlogsize_902',['MaxLogSize',['../a43873.html',1,'alicorn::modules::logger']]],
+  ['message_903',['Message',['../a43905.html',1,'alicorn::modules::logger::Message'],['../a43157.html',1,'alicorn::extension::std::Message&lt; TStream &gt;']]],
+  ['messageimpl_904',['MessageImpl',['../a43897.html',1,'alicorn::modules::logger']]],
+  ['messagepoints_905',['MessagePoints',['../a43901.html',1,'alicorn::modules::logger']]],
+  ['missedcodehtml_906',['MissedCodeHtml',['../a44897.html',1,'coverage']]],
+  ['model_907',['Model',['../a44997.html',1,'model']]],
+  ['multithreads_908',['Multithreads',['../a43769.html',1,'alicorn::extension::testing']]]
 ];

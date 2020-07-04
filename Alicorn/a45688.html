@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -93,25 +93,14 @@ $(document).ready(function(){initNavTree('a45688.html',''); initResizable(); });
 </div>
 
 <div class="PageDoc"><div class="contents">
-<div class="textblock"><p>Проект утилиты генерации заголовочного файла, содержащего бинарные данные указанного файла. Назначение - хранение непосредственно в программе ресурсов небольшого размера (иконок, курсоров и т.п.).</p><ul>
-<li>Если в качестве пути (&ndash;path="path/to/...") задан путь к файлу, заголовочный файл генерируется только для него, если путь к папке - то для всех файлов в этой папке, исключая файлы .hpp.</li>
-<li>Сгенерированный заголовочный файл будет располагаться в той же папке, что и исходный файл и будет иметь то же имя (с расширением .auto.hpp).</li>
-<li>Имя массива данных в созданном файле будет совпадать с именем исходного файла (учитывать при именовании файла!).</li>
-</ul>
-<h3>Использование утилиты</h3>
-<ul>
-<li>Подключить к решению проект <b>Resource</b> из Externals/Tools.</li>
-<li>Создать проект служебной программы, в который добавить необходимые файлы ресурсов, добавить ему зависимость от проекта <b>Resource</b> и добавить в качестве события после сборки <div class="fragment"><div class="line">$(ResultDir)Resource.exe --path=$(ProjectDir)</div>
-<div class="line">%(Command)</div>
-</div><!-- fragment --> </li>
-</ul>
+<div class="textblock"><p>Библиотека логирования программы предназначена для ведения журнала работы программы. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:33. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:05. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Modules/Vfs/Vfs/crypto.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/System/Application/Test.Application/Data.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -94,62 +94,43 @@ $(document).ready(function(){initNavTree('a47736_source.html',''); initResizable
 
 <div class="header">
   <div class="headertitle">
-<div class="title">crypto.hpp</div>  </div>
+<div class="title">Data.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;iconverter.hpp&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\application\dll\ptr.hpp&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;alicorn\crypto.hpp&gt;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;ipassword.hpp&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span>alicorn</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>modules</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">namespace </span>vfs</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TCrypto, <span class="keyword">class</span> TPassword&gt;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a44288.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44288.html">Crypto</a> final :</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44296.html">IConverter</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keyword">using</span> Path_t = ::boost::filesystem::path;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  Data_t <a class="code" href="a44288.html#a285e869c178d6ba7324e2c5323f7f125">PrePackAction</a>(<span class="keyword">const</span> Data_t &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  Data_t <a class="code" href="a44288.html#a8de30e0e047495678957fdb4b026b7ae">PostUnpackAction</a>(<span class="keyword">const</span> Data_t &amp;) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="a44600.html">::alicorn::system::application::dll::Ptr&lt;IPassword&gt;</a> m_pPasswordHandler;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a44288.html#a652fb7644e1ba096f45c4433e1814515">Crypto</a>(<span class="keyword">const</span> Path_t &amp;);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;} <span class="comment">// namespace vfs</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;} <span class="comment">// namespace modules</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;} <span class="comment">// namespace alicorn</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#include &quot;crypto.inl&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;boost\filesystem\path.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\extension\boost\serialization\path.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;alicorn\extension\std\string.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>Data final</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;  <span class="keywordtype">bool</span>                              BoolValue;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <span class="keywordtype">size_t</span>                            IntValue;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <a class="code" href="a43469.html">::alicorn::extension::std::String</a> StringValue;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  ::boost::filesystem::path         PathValue;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class</span> TArchive&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  <span class="comment">// cppcheck-suppress functionConst</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keywordtype">void</span> serialize(TArchive &amp; _Archive, <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>)</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// cppcheck-suppress clarifyCondition</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    _Archive &amp; BoolValue;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    _Archive &amp; IntValue;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    _Archive &amp; StringValue;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    _Archive &amp; PathValue;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa44600_html"><div class="ttname"><a href="a44600.html">alicorn::system::application::dll::Ptr</a></div><div class="ttdoc">Класс входит в Application   Класс-обертка для работы с объектами, созданными в dll.</div><div class="ttdef"><b>Definition:</b> ptr.hpp:64</div></div>
-<div class="ttc" id="aa44288_html_a285e869c178d6ba7324e2c5323f7f125"><div class="ttname"><a href="a44288.html#a285e869c178d6ba7324e2c5323f7f125">alicorn::modules::vfs::Crypto::PrePackAction</a></div><div class="ttdeci">Data_t PrePackAction(const Data_t &amp;) const override</div><div class="ttdoc">Функция для преобразования данных перед упаковкой в хранилище.</div><div class="ttdef"><b>Definition:</b> crypto.inl:34</div></div>
-<div class="ttc" id="aa44288_html_a8de30e0e047495678957fdb4b026b7ae"><div class="ttname"><a href="a44288.html#a8de30e0e047495678957fdb4b026b7ae">alicorn::modules::vfs::Crypto::PostUnpackAction</a></div><div class="ttdeci">Data_t PostUnpackAction(const Data_t &amp;) const override</div><div class="ttdoc">Функция для преобразования данных после распаковки хранилища (должна производить действие,...</div><div class="ttdef"><b>Definition:</b> crypto.inl:42</div></div>
-<div class="ttc" id="aa44296_html"><div class="ttname"><a href="a44296.html">alicorn::modules::vfs::IConverter</a></div><div class="ttdoc">Класс входит в Virtual File System   Интерфейсный класс преобразователя данных.</div><div class="ttdef"><b>Definition:</b> iconverter.hpp:34</div></div>
-<div class="ttc" id="aa44288_html_a652fb7644e1ba096f45c4433e1814515"><div class="ttname"><a href="a44288.html#a652fb7644e1ba096f45c4433e1814515">alicorn::modules::vfs::Crypto::Crypto</a></div><div class="ttdeci">Crypto(const Path_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition:</b> crypto.inl:28</div></div>
-<div class="ttc" id="aa44288_html"><div class="ttname"><a href="a44288.html">alicorn::modules::vfs::Crypto</a></div><div class="ttdoc">Класс входит в Virtual File System   Класс реализации интерфейса преобразования для шифрования данных...</div><div class="ttdef"><b>Definition:</b> crypto.hpp:43</div></div>
+<div class="ttc" id="aa43469_html"><div class="ttname"><a href="a43469.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:55</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_c66237fe9a6c0c7c1e41f5b2c00f5183.html">Vfs</a></li><li class="navelem"><a class="el" href="dir_068fe833c7f8d2a92d99f8ab00f028c9.html">Vfs</a></li><li class="navelem"><b>crypto.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:31. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_ada4d8658d320f5d22844142b6fd491d.html">Test.Application</a></li><li class="navelem"><b>Data.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:02. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

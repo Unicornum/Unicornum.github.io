@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/System/Version/Test.Version/Test.Version/version.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Source/Document/Document/universal.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -94,67 +94,69 @@ $(document).ready(function(){initNavTree('a47838_source.html',''); initResizable
 
 <div class="header">
   <div class="headertitle">
-<div class="title">version.hpp</div>  </div>
+<div class="title">universal.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="a47838.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define VERSION 3</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define SUBVERSION 9</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;alicorn\details.hpp&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;alicorn\document\node.hpp&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;alicorn\document\node-iterator.hpp&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span>source</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define SUBSUBVERSION 0</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define REVISION_SOLUTION 3258</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define __PLATFORM__ x64</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define TIME &quot;20:40&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define DAY 16</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#define MONTH 11</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define YEAR 2019</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// Текущий год устанавливается автоматически</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define __COPYRIGHT_STR__ &quot;© UnicornumVerum 2007 - 2019 (unicornum.verum@gmail.ru)&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define __COMPANY_NAME__ &quot;UnicornumVerum&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// Устанавливается автоматически</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define __PRODUCT_NAME__ &quot;Alicorn&quot;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#define __APPLICATION_NAME__ &quot;Alicorn&quot;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define __PRODUCT_DESCRIPTION__ &quot;Набор вспомогательных библиотек&quot;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#define __FILE_NAME__ &quot;&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">namespace </span>document</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> TImplementation&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="a44505.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44505.html">Universal</a> :</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">public</span> <a class="code" href="a44501.html">Node</a>&lt;typename TImplementation::Index_t&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">using</span> SourcePtr_t = ::std::shared_ptr&lt;source::details::ISource&gt;;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">using</span> Empty_t = bool;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">using</span> <a class="code" href="a44501.html">Node_t</a> = <a class="code" href="a44501.html">Node&lt;typename TImplementation::Index_t&gt;</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  SourcePtr_t m_pSource;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a44505.html#a1e06b693b8f29a79a585f4fc764bf95e">Universal</a>(<span class="keyword">const</span> SourcePtr_t &amp;);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="a44505.html#a1e06b693b8f29a79a585f4fc764bf95e">Universal</a>(<span class="keyword">const</span> SourcePtr_t &amp;, Empty_t);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="a44505.html#a1e06b693b8f29a79a585f4fc764bf95e">Universal</a>(<span class="keyword">const</span> <a class="code" href="a44505.html">Universal</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="a44505.html#a1e06b693b8f29a79a585f4fc764bf95e">Universal</a>(<a class="code" href="a44505.html">Universal</a> &amp;&amp;);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="a44505.html">Universal</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a44505.html">Universal</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="a44505.html">Universal</a> &amp; operator= (<a class="code" href="a44505.html">Universal</a> &amp;&amp;);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  ~<a class="code" href="a44505.html">Universal</a>(<span class="keywordtype">void</span>) noexcept;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="a44509.html">Utilities</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="a44505.html">Universal&lt;Text&gt;</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">extern</span> <span class="keyword">template</span> <span class="keyword">class </span><a class="code" href="a44505.html">Universal&lt;RapidXml&gt;</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;} <span class="comment">// namespace document</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} <span class="comment">// namespace source</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace alicorn</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa42865_html_gaca887abf1bed0f12a99431714940c050"><div class="ttname"><a href="a42865.html#gaca887abf1bed0f12a99431714940c050">__FILE_VERSION_SHORT__</a></div><div class="ttdeci">#define __FILE_VERSION_SHORT__</div><div class="ttdoc">Строка короткой версии exe/dll файла.</div><div class="ttdef"><b>Definition:</b> macros.hpp:45</div></div>
-<div class="ttc" id="aa42865_html_ga5e07a654741079583f62167c324ce81a"><div class="ttname"><a href="a42865.html#ga5e07a654741079583f62167c324ce81a">__PRODUCT_VERSION_FULL__</a></div><div class="ttdeci">#define __PRODUCT_VERSION_FULL__</div><div class="ttdoc">Строка полной версии exe/dll продукта.</div><div class="ttdef"><b>Definition:</b> macros.hpp:65</div></div>
-<div class="ttc" id="aa42839_html_gad33527f0cbd8dabe93ba131e08796e74"><div class="ttname"><a href="a42839.html#gad33527f0cbd8dabe93ba131e08796e74">THIS_DIRECTORY</a></div><div class="ttdeci">#define THIS_DIRECTORY</div><div class="ttdoc">Макрос входит в Testing   Макрос получения пути к текущему .cpp файлу.</div><div class="ttdef"><b>Definition:</b> this-directory.hpp:13</div></div>
-<div class="ttc" id="aa42831_html_gac46b79d4c0ba029db9e1d774414e6024"><div class="ttname"><a href="a42831.html#gac46b79d4c0ba029db9e1d774414e6024">__TO_STR</a></div><div class="ttdeci">#define __TO_STR(t)</div><div class="ttdoc">Макрос входит в Cpp   Макрос преобразования значения в строку.</div><div class="ttdef"><b>Definition:</b> to-str.hpp:38</div></div>
-<div class="ttc" id="aa42835_html_ga68c84efa84957c5f819d243a4cb84de9"><div class="ttname"><a href="a42835.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a></div><div class="ttdeci">#define uT(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Ucs2.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:22</div></div>
-<div class="ttc" id="aa42839_html_gad6bf14bd6aa4179c8a9e0c8d8debd7b2"><div class="ttname"><a href="a42839.html#gad6bf14bd6aa4179c8a9e0c8d8debd7b2">EXPECT_FILES_BINARY_EQ</a></div><div class="ttdeci">#define EXPECT_FILES_BINARY_EQ(Expected, Result)</div><div class="ttdoc">Макрос проверки побайтового совпадения двух файлов без прерывания выполнения теста.</div><div class="ttdef"><b>Definition:</b> equal-files.hpp:12</div></div>
-<div class="ttc" id="aa43428_html"><div class="ttname"><a href="a43428.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:55</div></div>
-<div class="ttc" id="aa44792_html"><div class="ttname"><a href="a44792.html">alicorn::system::version::Header</a></div><div class="ttdoc">Класс входит в Version   Класс манипуляцией версией решения.</div><div class="ttdef"><b>Definition:</b> header.hpp:51</div></div>
-<div class="ttc" id="aa44816_html"><div class="ttname"><a href="a44816.html">alicorn::system::version::Info</a></div><div class="ttdoc">Класс входит в Version   Класс получения информации о версии модуля.</div><div class="ttdef"><b>Definition:</b> info.hpp:67</div></div>
-<div class="ttc" id="aa45156_html"><div class="ttname"><a href="a45156.html">support::InfoTestingApp</a></div><div class="ttdoc">Класс входит в Testing.App   Класс информации о результатах прогона тестов.</div><div class="ttdef"><b>Definition:</b> Info.hpp:23</div></div>
-<div class="ttc" id="aa42865_html_ga0facd32184b2ec0c57501e7d76ce59ca"><div class="ttname"><a href="a42865.html#ga0facd32184b2ec0c57501e7d76ce59ca">__FILE_VERSION_FULL__</a></div><div class="ttdeci">#define __FILE_VERSION_FULL__</div><div class="ttdoc">Строка полной версии exe/dll файла.</div><div class="ttdef"><b>Definition:</b> macros.hpp:54</div></div>
+<div class="ttc" id="aa44501_html"><div class="ttname"><a href="a44501.html">alicorn::source::document::Node</a></div><div class="ttdoc">Класс входит в проект Document   Класс узла документа.</div><div class="ttdef"><b>Definition:</b> node.hpp:46</div></div>
+<div class="ttc" id="aa44505_html_a1e06b693b8f29a79a585f4fc764bf95e"><div class="ttname"><a href="a44505.html#a1e06b693b8f29a79a585f4fc764bf95e">alicorn::source::document::Universal::Universal</a></div><div class="ttdeci">Universal(const SourcePtr_t &amp;)</div><div class="ttdoc">Конструктор создания документа из указанного источника данных.</div><div class="ttdef"><b>Definition:</b> universal.inl:26</div></div>
+<div class="ttc" id="aa44509_html"><div class="ttname"><a href="a44509.html">alicorn::source::document::Utilities</a></div><div class="ttdoc">Класс входит в проект Document   Класс вспомогательных функций.</div><div class="ttdef"><b>Definition:</b> utilities.hpp:33</div></div>
+<div class="ttc" id="aa44505_html"><div class="ttname"><a href="a44505.html">alicorn::source::document::Universal</a></div><div class="ttdoc">Класс входит в проект Document   Класс-обертка для унифицированной работы с различными типами докумен...</div><div class="ttdef"><b>Definition:</b> universal.hpp:52</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_6ad1dcbf6dd9b6cc20ba7172c7c77f84.html">Version</a></li><li class="navelem"><a class="el" href="dir_ceab4aa636d1c60883eb6f29235d3ae5.html">Test.Version</a></li><li class="navelem"><a class="el" href="dir_a1febf30c4e4bb3a27fb3abf78784743.html">Test.Version</a></li><li class="navelem"><a class="el" href="a47838.html">version.hpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:31. Создано системой
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_9b7a7cc36b85820c41a89a179cfe5dd7.html">Document</a></li><li class="navelem"><a class="el" href="dir_a8408ad28bdc289fffb3af9990890e6a.html">Document</a></li><li class="navelem"><b>universal.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:03. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

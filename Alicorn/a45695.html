@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Testing</title>
+    <title>Alicorn: Virtual File System</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.3 Revision: 3380 Platform: x64 Build: 02:25 14.05.2020</span>
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -94,61 +94,30 @@ $(document).ready(function(){initNavTree('a45695.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Testing </div>  </div>
+<div class="title">Virtual File System </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>Введение </h1>
-<p>Раздел содержит программу-обертку над библиотекой <a href="http://code.google.com/p/googletest/">gtest </a> и комплект проектов тестирования. Назначение - удобная работа с отдельными классами и наглядное отображение результатов прогона тестов.</p>
-<h1>Подробное описание раздела </h1>
-<p>Комплект проектов тестирования содержится в папке Test.Front и включает в себя три проекта:</p><ul>
-<li><b>Test.Solution</b> - единственный проект на все решение. Экспортируется в решение и предназначен для сборки и запуска всех тестов всех проектов решения. Собирается в папку \Result\Test\x64 и зависит ото всех проектов <b>Test.Project</b>. При запуске "пробегается" по всем dll-кам в своей папке, загружает их, выполняет расположенные в них тесты и отображает статистику выполнения тестов. При завершении возвращает 0, если все тесты прошли успешно и число &gt; 0, если хотя бы один провалился.</li>
-<li><b>Test.Project</b> - отдельный тестовый проект для классов каждого проекта решения. Располагается в той же папке, в которой расположена папка проекта, тесты классов которого он будет содержать. 'Project' заменяется на имя того проекта, который будет тестироваться. Собирается как dll в папку \Result\Test\x86.</li>
-<li><b>Test.Class</b> - отдельный тестовый проект одного класса. Располагается в папке проекта <b>Test.Project</b>. Собирается как исполняемый файл для тестов одного класса. 'Class' в имени проекта заменяется на имя класса, тесты которого он будет исполнять.</li>
-</ul>
-<p>Вся информация о прогоне тестов в проектах <b>Test.Solution</b> и <b>Test.Class</b> отображается в диалоговом окне, содержащем три закладки:</p><ul>
-<li>В первой закладке отображается суммарный результат (количество всех/пройденных/проваленных/отключенных тестов) в html-формате.</li>
-<li>Во второй закладке отображается в виде дерева список всех тестов (разделы, содержащие проваленные тесты, помечаются красной иконкой). Иерархия должна содержать имя проекта теста, имя класса теста, имена тестов.</li>
-<li>В третьей закладке отображаются только проваленные тесты. Выделив нужный тест, в нижней части окна можно получить подробное описание причины провала.</li>
-</ul>
-<h1>Развертывание </h1>
-<p>Подключение проектов тестирования возможно вручную (см. описание ниже) и автоматически - соответствующими командами надстройки UniCA.</p>
-<h2>Общий проект тестирования </h2>
+<div class="textblock"><p>Список классов проекта: <a class="el" href="a42894.html">Virtual File System</a></p>
+<h1>Введение </h1>
+<p>Проект виртуальной файловой системы, реализующей однотипное получение данных, сходное с чтением данных из файлов.</p>
+<h1>Подробное описание проекта </h1>
+<p>Виртуальная файловая система позволяет абстрагироваться от способа хранения данных, предоставляя интерфейс получения этих данных, а также добавлять необходимые реализации доступа к данным. <br  />
+ Также, виртуальная файловая система позволяет получать данные из различных источников (например, ее можно настроить таким образом, чтобы в отладочной версии программа получала данные с диска, а в релизе - из БД).</p>
+<h2>Доступные реализации </h2>
 <ul>
-<li>Экспортировать проект Test.Solution в папку Solution решения и подключить к решению.</li>
+<li> <input type="checkbox" checked disabled>  Чтение файлов с диска.</li>
+<li> <input type="checkbox" checked disabled>  Получение данных из файлов, упакованных и зашифрованных в специальное хранилище.</li>
 </ul>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Предназначен для запуска всех тестов решения.</li>
-<li>Проект должен зависеть ото всех проектов <b>Test.Project</b> решения.</li>
-</ul>
-</dd></dl>
-<h2>Проект тестирования классов одного проекта </h2>
-<ul>
-<li>В папку, в которой расположена папка проекта экпортировать папку 'Test.Project' и подключить его к решению (в раздел его проекта).</li>
-<li>Заменить 'Project' на имя проекта, тесты классов которого он будет содержать.</li>
-<li>Проекту <b>Test.Solution</b> добавить зависимость от добавленного проекта.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd>В этот проект должны добавляться все файлы *_test.cpp всех проектов тестирования одного класса (в раздел Tests\ClassName).</dd></dl>
-<h2>Проект тестирования одного класса </h2>
-<ul>
-<li>Для каждого теста класса в папку проекта <b>Test.Project</b> экспортируется папка 'Test.Class'.</li>
-<li>Заменить 'Class' на имя тестируемого класса.</li>
-<li>Подключить добавленный проект к решению (в раздел Test.Classes проекта, к которому он относится).</li>
-<li>Файл ClassName_test.cpp переименовать, заменив 'ClassName' на имя класса, после чего подключить его к проектам <b>Test.Class</b> и <b>Test.Project</b>.</li>
-<li>В файле ClassName_test.cpp <b>PathToHeader.hpp</b> заменить на путь к файлу тестируемого класса.</li>
-<li>В файле ClassName_test.cpp <b>ClassName</b> заменить на соответствующее имя класса.</li>
-</ul>
-<h1>Рекомендуемая структура решения </h1>
-<div class="image">
-<img src="SolutionStruct.png" alt=""/>
-</div>
- </div></div><!-- contents -->
+<h3>Пример использования</h3>
+<p><a class="el" href="a42894.html#ModulesVfsExample">ModulesVfsExample</a> </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a45615.html">Структура решения</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 14 Май 2020 02:25:33. Создано системой
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a45660.html">Структура решения</a></li><li class="navelem"><a class="el" href="a45685.html">Modules</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:06. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

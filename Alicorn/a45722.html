@@ -1,0 +1,268 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Использование утилит</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Version: 3.9.4 Revision: 3431 Platform: x64 Build: 15:57 04.07.2020</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('a45722.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Использование утилит </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><ul>
+<li>Проекты этого раздела, которые строят исполняемые файлы, содержатся в папке Externals\Tools и при необходимости использования должны подключаться к решению, чтобы содержать правильное содержимое в ресурсе версии.</li>
+<li>Для возможности подключения этих проектов необходимо, чтобы в папке расположения файла страницы свойств Solution.x64.props располагался файл пустой страницы свойств Tools.props (это плата за возможность использования каскадных ссылок на разделы внутри Alicorn).</li>
+</ul>
+<h1>Documentation </h1>
+<p>Проект утилиты предварительной обработки файлов решения.</p>
+<p>Предназначен для:</p><ul>
+<li>Обработки файла лога сборки решения скриптом.</li>
+<li>Обработки файла покрытия кода тестами.</li>
+<li>Обработки файла расчета метрик кода в решении.</li>
+<li>Генерации документации.</li>
+</ul>
+<h2>Использование утилиты </h2>
+<ul>
+<li>Подключить к решению проект Documentation из папки Externals\Tools\Documentation.</li>
+<li>Одному из проектов решения установить зависимость от проекта Documentation и в качестве события после построения добавить запуск Documentation.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+</ul>
+<h3>Вспомогательные параметры</h3>
+<ul>
+<li><b>&ndash;file=path</b> - путь к исходному файлу (трактуется в зависимости от указанной команды).</li>
+<li><b>&ndash;path-to-solution=path</b> - полный путь к папке решения, которое обрабатывается (используется совместно с командой <b>&ndash;process-report</b>).</li>
+<li><b>&ndash;max-records</b> - максимальное количество записей в отчете (при добавлении новых записей самые старые будут удаляться; используется совместно с командой <b>&ndash;process-report</b>).</li>
+<li><b>&ndash;exclude</b> - путь к файлу, содержащему набор регулярных выражений, каждое из которых будет применяться к каждой строке в обрабатываемом файле; если хотя бы одно из регулярных выражений даст совпадение, строка не будет записана в файл результата (используется совместно с командой <b>&ndash;process-report=build</b>).</li>
+<li><b>&ndash;platform</b> - текущая собираемая платформа (используется совместно с командой <b>&ndash;make</b>).</li>
+</ul>
+<h3>Команды</h3>
+<dl class="section note"><dt>Заметки</dt><dd>Команды исключают использование друг друга.</dd></dl>
+<ul>
+<li><b>&ndash;help</b> - выводит в консоль список доступных команд.</li>
+<li><b>&ndash;process-report=type</b> - обработка файла, заданного как параметр <b>&ndash;file</b> (также требуется параметр <b>&ndash;path-to-solution</b>):<ul>
+<li><b>build</b> - обработка файла лога сборки скриптом (в той же папке и с тем же именем, но с расширением .html генерируется файл, группирующий и подсвечивающий цветом ошибки и предупреждения с разбиением оных на группы по проектам); может использоваться параметр <b>&ndash;exclude</b>, при его отсутствии будет использоваться набор игнорирования строк по умолчанию, записи о файлах, расположенных не в папке решения, игнорируются в любом случае.</li>
+<li><b>coverage</b> - обработка файла отчета покрытия кода тестами (из xml файла отчета генерируется html файлы, пригодные для включения в документацию Doxygen).</li>
+<li><b>metrics</b> - обработка результата вычисления метрик кода в решении (<b>&ndash;file</b> задает путь к папке, где располагаются файлы отчета SourceMonitor, <b>&ndash;max-records</b> задает количество проблемных мест в коде, которое будет выводиться для каждой метрики).</li>
+</ul>
+</li>
+<li><b>&ndash;make</b> - команда построения документации (например, 'doxygen.exe PathToConfigFile% &gt; PathToReport'), требуются параметры:<ul>
+<li><b>&ndash;file</b> - путь к файлу версии решения.</li>
+<li><b>&ndash;platform</b> - собираемая платформа.</li>
+</ul>
+</li>
+</ul>
+<h1>Localization </h1>
+<p>Проект утилиты генерации заголовочного файла с идентификаторами строк, используемыми для получения у модуля локализации программы текста выбранного языка программы.</p>
+<ul>
+<li>Утилита генерирует заголовочный файл из xml файла, переданного в качестве параметра.</li>
+<li>Значение узла <b>path</b> будет интерпретироваться как путь к папке расположения файлов локализации программы (относительно корневой папки расположения exe файла программы).</li>
+<li>Узлы, не содержащие значений будут интерпретироваться как указание создать пространство имен с именем узла.</li>
+<li>Узлы, содержащие значения, будут интерпретироваться как строки, которые будет использовать программа (для них будут сгенерированы идентификаторы).</li>
+<li>При обработке переданного файла утилита также будет сравнивать с указанным файлом все xml файлы в той же папке с выводом найденных расхождений в консоль.</li>
+</ul>
+<h2>Использование утилиты </h2>
+<p><a class="el" href="a42883.html">Использование утилиты для локализации программы</a></p>
+<h1>ProcessingMetrics </h1>
+<dl class="deprecated"><dt><b><a class="el" href="a42864.html#_deprecated000003">Уст.:</a></b></dt><dd>Проект устарел и будет удален в следующей стабильной версии, вместо него использовать утилиту Documentation.</dd></dl>
+<h1>Resource </h1>
+<p>Проект утилиты генерации заголовочного файла, содержащего бинарные данные указанного файла. Назначение - хранение непосредственно в программе ресурсов небольшого размера (иконок, курсоров и т.п.).</p><ul>
+<li>Если в качестве пути (&ndash;path="path/to/...") задан путь к файлу, заголовочный файл генерируется только для него, если путь к папке - то для всех файлов в этой папке, исключая файлы .hpp.</li>
+<li>Сгенерированный заголовочный файл будет располагаться в той же папке, что и исходный файл и будет иметь то же имя (с расширением .auto.hpp).</li>
+<li>Имя массива данных в созданном файле будет совпадать с именем исходного файла (учитывать при именовании файла!).</li>
+</ul>
+<h3>Использование утилиты</h3>
+<ul>
+<li>Подключить к решению проект <b>Resource</b> из Externals/Tools.</li>
+<li>Создать проект служебной программы, в который добавить необходимые файлы ресурсов, добавить ему зависимость от проекта <b>Resource</b> и добавить в качестве события после сборки <div class="fragment"><div class="line">$(ResultDir)Resource.exe --path=$(ProjectDir)</div>
+<div class="line">%(Command)</div>
+</div><!-- fragment --></li>
+</ul>
+<h1>RocketRenderToFile </h1>
+<h2>Использование утилиты </h2>
+<ul>
+<li>Добавить в решение проект Externals/Tools/RocketRenderToFile.</li>
+<li>Добавить проекту тестирования зависимость от проекта RocketRenderToFile.</li>
+<li>В тестах подготовить файлы, используемые в тестируемом .rml файле (стилей, изображений, шрифтов) с учетом их взаимного расположения.</li>
+<li>Запустить с требуемыми параметрами утилиту "$(SolutionDir)/$(Configuration)/Bin/x64/RocketRenderToFile.exe", проверяя совпадение полученного скриншота с ожидаемым изображением.</li>
+</ul>
+<h3>Параметры командной строки</h3>
+<ul>
+<li><b>help</b> - вывод в консоль описания параметров командной строки.</li>
+<li><b>source-file</b> - путь к тестируемому .rml файлу.</li>
+<li><b>dest-file</b> - путь к .png файлу, в который будет сохранен скриншот экрана для указанного .rml файла.</li>
+<li><b>width</b> - ширина генерируемого изображения (по умолчанию - 400).</li>
+<li><b>height</b> - высота генерируемого изображения (по умолчанию - 800).</li>
+<li><b>bkcolor</b> - цвет фона, поверх которого будет рендериться полученный .rml файл (по умолчанию - 0xE30B5C (малиновый)).</li>
+<li><b>fonts-dir</b> - путь к папке, из которой должны быть загружены .ttf шрифты, используемые в указанном .rml файле.</li>
+</ul>
+<h1>Settings </h1>
+<p>Проект утилиты редактирования настроек программы.</p><ul>
+<li>При запуске программа открывает настройки решения, в рамках которого была собрана и позволяет изменять значения параметров.</li>
+</ul>
+<h1>Test.&lt;...&gt; </h1>
+<p><a class="el" href="a45740.html">Testing</a></p>
+<h1>Version </h1>
+<p>Проект утилиты манипуляции версией решения.</p>
+<p>Предназначен для:</p><ul>
+<li>Обновления номера ревизии в файле версии решения.</li>
+<li>Увеличения на 1 указанного номера версии в файле версии решения.</li>
+<li>Формирование заголовочного файла версии решения для включения в состав библиотеки.</li>
+<li>Обновление ревизии файлов решения в файле AndroidManifest.xml. <div class="fragment"><div class="line">&lt;manifest ...</div>
+<div class="line">  android:versionCode=<span class="stringliteral">&quot;CURRENT_REVISION&quot;</span>&gt;</div>
+<div class="line">  ...</div>
+</div><!-- fragment --></li>
+<li>Формирование xml файла версии решения для включения в Android package (должен располагаться в папке Packaging\res\values). Образец формируемого файла: <div class="fragment"><div class="line">&lt;?xml version=<span class="stringliteral">&quot;1.0&quot;</span> encoding=<span class="stringliteral">&quot;utf-8&quot;</span>?&gt;</div>
+<div class="line">&lt;resources&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;CompanyName&quot;</span>&gt;UnicornumVerum&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileDescription&quot;</span>&gt;Набор вспомогательных библиотек&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileVersion&quot;</span>&gt;3.8.0 Revision: 2831 Platform: x64 Build: 01:29 09 Сентябрь 2017&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;FileVersionShort&quot;</span>&gt;3.8.0.2831 x64&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;LegalCopyright&quot;</span>&gt;© UnicornumVerum 2007 - 2017 (unicornum.verum@gmail.ru)&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductName&quot;</span>&gt;Alicorn&lt;/string&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ApplicationName&quot;</span>&gt;Alicorn&lt;/string&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersion&quot;</span>&gt;3.8.0 Revision: 2831 Platform: x64 Build: 01:29 09 Сентябрь 2017&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionYear&quot;</span>&gt;3.8.0.2017&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionMajor&quot;</span>&gt;3&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionMinor&quot;</span>&gt;8&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductVersionService&quot;</span>&gt;0&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">  &lt;<span class="keywordtype">string</span> name=<span class="stringliteral">&quot;ProductRevision&quot;</span>&gt;2831&lt;/<span class="keywordtype">string</span>&gt;</div>
+<div class="line">&lt;/resources&gt;</div>
+</div><!-- fragment --> Строки версий решения можно использовать следующим образом - в файле AndroidManifest.xml изменить: <div class="fragment"><div class="line">&lt;manifest ...</div>
+<div class="line">  android:versionName=<span class="stringliteral">&quot;@string/ProductVersionYear&quot;</span></div>
+<div class="line">  ...</div>
+</div><!-- fragment --></li>
+</ul>
+<h2>Использование утилиты </h2>
+<ul>
+<li>Подключить к решению проект Version из папки Externals\Tools\Version.</li>
+<li>Одному из проектов решения нужно установить зависимость от проекта Version и в качестве события после построения добавить запуск Version.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+</ul>
+<h3>Команды</h3>
+<dl class="section note"><dt>Заметки</dt><dd>Если задано несколько команд, они будут выполнятьсяв указанном порядке.</dd></dl>
+<ul>
+<li><b>&ndash;help</b> - выводит в консоль список доступных команд (исключает все остальные команды).</li>
+<li><b>&ndash;file=path</b> - путь к файлу Version.hpp с версией решения (обязательный параметр для всех последующих команд).</li>
+<li><b>&ndash;platform</b> - собираемая платформа (x64, Win32 и т.п.).</li>
+<li><b>&ndash;update</b> - в файле версии решения следует обновить номер ревизии файлов решения, время/дату, а также установить переменную окружения VERSION_SOLUTION, содержащую версию решения без ревизии решения (если файл, указанный в <b>&ndash;file</b> не существует, от будет создан со значениями по умолчанию).</li>
+<li><b>&ndash;increment=value</b> - в файле версии решения следует увеличить на 1 указанный номер версии решения (<b>service</b> - увеличивает 0.0.x).</li>
+<li><b>&ndash;set-environment-variables</b> - в консоль выводятся команды установки переменных окружения, <a class="el" href="a45745.html#ToolsVersionEnvironmentVariablesAnchor">устанавливающие</a> значения версии решения:<ul>
+<li><b>VERSION_SOLUTION</b> - версия решения вида '1.2.3'.</li>
+<li><b>VERSION_PRODUCT_NAME</b> - название продукта вида 'Alicorn'.</li>
+</ul>
+</li>
+<li><b>&ndash;build-header-version=path</b> - path задает путь к файлу, который должен быть перезаписан с учетом текущей версии решения.</li>
+<li><b>&ndash;update-android-manifest=path</b> ** - path задает путь к файлу AndroidManifest.xml, в котором следует установить текущий номер ревизии файлов решения.</li>
+<li><b>&ndash;build-android-version=path</b> - path задает путь к файлу версии Android package (version.auto.xml), который будет перезаписан с учетом версии решения.</li>
+</ul>
+<dl class="deprecated"><dt><b><a class="el" href="a42864.html#_deprecated000006">Уст.:</a></b></dt><dd><ul>
+<li><b>&ndash;configuration</b> - собираемая конфигурация (x64, Win32 и т.п.), вместо параметра использовать <b>platform</b>.</li>
+</ul>
+</dd></dl>
+<p><a class="anchor" id="ToolsVersionEnvironmentVariablesAnchor"></a> </p><h3>Использование переменных окружения</h3>
+<p>Т.к. при установке переменных окружения внутри процесса они будут доступны только самому процессу, утилита выводит в консоль набор команд, которые можно использовать в командном файле следующим образом:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">for</span> /f <span class="stringliteral">&quot;usebackq delims=;&quot;</span> %%a in (`version.exe --set-environment-variables`) <span class="keywordflow">do</span> (</div>
+<div class="line">%%a</div>
+<div class="line">)</div>
+<div class="line">  </div>
+<div class="line">echo VERSION_SOLUTION: %VERSION_SOLUTION%</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a45660.html">Структура решения</a></li><li class="navelem"><a class="el" href="a45721.html">Tools</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Сб 4 Июл 2020 15:58:06. Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,10 +1,8 @@
 var a42866 =
 [
-    [ "Common", "a44856.html", [
-      [ "Processing", "a44856.html#a2702880d28bd0cbbb831e905bfd991a5", null ]
-    ] ],
-    [ "Details", "a44860.html", [
-      [ "GetProblematicFiles", "a44860.html#a47a31424233539d49a813737b3add836", null ]
-    ] ],
-    [ "ReportParser", "a44864.html", null ]
+    [ "appdata_path", "a42866.html#ga988945ffa59758f6e34022bc7d9696f1", null ],
+    [ "copy_all", "a42866.html#ga9fa92e35356c3972c96f36365131f096", null ],
+    [ "irelative", "a42866.html#ga1bd1bcb8aa17149be5ae9ec4c4633900", null ],
+    [ "load_binary_file", "a42866.html#gae09eb61eb802cb6a489bcfe1450aedc2", null ],
+    [ "load_binary_file_from_disk", "a42866.html#ga314df9a646a13038f2ceae26710c904d", null ]
 ];

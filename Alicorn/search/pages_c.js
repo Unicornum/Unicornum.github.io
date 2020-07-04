@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['std_1520',['Std',['../a45632.html',1,'ExtensionPage']]],
-  ['std_2ememory_1521',['Std.Memory',['../a45634.html',1,'ExtensionPage']]],
-  ['std_1522',['Std',['../a45629.html',1,'ExtensionPage']]],
-  ['settings_1523',['Settings',['../a45648.html',1,'ModulesPage']]],
-  ['source_1524',['Source',['../a45652.html',1,'SolutionPage']]],
-  ['system_1525',['System',['../a45666.html',1,'SolutionPage']]],
-  ['settings_2eapp_1526',['Settings.App',['../a45694.html',1,'ToolsPage']]]
+  ['std_1531',['Std',['../a45677.html',1,'ExtensionPage']]],
+  ['std_2ememory_1532',['Std.Memory',['../a45679.html',1,'ExtensionPage']]],
+  ['std_1533',['Std',['../a45674.html',1,'ExtensionPage']]],
+  ['settings_1534',['Settings',['../a45693.html',1,'ModulesPage']]],
+  ['source_1535',['Source',['../a45697.html',1,'SolutionPage']]],
+  ['system_1536',['System',['../a45711.html',1,'SolutionPage']]],
+  ['settings_2eapp_1537',['Settings.App',['../a45739.html',1,'ToolsPage']]]
 ];
