@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.2.7 Revision: 2414 Platform: x64 Build: 21:30 24.06.2020</span>
+   &#160;<span id="projectnumber">Version: 2.2.8 Revision: 2506 Platform: x64 Build: 21:13 14.08.2020</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -104,14 +104,14 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;CubeCoords.hpp&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Defines.hpp&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a41581.html">basement</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="a41623.html">basement</a></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">namespace </span>model</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a42767.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42767.html">Animated</a> final :</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span> <a class="code" href="a42879.html">GameObject</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="a42829.html">   29</a></span>&#160;<span class="keyword">class </span><a class="code" href="a42829.html">Animated</a> final :</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keyword">public</span> <a class="code" href="a42941.html">GameObject</a></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">using</span> ComponentPtr_t = ::covellite::api::Component::ComponentPtr_t;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">using</span> cbMaterial_t = </div>
@@ -122,22 +122,22 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    cbMaterial_t    Material;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a42851.html">CubeCoords</a>      Coords;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a42913.html">CubeCoords</a>      Coords;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ComponentPtr_t  pAnimation;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  };</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Objects_t <a class="code" href="a42767.html#ad8dc968eee1e95b9ad65607b7a0adcf5">GetObject</a>(<span class="keyword">const</span> Any_t &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  Objects_t <a class="code" href="a42829.html#ad8dc968eee1e95b9ad65607b7a0adcf5">GetObject</a>(<span class="keyword">const</span> Any_t &amp;) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keyword">class </span>Animation final</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  {</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Object_t <a class="code" href="a42767.html#ad8dc968eee1e95b9ad65607b7a0adcf5">GetObject</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Object_t <a class="code" href="a42829.html#ad8dc968eee1e95b9ad65607b7a0adcf5">GetObject</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">float</span> m_TicksPerSecond = 1.0f;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="a41526.html#ga57c86892ac7323d5707a77baaee8878e">animation::Frames_t</a> m_RawFrames;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="a41568.html#ga57c86892ac7323d5707a77baaee8878e">animation::Frames_t</a> m_RawFrames;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">explicit</span> Animation(<span class="keyword">const</span> Path_t &amp;);</div>
@@ -146,9 +146,9 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keyword">class </span>Mesh final :</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">public</span> GameObject::Mesh</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> <a class="code" href="a41526.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> = <a class="code" href="a41526.html#gaf606590897bb0ced48dd0f8ac710ad38">animation::Skeleton_t</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">using</span> Bone_t = <a class="code" href="a42791.html">animation::Bone</a>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">using</span> <a class="code" href="a41526.html#ga335ca3212c27923ef2052512c1781637">Skin_t</a> = <a class="code" href="a41526.html#ga335ca3212c27923ef2052512c1781637">animation::Skin_t</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">using</span> <a class="code" href="a41568.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> = <a class="code" href="a41568.html#gaf606590897bb0ced48dd0f8ac710ad38">animation::Skeleton_t</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">using</span> Bone_t = <a class="code" href="a42853.html">animation::Bone</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">using</span> <a class="code" href="a41568.html#ga335ca3212c27923ef2052512c1781637">Skin_t</a> = <a class="code" href="a41568.html#ga335ca3212c27923ef2052512c1781637">animation::Skin_t</a>;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">using</span> WeightBones_t = ::std::vector&lt;::std::pair&lt;Bone_t::Index_t, float&gt;&gt;;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">using</span> BoneTransforms_t = ::std::map&lt;String_t, ::glm::mat4&gt;;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
@@ -176,7 +176,7 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;          });</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="a41526.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> &amp; GetBones(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Bones; }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keyword">inline</span> <span class="keyword">const</span> <a class="code" href="a41568.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> &amp; GetBones(<span class="keywordtype">void</span>)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Bones; }</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <span class="keyword">inline</span> Bone_t::Index_t GetBoneIndex(const ::std::string &amp; _Name)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">      </span>{</div>
@@ -189,11 +189,11 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      };</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <a class="code" href="a41526.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> m_Bones;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <a class="code" href="a41568.html#gaf606590897bb0ced48dd0f8ac710ad38">Skeleton_t</a> m_Bones;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    Object_t <a class="code" href="a42767.html#ad8dc968eee1e95b9ad65607b7a0adcf5">GetObject</a>(<span class="keyword">const</span> Any_t &amp;) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    Object_t <a class="code" href="a42829.html#ad8dc968eee1e95b9ad65607b7a0adcf5">GetObject</a>(<span class="keyword">const</span> Any_t &amp;) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    Object_t GetHoldInHandObject(<span class="keyword">const</span> String_t &amp;) <span class="keyword">const</span>;</div>
@@ -204,7 +204,7 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    mutable ::std::shared_ptr&lt;Animations&gt; m_pAnimations;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    Skeleton m_Skeleton;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="a41526.html#ga335ca3212c27923ef2052512c1781637">Skin_t</a> m_SkinVertexes;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="a41568.html#ga335ca3212c27923ef2052512c1781637">Skin_t</a> m_SkinVertexes;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keyword">mutable</span> Component_t::ComponentPtr_t m_pSkinData;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">mutable</span> Component_t::ComponentPtr_t m_pTransformBones;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
@@ -215,7 +215,7 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;  <span class="keyword">static</span> Object_t GetCameraObject(<span class="keyword">const</span> GameScenePtr_t &amp;);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;  <span class="keyword">static</span> Object_t GetLightsObject(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">static</span> Object_t GetPresentObject(<span class="keyword">const</span> <a class="code" href="a42851.html">CubeCoords</a> &amp;, </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;  <span class="keyword">static</span> Object_t GetPresentObject(<span class="keyword">const</span> <a class="code" href="a42913.html">CubeCoords</a> &amp;, </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    const ::std::vector&lt;Index_t&gt; &amp;);</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">private</span>:</div>
@@ -224,8 +224,8 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;  mutable ::std::map&lt;::std::string, ::std::size_t&gt; m_Textures;</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a42767.html">Animated</a>(<span class="keyword">const</span> GameScenePtr_t &amp;);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">friend</span> <a class="code" href="a42879.html">GameObject</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a42829.html">Animated</a>(<span class="keyword">const</span> GameScenePtr_t &amp;);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keyword">friend</span> <a class="code" href="a42941.html">GameObject</a>;</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;} <span class="comment">// namespace model</span></div>
@@ -233,23 +233,23 @@ $(document).ready(function(){initNavTree('a00773_source.html',''); initResizable
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;} <span class="comment">// namespace basement</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa42791_html"><div class="ttname"><a href="a42791.html">basement::model::animation::Bone</a></div><div class="ttdoc">Класс входит в проект Example   Класс информации об одной кости скелета анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:34</div></div>
-<div class="ttc" id="aa42851_html"><div class="ttname"><a href="a42851.html">basement::model::CubeCoords</a></div><div class="ttdoc">Класс входит в проект Example   Класс манипуляции кубическими координатами.</div><div class="ttdef"><b>Definition:</b> CubeCoords.hpp:26</div></div>
-<div class="ttc" id="aa42767_html_ad8dc968eee1e95b9ad65607b7a0adcf5"><div class="ttname"><a href="a42767.html#ad8dc968eee1e95b9ad65607b7a0adcf5">basement::model::Animated::GetObject</a></div><div class="ttdeci">Objects_t GetObject(const Any_t &amp;) const override</div><div class="ttdoc">Функция получения уникального набора компонентов игрового объекта.</div><div class="ttdef"><b>Definition:</b> Animated.cpp:66</div></div>
-<div class="ttc" id="aa41663_html_a76ccfe83ee721560c67afed1eea60ddb"><div class="ttname"><a href="a41663.html#a76ccfe83ee721560c67afed1eea60ddb">covellite::api::Component::Make</a></div><div class="ttdeci">static ComponentPtr_t Make(const SourceParams_t &amp;)</div><div class="ttdoc">Функция создания объектов компонентов.</div><div class="ttdef"><b>Definition:</b> Component.inl:29</div></div>
-<div class="ttc" id="aa41526_html_ga335ca3212c27923ef2052512c1781637"><div class="ttname"><a href="a41526.html#ga335ca3212c27923ef2052512c1781637">basement::model::animation::Skin_t</a></div><div class="ttdeci">::std::vector&lt; SkinVertex &gt; Skin_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных набора вершин анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:110</div></div>
-<div class="ttc" id="aa42803_html"><div class="ttname"><a href="a42803.html">basement::model::Animation</a></div><div class="ttdoc">Класс входит в проект Example   Тип для доступа к данным одной анимации.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:159</div></div>
-<div class="ttc" id="aa41526_html_ga57c86892ac7323d5707a77baaee8878e"><div class="ttname"><a href="a41526.html#ga57c86892ac7323d5707a77baaee8878e">basement::model::animation::Frames_t</a></div><div class="ttdeci">::std::vector&lt;::std::pair&lt; float, ::alicorn::extension::std::fast::unordered_map&lt;::std::string, Mat4 &gt; &gt;&gt; Frames_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных набора кадров одной анимации.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:139</div></div>
-<div class="ttc" id="aa41526_html_gaf606590897bb0ced48dd0f8ac710ad38"><div class="ttname"><a href="a41526.html#gaf606590897bb0ced48dd0f8ac710ad38">basement::model::animation::Skeleton_t</a></div><div class="ttdeci">::std::vector&lt; Bone &gt; Skeleton_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных скелета.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:64</div></div>
-<div class="ttc" id="aa42879_html"><div class="ttname"><a href="a42879.html">basement::model::GameObject</a></div><div class="ttdoc">Класс входит в проект Example   Общий базовый класс игрового объекта.</div><div class="ttdef"><b>Definition:</b> GameObject.hpp:34</div></div>
-<div class="ttc" id="aa42031_html"><div class="ttname"><a href="a42031.html">covellite::api::Vertex</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс формата вертексного буфера.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:68</div></div>
-<div class="ttc" id="aa42767_html"><div class="ttname"><a href="a42767.html">basement::model::Animated</a></div><div class="ttdoc">Класс входит в проект Example   Класс рендеринга анимированного объекта.</div><div class="ttdef"><b>Definition:</b> Animated.hpp:31</div></div>
-<div class="ttc" id="aa41581_html"><div class="ttname"><a href="a41581.html">basement</a></div><div class="ttdef"><b>Definition:</b> Common.hpp:10</div></div>
+<div class="ttc" id="aa41705_html_a76ccfe83ee721560c67afed1eea60ddb"><div class="ttname"><a href="a41705.html#a76ccfe83ee721560c67afed1eea60ddb">covellite::api::Component::Make</a></div><div class="ttdeci">static ComponentPtr_t Make(const SourceParams_t &amp;)</div><div class="ttdoc">Функция создания объектов компонентов.</div><div class="ttdef"><b>Definition:</b> Component.inl:29</div></div>
+<div class="ttc" id="aa42093_html"><div class="ttname"><a href="a42093.html">covellite::api::Vertex</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс формата вертексного буфера.</div><div class="ttdef"><b>Definition:</b> Vertex.hpp:68</div></div>
+<div class="ttc" id="aa41568_html_ga335ca3212c27923ef2052512c1781637"><div class="ttname"><a href="a41568.html#ga335ca3212c27923ef2052512c1781637">basement::model::animation::Skin_t</a></div><div class="ttdeci">::std::vector&lt; SkinVertex &gt; Skin_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных набора вершин анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:110</div></div>
+<div class="ttc" id="aa42941_html"><div class="ttname"><a href="a42941.html">basement::model::GameObject</a></div><div class="ttdoc">Класс входит в проект Example   Общий базовый класс игрового объекта.</div><div class="ttdef"><b>Definition:</b> GameObject.hpp:34</div></div>
+<div class="ttc" id="aa41623_html"><div class="ttname"><a href="a41623.html">basement</a></div><div class="ttdef"><b>Definition:</b> Common.hpp:10</div></div>
+<div class="ttc" id="aa42865_html"><div class="ttname"><a href="a42865.html">basement::model::Animation</a></div><div class="ttdoc">Класс входит в проект Example   Тип для доступа к данным одной анимации.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:159</div></div>
+<div class="ttc" id="aa42853_html"><div class="ttname"><a href="a42853.html">basement::model::animation::Bone</a></div><div class="ttdoc">Класс входит в проект Example   Класс информации об одной кости скелета анимированной модели.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:34</div></div>
+<div class="ttc" id="aa41568_html_gaf606590897bb0ced48dd0f8ac710ad38"><div class="ttname"><a href="a41568.html#gaf606590897bb0ced48dd0f8ac710ad38">basement::model::animation::Skeleton_t</a></div><div class="ttdeci">::std::vector&lt; Bone &gt; Skeleton_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных скелета.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:64</div></div>
+<div class="ttc" id="aa42829_html"><div class="ttname"><a href="a42829.html">basement::model::Animated</a></div><div class="ttdoc">Класс входит в проект Example   Класс рендеринга анимированного объекта.</div><div class="ttdef"><b>Definition:</b> Animated.hpp:31</div></div>
+<div class="ttc" id="aa41568_html_ga57c86892ac7323d5707a77baaee8878e"><div class="ttname"><a href="a41568.html#ga57c86892ac7323d5707a77baaee8878e">basement::model::animation::Frames_t</a></div><div class="ttdeci">::std::vector&lt;::std::pair&lt; float, ::alicorn::extension::std::fast::unordered_map&lt;::std::string, Mat4 &gt; &gt;&gt; Frames_t</div><div class="ttdoc">Класс входит в проект Example   Тип данных набора кадров одной анимации.</div><div class="ttdef"><b>Definition:</b> Animation.hpp:139</div></div>
+<div class="ttc" id="aa42913_html"><div class="ttname"><a href="a42913.html">basement::model::CubeCoords</a></div><div class="ttdoc">Класс входит в проект Example   Класс манипуляции кубическими координатами.</div><div class="ttdef"><b>Definition:</b> CubeCoords.hpp:26</div></div>
+<div class="ttc" id="aa42829_html_ad8dc968eee1e95b9ad65607b7a0adcf5"><div class="ttname"><a href="a42829.html#ad8dc968eee1e95b9ad65607b7a0adcf5">basement::model::Animated::GetObject</a></div><div class="ttdeci">Objects_t GetObject(const Any_t &amp;) const override</div><div class="ttdoc">Функция получения уникального набора компонентов игрового объекта.</div><div class="ttdef"><b>Definition:</b> Animated.cpp:66</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>Animated.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Ср 24 Июн 2020 21:31:03. Создано системой
+    <li class="footer">Документация по Covellite++. Последние изменения: Пт 14 Авг 2020 21:13:50. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

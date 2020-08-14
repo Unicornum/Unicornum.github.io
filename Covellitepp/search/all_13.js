@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['vertex_309',['Vertex',['../a42031.html',1,'covellite::api']]],
-  ['vertex_5ft_310',['Vertex_t',['../a43063.html#a6f2b39cad3a6389f0f67776f62ba5252',1,'basement::Simple2DGame::Vertex_t()'],['../a43087.html#aa2c1d18b6f17c2a88cff3edfa8c21046',1,'basement::Simple3DObject::Vertex_t()']]],
-  ['vertexdata_5ft_311',['VertexData_t',['../a43063.html#a1eb08c6023edf6eeeb7041229f48b9ba',1,'basement::Simple2DGame']]],
-  ['view_312',['View',['../a43031.html',1,'basement::view']]]
+  ['vertex_311',['Vertex',['../a42093.html',1,'covellite::api']]],
+  ['vertex_5ft_312',['Vertex_t',['../a43125.html#a6f2b39cad3a6389f0f67776f62ba5252',1,'basement::Simple2DGame::Vertex_t()'],['../a43149.html#aa2c1d18b6f17c2a88cff3edfa8c21046',1,'basement::Simple3DObject::Vertex_t()']]],
+  ['vertexdata_5ft_313',['VertexData_t',['../a43125.html#a1eb08c6023edf6eeeb7041229f48b9ba',1,'basement::Simple2DGame']]],
+  ['view_314',['View',['../a43093.html',1,'basement::view']]]
 ];

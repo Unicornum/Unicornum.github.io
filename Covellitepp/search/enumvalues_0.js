@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['activate_640',['Activate',['../a41520.html#gga7c051e93e1837c87e8b08334edb4a3cca508c416ea55417cfbce2100b846a5fcc',1,'covellite::events::Window_t']]]
+  ['activate_647',['Activate',['../a41562.html#gga7c051e93e1837c87e8b08334edb4a3cca508c416ea55417cfbce2100b846a5fcc',1,'covellite::events::Window_t']]]
 ];
