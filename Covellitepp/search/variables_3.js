@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isfullscreen_632',['IsFullScreen',['../a41961.html#a384dd28f6c48dee4d4a26316cae59b36',1,'covellite::api::renderer::SettingsData']]]
+  ['handle_631',['Handle',['../a42378.html#a987e90b45408ac417db583e166b56316',1,'covellite::api::renderer::SettingsData']]]
 ];

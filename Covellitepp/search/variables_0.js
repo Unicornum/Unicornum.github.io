@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['doaddobject_627',['DoAddObject',['../a42985.html#ac43a9b1ccbd97ef663de9e6058543076',1,'basement::model::IDbComponents']]],
-  ['doremoveobject_628',['DoRemoveObject',['../a42985.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91',1,'basement::model::IDbComponents']]]
+  ['clientrect_627',['ClientRect',['../a42378.html#a70eb9293c5e73d4a60d0cd828b413d75',1,'covellite::api::renderer::SettingsData']]]
 ];

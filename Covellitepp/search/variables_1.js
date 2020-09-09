@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['ew_629',['ew',['../a42093.html#a899020fcba44adb9bc87894ba3c7a358',1,'covellite::api::Vertex']]]
+  ['doaddobject_628',['DoAddObject',['../a43402.html#ac43a9b1ccbd97ef663de9e6058543076',1,'basement::model::IDbComponents']]],
+  ['doremoveobject_629',['DoRemoveObject',['../a43402.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91',1,'basement::model::IDbComponents']]]
 ];
