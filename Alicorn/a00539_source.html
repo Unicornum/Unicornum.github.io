@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.5 Revision: 3471 Platform: x64 Build: 23:59 07.10.2020</span>
+   &#160;<span id="projectnumber">Version: 3.10.0 Revision: 3471 Platform: x64 Build: 10:01 08.10.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('a00539_source.html',''); initResizable
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a43542.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="a43542.html">Pool</a> final</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="a58059.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="a58059.html">Pool</a> final</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">class </span>Chunk;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">class </span>Block;</div>
@@ -124,25 +124,25 @@ $(document).ready(function(){initNavTree('a00539_source.html',''); initResizable
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">template</span>&lt;<span class="keyword">class </span>... TArgs&gt;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  T * Allocate(<span class="keywordtype">size_t</span>, TArgs &amp;&amp; ...);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a43542.html#a8df3f5d93d76810097613c59203e66dc">Deallocate</a>(T *) noexcept;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a43542.html#a391b49c50ee60058b67ae8e0952cfe88">Release</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a43542.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">GetFreeObjects</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a43542.html#a87260e30e3e5a240e5e6cee018d50f4f">GetPoolSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a58059.html#a8df3f5d93d76810097613c59203e66dc">Deallocate</a>(T *) noexcept;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="a58059.html#a391b49c50ee60058b67ae8e0952cfe88">Release</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a58059.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">GetFreeObjects</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">size_t</span> <a class="code" href="a58059.html#a87260e30e3e5a240e5e6cee018d50f4f">GetPoolSize</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  Chunk *  m_pHeaderFreeChunks = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  Blocks_t m_Blocks;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="a43542.html">Pool</a>(<span class="keywordtype">void</span>) { }</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="a43542.html">Pool</a>(<span class="keyword">const</span> <a class="code" href="a43542.html">Pool</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="a43542.html">Pool</a>(<a class="code" href="a43542.html">Pool</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="a43542.html">Pool</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a43542.html">Pool</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="a43542.html">Pool</a> &amp; operator= (<a class="code" href="a43542.html">Pool</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">friend</span> <a class="code" href="a43218.html">SingletonLocalThread&lt;Pool&lt;T&gt;</a>&gt;;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <a class="code" href="a58059.html">Pool</a>(<span class="keywordtype">void</span>) { }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <a class="code" href="a58059.html">Pool</a>(<span class="keyword">const</span> <a class="code" href="a58059.html">Pool</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="a58059.html">Pool</a>(<a class="code" href="a58059.html">Pool</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <a class="code" href="a58059.html">Pool</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a58059.html">Pool</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <a class="code" href="a58059.html">Pool</a> &amp; operator= (<a class="code" href="a58059.html">Pool</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">friend</span> <a class="code" href="a57735.html">SingletonLocalThread&lt;Pool&lt;T&gt;</a>&gt;;</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="a42916.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Pool_test, <span class="comment">/*DISABLED_*/</span>Test_Release_FromDestructor);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <a class="code" href="a57433.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Pool_test, <span class="comment">/*DISABLED_*/</span>Test_Release_FromDestructor);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace memory</span></div>
@@ -156,18 +156,18 @@ $(document).ready(function(){initNavTree('a00539_source.html',''); initResizable
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#include &quot;pool.inl&quot;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa43542_html_a391b49c50ee60058b67ae8e0952cfe88"><div class="ttname"><a href="a43542.html#a391b49c50ee60058b67ae8e0952cfe88">alicorn::extension::std::memory::Pool::Release</a></div><div class="ttdeci">void Release(void)</div><div class="ttdoc">Функция удаления всей выделенной для пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.inl:110</div></div>
-<div class="ttc" id="aa43542_html_a7edd5a08ff1d7befcd5d9c4ec8c3c040"><div class="ttname"><a href="a43542.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">alicorn::extension::std::memory::Pool::GetFreeObjects</a></div><div class="ttdeci">size_t GetFreeObjects(void) const</div><div class="ttdoc">Функция получения количества свободных объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:126</div></div>
-<div class="ttc" id="aa43542_html"><div class="ttname"><a href="a43542.html">alicorn::extension::std::memory::Pool</a></div><div class="ttdoc">Класс входит в проект Std   Класс создания объектов из пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.hpp:57</div></div>
-<div class="ttc" id="aa43542_html_a8df3f5d93d76810097613c59203e66dc"><div class="ttname"><a href="a43542.html#a8df3f5d93d76810097613c59203e66dc">alicorn::extension::std::memory::Pool::Deallocate</a></div><div class="ttdeci">void Deallocate(T *) noexcept</div><div class="ttdoc">Функция для освобождения ранее выделенного объекта.</div><div class="ttdef"><b>Definition:</b> pool.inl:75</div></div>
-<div class="ttc" id="aa43542_html_a87260e30e3e5a240e5e6cee018d50f4f"><div class="ttname"><a href="a43542.html#a87260e30e3e5a240e5e6cee018d50f4f">alicorn::extension::std::memory::Pool::GetPoolSize</a></div><div class="ttdeci">size_t GetPoolSize(void) const</div><div class="ttdoc">Функция получения общего количества объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:146</div></div>
-<div class="ttc" id="aa43218_html"><div class="ttname"><a href="a43218.html">alicorn::extension::std::SingletonLocalThread</a></div><div class="ttdoc">Класс входит в проект Std   Класс для использования синглетона, уникального для каждого потока.</div><div class="ttdef"><b>Definition:</b> singleton-thread-local.hpp:69</div></div>
-<div class="ttc" id="aa42916_html_gab92570f53abf3b4fbbd13acaf4265468"><div class="ttname"><a href="a42916.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a></div><div class="ttdeci">#define FRIEND_TEST(a, b)</div><div class="ttdoc">Класс входит в Testing   Определение макроса для тестовых функций для того, чтобы исключить из постро...</div><div class="ttdef"><b>Definition:</b> friend.hpp:16</div></div>
+<div class="ttc" id="aa58059_html_a8df3f5d93d76810097613c59203e66dc"><div class="ttname"><a href="a58059.html#a8df3f5d93d76810097613c59203e66dc">alicorn::extension::std::memory::Pool::Deallocate</a></div><div class="ttdeci">void Deallocate(T *) noexcept</div><div class="ttdoc">Функция для освобождения ранее выделенного объекта.</div><div class="ttdef"><b>Definition:</b> pool.inl:75</div></div>
+<div class="ttc" id="aa58059_html_a391b49c50ee60058b67ae8e0952cfe88"><div class="ttname"><a href="a58059.html#a391b49c50ee60058b67ae8e0952cfe88">alicorn::extension::std::memory::Pool::Release</a></div><div class="ttdeci">void Release(void)</div><div class="ttdoc">Функция удаления всей выделенной для пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.inl:110</div></div>
+<div class="ttc" id="aa57735_html"><div class="ttname"><a href="a57735.html">alicorn::extension::std::SingletonLocalThread</a></div><div class="ttdoc">Класс входит в проект Std   Класс для использования синглетона, уникального для каждого потока.</div><div class="ttdef"><b>Definition:</b> singleton-thread-local.hpp:69</div></div>
+<div class="ttc" id="aa58059_html_a87260e30e3e5a240e5e6cee018d50f4f"><div class="ttname"><a href="a58059.html#a87260e30e3e5a240e5e6cee018d50f4f">alicorn::extension::std::memory::Pool::GetPoolSize</a></div><div class="ttdeci">size_t GetPoolSize(void) const</div><div class="ttdoc">Функция получения общего количества объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:146</div></div>
+<div class="ttc" id="aa58059_html_a7edd5a08ff1d7befcd5d9c4ec8c3c040"><div class="ttname"><a href="a58059.html#a7edd5a08ff1d7befcd5d9c4ec8c3c040">alicorn::extension::std::memory::Pool::GetFreeObjects</a></div><div class="ttdeci">size_t GetFreeObjects(void) const</div><div class="ttdoc">Функция получения количества свободных объектов в пуле.</div><div class="ttdef"><b>Definition:</b> pool.inl:126</div></div>
+<div class="ttc" id="aa57433_html_gab92570f53abf3b4fbbd13acaf4265468"><div class="ttname"><a href="a57433.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a></div><div class="ttdeci">#define FRIEND_TEST(a, b)</div><div class="ttdoc">Класс входит в Testing   Определение макроса для тестовых функций для того, чтобы исключить из постро...</div><div class="ttdef"><b>Definition:</b> friend.hpp:16</div></div>
+<div class="ttc" id="aa58059_html"><div class="ttname"><a href="a58059.html">alicorn::extension::std::memory::Pool</a></div><div class="ttdoc">Класс входит в проект Std   Класс создания объектов из пула памяти.</div><div class="ttdef"><b>Definition:</b> pool.hpp:57</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_4537bd4e55ba6365963602639fd3b2c2.html">Std.Memory</a></li><li class="navelem"><a class="el" href="dir_b3c0c39a5a9640dc21b1f2c02ff6b8cd.html">Std.Memory</a></li><li class="navelem"><b>pool.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 00:00:32. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 10:02:17. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

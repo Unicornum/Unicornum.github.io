@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.5 Revision: 3471 Platform: x64 Build: 23:59 07.10.2020</span>
+   &#160;<span id="projectnumber">Version: 3.10.0 Revision: 3471 Platform: x64 Build: 10:01 08.10.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -112,11 +112,11 @@ $(document).ready(function(){initNavTree('a01211_source.html',''); initResizable
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a44322.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a44322.html">Password</a> final</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a58839.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a58839.html">Password</a> final</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">using</span> Data_t = ::std::vector&lt;T&gt;;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keyword">using</span> Size_t = <span class="keyword">typename</span> Data_t::size_type;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> PasswordPtr_t = <a class="code" href="a42915.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">::std::unique_ptr</a>&lt;Data_t, void(*)(Data_t *)&gt;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">using</span> PasswordPtr_t = <a class="code" href="a57432.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">::std::unique_ptr</a>&lt;Data_t, void(*)(Data_t *)&gt;;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  T * Data(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
@@ -128,12 +128,12 @@ $(document).ready(function(){initNavTree('a01211_source.html',''); initResizable
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  PasswordPtr_t m_pPassword;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a44322.html">Password</a>(Size_t);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="a44322.html">Password</a>(<span class="keyword">const</span> <a class="code" href="a44322.html">Password</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="a44322.html">Password</a>(<a class="code" href="a44322.html">Password</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="a44322.html">Password</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a44322.html">Password</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="a44322.html">Password</a> &amp; operator= (<a class="code" href="a44322.html">Password</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  ~<a class="code" href="a44322.html">Password</a>(<span class="keywordtype">void</span>) noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">explicit</span> <a class="code" href="a58839.html">Password</a>(Size_t);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="a58839.html">Password</a>(<span class="keyword">const</span> <a class="code" href="a58839.html">Password</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="a58839.html">Password</a>(<a class="code" href="a58839.html">Password</a> &amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <a class="code" href="a58839.html">Password</a> &amp; operator= (<span class="keyword">const</span> <a class="code" href="a58839.html">Password</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="a58839.html">Password</a> &amp; operator= (<a class="code" href="a58839.html">Password</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  ~<a class="code" href="a58839.html">Password</a>(<span class="keywordtype">void</span>) noexcept = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;} <span class="comment">// namespace crypto</span></div>
@@ -145,13 +145,13 @@ $(document).ready(function(){initNavTree('a01211_source.html',''); initResizable
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#include &lt;alicorn\crypto\password.inl&gt;</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa42915_html_ga0c97cb236edf6ff6a6fa3a5ae5cea064"><div class="ttname"><a href="a42915.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">alicorn::extension::std::unique_ptr</a></div><div class="ttdeci">::std::unique_ptr&lt; T, void(*)(void *)&gt; unique_ptr</div><div class="ttdoc">Класс входит в проект Std   Вспомогательное определение аналога std::unique_ptr&lt;&gt; для захвата ресурсо...</div><div class="ttdef"><b>Definition:</b> unique-ptr.hpp:39</div></div>
-<div class="ttc" id="aa44322_html"><div class="ttname"><a href="a44322.html">alicorn::source::crypto::Password</a></div><div class="ttdoc">Класс входит в проект Crypto   Класс-контейнер для передачи пароля.</div><div class="ttdef"><b>Definition:</b> password.hpp:37</div></div>
+<div class="ttc" id="aa57432_html_ga0c97cb236edf6ff6a6fa3a5ae5cea064"><div class="ttname"><a href="a57432.html#ga0c97cb236edf6ff6a6fa3a5ae5cea064">alicorn::extension::std::unique_ptr</a></div><div class="ttdeci">::std::unique_ptr&lt; T, void(*)(void *)&gt; unique_ptr</div><div class="ttdoc">Класс входит в проект Std   Вспомогательное определение аналога std::unique_ptr&lt;&gt; для захвата ресурсо...</div><div class="ttdef"><b>Definition:</b> unique-ptr.hpp:39</div></div>
+<div class="ttc" id="aa58839_html"><div class="ttname"><a href="a58839.html">alicorn::source::crypto::Password</a></div><div class="ttdoc">Класс входит в проект Crypto   Класс-контейнер для передачи пароля.</div><div class="ttdef"><b>Definition:</b> password.hpp:37</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><a class="el" href="dir_460f271f1936f0ecb85d4d26fcafb3ca.html">Crypto</a></li><li class="navelem"><a class="el" href="dir_02699cb4e9e97edff9e8b0e9b790a6eb.html">Crypto</a></li><li class="navelem"><b>password.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 00:00:34. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 10:02:20. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>

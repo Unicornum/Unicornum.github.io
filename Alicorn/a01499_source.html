@@ -36,7 +36,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.5 Revision: 3471 Platform: x64 Build: 23:59 07.10.2020</span>
+   &#160;<span id="projectnumber">Version: 3.10.0 Revision: 3471 Platform: x64 Build: 10:01 08.10.2020</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -116,7 +116,7 @@ $(document).ready(function(){initNavTree('a01499_source.html',''); initResizable
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">class </span>Environment :</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">public</span> <a class="code" href="a43690.html">::alicorn::extension::testing::Proxy</a>&lt;Environment&gt;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">public</span> <a class="code" href="a58207.html">::alicorn::extension::testing::Proxy</a>&lt;Environment&gt;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  MOCK_METHOD0(Constructor, ::mock::Id_t(<span class="keywordtype">void</span>));</div>
@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('a01499_source.html',''); initResizable
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">inline</span> Environment::Environment(<span class="keywordtype">void</span>) :</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_pImpl(::alicorn::extension::std::<a class="code" href="a42915.html#ga5f9c37bd9b4ca4bafeb36261de35e63d">make_trivial</a>&lt;Impl&gt;())</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  m_pImpl(::alicorn::extension::std::<a class="code" href="a57432.html#ga5f9c37bd9b4ca4bafeb36261de35e63d">make_trivial</a>&lt;Impl&gt;())</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>] =</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    proxy::Environment::GetInstance()-&gt;Constructor();</div>
@@ -149,49 +149,49 @@ $(document).ready(function(){initNavTree('a01499_source.html',''); initResizable
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">inline</span> Environment::~Environment(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;inline ::std::string <a class="code" href="a44682.html#a5c140178229b88ceefe3f9862787232a">Environment::GetPackageName</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;inline ::std::string <a class="code" href="a59199.html#a5c140178229b88ceefe3f9862787232a">Environment::GetPackageName</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetPackageName(</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> int32_t <a class="code" href="a44682.html#a4984594882431993666741c14ba19eb7">Environment::GetStatusBarHeight</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> int32_t <a class="code" href="a59199.html#a4984594882431993666741c14ba19eb7">Environment::GetStatusBarHeight</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetStatusBarHeight(</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;inline ::std::string <a class="code" href="a44682.html#ad18797ad756d9ab15a9adcb2cd2049ce">Environment::GetApplicationDirectory</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;inline ::std::string <a class="code" href="a59199.html#ad18797ad756d9ab15a9adcb2cd2049ce">Environment::GetApplicationDirectory</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetApplicationDirectory(</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;inline ::std::string <a class="code" href="a44682.html#ab329e830c28ad40b4302db6d9a992991">Environment::GetNativeLibraryDirectory</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;inline ::std::string <a class="code" href="a59199.html#ab329e830c28ad40b4302db6d9a992991">Environment::GetNativeLibraryDirectory</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetNativeLibraryDirectory(</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;inline ::std::string <a class="code" href="a44682.html#a25a5536c559fbaf6c76bc155ca7064f5">Environment::GetExternalStorageDirectory</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;inline ::std::string <a class="code" href="a59199.html#a25a5536c559fbaf6c76bc155ca7064f5">Environment::GetExternalStorageDirectory</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetExternalStorageDirectory(</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;inline ::std::string <a class="code" href="a44682.html#a5c4a1c9234af643fb190b0c703821992">Environment::GetResourceString</a>(const ::std::string &amp; _Name)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;inline ::std::string <a class="code" href="a59199.html#a5c4a1c9234af643fb190b0c703821992">Environment::GetResourceString</a>(const ::std::string &amp; _Name)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetResourceString(</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>], _Name);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;inline ::std::string <a class="code" href="a44682.html#a54ef1257b692198febf84c27d6f0180a">Environment::GetAbi</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;inline ::std::string <a class="code" href="a59199.html#a54ef1257b692198febf84c27d6f0180a">Environment::GetAbi</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;GetAbi(</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a44682.html#ae0f8a278159e867ed2b41c5402521af5">Environment::ShowSoftKeyboard</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="a59199.html#ae0f8a278159e867ed2b41c5402521af5">Environment::ShowSoftKeyboard</a>(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span> proxy::Environment::GetInstance()-&gt;ShowSoftKeyboard(</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    proxy::Environment::GetInstance()-&gt;m_Ids[<span class="keyword">this</span>]);</div>
@@ -204,21 +204,21 @@ $(document).ready(function(){initNavTree('a01499_source.html',''); initResizable
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <span class="comment">// namespace alicorn</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa43690_html"><div class="ttname"><a href="a43690.html">alicorn::extension::testing::Proxy</a></div><div class="ttdoc">Класс входит в Testing   Базовый класс для построения прокси-классов для проверки вызовов функций под...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:46</div></div>
-<div class="ttc" id="aa42915_html_ga5f9c37bd9b4ca4bafeb36261de35e63d"><div class="ttname"><a href="a42915.html#ga5f9c37bd9b4ca4bafeb36261de35e63d">alicorn::extension::std::make_trivial</a></div><div class="ttdeci">trivial_ptr&lt; T &gt; make_trivial(TArgs &amp;&amp;... _Args)</div><div class="ttdoc">Функция входит в проект Std   Вспомогательная функция создания объектов trivial_ptr&lt;&gt;.</div><div class="ttdef"><b>Definition:</b> make.hpp:47</div></div>
-<div class="ttc" id="aa44682_html_a5c140178229b88ceefe3f9862787232a"><div class="ttname"><a href="a44682.html#a5c140178229b88ceefe3f9862787232a">alicorn::system::platform::Environment::GetPackageName</a></div><div class="ttdeci">::std::string GetPackageName(void) const</div><div class="ttdoc">Функция получения названия текущего package'a.</div><div class="ttdef"><b>Definition:</b> environment.cpp:24</div></div>
-<div class="ttc" id="aa44682_html_ae0f8a278159e867ed2b41c5402521af5"><div class="ttname"><a href="a44682.html#ae0f8a278159e867ed2b41c5402521af5">alicorn::system::platform::Environment::ShowSoftKeyboard</a></div><div class="ttdeci">void ShowSoftKeyboard(void) const</div><div class="ttdoc">Функция для отображения клавиатуры.</div><div class="ttdef"><b>Definition:</b> environment.cpp:116</div></div>
-<div class="ttc" id="aa44682_html_ab329e830c28ad40b4302db6d9a992991"><div class="ttname"><a href="a44682.html#ab329e830c28ad40b4302db6d9a992991">alicorn::system::platform::Environment::GetNativeLibraryDirectory</a></div><div class="ttdeci">::std::string GetNativeLibraryDirectory(void) const</div><div class="ttdoc">Функция получения пути папке расположения нативных библиотек приложения.</div><div class="ttdef"><b>Definition:</b> environment.cpp:62</div></div>
-<div class="ttc" id="aa44682_html_a4984594882431993666741c14ba19eb7"><div class="ttname"><a href="a44682.html#a4984594882431993666741c14ba19eb7">alicorn::system::platform::Environment::GetStatusBarHeight</a></div><div class="ttdeci">int32_t GetStatusBarHeight(void) const</div><div class="ttdoc">Функция получения высоты статус-бара Android.</div><div class="ttdef"><b>Definition:</b> environment.cpp:36</div></div>
-<div class="ttc" id="aa44682_html_a54ef1257b692198febf84c27d6f0180a"><div class="ttname"><a href="a44682.html#a54ef1257b692198febf84c27d6f0180a">alicorn::system::platform::Environment::GetAbi</a></div><div class="ttdeci">::std::string GetAbi(void) const</div><div class="ttdoc">Функция получения названия аппаратной платформы устройства.</div><div class="ttdef"><b>Definition:</b> environment.cpp:98</div></div>
-<div class="ttc" id="aa44682_html_a5c4a1c9234af643fb190b0c703821992"><div class="ttname"><a href="a44682.html#a5c4a1c9234af643fb190b0c703821992">alicorn::system::platform::Environment::GetResourceString</a></div><div class="ttdeci">::std::string GetResourceString(const ::std::string &amp;) const</div><div class="ttdoc">Функция получения значения строки из res/values по имени.</div><div class="ttdef"><b>Definition:</b> environment.cpp:86</div></div>
-<div class="ttc" id="aa44682_html_ad18797ad756d9ab15a9adcb2cd2049ce"><div class="ttname"><a href="a44682.html#ad18797ad756d9ab15a9adcb2cd2049ce">alicorn::system::platform::Environment::GetApplicationDirectory</a></div><div class="ttdeci">::std::string GetApplicationDirectory(void) const</div><div class="ttdoc">Функция получения пути к корневой папке приложения.</div><div class="ttdef"><b>Definition:</b> environment.cpp:48</div></div>
-<div class="ttc" id="aa44682_html_a25a5536c559fbaf6c76bc155ca7064f5"><div class="ttname"><a href="a44682.html#a25a5536c559fbaf6c76bc155ca7064f5">alicorn::system::platform::Environment::GetExternalStorageDirectory</a></div><div class="ttdeci">::std::string GetExternalStorageDirectory(void) const</div><div class="ttdoc">Функция получения пути к папке внешнего хранилища программы.</div><div class="ttdef"><b>Definition:</b> environment.cpp:74</div></div>
+<div class="ttc" id="aa59199_html_a54ef1257b692198febf84c27d6f0180a"><div class="ttname"><a href="a59199.html#a54ef1257b692198febf84c27d6f0180a">alicorn::system::platform::Environment::GetAbi</a></div><div class="ttdeci">::std::string GetAbi(void) const</div><div class="ttdoc">Функция получения названия аппаратной платформы устройства.</div><div class="ttdef"><b>Definition:</b> environment.cpp:98</div></div>
+<div class="ttc" id="aa59199_html_ae0f8a278159e867ed2b41c5402521af5"><div class="ttname"><a href="a59199.html#ae0f8a278159e867ed2b41c5402521af5">alicorn::system::platform::Environment::ShowSoftKeyboard</a></div><div class="ttdeci">void ShowSoftKeyboard(void) const</div><div class="ttdoc">Функция для отображения клавиатуры.</div><div class="ttdef"><b>Definition:</b> environment.cpp:116</div></div>
+<div class="ttc" id="aa57432_html_ga5f9c37bd9b4ca4bafeb36261de35e63d"><div class="ttname"><a href="a57432.html#ga5f9c37bd9b4ca4bafeb36261de35e63d">alicorn::extension::std::make_trivial</a></div><div class="ttdeci">trivial_ptr&lt; T &gt; make_trivial(TArgs &amp;&amp;... _Args)</div><div class="ttdoc">Функция входит в проект Std   Вспомогательная функция создания объектов trivial_ptr&lt;&gt;.</div><div class="ttdef"><b>Definition:</b> make.hpp:47</div></div>
+<div class="ttc" id="aa59199_html_a25a5536c559fbaf6c76bc155ca7064f5"><div class="ttname"><a href="a59199.html#a25a5536c559fbaf6c76bc155ca7064f5">alicorn::system::platform::Environment::GetExternalStorageDirectory</a></div><div class="ttdeci">::std::string GetExternalStorageDirectory(void) const</div><div class="ttdoc">Функция получения пути к папке внешнего хранилища программы.</div><div class="ttdef"><b>Definition:</b> environment.cpp:74</div></div>
+<div class="ttc" id="aa59199_html_a4984594882431993666741c14ba19eb7"><div class="ttname"><a href="a59199.html#a4984594882431993666741c14ba19eb7">alicorn::system::platform::Environment::GetStatusBarHeight</a></div><div class="ttdeci">int32_t GetStatusBarHeight(void) const</div><div class="ttdoc">Функция получения высоты статус-бара Android.</div><div class="ttdef"><b>Definition:</b> environment.cpp:36</div></div>
+<div class="ttc" id="aa58207_html"><div class="ttname"><a href="a58207.html">alicorn::extension::testing::Proxy</a></div><div class="ttdoc">Класс входит в Testing   Базовый класс для построения прокси-классов для проверки вызовов функций под...</div><div class="ttdef"><b>Definition:</b> proxy.hpp:46</div></div>
+<div class="ttc" id="aa59199_html_a5c4a1c9234af643fb190b0c703821992"><div class="ttname"><a href="a59199.html#a5c4a1c9234af643fb190b0c703821992">alicorn::system::platform::Environment::GetResourceString</a></div><div class="ttdeci">::std::string GetResourceString(const ::std::string &amp;) const</div><div class="ttdoc">Функция получения значения строки из res/values по имени.</div><div class="ttdef"><b>Definition:</b> environment.cpp:86</div></div>
+<div class="ttc" id="aa59199_html_a5c140178229b88ceefe3f9862787232a"><div class="ttname"><a href="a59199.html#a5c140178229b88ceefe3f9862787232a">alicorn::system::platform::Environment::GetPackageName</a></div><div class="ttdeci">::std::string GetPackageName(void) const</div><div class="ttdoc">Функция получения названия текущего package'a.</div><div class="ttdef"><b>Definition:</b> environment.cpp:24</div></div>
+<div class="ttc" id="aa59199_html_ab329e830c28ad40b4302db6d9a992991"><div class="ttname"><a href="a59199.html#ab329e830c28ad40b4302db6d9a992991">alicorn::system::platform::Environment::GetNativeLibraryDirectory</a></div><div class="ttdeci">::std::string GetNativeLibraryDirectory(void) const</div><div class="ttdoc">Функция получения пути папке расположения нативных библиотек приложения.</div><div class="ttdef"><b>Definition:</b> environment.cpp:62</div></div>
+<div class="ttc" id="aa59199_html_ad18797ad756d9ab15a9adcb2cd2049ce"><div class="ttname"><a href="a59199.html#ad18797ad756d9ab15a9adcb2cd2049ce">alicorn::system::platform::Environment::GetApplicationDirectory</a></div><div class="ttdeci">::std::string GetApplicationDirectory(void) const</div><div class="ttdoc">Функция получения пути к корневой папке приложения.</div><div class="ttdef"><b>Definition:</b> environment.cpp:48</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_11c8b973c5acf773545b1cab9cfcf43a.html">Platform</a></li><li class="navelem"><a class="el" href="dir_1e3f1f0603f407e92f43edb9c663ba2b.html">Platform</a></li><li class="navelem"><b>environment.mock.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 00:00:35. Создано системой
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 10:02:21. Создано системой
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
   </ul>
