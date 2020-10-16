@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['renderer_428',['Renderer',['../a42899.html',1,'covellite::gui']]],
-  ['renders_429',['Renders',['../a42359.html',1,'covellite::api::Component']]]
+  ['renderer_430',['Renderer',['../a42896.html',1,'covellite::gui']]],
+  ['renders_431',['Renders',['../a42356.html',1,'covellite::api::Component']]]
 ];

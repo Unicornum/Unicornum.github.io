@@ -1,54 +1,33 @@
 var a41953 =
 [
-    [ "Drawing_t", "a42127.html", [
-      [ "Id", "a41954.html#ga6289708dc610154fc0d4572a4c27b279", [
-        [ "Do", "a41954.html#gga6289708dc610154fc0d4572a4c27b279afc5c8b6e9d1b35a1acb76a6f738f43fc", null ]
-      ] ]
+    [ "C3DScene", "a42700.html", [
+      [ "Add", "a42700.html#a7a5a8d66784f9c0d88c96f60aa389f9c", null ],
+      [ "Add", "a42700.html#aa5457e9d1e530b1ef25a2ee973a49f90", null ],
+      [ "Get", "a42700.html#a8c8788a2e5e01f8f62bb088dc4041bce", null ],
+      [ "Remove", "a42700.html#af5ac488baecc0f9459f8153b449045b4", null ],
+      [ "Render", "a42700.html#adb48ae5ab88511e58d4a35bd75e7b3b4", null ]
     ] ],
-    [ "Application_t", "a42523.html", [
-      [ "Id", "a41954.html#ga6dc58d1f78db12dfbb053e6a9f62c76d", [
-        [ "Start", "a41954.html#gga6dc58d1f78db12dfbb053e6a9f62c76da031e03b257611cf2e60651d876ba705a", null ],
-        [ "Update", "a41954.html#gga6dc58d1f78db12dfbb053e6a9f62c76daf3543c5c13a92cc974a9e59dc642fc4d", null ],
-        [ "Exit", "a41954.html#gga6dc58d1f78db12dfbb053e6a9f62c76da1f1dcab3cc39db9fe46be08d5f53ae74", null ]
-      ] ]
+    [ "GameScene", "a42708.html", [
+      [ "CreateObject", "a42708.html#a1d9be8f3a8dec549bda80bd084f2188d", null ],
+      [ "RemoveObject", "a42708.html#a5549e0b9df7a6bd9f200d77520b8b7c5", null ],
+      [ "Update", "a42708.html#a843e7cfc7f1c91bfc30f0f5f6a4653e1", null ]
     ] ],
-    [ "Error_t", "a42643.html", [
-      [ "Description", "a41955.html#ga32b71ec64cf1813aff1e59092b852f39", null ],
-      [ "Id", "a41954.html#ga66bfcc4b4394f69fa7bdd174d8e93fd7", [
-        [ "Exception", "a41954.html#gga66bfcc4b4394f69fa7bdd174d8e93fd7a06fc9ee07c552560b020a9d70360e5a3", null ]
-      ] ]
+    [ "I3DScene", "a42712.html", [
+      [ "Add", "a42712.html#ad0da6826a47c01cf8812817f581265c7", null ]
     ] ],
-    [ "Gui", "a42787.html", [
-      [ "Document", "a42791.html", [
-        [ "Element", "a42795.html", null ]
-      ] ],
-      [ "DocumentId", "a42787.html#a1e5a3c5afa63f87f3b989c38f3e5c984", null ]
+    [ "Id", "a42716.html", [
+      [ "AddRemovedObjectId", "a42716.html#a89bd3d46f961b10c645534b0b16ca83c", null ]
     ] ],
-    [ "Click_t", "a42799.html", null ],
-    [ "Press_t", "a42803.html", null ],
-    [ "Change_t", "a42807.html", null ],
-    [ "Window_t", "a43031.html", [
-      [ "Id", "a41954.html#ga7c051e93e1837c87e8b08334edb4a3cc", [
-        [ "Activate", "a41954.html#gga7c051e93e1837c87e8b08334edb4a3cca508c416ea55417cfbce2100b846a5fcc", null ],
-        [ "Deactivate", "a41954.html#gga7c051e93e1837c87e8b08334edb4a3cca3be42db01da55dc7857dde73f70c3dac", null ],
-        [ "Resize", "a41954.html#gga7c051e93e1837c87e8b08334edb4a3ccac8b7b1ca008fecbce8b480bec006264c", null ]
-      ] ]
+    [ "IGameScene", "a42720.html", null ],
+    [ "IProduce3DObject", "a42724.html", [
+      [ "Add", "a42724.html#a901b3ee961323a8116b4ca1f12597662", null ],
+      [ "Remove", "a42724.html#a386c24626d46949977f5ca4008c80023", null ]
     ] ],
-    [ "Cursor_t", "a43035.html", [
-      [ "Id", "a41954.html#ga38817e2b66efd8c334c051014139c298", [
-        [ "Motion", "a41954.html#gga38817e2b66efd8c334c051014139c298a423c3c877625c2f3940876eed13ffa90", null ],
-        [ "Touch", "a41954.html#gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c", null ],
-        [ "Release", "a41954.html#gga38817e2b66efd8c334c051014139c298a7f9f92e40a70f03ac92311ee33580d98", null ]
-      ] ]
-    ] ],
-    [ "Key_t", "a43043.html", [
-      [ "Code", "a41955.html#ga7c927e0343c1152130ce370060442f2e", null ],
-      [ "Id", "a41954.html#ga56e5f58c24b4bd22a7d463dffa027f0b", [
-        [ "Pressed", "a41954.html#gga56e5f58c24b4bd22a7d463dffa027f0ba693f1a56c4530f283af42c5718246281", null ],
-        [ "Down", "a41954.html#gga56e5f58c24b4bd22a7d463dffa027f0bafcd6175e85ceac72d7550c6bd3b41e16", null ],
-        [ "Up", "a41954.html#gga56e5f58c24b4bd22a7d463dffa027f0ba140e725f669fa70b7fba091aa89e1ca6", null ],
-        [ "Menu", "a41954.html#gga56e5f58c24b4bd22a7d463dffa027f0ba7f0189061cb586a816352a64f294528d", null ],
-        [ "Back", "a41954.html#gga56e5f58c24b4bd22a7d463dffa027f0ba3170ec59801cac220ab377b9d8c3b70e", null ]
-      ] ]
+    [ "IWindow", "a42728.html", null ],
+    [ "Window", "a42736.html", [
+      [ "Add", "a42736.html#aeceece051e70e4376c228e4f4b295540", null ],
+      [ "CreateObject", "a42736.html#a852a724ed30ea9c86b494e347520959d", null ],
+      [ "DeferredCreateObject", "a42736.html#a6d9c87de95995f131353e902d8a846ef", null ],
+      [ "RemoveObject", "a42736.html#aaa9c87b0221ee70581ac3580cd23956f", null ]
     ] ]
 ];
