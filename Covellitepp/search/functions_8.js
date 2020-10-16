@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['length_587',['Length',['../a42982.html#add9d93c4865f73104c8b084db1c079af',1,'covellite::gui::File']]],
-  ['loaddocument_588',['LoadDocument',['../a43082.html#a181bb8000fc22fc03b954b8f41f8801e',1,'covellite::gui::Window']]],
-  ['loadfonts_589',['LoadFonts',['../a43082.html#a9ab9b78232d792c48eaf29481d7543a5',1,'covellite::gui::Window']]],
-  ['loadtexture_590',['LoadTexture',['../a43062.html#ad81b3a5aade144e9516af1dd8a33c8fa',1,'covellite::gui::Renderer::LoadTexture()'],['../a43234.html#a0e83ad27cb8708f3ca7c15354df74df9',1,'basement::Common::LoadTexture()']]],
-  ['logmessage_591',['LogMessage',['../a43074.html#ab3264b77f5b846826c6a57c52fdc6ff6',1,'covellite::gui::System']]]
+  ['main_570',['Main',['../a42491.html#a5cce64879c899f1843a28e0396123e3d',1,'covellite::app::Application::Main(void *) noexcept'],['../a42491.html#a5e0babd9f4b467bce874e6eb159d91cf',1,'covellite::app::Application::Main(CreateApp_t, void *) noexcept']]],
+  ['mainscreen_571',['MainScreen',['../a43467.html#a82729fb1bda8ecb54c4d2bc89d1727eb',1,'layers::MainScreen']]],
+  ['make_572',['Make',['../a42095.html#a76ccfe83ee721560c67afed1eea60ddb',1,'covellite::api::Component']]],
+  ['makeuniquehandle_573',['MakeUniqueHandle',['../a42819.html#a781d029e25dfe54252b0d45ab2c1ff6c',1,'covellite::gui::File']]],
+  ['makewindow_574',['MakeWindow',['../a42491.html#adb452d4c4b29c87ebf8941c294ba1662',1,'covellite::app::Application']]]
 ];

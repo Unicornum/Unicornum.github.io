@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['read_609',['Read',['../a42982.html#a5f9b9244be54098b8d4d5d86f2080cd5',1,'covellite::gui::File']]],
-  ['remove_610',['Remove',['../a42498.html#ab607fb68f26af4944da5b59c5dee8a89',1,'covellite::api::Component::Renders::Remove(const ComponentPtr_t &amp;)'],['../a42498.html#ab20d9c17a4bbc33ec245e9188c54d935',1,'covellite::api::Component::Renders::Remove(const Object_t &amp;)'],['../a42866.html#af5ac488baecc0f9459f8153b449045b4',1,'covellite::expanse::C3DScene::Remove()'],['../a42890.html#a386c24626d46949977f5ca4008c80023',1,'covellite::expanse::IProduce3DObject::Remove()']]],
-  ['removeobject_611',['RemoveObject',['../a42874.html#a5549e0b9df7a6bd9f200d77520b8b7c5',1,'covellite::expanse::GameScene::RemoveObject()'],['../a42902.html#aaa9c87b0221ee70581ac3580cd23956f',1,'covellite::expanse::Window::RemoveObject()']]],
-  ['render_612',['Render',['../a42866.html#adb48ae5ab88511e58d4a35bd75e7b3b4',1,'covellite::expanse::C3DScene']]],
-  ['renders_613',['Renders',['../a42498.html#a2d16c0cb6b2e82c512888508d437275b',1,'covellite::api::Component::Renders']]]
+  ['seek_592',['Seek',['../a42819.html#ad9163a7ac44540c661cac66b63afca20',1,'covellite::gui::File']]],
+  ['set_593',['Set',['../a42907.html#a0d5e83b5fedcdb13cd05e9e58603241f',1,'covellite::gui::StringTranslator::Set()'],['../a42915.html#a38150e9e955443f9e51c8fa20e705f2b',1,'covellite::gui::Window::Set()']]],
+  ['setclassstyle_594',['SetClassStyle',['../a42871.html#a9a2452882a2dde87808a6bbd0951a943',1,'covellite::gui::Layer::Element']]],
+  ['setfocus_595',['SetFocus',['../a42871.html#ab674a1f2f7822d80de08c234dc1c4eef',1,'covellite::gui::Layer::Element']]],
+  ['setmeaning_596',['SetMeaning',['../a42871.html#acda1b0e50a315c41089d00706b9685ec',1,'covellite::gui::Layer::Element::SetMeaning(const float)'],['../a42871.html#a38e7d669d072da51e9a09d9a46c47d95',1,'covellite::gui::Layer::Element::SetMeaning(const String_t &amp;)']]],
+  ['show_597',['Show',['../a42867.html#ade98b7f19de07bb838be920164345a79',1,'covellite::gui::Layer']]],
+  ['systemtoguikeycode_598',['SystemToGuiKeyCode',['../a41957.html#gab57a7f90af68f19bb949608a1e5d37dd',1,'covellite::gui']]]
 ];

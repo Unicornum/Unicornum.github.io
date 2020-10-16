@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['pop_603',['Pop',['../a43050.html#af176080cf2b8bf6361e891108823227f',1,'covellite::gui::Layers']]],
-  ['postcommand_604',['PostCommand',['../a42654.html#a6fc13377c18145e53ecb49fcf925df0d',1,'covellite::app::Application']]],
-  ['presentframe_605',['PresentFrame',['../a42494.html#ad28086212ea55e02ae1023d678f111c4',1,'covellite::api::renderer::OpenGLES3']]],
-  ['process_606',['Process',['../a42370.html#ab35b037af35e4b147a726cf72173c438',1,'covellite::api::renderer::GraphicApi::CapturingServiceComponent']]],
-  ['push_607',['Push',['../a43050.html#a15ddba845b9457dc36bcf5a6c1032c5c',1,'covellite::gui::Layers']]],
-  ['pushlayer_608',['PushLayer',['../a43082.html#a798612c8d9cc0893aab05fedbb1983e7',1,'covellite::gui::Window::PushLayer(void)'],['../a43082.html#a4201f6af603b9801ccee1954e972885d',1,'covellite::gui::Window::PushLayer(const LayerPtr_t &amp;)']]]
+  ['read_587',['Read',['../a42819.html#a5f9b9244be54098b8d4d5d86f2080cd5',1,'covellite::gui::File']]],
+  ['remove_588',['Remove',['../a42359.html#ab607fb68f26af4944da5b59c5dee8a89',1,'covellite::api::Component::Renders::Remove()'],['../a42703.html#af5ac488baecc0f9459f8153b449045b4',1,'covellite::expanse::C3DScene::Remove()'],['../a42727.html#a386c24626d46949977f5ca4008c80023',1,'covellite::expanse::IProduce3DObject::Remove()']]],
+  ['removeobject_589',['RemoveObject',['../a42711.html#a5549e0b9df7a6bd9f200d77520b8b7c5',1,'covellite::expanse::GameScene::RemoveObject()'],['../a42739.html#aaa9c87b0221ee70581ac3580cd23956f',1,'covellite::expanse::Window::RemoveObject()']]],
+  ['render_590',['Render',['../a42703.html#adb48ae5ab88511e58d4a35bd75e7b3b4',1,'covellite::expanse::C3DScene']]],
+  ['renders_591',['Renders',['../a42359.html#a2d16c0cb6b2e82c512888508d437275b',1,'covellite::api::Component::Renders']]]
 ];
