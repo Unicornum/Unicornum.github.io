@@ -12,7 +12,7 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.15" />
+    <meta name="generator" content="Doxygen 1.8.18" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>UnicornumVerum: Разработка для Android на С++</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
@@ -40,7 +40,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.15 -->
+<!-- Создано системой Doxygen 1.8.18 -->
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
 var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
@@ -72,7 +72,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a00621.html">Документация</a></li>  </ul>
+<li class="navelem"><a class="el" href="a00639.html">Документация</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
@@ -110,11 +110,11 @@ $(function() {
 <h1>Visual Studio </h1>
 <p>Настройка внешних инструментов в Visual Studio:</p>
 <div class="image">
-<img src="Vs20xx.png" alt="Vs20xx.png"/>
+<img src="Vs20xx.png" alt=""/>
 </div>
 <p>Создание проектов (Vs2019):</p>
 <div class="image">
-<img src="Vs20xx.templates.png" alt="Vs20xx.templates.png"/>
+<img src="Vs20xx.templates.png" alt=""/>
 </div>
 <h3>Предопределенные макросы</h3>
 <ul>
@@ -124,10 +124,19 @@ $(function() {
 <h2>Сборка для ARM (armeabi-v7a) </h2>
 <p>Для проектов .lib используются настройки по умолчанию, для главного модуля (.so) программы:</p>
 <div class="image">
-<img src="Vs20xx.props.png" alt="Vs20xx.props.png"/>
+<img src="Vs20xx.props.png" alt=""/>
 </div>
 <p>Однако при сборке с такими настройками при запуске на устройстве с API15 запуск программы завершится с ошибкой 'библиотека libc++_shared.so не найдена'. Чтобы обойти эту проблему, необходимо в коде java класса главной activity загрузить ее явным образом:</p>
-<div class="fragment"><div class="line"><span class="keyword">package </span>com.example;</div><div class="line">  </div><div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> com.alicorn.MainActivity</div><div class="line">{</div><div class="line">  <span class="keyword">static</span></div><div class="line">  {</div><div class="line">    System.loadLibrary(<span class="stringliteral">&quot;c++_shared&quot;</span>);</div><div class="line">  }</div><div class="line">}</div></div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.example;</div>
+<div class="line">  </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> com.alicorn.MainActivity</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">static</span></div>
+<div class="line">  {</div>
+<div class="line">    System.loadLibrary(<span class="stringliteral">&quot;c++_shared&quot;</span>);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
 <li>Использовалась сборка для <b>API19</b> (последняя, на которой доступен только 32-хбитный код), как наиболее универсальная; полученная сборка работает на устройстве с Android 4.0.4 (API15).</li>
 <li>Использовался <b>Android</b> <b>NDK</b> <b>r16b</b>, идущий в комплекте с Visual Studio, т.к. для всех последующих полученная программа при запуске пытается загрузить dll, которой нет в системе.</li>
 <li>Библиотека <b>unwind</b> добавлена для того, чтобы можно было использовать исключения (без нее проект соберется, но при возникновении исключения программа упадет).</li>
@@ -137,7 +146,7 @@ $(function() {
 <h2>Сборка для ARM64 (arm64-v8a) </h2>
 <p>Для проектов .lib используются настройки по умолчанию, для главного модуля (.so) программы:</p>
 <div class="image">
-<img src="Vs20xx.arm64.props.png" alt="Vs20xx.arm64.props.png"/>
+<img src="Vs20xx.arm64.props.png" alt=""/>
 </div>
 <dl class="section note"><dt>Заметки</dt><dd><ul>
 <li>Использовалась сборка для <b>API21</b> (первая, на которой стала доступна сборка 64-хбитного кода).</li>
@@ -147,16 +156,28 @@ $(function() {
 </ul>
 </dd></dl>
 <h1>Проблемы и решения </h1>
-<p><a class="el" href="a00615.html">Ввод русских букв с клавиатуры</a></p>
-<p><a class="el" href="a00614.html">Разные приложения для разных конфигураций проекта</a></p>
-<p><a class="el" href="a00613.html">Вызов функций собственного java класса из кода С++</a> </p>
-</div></div><!-- PageDoc -->
-</div><!-- contents -->
+<p><a class="el" href="a00633.html">Ввод русских букв с клавиатуры</a></p>
+<p><a class="el" href="a00632.html">Разные приложения для разных конфигураций проекта</a></p>
+<p><a class="el" href="a00631.html">Вызов функций собственного java класса из кода С++</a></p>
+<h2>Завершение прошраммы при нажатии кнопки HOME </h2>
+<p>При нажатии пользователем кнопки HOME во время работы программы она может быть завершена (событие APP_CMD_DESTROY), а может просто уйти в фон (будет получено только событие APP_CMD_TERM_WINDOW). Чтобы не обрабатывать два варианта отдельно, можно заставить Android всегда завершать работу приложения при нажатии кнопки HOME (при перекрытии работающей программы всплывающим окном это тоже работает):</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.example;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> com.alicorn.MainActivity</div>
+<div class="line">{</div>
+<div class="line">  @Override</div>
+<div class="line">  <span class="keyword">public</span> <span class="keywordtype">void</span> onUserLeaveHint()</div>
+<div class="line">  {</div>
+<div class="line">    finish();</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Вс 12 Апр 2020 20:25:13. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+Документация по UnicornumVerum. Последние изменения: Чт 31 Дек 2020 15:21:24. Создано системой &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.15
+</a> 1.8.18
 </small></address>
 </body>
 </html>
