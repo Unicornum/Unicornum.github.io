@@ -12,20 +12,22 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Modules/modules.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Extension/Std/Std/chrono.inl</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
     <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -36,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.0 Revision: 3471 Platform: x64 Build: 10:01 08.10.2020</span>
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 19:08 28.11.2024</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -45,21 +47,27 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.18 -->
+<!-- Создано системой Doxygen 1.12.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -73,8 +81,8 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a00950_source.html',''); initResizable(); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a00950_source.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,59 +95,84 @@ $(document).ready(function(){initNavTree('a00950_source.html',''); initResizable
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="headertitle">
-<div class="title">modules.hpp</div>  </div>
+  <div class="headertitle"><div class="title">chrono.inl</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="a00950.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>extension</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>std</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>chrono</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> TClock, <span class="keyword">class</span> TDuration&gt;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">inline</span> local_time_point&lt;TClock, TDuration&gt;::local_time_point(</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">const</span> TimePoint_t &amp; _TimePoint, <span class="keyword">const</span> utc_offset &amp; _UtcOffset) noexcept :</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  m_TimePoint(_TimePoint),</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  m_UtcOffset(_UtcOffset)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> TClock, <span class="keyword">class</span> TDuration&gt;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">inline</span> local_time_point&lt;TClock, TDuration&gt;::operator TimePoint_t(<span class="keywordtype">void</span>)<span class="keyword"> const</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordflow">return</span> m_TimePoint + m_UtcOffset.m_Hours + m_UtcOffset.m_Minutes;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> TClock, <span class="keyword">class</span> TDuration&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">inline</span> <span class="keyword">auto</span> local_time_point&lt;TClock, TDuration&gt;::get_offset(<span class="keywordtype">void</span>) <span class="keyword">const</span> -&gt; <span class="keyword">const</span> utc_offset &amp;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{ </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordflow">return</span> m_UtcOffset; </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="a39436.html#ga6d3a7148ca79f048961252a4b7c3f2a0">   47</a></span><span class="keyword">inline</span> <a class="code hl_class" href="a39758.html">detail::local_point</a> <a class="code hl_function" href="a39436.html#ga6d3a7148ca79f048961252a4b7c3f2a0">make_local_time</a>(<span class="keyword">const</span> detail::time_point &amp; _Time) <span class="keyword">noexcept</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">using </span><a class="code hl_define" href="a39439.html#gaa1da2c6b2369ff126e53b8467209af77">USING_MOCK</a> ::alicorn::extension::std::chrono::GetLocalTimeOffset;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">return</span> <a class="code hl_class" href="a39758.html">detail::local_point</a>{ _Time, GetLocalTimeOffset() };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>}</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace chrono</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace std</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace extension</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="aa39436_html_ga6d3a7148ca79f048961252a4b7c3f2a0"><div class="ttname"><a href="a39436.html#ga6d3a7148ca79f048961252a4b7c3f2a0">alicorn::extension::std::chrono::make_local_time</a></div><div class="ttdeci">detail::local_point make_local_time(const detail::time_point &amp;) noexcept</div><div class="ttdoc">Функция входит в проект Std   Функция получения локального времени для указанного системного времени.</div><div class="ttdef"><b>Definition</b> chrono.inl:47</div></div>
+<div class="ttc" id="aa39439_html_gaa1da2c6b2369ff126e53b8467209af77"><div class="ttname"><a href="a39439.html#gaa1da2c6b2369ff126e53b8467209af77">USING_MOCK</a></div><div class="ttdeci">#define USING_MOCK</div><div class="ttdoc">Макрос входит в Testing   Макрос для объявления типов, которые в тестовом проекте должны использовать...</div><div class="ttdef"><b>Definition</b> using-mock.hpp:28</div></div>
+<div class="ttc" id="aa39758_html"><div class="ttname"><a href="a39758.html">alicorn::extension::std::chrono::local_time_point</a></div><div class="ttdoc">Класс входит в проект Std   Класс хранения локального момента времени.</div><div class="ttdef"><b>Definition</b> chrono.detail.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aa58331_html"><div class="ttname"><a href="a58331.html">alicorn::modules::logger::Core</a></div><div class="ttdoc">Класс входит в Logger   Формирователь отчета.</div><div class="ttdef"><b>Definition:</b> core.hpp:56</div></div>
-<div class="ttc" id="aa57459_html_ga0facd32184b2ec0c57501e7d76ce59ca"><div class="ttname"><a href="a57459.html#ga0facd32184b2ec0c57501e7d76ce59ca">__FILE_VERSION_FULL__</a></div><div class="ttdeci">#define __FILE_VERSION_FULL__</div><div class="ttdoc">Строка полной версии exe/dll файла.</div><div class="ttdef"><b>Definition:</b> macros.hpp:54</div></div>
-<div class="ttc" id="aa57711_html"><div class="ttname"><a href="a57711.html">alicorn::extension::std::regex::Match</a></div><div class="ttdoc">Класс входит в Std   Класс проверки совпадения строки текста с регулярным выражением.</div><div class="ttdef"><b>Definition:</b> match.hpp:38</div></div>
-<div class="ttc" id="aa57429_html_ga68c84efa84957c5f819d243a4cb84de9"><div class="ttname"><a href="a57429.html#ga68c84efa84957c5f819d243a4cb84de9">uT</a></div><div class="ttdeci">#define uT(x)</div><div class="ttdoc">Макрос создания строки, содержащей внутри Ucs2.</div><div class="ttdef"><b>Definition:</b> prefix.hpp:22</div></div>
-<div class="ttc" id="aa57446_html_ga8f3ed8d47fb565fed79e95aab52316e5"><div class="ttname"><a href="a57446.html#ga8f3ed8d47fb565fed79e95aab52316e5">Title</a></div><div class="ttdeci">static const ::std::string Title</div><div class="ttdoc">Заголовок хранилища (должен изменяться при изменении внутренней структуры хранилища).</div><div class="ttdef"><b>Definition:</b> pack.cpp:22</div></div>
-<div class="ttc" id="aa57433_html_gad33527f0cbd8dabe93ba131e08796e74"><div class="ttname"><a href="a57433.html#gad33527f0cbd8dabe93ba131e08796e74">THIS_DIRECTORY</a></div><div class="ttdeci">#define THIS_DIRECTORY</div><div class="ttdoc">Макрос входит в Testing   Макрос получения пути к текущему .cpp файлу.</div><div class="ttdef"><b>Definition:</b> this-directory.hpp:13</div></div>
-<div class="ttc" id="aa57433_html_gad9fd1b4a23427585be8ae2918f5d05eb"><div class="ttname"><a href="a57433.html#gad9fd1b4a23427585be8ae2918f5d05eb">ASSERT_EXISTS_FILE_TRUE</a></div><div class="ttdeci">#define ASSERT_EXISTS_FILE_TRUE(Path)</div><div class="ttdoc">Макрос проверки существования файла с прерыванием выполнения теста.</div><div class="ttdef"><b>Definition:</b> exists-file.hpp:26</div></div>
-<div class="ttc" id="aa59083_html"><div class="ttname"><a href="a59083.html">alicorn::system::application::CurrentModule</a></div><div class="ttdoc">Класс входит в Application   Класс получения информации о текущем модуле.</div><div class="ttdef"><b>Definition:</b> current-module.hpp:37</div></div>
-<div class="ttc" id="aa59083_html_a4e5dbec8845c35a6965dc3477a2454f9"><div class="ttname"><a href="a59083.html#a4e5dbec8845c35a6965dc3477a2454f9">alicorn::system::application::CurrentModule::GetAppDataPath</a></div><div class="ttdeci">static Path_t GetAppDataPath(void)</div><div class="ttdoc">Функция получения пути к папке, содержащей рабочие данные программы.</div><div class="ttdef"><b>Definition:</b> current-module.android.cpp:47</div></div>
-<div class="ttc" id="aa58327_html_ad1bf211560613558a30546e625c212ef"><div class="ttname"><a href="a58327.html#ad1bf211560613558a30546e625c212ef">alicorn::modules::logger::Configurator::GetDefaultValues</a></div><div class="ttdeci">static Params_t GetDefaultValues(void)</div><div class="ttdoc">Функция формирования параметров по умолчанию.</div><div class="ttdef"><b>Definition:</b> configurator.cpp:43</div></div>
-<div class="ttc" id="aa57919_html"><div class="ttname"><a href="a57919.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition:</b> string.hpp:55</div></div>
-<div class="ttc" id="aa57433_html_ga548418041138f552c93a97dfb866f9ac"><div class="ttname"><a href="a57433.html#ga548418041138f552c93a97dfb866f9ac">EXPECT_EXISTS_FILE_FALSE</a></div><div class="ttdeci">#define EXPECT_EXISTS_FILE_FALSE(Path)</div><div class="ttdoc">Макрос проверки отсутствия файла без прерывания выполнения теста.</div><div class="ttdef"><b>Definition:</b> exists-file.hpp:18</div></div>
-<div class="ttc" id="aa58335_html"><div class="ttname"><a href="a58335.html">alicorn::modules::logger::DateTime</a></div><div class="ttdoc">Класс входит в Logger   Вспомогательный класс для получения текущих даты/времени.</div><div class="ttdef"><b>Definition:</b> date-time.hpp:33</div></div>
-<div class="ttc" id="aa57430_html_ga6d3a7148ca79f048961252a4b7c3f2a0"><div class="ttname"><a href="a57430.html#ga6d3a7148ca79f048961252a4b7c3f2a0">alicorn::extension::std::chrono::make_local_time</a></div><div class="ttdeci">detail::local_point make_local_time(const detail::time_point &amp;) noexcept</div><div class="ttdoc">Функция входит в проект Std   Функция получения локального времени для указанного системного времени.</div><div class="ttdef"><b>Definition:</b> chrono.inl:47</div></div>
-<div class="ttc" id="aa57743_html_a32253724b94cd2270ac998e304337e03"><div class="ttname"><a href="a57743.html#a32253724b94cd2270ac998e304337e03">alicorn::extension::std::Singleton::GetInstance</a></div><div class="ttdeci">static TUsing GetInstance(void)</div><div class="ttdoc">Функция доступа к единственному объекту указанного класса.</div><div class="ttdef"><b>Definition:</b> singleton.inl:104</div></div>
-<div class="ttc" id="aa58395_html_a94abae5ac9b89c6c4c0aaf9949fc5b86"><div class="ttname"><a href="a58395.html#a94abae5ac9b89c6c4c0aaf9949fc5b86">alicorn::modules::logger::report::IReport::WriteTitle</a></div><div class="ttdeci">virtual void WriteTitle(const String_t &amp;_FileName, const String_t &amp;_ProgramName, const String_t &amp;_ProgramVersion)=0</div><div class="ttdoc">Функция записи в лог заголовка журнала.</div></div>
-<div class="ttc" id="aa58327_html"><div class="ttname"><a href="a58327.html">alicorn::modules::logger::Configurator</a></div><div class="ttdoc">Класс входит в Logger   Конфигуратор.</div><div class="ttdef"><b>Definition:</b> configurator.hpp:45</div></div>
-<div class="ttc" id="aa59319_html"><div class="ttname"><a href="a59319.html">alicorn::system::version::Info</a></div><div class="ttdoc">Класс входит в Version   Класс получения информации о версии модуля.</div><div class="ttdef"><b>Definition:</b> info.hpp:67</div></div>
-<div class="ttc" id="aa57743_html"><div class="ttname"><a href="a57743.html">alicorn::extension::std::Singleton</a></div><div class="ttdoc">Класс входит в проект Std   Класс доступа к общему для всей программы объекту.</div><div class="ttdef"><b>Definition:</b> singleton.forward.hpp:14</div></div>
-<div class="ttc" id="aa57439_html_ga8633a5b99dd43399c58206e715e7d29f"><div class="ttname"><a href="a57439.html#ga8633a5b99dd43399c58206e715e7d29f">LOGGER</a></div><div class="ttdeci">#define LOGGER(Type)</div><div class="ttdef"><b>Definition:</b> logger.hpp:28</div></div>
-<div class="ttc" id="aa57433_html_ga227a63a0cd58dcf53b6fb3213a86b51d"><div class="ttname"><a href="a57433.html#ga227a63a0cd58dcf53b6fb3213a86b51d">alicorn::extension::testing::file::load_text_file</a></div><div class="ttdeci">::std::vector&lt;::std::string &gt; load_text_file(const ::boost::filesystem::path &amp;_Path)</div><div class="ttdoc">Функция для чтения текстового файла.</div><div class="ttdef"><b>Definition:</b> load-text-file.cpp:39</div></div>
-<div class="ttc" id="aa57439_html_ga827550edbeb086a4fcf0c8d506614062"><div class="ttname"><a href="a57439.html#ga827550edbeb086a4fcf0c8d506614062">LOGGER_MIN_LEVEL</a></div><div class="ttdeci">#define LOGGER_MIN_LEVEL(Type)</div><div class="ttdef"><b>Definition:</b> logger.hpp:45</div></div>
-<div class="ttc" id="aa57425_html_gac46b79d4c0ba029db9e1d774414e6024"><div class="ttname"><a href="a57425.html#gac46b79d4c0ba029db9e1d774414e6024">__TO_STR</a></div><div class="ttdeci">#define __TO_STR(t)</div><div class="ttdoc">Макрос входит в Cpp   Макрос преобразования значения в строку.</div><div class="ttdef"><b>Definition:</b> to-str.hpp:38</div></div>
-<div class="ttc" id="aa57433_html_gaf5900286722be76eaf83b881ba160bb1"><div class="ttname"><a href="a57433.html#gaf5900286722be76eaf83b881ba160bb1">ASSERT_EXISTS_FILE_FALSE</a></div><div class="ttdeci">#define ASSERT_EXISTS_FILE_FALSE(Path)</div><div class="ttdoc">Макрос проверки отсутствия файла с прерыванием выполнения теста.</div><div class="ttdef"><b>Definition:</b> exists-file.hpp:34</div></div>
-<div class="ttc" id="aa57433_html_ga19899edc3a2fc42261218d524c7364db"><div class="ttname"><a href="a57433.html#ga19899edc3a2fc42261218d524c7364db">BLOCK_FILE</a></div><div class="ttdeci">#define BLOCK_FILE(PathToFile)</div><div class="ttdoc">Макрос входит в Testing   Макрос блокирования указанного файла.</div><div class="ttdef"><b>Definition:</b> block-file.hpp:25</div></div>
-<div class="ttc" id="aa57433_html_ga14628cf5a758a8aeec9b5bb69fed767e"><div class="ttname"><a href="a57433.html#ga14628cf5a758a8aeec9b5bb69fed767e">EXPECT_FILES_STREQ</a></div><div class="ttdeci">#define EXPECT_FILES_STREQ(Expected, Result)</div><div class="ttdoc">Макрос проверки построчного совпадения двух файлов без прерывания выполнения теста.</div><div class="ttdef"><b>Definition:</b> equal-files.hpp:46</div></div>
-<div class="ttc" id="aa57699_html"><div class="ttname"><a href="a57699.html">alicorn::extension::std::exception::Abort</a></div><div class="ttdoc">Класс входит в Std   Класс исключения, предназначенный для сигнализирования о том,...</div><div class="ttdef"><b>Definition:</b> abort.hpp:79</div></div>
-<div class="ttc" id="aa57424_html_gadb112fc83d297afc67bc9f0b11491ffd"><div class="ttname"><a href="a57424.html#gadb112fc83d297afc67bc9f0b11491ffd">alicorn::extension::cpp::math::Log</a></div><div class="ttdeci">Type Log(Type)</div><div class="ttdef"><b>Definition:</b> exponent.hpp:109</div></div>
-<div class="ttc" id="aa57433_html_ga30aa7b117cfbd9a5a2df877a16092f5c"><div class="ttname"><a href="a57433.html#ga30aa7b117cfbd9a5a2df877a16092f5c">EXPECT_EXISTS_FILE_TRUE</a></div><div class="ttdeci">#define EXPECT_EXISTS_FILE_TRUE(Path)</div><div class="ttdoc">Макрос проверки существования файла без прерывания выполнения теста.</div><div class="ttdef"><b>Definition:</b> exists-file.hpp:10</div></div>
-<div class="ttc" id="aa58395_html"><div class="ttname"><a href="a58395.html">alicorn::modules::logger::report::IReport</a></div><div class="ttdoc">Класс входит в Logger   Интерфейсный класс конкретных формирователей отчетов.</div><div class="ttdef"><b>Definition:</b> ireport.hpp:26</div></div>
-<div class="ttc" id="aa58395_html_a68c9028baa5bef017c4ac621ab0f300b"><div class="ttname"><a href="a58395.html#a68c9028baa5bef017c4ac621ab0f300b">alicorn::modules::logger::report::IReport::WriteRecord</a></div><div class="ttdeci">virtual void WriteRecord(const Message_t &amp;_Message)=0</div><div class="ttdoc">Функция для записи одного сообщения в лог.</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="a00950.html">modules.hpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 10:02:19. Создано системой
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_e9404d5ca9c03f29e90659e23ef5b234.html">Std</a></li><li class="navelem"><a class="el" href="dir_771b027eac4ba67ab77054589959325c.html">Std</a></li><li class="navelem"><b>chrono.inl</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 28 Ноя 2024 19:08:49. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

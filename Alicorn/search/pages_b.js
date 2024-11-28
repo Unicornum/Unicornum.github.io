@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['resource_2eapp_1464',['Resource.App',['../a60141.html',1,'ToolsPage']]]
+  ['patterns_0',['Patterns',['../a42122.html',1,'ModulesPage']]],
+  ['platform_1',['Platform',['../a42146.html',1,'SystemPage']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['manager_1381',['Manager',['../a57441.html#ga4275f7d3ae368fe8d92fae58ee504303',1,'alicorn::modules::patterns::command']]]
+  ['manager_0',['Manager',['../a39448.html#gaf63ed8c71077f85cfd0efb4d2c61667c',1,'alicorn::modules::patterns::command']]]
 ];

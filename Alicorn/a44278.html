@@ -12,20 +12,22 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.8.18" />
+    <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Класс alicorn::modules::vfs::IImplementation</title>
+    <title>Alicorn: Файл Solution/Solution/System/Application/Test.Application/Test.Mock/Mock_test.cpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
     <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <div id="top"><!-- do not remove this div, it is closed by doxygen! -->
@@ -36,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.9.5 Revision: 3471 Platform: x64 Build: 23:59 07.10.2020</span>
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 19:08 28.11.2024</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -45,21 +47,27 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.8.18 -->
+<!-- Создано системой Doxygen 1.12.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
 /* @license-end */
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
 $(function() {
-  initMenu('',true,false,'search.php','Поиск');
-  $(document).ready(function() { init_search(); });
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
 });
-/* @license-end */</script>
+/* @license-end */
+</script>
 <div id="main-nav"></div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
@@ -73,8 +81,8 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('a44278.html',''); initResizable(); });
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a44278.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,264 +95,66 @@ $(document).ready(function(){initNavTree('a44278.html',''); initResizable(); });
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Открытые члены</a> &#124;
-<a href="a44275.html">Полный список членов класса</a>  </div>
-  <div class="headertitle">
-<div class="title">Класс alicorn::modules::vfs::IImplementation<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a42900.html">Alicorn</a> &raquo; <a class="el" href="a42923.html">Modules</a> &raquo; <a class="el" href="a42929.html">Virtual File System</a></div></div>  </div>
+  <div class="headertitle"><div class="title">Файл Mock_test.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Класс входит в <a class="el" href="a45588.html">Virtual File System</a> <br  />
- Интерфейсный класс для реализаций доступа к данным.  
- <a href="a44278.html#details">Подробнее...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a47611_source.html">iimplementation.hpp</a>&gt;</code></p>
-<div class="dynheader">
-Граф наследования:alicorn::modules::vfs::IImplementation:</div>
+<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\application.mock.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Mock_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a44277.png" border="0" usemap="#alicorn_1_1modules_1_1vfs_1_1_i_implementation_inherit__map" alt="Inheritance graph"/></div>
-<map name="alicorn_1_1modules_1_1vfs_1_1_i_implementation_inherit__map" id="alicorn_1_1modules_1_1vfs_1_1_i_implementation_inherit__map">
-<area shape="rect" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс для реализаций доступа к данным." alt="" coords="121,5,297,229"/>
-<area shape="rect" href="a44270.html" title="Класс входит в Virtual File System &#160;&#160;Класс реализации получения содержимого файлов с диска." alt="" coords="5,314,196,538"/>
-<area shape="rect" href="a44290.html" title="Класс входит в Virtual File System &#160;&#160;Класс реализации упаковки файлов в хранилище/получения содержимо..." alt="" coords="221,277,415,575"/>
+<div class="center"><img src="a44279.png" border="0" usemap="#a_solution_2_solution_2_system_2_application_2_test_8_application_2_test_8_mock_2_mock__test_8cpp" alt=""/></div>
+<map name="a_solution_2_solution_2_system_2_application_2_test_8_application_2_test_8_mock_2_mock__test_8cpp" id="a_solution_2_solution_2_system_2_application_2_test_8_application_2_test_8_mock_2_mock__test_8cpp">
+<area shape="rect" title=" " alt="" coords="706,5,919,64"/>
+<area shape="rect" href="a42754_source.html" title=" " alt="" coords="634,120,709,147"/>
+<area shape="poly" title=" " alt="" coords="772,67,704,113,701,109,769,62"/>
+<area shape="rect" title=" " alt="" coords="734,112,892,155"/>
+<area shape="poly" title=" " alt="" coords="815,64,815,97,810,97,810,64"/>
+<area shape="rect" title=" " alt="" coords="916,120,1131,147"/>
+<area shape="poly" title=" " alt="" coords="876,62,983,111,981,115,874,67"/>
+<area shape="rect" title=" " alt="" coords="523,203,670,245"/>
+<area shape="poly" title=" " alt="" coords="663,149,626,193,622,189,659,146"/>
+<area shape="rect" href="a43870_source.html" title=" " alt="" coords="695,211,798,237"/>
+<area shape="poly" title=" " alt="" coords="684,146,728,197,724,200,680,149"/>
+<area shape="rect" title=" " alt="" coords="5,293,220,320"/>
+<area shape="poly" title=" " alt="" coords="711,240,683,248,236,296,235,290,682,243,709,235"/>
+<area shape="rect" title=" " alt="" coords="244,293,411,320"/>
+<area shape="poly" title=" " alt="" coords="709,240,683,248,549,275,426,295,426,290,548,270,681,243,708,235"/>
+<area shape="rect" title=" " alt="" coords="434,293,626,320"/>
+<area shape="poly" title=" " alt="" coords="713,240,579,290,577,285,711,235"/>
+<area shape="rect" title=" " alt="" coords="650,293,843,320"/>
+<area shape="poly" title=" " alt="" coords="749,238,749,278,743,278,743,238"/>
+<area shape="rect" title=" " alt="" coords="866,293,1042,320"/>
+<area shape="poly" title=" " alt="" coords="780,235,908,285,906,290,778,240"/>
+<area shape="rect" title=" " alt="" coords="1066,293,1205,320"/>
+<area shape="poly" title=" " alt="" coords="799,233,1060,287,1059,292,798,239"/>
+<area shape="rect" title=" " alt="" coords="1229,293,1413,320"/>
+<area shape="poly" title=" " alt="" coords="798,230,1215,288,1215,293,798,235"/>
 </map>
 </div>
-<div class="dynheader">
-Граф связей класса alicorn::modules::vfs::IImplementation:</div>
-<div class="dyncontent">
-<div class="center"><img src="a44276.png" border="0" usemap="#alicorn_1_1modules_1_1vfs_1_1_i_implementation_coll__map" alt="Collaboration graph"/></div>
-<map name="alicorn_1_1modules_1_1vfs_1_1_i_implementation_coll__map" id="alicorn_1_1modules_1_1vfs_1_1_i_implementation_coll__map">
-<area shape="rect" title="Класс входит в Virtual File System &#160;&#160;Интерфейсный класс для реализаций доступа к данным." alt="" coords="5,5,181,229"/>
-</map>
-</div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Открытые члены</h2></td></tr>
-<tr class="memitem:ab583a4bef004916737a4e1e21b47337e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44278.html#ab583a4bef004916737a4e1e21b47337e">GetData</a> (const Path_t &amp;_PathToFile, Data_t &amp;_Data) const =0</td></tr>
-<tr class="memdesc:ab583a4bef004916737a4e1e21b47337e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения содержимого 'файла'.  <a href="a44278.html#ab583a4bef004916737a4e1e21b47337e">Подробнее...</a><br /></td></tr>
-<tr class="separator:ab583a4bef004916737a4e1e21b47337e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a847e965d4c5d748504f3aa51df008fbd"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44278.html#a847e965d4c5d748504f3aa51df008fbd">IsExists</a> (const Path_t &amp;_PathToFile) const =0</td></tr>
-<tr class="memdesc:a847e965d4c5d748504f3aa51df008fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки существования 'файла'.  <a href="a44278.html#a847e965d4c5d748504f3aa51df008fbd">Подробнее...</a><br /></td></tr>
-<tr class="separator:a847e965d4c5d748504f3aa51df008fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3e6426a9f06a69507a7a5583847c58d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44278.html#ab3e6426a9f06a69507a7a5583847c58d">BrowsingFiles</a> (const Path_t &amp;_Path, const Callback_t &amp;_Callback) const =0</td></tr>
-<tr class="memdesc:ab3e6426a9f06a69507a7a5583847c58d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция перебора 'файлов' в указанной папке.  <a href="a44278.html#ab3e6426a9f06a69507a7a5583847c58d">Подробнее...</a><br /></td></tr>
-<tr class="separator:ab3e6426a9f06a69507a7a5583847c58d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674fa22a67b00c91f86c2e8dd4e321a7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a44278.html#a674fa22a67b00c91f86c2e8dd4e321a7">BrowsingDirectories</a> (const Path_t &amp;_Path, const Callback_t &amp;_Callback) const =0</td></tr>
-<tr class="memdesc:a674fa22a67b00c91f86c2e8dd4e321a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция нерекурсивного перебора вложенных папок в указанной папке.  <a href="a44278.html#a674fa22a67b00c91f86c2e8dd4e321a7">Подробнее...</a><br /></td></tr>
-<tr class="separator:a674fa22a67b00c91f86c2e8dd4e321a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в <a class="el" href="a45588.html">Virtual File System</a> <br  />
- Интерфейсный класс для реализаций доступа к данным. </p>
-<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
-</dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>11 Июнь 2016 <br  />
-</dd></dl>
-<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span style="display: none;">.nosp@m.</span>BEP@<span style="display: none;">.nosp@m.</span>mail.<span style="display: none;">.nosp@m.</span>ru</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><h2 class="groupheader">Методы</h2>
-<a id="a674fa22a67b00c91f86c2e8dd4e321a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a674fa22a67b00c91f86c2e8dd4e321a7">&#9670;&nbsp;</a></span>BrowsingDirectories()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void alicorn::modules::vfs::IImplementation::BrowsingDirectories </td>
-          <td>(</td>
-          <td class="paramtype">const Path_t &amp;&#160;</td>
-          <td class="paramname"><em>_Path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Callback_t &amp;&#160;</td>
-          <td class="paramname"><em>_Callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция нерекурсивного перебора вложенных папок в указанной папке. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Path</td><td>Путь к интересующей папке. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Callback</td><td>Функтор обратного вызова, который будет вызван для каждой папки, существующей в указанной папке. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a44290.html#ad956f59a9e73119c6cc9b664a99c4096">alicorn::modules::vfs::Pack</a> и <a class="el" href="a44270.html#ac455ccea8affccf0d08d4b138bb2dd44">alicorn::modules::vfs::FileSystem</a>.</p>
-
-</div>
-</div>
-<a id="ab3e6426a9f06a69507a7a5583847c58d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3e6426a9f06a69507a7a5583847c58d">&#9670;&nbsp;</a></span>BrowsingFiles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void alicorn::modules::vfs::IImplementation::BrowsingFiles </td>
-          <td>(</td>
-          <td class="paramtype">const Path_t &amp;&#160;</td>
-          <td class="paramname"><em>_Path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Callback_t &amp;&#160;</td>
-          <td class="paramname"><em>_Callback</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция перебора 'файлов' в указанной папке. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Path</td><td>Путь к интересующей папке. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">_Callback</td><td>Функтор обратного вызова, который будет вызван для каждого файла, существующего в указанной папке. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Замещается в <a class="el" href="a44290.html#ad707efeb9241d0565d76d0ae8e116274">alicorn::modules::vfs::Pack</a> и <a class="el" href="a44270.html#a3e12b1d48f15470238cb429905971a90">alicorn::modules::vfs::FileSystem</a>.</p>
-
-</div>
-</div>
-<a id="ab583a4bef004916737a4e1e21b47337e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab583a4bef004916737a4e1e21b47337e">&#9670;&nbsp;</a></span>GetData()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool alicorn::modules::vfs::IImplementation::GetData </td>
-          <td>(</td>
-          <td class="paramtype">const Path_t &amp;&#160;</td>
-          <td class="paramname"><em>_PathToFile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Data_t &amp;&#160;</td>
-          <td class="paramname"><em>_Data</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция получения содержимого 'файла'. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к нужному файлу. Это может быть путь к файлу на диске или идентификатор искомого ресурса (подробнее см. у конкретных реализаций). </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">_Data</td><td>Объект, который должен быть заполнен данными из файла, если таковой существует.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Указанный файл найден, успешно прочитан и <b>_Data</b> содержит данные из этого файла. </dd>
-<dd>
-<b>false</b> Указанный файл не найден, <b>_Data</b> содержит невалидные данные. </dd></dl>
-
-<p>Замещается в <a class="el" href="a44290.html#a5adc96638eafab54ee6d001d71c832d3">alicorn::modules::vfs::Pack</a> и <a class="el" href="a44270.html#ac77c41eee699ac53a96a4c40bdb46a11">alicorn::modules::vfs::FileSystem</a>.</p>
-
-</div>
-</div>
-<a id="a847e965d4c5d748504f3aa51df008fbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a847e965d4c5d748504f3aa51df008fbd">&#9670;&nbsp;</a></span>IsExists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual bool alicorn::modules::vfs::IImplementation::IsExists </td>
-          <td>(</td>
-          <td class="paramtype">const Path_t &amp;&#160;</td>
-          <td class="paramname"><em>_PathToFile</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Функция проверки существования 'файла'. </p>
-<dl class="params"><dt>Аргументы</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">_PathToFile</td><td>Путь к нужному файлу. Это может быть путь к файлу на диске или идентификатор искомого ресурса (подробнее см. у конкретных реализаций).</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Возвращает</dt><dd><b>true</b> Указанный файл существует. </dd>
-<dd>
-<b>false</b> Указанный файл не найден. </dd></dl>
-
-<p>Замещается в <a class="el" href="a44290.html#af3fca437f7cbe469c3fa9cfcfca51f23">alicorn::modules::vfs::Pack</a> и <a class="el" href="a44270.html#a1107745c116036ff2db9605335c725e5">alicorn::modules::vfs::FileSystem</a>.</p>
-
-</div>
-</div>
-<hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Modules/Vfs/Vfs/<a class="el" href="a47611_source.html">iimplementation.hpp</a></li>
-</ul>
-</div><!-- contents -->
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тест для проверки компилируемости подставных классов раздела System. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>alicorn</b></li><li class="navelem"><b>modules</b></li><li class="navelem"><b>vfs</b></li><li class="navelem"><a class="el" href="a44278.html">IImplementation</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 8 Окт 2020 00:00:40. Создано системой
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.18 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_e402ad9ac1375638cf392e06e5b51a54.html">System</a></li><li class="navelem"><a class="el" href="dir_65a1679c9f4b0ff60690adae19d0c171.html">Application</a></li><li class="navelem"><a class="el" href="dir_ada4d8658d320f5d22844142b6fd491d.html">Test.Application</a></li><li class="navelem"><a class="el" href="dir_0b0e36c9699ba1138c7645cbe472b96b.html">Test.Mock</a></li><li class="navelem"><a class="el" href="a44278.html">Mock_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Чт 28 Ноя 2024 19:09:04. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

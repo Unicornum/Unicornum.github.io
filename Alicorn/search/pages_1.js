@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['build_1442',['Build',['../a60052.html',1,'SolutionPage']]],
-  ['boost_1443',['Boost',['../a60076.html',1,'ExtensionPage']]]
+  ['boost_0',['Boost',['../a42097.html',1,'ExtensionPage']]],
+  ['build_1',['Build',['../a42073.html',1,'SolutionPage']]],
+  ['buildall_2',['Сборка скриптом BuildAll',['../a42074.html',1,'SolutionStatisticsPage']]]
 ];
