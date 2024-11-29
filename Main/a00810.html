@@ -1,0 +1,204 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UnicornumVerum: Разработка для Android на С++</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">UnicornumVerum
+   </div>
+   <div id="projectbrief">Сайт-визитка для релизов, документации проектов и тому подобного.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="a00819.html">Документация</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+  <div class="headertitle"><div class="title">Разработка для Android на С++</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Описание приводится на основе экпериментов на устройствах:</p><ul>
+<li>Android 4.0.4 (API 15, сборка для ARM (armeabi-v7a)).</li>
+<li>Android 8.0.0 (API 26, сборка для ARM64 (arm64-v8a)).</li>
+</ul>
+<h1>Окружение </h1>
+<ul>
+<li><a href="https://developer.android.com/studio/index.html#command-tools">Android SDK</a>.</li>
+<li><a href="https://developer.android.com/ndk/downloads">Android NDK</a>.</li>
+<li><a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK</a>.</li>
+<li><a href="https://ant.apache.org/">Apache Ant</a></li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Все внешние инструменты ставить x64 версии.</li>
+<li>Пути к папкам инструментов должны состоять из символов латиницы без пробелов.</li>
+<li>Настройка Android SDK производится запуском утилиты SDK Manager.exe в корневой папке SDK.</li>
+</ul>
+</dd></dl>
+<h2>Версии используемых для экспериментов инструментов </h2>
+<ul>
+<li>Visual Sudio: 2019 (v16.4.0)</li>
+<li>Android compiler: Android clang version 5.0.300080 (based on LLVM 5.0.300080)</li>
+<li>Android SDK build tools: 29.0.2</li>
+<li>Android SDK platform: android-29</li>
+<li>Android NDK: android-ndk-r16b</li>
+<li>JDK: 1.8.0_144</li>
+<li>Apache Ant: 1.9.3</li>
+</ul>
+<h1>Visual Studio </h1>
+<p>Настройка внешних инструментов в Visual Studio:</p>
+<div class="image">
+<img src="Vs20xx.png" alt=""/>
+</div>
+<p>Создание проектов (Vs2019):</p>
+<div class="image">
+<img src="Vs20xx.templates.png" alt=""/>
+</div>
+<h3>Предопределенные макросы</h3>
+<ul>
+<li>__ANDROID__ - общий макрос признака, что используется код для Android.</li>
+<li>__ANDROID_API__ - номер текущего используемого API, например, 15.</li>
+</ul>
+<h2>Сборка для ARM (armeabi-v7a) </h2>
+<p>Для проектов .lib используются настройки по умолчанию, для главного модуля (.so) программы:</p>
+<div class="image">
+<img src="Vs20xx.props.png" alt=""/>
+</div>
+<p>Однако при сборке с такими настройками при запуске на устройстве с API15 запуск программы завершится с ошибкой 'библиотека libc++_shared.so не найдена'. Чтобы обойти эту проблему, необходимо в коде java класса главной activity загрузить ее явным образом:</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.example;</div>
+<div class="line">  </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> com.alicorn.MainActivity</div>
+<div class="line">{</div>
+<div class="line">  <span class="keyword">static</span></div>
+<div class="line">  {</div>
+<div class="line">    System.loadLibrary(<span class="stringliteral">&quot;c++_shared&quot;</span>);</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Использовалась сборка для <b>API19</b> (последняя, на которой доступен только 32-хбитный код), как наиболее универсальная; полученная сборка работает на устройстве с Android 4.0.4 (API15).</li>
+<li>Использовался <b>Android</b> <b>NDK</b> <b>r16b</b>, идущий в комплекте с Visual Studio, т.к. для всех последующих полученная программа при запуске пытается загрузить dll, которой нет в системе.</li>
+<li>Библиотека <b>unwind</b> добавлена для того, чтобы можно было использовать исключения (без нее проект соберется, но при возникновении исключения программа упадет).</li>
+<li>Стандартная библиотека <b>c++_shared</b> используется из-за того, что в противном случае проект не собирается из-за отсутствующих реализаций функций).</li>
+</ul>
+</dd></dl>
+<h2>Сборка для ARM64 (arm64-v8a) </h2>
+<p>Для проектов .lib используются настройки по умолчанию, для главного модуля (.so) программы:</p>
+<div class="image">
+<img src="Vs20xx.arm64.props.png" alt=""/>
+</div>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Использовалась сборка для <b>API21</b> (первая, на которой стала доступна сборка 64-хбитного кода).</li>
+<li>Проверялась сборка и запуск на <b>Android</b> <b>NDK</b> вплоть до <b>r20b</b> включительно, все собирается и работает без проблем.</li>
+<li>Включение библиотеки <b>unwind</b> и явная загрузка <b>libc++_shared</b>.so не требуется.</li>
+<li>Стандартная библиотека <b>c++_shared</b> используется из-за того, что в противном случае проект не собирается из-за отсутствующих реализаций функций).</li>
+</ul>
+</dd></dl>
+<h1>Проблемы и решения </h1>
+<p><a class="el" href="a00813.html">Ввод русских букв с клавиатуры</a></p>
+<p><a class="el" href="a00812.html">Разные приложения для разных конфигураций проекта</a></p>
+<p><a class="el" href="a00811.html">Вызов функций собственного java класса из кода С++</a></p>
+<h2>Завершение прошраммы при нажатии кнопки HOME </h2>
+<p>При нажатии пользователем кнопки HOME во время работы программы она может быть завершена (событие APP_CMD_DESTROY), а может просто уйти в фон (будет получено только событие APP_CMD_TERM_WINDOW). Чтобы не обрабатывать два варианта отдельно, можно заставить Android всегда завершать работу приложения при нажатии кнопки HOME (при перекрытии работающей программы всплывающим окном это тоже работает):</p>
+<div class="fragment"><div class="line"><span class="keyword">package </span>com.example;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">public</span> <span class="keyword">class </span>MainActivity <span class="keyword">extends</span> com.alicorn.MainActivity</div>
+<div class="line">{</div>
+<div class="line">  @Override</div>
+<div class="line">  <span class="keyword">public</span> <span class="keywordtype">void</span> onUserLeaveHint()</div>
+<div class="line">  {</div>
+<div class="line">    finish();</div>
+<div class="line">  }</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по UnicornumVerum. Последние изменения: Пт 29 Ноя 2024 22:40:31. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

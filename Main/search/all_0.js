@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['externals_0',['Externals',['../a00641.html',1,'']]]
+  ['android_20на_20с_0',['Разработка для Android на С++',['../a00810.html',1,'Documentation']]]
 ];
