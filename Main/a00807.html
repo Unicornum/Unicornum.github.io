@@ -102,14 +102,7 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Ввод русских букв с клавиатуры</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p> 
-<style>
-  .contents img {
-    max-width: 100%;
-}
-</style>
-  </p>
-<h2>Проблема </h2>
+<div class="textblock"><h2>Проблема </h2>
 <p>Как оказалось, при нажатии кнопок клавиатуры в русской раскладке нативное приложение получает сообщения <b>AKEY_EVENT_ACTION_MULTIPLE</b> (вместо <b>AKEY_EVENT_ACTION_UP</b> и <b>AKEY_EVENT_ACTION_DOWN</b>). При этом функции AKeyEvent_getKeyCode(), AKeyEvent_getScanCode(), AKeyEvent_getFlags(), AKeyEvent_getMetaState() и AKeyEvent_getRepeatCount() возвращают 0.</p>
 <p>Кроме того, для ASCII символов коды, возвращаемые функцией AKeyEvent_getKeyCode() не являются Unicode символами соответствующих символов и требуют дополнительное преобразование с вызовом функций java.</p>
 <h2>Решение </h2>
@@ -168,7 +161,7 @@ $(function(){ initResizable(false); });
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Сб 30 Ноя 2024 14:43:21. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Документация по UnicornumVerum. Последние изменения: Сб 30 Ноя 2024 18:10:12. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
