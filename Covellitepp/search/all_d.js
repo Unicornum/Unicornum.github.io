@@ -1,17 +1,13 @@
 var searchData=
 [
-  ['os_217',['Os',['../a41955.html',1,'']]],
-  ['obtain_218',['Obtain',['../a42356.html#a522a6d3316a970761a6ec30df3b71997',1,'covellite::api::Component::Renders']]],
-  ['open_219',['Open',['../a42816.html#af128b2d7b2a1cff725f6bf8d0c76a416',1,'covellite::gui::File']]],
-  ['opengl_220',['OpenGL',['../a42292.html',1,'covellite::api::renderer']]],
-  ['opengl_2epresent_5ftest_2ecpp_221',['OpenGL.Present_test.cpp',['../a00302.html',1,'']]],
-  ['opengl_5ftest_2ecpp_222',['OpenGL_test.cpp',['../a00305.html',1,'']]],
-  ['openglcommon_223',['OpenGLCommon',['../a42296.html',1,'covellite::api::renderer']]],
-  ['openglcommonshader_224',['OpenGLCommonShader',['../a42348.html',1,'covellite::api::renderer']]],
-  ['opengles3_225',['OpenGLES3',['../a42352.html',1,'covellite::api::renderer']]],
-  ['opengles3_5ftest_2ecpp_226',['OpenGLES3_test.cpp',['../a00308.html',1,'']]],
-  ['operator_20events_5ft_227',['operator Events_t',['../a42912.html#aedcb691f436373a2f31eed923f9664f3',1,'covellite::gui::Window']]],
-  ['operator_28_29_228',['operator()',['../a42664.html#ab5918f2f32a8973d6ce6ed6967dc8b8e',1,'covellite::events::Events::Signal::operator()(void)'],['../a42664.html#a269442be0187c199c2b25327055edac7',1,'covellite::events::Events::Signal::operator()(const Params &amp;)']]],
-  ['operator_5b_5d_229',['operator[]',['../a42092.html#a582aa5b09f671db1305fff9fc04c97d7',1,'covellite::api::Component::operator[](const Name_t &amp;)'],['../a42092.html#a8177b7894e66555eaac2d29c96e21460',1,'covellite::api::Component::operator[](const size_t &amp;)'],['../a42092.html#ac6d7f5f27eb0b0e7c9ba2339a71bdce9',1,'covellite::api::Component::operator[](const Name_t &amp;) const'],['../a42092.html#a997189e5ac0ec5d6b22131545978bc4a',1,'covellite::api::Component::operator[](const size_t &amp;) const'],['../a42644.html#ac2ee3224a50d83a577021de0258def93',1,'covellite::events::Events::operator[]()']]],
-  ['os_2ehpp_230',['Os.hpp',['../a00716.html',1,'']]]
+  ['main_0',['Main',['../a38388.html#a4ebd98e642ed65f4e235e5b595583e8c',1,'covellite::app::Application::Main(void *) noexcept'],['../a38388.html#a5e0babd9f4b467bce874e6eb159d91cf',1,'covellite::app::Application::Main(CreateApp_t, void *) noexcept']]],
+  ['mainscreen_1',['MainScreen',['../a39364.html',1,'layers::MainScreen'],['../a39364.html#a82729fb1bda8ecb54c4d2bc89d1727eb',1,'layers::MainScreen::MainScreen()']]],
+  ['make_2',['Make',['../a37992.html#a76ccfe83ee721560c67afed1eea60ddb',1,'covellite::api::Component']]],
+  ['makeuniquehandle_3',['MakeUniqueHandle',['../a38716.html#a781d029e25dfe54252b0d45ab2c1ff6c',1,'covellite::gui::File']]],
+  ['makewindow_4',['MakeWindow',['../a38388.html#a376380bb7d99be79eb19502b2192c98f',1,'covellite::app::Application']]],
+  ['manual_5',['Manual',['../a39536.html',1,'index']]],
+  ['menu_6',['Menu',['../a37871.html#gga56e5f58c24b4bd22a7d463dffa027f0ba7f0189061cb586a816352a64f294528d',1,'covellite::events::Key_t']]],
+  ['mock_2ehpp_7',['mock.hpp',['../a40146.html',1,'(Глобальное пространство имён)'],['../a40152.html',1,'(Глобальное пространство имён)'],['../a40155.html',1,'(Глобальное пространство имён)'],['../a40158.html',1,'(Глобальное пространство имён)'],['../a40161.html',1,'(Глобальное пространство имён)']]],
+  ['model_8',['Model',['../a39204.html',1,'basement::model']]],
+  ['motion_9',['Motion',['../a37871.html#gga38817e2b66efd8c334c051014139c298a423c3c877625c2f3940876eed13ffa90',1,'covellite::events::Cursor_t']]]
 ];

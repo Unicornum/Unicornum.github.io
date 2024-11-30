@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['vertex_301',['Vertex',['../a42360.html',1,'covellite::api']]],
-  ['vertex_5ft_302',['Vertex_t',['../a43388.html#a6f2b39cad3a6389f0f67776f62ba5252',1,'basement::Simple2DGame::Vertex_t()'],['../a43412.html#aa2c1d18b6f17c2a88cff3edfa8c21046',1,'basement::Simple3DObject::Vertex_t()']]],
-  ['vertexdata_5ft_303',['VertexData_t',['../a43388.html#a1eb08c6023edf6eeeb7041229f48b9ba',1,'basement::Simple2DGame']]],
-  ['view_304',['View',['../a43356.html',1,'basement::view']]]
+  ['tell_0',['Tell',['../a38716.html#a2a40cf8b599a81b66a74a8bc684dc4b4',1,'covellite::gui::File']]],
+  ['text_1',['Text',['../a39368.html',1,'layers']]],
+  ['touch_2',['Touch',['../a37871.html#gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c',1,'covellite::events::Cursor_t']]],
+  ['translate_3',['Translate',['../a38752.html#aa18d3b385a033f10ec8656a4b5847aa5',1,'covellite::gui::IStringTranslator::Translate()'],['../a38804.html#a3b84302db2cc840b5d4247deb86d7322',1,'covellite::gui::StringTranslator::Translate()']]],
+  ['translatestring_4',['TranslateString',['../a38808.html#adb13f880cf3bcfd5f8e221e1162b1377',1,'covellite::gui::System']]],
+  ['tv_5',['tv',['../a38260.html#a8e99b358eae3e4c1f693bfa96b64729f',1,'covellite::api::Vertex']]],
+  ['type_6',['Type',['../a37870.html',1,'']]]
 ];

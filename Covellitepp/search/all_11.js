@@ -1,10 +1,14 @@
 var searchData=
 [
-  ['type_292',['Type',['../a41950.html',1,'']]],
-  ['tell_293',['Tell',['../a42816.html#a2a40cf8b599a81b66a74a8bc684dc4b4',1,'covellite::gui::File']]],
-  ['text_294',['Text',['../a43468.html',1,'layers']]],
-  ['touch_295',['Touch',['../a41951.html#gga38817e2b66efd8c334c051014139c298ad2f4d3a6df7c1d4ec927585b3f9fad9c',1,'covellite::events::Cursor_t']]],
-  ['translate_296',['Translate',['../a42852.html#aa18d3b385a033f10ec8656a4b5847aa5',1,'covellite::gui::IStringTranslator::Translate()'],['../a42904.html#a3b84302db2cc840b5d4247deb86d7322',1,'covellite::gui::StringTranslator::Translate()']]],
-  ['translatestring_297',['TranslateString',['../a42908.html#adb13f880cf3bcfd5f8e221e1162b1377',1,'covellite::gui::System']]],
-  ['tv_298',['tv',['../a42360.html#a8e99b358eae3e4c1f693bfa96b64729f',1,'covellite::api::Vertex']]]
+  ['read_0',['Read',['../a38716.html#a5f9b9244be54098b8d4d5d86f2080cd5',1,'covellite::gui::File']]],
+  ['release_1',['Release',['../a37871.html#gga38817e2b66efd8c334c051014139c298a7f9f92e40a70f03ac92311ee33580d98',1,'covellite::events::Cursor_t']]],
+  ['remove_2',['Remove',['../a38256.html#ab607fb68f26af4944da5b59c5dee8a89',1,'covellite::api::Component::Renders::Remove()'],['../a38600.html#af5ac488baecc0f9459f8153b449045b4',1,'covellite::expanse::C3DScene::Remove()'],['../a38624.html#a386c24626d46949977f5ca4008c80023',1,'covellite::expanse::IProduce3DObject::Remove()']]],
+  ['removeobject_3',['RemoveObject',['../a38608.html#a5549e0b9df7a6bd9f200d77520b8b7c5',1,'covellite::expanse::GameScene']]],
+  ['render_4',['Render',['../a38976.html#a45408e6cc5c95dfced1dcd0783305e33',1,'basement::view::C3DScene']]],
+  ['renderer_5',['Renderer',['../a38796.html',1,'covellite::gui::Renderer'],['../a37865.html',1,'Renderer']]],
+  ['renderer_5ftest_2ecpp_6',['Renderer_test.cpp',['../a01634.html',1,'']]],
+  ['renders_7',['Renders',['../a38256.html',1,'covellite::api::Component::Renders'],['../a38256.html#a2d16c0cb6b2e82c512888508d437275b',1,'covellite::api::Component::Renders::Renders()']]],
+  ['renders_5ftest_2ecpp_8',['Renders_test.cpp',['../a00854.html',1,'']]],
+  ['resize_9',['Resize',['../a37871.html#gga7c051e93e1837c87e8b08334edb4a3ccac8b7b1ca008fecbce8b480bec006264c',1,'covellite::events::Window_t']]],
+  ['run_10',['Run',['../a38388.html#a6e7e6ddca1772be558b824a865bef71e',1,'covellite::app::Application']]]
 ];
