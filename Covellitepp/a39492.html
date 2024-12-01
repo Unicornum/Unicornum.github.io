@@ -1,0 +1,390 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Отрисовка 3D объектов</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 22:59 01.12.2024</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a39492.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Отрисовка 3D объектов</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Описание отрисовки 3D объектов в окне с использованием <a class="el" href="a39502.html">компонентной системы</a>.   </p>
+<h1>Используемые термины </h1>
+<ul>
+<li><b>Компонент</b> - объект, содержащий информацию об одном аспекте игрового объекта (таких как текстура, меш, положение и т.п.).</li>
+<li><b>Игровой</b> <b>объект</b> - объект в игровом мире, содержащий информацию в виде набора компонентов.</li>
+<li><b>Игровой</b> <b>мир</b> - набор игровых объектов, разбитый на иерархическую структуру из ячеек, каждая из которых содержит несколько игровых объектов; назначение - оптимизация подгрузки и выгрузки игровых объектов (сразу ячейками).</li>
+<li><b>Игровая</b> <b>сцена</b> - набор игровых объектов, непосредственно участвующих в игровом процессе; объекты подгружаются (по мере необходимости) из игрового мира и это именно те объекты, которые должны обновляться в процессе игры.</li>
+<li><b>Рендер</b> - объект, предназначенный для отображения игровых объектов в 3D сцене, создается на основе одного или нескольких компонентов.</li>
+<li><b>Объект</b> <b>3D</b> <b>сцены</b> - объект (набор рендеров), из которых состоит 3D сцена.</li>
+<li><b>3D</b> <b>сцена</b> - набор объектов 3D сцены, которые отображаются в окне программы; является 'зеркалом' той части объектов игровой сцены, которые попадают в поле зрения камеры.   </li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>В данном описании под <b>объектом</b> подразумевается 'объект 3D сцены', а под <b>сценой</b> - '3D сцена'.</li>
+<li>Обозначение компонента как State.Scissor подразумевает объект компонента, у которого установлены параметры type == 'State' и kind == 'Scissor'.</li>
+<li>Под <b>объектом</b> <b>компонента</b> подразумевается объект C++ класса компонента.</li>
+</ul>
+</dd></dl>
+<p>Подробнее о компонентах и их параметрах см. <a class="el" href="a39502.html">Компонентная система</a>.</p>
+<h1>Общее описание </h1>
+<p>Используемый формат вершин:</p>
+<div class="fragment"><div class="line">  <span class="keyword">using </span><a class="code hl_typedef" href="a39284.html#aa2c1d18b6f17c2a88cff3edfa8c21046">Vertex_t</a> = <a class="code hl_class" href="a38232.html">::covellite::api::Vertex</a>;</div>
+</div><!-- fragment --><p>Отрисовка производится при помощи формирования <b>сцены</b>, содержащей рендеры:</p><ul>
+<li><b>Камеры</b> - уникальный для сцены объект, определяющий способ отрисовки сцены.</li>
+<li><b>Общих</b> <b>объектов</b>, таких как настройки конвеера рендеринга и источники света.</li>
+<li><b>Объектов</b>, которые непосредственно формируют требуемое изображение на экране.</li>
+</ul>
+<p>Сцена определяется набором идентификаторов ее объектов, таких сцен может быть несколько, добавлять объекты разных сцен можно в очереди рендеринга разных проходов, при рендеринге нескольких сцен текущая сцена будет отрисоваваться поверх предыдущей; также можно сформировать несколько наборов идентификаторов объектов, каждый из которых отрисовывать в зависимости от неких условий.</p>
+<div class="image">
+<img src="Cubes.Components.png" alt=""/>
+</div>
+<p>Создание и удаление рендеров для компонентов, а также рендеринг объектов 3D сцены производится через объект класса <a class="el" href="a38608.html" title="Класс входит в проект Covellite.Expanse   Класс окна, предоставлющего клиентскому коду возможности пр...">covellite::expanse::Window</a>, который должен быть создан при старте программы и передан окну формирования 3D сцены.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Реализация OpenGL требует, чтобы рендеры создавались и активировались в том же потоке, в котором было создано окно графического Api.</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>При использовании в разных <b>объектах</b> <b>компонентов</b> с одним и тем же <b>id</b> будет использоваться один и тот же объект рендера (это позволяет, например, один раз сформировать набор общих для всех объектов рендеров, а затем обращаться к ним через <b>объекты</b> <b>компонентов</b>, содержащих только идентификаторы), но при этом следует учитывать, что для некоторых типов компонентов рендеры не создаются (например, компоненты Data). Для таких компонентов параметр <b>id</b> не имеет смысла и при необходимости использования несколькими объектами одного и того же компонента (например, для совместного перемещения группы объектов), следует использовать один и тот же <b>объект</b> <b>компонента</b>.</dd></dl>
+<p>Разные объекты могут использовать рендеры, выполняющие одно и то же действие, в этом случае для экономии ресурсов можно создать эти рендеры (один раз) заранее, а дальнейшем использовать их через компоненты с соответствующими id.</p>
+<h2>Камера и настройки конвеера рендеринга </h2>
+<dl class="section note"><dt>Заметки</dt><dd>Здесь и далее все создаваемые наборы рендеров добавляются в общий набор объектов, а <b>сцена</b> представляет собой список идентификаторов объектов в этом наборе.</dd></dl>
+<p>В данном примере формируется объект, состоящий из рендеров:</p><ul>
+<li>Перспективной камеры с компонентом позиции в которую смотрит камера.</li>
+<li>Компонента, очищающего задний буфер и заливающего его указанным цветом.</li>
+<li>Компонента, включающего использование буфера глубины и очищающего его.</li>
+<li>Компонента вертексного шейдера по умолчанию.</li>
+<li>Компонента пиксельного шейдера по умолчанию.</li>
+<li>Компонента updatre'a состояния сцены.</li>
+</ul>
+<div class="fragment"><div class="line">  <span class="keywordflow">return</span> CreateObject(</div>
+<div class="line">    {</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Camera.&quot;</span>) + Id.GetStringId() },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Camera&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;kind&quot;</span>), uT(<span class="stringliteral">&quot;Perspective&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;distance&quot;</span>), 10.0f },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;fov&quot;</span>), 90.0f },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;service&quot;</span>), GameObject_t{ pCameraPosition } },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.State.Clear&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;State&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;kind&quot;</span>), uT(<span class="stringliteral">&quot;Clear&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;color&quot;</span>), 0xFF0000FF },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.State.Depth&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;State&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;kind&quot;</span>), uT(<span class="stringliteral">&quot;Depth&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;enabled&quot;</span>), <span class="keyword">true</span> },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;clear&quot;</span>), <span class="keyword">true</span> },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Shader.Vertex.Default&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Shader&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;entry&quot;</span>), uT(<span class="stringliteral">&quot;vsVolume&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Shader.Pixel.Default&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Shader&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;entry&quot;</span>), uT(<span class="stringliteral">&quot;psTextured&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Updater.Simple3DObject.&quot;</span>) + Id.GetStringId() },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Updater&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;function&quot;</span>), GetUpdater() },</div>
+<div class="line">      }),</div>
+<div class="line">    });</div>
+</div><!-- fragment --><h2>Источники света </h2>
+<p>Фоновый и направленный источники света:</p>
+<div class="fragment"><div class="line">  <span class="keywordflow">if</span> (IsActive(Lights::Ambient))</div>
+<div class="line">  {</div>
+<div class="line">    Lights.Ambient.IsValid = 1;</div>
+<div class="line">    Lights.Ambient.Color = ARGBtoFloat4(0xFF303030);</div>
+<div class="line">  }</div>
+<div class="line">    </div>
+<div class="line">  <span class="keywordflow">if</span> (IsActive(Lights::Directional))</div>
+<div class="line">  {</div>
+<div class="line">    Lights.Direction.IsValid = 1;</div>
+<div class="line">    Lights.Direction.Color = ARGBtoFloat4(0xFF808080);</div>
+<div class="line">    Lights.Direction.Direction = ::glm::vec4{ 1.0f, -1.0f, 1.0f, 1.0f };</div>
+<div class="line">  }</div>
+</div><!-- fragment --><h2>Рендеринг объектов </h2>
+<p>Объект, отображаемый на экране, представляет собой набор рендеров, который создается на основе набора компонентов и должен включать:</p><ul>
+<li>Вершинный шейдер.</li>
+<li>Пиксельный шейдер.</li>
+<li>Текстуру.</li>
+<li>Вертексный буфер.</li>
+<li>Компонент трансформации.</li>
+<li>Present с индексным буфером (именно он осуществляет отрисовку объекта, поэтому должен располагаться последним).</li>
+</ul>
+<p>Компоненты Data.Position/Data.Rotation/Data.Scale используются для перемещения/вращения/изменения размеров объектов без их пересоздания (достаточно установить новые значения параметров при обновлении сцены), причем:</p><ul>
+<li>Компонентов одного типа может быть несколько (что позволяет, например, создавать группы объектов, которые должны быть расположены относительно друг друга определенным образом, но при этом двигаться/вращаться вместе; во втором случае необходимо использовать общий <b>объект</b> <b>компонента</b>, использование разных объектов с одинаковым <b>id</b> нужного эффекта не даст).</li>
+<li>Важен порядок следования компонентов (поворот-перемещение даст сначала поворот вокруг точки [0, 0, 0] с нулевым радиусом, а затем уже смещение повернутого объекта, а перемещение-поворот даст сначала смещение от точки [0, 0, 0], а затем уже поворот вокруг нее с радиусом смещения).</li>
+</ul>
+<dl class="todo"><dt><b><a class="el" href="a37880.html#_todo000002">Необходимо сделать</a></b></dt><dd><ul>
+<li>Добавить картинку, объясняющую разницу между поворот-смещение и смещение-поворот.</li>
+</ul>
+</dd></dl>
+<h3>Текстурированный объект</h3>
+<p>Текстуры, которые будут использоваться, можно подгрузить заранее, чтобы потом ссылаться на них по их идентификатору.</p>
+<div class="fragment"><div class="line">  <span class="keyword">const</span> image::Universal_t&lt;image::pixel::RGBA&gt; Image</div>
+<div class="line">  {</div>
+<div class="line">    ::covellite::app::Vfs_t::GetInstance().GetData(</div>
+<div class="line">      PathToTextureDirectory / _RelativePathToSourceFile)</div>
+<div class="line">  };</div>
+<div class="line"> </div>
+<div class="line">  (*_pData)[uT(<span class="stringliteral">&quot;content&quot;</span>)] = Image.GetData().Buffer;</div>
+<div class="line">  (*_pData)[uT(<span class="stringliteral">&quot;width&quot;</span>)]  = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(Image.GetData().Width);</div>
+<div class="line">  (*_pData)[uT(<span class="stringliteral">&quot;height&quot;</span>)] = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(Image.GetData().Height);</div>
+<div class="line"> </div>
+<div class="line">  <span class="keywordflow">return</span></div>
+<div class="line">  {</div>
+<div class="line">    Component_t::Make(</div>
+<div class="line">    {</div>
+<div class="line">      { uT(<span class="stringliteral">&quot;id&quot;</span>), _Id },</div>
+<div class="line">      { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Texture&quot;</span>) },</div>
+<div class="line">      { uT(<span class="stringliteral">&quot;service&quot;</span>), GameObject_t{ _pData } },</div>
+<div class="line">    }),</div>
+<div class="line">  };</div>
+<div class="line"> </div>
+</div><!-- fragment --><p>Пример формирования текстурированного объекта; по порядку:</p><ul>
+<li>Вертексный шейдер для отрисовки текстурированных объектов.</li>
+<li>Пиксельный шейдер для отрисовки объектов c текстурой.</li>
+<li>Текстуры.</li>
+<li>Вертексный буфер, содержащий уникальные для данного объекта данные вершин.</li>
+<li>Компонент трансформации, включающий:<ul>
+<li>Компонент масштабирования.</li>
+<li>Компонент вращения (создан заранее, что можно было обновлять его значения перед отрисовкой каждого кадра).</li>
+<li>Компонент смещения.</li>
+</ul>
+</li>
+<li>Компонент отрисовки объекта.</li>
+</ul>
+<div class="fragment"><div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.State.Sampler&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;State&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;kind&quot;</span>), uT(<span class="stringliteral">&quot;Sampler&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      pVertexShader,</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Buffer.Vertex.Cube&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Buffer&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;content&quot;</span>), m_VertexData },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Shader.Pixel.Cube.PBR&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Shader&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;content&quot;</span>), PixelShaderData },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;entry&quot;</span>), uT(<span class="stringliteral">&quot;psPbrSimple&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Texture.Albedo&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Texture.Reflection&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Texture.Normal&quot;</span>) },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Texture.Environment&quot;</span>) },</div>
+<div class="line">      }),</div>
+</div><!-- fragment --> <div class="fragment"><div class="line">  <span class="keywordflow">return</span> CreateObject(</div>
+<div class="line">    {</div>
+<div class="line">      <span class="comment">//Component_t::Make(</span></div>
+<div class="line">      <span class="comment">//{</span></div>
+<div class="line">      <span class="comment">//  { uT(&quot;id&quot;), uT(&quot;Example.Buffer.Vertex.Cube&quot;) },</span></div>
+<div class="line">      <span class="comment">//  { uT(&quot;type&quot;), uT(&quot;Buffer&quot;) },</span></div>
+<div class="line">      <span class="comment">//  { uT(&quot;content&quot;), m_VertexData },</span></div>
+<div class="line">      <span class="comment">//}),</span></div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Transform.&quot;</span>) + Id.GetStringId() },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Transform&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;service&quot;</span>), Transform },</div>
+<div class="line">      }),</div>
+<div class="line">      Component_t::Make(</div>
+<div class="line">      {</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;id&quot;</span>), uT(<span class="stringliteral">&quot;Example.Present&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;type&quot;</span>), uT(<span class="stringliteral">&quot;Present&quot;</span>) },</div>
+<div class="line">        { uT(<span class="stringliteral">&quot;content&quot;</span>), m_IndexData },</div>
+<div class="line">      })</div>
+<div class="line">    });</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Можно использовать текстуру, содержащую несколько изображений для разных объектов, но при этом все равно необходимо устанавливать компонент этой текстуры <b>каждому</b> объекту, т.к. Present отключает использование текстур после отрисовки объекта.</li>
+</ul>
+</dd></dl>
+<h3>Скайбокс</h3>
+<p>Для отрисовки скайбокса необходимо сформировать отдельную сцену, содержащую компоненты:</p><ul>
+<li>Камеры, которая 'смотрит' в начало координат с нулевой дистанции и вращается синхронно с камерой, привязанной к персонажу, управляемому игроком.</li>
+<li>Компонента, отключающего использование буфер глубины.</li>
+<li>Фоновый источник света и материал белого цвета (0xFFFFFFFF).</li>
+<li>Шейдеры, текстуру и куб в начале координат, вертексный буфер которого сформирован таким образом, чтобы отрисовывались его внутренние поверхности.</li>
+</ul>
+<h1>Подготовка 3D модели </h1>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Visual Studio умеет отображать и редактировать 3D модели (форматы .obj, .dae и .fbx), но при сохранении результата в файл .obj он сохраняется как utf8 <b>без</b> <b>сигнатуры</b>, после чего при повторном открытии этого файла он открывается как текстовый файл. Чтобы Visual Studio открыл его в 3D редакторе, необходимо пересохранить файл как utf8 <b>с</b> <b>сигнатурой</b>.</dd></dl>
+<p>При подготовке файла 3D модели к использованию фреймворком возможны следующие действия:</p>
+<h3>Триангуляция</h3>
+<p>3D редактор Visual Studio:</p>
+<div class="image">
+<img src="Triangulation.png" alt=""/>
+</div>
+<h3>Перенос/поворот/масштабирование модели</h3>
+<p>3D редактор Visual Studio:</p>
+<div class="image">
+<img src="Transformation.png" alt=""/>
+</div>
+<h3>Объединение нескольких текстур в одну</h3>
+<p>Фреймворк поддерживает использование только одной текстуры для одной модели (модель = вертексный + индексный буфер), поэтому для файлов, содержащих несколько отдельных моделей, каждой из которых задана своя текстура, необходимо произвести объединение мешей (это делает 3D редактор Visual Studio) и текстур (например, при помощи GIMP). Проблема заключается в том, что у 3D модели необходимо модифицировать текстурные координаты таким образом, чтобы она правильно отображалась с объединенной текстурой.</p>
+<p>При помощи Blender'а это можно сделать так:</p><ul>
+<li>Открываем файл 3D модели и переключаемся в режим редактирования текстурных координат.</li>
+</ul>
+<div class="image">
+<img src="UVImageEditor.png" alt=""/>
+</div>
+<ul>
+<li>Для материала каждой модели - выбираем его, наводим курсор на поле развертки и нажимаем A, чтобы выделить всю развертку целиком.</li>
+</ul>
+<div class="image">
+<img src="SelectAll.png" alt=""/>
+</div>
+<ul>
+<li>Для изменения масштаба нажимаем S (после чего X или Y, если масштабирование требуется только по одной оси) и, перемещая мышь, изменяем размер развертки до требуемого (с зажатым Ctrl - с шагом 0.1).</li>
+</ul>
+<div class="image">
+<img src="ScaleX.png" alt=""/>
+</div>
+<ul>
+<li>Для перемещения нажимаем G и, перемещая мышь, перемещаем развертку в нужное место текстуры (с зажатым Ctrl - с шагом 1/8 размера текстуры).</li>
+</ul>
+<div class="image">
+<img src="Translate.png" alt=""/>
+</div>
+<ul>
+<li>После экспорта результата модель будет использовать новые текстурные координаты. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a39496.html">Manual</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вс 1 Дек 2024 22:59:56. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

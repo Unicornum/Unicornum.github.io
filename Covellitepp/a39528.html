@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Создание базового проекта приложения</title>
+    <title>Covellite++: Example</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 19:11 30.11.2024</span>
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 22:59 01.12.2024</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,262 +108,37 @@ $(function(){initNavTree('a39528.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Создание базового проекта приложения</div></div>
+  <div class="headertitle"><div class="title">Example</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li>Создать проект сборки основного модуля программы <a class="el" href="#MainModuleWindowsUsingFrameworkAnchor">Windows</a>/ <a class="el" href="#MainModuleAndroidUsingFrameworkAnchor">Android</a>.</li>
-<li>Создать <a class="el" href="#MainApplicationClassUsingFrameworkAnchor">класс</a> программы.</li>
-<li>Добавить рализациию функции установки используемых фреймворком <a class="el" href="#SettingsUsingFrameworkAnchor">значений параметров по умолчанию</a>.</li>
-<li>Добавить реализацию функции создания объекта <a class="el" href="#ReadFileDataUsingFrameworkAnchor">виртуальной файловой системы</a>, который будет использоваться программой для чтения данных из файлов.   </li>
-</ul>
-<p><a class="anchor" id="MainModuleWindowsUsingFrameworkAnchor"></a> </p><h2>Создание проекта сборки основного модуля программы для Windows </h2>
-<p>Создать <b>пустой</b> проект приложения Windows:</p>
-<div class="image">
-<img src="Vs2019.Windows.png" alt=""/>
-</div>
-<p>Добавить в проект .ico файл иконки программы и .rc файл, определяющий иконку программы как <b>ApplicationIcon</b> (именно эта иконка будет отображаться в заголовке окна программы):</p>
-<div class="fragment"><div class="line">﻿</div>
-<div class="line">ApplicationIcon ICON  &quot;ApplicationIcon.ico&quot;</div>
-</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>В качестве заголовка окна программы будет использовано значение макроса <b>__APPLICATION_NAME__</b> из файла версии решения.</li>
-<li>Режим работы (полноэкранный/оконный), размеры и цвет фона окна программы задаются в <a class="el" href="#SettingsUsingFrameworkAnchor">настройках</a> приложения.</li>
-</ul>
-</dd></dl>
-<p><a class="anchor" id="MainModuleAndroidUsingFrameworkAnchor"></a> </p><h2>Создание проекта сборки основного модуля программы для Android </h2>
-<h3>Создание проекта сборки .apk файла программы</h3>
-<p>Создать "Простое приложение Android":</p>
-<div class="image">
-<img src="Vs2019.Android.png" alt=""/>
-</div>
-<p>Добавить в его java код перехват функции dispatchKeyEvent() (<a class="el" href="a39535.html">как это делается и зачем это нужно</a>).</p>
-<p><a class="el" href="a39526.html">Фоновое выполнение задач в коде С++</a></p>
-<dl class="section note"><dt>Заметки</dt><dd>Чтобы программа работала в полноэкранном режиме (без статус-бара), необходимо добавить в AndroidManifest.xml <div class="fragment"><div class="line">&lt;application ... android:theme=<span class="stringliteral">&quot;@android:style/Theme.Holo.NoActionBar.Fullscreen&quot;</span>&gt;</div>
-</div><!-- fragment --></dd></dl>
-<h3>Создание проекта сборки главного модуля программы</h3>
-<p>Создать проект .so файла (который будет загружаться при старте NativeActivity):</p>
-<div class="image">
-<img src="Vs2019.So.png" alt=""/>
-</div>
-<p>Проекту Packaging добавить его в ссылки, а в AndroidManifest.xml добавить запись загрузки именно этого модуля (<a class="el" href="a39535.html">подробнее</a>).</p>
-<p><a class="anchor" id="MainApplicationClassUsingFrameworkAnchor"></a> </p><h2>Создание класса программы </h2>
-<p><b>Класс</b> <b>программы</b> содержит главный цикл обработки сообщений, отвечает за обработку системных сообщений и создание/разрушение главного окна программы.</p>
-<dl class="section note"><dt>Заметки</dt><dd>При написании кода следует учитывать, что Android в NativeActivity загружает главный модуль программы только один раз, при первом запуске программы, после чего при каждой последующей активации программы вызывает функцию точки входа. При этом объект класса программы будет создаваться каждый раз заново, но все статические объекты будут иметь состояния, унаследованные от предыдущей активации.</dd></dl>
-<p>Создать класс-наследник от <a class="el" href="a38388.html" title="Класс входит в проект Covellite.App   Базовый класс приложения для Android.">covellite::app::Application</a>, конструктору которого передать способ отрисовки окна приложения (по событию или непрерывно), подписаться на необходимые события и добавить код обработки этих событий.</p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="a39320.html#a3dd1c639961a5e122c07f15ce0041771">ExampleApp::ExampleApp</a>(<span class="keywordtype">void</span>) noexcept :</div>
-<div class="line">  Application(Continuous{})</div>
-<div class="line">{</div>
-<div class="line">  <span class="keyword">namespace </span>events = ::covellite::events;</div>
-<div class="line">    </div>
-<div class="line">  m_Events[events::Application.Start]</div>
-<div class="line">    .Connect([&amp;]() { DoInitWindow(); } );</div>
-<div class="line">  m_Events[events::Error.Exception]</div>
-<div class="line">    .Connect([](<span class="keyword">const</span> events::Error_t::Description &amp; _Description)</div>
-<div class="line">      { LOGGER(Error) &lt;&lt; _Description.c_str(); });</div>
-<div class="line">  <span class="comment">// ...</span></div>
-</div><!-- fragment --><p><a class="el" href="a37871.html">События</a>, которые может обрабатывать приложение.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Подписка на событие <b>Application.Start</b> обязательна, в обработчике следует создать набор окон программы; в качестве класса главного окна программы следует указать ранее созданный класс. <br  />
- Подписка на собыие <b>Application.Exit</b> не требуется, окно будет уничтожено автоматически.</dd></dl>
-<ul>
-<li><b><a class="el" href="a39316.html" title="Класс входит в проект Example   Промежуточный класс окна отрисовки 3D сцены.">BasementWindow</a></b> - класс окна программы, обеспечивающий предварительную отрисовку в окне, поверх которой будeт отображаться панели GUI (например, это может быть сцена из <a class="el" href="a39530.html">2D</a> или <a class="el" href="a39532.html">3D</a> объектов).</li>
-<li><b><a class="el" href="a39324.html" title="Класс входит в проект Example   Класс GUI окна программы.">ExampleWindow</a></b> - класс главного окна программы (см. <a class="el" href="a39534.html">Создание кода панелей GUI</a>).</li>
-</ul>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="a39320.html#aaddf7b9a3ba89e61506f87d2ca3c149d">ExampleApp::DoInitWindow</a>(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">  LOGGER(Info) &lt;&lt; <span class="stringliteral">&quot;Create main window.&quot;</span>;</div>
-<div class="line">    </div>
-<div class="line">  <span class="comment">// Создание обязательного набора объектов окон приложения.</span></div>
-<div class="line">    </div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> &amp; wOs =                           <span class="comment">// Класс фреймворка окна операционной системы.</span></div>
-<div class="line">    MakeWindow&lt;::covellite::os::Window&gt;(*<span class="keyword">this</span>);     </div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> &amp; wApi =                          <span class="comment">// Класс фреймворка окна графического Api</span></div>
-<div class="line">    MakeWindow&lt;::covellite::api::Window&gt;(wOs); <span class="comment">// (реализация DirectXOpenGL задается в настройках).</span></div>
-<div class="line">  <span class="keyword">auto</span> &amp; wExpanse =                            <span class="comment">// Класс фреймворка окна, обеспечивающего отрисовку 3D сцены.</span></div>
-<div class="line">    MakeWindow&lt;::covellite::expanse::Window&gt;(wApi); </div>
-<div class="line">  MakeWindow&lt;BasementWindow&gt;(wApi, wExpanse);  <span class="comment">// Клиентский код, формирующий 3D сцену.</span></div>
-<div class="line">  <span class="keyword">auto</span> &amp; wGui =                                <span class="comment">// Класс фреймворка окна, обеспечивающего отрисовку GUI.</span></div>
-<div class="line">    MakeWindow&lt;::covellite::gui::Window&gt;(wApi);     </div>
-<div class="line">  MakeWindow&lt;ExampleWindow&gt;(wGui);             <span class="comment">// Клиентсткий код программы, управляющий</span></div>
-<div class="line">                                               <span class="comment">// переходами между разными слоями GUI.</span></div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Для создания точки входа программы использовать макрос <b>APPLICATION_ENTRY_POINT</b>, в качестве параметра которого указать имя созданного класса программы.</p>
-<div class="fragment"><div class="line"><a class="code hl_define" href="a37867.html#gad03011d9bf6bfcedf9031a4d7cddebfd">APPLICATION_ENTRY_POINT</a>(<a class="code hl_class" href="a39320.html">ExampleApp</a>);</div>
-</div><!-- fragment --><p><a class="anchor" id="SettingsUsingFrameworkAnchor"></a> </p><h2>Настройки </h2>
-<h3>Для всех платформ</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Параметр   </th><th class="markdownTableHeadLeft">Раздел   </th><th class="markdownTableHeadLeft">Описание    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">PathToFontsDirectory   </td><td class="markdownTableBodyLeft">Root   </td><td class="markdownTableBodyLeft">Путь к папке расположения шрифтов, которые используются в .rcss файлах.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">R   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: красная компонента [0...255].    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">G   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: зеленая компонента [0...255].    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">B   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: синяя компонента [0...255].    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">A   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: прозрачность [0...255].   </td></tr>
-</table>
-<h3>Только для Windows</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Параметр   </th><th class="markdownTableHeadLeft">Раздел   </th><th class="markdownTableHeadLeft">Описание    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">GraphicsApi   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Используемый для рендеринга графический Api (Auto, DirectX11, OpenGL).    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">IsFullScreen   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Полноэкранный/оконный режим работы программы (true/false).    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">IsResized   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Разрешение/запрет изменения размеров окна программы мышью (true/false).    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Width   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Ширина клиентской области окна программы в пикселях.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Height   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Высота клиентской области окна программы в пикселях.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">MinClientWidth   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Минимальная ширина клиентской области окна программы в пикселях.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">MinClientHeight   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Минимальная высота клиентской области окна программы в пикселях.   </td></tr>
-</table>
-<h3>Только для Android</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Параметр   </th><th class="markdownTableHeadLeft">Раздел   </th><th class="markdownTableHeadLeft">Описание    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">GraphicsApi   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Используемый для рендеринга графический Api (Auto, OpenGLES3, OpenGLES).   </td></tr>
-</table>
-<h3>Настройки по умолчанию</h3>
-<p>В код проекта необходимо также добавить реализацию функции установки значений параметров по умолчанию. Функция <b>в</b> <b>обязательном</b> <b>порядке</b> должна устанавливать значения по умолчанию для всех параметров.</p>
-<p>Пример:</p>
-<div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;stdafx.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;Covellite/App/Settings.hpp&gt;</span></div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>alicorn</div>
-<div class="line">{</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>extension</div>
-<div class="line">{</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>std</div>
-<div class="line">{</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><span class="comment">/*static*/</span> SectionPtr_t Singleton&lt;Section_t&gt;::Make(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">  <span class="keyword">auto</span> pSettings = ::std::make_unique&lt;Section_t&gt;(uT(<span class="stringliteral">&quot;Covellitepp&quot;</span>));</div>
-<div class="line">    </div>
-<div class="line">  <span class="comment">// Функция AddExtra() используется для параметров, которые не должен менять</span></div>
-<div class="line">  <span class="comment">// пользователь (они не будут видны в программе изменения настроек),</span></div>
-<div class="line">  <span class="comment">// SetDefault() - для параметров, которые пользователь может изменить</span></div>
-<div class="line">  <span class="comment">// при необходимости.</span></div>
-<div class="line">    </div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToFontsDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data/Fonts&quot;</span>));  <span class="comment">// Путь к папке расположения шрифтов, которые </span></div>
-<div class="line">                        <span class="comment">// используются в .rcss файлах.</span></div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToTextureDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data&quot;</span>));        <span class="comment">// Путь к папке расположения текстур, которые </span></div>
-<div class="line">                        <span class="comment">// используются в проекте примера.</span></div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToMeshDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data&quot;</span>));        <span class="comment">// Путь к папке расположения файлов 3D объектов, которые </span></div>
-<div class="line">                        <span class="comment">// используются в проекте примера.</span></div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToSoundsDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data/Sounds&quot;</span>)); <span class="comment">// Путь к папке расположения звуковых файлов, которые </span></div>
-<div class="line">                        <span class="comment">// используются в проекте примера.</span></div>
-<div class="line">    </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsFullScreen&quot;</span>),</div>
-<div class="line">    <span class="keyword">false</span>, uT(<span class="stringliteral">&quot;Полноэкранный/оконный режим работы программы.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;IsResized&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>); <span class="comment">// Разрешение/запрет изменения размеров окна программы мышью.</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;GraphicsApi&quot;</span>), </div>
-<div class="line">    uT(<span class="stringliteral">&quot;Auto&quot;</span>), uT(<span class="stringliteral">&quot;Используемый для рендеринга графический Api.&quot;</span>));</div>
-<div class="line">    </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;Width&quot;</span>),</div>
-<div class="line">    480, uT(<span class="stringliteral">&quot;Ширина клиентской области окна программы.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;Height&quot;</span>),</div>
-<div class="line">    762, uT(<span class="stringliteral">&quot;Высота клиентской области окна программы.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;MinClientWidth&quot;</span>),</div>
-<div class="line">    480); <span class="comment">// Минимальная ширина клиентской области окна программы.</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;MinClientHeight&quot;</span>),</div>
-<div class="line">    480); <span class="comment">// Минимальная высота клиентской области окна программы.</span></div>
-<div class="line">    </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;R&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: красная компонента [0...255].</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;G&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: зеленая компонента [0...255].</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;B&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: синяя компонента [0...255].</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;A&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: прозрачность [0...255].</span></div>
-<div class="line"> </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsParticleInstance&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>, uT(<span class="stringliteral">&quot;Использовать instancing для рендеринга частиц.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;ParticlesCount&quot;</span>),</div>
-<div class="line">    10000, uT(<span class="stringliteral">&quot;Количество частиц.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsCubeInstance&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>, uT(<span class="stringliteral">&quot;Использовать instancing для рендеринга кубиков.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsNightMode&quot;</span>),</div>
-<div class="line">    <span class="keyword">false</span>, uT(<span class="stringliteral">&quot;Режим рендеринга ночь/день.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;PointLightsPercent&quot;</span>),</div>
-<div class="line">    5, uT(<span class="stringliteral">&quot;Количесто точечных источников света ночью в процентах от общей площади игровой сцены.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsAutoRun&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>, uT(<span class="stringliteral">&quot;Включение/выключение автоматического перемещения по ландшафту.&quot;</span>));</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> pSettings;</div>
-<div class="line">}</div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace std</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace extension</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace alicorn</span></div>
-</div><!-- fragment --><p><a class="anchor" id="ReadFileDataUsingFrameworkAnchor"></a> </p><h2>Настройка чтения данных из файлов </h2>
-<p>В код проекта необходимо также добавить реализацию функции настройки способа чтения данных из файлов.</p>
-<p>Пример:</p>
-<div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;stdafx.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;alicorn/compress.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;Covellite/App/Vfs.hpp&gt;</span></div>
-<div class="line"> </div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>alicorn</div>
-<div class="line">{</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span>extension</div>
-<div class="line">{</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span>std</div>
-<div class="line">{</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span>::covellite::app;</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><span class="comment">/*static*/</span> VfsPtr_t Singleton&lt;VfsCore_t&gt;::Make(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">  <span class="keyword">using </span>ImplPtr_t = ::std::shared_ptr&lt;::alicorn::modules::vfs::IImplementation&gt;;</div>
-<div class="line">  <span class="keyword">using </span>ConverterPtr_t = ::std::shared_ptr&lt;::alicorn::modules::vfs::IConverter&gt;;</div>
-<div class="line">  <span class="keyword">using </span>CompressorType_t = ::alicorn::source::compress::Snappy_t;</div>
-<div class="line">  <span class="keyword">using </span>Compressor_t = ::alicorn::modules::vfs::Compress&lt;CompressorType_t&gt;;</div>
-<div class="line"> </div>
-<div class="line">  return ::std::make_unique&lt;VfsCore_t&gt;(::std::vector&lt;ImplPtr_t&gt;</div>
-<div class="line">  {</div>
-<div class="line">    ::std::make_shared&lt;::alicorn::modules::vfs::Pack&gt;(<span class="stringliteral">&quot;data/Data.pack&quot;</span>, <span class="comment">// Чтение данных из упакованного файла Data.pack.</span></div>
-<div class="line">      ::std::vector&lt;ConverterPtr_t&gt;{ ::std::make_shared&lt;Compressor_t&gt;() }),</div>
-<div class="line">  });</div>
-<div class="line">}</div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace std</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace extension</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace alicorn</span></div>
-<div class="line"> </div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<div class="textblock"><h2>Введение </h2>
+<p>Раздел проекта примера использования и ручного тестирования фреймворка.   </p>
+<p>Описание <a class="el" href="a39522.html">демонстрационного режима</a>.</p>
+<p>Описание <a class="el" href="a39525.html">ручного тестирования</a> фреймворка.</p>
+<h2>Проекты </h2>
+<h3>Проект Assets</h3>
+<p>Проект данных программы и их упаковки в .pack.</p>
+<p><a class="anchor" id="aRunBackwardCompatibilityLib"></a></p><h3>Проекты Example/Example.Android</h3>
+<p>Список классов проекта <a class="el" href="a37894.html">Example</a></p>
+<p>Проект главного запускаемого модуля примера программы ('точка входа').</p>
+<h3>Проект Packaging</h3>
+<p>Проект сборки .apk файла Android-версии примера программы.</p>
+<h3>Проект Settings</h3>
+<p>Проект программы изменения настроек приложения примера.</p>
+<h3>Проект Version</h3>
+<p>Генерирует файл version.xml, содержащий текущую версию решения и устанавливает android:versionCode в файле AndroidManifest.xml.</p>
+<p>Сам проект экспортируется из Externals.</p>
+<h3>Проект VersionSetup</h3>
+<p>Запускает программу, построенную проектом Version таким образом, чтобы файл version.xml был сформирован в папке Packaging\res\values.</p>
+<p>Специально располагается в папке проекта Packaging, чтобы можно было передать программе Version.exe путь к этой папке. </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a39536.html">Manual</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 30 Ноя 2024 19:11:38. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a39498.html">Структура решения</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вс 1 Дек 2024 22:59:57. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

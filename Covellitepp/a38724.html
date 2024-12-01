@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Класс covellite::gui::ILayer</title>
+    <title>Covellite++: Класс covellite::gui::IStringTranslator</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 19:11 30.11.2024</span>
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 22:59 01.12.2024</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -109,69 +109,90 @@ $(function(){initNavTree('a38724.html',''); initResizable(true); });
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
 <a href="a38721.html">Полный список членов класса</a>  </div>
-  <div class="headertitle"><div class="title">Класс covellite::gui::ILayer<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a37863.html">Covellite++</a> &raquo; <a class="el" href="a37874.html">Gui</a></div></div></div>
+  <div class="headertitle"><div class="title">Класс covellite::gui::IStringTranslator<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a37881.html">Covellite++</a> &raquo; <a class="el" href="a37892.html">Gui</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a39558.html">Covellite.Gui</a> <br  />
- Интерфейсный класс слоя (текущего отображаемого экрана).  
+<p>Класс входит в проект <a class="el" href="a39518.html">Covellite.Gui</a> <br  />
+ Интерфейсный класс преобразователя строк библиотеки GUI.  
  <a href="#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01403_source.html">ILayer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01367_source.html">IStringTranslator.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:covellite::gui::ILayer:</div>
+Граф наследования:covellite::gui::IStringTranslator:</div>
 <div class="dyncontent">
-<div class="center"><img src="a38723.png" border="0" usemap="#acovellite_1_1gui_1_1_i_layer_inherit__map" alt="Inheritance graph"/></div>
-<map name="acovellite_1_1gui_1_1_i_layer_inherit__map" id="acovellite_1_1gui_1_1_i_layer_inherit__map">
-<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Интерфейсный класс слоя (текущего отображаемого экрана)." alt="" coords="313,5,466,75"/>
-<area shape="rect" href="a38764.html" title="Класс входит в проект Covellite.Gui &#160;&#160;Класс одного слоя (пользовательского экрана) программы." alt="" coords="316,123,464,299"/>
-<area shape="poly" title=" " alt="" coords="393,90,393,123,387,123,387,90"/>
-<area shape="rect" href="a39336.html" title="Класс входит в проект Example &#160;&#160;Класс GUI панели демонстрационного режима." alt="" coords="213,347,316,416"/>
-<area shape="poly" title=" " alt="" coords="319,312,291,348,287,345,314,309"/>
-<area shape="rect" href="a39360.html" title="Класс входит в проект Example &#160;&#160;Базовый класс слоев, использующих в качестве шаблона &#39;layer...." alt="" coords="340,347,440,416"/>
-<area shape="poly" title=" " alt="" coords="393,314,393,347,387,347,387,314"/>
-<area shape="rect" href="a39364.html" title="Класс входит в проект Example &#160;&#160;Класс главного экрана программы." alt="" coords="464,347,604,416"/>
-<area shape="poly" title=" " alt="" coords="475,307,507,345,503,348,471,311"/>
-<area shape="rect" href="a39328.html" title="Класс входит в проект Example &#160;&#160;Окно примера работы с элементами управления." alt="" coords="5,464,124,533"/>
-<area shape="poly" title=" " alt="" coords="327,418,273,435,229,443,187,452,136,467,125,471,123,466,134,461,186,446,228,438,271,430,325,413"/>
-<area shape="rect" href="a39344.html" title="Класс входит в проект Example &#160;&#160;Класс окна описания слоя." alt="" coords="147,464,286,533"/>
-<area shape="poly" title=" " alt="" coords="329,426,268,466,265,462,326,422"/>
-<area shape="rect" href="a39348.html" title="Класс входит в проект Example &#160;&#160;Класс слоя отображения 3D объектов." alt="" coords="310,464,470,533"/>
-<area shape="poly" title=" " alt="" coords="393,431,393,464,387,464,387,431"/>
-<area shape="rect" href="a39352.html" title="Класс входит в проект Example &#160;&#160;Класс слоя простой 2D игры." alt="" coords="493,464,660,533"/>
-<area shape="poly" title=" " alt="" coords="454,419,524,462,521,467,451,423"/>
-<area shape="rect" href="a39368.html" title="Класс входит в проект Example &#160;&#160;Класс слоя вывода текста в разных форматах." alt="" coords="684,464,776,533"/>
-<area shape="poly" title=" " alt="" coords="455,414,516,430,565,437,613,444,672,461,685,467,683,472,670,467,612,449,564,442,515,435,453,419"/>
+<div class="center"><img src="a38723.png" border="0" usemap="#acovellite_1_1gui_1_1_i_string_translator_inherit__map" alt="Inheritance graph"/></div>
+<map name="acovellite_1_1gui_1_1_i_string_translator_inherit__map" id="acovellite_1_1gui_1_1_i_string_translator_inherit__map">
+<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Интерфейсный класс преобразователя строк библиотеки GUI." alt="" coords="5,5,230,75"/>
+<area shape="rect" href="a38776.html" title="Класс входит в проект Covellite.Gui &#160;&#160;Класс преобразователя строк." alt="" coords="8,123,227,213"/>
+<area shape="poly" title=" " alt="" coords="120,89,120,123,115,123,115,89"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса covellite::gui::ILayer:</div>
+Граф связей класса covellite::gui::IStringTranslator:</div>
 <div class="dyncontent">
-<div class="center"><img src="a38722.png" border="0" usemap="#acovellite_1_1gui_1_1_i_layer_coll__map" alt="Collaboration graph"/></div>
-<map name="acovellite_1_1gui_1_1_i_layer_coll__map" id="acovellite_1_1gui_1_1_i_layer_coll__map">
-<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Интерфейсный класс слоя (текущего отображаемого экрана)." alt="" coords="5,5,158,75"/>
+<div class="center"><img src="a38722.png" border="0" usemap="#acovellite_1_1gui_1_1_i_string_translator_coll__map" alt="Collaboration graph"/></div>
+<map name="acovellite_1_1gui_1_1_i_string_translator_coll__map" id="acovellite_1_1gui_1_1_i_string_translator_coll__map">
+<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Интерфейсный класс преобразователя строк библиотеки GUI." alt="" coords="5,5,230,75"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:aa18d3b385a033f10ec8656a4b5847aa5" id="r_aa18d3b385a033f10ec8656a4b5847aa5"><td class="memItemLeft" align="right" valign="top">virtual Utf8String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa18d3b385a033f10ec8656a4b5847aa5">Translate</a> (const Utf8String_t &amp;)=0</td></tr>
+<tr class="separator:aa18d3b385a033f10ec8656a4b5847aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a39558.html">Covellite.Gui</a> <br  />
- Интерфейсный класс слоя (текущего отображаемого экрана). </p>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a39518.html">Covellite.Gui</a> <br  />
+ Интерфейсный класс преобразователя строк библиотеки GUI. </p>
+<dl class="todo"><dt><b><a class="el" href="a37880.html#_todo000023">Необходимо сделать</a></b></dt><dd>Класс используется для внутренней реализации и не должен попадать в Externals.</dd></dl>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>09 Декабрь 2016 <br  />
+<dl class="section date"><dt>Дата</dt><dd>21 Декабрь 2016 <br  />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span class="obfuscator">.nosp@m.</span>rnum<span class="obfuscator">.nosp@m.</span>.veru<span class="obfuscator">.nosp@m.</span>m@gm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
 <dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
-</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Covellite.Gui/Covellite.Gui/<a class="el" href="a01403_source.html">ILayer.hpp</a></li>
+</div><h2 class="groupheader">Методы</h2>
+<a id="aa18d3b385a033f10ec8656a4b5847aa5" name="aa18d3b385a033f10ec8656a4b5847aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa18d3b385a033f10ec8656a4b5847aa5">&#9670;&#160;</a></span>Translate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Utf8String_t covellite::gui::IStringTranslator::Translate </td>
+          <td>(</td>
+          <td class="paramtype">const Utf8String_t &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Функция преобразования 'сырой' строки (прочитанной из .rml файла) в строку, которая будет отображаться на экране (преобразование предназначено, в первую очередь, для локализации приложений). </p>
+
+<p>Замещается в <a class="el" href="a38776.html#a3b84302db2cc840b5d4247deb86d7322">covellite::gui::StringTranslator</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Covellite.Gui/Covellite.Gui/<a class="el" href="a01367_source.html">IStringTranslator.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>gui</b></li><li class="navelem"><a class="el" href="a38724.html">ILayer</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 30 Ноя 2024 19:11:42. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>gui</b></li><li class="navelem"><a class="el" href="a38724.html">IStringTranslator</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вс 1 Дек 2024 22:59:58. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

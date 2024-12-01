@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/Assimp.hpp</title>
+    <title>Covellite++: Исходный файл Solution/Solution/Example/Example/Basements/Demo/IDbComponents.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 19:11 30.11.2024</span>
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 22:59 01.12.2024</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,111 +108,58 @@ $(function(){initNavTree('a02201_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Assimp.hpp</div></div>
+  <div class="headertitle"><div class="title">IDbComponents.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;glm/glm.force.hpp&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;alicorn/std/string.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;alicorn/std.fast/unordered-map.hpp&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;alicorn/boost/filesystem.hpp&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;assimp/importer.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span>aiNode;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span>aiMesh;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span>aiVectorKey;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">struct </span>aiQuatKey;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a37929.html">basement</a></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>model</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>Assimp final</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>{</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">using </span>Path_t = ::boost::filesystem::path;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">using </span>BoneLocals_t = ::alicorn::extension::std::fast::unordered_map&lt;::std::string, aiMatrix4x4&gt;;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">using </span>VertexWeight_t = ::std::pair&lt;::std::string, float&gt;;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">using </span>BoneWeights_t = ::std::map&lt;unsigned int, ::std::vector&lt;VertexWeight_t&gt;&gt;;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">class </span>Bone final</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    ::std::string Name;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    ::std::string ParentName;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    ::glm::mat4 GlobalTransform;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    ::glm::mat4 LocalTransform;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  };</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">class </span>Frames final</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">using </span>Keys_t = ::std::vector&lt;::std::pair&lt;float, ::glm::mat4&gt;&gt;;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    ::std::string BoneName;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Keys_t        Keys;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  };</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;boost/signals2.hpp&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;alicorn/std/string.forward.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;Defines.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a37940.html">basement</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>model</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a39108.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="a39108.html">IDbComponents</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">using </span>ComponentId_t = ::alicorn::extension::std::String;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="a39108.html#a43e5839a6bbc8fea43f5e06a4515c9cc">   38</a></span>  <span class="keyword">virtual</span> <span class="keyword">const</span> Object_t &amp; <a class="code hl_function" href="a39108.html#a43e5839a6bbc8fea43f5e06a4515c9cc">GetObject</a>(<span class="keyword">const</span> Id_t) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="a39108.html#adf5e3bffb49c54e820d43cfa6a199d79">   44</a></span>  <span class="keyword">virtual</span> ComponentPtr_t <a class="code hl_function" href="a39108.html#adf5e3bffb49c54e820d43cfa6a199d79">GetComponent</a>(<span class="keyword">const</span> ComponentId_t &amp;) <span class="keyword">const</span> = 0;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">class </span>Face final</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">class </span>Vertex final</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      uint64_t   Hash = <span class="keyword">static_cast&lt;</span>uint64_t<span class="keyword">&gt;</span>(-1);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      aiVector3D Position;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      aiVector3D Normal;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      aiVector3D TexCoords;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      ::std::vector&lt;VertexWeight_t&gt; WeightBones;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    Vertex   Vertexes[3];</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    String_t MaterialName;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="a39108.html#ac43a9b1ccbd97ef663de9e6058543076">   51</a></span>  ::boost::signals2::signal&lt;void(Id_t)&gt; <a class="code hl_variable" href="a39108.html#ac43a9b1ccbd97ef663de9e6058543076">DoAddObject</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="a39108.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91">   57</a></span>  ::boost::signals2::signal&lt;void(Id_t)&gt; <a class="code hl_variable" href="a39108.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91">DoRemoveObject</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="a39108.html">~IDbComponents</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>};</div>
+</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">using </span>BoneListener_t = ::std::function&lt;void(<span class="keyword">const</span> Bone &amp;)&gt;;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">using </span>FrameListener_t = ::std::function&lt;void(<span class="keyword">const</span> Frames &amp;)&gt;;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">using </span>FaceListener_t = ::std::function&lt;void(<span class="keyword">const</span> Face &amp;)&gt;;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">void</span> LoadSkeleton(<span class="keyword">const</span> BoneListener_t &amp;);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">void</span> LoadGeometry(<span class="keyword">const</span> FaceListener_t &amp;);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">float</span> LoadAnimation(<span class="keyword">const</span> FrameListener_t &amp;);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  static ::glm::mat4 aiMatrix4x4ToGlm(<span class="keyword">const</span> aiMatrix4x4 &amp;);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">static</span> const ::aiScene * LoadFile(<span class="keyword">const</span> Path_t &amp;, ::Assimp::Importer &amp;);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">static</span> BoneLocals_t LoadBoneLocals(<span class="keyword">const</span> aiScene * <span class="keyword">const</span>);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> LoadSkeleton(<span class="keyword">const</span> BoneListener_t &amp;, <span class="keyword">const</span> BoneLocals_t &amp;,</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keyword">const</span> aiNode * <span class="keyword">const</span>, const ::glm::mat4 &amp; = ::glm::mat4{ 1.0f });</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">static</span> BoneWeights_t LoadBoneWeights(<span class="keyword">const</span> aiMesh * <span class="keyword">const</span>);</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">void</span> LoadSkin(<span class="keyword">const</span> FaceListener_t &amp;, <span class="keyword">const</span> aiScene *, <span class="keyword">const</span> aiNode *);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">static</span> Frames::Keys_t BuildFrames(const ::std::vector&lt;aiVectorKey&gt; &amp;,</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    const ::std::vector&lt;aiQuatKey&gt; &amp;, const ::std::vector&lt;aiVectorKey&gt; &amp;);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  ::Assimp::Importer m_Importer;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  const ::aiScene *  m_pScene;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">explicit</span> Assimp(<span class="keyword">const</span> Path_t &amp;);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>};</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>} <span class="comment">// namespace model</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>} <span class="comment">// namespace basement</span></div>
-<div class="ttc" id="aa37929_html"><div class="ttname"><a href="a37929.html">basement</a></div><div class="ttdef"><b>Definition</b> Common.hpp:10</div></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <span class="comment">// namespace model</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>} <span class="comment">// namespace basement</span></div>
+<div class="ttc" id="aa37940_html"><div class="ttname"><a href="a37940.html">basement</a></div><div class="ttdef"><b>Definition</b> Common.hpp:10</div></div>
+<div class="ttc" id="aa39108_html"><div class="ttname"><a href="a39108.html">basement::model::IDbComponents</a></div><div class="ttdoc">Класс входит в проект Example   Интерфейсный класс базы данных компонентов.</div><div class="ttdef"><b>Definition</b> IDbComponents.hpp:29</div></div>
+<div class="ttc" id="aa39108_html_a2df1ef8b7d4ecd54fb92f9d5dac1fb91"><div class="ttname"><a href="a39108.html#a2df1ef8b7d4ecd54fb92f9d5dac1fb91">basement::model::IDbComponents::DoRemoveObject</a></div><div class="ttdeci">::boost::signals2::signal&lt; void(Id_t)&gt; DoRemoveObject</div><div class="ttdoc">Объект сигнала, оповещающего об удалении игрового объекта.</div><div class="ttdef"><b>Definition</b> IDbComponents.hpp:57</div></div>
+<div class="ttc" id="aa39108_html_a43e5839a6bbc8fea43f5e06a4515c9cc"><div class="ttname"><a href="a39108.html#a43e5839a6bbc8fea43f5e06a4515c9cc">basement::model::IDbComponents::GetObject</a></div><div class="ttdeci">virtual const Object_t &amp; GetObject(const Id_t) const =0</div><div class="ttdoc">Функция получения игрового объекта по его иденитфикатору.</div></div>
+<div class="ttc" id="aa39108_html_ac43a9b1ccbd97ef663de9e6058543076"><div class="ttname"><a href="a39108.html#ac43a9b1ccbd97ef663de9e6058543076">basement::model::IDbComponents::DoAddObject</a></div><div class="ttdeci">::boost::signals2::signal&lt; void(Id_t)&gt; DoAddObject</div><div class="ttdoc">Объект сигнала, оповещающего о добавлении игрового объекта.</div><div class="ttdef"><b>Definition</b> IDbComponents.hpp:51</div></div>
+<div class="ttc" id="aa39108_html_adf5e3bffb49c54e820d43cfa6a199d79"><div class="ttname"><a href="a39108.html#adf5e3bffb49c54e820d43cfa6a199d79">basement::model::IDbComponents::GetComponent</a></div><div class="ttdeci">virtual ComponentPtr_t GetComponent(const ComponentId_t &amp;) const =0</div><div class="ttdoc">Функция получения объекта компонента по его идентификатору.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>Assimp.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 30 Ноя 2024 19:11:36. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_5fcb227df70988948021678e052509ca.html">Example</a></li><li class="navelem"><a class="el" href="dir_c0e7eee525b7fabb97bf3ee593d5adf2.html">Example</a></li><li class="navelem"><a class="el" href="dir_c3987a6622b583e3588ff570fb18f4b9.html">Basements</a></li><li class="navelem"><a class="el" href="dir_5acb6df6a661f3e2c1619685032e8b82.html">Demo</a></li><li class="navelem"><b>IDbComponents.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вс 1 Дек 2024 22:59:55. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

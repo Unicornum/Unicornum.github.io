@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Класс covellite::events::Click_t</title>
+    <title>Covellite++: Класс covellite::gui::ILayer</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 19:11 30.11.2024</span>
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 22:59 01.12.2024</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -110,67 +110,68 @@ $(function(){initNavTree('a38696.html',''); initResizable(true); });
 <div class="header">
   <div class="summary">
 <a href="a38693.html">Полный список членов класса</a>  </div>
-  <div class="headertitle"><div class="title">Класс covellite::events::Click_t<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a37863.html">Covellite++</a> &raquo; <a class="el" href="a37869.html">Events</a> &raquo; <a class="el" href="a37870.html">Type</a></div></div></div>
+  <div class="headertitle"><div class="title">Класс covellite::gui::ILayer<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a37881.html">Covellite++</a> &raquo; <a class="el" href="a37892.html">Gui</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Класс входит в проект <a class="el" href="a39558.html">Covellite.Gui</a> <br  />
- Класс событий клика по элементу управления.  
+<p>Класс входит в проект <a class="el" href="a39518.html">Covellite.Gui</a> <br  />
+ Интерфейсный класс слоя (текущего отображаемого экрана).  
  <a href="#details">Подробнее...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a39636_source.html">Events.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01352_source.html">ILayer.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Граф наследования:covellite::events::Click_t:</div>
+Граф наследования:covellite::gui::ILayer:</div>
 <div class="dyncontent">
-<div class="center"><img src="a38695.png" border="0" usemap="#acovellite_1_1events_1_1_click__t_inherit__map" alt="Inheritance graph"/></div>
-<map name="acovellite_1_1events_1_1_click__t_inherit__map" id="acovellite_1_1events_1_1_click__t_inherit__map">
-<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Класс событий клика по элементу управления." alt="" coords="17,123,151,208"/>
-<area shape="rect" href="a38684.html" title="Класс входит в проект Covellite.Gui &#160;&#160;Базовый класс для событий панели GUI." alt="" coords="5,5,162,75"/>
-<area shape="poly" title=" " alt="" coords="86,89,86,123,81,123,81,89"/>
+<div class="center"><img src="a38695.png" border="0" usemap="#acovellite_1_1gui_1_1_i_layer_inherit__map" alt="Inheritance graph"/></div>
+<map name="acovellite_1_1gui_1_1_i_layer_inherit__map" id="acovellite_1_1gui_1_1_i_layer_inherit__map">
+<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Интерфейсный класс слоя (текущего отображаемого экрана)." alt="" coords="313,5,466,75"/>
+<area shape="rect" href="a38736.html" title="Класс входит в проект Covellite.Gui &#160;&#160;Класс одного слоя (пользовательского экрана) программы." alt="" coords="316,123,464,299"/>
+<area shape="poly" title=" " alt="" coords="393,90,393,123,387,123,387,90"/>
+<area shape="rect" href="a39308.html" title="Класс входит в проект Example &#160;&#160;Класс GUI панели демонстрационного режима." alt="" coords="213,347,316,416"/>
+<area shape="poly" title=" " alt="" coords="319,312,291,348,287,345,314,309"/>
+<area shape="rect" href="a39332.html" title="Класс входит в проект Example &#160;&#160;Базовый класс слоев, использующих в качестве шаблона &#39;layer...." alt="" coords="340,347,440,416"/>
+<area shape="poly" title=" " alt="" coords="393,314,393,347,387,347,387,314"/>
+<area shape="rect" href="a39336.html" title="Класс входит в проект Example &#160;&#160;Класс главного экрана программы." alt="" coords="464,347,604,416"/>
+<area shape="poly" title=" " alt="" coords="475,307,507,345,503,348,471,311"/>
+<area shape="rect" href="a39300.html" title="Класс входит в проект Example &#160;&#160;Окно примера работы с элементами управления." alt="" coords="5,464,124,533"/>
+<area shape="poly" title=" " alt="" coords="327,418,273,435,229,443,187,452,136,467,125,471,123,466,134,461,186,446,228,438,271,430,325,413"/>
+<area shape="rect" href="a39316.html" title="Класс входит в проект Example &#160;&#160;Класс окна описания слоя." alt="" coords="147,464,286,533"/>
+<area shape="poly" title=" " alt="" coords="329,426,268,466,265,462,326,422"/>
+<area shape="rect" href="a39320.html" title="Класс входит в проект Example &#160;&#160;Класс слоя отображения 3D объектов." alt="" coords="310,464,470,533"/>
+<area shape="poly" title=" " alt="" coords="393,431,393,464,387,464,387,431"/>
+<area shape="rect" href="a39324.html" title="Класс входит в проект Example &#160;&#160;Класс слоя простой 2D игры." alt="" coords="493,464,660,533"/>
+<area shape="poly" title=" " alt="" coords="454,419,524,462,521,467,451,423"/>
+<area shape="rect" href="a39340.html" title="Класс входит в проект Example &#160;&#160;Класс слоя вывода текста в разных форматах." alt="" coords="684,464,776,533"/>
+<area shape="poly" title=" " alt="" coords="455,414,516,430,565,437,613,444,672,461,685,467,683,472,670,467,612,449,564,442,515,435,453,419"/>
 </map>
 </div>
 <div class="dynheader">
-Граф связей класса covellite::events::Click_t:</div>
+Граф связей класса covellite::gui::ILayer:</div>
 <div class="dyncontent">
-<div class="center"><img src="a38694.png" border="0" usemap="#acovellite_1_1events_1_1_click__t_coll__map" alt="Collaboration graph"/></div>
-<map name="acovellite_1_1events_1_1_click__t_coll__map" id="acovellite_1_1events_1_1_click__t_coll__map">
-<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Класс событий клика по элементу управления." alt="" coords="17,123,151,208"/>
-<area shape="rect" href="a38684.html" title="Класс входит в проект Covellite.Gui &#160;&#160;Базовый класс для событий панели GUI." alt="" coords="5,5,162,75"/>
-<area shape="poly" title=" " alt="" coords="86,89,86,123,81,123,81,89"/>
+<div class="center"><img src="a38694.png" border="0" usemap="#acovellite_1_1gui_1_1_i_layer_coll__map" alt="Collaboration graph"/></div>
+<map name="acovellite_1_1gui_1_1_i_layer_coll__map" id="acovellite_1_1gui_1_1_i_layer_coll__map">
+<area shape="rect" title="Класс входит в проект Covellite.Gui &#160;&#160;Интерфейсный класс слоя (текущего отображаемого экрана)." alt="" coords="5,5,158,75"/>
 </map>
 </div>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Дополнительные унаследованные члены</h2></td></tr>
-<tr class="inherit_header pub_types_a38684"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_a38684')"><img src="closed.png" alt="-"/>&#160;Открытые типы унаследованные от <a class="el" href="a38684.html">covellite::events::Gui</a></td></tr>
-<tr class="inherit_header pub_methods_a38684"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_a38684')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a38684.html">covellite::events::Gui</a></td></tr>
-<tr class="memitem:a1e5a3c5afa63f87f3b989c38f3e5c984 inherit pub_methods_a38684" id="r_a1e5a3c5afa63f87f3b989c38f3e5c984"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a38688.html">Document</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a38684.html#a1e5a3c5afa63f87f3b989c38f3e5c984">DocumentId</a> (const TypeId_t &amp;_Id) const</td></tr>
-<tr class="memdesc:a1e5a3c5afa63f87f3b989c38f3e5c984 inherit pub_methods_a38684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вспомогательная функция для построения уникального идентификатора элемента.  <br /></td></tr>
-<tr class="separator:a1e5a3c5afa63f87f3b989c38f3e5c984 inherit pub_methods_a38684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_a38684"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_a38684')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="a38684.html">covellite::events::Gui</a></td></tr>
-</table>
 <a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Класс входит в проект <a class="el" href="a39558.html">Covellite.Gui</a> <br  />
- Класс событий клика по элементу управления. </p>
-<ul>
-<li>Генерируется по отжатию кнопки.</li>
-</ul>
+<div class="textblock"><p>Класс входит в проект <a class="el" href="a39518.html">Covellite.Gui</a> <br  />
+ Интерфейсный класс слоя (текущего отображаемого экрана). </p>
 <dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
 </dd></dl>
-<dl class="section date"><dt>Дата</dt><dd>27 Июль 2018 <br  />
+<dl class="section date"><dt>Дата</dt><dd>09 Декабрь 2016 <br  />
 </dd></dl>
 <dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'; return false;">unico<span class="obfuscator">.nosp@m.</span>rnum<span class="obfuscator">.nosp@m.</span>.veru<span class="obfuscator">.nosp@m.</span>m@gm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
-<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2018 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
 </div><hr/>Объявления и описания членов класса находятся в файле:<ul>
-<li>Solution/Solution/Covellite.Gui/Covellite.Gui/<a class="el" href="a39636_source.html">Events.hpp</a></li>
+<li>Solution/Solution/Covellite.Gui/Covellite.Gui/<a class="el" href="a01352_source.html">ILayer.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>events</b></li><li class="navelem"><a class="el" href="a38696.html">Click_t</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 30 Ноя 2024 19:11:41. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><b>covellite</b></li><li class="navelem"><b>gui</b></li><li class="navelem"><a class="el" href="a38696.html">ILayer</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вс 1 Дек 2024 22:59:58. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
