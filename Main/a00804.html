@@ -129,7 +129,11 @@ $(function(){ initResizable(false); });
 <li>JDK: 1.8.0_144</li>
 <li>Apache Ant: 1.9.3</li>
 </ul>
-<h1>Visual Studio </h1>
+<dl class="section warning"><dt>Предупреждения</dt><dd>В Android SDK 25+ была удалена возможность сборки при помощи Ant, поэтому следует рассмотреть переход на сборку Gradle.</dd></dl>
+<p>Для настройки Android SDK, которая поставляется вместе с Vs2019, нужно в папке ANDROID_SDK_ROOT\tools\bin выполнить следующий скрипт (первая строка добавляет указанные версии инструментов, вторая - удаляет ненужные):</p>
+<div class="fragment"><div class="line">call sdkmanager <span class="stringliteral">&quot;platforms;android-29&quot;</span> <span class="stringliteral">&quot;build-tools;29.0.2&quot;</span></div>
+<div class="line">call sdkmanager --uninstall <span class="stringliteral">&quot;platforms;android-25&quot;</span> <span class="stringliteral">&quot;build-tools;25.0.3&quot;</span></div>
+</div><!-- fragment --><h1>Visual Studio </h1>
 <p>Настройка внешних инструментов в Visual Studio:</p>
 <div class="image">
 <img src="Vs20xx.png" alt=""/>
@@ -197,7 +201,7 @@ $(function(){ initResizable(false); });
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Документация по UnicornumVerum. Последние изменения: Сб 30 Ноя 2024 18:10:12. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+Документация по UnicornumVerum. Последние изменения: Пн 2 Дек 2024 21:35:53. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
 </small></address>
 </div><!-- doc-content -->
 </body>
