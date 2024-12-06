@@ -1,0 +1,254 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Файл Solution/Solution/Covellite.Api/Test.Covellite.Api/Test.Window/Window_test.cpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 12:11 06.12.2024</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a40055.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл Window_test.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
+<code>#include &lt;alicorn/patterns/factory.hpp&gt;</code><br />
+<code>#include &lt;Platform/Windows.mock.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
+<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
+<code>#include &lt;Covellite/App.mock.hpp&gt;</code><br />
+<code>#include &lt;Covellite/Os.mock.hpp&gt;</code><br />
+<code>#include &lt;Covellite/App/Events.hpp&gt;</code><br />
+<code>#include &lt;Covellite/Os/Events.hpp&gt;</code><br />
+<code>#include &lt;Covellite/Api/Events.hpp&gt;</code><br />
+<code>#include &lt;Covellite/Api/Component.inl&gt;</code><br />
+<code>#include &quot;../../Covellite.Api/Window.cpp&quot;</code><br />
+<code>#include &quot;../Mock/Equal.hpp&quot;</code><br />
+<code>#include &quot;../Mock/RendererImpl.hpp&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для Window_test.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a40056.png" border="0" usemap="#a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2_test_8_window_2_window__test_8cpp" alt=""/></div>
+<map name="a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2_test_8_window_2_window__test_8cpp" id="a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2_test_8_window_2_window__test_8cpp">
+<area shape="rect" title=" " alt="" coords="2647,5,2904,64"/>
+<area shape="rect" href="a39590_source.html" title=" " alt="" coords="2669,120,2745,147"/>
+<area shape="poly" title=" " alt="" coords="2757,66,2727,109,2723,106,2753,63"/>
+<area shape="rect" href="a37754_source.html" title=" " alt="" coords="2705,301,2919,328"/>
+<area shape="poly" title=" " alt="" coords="2709,66,2681,87,2660,113,2654,133,2660,154,2684,197,2716,235,2751,266,2782,290,2779,295,2747,270,2713,238,2680,200,2655,156,2649,133,2655,111,2678,83,2706,62"/>
+<area shape="rect" title=" " alt="" coords="27,301,238,328"/>
+<area shape="poly" title=" " alt="" coords="2646,41,2224,50,1653,65,1083,87,846,100,666,115,585,119,513,117,388,109,331,113,275,127,218,156,158,205,145,222,138,243,133,286,128,286,132,242,141,220,155,201,215,152,273,122,330,108,388,104,513,111,585,114,666,109,846,95,1083,81,1653,60,2224,44,2646,36"/>
+<area shape="rect" title=" " alt="" coords="2769,112,2917,155"/>
+<area shape="poly" title=" " alt="" coords="2797,63,2822,98,2818,101,2793,66"/>
+<area shape="rect" title=" " alt="" coords="2941,112,3100,155"/>
+<area shape="poly" title=" " alt="" coords="2849,62,2955,103,2953,108,2847,67"/>
+<area shape="rect" title=" " alt="" coords="3123,120,3304,147"/>
+<area shape="poly" title=" " alt="" coords="2904,62,3142,114,3141,119,2903,67"/>
+<area shape="rect" title=" " alt="" coords="3329,120,3502,147"/>
+<area shape="poly" title=" " alt="" coords="2904,49,3099,76,3317,109,3342,114,3341,119,3316,115,3098,81,2904,55"/>
+<area shape="rect" title=" " alt="" coords="169,211,360,237"/>
+<area shape="poly" title=" " alt="" coords="2646,40,2350,45,1940,57,1469,79,1228,95,991,115,810,135,630,161,346,210,345,205,629,156,809,130,991,109,1227,90,1469,74,1940,51,2350,39,2646,34"/>
+<area shape="rect" title=" " alt="" coords="384,211,567,237"/>
+<area shape="poly" title=" " alt="" coords="2646,42,2290,56,1777,85,1486,107,1183,134,877,166,578,205,550,210,549,205,577,200,877,161,1182,128,1485,102,1777,80,2289,51,2646,37"/>
+<area shape="rect" title=" " alt="" coords="2420,211,2607,237"/>
+<area shape="poly" title=" " alt="" coords="2700,67,2657,88,2615,114,2569,157,2533,200,2529,197,2565,153,2612,110,2654,83,2697,62"/>
+<area shape="rect" title=" " alt="" coords="3525,120,3735,147"/>
+<area shape="poly" title=" " alt="" coords="2904,44,3185,70,3514,109,3547,114,3546,120,3513,115,3184,76,2904,49"/>
+<area shape="rect" href="a39965_source.html" title=" " alt="" coords="1535,112,1671,155"/>
+<area shape="poly" title=" " alt="" coords="2647,49,1687,128,1687,122,2646,44"/>
+<area shape="rect" title=" " alt="" coords="3759,120,3903,147"/>
+<area shape="poly" title=" " alt="" coords="2904,37,3073,45,3283,58,3516,79,3748,109,3770,113,3769,119,3747,115,3515,84,3283,63,3072,50,2904,42"/>
+<area shape="rect" title=" " alt="" coords="3928,120,4127,147"/>
+<area shape="poly" title=" " alt="" coords="2904,37,3352,59,3633,80,3915,109,3949,114,3948,119,3915,115,3633,86,3352,65,2904,43"/>
+<area shape="rect" title=" " alt="" coords="2605,301,2682,328"/>
+<area shape="poly" title=" " alt="" coords="2705,148,2655,288,2650,286,2700,146"/>
+<area shape="rect" title=" " alt="" coords="3434,203,3581,245"/>
+<area shape="poly" title=" " alt="" coords="2735,145,2758,152,2856,171,2940,181,3015,184,3085,184,3232,184,3318,188,3419,200,3418,205,3318,194,3232,189,3085,190,3014,190,2939,186,2855,176,2757,157,2734,150"/>
+<area shape="rect" href="a40013_source.html" title=" " alt="" coords="3306,211,3409,237"/>
+<area shape="poly" title=" " alt="" coords="2736,145,2758,152,2906,182,3054,201,3187,213,3291,218,3291,223,3187,218,3053,206,2905,187,2757,157,2734,150"/>
+<area shape="rect" title=" " alt="" coords="4170,301,4255,328"/>
+<area shape="poly" title=" " alt="" coords="3394,235,3422,243,3533,259,3628,266,3712,266,3790,264,3869,262,3953,263,4048,272,4158,291,4169,293,4168,299,4157,296,4047,277,3953,268,3869,267,3790,269,3712,272,3628,271,3533,264,3421,248,3392,241"/>
+<area shape="rect" title=" " alt="" coords="4280,301,4495,328"/>
+<area shape="poly" title=" " alt="" coords="3393,235,3422,243,3549,262,3658,273,3753,276,3843,276,4029,275,4139,279,4267,291,4305,296,4304,301,4267,296,4138,285,4029,280,3843,282,3753,282,3657,278,3549,268,3421,248,3392,241"/>
+<area shape="rect" title=" " alt="" coords="2944,293,3081,336"/>
+<area shape="poly" title=" " alt="" coords="3309,241,3096,295,3095,290,3308,235"/>
+<area shape="rect" title=" " alt="" coords="3105,293,3242,336"/>
+<area shape="poly" title=" " alt="" coords="3333,240,3231,289,3229,284,3330,236"/>
+<area shape="rect" title=" " alt="" coords="3266,301,3450,328"/>
+<area shape="poly" title=" " alt="" coords="3360,238,3360,286,3355,286,3355,238"/>
+<area shape="poly" title=" " alt="" coords="3306,236,2933,296,2903,301,2903,296,2932,291,3306,231"/>
+<area shape="rect" href="a37745_source.html" title=" " alt="" coords="3473,301,3680,328"/>
+<area shape="poly" title=" " alt="" coords="3390,235,3532,293,3530,298,3388,240"/>
+<area shape="rect" title=" " alt="" coords="3703,301,3879,328"/>
+<area shape="poly" title=" " alt="" coords="3396,235,3422,243,3497,259,3556,269,3692,291,3715,295,3714,300,3691,296,3556,274,3496,264,3421,248,3395,241"/>
+<area shape="rect" title=" " alt="" coords="3903,301,4146,328"/>
+<area shape="poly" title=" " alt="" coords="3394,235,3422,243,3553,264,3656,273,3759,278,3891,291,3930,296,3929,301,3891,296,3759,283,3655,278,3552,270,3421,248,3393,241"/>
+<area shape="rect" title=" " alt="" coords="1200,384,1422,411"/>
+<area shape="poly" title=" " alt="" coords="2747,331,2694,339,2338,368,1985,386,1672,395,1438,398,1438,393,1672,390,1984,381,2337,363,2694,333,2746,326"/>
+<area shape="rect" title=" " alt="" coords="2765,384,2860,411"/>
+<area shape="poly" title=" " alt="" coords="2815,328,2815,369,2810,369,2810,328"/>
+<area shape="poly" title=" " alt="" coords="1534,138,1336,142,1048,153,713,173,540,187,371,205,339,210,339,205,371,200,540,182,712,167,1048,147,1336,137,1534,133"/>
+<area shape="poly" title=" " alt="" coords="1535,141,1011,174,578,205,548,210,548,205,578,200,1011,168,1534,136"/>
+<area shape="poly" title=" " alt="" coords="1672,135,1991,157,2199,175,2409,200,2439,205,2438,210,2408,205,2198,181,1990,162,1672,141"/>
+<area shape="rect" href="a39551_source.html" title=" " alt="" coords="1643,211,1718,237"/>
+<area shape="poly" title=" " alt="" coords="1623,153,1662,197,1658,201,1619,157"/>
+<area shape="rect" title=" " alt="" coords="2414,301,2581,328"/>
+<area shape="poly" title=" " alt="" coords="1648,153,1731,201,1756,224,1766,234,1782,243,1839,259,1913,270,2088,279,2265,282,2341,285,2402,291,2429,295,2428,300,2401,296,2341,290,2265,288,2088,284,1912,275,1838,264,1779,248,1763,238,1752,228,1728,205,1645,158"/>
+<area shape="rect" title=" " alt="" coords="1793,211,1987,237"/>
+<area shape="poly" title=" " alt="" coords="1671,153,1835,203,1833,208,1670,158"/>
+<area shape="rect" title=" " alt="" coords="2011,211,2171,237"/>
+<area shape="poly" title=" " alt="" coords="1672,143,2000,200,2021,204,2020,210,1999,205,1671,148"/>
+<area shape="rect" title=" " alt="" coords="2194,211,2396,237"/>
+<area shape="poly" title=" " alt="" coords="1672,139,1899,163,2184,200,2214,205,2213,210,2183,205,1899,169,1671,144"/>
+<area shape="rect" title=" " alt="" coords="590,211,787,237"/>
+<area shape="poly" title=" " alt="" coords="1535,141,1216,162,1008,181,798,205,767,210,766,205,797,200,1008,176,1216,157,1534,136"/>
+<area shape="rect" href="a00455_source.html" title=" " alt="" coords="810,211,1007,237"/>
+<area shape="poly" title=" " alt="" coords="1535,144,1306,168,1020,205,990,210,989,205,1019,200,1305,163,1534,139"/>
+<area shape="rect" href="a00461_source.html" title=" " alt="" coords="1031,211,1202,237"/>
+<area shape="poly" title=" " alt="" coords="1535,149,1214,205,1192,210,1191,204,1213,200,1534,143"/>
+<area shape="rect" href="a00422_source.html" title=" " alt="" coords="1226,211,1410,237"/>
+<area shape="poly" title=" " alt="" coords="1537,158,1374,208,1372,203,1535,153"/>
+<area shape="rect" href="a00428_source.html" title=" " alt="" coords="1434,211,1618,237"/>
+<area shape="poly" title=" " alt="" coords="1587,157,1549,201,1545,197,1583,153"/>
+<area shape="poly" title=" " alt="" coords="1719,232,1781,243,1904,255,2009,259,2189,255,2275,253,2367,257,2471,268,2593,291,2602,293,2601,298,2592,296,2471,273,2367,262,2275,259,2189,260,2009,264,1904,260,1780,248,1718,237"/>
+<area shape="poly" title=" " alt="" coords="1654,240,1630,248,1497,267,1331,278,1142,282,942,284,552,284,385,288,250,296,212,301,211,296,250,291,384,282,552,279,942,278,1142,277,1330,272,1497,261,1629,243,1653,235"/>
+<area shape="rect" href="a39935_source.html" title=" " alt="" coords="2294,301,2390,328"/>
+<area shape="poly" title=" " alt="" coords="1712,235,1737,243,1819,258,1889,265,2009,268,2130,270,2200,277,2282,291,2295,294,2293,299,2281,296,2199,282,2129,275,2009,273,1888,270,1818,263,1736,248,1711,241"/>
+<area shape="rect" title=" " alt="" coords="262,301,329,328"/>
+<area shape="poly" title=" " alt="" coords="1654,240,1630,248,1529,266,1436,279,1350,285,1270,287,1122,281,984,268,846,255,699,251,619,254,534,262,441,276,341,296,334,298,333,293,340,291,440,270,533,256,619,249,699,245,846,250,984,263,1123,276,1270,282,1350,280,1436,273,1529,261,1629,243,1653,235"/>
+<area shape="rect" title=" " alt="" coords="353,301,544,328"/>
+<area shape="poly" title=" " alt="" coords="1654,240,1630,248,1469,276,1332,290,1210,293,1095,289,981,283,858,279,719,282,555,296,523,301,522,295,555,291,718,277,858,274,981,278,1095,284,1210,287,1331,285,1469,271,1629,243,1653,235"/>
+<area shape="rect" title=" " alt="" coords="568,301,751,328"/>
+<area shape="poly" title=" " alt="" coords="1654,241,1630,248,1500,272,1389,284,1290,287,1198,285,1006,280,894,284,762,296,732,301,731,295,761,291,894,278,1006,275,1198,280,1290,282,1389,278,1500,267,1629,243,1652,235"/>
+<area shape="rect" title=" " alt="" coords="774,293,923,336"/>
+<area shape="poly" title=" " alt="" coords="1654,240,1630,248,1528,268,1439,278,1361,281,1287,281,1133,279,1044,284,939,296,938,290,1043,278,1133,274,1287,275,1361,276,1439,272,1527,262,1629,243,1652,235"/>
+<area shape="rect" title=" " alt="" coords="946,301,1092,328"/>
+<area shape="poly" title=" " alt="" coords="1654,240,1630,248,1551,264,1484,273,1368,278,1251,280,1183,285,1104,296,1082,300,1081,295,1103,291,1183,280,1251,275,1368,273,1483,268,1551,259,1629,243,1652,235"/>
+<area shape="rect" title=" " alt="" coords="1115,301,1318,328"/>
+<area shape="poly" title=" " alt="" coords="1653,240,1631,248,1547,267,1481,277,1415,284,1330,296,1303,301,1302,295,1329,291,1414,279,1481,272,1546,262,1629,243,1651,235"/>
+<area shape="rect" title=" " alt="" coords="1341,301,1508,328"/>
+<area shape="poly" title=" " alt="" coords="1650,240,1631,248,1480,299,1478,294,1629,243,1649,235"/>
+<area shape="rect" title=" " alt="" coords="1531,301,1720,328"/>
+<area shape="poly" title=" " alt="" coords="1675,239,1644,289,1639,286,1670,237"/>
+<area shape="poly" title=" " alt="" coords="1712,235,1737,243,1837,261,1922,270,1997,274,2068,274,2215,274,2301,279,2402,291,2429,295,2428,300,2401,296,2301,285,2215,280,2068,280,1997,279,1921,275,1836,266,1736,248,1710,240"/>
+<area shape="rect" title=" " alt="" coords="1745,293,1942,336"/>
+<area shape="poly" title=" " alt="" coords="1705,236,1793,283,1791,288,1703,240"/>
+<area shape="rect" title=" " alt="" coords="1966,301,2110,328"/>
+<area shape="poly" title=" " alt="" coords="1714,235,1737,243,1845,269,1954,291,1971,295,1970,300,1953,296,1844,274,1736,248,1713,240"/>
+<area shape="rect" href="a00437_source.html" title=" " alt="" coords="2134,301,2270,328"/>
+<area shape="poly" title=" " alt="" coords="1713,235,1737,243,1844,263,1929,270,2014,275,2122,291,2141,295,2140,300,2121,296,2013,281,1928,275,1843,268,1736,248,1711,241"/>
+<area shape="poly" title=" " alt="" coords="1063,241,1019,248,844,253,511,259,181,272,67,283,33,289,17,295,10,305,8,315,10,324,17,334,32,341,64,348,170,360,496,377,873,387,1185,392,1184,397,873,393,495,382,170,365,63,353,31,346,13,338,5,327,3,315,5,303,13,291,31,284,67,277,180,267,511,254,844,247,1019,243,1062,235"/>
+</map>
+</div>
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса Window. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_9982cfe164c7f3d9c35c78ca5ef6afd2.html">Covellite.Api</a></li><li class="navelem"><a class="el" href="dir_8ab5232fd7ba66cd41abe24efdb1fa3b.html">Test.Covellite.Api</a></li><li class="navelem"><a class="el" href="dir_9436a5846f54317864742ea8bcf620ad.html">Test.Window</a></li><li class="navelem"><a class="el" href="a40055.html">Window_test.cpp</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пт 6 Дек 2024 12:11:41. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

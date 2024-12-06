@@ -1,0 +1,209 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Covellite++: Файл Solution/Solution/Covellite.Api/Test.Covellite.Api/mock.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Covellite++
+   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 12:11 06.12.2024</span>
+   </div>
+   <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a40013.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл mock.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;alicorn/std/chrono.mock.hpp&gt;</code><br />
+<code>#include &lt;alicorn/std/string/string.hpp&gt;</code><br />
+<code>#include &lt;alicorn/std/string/string-cast.hpp&gt;</code><br />
+<code>#include &lt;alicorn/logger.mock.hpp&gt;</code><br />
+<code>#include &lt;Platform/Windows.mock.hpp&gt;</code><br />
+<code>#include &lt;Platform/Android.mock.hpp&gt;</code><br />
+<code>#include &quot;Mock/Namespaces.hpp&quot;</code><br />
+<code>#include &lt;Covellite/App/Settings.mock.hpp&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для mock.hpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="a40014.png" border="0" usemap="#a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2mock_8hpp" alt=""/></div>
+<map name="a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2mock_8hpp" id="a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2mock_8hpp">
+<area shape="rect" title=" " alt="" coords="650,5,886,48"/>
+<area shape="rect" title=" " alt="" coords="5,104,91,131"/>
+<area shape="poly" title=" " alt="" coords="650,34,534,40,397,52,249,71,103,99,93,101,92,96,102,93,248,66,396,47,534,35,649,29"/>
+<area shape="rect" title=" " alt="" coords="115,104,330,131"/>
+<area shape="poly" title=" " alt="" coords="650,49,343,99,314,103,313,98,342,93,649,44"/>
+<area shape="rect" title=" " alt="" coords="354,96,491,139"/>
+<area shape="poly" title=" " alt="" coords="688,51,507,97,506,92,686,46"/>
+<area shape="rect" title=" " alt="" coords="516,96,652,139"/>
+<area shape="poly" title=" " alt="" coords="726,51,642,91,639,87,724,46"/>
+<area shape="rect" title=" " alt="" coords="676,104,860,131"/>
+<area shape="poly" title=" " alt="" coords="771,48,771,88,765,88,765,48"/>
+<area shape="rect" href="a37754_source.html" title=" " alt="" coords="884,104,1098,131"/>
+<area shape="poly" title=" " alt="" coords="821,46,946,95,944,100,819,51"/>
+<area shape="rect" href="a37745_source.html" title=" " alt="" coords="1122,104,1328,131"/>
+<area shape="poly" title=" " alt="" coords="876,46,1145,98,1144,103,875,51"/>
+<area shape="rect" title=" " alt="" coords="1352,104,1528,131"/>
+<area shape="poly" title=" " alt="" coords="887,37,1099,60,1340,93,1367,98,1366,103,1340,99,1098,65,886,42"/>
+<area shape="rect" title=" " alt="" coords="1552,104,1794,131"/>
+<area shape="poly" title=" " alt="" coords="887,34,1184,57,1540,93,1580,99,1579,104,1540,99,1183,63,886,39"/>
+<area shape="rect" title=" " alt="" coords="648,187,870,213"/>
+<area shape="poly" title=" " alt="" coords="955,134,810,184,808,179,954,129"/>
+<area shape="rect" title=" " alt="" coords="893,187,987,213"/>
+<area shape="poly" title=" " alt="" coords="985,133,958,175,954,172,981,130"/>
+<area shape="rect" title=" " alt="" coords="1012,187,1205,213"/>
+<area shape="poly" title=" " alt="" coords="1209,133,1140,180,1137,176,1206,129"/>
+<area shape="rect" href="a39509_source.html" title=" " alt="" coords="1228,187,1324,213"/>
+<area shape="poly" title=" " alt="" coords="1236,130,1262,172,1258,175,1231,133"/>
+<area shape="rect" href="a37748_source.html" title=" " alt="" coords="1347,187,1437,213"/>
+<area shape="poly" title=" " alt="" coords="1253,129,1354,177,1352,182,1250,134"/>
+<area shape="rect" href="a37751_source.html" title=" " alt="" coords="1461,187,1536,213"/>
+<area shape="poly" title=" " alt="" coords="1269,129,1447,181,1445,186,1267,134"/>
+<area shape="rect" title=" " alt="" coords="1463,261,1534,288"/>
+<area shape="poly" title=" " alt="" coords="1501,214,1501,246,1496,246,1496,214"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="a40015.png" border="0" usemap="#a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2mock_8hppdep" alt=""/></div>
+<map name="a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2mock_8hppdep" id="a_solution_2_solution_2_covellite_8_api_2_test_8_covellite_8_api_2mock_8hppdep">
+<area shape="rect" title=" " alt="" coords="1574,5,1811,48"/>
+<area shape="rect" href="a39560_source.html" title=" " alt="" coords="5,96,291,155"/>
+<area shape="poly" title=" " alt="" coords="1558,32,1322,36,1010,47,659,67,305,99,292,100,292,95,304,93,658,61,1010,41,1322,31,1558,26"/>
+<area shape="rect" href="a39563_source.html" title=" " alt="" coords="316,96,597,155"/>
+<area shape="poly" title=" " alt="" coords="1559,34,1134,53,872,72,609,99,598,100,597,95,608,93,871,66,1134,48,1558,29"/>
+<area shape="rect" href="a39566_source.html" title=" " alt="" coords="621,96,865,155"/>
+<area shape="poly" title=" " alt="" coords="1558,37,1246,58,1061,75,877,99,866,100,865,95,876,93,1061,70,1246,52,1558,31"/>
+<area shape="rect" href="a39569_source.html" title=" " alt="" coords="889,96,1152,155"/>
+<area shape="poly" title=" " alt="" coords="1559,45,1372,69,1165,99,1153,101,1152,95,1164,93,1371,63,1558,40"/>
+<area shape="rect" href="a39572_source.html" title=" " alt="" coords="1176,96,1396,155"/>
+<area shape="poly" title=" " alt="" coords="1591,55,1397,101,1395,95,1590,49"/>
+<area shape="rect" href="a39575_source.html" title=" " alt="" coords="1419,96,1680,155"/>
+<area shape="poly" title=" " alt="" coords="1651,59,1594,98,1591,93,1648,55"/>
+<area shape="rect" href="a39578_source.html" title=" " alt="" coords="1704,96,1966,155"/>
+<area shape="poly" title=" " alt="" coords="1737,55,1794,93,1791,98,1734,59"/>
+<area shape="rect" href="a39581_source.html" title=" " alt="" coords="1990,96,2229,155"/>
+<area shape="poly" title=" " alt="" coords="1797,49,1990,94,1989,99,1796,55"/>
+<area shape="rect" href="a39584_source.html" title=" " alt="" coords="2254,96,2493,155"/>
+<area shape="poly" title=" " alt="" coords="1827,39,2023,62,2242,93,2254,95,2253,101,2241,99,2022,67,1826,44"/>
+<area shape="rect" href="a39587_source.html" title=" " alt="" coords="2518,96,2776,155"/>
+<area shape="poly" title=" " alt="" coords="1827,32,2138,53,2322,71,2506,93,2517,95,2517,100,2505,99,2322,76,2137,59,1826,37"/>
+<area shape="rect" href="a39590_source.html" title=" " alt="" coords="2800,96,3057,155"/>
+<area shape="poly" title=" " alt="" coords="1826,28,2016,34,2256,46,2522,65,2789,93,2800,95,2799,100,2788,99,2521,70,2256,51,2015,39,1826,33"/>
+<area shape="rect" href="a39557_source.html" title=" " alt="" coords="3081,104,3306,147"/>
+<area shape="poly" title=" " alt="" coords="1826,24,2061,27,2370,36,2718,57,2895,73,3069,93,3111,101,3110,106,3068,99,2895,78,2718,62,2370,41,2061,32,1826,30"/>
+</map>
+</div>
+</div>
+<p><a href="a40013_source.html">См. исходные тексты.</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Объявления подставных классов. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_9982cfe164c7f3d9c35c78ca5ef6afd2.html">Covellite.Api</a></li><li class="navelem"><a class="el" href="dir_8ab5232fd7ba66cd41abe24efdb1fa3b.html">Test.Covellite.Api</a></li><li class="navelem"><a class="el" href="a40013.html">mock.hpp</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Пт 6 Дек 2024 12:11:40. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>
