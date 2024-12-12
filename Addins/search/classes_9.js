@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['line',['Line',['../a39364.html',1,'wrappers::vs::selection']]],
-  ['lines',['Lines',['../a39388.html',1,'wrappers::vs::selection']]],
-  ['loggerproxy',['LoggerProxy',['../a38724.html',1,'core::utilities::vs']]]
+  ['line_0',['Line',['../a44596.html',1,'wrappers::vs::selection']]],
+  ['lines_1',['Lines',['../a44620.html',1,'wrappers::vs::selection']]],
+  ['loggerproxy_2',['LoggerProxy',['../a43956.html',1,'core::utilities::vs']]]
 ];

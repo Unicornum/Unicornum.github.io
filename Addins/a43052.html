@@ -1,0 +1,347 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Addins: Класс core::useful_commands::common::IMenuCommand</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Addins
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 00:31 13.12.2024</span>
+   </div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a43052.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a43049.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс core::useful_commands::common::IMenuCommand<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="a41946.html">Core</a> &raquo; <a class="el" href="a41967.html">UsefulCommands</a> &raquo; <a class="el" href="a41966.html">Common</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс входит в <a class="el" href="a45978.html">Common</a> <br  />
+ Базовый класс всех команд, которые будут исполнятся при выборе строки меню.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a02852_source.html">IMenuCommand.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:core::useful_commands::common::IMenuCommand:</div>
+<div class="dyncontent">
+<div class="center"><img src="a43051.png" border="0" usemap="#acore_1_1useful__commands_1_1common_1_1_i_menu_command_inherit__map" alt="Inheritance graph"/></div>
+<map name="acore_1_1useful__commands_1_1common_1_1_i_menu_command_inherit__map" id="acore_1_1useful__commands_1_1common_1_1_i_menu_command_inherit__map">
+<area shape="rect" title="Класс входит в Common &#160;&#160;Базовый класс всех команд, которые будут исполнятся при выборе строки меню." alt="" coords="4724,139,4926,245"/>
+<area shape="rect" href="a43100.html" title=" " alt="" coords="896,317,1109,435"/>
+<area shape="poly" title=" " alt="" coords="4709,195,4221,197,3462,209,3020,221,2556,239,2086,264,1625,296,1345,326,1109,360,1109,355,1345,321,1625,291,2086,258,2556,234,3020,216,3462,204,4221,192,4709,190"/>
+<area shape="rect" href="a43056.html" title="Класс входит в Common &#160;&#160;Класс команды, представляющей собой набор отдельных команд." alt="" coords="1638,312,1836,440"/>
+<area shape="poly" title=" " alt="" coords="4709,196,4083,198,3187,210,2737,223,2338,240,2169,252,2028,264,1920,279,1849,296,1811,314,1809,310,1847,291,1919,274,2028,259,2169,246,2337,235,2737,217,3187,205,4083,193,4709,191"/>
+<area shape="rect" href="a43108.html" title="Класс входит в Common &#160;&#160;Класс для обкатки работоспособности команд." alt="" coords="1860,312,2033,440"/>
+<area shape="poly" title=" " alt="" coords="4709,196,4119,198,3286,210,2868,222,2498,240,2342,251,2212,264,2111,279,2046,296,2012,315,2009,310,2044,291,2110,274,2211,259,2342,246,2498,235,2868,217,3286,205,4119,193,4709,190"/>
+<area shape="rect" href="a43180.html" title="Класс входит в Documentation &#160;&#160;Класс команды генерации класса с подставными реализациями функций." alt="" coords="2057,304,2236,448"/>
+<area shape="poly" title=" " alt="" coords="4709,196,4158,200,3389,214,3004,227,2664,244,2401,267,2309,281,2249,296,2227,306,2224,302,2247,291,2308,275,2400,262,2664,239,3004,221,3388,209,4158,195,4709,191"/>
+<area shape="rect" href="a43184.html" title="Класс входит в Documentation &#160;&#160;Класс команды генерации простого подставного класса." alt="" coords="2260,304,2446,448"/>
+<area shape="poly" title=" " alt="" coords="4709,197,4199,203,3496,219,3146,232,2837,248,2598,270,2514,282,2459,296,2437,306,2434,302,2457,291,2513,277,2597,264,2837,243,3146,226,3496,213,4199,198,4709,191"/>
+<area shape="rect" href="a43192.html" title="Класс входит в Documentation &#160;&#160;Класс команды генерации подставного класса, использующего прокси&#45;класс..." alt="" coords="2470,304,2686,448"/>
+<area shape="poly" title=" " alt="" coords="4709,198,4246,207,3619,226,3309,239,3035,255,2823,274,2748,284,2699,296,2674,307,2672,302,2698,291,2747,279,2822,269,3034,249,3309,233,3619,220,4246,202,4709,192"/>
+<area shape="rect" href="a43148.html" title="Класс входит в Documentation &#160;&#160;Класс команды добавления описания функции/класса." alt="" coords="2711,293,2891,459"/>
+<area shape="poly" title=" " alt="" coords="4709,198,4286,207,3723,225,3445,239,3201,255,3013,274,2947,284,2903,296,2892,301,2890,296,2901,291,2946,279,3012,268,3201,249,3445,233,3723,220,4286,202,4709,193"/>
+<area shape="rect" href="a43172.html" title="Класс входит в Documentation &#160;&#160;Базовый класс команд увеличения номера версии класса." alt="" coords="2915,315,3162,437"/>
+<area shape="poly" title=" " alt="" coords="4709,196,4372,199,3927,213,3700,225,3489,243,3309,266,3235,280,3174,296,3125,317,3123,312,3172,291,3233,275,3308,261,3488,237,3699,220,3926,207,4372,194,4709,191"/>
+<area shape="rect" href="a43324.html" title="Класс входит в Macros &#160;&#160;Класс команды переноса строки комментария." alt="" coords="3186,312,3427,440"/>
+<area shape="poly" title=" " alt="" coords="4709,197,4422,204,4055,220,3869,233,3697,249,3550,270,3441,296,3397,315,3395,310,3439,291,3549,265,3696,244,3868,228,4054,215,4422,199,4709,192"/>
+<area shape="rect" href="a43328.html" title="Класс входит в Macros &#160;&#160;Обобщенный класс команды вставки заготовки текста." alt="" coords="3451,323,3687,429"/>
+<area shape="poly" title=" " alt="" coords="4709,199,4472,209,4180,228,4034,240,3900,256,3785,274,3699,296,3669,309,3639,325,3637,321,3666,304,3698,291,3784,269,3899,251,4033,235,4179,222,4472,204,4709,194"/>
+<area shape="rect" href="a43332.html" title="Класс входит в Macros &#160;&#160;Класс команды вставки строки даты/времени." alt="" coords="3711,312,3926,440"/>
+<area shape="poly" title=" " alt="" coords="4709,202,4521,215,4298,234,4089,261,4003,278,3939,296,3901,314,3899,310,3937,291,4002,272,4088,256,4298,229,4520,209,4709,197"/>
+<area shape="rect" href="a43336.html" title="Класс входит в Macros &#160;&#160;Класс команды вставки сообщения #pragma chMSG()." alt="" coords="3950,312,4209,440"/>
+<area shape="poly" title=" " alt="" coords="4710,203,4604,213,4481,231,4350,258,4222,296,4179,315,4177,310,4220,291,4348,253,4480,226,4603,208,4709,198"/>
+<area shape="rect" href="a43380.html" title="Класс входит в проект Miscellaneous &#160;&#160;Класс команды открытия всех файлов, относящихся к активному док..." alt="" coords="4233,312,4441,440"/>
+<area shape="poly" title=" " alt="" coords="4710,216,4584,248,4518,269,4454,296,4420,315,4417,310,4452,291,4516,264,4583,242,4709,211"/>
+<area shape="rect" href="a43384.html" title="Класс входит в проект Miscellaneous &#160;&#160;Класс команды открытия папки данных программы текущего решения." alt="" coords="4465,304,4679,448"/>
+<area shape="poly" title=" " alt="" coords="4742,256,4672,306,4669,302,4739,252"/>
+<area shape="rect" href="a43388.html" title="Класс входит в проект Miscellaneous &#160;&#160;Класс команды открытия папки сторонних библиотек текущего решен..." alt="" coords="4703,304,4947,448"/>
+<area shape="poly" title=" " alt="" coords="4828,260,4828,304,4822,304,4822,260"/>
+<area shape="rect" href="a43392.html" title="Класс входит в проект Miscellaneous &#160;&#160;Класс команды сохранения всех файлов активного проекта как utf8..." alt="" coords="4971,304,5173,448"/>
+<area shape="poly" title=" " alt="" coords="4909,252,4977,302,4974,306,4906,256"/>
+<area shape="rect" href="a43408.html" title="Класс входит в проект Miscellaneous &#160;&#160;Базовый класс команд поиска выделенного текста при поиощи разли..." alt="" coords="5197,323,5421,429"/>
+<area shape="poly" title=" " alt="" coords="4941,213,5061,245,5125,266,5186,291,5240,321,5237,325,5184,296,5123,271,5060,250,4940,218"/>
+<area shape="rect" href="a43588.html" title="Класс входит в Testing &#160;&#160;Класс команды добавления тестового проекта для класса." alt="" coords="5445,312,5642,440"/>
+<area shape="poly" title=" " alt="" coords="4941,194,5049,202,5174,219,5306,248,5371,267,5434,291,5470,310,5467,315,5432,296,5370,272,5305,253,5173,225,5048,208,4941,199"/>
+<area shape="rect" href="a43592.html" title="Класс входит в Testing &#160;&#160;Класс команды добавления тестового проекта для проекта." alt="" coords="5666,312,5874,440"/>
+<area shape="poly" title=" " alt="" coords="4941,198,5117,211,5324,231,5517,257,5596,273,5655,291,5693,310,5691,315,5653,296,5594,278,5516,263,5323,236,5117,216,4940,203"/>
+<area shape="rect" href="a43596.html" title="Класс входит в Testing &#160;&#160;Класс команды добавления общего тестового проекта всего решения." alt="" coords="5898,301,6115,451"/>
+<area shape="poly" title=" " alt="" coords="4941,194,5165,204,5439,223,5575,235,5700,251,5807,269,5887,291,5906,299,5904,304,5885,296,5806,274,5699,256,5574,241,5438,228,5165,210,4941,200"/>
+<area shape="rect" href="a43600.html" title="Класс входит в Testing &#160;&#160;Класс команды добавления заготовки теста." alt="" coords="6138,312,6362,440"/>
+<area shape="poly" title=" " alt="" coords="4941,192,5212,199,5556,215,5729,228,5889,245,6025,265,6127,291,6168,310,6166,314,6125,296,6024,271,5888,250,5728,233,5556,221,5212,205,4941,198"/>
+<area shape="rect" href="a43708.html" title="Класс входит в Utilities &#160;&#160;Класс команды обработки файла программой AStyle." alt="" coords="6386,312,6590,440"/>
+<area shape="poly" title=" " alt="" coords="4941,190,5260,192,5676,205,5888,217,6083,235,6250,259,6319,274,6375,291,6413,310,6411,314,6373,296,6318,279,6249,265,6083,240,5887,222,5676,210,5260,197,4941,195"/>
+<area shape="rect" href="a43704.html" title="Класс входит в Utilities &#160;&#160;Класс команды добавления выделенного текста в файл usertype...." alt="" coords="6614,304,6807,448"/>
+<area shape="poly" title=" " alt="" coords="4941,193,5334,204,5851,224,6105,238,6328,253,6501,271,6561,280,6602,291,6626,302,6624,307,6600,296,6560,286,6500,276,6328,258,6105,243,5851,230,5334,210,4941,199"/>
+<area shape="rect" href="a43712.html" title="Класс входит в проект Utilities &#160;&#160;Класс команды построения диаграммы uml." alt="" coords="6830,312,7057,440"/>
+<area shape="poly" title=" " alt="" coords="4941,193,5377,204,5962,223,6251,237,6506,252,6703,270,6773,280,6819,291,6861,310,6859,315,6818,296,6772,285,6703,276,6506,258,6251,242,5962,229,5377,209,4941,198"/>
+<area shape="rect" href="a43716.html" title="Класс входит в Utilities &#160;&#160;Класс команды быстрой обработки решения при помощи CppCheck." alt="" coords="7081,304,7313,448"/>
+<area shape="poly" title=" " alt="" coords="4941,192,5426,201,6090,220,6420,233,6711,249,6937,268,7017,279,7070,291,7097,302,7095,306,7068,296,7016,284,6937,274,6711,255,6420,238,6090,225,5426,207,4941,198"/>
+<area shape="rect" href="a43720.html" title="Класс входит в проект Utilities &#160;&#160;Класс команды отображения различий для активного документа." alt="" coords="7337,312,7539,440"/>
+<area shape="poly" title=" " alt="" coords="4941,191,5477,197,6222,213,6593,226,6922,243,7177,264,7266,277,7326,291,7365,310,7363,315,7324,296,7265,282,7176,269,6922,248,6593,231,6222,218,5477,203,4941,197"/>
+<area shape="rect" href="a43740.html" title="Класс входит в проект Utilities &#160;&#160;Класс команды отмены изменений открытого файла." alt="" coords="7563,312,7786,440"/>
+<area shape="poly" title=" " alt="" coords="4941,191,5520,197,6335,212,6744,225,7107,242,7388,263,7487,276,7553,291,7594,310,7592,315,7551,296,7486,282,7387,269,7107,247,6744,230,6335,217,5520,202,4941,197"/>
+<area shape="rect" href="a43744.html" title="Класс входит в проект Utilities &#160;&#160;Класс команды отмены изменений файлов проекта." alt="" coords="7810,304,8011,448"/>
+<area shape="poly" title=" " alt="" coords="4941,191,5566,193,6459,206,6909,218,7308,236,7617,260,7726,274,7798,291,7823,302,7821,307,7796,296,7725,279,7617,265,7308,241,6909,223,6459,211,5566,199,4941,196"/>
+<area shape="rect" href="a43776.html" title="Класс входит в Version &#160;&#160;Класс команды отображения текущей версии надстройки." alt="" coords="8034,312,8240,440"/>
+<area shape="poly" title=" " alt="" coords="4941,190,5608,192,6573,203,7060,215,7492,233,7674,244,7827,258,7945,273,8023,291,8063,310,8060,314,8021,296,7944,278,7827,263,7674,250,7492,238,7059,220,6573,208,5608,197,4941,196"/>
+<area shape="rect" href="a43048.html" title="Класс входит в Common &#160;&#160;Базовый класс всех команд раздела." alt="" coords="4739,5,4911,91"/>
+<area shape="poly" title=" " alt="" coords="4828,106,4828,139,4822,139,4822,106"/>
+<area shape="rect" href="a43212.html" title="Класс входит в Documentation &#160;&#160;Класс команды открытия документации надстройки." alt="" coords="5,517,178,640"/>
+<area shape="poly" title=" " alt="" coords="881,382,737,391,562,412,468,429,374,450,281,477,191,509,170,520,167,515,189,504,279,472,372,445,467,424,561,407,736,386,881,377"/>
+<area shape="rect" href="a43216.html" title="Класс входит в Documentation &#160;&#160;Класс команды открытия документации библиотеки Alicorn." alt="" coords="203,517,375,640"/>
+<area shape="poly" title=" " alt="" coords="881,391,773,405,648,429,516,463,451,484,389,509,368,520,365,515,387,504,449,479,514,458,647,423,773,400,881,385"/>
+<area shape="rect" href="a43220.html" title="Класс входит в Documentation &#160;&#160;Класс команды открытия документации Doxygen." alt="" coords="400,517,573,640"/>
+<area shape="poly" title=" " alt="" coords="882,406,738,448,660,476,586,509,567,520,564,515,584,504,658,471,736,443,881,401"/>
+<area shape="rect" href="a43224.html" title="Класс входит в Documentation &#160;&#160;Класс команды открытия документации внешних библиотек." alt="" coords="597,517,770,640"/>
+<area shape="poly" title=" " alt="" coords="889,444,784,509,768,520,765,515,781,504,887,440"/>
+<area shape="rect" href="a43228.html" title="Класс входит в Useful Commands &#160;&#160;Класс команды открытия документации решения." alt="" coords="795,517,967,640"/>
+<area shape="poly" title=" " alt="" coords="962,449,920,519,915,516,957,446"/>
+<area shape="rect" href="a43724.html" title="Класс входит в Utilities &#160;&#160;Класс команды отображения окна статистики работы над решением." alt="" coords="992,525,1253,632"/>
+<area shape="poly" title=" " alt="" coords="1047,446,1094,524,1089,527,1042,449"/>
+<area shape="rect" href="a43728.html" title="Класс входит в Utilities &#160;&#160;Класс команды отображения окна списка задач проекта." alt="" coords="1277,507,1469,651"/>
+<area shape="poly" title=" " alt="" coords="1123,430,1266,504,1279,512,1276,516,1264,509,1121,435"/>
+<area shape="rect" href="a43732.html" title="Класс входит в Utilities &#160;&#160;Класс команды открытия окна утилиты создания регулярных выражений." alt="" coords="1493,525,1733,632"/>
+<area shape="poly" title=" " alt="" coords="1125,400,1296,443,1390,471,1482,504,1523,523,1521,528,1480,509,1388,476,1294,448,1123,405"/>
+<area shape="rect" href="a43736.html" title="Класс входит в Utilities &#160;&#160;Класс команды открытия утилиты редактирования настроек." alt="" coords="1757,525,1957,632"/>
+<area shape="poly" title=" " alt="" coords="1124,381,1256,394,1413,417,1582,453,1665,476,1746,504,1785,523,1783,528,1744,509,1664,481,1580,458,1412,422,1255,399,1124,387"/>
+<area shape="rect" href="a43188.html" title="Класс входит в Documentation &#160;&#160;Класс команды, генерирующей документацию решения." alt="" coords="1981,517,2154,640"/>
+<area shape="poly" title=" " alt="" coords="1831,446,1849,456,1882,472,1909,480,1937,489,1970,504,1989,515,1986,520,1968,509,1935,494,1907,485,1880,477,1846,461,1828,450"/>
+<area shape="rect" href="a43160.html" title="Класс входит в Documentation &#160;&#160;Класс увеличения сладшего номера версии в описании класса." alt="" coords="2509,528,2744,629"/>
+<area shape="poly" title=" " alt="" coords="2934,447,2905,461,2864,477,2831,486,2799,494,2758,509,2713,531,2711,526,2756,504,2797,489,2830,481,2862,472,2903,456,2931,442"/>
+<area shape="rect" href="a43164.html" title="Класс входит в Documentation &#160;&#160;Класс команды увеличения номера подверсии в описании класса." alt="" coords="2769,528,2980,629"/>
+<area shape="poly" title=" " alt="" coords="2982,450,2916,530,2912,527,2978,447"/>
+<area shape="rect" href="a43168.html" title="Класс входит в Documentation &#160;&#160;Класс команды увеличения номера версии класса." alt="" coords="3005,528,3192,629"/>
+<area shape="poly" title=" " alt="" coords="3063,450,3086,528,3081,529,3058,452"/>
+<area shape="rect" href="a43340.html" title="Класс входит в Macros &#160;&#160;Класс команды вставки заготовки текста." alt="" coords="3216,528,3436,629"/>
+<area shape="poly" title=" " alt="" coords="3497,440,3388,530,3384,526,3493,436"/>
+<area shape="rect" href="a43344.html" title="Класс входит в Macros &#160;&#160;Класс команды вставки заготовки текста." alt="" coords="3461,528,3678,629"/>
+<area shape="poly" title=" " alt="" coords="3572,444,3572,528,3566,528,3566,444"/>
+<area shape="rect" href="a43348.html" title="Класс входит в Macros &#160;&#160;Класс команды вставки заготовки текста." alt="" coords="3702,536,3919,621"/>
+<area shape="poly" title=" " alt="" coords="3644,436,3762,534,3759,538,3641,440"/>
+<area shape="rect" href="a43352.html" title="Класс входит в Macros &#160;&#160;Класс команды вставки заготовки текста." alt="" coords="3943,528,4165,629"/>
+<area shape="poly" title=" " alt="" coords="3656,434,3699,456,3762,475,3814,481,3867,486,3931,504,3978,526,3975,530,3929,509,3866,492,3814,486,3761,480,3697,461,3653,439"/>
+<area shape="rect" href="a43396.html" title="Класс входит в проект Miscellaneous &#160;&#160;Класс команды поиска выделенного текста на Github." alt="" coords="5167,525,5451,632"/>
+<area shape="poly" title=" " alt="" coords="5312,444,5312,526,5306,526,5306,444"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса core::useful_commands::common::IMenuCommand:</div>
+<div class="dyncontent">
+<div class="center"><img src="a43050.png" border="0" usemap="#acore_1_1useful__commands_1_1common_1_1_i_menu_command_coll__map" alt="Collaboration graph"/></div>
+<map name="acore_1_1useful__commands_1_1common_1_1_i_menu_command_coll__map" id="acore_1_1useful__commands_1_1common_1_1_i_menu_command_coll__map">
+<area shape="rect" title="Класс входит в Common &#160;&#160;Базовый класс всех команд, которые будут исполнятся при выборе строки меню." alt="" coords="5,139,207,245"/>
+<area shape="rect" href="a43048.html" title="Класс входит в Common &#160;&#160;Базовый класс всех команд раздела." alt="" coords="20,5,193,91"/>
+<area shape="poly" title=" " alt="" coords="109,106,109,139,104,139,104,106"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a4d36f5806fc89e18b1e78e6eddf3deb2" id="r_a4d36f5806fc89e18b1e78e6eddf3deb2"><td class="memItemLeft" align="right" valign="top">virtual DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d36f5806fc89e18b1e78e6eddf3deb2">GetId</a> (void) const =0</td></tr>
+<tr class="memdesc:a4d36f5806fc89e18b1e78e6eddf3deb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора команды.  <br /></td></tr>
+<tr class="separator:a4d36f5806fc89e18b1e78e6eddf3deb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2c6c7e47a2434bbb396e512dc58f44" id="r_acd2c6c7e47a2434bbb396e512dc58f44"><td class="memItemLeft" align="right" valign="top">virtual CString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd2c6c7e47a2434bbb396e512dc58f44">GetCaption</a> (void) const</td></tr>
+<tr class="memdesc:acd2c6c7e47a2434bbb396e512dc58f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текста, отображаемого в строке команды.  <br /></td></tr>
+<tr class="separator:acd2c6c7e47a2434bbb396e512dc58f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a43048"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_a43048')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a43048.html">core::useful_commands::common::ICommand</a></td></tr>
+<tr class="memitem:a53e54f0aa3a6e35d42c3a1fd3c16d83b inherit pub_methods_a43048" id="r_a53e54f0aa3a6e35d42c3a1fd3c16d83b"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a43048.html#a53e54f0aa3a6e35d42c3a1fd3c16d83b">IsEnabled</a> (void) const =0</td></tr>
+<tr class="memdesc:a53e54f0aa3a6e35d42c3a1fd3c16d83b inherit pub_methods_a43048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки доступности команды.  <br /></td></tr>
+<tr class="separator:a53e54f0aa3a6e35d42c3a1fd3c16d83b inherit pub_methods_a43048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a45978.html">Common</a> <br  />
+ Базовый класс всех команд, которые будут исполнятся при выборе строки меню. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ 2.0.0.0 <br  />
+ 3.0.0.0 <br  />
+ 3.1.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>6 дек 2014 <br  />
+ 13 Ноябрь 2015 <br  />
+ 18 Июль 2016 <br  />
+ 21 Июль 2016 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span class="obfuscator">.nosp@m.</span>BEP@<span class="obfuscator">.nosp@m.</span>mail.<span class="obfuscator">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2014 - 2016 </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="acd2c6c7e47a2434bbb396e512dc58f44" name="acd2c6c7e47a2434bbb396e512dc58f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2c6c7e47a2434bbb396e512dc58f44">&#9670;&#160;</a></span>GetCaption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">CString core::useful_commands::common::IMenuCommand::GetCaption </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения текста, отображаемого в строке команды. </p>
+<ul>
+<li>Каждый класс-наследник должен переопределить функцию и определить текст, отображаемый для текущей команды.</li>
+<li>По умолчанию возвращает имя класса. </li>
+</ul>
+
+<p>Переопределяется в <a class="el" href="a43108.html#a20c7a956ab6c53e9ccaa5a4140405791">core::useful_commands::vs::common::Test</a>, <a class="el" href="a43148.html#a15360799a04f3400451057a8874af6d5">core::useful_commands::vs::documentation::doxygen::AddDescription</a>, <a class="el" href="a43172.html#abd7d323bf824f00f8affe655975acdff">core::useful_commands::vs::documentation::doxygen::IncreaseVersionCommon</a>, <a class="el" href="a43180.html#a7679861a438b1f4ba10f541bb1996348">core::useful_commands::vs::documentation::GenerateInlineMockClass</a>, <a class="el" href="a43184.html#a4b4b5bad1992fe3ec45fe902047c59cd">core::useful_commands::vs::documentation::GenerateSimpleMockClass</a>, <a class="el" href="a43188.html#a3e0351febe756905920445200b76a66f">core::useful_commands::vs::documentation::GenerateSolutionDoc</a>, <a class="el" href="a43192.html#aed67ddb685a3b8b314da317ab696df70">core::useful_commands::vs::documentation::GenerateUsingProxyMockClass</a>, <a class="el" href="a43212.html#a87188be62b2d56a500be64f985296996">core::useful_commands::vs::documentation::OpenAddinsDoc</a>, <a class="el" href="a43216.html#a14c934cff7f3bc71b2020d2b6fc01652">core::useful_commands::vs::documentation::OpenAlicornDoc</a>, <a class="el" href="a43220.html#a17665ae4d987c061e6359036b10c42be">core::useful_commands::vs::documentation::OpenDoxygenDoc</a>, <a class="el" href="a43224.html#a94fc41d7aba853971c8ab91150e54621">core::useful_commands::vs::documentation::OpenExternalsDoc</a>, <a class="el" href="a43228.html#a46825076e1303510c3e2477eddf7b2f8">core::useful_commands::vs::documentation::OpenSolutionDoc</a>, <a class="el" href="a43324.html#aa492dbc0adae7dcf8eb8ed2ec37f5734">core::useful_commands::vs::macros::CommentLineBreak</a>, <a class="el" href="a43328.html#a359ab5d215c30faa0ed0a9a628e3463e">core::useful_commands::vs::macros::DoInsertTextBlank</a>, <a class="el" href="a43332.html#a8e2a071bd232c830745c505b7bddc8ac">core::useful_commands::vs::macros::InsertDataTime</a>, <a class="el" href="a43336.html#a674d865429f37a3e5ce37bd11382a942">core::useful_commands::vs::macros::InsertPragmaMessage</a>, <a class="el" href="a43380.html#a47290f6b7e349200749a5b6d64012471">core::useful_commands::vs::misc::OpenAllCodeFiles</a>, <a class="el" href="a43384.html#a7b8585fec18ba9d891b0e58f07d84eac">core::useful_commands::vs::misc::OpenSolutionDataDirectory</a>, <a class="el" href="a43388.html#aa27f5794f7efa45bb91904810acb38f2">core::useful_commands::vs::misc::OpenSolutionExternalsDirectory</a>, <a class="el" href="a43392.html#a6bcd1d149633f4afd8382e6e726c6acf">core::useful_commands::vs::misc::SaveProjectFilesAsUtf8</a>, <a class="el" href="a43396.html#aebe4683f4d280d28d2572261ef82c580">core::useful_commands::vs::misc::SearchInGithubSelectedText</a>, <a class="el" href="a43400.html#ae49d3420f2380d63e3e771a97ec64188">core::useful_commands::vs::misc::SearchInGoogleSelectedText</a>, <a class="el" href="a43404.html#aaf023f7865928622b7ccc9b5e5d0b9a1">core::useful_commands::vs::misc::SearchInStackoverflowSelectedText</a>, <a class="el" href="a43588.html#a9f1ec58ea0bbf9a5e1055838d10b161e">core::useful_commands::vs::testing::AddClassTest</a>, <a class="el" href="a43592.html#a90f3eba0bc00c650e358e448be8a8632">core::useful_commands::vs::testing::AddProjectTest</a>, <a class="el" href="a43596.html#aa0ab9f75620e2abc6658f9f7a160c118">core::useful_commands::vs::testing::AddSolutionTest</a>, <a class="el" href="a43600.html#a619c31a8e8301e7b9fcfd9030175871a">core::useful_commands::vs::testing::AddTemplateTest</a>, <a class="el" href="a43704.html#a94b8e324a1eee69d1977d9d0e6c48c5c">core::useful_commands::vs::utilities::AddSelectedTextToUsertypeFile</a>, <a class="el" href="a43708.html#af78a2592841f6b5beca99d780dfd455e">core::useful_commands::vs::utilities::AStyleProcess</a>, <a class="el" href="a43712.html#a3c0e743e266f337e9a5fab3bd4b9a039">core::useful_commands::vs::utilities::BuildUmlDiagram</a>, <a class="el" href="a43716.html#a7eebeeba5a54ac0457029fd21638714e">core::useful_commands::vs::utilities::CppCheckSolutionQuickProcess</a>, <a class="el" href="a43720.html#a62fa5d4562024676851076fe8a928cea">core::useful_commands::vs::utilities::DiffDocument</a>, <a class="el" href="a43724.html#a43e6f1e729afecd634299183cd869263">core::useful_commands::vs::utilities::OpenDevelopmentInfo</a>, <a class="el" href="a43728.html#a8f95b63ffd9d389284da61410d0f252e">core::useful_commands::vs::utilities::OpenProjectTasks</a>, <a class="el" href="a43732.html#ae34d3391537be1e99b1b7432ea12dc8f">core::useful_commands::vs::utilities::OpenRegExWindow</a>, <a class="el" href="a43736.html#a8e528fd91af8eba36eda471137a18227">core::useful_commands::vs::utilities::OpenSettings</a>, <a class="el" href="a43740.html#a4aed23499921e3a4d7133ab288f32d35">core::useful_commands::vs::utilities::RevertDocument</a>, <a class="el" href="a43744.html#a14e0452f3c870348bc96d44e4fddea63">core::useful_commands::vs::utilities::RevertProjectFiles</a> и <a class="el" href="a43776.html#af02e5fb38314514a34a956d9c11be8f2">core::useful_commands::vs::version::VersionAddins</a>.</p>
+
+</div>
+</div>
+<a id="a4d36f5806fc89e18b1e78e6eddf3deb2" name="a4d36f5806fc89e18b1e78e6eddf3deb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d36f5806fc89e18b1e78e6eddf3deb2">&#9670;&#160;</a></span>GetId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD core::useful_commands::common::IMenuCommand::GetId </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция получения идентификатора команды. </p>
+<ul>
+<li>Каждый класс-наследник должен переопределить функцию, которая должна возвращать уникальный id текущей команды. </li>
+</ul>
+
+<p>Замещается в <a class="el" href="a43108.html#a4b2be3248d6696d7021566960a606834">core::useful_commands::vs::common::Test</a>, <a class="el" href="a43148.html#aecc515f12e80d0aefbf2611468eb5926">core::useful_commands::vs::documentation::doxygen::AddDescription</a>, <a class="el" href="a43160.html#a12a213e68caa1e91703a4f1edbf618a0">core::useful_commands::vs::documentation::doxygen::IncreaseSubsubversion</a>, <a class="el" href="a43164.html#a0f6af7de34e805b71a3ccdabf8793f97">core::useful_commands::vs::documentation::doxygen::IncreaseSubversion</a>, <a class="el" href="a43168.html#a99178c864c484dd9665f9ddb71251bad">core::useful_commands::vs::documentation::doxygen::IncreaseVersion</a>, <a class="el" href="a43180.html#addad026ad7674f3efacd2d549daa93d5">core::useful_commands::vs::documentation::GenerateInlineMockClass</a>, <a class="el" href="a43184.html#af77309d1d9cf7149b25d22caa97d4389">core::useful_commands::vs::documentation::GenerateSimpleMockClass</a>, <a class="el" href="a43188.html#a15ecdbb1fbac93daf931973cbe881bd9">core::useful_commands::vs::documentation::GenerateSolutionDoc</a>, <a class="el" href="a43192.html#aa563c0932592c5e7eecec528812fc08a">core::useful_commands::vs::documentation::GenerateUsingProxyMockClass</a>, <a class="el" href="a43212.html#a4e446ffce31cc40c48df2fa5a6da9981">core::useful_commands::vs::documentation::OpenAddinsDoc</a>, <a class="el" href="a43216.html#aebbef2445d0b70524fdb32dcdb7f7e47">core::useful_commands::vs::documentation::OpenAlicornDoc</a>, <a class="el" href="a43220.html#ad09552841537949f5348da66dbb233c6">core::useful_commands::vs::documentation::OpenDoxygenDoc</a>, <a class="el" href="a43224.html#a6bd58b361686ddcd750a0894170328fc">core::useful_commands::vs::documentation::OpenExternalsDoc</a>, <a class="el" href="a43228.html#a62c2c947ae7e65f96024286a36efc664">core::useful_commands::vs::documentation::OpenSolutionDoc</a>, <a class="el" href="a43324.html#a870920ea7c0bdf19de9f622e3438b071">core::useful_commands::vs::macros::CommentLineBreak</a>, <a class="el" href="a43332.html#a1fd3b33ae5a8d71539bfcf43734e91d1">core::useful_commands::vs::macros::InsertDataTime</a>, <a class="el" href="a43336.html#a74ee8a091c4c48fcf2b7b5524ea41067">core::useful_commands::vs::macros::InsertPragmaMessage</a>, <a class="el" href="a43340.html#a5a0dd254abb4e98a81668fcf75d9674b">core::useful_commands::vs::macros::InsertStringTextBlank</a>, <a class="el" href="a43344.html#a28abd13d061c2722a012b80c9d673837">core::useful_commands::vs::macros::InsertTcharTextBlank</a>, <a class="el" href="a43348.html#a16c8dbb1c561ee7e052f866fa602a3d5">core::useful_commands::vs::macros::InsertTextBlank</a>, <a class="el" href="a43352.html#a186a985633d010be5c1794e8d9f9d168">core::useful_commands::vs::macros::InsertWcharTextBlank</a>, <a class="el" href="a43380.html#a19598978864dadcb0934d2346b9f6676">core::useful_commands::vs::misc::OpenAllCodeFiles</a>, <a class="el" href="a43384.html#aa32e11a8a2eec234ac38035ae4c69fed">core::useful_commands::vs::misc::OpenSolutionDataDirectory</a>, <a class="el" href="a43388.html#adbb7da0e06a166905eb47632f35aaac0">core::useful_commands::vs::misc::OpenSolutionExternalsDirectory</a>, <a class="el" href="a43392.html#a92a8bd54f4e13097cb1c4d89c678443b">core::useful_commands::vs::misc::SaveProjectFilesAsUtf8</a>, <a class="el" href="a43396.html#a507298a9a7717405e7e69141c383b5dd">core::useful_commands::vs::misc::SearchInGithubSelectedText</a>, <a class="el" href="a43400.html#a230db8b6e190903dcf8355aa511ffef3">core::useful_commands::vs::misc::SearchInGoogleSelectedText</a>, <a class="el" href="a43404.html#a0fd71be005971891a8c40d49c3510f63">core::useful_commands::vs::misc::SearchInStackoverflowSelectedText</a>, <a class="el" href="a43588.html#aae1d12ea6123ed68c649e85b1a679894">core::useful_commands::vs::testing::AddClassTest</a>, <a class="el" href="a43592.html#ad5df2dee091a84f9433bccb28b1a6587">core::useful_commands::vs::testing::AddProjectTest</a>, <a class="el" href="a43596.html#a4840b04826e73651464fdfd26f02ced9">core::useful_commands::vs::testing::AddSolutionTest</a>, <a class="el" href="a43600.html#a7f0e5eff2003c6b7cabad24155cf29d9">core::useful_commands::vs::testing::AddTemplateTest</a>, <a class="el" href="a43704.html#a14b75db8dd868cdb7524232b8dc9dc75">core::useful_commands::vs::utilities::AddSelectedTextToUsertypeFile</a>, <a class="el" href="a43708.html#a940c969f3dfb5983702314576718a0db">core::useful_commands::vs::utilities::AStyleProcess</a>, <a class="el" href="a43712.html#a0906316a85ffe3b6d561b1480caeec69">core::useful_commands::vs::utilities::BuildUmlDiagram</a>, <a class="el" href="a43716.html#ab044e3c85bf76a0a9c80698a22614228">core::useful_commands::vs::utilities::CppCheckSolutionQuickProcess</a>, <a class="el" href="a43720.html#aeb470d08a0e37a8de27ede9a6f96acb8">core::useful_commands::vs::utilities::DiffDocument</a>, <a class="el" href="a43724.html#a4f4a48e3ca0a171cfffc17715012ae68">core::useful_commands::vs::utilities::OpenDevelopmentInfo</a>, <a class="el" href="a43728.html#a7501d6f3ecaed85c076b0c33188edc27">core::useful_commands::vs::utilities::OpenProjectTasks</a>, <a class="el" href="a43732.html#afbe84beb6495e5ecedfc06cccd4bed35">core::useful_commands::vs::utilities::OpenRegExWindow</a>, <a class="el" href="a43736.html#a9b183a61d5a953ae1137bccc96768d0e">core::useful_commands::vs::utilities::OpenSettings</a>, <a class="el" href="a43740.html#a87136b54d2c260e2cf848f5c51e9190f">core::useful_commands::vs::utilities::RevertDocument</a>, <a class="el" href="a43744.html#a35277a9d2dd5c0c42192fd55df434b9f">core::useful_commands::vs::utilities::RevertProjectFiles</a> и <a class="el" href="a43776.html#aa02a7935783d7bf4dc486ccedf1d69a3">core::useful_commands::vs::version::VersionAddins</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/UsefulCommands/Common/Common/<a class="el" href="a02852_source.html">IMenuCommand.hpp</a></li>
+<li>Solution/Solution/Core/UsefulCommands/Common/Common/<b>IMenuCommand.cpp</b></li>
+<li>Solution/Solution/Core/UsefulCommands/Common/Common/<a class="el" href="a02855_source.html">IMenuCommand.mock.inl</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>core</b></li><li class="navelem"><b>useful_commands</b></li><li class="navelem"><b>common</b></li><li class="navelem"><a class="el" href="a43052.html">IMenuCommand</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 13 Дек 2024 00:32:30. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

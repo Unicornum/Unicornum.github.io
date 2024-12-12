@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['visual_20studio',['Visual Studio',['../a40695.html',1,'ConnectionPointsPage']]],
-  ['version',['Version',['../a40715.html',1,'ConnectionPointsVisualStudioPage']]],
-  ['version_20updater',['Version Updater',['../a40738.html',1,'CoreToolsPage']]],
-  ['visual_20studio',['Visual Studio',['../a40744.html',1,'CoreUsefulCommandsPage']]],
-  ['version',['Version',['../a40768.html',1,'CoreUsefulCommandsVisualStudioPage']]],
-  ['visual_20studio',['Visual Studio',['../a40788.html',1,'WrappersPage']]]
+  ['unicornum_20code_20assistant_0',['Unicornum Code Assistant',['../a45920.html',1,'ManualModulesPage']]],
+  ['unicornumcodeassistant_1',['UnicornumCodeAssistant',['../a45949.html',1,'ConnectionPointsVisualStudioPage']]],
+  ['updater_2',['Version Updater',['../a45974.html',1,'CoreToolsPage']]],
+  ['useful_20commands_3',['Useful Commands',['../a45976.html',1,'CorePage']]],
+  ['utilities_4',['Utilities',['../a46002.html',1,'Utilities'],['../a46006.html',1,'Utilities'],['../a46018.html',1,'Utilities']]]
 ];

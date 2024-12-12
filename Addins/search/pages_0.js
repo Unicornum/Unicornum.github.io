@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['build',['Build',['../a40665.html',1,'SolutionPage']]]
+  ['assistant_0',['Unicornum Code Assistant',['../a45920.html',1,'ManualModulesPage']]]
 ];

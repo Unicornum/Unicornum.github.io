@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['helper',['Helper',['../a36756.html',1,'']]],
-  ['helper_2ehpp',['Helper.hpp',['../a02099.html',1,'']]],
-  ['htmlabout',['HtmlAbout',['../a37072.html',1,'wx']]],
-  ['htmlhelper',['HtmlHelper',['../a37676.html',1,'wx']]],
-  ['htmlhelper_5ftest_2ecpp',['HtmlHelper_test.cpp',['../a00845.html',1,'']]],
-  ['htmlresultbuilder',['HtmlResultBuilder',['../a37680.html',1,'wx']]],
-  ['helper',['Helper',['../a40786.html',1,'WrappersPage']]]
+  ['helper_0',['Helper',['../a41988.html',1,'Helper'],['../a46022.html',1,'Helper']]],
+  ['helper_2ehpp_1',['Helper.hpp',['../a40406.html',1,'']]],
+  ['htmlabout_2',['HtmlAbout',['../a42304.html',1,'wx']]],
+  ['htmlhelper_3',['HtmlHelper',['../a42908.html',1,'wx']]],
+  ['htmlhelper_5ftest_2ecpp_4',['HtmlHelper_test.cpp',['../a02627.html',1,'']]],
+  ['htmlresultbuilder_5',['HtmlResultBuilder',['../a42912.html',1,'wx']]]
 ];

@@ -1,0 +1,184 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-151583584-1');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Addins: Класс support::RawDataTask</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Addins
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 00:31 13.12.2024</span>
+   </div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a42444.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="a42441.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс support::RawDataTask<div class="ingroups"><a class="el" href="a41946.html">Core</a> &raquo; <a class="el" href="a41962.html">Tools</a> &raquo; <a class="el" href="a41964.html">ProjectTasks</a> &raquo; <a class="el" href="a41954.html">Support</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс входит в <a class="el" href="a45965.html">ProjectTasks</a> <br  />
+ Класс, содержащий информацию об одной задаче.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01808_source.html">RawDataTask.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:support::RawDataTask:</div>
+<div class="dyncontent">
+<div class="center"><img src="a42443.png" border="0" usemap="#asupport_1_1_raw_data_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="asupport_1_1_raw_data_task_inherit__map" id="asupport_1_1_raw_data_task_inherit__map">
+<area shape="rect" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий информацию об одной задаче." alt="" coords="36,5,201,75"/>
+<area shape="rect" href="a42428.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий флаги, указывающие возможности, которые доступны зада..." alt="" coords="50,123,187,277"/>
+<area shape="poly" title=" " alt="" coords="121,90,121,123,116,123,116,90"/>
+<area shape="rect" href="a42472.html" title="Класс входит в ProjectTasks &#160;&#160;Класс для манипуляции информацией одной задачи." alt="" coords="5,325,231,501"/>
+<area shape="poly" title=" " alt="" coords="121,292,121,326,116,326,116,292"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса support::RawDataTask:</div>
+<div class="dyncontent">
+<div class="center"><img src="a42442.png" border="0" usemap="#asupport_1_1_raw_data_task_coll__map" alt="Collaboration graph"/></div>
+<map name="asupport_1_1_raw_data_task_coll__map" id="asupport_1_1_raw_data_task_coll__map">
+<area shape="rect" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий информацию об одной задаче." alt="" coords="315,439,479,508"/>
+<area shape="rect" href="a42476.html" title="Класс входит в ProjectTasks &#160;&#160;Класс типа задачи." alt="" coords="144,297,281,367"/>
+<area shape="poly" title=" " alt="" coords="259,364,341,426,338,431,255,369"/>
+<area shape="rect" href="a42480.html" title="Класс входит в ProjectTasks &#160;&#160;Вспомогательный класс типа." alt="" coords="336,5,538,240"/>
+<area shape="poly" title=" " alt="" coords="326,242,258,299,255,295,323,238"/>
+<area shape="rect" href="a42424.html" title="Класс входит в ProjectTasks &#160;&#160;Класс действия, выполняемого над версией решения при завергении задачи." alt="" coords="511,297,688,367"/>
+<area shape="poly" title=" " alt="" coords="539,250,575,296,571,299,535,253"/>
+<area shape="rect" href="a42420.html" title="Класс входит в ProjectTasks &#160;&#160;Класс типа действия, выполняемого при запуске внешней программы." alt="" coords="306,289,488,375"/>
+<area shape="poly" title=" " alt="" coords="414,255,407,290,402,289,409,254"/>
+<area shape="rect" href="a42484.html" title=" " alt="" coords="5,80,146,165"/>
+<area shape="poly" title=" " alt="" coords="113,176,193,296,189,299,109,179"/>
+<area shape="poly" title=" " alt="" coords="589,368,574,393,553,417,526,435,496,449,494,445,523,431,550,413,570,390,584,365"/>
+<area shape="rect" href="a42484.html" title=" " alt="" coords="561,80,702,165"/>
+<area shape="poly" title=" " alt="" coords="625,181,607,298,602,297,620,180"/>
+<area shape="poly" title=" " alt="" coords="400,375,400,422,394,422,394,375"/>
+<area shape="rect" href="a42484.html" title=" " alt="" coords="169,80,312,165"/>
+<area shape="poly" title=" " alt="" coords="280,176,326,238,365,288,361,291,321,242,276,179"/>
+</map>
+</div>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a45965.html">ProjectTasks</a> <br  />
+ Класс, содержащий информацию об одной задаче. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ 1.1.0.0 <br  />
+ 1.2.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>14 Март 2016 <br  />
+ 26 Март 2016 <br  />
+ 19 Апрель 2016 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span class="obfuscator">.nosp@m.</span>BEP@<span class="obfuscator">.nosp@m.</span>mail.<span class="obfuscator">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/<a class="el" href="a01808_source.html">RawDataTask.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>support</b></li><li class="navelem"><a class="el" href="a42444.html">RawDataTask</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Пт 13 Дек 2024 00:32:40. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

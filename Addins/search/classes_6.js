@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['generateinlinemockclass',['GenerateInlineMockClass',['../a37948.html',1,'core::useful_commands::vs::documentation']]],
-  ['generatesimplemockclass',['GenerateSimpleMockClass',['../a37952.html',1,'core::useful_commands::vs::documentation']]],
-  ['generatesolutiondoc',['GenerateSolutionDoc',['../a37956.html',1,'core::useful_commands::vs::documentation']]],
-  ['generateusingproxymockclass',['GenerateUsingProxyMockClass',['../a37960.html',1,'core::useful_commands::vs::documentation']]],
-  ['globalmutex',['GlobalMutex',['../a36868.html',1,'connection_points']]]
+  ['generateinlinemockclass_0',['GenerateInlineMockClass',['../a43180.html',1,'core::useful_commands::vs::documentation']]],
+  ['generatesimplemockclass_1',['GenerateSimpleMockClass',['../a43184.html',1,'core::useful_commands::vs::documentation']]],
+  ['generatesolutiondoc_2',['GenerateSolutionDoc',['../a43188.html',1,'core::useful_commands::vs::documentation']]],
+  ['generateusingproxymockclass_3',['GenerateUsingProxyMockClass',['../a43192.html',1,'core::useful_commands::vs::documentation']]],
+  ['globalmutex_4',['GlobalMutex',['../a42100.html',1,'connection_points']]]
 ];

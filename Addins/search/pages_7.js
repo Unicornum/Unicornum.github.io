@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logger',['Logger',['../a40780.html',1,'CoreUtilitiesPage']]]
+  ['ide_0',['Ide',['../a46036.html',1,'WrappersVisualStudioPage']]]
 ];
