@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['coverage_2eprops_29',['Coverage.props',['../a00747.html',1,'SolutionPage']]],
-  ['cppcheck_2eprops_30',['CppCheck.props',['../a00749.html',1,'SolutionPage']]]
+  ['cmd_0',['cmd',['../a00911.html',1,'BuildSolution.cmd'],['../a00915.html',1,'MsBuild.cmd']]],
+  ['coverage_20props_1',['Coverage.props',['../a00895.html',1,'SolutionPage']]],
+  ['coveragebriefpage_2',['CoverageBriefPage',['../a00894.html',1,'']]],
+  ['cppcheck_20props_3',['CppCheck.props',['../a00897.html',1,'SolutionPage']]],
+  ['cppcheckbriefpage_4',['CppCheckBriefPage',['../a00896.html',1,'']]]
 ];
