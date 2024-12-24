@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/ITaskPanelMain.hpp</title>
+    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/TaskPanelText.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 00:31 13.12.2024</span>
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 21:51 24.12.2024</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,48 +108,66 @@ $(function(){initNavTree('a01871_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ITaskPanelMain.hpp</div></div>
+  <div class="headertitle"><div class="title">TaskPanelText.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;wxWidgets.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;ITaskPanelData.hpp&quot;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>view</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a42532.html">   24</a></span><span class="keyword">class </span><a class="code hl_class" href="a42532.html">ITaskPanelMain</a> :</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">public</span> wxPanel</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> ExitFromEditMode(<span class="keywordtype">bool</span> _IsCancel) = 0;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoTaskComplete(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoTaskEdit(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoChangeExpanded(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoCreateChildTask(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoMouseEvents(wxMouseEvent &amp;, <span class="keywordtype">bool</span>) = 0;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> DoLayout(<span class="keywordtype">void</span>) = 0;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_class" href="a42532.html">ITaskPanelMain</a>(wxWindow * _pParent, wxWindowID _Id, <span class="keyword">const</span> wxPoint &amp; _Pos,</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> wxSize &amp; _Size, <span class="keywordtype">long</span> _Style) :</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    wxPanel(_pParent, _Id, _Pos, _Size, _Style)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  {</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>support { <span class="keyword">class </span>DataTask; }</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>view</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="a07444.html">   29</a></span><span class="keyword">class </span><a class="code hl_class" href="a07444.html">TaskPanelText</a> final :</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">public</span> <a class="code hl_class" href="a07400.html">ITaskPanelReadData</a></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">using </span><a class="code hl_class" href="a07292.html">Data_t</a> = <a class="code hl_class" href="a07292.html">::support::DataTask</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="comment">// Интерфейс ITaskPanelReadData:</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  wxString <a class="code hl_function" href="a07444.html#a65b53d7ff1070272808bb0ba7e70d178">GetText</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">size_t</span> <a class="code hl_function" href="a07444.html#a6a442f79c93f414db2e5584f9257b351">GetType</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="a07444.html#a66a3b916a3c3bf1c3427e02d4e285271">IsChecked</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="a07444.html#a4ba3ab798621c35b37d424de457da4f7">IsEditAvailable</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07444.html#ae7fb875ba4a263cc5f2b22c1f7a97c1c">ShowPanel</a>(<span class="keywordtype">bool</span>) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07444.html#a71448539913d00f0d7cc06b6dc10be2d">EditModeOn</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07444.html#a3242753759027ff0a673c42fe1a4a797">EditModeOff</a>(<span class="keywordtype">bool</span> _IsCancel);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="a07392.html">ITaskPanelData</a> * m_pTaskPanelBrief;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="a07392.html">ITaskPanelData</a> * m_pTaskPanelEditor;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_function" href="a07444.html#a753ae492d184021fa87c6a914fa260e4">TaskPanelText</a>(<a class="code hl_class" href="a07392.html">ITaskPanelData</a> *, <a class="code hl_class" href="a07392.html">ITaskPanelData</a> *);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>} <span class="comment">// namespace view</span></div>
-<div class="ttc" id="aa42532_html"><div class="ttname"><a href="a42532.html">view::ITaskPanelMain</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс для оповещения дочерними панелями родительской панел...</div><div class="ttdef"><b>Definition</b> ITaskPanelMain.hpp:26</div></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace view</span></div>
+<div class="ttc" id="aa07292_html"><div class="ttname"><a href="a07292.html">support::DataTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, содержащий флаги, указывающие возможности, которые доступны зада...</div><div class="ttdef"><b>Definition</b> DataTask.hpp:35</div></div>
+<div class="ttc" id="aa07392_html"><div class="ttname"><a href="a07392.html">view::ITaskPanelData</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс для работы с данными задачи.</div><div class="ttdef"><b>Definition</b> ITaskPanelData.hpp:29</div></div>
+<div class="ttc" id="aa07400_html"><div class="ttname"><a href="a07400.html">view::ITaskPanelReadData</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс для получения данных задачи.</div><div class="ttdef"><b>Definition</b> ITaskPanelReadData.hpp:25</div></div>
+<div class="ttc" id="aa07444_html"><div class="ttname"><a href="a07444.html">view::TaskPanelText</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс реализации работы с данными задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.hpp:31</div></div>
+<div class="ttc" id="aa07444_html_a3242753759027ff0a673c42fe1a4a797"><div class="ttname"><a href="a07444.html#a3242753759027ff0a673c42fe1a4a797">view::TaskPanelText::EditModeOff</a></div><div class="ttdeci">void EditModeOff(bool _IsCancel)</div><div class="ttdoc">Функция выключения режима редактирования задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:75</div></div>
+<div class="ttc" id="aa07444_html_a4ba3ab798621c35b37d424de457da4f7"><div class="ttname"><a href="a07444.html#a4ba3ab798621c35b37d424de457da4f7">view::TaskPanelText::IsEditAvailable</a></div><div class="ttdeci">bool IsEditAvailable(void) const override</div><div class="ttdoc">Функция получения статуса доступности редактирования задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:46</div></div>
+<div class="ttc" id="aa07444_html_a65b53d7ff1070272808bb0ba7e70d178"><div class="ttname"><a href="a07444.html#a65b53d7ff1070272808bb0ba7e70d178">view::TaskPanelText::GetText</a></div><div class="ttdeci">wxString GetText(void) const override</div><div class="ttdoc">Функция получения текущего текста задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:31</div></div>
+<div class="ttc" id="aa07444_html_a66a3b916a3c3bf1c3427e02d4e285271"><div class="ttname"><a href="a07444.html#a66a3b916a3c3bf1c3427e02d4e285271">view::TaskPanelText::IsChecked</a></div><div class="ttdeci">bool IsChecked(void) const override</div><div class="ttdoc">Функция получения статуса выполненности задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:41</div></div>
+<div class="ttc" id="aa07444_html_a6a442f79c93f414db2e5584f9257b351"><div class="ttname"><a href="a07444.html#a6a442f79c93f414db2e5584f9257b351">view::TaskPanelText::GetType</a></div><div class="ttdeci">size_t GetType(void) const override</div><div class="ttdoc">Функция получения текущего типа задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:36</div></div>
+<div class="ttc" id="aa07444_html_a71448539913d00f0d7cc06b6dc10be2d"><div class="ttname"><a href="a07444.html#a71448539913d00f0d7cc06b6dc10be2d">view::TaskPanelText::EditModeOn</a></div><div class="ttdeci">void EditModeOn(void)</div><div class="ttdoc">Функция включения режима редактирования задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:61</div></div>
+<div class="ttc" id="aa07444_html_a753ae492d184021fa87c6a914fa260e4"><div class="ttname"><a href="a07444.html#a753ae492d184021fa87c6a914fa260e4">view::TaskPanelText::TaskPanelText</a></div><div class="ttdeci">TaskPanelText(ITaskPanelData *, ITaskPanelData *)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:20</div></div>
+<div class="ttc" id="aa07444_html_ae7fb875ba4a263cc5f2b22c1f7a97c1c"><div class="ttname"><a href="a07444.html#ae7fb875ba4a263cc5f2b22c1f7a97c1c">view::TaskPanelText::ShowPanel</a></div><div class="ttdeci">void ShowPanel(bool) override</div><div class="ttdoc">Функция отображения/скрытия панели задачи.</div><div class="ttdef"><b>Definition</b> TaskPanelText.cpp:51</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_85f7fbf2e9c1785037c4b5e889adf813.html">View</a></li><li class="navelem"><b>ITaskPanelMain.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 13 Дек 2024 00:31:58. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_85f7fbf2e9c1785037c4b5e889adf813.html">View</a></li><li class="navelem"><b>TaskPanelText.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вт 24 Дек 2024 21:52:09. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

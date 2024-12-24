@@ -1,0 +1,529 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WVJKS623L0');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Addins: Класс support::Task</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Addins
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 21:51 24.12.2024</span>
+   </div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a07336.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a07333.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс support::Task<span class="mlabels"><span class="mlabel">final</span></span><div class="ingroups"><a class="el" href="a06808.html">Core</a> &raquo; <a class="el" href="a06824.html">Tools</a> &raquo; <a class="el" href="a06826.html">ProjectTasks</a> &raquo; <a class="el" href="a06816.html">Support</a></div></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс входит в <a class="el" href="a10835.html">ProjectTasks</a> <br  />
+ Класс для манипуляции информацией одной задачи.  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a01778_source.html">Task.hpp</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:support::Task:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07335.png" border="0" usemap="#asupport_1_1_task_inherit__map" alt="Inheritance graph"/></div>
+<map name="asupport_1_1_task_inherit__map" id="asupport_1_1_task_inherit__map">
+<area shape="rect" title="Класс входит в ProjectTasks &#160;&#160;Класс для манипуляции информацией одной задачи." alt="" coords="5,325,231,501"/>
+<area shape="rect" href="a07292.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий флаги, указывающие возможности, которые доступны зада..." alt="" coords="50,123,187,277"/>
+<area shape="poly" title=" " alt="" coords="121,292,121,326,116,326,116,292"/>
+<area shape="rect" href="a07308.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий информацию об одной задаче." alt="" coords="36,5,201,75"/>
+<area shape="poly" title=" " alt="" coords="121,90,121,123,116,123,116,90"/>
+</map>
+</div>
+<div class="dynheader">
+Граф связей класса support::Task:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07334.png" border="0" usemap="#asupport_1_1_task_coll__map" alt="Collaboration graph"/></div>
+<map name="asupport_1_1_task_coll__map" id="asupport_1_1_task_coll__map">
+<area shape="rect" title="Класс входит в ProjectTasks &#160;&#160;Класс для манипуляции информацией одной задачи." alt="" coords="284,761,510,937"/>
+<area shape="rect" href="a07292.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий флаги, указывающие возможности, которые доступны зада..." alt="" coords="329,557,465,712"/>
+<area shape="poly" title=" " alt="" coords="400,727,400,761,394,761,394,727"/>
+<area shape="rect" href="a07308.html" title="Класс входит в ProjectTasks &#160;&#160;Класс, содержащий информацию об одной задаче." alt="" coords="315,439,479,508"/>
+<area shape="poly" title=" " alt="" coords="400,523,400,558,394,558,394,523"/>
+<area shape="rect" href="a07340.html" title="Класс входит в ProjectTasks &#160;&#160;Класс типа задачи." alt="" coords="144,297,281,367"/>
+<area shape="poly" title=" " alt="" coords="259,364,341,426,338,431,255,369"/>
+<area shape="rect" href="a07344.html" title="Класс входит в ProjectTasks &#160;&#160;Вспомогательный класс типа." alt="" coords="336,5,538,240"/>
+<area shape="poly" title=" " alt="" coords="326,242,258,299,255,295,323,238"/>
+<area shape="rect" href="a07288.html" title="Класс входит в ProjectTasks &#160;&#160;Класс действия, выполняемого над версией решения при завергении задачи." alt="" coords="511,297,688,367"/>
+<area shape="poly" title=" " alt="" coords="539,250,575,296,571,299,535,253"/>
+<area shape="rect" href="a07284.html" title="Класс входит в ProjectTasks &#160;&#160;Класс типа действия, выполняемого при запуске внешней программы." alt="" coords="306,289,488,375"/>
+<area shape="poly" title=" " alt="" coords="414,255,407,290,402,289,409,254"/>
+<area shape="rect" href="a07348.html" title=" " alt="" coords="5,80,146,165"/>
+<area shape="poly" title=" " alt="" coords="113,176,193,296,189,299,109,179"/>
+<area shape="poly" title=" " alt="" coords="589,368,574,393,553,417,526,435,496,449,494,445,523,431,550,413,570,390,584,365"/>
+<area shape="rect" href="a07348.html" title=" " alt="" coords="561,80,702,165"/>
+<area shape="poly" title=" " alt="" coords="625,181,607,298,602,297,620,180"/>
+<area shape="poly" title=" " alt="" coords="400,375,400,422,394,422,394,375"/>
+<area shape="rect" href="a07348.html" title=" " alt="" coords="169,80,312,165"/>
+<area shape="poly" title=" " alt="" coords="280,176,326,238,365,288,361,291,321,242,276,179"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a3e47428fe92345f802ba1d2bf7586789" id="r_a3e47428fe92345f802ba1d2bf7586789"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e47428fe92345f802ba1d2bf7586789">SetData</a> (const <a class="el" href="a07308.html">RawDataTask</a> &amp;)</td></tr>
+<tr class="memdesc:a3e47428fe92345f802ba1d2bf7586789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения текущего состояния задачи.  <br /></td></tr>
+<tr class="separator:a3e47428fe92345f802ba1d2bf7586789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828606eadccc2469c6b308d439d37f1b" id="r_a828606eadccc2469c6b308d439d37f1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a828606eadccc2469c6b308d439d37f1b">ReadDataFrom</a> (const Node_t &amp;)</td></tr>
+<tr class="memdesc:a828606eadccc2469c6b308d439d37f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция чтения данных задачи из узла xml документа.  <br /></td></tr>
+<tr class="separator:a828606eadccc2469c6b308d439d37f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eefb44a4aae21088b493bff2007f03c" id="r_a3eefb44a4aae21088b493bff2007f03c"><td class="memItemLeft" align="right" valign="top">Node_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eefb44a4aae21088b493bff2007f03c">WriteDataTo</a> (Node_t &amp;) const</td></tr>
+<tr class="memdesc:a3eefb44a4aae21088b493bff2007f03c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция записи данных задачи в узле xml документа.  <br /></td></tr>
+<tr class="separator:a3eefb44a4aae21088b493bff2007f03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60006906311d0d3a2ce5593aae8a38e" id="r_ae60006906311d0d3a2ce5593aae8a38e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae60006906311d0d3a2ce5593aae8a38e">DoCompleteAction</a> (const <a class="el" href="a08996.html">Data_t</a> &amp;, const String_t &amp;, History_t &amp;) const</td></tr>
+<tr class="memdesc:ae60006906311d0d3a2ce5593aae8a38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция выполнения действий при завершении задачи.  <br /></td></tr>
+<tr class="separator:ae60006906311d0d3a2ce5593aae8a38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b64fbf5616c7ecedc310a7deab807b" id="r_a65b64fbf5616c7ecedc310a7deab807b"><td class="memItemLeft" align="right" valign="top">String_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65b64fbf5616c7ecedc310a7deab807b">GetSolutionHistoryHtmlText</a> (const String_t &amp;) const</td></tr>
+<tr class="memdesc:a65b64fbf5616c7ecedc310a7deab807b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения строки текста для записи в историю изменений.  <br /></td></tr>
+<tr class="separator:a65b64fbf5616c7ecedc310a7deab807b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b7c559fc335b076a0d1000164bc302" id="r_a99b7c559fc335b076a0d1000164bc302"><td class="memTemplParams" colspan="2">template&lt;class TType , class ... TArgs&gt; </td></tr>
+<tr class="memitem:a99b7c559fc335b076a0d1000164bc302"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a99b7c559fc335b076a0d1000164bc302">Task</a> (TType, const TArgs &amp;... _Args)</td></tr>
+<tr class="memdesc:a99b7c559fc335b076a0d1000164bc302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса.  <br /></td></tr>
+<tr class="separator:a99b7c559fc335b076a0d1000164bc302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a07292"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_a07292')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a07292.html">support::DataTask</a></td></tr>
+<tr class="memitem:a63122be4cf93355b13e3b3dd420242eb inherit pub_methods_a07292" id="r_a63122be4cf93355b13e3b3dd420242eb"><td class="memItemLeft" align="right" valign="top">
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> (void) const</td></tr>
+<tr class="memdesc:a63122be4cf93355b13e3b3dd420242eb inherit pub_methods_a07292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция получения идентификатора задачи. <br /></td></tr>
+<tr class="separator:a63122be4cf93355b13e3b3dd420242eb inherit pub_methods_a07292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7ee7fd6fc5881a945bafa4a2b57977 inherit pub_methods_a07292" id="r_afa7ee7fd6fc5881a945bafa4a2b57977"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Is</b> (<a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994">AllowedFlags</a>) const</td></tr>
+<tr class="memdesc:afa7ee7fd6fc5881a945bafa4a2b57977 inherit pub_methods_a07292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция проверки того, что указанный флаг установлен. <br /></td></tr>
+<tr class="separator:afa7ee7fd6fc5881a945bafa4a2b57977 inherit pub_methods_a07292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff285a7e21a4c497e71c8a61c4a37d6a inherit pub_methods_a07292" id="r_aff285a7e21a4c497e71c8a61c4a37d6a"><td class="memTemplParams" colspan="2">template&lt;class TType &gt; </td></tr>
+<tr class="memitem:aff285a7e21a4c497e71c8a61c4a37d6a inherit pub_methods_a07292"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a07292.html#aff285a7e21a4c497e71c8a61c4a37d6a">To</a> (void)</td></tr>
+<tr class="memdesc:aff285a7e21a4c497e71c8a61c4a37d6a inherit pub_methods_a07292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения типа задачи.  <br /></td></tr>
+<tr class="separator:aff285a7e21a4c497e71c8a61c4a37d6a inherit pub_methods_a07292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691262cf2fe5bef7f91cfc1e90d442f5 inherit pub_methods_a07292" id="r_a691262cf2fe5bef7f91cfc1e90d442f5"><td class="memTemplParams" colspan="2">template&lt;class TType &gt; </td></tr>
+<tr class="memitem:a691262cf2fe5bef7f91cfc1e90d442f5 inherit pub_methods_a07292"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a07292.html#a691262cf2fe5bef7f91cfc1e90d442f5">To</a> (const String_t &amp;)</td></tr>
+<tr class="memdesc:a691262cf2fe5bef7f91cfc1e90d442f5 inherit pub_methods_a07292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция изменения типа задачи.  <br /></td></tr>
+<tr class="separator:a691262cf2fe5bef7f91cfc1e90d442f5 inherit pub_methods_a07292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_a07308"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_a07308')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="a07308.html">support::RawDataTask</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pub_types_a07292"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_a07292')"><img src="closed.png" alt="-"/>&#160;Открытые типы унаследованные от <a class="el" href="a07292.html">support::DataTask</a></td></tr>
+<tr class="memitem:a1aff9703315ef9c956efe99cb62bf994 inherit pub_types_a07292" id="r_a1aff9703315ef9c956efe99cb62bf994"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994">AllowedFlags</a> : size_t { <a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994ab296339eb0880b0ce95e5082f6f63c49">Editable</a> = 0x01
+, <a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994a37ea3f85969618b25d9a8a0f69cdaab2">CreateChild</a> = 0x02
+, <a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994a3a004d40b90d1e25db7faa05ed115045">Completed</a> = 0x04
+, <a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994a643b4b773985c35190cf993d5c455bc8">BlockCompleted</a> = 0x08
+ }</td></tr>
+<tr class="memdesc:a1aff9703315ef9c956efe99cb62bf994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Флаги для обозначения допустимых действий над задачей.  <a href="a07292.html#a1aff9703315ef9c956efe99cb62bf994">Подробнее...</a><br /></td></tr>
+<tr class="separator:a1aff9703315ef9c956efe99cb62bf994 inherit pub_types_a07292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_a07308"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_a07308')"><img src="closed.png" alt="-"/>&#160;Открытые атрибуты унаследованные от <a class="el" href="a07308.html">support::RawDataTask</a></td></tr>
+<tr class="inherit_header pro_types_a07308"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_types_a07308')"><img src="closed.png" alt="-"/>&#160;Защищенные типы унаследованные от <a class="el" href="a07308.html">support::RawDataTask</a></td></tr>
+<tr class="inherit_header pro_methods_a07292"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_a07292')"><img src="closed.png" alt="-"/>&#160;Защищенные члены унаследованные от <a class="el" href="a07292.html">support::DataTask</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс входит в <a class="el" href="a10835.html">ProjectTasks</a> <br  />
+ Класс для манипуляции информацией одной задачи. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+ 2.0.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>17 Март 2016 <br  />
+ 25 Март 2016 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="#" onclick="location.href='mai'+'lto:'+'CTA'+'PO'+'BEP'+'@m'+'ail'+'.r'+'u'; return false;">CTAPO<span class="obfuscator">.nosp@m.</span>BEP@<span class="obfuscator">.nosp@m.</span>mail.<span class="obfuscator">.nosp@m.</span>ru</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2016 </dd></dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a99b7c559fc335b076a0d1000164bc302" name="a99b7c559fc335b076a0d1000164bc302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99b7c559fc335b076a0d1000164bc302">&#9670;&#160;</a></span>Task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class TType , class ... TArgs&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">support::Task::Task </td>
+          <td>(</td>
+          <td class="paramtype">TType</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TArgs &amp;...</td>          <td class="paramname"><span class="paramname"><em>_Args</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">TType</td><td>Класс типа создаваемой задачи (ProcessRoot, CompleteRoot, Process или Complete). </td></tr>
+    <tr><td class="paramname">TArgs</td><td>Тип дополнительных параметров для задачи (может отсутствовать). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Args</td><td>Дополнительные параметры для создаваемой задачи (текст для ProcessRoot и CompleteRoot). </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_a99b7c559fc335b076a0d1000164bc302_cgraph.png" border="0" usemap="#aa07336_a99b7c559fc335b076a0d1000164bc302_cgraph" alt=""/></div>
+<map name="aa07336_a99b7c559fc335b076a0d1000164bc302_cgraph" id="aa07336_a99b7c559fc335b076a0d1000164bc302_cgraph">
+<area shape="rect" title="Конструктор класса." alt="" coords="5,5,164,32"/>
+<area shape="rect" href="a07292.html#aff285a7e21a4c497e71c8a61c4a37d6a" title="Функция изменения типа задачи." alt="" coords="212,5,388,32"/>
+<area shape="poly" title=" " alt="" coords="165,16,197,16,197,21,165,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ae60006906311d0d3a2ce5593aae8a38e" name="ae60006906311d0d3a2ce5593aae8a38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60006906311d0d3a2ce5593aae8a38e">&#9670;&#160;</a></span>DoCompleteAction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Task::DoCompleteAction </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a08996.html">Data_t</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_Data</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const String_t &amp;</td>          <td class="paramname"><span class="paramname"><em>_ParentTaskText</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">History_t &amp;</td>          <td class="paramname"><span class="paramname"><em>_History</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция выполнения действий при завершении задачи. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Исходные данные списка задач проекта. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">_ParentTaskText</td><td>Текст родительской задачи. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">_History</td><td>Объект истории изменений решения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_ae60006906311d0d3a2ce5593aae8a38e_cgraph.png" border="0" usemap="#aa07336_ae60006906311d0d3a2ce5593aae8a38e_cgraph" alt=""/></div>
+<map name="aa07336_ae60006906311d0d3a2ce5593aae8a38e_cgraph" id="aa07336_ae60006906311d0d3a2ce5593aae8a38e_cgraph">
+<area shape="rect" title="Функция выполнения действий при завершении задачи." alt="" coords="5,64,215,107"/>
+<area shape="rect" href="a07288.html#a26abb24f8994e04a484d84cbac6f4108" title="Функция увеличения номера версии в зависимости от текущего выбранного типа." alt="" coords="272,5,459,48"/>
+<area shape="poly" title=" " alt="" coords="205,61,257,49,258,54,207,66"/>
+<area shape="rect" href="a07344.html#a2407241e9d954e5390e42fb9a9f474a8" title="Функция получения префикса для текущего значения типа." alt="" coords="525,72,716,99"/>
+<area shape="poly" title=" " alt="" coords="215,83,509,83,509,88,215,88"/>
+<area shape="rect" href="a07336.html#a65b64fbf5616c7ecedc310a7deab807b" title="Функция получения строки текста для записи в историю изменений." alt="" coords="263,123,469,165"/>
+<area shape="poly" title=" " alt="" coords="207,105,255,116,254,121,205,110"/>
+<area shape="poly" title=" " alt="" coords="461,119,543,100,545,105,462,125"/>
+<area shape="rect" href="a07344.html#aff6f0aaedc3d91ce61d3d16f32c0aea4" title="Функция получения для текущего значения типа цвета фона задачи в истории изменений решения." alt="" coords="517,123,724,165"/>
+<area shape="poly" title=" " alt="" coords="469,141,501,141,501,147,469,147"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a65b64fbf5616c7ecedc310a7deab807b" name="a65b64fbf5616c7ecedc310a7deab807b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b64fbf5616c7ecedc310a7deab807b">&#9670;&#160;</a></span>GetSolutionHistoryHtmlText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task::String_t Task::GetSolutionHistoryHtmlText </td>
+          <td>(</td>
+          <td class="paramtype">const String_t &amp;</td>          <td class="paramname"><span class="paramname"><em>_Text</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения строки текста для записи в историю изменений. </p>
+<ul>
+<li>Формируемая строка представляет собой строку html таблицы, цвет фона которой, а также префикс перед текстом зависят от типа задачи. </li>
+</ul>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_a65b64fbf5616c7ecedc310a7deab807b_cgraph.png" border="0" usemap="#aa07336_a65b64fbf5616c7ecedc310a7deab807b_cgraph" alt=""/></div>
+<map name="aa07336_a65b64fbf5616c7ecedc310a7deab807b_cgraph" id="aa07336_a65b64fbf5616c7ecedc310a7deab807b_cgraph">
+<area shape="rect" title="Функция получения строки текста для записи в историю изменений." alt="" coords="5,27,211,69"/>
+<area shape="rect" href="a07344.html#a2407241e9d954e5390e42fb9a9f474a8" title="Функция получения префикса для текущего значения типа." alt="" coords="268,5,458,32"/>
+<area shape="poly" title=" " alt="" coords="211,33,252,29,252,34,212,39"/>
+<area shape="rect" href="a07344.html#aff6f0aaedc3d91ce61d3d16f32c0aea4" title="Функция получения для текущего значения типа цвета фона задачи в истории изменений решения." alt="" coords="259,56,466,99"/>
+<area shape="poly" title=" " alt="" coords="212,57,244,61,244,66,211,63"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_a65b64fbf5616c7ecedc310a7deab807b_icgraph.png" border="0" usemap="#aa07336_a65b64fbf5616c7ecedc310a7deab807b_icgraph" alt=""/></div>
+<map name="aa07336_a65b64fbf5616c7ecedc310a7deab807b_icgraph" id="aa07336_a65b64fbf5616c7ecedc310a7deab807b_icgraph">
+<area shape="rect" title="Функция получения строки текста для записи в историю изменений." alt="" coords="263,5,469,48"/>
+<area shape="rect" href="a07336.html#ae60006906311d0d3a2ce5593aae8a38e" title="Функция выполнения действий при завершении задачи." alt="" coords="5,5,215,48"/>
+<area shape="poly" title=" " alt="" coords="247,29,215,29,215,24,247,24"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a828606eadccc2469c6b308d439d37f1b" name="a828606eadccc2469c6b308d439d37f1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828606eadccc2469c6b308d439d37f1b">&#9670;&#160;</a></span>ReadDataFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Task::ReadDataFrom </td>
+          <td>(</td>
+          <td class="paramtype">const Node_t &amp;</td>          <td class="paramname"><span class="paramname"><em>_Node</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция чтения данных задачи из узла xml документа. </p>
+<ul>
+<li>Значения читаются независимо от установленных в конструкторе флагов.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Node</td><td>Узел документа, из которого будут прочитаны значения. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_a828606eadccc2469c6b308d439d37f1b_cgraph.png" border="0" usemap="#aa07336_a828606eadccc2469c6b308d439d37f1b_cgraph" alt=""/></div>
+<map name="aa07336_a828606eadccc2469c6b308d439d37f1b_cgraph" id="aa07336_a828606eadccc2469c6b308d439d37f1b_cgraph">
+<area shape="rect" title="Функция чтения данных задачи из узла xml документа." alt="" coords="5,5,232,32"/>
+<area shape="rect" href="a07292.html#aff285a7e21a4c497e71c8a61c4a37d6a" title="Функция изменения типа задачи." alt="" coords="280,5,456,32"/>
+<area shape="poly" title=" " alt="" coords="233,16,265,16,265,21,233,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3e47428fe92345f802ba1d2bf7586789" name="a3e47428fe92345f802ba1d2bf7586789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e47428fe92345f802ba1d2bf7586789">&#9670;&#160;</a></span>SetData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Task::SetData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a07308.html">RawDataTask</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>_Data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция получения текущего состояния задачи. </p>
+<p>Функция изменения значений задачи.</p>
+<ul>
+<li>Значения изменяются или нет в зависимости от текущего состояния задачи (см. флаги <a class="el" href="a07292.html#a1aff9703315ef9c956efe99cb62bf994" title="Флаги для обозначения допустимых действий над задачей.">DataTask::AllowedFlags</a>).</li>
+<li>Переносы строк в тексте задачи будут удалены.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_Data</td><td>Объект, содержащий новые данные. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_a3e47428fe92345f802ba1d2bf7586789_cgraph.png" border="0" usemap="#aa07336_a3e47428fe92345f802ba1d2bf7586789_cgraph" alt=""/></div>
+<map name="aa07336_a3e47428fe92345f802ba1d2bf7586789_cgraph" id="aa07336_a3e47428fe92345f802ba1d2bf7586789_cgraph">
+<area shape="rect" title="Функция получения текущего состояния задачи." alt="" coords="5,31,187,57"/>
+<area shape="rect" href="a07292.html#afa7ee7fd6fc5881a945bafa4a2b57977" title="Функция проверки того, что указанный флаг установлен." alt="" coords="237,5,408,32"/>
+<area shape="poly" title=" " alt="" coords="187,31,221,27,221,33,187,36"/>
+<area shape="rect" href="a07292.html#aff285a7e21a4c497e71c8a61c4a37d6a" title="Функция изменения типа задачи." alt="" coords="235,56,410,83"/>
+<area shape="poly" title=" " alt="" coords="187,52,220,55,219,60,187,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3eefb44a4aae21088b493bff2007f03c" name="a3eefb44a4aae21088b493bff2007f03c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eefb44a4aae21088b493bff2007f03c">&#9670;&#160;</a></span>WriteDataTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Task::Node_t Task::WriteDataTo </td>
+          <td>(</td>
+          <td class="paramtype">Node_t &amp;</td>          <td class="paramname"><span class="paramname"><em>_RootNode</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция записи данных задачи в узле xml документа. </p>
+<ul>
+<li>Маркер позиции после выхода из функции будет установлен на созданном узле.</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">_RootNode</td><td>Узел документа, в который будут записаны значения (как дочерние элементы этого узла).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::exception</td><td><ul>
+<li>Действие невозможно (подробнее см. описание исключения). </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a07336_a3eefb44a4aae21088b493bff2007f03c_cgraph.png" border="0" usemap="#aa07336_a3eefb44a4aae21088b493bff2007f03c_cgraph" alt=""/></div>
+<map name="aa07336_a3eefb44a4aae21088b493bff2007f03c_cgraph" id="aa07336_a3eefb44a4aae21088b493bff2007f03c_cgraph">
+<area shape="rect" title="Функция записи данных задачи в узле xml документа." alt="" coords="5,43,217,69"/>
+<area shape="rect" href="a07292.html#a63122be4cf93355b13e3b3dd420242eb" title="Функция получения идентификатора задачи." alt="" coords="281,5,440,48"/>
+<area shape="poly" title=" " alt="" coords="217,41,265,35,266,40,217,46"/>
+<area shape="rect" href="a07344.html#ab3a237c4490dde7f38bb48eb7b11843a" title="Функция получения имени текщего значения типа." alt="" coords="265,72,456,99"/>
+<area shape="poly" title=" " alt="" coords="217,66,249,70,249,75,217,71"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/<a class="el" href="a01778_source.html">Task.hpp</a></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/<b>Task.cpp</b></li>
+<li>Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/<a class="el" href="a01781_source.html">Task.inl</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>support</b></li><li class="navelem"><a class="el" href="a07336.html">Task</a></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вт 24 Дек 2024 21:52:35. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

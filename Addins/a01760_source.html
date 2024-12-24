@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Model/AllTasks.hpp</title>
+    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/SolutionHistoryPage.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 00:31 13.12.2024</span>
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 21:51 24.12.2024</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,129 +108,77 @@ $(function(){initNavTree('a01760_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">AllTasks.hpp</div></div>
+  <div class="headertitle"><div class="title">SolutionHistoryPage.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;alicorn\document.forward.hpp&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;ITask.hpp&quot;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;..\Support.hpp&quot;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>std { <span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt; <span class="keyword">class </span>shared_ptr; }</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>support { <span class="keyword">class </span>Task; }</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>model</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="foldopen" id="foldopen00046" data-start="{" data-end="};">
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="a42396.html">   46</a></span><span class="keyword">class </span><a class="code hl_class" href="a42396.html">AllTasks</a> final :</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">public</span> <a class="code hl_class" href="a42412.html">ITask</a></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>{</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">using </span>Id_t = size_t;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">using </span>Path_t = ::boost::filesystem::path;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">using </span>Node_t = ::alicorn::source::document::Node&lt;String_t&gt;;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">using </span>TaskPtr_t = ::std::shared_ptr&lt;::support::Task&gt;;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keyword">using </span>Tasks_t = ::std::map&lt;Id_t, TaskPtr_t&gt;;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keyword">using </span>Hierarchy_t = ::std::map&lt;Id_t, ::std::vector&lt;TaskPtr_t&gt;&gt;;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">using </span><a class="code hl_class" href="a44132.html">Data_t</a> = <a class="code hl_class" href="a44132.html">::core::utilities::ProjectTasksData</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">using </span><a class="code hl_class" href="a42448.html">History_t</a> = <a class="code hl_class" href="a42448.html">support::SolutionHistoryPage</a>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">static</span> <span class="keyword">const</span> Id_t UnknownId = Id_t(-3);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// Интерфейс ITasks:</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  Id_t <a class="code hl_function" href="a42396.html#a861879e1edbb95e06079a5db679c9ffd">GetRootProcessTaskId</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  Id_t <a class="code hl_function" href="a42396.html#a97c1c0f3766d2fd2df70377531ee9970">GetRootCompleteTaskId</a>(<span class="keywordtype">void</span>) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  ChildTasks_t <a class="code hl_function" href="a42396.html#a735279a9c81e0c354cff2be653f3a722">GetChildTasks</a>(Id_t) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a0ccf5c650914eb55ab3547fb13a103a2">SetData</a>(Id_t, <span class="keyword">const</span> <a class="code hl_class" href="a42444.html">RawDataTask_t</a> &amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a7473c602ca6065bf0dc10510b86c9a46">SetParent</a>(Id_t, Id_t) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a7a3ec9d909b90ec06f818cc64192e138">SetPosition</a>(Id_t, <span class="keywordtype">size_t</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a4ce7efcf971b5130c44ea4990565abc8">CreateChild</a>(Id_t) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">bool</span> DoSetPosition(Id_t, <span class="keywordtype">size_t</span>);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">bool</span> DoSetParent(Id_t, Id_t);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a4a7861bf2e61c8d09122e0c1a2948f6c">AddTask</a>(<span class="keyword">const</span> TaskPtr_t &amp;, <span class="keywordtype">size_t</span>, <span class="keywordtype">bool</span> = <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">template</span>&lt;<span class="keyword">class</span> TType&gt;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a0e84e5b8289623c1606122a2b5ce067c">LoadTasks</a>(<span class="keyword">const</span> Node_t &amp;, Id_t);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">static</span> String_t <a class="code hl_function" href="a42396.html#a2ee32891460a85fbb9b0bb6bdb97e22d">GetEndWeekDate</a>(<span class="keywordtype">size_t</span>, <span class="keywordtype">size_t</span>);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="a42396.html#a31fca0d2c052dedeca2e0b1a4682dbe8">IsChild</a>(Id_t, Id_t, <span class="keywordtype">bool</span> = <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  TaskPtr_t <a class="code hl_function" href="a42396.html#afca5e64f5619af967dbfaa32822e94dd">GetTask</a>(Id_t) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  Id_t <a class="code hl_function" href="a42396.html#a30d44374dda16729f4216d13c713882a">GetParent</a>(Id_t) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  VIRTUAL_MOCK <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#ad254dd4ce22c1ea07bb2923987d8c094">Save</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  VIRTUAL_MOCK <span class="keywordtype">void</span> SaveAllTasksToFile(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> SaveChildTasksTo(Id_t, Node_t &amp;) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a50ab1afd6175d6c2b5e61cf09d8f3847">SetParentBlockCompleted</a>(Id_t);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a467826ab93cc9cf54e1e5dd2edeacb15">SetChildBlockCompleted</a>(Id_t, <span class="keywordtype">bool</span>);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  VIRTUAL_MOCK <span class="keywordtype">void</span> <a class="code hl_function" href="a42396.html#a17c65ec7b98f4f5735a1fbd922f69d59">DoCompleteAction</a>(Id_t);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  VIRTUAL_MOCK String_t <a class="code hl_function" href="a42396.html#afc3acc0e4f1b135c2c0e033a888e5608">GetFullTaskText</a>(Id_t) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  VIRTUAL_MOCK <span class="keywordtype">void</span> AddTasksToSolutionTasksPage(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">bool</span> SortByTypeListThatContains(Id_t _Id);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keyword">const</span> <a class="code hl_class" href="a44132.html">Data_t</a>      m_SourceData;</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <a class="code hl_class" href="a42448.html">History_t</a>         m_History;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span>      m_WeekCount;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keyword">const</span> Id_t        m_RootProcessTaskId = Id_t(-1);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keyword">const</span> Id_t        m_RootCompleteTaskId = Id_t(-2);</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  Id_t              m_ProcessTaskId = UnknownId;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  Id_t              m_RootCompleteAllWeeksTaskId = UnknownId;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  Id_t              m_RootCompleteCurrentWeekTaskId = UnknownId;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  Tasks_t           m_Tasks;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  Hierarchy_t       m_HierarchyTasks;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">size_t</span>            m_CurrentWeekNumber;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="a42396.html#a1295ce85297e90ba41a755f45feba56b">AllTasks</a>(<span class="keyword">const</span> <a class="code hl_class" href="a44132.html">Data_t</a> &amp;);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_class" href="a42396.html">AllTasks</a> &amp; operator= (<span class="keyword">const</span> <a class="code hl_class" href="a42396.html">AllTasks</a> &amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_Save);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_Save_NotExistsFileFolder);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_Save_NotExistsFile);</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_Save_ExistsFile);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_Save_AddProcessTasksToSolutionTasksPage);</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_DoCompleteAction_Exception);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_DoCompleteAction_WriteToHistory);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_DoCompleteAction_IncrementVersion);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_DoCompleteAction_ExecuteExternalProgram);</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  FRIEND_TEST(AllTasks_test, <span class="comment">/*DISABLED_*/</span>Test_GetFullTaskText);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>support</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="a07312.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="a07312.html">SolutionHistoryPage</a> final</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">using </span><a class="code hl_class" href="a08996.html">Data_t</a> = <a class="code hl_class" href="a08996.html">::core::utilities::ProjectTasksData</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">using </span>Path_t = ::boost::filesystem::path;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">using </span>Encoding_t = ::alicorn::extension::std::Encoding;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">using </span>Text_t = ::alicorn::source::document::Text_t&lt;Encoding_t::Russian::CP1251&gt;;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">using </span>TextPtr_t = ::std::unique_ptr&lt;Text_t&gt;;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07312.html#ab76749db942a458d857ff32ffe508158">AddMessage</a>(<span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07312.html#a534ecb628eae498081ebc2253f822737">AddSection</a>(<span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07312.html#ae3fedd5d48e123d1a70a6cb34e7c0a87">AddSubsection</a>(<span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  Text_t &amp; <a class="code hl_function" href="a07312.html#a339bd63cec279117f8cdee0872548947">GetHistoryFile</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07312.html#ae8c545905b031b75f99a612f5054e0d2">AddSectionRecord</a>(<span class="keyword">const</span> String_t &amp;, <span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07312.html#acca51dad8c1c1919cf99b52446fb02df">AddRecord</a>(<span class="keyword">const</span> String_t &amp;, <span class="keywordtype">bool</span>);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a07312.html#aef6c83b47a0f3f2f50d9a86c23e3afbe">CreateBlank</a>(<span class="keyword">const</span> String_t &amp;);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="comment">// cppcheck-suppress functionStatic</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  VIRTUAL_MOCK String_t <a class="code hl_function" href="a07312.html#a2c641f0eeb28078ba5483d133177f987">GetDateTime</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> RotateFiles(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  String_t <a class="code hl_function" href="a07312.html#a3e283363b478c4b9ea66c3d88cd04f45">GetIndexFileName</a>(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">const</span> Path_t    m_PathToSolutionHistoryFile;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">const</span> Path_t    m_PathToProjectFile;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">const</span> <span class="keywordtype">size_t</span>    m_MaxHistoryFileSize = 100 * 1024;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  TextPtr_t       m_pHistoryFile;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keyword">const</span> String_t  m_Marker;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="a07312.html#af029d6d14affc71d31d1a1e184c00b7c">SolutionHistoryPage</a>(<span class="keyword">const</span> <a class="code hl_class" href="a08996.html">Data_t</a> &amp;);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_class" href="a07312.html">~SolutionHistoryPage</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  FRIEND_TEST(SolutionHistoryPage_test, <span class="comment">/*DISABLED_*/</span>Test_GetDateTime);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>};</div>
 </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>} <span class="comment">// namespace model</span></div>
-<div class="ttc" id="aa42396_html"><div class="ttname"><a href="a42396.html">model::AllTasks</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, содержащий полный список всех задач проекта.</div><div class="ttdef"><b>Definition</b> AllTasks.hpp:48</div></div>
-<div class="ttc" id="aa42396_html_a0ccf5c650914eb55ab3547fb13a103a2"><div class="ttname"><a href="a42396.html#a0ccf5c650914eb55ab3547fb13a103a2">model::AllTasks::SetData</a></div><div class="ttdeci">void SetData(Id_t, const RawDataTask_t &amp;) override</div><div class="ttdoc">Функция изменения данных текущей задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:129</div></div>
-<div class="ttc" id="aa42396_html_a0e84e5b8289623c1606122a2b5ce067c"><div class="ttname"><a href="a42396.html#a0e84e5b8289623c1606122a2b5ce067c">model::AllTasks::LoadTasks</a></div><div class="ttdeci">void LoadTasks(const Node_t &amp;, Id_t)</div><div class="ttdoc">Функция загрузки задач, находящихся в процессе работы.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:356</div></div>
-<div class="ttc" id="aa42396_html_a1295ce85297e90ba41a755f45feba56b"><div class="ttname"><a href="a42396.html#a1295ce85297e90ba41a755f45feba56b">model::AllTasks::AllTasks</a></div><div class="ttdeci">AllTasks(const Data_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:39</div></div>
-<div class="ttc" id="aa42396_html_a17c65ec7b98f4f5735a1fbd922f69d59"><div class="ttname"><a href="a42396.html#a17c65ec7b98f4f5735a1fbd922f69d59">model::AllTasks::DoCompleteAction</a></div><div class="ttdeci">VIRTUAL_MOCK void DoCompleteAction(Id_t)</div><div class="ttdoc">Функция выполнения дополнительного действия при завершении задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:641</div></div>
-<div class="ttc" id="aa42396_html_a2ee32891460a85fbb9b0bb6bdb97e22d"><div class="ttname"><a href="a42396.html#a2ee32891460a85fbb9b0bb6bdb97e22d">model::AllTasks::GetEndWeekDate</a></div><div class="ttdeci">static String_t GetEndWeekDate(size_t, size_t)</div><div class="ttdoc">Функция получения строки даты окончания указанной недели.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:385</div></div>
-<div class="ttc" id="aa42396_html_a30d44374dda16729f4216d13c713882a"><div class="ttname"><a href="a42396.html#a30d44374dda16729f4216d13c713882a">model::AllTasks::GetParent</a></div><div class="ttdeci">Id_t GetParent(Id_t) const</div><div class="ttdoc">Функция поиска родительской задачи для указанной.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:462</div></div>
-<div class="ttc" id="aa42396_html_a31fca0d2c052dedeca2e0b1a4682dbe8"><div class="ttname"><a href="a42396.html#a31fca0d2c052dedeca2e0b1a4682dbe8">model::AllTasks::IsChild</a></div><div class="ttdeci">bool IsChild(Id_t, Id_t, bool=true)</div><div class="ttdoc">Функция проверки того, первая задача является дочерней задачей второй.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:421</div></div>
-<div class="ttc" id="aa42396_html_a467826ab93cc9cf54e1e5dd2edeacb15"><div class="ttname"><a href="a42396.html#a467826ab93cc9cf54e1e5dd2edeacb15">model::AllTasks::SetChildBlockCompleted</a></div><div class="ttdeci">void SetChildBlockCompleted(Id_t, bool)</div><div class="ttdoc">Функция установки/сброса флага блокирования завершения дочерних задач.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:617</div></div>
-<div class="ttc" id="aa42396_html_a4a7861bf2e61c8d09122e0c1a2948f6c"><div class="ttname"><a href="a42396.html#a4a7861bf2e61c8d09122e0c1a2948f6c">model::AllTasks::AddTask</a></div><div class="ttdeci">void AddTask(const TaskPtr_t &amp;, size_t, bool=false)</div><div class="ttdoc">Функция добавления задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:308</div></div>
-<div class="ttc" id="aa42396_html_a4ce7efcf971b5130c44ea4990565abc8"><div class="ttname"><a href="a42396.html#a4ce7efcf971b5130c44ea4990565abc8">model::AllTasks::CreateChild</a></div><div class="ttdeci">void CreateChild(Id_t) override</div><div class="ttdoc">Функция добавления дочерней задачи для указанной.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:200</div></div>
-<div class="ttc" id="aa42396_html_a50ab1afd6175d6c2b5e61cf09d8f3847"><div class="ttname"><a href="a42396.html#a50ab1afd6175d6c2b5e61cf09d8f3847">model::AllTasks::SetParentBlockCompleted</a></div><div class="ttdeci">void SetParentBlockCompleted(Id_t)</div><div class="ttdoc">Функция установки/сброса флага блокирования завершения родительской задаче.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:587</div></div>
-<div class="ttc" id="aa42396_html_a735279a9c81e0c354cff2be653f3a722"><div class="ttname"><a href="a42396.html#a735279a9c81e0c354cff2be653f3a722">model::AllTasks::GetChildTasks</a></div><div class="ttdeci">ChildTasks_t GetChildTasks(Id_t) const override</div><div class="ttdoc">Функция получения списка дочерних задач для указанной задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:104</div></div>
-<div class="ttc" id="aa42396_html_a7473c602ca6065bf0dc10510b86c9a46"><div class="ttname"><a href="a42396.html#a7473c602ca6065bf0dc10510b86c9a46">model::AllTasks::SetParent</a></div><div class="ttdeci">void SetParent(Id_t, Id_t) override</div><div class="ttdoc">Функция переноса текущей задачи в другую родительскую задачу.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:180</div></div>
-<div class="ttc" id="aa42396_html_a7a3ec9d909b90ec06f818cc64192e138"><div class="ttname"><a href="a42396.html#a7a3ec9d909b90ec06f818cc64192e138">model::AllTasks::SetPosition</a></div><div class="ttdeci">void SetPosition(Id_t, size_t) override</div><div class="ttdoc">Функция изменения позиции текущей задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:190</div></div>
-<div class="ttc" id="aa42396_html_a861879e1edbb95e06079a5db679c9ffd"><div class="ttname"><a href="a42396.html#a861879e1edbb95e06079a5db679c9ffd">model::AllTasks::GetRootProcessTaskId</a></div><div class="ttdeci">Id_t GetRootProcessTaskId(void) const override</div><div class="ttdoc">Функция получения идентификатора корневой задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:94</div></div>
-<div class="ttc" id="aa42396_html_a97c1c0f3766d2fd2df70377531ee9970"><div class="ttname"><a href="a42396.html#a97c1c0f3766d2fd2df70377531ee9970">model::AllTasks::GetRootCompleteTaskId</a></div><div class="ttdeci">Id_t GetRootCompleteTaskId(void) const override</div><div class="ttdoc">Функция получения идентификатора корневой задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:99</div></div>
-<div class="ttc" id="aa42396_html_ad254dd4ce22c1ea07bb2923987d8c094"><div class="ttname"><a href="a42396.html#ad254dd4ce22c1ea07bb2923987d8c094">model::AllTasks::Save</a></div><div class="ttdeci">VIRTUAL_MOCK void Save(void) const</div><div class="ttdoc">Функция сохранения списка задач в файл.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:487</div></div>
-<div class="ttc" id="aa42396_html_afc3acc0e4f1b135c2c0e033a888e5608"><div class="ttname"><a href="a42396.html#afc3acc0e4f1b135c2c0e033a888e5608">model::AllTasks::GetFullTaskText</a></div><div class="ttdeci">VIRTUAL_MOCK String_t GetFullTaskText(Id_t) const</div><div class="ttdoc">Функция получения текста задачи с учетом текста родительской задачи.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:667</div></div>
-<div class="ttc" id="aa42396_html_afca5e64f5619af967dbfaa32822e94dd"><div class="ttname"><a href="a42396.html#afca5e64f5619af967dbfaa32822e94dd">model::AllTasks::GetTask</a></div><div class="ttdeci">TaskPtr_t GetTask(Id_t) const</div><div class="ttdoc">Функция получения объекта задачи по его идентификатору.</div><div class="ttdef"><b>Definition</b> AllTasks.cpp:447</div></div>
-<div class="ttc" id="aa42412_html"><div class="ttname"><a href="a42412.html">model::ITask</a></div><div class="ttdoc">Класс входит в ProjectTasks   &quot;Суммарный&quot; интерфейсный класс одной задачи.</div><div class="ttdef"><b>Definition</b> ITask.hpp:27</div></div>
-<div class="ttc" id="aa42444_html"><div class="ttname"><a href="a42444.html">support::RawDataTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, содержащий информацию об одной задаче.</div><div class="ttdef"><b>Definition</b> RawDataTask.hpp:30</div></div>
-<div class="ttc" id="aa42448_html"><div class="ttname"><a href="a42448.html">support::SolutionHistoryPage</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс для работы с историей изменений решения.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.hpp:34</div></div>
-<div class="ttc" id="aa44132_html"><div class="ttname"><a href="a44132.html">core::utilities::ProjectTasksData</a></div><div class="ttdoc">Класс входит в Utilities   Класс данных для передачи в качестве параметра командной строки утилите ра...</div><div class="ttdef"><b>Definition</b> ProjectTasksData.hpp:35</div></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>} <span class="comment">// namespace support</span></div>
+<div class="ttc" id="aa07312_html"><div class="ttname"><a href="a07312.html">support::SolutionHistoryPage</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс для работы с историей изменений решения.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.hpp:34</div></div>
+<div class="ttc" id="aa07312_html_a2c641f0eeb28078ba5483d133177f987"><div class="ttname"><a href="a07312.html#a2c641f0eeb28078ba5483d133177f987">support::SolutionHistoryPage::GetDateTime</a></div><div class="ttdeci">VIRTUAL_MOCK String_t GetDateTime(void) const</div><div class="ttdoc">Функция получения строки текущих даты/времени в формате 'ДД.ММ.ГГГГ ЧЧ::ММ'.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:246</div></div>
+<div class="ttc" id="aa07312_html_a339bd63cec279117f8cdee0872548947"><div class="ttname"><a href="a07312.html#a339bd63cec279117f8cdee0872548947">support::SolutionHistoryPage::GetHistoryFile</a></div><div class="ttdeci">Text_t &amp; GetHistoryFile(void)</div><div class="ttdoc">Функция получения ссылки на объект файла истории изменений решения.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:107</div></div>
+<div class="ttc" id="aa07312_html_a3e283363b478c4b9ea66c3d88cd04f45"><div class="ttname"><a href="a07312.html#a3e283363b478c4b9ea66c3d88cd04f45">support::SolutionHistoryPage::GetIndexFileName</a></div><div class="ttdeci">String_t GetIndexFileName(void) const</div><div class="ttdoc">Функция получения строкового индекса несуществующего файла.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:325</div></div>
+<div class="ttc" id="aa07312_html_a534ecb628eae498081ebc2253f822737"><div class="ttname"><a href="a07312.html#a534ecb628eae498081ebc2253f822737">support::SolutionHistoryPage::AddSection</a></div><div class="ttdeci">void AddSection(const String_t &amp;)</div><div class="ttdoc">Функция для добавления раздела.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:75</div></div>
+<div class="ttc" id="aa07312_html_ab76749db942a458d857ff32ffe508158"><div class="ttname"><a href="a07312.html#ab76749db942a458d857ff32ffe508158">support::SolutionHistoryPage::AddMessage</a></div><div class="ttdeci">void AddMessage(const String_t &amp;)</div><div class="ttdoc">Функция добавления записи в историю изменений решения.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:50</div></div>
+<div class="ttc" id="aa07312_html_acca51dad8c1c1919cf99b52446fb02df"><div class="ttname"><a href="a07312.html#acca51dad8c1c1919cf99b52446fb02df">support::SolutionHistoryPage::AddRecord</a></div><div class="ttdeci">void AddRecord(const String_t &amp;, bool)</div><div class="ttdoc">Функция добавления записи в файл истории изменений.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:160</div></div>
+<div class="ttc" id="aa07312_html_ae3fedd5d48e123d1a70a6cb34e7c0a87"><div class="ttname"><a href="a07312.html#ae3fedd5d48e123d1a70a6cb34e7c0a87">support::SolutionHistoryPage::AddSubsection</a></div><div class="ttdeci">void AddSubsection(const String_t &amp;)</div><div class="ttdoc">Функция для добавления подраздела.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:93</div></div>
+<div class="ttc" id="aa07312_html_ae8c545905b031b75f99a612f5054e0d2"><div class="ttname"><a href="a07312.html#ae8c545905b031b75f99a612f5054e0d2">support::SolutionHistoryPage::AddSectionRecord</a></div><div class="ttdeci">void AddSectionRecord(const String_t &amp;, const String_t &amp;)</div><div class="ttdoc">Функция добавления раздела в файл истории изменений.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:133</div></div>
+<div class="ttc" id="aa07312_html_aef6c83b47a0f3f2f50d9a86c23e3afbe"><div class="ttname"><a href="a07312.html#aef6c83b47a0f3f2f50d9a86c23e3afbe">support::SolutionHistoryPage::CreateBlank</a></div><div class="ttdeci">void CreateBlank(const String_t &amp;)</div><div class="ttdoc">Функция создания пустого раздела истории изменений.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:210</div></div>
+<div class="ttc" id="aa07312_html_af029d6d14affc71d31d1a1e184c00b7c"><div class="ttname"><a href="a07312.html#af029d6d14affc71d31d1a1e184c00b7c">support::SolutionHistoryPage::SolutionHistoryPage</a></div><div class="ttdeci">SolutionHistoryPage(const Data_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition</b> SolutionHistoryPage.cpp:24</div></div>
+<div class="ttc" id="aa08996_html"><div class="ttname"><a href="a08996.html">core::utilities::ProjectTasksData</a></div><div class="ttdoc">Класс входит в Utilities   Класс данных для передачи в качестве параметра командной строки утилите ра...</div><div class="ttdef"><b>Definition</b> ProjectTasksData.hpp:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_dd588d072af8bb78fac291b181d3e039.html">Model</a></li><li class="navelem"><b>AllTasks.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 13 Дек 2024 00:31:58. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_f48436476a0e85ee68756bb5c9a064b0.html">Support</a></li><li class="navelem"><b>SolutionHistoryPage.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вт 24 Дек 2024 21:52:09. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

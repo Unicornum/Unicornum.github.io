@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Addins: Исходный файл Solution/Solution/Core/Utilities/ComCall.hpp</title>
+    <title>Addins: Исходный файл Solution/Solution/Wrappers/VisualStudio/Panes/Panes/OutputWindow.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 00:31 13.12.2024</span>
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 21:51 24.12.2024</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,19 +108,49 @@ $(function(){initNavTree('a04505_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">ComCall.hpp</div></div>
+  <div class="headertitle"><div class="title">OutputWindow.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;Utilities\Utilities\VisualStudio\ComCall.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>wrappers </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>vs</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">class </span>OutputWindowPanes;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a09680.html">   28</a></span><span class="keyword">class </span><a class="code hl_class" href="a09680.html">OutputWindow</a> : <span class="keyword">public</span> <a class="code hl_class" href="a09248.html">Base</a>&lt;EnvDTE::OutputWindow&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">using </span><a class="code hl_class" href="a09692.html">OutputWindowPanes_t</a> = <a class="code hl_class" href="a09692.html">wrappers::vs::OutputWindowPanes</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a09680.html#a3cef230529519b2cfae2b234d3f95e66">   34</a></span>  <a class="code hl_function" href="a09680.html#a3cef230529519b2cfae2b234d3f95e66">PROPERTY_GET</a>(<a class="code hl_class" href="a09692.html">OutputWindowPanes_t</a>, <a class="code hl_class" href="a09692.html">OutputWindowPanes</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_class" href="a09680.html">OutputWindow</a>(<span class="keyword">const</span> ComPtr_t &amp; _pPointer);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <a class="code hl_class" href="a09680.html">~OutputWindow</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace vs</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <span class="comment">// namespace wrappers </span></div>
+<div class="ttc" id="aa09248_html"><div class="ttname"><a href="a09248.html">wrappers::vs::Base</a></div><div class="ttdoc">Класс входит в Common   Базовый класс для оберток объектов надстройки.</div><div class="ttdef"><b>Definition</b> Base.hpp:36</div></div>
+<div class="ttc" id="aa09680_html"><div class="ttname"><a href="a09680.html">wrappers::vs::OutputWindow</a></div><div class="ttdoc">Класс входит в Panes   Класс-обертка для EnvDTE::OutputWindow.</div><div class="ttdef"><b>Definition</b> OutputWindow.hpp:29</div></div>
+<div class="ttc" id="aa09680_html_a3cef230529519b2cfae2b234d3f95e66"><div class="ttname"><a href="a09680.html#a3cef230529519b2cfae2b234d3f95e66">wrappers::vs::OutputWindow::PROPERTY_GET</a></div><div class="ttdeci">PROPERTY_GET(OutputWindowPanes_t, OutputWindowPanes) const</div><div class="ttdoc">Получить коллекцию окон вывода.</div></div>
+<div class="ttc" id="aa09692_html"><div class="ttname"><a href="a09692.html">wrappers::vs::OutputWindowPanes</a></div><div class="ttdoc">Класс входит в Panes   Класс-обертка для EnvDTE::OutputWindowPanes.</div><div class="ttdef"><b>Definition</b> OutputWindowPanes.hpp:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_25b9914551f1834bd861c9e82ac6d479.html">Utilities</a></li><li class="navelem"><b>ComCall.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 13 Дек 2024 00:32:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_032f8e2d585e842bec8044b05d03b16d.html">Wrappers</a></li><li class="navelem"><a class="el" href="dir_300641734d8655f670a2c1293af4568b.html">VisualStudio</a></li><li class="navelem"><a class="el" href="dir_95fe7b626004d41705273bed71121059.html">Panes</a></li><li class="navelem"><a class="el" href="dir_e33ff93988789e0af64e4de4e15aaef5.html">Panes</a></li><li class="navelem"><b>OutputWindow.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вт 24 Дек 2024 21:52:21. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

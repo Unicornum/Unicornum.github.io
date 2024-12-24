@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['документации_0',['Сборка документации',['../a45907.html',1,'SolutionStatisticsPage']]]
+  ['документации_0',['Сборка документации',['../a10775.html',1,'SolutionStatisticsPage']]]
 ];

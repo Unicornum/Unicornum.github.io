@@ -1,0 +1,178 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WVJKS623L0');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Controller/Controller.hpp</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Addins
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 21:51 24.12.2024</span>
+   </div>
+   <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a13592_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Controller.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>support { <span class="keyword">class </span>Process; }</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>support { <span class="keyword">class </span>Complete; }</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>model { <span class="keyword">class </span>IReadTask; }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span>model { <span class="keyword">class </span>IWriteTask; }</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>view { <span class="keyword">class </span>IProcessTasksPanel; }</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>view { <span class="keyword">class </span>ICompleteTasksPanel; }</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>view { <span class="keyword">class </span>IWriteTaskPanel; }</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>controller</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">class </span>DoUpdateProcessView;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">class </span>DoUpdateCompleteView;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span>DoUpdateDataTask;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span>DoUpdateParentTask;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>DoUpdatePositionTask;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span>DoCreateChildTask;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">class </span>Controller final</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">using </span>IReadTask_t = <a class="code hl_class" href="a07272.html">::model::IReadTask</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">using </span>IWriteTask_t = <a class="code hl_class" href="a07280.html">::model::IWriteTask</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">using </span>IProcessTasksPanel_t = <a class="code hl_class" href="a07384.html">::view::IProcessTasksPanel</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">using </span>ICompleteTasksPanel_t = <a class="code hl_class" href="a07380.html">::view::ICompleteTasksPanel</a>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">using </span>IWriteTaskPanel_t = <a class="code hl_class" href="a07412.html">::view::IWriteTaskPanel</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">using </span>DoUpdateProcessView_t = <a class="code hl_class" href="a07244.html">controller::DoUpdateProcessView</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">using </span>DoUpdateCompleteView_t = <a class="code hl_class" href="a07228.html">controller::DoUpdateCompleteView</a>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">using </span>DoUpdateDataTask_t = <a class="code hl_class" href="a07232.html">controller::DoUpdateDataTask</a>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">using </span>DoUpdateParentTask_t = <a class="code hl_class" href="a07236.html">controller::DoUpdateParentTask</a>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">using </span>DoUpdatePositionTask_t = <a class="code hl_class" href="a07240.html">controller::DoUpdatePositionTask</a>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">using </span>DoCreateChildTask_t = <a class="code hl_class" href="a07224.html">controller::DoCreateChildTask</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_function" href="a07128.html#a19b0c47ccb02e40feb2ccc7acbbb264e">Controller</a>(IReadTask_t &amp;, IProcessTasksPanel_t *);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_function" href="a07128.html#a19b0c47ccb02e40feb2ccc7acbbb264e">Controller</a>(IReadTask_t &amp;, ICompleteTasksPanel_t *);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_function" href="a07128.html#a19b0c47ccb02e40feb2ccc7acbbb264e">Controller</a>(IWriteTask_t *, IWriteTaskPanel_t *);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <span class="comment">// namespace controller</span></div>
+<div class="ttc" id="aa07128_html_a19b0c47ccb02e40feb2ccc7acbbb264e"><div class="ttname"><a href="a07128.html#a19b0c47ccb02e40feb2ccc7acbbb264e">controller::Controller::Controller</a></div><div class="ttdeci">Controller(const Models_t &amp;, const Views_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition</b> Controller.cpp:25</div></div>
+<div class="ttc" id="aa07224_html"><div class="ttname"><a href="a07224.html">controller::DoCreateChildTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, обеспечивающий логику работы сигнала обновления данных задачи.</div><div class="ttdef"><b>Definition</b> DoCreateChildTask.hpp:30</div></div>
+<div class="ttc" id="aa07228_html"><div class="ttname"><a href="a07228.html">controller::DoUpdateCompleteView</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс реализации обновления панели выполненных задач.</div><div class="ttdef"><b>Definition</b> DoUpdateCompleteView.hpp:25</div></div>
+<div class="ttc" id="aa07232_html"><div class="ttname"><a href="a07232.html">controller::DoUpdateDataTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, обеспечивающий логику работы сигнала обновления данных задачи.</div><div class="ttdef"><b>Definition</b> DoUpdateDataTask.hpp:30</div></div>
+<div class="ttc" id="aa07236_html"><div class="ttname"><a href="a07236.html">controller::DoUpdateParentTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, обеспечивающий логику работы сигнала обновления данных задачи.</div><div class="ttdef"><b>Definition</b> DoUpdateParentTask.hpp:30</div></div>
+<div class="ttc" id="aa07240_html"><div class="ttname"><a href="a07240.html">controller::DoUpdatePositionTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, обеспечивающий логику работы сигнала обновления данных задачи.</div><div class="ttdef"><b>Definition</b> DoUpdatePositionTask.hpp:30</div></div>
+<div class="ttc" id="aa07244_html"><div class="ttname"><a href="a07244.html">controller::DoUpdateProcessView</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс реализации обновления панели задач, находящихся в процессе работы...</div><div class="ttdef"><b>Definition</b> DoUpdateProcessView.hpp:25</div></div>
+<div class="ttc" id="aa07272_html"><div class="ttname"><a href="a07272.html">model::IReadTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс для чтения данных о задаче.</div><div class="ttdef"><b>Definition</b> IReadTask.hpp:38</div></div>
+<div class="ttc" id="aa07280_html"><div class="ttname"><a href="a07280.html">model::IWriteTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс для изменения данных задачи.</div><div class="ttdef"><b>Definition</b> IWriteTask.hpp:27</div></div>
+<div class="ttc" id="aa07380_html"><div class="ttname"><a href="a07380.html">view::ICompleteTasksPanel</a></div><div class="ttdoc">Класс входит в ProjectTasks   Вспомогательный класс для интерфейса панели завершенных задач.</div><div class="ttdef"><b>Definition</b> ICompleteTasksPanel.hpp:25</div></div>
+<div class="ttc" id="aa07384_html"><div class="ttname"><a href="a07384.html">view::IProcessTasksPanel</a></div><div class="ttdoc">Класс входит в ProjectTasks   Вспомогательный класс для интерфейса панели задач, находящихся в процес...</div><div class="ttdef"><b>Definition</b> IProcessTasksPanel.hpp:26</div></div>
+<div class="ttc" id="aa07412_html"><div class="ttname"><a href="a07412.html">view::IWriteTaskPanel</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс представления для получения данных из модели задачи.</div><div class="ttdef"><b>Definition</b> IWriteTaskPanel.hpp:27</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_aa2162a85914e03b3bd130d2bc32414b.html">Controller</a></li><li class="navelem"><b>Controller.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вт 24 Дек 2024 21:52:08. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/Support/SolutionTasksPage.hpp</title>
+    <title>Addins: Исходный файл Solution/Solution/Core/Tools/ProjectTasks/ProjectTasks/View/ITaskPanelWriteData.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Addins
-   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 00:31 13.12.2024</span>
+   &#160;<span id="projectnumber">Version: 2.6.1 Revision: ??? Platform: x64 Build: 21:51 24.12.2024</span>
    </div>
    <div id="projectbrief">Набор инструментов, упрощающих работу над кодом.</div>
   </td>
@@ -108,68 +108,48 @@ $(function(){initNavTree('a01823_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">SolutionTasksPage.hpp</div></div>
+  <div class="headertitle"><div class="title">ITaskPanelWriteData.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;RawDataTask.hpp&quot;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;alicorn\document.forward.hpp&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span>support { <span class="keyword">class </span>DataTask; }</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>support</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>view</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00035" data-start="{" data-end="};">
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a42460.html">   35</a></span><span class="keyword">class </span><a class="code hl_class" href="a42460.html">SolutionTasksPage</a> final</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>{</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">using </span>Path_t = ::boost::filesystem::path;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">using </span>Encoding_t = ::alicorn::extension::std::Encoding;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keyword">using </span>Text_t = ::alicorn::source::document::Text_t&lt;Encoding_t::Russian::CP1251&gt;;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">using </span>TextPtr_t = ::std::unique_ptr&lt;Text_t&gt;;</div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="a07404.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="a07404.html">ITaskPanelWriteData</a></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">using </span><a class="code hl_class" href="a07292.html">Data_t</a> = <a class="code hl_class" href="a07292.html">::support::DataTask</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="a07404.html#a225ddd8e35b2e40a8810acab3754590a">   40</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a07404.html#a225ddd8e35b2e40a8810acab3754590a">Initialyze</a>(<span class="keyword">const</span> <a class="code hl_class" href="a07292.html">Data_t</a> &amp; _DataTask, </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                          <span class="keywordtype">bool</span> _IsExistsChildTasks) = 0;</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a42460.html#ac0521fb2b2f71b6653bc8cc325baac81">AddRecord</a>(<span class="keyword">const</span> <a class="code hl_class" href="a42444.html">RawDataTask</a> &amp;, <span class="keywordtype">int</span> = 0);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">static</span> TextPtr_t <a class="code hl_function" href="a42460.html#a20e991cc6fc3e047c353e241874449fa">CreateBlank</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  String_t GetProjectTasksPartTitle(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">static</span> String_t GetCommonTitleUnderLine(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">static</span> String_t GetProjectTitleUnderLine(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> ClearProjectTasksPart(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordtype">void</span> AddReferenceToTodoPage(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordtype">void</span> AddReferenceToBugPage(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">void</span> AddProjectTasksPart(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  String_t GetTextRecord(<span class="keyword">const</span> <a class="code hl_class" href="a42444.html">RawDataTask</a> &amp;, <span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">//const Locale_t::Scope::SetDefault&lt;Locale_t::Russian::CP1251&gt; m_DefaultLocale;</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">const</span> Path_t    m_PathToSolutionTasksPage;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">const</span> Path_t    m_PathToTaskIconsDirectory;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">const</span> String_t  m_ProjectName;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  TextPtr_t       m_pText;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  String_t        m_PreparedTasks;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">int</span>             m_ColorIndex = 0;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <a class="code hl_function" href="a42460.html#abcc4ecfbfbc9ae4c1b456fdb31377809">SolutionTasksPage</a>(<span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> Path_t &amp;, <span class="keyword">const</span> String_t &amp;);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_class" href="a42460.html">~SolutionTasksPage</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="a07404.html#af3300ee5c79838bd9c650935395161ae">   47</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a07404.html#af3300ee5c79838bd9c650935395161ae">SetText</a>(<span class="keyword">const</span> wxString &amp;) = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="a07404.html#a6ea09ba6ad7e48cdc12b87d958796bdc">   53</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a07404.html#a6ea09ba6ad7e48cdc12b87d958796bdc">SetType</a>(<span class="keywordtype">size_t</span>) = 0;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="a07404.html">~ITaskPanelWriteData</a>(<span class="keywordtype">void</span>) {}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
 </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} <span class="comment">// namespace support</span></div>
-<div class="ttc" id="aa42444_html"><div class="ttname"><a href="a42444.html">support::RawDataTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, содержащий информацию об одной задаче.</div><div class="ttdef"><b>Definition</b> RawDataTask.hpp:30</div></div>
-<div class="ttc" id="aa42460_html"><div class="ttname"><a href="a42460.html">support::SolutionTasksPage</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс формирования общего списка текущих задач всех проектов решения.</div><div class="ttdef"><b>Definition</b> SolutionTasksPage.hpp:36</div></div>
-<div class="ttc" id="aa42460_html_a20e991cc6fc3e047c353e241874449fa"><div class="ttname"><a href="a42460.html#a20e991cc6fc3e047c353e241874449fa">support::SolutionTasksPage::CreateBlank</a></div><div class="ttdeci">static TextPtr_t CreateBlank(void)</div><div class="ttdoc">Функция создания пустой страницы списка задач.</div><div class="ttdef"><b>Definition</b> SolutionTasksPage.cpp:72</div></div>
-<div class="ttc" id="aa42460_html_abcc4ecfbfbc9ae4c1b456fdb31377809"><div class="ttname"><a href="a42460.html#abcc4ecfbfbc9ae4c1b456fdb31377809">support::SolutionTasksPage::SolutionTasksPage</a></div><div class="ttdeci">SolutionTasksPage(const Path_t &amp;, const Path_t &amp;, const String_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Definition</b> SolutionTasksPage.cpp:23</div></div>
-<div class="ttc" id="aa42460_html_ac0521fb2b2f71b6653bc8cc325baac81"><div class="ttname"><a href="a42460.html#ac0521fb2b2f71b6653bc8cc325baac81">support::SolutionTasksPage::AddRecord</a></div><div class="ttdeci">void AddRecord(const RawDataTask &amp;, int=0)</div><div class="ttdoc">Функция добавления записи одной задачи.</div><div class="ttdef"><b>Definition</b> SolutionTasksPage.cpp:60</div></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace view</span></div>
+<div class="ttc" id="aa07292_html"><div class="ttname"><a href="a07292.html">support::DataTask</a></div><div class="ttdoc">Класс входит в ProjectTasks   Класс, содержащий флаги, указывающие возможности, которые доступны зада...</div><div class="ttdef"><b>Definition</b> DataTask.hpp:35</div></div>
+<div class="ttc" id="aa07404_html"><div class="ttname"><a href="a07404.html">view::ITaskPanelWriteData</a></div><div class="ttdoc">Класс входит в ProjectTasks   Интерфейсный класс для передачи панели данных задачи.</div><div class="ttdef"><b>Definition</b> ITaskPanelWriteData.hpp:27</div></div>
+<div class="ttc" id="aa07404_html_a225ddd8e35b2e40a8810acab3754590a"><div class="ttname"><a href="a07404.html#a225ddd8e35b2e40a8810acab3754590a">view::ITaskPanelWriteData::Initialyze</a></div><div class="ttdeci">virtual void Initialyze(const Data_t &amp;_DataTask, bool _IsExistsChildTasks)=0</div><div class="ttdoc">Функция инициализации панели задачи.</div></div>
+<div class="ttc" id="aa07404_html_a6ea09ba6ad7e48cdc12b87d958796bdc"><div class="ttname"><a href="a07404.html#a6ea09ba6ad7e48cdc12b87d958796bdc">view::ITaskPanelWriteData::SetType</a></div><div class="ttdeci">virtual void SetType(size_t)=0</div><div class="ttdoc">Функция изменения текущего типа задачи.</div></div>
+<div class="ttc" id="aa07404_html_af3300ee5c79838bd9c650935395161ae"><div class="ttname"><a href="a07404.html#af3300ee5c79838bd9c650935395161ae">view::ITaskPanelWriteData::SetText</a></div><div class="ttdeci">virtual void SetText(const wxString &amp;)=0</div><div class="ttdoc">Функция изменения текущего текста задачи.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_f48436476a0e85ee68756bb5c9a064b0.html">Support</a></li><li class="navelem"><b>SolutionTasksPage.hpp</b></li>
-    <li class="footer">Документация по Addins. Последние изменения: Пт 13 Дек 2024 00:31:58. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6bc60bfcd83ba3aeaf980256daedb4cf.html">Core</a></li><li class="navelem"><a class="el" href="dir_f352eb9f60a450af48f5c3f5aed7914b.html">Tools</a></li><li class="navelem"><a class="el" href="dir_98685c5452a01759ddb602dd763362ab.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_771e449cf8279b58b21892c918e6c53b.html">ProjectTasks</a></li><li class="navelem"><a class="el" href="dir_85f7fbf2e9c1785037c4b5e889adf813.html">View</a></li><li class="navelem"><b>ITaskPanelWriteData.hpp</b></li>
+    <li class="footer">Документация по Addins. Последние изменения: Вт 24 Дек 2024 21:52:09. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
