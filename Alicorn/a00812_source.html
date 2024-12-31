@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Extension/Cpp/Cpp/test-only.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Extension/Cpp/Cpp/math/radian.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 19:08 28.11.2024</span>
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 15:49 31.12.2024</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,22 +108,67 @@ $(function(){initNavTree('a00812_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">test-only.hpp</div></div>
+  <div class="headertitle"><div class="title">radian.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="a00812.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef ALICORN_TEST_PROJECT</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor"># error &quot;This file for test project only!!!&quot;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>extension</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>cpp</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>math</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>radian</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a47723.html#ga8ab39ee8cc4acf6b68d38eb34eeab060">   28</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47723.html#ga8ab39ee8cc4acf6b68d38eb34eeab060">Sin</a>(Type _Value) { <span class="keywordflow">return</span> sin(_Value); }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="a47723.html#ga2104517f783b71fdb1123123f8dcba74">   33</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47723.html#ga2104517f783b71fdb1123123f8dcba74">ArcSin</a>(Type _Value) { <span class="keywordflow">return</span> asin(_Value); }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="a47723.html#ga4a7357706084145b0cddd05c161ea772">   38</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47723.html#ga4a7357706084145b0cddd05c161ea772">Cos</a>(Type _Value) { <span class="keywordflow">return</span> cos(_Value); }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="a47723.html#ga38ce2d7f745c99f41f1a9dcc448d008b">   43</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47723.html#ga38ce2d7f745c99f41f1a9dcc448d008b">ArcCos</a>(Type _Value) { <span class="keywordflow">return</span> acos(_Value); }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="a47723.html#gabfb194a30a0380dbe3312321b164bca5">   48</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47723.html#gabfb194a30a0380dbe3312321b164bca5">Tan</a>(Type _Value) { <span class="keywordflow">return</span> tan(_Value); }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="a47723.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb">   53</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47723.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb">ArcTan</a>(Type _ValueX, Type _ValueY) { <span class="keywordflow">return</span> atan2(_ValueY, _ValueX); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>} <span class="comment">// namespace radian</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>} <span class="comment">// namespace math</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace cpp</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <span class="comment">// namespace extension</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="aa47723_html_ga2104517f783b71fdb1123123f8dcba74"><div class="ttname"><a href="a47723.html#ga2104517f783b71fdb1123123f8dcba74">alicorn::extension::cpp::math::radian::ArcSin</a></div><div class="ttdeci">Type ArcSin(Type _Value)</div><div class="ttdef"><b>Definition</b> radian.hpp:33</div></div>
+<div class="ttc" id="aa47723_html_ga2a0d9c05b62e9466d3a41bea69ddd4eb"><div class="ttname"><a href="a47723.html#ga2a0d9c05b62e9466d3a41bea69ddd4eb">alicorn::extension::cpp::math::radian::ArcTan</a></div><div class="ttdeci">Type ArcTan(Type _ValueX, Type _ValueY)</div><div class="ttdef"><b>Definition</b> radian.hpp:53</div></div>
+<div class="ttc" id="aa47723_html_ga38ce2d7f745c99f41f1a9dcc448d008b"><div class="ttname"><a href="a47723.html#ga38ce2d7f745c99f41f1a9dcc448d008b">alicorn::extension::cpp::math::radian::ArcCos</a></div><div class="ttdeci">Type ArcCos(Type _Value)</div><div class="ttdef"><b>Definition</b> radian.hpp:43</div></div>
+<div class="ttc" id="aa47723_html_ga4a7357706084145b0cddd05c161ea772"><div class="ttname"><a href="a47723.html#ga4a7357706084145b0cddd05c161ea772">alicorn::extension::cpp::math::radian::Cos</a></div><div class="ttdeci">Type Cos(Type _Value)</div><div class="ttdef"><b>Definition</b> radian.hpp:38</div></div>
+<div class="ttc" id="aa47723_html_ga8ab39ee8cc4acf6b68d38eb34eeab060"><div class="ttname"><a href="a47723.html#ga8ab39ee8cc4acf6b68d38eb34eeab060">alicorn::extension::cpp::math::radian::Sin</a></div><div class="ttdeci">Type Sin(Type _Value)</div><div class="ttdef"><b>Definition</b> radian.hpp:28</div></div>
+<div class="ttc" id="aa47723_html_gabfb194a30a0380dbe3312321b164bca5"><div class="ttname"><a href="a47723.html#gabfb194a30a0380dbe3312321b164bca5">alicorn::extension::cpp::math::radian::Tan</a></div><div class="ttdeci">Type Tan(Type _Value)</div><div class="ttdef"><b>Definition</b> radian.hpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_a1c7f362031574707fb8b9183bd599cf.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_33beefa90c18bc2a981dfcfc1208b2e2.html">Cpp</a></li><li class="navelem"><a class="el" href="a00812.html">test-only.hpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 28 Ноя 2024 19:08:48. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_a1c7f362031574707fb8b9183bd599cf.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_33beefa90c18bc2a981dfcfc1208b2e2.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_9f98ee9197f4b0cc2e837eec64f5f7cb.html">math</a></li><li class="navelem"><b>radian.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Вт 31 Дек 2024 15:49:41. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

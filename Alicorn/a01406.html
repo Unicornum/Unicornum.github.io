@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Файл Solution/Solution/Extension/Std.Memory/Test.Std.Memory/Test.Memory/Memory_test.cpp</title>
+    <title>Alicorn: Файл Solution/Solution/Extension/Std.Memory/Test.Std.Memory/Test.Buffer/Buffer_test.cpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 19:08 28.11.2024</span>
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 15:49 31.12.2024</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,35 +108,36 @@ $(function(){initNavTree('a01406.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Функции</a>  </div>
-  <div class="headertitle"><div class="title">Файл Memory_test.cpp</div></div>
+  <div class="headertitle"><div class="title">Файл Buffer_test.cpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;stdafx.h&quot;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;alicorn\google\test\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn\google\mock\example.hpp&gt;</code><br />
-<code>#include &lt;alicorn/std.memory.hpp&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;any&gt;</code><br />
+<code>#include &lt;alicorn/google/test/example.hpp&gt;</code><br />
+<code>#include &lt;alicorn/google/mock/example.hpp&gt;</code><br />
+<code>#include &lt;alicorn/std.memory/buffer.hpp&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
-Граф включаемых заголовочных файлов для Memory_test.cpp:</div>
+Граф включаемых заголовочных файлов для Buffer_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="a01407.png" border="0" usemap="#a_solution_2_solution_2_extension_2_std_8_memory_2_test_8_std_8_memory_2_test_8_memory_2_memory__test_8cpp" alt=""/></div>
-<map name="a_solution_2_solution_2_extension_2_std_8_memory_2_test_8_std_8_memory_2_test_8_memory_2_memory__test_8cpp" id="a_solution_2_solution_2_extension_2_std_8_memory_2_test_8_std_8_memory_2_test_8_memory_2_memory__test_8cpp">
-<area shape="rect" title=" " alt="" coords="348,5,585,64"/>
-<area shape="rect" href="a42376_source.html" title=" " alt="" coords="204,120,279,147"/>
-<area shape="poly" title=" " alt="" coords="401,67,286,116,284,111,399,62"/>
-<area shape="rect" title=" " alt="" coords="304,120,369,147"/>
-<area shape="poly" title=" " alt="" coords="429,67,367,113,364,108,426,62"/>
-<area shape="rect" title=" " alt="" coords="393,112,541,155"/>
-<area shape="poly" title=" " alt="" coords="469,64,469,97,464,97,464,64"/>
-<area shape="rect" title=" " alt="" coords="565,112,723,155"/>
-<area shape="poly" title=" " alt="" coords="521,62,594,102,592,107,518,67"/>
-<area shape="rect" title=" " alt="" coords="747,120,930,147"/>
-<area shape="poly" title=" " alt="" coords="578,62,776,113,775,118,577,67"/>
+<div class="center"><img src="a01407.png" border="0" usemap="#a_solution_2_solution_2_extension_2_std_8_memory_2_test_8_std_8_memory_2_test_8_buffer_2_buffer__test_8cpp" alt=""/></div>
+<map name="a_solution_2_solution_2_extension_2_std_8_memory_2_test_8_std_8_memory_2_test_8_buffer_2_buffer__test_8cpp" id="a_solution_2_solution_2_extension_2_std_8_memory_2_test_8_std_8_memory_2_test_8_buffer_2_buffer__test_8cpp">
+<area shape="rect" title=" " alt="" coords="389,5,619,64"/>
+<area shape="rect" href="a50832_source.html" title=" " alt="" coords="204,120,279,147"/>
+<area shape="poly" title=" " alt="" coords="423,67,293,114,288,117,286,112,291,110,421,62"/>
+<area shape="rect" title=" " alt="" coords="304,120,398,147"/>
+<area shape="poly" title=" " alt="" coords="460,67,385,114,382,109,457,62"/>
+<area shape="rect" title=" " alt="" coords="421,120,467,147"/>
+<area shape="poly" title=" " alt="" coords="489,66,462,108,458,105,484,63"/>
+<area shape="rect" title=" " alt="" coords="492,112,639,155"/>
+<area shape="poly" title=" " alt="" coords="524,63,547,98,542,101,520,66"/>
+<area shape="rect" title=" " alt="" coords="664,112,822,155"/>
+<area shape="poly" title=" " alt="" coords="576,62,678,103,676,108,574,67"/>
+<area shape="rect" title=" " alt="" coords="846,112,999,155"/>
+<area shape="poly" title=" " alt="" coords="620,60,832,108,831,114,618,65"/>
 <area shape="rect" title=" " alt="" coords="93,203,240,245"/>
 <area shape="poly" title=" " alt="" coords="233,149,196,193,192,189,229,146"/>
-<area shape="rect" href="a43822_source.html" title=" " alt="" coords="265,211,367,237"/>
+<area shape="rect" href="a52308_source.html" title=" " alt="" coords="265,211,367,237"/>
 <area shape="poly" title=" " alt="" coords="254,146,298,197,294,200,250,149"/>
 <area shape="rect" title=" " alt="" coords="5,293,75,320"/>
 <area shape="poly" title=" " alt="" coords="277,241,253,248,90,294,89,289,251,243,275,235"/>
@@ -148,44 +149,15 @@ $(function(){initNavTree('a01406.html',''); initResizable(true); });
 <area shape="poly" title=" " alt="" coords="361,235,539,286,538,291,359,240"/>
 </map>
 </div>
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Функции</h2></td></tr>
-<tr class="memitem:af3ed8629fe50237dd73e51ded1369cab" id="r_af3ed8629fe50237dd73e51ded1369cab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3ed8629fe50237dd73e51ded1369cab">TEST_F</a> (Memory_test, DISABLED_Test_Pool_DestroyFromAnotherThread)</td></tr>
-<tr class="separator:af3ed8629fe50237dd73e51ded1369cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
-<div class="textblock"><p>Тесты класса Memory. </p>
-</div><h2 class="groupheader">Функции</h2>
-<a id="af3ed8629fe50237dd73e51ded1369cab" name="af3ed8629fe50237dd73e51ded1369cab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3ed8629fe50237dd73e51ded1369cab">&#9670;&#160;</a></span>TEST_F()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype">Memory_test</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">DISABLED_Test_Pool_DestroyFromAnotherThread</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="a39422.html#_todo000003">Необходимо сделать</a></b></dt><dd>"Не работает удаление объектов при разрушении пула из другого потока" ; </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div><a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Тесты класса Buffer. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_4537bd4e55ba6365963602639fd3b2c2.html">Std.Memory</a></li><li class="navelem"><a class="el" href="dir_73d8b5689038bbdda27c991e63277d8f.html">Test.Std.Memory</a></li><li class="navelem"><a class="el" href="dir_086e06b688854ef6240c4f1bf8787556.html">Test.Memory</a></li><li class="navelem"><a class="el" href="a01406.html">Memory_test.cpp</a></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 28 Ноя 2024 19:09:03. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_4537bd4e55ba6365963602639fd3b2c2.html">Std.Memory</a></li><li class="navelem"><a class="el" href="dir_73d8b5689038bbdda27c991e63277d8f.html">Test.Std.Memory</a></li><li class="navelem"><a class="el" href="dir_94bf2c11b6bb312725cd9ac34a8efef6.html">Test.Buffer</a></li><li class="navelem"><a class="el" href="a01406.html">Buffer_test.cpp</a></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Вт 31 Дек 2024 15:49:53. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

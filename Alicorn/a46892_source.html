@@ -1,0 +1,221 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WVJKS623L0');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alicorn: Исходный файл Solution/Solution/Tools/RmlUiRenderToFile.App/RmlUiRenderToFile.App/Shell/ShellRenderInterfaceOpenGL.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Alicorn
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 15:49 31.12.2024</span>
+   </div>
+   <div id="projectbrief">Набор вспомогательных библиотек</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a46892_source.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">ShellRenderInterfaceOpenGL.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"> * This source file is part of libRocket, the HTML/CSS Interface Middleware</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> * For the latest information, see http://www.librocket.com</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Copyright (c) 2008-2010 CodePoint Ltd, Shift Technology Ltd</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * Permission is hereby granted, free of charge, to any person obtaining a copy</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> * of this software and associated documentation files (the &quot;Software&quot;), to deal</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment"> * in the Software without restriction, including without limitation the rights</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment"> * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment"> * copies of the Software, and to permit persons to whom the Software is</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment"> * furnished to do so, subject to the following conditions:</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment"> * The above copyright notice and this permission notice shall be included in</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment"> * all copies or substantial portions of the Software.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment"> * THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment"> * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment"> * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment"> * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"> * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment"> * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="comment"> * THE SOFTWARE.</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#ifndef ROCKETSHELLRENDERINTERFACEOPENGL_H</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#define ROCKETSHELLRENDERINTERFACEOPENGL_H</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;ShellRenderInterfaceExtensions.h&quot;</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="a49777.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="a49777.html">ShellRenderInterfaceOpenGL</a> final :</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">public</span> GuiLib::RenderInterface,</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">public</span> <a class="code hl_class" href="a49773.html">ShellRenderInterfaceExtensions</a></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a8cc7ed3ed2bbdf0806625b593e7d2bd2">RenderGeometry</a>(GuiLib::Vertex *, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> *, <span class="keywordtype">int</span>, </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    GuiLib::TextureHandle, <span class="keyword">const</span> GuiLib::Vector2f &amp;);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">virtual</span> GuiLib::CompiledGeometryHandle <a class="code hl_function" href="a49777.html#aa3891ac090a000c9b1398db53c22ed45">CompileGeometry</a>(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    GuiLib::Vertex *, <span class="keywordtype">int</span>, <span class="keywordtype">int</span> *, <span class="keywordtype">int</span>, GuiLib::TextureHandle);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a0df1d4ff79b4b6bbf927d902fc380a6b">RenderCompiledGeometry</a>(GuiLib::CompiledGeometryHandle,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                                      <span class="keyword">const</span> GuiLib::Vector2f &amp;);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a98309ff609dfcf740c8b533e19b34791">ReleaseCompiledGeometry</a>(GuiLib::CompiledGeometryHandle);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a028383d908439e16627dcec23844996c">EnableScissorRegion</a>(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a8ee706b77d99792eafc007c3f018c3fd">SetScissorRegion</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="a49777.html#abbe7572bb70a39fcf56eed4f933a6877">LoadTexture</a>(GuiLib::TextureHandle &amp;, </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    GuiLib::Vector2i &amp;, <span class="keyword">const</span> GuiLib::String &amp;);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="a49777.html#a9463de6a8062635983640c9226e52154">GenerateTexture</a>(GuiLib::TextureHandle &amp;, </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">const</span> GuiLib::byte *, <span class="keyword">const</span> GuiLib::Vector2i &amp;);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#afb18d7edef61fb7aa23f3c5326a20e36">ReleaseTexture</a>(GuiLib::TextureHandle);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="comment">// ShellRenderInterfaceExtensions</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#ae43ffc9d9a0d83bf320bfb32ae1e10c5">SetViewport</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#acb5e35f2f5707ed02b2474fe12cab55a">SetContext</a>(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="a49777.html#af49f483ecaaef2673fa3c2b84673e376">AttachToNative</a>(<span class="keywordtype">void</span> *);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a4b5fd8732c2fb9900eb23410540de82d">DetachFromNative</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#a6674fba00b2235fa2f38837edb4b63dd">PrepareRenderBuffer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a49777.html#af205fbfc427a6519efb6cc0c90acac2b">PresentRenderBuffer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">int</span> m_width = 0;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">int</span> m_height = 0;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keywordtype">void</span> * m_rocket_context = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  HWND window_handle = NULL;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  HDC device_context = NULL;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  HGLRC render_context = NULL;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <a class="code hl_class" href="a49777.html">ShellRenderInterfaceOpenGL</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
+</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa49773_html"><div class="ttname"><a href="a49773.html">ShellRenderInterfaceExtensions</a></div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensions.h:39</div></div>
+<div class="ttc" id="aa49777_html"><div class="ttname"><a href="a49777.html">ShellRenderInterfaceOpenGL</a></div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.h:40</div></div>
+<div class="ttc" id="aa49777_html_a028383d908439e16627dcec23844996c"><div class="ttname"><a href="a49777.html#a028383d908439e16627dcec23844996c">ShellRenderInterfaceOpenGL::EnableScissorRegion</a></div><div class="ttdeci">virtual void EnableScissorRegion(bool)</div><div class="ttdoc">Called by Rocket when it wants to enable or disable scissoring to clip content.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:107</div></div>
+<div class="ttc" id="aa49777_html_a0df1d4ff79b4b6bbf927d902fc380a6b"><div class="ttname"><a href="a49777.html#a0df1d4ff79b4b6bbf927d902fc380a6b">ShellRenderInterfaceOpenGL::RenderCompiledGeometry</a></div><div class="ttdeci">virtual void RenderCompiledGeometry(GuiLib::CompiledGeometryHandle, const GuiLib::Vector2f &amp;)</div><div class="ttdoc">Called by Rocket when it wants to render application-compiled geometry.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:90</div></div>
+<div class="ttc" id="aa49777_html_a4b5fd8732c2fb9900eb23410540de82d"><div class="ttname"><a href="a49777.html#a4b5fd8732c2fb9900eb23410540de82d">ShellRenderInterfaceOpenGL::DetachFromNative</a></div><div class="ttdeci">virtual void DetachFromNative(void)</div><div class="ttdoc">Detach and cleanup the internal window buffer from a native window.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensionsOpenGL_Win32.cpp:130</div></div>
+<div class="ttc" id="aa49777_html_a6674fba00b2235fa2f38837edb4b63dd"><div class="ttname"><a href="a49777.html#a6674fba00b2235fa2f38837edb4b63dd">ShellRenderInterfaceOpenGL::PrepareRenderBuffer</a></div><div class="ttdeci">virtual void PrepareRenderBuffer(void)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensionsOpenGL_Win32.cpp:147</div></div>
+<div class="ttc" id="aa49777_html_a8cc7ed3ed2bbdf0806625b593e7d2bd2"><div class="ttname"><a href="a49777.html#a8cc7ed3ed2bbdf0806625b593e7d2bd2">ShellRenderInterfaceOpenGL::RenderGeometry</a></div><div class="ttdeci">virtual void RenderGeometry(GuiLib::Vertex *, int, int *, int, GuiLib::TextureHandle, const GuiLib::Vector2f &amp;)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:43</div></div>
+<div class="ttc" id="aa49777_html_a8ee706b77d99792eafc007c3f018c3fd"><div class="ttname"><a href="a49777.html#a8ee706b77d99792eafc007c3f018c3fd">ShellRenderInterfaceOpenGL::SetScissorRegion</a></div><div class="ttdeci">virtual void SetScissorRegion(int, int, int, int)</div><div class="ttdoc">Called by Rocket when it wants to change the scissor region.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:117</div></div>
+<div class="ttc" id="aa49777_html_a9463de6a8062635983640c9226e52154"><div class="ttname"><a href="a49777.html#a9463de6a8062635983640c9226e52154">ShellRenderInterfaceOpenGL::GenerateTexture</a></div><div class="ttdeci">virtual bool GenerateTexture(GuiLib::TextureHandle &amp;, const GuiLib::byte *, const GuiLib::Vector2i &amp;)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:140</div></div>
+<div class="ttc" id="aa49777_html_a98309ff609dfcf740c8b533e19b34791"><div class="ttname"><a href="a49777.html#a98309ff609dfcf740c8b533e19b34791">ShellRenderInterfaceOpenGL::ReleaseCompiledGeometry</a></div><div class="ttdeci">virtual void ReleaseCompiledGeometry(GuiLib::CompiledGeometryHandle)</div><div class="ttdoc">Called by Rocket when it wants to release application-compiled geometry.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:99</div></div>
+<div class="ttc" id="aa49777_html_aa3891ac090a000c9b1398db53c22ed45"><div class="ttname"><a href="a49777.html#aa3891ac090a000c9b1398db53c22ed45">ShellRenderInterfaceOpenGL::CompileGeometry</a></div><div class="ttdeci">virtual GuiLib::CompiledGeometryHandle CompileGeometry(GuiLib::Vertex *, int, int *, int, GuiLib::TextureHandle)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:75</div></div>
+<div class="ttc" id="aa49777_html_abbe7572bb70a39fcf56eed4f933a6877"><div class="ttname"><a href="a49777.html#abbe7572bb70a39fcf56eed4f933a6877">ShellRenderInterfaceOpenGL::LoadTexture</a></div><div class="ttdeci">virtual bool LoadTexture(GuiLib::TextureHandle &amp;, GuiLib::Vector2i &amp;, const GuiLib::String &amp;)</div><div class="ttdoc">Called by Rocket when a texture is required by the library.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:124</div></div>
+<div class="ttc" id="aa49777_html_acb5e35f2f5707ed02b2474fe12cab55a"><div class="ttname"><a href="a49777.html#acb5e35f2f5707ed02b2474fe12cab55a">ShellRenderInterfaceOpenGL::SetContext</a></div><div class="ttdeci">virtual void SetContext(void *)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensionsOpenGL_Win32.cpp:34</div></div>
+<div class="ttc" id="aa49777_html_ae43ffc9d9a0d83bf320bfb32ae1e10c5"><div class="ttname"><a href="a49777.html#ae43ffc9d9a0d83bf320bfb32ae1e10c5">ShellRenderInterfaceOpenGL::SetViewport</a></div><div class="ttdeci">virtual void SetViewport(int, int)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensionsOpenGL_Win32.cpp:39</div></div>
+<div class="ttc" id="aa49777_html_af205fbfc427a6519efb6cc0c90acac2b"><div class="ttname"><a href="a49777.html#af205fbfc427a6519efb6cc0c90acac2b">ShellRenderInterfaceOpenGL::PresentRenderBuffer</a></div><div class="ttdeci">virtual void PresentRenderBuffer(void)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensionsOpenGL_Win32.cpp:152</div></div>
+<div class="ttc" id="aa49777_html_af49f483ecaaef2673fa3c2b84673e376"><div class="ttname"><a href="a49777.html#af49f483ecaaef2673fa3c2b84673e376">ShellRenderInterfaceOpenGL::AttachToNative</a></div><div class="ttdeci">virtual bool AttachToNative(void *)</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceExtensionsOpenGL_Win32.cpp:58</div></div>
+<div class="ttc" id="aa49777_html_afb18d7edef61fb7aa23f3c5326a20e36"><div class="ttname"><a href="a49777.html#afb18d7edef61fb7aa23f3c5326a20e36">ShellRenderInterfaceOpenGL::ReleaseTexture</a></div><div class="ttdeci">virtual void ReleaseTexture(GuiLib::TextureHandle)</div><div class="ttdoc">Called by Rocket when a loaded texture is no longer required.</div><div class="ttdef"><b>Definition</b> ShellRenderInterfaceOpenGL.cpp:170</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_09026176ddd2089c21aad9e1070af8a5.html">Tools</a></li><li class="navelem"><a class="el" href="dir_bc77acfaf94e64a33b82f049b5fbbc27.html">RmlUiRenderToFile.App</a></li><li class="navelem"><a class="el" href="dir_9ed786e6648e47426566f5ee43203322.html">RmlUiRenderToFile.App</a></li><li class="navelem"><a class="el" href="dir_e211d2a03fd317e74a1acf52b0b44d9b.html">Shell</a></li><li class="navelem"><b>ShellRenderInterfaceOpenGL.h</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Вт 31 Дек 2024 15:49:51. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

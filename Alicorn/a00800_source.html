@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Extension/Cpp/Cpp/math/limits.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Extension/Cpp/Cpp/math/degree.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 19:08 28.11.2024</span>
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 15:49 31.12.2024</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,55 +108,98 @@ $(function(){initNavTree('a00800_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">limits.hpp</div></div>
+  <div class="headertitle"><div class="title">degree.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;limits&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifdef min</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor"># undef min</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>alicorn</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">namespace </span>extension</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">namespace </span>cpp</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>math</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="a39430.html#gada77aeeea8cdfd71e2fc258d2622faa5">   30</a></span><span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code hl_function" href="a39430.html#gada77aeeea8cdfd71e2fc258d2622faa5">Epsilon</a>(<span class="keywordtype">void</span>) { return ::std::numeric_limits&lt;Type&gt;::epsilon(); }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a39430.html#ga208a1945eed95cb7d404b0fba3fcbd2b">   35</a></span><span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code hl_function" href="a39430.html#ga208a1945eed95cb7d404b0fba3fcbd2b">Infinity</a>(<span class="keywordtype">void</span>) { return ::std::numeric_limits&lt;Type&gt;::infinity(); }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="a39430.html#ga092d73a3c219d160170528be0957ecf9">   40</a></span><span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code hl_function" href="a39430.html#ga092d73a3c219d160170528be0957ecf9">Min</a>(<span class="keywordtype">void</span>) { return ::std::numeric_limits&lt;Type&gt;::min(); }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>} <span class="comment">// namespace math</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>} <span class="comment">// namespace cpp</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} <span class="comment">// namespace extension</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <span class="comment">// namespace alicorn</span></div>
-<div class="ttc" id="aa39430_html_ga092d73a3c219d160170528be0957ecf9"><div class="ttname"><a href="a39430.html#ga092d73a3c219d160170528be0957ecf9">alicorn::extension::cpp::math::Min</a></div><div class="ttdeci">const Type Min(void)</div><div class="ttdef"><b>Definition</b> limits.hpp:40</div></div>
-<div class="ttc" id="aa39430_html_ga208a1945eed95cb7d404b0fba3fcbd2b"><div class="ttname"><a href="a39430.html#ga208a1945eed95cb7d404b0fba3fcbd2b">alicorn::extension::cpp::math::Infinity</a></div><div class="ttdeci">const Type Infinity(void)</div><div class="ttdef"><b>Definition</b> limits.hpp:35</div></div>
-<div class="ttc" id="aa39430_html_gada77aeeea8cdfd71e2fc258d2622faa5"><div class="ttname"><a href="a39430.html#gada77aeeea8cdfd71e2fc258d2622faa5">alicorn::extension::cpp::math::Epsilon</a></div><div class="ttdeci">const Type Epsilon(void)</div><div class="ttdef"><b>Definition</b> limits.hpp:30</div></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>extension</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>cpp</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>{</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span>math</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">namespace </span>degree</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="}">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="a47720.html#ga591de7acd440069d45ccfb5a23cc234b">   28</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47720.html#ga591de7acd440069d45ccfb5a23cc234b">Sin</a>(Type _Value) </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{ </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> sin(_Value * <a class="code hl_class" href="a47937.html">Constant&lt;Type&gt;::DegreeToRadian</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="a47720.html#gabc9373a8d3f74570f98b2c08f6e0839b">   36</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47720.html#gabc9373a8d3f74570f98b2c08f6e0839b">ArcSin</a>(Type _Value) </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>{ </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordflow">return</span> asin(_Value) * <a class="code hl_class" href="a47937.html">Constant&lt;Type&gt;::RadianToDegree</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="a47720.html#gac0afab7827edd2f2c712e381ad4c6476">   44</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47720.html#gac0afab7827edd2f2c712e381ad4c6476">Cos</a>(Type _Value) </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>{ </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordflow">return</span> cos(_Value * <a class="code hl_class" href="a47937.html">Constant&lt;Type&gt;::DegreeToRadian</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="}">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="a47720.html#gaa1f9a57d13f01fd79928c206f2987771">   52</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47720.html#gaa1f9a57d13f01fd79928c206f2987771">ArcCos</a>(Type _Value) </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{ </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordflow">return</span> acos(_Value) * <a class="code hl_class" href="a47937.html">Constant&lt;Type&gt;::RadianToDegree</a>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="a47720.html#ga941da4c724efde88e2fb9c75112542ed">   60</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47720.html#ga941da4c724efde88e2fb9c75112542ed">Tan</a>(Type _Value) </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{ </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordflow">return</span> tan(_Value * <a class="code hl_class" href="a47937.html">Constant&lt;Type&gt;::DegreeToRadian</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="a47720.html#ga36893ac939107a0f2d2aad5f480e0dbd">   68</a></span><span class="keyword">inline</span> Type <a class="code hl_function" href="a47720.html#ga36893ac939107a0f2d2aad5f480e0dbd">ArcTan</a>(Type _ValueX, Type _ValueY) </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{ </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordflow">return</span> atan2(_ValueY, _ValueX) * <a class="code hl_class" href="a47937.html">Constant&lt;Type&gt;::RadianToDegree</a>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>}</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>} <span class="comment">// namespace degree</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>} <span class="comment">// namespace math</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>} <span class="comment">// namespace cpp</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <span class="comment">// namespace extension</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="aa47720_html_ga36893ac939107a0f2d2aad5f480e0dbd"><div class="ttname"><a href="a47720.html#ga36893ac939107a0f2d2aad5f480e0dbd">alicorn::extension::cpp::math::degree::ArcTan</a></div><div class="ttdeci">Type ArcTan(Type _ValueX, Type _ValueY)</div><div class="ttdef"><b>Definition</b> degree.hpp:68</div></div>
+<div class="ttc" id="aa47720_html_ga591de7acd440069d45ccfb5a23cc234b"><div class="ttname"><a href="a47720.html#ga591de7acd440069d45ccfb5a23cc234b">alicorn::extension::cpp::math::degree::Sin</a></div><div class="ttdeci">Type Sin(Type _Value)</div><div class="ttdef"><b>Definition</b> degree.hpp:28</div></div>
+<div class="ttc" id="aa47720_html_ga941da4c724efde88e2fb9c75112542ed"><div class="ttname"><a href="a47720.html#ga941da4c724efde88e2fb9c75112542ed">alicorn::extension::cpp::math::degree::Tan</a></div><div class="ttdeci">Type Tan(Type _Value)</div><div class="ttdef"><b>Definition</b> degree.hpp:60</div></div>
+<div class="ttc" id="aa47720_html_gaa1f9a57d13f01fd79928c206f2987771"><div class="ttname"><a href="a47720.html#gaa1f9a57d13f01fd79928c206f2987771">alicorn::extension::cpp::math::degree::ArcCos</a></div><div class="ttdeci">Type ArcCos(Type _Value)</div><div class="ttdef"><b>Definition</b> degree.hpp:52</div></div>
+<div class="ttc" id="aa47720_html_gabc9373a8d3f74570f98b2c08f6e0839b"><div class="ttname"><a href="a47720.html#gabc9373a8d3f74570f98b2c08f6e0839b">alicorn::extension::cpp::math::degree::ArcSin</a></div><div class="ttdeci">Type ArcSin(Type _Value)</div><div class="ttdef"><b>Definition</b> degree.hpp:36</div></div>
+<div class="ttc" id="aa47720_html_gac0afab7827edd2f2c712e381ad4c6476"><div class="ttname"><a href="a47720.html#gac0afab7827edd2f2c712e381ad4c6476">alicorn::extension::cpp::math::degree::Cos</a></div><div class="ttdeci">Type Cos(Type _Value)</div><div class="ttdef"><b>Definition</b> degree.hpp:44</div></div>
+<div class="ttc" id="aa47937_html"><div class="ttname"><a href="a47937.html">alicorn::extension::cpp::math::Constant</a></div><div class="ttdoc">Класс входит в проект Cpp   Класс объявлений математических констант.</div><div class="ttdef"><b>Definition</b> constants.hpp:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_a1c7f362031574707fb8b9183bd599cf.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_33beefa90c18bc2a981dfcfc1208b2e2.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_9f98ee9197f4b0cc2e837eec64f5f7cb.html">math</a></li><li class="navelem"><b>limits.hpp</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 28 Ноя 2024 19:08:48. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_6b3375a8a4ba073e571e764c9a81489a.html">Extension</a></li><li class="navelem"><a class="el" href="dir_a1c7f362031574707fb8b9183bd599cf.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_33beefa90c18bc2a981dfcfc1208b2e2.html">Cpp</a></li><li class="navelem"><a class="el" href="dir_9f98ee9197f4b0cc2e837eec64f5f7cb.html">math</a></li><li class="navelem"><b>degree.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Вт 31 Дек 2024 15:49:41. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

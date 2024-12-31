@@ -2,19 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151583584-1"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-151583584-1');
+        gtag('config', 'G-WVJKS623L0');
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Modules/Patterns/Patterns/factory/factory.inl</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Modules/Logger/Logger/report/windows/visual-studio-output.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 19:08 28.11.2024</span>
+   &#160;<span id="projectnumber">Version: 3.10.1 Revision: ??? Platform: x64 Build: 15:49 31.12.2024</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -108,140 +108,76 @@ $(function(){initNavTree('a02294_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">factory.inl</div></div>
+  <div class="headertitle"><div class="title">visual-studio-output.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;alicorn\std\exception.hpp&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;alicorn\std.memory.hpp&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>alicorn</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>modules</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>patterns</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">namespace </span>factory</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TInterface, <span class="keyword">class </span>TId, <span class="keyword">class </span>... TArgs&gt;</div>
-<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="a40490.html#abd541d695ace3507ef2aefdb4707dd8e">   36</a></span><span class="keyword">inline</span> <span class="comment">/*static*/</span> <span class="keyword">auto</span> <a class="code hl_function" href="a40490.html#abd541d695ace3507ef2aefdb4707dd8e">Factory&lt;TInterface, TId, TArgs ...&gt;::MakeFromHeap</a>(</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">const</span> TId &amp; _ClassId, TArgs &amp;&amp; ... _Args) -&gt; Ptr_t</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordflow">return</span> FactoryRef_t::GetInstance().GetCreateFunction(_ClassId)</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    .first(0, ::std::forward&lt;TArgs&gt;(_Args) ...);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;..\report.hpp&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>modules</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>logger</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>report</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span>windows</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="};">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="a48777.html">   37</a></span><span class="keyword">class </span><a class="code hl_class" href="a48777.html">VisualStudioOutput</a> final :</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">public</span> <a class="code hl_class" href="a48765.html">Report</a></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>{</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a48777.html#a672763fba708c23851b38be162768bac">WriteTitle</a>(<span class="keyword">const</span> <a class="code hl_class" href="a48301.html">String_t</a> &amp;, <span class="keyword">const</span> <a class="code hl_class" href="a48301.html">String_t</a> &amp;, <span class="keyword">const</span> <a class="code hl_class" href="a48301.html">String_t</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a48777.html#a36ba11583024bbba693e2998ea4d3668">WriteRecord</a>(<span class="keyword">const</span> Message_t &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_define" href="a47731.html#ga327755d364e40ce237a22cc4772e51f1">VIRTUAL_MOCK</a> <span class="keywordtype">void</span> Output(<span class="keyword">const</span> <a class="code hl_class" href="a48301.html">String_t</a> &amp;) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordtype">size_t</span> m_MinFileLineLenght = 80;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <a class="code hl_class" href="a48777.html">VisualStudioOutput</a>(<span class="keyword">const</span> <a class="code hl_class" href="a48301.html">String_t</a> &amp;, <span class="keyword">const</span> <a class="code hl_class" href="a48301.html">String_t</a> &amp;) <span class="keyword">noexcept</span> {}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_define" href="a47731.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Reports_test, <span class="comment">/*DISABLED_*/</span>Test_VSOutput);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_define" href="a47731.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Reports_test, <span class="comment">/*DISABLED_*/</span>Test_VSOutput_ShortFileLine);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_define" href="a47731.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Reports_test, <span class="comment">/*DISABLED_*/</span>Test_VSOutput_LongFileLine);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_define" href="a47731.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a>(Reports_test, <span class="comment">/*DISABLED_*/</span>Test_VSOutput_Alignment);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
 </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TInterface, <span class="keyword">class </span>TId, <span class="keyword">class </span>... TArgs&gt;</div>
-<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="a40490.html#a097bd65d4d835fb9c2a4af02be25317d">   63</a></span><span class="keyword">inline</span> <span class="comment">/*static*/</span> <span class="keyword">auto</span> <a class="code hl_function" href="a40490.html#a097bd65d4d835fb9c2a4af02be25317d">Factory&lt;TInterface, TId, TArgs ...&gt;::MakeFromPool</a>(</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">size_t</span> _BlockSize, <span class="keyword">const</span> TId &amp; _ClassId, TArgs &amp;&amp; ... _Args) -&gt; Ptr_t</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// При записи в одну строку (как у MakeFromHeap()) приводит к падению</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="comment">// программы в Release версии при попытке создания незарегистрированного</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="comment">// класса.</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">const</span> <span class="keyword">auto</span> Creations = </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    FactoryRef_t::GetInstance().GetCreateFunction(_ClassId);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">return</span> Creations.second(_BlockSize, ::std::forward&lt;TArgs&gt;(_Args) ...);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}</div>
-</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TInterface, <span class="keyword">class </span>TId, <span class="keyword">class </span>... TArgs&gt;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> TClass&gt;</div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="a40490.html#a9655af04b535e7f51c659295250d1d96">   90</a></span><span class="comment">/*static*/</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="a40490.html#a9655af04b535e7f51c659295250d1d96">Factory&lt;TInterface, TId, TArgs ...&gt;::Register</a>(<span class="keyword">const</span> TId &amp; _ClassId)</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>{</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keyword">auto</span> &amp; CreationFunctions = FactoryRef_t::GetInstance().m_CreationFunctions;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keyword">const</span> <span class="keyword">auto</span> itFunction = CreationFunctions.find(_ClassId);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordflow">if</span> (itFunction == CreationFunctions.end())</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    CreationFunctions[_ClassId] = </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    { </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      CreateFromHeap&lt;TClass&gt;, CreateFromPool&lt;TClass&gt;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    };</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
-</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span><span class="keyword">class </span>TypeName</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>{</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  static ::std::string Get(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    return ::std::string(<span class="keyword">typeid</span>(T).name());</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>};</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TInterface, <span class="keyword">class </span>TId, <span class="keyword">class </span>... TArgs&gt;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span><span class="keyword">auto</span> Factory&lt;TInterface, TId, TArgs ...&gt;::GetCreateFunction(</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">const</span> TId &amp; _ClassId) <span class="keyword">const</span> -&gt; Creations_t</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>{</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">auto</span> itClassCreationFunction = m_CreationFunctions.find(_ClassId);</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keywordflow">if</span> (itClassCreationFunction == m_CreationFunctions.end())</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    <span class="keywordflow">throw</span> <a class="code hl_define" href="a39436.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a> &lt;&lt; </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      <span class="stringliteral">&quot;Class &#39;&quot;</span> &lt;&lt; _ClassId &lt;&lt; <span class="stringliteral">&quot;&#39; not registered [&quot;</span> &lt;&lt;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      <span class="stringliteral">&quot;interface: &quot;</span> &lt;&lt; TypeName&lt;TInterface&gt;::Get() &lt;&lt; <span class="stringliteral">&quot;, &quot;</span> &lt;&lt;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="stringliteral">&quot;id: &quot;</span> &lt;&lt; TypeName&lt;TId&gt;::Get() &lt;&lt; <span class="stringliteral">&quot;].&quot;</span>;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keywordflow">return</span> itClassCreationFunction-&gt;second;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TInterface, <span class="keyword">class </span>TId, <span class="keyword">class </span>... TArgs&gt;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> TClass&gt;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span><span class="comment">/*static*/</span> <span class="keyword">auto</span> Factory&lt;TInterface, TId, TArgs ...&gt;::CreateFromHeap(<span class="keywordtype">size_t</span>, </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  TArgs &amp;&amp; ... _Args) -&gt; Ptr_t</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>{ </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  return ::alicorn::extension::std::make_unique&lt;TClass&gt;(</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    ::std::forward&lt;TArgs&gt;(_Args) ...);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>}</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TInterface, <span class="keyword">class </span>TId, <span class="keyword">class </span>... TArgs&gt;</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span><span class="keyword">template</span>&lt;<span class="keyword">class</span> TClass&gt;</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="comment">/*static*/</span> <span class="keyword">auto</span> Factory&lt;TInterface, TId, TArgs ...&gt;::CreateFromPool(</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keywordtype">size_t</span> _BlockSize, TArgs &amp;&amp; ... _Args) -&gt; Ptr_t</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>{</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  <span class="keyword">using </span>namespace::alicorn::extension::std;</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">using </span>Pool_t = SingletonLocalThread&lt;memory::Pool&lt;TClass&gt;&gt;;</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keywordflow">return</span> Ptr_t</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  {</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    Pool_t::GetInstance().Allocate(_BlockSize, ::std::forward&lt;TArgs&gt;(_Args) ...),</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      [](<span class="keywordtype">void</span> * _pPointer)</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>      Pool_t::GetInstance().Deallocate(<span class="keyword">reinterpret_cast&lt;</span>TClass *<span class="keyword">&gt;</span>(_pPointer));</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    }</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  };</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>}</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>} <span class="comment">// namespace factory</span></div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>} <span class="comment">// namespace patterns</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>} <span class="comment">// namespace modules</span></div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>} <span class="comment">// namespace alicorn</span></div>
-<div class="ttc" id="aa39436_html_gaf7d39f5abf0ad8116e1d17097baa6ac4"><div class="ttname"><a href="a39436.html#gaf7d39f5abf0ad8116e1d17097baa6ac4">STD_EXCEPTION</a></div><div class="ttdeci">#define STD_EXCEPTION</div><div class="ttdoc">Макрос для std::runtime_error.</div><div class="ttdef"><b>Definition</b> exception.hpp:66</div></div>
-<div class="ttc" id="aa40490_html_a097bd65d4d835fb9c2a4af02be25317d"><div class="ttname"><a href="a40490.html#a097bd65d4d835fb9c2a4af02be25317d">alicorn::modules::patterns::factory::Factory::MakeFromPool</a></div><div class="ttdeci">static Ptr_t MakeFromPool(size_t, const TId &amp;, TArgs &amp;&amp;...)</div><div class="ttdoc">Функция создания объекта в пуле памяти.</div><div class="ttdef"><b>Definition</b> factory.inl:63</div></div>
-<div class="ttc" id="aa40490_html_a9655af04b535e7f51c659295250d1d96"><div class="ttname"><a href="a40490.html#a9655af04b535e7f51c659295250d1d96">alicorn::modules::patterns::factory::Factory::Register</a></div><div class="ttdeci">static bool Register(const TId &amp;)</div><div class="ttdoc">Функция для регистрации класса в фабрике объектов.</div><div class="ttdef"><b>Definition</b> factory.inl:90</div></div>
-<div class="ttc" id="aa40490_html_abd541d695ace3507ef2aefdb4707dd8e"><div class="ttname"><a href="a40490.html#abd541d695ace3507ef2aefdb4707dd8e">alicorn::modules::patterns::factory::Factory::MakeFromHeap</a></div><div class="ttdeci">static Ptr_t MakeFromHeap(const TId &amp;, TArgs &amp;&amp;...)</div><div class="ttdoc">Функция создания объекта в куче.</div><div class="ttdef"><b>Definition</b> factory.inl:36</div></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>} <span class="comment">// namespace windows</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} <span class="comment">// namespace report</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// namespace logger</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>} <span class="comment">// namespace modules</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="aa47731_html_ga327755d364e40ce237a22cc4772e51f1"><div class="ttname"><a href="a47731.html#ga327755d364e40ce237a22cc4772e51f1">VIRTUAL_MOCK</a></div><div class="ttdeci">#define VIRTUAL_MOCK</div><div class="ttdoc">Макрос входит в Testing   Макрос для объявления функций, которые должны быть виртуальными в тестовых ...</div><div class="ttdef"><b>Definition</b> virtual-mock.hpp:20</div></div>
+<div class="ttc" id="aa47731_html_gab92570f53abf3b4fbbd13acaf4265468"><div class="ttname"><a href="a47731.html#gab92570f53abf3b4fbbd13acaf4265468">FRIEND_TEST</a></div><div class="ttdeci">#define FRIEND_TEST(a, b)</div><div class="ttdoc">Класс входит в Testing   Определение макроса для тестовых функций для того, чтобы исключить из постро...</div><div class="ttdef"><b>Definition</b> friend.hpp:16</div></div>
+<div class="ttc" id="aa48301_html"><div class="ttname"><a href="a48301.html">alicorn::extension::std::String</a></div><div class="ttdoc">Класс входит в Std   Класс универсальных Unicode строк.</div><div class="ttdef"><b>Definition</b> string.hpp:55</div></div>
+<div class="ttc" id="aa48765_html"><div class="ttname"><a href="a48765.html">alicorn::modules::logger::report::Report</a></div><div class="ttdoc">Класс входит в Logger   Вспомогательный класс для обеспечения интерфейса, необходимого для установки ...</div><div class="ttdef"><b>Definition</b> report.hpp:39</div></div>
+<div class="ttc" id="aa48777_html"><div class="ttname"><a href="a48777.html">alicorn::modules::logger::report::windows::VisualStudioOutput</a></div><div class="ttdoc">Класс входит в Logger   Класс вывода сообщений журнала в окно вывода Visual Studio.</div><div class="ttdef"><b>Definition</b> visual-studio-output.hpp:39</div></div>
+<div class="ttc" id="aa48777_html_a36ba11583024bbba693e2998ea4d3668"><div class="ttname"><a href="a48777.html#a36ba11583024bbba693e2998ea4d3668">alicorn::modules::logger::report::windows::VisualStudioOutput::WriteRecord</a></div><div class="ttdeci">void WriteRecord(const Message_t &amp;) override</div><div class="ttdoc">Функция для записи одного сообщения в лог.</div><div class="ttdef"><b>Definition</b> visual-studio-output.cpp:20</div></div>
+<div class="ttc" id="aa48777_html_a672763fba708c23851b38be162768bac"><div class="ttname"><a href="a48777.html#a672763fba708c23851b38be162768bac">alicorn::modules::logger::report::windows::VisualStudioOutput::WriteTitle</a></div><div class="ttdeci">void WriteTitle(const String_t &amp;, const String_t &amp;, const String_t &amp;) override</div><div class="ttdoc">Функция записи в лог заголовка журнала.</div><div class="ttdef"><b>Definition</b> visual-studio-output.cpp:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_1cfe0627f7c75f218b0761dfdad9e26d.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_b245c5d747bfebb339f4e4e4a979f544.html">Patterns</a></li><li class="navelem"><a class="el" href="dir_951bbf9a6fd1b35936be8d4736da2185.html">factory</a></li><li class="navelem"><b>factory.inl</b></li>
-    <li class="footer">Документация по Alicorn. Последние изменения: Чт 28 Ноя 2024 19:08:54. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><a class="el" href="dir_307549c1eb45bb87e17fa8331c4b8d28.html">Logger</a></li><li class="navelem"><a class="el" href="dir_6c062a1e933a8d08c7446e0b9e8cb0db.html">Logger</a></li><li class="navelem"><a class="el" href="dir_10e04dd9a2b4f0dff39a908cd541d72d.html">report</a></li><li class="navelem"><a class="el" href="dir_c47c90b47d347d894f99a16b6d8ce694.html">windows</a></li><li class="navelem"><b>visual-studio-output.hpp</b></li>
+    <li class="footer">Документация по Alicorn. Последние изменения: Вт 31 Дек 2024 15:49:45. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

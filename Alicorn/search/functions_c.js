@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['pack_0',['Pack',['../a40822.html#a1715c6b00def1a4864ae4312ede86fa2',1,'alicorn::modules::vfs::Pack']]],
-  ['postunpackaction_1',['PostUnpackAction',['../a40790.html#ad7e2cbdbdd9a4417b92c443c214dfc0b',1,'alicorn::modules::vfs::Compress::PostUnpackAction()'],['../a40798.html#a8de30e0e047495678957fdb4b026b7ae',1,'alicorn::modules::vfs::Crypto::PostUnpackAction()'],['../a40806.html#a835b7d13054ed583db5dc2fd81273356',1,'alicorn::modules::vfs::IConverter::PostUnpackAction()']]],
-  ['prepackaction_2',['PrePackAction',['../a40790.html#ac95dbc23b673898390244c78e6ed87f3',1,'alicorn::modules::vfs::Compress::PrePackAction()'],['../a40798.html#a285e869c178d6ba7324e2c5323f7f125',1,'alicorn::modules::vfs::Crypto::PrePackAction()'],['../a40806.html#a8f85b8c98182aa0987fbc5f98d2f4c9c',1,'alicorn::modules::vfs::IConverter::PrePackAction()']]],
-  ['process_3',['Process',['../a41226.html#a15c85d53e3079f343aead5930adb4b2a',1,'alicorn::system::platform::Process']]],
-  ['processing_4',['Processing',['../a41374.html#a2702880d28bd0cbbb831e905bfd991a5',1,'Common']]],
-  ['processoutput_5',['ProcessOutput',['../a39463.html#ga9d847c18ebc2abac375a25fbaf95f123',1,'process.cpp']]],
-  ['ptr_6',['Ptr',['../a41118.html#a480c2af125e99461498f53eda8309260',1,'alicorn::system::application::dll::Ptr']]],
-  ['ptrobject_7',['PtrObject',['../a41114.html#a20d6e0d738903f53e76b9a915577a279',1,'alicorn::system::application::dll::PtrObject']]],
-  ['push_8',['Push',['../a40822.html#a1b36ab206c622dac0a5693dad7cf9da7',1,'alicorn::modules::vfs::Pack']]]
+  ['onchanged_0',['OnChanged',['../a50041.html#a8f31082d1573122757db0572e9100a93',1,'view::FailedTestsInfo']]],
+  ['onpaint_1',['OnPaint',['../a50041.html#ad8351ca940eeac53bdbd81672c52db1d',1,'view::FailedTestsInfo']]],
+  ['open_2',['Open',['../a49769.html#a37da7420fe38991d10c0355ba02a658c',1,'ShellFileInterface']]],
+  ['openfile_3',['OpenFile',['../a48753.html#aaaf2c3c72eeff330e433f306a7f547c1',1,'alicorn::modules::logger::report::File']]],
+  ['operator_28_29_4',['operator()',['../a48849.html#accbbeba32c801d573264697f6494e0cb',1,'alicorn::modules::patterns::mvc::controller::BlockingSignal::operator()()'],['../a48861.html#af076a355dacebdb9939d236b2ecbac36',1,'alicorn::modules::patterns::mvc::controller::NonBlockingSignal::operator()()']]],
+  ['operator_2a_5',['operator*',['../a49461.html#a0d64a85221ef607fa930c16603ee92da',1,'alicorn::system::application::dll::Ptr']]],
+  ['operator_2b_6',['operator+',['../a47728.html#ga18998bbe43e12ce1daad9cc81dd8df27',1,'alicorn::extension::std']]],
+  ['operator_2b_3d_7',['operator+=',['../a49261.html#a1a0dc318c183336d02ffe6eabc4c7f38',1,'alicorn::source::document::Node::operator+=()'],['../a47728.html#ga7c544b803ac7a105af7ac2df44d3f0de',1,'alicorn::extension::std::operator+=()']]],
+  ['operator_2d_3d_8',['operator-=',['../a49261.html#aee2b22f7ee413131e11f157a50b309e4',1,'alicorn::source::document::Node']]],
+  ['operator_2d_3e_9',['operator-&gt;',['../a49461.html#ac6230e4612052924e2fcb917e0bea6a0',1,'alicorn::system::application::dll::Ptr']]],
+  ['operator_3d_10',['operator=',['../a49269.html#a5f2bd62ffe80640dfd829c6c85a52931',1,'alicorn::source::document::Attribute::operator=()'],['../a49313.html#a1714943cfa01c441e2f1a196534e3222',1,'alicorn::source::document::Value::operator=()']]],
+  ['operator_3d_3d_11',['operator==',['../a49301.html#ac48a6eebb2acae7067602fe797010a25',1,'alicorn::source::document::Node::Iterator::operator==()'],['../a47766.html#ga604b26fa0b9f45c3f42108a7552bf871',1,'support::operator==(const InfoTestingApp &amp;_Left, const InfoTestingApp &amp;_Right)'],['../a47766.html#ga569538e83c07b5c102f1a7fb03b4b6c9',1,'support::operator==(const InfoTestingApp::Case &amp;_Left, const InfoTestingApp::Case &amp;_Right)'],['../a47766.html#gaf79d9e7902b44884574c1599d9281d3d',1,'support::operator==(const InfoTestingApp::Test &amp;_Left, const InfoTestingApp::Test &amp;_Right)'],['../a47766.html#gad5a20ceffcb6a215a6ce00878bc7ddec',1,'support::operator==(const InfoTestingApp::Result &amp;_Left, const InfoTestingApp::Result &amp;_Right)']]],
+  ['operator_5b_5d_12',['operator[]',['../a49013.html#a101c916468ea3e0c4a3deabf34219f82',1,'alicorn::modules::settings::SectionFullAccess::operator[]()'],['../a49045.html#a13b9a9e3fcda9d34bc2e78896ed878fe',1,'alicorn::modules::settings::Section::operator[]()'],['../a49273.html#a815c30da4e3f0da383b45c2809f82d63',1,'alicorn::source::document::Attributes::operator[]()'],['../a49261.html#ae90a76c6543c18734c4115001cfe620f',1,'alicorn::source::document::Node::operator[](Parent_t) const'],['../a49261.html#a370ef786ab433f64ba8450fd9c3e0ce5',1,'alicorn::source::document::Node::operator[](const TIndex &amp;) const'],['../a49261.html#a2bf1110ad96b24cc964eb37ec5d3bc10',1,'alicorn::source::document::Node::operator[](const String_t &amp;)']]]
 ];
