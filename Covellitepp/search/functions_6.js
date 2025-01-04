@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hide_0',['Hide',['../a38649.html#a4555133e40101645bf4143a8b05c7f32',1,'covellite::gui::Layer']]]
+  ['hide_0',['Hide',['../a04279.html#a4555133e40101645bf4143a8b05c7f32',1,'covellite::gui::Layer']]]
 ];
