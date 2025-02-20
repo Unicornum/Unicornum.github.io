@@ -1,0 +1,298 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WVJKS623L0');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research.Erosion: Класс TinyErode::Simulation</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Research.Erosion
+   &#160;<span id="projectnumber">v1.0.0</span>
+   </div>
+   <div id="projectbrief">Исследование применения эрозии к карте высот</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a39091.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="a39088.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс TinyErode::Simulation<span class="mlabels"><span class="mlabel">final</span></span></div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="a39020_source.html">TinyErode.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса TinyErode::Simulation:</div>
+<div class="dyncontent">
+<div class="center"><img src="a39089.png" border="0" usemap="#a_tiny_erode_1_1_simulation_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a6311c1575335ffb825c4039df8617193" id="r_a6311c1575335ffb825c4039df8617193"><td class="memTemplParams" colspan="2">template&lt;typename Height , typename Water &gt; </td></tr>
+<tr class="memitem:a6311c1575335ffb825c4039df8617193"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a6311c1575335ffb825c4039df8617193">ComputeFlowAndTilt</a> (const Height &amp;height, const Water &amp;water)</td></tr>
+<tr class="separator:a6311c1575335ffb825c4039df8617193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb54c324a6e6634408ed2ca9394c4451" id="r_abb54c324a6e6634408ed2ca9394c4451"><td class="memTemplParams" colspan="2">template&lt;typename WaterAdder &gt; </td></tr>
+<tr class="memitem:abb54c324a6e6634408ed2ca9394c4451"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#abb54c324a6e6634408ed2ca9394c4451">TransportWater</a> (WaterAdder waterAdder)</td></tr>
+<tr class="separator:abb54c324a6e6634408ed2ca9394c4451"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfb93265aa3f2017637493dd5a4d107" id="r_a1dfb93265aa3f2017637493dd5a4d107"><td class="memTemplParams" colspan="2">template&lt;typename CarryCapacity , typename Deposition , typename Erosion , typename HeightAdder &gt; </td></tr>
+<tr class="memitem:a1dfb93265aa3f2017637493dd5a4d107"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a1dfb93265aa3f2017637493dd5a4d107">TransportSediment</a> (CarryCapacity kC, Deposition kD, Erosion kE, HeightAdder heightAdder)</td></tr>
+<tr class="separator:a1dfb93265aa3f2017637493dd5a4d107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3371bafb2751bbbe025a536d32495665" id="r_a3371bafb2751bbbe025a536d32495665"><td class="memTemplParams" colspan="2">template&lt;typename WaterAdder , typename Evaporation &gt; </td></tr>
+<tr class="memitem:a3371bafb2751bbbe025a536d32495665"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3371bafb2751bbbe025a536d32495665">Evaporate</a> (WaterAdder water, Evaporation kEvap)</td></tr>
+<tr class="separator:a3371bafb2751bbbe025a536d32495665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa326740402864f85d05a8906c096fa8b" id="r_aa326740402864f85d05a8906c096fa8b"><td class="memTemplParams" colspan="2"><a id="aa326740402864f85d05a8906c096fa8b" name="aa326740402864f85d05a8906c096fa8b"></a>
+template&lt;typename HeightAdder &gt; </td></tr>
+<tr class="memitem:aa326740402864f85d05a8906c096fa8b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>TerminateRainfall</b> (HeightAdder heightAdder)</td></tr>
+<tr class="memdesc:aa326740402864f85d05a8906c096fa8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deposites all currently suspended sediment into the terrain. <br /></td></tr>
+<tr class="separator:aa326740402864f85d05a8906c096fa8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9d5d1d55d37ad3695c915b838bcbe67" id="r_ae9d5d1d55d37ad3695c915b838bcbe67"><td class="memItemLeft" align="right" valign="top"><a id="ae9d5d1d55d37ad3695c915b838bcbe67" name="ae9d5d1d55d37ad3695c915b838bcbe67"></a>
+auto&#160;</td><td class="memItemRight" valign="bottom"><b>GetSediment</b> () const noexcept -&gt; const std::vector&lt; float &gt; &amp;</td></tr>
+<tr class="memdesc:ae9d5d1d55d37ad3695c915b838bcbe67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the sediment levels at each cell. Useful primarily for debugging. <br /></td></tr>
+<tr class="separator:ae9d5d1d55d37ad3695c915b838bcbe67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Used for simulating a rainfall event on a terrain. Stores information on the terrain that is required to simulate the effect of hydraulic erosion.</p>
+<dl class="section note"><dt>Заметки</dt><dd>The class should only be used once per rainfall event. </dd></dl>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a6311c1575335ffb825c4039df8617193" name="a6311c1575335ffb825c4039df8617193"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6311c1575335ffb825c4039df8617193">&#9670;&#160;</a></span>ComputeFlowAndTilt()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Height , typename Water &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TinyErode::Simulation::ComputeFlowAndTilt </td>
+          <td>(</td>
+          <td class="paramtype">const Height &amp;</td>          <td class="paramname"><span class="paramname"><em>height</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Water &amp;</td>          <td class="paramname"><span class="paramname"><em>water</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Called at the beginning of each iteration. This function will compute the flow rate of each cell, based on the level of water and the elevation at each point in the height map.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">height</td><td>The function taking an x and y coordinate and returning the height value at each point in the map.</td></tr>
+    <tr><td class="paramname">water</td><td>The function taking an x and y coordinate and returning the water level at each point in the map. The water levels can be initialized to simulate rainfall or river streams. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3371bafb2751bbbe025a536d32495665" name="a3371bafb2751bbbe025a536d32495665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3371bafb2751bbbe025a536d32495665">&#9670;&#160;</a></span>Evaporate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename WaterAdder , typename Evaporation &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TinyErode::Simulation::Evaporate </td>
+          <td>(</td>
+          <td class="paramtype">WaterAdder</td>          <td class="paramname"><span class="paramname"><em>water</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Evaporation</td>          <td class="paramname"><span class="paramname"><em>kEvap</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Evaporates water in the water model, based on evaporation constants.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">waterAdder</td><td>A function taking an x and y coordiante as well as a water value to be added to a cell within the water model.</td></tr>
+    <tr><td class="paramname">kEvap</td><td>A function taking an x and y coordinate and returning the evaporation constant at that particular location. It is the responsibility of this function to ensure that the water level does not become negative at this step. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1dfb93265aa3f2017637493dd5a4d107" name="a1dfb93265aa3f2017637493dd5a4d107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dfb93265aa3f2017637493dd5a4d107">&#9670;&#160;</a></span>TransportSediment()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename CarryCapacity , typename Deposition , typename Erosion , typename HeightAdder &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TinyErode::Simulation::TransportSediment </td>
+          <td>(</td>
+          <td class="paramtype">CarryCapacity</td>          <td class="paramname"><span class="paramname"><em>kC</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Deposition</td>          <td class="paramname"><span class="paramname"><em>kD</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Erosion</td>          <td class="paramname"><span class="paramname"><em>kE</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HeightAdder</td>          <td class="paramname"><span class="paramname"><em>heightAdder</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Erodes and deposites sediment, and then moves remaining sediment based on the velocity of the water at each cell.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kC</td><td>A function taking an x and y coordinate and returning the carry capacity constant at that particular location.</td></tr>
+    <tr><td class="paramname">kD</td><td>A function taking an x and y coordinate and returning the deposition constant at that particular location.</td></tr>
+    <tr><td class="paramname">kE</td><td>A function taking an x and y coordinate and returning the erosion constant at that particular location.</td></tr>
+    <tr><td class="paramname">heightAdder</td><td>A function taking an x and y coordinate, as well as a height delta, and adding the value to the height model.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Заметки</dt><dd>For simple models, <code>Kc</code> <code>Ke</code> and <code>Kd</code> can both be single, uniform values. </dd></dl>
+
+</div>
+</div>
+<a id="abb54c324a6e6634408ed2ca9394c4451" name="abb54c324a6e6634408ed2ca9394c4451"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb54c324a6e6634408ed2ca9394c4451">&#9670;&#160;</a></span>TransportWater()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename WaterAdder &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void TinyErode::Simulation::TransportWater </td>
+          <td>(</td>
+          <td class="paramtype">WaterAdder</td>          <td class="paramname"><span class="paramname"><em>waterAdder</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This function is called after Simulation::ComputeFlow in order to determine where the water at each cell is going to be moving.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">waterAdder</td><td>A function taking an x and y coordinate as well as a water value to be added to a cell within the water model. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Solution/Solution/Research.Erosion/<a class="el" href="a39020_source.html">TinyErode.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>TinyErode</b></li><li class="navelem"><a class="el" href="a39091.html">Simulation</a></li>
+    <li class="footer">Документация по Research.Erosion. Последние изменения: Чт 20 Фев 2025 13:48:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

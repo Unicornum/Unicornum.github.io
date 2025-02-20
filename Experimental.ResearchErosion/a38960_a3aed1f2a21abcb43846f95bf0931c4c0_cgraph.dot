@@ -1,0 +1,32 @@
+digraph "fast_gaussian_blur"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Verdana,fontsize=10,labelfontname=Verdana,labelfontsize=10];
+  node [fontname=Verdana,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fast_gaussian_blur",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="This function performs a fast Gaussian blur. Templated by buffer data type T and number of passes N."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="flip_block",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a7191aa1b14ce65231ee4063e4c553134",tooltip="This function performs a 2D tranposition of an image."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="horizontal_blur",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#ac2c6b7eb7fa944f2551f7ca9367bd54c",tooltip="Utility template dispatcher function for horizontal_blur. Templated by buffer data type T,..."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="horizontal_blur_extend",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a751e1f0cd829a5d5f37180e072b78ab2",tooltip="This function performs a single separable horizontal box blur pass with border extend policy...."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="round_v",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a5397ae7efe08dfe8b80fd7c1dbc60bf8",tooltip="helper to compute rounding value for the specified type. This is used to alleviate integer types roun..."];
+  Node3 -> Node6 [id="edge5_Node000003_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="horizontal_blur_kernel_crop",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a2015be94b95780cdcd0572effed5768b",tooltip="This function performs a single separable horizontal box blur pass with kernel crop border policy...."];
+  Node6 -> Node5 [id="edge6_Node000006_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node7 [id="edge7_Node000003_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="horizontal_blur_mirror",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#af30f5af8ce044cca58c0bfe825514c43",tooltip="This function performs a single separable horizontal box blur pass with mirror border policy...."];
+  Node7 -> Node8 [id="edge8_Node000007_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="remap_index",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a29f766ddb647638fa64751b889de4a30",tooltip="Helper to compute array indices for different border policies."];
+  Node7 -> Node5 [id="edge9_Node000007_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node3 -> Node9 [id="edge10_Node000003_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="horizontal_blur_wrap",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#aca99ab1cd3e76aff7d9a7f956be98712",tooltip="This function performs a single separable horizontal box blur pass with mirror border policy...."];
+  Node9 -> Node8 [id="edge11_Node000009_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node9 -> Node5 [id="edge12_Node000009_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node10 [id="edge13_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="sigma_to_box_radius",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a72a968ebf236ac4aad0bc61ebd56f12f",tooltip="This function converts the standard deviation of Gaussian blur into a box radius for each box blur pa..."];
+}

@@ -1,0 +1,1112 @@
+<!-- HTML header for doxygen 1.8.15-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVJKS623L0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WVJKS623L0');
+    </script>
+    <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Research.Erosion: Файл Solution/Solution/Research.Erosion/fast_gaussian_blur_template.h</title>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="dynsections.js"></script>
+    <link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+    <link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+    <link href="doxygen.css" rel="stylesheet" type="text/css" />
+    <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Research.Erosion
+   &#160;<span id="projectnumber">v1.0.0</span>
+   </div>
+   <div id="projectbrief">Исследование применения эрозии к карте высот</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('a38960.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Перечисления</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл fast_gaussian_blur_template.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>This contains a C++ implementation of a fast Gaussian blur algorithm in linear time.  
+<a href="#details">Подробнее...</a></p>
+
+<p><a href="a38960_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Перечисления</h2></td></tr>
+<tr class="memitem:aea307cd05a4c363d9cac3828a62f4127" id="r_aea307cd05a4c363d9cac3828a62f4127"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> </td></tr>
+<tr class="memdesc:aea307cd05a4c363d9cac3828a62f4127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration that decribes border policies for filters.  <a href="#aea307cd05a4c363d9cac3828a62f4127">Подробнее...</a><br /></td></tr>
+<tr class="separator:aea307cd05a4c363d9cac3828a62f4127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d71fe894b897c26adb0313a574b9839" id="r_a8d71fe894b897c26adb0313a574b9839"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> </td></tr>
+<tr class="separator:a8d71fe894b897c26adb0313a574b9839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a29f766ddb647638fa64751b889de4a30" id="r_a29f766ddb647638fa64751b889de4a30"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P&gt; </td></tr>
+<tr class="memitem:a29f766ddb647638fa64751b889de4a30"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a29f766ddb647638fa64751b889de4a30">remap_index</a> (const int begin, const int end, const int index)</td></tr>
+<tr class="memdesc:a29f766ddb647638fa64751b889de4a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to compute array indices for different border policies.  <br /></td></tr>
+<tr class="separator:a29f766ddb647638fa64751b889de4a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5397ae7efe08dfe8b80fd7c1dbc60bf8" id="r_a5397ae7efe08dfe8b80fd7c1dbc60bf8"><td class="memTemplParams" colspan="2"><a id="a5397ae7efe08dfe8b80fd7c1dbc60bf8" name="a5397ae7efe08dfe8b80fd7c1dbc60bf8"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a5397ae7efe08dfe8b80fd7c1dbc60bf8"><td class="memTemplItemLeft" align="right" valign="top">constexpr float&#160;</td><td class="memTemplItemRight" valign="bottom"><b>round_v</b> ()</td></tr>
+<tr class="memdesc:a5397ae7efe08dfe8b80fd7c1dbc60bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper to compute rounding value for the specified type. This is used to alleviate integer types rounding errors causing image darkening. <br /></td></tr>
+<tr class="separator:a5397ae7efe08dfe8b80fd7c1dbc60bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a751e1f0cd829a5d5f37180e072b78ab2" id="r_a751e1f0cd829a5d5f37180e072b78ab2"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> kernel = kSmall&gt; </td></tr>
+<tr class="memitem:a751e1f0cd829a5d5f37180e072b78ab2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a751e1f0cd829a5d5f37180e072b78ab2">horizontal_blur_extend</a> (const T *in, T *out, const int w, const int h, const int r)</td></tr>
+<tr class="memdesc:a751e1f0cd829a5d5f37180e072b78ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a single separable horizontal box blur pass with border extend policy. Templated by buffer data type T, buffer number of channels C. Faster version for kernels that are smaller than the image width (r &lt;= w).  <br /></td></tr>
+<tr class="separator:a751e1f0cd829a5d5f37180e072b78ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2015be94b95780cdcd0572effed5768b" id="r_a2015be94b95780cdcd0572effed5768b"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> kernel = kSmall&gt; </td></tr>
+<tr class="memitem:a2015be94b95780cdcd0572effed5768b"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a2015be94b95780cdcd0572effed5768b">horizontal_blur_kernel_crop</a> (const T *in, T *out, const int w, const int h, const int r)</td></tr>
+<tr class="memdesc:a2015be94b95780cdcd0572effed5768b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a single separable horizontal box blur pass with kernel crop border policy. Templated by buffer data type T, buffer number of channels C. Faster version for kernels that are smaller than the image width (r &lt;= w).  <br /></td></tr>
+<tr class="separator:a2015be94b95780cdcd0572effed5768b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30f5af8ce044cca58c0bfe825514c43" id="r_af30f5af8ce044cca58c0bfe825514c43"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> kernel = kSmall&gt; </td></tr>
+<tr class="memitem:af30f5af8ce044cca58c0bfe825514c43"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af30f5af8ce044cca58c0bfe825514c43">horizontal_blur_mirror</a> (const T *in, T *out, const int w, const int h, const int r)</td></tr>
+<tr class="memdesc:af30f5af8ce044cca58c0bfe825514c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a single separable horizontal box blur pass with mirror border policy. Templated by buffer data type T, buffer number of channels C. Faster version for kernels that are smaller than the image width (r &lt; w).  <br /></td></tr>
+<tr class="separator:af30f5af8ce044cca58c0bfe825514c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca99ab1cd3e76aff7d9a7f956be98712" id="r_aca99ab1cd3e76aff7d9a7f956be98712"><td class="memTemplParams" colspan="2">template&lt;typename T , int C&gt; </td></tr>
+<tr class="memitem:aca99ab1cd3e76aff7d9a7f956be98712"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aca99ab1cd3e76aff7d9a7f956be98712">horizontal_blur_wrap</a> (const T *in, T *out, const int w, const int h, const int r)</td></tr>
+<tr class="memdesc:aca99ab1cd3e76aff7d9a7f956be98712"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a single separable horizontal box blur pass with mirror border policy. Templated by buffer data type T, buffer number of channels C. Generic version for kernels that are larger than the image width (r &gt;= w).  <br /></td></tr>
+<tr class="separator:aca99ab1cd3e76aff7d9a7f956be98712"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2c6b7eb7fa944f2551f7ca9367bd54c" id="r_ac2c6b7eb7fa944f2551f7ca9367bd54c"><td class="memTemplParams" colspan="2">template&lt;typename T , int C, <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P = kMirror&gt; </td></tr>
+<tr class="memitem:ac2c6b7eb7fa944f2551f7ca9367bd54c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ac2c6b7eb7fa944f2551f7ca9367bd54c">horizontal_blur</a> (const T *in, T *out, const int w, const int h, const int r)</td></tr>
+<tr class="memdesc:ac2c6b7eb7fa944f2551f7ca9367bd54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template dispatcher function for horizontal_blur. Templated by buffer data type T, buffer number of channels C, and border policy P.  <br /></td></tr>
+<tr class="separator:ac2c6b7eb7fa944f2551f7ca9367bd54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad870aa2979b2d123774b17b26f507d07" id="r_ad870aa2979b2d123774b17b26f507d07"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P = kMirror&gt; </td></tr>
+<tr class="memitem:ad870aa2979b2d123774b17b26f507d07"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad870aa2979b2d123774b17b26f507d07">horizontal_blur</a> (const T *in, T *out, const int w, const int h, const int c, const int r)</td></tr>
+<tr class="memdesc:ad870aa2979b2d123774b17b26f507d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template dispatcher function for horizontal_blur. Templated by buffer data type T and border policy P.  <br /></td></tr>
+<tr class="separator:ad870aa2979b2d123774b17b26f507d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7191aa1b14ce65231ee4063e4c553134" id="r_a7191aa1b14ce65231ee4063e4c553134"><td class="memTemplParams" colspan="2">template&lt;typename T , int C&gt; </td></tr>
+<tr class="memitem:a7191aa1b14ce65231ee4063e4c553134"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7191aa1b14ce65231ee4063e4c553134">flip_block</a> (const T *in, T *out, const int w, const int h)</td></tr>
+<tr class="memdesc:a7191aa1b14ce65231ee4063e4c553134"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a 2D tranposition of an image.  <br /></td></tr>
+<tr class="separator:a7191aa1b14ce65231ee4063e4c553134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa477b87ae8cf52bff28c8e92dc73f91e" id="r_aa477b87ae8cf52bff28c8e92dc73f91e"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa477b87ae8cf52bff28c8e92dc73f91e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa477b87ae8cf52bff28c8e92dc73f91e">flip_block</a> (const T *in, T *out, const int w, const int h, const int c)</td></tr>
+<tr class="memdesc:aa477b87ae8cf52bff28c8e92dc73f91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template dispatcher function for flip_block. Templated by buffer data type T.  <br /></td></tr>
+<tr class="separator:aa477b87ae8cf52bff28c8e92dc73f91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72a968ebf236ac4aad0bc61ebd56f12f" id="r_a72a968ebf236ac4aad0bc61ebd56f12f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72a968ebf236ac4aad0bc61ebd56f12f">sigma_to_box_radius</a> (int boxes[], const float sigma, const int n)</td></tr>
+<tr class="memdesc:a72a968ebf236ac4aad0bc61ebd56f12f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function converts the standard deviation of Gaussian blur into a box radius for each box blur pass. Returns the approximate sigma value achieved with the N box blur passes.  <br /></td></tr>
+<tr class="separator:a72a968ebf236ac4aad0bc61ebd56f12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aed1f2a21abcb43846f95bf0931c4c0" id="r_a3aed1f2a21abcb43846f95bf0931c4c0"><td class="memTemplParams" colspan="2">template&lt;typename T , unsigned int N, <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P&gt; </td></tr>
+<tr class="memitem:a3aed1f2a21abcb43846f95bf0931c4c0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3aed1f2a21abcb43846f95bf0931c4c0">fast_gaussian_blur</a> (T *&amp;in, T *&amp;out, const int w, const int h, const int c, const float sigma)</td></tr>
+<tr class="memdesc:a3aed1f2a21abcb43846f95bf0931c4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function performs a fast Gaussian blur. Templated by buffer data type T and number of passes N.  <br /></td></tr>
+<tr class="separator:a3aed1f2a21abcb43846f95bf0931c4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f93aa96b4c2cb1a24f84cc13b64492" id="r_a67f93aa96b4c2cb1a24f84cc13b64492"><td class="memTemplParams" colspan="2">template&lt;typename T , <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P = kMirror&gt; </td></tr>
+<tr class="memitem:a67f93aa96b4c2cb1a24f84cc13b64492"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a67f93aa96b4c2cb1a24f84cc13b64492">fast_gaussian_blur</a> (T *&amp;in, T *&amp;out, const int w, const int h, const int c, const float sigma, const uint32_t n)</td></tr>
+<tr class="memdesc:a67f93aa96b4c2cb1a24f84cc13b64492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template dispatcher function for fast_gaussian_blur. Templated by buffer data type T and border policy P.  <br /></td></tr>
+<tr class="separator:a67f93aa96b4c2cb1a24f84cc13b64492"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8104d5030ecfebaa17efe3b7dcab257" id="r_aa8104d5030ecfebaa17efe3b7dcab257"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aa8104d5030ecfebaa17efe3b7dcab257"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#aa8104d5030ecfebaa17efe3b7dcab257">fast_gaussian_blur</a> (T *&amp;in, T *&amp;out, const int w, const int h, const int c, const float sigma, const uint32_t n=3, const <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> p=kExtend)</td></tr>
+<tr class="memdesc:aa8104d5030ecfebaa17efe3b7dcab257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility template dispatcher function for fast_gaussian_blur. Templated by buffer data type.  <br /></td></tr>
+<tr class="separator:aa8104d5030ecfebaa17efe3b7dcab257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>This contains a C++ implementation of a fast Gaussian blur algorithm in linear time. </p>
+<dl class="section author"><dt>Автор</dt><dd>Basile Fraboni </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2017 - 2022</dd></dl>
+<p>The image buffer is supposed to be of size <code>w * h * c</code>, where <code>h</code> is height, <code>w</code> is width, and <code>c</code> is the number of channels. The default implementation only supports up to 4 channels images, but one can easily add support for any number of channels using either specific template cases or a generic function that takes the number of channels as an explicit parameter. This implementation is focused on learning and readability more than on performance. The fast blur algorithm is performed with several box blur passes over an image. The filter converges towards a true Gaussian blur after several passes thanks to the theorem central limit. In practice, three passes (biquadratic filter) are sufficient for good quality results. For further details please refer to:</p><ul>
+<li><a href="http://blog.ivank.net/fastest-gaussian-blur.html">http://blog.ivank.net/fastest-gaussian-blur.html</a></li>
+<li><a href="https://www.peterkovesi.com/papers/FastGaussianSmoothing.pdf">https://www.peterkovesi.com/papers/FastGaussianSmoothing.pdf</a></li>
+<li><a href="https://github.com/bfraboni/FastGaussianBlur">https://github.com/bfraboni/FastGaussianBlur</a></li>
+</ul>
+<p><b>Note:</b> The fast gaussian blur algorithm is not accurate on image boundaries. It performs a diffusion of the signal with several passes, each pass depending on the output of the preceding one. Some of the diffused signal is lost near borders and results in a slight loss of accuracy for next pass. This problem can be solved by increasing the image support of half the box kernel extent at each pass of the algorithm. The added padding would in this case capture the diffusion and make the next pass accurate. On contrary true Gaussian blur does not suffer this problem since the whole diffusion process is performed in one pass only. The extra padding is not performed in this implementation, however we provide several border policies resulting in dfferent approximations and accuracies. </p>
+</div><h2 class="groupheader">Перечисления</h2>
+<a id="aea307cd05a4c363d9cac3828a62f4127" name="aea307cd05a4c363d9cac3828a62f4127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea307cd05a4c363d9cac3828a62f4127">&#9670;&#160;</a></span>Border</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enumeration that decribes border policies for filters. </p>
+<p>For a detailed description of border policies please refer to:</p><ul>
+<li><a href="https://en.wikipedia.org/wiki/Kernel_(image_processing)#Edge_Handling">https://en.wikipedia.org/wiki/Kernel_(image_processing)#Edge_Handling</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/develop/documentation/ipp-dev-reference/top/volume-2-image-processing/filtering-functions-2/user-defined-border-types.html">https://www.intel.com/content/www/us/en/develop/documentation/ipp-dev-reference/top/volume-2-image-processing/filtering-functions-2/user-defined-border-types.html</a></li>
+<li><a href="https://docs.opencv.org/3.4/d2/de8/group__core__array.html#ga209f2f4869e304c82d07739337eae7c5">https://docs.opencv.org/3.4/d2/de8/group__core__array.html#ga209f2f4869e304c82d07739337eae7c5</a></li>
+<li><a href="http://iihm.imag.fr/Docs/java/jai1_0guide/Image-enhance.doc.html">http://iihm.imag.fr/Docs/java/jai1_0guide/Image-enhance.doc.html</a> </li>
+</ul>
+
+</div>
+</div>
+<a id="a8d71fe894b897c26adb0313a574b9839" name="a8d71fe894b897c26adb0313a574b9839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d71fe894b897c26adb0313a574b9839">&#9670;&#160;</a></span>Kernel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sliding kernel accumulation has 4 cases:</p><ol type="1">
+<li>left side out and right side in</li>
+<li>left side in and right side in</li>
+<li>left side in and right side out</li>
+<li>left side out and right side out</li>
+</ol>
+<p>Small (S) kernels corresponds to kernels with radius &lt; width; r &lt; w Mid (M) kernels corresponds to kernels with kernel size &lt; width; 2r+1 &lt; w Large (L) kernels corresponds to kernels with radius &gt; width; r &gt; w</p>
+<p>The fast version for (S) results in 3 loops for cases 1, 2 and 3. The fast version for (M) results in 3 loops for cases 1, 4 and 3. The fast version for (L) results in 1 loop for cases 4. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a3aed1f2a21abcb43846f95bf0931c4c0" name="a3aed1f2a21abcb43846f95bf0931c4c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aed1f2a21abcb43846f95bf0931c4c0">&#9670;&#160;</a></span>fast_gaussian_blur() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , unsigned int N, <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fast_gaussian_blur </td>
+          <td>(</td>
+          <td class="paramtype">T *&amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>sigma</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function performs a fast Gaussian blur. Templated by buffer data type T and number of passes N. </p>
+<p>Applying several times box blur tends towards a true Gaussian blur (thanks TCL). Three passes are sufficient for good results. Templated by buffer data type T and number of passes N. The input buffer is also used as temporary and modified during the process hence it can not be constant.</p>
+<p>Usually the process should alternate between horizontal and vertical passes as much times as we want box blur passes. However thanks to box blur properties the separable passes can be performed in any order without changing the result. Hence for performance purposes the algorithm is:</p><ul>
+<li>apply N times horizontal blur (horizontal passes)</li>
+<li>flip the image buffer (transposition)</li>
+<li>apply N times horizontal blur (vertical passes)</li>
+<li>flip the image buffer (transposition)</li>
+</ul>
+<p>We provide two version of the function:</p><ul>
+<li>generic N passes (in which more std::swap are used)</li>
+<li>specialized 3 passes only</li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>source buffer reference ptr </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer reference ptr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>image channels </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sigma</td><td>Gaussian standard deviation </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a3aed1f2a21abcb43846f95bf0931c4c0_cgraph.png" border="0" usemap="#aa38960_a3aed1f2a21abcb43846f95bf0931c4c0_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a3aed1f2a21abcb43846f95bf0931c4c0_icgraph.png" border="0" usemap="#aa38960_a3aed1f2a21abcb43846f95bf0931c4c0_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a67f93aa96b4c2cb1a24f84cc13b64492" name="a67f93aa96b4c2cb1a24f84cc13b64492"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f93aa96b4c2cb1a24f84cc13b64492">&#9670;&#160;</a></span>fast_gaussian_blur() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P = kMirror&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fast_gaussian_blur </td>
+          <td>(</td>
+          <td class="paramtype">T *&amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>sigma</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Utility template dispatcher function for fast_gaussian_blur. Templated by buffer data type T and border policy P. </p>
+<p>This is the main exposed function and the one that should be used in programs.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>source buffer reference ptr </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer reference ptr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>image channels </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sigma</td><td>Gaussian standard deviation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>number of passes, should be &gt; 0 </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a67f93aa96b4c2cb1a24f84cc13b64492_cgraph.png" border="0" usemap="#aa38960_a67f93aa96b4c2cb1a24f84cc13b64492_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aa8104d5030ecfebaa17efe3b7dcab257" name="aa8104d5030ecfebaa17efe3b7dcab257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8104d5030ecfebaa17efe3b7dcab257">&#9670;&#160;</a></span>fast_gaussian_blur() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void fast_gaussian_blur </td>
+          <td>(</td>
+          <td class="paramtype">T *&amp;</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&amp;</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>sigma</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint32_t</td>          <td class="paramname"><span class="paramname"><em>n</em></span><span class="paramdefsep"> = </span><span class="paramdefval">3</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a></td>          <td class="paramname"><span class="paramname"><em>p</em></span><span class="paramdefsep"> = </span><span class="paramdefval">kExtend</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Utility template dispatcher function for fast_gaussian_blur. Templated by buffer data type. </p>
+<p>This is the main exposed function and the one that should be used in programs.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">in</td><td>source buffer reference ptr </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer reference ptr </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>image channels </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sigma</td><td>Gaussian standard deviation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>number of passes, should be &gt; 0 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>border policy {kExtend, kMirror, kKernelCrop, kWrap} </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_aa8104d5030ecfebaa17efe3b7dcab257_cgraph.png" border="0" usemap="#aa38960_aa8104d5030ecfebaa17efe3b7dcab257_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a7191aa1b14ce65231ee4063e4c553134" name="a7191aa1b14ce65231ee4063e4c553134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7191aa1b14ce65231ee4063e4c553134">&#9670;&#160;</a></span>flip_block() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flip_block </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function performs a 2D tranposition of an image. </p>
+<p>The transposition is done per block to reduce the number of cache misses and improve cache coherency for large image buffers. Templated by buffer data type T and buffer number of channels C.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a7191aa1b14ce65231ee4063e4c553134_icgraph.png" border="0" usemap="#aa38960_a7191aa1b14ce65231ee4063e4c553134_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aa477b87ae8cf52bff28c8e92dc73f91e" name="aa477b87ae8cf52bff28c8e92dc73f91e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa477b87ae8cf52bff28c8e92dc73f91e">&#9670;&#160;</a></span>flip_block() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void flip_block </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility template dispatcher function for flip_block. Templated by buffer data type T. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>image channels </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_aa477b87ae8cf52bff28c8e92dc73f91e_cgraph.png" border="0" usemap="#aa38960_aa477b87ae8cf52bff28c8e92dc73f91e_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ad870aa2979b2d123774b17b26f507d07" name="ad870aa2979b2d123774b17b26f507d07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad870aa2979b2d123774b17b26f507d07">&#9670;&#160;</a></span>horizontal_blur() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P = kMirror&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void horizontal_blur </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>c</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility template dispatcher function for horizontal_blur. Templated by buffer data type T and border policy P. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>image channels </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>box dimension </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_ad870aa2979b2d123774b17b26f507d07_cgraph.png" border="0" usemap="#aa38960_ad870aa2979b2d123774b17b26f507d07_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ac2c6b7eb7fa944f2551f7ca9367bd54c" name="ac2c6b7eb7fa944f2551f7ca9367bd54c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2c6b7eb7fa944f2551f7ca9367bd54c">&#9670;&#160;</a></span>horizontal_blur() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int C, <a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P = kMirror&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void horizontal_blur </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Utility template dispatcher function for horizontal_blur. Templated by buffer data type T, buffer number of channels C, and border policy P. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>box dimension </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_ac2c6b7eb7fa944f2551f7ca9367bd54c_cgraph.png" border="0" usemap="#aa38960_ac2c6b7eb7fa944f2551f7ca9367bd54c_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_ac2c6b7eb7fa944f2551f7ca9367bd54c_icgraph.png" border="0" usemap="#aa38960_ac2c6b7eb7fa944f2551f7ca9367bd54c_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a751e1f0cd829a5d5f37180e072b78ab2" name="a751e1f0cd829a5d5f37180e072b78ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a751e1f0cd829a5d5f37180e072b78ab2">&#9670;&#160;</a></span>horizontal_blur_extend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int C, <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> kernel = kSmall&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void horizontal_blur_extend </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function performs a single separable horizontal box blur pass with border extend policy. Templated by buffer data type T, buffer number of channels C. Faster version for kernels that are smaller than the image width (r &lt;= w). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>box dimension </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>mid kernels</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a751e1f0cd829a5d5f37180e072b78ab2_cgraph.png" border="0" usemap="#aa38960_a751e1f0cd829a5d5f37180e072b78ab2_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a751e1f0cd829a5d5f37180e072b78ab2_icgraph.png" border="0" usemap="#aa38960_a751e1f0cd829a5d5f37180e072b78ab2_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a2015be94b95780cdcd0572effed5768b" name="a2015be94b95780cdcd0572effed5768b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2015be94b95780cdcd0572effed5768b">&#9670;&#160;</a></span>horizontal_blur_kernel_crop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int C, <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> kernel = kSmall&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void horizontal_blur_kernel_crop </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function performs a single separable horizontal box blur pass with kernel crop border policy. Templated by buffer data type T, buffer number of channels C. Faster version for kernels that are smaller than the image width (r &lt;= w). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>box dimension </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a2015be94b95780cdcd0572effed5768b_cgraph.png" border="0" usemap="#aa38960_a2015be94b95780cdcd0572effed5768b_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a2015be94b95780cdcd0572effed5768b_icgraph.png" border="0" usemap="#aa38960_a2015be94b95780cdcd0572effed5768b_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="af30f5af8ce044cca58c0bfe825514c43" name="af30f5af8ce044cca58c0bfe825514c43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30f5af8ce044cca58c0bfe825514c43">&#9670;&#160;</a></span>horizontal_blur_mirror()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int C, <a class="el" href="#a8d71fe894b897c26adb0313a574b9839">Kernel</a> kernel = kSmall&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void horizontal_blur_mirror </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function performs a single separable horizontal box blur pass with mirror border policy. Templated by buffer data type T, buffer number of channels C. Faster version for kernels that are smaller than the image width (r &lt; w). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>box dimension</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="a39074.html#_todo000001">Необходимо сделать</a></b></dt><dd>Rework this one at some point. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_af30f5af8ce044cca58c0bfe825514c43_cgraph.png" border="0" usemap="#aa38960_af30f5af8ce044cca58c0bfe825514c43_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_af30f5af8ce044cca58c0bfe825514c43_icgraph.png" border="0" usemap="#aa38960_af30f5af8ce044cca58c0bfe825514c43_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="aca99ab1cd3e76aff7d9a7f956be98712" name="aca99ab1cd3e76aff7d9a7f956be98712"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca99ab1cd3e76aff7d9a7f956be98712">&#9670;&#160;</a></span>horizontal_blur_wrap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , int C&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void horizontal_blur_wrap </td>
+          <td>(</td>
+          <td class="paramtype">const T *</td>          <td class="paramname"><span class="paramname"><em>in</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *</td>          <td class="paramname"><span class="paramname"><em>out</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>w</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>h</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>r</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function performs a single separable horizontal box blur pass with mirror border policy. Templated by buffer data type T, buffer number of channels C. Generic version for kernels that are larger than the image width (r &gt;= w). </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">in</td><td>source buffer </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">out</td><td>target buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>image width </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">h</td><td>image height </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">r</td><td>box dimension</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="a39074.html#_todo000002">Необходимо сделать</a></b></dt><dd>Make a faster version for small kernels. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_aca99ab1cd3e76aff7d9a7f956be98712_cgraph.png" border="0" usemap="#aa38960_aca99ab1cd3e76aff7d9a7f956be98712_cgraph" alt=""/></div>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_aca99ab1cd3e76aff7d9a7f956be98712_icgraph.png" border="0" usemap="#aa38960_aca99ab1cd3e76aff7d9a7f956be98712_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a29f766ddb647638fa64751b889de4a30" name="a29f766ddb647638fa64751b889de4a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f766ddb647638fa64751b889de4a30">&#9670;&#160;</a></span>remap_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="#aea307cd05a4c363d9cac3828a62f4127">Border</a> P&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remap_index </td>
+          <td>(</td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>begin</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>end</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to compute array indices for different border policies. </p>
+<p>FIXME: is there a better way ?</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a29f766ddb647638fa64751b889de4a30_icgraph.png" border="0" usemap="#aa38960_a29f766ddb647638fa64751b889de4a30_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a72a968ebf236ac4aad0bc61ebd56f12f" name="a72a968ebf236ac4aad0bc61ebd56f12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72a968ebf236ac4aad0bc61ebd56f12f">&#9670;&#160;</a></span>sigma_to_box_radius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float sigma_to_box_radius </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>boxes</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float</td>          <td class="paramname"><span class="paramname"><em>sigma</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>n</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function converts the standard deviation of Gaussian blur into a box radius for each box blur pass. Returns the approximate sigma value achieved with the N box blur passes. </p>
+<p>For further details please refer to :</p><ul>
+<li><a href="https://www.peterkovesi.com/papers/FastGaussianSmoothing.pdf">https://www.peterkovesi.com/papers/FastGaussianSmoothing.pdf</a></li>
+</ul>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">boxes</td><td>box radiis for kernel sizes of 2*boxes[i]+1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sigma</td><td>Gaussian standard deviation </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">n</td><td>number of box blur pass </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="a38960_a72a968ebf236ac4aad0bc61ebd56f12f_icgraph.png" border="0" usemap="#aa38960_a72a968ebf236ac4aad0bc61ebd56f12f_icgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_352fddf81fae93e496b4304a26bf5b0c.html">Research.Erosion</a></li><li class="navelem"><a class="el" href="a38960.html">fast_gaussian_blur_template.h</a></li>
+    <li class="footer">Документация по Research.Erosion. Последние изменения: Чт 20 Фев 2025 13:48:06. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+  </ul>
+</div>
+</body>
+</html>

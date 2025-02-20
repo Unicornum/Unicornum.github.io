@@ -1,0 +1,20 @@
+digraph "horizontal_blur_mirror"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Verdana,fontsize=10,labelfontname=Verdana,labelfontsize=10];
+  node [fontname=Verdana,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="horizontal_blur_mirror",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="This function performs a single separable horizontal box blur pass with mirror border policy...."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="horizontal_blur",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#ac2c6b7eb7fa944f2551f7ca9367bd54c",tooltip="Utility template dispatcher function for horizontal_blur. Templated by buffer data type T,..."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fast_gaussian_blur",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a3aed1f2a21abcb43846f95bf0931c4c0",tooltip="This function performs a fast Gaussian blur. Templated by buffer data type T and number of passes N."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fast_gaussian_blur",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#a67f93aa96b4c2cb1a24f84cc13b64492",tooltip="Utility template dispatcher function for fast_gaussian_blur. Templated by buffer data type T and bord..."];
+  Node3 -> Node5 [id="edge4_Node000003_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fast_gaussian_blur",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#aa8104d5030ecfebaa17efe3b7dcab257",tooltip="Utility template dispatcher function for fast_gaussian_blur. Templated by buffer data type."];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="horizontal_blur",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$a38960.html#ad870aa2979b2d123774b17b26f507d07",tooltip="Utility template dispatcher function for horizontal_blur. Templated by buffer data type T and border ..."];
+}
