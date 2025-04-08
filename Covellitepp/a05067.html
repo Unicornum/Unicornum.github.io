@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Рендеринг во внеэкранную поверхность</title>
+    <title>Covellite++: Создание кода панелей GUI</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 23:13 04.01.2025</span>
+   &#160;<span id="projectnumber">Version: 2.3.1 Revision: ??? Platform: x64 Build: 21:47 08.04.2025</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,59 +108,156 @@ $(function(){initNavTree('a05067.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Рендеринг во внеэкранную поверхность</div></div>
+  <div class="headertitle"><div class="title">Создание кода панелей GUI</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Рендеринг во внеэкранную поверхность позволяет производить отрисовку в текстуру(ы) которую(ые) потом можно использовать для рендеринга другой сцены. Это используется для многопроходного рендеринга и реализации таких техник как отложенное освещение, тени от объектов и <a href="https://habr.com/ru/post/453692/">постобработка</a>.</p>
-<h1>Рендеринг во внеэкранную поверхность </h1>
-<p>Логика использования рендеринга во внеэкранную поверхность подразумевает рендеринг в несколько проходов.</p><ul>
-<li>Первый проход:<ul>
-<li>Создание объекта компонента <b>BkSurface</b> и набора используемых текстур, в которые и будет производится рендер.</li>
-<li>Объявление и использование структуры пиксельного шейдера для вывода в несколько текстур одновременно.</li>
+<div class="textblock"><ul>
+<li>Создать .rcss и .rml файлы описания отдельных <a class="el" href="#ScreenDescriptionUsingFrameworkAnchor">экранов программы</a>.</li>
+<li>Создать <a class="el" href="#ScreenClassesUsingFrameworkAnchor">классы</a> отдельных экранов программы.</li>
+<li>Создать <a class="el" href="#MainWindowClassUsingFrameworkAnchor">класс</a> главного окна программы.   </li>
 </ul>
-</li>
-<li>Последующие проходы:<ul>
-<li>Создание объектов текстур, содержащих данные, полученные на первом проходе.</li>
-</ul>
-</li>
-</ul>
-<h2>BkSurface </h2>
-<p>Сцена определяется ее камерой, внеэкранной поверхностью, настройками конвеера рендеринга и расположенными в ней объектами. Следует учитывать, что рендер компонента <b>Camera</b> отключает ранее активированную внеэкранную поверность (т.е. переключает вывод на экран), а компоненты <b>State</b> работают с текущей поверхностью рендеринга, поэтому компонент <b>BkSurface</b> необходимо ставить между компонентами камеры и настроек конвеера рендеринга.</p>
-<p>Компонент <b>BkSurface</b> ожидает один или несколько компонентов <b>Data.Texture</b> (можно использовать от 0 до 8 текстур для цветовых компонентов и одну для буфера глубины), которые он установит в качестве цели рендеринга всех последующих объектов:</p><ul>
-<li>Тип цели рендеринга (цвет или глубина) определяется по параметру <b>destination</b> компонента <b>Data.Texture</b> ('depth' для буфера глубины и цвет для любого другого значения).</li>
-<li>Индекс цветовой поверхности (начиная с нуля) определяется порядком передачи компонентов <b>Data.Texture</b> компоненту <b>BkSurface</b>.</li>
-</ul>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Компонент <b>BkSurface</b> создаст новые текстуры для переданных ему компонентов <b>Data.Texture</b>, причем их размеры будут совпадать с размерами viewport'a вывода, заданного у камеры (переданные значения параметров <b>width</b> и <b>height</b> будут проигнорированы).</li>
-<li>Переданным компонентам <b>Data.Texture</b> будут установлены размеры созданных текстур как значения параметров <b>width</b> и <b>height</b>.</li>
-<li>При изменении размеров окна программы текстуры будут пересозданы с новыми размерами, значения параметров <b>width</b> и <b>height</b> также будут перезаписаны.</li>
+<p><a class="anchor" id="ScreenDescriptionUsingFrameworkAnchor"></a> </p><h2>Создание .rcss и .rml файлов описания отдельных экранов программы </h2>
+<p>Как это делается см. в документации/примерах <a href="https://mikke89.github.io/RmlUiDoc/">библиотеки</a>.</p>
+<p><a href="https://mikke89.github.io/RmlUiDoc/pages/rcss/property_index.html">Доступные css свойства</a>.</p>
+<dl class="section note"><dt>Заметки</dt><dd>Внешний вид элементов управления можно задавать при помощи либо стилей css, либо изображений из заранее подготовленной текстуры - во втором случае .rml файл грузится быстрее.</dd></dl>
+<p>Все файлы (.rml, .rcss, .png) следует поместить в папку (Windows - корневая папка программы, Android - папка assets проекта Packaging), пути к этим файлам в программе задаются относительно этой папки, а в самом файле - относительно папки расположения этого файла.</p>
+<p>Файлы .rml могут содержать в качестве текста не ASCII символы, но в этом случае их следует сохранять как utf8, а используемые шрифты должны поддерживать соответствующие Unicode символы.</p>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Файлы .rcss не должны сохраняться как utf8, т.к. они включаются целиком в состав файлов .rml при парсинге, что приводит к появлению Assert'ов при запуске Debug версии программы.</dd></dl>
+<p><a class="anchor" id="ScreenClassesUsingFrameworkAnchor"></a> </p><h2>Создать классы отдельных экранов программы </h2>
+<p>Для каждого экрана программы необходимо создать класс-наследник от класса covellite::rocket::Layer, передав ему в качестве второго параметра конструктора путь к соответствующему .rml файлу.</p>
+<div class="fragment"><div class="line"><span class="keyword">class </span>MainScreen final :</div>
+<div class="line">  <span class="keyword">public</span> <a class="code hl_class" href="a04285.html">::covellite::gui::Layer</a></div>
+<div class="line">{</div>
+</div><!-- fragment --><div class="fragment"><div class="line"><a class="code hl_function" href="a04885.html#a82729fb1bda8ecb54c4d2bc89d1727eb">MainScreen::MainScreen</a>(IWindowGui_t &amp; _Window) :</div>
+<div class="line">  Layer(_Window, <span class="stringliteral">&quot;Data/main.rml&quot;</span>)</div>
+<div class="line">{</div>
+</div><!-- fragment --><p>Если необходим экран с заголовком, содержащим текст, заданный в заголовке .rml файла, создать класс наследник слоя, в конструкторе которого передать базовому классу идентификатор заголовка из его объявления в .rml файле.</p>
+<dl class="todo"><dt><b><a class="el" href="a03359.html#_todo000003">Необходимо сделать</a></b></dt><dd>Добавить пример использования панели с заголовком.</dd></dl>
+<p><a class="anchor" id="MainWindowClassUsingFrameworkAnchor"></a> </p><h2>Создание класса главного окна программы </h2>
+<p>Класс главного окна программы отвечает за переключение пользовательских экранов и обработку пользовательского ввода.</p>
+<p>Создать класс-наследник от класса <a class="el" href="a03949.html" title="Класс входит в проект Covellite.App   Интерфейсный класс для классов окон фреймворка.">covellite::app::IWindow</a>, в конструкторе котрого установить набор строк для локализации приложения, добавить стартовый экран программы и подписаться на требующие обработки на уровне окна приложения события.</p>
+<div class="fragment"><div class="line"><a class="code hl_function" href="a04845.html#ac57ba51e6971d20e34c0f78989ef55d8">ExampleWindow::ExampleWindow</a>(WindowGui_t &amp; _WindowGui) :</div>
+<div class="line">  m_WindowGui(_WindowGui),</div>
+<div class="line">  m_Events(_WindowGui)</div>
+<div class="line">{</div>
+<div class="line">  <span class="comment">// Набор строк локализации приложения в данном случае используется для </span></div>
+<div class="line">  <span class="comment">// вывода различного текста на различных платформах).</span></div>
+<div class="line">  m_WindowGui.Set(</div>
+<div class="line">  {</div>
+<div class="line"><span class="preprocessor"># if BOOST_OS_WINDOWS</span></div>
+<div class="line">    { u8<span class="stringliteral">&quot;[BACK]&quot;</span>, u8<span class="stringliteral">&quot;ALT + LEFT&quot;</span> },</div>
+<div class="line">    { u8<span class="stringliteral">&quot;[EXIT]&quot;</span>, u8<span class="stringliteral">&quot;кнопку закрытия окна программы&quot;</span> },</div>
+<div class="line"><span class="preprocessor"># elif BOOST_PLAT_ANDROID</span></div>
+<div class="line">    { u8<span class="stringliteral">&quot;[BACK]&quot;</span>, u8<span class="stringliteral">&quot;кнопку BACK устройства&quot;</span> },</div>
+<div class="line">    { u8<span class="stringliteral">&quot;[EXIT]&quot;</span>, u8<span class="stringliteral">&quot;кнопку HOME устройства&quot;</span> },</div>
+<div class="line"><span class="preprocessor"># endif</span></div>
+<div class="line">  });</div>
+<div class="line">    </div>
+<div class="line">  <span class="comment">// Экран, который будет отображаться при старте программы.</span></div>
+<div class="line">  m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04885.html">::layers::MainScreen</a>&gt;();</div>
+<div class="line">  m_LayerCount++;</div>
+<div class="line">    </div>
+<div class="line">  <span class="comment">// Подписка на события перехода к другим слоям (события объекта Button</span></div>
+<div class="line">  <span class="comment">// активируются в классе layers::MainScreen при нажатии на соответствующую</span></div>
+<div class="line">  <span class="comment">// кнопку).</span></div>
+<div class="line">  m_Events[::layers::Button.Help]</div>
+<div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) </div>
+<div class="line">  { </div>
+<div class="line">    m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04865.html">::layers::Description</a>&gt;(); </div>
+<div class="line">    m_LayerCount++;</div>
+<div class="line">  });</div>
+<div class="line">  m_Events[::layers::Button.Controls]</div>
+<div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) </div>
+<div class="line">  { </div>
+<div class="line">    m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04849.html">::layers::Controls</a>&gt;(); </div>
+<div class="line">    m_LayerCount++;</div>
+<div class="line">  });</div>
+<div class="line">  m_Events[::layers::Button.Text]</div>
+<div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) </div>
+<div class="line">  { </div>
+<div class="line">    m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04889.html">::layers::Text</a>&gt;(); </div>
+<div class="line">    m_LayerCount++;</div>
+<div class="line">  });</div>
+<div class="line"> </div>
+<div class="line">  m_Events[::layers::Button.Draw3DObject]</div>
+<div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) </div>
+<div class="line">  { </div>
+<div class="line">    m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04869.html">::layers::Draw3DObject</a>&gt;();</div>
+<div class="line">    m_LayerCount++;</div>
+<div class="line"> </div>
+<div class="line">    <span class="comment">// 17 Март 2019 10:57 (unicornum.verum@gmail.com)</span></div>
+<div class="line">    TODO(<span class="stringliteral">&quot;Событие создания basement::Simple3DObject должно генерироваться здесь.&quot;</span>);</div>
+<div class="line">  });</div>
+<div class="line"> </div>
+<div class="line">  m_Events[::layers::Button.Simple2DGame]</div>
+<div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) </div>
+<div class="line">  { </div>
+<div class="line">    m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04873.html">::layers::Simple2DGame</a>&gt;();</div>
+<div class="line">    m_LayerCount++;</div>
+<div class="line"> </div>
+<div class="line">    m_Events[::events::Simple2DGame.Start]();</div>
+<div class="line">  });</div>
+<div class="line"> </div>
+<div class="line">  m_Events[::layers::Button.Demo]</div>
+<div class="line">    .Connect([&amp;](<span class="keywordtype">void</span>) </div>
+<div class="line">  { </div>
+<div class="line">    m_WindowGui.PushLayer&lt;<a class="code hl_class" href="a04857.html">::layers::Demo</a>&gt;();</div>
+<div class="line">    m_LayerCount++;</div>
+<div class="line"> </div>
+<div class="line">    m_Events[::events::Demo.Start]();</div>
+<div class="line">  });</div>
+<div class="line"> </div>
+<div class="line">  m_Events[::layers::Button.Back]</div>
+<div class="line">    .Connect([&amp;](<span class="keyword">const</span> <span class="keywordtype">bool</span> &amp; _IsStopBasement)</div>
+<div class="line">  {</div>
+<div class="line">    m_WindowGui.Back();</div>
+<div class="line">    m_LayerCount--;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (_IsStopBasement)</div>
+<div class="line">    {</div>
+<div class="line">      m_Events[::events::Basement.Stop]();</div>
+<div class="line">    }</div>
+<div class="line">  });</div>
+<div class="line"> </div>
+<div class="line">  m_Events[::covellite::events::Key.Up]</div>
+<div class="line">    .Connect([&amp;](const ::covellite::events::Key_t::Code &amp; _Code)</div>
+<div class="line">  {</div>
+<div class="line">    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">auto</span> WindowsEscKeyCode = 0x1B;</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">if</span> (_Code == WindowsEscKeyCode &amp;&amp; m_LayerCount == 1)</div>
+<div class="line">    {</div>
+<div class="line">      m_Events[::covellite::events::Application.Exit]();</div>
+<div class="line">    }</div>
+<div class="line">  });</div>
+<div class="line">}</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
+<li>Идентификаторы элементов управления передаются в функцию-обработчик события Click_t в нижнем регистре независимо от того, каким образом они были заданы в .rml файле.</li>
+<li>Цвет фона можно задавать как поле <b>background-color</b> для body в .rcss файле, но в этом случае для заполнения всего окна следует в стилях rml и body поставить <div class="fragment"><div class="line">rml,</div>
+<div class="line">body</div>
+<div class="line">{</div>
+<div class="line">  top: 0px;</div>
+<div class="line">  left: 0px;</div>
+<div class="line">  width: 100%;</div>
+<div class="line">  height: 100%;</div>
+<div class="line">}</div>
+<div class="line">  </div>
+<div class="line">body</div>
+<div class="line">{</div>
+<div class="line">  background-color: blue;</div>
+<div class="line">  ...</div>
+</div><!-- fragment --></li>
 </ul>
 </dd></dl>
-<h2>Структура шейдера </h2>
-<p>При использовании отрисовки одновременно в несколько текстур цветовых компонентов необходимо при рендеринге объектов использовать пиксельный шейдер, возвращающий заполненный объект специальным образом объявленной структуры.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Макрос объвления структуры мультитаргета позволяет создавать унифицированные шейдеры, которые будут одинаково компилироваться и работать для реализаций DirectX и OpenGL/ES3.</dd></dl>
-<p>Объявление (имя структуры может быть любым, число - количество целей вывода, от 1 до 8):</p>
-<div class="fragment"><div class="line">COVELLITE_DECLARE_MULTI_TARGET_STRUCTURE(PsOutput, 3);</div>
-</div><!-- fragment --><p>Использование:</p>
-<div class="fragment"><div class="line">PsOutput psExample(Pixel _Value)</div>
-<div class="line">{</div>
-<div class="line">  ...</div>
-<div class="line">  PsOutput Result;</div>
-<div class="line">  Result.Target[0] = float4(...);</div>
-<div class="line">  Result.Target[1] = float4(...);</div>
-<div class="line">  Result.Target[2] = float4(...);</div>
-<div class="line">  <span class="keywordflow">return</span> Result;</div>
-<div class="line">}</div>
-</div><!-- fragment --><h2>Использование текстур </h2>
-<p>Для использования полученных на первом проходе текстур для рендеринга на следующих проходах необходимо обычным образом создать объекты компонентов <b>Texture</b>, передав им те же самые объекты компонентов <b>Data.Texture</b>, что были переданы компоненту <b>BkSurface</b> на первом проходе.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Для того, чтобы на последующих проходах использовались именно те текстуры, которые заполняются при рендеринге во внеэкранную поверхность, необходимо обеспечить совпадение объектов компонентов <b>Data.Texture</b>, переданных компоненту <b>BkSurface</b> и компонентам текстур на других проходах. Это должны быть те же самые объекты классов компонентов, совпадений идентификаторов недостаточно! </dd></dl>
+<p>В классе окна событие Click_t будет вызываться для всех элементов управления всех активных пользовательских экранов, при этом здесь имеет смысл обрабатывать события, непосредственно связанные с работой окна (переход к другому слою или выход из программы).</p>
+<p><a class="el" href="a03368.html">События</a>, которые может обрабатывать окно. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 4 Янв 2025 23:13:18. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05069.html">Manual</a></li><li class="navelem"><a class="el" href="a05070.html">Создание приложения</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 8 Апр 2025 21:48:11. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

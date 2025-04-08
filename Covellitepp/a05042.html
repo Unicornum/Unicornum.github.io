@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Сборка документации</title>
+    <title>Covellite++: Build</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 23:13 04.01.2025</span>
+   &#160;<span id="projectnumber">Version: 2.3.1 Revision: ??? Platform: x64 Build: 21:47 08.04.2025</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,24 +108,31 @@ $(function(){initNavTree('a05042.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Сборка документации</div></div>
+  <div class="headertitle"><div class="title">Build</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Лог последней сборки документации </h2>
-<p> 
-<div class="fragment">
-<object width="100%" height="100%" type="text/plain" data="Documentation.result.txt">
-</object>
-</div>
-   </p>
+<div class="textblock"><h1>Описание раздела </h1>
+<p>Раздел для проектов, собирающих весь набор компонентов.</p>
+<h2>Проект Clean </h2>
+<p>Проект предназначен для очистки временной папки перед началом сборки решения скриптом. </p><dl class="section note"><dt>Заметки</dt><dd>Понадобился из-за того, что при работе с отдельными тестовыми проектами классов временная папка разбухает от временных файлов, после чего ночная сборка завершается ошибкой из-за недостаточного места на диске.</dd></dl>
+<h2>Проект Prebuild </h2>
+<p>Проект предварительной сборки перед сборкой всех проектов решения. </p><dl class="section note"><dt>Заметки</dt><dd>Понадобился для сборки проекта Version, т.к. если Windows-проект поставить в зависимость Android-проекту, сборка скриптом завершается с ошибкой.</dd></dl>
+<h2>Проект BuildAll </h2>
+<p>Проект, предназначенный для сборки всех остальных проектов 'одним кликом'.</p><ul>
+<li>Используется для автоматической сборки скриптом BuildAll.cmd.</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Проект BuildAll понадобился потому, что сборка при помощи MsBuild всего решения приводит к сборке выгруженных проектов.</dd></dl>
+<h2>Проект Launcher </h2>
+<p>Проект для запуска собранного примера использования фреймворка (при выбранной платформе x64 запускается Windows версия, при ARM - устанавливается и запускается Android версия).</p>
+<p>В проект добавлен файл, который перезаписывается при сборке, чтобы проект пересобирался заново при каждой сборке. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05065.html">Структура решения</a></li><li class="navelem"><a class="el" href="a05044.html">Информация о работе над решением</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 4 Янв 2025 23:13:17. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05072.html">Структура решения</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 8 Апр 2025 21:48:10. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

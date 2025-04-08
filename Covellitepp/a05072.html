@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Covellite.Api</title>
+    <title>Covellite++: Структура решения</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 23:13 04.01.2025</span>
+   &#160;<span id="projectnumber">Version: 2.3.1 Revision: ??? Platform: x64 Build: 21:47 08.04.2025</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,33 +108,54 @@ $(function(){initNavTree('a05072.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Covellite.Api</div></div>
+  <div class="headertitle"><div class="title">Структура решения</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Список классов проекта <a class="el" href="a03355.html">Api</a></p>
-<h2>Введение </h2>
-<p>Проект классов-оберток для графического API.   </p>
-<h2>Подробнее </h2>
-<ul>
-<li>Классы проекта предоставляют реализации для различных графических API (OpenGL/OpenGLES3/DirectX).</li>
-<li>Для каждого конкретного графического API создается отдельный класс.</li>
-<li>Каждый класс доступен только для использования в коде для конкретной платформы.</li>
-</ul>
+<div class="textblock"><p><a class="el" href="a05050.html">Информация о работе над решением</a></p>
+<p><a class="el" href="a05073.html">Список задач всех проектов решения</a></p>
+<h2>Структура проектов решения </h2>
 <div class="image">
-<img src="Api.Classes.png" alt=""/>
+<img src="CovelliteProjects.png" alt=""/>
 </div>
-<h3>Covellite.Api.Least</h3>
-<p>Вспомогательный проект, содержащий минимум включенных файлов, предназначенный для включения в тестовые проекты.</p>
-<h2>Компонентная система </h2>
-<p><a class="el" href="a05069.html">Компонентная система</a> </p>
-</div></div><!-- contents -->
+<h2>Раздел Build </h2>
+<p>Описание раздела <a class="el" href="a05042.html">Build</a></p>
+<h2>Проекты решения </h2>
+<h3>Covellite.Gui</h3>
+<p>Проект реализации работы с GUI при помощи <a href="https://github.com/mikke89/RmlUi">RmlUi</a> или <a href="https://github.com/libRocket/libRocket">Rocket</a>.   </p>
+<p>Страница проекта <a class="el" href="a05092.html">Covellite.Gui</a></p>
+<h3>Covellite.Expanse</h3>
+<p>Проект классов рендеринга 3D сцены.   </p>
+<p>Страница проекта <a class="el" href="a05090.html">Covellite.Expanse</a></p>
+<h3>Covellite.Api</h3>
+<p>Проект классов-оберток для графического API.   </p>
+<p>Страница проекта <a class="el" href="a05079.html">Covellite.Api</a></p>
+<h3>Covellite.Egl</h3>
+<p>Проект классов-оберток для функций EGL.   </p>
+<p>Страница проекта <a class="el" href="a05085.html">Covellite.Egl</a></p>
+<h3>Covellite.Os</h3>
+<p>Проект классов, обеспечивающих взаимодействие с операционной системой.   </p>
+<p>Страница проекта <a class="el" href="a05094.html">Covellite.Os</a></p>
+<h3>Covellite.App</h3>
+<p>Проект для кода уровня приложения.   </p>
+<p>Страница проекта <a class="el" href="a05083.html">Covellite.App</a></p>
+<h3>Covellite.Events</h3>
+<p>Проект для кода работы с событиями фреймворка.   </p>
+<p>Страница проекта <a class="el" href="a05087.html">Covellite.Events</a></p>
+<h3>Example</h3>
+<p>Раздел проекта примера использования и ручного тестирования фреймворка.   </p>
+<p>Страница проекта <a class="el" href="a05102.html">Example</a></p>
+<h2>Дополнительно </h2>
+<p><a class="el" href="a05044.html">Оформление кода</a></p>
+<p><a class="el" href="a05049.html">Используемые библиотеки/утилиты</a></p>
+<hr  />
+ </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05065.html">Структура решения</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 4 Янв 2025 23:13:18. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="index.html">index</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 8 Апр 2025 21:48:12. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

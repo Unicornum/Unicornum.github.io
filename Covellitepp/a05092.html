@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Ручное тестирование</title>
+    <title>Covellite++: Covellite.Gui</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 23:13 04.01.2025</span>
+   &#160;<span id="projectnumber">Version: 2.3.1 Revision: ??? Platform: x64 Build: 21:47 08.04.2025</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,176 +108,24 @@ $(function(){initNavTree('a05092.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Ручное тестирование</div></div>
+  <div class="headertitle"><div class="title">Covellite.Gui</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Помимо демонстрации возможностей фреймворка программа примера используется для ручного тестирования работоспособности кода, позволяя визуально убедиться в том, что выполняемые действия дают ожидаемый результат.</p>
-<p>На этой странице описаны отдельные экраны программы, их назначение, выполняемые на них действия и скриншоты того, как они должны выглядеть.</p>
-<dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>Все экраны программы должны одинаково выглядеть независимо от используемого графического Api (DirectX11/OpenGL/OpenGLES3) и платформы, на которой запускается программа (Windows/Android).</li>
-<li>В логе программы не должно быть ошибок/предупреждений.</li>
+<div class="textblock"><p>Список классов проекта <a class="el" href="a03371.html">Gui</a></p>
+<h2>Введение </h2>
+<p>Проект реализации работы с GUI при помощи <a href="https://github.com/mikke89/RmlUi">RmlUi</a> или <a href="https://github.com/libRocket/libRocket">Rocket</a>.   </p>
+<h2>Подробнее </h2>
+<ul>
+<li>Классы проекта представляют собой универсальный код, зависящий только от кода используемой библиотки GUI. </li>
 </ul>
-</dd></dl>
-<h2>Главное окно </h2>
-<p>Отображается при старте программы, содержит общее ее описание и кнопки перехода к другим экранам:</p><ol type="1">
-<li><a class="el" href="#aManualTestingControls">Элементы управления</a>.</li>
-<li><a class="el" href="#aManualTestingText">Текст в различных форматах</a>.</li>
-<li><a class="el" href="#aManualTesting2DGame">Простая 2D игра</a>.</li>
-<li><a class="el" href="#aManualTesting3DObject">Простая 3D сцена</a>.</li>
-<li><a class="el" href="a05090.html">Демонстрационная версия</a>.</li>
-</ol>
-<p> <img class="PreviewImage" src="Main.png"> </p>
-<p><a class="anchor" id="aManualTestingControls"></a> </p><h2>Элементы управления </h2>
-<p>Экран демонстрации использования стандартных элементов управления:</p><ol type="1">
-<li>Поле ввода текста. При выборе (клик мышью в Windows или касания на Android) элемента управления активируется окно с мигающим курсором (+ автоматическая активация клавиатура на Android), позволяющее ввести любой текст; при первом нажатии кнопки клавиатуры надпись '&lt;нет&gt;' будет заменена нажатым символом, введенный текст будет отображаться в нижней части поля элемента при переходе к другому элементу управления.</li>
-<li>Выбор одного из двух значений. При нажатии одной из кнопок справа в нижней части поля элемента будет отображаться текст выбранного значения.</li>
-<li>Изменение числового значения. При нажатии одной из кнопок справа будет уменьшаться или увеличиваться значение в нижней части поля элемента.</li>
-<li>Выпадающий список. При выборе (клик мышью в Windows или касания на Android) элемента управления появится выпадающий список с допустимыми вариантами; после выбора одного из них, он будет отображаться в нижней части поля элемента.</li>
-<li>Переключение/ползунок. При нажатии кнопки справа будет изменяться значение в нижней части элемента, положение ползунка можно изменять.</li>
-<li>Кнопка возврата на главное окно программы.</li>
-<li>Кнопка перехода к окну описания этого экрана программы.</li>
-</ol>
-<p> <img class="PreviewImage" src="Controls.png"> </p>
-<p><a class="anchor" id="aManualTestingText"></a> </p><h2>Текст в различных форматах </h2>
-<p>Экран демонстрации отображения форматированного текста.</p>
-<p>При выборе одной из реплик в нижней части экрана будет изменен основной текст и статус персонажа под его именем.</p>
-<p> <img class="PreviewImage" src="Text.png"> </p>
-<p><a class="anchor" id="aManualTesting2DGame"></a> </p><h2>Простая 2D игра </h2>
-<p>Экран демонстрации создания простой игры.</p>
-<p>Игровой процесс начинается после начала движения игроком центрального квадрата, при этом дожны вращаться стрелки часов. После завершения игры в нижней части появится сообщение о количестве затраченного времени.</p>
-<p> <img class="PreviewImage" src="2DGame.png"> </p>
-<p><a class="anchor" id="aManualTesting3DObject"></a> </p><h2>Простая 3D сцена </h2>
-<p>Экран демонстрации рендеринга сцены из полноценных 3D объектов с освещением.</p>
-<p>Отображаются вращающиеся кубики (количество кубов можно менять кнопками в нижней части экрана), освещенные фоновым (Ambient), направленным (Directional) и тремя точечными истояниками света, каждый из которых можно включать и выключать элементами управления в левой части экрана.</p>
-<p>Элемент управления <b>PBR</b> включает/отключает режим рендеринга с использованием pbr-материалов, когда вместо одной простой текстуры используются текстуры Albedo, Metalness, Roughness, Ambient Occlusion и карта нормалей.</p>
-<p>В настройках программы (Settings.exe) можно включать и выключать режим рендеринга с использованием инстансинга, когда все кубы на экране рендерятся за один вызов отрисовки (в противовес обычному, когда на каждый отдельный куб приходится отдельный вызов отрисовки), что вкупе с возможностью менять количество полигонов одного куба позволяет оценивать возможности рендеринга данного конкретного оборудования.</p>
-<p> 
-<img class="PreviewImage" src="3DObject.png">
-<img class="PreviewImage" src="3DObject.2.png">
-<img class="PreviewImage" src="3DObject.settings.png">
-  </p>
-<p> 
-
-<style>
-
-.PreviewImage {
-  width:100%;
-  max-width:200px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.PreviewImage:hover {
-  opacity: 0.7;
-}
-
-.modal{
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 100px;
-  left : 0;
-  top : 0;
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  max-height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content{
-  margin: auto;
-  display: block;
-  height: 80%;
-}
-
-#caption{
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-.modal-content, #caption{
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom{
-  from {transform:scale(0)}
-  to {transform:scale(1)}
-}
-
-.close{
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus{
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 50px;
-}
-
-@media only screen and (max-width: 700px) {
-  .modal-content{
-    width: 100 % ;
-  }
-}
-</style>
-
-<!-- Окно предварительного просмотра -->
-<div id="PreviewWindow" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="FullSizeImage">
-</div>
-
-<script>
-
-// Для всех изображений...
-var Images = document.getElementsByClassName('PreviewImage');
-
-for (i = 0; i < Images.length; i++)
-{
-  Images[i].onclick = function()
-  {
-    document.getElementById('PreviewWindow').style.display = "block";
-    document.getElementById("FullSizeImage").src = this.src;
-  };
-}
-
-// Для элемента, закрывающего окно предпросмотра...
-var Close = document.getElementsByClassName("close")[0];
-
-Close.onclick = function()
-{
-  document.getElementById('PreviewWindow').style.display = "none";
-}
-
-</script>
-
-      </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 4 Янв 2025 23:13:18. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05072.html">Структура решения</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 8 Апр 2025 21:48:12. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

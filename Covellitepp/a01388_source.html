@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Исходный файл Solution/Solution/Covellite.Expanse/Covellite.Expanse/IGameScene.hpp</title>
+    <title>Covellite++: Исходный файл Solution/Solution/Covellite.Expanse/Covellite.Expanse/Id.impl.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 23:13 04.01.2025</span>
+   &#160;<span id="projectnumber">Version: 2.3.1 Revision: ??? Platform: x64 Build: 21:47 08.04.2025</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,42 +108,53 @@ $(function(){initNavTree('a01388_source.html',''); initResizable(true); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">IGameScene.hpp</div></div>
+  <div class="headertitle"><div class="title">Id.impl.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;Covellite/Expanse/Defines.hpp&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>covellite</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>expanse</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="a04135.html">   26</a></span><span class="keyword">class </span><a class="code hl_class" href="a04135.html">IGameScene</a></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">virtual</span> ObjectId_t CreateObject(<span class="keyword">const</span> GameObject_t &amp;) = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> RemoveObject(<span class="keyword">const</span> ObjectId_t) = 0;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">virtual</span> <a class="code hl_class" href="a04135.html">~IGameScene</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Covellite/Expanse/Defines.hpp&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span>covellite</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span>expanse</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="};">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="a04137.html">   33</a></span><span class="keyword">class </span><a class="code hl_class" href="a04137.html">Id</a> final</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>{</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  ObjectId_t GetFreeId(<span class="keywordtype">void</span>) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a04137.html#a89bd3d46f961b10c645534b0b16ca83c">AddRemovedObjectId</a>(<span class="keyword">const</span> ObjectId_t &amp; _Id);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  ObjectId_t m_NextId = 0;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  ::std::queue&lt;ObjectId_t&gt; m_FreeIds;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="a04137.html">Id</a>(<span class="keywordtype">void</span>) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="a04137.html">Id</a>(<span class="keyword">const</span> <a class="code hl_class" href="a04137.html">Id</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="a04137.html">Id</a>(<a class="code hl_class" href="a04137.html">Id</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="a04137.html">Id</a> &amp; operator= (<span class="keyword">const</span> <a class="code hl_class" href="a04137.html">Id</a> &amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="a04137.html">Id</a> &amp; operator= (<a class="code hl_class" href="a04137.html">Id</a> &amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="a04137.html">~Id</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
 </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>} <span class="comment">// namespace expanse</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>} <span class="comment">// namespace covellite</span></div>
-<div class="ttc" id="aa04135_html"><div class="ttname"><a href="a04135.html">covellite::expanse::IGameScene</a></div><div class="ttdoc">Класс входит в проект Covellite.Expanse   Интерфейс класса игровой сцены.</div><div class="ttdef"><b>Definition</b> IGameScene.hpp:27</div></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace expanse</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} <span class="comment">// namespace covellite</span></div>
+<div class="ttc" id="aa04137_html"><div class="ttname"><a href="a04137.html">covellite::expanse::Id</a></div><div class="ttdoc">Класс входит в проект Covellite.Expanse   Класс идентификатора объекта.</div><div class="ttdef"><b>Definition</b> Id.impl.hpp:34</div></div>
+<div class="ttc" id="aa04137_html_a89bd3d46f961b10c645534b0b16ca83c"><div class="ttname"><a href="a04137.html#a89bd3d46f961b10c645534b0b16ca83c">covellite::expanse::Id::AddRemovedObjectId</a></div><div class="ttdeci">void AddRemovedObjectId(const ObjectId_t &amp;_Id)</div><div class="ttdoc">Функция возврата идентификатора удаленного объекта.</div><div class="ttdef"><b>Definition</b> Id.cpp:27</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_956703e2a07ac0bed818ba78c0456301.html">Covellite.Expanse</a></li><li class="navelem"><a class="el" href="dir_6b30e289817ba80c4f393696f2bf6aab.html">Covellite.Expanse</a></li><li class="navelem"><b>IGameScene.hpp</b></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 4 Янв 2025 23:13:15. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="dir_23c761be539445bc999d8c9cd7f0d160.html">Solution</a></li><li class="navelem"><a class="el" href="dir_c4e084afe678ca50e02362250facb0e9.html">Solution</a></li><li class="navelem"><a class="el" href="dir_956703e2a07ac0bed818ba78c0456301.html">Covellite.Expanse</a></li><li class="navelem"><a class="el" href="dir_6b30e289817ba80c4f393696f2bf6aab.html">Covellite.Expanse</a></li><li class="navelem"><b>Id.impl.hpp</b></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 8 Апр 2025 21:48:07. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.12.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Создание базового проекта приложения</title>
+    <title>Covellite++: История изменений</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.0 Revision: ??? Platform: x64 Build: 23:13 04.01.2025</span>
+   &#160;<span id="projectnumber">Version: 2.3.1 Revision: ??? Platform: x64 Build: 21:47 08.04.2025</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -108,262 +108,1770 @@ $(function(){initNavTree('a05055.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Создание базового проекта приложения</div></div>
+  <div class="headertitle"><div class="title">История изменений</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><ul>
-<li>Создать проект сборки основного модуля программы <a class="el" href="#MainModuleWindowsUsingFrameworkAnchor">Windows</a>/ <a class="el" href="#MainModuleAndroidUsingFrameworkAnchor">Android</a>.</li>
-<li>Создать <a class="el" href="#MainApplicationClassUsingFrameworkAnchor">класс</a> программы.</li>
-<li>Добавить рализациию функции установки используемых фреймворком <a class="el" href="#SettingsUsingFrameworkAnchor">значений параметров по умолчанию</a>.</li>
-<li>Добавить реализацию функции создания объекта <a class="el" href="#ReadFileDataUsingFrameworkAnchor">виртуальной файловой системы</a>, который будет использоваться программой для чтения данных из файлов.   </li>
-</ul>
-<p><a class="anchor" id="MainModuleWindowsUsingFrameworkAnchor"></a> </p><h2>Создание проекта сборки основного модуля программы для Windows </h2>
-<p>Создать <b>пустой</b> проект приложения Windows:</p>
-<div class="image">
-<img src="Vs2019.Windows.png" alt=""/>
-</div>
-<p>Добавить в проект .ico файл иконки программы и .rc файл, определяющий иконку программы как <b>ApplicationIcon</b> (именно эта иконка будет отображаться в заголовке окна программы):</p>
-<div class="fragment"><div class="line">﻿</div>
-<div class="line">ApplicationIcon ICON  &quot;ApplicationIcon.ico&quot;</div>
-</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd><ul>
-<li>В качестве заголовка окна программы будет использовано значение макроса <b>__APPLICATION_NAME__</b> из файла версии решения.</li>
-<li>Режим работы (полноэкранный/оконный), размеры и цвет фона окна программы задаются в <a class="el" href="#SettingsUsingFrameworkAnchor">настройках</a> приложения.</li>
-</ul>
-</dd></dl>
-<p><a class="anchor" id="MainModuleAndroidUsingFrameworkAnchor"></a> </p><h2>Создание проекта сборки основного модуля программы для Android </h2>
-<h3>Создание проекта сборки .apk файла программы</h3>
-<p>Создать "Простое приложение Android":</p>
-<div class="image">
-<img src="Vs2019.Android.png" alt=""/>
-</div>
-<p>Добавить в его java код перехват функции dispatchKeyEvent() (<a class="el" href="a05062.html">как это делается и зачем это нужно</a>).</p>
-<p><a class="el" href="a05053.html">Фоновое выполнение задач в коде С++</a></p>
-<dl class="section note"><dt>Заметки</dt><dd>Чтобы программа работала в полноэкранном режиме (без статус-бара), необходимо добавить в AndroidManifest.xml <div class="fragment"><div class="line">&lt;application ... android:theme=<span class="stringliteral">&quot;@android:style/Theme.Holo.NoActionBar.Fullscreen&quot;</span>&gt;</div>
-</div><!-- fragment --></dd></dl>
-<h3>Создание проекта сборки главного модуля программы</h3>
-<p>Создать проект .so файла (который будет загружаться при старте NativeActivity):</p>
-<div class="image">
-<img src="Vs2019.So.png" alt=""/>
-</div>
-<p>Проекту Packaging добавить его в ссылки, а в AndroidManifest.xml добавить запись загрузки именно этого модуля (<a class="el" href="a05062.html">подробнее</a>).</p>
-<p><a class="anchor" id="MainApplicationClassUsingFrameworkAnchor"></a> </p><h2>Создание класса программы </h2>
-<p><b>Класс</b> <b>программы</b> содержит главный цикл обработки сообщений, отвечает за обработку системных сообщений и создание/разрушение главного окна программы.</p>
-<dl class="section note"><dt>Заметки</dt><dd>При написании кода следует учитывать, что Android в NativeActivity загружает главный модуль программы только один раз, при первом запуске программы, после чего при каждой последующей активации программы вызывает функцию точки входа. При этом объект класса программы будет создаваться каждый раз заново, но все статические объекты будут иметь состояния, унаследованные от предыдущей активации.</dd></dl>
-<p>Создать класс-наследник от <a class="el" href="a03903.html" title="Класс входит в проект Covellite.App   Базовый класс приложения для Android.">covellite::app::Application</a>, конструктору которого передать способ отрисовки окна приложения (по событию или непрерывно), подписаться на необходимые события и добавить код обработки этих событий.</p>
-<div class="fragment"><div class="line"><a class="code hl_function" href="a04835.html#a3dd1c639961a5e122c07f15ce0041771">ExampleApp::ExampleApp</a>(<span class="keywordtype">void</span>) noexcept :</div>
-<div class="line">  Application(Continuous{})</div>
-<div class="line">{</div>
-<div class="line">  <span class="keyword">namespace </span>events = ::covellite::events;</div>
-<div class="line">    </div>
-<div class="line">  m_Events[events::Application.Start]</div>
-<div class="line">    .Connect([&amp;]() { DoInitWindow(); } );</div>
-<div class="line">  m_Events[events::Error.Exception]</div>
-<div class="line">    .Connect([](<span class="keyword">const</span> events::Error_t::Description &amp; _Description)</div>
-<div class="line">      { LOGGER(Error) &lt;&lt; _Description.c_str(); });</div>
-<div class="line">  <span class="comment">// ...</span></div>
-</div><!-- fragment --><p><a class="el" href="a03362.html">События</a>, которые может обрабатывать приложение.</p>
-<dl class="section note"><dt>Заметки</dt><dd>Подписка на событие <b>Application.Start</b> обязательна, в обработчике следует создать набор окон программы; в качестве класса главного окна программы следует указать ранее созданный класс. <br  />
- Подписка на собыие <b>Application.Exit</b> не требуется, окно будет уничтожено автоматически.</dd></dl>
-<ul>
-<li><b><a class="el" href="a04831.html" title="Класс входит в проект Example   Промежуточный класс окна отрисовки 3D сцены.">BasementWindow</a></b> - класс окна программы, обеспечивающий предварительную отрисовку в окне, поверх которой будeт отображаться панели GUI (например, это может быть сцена из <a class="el" href="a05057.html">2D</a> или <a class="el" href="a05059.html">3D</a> объектов).</li>
-<li><b><a class="el" href="a04839.html" title="Класс входит в проект Example   Класс GUI окна программы.">ExampleWindow</a></b> - класс главного окна программы (см. <a class="el" href="a05061.html">Создание кода панелей GUI</a>).</li>
-</ul>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="a04835.html#aaddf7b9a3ba89e61506f87d2ca3c149d">ExampleApp::DoInitWindow</a>(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">  LOGGER(Info) &lt;&lt; <span class="stringliteral">&quot;Create main window.&quot;</span>;</div>
-<div class="line">    </div>
-<div class="line">  <span class="comment">// Создание обязательного набора объектов окон приложения.</span></div>
-<div class="line">    </div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> &amp; wOs =                           <span class="comment">// Класс фреймворка окна операционной системы.</span></div>
-<div class="line">    MakeWindow&lt;::covellite::os::Window&gt;(*<span class="keyword">this</span>);     </div>
-<div class="line">  <span class="keyword">const</span> <span class="keyword">auto</span> &amp; wApi =                          <span class="comment">// Класс фреймворка окна графического Api</span></div>
-<div class="line">    MakeWindow&lt;::covellite::api::Window&gt;(wOs); <span class="comment">// (реализация DirectXOpenGL задается в настройках).</span></div>
-<div class="line">  <span class="keyword">auto</span> &amp; wExpanse =                            <span class="comment">// Класс фреймворка окна, обеспечивающего отрисовку 3D сцены.</span></div>
-<div class="line">    MakeWindow&lt;::covellite::expanse::Window&gt;(wApi); </div>
-<div class="line">  MakeWindow&lt;BasementWindow&gt;(wApi, wExpanse);  <span class="comment">// Клиентский код, формирующий 3D сцену.</span></div>
-<div class="line">  <span class="keyword">auto</span> &amp; wGui =                                <span class="comment">// Класс фреймворка окна, обеспечивающего отрисовку GUI.</span></div>
-<div class="line">    MakeWindow&lt;::covellite::gui::Window&gt;(wApi);     </div>
-<div class="line">  MakeWindow&lt;ExampleWindow&gt;(wGui);             <span class="comment">// Клиентсткий код программы, управляющий</span></div>
-<div class="line">                                               <span class="comment">// переходами между разными слоями GUI.</span></div>
-<div class="line">}</div>
-</div><!-- fragment --><p>Для создания точки входа программы использовать макрос <b>APPLICATION_ENTRY_POINT</b>, в качестве параметра которого указать имя созданного класса программы.</p>
-<div class="fragment"><div class="line"><a class="code hl_define" href="a03358.html#gad03011d9bf6bfcedf9031a4d7cddebfd">APPLICATION_ENTRY_POINT</a>(<a class="code hl_class" href="a04835.html">ExampleApp</a>);</div>
-</div><!-- fragment --><p><a class="anchor" id="SettingsUsingFrameworkAnchor"></a> </p><h2>Настройки </h2>
-<h3>Для всех платформ</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Параметр   </th><th class="markdownTableHeadLeft">Раздел   </th><th class="markdownTableHeadLeft">Описание    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">PathToFontsDirectory   </td><td class="markdownTableBodyLeft">Root   </td><td class="markdownTableBodyLeft">Путь к папке расположения шрифтов, которые используются в .rcss файлах.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">R   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: красная компонента [0...255].    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">G   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: зеленая компонента [0...255].    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">B   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: синяя компонента [0...255].    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">A   </td><td class="markdownTableBodyLeft">Root\Window\BackgroundColor   </td><td class="markdownTableBodyLeft">Цвет фона окна программы по умолчанию: прозрачность [0...255].   </td></tr>
+<div class="textblock"><h1>История изменений </h1>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05092.html">Covellite.Gui</a> : </td></tr>
 </table>
-<h3>Только для Windows</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Параметр   </th><th class="markdownTableHeadLeft">Раздел   </th><th class="markdownTableHeadLeft">Описание    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">GraphicsApi   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Используемый для рендеринга графический Api (Auto, DirectX11, OpenGL).    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">IsFullScreen   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Полноэкранный/оконный режим работы программы (true/false).    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">IsResized   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Разрешение/запрет изменения размеров окна программы мышью (true/false).    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">Width   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Ширина клиентской области окна программы в пикселях.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">Height   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Высота клиентской области окна программы в пикселях.    </td></tr>
-<tr class="markdownTableRowEven">
-<td class="markdownTableBodyLeft">MinClientWidth   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Минимальная ширина клиентской области окна программы в пикселях.    </td></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">MinClientHeight   </td><td class="markdownTableBodyLeft">Root\Window\Size   </td><td class="markdownTableBodyLeft">Минимальная высота клиентской области окна программы в пикселях.   </td></tr>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.03.2019 14:46  </td><td bgcolor="#C0FFC0">Запись в лог информации о вставке/удалении слоев.  </td></tr>
 </table>
-<h3>Только для Android</h3>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadLeft">Параметр   </th><th class="markdownTableHeadLeft">Раздел   </th><th class="markdownTableHeadLeft">Описание    </th></tr>
-<tr class="markdownTableRowOdd">
-<td class="markdownTableBodyLeft">GraphicsApi   </td><td class="markdownTableBodyLeft">Root\Window   </td><td class="markdownTableBodyLeft">Используемый для рендеринга графический Api (Auto, OpenGLES3, OpenGLES).   </td></tr>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.03.2019 13:42  </td><td bgcolor="#C0FFC0">В стеке слоев может одновременно содержаться только один слой одного и того же класса.  </td></tr>
 </table>
-<h3>Настройки по умолчанию</h3>
-<p>В код проекта необходимо также добавить реализацию функции установки значений параметров по умолчанию. Функция <b>в</b> <b>обязательном</b> <b>порядке</b> должна устанавливать значения по умолчанию для всех параметров.</p>
-<p>Пример:</p>
-<div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;stdafx.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;Covellite/App/Settings.hpp&gt;</span></div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>alicorn</div>
-<div class="line">{</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>extension</div>
-<div class="line">{</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>std</div>
-<div class="line">{</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><span class="comment">/*static*/</span> SectionPtr_t Singleton&lt;Section_t&gt;::Make(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">  <span class="keyword">auto</span> pSettings = ::std::make_unique&lt;Section_t&gt;(uT(<span class="stringliteral">&quot;Covellitepp&quot;</span>));</div>
-<div class="line">    </div>
-<div class="line">  <span class="comment">// Функция AddExtra() используется для параметров, которые не должен менять</span></div>
-<div class="line">  <span class="comment">// пользователь (они не будут видны в программе изменения настроек),</span></div>
-<div class="line">  <span class="comment">// SetDefault() - для параметров, которые пользователь может изменить</span></div>
-<div class="line">  <span class="comment">// при необходимости.</span></div>
-<div class="line">    </div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToFontsDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data/Fonts&quot;</span>));  <span class="comment">// Путь к папке расположения шрифтов, которые </span></div>
-<div class="line">                        <span class="comment">// используются в .rcss файлах.</span></div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToTextureDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data&quot;</span>));        <span class="comment">// Путь к папке расположения текстур, которые </span></div>
-<div class="line">                        <span class="comment">// используются в проекте примера.</span></div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToMeshDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data&quot;</span>));        <span class="comment">// Путь к папке расположения файлов 3D объектов, которые </span></div>
-<div class="line">                        <span class="comment">// используются в проекте примера.</span></div>
-<div class="line">  (*pSettings).AddExtra(uT(<span class="stringliteral">&quot;PathToSoundsDirectory&quot;</span>),</div>
-<div class="line">    uT(<span class="stringliteral">&quot;Data/Sounds&quot;</span>)); <span class="comment">// Путь к папке расположения звуковых файлов, которые </span></div>
-<div class="line">                        <span class="comment">// используются в проекте примера.</span></div>
-<div class="line">    </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsFullScreen&quot;</span>),</div>
-<div class="line">    <span class="keyword">false</span>, uT(<span class="stringliteral">&quot;Полноэкранный/оконный режим работы программы.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;IsResized&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>); <span class="comment">// Разрешение/запрет изменения размеров окна программы мышью.</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;GraphicsApi&quot;</span>), </div>
-<div class="line">    uT(<span class="stringliteral">&quot;Auto&quot;</span>), uT(<span class="stringliteral">&quot;Используемый для рендеринга графический Api.&quot;</span>));</div>
-<div class="line">    </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;Width&quot;</span>),</div>
-<div class="line">    480, uT(<span class="stringliteral">&quot;Ширина клиентской области окна программы.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;Height&quot;</span>),</div>
-<div class="line">    762, uT(<span class="stringliteral">&quot;Высота клиентской области окна программы.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;MinClientWidth&quot;</span>),</div>
-<div class="line">    480); <span class="comment">// Минимальная ширина клиентской области окна программы.</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;Size&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;MinClientHeight&quot;</span>),</div>
-<div class="line">    480); <span class="comment">// Минимальная высота клиентской области окна программы.</span></div>
-<div class="line">    </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;R&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: красная компонента [0...255].</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;G&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: зеленая компонента [0...255].</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;B&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: синяя компонента [0...255].</span></div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Window&quot;</span>)][uT(<span class="stringliteral">&quot;BackgroundColor&quot;</span>)].AddExtra(uT(<span class="stringliteral">&quot;A&quot;</span>), </div>
-<div class="line">    0x80); <span class="comment">// Цвет фона окна программы по умолчанию: прозрачность [0...255].</span></div>
-<div class="line"> </div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsParticleInstance&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>, uT(<span class="stringliteral">&quot;Использовать instancing для рендеринга частиц.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;ParticlesCount&quot;</span>),</div>
-<div class="line">    10000, uT(<span class="stringliteral">&quot;Количество частиц.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsCubeInstance&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>, uT(<span class="stringliteral">&quot;Использовать instancing для рендеринга кубиков.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsNightMode&quot;</span>),</div>
-<div class="line">    <span class="keyword">false</span>, uT(<span class="stringliteral">&quot;Режим рендеринга ночь/день.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;PointLightsPercent&quot;</span>),</div>
-<div class="line">    5, uT(<span class="stringliteral">&quot;Количесто точечных источников света ночью в процентах от общей площади игровой сцены.&quot;</span>));</div>
-<div class="line">  (*pSettings)[uT(<span class="stringliteral">&quot;Demo&quot;</span>)].SetDefault(uT(<span class="stringliteral">&quot;IsAutoRun&quot;</span>),</div>
-<div class="line">    <span class="keyword">true</span>, uT(<span class="stringliteral">&quot;Включение/выключение автоматического перемещения по ландшафту.&quot;</span>));</div>
-<div class="line"> </div>
-<div class="line">  <span class="keywordflow">return</span> pSettings;</div>
-<div class="line">}</div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace std</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace extension</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace alicorn</span></div>
-</div><!-- fragment --><p><a class="anchor" id="ReadFileDataUsingFrameworkAnchor"></a> </p><h2>Настройка чтения данных из файлов </h2>
-<p>В код проекта необходимо также добавить реализацию функции настройки способа чтения данных из файлов.</p>
-<p>Пример:</p>
-<div class="fragment"><div class="line"> </div>
-<div class="line"><span class="preprocessor">#include &quot;stdafx.h&quot;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;alicorn/compress.hpp&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;Covellite/App/Vfs.hpp&gt;</span></div>
-<div class="line"> </div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">namespace </span>alicorn</div>
-<div class="line">{</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span>extension</div>
-<div class="line">{</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span>std</div>
-<div class="line">{</div>
-<div class="line"> </div>
-<div class="line"><span class="keyword">using namespace </span>::covellite::app;</div>
-<div class="line">  </div>
-<div class="line"><span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><span class="comment">/*static*/</span> VfsPtr_t Singleton&lt;VfsCore_t&gt;::Make(<span class="keywordtype">void</span>)</div>
-<div class="line">{</div>
-<div class="line">  <span class="keyword">using </span>ImplPtr_t = ::std::shared_ptr&lt;::alicorn::modules::vfs::IImplementation&gt;;</div>
-<div class="line">  <span class="keyword">using </span>ConverterPtr_t = ::std::shared_ptr&lt;::alicorn::modules::vfs::IConverter&gt;;</div>
-<div class="line">  <span class="keyword">using </span>CompressorType_t = ::alicorn::source::compress::Snappy_t;</div>
-<div class="line">  <span class="keyword">using </span>Compressor_t = ::alicorn::modules::vfs::Compress&lt;CompressorType_t&gt;;</div>
-<div class="line"> </div>
-<div class="line">  return ::std::make_unique&lt;VfsCore_t&gt;(::std::vector&lt;ImplPtr_t&gt;</div>
-<div class="line">  {</div>
-<div class="line">    ::std::make_shared&lt;::alicorn::modules::vfs::Pack&gt;(<span class="stringliteral">&quot;data/Data.pack&quot;</span>, <span class="comment">// Чтение данных из упакованного файла Data.pack.</span></div>
-<div class="line">      ::std::vector&lt;ConverterPtr_t&gt;{ ::std::make_shared&lt;Compressor_t&gt;() }),</div>
-<div class="line">  });</div>
-<div class="line">}</div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace std</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace extension</span></div>
-<div class="line">  </div>
-<div class="line">} <span class="comment">// namespace alicorn</span></div>
-<div class="line"> </div>
-</div><!-- fragment --> </div></div><!-- contents -->
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.03.2019 12:21  </td><td bgcolor="#FFC0C0">fix: Падение программы при закрытии окна, если в .rcss файле был использован несуществующий файл изображения.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.03.2019 18:46  </td><td bgcolor="#C0FFC0">Компонент заливки буфера кадра указанным цветом.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.03.2019 11:34  </td><td bgcolor="#C0FFC0">Camera: замена названия параметра 'angle' на 'fov'.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.03.2019 11:22  </td><td bgcolor="#C0FFC0">Подсчет количества запросов рендера и автоматическое удаление рендера при обнулении счетчика.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05083.html">Covellite.App</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.03.2019 13:28  </td><td bgcolor="#FFC0C0">fix: Неверный порядок удаления объектов окон у Android программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.03.2019 13:08  </td><td bgcolor="#FFC0C0">fix: Зависание цикла обработки событий Android программы в режиме непрерывной отрисовки при завершении работы приложения.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.03.2019 13:08  </td><td bgcolor="#C0FFC0">State.Scissor: замена имени параметра на enabled.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.03.2019 12:53  </td><td bgcolor="#C0FFC0">Отдельный компонент буфера глубины.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.02.2019 20:52  </td><td bgcolor="#C0FFC0">Использование компонента положения совместно с ортографической камерой.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.02.2019 19:35  </td><td bgcolor="#C0FFC0">OpenGL: автоматическая привязка компонента State.Sampler к текстуре.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.02.2019 18:57  </td><td bgcolor="#C0FFC0">OpenGL: установка нормалей по умолчанию для плоских объектов.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.11.1368 Unknown </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.02.2019 20:10  </td><td bgcolor="#C0FFC0">Изменение названий классов вершин.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.02.2019 19:25  </td><td bgcolor="#C0FFC0">Шейдеры по умолчанию.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.02.2019 17:48  </td><td bgcolor="#C0FFC0">Автоматический вывод типа шейдера.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.02.2019 19:40  </td><td bgcolor="#C0FFC0">Изменение способа создания камер.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.02.2019 22:44  </td><td bgcolor="#C0FFC0">Разный результат рендеринга с использованием источников света для реализаций OpenGL и DirectX.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.02.2019 19:57  </td><td bgcolor="#C0FFC0">Изменение способа указания цвета компонентам источников света.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.02.2019 20:40  </td><td bgcolor="#C0FFC0">Простой 3D объект: включение/выключение источников света.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.10.1330 Unknown </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.02.2019 17:54  </td><td bgcolor="#FFC0C0">fix: Ошибка при повторном создании объекта с одни и тем же id и передачей информации через компонент Data.Buffer.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.02.2019 21:04  </td><td bgcolor="#C0FFC0">Передача данных вертексных и индексных буферов при помощи компонента Data.Buffer.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.02.2019 20:44  </td><td bgcolor="#C0FFC0">Объект прямого доступа к параметру kind компонента.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.02.2019 18:52  </td><td bgcolor="#FFC0C0">fix: DirectX: неверное направление оси Z при использовании буфера глубины для камеры отрисовки плоских объектов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.02.2019 14:19  </td><td bgcolor="#FFC0C0">fix: OpenGL: некорректная отрисовка с единым для всей сцены индексным буфером.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.02.2019 20:05  </td><td bgcolor="#C0FFC0">Образец 2D игры: аналоговые часы в фоне.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.02.2019 12:45  </td><td bgcolor="#C0FFC0">Параметры минимального размера окна Windows.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.02.2019 19:51  </td><td bgcolor="#C0FFC0">События активации/деактивации окна Windows.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.02.2019 19:42  </td><td bgcolor="#C0FFC0">Изменение логики вызова события изменения размеров окна программы в Windows.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.02.2019 13:22  </td><td bgcolor="#FFC0C0">fix: Исключение при сворачивании окна.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05092.html">Covellite.Gui</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.02.2019 20:21  </td><td bgcolor="#C0FFC0">Подписка на событие изменения элемента Gui.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.9.1281 Unknown </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">31.01.2019 20:29  </td><td bgcolor="#C0FFC0">Исправление примера использования фреймворка: пример простой 2D игры.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.01.2019 20:22  </td><td bgcolor="#C0FFC0">Исправление примера использования фреймворка: окно отображения 3D объекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">25.01.2019 20:44  </td><td bgcolor="#C0FFC0">Исправление примера использования фреймворка: окно настроек.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.01.2019 21:14  </td><td bgcolor="#C0FFC0">Исправление примера использования фреймворка: окно вывода текста в разных форматах.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">18.01.2019 13:55  </td><td bgcolor="#C0FFC0">Пример использования фреймворка: окно описания программы.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.8.??? </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.01.2019 11:07  </td><td bgcolor="#C0FFC0">Исправление кода с учетом изменения компонентной системы: реализация DirectX11.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2018 21:07  </td><td bgcolor="#C0FFC0">Исправление кода с учетом изменения компонентной системы: реализация DirectX10.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2018 12:56  </td><td bgcolor="#C0FFC0">Исправление кода с учетом изменения компонентной системы: реализация OpenGLES.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2018 11:53  </td><td bgcolor="#C0FFC0">Исправление кода с учетом изменения компонентной системы: реализация OpenGL.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2018 19:31  </td><td bgcolor="#C0FFC0">Получение параметра компонента по хешу его имени.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2018 19:04  </td><td bgcolor="#C0FFC0">Обработка ошибок при создании компонентов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">25.11.2018 12:18  </td><td bgcolor="#C0FFC0">Обработка пустых рендеров.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.11.2018 13:22  </td><td bgcolor="#FFC0C0">fix: Инициализация ссылкой на еще не существующий объект.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.7.1063 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.11.2018 13:26  </td><td bgcolor="#C0FFC0">Рендеринг GUI на основе компонентной системы.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.6.986 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05083.html">Covellite.App</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.10.2018 15:35  </td><td bgcolor="#FFC0C0">fix: Попытка отрисовки окна после того, как оно стало невалидным в Android версии.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.5.933 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.09.2018 20:41  </td><td bgcolor="#C0FFC0">Реализация DirectX11.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.09.2018 22:41  </td><td bgcolor="#C0FFC0">Автоматический выбор наиболее подходящей для текущей платформы версии рендера.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.4.895 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">30.08.2018 20:39  </td><td bgcolor="#C0FFC0">Макрос проверки кода возврата вызова функций DirectX.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.08.2018 14:23  </td><td bgcolor="#C0FFC0">DirectX9/10: наивная реализация.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.08.2018 12:32  </td><td bgcolor="#C0FFC0">Функция получения размеров окна программы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">31.07.2018 12:45  </td><td bgcolor="#C0FFC0">Событие нажатия кнопки Menu программы.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Version: 2.1.3.771 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05087.html">Covellite.Events</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.07.2018 19:51  </td><td bgcolor="#C0FFC0">Изменение способа работы с сообщениями фреймворка.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.06.2018 20:34  </td><td bgcolor="#C0FFC0">Создание класса реализации графического API, указанного в настройках.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.1.2.609 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.03.2018 10:38  </td><td bgcolor="#C0FFC0">Флаг разрешения изменений размеров окна мышью.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.02.2018 13:58  </td><td bgcolor="#C0FFC0">Изменение способа задания пути к папке шрифтов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.02.2018 13:22  </td><td bgcolor="#C0FFC0">Разделение настроек, специфичных для Windows и Android версий.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.02.2018 11:21  </td><td bgcolor="#FFC0C0">fix: Падение программы при нажатии кнопки при повторном входе на дочерний слой.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.1.1.575 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.02.2018 10:21  </td><td bgcolor="#C0FFC0">Изменение способа доступа к файлам.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.02.2018 13:32  </td><td bgcolor="#C0FFC0">Изменен способ доступа к настройкам программы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.02.2018 13:38  </td><td bgcolor="#C0FFC0">Стилистические исправления кода: перенос подставного класса для класса IStringTranslator.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.02.2018 13:12  </td><td bgcolor="#C0FFC0">Реорганизация ссылок на подставные классы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.02.2018 13:35  </td><td bgcolor="#C0FFC0">Сборка скриптом: полная обработка решения CppCheck.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.02.2018 11:04  </td><td bgcolor="#C0FFC0">Сборка скриптом: настройка вычисления метрик кода в решении.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.11.2017 21:18  </td><td bgcolor="#C0FFC0">Удаление инициализации логгера из дочернего потока.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.11.2017 13:02  </td><td bgcolor="#FFC0C0">fix: Некорректное завершение работы программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.11.2017 12:09  </td><td bgcolor="#FFC0C0">fix: Аварийное завершение работы программы при повторном запуске.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.11.2017 12:59  </td><td bgcolor="#FFC0C0">fix: Игнорирование загрузки шрифтов в Android версии примера использования фреймворка.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h1>Версия: 2.1.0.539 </h1>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.11.2017 13:19  </td><td bgcolor="#C0FFC0">Запуск Windows программы в полноэкранном режиме.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.11.2017 12:41  </td><td bgcolor="#C0FFC0">Ограничение размеров окна Windows программы размерами экрана.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.11.2017 11:55  </td><td bgcolor="#C0FFC0">Размеры окна Windows - из настроек.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.11.2017 11:28  </td><td bgcolor="#C0FFC0">Класс доступа к настройкам фреймворка.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.11.2017 12:04  </td><td bgcolor="#C0FFC0">Автоматическая загрузка всех шрифтов из указанной в настройках папки.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.11.2017 12:54  </td><td bgcolor="#C0FFC0">Получение цвета фона окна программы из настроек.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.11.2017 13:26  </td><td bgcolor="#C0FFC0">Событие нажатия кнопки клавиатуры.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.11.2017 12:43  </td><td bgcolor="#C0FFC0">Событин возврата к предыдущему слою.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.11.2017 12:01  </td><td bgcolor="#C0FFC0">Функция получения параметров командной строки.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.11.2017 00:00  </td><td bgcolor="#C0FFC0">Заголовок окна - название программы из ресурсов версии.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.0.5.505 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.11.2017 13:02  </td><td bgcolor="#FFC0C0">fix: Android: не обрабатывается перемещение 'курсора' при касании экрана.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.11.2017 13:22  </td><td bgcolor="#C0FFC0">Игнорирование управляющих кодов клавиш для сигнала KeyPressed.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.11.2017 12:53  </td><td bgcolor="#C0FFC0">Функция получения высоты статус-бара окна.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.11.2017 12:38  </td><td bgcolor="#C0FFC0">Преобразование виртуальных кодов кнопок операционной системы в коды кнопок libRocket.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">31.10.2017 11:49  </td><td bgcolor="#C0FFC0">Вывод в лог типа и версии используемого графического API.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">30.10.2017 20:54  </td><td bgcolor="#C0FFC0">Разрушение объектов окон в порядке, обратном их созданию.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">30.10.2017 13:10  </td><td bgcolor="#C0FFC0">Преобразование слешей в путях к файлам в зависимости от типа операционной системы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.10.2017 12:23  </td><td bgcolor="#C0FFC0">Реализация окна графического API для Windows/OpenGL.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.10.2017 11:31  </td><td bgcolor="#C0FFC0">Иконка .exe файла программы в заголовке окна.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.10.2017 11:22  </td><td bgcolor="#C0FFC0">Используемый по умолчанию курсор для программы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.10.2017 11:12  </td><td bgcolor="#C0FFC0">Реализация для Windows: класс Window.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.10.2017 14:30  </td><td bgcolor="#C0FFC0">Класс Application.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.10.2017 12:45  </td><td bgcolor="#FFC0C0">fix: Реализация для Windows: зацикливание программы при создании окна.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.10.2017 12:10  </td><td bgcolor="#C0FFC0">Реализация для Windows: класс EventHandler.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.10.2017 13:54  </td><td bgcolor="#C0FFC0">Кроссплатформенная версия макроса точки входа в программу.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.10.2017 13:58  </td><td bgcolor="#C0FFC0">Класс фасада для скрытия реализаций окон конкретного графического API.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.10.2017 15:10  </td><td bgcolor="#C0FFC0">Класс Application: точка входа в программу.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.10.2017 22:28  </td><td bgcolor="#C0FFC0">Изменение реализации макроса точки входа в программу.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.10.2017 13:08  </td><td bgcolor="#C0FFC0">Класс Application: изменение способа указания режима запуска приложения.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.0.4.435 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.10.2017 23:26  </td><td bgcolor="#FFC0C0">fix: Двойные срабатывания событий элементов управления libRocket.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.10.2017 13:35  </td><td bgcolor="#C0FFC0">Подписка на события выбора элемента управления.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.10.2017 13:05  </td><td bgcolor="#C0FFC0">Класс EventHandler: изменение способа хранения/передачи объекта класса.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.10.2017 23:05  </td><td bgcolor="#C0FFC0">Класс EventHandler.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.10.2017 14:37  </td><td bgcolor="#C0FFC0">Класс EventHandler: перенос обработки сообщений операционной системы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.10.2017 12:14  </td><td bgcolor="#C0FFC0">Класс EventHandler: переименование класса.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.0.3.404 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.10.2017 14:31  </td><td bgcolor="#C0FFC0">Класс Window.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.10.2017 13:52  </td><td bgcolor="#C0FFC0">Класс преобразователя строк.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.10.2017 13:25  </td><td bgcolor="#C0FFC0">Класс Initializer: изменение способа передачи объекта преобразователя строк.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.10.2017 13:13  </td><td bgcolor="#C0FFC0">Класс System: изменение способа передачи объекта для преобразования строк.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.10.2017 13:05  </td><td bgcolor="#C0FFC0">Класс File: дополнение/исправление тестов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.10.2017 15:12  </td><td bgcolor="#C0FFC0">Кросс-платформенная реализация интерфейса чтения данных из файла.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.10.2017 01:25  </td><td bgcolor="#C0FFC0">Изменение способа передачи пути к файлу описания слоев.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.10.2017 19:35  </td><td bgcolor="#C0FFC0">Общий класс окна, содержащий код, который должен быть доступен во всех классах окон всех проектов.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.10.2017 15:01  </td><td bgcolor="#C0FFC0">Работа через интерфейс окна операционной системы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.10.2017 13:42  </td><td bgcolor="#C0FFC0">Перенос кода работы со слоями.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.10.2017 13:48  </td><td bgcolor="#C0FFC0">Передача конструктору класса приложения режима отрисовки окна программы.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.0.2.368 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.09.2017 14:13  </td><td bgcolor="#C0FFC0">Получение объекта Rocket::Core::RenderInterface через функцию окна графического Api.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.09.2017 14:29  </td><td bgcolor="#C0FFC0">Добавление пространства имен проекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.09.2017 13:22  </td><td bgcolor="#C0FFC0">Переименование общих хидеров проектов.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.09.2017 13:04  </td><td bgcolor="#C0FFC0">Перенос класса RenderOpenGL.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.09.2017 22:46  </td><td bgcolor="#C0FFC0">Закраска синим цветом окна программы при начале отрисовки.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.09.2017 14:04  </td><td bgcolor="#FFC0C0">fix: Ошибки при выполнении тестов.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05094.html">Covellite.Os</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.09.2017 13:57  </td><td bgcolor="#C0FFC0">Добавление пространства имен проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05079.html">Covellite.Api</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.09.2017 13:31  </td><td bgcolor="#C0FFC0">Добавление пространства имен проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.09.2017 13:07  </td><td bgcolor="#C0FFC0">Разделение кода по проектам операционной системы и графического API.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.09.2017 23:40  </td><td bgcolor="#C0FFC0">Функция получения хэндла окна операционной системы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.09.2017 23:00  </td><td bgcolor="#C0FFC0">Переключение буферов по событию завершения рисования окна.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.09.2017 22:53  </td><td bgcolor="#C0FFC0">Разделение кода окна операционной системы и окна графического Api.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.09.2017 11:56  </td><td bgcolor="#C0FFC0">Класс Application: активация событий нацала и завершения отрисовки окна.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.09.2017 11:46  </td><td bgcolor="#C0FFC0">Реорганизация идентификаторов событий.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.09.2017 00:03  </td><td bgcolor="#FFC0C0">fix: Ошибки при сборке проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">25.09.2017 00:00  </td><td bgcolor="#C0FFC0">Класс Application: генерация события отрисовки окна напрямую, без вызова функции CommandHandler().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.09.2017 22:55  </td><td bgcolor="#C0FFC0">Класс IWindow: переименование из IEventHandler.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.09.2017 13:20  </td><td bgcolor="#C0FFC0">Универсальные коды событий.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.09.2017 22:36  </td><td bgcolor="#C0FFC0">Вспомогательный класс для передачи параметров обработчикам событий.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.09.2017 14:52  </td><td bgcolor="#C0FFC0">Список используемых внешних инструментов.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 2.0.1.321 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.09.2017 12:00  </td><td bgcolor="#C0FFC0">Целевой уровень API всех проектов - как параметр по умолчанию.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.09.2017 23:04  </td><td bgcolor="#C0FFC0">Изменение способа работы с сообщениями.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.09.2017 13:35  </td><td bgcolor="#C0FFC0">Исправление/удаление ненужного кода.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h1>Версия: 2.0.0.294 </h1>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.09.2017 14:15  </td><td bgcolor="#FFC0C0">fix: Ошибка при запуске программы на устройстве.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.09.2017 13:48  </td><td bgcolor="#C0FFC0">Настройка копирования хидеров/сборки библиотек в папку фреймворка в Externals.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.09.2017 11:35  </td><td bgcolor="#C0FFC0">Вспомогательные действия при сборке скриптом - через подключение обобщенных страниц свойств.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.09.2017 13:05  </td><td bgcolor="#C0FFC0">Обновление ревизии ссылки на Externals, реорганизация кода c учетом изменений в Alicorn.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 1.0.3.268 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.06.2017 14:18  </td><td bgcolor="#FFC0C0">fix: Черное поле ввода текста.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.06.2017 16:40  </td><td bgcolor="#C0FFC0">Поддержка использования .bmp, .ico, .png, .jpeg файлов.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.05.2017 13:50  </td><td bgcolor="#C0FFC0">Функция получения текущего языка системы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">25.05.2017 21:16  </td><td bgcolor="#C0FFC0">Перенос вызова клавиатуры в системный интерфейс.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 1.0.2.244 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.02.2017 17:50  </td><td bgcolor="#C0FFC0">Класс Window: скрытие экранной клавиатуры при переключениях между слоями.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.02.2017 13:13  </td><td bgcolor="#C0FFC0">Класс Layer: функция установки базового рамера шрифта документа в процентах от длинной стороны экрана.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект CovelliteJniPage : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.02.2017 11:20  </td><td bgcolor="#C0FFC0">Класс Environment: наследование от класса из Alicorn.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.02.2017 10:21  </td><td bgcolor="#C0FFC0">Сброс данных программы при завершении работы приложения.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 1.0.1.231 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.01.2017 12:16  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: пример окна с прокруткой всего слоя при необходимости.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.01.2017 12:14  </td><td bgcolor="#C0FFC0">Класс Layer: функции получения размеров окна программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.01.2017 12:05  </td><td bgcolor="#C0FFC0">Класс Layer: класс Element: функция установки стиля элемента.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.01.2017 00:03  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: рабочее окно с автоматическим появлением полосы прокрутки при повороте устройства.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.01.2017 22:53  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: слой для тестирования прокрутки всего окна.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.01.2017 14:19  </td><td bgcolor="#C0FFC0">Класс Layer::Element: получение текста элемента в зависимости от его типа.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.01.2017 14:10  </td><td bgcolor="#C0FFC0">Класс Layer::Element: установка текста элемента в зависимости от его типа.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.01.2017 12:47  </td><td bgcolor="#FFC0C0">fix: Класс File: падение программы при попытке открытия несуществующего файла.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.01.2017 12:25  </td><td bgcolor="#C0FFC0">Класс Window: функция Back().  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.01.2017 00:02  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: выравнивание кнопок по правому краю.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.01.2017 22:48  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: градиентная заливка.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.01.2017 00:02  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: полоса прокрутки.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.01.2017 22:47  </td><td bgcolor="#C0FFC0">Пример GUI на стилях CSS: смещение картинки при нажатии кнопки.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.01.2017 14:11  </td><td bgcolor="#C0FFC0">Кнопка в заголовке в виде иконки.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.01.2017 12:35  </td><td bgcolor="#C0FFC0">Кнопки в заголовке окна.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.01.2017 23:04  </td><td bgcolor="#C0FFC0">Выравнивание кнопок и текста кнопок/заголовков.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.01.2017 13:47  </td><td bgcolor="#C0FFC0">Пример размещения элементов в заданных местах экрана.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.01.2017 13:00  </td><td bgcolor="#C0FFC0">Класс Window: получение пути к файлу при создании слоя через статическую функцию класса создаваемого слоя.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.01.2017 12:41  </td><td bgcolor="#C0FFC0">Подставные макросы для объявления функции точки входа модуля.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.01.2017 12:24  </td><td bgcolor="#C0FFC0">Класс Layer: класс Element: функция GetText().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.01.2017 12:18  </td><td bgcolor="#C0FFC0">Класс Layer: класс Element: функция SetText().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.01.2017 12:12  </td><td bgcolor="#C0FFC0">Класс Layer: функция GetElement().  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.01.2017 22:32  </td><td bgcolor="#C0FFC0">Исправление/дополнение подставных классов.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h1>Версия: 1.0.0.178 </h1>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.12.2016 15:14  </td><td bgcolor="#C0FFC0">Класс RenderOpenGL: функция SetScissorRegion().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.12.2016 14:45  </td><td bgcolor="#C0FFC0">Класс RenderOpenGL: функция EnableScissorRegion().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.12.2016 14:34  </td><td bgcolor="#C0FFC0">Класс RenderOpenGL: функция RenderGeometry() - отрисовка с учетом смещения на высоту статус-бара.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.12.2016 14:27  </td><td bgcolor="#C0FFC0">Класс Window: передача полю ввода текста символа перевода строки.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.12.2016 14:04  </td><td bgcolor="#C0FFC0">Класс Window: функция ProcessKeyPressed() - блокирование передачи libRocket управляющих символов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.12.2016 13:57  </td><td bgcolor="#C0FFC0">Класс Layer: отписка от события "click" в деструкторе.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.12.2016 13:41  </td><td bgcolor="#C0FFC0">Исправление/дополнение описания решения.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.12.2016 12:25  </td><td bgcolor="#C0FFC0">Класс Layer: подписка на события libRocket.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.12.2016 11:56  </td><td bgcolor="#C0FFC0">Класс Window: логика подписки на события libRocket вынесена в отдельный класс.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.12.2016 00:25  </td><td bgcolor="#C0FFC0">Описание использования фреймворка.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 22:46  </td><td bgcolor="#C0FFC0">Макросы создания функций точек входа в программу.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 13:15  </td><td bgcolor="#C0FFC0">Пример использования слоя без заголовка.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 12:43  </td><td bgcolor="#C0FFC0">Подставные классы для внешних классов фреймворка.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 12:12  </td><td bgcolor="#FFC0C0">fix: Класс Window: не работает обработка нажатия кнопки BACKSPACE.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 12:04  </td><td bgcolor="#C0FFC0">Исправление/дополнение документации решения.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 11:51  </td><td bgcolor="#C0FFC0">Перенос проекта сборки .apk файла в папку проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.12.2016 11:33  </td><td bgcolor="#FFC0C0">fix: Падение программы при запуске тестов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 22:41  </td><td bgcolor="#C0FFC0">Класс Application: изменение логики работы функции ProcessWindowRedrawNeeded().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 22:06  </td><td bgcolor="#C0FFC0">Класс EventHandler: изменение логики получения указателя на объект класса при обработке события.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 12:57  </td><td bgcolor="#C0FFC0">Класс Application: функция получения объекта главного окна программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 12:47  </td><td bgcolor="#C0FFC0">Класс Application: изменение логики вызова сигналов событий.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 12:13  </td><td bgcolor="#C0FFC0">Класс Window: инициализация Debugger'a только в отладочной версии программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 12:07  </td><td bgcolor="#C0FFC0">Класс Window: изменение логики инициализации Debugger'a.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.12.2016 11:53  </td><td bgcolor="#C0FFC0">Класс Initializer: изменена логика инициализации libRocket.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">25.12.2016 11:45  </td><td bgcolor="#C0FFC0">Класс Application: прекращение отрисовки окна при переходе программы в режим паузы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.12.2016 21:53  </td><td bgcolor="#C0FFC0">Класс Application: обработка события APP_CMD_STOP.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.12.2016 21:41  </td><td bgcolor="#C0FFC0">Класс Application: удаление ненужных действий.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.12.2016 21:27  </td><td bgcolor="#C0FFC0">Класс Window: изменено действие, выполняемое при вызове функции Exit().  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h1>Версия: 0.1.0.139 </h1>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.12.2016 13:04  </td><td bgcolor="#C0FFC0">Скриншоты примера для документации.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.12.2016 12:29  </td><td bgcolor="#C0FFC0">Класс Initializer: отключено завершение работы libRocket.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.12.2016 12:10  </td><td bgcolor="#C0FFC0">КлассWindow: удалена очистка всех документов в деструкторе.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.12.2016 21:35  </td><td bgcolor="#C0FFC0">Класс Application: очищение используемых указателей.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.12.2016 21:11  </td><td bgcolor="#C0FFC0">Класс EventHandler: обнуление используемых указателей.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.12.2016 11:31  </td><td bgcolor="#FFC0C0">fix: Утечка памяти при потере фокуса программой.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.12.2016 10:13  </td><td bgcolor="#FFC0C0">fix: Класс System: зацикливание программы при преобразовании строк.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.12.2016 23:47  </td><td bgcolor="#C0FFC0">Класс System.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.12.2016 23:27  </td><td bgcolor="#C0FFC0">Класс Initializer.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.12.2016 23:27  </td><td bgcolor="#C0FFC0">Класс Initializer: передача System указателя на интерфейс транслятора строк.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.12.2016 22:35  </td><td bgcolor="#C0FFC0">Класс IStringTranslator.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05085.html">Covellite.Egl</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.12.2016 12:36  </td><td bgcolor="#FFC0C0">fix: Класс Config: отрисовка нового слоя поверх предыдущего.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.12.2016 12:25  </td><td bgcolor="#C0FFC0">Класс Window.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.12.2016 22:00  </td><td bgcolor="#C0FFC0">Класс Window: переключение буферов перенесено в обработчик события отрисовки окна.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.12.2016 11:32  </td><td bgcolor="#C0FFC0">Класс Layer.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.12.2016 22:41  </td><td bgcolor="#C0FFC0">Класс Initializer.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.12.2016 21:08  </td><td bgcolor="#C0FFC0">Класс RenderOpenGL: функция GetVerticalTexelOffset().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">18.12.2016 23:17  </td><td bgcolor="#C0FFC0">Класс RenderOpenGL.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">18.12.2016 22:07  </td><td bgcolor="#C0FFC0">Конструктор класса.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">18.12.2016 12:36  </td><td bgcolor="#C0FFC0">Класс File.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект CovelliteJniPage : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">18.12.2016 11:13  </td><td bgcolor="#C0FFC0">Класс Environment.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 21:40  </td><td bgcolor="#C0FFC0">Класс Application: функция Run() - завершение работы программы при выходе из функции.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 12:38  </td><td bgcolor="#C0FFC0">Удаление внешних ссылок на libRocket.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 12:00  </td><td bgcolor="#C0FFC0">Реализация для libRocket убрана "под капот".  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 11:43  </td><td bgcolor="#C0FFC0">Удаление зависимости от Covellite.Egl.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 11:01  </td><td bgcolor="#C0FFC0">Описание получения Unicode кодов нажатых кнопок клавиатуры.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 10:48  </td><td bgcolor="#C0FFC0">Проект сборки всех библиотек фреймворка.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.12.2016 10:41  </td><td bgcolor="#C0FFC0">Исправление/дополнение описания решения.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+<h2>Версия: 0.0.1.72 </h2>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.12.2016 23:18  </td><td bgcolor="#C0FFC0">Перенос заголовочных файлов в папку экспорта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.12.2016 23:00  </td><td bgcolor="#C0FFC0">Перенос заголовочных файлов в папку экспорта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.12.2016 22:39  </td><td bgcolor="#C0FFC0">Сборка библиотек в папку экспорта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.12.2016 21:58  </td><td bgcolor="#C0FFC0">Переименование проекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.12.2016 13:34  </td><td bgcolor="#C0FFC0">Включение всех файлов фреймворка в тестовые проекты.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 23:45  </td><td bgcolor="#C0FFC0">Общий проект тестирования.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект CovelliteJniPage : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 23:19  </td><td bgcolor="#C0FFC0">Общий проект тестирования.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 23:17  </td><td bgcolor="#C0FFC0">Класс EventHandler: виртуальный деструктор.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 23:03  </td><td bgcolor="#C0FFC0">Настройка сборки решения скриптом.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 22:16  </td><td bgcolor="#C0FFC0">Класс Window: изменение логики работы функции Exit().  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 22:10  </td><td bgcolor="#C0FFC0">Переименование классов.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 12:39  </td><td bgcolor="#C0FFC0">Правки для ускорения компиляции проектов решения.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Rocket : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 12:13  </td><td bgcolor="#C0FFC0">Перенос кода реализации работы с GUI с использованием libRocket.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 11:46  </td><td bgcolor="#C0FFC0">Описание проекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 11:36  </td><td bgcolor="#C0FFC0">Заготовка проекта реализации при помощи libRocket.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05085.html">Covellite.Egl</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 11:32  </td><td bgcolor="#C0FFC0">Перенос кода из проекта Covellite.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 10:53  </td><td bgcolor="#C0FFC0">Общий тестовый проект.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 10:51  </td><td bgcolor="#C0FFC0">Описание проекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 10:42  </td><td bgcolor="#C0FFC0">Проект для классов-оберток EGL.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">15.12.2016 00:07  </td><td bgcolor="#FFC0C0">fix: Ошибки в logcat при завершении работы программы.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 23:25  </td><td bgcolor="#C0FFC0">Перенос файлов классов, относящихся к libRocket в папку Rocket.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 13:44  </td><td bgcolor="#C0FFC0">Класс Application: функция OnTerminateWindow().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 13:30  </td><td bgcolor="#C0FFC0">Класс Application: функция CreateMainWindow&lt;&gt;().  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 11:59  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 11:53  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс Application.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 11:50  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс Window.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 11:50  </td><td bgcolor="#C0FFC0">Класс Window: функция ShowSoftKeyboard().  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект CovelliteJniPage : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 11:36  </td><td bgcolor="#C0FFC0">Класс Environment перенесен в пространство имен covellite.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 00:18  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс EventHandler.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 00:05  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс Layers.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.12.2016 00:00  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс Context.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 23:52  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс Surface.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 23:37  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс Config.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 23:12  </td><td bgcolor="#C0FFC0">Восстановление компилируемости тестов: класс CallProxy.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 22:49  </td><td bgcolor="#C0FFC0">Обработка выбора элементов управления через сигнал.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 12:25  </td><td bgcolor="#C0FFC0">Изменение иконки/названия тестовой программы.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 12:01  </td><td bgcolor="#FFC0C0">fix: Некорректная обработка поворотов устройства.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.12.2016 11:13  </td><td bgcolor="#C0FFC0">Использование фреймворка как статической библиотеки.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 23:47  </td><td bgcolor="#C0FFC0">Переименование проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="index.html#MainPage">MainPage</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 23:46  </td><td bgcolor="#C0FFC0">Вспомогательные: переименование проекта.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 23:03  </td><td bgcolor="#C0FFC0">Исправление/дополнение описания проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект <a class="el" href="a05102.html">Example</a> : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 13:19  </td><td bgcolor="#C0FFC0">Пример использования фреймворка.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 12:11  </td><td bgcolor="#C0FFC0">Решение: общий проект тестирования.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект CovelliteJniPage : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 12:06  </td><td bgcolor="#C0FFC0">Переименование проекта.  </td></tr>
+</table>
+<table cellpadding="5" width="98%">
+<tr>
+<td bgcolor="#FFFFC0">Проект Covellite::Core : </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 11:55  </td><td bgcolor="#C0FFC0">Решение: настройка запуска примера использования фреймворка на подключенном устройстве.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 11:38  </td><td bgcolor="#C0FFC0">Решение: перенос кода примера использования фреймворка.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 11:18  </td><td bgcolor="#C0FFC0">Решение: настройка ссылки на репозиторий документации решения.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.12.2016 10:57  </td><td bgcolor="#C0FFC0">Решение: логотип.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.12.2016 13:11  </td><td bgcolor="#C0FFC0">Решение: общее описание.  </td></tr>
+</table>
+<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
+<tr>
+<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.12.2016 12:13  </td><td bgcolor="#C0FFC0">Базовое решение.  </td></tr>
+</table>
+<table frame="void">
+<tr>
+<td></td></tr>
+</table>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05063.html">Manual</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Сб 4 Янв 2025 23:13:18. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="navelem"><a class="el" href="index.html">index</a></li><li class="navelem"><a class="el" href="a05056.html">История изменений</a></li>
+    <li class="footer">Документация по Covellite++. Последние изменения: Вт 8 Апр 2025 21:48:11. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
