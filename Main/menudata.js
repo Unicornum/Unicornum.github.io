@@ -24,6 +24,6 @@
 */
 var menudata={children:[
 {text:"Главная",url:"index.html"},
-{text:"Релизы",url:"a00810.html"},
-{text:"Документация",url:"a00813.html"},
-{text:"Обо мне",url:"a00816.html"}]}
+{text:"Релизы",url:"a00801.html"},
+{text:"Документация",url:"a00804.html"},
+{text:"Обо мне",url:"a00807.html"}]}
