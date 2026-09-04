@@ -1,14 +1,22 @@
 var searchData=
 [
-  ['pack_0',['Pack',['../a49165.html#a1715c6b00def1a4864ae4312ede86fa2',1,'alicorn::modules::vfs::Pack']]],
-  ['postunpackaction_1',['PostUnpackAction',['../a49133.html#ad7e2cbdbdd9a4417b92c443c214dfc0b',1,'alicorn::modules::vfs::Compress::PostUnpackAction()'],['../a49141.html#a8de30e0e047495678957fdb4b026b7ae',1,'alicorn::modules::vfs::Crypto::PostUnpackAction()'],['../a49149.html#a835b7d13054ed583db5dc2fd81273356',1,'alicorn::modules::vfs::IConverter::PostUnpackAction()']]],
-  ['prepackaction_2',['PrePackAction',['../a49133.html#ac95dbc23b673898390244c78e6ed87f3',1,'alicorn::modules::vfs::Compress::PrePackAction()'],['../a49141.html#a285e869c178d6ba7324e2c5323f7f125',1,'alicorn::modules::vfs::Crypto::PrePackAction()'],['../a49149.html#a8f85b8c98182aa0987fbc5f98d2f4c9c',1,'alicorn::modules::vfs::IConverter::PrePackAction()']]],
-  ['preparerenderbuffer_3',['PrepareRenderBuffer',['../a49773.html#ae8ea1e277e4a60c01c23e63871967014',1,'ShellRenderInterfaceExtensions::PrepareRenderBuffer()'],['../a49777.html#a6674fba00b2235fa2f38837edb4b63dd',1,'ShellRenderInterfaceOpenGL::PrepareRenderBuffer()']]],
-  ['presentrenderbuffer_4',['PresentRenderBuffer',['../a49773.html#a85cb66093e96c7ad3ae61098200916cd',1,'ShellRenderInterfaceExtensions::PresentRenderBuffer()'],['../a49777.html#af205fbfc427a6519efb6cc0c90acac2b',1,'ShellRenderInterfaceOpenGL::PresentRenderBuffer()']]],
-  ['process_5',['Process',['../a49569.html#a15c85d53e3079f343aead5930adb4b2a',1,'alicorn::system::platform::Process']]],
-  ['processing_6',['Processing',['../a49717.html#a2702880d28bd0cbbb831e905bfd991a5',1,'Common']]],
-  ['processoutput_7',['ProcessOutput',['../a47755.html#ga9d847c18ebc2abac375a25fbaf95f123',1,'process.cpp']]],
-  ['ptr_8',['Ptr',['../a49461.html#a480c2af125e99461498f53eda8309260',1,'alicorn::system::application::dll::Ptr']]],
-  ['ptrobject_9',['PtrObject',['../a49457.html#a20d6e0d738903f53e76b9a915577a279',1,'alicorn::system::application::dll::PtrObject']]],
-  ['push_10',['Push',['../a49165.html#a1b36ab206c622dac0a5693dad7cf9da7',1,'alicorn::modules::vfs::Pack']]]
+  ['read_0',['Read',['../a81157.html#ad71e46bb96b72cb4c74a85e6c2c8043a',1,'ShellFileInterface']]],
+  ['redo_1',['Redo',['../a80217.html#a2cf7a9e613cbb698cc1ca2c26e554637',1,'alicorn::modules::patterns::command::ManagerUndoRedo']]],
+  ['register_2',['Register',['../a80221.html#a9655af04b535e7f51c659295250d1d96',1,'alicorn::modules::patterns::factory::Factory']]],
+  ['release_3',['Release',['../a79413.html#a391b49c50ee60058b67ae8e0952cfe88',1,'alicorn::extension::std::memory::Pool']]],
+  ['releasecompiledgeometry_4',['ReleaseCompiledGeometry',['../a81165.html#a98309ff609dfcf740c8b533e19b34791',1,'ShellRenderInterfaceOpenGL']]],
+  ['releasetexture_5',['ReleaseTexture',['../a81165.html#afb18d7edef61fb7aa23f3c5326a20e36',1,'ShellRenderInterfaceOpenGL']]],
+  ['remove_6',['Remove',['../a80697.html#ae59e45200c1c8057e5f92824882093c4',1,'alicorn::source::document::Utilities']]],
+  ['rendercompiledgeometry_7',['RenderCompiledGeometry',['../a81165.html#a0df1d4ff79b4b6bbf927d902fc380a6b',1,'ShellRenderInterfaceOpenGL']]],
+  ['rendergeometry_8',['RenderGeometry',['../a81165.html#a8cc7ed3ed2bbdf0806625b593e7d2bd2',1,'ShellRenderInterfaceOpenGL']]],
+  ['replace_9',['Replace',['../a79497.html#adb87baefad52f5062b8edeba4ca08c03',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx)'],['../a79497.html#a16563cd9219fb222a79395912e3dc987',1,'alicorn::extension::std::regex::Replace::Replace(const String &amp;_RegEx, IgnoreCase)'],['../a80697.html#aa5c890e6ac0f9a8f58880c7469901031',1,'alicorn::source::document::Utilities::Replace()']]],
+  ['replaceextrasymbols_10',['ReplaceExtraSymbols',['../a81461.html#aa78d50f4ea77fdedd06e34197510186b',1,'wx::HtmlTestInfo']]],
+  ['replacehtmltags_11',['ReplaceHtmlTags',['../a81461.html#aa52b96412dab66e229bbb20d65a7dfb8',1,'wx::HtmlTestInfo']]],
+  ['replacetocoloroutput_12',['ReplaceToColorOutput',['../a81461.html#ac1d8fae951fccf141bc9030898f153ce',1,'wx::HtmlTestInfo']]],
+  ['rollinglogfiles_13',['RollingLogFiles',['../a80141.html#a1c334e9fac26da0d4445802f43beefaf',1,'alicorn::modules::logger::report::File']]],
+  ['root_14',['Root',['../a79126.html#ga8640e62399009826e69832f22ddbf23e',1,'alicorn::extension::cpp::math']]],
+  ['run_15',['Run',['../a79925.html#a60611bcf504487178c8b2feed5ac5a2a',1,'alicorn::extension::testing::Multithreads::Run()'],['../a80957.html#a11d7cff72cb35948611aec51175210a9',1,'alicorn::system::platform::Process::Run(const Args_t &amp;=Args_t{})']]],
+  ['runwithoutwaitingcompletion_16',['RunWithoutWaitingCompletion',['../a80957.html#a13baa7b36d59ad50c468f5cf534e9df0',1,'alicorn::system::platform::Process']]],
+  ['runwithreceivestdout_17',['RunWithReceiveStdout',['../a80957.html#af7d137f69285b936b814d67478bbe3f2',1,'alicorn::system::platform::Process']]],
+  ['runwithwaitingcompletion_18',['RunWithWaitingCompletion',['../a80957.html#a200f3778cd1aafdd7401365ba6b3faab',1,'alicorn::system::platform::Process']]]
 ];
