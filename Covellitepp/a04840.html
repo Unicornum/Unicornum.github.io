@@ -12,16 +12,15 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: История изменений</title>
+    <title>Covellite++: Шейдеры</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -38,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2583 Platform: x64 Build: 19:11 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2586 Platform: x64 Build: 18:17 05.09.2026</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -47,28 +46,47 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.12.0 -->
+<!-- Создано системой Doxygen 1.18.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(0); });
-/* @license-end */
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Поиск',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -76,21 +94,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a04840.html',''); initResizable(true); });
-/* @license-end */
+document.addEventListener('DOMContentLoaded',() => { initNavTree('a04840.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -108,666 +121,284 @@ $(function(){initNavTree('a04840.html',''); initResizable(true); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">История изменений</div></div>
+  <div class="headertitle"><div class="title">Шейдеры </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>История изменений </h1>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.04.2025 08:51  </td><td bgcolor="#C0FFC0">OpenGL: очистка ошибок в начале рендеринга кадра.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.04.2025 08:15  </td><td bgcolor="#FFC0C0">fix: DirectX11: некорректная установка массивов текстур, если их больше одного.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.04.2025 18:28  </td><td bgcolor="#C0FFC0">Массивы текстур: directX11.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.04.2025 22:20  </td><td bgcolor="#C0FFC0">Массивы текстур: openGL.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.04.2025 20:50  </td><td bgcolor="#FFC0C0">fix: OpenGL: у куба в PBR окне корректно рендерится только один треугольник.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.04.2025 21:15  </td><td bgcolor="#FFC0C0">fix: OpenGL: ошибка при замене в шейдере структуры пикселя на кастомную.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.04.2025 20:08  </td><td bgcolor="#FFC0C0">fix: DirectX11: DXGI ERROR: IDXGISwapChain::Release: Swapchain Released while fullscreen...  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.04.2025 12:58  </td><td bgcolor="#FFC0C0">fix: DirectX11: предупреждение при старте программы из-за флага DXGI_SWAP_EFFECT_DISCARD.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h1>Version: 2.3.0.2579 Unknown </h1>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.10.2576 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.10.2020 16:26  </td><td bgcolor="#C0FFC0">Изменение количества элементов инстанс буфера в процессе рендеринга.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.10.2020 11:41  </td><td bgcolor="#C0FFC0">Вспомогательный проект для подключения к тестовым проектам.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.10.2020 11:13  </td><td bgcolor="#FFC0C0">fix: Исключения bad_any_cast при любых изменениях в активном слое.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.9.2531 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.09.2020 11:50  </td><td bgcolor="#FFC0C0">fix: Android: некорректная установка viewport'a для окна без заголовка.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.09.2020 20:26  </td><td bgcolor="#C0FFC0">Camera: параметры width, height и scale.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.09.2020 21:33  </td><td bgcolor="#FFC0C0">fix: OpenGLES3: BkSurface - некорректная установка viewport'a при наличии заголовка.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.09.2020 18:56  </td><td bgcolor="#C0FFC0">OpenGL: игнорирование отсутствующей в шейдере текстуры.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04874.html">Covellite.Expanse</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.09.2020 17:51  </td><td bgcolor="#C0FFC0">Window: функция отложенного создания объектов с возможностью отложенной загрузки данных из файлов.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.09.2020 12:37  </td><td bgcolor="#FFC0C0">fix: DirectX11: некорректное пересоздание текстуры для чтения данных при изменении размеров окна программы.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.09.2020 20:37  </td><td bgcolor="#FFC0C0">fix: Падение программы в демо-режиме при перемещении по игровому миру.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.8.2505 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">14.08.2020 17:53  </td><td bgcolor="#C0FFC0">Пользовательские размеры внеэкранной поверхности.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.08.2020 19:48  </td><td bgcolor="#C0FFC0">Текстуры высокой разрядности.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.08.2020 11:20  </td><td bgcolor="#C0FFC0">Назначение текстуры через параметры name и index.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.08.2020 18:45  </td><td bgcolor="#FFC0C0">fix: Ошибка при компиляции шейдера, если в файле есть две функции, имя одной из которых совпадает с началом имени другой.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04874.html">Covellite.Expanse</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.08.2020 10:41  </td><td bgcolor="#C0FFC0">Функция создания объектов через очередь загрузки.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.08.2020 21:03  </td><td bgcolor="#C0FFC0">Функция добавления объектов в очередь рендеринга без сортировки.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">04.08.2020 10:57  </td><td bgcolor="#FFC0C0">fix: Падение программы при создании нового updater'a во время вызова существующего.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.08.2020 15:55  </td><td bgcolor="#C0FFC0">Загрузка шрифтов средствами виртуальной файловой системы.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.7.2413 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.06.2020 18:47  </td><td bgcolor="#C0FFC0">Объявление обобщенного буфера для передачи данных.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04874.html">Covellite.Expanse</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.06.2020 17:26  </td><td bgcolor="#C0FFC0">Оптимизация скорости работы.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.06.2020 16:21  </td><td bgcolor="#C0FFC0">Проект рендеринга 3D сцены: класс Window.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.06.2020 21:16  </td><td bgcolor="#C0FFC0">Проект рендеринга 3D сцены: класс GameScene.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.06.2020 18:43  </td><td bgcolor="#C0FFC0">Проект рендеринга 3D сцены: класс C3DScene.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.6.2335 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">11.06.2020 16:30  </td><td bgcolor="#C0FFC0">Класс Component::Renders: функции получения/удаления рендеров по одному.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">09.06.2020 10:44  </td><td bgcolor="#C0FFC0">Изменение интерфейса класса компонента.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.5.2279 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.05.2020 21:18  </td><td bgcolor="#C0FFC0">Переход на использование RmlUi.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.4.2245 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.05.2020 17:47  </td><td bgcolor="#FFC0C0">fix: Android: некорректное определение индекса атрибута при использовании инстансинга.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.05.2020 13:46  </td><td bgcolor="#FFC0C0">fix: Android: некорректное отображение вращающегося кубика при использовании инстансинга.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.05.2020 12:19  </td><td bgcolor="#FFC0C0">fix: Ошибка при использовании инстансинга на Android.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.05.2020 19:55  </td><td bgcolor="#C0FFC0">Очистка заголовка окна на Android.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.05.2020 16:41  </td><td bgcolor="#C0FFC0">Реализация тумана через пользовательский константный буфер.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.05.2020 13:13  </td><td bgcolor="#C0FFC0">Перенос кода воспроизведения звука на новую версию MiniAudio.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.05.2020 11:51  </td><td bgcolor="#C0FFC0">Завершение работы программы по нажатию ESC в главном окне.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.05.2020 15:52  </td><td bgcolor="#C0FFC0">Увеличение размеров ползунка громкости звука.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.05.2020 15:32  </td><td bgcolor="#C0FFC0">Ширина scrollbar'a в процентах ширины экрана.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.05.2020 12:34  </td><td bgcolor="#C0FFC0">OpenGL: State.Clear: Очистка всего окна.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.3.2191 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.10.2019 19:03  </td><td bgcolor="#FFC0C0">fix: Некорректное отображение освещения на некоторых конфигурациях, удаляющих при компиляции шейдера неиспользуемые переменные.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.10.2019 21:41  </td><td bgcolor="#FFC0C0">fix: Некорректная работа кнопки BACKSPACE на Android'e.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.10.2019 19:22  </td><td bgcolor="#FFC0C0">fix: Падение программы при выборе объекта после изменения размеров окна программы.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">26.10.2019 13:13  </td><td bgcolor="#C0FFC0">Камера: параметры znear и zfar.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.10.2019 12:58  </td><td bgcolor="#FFC0C0">fix: Дубли компонентов данных трансформации объектов при отрисовке теней.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.10.2019 21:28  </td><td bgcolor="#FFC0C0">fix: Сдвиг панели при рендеринге теней.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">22.10.2019 20:19  </td><td bgcolor="#C0FFC0">Чтение данных из текстуры.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.10.2019 14:18  </td><td bgcolor="#C0FFC0">Мипмаппинг для текстур, не используемых как внеэкранные поверхности.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.10.2019 12:59  </td><td bgcolor="#FFC0C0">fix: Неверное отображение PBR материала при использовании реализации OpenGL.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">17.10.2019 12:12  </td><td bgcolor="#FFC0C0">fix: Ошибка при отключении режима PBR в реализации OpenGL.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.10.2019 15:48  </td><td bgcolor="#C0FFC0">Подсветка объекта под курсором.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.10.2019 22:43  </td><td bgcolor="#C0FFC0">Вывод количества строк в заголовке при ошибке компиляции шейдера.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.10.2019 16:50  </td><td bgcolor="#C0FFC0">Рендеринг во внеэкранную поверхность.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.09.2019 00:46  </td><td bgcolor="#C0FFC0">Постпроцессинг и тени.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.09.2019 09:37  </td><td bgcolor="#C0FFC0">Инстансинг: реализация DirectX11.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">23.09.2019 20:23  </td><td bgcolor="#C0FFC0">Инстансинг: реализация OpenGL/ES3.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.09.2019 15:05  </td><td bgcolor="#C0FFC0">Пользовательский константный буфер.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.2.1960 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">29.08.2019 22:03  </td><td bgcolor="#C0FFC0">Шейдерная реализация OpenGL/ES3.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.08.2019 00:09  </td><td bgcolor="#C0FFC0">Шейдерная реализация OpenGL  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.08.2019 21:12  </td><td bgcolor="#C0FFC0">Унификация способа передачи данных вертексного буфера.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">19.08.2019 15:56  </td><td bgcolor="#C0FFC0">Унификация работы с шейдерами для всех типов реализаций.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">13.08.2019 13:29  </td><td bgcolor="#C0FFC0">Окончательное решение вопроса использования статического конвеера.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.2.1.1815 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.08.2019 14:09  </td><td bgcolor="#C0FFC0">Частицы.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.08.2019 13:28  </td><td bgcolor="#C0FFC0">Компонент Present для отрисовки billboard'ов.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">06.08.2019 19:24  </td><td bgcolor="#C0FFC0">Буфер глубины: флаг включения/выключения перезаписи буфера.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.08.2019 17:04  </td><td bgcolor="#FFC0C0">fix: OpenGL: неверно отрисовываются объекты, разбитые на группы.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">01.08.2019 17:03  </td><td bgcolor="#C0FFC0">Динамически изменяемый вертексный буфер.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">30.07.2019 20:59  </td><td bgcolor="#C0FFC0">Поддержка рендеринга тумана.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">25.07.2019 12:44  </td><td bgcolor="#C0FFC0">Поддержка использования PBR-текстур.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.07.2019 10:43  </td><td bgcolor="#C0FFC0">Компонент Updater'a.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04867.html">Covellite.App</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">21.07.2019 13:03  </td><td bgcolor="#C0FFC0">Android: расширение диагностики запуска приложения.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">10.07.2019 21:42  </td><td bgcolor="#C0FFC0">Поддержка анимаций реализацией DirectX10.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">08.07.2019 02:09  </td><td bgcolor="#C0FFC0">Класс загрузчика файлов при помощи Assimp.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.07.2019 23:14  </td><td bgcolor="#C0FFC0">Рендеринг анимированного объекта.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h1>Version: 2.2.0.1643 Unknown </h1>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">03.05.2019 18:16  </td><td bgcolor="#C0FFC0">Создание уникальных объектов рендера при каждом запросе.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04878.html">Covellite.Os</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.05.2019 17:46  </td><td bgcolor="#C0FFC0">Удаление устаревшего кода.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.05.2019 13:38  </td><td bgcolor="#C0FFC0">Удаление устаревшего кода.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">02.05.2019 12:37  </td><td bgcolor="#C0FFC0">Удаление устаревшего кода.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.1.13.1606 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04878.html">Covellite.Os</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.04.2019 13:22  </td><td bgcolor="#C0FFC0">Однократное сообщение нажатия кнопки клавиатуры при ее удержании.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">28.04.2019 12:19  </td><td bgcolor="#C0FFC0">Загрузка файлов текстур через виртуальную файловую систему.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.04.2019 19:25  </td><td bgcolor="#C0FFC0">Компонент включения alpha теста для реализации OpenGL|ES.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.04.2019 12:16  </td><td bgcolor="#C0FFC0">Установка в 1.0f значений по умолчанию для компонента масштабирования.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">27.04.2019 11:33  </td><td bgcolor="#C0FFC0">Флаг 'static' для компонента Present.Geometry (ускорение рендеринга объектов, положение/ориентация/масштаб которых не меняется).  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">24.04.2019 10:31  </td><td bgcolor="#C0FFC0">Демонстрационная версия (третий этап).  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">12.04.2019 20:57  </td><td bgcolor="#C0FFC0">Демонстрационная версия (второй этап).  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">07.04.2019 13:14  </td><td bgcolor="#FFC0C0">fix: Одинарное отображение неуникальных тайлов при использовании OpenGL.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Version: 2.1.12.1511 Unknown </h2>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04886.html">Example</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.04.2019 19:20  </td><td bgcolor="#FFC0C0">fix: Неверное формирование имени Android приложения при запуске программы через Launcher.  </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.04.2019 19:19  </td><td bgcolor="#C0FFC0">Демонстрационный режим: пример отрисовки простого ландшафта.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">05.04.2019 13:57  </td><td bgcolor="#FFC0C0">fix: Ошибка при загрузке текстур на Android'e.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04863.html">Covellite.Api</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">20.03.2019 14:04  </td><td bgcolor="#C0FFC0">Правосторонняя система координат при использовании перспективной камеры.  </td></tr>
-</table>
-<table cellpadding="5" width="98%">
-<tr>
-<td bgcolor="#FFFFC0">Проект <a class="el" href="a04876.html">Covellite.Gui</a> : </td></tr>
-</table>
-<table frame="void" border="1" bordercolor="#FFFFFF" cellpadding="5" cellspacing="0" width="98%">
-<tr>
-<td width="10px"></td><td bgcolor="#B8CCE4" width="125px" align="center">16.03.2019 18:07  </td><td bgcolor="#C0FFC0">Событие НАЖАТИЯ кнопки Gui.  </td></tr>
-</table>
-<table frame="void">
-<tr>
-<td></td></tr>
-</table>
-<h2>Далее </h2>
-<p><a class="el" href="a04839.html">История изменений</a> </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Прежде чем тело шейдера (переданное в качестве параметров <b>data</b> и <b>count</b>) будет передано компилятору, ему будет добавлен заголовок и футер.</p>
+<h2>Заголовок </h2>
+<h3>Версия шейдера</h3>
+<div class="fragment"><div class="line"><span class="preprocessor">#version 330 core </span><span class="comment">// Только для OpenGL</span></div>
+<div class="line"><span class="preprocessor">#version 300 es </span><span class="comment">// Только для OpenGLES3</span></div>
+</div><!-- fragment --><h3>Предопределенные макросы типа шейдера</h3>
+<ul>
+<li><b>COVELLITE_SHADER_DESKTOP</b> или <b>COVELLITE_SHADER_MOBILE</b> </li>
+<li><b>COVELLITE_SHADER_HLSL</b> или <b>COVELLITE_SHADER_GLSL</b> </li>
+<li><b>COVELLITE_SHADER_VERTEX</b> или <b>COVELLITE_SHADER_PIXEL</b> </li>
+</ul>
+<h3>Файл вспомогательных определений для создания унифицированных шейдеров</h3>
+<div class="fragment"><div class="line"> </div>
+<div class="line">#ifdef COVELLITE_SHADER_HLSL // ********************************************* //</div>
+<div class="line">  </div>
+<div class="line">#define mediump</div>
+<div class="line">#define lowp</div>
+<div class="line">  </div>
+<div class="line">#define ivec4 int4</div>
+<div class="line">#define vec4 float4   </div>
+<div class="line">#define vec3 float3   </div>
+<div class="line">#define vec2 float2   </div>
+<div class="line">#define mat4 float4x4 </div>
+<div class="line">#define mat3 float3x3</div>
+<div class="line">#define ToMatrix3x3(m) (float3x3)m</div>
+<div class="line">  </div>
+<div class="line">#define dFdx(a) ddx(a)</div>
+<div class="line">#define dFdy(a) ddy(a)</div>
+<div class="line">#define mix(a, b, c) lerp(a, b, c)</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_INPUT_SEMANTIC(value) \</div>
+<div class="line">  : value</div>
+<div class="line">#define COVELLITE_DECLARE_CONST_BUFFER(type, cbname, name, index) \</div>
+<div class="line">  cbuffer cb##name : register(b##index) { const type name; }</div>
+<div class="line">#define COVELLITE_DECLARE_CONST_BUFFER_INSIDE(type, name, index) \</div>
+<div class="line">  COVELLITE_DECLARE_CONST_BUFFER(type, dummy, name, index)</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_DECLARE_STATIC \</div>
+<div class="line">  static</div>
+<div class="line">#define COVELLITE_MATRIX_ROW(m, index) \</div>
+<div class="line">  m[index]</div>
+<div class="line">#define COVELLITE_MATRIX_COLUMN(m, index) \</div>
+<div class="line">  float4(m[0][index], m[1][index], m[2][index], m[3][index])</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_DECLARE_TEX2D(name, index) \</div>
+<div class="line">  Texture2D name : register(t##index); \</div>
+<div class="line">  SamplerState TexSampler##index : register(s##index);</div>
+<div class="line">#define COVELLITE_DECLARE_TEX2D_ARRAY(name, count, index) \</div>
+<div class="line">  Texture2D name[count] : register(t##index); \</div>
+<div class="line">  SamplerState TexSampler##index : register(s##index);</div>
+<div class="line">#define COVELLITE_TEX2D_COLOR(tex, uv) \</div>
+<div class="line">  tex.Sample(TexSampler0, uv)</div>
+<div class="line">#define COVELLITE_TEX2D_ARRAY_COLOR(tex, i, uv) \</div>
+<div class="line">  tex[i].Sample(TexSampler0, uv)</div>
+<div class="line">#define COVELLITE_DECLARE_MULTI_TARGET_STRUCTURE(name, count) \</div>
+<div class="line">  struct name { float4 Target[count] : SV_Target; }</div>
+<div class="line">  </div>
+<div class="line">#elif defined COVELLITE_SHADER_GLSL // ************************************** //</div>
+<div class="line">  </div>
+<div class="line">precision highp float;</div>
+<div class="line">precision highp int;</div>
+<div class="line">  </div>
+<div class="line">#define int4 ivec4</div>
+<div class="line">#define float4 vec4</div>
+<div class="line">#define float3 vec3</div>
+<div class="line">#define float2 vec2</div>
+<div class="line">#define float4x4 mat4</div>
+<div class="line">#define float3x3 mat3</div>
+<div class="line">#define ToMatrix3x3(m) mat3(m)</div>
+<div class="line">  </div>
+<div class="line">#define ddx(a) dFdx(a)</div>
+<div class="line">#define ddy(a) dFdy(a)</div>
+<div class="line">#define mul(a, b) ((a) * (b))</div>
+<div class="line">#define saturate(a) clamp(a, 0.0f, 1.0f)</div>
+<div class="line">#define rsqrt(a) (1.0f / sqrt(a))</div>
+<div class="line">#define lerp(a, b, c) mix(a, b, c)</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_INPUT_SEMANTIC(value)</div>
+<div class="line">#define COVELLITE_DECLARE_CONST_BUFFER(type, cbname, name, index) \</div>
+<div class="line">  layout (std140) uniform cbname { type name; }</div>
+<div class="line">#define COVELLITE_DECLARE_CONST_BUFFER_INSIDE(type, name, index) \</div>
+<div class="line">  uniform type name</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_DECLARE_STATIC</div>
+<div class="line">#define COVELLITE_MATRIX_ROW(m, index) \</div>
+<div class="line">  float4(m[0][index], m[1][index], m[2][index], m[3][index])</div>
+<div class="line">#define COVELLITE_MATRIX_COLUMN(m, index) \</div>
+<div class="line">  m[index]</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_DECLARE_TEX2D(name, index) \</div>
+<div class="line">  uniform sampler2D name</div>
+<div class="line">#define COVELLITE_DECLARE_TEX2D_ARRAY(name, count, index) \</div>
+<div class="line">  uniform highp sampler2DArray name</div>
+<div class="line">#define COVELLITE_TEX2D_COLOR(tex, uv) \</div>
+<div class="line">  texture(tex, uv)</div>
+<div class="line">#define COVELLITE_TEX2D_ARRAY_COLOR(tex, i, uv) \</div>
+<div class="line">  texture(tex, vec3(uv, i))</div>
+<div class="line">#define COVELLITE_DECLARE_MULTI_TARGET_STRUCTURE(name, count) \</div>
+<div class="line">  struct name { float4 Target[count]; }; \</div>
+<div class="line">  out float4 Covellite_MultiOutPixelColor[count]</div>
+<div class="line">  </div>
+<div class="line">#endif // ******************************************************************* //</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_DECLARE_CONST_USER_BUFFER(type, cbname, name) \</div>
+<div class="line">  COVELLITE_DECLARE_CONST_BUFFER(type, cbname, name, COVELLITE_BUFFER_INDEX_USER)</div>
+<div class="line">  </div>
+<div class="line">#define ToFloat3(v) v.xyz</div>
+</div><!-- fragment --><h3>Файл объвления структур для передачи данных шейдеру</h3>
+<div class="fragment"><div class="line"> </div>
+<div class="line"><span class="preprocessor">#ifndef COVELLITE_API_CONSTANT_BUFFERS_HEADER</span></div>
+<div class="line"><span class="preprocessor">#define COVELLITE_API_CONSTANT_BUFFERS_HEADER</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#ifdef GLM_VERSION</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using </span>float4x4 = ::glm::mat4;</div>
+<div class="line"><span class="keyword">using </span>float4 = ::glm::vec4;</div>
+<div class="line"><span class="preprocessor">#define mediump</span></div>
+<div class="line"><span class="preprocessor">#define lowp</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#endif </span><span class="comment">// GLM_VERSION</span></div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#define COVELLITE_BUFFER_INDEX_CAMERA 0</span></div>
+<div class="line"><span class="preprocessor">#define COVELLITE_BUFFER_INDEX_OBJECT 1</span></div>
+<div class="line"><span class="preprocessor">#define COVELLITE_BUFFER_INDEX_USER 2</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>Camera</div>
+<div class="line">{</div>
+<div class="line">  float4x4 Projection;</div>
+<div class="line">  float4x4 View;</div>
+<div class="line">  float4x4 ViewInverse;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">struct </span>Object</div>
+<div class="line">{</div>
+<div class="line">  float4x4 World;</div>
+<div class="line">  float4 Extra;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="preprocessor">#endif </span><span class="comment">// COVELLITE_API_CONSTANT_BUFFERS_HEADER</span></div>
+</div><!-- fragment --><h3>Файл объявления форматов входных данных шейдеров</h3>
+<div class="fragment"><div class="line">  </div>
+<div class="line">#define COVELLITE_INSTANCE_DATA_STRUCTURE \</div>
+<div class="line">  /* place for instance variables */</div>
+<div class="line"> </div>
+<div class="line">#ifdef COVELLITE_SHADER_GLSL // ********************************************* //</div>
+<div class="line">  </div>
+<div class="line">#ifdef COVELLITE_SHADER_VERTEX /////////////////////////////////////////////////</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_IN in</div>
+<div class="line">  </div>
+<div class="line">// Covellite++ GLSL input data vertex shader.</div>
+<div class="line">in vec4 Covellite_VertexPosition;</div>
+<div class="line">in mediump vec2 Covellite_VertexTexCoord;</div>
+<div class="line">in vec4 Covellite_VertexExtra;</div>
+<div class="line">COVELLITE_INSTANCE_DATA_STRUCTURE</div>
+<div class="line">  </div>
+<div class="line">#undef COVELLITE_IN</div>
+<div class="line">  </div>
+<div class="line">#endif /////////////////////////////////////////////////////////////////////////</div>
+<div class="line">  </div>
+<div class="line">#endif // ******************************************************************* //</div>
+<div class="line">  </div>
+<div class="line">#define COVELLITE_IN</div>
+<div class="line">  </div>
+<div class="line">COVELLITE_DECLARE_CONST_BUFFER_INSIDE(Camera, CameraData, COVELLITE_BUFFER_INDEX_CAMERA);</div>
+<div class="line">COVELLITE_DECLARE_CONST_BUFFER_INSIDE(Object, ObjectData, COVELLITE_BUFFER_INDEX_OBJECT);</div>
+<div class="line">  </div>
+<div class="line">// Input data vertex shader (union objects).</div>
+<div class="line">struct Vertex</div>
+<div class="line">{</div>
+<div class="line">  float4 Position           COVELLITE_INPUT_SEMANTIC(POSITION);</div>
+<div class="line">  mediump float2 TexCoord   COVELLITE_INPUT_SEMANTIC(TEXCOORD);</div>
+<div class="line">  float4 Extra              COVELLITE_INPUT_SEMANTIC(NORMAL);</div>
+<div class="line">  COVELLITE_INSTANCE_DATA_STRUCTURE</div>
+<div class="line">};</div>
+<div class="line">  </div>
+<div class="line">// Output data vertex shader and input data pixel shader.</div>
+<div class="line">struct Pixel</div>
+<div class="line">{</div>
+<div class="line">  float4 ScreenPos        COVELLITE_INPUT_SEMANTIC(SV_POSITION);</div>
+<div class="line">  lowp float4 Color       COVELLITE_INPUT_SEMANTIC(COLOR);</div>
+<div class="line">  float3 Normal           COVELLITE_INPUT_SEMANTIC(NORMAL);</div>
+<div class="line">  mediump float2 TexCoord COVELLITE_INPUT_SEMANTIC(TEXCOORD0);</div>
+<div class="line">  float4 WorldPos         COVELLITE_INPUT_SEMANTIC(POSITION0);</div>
+<div class="line">};</div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd>В случае ошибки компиляции шейдера описание исключения будет содержать количество строк, добавленных фреймворком к переданному телу шейдера.</dd></dl>
+<h2>Тело шейдера </h2>
+<p>Тело шейдера должно содержать определение функции, имя которой передается компоненту шейдера как параметр <b>entry</b>. Имя этой функции может быть любым, но сигнатура ее должна соответствовать одной из следующего набора (тип входного параметра определяет тип шейдера и формат передаваемых ему данных):</p>
+<div class="fragment"><div class="line">Pixel entry(Vertex _Value); <span class="comment">// Вертексный шейдер</span></div>
+<div class="line">float4 entry(Pixel _Value); <span class="comment">// Пиксельный шейдер</span></div>
+</div><!-- fragment --><dl class="section note"><dt>Заметки</dt><dd>Если необходимо использовать другую структуру для передачи информации о пикселе, нужно объявить эту структуру и переопределить Pixel через #define Pixel UserPixel (в этом случае следует убедиться, что вертексный и пиксельный шейдер используют для обмена данными одну и ту же структуру).</dd></dl>
+<p>Если указаны бинарные данные шейдера (параметры <b>data</b> и <b>count</b>), в качестве тела шейдера будет использован переданный буфер, если нет, то вместо них будут использоваться шейдеры по умолчанию (те, что использует сам фреймворк для рендеринга Gui):</p>
+<div class="fragment"><div class="line"> </div>
+<div class="line">#ifdef COVELLITE_SHADER_VERTEX /////////////////////////////////////////////////</div>
+<div class="line">  </div>
+<div class="line">// ************************************************************************** //</div>
+<div class="line">  </div>
+<div class="line">Pixel vsFlat(Vertex _Value)</div>
+<div class="line">{</div>
+<div class="line">  float4x4 ViewProjection = mul(CameraData.View, CameraData.Projection);</div>
+<div class="line">  float4 WorldPos = mul(_Value.Position, ObjectData.World);</div>
+<div class="line"> </div>
+<div class="line">  Pixel Result;</div>
+<div class="line">  Result.ScreenPos = mul(WorldPos, ViewProjection);</div>
+<div class="line">  Result.Color = _Value.Extra;</div>
+<div class="line">  Result.Normal = float3(0.0f, 0.0f, 1.0f);</div>
+<div class="line">  Result.TexCoord = _Value.TexCoord;</div>
+<div class="line">  Result.WorldPos = float4(0.0f, 0.0f, 0.0f, 1.0f);</div>
+<div class="line">  return Result;</div>
+<div class="line">}</div>
+<div class="line">  </div>
+<div class="line">Pixel vsVolume(Vertex _Value)</div>
+<div class="line">{</div>
+<div class="line">  float4x4 ViewProjection = mul(CameraData.View, CameraData.Projection);</div>
+<div class="line">  float4 WorldPos = mul(_Value.Position, ObjectData.World);</div>
+<div class="line"> </div>
+<div class="line">  Pixel Result;</div>
+<div class="line">  Result.ScreenPos = mul(WorldPos, ViewProjection);</div>
+<div class="line">  Result.Color = float4(1.0f, 0.0f, 0.0f, 1.0f);</div>
+<div class="line">  Result.Normal = normalize(mul(ToFloat3(_Value.Extra), ToMatrix3x3(ObjectData.World)));</div>
+<div class="line">  Result.TexCoord = _Value.TexCoord;</div>
+<div class="line">  Result.WorldPos = WorldPos;</div>
+<div class="line">  return Result;</div>
+<div class="line">}</div>
+<div class="line">  </div>
+<div class="line">#elif defined COVELLITE_SHADER_PIXEL ///////////////////////////////////////////</div>
+<div class="line">  </div>
+<div class="line">COVELLITE_DECLARE_TEX2D(TexDiffuse, 0);</div>
+<div class="line">  </div>
+<div class="line">float4 psColored(Pixel _Value)</div>
+<div class="line">{</div>
+<div class="line">  return _Value.Color;</div>
+<div class="line">}</div>
+<div class="line">  </div>
+<div class="line">float4 psTextured(Pixel _Value)</div>
+<div class="line">{</div>
+<div class="line">  return COVELLITE_TEX2D_COLOR(TexDiffuse, _Value.TexCoord) * _Value.Color;</div>
+<div class="line">}</div>
+<div class="line">  </div>
+<div class="line">#endif /////////////////////////////////////////////////////////////////////////</div>
+</div><!-- fragment --><h2>Футер </h2>
+<p>В конце тела шейдера добавляется определение функции, которая будет вызывать функцию, указанную в качестве параметра <b>entry</b> (это сделано для возможности создания единого унифицированного HLSL и GLSL тела шейдера).</p>
+<h3>HLSL (вертексный шейдер)</h3>
+<p>Ничего не добавляется, указанная функция вызывается напрямую.</p>
+<h3>HLSL (пиксельный шейдер)</h3>
+<div class="fragment"><div class="line">float4 psMain(Pixel _Value) : SV_Target</div>
+<div class="line">{</div>
+<div class="line">  <span class="keywordflow">return</span> entry(_Value);</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>GLSL (вертексный шейдер)</h3>
+<div class="fragment"><div class="line">out Pixel PixelValue;</div>
+<div class="line"><span class="keywordtype">void</span> main()</div>
+<div class="line">{</div>
+<div class="line">  Vertex InputData;</div>
+<div class="line">  InputData.Position = Covellite_VertexPosition;</div>
+<div class="line">  InputData.TexCoord = Covellite_VertexTexCoord;</div>
+<div class="line">  InputData.Extra = Covellite_VertexExtra;</div>
+<div class="line">  PixelValue = entry(InputData);</div>
+<div class="line">  gl_Position = PixelValue.ScreenPos;</div>
+<div class="line">}</div>
+</div><!-- fragment --><h3>GLSL (пиксельный шейдер)</h3>
+<div class="fragment"><div class="line">in Pixel PixelValue;</div>
+<div class="line">out vec4 Covellite_OutPixelColor;</div>
+<div class="line"><span class="keywordtype">void</span> main()</div>
+<div class="line">{</div>
+<div class="line">  Covellite_OutPixelColor = entry(PixelValue);</div>
+<div class="line">}</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="index.html">index</a></li>
-    <li class="footer">Документация по Covellite++. Последние изменения: Пт 4 Сен 2026 19:11:49. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Документация по Covellite++. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>

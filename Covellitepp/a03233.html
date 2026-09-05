@@ -12,16 +12,15 @@
     </script>
     <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
-    <meta name="generator" content="Doxygen 1.12.0" />
+    <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Список задач</title>
+    <title>Covellite++: Renderer</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
     <link href="navtree.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript" src="resize.js"></script>
 <script type="text/javascript" src="cookie.js"></script>
     <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
@@ -38,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2583 Platform: x64 Build: 19:11 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2586 Platform: x64 Build: 18:17 05.09.2026</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -47,28 +46,47 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Создано системой Doxygen 1.12.0 -->
+<!-- Создано системой Doxygen 1.18.0 -->
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-var searchBox = new SearchBox("searchBox", "search/",'.html');
-/* @license-end */
+let searchBox = new SearchBox("searchBox", "search/",'.html');
 </script>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() { codefold.init(0); });
-/* @license-end */
+document.addEventListener('DOMContentLoaded', codefold.init);
+</script>
+<script type="application/json" id="doxygen-config">
+{
+  "relPath": "",
+  "generateTreeView": true,
+  "searchEngine": true,
+  "serverBasedSearch": false,
+  "disableIndex": false,
+  "dynamicMenus": true,
+  "fullSidebar": false
+}
 </script>
 <script type="text/javascript" src="menudata.js"></script>
 <script type="text/javascript" src="menu.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Поиск',true);
-  $(function() { init_search(); });
-});
-/* @license-end */
-</script>
-<div id="main-nav"></div>
+<div id="main-nav-mobile">
+<div class="sm sm-dox"><input id="main-menu-state" type="checkbox"/>
+<label class="main-menu-btn" for="main-menu-state">
+<span class="main-menu-btn-icon"></span> Toggle main menu visibility</label>
+<span id="searchBoxPos1"></span>
+</div>
+</div><!-- main-nav-mobile -->
+<div id="main-nav">
+  <ul class="sm sm-dox" id="main-menu">
+    <li id="searchBoxPos2">
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect" class="search-icon"><span class="search-icon-dropdown"></span></span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><div id="MSearchCloseImg" class="close-icon"></div></a>
+          </span>
+        </div>
+    </li>
+  </ul>
+</div><!-- main-nav -->
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -76,21 +94,16 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
+  <div id="splitbar" class="ui-resizable-handle">
   </div>
 </div>
 <script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a03233.html',''); initResizable(true); });
-/* @license-end */
+document.addEventListener('DOMContentLoaded',() => { initNavTree('a03233.html','',''); });
 </script>
+<div id="container">
 <div id="doc-content">
 <!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<div id="MSearchSelectWindow">
 </div>
 
 <!-- iframe showing the search results (closed by default) -->
@@ -107,85 +120,99 @@ $(function(){initNavTree('a03233.html',''); initResizable(true); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">Список задач</div></div>
+<div class="header">
+  <div class="headertitle"><div class="title">Renderer <div class="ingroups"><a class="el" href="a03231.html">Covellite++</a> &raquo; <a class="el" href="a03232.html">Api</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="reflist">
-<dt>Страница <a class="el" href="a04860.html">Компонентная система</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000004"></a></p><ul>
-<li>Добавить картинку с осями координат для Windows и Android.</li>
-</ul>
-<p class="enddd"><a class="anchor" id="_todo000005"></a> Требуется обобщение способа передачи параметров константного и инстанс-буфера, т.к. они совпадают, но в первом случае они передаются самому компоненту, а во втором - компоненту Data.Buffer. </p>
-</dd>
-<dt>Страница <a class="el" href="a04847.html">Отрисовка 2D объектов</a>  </dt>
-<dd><a class="anchor" id="_todo000001"></a><ul>
-<li>Добавить картинку, объясняющую разницу между поворот-смещение и смещение-поворот.</li>
-</ul>
-</dd>
-<dt>Страница <a class="el" href="a04849.html">Отрисовка 3D объектов</a>  </dt>
-<dd><a class="anchor" id="_todo000002"></a><ul>
-<li>Добавить картинку, объясняющую разницу между поворот-смещение и смещение-поворот.</li>
-</ul>
-</dd>
-<dt>Страница <a class="el" href="a04851.html">Создание кода панелей GUI</a>  </dt>
-<dd><a class="anchor" id="_todo000003"></a> Добавить пример использования панели с заголовком. </dd>
-<dt>Пространство имен <a class="el" href="a03292.html">basement</a>  </dt>
-<dd><a class="anchor" id="_todo000034"></a>"Недопустимая ссылка на заголовочный файл!" ;  </dd>
-<dt>Член <a class="el" href="a03484.html#acd2665716edb6fee264cfb1e44a07df9">covellite::api::renderer::DirectX11::CreateBkSurface</a>  (const ComponentPtr_t &amp;) override</dt>
-<dd><a class="anchor" id="_todo000007"></a>"Хранить размеры текстур в них самих и пересоздавать при расхождении размеров" ;  </dd>
-<dt>Член <a class="el" href="a03484.html#a6436a42adbad4587951a5c060f64ea45">covellite::api::renderer::DirectX11::GetDepthState</a>  (const bool, const bool, const bool)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000008"></a>"Тест того, что если BkSurface не устанавливает буфер глубины, то используется буфер глубины экрана" ; </p>
-<p class="enddd"><a class="anchor" id="_todo000009"></a>"Тест того, что если BkSurface не устанавливает буфер глубины, то используется буфер глубины экрана" ;  </p>
-</dd>
-<dt>Член <a class="el" href="a03504.html#ad1d0e13bf1509c02952348bf637b27a7">covellite::api::renderer::GraphicApi::CapturingServiceComponent::Get</a>  (const ComponentPtr_t &amp;, const Expected_t &amp;)</dt>
-<dd><a class="anchor" id="_todo000010"></a>"Писать в лог warning'и о лишних компонентах." ;  </dd>
-<dt>Член <a class="el" href="a03504.html#ab35b037af35e4b147a726cf72173c438">covellite::api::renderer::GraphicApi::CapturingServiceComponent::Process</a>  (const ComponentPtr_t &amp;, const Handlers_t &amp;)</dt>
-<dd><a class="anchor" id="_todo000011"></a>"Писать в лог warning о лишнем компоненте." ;  </dd>
-<dt>Член <a class="el" href="a03572.html#af05b83ff368496da91a155bd47fabcc7">covellite::api::renderer::OpenGLCommonShader::CreateTransform</a>  (const ComponentPtr_t &amp;) override</dt>
-<dd><a class="anchor" id="_todo000012"></a>"Тест Transform.Static не проверяет, что матрица меняется у РАЗНЫХ объектов" ;  </dd>
-<dt>Член <a class="el" href="a03572.html#a3c0ddf5864371f268b732155cdfb95cd">covellite::api::renderer::OpenGLCommonShader::GetCameraOrthographic</a>  (const ComponentPtr_t &amp;)</dt>
-<dd><a class="anchor" id="_todo000013"></a>"Тест не проверяет возможность изменения смещения во время работы программы" ;  </dd>
-<dt>Член <a class="el" href="a03576.html#ad28086212ea55e02ae1023d678f111c4">covellite::api::renderer::OpenGLES3::PresentFrame</a>  (void) override</dt>
-<dd><a class="anchor" id="_todo000015"></a>"Цвет заголовка Android - в настройках?" ;  </dd>
-<dt>Class <a class="el" href="a03896.html">covellite::events::Events::Signals</a>  </dt>
-<dd><a class="anchor" id="_todo000018"></a> Используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Class <a class="el" href="a04044.html">covellite::gui::File</a>  </dt>
-<dd><a class="anchor" id="_todo000020"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Class <a class="el" href="a04060.html">covellite::gui::Initializer</a>  </dt>
-<dd><a class="anchor" id="_todo000021"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Class <a class="el" href="a04080.html">covellite::gui::IStringTranslator</a>  </dt>
-<dd><a class="anchor" id="_todo000022"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Class <a class="el" href="a04124.html">covellite::gui::Renderer</a>  </dt>
-<dd><a class="anchor" id="_todo000026"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Член <a class="el" href="a04124.html#a4d3c22f61a1a089bef7f87ac5816169b">covellite::gui::Renderer::LoadTexture</a>  (CovelliteGui::TextureHandle &amp;, CovelliteGui::Vector2i &amp;, const CovelliteGui::String &amp;) override</dt>
-<dd><a class="anchor" id="_todo000025"></a>"Лишнее копирование данных текстуры." ;  </dd>
-<dt>Class <a class="el" href="a04132.html">covellite::gui::StringTranslator</a>  </dt>
-<dd><a class="anchor" id="_todo000027"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Class <a class="el" href="a04136.html">covellite::gui::System</a>  </dt>
-<dd><a class="anchor" id="_todo000028"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Член <a class="el" href="a03245.html#gab57a7f90af68f19bb949608a1e5d37dd">covellite::gui::SystemToGuiKeyCode</a>  (int32_t)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000029"></a>"Преобразование остальных виртуальных кодов." ; </p>
-<p class="enddd"><a class="anchor" id="_todo000030"></a>"Преобразование остальных виртуальных кодов." ;  </p>
-</dd>
-<dt>Class <a class="el" href="a04008.html">covellite::gui::Window::EventListener</a>  </dt>
-<dd><a class="anchor" id="_todo000019"></a> Класс используется для внутренней реализации и не должен попадать в Externals. </dd>
-<dt>Член <a class="el" href="a04140.html#af181c8ea82aebb85f1e51461f82c3632">covellite::gui::Window::PushLayer</a>  (void)</dt>
-<dd><a class="anchor" id="_todo000031"></a>"Тест возврата ссылки на созданный объект слоя" ;  </dd>
-<dt>Член <a class="el" href="a04652.html#ac57ba51e6971d20e34c0f78989ef55d8">ExampleWindow::ExampleWindow</a>  (WindowGui_t &amp;)</dt>
-<dd><a class="anchor" id="_todo000035"></a>"Событие создания basement::Simple3DObject должно генерироваться здесь." ;  </dd>
-<dt>Пространство имен <a class="el" href="a03303.html">layers</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000036"></a>"Недопустимая ссылка на заголовочный файл!" ; </p>
-<p class="enddd"><a class="anchor" id="_todo000038"></a>"Недопустимая ссылка на заголовочный файл!" ; </p>
-</dd>
-</dl>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+<div class="dynheader">
+Граф связей класса Renderer:</div>
+<div class="dyncontent">
+<div class="center"><img src="a03233.png" border="0" usemap="#aa03233" loading="lazy" alt=""/></div>
+<!-- MAP 0 -->
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AComponent" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03353.html">covellite::api::renderer::Component</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Вспомогательный класс для извлечения данных компонентов.  <a href="a03353.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3ADirectX" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3ADirectX"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03397.html">covellite::api::renderer::DirectX</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ класс общей логики реализаций <a class="el" href="a03397.html" title="Класс входит в проект Covellite.Api   класс общей логики реализаций DirectX.">DirectX</a>.  <a href="a03397.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3ADirectX10" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3ADirectX10"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03441.html">covellite::api::renderer::DirectX10</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Реализация рендера графического API для Windows/DirectX10.  <a href="a03441.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3ADirectX11" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3ADirectX11"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03481.html">covellite::api::renderer::DirectX11</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Реализация рендера графического API для Windows/DirectX11.  <a href="a03481.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3ADxCheck" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3ADxCheck"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03485.html">covellite::api::renderer::DxCheck</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Вспомогательный класс логики работы макроса DX_CHECK.  <a href="a03485.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AGraphicApi" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AGraphicApi"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03497.html">covellite::api::renderer::GraphicApi</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Вспомогательный класс, содержащий общий для всех реализаций код.  <a href="a03497.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AGraphicApi_3A_3ACapturingServiceComponent" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AGraphicApi_3A_3ACapturingServiceComponent"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03501.html">covellite::api::renderer::GraphicApi::CapturingServiceComponent</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Класс для работы со вспомогательными компонентами.  <a href="a03501.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGL" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGL"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03513.html">covellite::api::renderer::OpenGL</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Реализация рендера графического API для Windows/OpenGL.  <a href="a03513.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGLCommon" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGLCommon"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03517.html">covellite::api::renderer::OpenGLCommon</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Вспомогательный класс, содержащий общий для Windows и Android код <a class="el" href="a03513.html" title="Класс входит в проект Covellite.Api   Реализация рендера графического API для Windows/OpenGL.">OpenGL</a>.  <a href="a03517.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGLCommonShader" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGLCommonShader"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03569.html">covellite::api::renderer::OpenGLCommonShader</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Вспомогательный класс, содержащий общий для Windows и Android код <a class="el" href="a03513.html" title="Класс входит в проект Covellite.Api   Реализация рендера графического API для Windows/OpenGL.">OpenGL</a> (шейдерная реализация).  <a href="a03569.html#details">Подробнее...</a><br /></td></tr>
+<tr class="memitem:covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGLES3" id="r_covellite_3A_3Aapi_3A_3Arenderer_3A_3AOpenGLES3"><td class="memItemLeft">class &#160;</td><td class="memItemRight"><a class="el" href="a03573.html">covellite::api::renderer::OpenGLES3</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Реализация рендера графического API для Android/OpenGL ES3.  <a href="a03573.html#details">Подробнее...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ga921220da29ad2c7b7839fb033fc8158f" id="r_ga921220da29ad2c7b7839fb033fc8158f"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#ga921220da29ad2c7b7839fb033fc8158f">DX_CHECK</a>&#160;&#160;&#160;CHECK_PROXY(<a class="el" href="a03485.html">::covellite::api::renderer::DxCheck</a>)</td></tr>
+<tr class="memdesc:ga921220da29ad2c7b7839fb033fc8158f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Макрос проверок вызова функций DirectX.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Группа классов реализаций рендеринга при помощи конкретных графических Api. </p>
+</div><a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Макросы</h2>
+<a id="ga921220da29ad2c7b7839fb033fc8158f" name="ga921220da29ad2c7b7839fb033fc8158f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga921220da29ad2c7b7839fb033fc8158f">&#9670;&#160;</a></span>DX_CHECK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DX_CHECK&#160;&#160;&#160;CHECK_PROXY(<a class="el" href="a03485.html">::covellite::api::renderer::DxCheck</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Класс входит в проект <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a> <br  />
+ Макрос проверок вызова функций DirectX. </p>
+<dl class="section version"><dt>Версия</dt><dd>1.0.0.0 <br  />
+</dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>30 Август 2018 <br  />
+</dd></dl>
+<dl class="section author"><dt>Автор</dt><dd>CTAPOBEP (<a href="mai'+'lto:+'uni'+'co'+'rnu'+'m.'+'ver'+'um'+'@gm'+'ai'+'l.c'+'om'">unico<span class="obfuscator">.nosp@m.</span>rnum<span class="obfuscator">.nosp@m.</span>.veru<span class="obfuscator">.nosp@m.</span>m@gm<span class="obfuscator">.nosp@m.</span>ail.c<span class="obfuscator">.nosp@m.</span>om</a>) </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>© CTAPOBEP 2018 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Документация по Covellite++. Последние изменения: Пт 4 Сен 2026 19:11:49. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Документация по Covellite++. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
 </body>
