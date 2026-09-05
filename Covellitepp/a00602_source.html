@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2586 Platform: x64 Build: 18:17 05.09.2026</span>
+   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2584 Platform: x64 Build: 19:03 05.09.2026</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a00602_source.
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span></div>
 <div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a03577.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="a03577.html">Component::Renders</a> final</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a03580.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="a03580.html">Component::Renders</a> final</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">using </span>Render_t = ::std::function&lt;void(<span class="keywordtype">void</span>)&gt;;</div>
@@ -146,8 +146,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a00602_source.
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">using </span>Creators_t = ::std::map&lt;Type_t, Creator_t&gt;;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  Render_t <a class="code hl_function" href="a03577.html#a522a6d3316a970761a6ec30df3b71997">Obtain</a>(<span class="keyword">const</span> ComponentPtr_t &amp;);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a03577.html#ab607fb68f26af4944da5b59c5dee8a89">Remove</a>(<span class="keyword">const</span> ComponentPtr_t &amp;);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  Render_t <a class="code hl_function" href="a03580.html#a522a6d3316a970761a6ec30df3b71997">Obtain</a>(<span class="keyword">const</span> ComponentPtr_t &amp;);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="a03580.html#ab607fb68f26af4944da5b59c5dee8a89">Remove</a>(<span class="keyword">const</span> ComponentPtr_t &amp;);</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  Creators_t m_Creators;</div>
@@ -156,17 +156,17 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a00602_source.
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  ::std::size_t m_MaxRendersCount = 10;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="a03577.html#a2d16c0cb6b2e82c512888508d437275b">Renders</a>(<span class="keyword">const</span> Creators_t &amp;);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="a03580.html#a2d16c0cb6b2e82c512888508d437275b">Renders</a>(<span class="keyword">const</span> Creators_t &amp;);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
 </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>} <span class="comment">// namespace api</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>} <span class="comment">// namespace covellite</span></div>
-<div class="ttc" id="aa03577_html"><div class="ttname"><a href="a03577.html">covellite::api::Component::Renders</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс создания рендеров компонентов.</div><div class="ttdef"><b>Определения</b> Renders.hpp:28</div></div>
-<div class="ttc" id="aa03577_html_a2d16c0cb6b2e82c512888508d437275b"><div class="ttname"><a href="a03577.html#a2d16c0cb6b2e82c512888508d437275b">covellite::api::Component::Renders::Renders</a></div><div class="ttdeci">Renders(const Creators_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Определения</b> Renders.cpp:23</div></div>
-<div class="ttc" id="aa03577_html_a522a6d3316a970761a6ec30df3b71997"><div class="ttname"><a href="a03577.html#a522a6d3316a970761a6ec30df3b71997">covellite::api::Component::Renders::Obtain</a></div><div class="ttdeci">Render_t Obtain(const ComponentPtr_t &amp;)</div><div class="ttdoc">Функция получения рендера для указанного компонента.</div><div class="ttdef"><b>Определения</b> Renders.cpp:51</div></div>
-<div class="ttc" id="aa03577_html_ab607fb68f26af4944da5b59c5dee8a89"><div class="ttname"><a href="a03577.html#ab607fb68f26af4944da5b59c5dee8a89">covellite::api::Component::Renders::Remove</a></div><div class="ttdeci">void Remove(const ComponentPtr_t &amp;)</div><div class="ttdoc">Функция удаления рендера для указанного компонента.</div><div class="ttdef"><b>Определения</b> Renders.cpp:104</div></div>
+<div class="ttc" id="aa03580_html"><div class="ttname"><a href="a03580.html">covellite::api::Component::Renders</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс создания рендеров компонентов.</div><div class="ttdef"><b>Определения</b> Renders.hpp:28</div></div>
+<div class="ttc" id="aa03580_html_a2d16c0cb6b2e82c512888508d437275b"><div class="ttname"><a href="a03580.html#a2d16c0cb6b2e82c512888508d437275b">covellite::api::Component::Renders::Renders</a></div><div class="ttdeci">Renders(const Creators_t &amp;)</div><div class="ttdoc">Конструктор класса.</div><div class="ttdef"><b>Определения</b> Renders.cpp:23</div></div>
+<div class="ttc" id="aa03580_html_a522a6d3316a970761a6ec30df3b71997"><div class="ttname"><a href="a03580.html#a522a6d3316a970761a6ec30df3b71997">covellite::api::Component::Renders::Obtain</a></div><div class="ttdeci">Render_t Obtain(const ComponentPtr_t &amp;)</div><div class="ttdoc">Функция получения рендера для указанного компонента.</div><div class="ttdef"><b>Определения</b> Renders.cpp:51</div></div>
+<div class="ttc" id="aa03580_html_ab607fb68f26af4944da5b59c5dee8a89"><div class="ttname"><a href="a03580.html#ab607fb68f26af4944da5b59c5dee8a89">covellite::api::Component::Renders::Remove</a></div><div class="ttdeci">void Remove(const ComponentPtr_t &amp;)</div><div class="ttdoc">Функция удаления рендера для указанного компонента.</div><div class="ttdef"><b>Определения</b> Renders.cpp:104</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

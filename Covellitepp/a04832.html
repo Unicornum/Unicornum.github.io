@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Covellite++: Структура решения</title>
+    <title>Covellite++: Manual</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2586 Platform: x64 Build: 18:17 05.09.2026</span>
+   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2584 Platform: x64 Build: 19:03 05.09.2026</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -121,47 +121,20 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a04832.html','
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">Структура решения </div></div>
+  <div class="headertitle"><div class="title">Manual </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="a04810.html" title="Информация о работе над решением">Информация о работе над решением</a></p>
-<p><a class="el" href="a04833.html" title="Список задач всех проектов решения">Список задач всех проектов решения</a></p>
-<h2>Структура проектов решения </h2>
-<div class="image">
-<img src="CovelliteProjects.png" alt=""/>
-</div>
-<h2>Раздел Build </h2>
-<p>Описание раздела <a class="el" href="a04802.html" title="Build">Build</a></p>
-<h2>Проекты решения </h2>
-<h3>Covellite.Gui</h3>
-<p>Проект реализации работы с GUI при помощи <a href="https://github.com/mikke89/RmlUi">RmlUi</a> или <a href="https://github.com/libRocket/libRocket">Rocket</a>.   </p>
-<p>Страница проекта <a class="el" href="a04852.html" title="Covellite.Gui">Covellite.Gui</a></p>
-<h3>Covellite.Expanse</h3>
-<p>Проект классов рендеринга 3D сцены.   </p>
-<p>Страница проекта <a class="el" href="a04850.html" title="Covellite.Expanse">Covellite.Expanse</a></p>
-<h3>Covellite.Api</h3>
-<p>Проект классов-оберток для графического API.   </p>
-<p>Страница проекта <a class="el" href="a04839.html" title="Covellite.Api">Covellite.Api</a></p>
-<h3>Covellite.Egl</h3>
-<p>Проект классов-оберток для функций EGL.   </p>
-<p>Страница проекта <a class="el" href="a04845.html" title="Covellite.Egl">Covellite.Egl</a></p>
-<h3>Covellite.Os</h3>
-<p>Проект классов, обеспечивающих взаимодействие с операционной системой.   </p>
-<p>Страница проекта <a class="el" href="a04854.html" title="Covellite.Os">Covellite.Os</a></p>
-<h3>Covellite.App</h3>
-<p>Проект для кода уровня приложения.   </p>
-<p>Страница проекта <a class="el" href="a04843.html" title="Covellite.App">Covellite.App</a></p>
-<h3>Covellite.Events</h3>
-<p>Проект для кода работы с событиями фреймворка.   </p>
-<p>Страница проекта <a class="el" href="a04847.html" title="Covellite.Events">Covellite.Events</a></p>
-<h3>Example</h3>
-<p>Раздел проекта примера использования и ручного тестирования фреймворка.   </p>
-<p>Страница проекта <a class="el" href="a04862.html" title="Example">Example</a></p>
-<h2>Дополнительно </h2>
-<p><a class="el" href="a04804.html" title="Оформление кода">Оформление кода</a></p>
-<p><a class="el" href="a04809.html" title="Используемые библиотеки/утилиты">Используемые библиотеки/утилиты</a></p>
-<hr  />
- </div></div><!-- contents -->
+<div class="textblock"><h2>Сборка Covellite++ SDK </h2>
+<ul>
+<li>В файле Solution\Directory.Build.targets найти нужную для сборки версию Alicorn SDK (макрос UNICORNUM_ALICORN_SDK_Vxxx).</li>
+<li><a href="https://github.com/Unicornum/Covellitepp/releases">Скачать</a> Alicorn SDK этой версии и распаковать архив (рекомендуется структура папок вида C:\SDK\Alicorn\vX.X.X).</li>
+<li>В этой папке выполнить cmd команду <div class="fragment"><div class="line">setx UNICORNUM_ALICORN_SDK_Vxxx %CD%</div>
+</div><!-- fragment --></li>
+</ul>
+<h2>Использование </h2>
+<p>Готовый <a href="https://github.com/Unicornum/Example.Covellitepp">базовый каркас</a> простейшего приложения, использующего Covellite++ SDK.</p>
+<p><a class="el" href="a04833.html" title="Создание приложения">Создание приложения</a> </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <div id="page-nav" class="page-nav-panel">

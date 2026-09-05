@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2586 Platform: x64 Build: 18:17 05.09.2026</span>
+   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2584 Platform: x64 Build: 19:03 05.09.2026</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -142,13 +142,13 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a01406_source.
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span></div>
 <div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="a04121.html">   42</a></span><span class="keyword">class </span>Renderer final :</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="a04124.html">   42</a></span><span class="keyword">class </span>Renderer final :</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">public</span> CovelliteGui::RenderInterface</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">using </span>Render_t = ::std::function&lt;void(<span class="keywordtype">void</span>)&gt;;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">using </span>Renders_t = ::std::vector&lt;Render_t&gt;;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">using </span>Component_t = <a class="code hl_class" href="a03313.html">::covellite::api::Component</a>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">using </span>Component_t = <a class="code hl_class" href="a03316.html">::covellite::api::Component</a>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">using </span>RendersPtr_t = ::std::shared_ptr&lt;Component_t::Renders&gt;;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">using </span>ComponentPtr_t = ::std::shared_ptr&lt;Component_t&gt;;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">using </span>Object_t = ::std::vector&lt;ComponentPtr_t&gt;;</div>
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a01406_source.
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordtype">void</span> ReleaseCompiledGeometry(CovelliteGui::CompiledGeometryHandle) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="keywordtype">void</span> EnableScissorRegion(<span class="keywordtype">bool</span>) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> SetScissorRegion(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="a04121.html#a4d3c22f61a1a089bef7f87ac5816169b">LoadTexture</a>(CovelliteGui::TextureHandle &amp;, CovelliteGui::Vector2i &amp;,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="a04124.html#a4d3c22f61a1a089bef7f87ac5816169b">LoadTexture</a>(CovelliteGui::TextureHandle &amp;, CovelliteGui::Vector2i &amp;,</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">const</span> CovelliteGui::String &amp;) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">bool</span> GenerateTexture(CovelliteGui::TextureHandle &amp;,</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">const</span> CovelliteGui::byte *, <span class="keyword">const</span> CovelliteGui::Vector2i &amp;) <span class="keyword">override</span>;</div>
@@ -202,8 +202,8 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a01406_source.
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>} <span class="comment">// namespace gui</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>} <span class="comment">// namespace covellite</span></div>
-<div class="ttc" id="aa03313_html"><div class="ttname"><a href="a03313.html">covellite::api::Component</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс компонента.</div><div class="ttdef"><b>Определения</b> Component.hpp:35</div></div>
-<div class="ttc" id="aa04121_html_a4d3c22f61a1a089bef7f87ac5816169b"><div class="ttname"><a href="a04121.html#a4d3c22f61a1a089bef7f87ac5816169b">covellite::gui::Renderer::LoadTexture</a></div><div class="ttdeci">bool LoadTexture(CovelliteGui::TextureHandle &amp;, CovelliteGui::Vector2i &amp;, const CovelliteGui::String &amp;) override</div><div class="ttdef"><b>Определения</b> Renderer.cpp:254</div></div>
+<div class="ttc" id="aa03316_html"><div class="ttname"><a href="a03316.html">covellite::api::Component</a></div><div class="ttdoc">Класс входит в проект Covellite.Api   Класс компонента.</div><div class="ttdef"><b>Определения</b> Component.hpp:35</div></div>
+<div class="ttc" id="aa04124_html_a4d3c22f61a1a089bef7f87ac5816169b"><div class="ttname"><a href="a04124.html#a4d3c22f61a1a089bef7f87ac5816169b">covellite::gui::Renderer::LoadTexture</a></div><div class="ttdeci">bool LoadTexture(CovelliteGui::TextureHandle &amp;, CovelliteGui::Vector2i &amp;, const CovelliteGui::String &amp;) override</div><div class="ttdef"><b>Определения</b> Renderer.cpp:254</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

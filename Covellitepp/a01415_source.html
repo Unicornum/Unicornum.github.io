@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Covellite++
-   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2586 Platform: x64 Build: 18:17 05.09.2026</span>
+   &#160;<span id="projectnumber">Version: 2.3.2 Revision: 2584 Platform: x64 Build: 19:03 05.09.2026</span>
    </div>
    <div id="projectbrief">Кроссплатформенный фреймворк для разработки приложений на С++</div>
   </td>
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a01415_source.
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
 <div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="a04133.html#a8e50135a52535ab062cc4084d9d9f96b">   18</a></span>CovelliteGuiTime_t <a class="code hl_function" href="a04133.html#a8e50135a52535ab062cc4084d9d9f96b">System::GetElapsedTime</a>(<span class="keywordtype">void</span>) <span class="comment">/*override*/</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="a04136.html#a8e50135a52535ab062cc4084d9d9f96b">   18</a></span>CovelliteGuiTime_t <a class="code hl_function" href="a04136.html#a8e50135a52535ab062cc4084d9d9f96b">System::GetElapsedTime</a>(<span class="keywordtype">void</span>) <span class="comment">/*override*/</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">struct </span>timeval Now;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  gettimeofday(&amp;Now, <span class="keyword">nullptr</span>);</div>
@@ -152,14 +152,14 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a01415_source.
 </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span></div>
 <div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a04133.html#a7e8ab9177741250aa296d818c524ad41">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="a04133.html#a7e8ab9177741250aa296d818c524ad41">System::ActivateKeyboard</a>(CovelliteGui::Vector2f, <span class="keywordtype">float</span>) <span class="comment">/*override*/</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a04136.html#a7e8ab9177741250aa296d818c524ad41">   34</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="a04136.html#a7e8ab9177741250aa296d818c524ad41">System::ActivateKeyboard</a>(CovelliteGui::Vector2f, <span class="keywordtype">float</span>) <span class="comment">/*override*/</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  ::alicorn::system::platform::Environment{}.ShowSoftKeyboard();</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
 </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
 <div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="a04133.html#a4fd881d41010652c59682ee68fb5b66c">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="a04133.html#a4fd881d41010652c59682ee68fb5b66c">System::DeactivateKeyboard</a>(<span class="keywordtype">void</span>) <span class="comment">/*override*/</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="a04136.html#a4fd881d41010652c59682ee68fb5b66c">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="a04136.html#a4fd881d41010652c59682ee68fb5b66c">System::DeactivateKeyboard</a>(<span class="keywordtype">void</span>) <span class="comment">/*override*/</span></div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">using </span>AppInfo_t = ::alicorn::system::platform::AppInfo;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  ANativeActivity_hideSoftInput(&amp;AppInfo_t::Get&lt;ANativeActivity&gt;(), 0);</div>
@@ -169,9 +169,9 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a01415_source.
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <span class="comment">// namespace gui</span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} <span class="comment">// namespace covallite</span></div>
-<div class="ttc" id="aa04133_html_a4fd881d41010652c59682ee68fb5b66c"><div class="ttname"><a href="a04133.html#a4fd881d41010652c59682ee68fb5b66c">covellite::gui::System::DeactivateKeyboard</a></div><div class="ttdeci">void DeactivateKeyboard(void) override</div><div class="ttdoc">Функция деактивации экранной клавиатуры.</div><div class="ttdef"><b>Определения</b> System.android.cpp:43</div></div>
-<div class="ttc" id="aa04133_html_a7e8ab9177741250aa296d818c524ad41"><div class="ttname"><a href="a04133.html#a7e8ab9177741250aa296d818c524ad41">covellite::gui::System::ActivateKeyboard</a></div><div class="ttdeci">void ActivateKeyboard(CovelliteGui::Vector2f, float) override</div><div class="ttdoc">Функция активации экранной клавиатуры.</div><div class="ttdef"><b>Определения</b> System.android.cpp:34</div></div>
-<div class="ttc" id="aa04133_html_a8e50135a52535ab062cc4084d9d9f96b"><div class="ttname"><a href="a04133.html#a8e50135a52535ab062cc4084d9d9f96b">covellite::gui::System::GetElapsedTime</a></div><div class="ttdeci">CovelliteGuiTime_t GetElapsedTime(void) override</div><div class="ttdoc">Функция получения времени, прошедшего с момента запуска программы.</div><div class="ttdef"><b>Определения</b> System.android.cpp:18</div></div>
+<div class="ttc" id="aa04136_html_a4fd881d41010652c59682ee68fb5b66c"><div class="ttname"><a href="a04136.html#a4fd881d41010652c59682ee68fb5b66c">covellite::gui::System::DeactivateKeyboard</a></div><div class="ttdeci">void DeactivateKeyboard(void) override</div><div class="ttdoc">Функция деактивации экранной клавиатуры.</div><div class="ttdef"><b>Определения</b> System.android.cpp:43</div></div>
+<div class="ttc" id="aa04136_html_a7e8ab9177741250aa296d818c524ad41"><div class="ttname"><a href="a04136.html#a7e8ab9177741250aa296d818c524ad41">covellite::gui::System::ActivateKeyboard</a></div><div class="ttdeci">void ActivateKeyboard(CovelliteGui::Vector2f, float) override</div><div class="ttdoc">Функция активации экранной клавиатуры.</div><div class="ttdef"><b>Определения</b> System.android.cpp:34</div></div>
+<div class="ttc" id="aa04136_html_a8e50135a52535ab062cc4084d9d9f96b"><div class="ttname"><a href="a04136.html#a8e50135a52535ab062cc4084d9d9f96b">covellite::gui::System::GetElapsedTime</a></div><div class="ttdeci">CovelliteGuiTime_t GetElapsedTime(void) override</div><div class="ttdoc">Функция получения времени, прошедшего с момента запуска программы.</div><div class="ttdef"><b>Определения</b> System.android.cpp:18</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
