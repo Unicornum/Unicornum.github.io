@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Modules/Settings/Settings/section-full-access.mock.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Source/Details/details.forward.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3474 Platform: x64 Build: 15:43 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3475 Platform: x64 Build: 16:03 19.09.2026</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -121,55 +121,51 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a02528_source.
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">section-full-access.mock.hpp</div></div>
+  <div class="headertitle"><div class="title">details.forward.hpp</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;alicorn\settings\section-full-access.hpp&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;alicorn/std.memory/binary-data.hpp&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>mock</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>alicorn</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>source</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>modules</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span>Data_t = ::alicorn::extension::std::memory::BinaryData_t;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span>Signature_t = Data_t;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>settings</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>details</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">class </span>SectionFullAccess :</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">public</span> ::alicorn::modules::settings::SectionFullAccess</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>{</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">using </span>String_t = ::alicorn::extension::std::String;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">using </span>Ptr_t = ::std::shared_ptr&lt;SectionImpl&gt;;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_function" href="a80401.html#a559559549868bf00850723837cce477d">SectionFullAccess</a>(<span class="keywordtype">void</span>) :</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ::alicorn::modules::settings::SectionFullAccess(::std::<a class="code hl_function" href="a79134.html#ga01aa9dbf99eb7ac834fbcc780d3ef789">make_shared</a>&lt;SectionImpl&gt;())</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">class </span><a class="code hl_class" href="a79966.html">NoSignature</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">class </span>Default;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">class </span><a class="code hl_class" href="a79994.html">Utf8</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">template</span>&lt;<span class="keyword">class</span>, <span class="keyword">class</span>&gt; <span class="keyword">class </span><a class="code hl_class" href="a79970.html">Universal</a>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt; <span class="keyword">class </span><a class="code hl_class" href="a79974.html">Empty</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span>&lt;<span class="keyword">class</span>&gt; <span class="keyword">class </span><a class="code hl_class" href="a79978.html">FromFile</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace details</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  }</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>} <span class="comment">// namespace settings</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>} <span class="comment">// namespace modules</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} <span class="comment">// namespace alicorn</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>} <span class="comment">// namespace mock</span></div>
-<div class="ttc" id="aa79134_html_ga01aa9dbf99eb7ac834fbcc780d3ef789"><div class="ttname"><a href="a79134.html#ga01aa9dbf99eb7ac834fbcc780d3ef789">alicorn::extension::std::make_shared</a></div><div class="ttdeci">inline ::std::shared_ptr&lt; T &gt; make_shared(unique_ptr&lt; T &gt; &amp;_pPointer)</div><div class="ttdoc">Функция входит в проект Std   Вспомогательная функция создания объектов std::shared_ptr&lt;&gt; из.</div><div class="ttdef"><b>Определения</b> make.hpp:88</div></div>
-<div class="ttc" id="aa80401_html_a559559549868bf00850723837cce477d"><div class="ttname"><a href="a80401.html#a559559549868bf00850723837cce477d">alicorn::modules::settings::SectionFullAccess::SectionFullAccess</a></div><div class="ttdeci">SectionFullAccess(void)</div><div class="ttdoc">Конструктор создания корневого раздела настроек.</div><div class="ttdef"><b>Определения</b> section-full-access.cpp:19</div></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>} <span class="comment">// namespace source</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="aa79966_html"><div class="ttname"><a href="a79966.html">alicorn::source::details::NoSignature</a></div><div class="ttdoc">Класс входит в проект Details   Реализация класса пустой сигнатуры.</div><div class="ttdef"><b>Определения</b> no-signature.hpp:30</div></div>
+<div class="ttc" id="aa79970_html"><div class="ttname"><a href="a79970.html">alicorn::source::details::Universal</a></div><div class="ttdoc">Класс входит в проект Details   Класс фасада всех проектов раздела.</div><div class="ttdef"><b>Определения</b> universal.hpp:38</div></div>
+<div class="ttc" id="aa79974_html"><div class="ttname"><a href="a79974.html">alicorn::source::details::Empty</a></div><div class="ttdoc">Класс входит в проект Details   Реализация класса источника данных для простой передачи набора байт.</div><div class="ttdef"><b>Определения</b> empty.hpp:30</div></div>
+<div class="ttc" id="aa79978_html"><div class="ttname"><a href="a79978.html">alicorn::source::details::FromFile</a></div><div class="ttdoc">Класс входит в проект Details   Реализация класса источника данных для чтения данных из файла с прове...</div><div class="ttdef"><b>Определения</b> from-file.hpp:38</div></div>
+<div class="ttc" id="aa79994_html"><div class="ttname"><a href="a79994.html">alicorn::source::details::Utf8</a></div><div class="ttdoc">Класс входит в проект Details   Реализация класса сигнатуры формата Utf8.</div><div class="ttdef"><b>Определения</b> utf8.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Solution</b></li><li class="navelem"><b>Solution</b></li><li class="navelem"><a href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><b>Settings</b></li><li class="navelem"><b>Settings</b></li><li class="navelem"><b>section-full-access.mock.hpp</b></li>
+    <li class="navelem"><b>Solution</b></li><li class="navelem"><b>Solution</b></li><li class="navelem"><a href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><b>Details</b></li><li class="navelem"><b>details.forward.hpp</b></li>
     <li class="footer">Документация по Alicorn. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>

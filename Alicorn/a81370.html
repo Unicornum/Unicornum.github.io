@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Список членов класса</title>
+    <title>Alicorn: Manual</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3474 Platform: x64 Build: 15:43 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3475 Platform: x64 Build: 16:03 19.09.2026</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', codefold.init);
   </div>
 </div>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded',() => { initNavTree('a81373.html','',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('a81370.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -120,21 +120,38 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a81373.html','
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">controller::DoUpdateView Список членов класса</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">Manual </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Полный список членов класса <a class="el" href="a81373.html">controller::DoUpdateView</a>, включая наследуемые из базового класса</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a80237.html#accbbeba32c801d573264697f6494e0cb">operator()</a>(::view::IViewTestingApp *)</td><td class="entry"><a class="el" href="a80237.html">alicorn::modules::patterns::mvc::controller::BlockingSignal&lt;::view::IViewTestingApp * &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a80249.html#af076a355dacebdb9939d236b2ecbac36">alicorn::modules::patterns::mvc::controller::NonBlockingSignal::operator()</a>(TParam)</td><td class="entry"><a class="el" href="a80249.html">alicorn::modules::patterns::mvc::controller::NonBlockingSignal&lt; TParam &gt;</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="textblock"><h3>Подключение библиотек к решению</h3>
+<ul>
+<li>Скачать нужную версию <a href="https://github.com/Unicornum/Alicorn/releases">Alicorn SDK</a> и распаковать архив в папку (например) E:\SDK\Alicorn\vXXX.</li>
+<li>Запустить install.cmd.</li>
+<li>Файлы Directory.Build.targets и Externals.Error.props скопировать в корень решения (если нужно подключить только один проект, поместить файлы в папку этого проекта; также можно поместить их в любую папку в иерархии решения - SDK будет подключен ко всем проектам внутри этой папки).</li>
+</ul>
+<dl class="section note"><dt>Заметки</dt><dd>Externals.Error.props выводит сообщение об ошибке, если ожидаемая версия Alicorn SDK не найдена.</dd></dl>
+<h3>Описание классов решения</h3>
+<p>Для корректной сборки классов SDK необходимо включить раньше всех остальных файлов (например, в stdafx.h) файл </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;alicorn/requirements.hpp&gt;</span></div>
+</div><!-- fragment --><p>Корневая группа классов библиотеки: <a class="el" href="a78471.html" title="Alicorn">Alicorn</a></p>
+<h3>Утилиты</h3>
+<dl class="section note"><dt>Заметки</dt><dd>В силу специфики использования предоставляемых библиотекой проектов утилит, в папке $(SolutionDir)Solution должна располагаться пустая страница свойств с именем Tools.props.</dd></dl>
+<p><a class="el" href="a81435.html" title="Использование утилит">Использование утилит</a> </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a href="index.html">index</a></li>
     <li class="footer">Документация по Alicorn. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>

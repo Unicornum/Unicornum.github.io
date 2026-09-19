@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Исходный файл Solution/Solution/Modules/Patterns/patterns.hpp</title>
+    <title>Alicorn: Исходный файл Solution/Solution/Source/Details/Details/make-source.hpp</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3474 Platform: x64 Build: 15:43 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3475 Platform: x64 Build: 16:03 19.09.2026</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -121,23 +121,43 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a02513_source.
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">patterns.hpp</div></div>
+  <div class="headertitle"><div class="title">make-source.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="a02513.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;patterns\command.hpp&quot;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;patterns\factory.hpp&quot;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;patterns\mvc.hpp&quot;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span>alicorn</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span>source</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span>details</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span>&lt;<span class="keyword">class </span>TSource, <span class="keyword">class </span>... TArgs&gt;</div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a78503.html#ga8b12aa70c8dbec0a8011ce0f5f57052e">   34</a></span>::std::shared_ptr&lt;TSource&gt; <a class="code hl_function" href="a78503.html#ga8b12aa70c8dbec0a8011ce0f5f57052e">make_source</a>(<span class="keyword">const</span> TArgs &amp; ... _Args)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  return ::std::make_shared&lt;TSource&gt;(_Args ...);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>} <span class="comment">// namespace details</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} <span class="comment">// namespace source</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <span class="comment">// namespace alicorn</span></div>
+<div class="ttc" id="aa78503_html_ga8b12aa70c8dbec0a8011ce0f5f57052e"><div class="ttname"><a href="a78503.html#ga8b12aa70c8dbec0a8011ce0f5f57052e">alicorn::source::details::make_source</a></div><div class="ttdeci">::std::shared_ptr&lt; TSource &gt; make_source(const TArgs &amp;... _Args)</div><div class="ttdoc">Функция входит в проект Details   Функция создания объекта источника данных.</div><div class="ttdef"><b>Определения</b> make-source.hpp:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>Solution</b></li><li class="navelem"><b>Solution</b></li><li class="navelem"><a href="dir_7a33c6797156d5c7ddd4d238c8942903.html">Modules</a></li><li class="navelem"><b>Patterns</b></li><li class="navelem"><a href="a02513.html">patterns.hpp</a></li>
+    <li class="navelem"><b>Solution</b></li><li class="navelem"><b>Solution</b></li><li class="navelem"><a href="dir_0f00a39a739b69c68b7639b439ad014b.html">Source</a></li><li class="navelem"><b>Details</b></li><li class="navelem"><b>Details</b></li><li class="navelem"><b>make-source.hpp</b></li>
     <li class="footer">Документация по Alicorn. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>

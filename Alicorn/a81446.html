@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Список членов класса</title>
+    <title>Alicorn: RmlUiRenderToFileUsingPage</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3474 Platform: x64 Build: 15:43 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3475 Platform: x64 Build: 16:03 19.09.2026</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', codefold.init);
   </div>
 </div>
 <script type="text/javascript">
-document.addEventListener('DOMContentLoaded',() => { initNavTree('a81449.html','',''); });
+document.addEventListener('DOMContentLoaded',() => { initNavTree('a81446.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -120,13 +120,32 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a81449.html','
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">wx::PanelSummary Список членов класса</div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">RmlUiRenderToFileUsingPage </div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Полный список членов класса <a class="el" href="a81449.html">wx::PanelSummary</a>, включая наследуемые из базового класса</p>
-</div><!-- contents -->
+<div class="textblock"><ul>
+<li>Добавить в решение проект Externals/RmlUi/RmlUiRenderToFile.</li>
+<li>Добавить проекту тестирования зависимость от проекта RmlUiRenderToFile.</li>
+<li>В тестах подготовить файлы, используемые в тестируемом .rml файле (стилей, изображений, шрифтов) с учетом их взаимного расположения.</li>
+<li>Запустить с требуемыми параметрами утилиту "$(SolutionDir)/$(Configuration)/Bin/x64/RmlUiRenderToFile.exe", проверяя совпадение полученного скриншота с ожидаемым изображением.</li>
+</ul>
+<h3>Параметры командной строки</h3>
+<ul>
+<li><b>help</b> - вывод в консоль описания параметров командной строки.</li>
+<li><b>source-file</b> - путь к тестируемому .rml файлу.</li>
+<li><b>dest-file</b> - путь к .png файлу, в который будет сохранен скриншот экрана для указанного .rml файла.</li>
+<li><b>width</b> - ширина генерируемого изображения (по умолчанию - 400).</li>
+<li><b>height</b> - высота генерируемого изображения (по умолчанию - 800).</li>
+<li><b>bkcolor</b> - цвет фона, поверх которого будет рендериться полученный .rml файл (по умолчанию - 0xE30B5C (малиновый)).</li>
+<li><b>fonts-dir</b> - путь к папке, из которой должны быть загружены .ttf шрифты, используемые в указанном .rml файле.</li>
+<li><b>show-window</b> - показать окно с результатом рендеринга без сохранения в файл.</li>
+<li><b>mouse-x</b> - позиция x курсора в окне (по умолчанию - -1).</li>
+<li><b>mouse-y</b> - позиция y курсора в окне (по умолчанию - -1).</li>
+<li><b>press-lmouse</b> - нажать левую кнопку мыши. </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->

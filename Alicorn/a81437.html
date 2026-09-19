@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=9" />
     <meta name="generator" content="Doxygen 1.18.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Alicorn: Класс view::SummaryInfo</title>
+    <title>Alicorn: ToolsDocumentationUsingPage</title>
     <link href="tabs.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="dynsections.js"></script>
@@ -37,7 +37,7 @@
   <td id="projectlogo"><img alt="Logo" src="Title.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Alicorn
-   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3474 Platform: x64 Build: 15:43 04.09.2026</span>
+   &#160;<span id="projectnumber">Version: 3.10.2 Revision: 3475 Platform: x64 Build: 16:03 19.09.2026</span>
    </div>
    <div id="projectbrief">Набор вспомогательных библиотек</div>
   </td>
@@ -120,24 +120,53 @@ document.addEventListener('DOMContentLoaded',() => { initNavTree('a81437.html','
 </div>
 </div>
 
-<div class="header">
-  <div class="headertitle"><div class="title">Класс view::SummaryInfo<span class="mlabels"><span class="mlabel final">final</span></span><div class="ingroups"><a class="el" href="a79174.html">View</a></div></div></div>
+<div><div class="header">
+  <div class="headertitle"><div class="title">ToolsDocumentationUsingPage </div></div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>Проект утилиты предварительной обработки файлов решения.</p>
+<p>Предназначен для:</p><ul>
+<li>Обработки файла лога сборки решения скриптом.</li>
+<li>Обработки файла покрытия кода тестами.</li>
+<li>Обработки файла расчета метрик кода в решении.</li>
+<li>Генерации документации.</li>
+</ul>
+<h2>Использование утилиты </h2>
+<ul>
+<li>Подключить к решению проект Documentation из папки Externals\Tools\Documentation.</li>
+<li>Одному из проектов решения установить зависимость от проекта Documentation и в качестве события после построения добавить запуск Documentation.exe (в папке $(SolutionDir)$(Configuration)\Bin\x64) с нужными командами.</li>
+</ul>
+<h3>Вспомогательные параметры</h3>
+<ul>
+<li><b>--file=path</b> - путь к исходному файлу (трактуется в зависимости от указанной команды).</li>
+<li><b>--path-to-solution=path</b> - полный путь к папке решения, которое обрабатывается (используется совместно с командой <b>--process-report</b>).</li>
+<li><b>--max-records</b> - максимальное количество записей в отчете (при добавлении новых записей самые старые будут удаляться; используется совместно с командой <b>--process-report</b>).</li>
+<li><b>--exclude</b> - путь к файлу, содержащему набор регулярных выражений, каждое из которых будет применяться к каждой строке в обрабатываемом файле; если хотя бы одно из регулярных выражений даст совпадение, строка не будет записана в файл результата (используется совместно с командой <b>--process-report=build</b>).</li>
+<li><b>--platform</b> - текущая собираемая платформа (используется совместно с командой <b>--make</b>).</li>
+</ul>
+<h3>Команды</h3>
+<dl class="section note"><dt>Заметки</dt><dd>Команды исключают использование друг друга.</dd></dl>
+<ul>
+<li><b>--help</b> - выводит в консоль список доступных команд.</li>
+<li><b>--process-report=type</b> - обработка файла, заданного как параметр <b>--file</b> (также требуется параметр <b>--path-to-solution</b>):<ul>
+<li><b>build</b> - обработка файла лога сборки скриптом (в той же папке и с тем же именем, но с расширением .html генерируется файл, группирующий и подсвечивающий цветом ошибки и предупреждения с разбиением оных на группы по проектам); может использоваться параметр <b>--exclude</b>, при его отсутствии будет использоваться набор игнорирования строк по умолчанию, записи о файлах, расположенных не в папке решения, игнорируются в любом случае.</li>
+<li><b>coverage</b> - обработка файла отчета покрытия кода тестами (из xml файла отчета генерируется html файлы, пригодные для включения в документацию Doxygen).</li>
+<li><b>metrics</b> - обработка результата вычисления метрик кода в решении (<b>--file</b> задает путь к папке, где располагаются файлы отчета SourceMonitor, <b>--max-records</b> задает количество проблемных мест в коде, которое будет выводиться для каждой метрики).</li>
+</ul>
+</li>
+<li><b>--make</b> - команда построения документации (например, 'doxygen.exe PathToConfigFile% &gt; PathToReport'), требуются параметры:<ul>
+<li><b>--file</b> - путь к файлу версии решения.</li>
+<li><b>--platform</b> - собираемая платформа. </li>
+</ul>
+</li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
 </div><!-- doc-content -->
-<div id="page-nav" class="page-nav-panel">
-<div id="page-nav-resize-handle"></div>
-<div id="page-nav-tree">
-<div id="page-nav-contents">
-</div><!-- page-nav-contents -->
-</div><!-- page-nav-tree -->
-</div><!-- page-nav -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>view</b></li><li class="navelem"><a href="a81437.html">SummaryInfo</a></li>
     <li class="footer">Документация по Alicorn. Последние изменения: <span class="timestamp"></span>. Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.18.0 </li>
   </ul>
 </div>
